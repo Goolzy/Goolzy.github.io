@@ -14,9 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 lang: ko-KR
-title: Goolzy web site
+title: Goolzy
 email: captain@goolzy.com
-description:
+description: Goolzy website
 baseurl: # the optional subpath of your site, e.g. "/blog"
 url: https://Goolzy.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 author:
