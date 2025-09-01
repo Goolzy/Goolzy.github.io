@@ -5,3 +5,7 @@ gem "github-pages", group: :jekyll_plugins
 
 # 원격 테마 사용에 필요
 gem "jekyll-remote-theme"
+
+gem "jekyll-sitemap"
+gem "jekyll-seo-tag"
+gem "jekyll-feed"
