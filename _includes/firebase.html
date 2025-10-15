@@ -1,0 +1,46 @@
+{% if site.firebase and site.firebase.enabled %}
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-auth-compat.js"></script>
+  <!-- Firebase Config JSON (rendered by Jekyll) -->
+  <script id="firebase-config" type="application/json">{{ site.firebase | jsonify }}</script>
+  <!-- Initialize Firebase -->
+  <script>
+  (function(){
+    try {
+      var cfgNode = document.getElementById('firebase-config');
+      var siteFirebase = {};
+      if (cfgNode) { try { siteFirebase = JSON.parse(cfgNode.textContent || '{}') || {}; } catch(_e){} }
+      var cfg = siteFirebase.config || {};
+      if (!cfg.apiKey) { console.warn('Firebase enabled but apiKey is empty'); }
+      window.firebaseApp = firebase.initializeApp(cfg);
+      var auth = firebase.auth();
+
+      // Providers from config
+      var ap = siteFirebase.auth_providers || {};
+      var providers = {};
+      if (ap.google) providers.google = new firebase.auth.GoogleAuthProvider();
+      if (ap.apple) providers.apple = new firebase.auth.OAuthProvider('apple.com');
+      if (ap.microsoft) providers.microsoft = new firebase.auth.OAuthProvider('microsoft.com');
+
+      // Bridge
+      window.AuthBridge = {
+        onChange: function(cb){ return auth.onAuthStateChanged(cb); },
+        currentUser: function(){ return auth.currentUser; },
+        emailSignUp: function(email, password){ return auth.createUserWithEmailAndPassword(email, password); },
+        emailSignIn: function(email, password){ return auth.signInWithEmailAndPassword(email, password); },
+        signOut: function(){ return auth.signOut(); },
+        deleteUser: function(){ return auth.currentUser ? auth.currentUser.delete() : Promise.resolve(); },
+        signInWith: function(name){
+          var p = providers[name];
+          if(!p) return Promise.reject(new Error('Provider not configured: '+name));
+          return auth.signInWithPopup(p);
+        }
+      };
+    } catch(e) {
+      console.error('Firebase init error', e);
+    }
+  })();
+  </script>
+{% endif %}
+

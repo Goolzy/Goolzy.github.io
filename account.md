@@ -28,6 +28,12 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
         <button class="btn" id="btn-signin">로그인(미리보기)</button>
       </div>
     </form>
+    <div style="margin:.75rem 0 .25rem; color:rgba(0,0,0,.6);">또는 소셜 계정으로 로그인</div>
+    <div style="display:flex; gap:.5rem; flex-wrap:wrap;">
+      <button class="btn" id="btn-google">Google로 계속</button>
+      <button class="btn" id="btn-apple">Apple로 계속</button>
+      <button class="btn" id="btn-ms">Microsoft로 계속</button>
+    </div>
   </div>
   <div class="state state-in" style="display:none;">
     <h3 style="margin:.25rem 0 .5rem;">로그인 상태</h3>
@@ -43,8 +49,6 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
 
 <script>
 (function(){
-  const KEY = 'auth_preview_email';
-  const UID = 'preview-uid-1234';
   const root = document.getElementById('auth-preview');
   const out = root.querySelector('.state-out');
   const inn = root.querySelector('.state-in');
@@ -54,44 +58,51 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
   const btnSignin = document.getElementById('btn-signin');
   const btnSignout = document.getElementById('btn-signout');
   const btnDelete = document.getElementById('btn-delete');
+  const btnGoogle = document.getElementById('btn-google');
+  const btnApple = document.getElementById('btn-apple');
+  const btnMs = document.getElementById('btn-ms');
 
-  function setSignedIn(email){
-    localStorage.setItem(KEY, email);
-    localStorage.setItem('auth_preview_uid', UID);
-    emailSpan.textContent = email;
-    out.style.display = 'none';
-    inn.style.display = '';
-  }
-  function setSignedOut(){
-    localStorage.removeItem(KEY);
-    localStorage.removeItem('auth_preview_uid');
-    out.style.display = '';
-    inn.style.display = 'none';
-  }
-  function init(){
-    const saved = localStorage.getItem(KEY);
-    if(saved){ emailSpan.textContent = saved; setSignedIn(saved); }
-  }
+  function onSignedIn(email){ emailSpan.textContent = email; out.style.display = 'none'; inn.style.display = ''; }
+  function onSignedOut(){ out.style.display = ''; inn.style.display = 'none'; }
 
   btnSignup.addEventListener('click', function(){
     if(!form.reportValidity()) return;
     if(!document.getElementById('agree').checked){ alert('개인정보 처리방침에 동의해 주세요.'); return; }
     const email = form.email.value.trim();
-    setSignedIn(email);
-    alert('가입(미리보기): 동의 기록 및 가입 UI만 데모로 처리되었습니다.');
+    AuthBridge.emailSignUp(email, form.password.value).then(function(){
+      onSignedIn(email);
+      alert('가입(미리보기 또는 실제): 처리 완료');
+    }).catch(function(e){ alert('가입 실패: '+ (e && e.message || e)); });
   });
   btnSignin.addEventListener('click', function(){
     if(!form.reportValidity()) return;
     const email = form.email.value.trim();
-    setSignedIn(email);
-    alert('로그인(미리보기): UI만 데모로 처리되었습니다.');
+    AuthBridge.emailSignIn(email, form.password.value).then(function(){
+      onSignedIn(email);
+      alert('로그인(미리보기 또는 실제): 처리 완료');
+    }).catch(function(e){ alert('로그인 실패: '+ (e && e.message || e)); });
   });
-  btnSignout.addEventListener('click', function(){ setSignedOut(); });
+  btnSignout.addEventListener('click', function(){ AuthBridge.signOut().then(onSignedOut); });
   btnDelete.addEventListener('click', function(){
-    if(confirm('정말로 회원 탈퇴(미리보기)를 진행할까요?')){ setSignedOut(); alert('회원 탈퇴(미리보기) 완료'); }
+    if(confirm('정말로 회원 탈퇴를 진행할까요?')){ AuthBridge.deleteUser().then(function(){ onSignedOut(); alert('탈퇴 완료'); }); }
   });
 
-  init();
+  function oauth(name){
+    AuthBridge.signInWith(name).then(function(res){
+      var user = (res && res.user) || AuthBridge.currentUser() || {};
+      var email = user.email || 'user@example.com';
+      onSignedIn(email);
+      alert(name+' 로그인 완료');
+    }).catch(function(e){ alert(name+' 로그인 실패: '+ (e && e.message || e)); });
+  }
+  btnGoogle.addEventListener('click', function(){ oauth('google'); });
+  btnApple.addEventListener('click', function(){ oauth('apple'); });
+  btnMs.addEventListener('click', function(){ oauth('microsoft'); });
+
+  // State sync
+  AuthBridge.onChange(function(user){
+    if(user && user.email){ onSignedIn(user.email); } else { onSignedOut(); }
+  });
 })();
 </script>
 

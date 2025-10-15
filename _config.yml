@@ -27,6 +27,21 @@ company_name: Goolzy Co., Ltd.
 support_email: support@goolzy.com
 twitter_username:
 github_username:
+# Authentication (Firebase) — disabled by default. Fill config and set enabled: true to activate.
+firebase:
+  enabled: false
+  auth_providers:
+    email: true
+    google: true
+    apple: true
+    microsoft: true
+  config:
+    apiKey: ""
+    authDomain: ""
+    projectId: ""
+    appId: ""
+    measurementId: ""
+  redirect_uri: "" # optional: e.g., https://goolzy.github.io/account/
 # Logos & Icons (drop your files under /assets/images)
 # - logo: square icon (used broadly)
 # - logo_wordmark: horizontal wordmark (header)
@@ -53,7 +68,6 @@ plugins: # previsously gems
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-paginate
   - jekyll-redirect-from
 feed:
   path: atom.xml
@@ -69,9 +83,7 @@ nav:
 
 permalink: /:title/
 
-# Pagination - https://jekyllrb.com/docs/pagination/
-paginate: 10
-paginate_path: /page:num/
+# Pagination: disabled (no index.html paginate template). Re-enable when needed.
 
 # Exclude from processing.
 exclude:

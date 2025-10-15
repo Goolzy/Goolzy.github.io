@@ -2,7 +2,7 @@
 layout: page
 title: Talisman
 permalink: /Talisman/
-description: Project : TALISMAN — Tag Assigned LISten server, Make A Nation!
+description: "Project : TALISMAN — Tag Assigned LISten server, Make A Nation!"
 ---
 
 # Project : TALISMAN

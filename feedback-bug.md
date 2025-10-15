@@ -70,6 +70,22 @@ description: 버그 리포트를 보내주세요.
     document.getElementById('bug_subject').value = '[버그 리포트] ' + t;
   }
   document.getElementById('bug-form').addEventListener('input', updateSubject);
+
+  // Autofill from AuthBridge (email, uid)
+  try {
+    var form = document.getElementById('bug-form');
+    var emailInput = form.querySelector('input[name="Email"]');
+    var uidInput = form.querySelector('input[name="uid"]');
+    if (window.AuthBridge) {
+      var user = AuthBridge.currentUser && AuthBridge.currentUser();
+      if (user && user.email) { emailInput.value = user.email; }
+      if (user && user.uid && uidInput) { uidInput.value = user.uid; }
+      AuthBridge.onChange(function(u){
+        if (u && u.email) emailInput.value = u.email; else emailInput.value = '';
+        if (uidInput) uidInput.value = (u && u.uid) ? u.uid : '';
+      });
+    }
+  } catch(e){}
 })();
 </script>
 
