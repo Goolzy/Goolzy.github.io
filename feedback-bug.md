@@ -19,6 +19,7 @@ description: 버그 리포트를 보내주세요.
   <label>이메일
     <input type="email" name="Email" required placeholder="name@example.com">
   </label>
+  <input type="hidden" name="uid" value="">
 
   <label>제목
     <input type="text" name="Title" id="bug_title" required placeholder="버그를 한 줄로 요약해주세요">
