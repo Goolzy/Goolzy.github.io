@@ -60,12 +60,16 @@ feed:
 nav:
   - title: "About"
     url: /about/
+  - title: "Team"
+    url: /team/
   - title: "Talisman"
     url: /Talisman/
   - title: "News"
     url: /news/
   - title: "Contact"
     url: /contact/
+  - title: "Feedback"
+    url: /feedback/
 
 permalink: /:title/
 
