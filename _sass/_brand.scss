@@ -25,3 +25,6 @@ $secondary-accent-color: if(global-variable-exists(secondary-accent-color), $sec
 
 /* Link hover accent subtlety */
 a:hover { color: tint($accent-color, 10%); }
+
+/* Ensure base link color follows brand accent */
+a { color: $accent-color; }

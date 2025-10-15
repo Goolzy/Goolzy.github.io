@@ -21,7 +21,8 @@
     }
   </script>
 
-  <link rel="stylesheet" href="{{ '/assets/stylesheets/main.css' | relative_url }}">
+  {% assign css_version = site.github.build_revision | default: site.time | date: '%s' %}
+  <link rel="stylesheet" href="{{ '/assets/stylesheets/main.css' | relative_url }}?v={{ css_version }}">
   {% comment %} Optional site icons if provided in _config.yml {% endcomment %}
   {% if site.logo_icon %}
     <link rel="icon" type="image/png" href="{{ site.logo_icon | relative_url }}">
