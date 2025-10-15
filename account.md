@@ -38,13 +38,13 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
 
       <div class="oauth-stack">
         <a href="#" id="btn-google" class="oauth-btn" aria-label="Sign in with Google" role="button">
-          <img src="/assets/images/auth/google-signin.svg" alt="Sign in with Google">
+          <img src="/assets/images/auth/google-signin-official.svg" alt="Sign in with Google" onerror="this.onerror=null;this.src='/assets/images/auth/google-signin.svg'">
         </a>
         <a href="#" id="btn-apple" class="oauth-btn" aria-label="Sign in with Apple" role="button">
-          <img src="/assets/images/auth/apple-signin.svg" alt="Sign in with Apple">
+          <img src="/assets/images/auth/apple-signin-official.svg" alt="Sign in with Apple" onerror="this.onerror=null;this.src='/assets/images/auth/apple-signin.svg'">
         </a>
         <a href="#" id="btn-ms" class="oauth-btn" aria-label="Sign in with Microsoft" role="button">
-          <img src="/assets/images/auth/microsoft-signin.svg" alt="Sign in with Microsoft">
+          <img src="/assets/images/auth/microsoft-signin-official.svg" alt="Sign in with Microsoft" onerror="this.onerror=null;this.src='/assets/images/auth/microsoft-signin.svg'">
         </a>
       </div>
     </div>
