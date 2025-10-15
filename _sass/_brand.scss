@@ -57,3 +57,51 @@ a { color: $accent-color; }
   background: radial-gradient(1200px 600px at 10% -10%, rgba($accent-color,.25), rgba($accent-color,0) 60%),
               radial-gradient(900px 500px at 110% 10%, rgba($secondary-accent-color,.28), rgba($secondary-accent-color,0) 50%);
 }
+
+/* --- Layout utilities for richer pages --- */
+.divider {
+  height: 1px; border: 0; margin: 1.5rem 0;
+  background: linear-gradient(90deg, rgba($accent-color,.0), rgba($accent-color,.35), rgba($secondary-accent-color,.0));
+}
+
+.grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+
+.feature-card {
+  position: relative; padding: 1rem 1.1rem; border-radius: 14px;
+  background: #fff; border: 1px solid rgba(0,0,0,.06);
+  box-shadow: 0 8px 24px rgba(0,0,0,.06);
+}
+.feature-card::before {
+  content: ""; position: absolute; left: 0; right: 0; top: 0; height: 3px; border-radius: 14px 14px 0 0;
+  background: linear-gradient(90deg, $accent-color, $secondary-accent-color);
+}
+.feature-card h3 { margin: .25rem 0 .25rem; font-size: 1.05rem; }
+.feature-card p { margin: 0; color: rgba(0,0,0,.7); font-size: .95rem; }
+
+.icon-chip { width: 36px; height: 36px; border-radius: 999px; display: grid; place-items: center; overflow: hidden;
+  background: linear-gradient(135deg, $accent-color, $secondary-accent-color);
+  box-shadow: 0 4px 12px rgba(0,0,0,.1);
+}
+.icon-chip img { width: 22px; height: 22px; display: block; }
+
+.callout-band {
+  border-radius: 16px; padding: 1rem 1.25rem; color: #0f172a; /* slate-900 */
+  background:
+    radial-gradient(600px 300px at 0% 0%, rgba($accent-color,.18), rgba($accent-color,0) 60%),
+    radial-gradient(600px 300px at 100% 0%, rgba($secondary-accent-color,.22), rgba($secondary-accent-color,0) 60%),
+    linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,255,255,.92));
+  border: 1px solid rgba(0,0,0,.06);
+  box-shadow: 0 10px 30px rgba(0,0,0,.06);
+}
+.callout-band .btn { margin-top: .25rem; }
+
+@media (prefers-color-scheme: dark) {
+  .feature-card { background: #1f242a; border-color: rgba(255,255,255,.06); }
+  .feature-card p { color: rgba(255,255,255,.75); }
+  .callout-band { color: #e5e7eb; background:
+    radial-gradient(600px 300px at 0% 0%, rgba($accent-color,.25), rgba($accent-color,0) 60%),
+    radial-gradient(600px 300px at 100% 0%, rgba($secondary-accent-color,.28), rgba($secondary-accent-color,0) 60%),
+    linear-gradient(180deg, rgba(15,23,42,.85), rgba(15,23,42,.85));
+    border-color: rgba(255,255,255,.06);
+  }
+}
