@@ -19,4 +19,4 @@ description: 우리는 즐거움을 연구합니다.
 - 가치: 사용자의 즐거움이 의미 있는 생산으로 이어지는 플랫폼을 지향합니다.
 - 인터페이스: 낡고 어려운 인터페이스를 제거하고 쉽게 즐길 수 있도록 연구합니다.
 
-문의: <a href="mailto:support@goolzy.com">support@goolzy.com</a> | <a href="tel:+8223875153">02-387-5153</a>
+문의: <a href="mailto:support@goolzy.com">support@goolzy.com</a>

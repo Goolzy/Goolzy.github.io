@@ -35,10 +35,13 @@
 }
 
 .site-logo {
-  width: $site-image-width;
   height: $site-image-height;
+  width: auto; /* allow wordmark aspect ratio */
+  max-width: 220px; /* prevent oversized wordmarks */
   margin-right: 0.5rem;
-  border-radius: 50%;
+  border-radius: 0; /* don't clip wordmarks into a circle */
+  image-rendering: auto;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.08));
 }
 
 .more-link {

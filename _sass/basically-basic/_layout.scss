@@ -57,7 +57,7 @@ main {
 }
 
 .inner {
-  max-width: $large;
+  max-width: 1080px;
 }
 
 /*
@@ -71,6 +71,25 @@ main {
       width: span(14 of 16);
     }
   }
+}
+
+/* Visual enhancements */
+.hero h1 {
+  @include fluid-type($min-vw, $max-vw, 28px, 40px);
+  letter-spacing: -0.015em;
+}
+
+.hero h2 {
+  @include fluid-type($min-vw, $max-vw, 18px, 22px);
+  color: tint($text-color, 20%);
+}
+
+.grid.grid--2 > div,
+.grid.grid--3 > div {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 1rem;
 }
 
 .layout--about {

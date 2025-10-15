@@ -28,7 +28,15 @@ support_email: support@goolzy.com
 phone: "02-387-5153"
 twitter_username:
 github_username:
-logo: # path of site logo, e.g. "/assets/images/logo.png"
+# Logos & Icons (drop your files under /assets/images)
+# - logo: square icon (used broadly)
+# - logo_wordmark: horizontal wordmark (header)
+# - logo_icon: 32-64px favicon
+# - apple_touch_icon: 180px iOS icon
+logo: # e.g. "/assets/images/logo-icon.png"
+logo_wordmark: # e.g. "/assets/images/logo-wordmark.png"
+logo_icon: # e.g. "/assets/images/favicon.png"
+apple_touch_icon: # e.g. "/assets/images/apple-touch-icon.png"
 search: # true, false (default)
 search_full_content: false # true, false (default)
 search_provider: # lunr (default), algolia
