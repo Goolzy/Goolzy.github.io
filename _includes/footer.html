@@ -4,7 +4,14 @@
       {% if site.copyright %}
         {{ site.copyright | markdownify }}
       {% else %}
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}.</p>
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.company_name | default: site.title }}.</p>
+        {% if site.phone or site.support_email %}
+          <p>
+            {% if site.company_name %}{{ site.company_name }} |{% endif %}
+            {% if site.phone %} {{ site.phone }} |{% endif %}
+            {% if site.support_email %} <a href="mailto:{{ site.support_email }}">{{ site.support_email }}</a>{% endif %}
+          </p>
+        {% endif %}
       {% endif %}
     </div>
   </div>

@@ -9,3 +9,6 @@ gem "jekyll-remote-theme"
 gem "jekyll-sitemap"
 gem "jekyll-seo-tag"
 gem "jekyll-feed"
+
+# 링크/이미지/HTML 검사
+gem "html-proofer", group: :jekyll_plugins

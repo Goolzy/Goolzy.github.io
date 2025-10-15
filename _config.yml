@@ -16,13 +16,16 @@
 lang: ko-KR
 title: Goolzy
 email: captain@goolzy.com
-description: Goolzy website
+description: 즐거움과 연결된 모든 엔터테인먼트 콘텐츠를 연구·개발합니다.
 baseurl: # the optional subpath of your site, e.g. "/blog"
-url: https://Goolzy.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url: https://www.goolzy.com # 커스텀 도메인 적용
 author:
   name: Seungin Nam
   twitter:
   picture:
+company_name: Goolzy Co., Ltd.
+support_email: support@goolzy.com
+phone: "02-387-5153"
 twitter_username:
 github_username:
 logo: # path of site logo, e.g. "/assets/images/logo.png"
@@ -51,13 +54,9 @@ nav:
     url: /about/
   - title: "Talisman"
     url: /Talisman/
-  - title: "PrivacyPolicy"
-    url: /privacypolicy/
-  - title: "Board"
-    url: /Board/
-  - title: "BugReport"
-    url: /bugreport/
-  - title: "Contact Us"
+  - title: "News"
+    url: /news/
+  - title: "Contact"
     url: /contact/
 
 permalink: /:title/
