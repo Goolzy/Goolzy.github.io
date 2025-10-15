@@ -10,7 +10,6 @@ image: /assets/images/biz_3_02.png
   <h1>굴지는</h1>
   <h2>즐거움과 연결된 모든 엔터테인먼트 콘텐츠를 연구·개발합니다</h2>
   <p><strong>손에 꼽는 엔터테인먼트 기업이 되기 위해 노력합니다.</strong></p>
-  <p style="font-size:12px;color:#7a7a7a">Deployed via Jekyll • {{ site.time | date: '%Y-%m-%d %H:%M %Z' }}</p>
   <p>
     <a class="btn" href="/Talisman/">프로젝트: 탈리스만 자세히 보기</a>
     <a class="btn btn--outline" href="/about/">About</a>
