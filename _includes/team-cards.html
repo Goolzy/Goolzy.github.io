@@ -5,9 +5,10 @@
       <div class="team-avatar">
         <div class="team-initial" aria-hidden="true">{{ m.name | slice: 0, 1 | upcase }}</div>
         {% if m.avatar %}
+          {% assign avatar_webp = m.avatar | replace: '.png', '.webp' | replace: '.jpg', '.webp' | replace: '.jpeg', '.webp' %}
+          {% assign webp_exists = site.static_files | where: 'path', avatar_webp | first %}
           <picture>
-            {% assign avatar_webp = m.avatar | replace: '.png', '.webp' | replace: '.jpg', '.webp' | replace: '.jpeg', '.webp' %}
-            <source srcset="{{ avatar_webp | relative_url }}" type="image/webp">
+            {% if webp_exists %}<source srcset="{{ avatar_webp | relative_url }}" type="image/webp">{% endif %}
             <img src="{{ m.avatar | relative_url }}" alt="{{ m.name | escape }}" loading="lazy"
                  onload="this.closest('.team-avatar').classList.remove('no-photo'); this.previousElementSibling.style.display='none'"
                  onerror="this.closest('.team-avatar').classList.add('no-photo'); this.style.display='none'; this.previousElementSibling.style.display='grid'">
