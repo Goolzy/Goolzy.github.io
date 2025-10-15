@@ -5,12 +5,12 @@ permalink: /
 description: 굴지는 즐거움과 연결된 모든 엔터테인먼트 콘텐츠를 연구·개발합니다.
 ---
 
-<section class="hero hero--compact">
-  <h1 class="text-gradient">즐거움과 연결된 경험을 만듭니다</h1>
+<section class="hero hero--compact bg-brand-gradient" style="border-radius: 16px; padding: 1rem 1.25rem;">
+  <h1 class="text-gradient heading-accent">즐거움과 연결된 경험을 만듭니다</h1>
   <p>굴지는 엔터테인먼트의 본질을 탐구하고, 누구나 쉽게 즐길 수 있는 경험을 설계합니다.</p>
   <p class="intro-actions">
-    <a class="btn" href="/Talisman/">프로젝트 탈리스만</a>
-    <a class="btn btn--outline" href="/about/">About</a>
+  <a class="btn btn--alt-gradient" href="/Talisman/">프로젝트 탈리스만</a>
+  <a class="btn btn--outline" href="/about/">About</a>
   </p>
   <hr>
 </section>

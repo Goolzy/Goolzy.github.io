@@ -28,3 +28,25 @@ a:hover { color: tint($accent-color, 10%); }
 
 /* Ensure base link color follows brand accent */
 a { color: $accent-color; }
+
+/* Gradient button variant using both brand colors */
+.btn--alt-gradient {
+  background: linear-gradient(135deg, $accent-color, $secondary-accent-color);
+  color: #fff !important;
+  border: none;
+  box-shadow: 0 6px 20px rgba(0,0,0,.12);
+}
+.btn--alt-gradient:hover { filter: brightness(1.05); }
+
+/* Heading underline accent */
+.heading-accent { position: relative; display: inline-block; }
+.heading-accent::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -6px; height: 4px;
+  border-radius: 4px; background: linear-gradient(90deg, $accent-color, $secondary-accent-color);
+}
+
+/* Brand background flourish for hero */
+.bg-brand-gradient {
+  background: radial-gradient(1200px 600px at 10% -10%, rgba($accent-color,.25), rgba($accent-color,0) 60%),
+              radial-gradient(900px 500px at 110% 10%, rgba($secondary-accent-color,.28), rgba($secondary-accent-color,0) 50%);
+}

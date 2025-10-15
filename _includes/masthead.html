@@ -9,14 +9,14 @@
       {% if page.url == '/' %}
         <h1 class="site-title">
           <a href="{{ '/' | relative_url }}">
-            {% if site.logo or site.logo_wordmark %}<img src="{{ site_logo }}" alt="{{ site.title | escape }} logo" class="site-logo">{% endif %}
+            {% if site.logo or site.logo_wordmark %}<img src="{{ site_logo }}" alt="{{ site.title | escape }} logo" class="site-logo" onerror="this.style.display='none'">{% endif %}
             <span>{{ site.title | escape }}</span>
           </a>
         </h1>
       {% else %}
         <p class="site-title">
           <a href="{{ '/' | relative_url }}">
-            {% if site.logo or site.logo_wordmark %}<img src="{{ site_logo }}" alt="{{ site.title | escape }} logo" class="site-logo">{% endif %}
+            {% if site.logo or site.logo_wordmark %}<img src="{{ site_logo }}" alt="{{ site.title | escape }} logo" class="site-logo" onerror="this.style.display='none'">{% endif %}
             <span>{{ site.title | escape }}</span>
           </a>
         </p>
