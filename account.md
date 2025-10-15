@@ -5,34 +5,48 @@ permalink: /account/
 description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
 ---
 
+{% if site.firebase and site.firebase.enabled %}
+> Firebase Auth가 활성화된 상태입니다. 이메일/비밀번호 및 Google/Apple/Microsoft 로그인이 실제로 동작합니다.
+{% else %}
 > 이 페이지는 기능 미적용 미리보기(UI 데모)입니다. 실제 인증/데이터 저장 없이 화면 전환과 자동채움 흐름만 확인할 수 있어요. 실제 연동 시 Firebase Auth로 대체됩니다.
+{% endif %}
 
 ## 계정
 
 <div id="auth-preview" class="auth-preview card-glow" style="padding:1rem 1.25rem; border-radius:16px;">
   <div class="state state-out">
-    <h3 style="margin:.25rem 0 1rem;">가입 또는 로그인</h3>
-    <form id="auth-form" onsubmit="return false;">
-      <label>이메일<br>
-        <input name="email" type="email" required placeholder="name@example.com" style="width:100%">
-      </label>
-      <label>비밀번호<br>
-        <input name="password" type="password" required minlength="8" placeholder="8자 이상" style="width:100%">
-      </label>
-      <label style="display:block; margin:.5rem 0;">
-        <input id="agree" type="checkbox" required>
-        <span>개인정보 처리방침에 동의합니다 (<a href="/privacy/" target="_blank" rel="noopener">보기</a>)</span>
-      </label>
-      <div style="display:flex; gap:.5rem; margin-top:.5rem;">
-        <button class="btn btn--alt-gradient" id="btn-signup">가입(미리보기)</button>
-        <button class="btn" id="btn-signin">로그인(미리보기)</button>
+    <div class="auth-center">
+      <h3>가입 또는 로그인</h3>
+      <form id="auth-form" onsubmit="return false;" class="auth-form">
+        <label>이메일
+          <input name="email" type="email" required placeholder="name@example.com">
+        </label>
+        <label>비밀번호
+          <input name="password" type="password" required minlength="8" placeholder="8자 이상">
+        </label>
+        <label class="agree-row">
+          <input id="agree" type="checkbox" required>
+          <span>개인정보 처리방침에 동의합니다 (<a href="/privacy/" target="_blank" rel="noopener">보기</a>)</span>
+        </label>
+        <div class="btn-row">
+          <button class="btn btn--alt-gradient" id="btn-signup">가입</button>
+          <button class="btn" id="btn-signin">로그인</button>
+        </div>
+      </form>
+
+      <div class="or">또는</div>
+
+      <div class="oauth-stack">
+        <a href="#" id="btn-google" class="oauth-btn" aria-label="Sign in with Google" role="button">
+          <img src="/assets/images/auth/google-signin.svg" alt="Sign in with Google">
+        </a>
+        <a href="#" id="btn-apple" class="oauth-btn" aria-label="Sign in with Apple" role="button">
+          <img src="/assets/images/auth/apple-signin.svg" alt="Sign in with Apple">
+        </a>
+        <a href="#" id="btn-ms" class="oauth-btn" aria-label="Sign in with Microsoft" role="button">
+          <img src="/assets/images/auth/microsoft-signin.svg" alt="Sign in with Microsoft">
+        </a>
       </div>
-    </form>
-    <div style="margin:.75rem 0 .25rem; color:rgba(0,0,0,.6);">또는 소셜 계정으로 로그인</div>
-    <div style="display:flex; gap:.5rem; flex-wrap:wrap;">
-      <button class="btn" id="btn-google">Google로 계속</button>
-      <button class="btn" id="btn-apple">Apple로 계속</button>
-      <button class="btn" id="btn-ms">Microsoft로 계속</button>
     </div>
   </div>
   <div class="state state-in" style="display:none;">
@@ -108,6 +122,14 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
 
 <style>
 .card-glow{ border:1px solid rgba(0,0,0,.06); border-radius:16px; box-shadow:0 8px 24px rgba(0,0,0,.06); }
-label{ display:block; margin:.5rem 0; }
-input[type="email"],input[type="password"]{ padding:.5rem .6rem; }
+.auth-center{ max-width: 360px; margin: 0 auto; text-align: center; }
+.auth-form{ text-align: left; }
+.auth-form label{ display:block; margin:.5rem 0; }
+.auth-form input[type="email"],
+.auth-form input[type="password"]{ padding:.5rem .6rem; width:100%; }
+.agree-row{ display:flex; align-items:center; gap:.5rem; }
+.btn-row{ display:flex; gap:.5rem; justify-content:center; margin-top:.5rem; }
+.or{ margin: .75rem 0; opacity:.7; font-size:.95rem; }
+.oauth-stack{ display:flex; flex-direction:column; gap:.5rem; align-items:center; }
+.oauth-btn img{ width: 280px; max-width: 100%; height: auto; display:block; }
 </style>

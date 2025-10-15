@@ -29,7 +29,7 @@ twitter_username:
 github_username:
 # Authentication (Firebase) — disabled by default. Fill config and set enabled: true to activate.
 firebase:
-  enabled: false
+  enabled: true
   auth_providers:
     email: true
     google: true

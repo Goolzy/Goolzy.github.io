@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="48" viewBox="0 0 280 48" role="img" aria-label="Sign in with Google (placeholder)">
+  <defs>
+    <style>
+      .btn { fill: #ffffff; stroke: #dadce0; }
+      .text { font: 500 16px Arial, Helvetica, sans-serif; fill: #3c4043; }
+      .icon { fill: #9aa0a6; }
+    </style>
+  </defs>
+  <rect class="btn" x="0.5" y="0.5" width="279" height="47" rx="6" ry="6"/>
+  <circle class="icon" cx="24" cy="24" r="10"/>
+  <text class="text" x="48" y="29">Sign in with Google</text>
+</svg>

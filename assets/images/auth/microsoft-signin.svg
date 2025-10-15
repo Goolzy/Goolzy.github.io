@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="48" viewBox="0 0 280 48" role="img" aria-label="Sign in with Microsoft (placeholder)">
+  <defs>
+    <style>
+      .btn { fill: #ffffff; stroke: #d1d5db; }
+      .text { font: 600 15px 'Segoe UI', Arial, sans-serif; fill: #111827; }
+      .icon-blue { fill: #00A4EF; }
+      .icon-orange { fill: #F25022; }
+      .icon-green { fill: #7FBA00; }
+      .icon-yellow { fill: #FFB900; }
+    </style>
+  </defs>
+  <rect class="btn" x="0.5" y="0.5" width="279" height="47" rx="6" ry="6"/>
+  <g transform="translate(16,12)">
+    <rect class="icon-orange" x="0" y="0" width="12" height="12"/>
+    <rect class="icon-green" x="14" y="0" width="12" height="12"/>
+    <rect class="icon-yellow" x="0" y="14" width="12" height="12"/>
+    <rect class="icon-blue" x="14" y="14" width="12" height="12"/>
+  </g>
+  <text class="text" x="48" y="30">Sign in with Microsoft</text>
+</svg>
