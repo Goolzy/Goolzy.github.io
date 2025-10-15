@@ -29,6 +29,9 @@ a:hover { color: tint($accent-color, 10%); }
 /* Ensure base link color follows brand accent */
 a { color: $accent-color; }
 
+/* Header wordmark/icon sizing */
+.site-logo { height: 30px; width: auto; margin-right: .4rem; vertical-align: middle; }
+
 /* Gradient button variant using both brand colors */
 .btn--alt-gradient {
   background: linear-gradient(135deg, $accent-color, $secondary-accent-color);
