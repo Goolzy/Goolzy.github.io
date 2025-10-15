@@ -2,16 +2,16 @@
   {% assign members = site.data.team.members %}
   {% for m in members %}
     <div class="team-card">
-      <div class="team-avatar">
+  <div class="team-avatar">
         <div class="team-initial" aria-hidden="true">{{ m.name | slice: 0, 1 | upcase }}</div>
         {% if m.avatar %}
           {% assign avatar_webp = m.avatar | replace: '.png', '.webp' | replace: '.jpg', '.webp' | replace: '.jpeg', '.webp' %}
           {% assign webp_exists = site.static_files | where: 'path', avatar_webp | first %}
           <picture>
             {% if webp_exists %}<source srcset="{{ avatar_webp | relative_url }}" type="image/webp">{% endif %}
-            <img src="{{ m.avatar | relative_url }}" alt="{{ m.name | escape }}" loading="lazy"
-                 onload="this.closest('.team-avatar').classList.remove('no-photo'); this.previousElementSibling.style.display='none'"
-                 onerror="this.closest('.team-avatar').classList.add('no-photo'); this.style.display='none'; this.previousElementSibling.style.display='grid'">
+              <img src="{{ m.avatar | relative_url }}" alt="{{ m.name | escape }}" loading="lazy" decoding="async"
+                   onload="var av=this.closest('.team-avatar'); if(av){av.classList.add('has-photo'); var init=av.querySelector('.team-initial'); if(init){init.style.display='none';}}"
+                   onerror="var av=this.closest('.team-avatar'); if(av){av.classList.remove('has-photo');} this.style.display='none'; var init=av?av.querySelector('.team-initial'):null; if(init){init.style.display='grid';}">
           </picture>
         {% endif %}
       </div>
@@ -27,10 +27,12 @@
 <style>
 .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; }
 .team-card { display: flex; align-items: center; gap: 1rem; padding: 1rem 1.25rem; background: #fff; border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
-.team-avatar { flex: 0 0 auto; width: 88px; height: 88px; position: relative; border-radius: 50%; padding: 2px; background: linear-gradient(135deg, #7a5cff, #22c1c3); }
-.team-avatar picture, .team-avatar img, .team-avatar .team-initial { width: 100%; height: 100%; display: block; border-radius: 50%; }
-.team-avatar img { width: 100%; height: 100%; object-fit: cover; box-shadow: 0 4px 14px rgba(0,0,0,0.08); background: #fff; }
-.team-initial { display: grid; place-items: center; background: linear-gradient(135deg, #7a5cff, #22c1c3); color: #fff; font-weight: 700; font-size: 28px; }
+.team-avatar { flex: 0 0 auto; width: 88px; height: 88px; position: relative; border-radius: 50%; padding: 2px; background: linear-gradient(135deg, #7a5cff, #22c1c3); overflow: hidden; }
+.team-avatar picture, .team-avatar img, .team-avatar .team-initial { width: 100%; height: 100%; border-radius: 50%; }
+.team-avatar picture { position: absolute; inset: 0; display: block; }
+.team-avatar img { width: 100%; height: 100%; object-fit: cover; box-shadow: 0 4px 14px rgba(0,0,0,0.08); background: #fff; display: block; }
+.team-initial { position: absolute; inset: 0; display: grid; place-items: center; background: linear-gradient(135deg, #7a5cff, #22c1c3); color: #fff; font-weight: 700; font-size: 28px; z-index: 1; }
+.team-avatar.has-photo .team-initial { display: none; }
 .team-avatar.no-photo { background: linear-gradient(135deg, rgba(122,92,255,0.5), rgba(34,193,195,0.5)); }
 .team-meta { min-width: 0; }
 .team-name { margin: 0 0 0.25rem; font-size: 1.1rem; }
