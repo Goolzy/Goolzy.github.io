@@ -55,6 +55,7 @@ plugins: # previsously gems
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-redirect-from
 feed:
   path: atom.xml
 nav:

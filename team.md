@@ -1,16 +1,10 @@
 ---
 ---
-layout: page
-title: Team
+layout: redirect
 permalink: /team/
-description: 굴지를 구성하는 사람들을 소개합니다.
+redirect_to:
+  - {{ '/about/#team' | relative_url }}
 ---
 
-## 굴지 팀
-
-{% include team-cards.html %}
-
-<div class="intro-actions">
-  <a class="btn btn--outline" href="{{ '/feedback/' | relative_url }}">피드백 제안하기</a>
-</div>
+팀 페이지는 이동되었습니다. 잠시 후 자동으로 이동합니다.
       <div class="team-avatar">
