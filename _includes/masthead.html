@@ -1,7 +1,7 @@
 {% comment %}
   Prefer explicit logo path if set; otherwise allow a wordmark-specific key.
 {% endcomment %}
-{% assign site_logo = site.logo | default: site.logo_wordmark | relative_url %}
+{% assign site_logo = site.logo_wordmark | default: site.logo | relative_url %}
 
 <header id="masthead">
   <div class="inner">
