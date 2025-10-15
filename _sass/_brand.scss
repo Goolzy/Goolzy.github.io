@@ -31,9 +31,9 @@ a { color: $accent-color; }
 
 /* Header wordmark/icon sizing */
 .site-logo { height: 36px; width: auto; margin-right: .4rem; vertical-align: middle; }
-.site-logo--wordmark { height: 40px; max-width: min(60vw, 420px); }
+.site-logo--wordmark { height: 60px; max-width: min(80vw, 640px); }
 @media (max-width: 480px) {
-  .site-logo--wordmark { height: 34px; max-width: 72vw; }
+  .site-logo--wordmark { height: 48px; max-width: 90vw; }
 }
 
 /* Gradient button variant using both brand colors */
