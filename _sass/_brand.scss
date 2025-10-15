@@ -1,0 +1,27 @@
+/* Brand helpers: mint secondary + gradients + alt button */
+
+/* Ensure variable exists even if skin doesn't set it */
+$secondary-accent-color: if(global-variable-exists(secondary-accent-color), $secondary-accent-color, #22c1c3);
+
+.text-gradient {
+  background: linear-gradient(135deg, $accent-color, $secondary-accent-color);
+  background-clip: text; /* standard */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: $accent-color; /* fallback for browsers without background-clip */
+}
+
+.btn--alt {
+  background-color: $secondary-accent-color;
+  color: #fff;
+  &:hover {
+    background-color: shade($secondary-accent-color, 10%);
+    color: #fff;
+  }
+  &:focus {
+    box-shadow: 0 0 0 3px rgba($secondary-accent-color, 0.25);
+  }
+}
+
+/* Link hover accent subtlety */
+a:hover { color: tint($accent-color, 10%); }
