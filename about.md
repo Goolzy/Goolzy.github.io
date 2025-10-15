@@ -20,3 +20,11 @@ description: 우리는 즐거움을 연구합니다.
 - 인터페이스: 낡고 어려운 인터페이스를 제거하고 쉽게 즐길 수 있도록 연구합니다.
 
 문의: <a href="mailto:support@goolzy.com">support@goolzy.com</a>
+
+---
+
+## 팀
+
+굴지를 함께 만드는 사람들입니다.
+
+{% include team-cards.html %}
