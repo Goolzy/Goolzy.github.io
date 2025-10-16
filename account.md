@@ -13,6 +13,10 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
 
 ## 계정
 
+<div id="test-alert" style="padding:1rem; background:#fef3c7; border:2px solid #f59e0b; margin-bottom:1rem;">
+  <strong>🔍 디버그 모드:</strong> JavaScript 로딩 확인 중...
+</div>
+
 <div id="auth-preview" class="auth-preview card-glow" style="padding:1rem 1.25rem; border-radius:16px;">
   <div class="state state-out">
     <div class="auth-center">
@@ -98,6 +102,17 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
 <p style="margin-top:1rem; color:rgba(0,0,0,.65);">피드백 페이지로 이동하면 이메일 자동채움이 작동하는지 확인할 수 있습니다: <a href="/feedback/">Feedback</a></p>
 
 <script>
+// === DEBUG: Test if script loads ===
+console.log('🔍 account.md 스크립트 시작!');
+var testBox = document.getElementById('test-alert');
+if(testBox) {
+  testBox.innerHTML = '<strong>✅ JavaScript 로딩 성공!</strong> AuthBridge: ' + (window.AuthBridge ? 'OK' : '대기중...');
+  testBox.style.background = '#d1fae5';
+  testBox.style.borderColor = '#10b981';
+}
+alert('JavaScript가 실행되고 있습니다!');
+// === END DEBUG ===
+
 (function(){
   const root = document.getElementById('auth-preview');
   const out = root.querySelector('.state-out');
@@ -260,12 +275,19 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
       console.log('리다이렉트 저장됨:', SUCCESS_REDIRECT);
     } catch(_e){}
     
-    // Use redirect-based OAuth
-    console.log('signInWith 호출 중...');
-    AuthBridge.signInWith(name).then(function(){
-      console.log('signInWith 성공');
+    // TEMPORARY: Use popup instead of redirect for debugging
+    console.log('signInWithPopup 호출 중...');
+    AuthBridge.signInWithPopup(name).then(function(result){
+      console.log('Popup 로그인 성공:', result.user.email);
+      var dest = SUCCESS_REDIRECT;
+      try { 
+        var stored = sessionStorage.getItem(POST_AUTH_REDIRECT_KEY);
+        if (stored) dest = stored;
+        sessionStorage.removeItem(POST_AUTH_REDIRECT_KEY);
+      } catch(_e){}
+      setTimeout(function(){ location.assign(dest); }, 100);
     }).catch(function(e){ 
-      console.error('signInWith 에러:', e);
+      console.error('signInWithPopup 에러:', e);
       setOauthButtonsDisabled(false); 
       showError(e);
     });
