@@ -56,8 +56,6 @@ firebase:
   # Optional: Only initialize Firebase on these hosts
   allowed_hosts:
     - "goolzy.github.io"
-    - "www.goolzy.com"
-    - "goolzy.com"
     - "localhost"
     - "127.0.0.1"
     - "0.0.0.0"

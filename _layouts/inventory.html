@@ -106,8 +106,6 @@ hide_sidebar: true
       return;
     }
 
-    var redirectHandled = false;
-
     // Check auth state
     AuthBridge.onChange(function(user){
       if(user){
@@ -117,11 +115,10 @@ hide_sidebar: true
       }
     });
 
-    // Handle redirect result
+    // Handle redirect result (for OAuth redirect flow)
     AuthBridge.getRedirectResult().then(function(result){
       if(result && result.user){
-        console.log('OAuth 로그인 성공:', result.user.email);
-        redirectHandled = true;
+        console.log('OAuth 리다이렉트 로그인 성공:', result.user.email);
         
         // Get redirect destination
         var dest = '/inventory/';
@@ -131,17 +128,16 @@ hide_sidebar: true
           sessionStorage.removeItem(POST_AUTH_KEY);
         } catch(e){}
         
-        // Redirect after short delay to ensure state updates
+        // Redirect to original destination
         setTimeout(function(){ 
           location.assign(dest);
         }, 100);
       }
     }).catch(function(e){
       // Ignore benign errors
-      if(e && (e.code === 'auth/no-auth-event' || e.code === 'auth/user-cancelled' || e.code === 'auth/popup-closed-by-user')){
+      if(e && (e.code === 'auth/no-auth-event' || e.code === 'auth/user-cancelled')){
         return;
       }
-      // Show other errors
       showError(e.message || '로그인 실패');
     });
   }
@@ -183,31 +179,11 @@ hide_sidebar: true
     clearError();
     saveRedirect();
     
-    console.log('Inventory OAuth 시작:', provider);
-    
-    // Use POPUP instead of redirect
-    AuthBridge.signInWithPopup(provider).then(function(result){
-      console.log('Inventory popup 로그인 성공:', result.user.email);
-      
-      // Get redirect destination
-      var dest = '/inventory/';
-      try {
-        var stored = sessionStorage.getItem(POST_AUTH_KEY);
-        if(stored) dest = stored;
-        sessionStorage.removeItem(POST_AUTH_KEY);
-      } catch(e){}
-      
-      // Redirect after short delay
-      setTimeout(function(){ 
-        console.log('Inventory 리다이렉트:', dest);
-        location.assign(dest);
-      }, 100);
-    }).catch(function(e){
-      if(e && (e.code === 'auth/popup-closed-by-user' || e.code === 'auth/user-cancelled')){
-        console.log('팝업 취소됨');
-        return;
+    // Use REDIRECT instead of popup (better for mobile)
+    AuthBridge.signInWith(provider).catch(function(e){
+      if(e && e.code !== 'auth/no-auth-event'){
+        showError(e.message || 'OAuth 로그인 실패');
       }
-      showError(e.message || 'OAuth 로그인 실패');
     });
   }
 
