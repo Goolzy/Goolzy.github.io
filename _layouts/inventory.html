@@ -13,10 +13,11 @@ hide_sidebar: true
           <input name="email" type="email" required placeholder="name@example.com" style="width:100%; padding:.5rem .6rem;">
         </label>
         <label>비밀번호
-          <input name="password" type="password" required minlength="8" placeholder="비밀번호" style="width:100%; padding:.5rem .6rem;">
+          <input name="password" type="password" required minlength="8" placeholder="비밀번호(특수문자 1개 이상 포함 권장)" style="width:100%; padding:.5rem .6rem;">
         </label>
-        <div style="display:flex; gap:.5rem;">
+        <div style="display:flex; gap:.5rem; flex-wrap:wrap;">
           <button class="btn" id="inv-email-signin"><span class="spinner" aria-hidden="true"></span><span class="btn-text">로그인</span></button>
+          <button class="btn btn--alt-gradient" id="inv-email-signup"><span class="spinner" aria-hidden="true"></span><span class="btn-text">가입</span></button>
           <a class="btn btn--outline" href="/password-reset/">비밀번호 재설정</a>
         </div>
       </form>
@@ -34,6 +35,17 @@ hide_sidebar: true
       </div>
       <div id="inv-error" class="auth-error" style="display:none;"></div>
       </div>
+    </div>
+
+    <div id="inv-unverified" style="display:none;" class="card-glow" aria-live="polite" style="padding:1rem 1.25rem; border-radius:16px; max-width:640px; margin:.75rem auto;">
+      <strong>이메일 인증이 필요합니다.</strong>
+      <p style="margin:.35rem 0 .75rem;">가입 시 발송된 인증 메일의 링크를 클릭한 후, 다시 접속해 주세요. 메일을 받지 못했다면 아래 버튼으로 재전송할 수 있습니다.</p>
+      <div style="display:flex; gap:.5rem; flex-wrap:wrap;">
+        <button id="inv-resend-verify" class="btn"><span class="spinner" aria-hidden="true"></span><span class="btn-text">인증 메일 다시 보내기</span></button>
+        <button id="inv-verify-refresh" class="btn btn--outline">인증 완료 후 새로고침</button>
+        <a href="/account/" class="btn btn--outline">계정 관리로 이동</a>
+      </div>
+      <div id="inv-verify-msg" style="display:none; margin-top:.5rem; background:#ecfdf5; border:1px solid #a7f3d0; color:#065f46; padding:.5rem .75rem; border-radius:8px;"></div>
     </div>
 
     <div id="inv-unlocked" style="display:none;">
@@ -59,10 +71,15 @@ hide_sidebar: true
   var unlocked = document.getElementById('inv-unlocked');
   var loginForm = document.getElementById('inv-login');
   var btnEmail = document.getElementById('inv-email-signin');
+  var btnSignup = document.getElementById('inv-email-signup');
   var btnG = document.getElementById('inv-google');
   var btnA = document.getElementById('inv-apple');
   var btnM = document.getElementById('inv-ms');
   var errBox = document.getElementById('inv-error');
+  var unverified = document.getElementById('inv-unverified');
+  var btnResend = document.getElementById('inv-resend-verify');
+  var btnVerifyRefresh = document.getElementById('inv-verify-refresh');
+  var verifyMsg = document.getElementById('inv-verify-msg');
   var POST_AUTH_REDIRECT_KEY = 'postAuthRedirect';
   // highlight active link
   try {
@@ -86,7 +103,13 @@ hide_sidebar: true
   function toHereAfterAuth(){ try { sessionStorage.setItem(POST_AUTH_REDIRECT_KEY, location.pathname); } catch(_e){} }
 
   function guard(){ if(!window.AuthBridge){ showError({message:'인증 모듈이 초기화되지 않았습니다.'}); return false; } return true; }
-  function update(user){ if(user){ hide(locked); show(unlocked); } else { show(locked); hide(unlocked); } }
+  function isVerified(u){ return !!(u && (u.emailVerified || (u.providerData && u.providerData.some(function(p){ return p.providerId !== 'password'; })))); }
+  function showVerified(){ hide(locked); if(unverified) hide(unverified); show(unlocked); }
+  function showUnverified(){ hide(locked); if(unverified) show(unverified); hide(unlocked); }
+  function update(user){
+    if (user) { if (isVerified(user)) showVerified(); else showUnverified(); }
+    else { show(locked); if(unverified) hide(unverified); hide(unlocked); }
+  }
 
   function initGate(){
     try { var u = (AuthBridge && AuthBridge.currentUser && AuthBridge.currentUser()) || null; update(u); } catch(_e){}
@@ -107,14 +130,46 @@ hide_sidebar: true
     clearError(); setLoading(btnEmail, true); toHereAfterAuth();
     var email = loginForm.email.value.trim();
     AuthBridge.emailSignIn(email, loginForm.password.value).then(function(){
-      var dest = sessionStorage.getItem(POST_AUTH_REDIRECT_KEY) || '/inventory/';
-      try { sessionStorage.removeItem(POST_AUTH_REDIRECT_KEY); } catch(_e){}
-      location.assign(dest);
+      // After sign-in, gate will decide (verified/unverified)
+      var u = AuthBridge.currentUser && AuthBridge.currentUser();
+      if (u && isVerified(u)) {
+        var dest = sessionStorage.getItem(POST_AUTH_REDIRECT_KEY) || '/inventory/';
+        try { sessionStorage.removeItem(POST_AUTH_REDIRECT_KEY); } catch(_e){}
+        location.assign(dest);
+      } else {
+        update(u);
+      }
     }).catch(showError).finally(function(){ setLoading(btnEmail, false); });
+  });
+
+  // email sign-up with basic policy hint and verification
+  if (btnSignup) btnSignup.addEventListener('click', function(){
+    if(!guard()) return; if(!loginForm.reportValidity()) return;
+    clearError(); setLoading(btnSignup, true); toHereAfterAuth();
+    var email = loginForm.email.value.trim();
+    var pwd = loginForm.password.value || '';
+    if (!/[^A-Za-z0-9]/.test(pwd)) { showError({ code:'auth/password-does-not-meet-requirements', message:'비밀번호에 특수문자 1개 이상을 포함해 주세요.' }); setLoading(btnSignup,false); return; }
+    AuthBridge.emailSignUp(email, pwd).then(function(){
+      // Send verification mail
+      if (AuthBridge.sendEmailVerification) {
+        return AuthBridge.sendEmailVerification().then(function(){
+          if (verifyMsg) { verifyMsg.style.display='block'; verifyMsg.textContent='인증 메일을 '+ email +'로 보냈습니다. 메일함(스팸함 포함)을 확인해 주세요.'; }
+          // Keep user signed-in but gate as unverified until they verify
+          var u = AuthBridge.currentUser && AuthBridge.currentUser();
+          update(u);
+        });
+      }
+    }).catch(showError).finally(function(){ setLoading(btnSignup, false); });
   });
 
   // OAuth
   function oauth(name){ if(!guard()) return; clearError(); toHereAfterAuth(); AuthBridge.signInWith(name).catch(showError); }
+  // resend verification
+  if (btnResend) btnResend.addEventListener('click', function(){
+    if(!guard()) return; clearError(); setLoading(btnResend, true);
+    AuthBridge.sendEmailVerification().then(function(){ if (verifyMsg) { verifyMsg.style.display='block'; verifyMsg.textContent='인증 메일을 다시 보냈습니다.'; } }).catch(showError).finally(function(){ setLoading(btnResend,false); });
+  });
+  if (btnVerifyRefresh) btnVerifyRefresh.addEventListener('click', function(){ location.reload(); });
   if (btnG) btnG.addEventListener('click', function(e){ e.preventDefault(); oauth('google'); });
   if (btnA) btnA.addEventListener('click', function(e){ e.preventDefault(); oauth('apple'); });
   if (btnM) btnM.addEventListener('click', function(e){ e.preventDefault(); oauth('microsoft'); });

@@ -76,6 +76,15 @@
           return auth.getRedirectResult().finally(function(){
             try { sessionStorage.removeItem('__authRedirecting'); } catch(_e){}
           });
+        },
+        sendEmailVerification: function(){
+          if (!auth.currentUser) return Promise.reject(new Error('No authenticated user'));
+          var acs = undefined;
+          try {
+            if (siteFirebase && siteFirebase.redirect_uri) acs = { url: siteFirebase.redirect_uri };
+          } catch(_e){}
+          try { auth.useDeviceLanguage(); } catch(_e){}
+          return auth.currentUser.sendEmailVerification(acs);
         }
       };
   try { window.dispatchEvent(new CustomEvent('auth:bridge-ready')); } catch(_e){}

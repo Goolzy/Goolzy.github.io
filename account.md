@@ -57,6 +57,15 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
   <div class="state state-in" style="display:none;">
     <h3 style="margin:.25rem 0 .5rem;">로그인 상태</h3>
     <p style="margin:0 0 .5rem;">안녕하세요, <strong class="js-email">user@example.com</strong></p>
+    <div id="verify-box" style="display:none; margin:.5rem 0 .75rem; background:#fffbeb; border:1px solid #fde68a; color:#92400e; padding:.6rem .8rem; border-radius:8px;">
+      <strong>이메일 인증 대기 중입니다.</strong>
+      <p style="margin:.25rem 0 .5rem;">메일함에서 인증 링크를 클릭해 주세요. 메일이 오지 않았다면 재전송할 수 있습니다.</p>
+      <div style="display:flex; gap:.5rem; flex-wrap:wrap;">
+        <button class="btn" id="btn-send-verify"><span class="spinner" aria-hidden="true"></span><span class="btn-text">인증 메일 다시 보내기</span></button>
+        <button class="btn btn--outline" id="btn-verify-refresh">인증 완료 후 새로고침</button>
+      </div>
+      <div id="verify-msg" style="display:none; margin-top:.5rem; background:#ecfdf5; border:1px solid #a7f3d0; color:#065f46; padding:.5rem .75rem; border-radius:8px;"></div>
+    </div>
     <div style="display:flex; gap:.5rem;">
       <button class="btn" id="btn-signout">로그아웃(미리보기)</button>
       <button class="btn btn--outline" id="btn-delete">회원 탈퇴(미리보기)</button>
@@ -96,6 +105,10 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
   const btnSignin = document.getElementById('btn-signin');
   const btnSignout = document.getElementById('btn-signout');
   const btnDelete = document.getElementById('btn-delete');
+  const verifyBox = document.getElementById('verify-box');
+  const btnSendVerify = document.getElementById('btn-send-verify');
+  const btnVerifyRefresh = document.getElementById('btn-verify-refresh');
+  const verifyMsg = document.getElementById('verify-msg');
   const btnGoogle = document.getElementById('btn-google');
   const btnApple = document.getElementById('btn-apple');
   const btnMs = document.getElementById('btn-ms');
@@ -125,7 +138,18 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
   });
   if (retryBtn) retryBtn.addEventListener('click', function(){ location.reload(); });
 
-  function onSignedIn(email){ emailSpan.textContent = email; out.style.display = 'none'; inn.style.display = ''; }
+  function providerIncludesPassword(u){ return !!(u && u.providerData && u.providerData.some(function(p){ return p && p.providerId === 'password'; })); }
+  function onSignedIn(email){
+    emailSpan.textContent = email; out.style.display = 'none'; inn.style.display = '';
+    try {
+      var u = AuthBridge.currentUser && AuthBridge.currentUser();
+      if (u && providerIncludesPassword(u) && !u.emailVerified) {
+        if (verifyBox) verifyBox.style.display = '';
+      } else {
+        if (verifyBox) verifyBox.style.display = 'none';
+      }
+    } catch(_e){}
+  }
   function onSignedOut(){ out.style.display = ''; inn.style.display = 'none'; }
   function showError(err){
     var box = document.getElementById('auth-error');
@@ -156,9 +180,15 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
     setLoading(btnSignup, true);
     clearError();
     AuthBridge.emailSignUp(email, form.password.value).then(function(){
-      // Redirect to Home on success
-      try { sessionStorage.removeItem(POST_AUTH_REDIRECT_KEY); } catch(_e){}
-      location.assign(SUCCESS_REDIRECT);
+      // Send verification mail and show guidance instead of immediate redirect
+      if (AuthBridge.sendEmailVerification) {
+        return AuthBridge.sendEmailVerification().then(function(){
+          onSignedIn(email);
+          if (verifyMsg) { verifyMsg.style.display='block'; verifyMsg.textContent='인증 메일을 '+ email +'로 보냈습니다. 메일함(스팸함 포함)을 확인해 주세요.'; }
+        });
+      } else {
+        onSignedIn(email);
+      }
     }).catch(function(e){ showError(e); }).finally(function(){ setLoading(btnSignup, false); });
   });
   btnSignin.addEventListener('click', function(){
@@ -237,6 +267,14 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
       if (!benign) showError(e);
     });
   }
+
+      // Verification actions
+      if (btnSendVerify) btnSendVerify.addEventListener('click', function(){
+        setLoading(btnSendVerify, true);
+        clearError();
+        AuthBridge.sendEmailVerification().then(function(){ if (verifyMsg) { verifyMsg.style.display='block'; verifyMsg.textContent='인증 메일을 다시 보냈습니다.'; } }).catch(showError).finally(function(){ setLoading(btnSendVerify,false); });
+      });
+      if (btnVerifyRefresh) btnVerifyRefresh.addEventListener('click', function(){ location.reload(); });
 })();
 </script>
 
