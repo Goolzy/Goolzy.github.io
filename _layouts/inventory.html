@@ -40,6 +40,9 @@ hide_sidebar: true
         </a>
       </div>
       <div id="inv-oauth-progress" class="oauth-progress" style="display:none; text-align:center;">로그인 페이지로 이동 중…</div>
+      <div id="inv-oauth-fallback" style="display:none; text-align:center; font-size:.9rem; margin-top:.5rem;">
+        리다이렉트 방식이 반복해서 실패하나요? <a href="#" id="inv-try-popup">팝업으로 로그인 시도</a>
+      </div>
       <div id="inv-error" class="auth-error" style="display:none;"></div>
       <div id="inv-appcheck-hint" style="display:none; margin-top:.5rem; font-size:.9rem; color:#92400e; background:#fffbeb; border:1px solid #fde68a; padding:.5rem .75rem; border-radius:8px;">
         reCAPTCHA(App Check) 검증에 실패했습니다. 브라우저 확장(광고/추적 차단)을 잠시 비활성화하거나 시크릿 창에서 시도해 주세요. 문제가 지속되면 관리자에게 문의해 주세요.
@@ -230,6 +233,7 @@ hide_sidebar: true
             var last = sessionStorage.getItem('__lastOAuth') || 'google';
             var hint = '로그인 절차가 완료되지 않았습니다. 다음을 확인해 주세요:\n- 브라우저에서 서드파티 쿠키/리다이렉트가 차단되지 않았는지\n- 제공자 페이지에서 승인을 완료했는지(취소 버튼 누르지 않았는지)\n- Google의 경우 OAuth 동의화면이 테스트 모드면 테스터 목록에 현재 계정을 추가해야 합니다.';
             showError({ code:'auth/no-auth-event', message: '['+ last +'] ' + hint });
+            var fb = document.getElementById('inv-oauth-fallback'); if (fb) fb.style.display='block';
           } catch(_e){}
         }
       }).catch(function(e){
@@ -315,6 +319,16 @@ hide_sidebar: true
   if (btnG) btnG.addEventListener('click', function(e){ e.preventDefault(); oauth('google'); });
   if (btnA) btnA.addEventListener('click', function(e){ e.preventDefault(); oauth('apple'); });
   if (btnM) btnM.addEventListener('click', function(e){ e.preventDefault(); oauth('microsoft'); });
+  // Popup fallback
+  try {
+    var tryPopup = document.getElementById('inv-try-popup');
+    if (tryPopup) tryPopup.addEventListener('click', function(e){
+      e.preventDefault();
+      clearError();
+      var last = sessionStorage.getItem('__lastOAuth') || 'google';
+      AuthBridge.signInWithPopup(last).catch(showError);
+    });
+  } catch(_e){}
   // show password toggle
   try {
     var showPwd = document.getElementById('inv-showpwd');

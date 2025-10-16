@@ -230,6 +230,19 @@
             throw e;
           });
         },
+        signInWithPopup: function(name){
+          var p = providers[name];
+          if(!p) return Promise.reject(new Error('Provider not configured: '+name));
+          try {
+            if (sessionStorage.getItem('__authRedirecting') === '1') {
+              var err = new Error('Another auth operation is in progress');
+              err.code = 'auth/operation-in-progress';
+              return Promise.reject(err);
+            }
+            sessionStorage.setItem('__lastOAuth', name);
+          } catch(_e){}
+          return auth.signInWithPopup(p);
+        },
         getRedirectResult: function(){
           return auth.getRedirectResult().finally(function(){
             try { sessionStorage.removeItem('__authRedirecting'); } catch(_e){}
