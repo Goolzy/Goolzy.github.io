@@ -1,14 +1,24 @@
 {% comment %}
   Prefer explicit logo path if set; otherwise allow a wordmark-specific key.
 {% endcomment %}
-{% assign site_logo = site.logo_wordmark | default: site.logo | relative_url %}
+{%- assign default_logo = site.logo_wordmark | default: site.logo | relative_url -%}
+{%- assign inv_logo = site.logo_wordmark_inventory | default: site.logo_wordmark | default: site.logo | relative_url -%}
+{%- assign is_inventory = false -%}
+{%- if page.url == '/inventory/' or page.url contains '/inventory/' -%}
+  {%- assign is_inventory = true -%}
+{%- endif -%}
+{%- if is_inventory -%}
+  {%- assign site_logo = inv_logo -%}
+{%- else -%}
+  {%- assign site_logo = default_logo -%}
+{%- endif -%}
 
 <header id="masthead">
   <div class="inner">
     <div class="title-area">
       {% if page.url == '/' %}
         <h1 class="site-title">
-          <a href="{{ '/' | relative_url }}">
+          <a href="{% if is_inventory %}{{ '/inventory/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">
             {% if site.logo or site.logo_wordmark %}
               <img src="{{ site_logo }}" alt="{{ site.title | escape }}" class="site-logo{% if site.logo_wordmark %} site-logo--wordmark{% endif %}" onerror="this.style.display='none'">
             {% endif %}
@@ -17,7 +27,7 @@
         </h1>
       {% else %}
         <p class="site-title">
-          <a href="{{ '/' | relative_url }}">
+          <a href="{% if is_inventory %}{{ '/inventory/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">
             {% if site.logo or site.logo_wordmark %}
               <img src="{{ site_logo }}" alt="{{ site.title | escape }}" class="site-logo{% if site.logo_wordmark %} site-logo--wordmark{% endif %}" onerror="this.style.display='none'">
             {% endif %}

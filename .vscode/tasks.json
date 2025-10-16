@@ -9,6 +9,18 @@
 				"$gcc"
 			],
 			"group": "build"
+		},
+		{
+			"label": "Build Jekyll site",
+			"type": "shell",
+			"command": "bundle exec jekyll build --verbose --trace",
+			"group": "build"
+		},
+		{
+			"label": "Build Jekyll site",
+			"type": "shell",
+			"command": "bundle exec jekyll build --verbose --trace",
+			"group": "build"
 		}
 	]
 }

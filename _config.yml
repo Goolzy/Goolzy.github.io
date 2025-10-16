@@ -68,6 +68,7 @@ firebase:
 # - apple_touch_icon: 180px iOS icon
 logo: "/assets/images/logo-icon.png" # circle icon (purple/green)
 logo_wordmark: "/assets/images/logo-wordmark.png" # horizontal wordmark
+logo_wordmark_inventory: "/assets/images/inventory-wordmark.png" # inventory section wordmark
 logo_icon: "/assets/images/favicon.png"
 apple_touch_icon: "/assets/images/apple-touch-icon.png"
 search: # true, false (default)
