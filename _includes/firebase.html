@@ -34,24 +34,11 @@
         if (debugAppCheck) { try { self.FIREBASE_APPCHECK_DEBUG_TOKEN = true; } catch(_e){} }
         if (appCheckEnabled && appCheckCfg && appCheckCfg.site_key) {
           var autoRefresh = (appCheckCfg.auto_refresh !== false);
-          var provider = (appCheckCfg.provider || 'v3').toLowerCase(); // 'v3' | 'enterprise'
-          var src = null;
-          if (provider === 'enterprise') {
-            src = 'https://www.google.com/recaptcha/enterprise.js?render=' + encodeURIComponent(appCheckCfg.site_key);
-          } else {
-            src = 'https://www.google.com/recaptcha/api.js?render=' + encodeURIComponent(appCheckCfg.site_key);
-          }
-          var injectAndActivate = function(){ try { firebase.appCheck().activate(appCheckCfg.site_key, autoRefresh); window.__appCheckActivated = true; } catch(e){ console.warn('App Check activate error', e); window.__appCheckActivated = false; } };
-          // Preload explicit reCAPTCHA script to match provider and reduce extension/CSP hiccups
+          // Let Firebase SDK handle loading of reCAPTCHA v3; avoid custom injection to prevent CORS issues
           try {
-            var s = document.createElement('script');
-            s.src = src; s.async = true; s.defer = true; s.crossOrigin = 'anonymous';
-            s.onload = injectAndActivate;
-            s.onerror = function(){ console.warn('reCAPTCHA script load failed', src); injectAndActivate(); };
-            document.head.appendChild(s);
-            // Fallback timeout in case onload is suppressed
-            setTimeout(function(){ if (window.__appCheckActivated !== true) injectAndActivate(); }, 2000);
-          } catch(_e){ injectAndActivate(); }
+            firebase.appCheck().activate(appCheckCfg.site_key, autoRefresh);
+            window.__appCheckActivated = true;
+          } catch(e){ console.warn('App Check activate error', e); window.__appCheckActivated = false; }
         } else {
           window.__appCheckActivated = 'skipped';
         }
