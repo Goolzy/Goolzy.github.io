@@ -369,7 +369,17 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
       try {
         window.addEventListener('unhandledrejection', function(ev){
           var r = ev && ev.reason;
+          var code = (r && r.code) || '';
           var msg = (r && (r.code || r.message)) ? (String(r.code) + ' ' + String(r.message)) : String(r || '');
+          
+          // Ignore benign OAuth errors that are expected
+          var benignCodes = ['auth/no-auth-event', 'auth/user-cancelled', 'auth/popup-closed-by-user'];
+          if (benignCodes.indexOf(code) !== -1) {
+            ev.preventDefault && ev.preventDefault();
+            return;
+          }
+          
+          // Show actual auth errors
           if (/auth\//i.test(msg) || /signInWithPassword|INVALID_PASSWORD|EMAIL_NOT_FOUND|INVALID_LOGIN_CREDENTIALS/i.test(msg)){
             ev.preventDefault && ev.preventDefault();
             showError(r || { message: '로그인 중 오류가 발생했습니다.' });
