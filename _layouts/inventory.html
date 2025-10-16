@@ -7,7 +7,7 @@ hide_sidebar: true
     <div id="inv-locked" style="display:none;" class="center-login">
       <h2 style="text-align:center;">Inventory</h2>
       <p style="text-align:center;">이 페이지는 로그인 후 이용할 수 있습니다.</p>
-      <div class="card-glow" style="padding:1rem 1.25rem; border-radius:16px; max-width:420px; margin:0 auto;">
+  <div class="card-glow inv-login-card" style="padding:1rem 1.25rem; border-radius:16px; max-width:420px; margin:0 auto;">
       <form id="inv-login" onsubmit="return false;" class="auth-form">
         <label>이메일
           <input name="email" type="email" required placeholder="name@example.com" style="width:100%; padding:.5rem .6rem;">
@@ -15,14 +15,14 @@ hide_sidebar: true
         <label>비밀번호
           <input name="password" type="password" required minlength="8" placeholder="비밀번호(특수문자 1개 이상 포함 권장)" style="width:100%; padding:.5rem .6rem;">
         </label>
-        <div style="display:flex; gap:.5rem; flex-wrap:wrap;">
+        <div class="btn-row-center" style="display:flex; gap:.5rem; flex-wrap:wrap; justify-content:center;">
           <button class="btn" id="inv-email-signin"><span class="spinner" aria-hidden="true"></span><span class="btn-text">로그인</span></button>
           <button class="btn btn--alt-gradient" id="inv-email-signup"><span class="spinner" aria-hidden="true"></span><span class="btn-text">가입</span></button>
           <a class="btn btn--outline" href="/password-reset/">비밀번호 재설정</a>
         </div>
       </form>
       <div class="or">또는</div>
-      <div class="oauth-stack">
+      <div class="oauth-stack oauth-center">
         <a href="#" id="inv-google" class="oauth-btn" aria-label="Sign in with Google" role="button">
           <img src="/assets/images/auth/google-signin.svg" alt="Sign in with Google">
         </a>
@@ -178,7 +178,13 @@ hide_sidebar: true
 
 <style>
 .inventory-frame{ border:2px solid #7c3aed; border-radius:18px; padding:1rem; max-width:1024px; margin: 0 auto; }
-.center-login{ display:flex; flex-direction:column; gap:.5rem; }
+.center-login{ display:flex; flex-direction:column; gap:.5rem; align-items:center; }
+.inv-login-card{ text-align:center; }
+.inv-login-card .auth-form{ text-align:center; }
+.inv-login-card .auth-form label{ display:block; text-align:center; }
+.inv-login-card .auth-form input[type="email"],
+.inv-login-card .auth-form input[type="password"]{ width:100%; }
+.oauth-center{ align-items:center; }
 .subnav{ display:flex; gap:.5rem; flex-wrap:wrap; align-items:center; padding:.5rem 0 1rem; border-bottom:1px solid rgba(0,0,0,.08); }
 .subnav__link{ padding:.4rem .75rem; border-radius:999px; background:rgba(0,0,0,.04); border:1px solid rgba(0,0,0,.06); text-decoration:none; }
 .subnav__link.is-active{ background:linear-gradient(90deg, #7c3aed, #06b6d4); color:#fff; border-color:transparent; }

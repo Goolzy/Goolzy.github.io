@@ -281,8 +281,8 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
 <style>
 .card-glow{ border:1px solid rgba(0,0,0,.06); border-radius:16px; box-shadow:0 8px 24px rgba(0,0,0,.06); }
 .auth-center{ max-width: 360px; margin: 0 auto; text-align: center; }
-.auth-form{ text-align: left; }
-.auth-form label{ display:block; margin:.5rem 0; }
+.auth-form{ text-align: center; }
+.auth-form label{ display:block; margin:.5rem 0; text-align:center; }
 .auth-form input[type="email"],
 .auth-form input[type="password"]{ padding:.5rem .6rem; width:100%; }
 .agree-row{ display:flex; align-items:center; gap:.5rem; }
