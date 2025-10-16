@@ -252,23 +252,20 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
       }
     } catch(_e){}
     
-    // Prevent duplicate OAuth attempts
-    try {
-      var lastOAuth = sessionStorage.getItem('__lastOAuth');
-      var authRedirecting = sessionStorage.getItem('__authRedirecting');
-      if (authRedirecting === '1') {
-        console.log('OAuth operation already in progress');
-        return;
-      }
-    } catch(_e){}
-    
-    try { sessionStorage.setItem(POST_AUTH_REDIRECT_KEY, SUCCESS_REDIRECT); } catch(_e){}
     setOauthButtonsDisabled(true);
     clearError();
+    
+    // Store where to redirect after successful login
+    try { sessionStorage.setItem(POST_AUTH_REDIRECT_KEY, SUCCESS_REDIRECT); } catch(_e){}
+    
+    // Use redirect-based login
     AuthBridge.signInWith(name).catch(function(e){ 
       // Only show meaningful errors to users
-      if (e && e.code !== 'auth/no-auth-event' && e.code !== 'auth/popup-closed-by-user' && e.code !== 'auth/user-cancelled') {
+      var benignCodes = ['auth/no-auth-event', 'auth/popup-closed-by-user', 'auth/user-cancelled', 'auth/cancelled-popup-request'];
+      if (e && benignCodes.indexOf(e.code) === -1) {
         showError(e);
+      } else {
+        console.log('Login cancelled or no event:', e && e.code);
       }
       setOauthButtonsDisabled(false); 
     });
@@ -286,88 +283,46 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
     }
   } catch(_e){}
 
-  // Track if we're handling a redirect to avoid race conditions
-  var handlingRedirect = false;
-
-  // Complete redirect result silently on load (do this BEFORE state sync)
+  // Handle OAuth redirect result (similar to popup success flow)
   if (AuthBridge.getRedirectResult) {
-    handlingRedirect = true;
-    AuthBridge.getRedirectResult().then(function(res){
-      // Check if we have a user from redirect result
-      var user = (res && res.user) || null;
-      
-      // If we got a user from the redirect, this was a successful OAuth login
-      if (user && user.email) {
-        console.log('OAuth redirect successful, user:', user.email);
-        var dest = null;
+    AuthBridge.getRedirectResult().then(function(result){
+      // If we got a user from the redirect, login was successful
+      if (result && result.user && result.user.email) {
+        console.log('Redirect login successful:', result.user.email);
+        // Get where to redirect
+        var dest = SUCCESS_REDIRECT;
         try { 
-          dest = sessionStorage.getItem(POST_AUTH_REDIRECT_KEY); 
-          sessionStorage.removeItem(POST_AUTH_REDIRECT_KEY); 
+          var stored = sessionStorage.getItem(POST_AUTH_REDIRECT_KEY);
+          if (stored) dest = stored;
+          sessionStorage.removeItem(POST_AUTH_REDIRECT_KEY);
         } catch(_e){}
         
-        // Redirect to destination (default to home)
-        var redirectTo = dest || SUCCESS_REDIRECT;
-        console.log('Redirecting to:', redirectTo);
-        location.assign(redirectTo); 
+        console.log('Redirecting to:', dest);
+        location.assign(dest);
         return;
       }
       
-      // No user from redirect - check if user is already logged in from a previous session
-      try {
-        user = AuthBridge.currentUser();
-      } catch(_e){}
-      
-      if (user && user.email) {
-        console.log('User already logged in from previous session:', user.email);
-        // User is already logged in, just update UI
-        onSignedIn(user.email);
-      } else {
-        // No user found - clean up
-        try { sessionStorage.removeItem(POST_AUTH_REDIRECT_KEY); } catch(_e){}
-      }
+      // No user from redirect - just show current auth state
+      console.log('No redirect result, checking current user state');
     }).catch(function(e){
-      // Silently handle benign errors that are expected in normal flow
-      var benign = (e && (
-        e.code === 'auth/no-auth-event' || 
-        e.code === 'auth/user-cancelled' ||
-        e.code === 'auth/popup-closed-by-user'
-      ));
-      
-      if (benign) {
-        // Just clean up redirect flags, don't show error
+      // Silently handle expected errors
+      var benignCodes = ['auth/no-auth-event', 'auth/user-cancelled', 'auth/popup-closed-by-user'];
+      if (e && benignCodes.indexOf(e.code) !== -1) {
+        console.log('Benign redirect error:', e.code);
         try { sessionStorage.removeItem(POST_AUTH_REDIRECT_KEY); } catch(_e){}
-        console.log('OAuth redirect completed without sign-in (user may have cancelled)');
         return;
       }
       
-      if (e && e.code === 'auth/invalid-credential') {
-        // Recover: clear firebase session keys and sign out, then let user try again
-        try {
-          for (var i = sessionStorage.length - 1; i >= 0; i--) {
-            var k = sessionStorage.key(i);
-            if (k && k.indexOf('firebase:') === 0) sessionStorage.removeItem(k);
-          }
-        } catch(_e){}
-        try { AuthBridge.signOut && AuthBridge.signOut(); } catch(_e){}
-        showError({ code: 'auth/invalid-credential', message: '세션이 만료되어 로그인에 실패했습니다. 다시 시도해 주세요.' });
-        return;
+      // Show unexpected errors
+      if (e) {
+        console.error('Redirect error:', e);
+        showError(e);
       }
-      
-      // Only show unexpected errors
-      showError(e);
-    }).finally(function(){
-      handlingRedirect = false;
     });
   }
 
   // State sync - watch for auth state changes
   AuthBridge.onChange(function(user){
-    // Don't interfere if we're in the middle of handling a redirect
-    if (handlingRedirect) {
-      console.log('Skipping onChange while handling redirect');
-      return;
-    }
-    
     if(user && user.email){ 
       console.log('Auth state changed: user signed in', user.email);
       onSignedIn(user.email); 
