@@ -50,36 +50,40 @@ permalink: /inventory/suggest/
   }
   var form = document.getElementById('suggest-form');
   try { form.addEventListener('input', updateSubject); } catch(e){}
-  // Autofill from AuthBridge (email, uid)
+  // Autofill from AuthBridge (email, uid). If bridge loads late, wait for 'auth:bridge-ready'.
   try {
     var form = document.getElementById('suggest-form');
     var emailInput = form.querySelector('input[name="Email"]');
     var replyToInput = form.querySelector('input[name="_replyto"]');
     var uidInput = form.querySelector('input[name="uid"]');
     var emailText = document.getElementById('suggest-email-value');
-    if (window.AuthBridge) {
-      var user = AuthBridge.currentUser && AuthBridge.currentUser();
-      if (user && user.email) {
-        emailInput.value = user.email;
-        if (replyToInput) replyToInput.value = user.email;
-        if (emailText) emailText.textContent = user.email;
+    function applyUser(u){
+      if (u && u.email) {
+        emailInput.value = u.email;
+        if (replyToInput) replyToInput.value = u.email;
+        if (emailText) emailText.textContent = u.email;
       } else {
+        emailInput.value = '';
+        if (replyToInput) replyToInput.value = '';
         if (emailText) emailText.textContent = '알 수 없음';
       }
-      if (user && user.uid && uidInput) { uidInput.value = user.uid; }
-      AuthBridge.onChange(function(u){
-        if (u && u.email) {
-          emailInput.value = u.email;
-          if (replyToInput) replyToInput.value = u.email;
-          if (emailText) emailText.textContent = u.email;
-        } else {
-          emailInput.value = '';
-          if (replyToInput) replyToInput.value = '';
-          if (emailText) emailText.textContent = '알 수 없음';
-        }
-        if (uidInput) uidInput.value = (u && u.uid) ? u.uid : '';
-      });
+      if (uidInput) uidInput.value = (u && u.uid) ? u.uid : '';
     }
+    function wireBridge(){
+      if (!window.AuthBridge) return;
+      try {
+        var u0 = AuthBridge.currentUser && AuthBridge.currentUser();
+        applyUser(u0 || null);
+        AuthBridge.onChange(function(u){ applyUser(u || null); });
+      } catch(_){ }
+    }
+    if (window.AuthBridge) { wireBridge(); }
+    try { window.addEventListener('auth:bridge-ready', function(){ wireBridge(); }, { once: true }); } catch(_){ }
+    setTimeout(function(){
+      try {
+        if (emailText && emailText.textContent === '확인 중…') { emailText.textContent = '알 수 없음'; }
+      } catch(_){ }
+    }, 3000);
   } catch(e){}
   // AJAX submit with timeout and fallback
   try {
@@ -98,23 +102,40 @@ permalink: /inventory/suggest/
       var fd = new FormData(form);
       var ctrl = (window.AbortController) ? new AbortController() : null;
       var to = setTimeout(function(){ try { ctrl && ctrl.abort(); } catch(_){} }, 12000);
+      if (typeof navigator !== 'undefined' && navigator.onLine === false) {
+        if (status) { status.style.display='block'; status.textContent='네트워크가 오프라인입니다. 연결 상태를 확인한 뒤 다시 시도해 주세요.'; }
+        throw new Error('OFFLINE');
+      }
       fetch('https://formsubmit.co/ajax/captain@goolzy.com', {
         method: 'POST',
         body: fd,
         headers: { 'Accept': 'application/json' },
         signal: ctrl ? ctrl.signal : undefined
       }).then(function(res){
-        if (!res.ok) throw new Error('FORM_SUBMIT_FAILED:' + res.status);
+        if (!res.ok) {
+          return res.clone().json().catch(function(){ return res.text(); }).then(function(body){
+            var bodyStr = (typeof body === 'string') ? body : JSON.stringify(body);
+            throw new Error('FORM_SUBMIT_FAILED:' + res.status + ':' + bodyStr);
+          });
+        }
         return res.json();
       }).then(function(){
         if (status) { status.style.display='block'; status.textContent='감사합니다! 제안이 전송되었습니다.'; }
         try { form.reset(); } catch(_){ }
       }).catch(function(err){
+        try { console.error('[Suggest form] submit error:', err); } catch(_){ }
         var msg = '전송에 실패했습니다. 잠시 후 다시 시도해 주세요.';
         if (String(err).indexOf('403')>=0 || String(err).indexOf('401')>=0 || String(err).indexOf('422')>=0) {
           msg += ' 수신자 이메일 인증이 완료되지 않았을 수 있습니다. 관리자는 formsubmit.co 확인 메일(스팸함 포함)을 승인해 주세요.';
         }
-        if (status) { status.style.display='block'; status.textContent = msg + ' (표준 제출로 재시도합니다)'; }
+        if (status) {
+          var code = (String(err).match(/FORM_SUBMIT_FAILED:(\d{3})/)||[])[1];
+          var detail = '';
+          var m = String(err).match(/FORM_SUBMIT_FAILED:\d{3}:(.*)$/);
+          if (m && m[1]) detail = ' 상세: ' + m[1].slice(0, 200);
+          status.style.display='block';
+          status.textContent = msg + (code ? ' (코드 ' + code + ')' : '') + detail + ' (표준 제출로 재시도합니다)';
+        }
         // Fallback: submit in the same tab
         try { form.removeAttribute('target'); form.submit(); } catch(_){ }
       }).finally(function(){ if (btn) { btn.disabled=false; btn.classList.remove('loading'); } });

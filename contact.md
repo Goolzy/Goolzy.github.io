@@ -77,23 +77,40 @@ description: 파트너십·계약·납품 관련 문의를 받습니다.
 			var fd = new FormData(form);
 				var ctrl = (window.AbortController) ? new AbortController() : null;
 				var to = setTimeout(function(){ try { ctrl && ctrl.abort(); } catch(_){} }, 12000);
+				if (typeof navigator !== 'undefined' && navigator.onLine === false) {
+					if (status) { status.style.display='block'; status.textContent='네트워크가 오프라인입니다. 연결 상태를 확인한 뒤 다시 시도해 주세요.'; }
+					throw new Error('OFFLINE');
+				}
 				fetch('https://formsubmit.co/ajax/captain@goolzy.com', {
 				method: 'POST',
 				body: fd,
 					headers: { 'Accept': 'application/json' },
 					signal: ctrl ? ctrl.signal : undefined
 			}).then(function(res){
-				if (!res.ok) throw new Error('FORM_SUBMIT_FAILED:' + res.status);
+				if (!res.ok) {
+					return res.clone().json().catch(function(){ return res.text(); }).then(function(body){
+						var bodyStr = (typeof body === 'string') ? body : JSON.stringify(body);
+						throw new Error('FORM_SUBMIT_FAILED:' + res.status + ':' + bodyStr);
+					});
+				}
 				return res.json();
 			}).then(function(){
 				if (status) { status.style.display='block'; status.textContent='감사합니다! 문의가 전송되었습니다. 곧 연락드리겠습니다.'; }
 				try { form.reset(); } catch(_){ }
 			}).catch(function(err){
+					try { console.error('[Contract form] submit error:', err); } catch(_){ }
 					var msg = '전송에 실패했습니다. 잠시 후 다시 시도해 주세요.';
 				if (String(err).indexOf('403')>=0 || String(err).indexOf('401')>=0 || String(err).indexOf('422')>=0) {
 					msg += ' 수신자 이메일 인증이 완료되지 않았을 수 있습니다. 관리자는 수신함(스팸함 포함)에서 formsubmit.co 확인 메일을 승인해 주세요.';
 				}
-					if (status) { status.style.display='block'; status.textContent = msg + ' (표준 제출로 재시도합니다)'; }
+					if (status) {
+						var code = (String(err).match(/FORM_SUBMIT_FAILED:(\d{3})/)||[])[1];
+						var detail = '';
+						var m = String(err).match(/FORM_SUBMIT_FAILED:\d{3}:(.*)$/);
+						if (m && m[1]) detail = ' 상세: ' + m[1].slice(0, 200);
+						status.style.display='block';
+						status.textContent = msg + (code ? ' (코드 ' + code + ')' : '') + detail + ' (표준 제출로 재시도합니다)';
+					}
 					// 폴백: 동일 탭 표준 POST 제출로 재시도
 					try {
 						form.removeAttribute('target');
