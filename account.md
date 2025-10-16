@@ -22,7 +22,10 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
           <input name="email" type="email" required placeholder="name@example.com">
         </label>
         <label>비밀번호
-          <input name="password" type="password" required minlength="8" placeholder="8자 이상 (특수문자 포함)">
+          <input id="acc-password" name="password" type="password" required minlength="8" placeholder="8자 이상 (특수문자 포함)">
+          <small style="display:block; margin-top:.25rem;">
+            <label style="user-select:none; cursor:pointer;"><input id="acc-showpwd" type="checkbox" style="vertical-align:middle;"> <span style="vertical-align:middle;">비밀번호 표시</span></label>
+          </small>
           {% if site.firebase and site.firebase.enabled %}
           <small style="display:block; color:rgba(0,0,0,.6);">현재 정책: 특수문자 1개 이상 포함 필수</small>
           {% endif %}
@@ -209,6 +212,21 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
 
   function mapError(e){
     var code = e && e.code || '';
+    var srv = '';
+    try { srv = (e && e.customData && e.customData._serverResponse && e.customData._serverResponse.error && e.customData._serverResponse.error.message) || ''; } catch(_e){}
+    var upper = String(srv || '').toUpperCase();
+    if (code === 'auth/network-request-failed' || /FAILED TO FETCH|NETWORK/i.test(String(e && e.message || ''))) {
+      return '네트워크 오류로 요청이 실패했습니다. 광고/추적 차단기, 방화벽/VPN 설정을 확인하거나 다른 브라우저에서 시도해 주세요.';
+    }
+    if (upper.indexOf('INVALID_PASSWORD') >= 0 || upper.indexOf('INVALID_LOGIN_CREDENTIALS') >= 0) {
+      return '이메일 또는 비밀번호가 일치하지 않습니다. 대소문자/한영 전환을 확인하거나 비밀번호 재설정을 이용해 주세요.';
+    }
+    if (upper.indexOf('EMAIL_NOT_FOUND') >= 0) {
+      return '등록되지 않은 이메일입니다. 먼저 가입을 진행해 주세요.';
+    }
+    if (upper.indexOf('USER_DISABLED') >= 0) {
+      return '해당 계정은 비활성화되어 있습니다. 관리자에게 문의해 주세요.';
+    }
     switch(code){
       case 'auth/unauthorized-domain': return '현재 사이트 도메인이 Firebase에 등록되지 않았습니다. 관리자에게 문의해 주세요.';
       case 'auth/popup-blocked': return '팝업이 차단되었습니다. 브라우저 팝업 허용 후 다시 시도해 주세요.';
@@ -232,6 +250,15 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
   btnGoogle.addEventListener('click', function(ev){ ev.preventDefault(); oauth('google'); });
   btnApple.addEventListener('click', function(ev){ ev.preventDefault(); oauth('apple'); });
   btnMs.addEventListener('click', function(ev){ ev.preventDefault(); oauth('microsoft'); });
+
+  // show password toggle
+  try {
+    var showPwd = document.getElementById('acc-showpwd');
+    var pwdInput = document.getElementById('acc-password');
+    if (showPwd && pwdInput) {
+      showPwd.addEventListener('change', function(){ pwdInput.type = showPwd.checked ? 'text' : 'password'; });
+    }
+  } catch(_e){}
 
   // State sync
   AuthBridge.onChange(function(user){
