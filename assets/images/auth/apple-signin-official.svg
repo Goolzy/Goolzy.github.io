@@ -1,0 +1,7 @@
+<svg width="280" height="44" viewBox="0 0 280 44" xmlns="http://www.w3.org/2000/svg">
+  <rect width="280" height="44" rx="10" fill="#FFFFFF" stroke="#D1D1D6" stroke-width="1"/>
+  <g transform="translate(24, 11)">
+    <path fill="#000000" d="M7.5 0C6.3 0 …"/>
+  </g>
+  <text x="70" y="28" font-family="SF Pro, -apple-system, BlinkMacSystemFont, ... " font-size="16" fill="#000000">Sign in with Apple</text>
+</svg>
