@@ -286,42 +286,43 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
     }
   } catch(_e){}
 
-  // State sync
-  AuthBridge.onChange(function(user){
-    if(user && user.email){ onSignedIn(user.email); } else { onSignedOut(); }
-  });
+  // Track if we're handling a redirect to avoid race conditions
+  var handlingRedirect = false;
 
-  // Complete redirect result silently on load
+  // Complete redirect result silently on load (do this BEFORE state sync)
   if (AuthBridge.getRedirectResult) {
+    handlingRedirect = true;
     AuthBridge.getRedirectResult().then(function(res){
-      // Check if we have a user from redirect result or current session
+      // Check if we have a user from redirect result
       var user = (res && res.user) || null;
       
-      // If redirect didn't return a user, check current user state
-      if (!user) {
-        try {
-          user = AuthBridge.currentUser();
-        } catch(_e){}
-      }
-      
-      // If user is authenticated, handle redirect
+      // If we got a user from the redirect, this was a successful OAuth login
       if (user && user.email) {
+        console.log('OAuth redirect successful, user:', user.email);
         var dest = null;
         try { 
           dest = sessionStorage.getItem(POST_AUTH_REDIRECT_KEY); 
           sessionStorage.removeItem(POST_AUTH_REDIRECT_KEY); 
         } catch(_e){}
         
-        // Only redirect if we have a destination and it's different from current page
-        if (dest && dest !== location.pathname) { 
-          location.assign(dest); 
-          return;
-        }
-        
+        // Redirect to destination (default to home)
+        var redirectTo = dest || SUCCESS_REDIRECT;
+        console.log('Redirecting to:', redirectTo);
+        location.assign(redirectTo); 
+        return;
+      }
+      
+      // No user from redirect - check if user is already logged in from a previous session
+      try {
+        user = AuthBridge.currentUser();
+      } catch(_e){}
+      
+      if (user && user.email) {
+        console.log('User already logged in from previous session:', user.email);
+        // User is already logged in, just update UI
         onSignedIn(user.email);
       } else {
-        // No user found - this is normal when page loads without a redirect
-        // Clear any redirect flags
+        // No user found - clean up
         try { sessionStorage.removeItem(POST_AUTH_REDIRECT_KEY); } catch(_e){}
       }
     }).catch(function(e){
@@ -354,8 +355,27 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
       
       // Only show unexpected errors
       showError(e);
+    }).finally(function(){
+      handlingRedirect = false;
     });
   }
+
+  // State sync - watch for auth state changes
+  AuthBridge.onChange(function(user){
+    // Don't interfere if we're in the middle of handling a redirect
+    if (handlingRedirect) {
+      console.log('Skipping onChange while handling redirect');
+      return;
+    }
+    
+    if(user && user.email){ 
+      console.log('Auth state changed: user signed in', user.email);
+      onSignedIn(user.email); 
+    } else { 
+      console.log('Auth state changed: user signed out');
+      onSignedOut(); 
+    }
+  });
 
       // Verification actions
       if (btnSendVerify) btnSendVerify.addEventListener('click', function(){
