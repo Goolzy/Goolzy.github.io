@@ -47,7 +47,9 @@ firebase:
   # Generate site key in Firebase Console → Build → App Check → Web app → reCAPTCHA v3, then paste here.
   app_check:
     enabled: true
-    site_key: "6Lc_-usrAAAAAMWrUjnrmFxM76mAKWfKT14SJPva" # e.g., 6Lc... (leave empty to disable)
+    site_key: "6Lc_-usrAAAAAMWrUjnrmFxM76mAKWfKT14SJPva" # backward-compatible default
+    site_key_v3: "" # optional; if provided and provider=v3, use this; else falls back to site_key
+    site_key_enterprise: "" # optional; if provided and provider=enterprise, use this; else falls back to site_key
     auto_refresh: true
     debug: false # set true or use ?appcheck=debug to enable debug token
     provider: v3 # v3 or enterprise

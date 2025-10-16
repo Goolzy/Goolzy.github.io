@@ -28,15 +28,21 @@
       try {
         var appCheckCfg = (siteFirebase && siteFirebase.app_check) || {};
         var qs = (location && location.search) ? location.search : '';
-        var appCheckEnabled = (appCheckCfg && appCheckCfg.enabled === false) ? false : true;
+  var appCheckEnabled = (appCheckCfg && appCheckCfg.enabled === false) ? false : true;
+  try { if (sessionStorage.getItem('__disable_appcheck') === '1') appCheckEnabled = false; } catch(_e){}
         if (qs.indexOf('appcheck=off') !== -1) appCheckEnabled = false;
         var debugAppCheck = !!(appCheckCfg && appCheckCfg.debug) || (qs.indexOf('appcheck=debug') !== -1);
         if (debugAppCheck) { try { self.FIREBASE_APPCHECK_DEBUG_TOKEN = true; } catch(_e){} }
-        if (appCheckEnabled && appCheckCfg && appCheckCfg.site_key) {
+        if (appCheckEnabled && appCheckCfg) {
           var autoRefresh = (appCheckCfg.auto_refresh !== false);
-          // Let Firebase SDK handle loading of reCAPTCHA v3; avoid custom injection to prevent CORS issues
+          var provider = (appCheckCfg.provider || 'v3').toLowerCase();
+          var key = appCheckCfg.site_key;
+          if (provider === 'enterprise' && appCheckCfg.site_key_enterprise) key = appCheckCfg.site_key_enterprise;
+          if (provider === 'v3' && appCheckCfg.site_key_v3) key = appCheckCfg.site_key_v3;
+          if (!key) { window.__appCheckActivated = 'skipped'; }
+          // Let Firebase SDK handle loading of reCAPTCHA; avoid custom injection to prevent CORS issues
           try {
-            firebase.appCheck().activate(appCheckCfg.site_key, autoRefresh);
+            firebase.appCheck().activate(key, autoRefresh);
             window.__appCheckActivated = true;
           } catch(e){ console.warn('App Check activate error', e); window.__appCheckActivated = false; }
         } else {
@@ -73,11 +79,34 @@
       }
 
       // Bridge
+      function maybeDisableAppCheckAndReload(err){
+        try {
+          var msg = (err && (err.code || err.message)) ? (String(err.code) + ' ' + String(err.message)) : '';
+          if (/appcheck|recaptcha/i.test(msg)){
+            sessionStorage.setItem('__disable_appcheck', '1');
+            var url = location.pathname + location.search + (location.search ? '&' : '?') + 'appcheck=off';
+            location.replace(url);
+            return true;
+          }
+        } catch(_e){}
+        return false;
+      }
+
       window.AuthBridge = {
         onChange: function(cb){ return auth.onAuthStateChanged(cb); },
         currentUser: function(){ return auth.currentUser; },
-        emailSignUp: function(email, password){ return auth.createUserWithEmailAndPassword(email, password); },
-        emailSignIn: function(email, password){ return auth.signInWithEmailAndPassword(email, password); },
+        emailSignUp: function(email, password){
+          return auth.createUserWithEmailAndPassword(email, password).catch(function(e){
+            if (maybeDisableAppCheckAndReload(e)) return new Promise(function(){});
+            throw e;
+          });
+        },
+        emailSignIn: function(email, password){
+          return auth.signInWithEmailAndPassword(email, password).catch(function(e){
+            if (maybeDisableAppCheckAndReload(e)) return new Promise(function(){});
+            throw e;
+          });
+        },
         sendPasswordReset: function(email){
           try {
             var acs = undefined;
@@ -109,7 +138,10 @@
               if (k && k.indexOf('firebase:') === 0) sessionStorage.removeItem(k);
             }
           } catch(_e){}
-          return auth.signOut().catch(function(){ /* ignore */ }).then(doRedirect);
+          return auth.signOut().catch(function(){ /* ignore */ }).then(doRedirect).catch(function(e){
+            if (maybeDisableAppCheckAndReload(e)) return new Promise(function(){});
+            throw e;
+          });
         },
         getRedirectResult: function(){
           return auth.getRedirectResult().finally(function(){
