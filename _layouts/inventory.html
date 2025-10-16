@@ -179,11 +179,21 @@ hide_sidebar: true
     clearError();
     saveRedirect();
     
-    // Use REDIRECT instead of popup (better for mobile)
-    AuthBridge.signInWith(provider).catch(function(e){
-      if(e && e.code !== 'auth/no-auth-event'){
-        showError(e.message || 'OAuth 로그인 실패');
+    // Use POPUP (more reliable)
+    AuthBridge.signInWithPopup(provider).then(function(result){
+      var dest = '/inventory/';
+      try {
+        var stored = sessionStorage.getItem(POST_AUTH_KEY);
+        if(stored) dest = stored;
+        sessionStorage.removeItem(POST_AUTH_KEY);
+      } catch(e){}
+      
+      setTimeout(function(){ location.assign(dest); }, 100);
+    }).catch(function(e){
+      if(e && (e.code === 'auth/popup-closed-by-user' || e.code === 'auth/user-cancelled')){
+        return;
       }
+      showError(e.message || 'OAuth 로그인 실패');
     });
   }
 
