@@ -20,7 +20,8 @@
         <h1 class="site-title">
           <a href="{% if is_inventory %}{{ '/inventory/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">
             {% if site.logo or site.logo_wordmark %}
-              <img src="{{ site_logo }}" alt="{{ site.title | escape }}" class="site-logo{% if site.logo_wordmark %} site-logo--wordmark{% endif %}" onerror="this.style.display='none'">
+        <img src="{{ site_logo }}?v={{ site.github.build_revision | default: site.time | date: '%s' }}" alt="{{ site.title | escape }}" class="site-logo{% if site.logo_wordmark %} site-logo--wordmark{% endif %}"
+          onerror="this.onerror=null; this.src='{{ default_logo }}?v={{ site.github.build_revision | default: site.time | date: '%s' }}';">
             {% endif %}
             {% unless site.logo_wordmark %}<span>{{ site.title | escape }}</span>{% endunless %}
           </a>
@@ -29,18 +30,19 @@
         <p class="site-title">
           <a href="{% if is_inventory %}{{ '/inventory/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">
             {% if site.logo or site.logo_wordmark %}
-              <img src="{{ site_logo }}" alt="{{ site.title | escape }}" class="site-logo{% if site.logo_wordmark %} site-logo--wordmark{% endif %}" onerror="this.style.display='none'">
+        <img src="{{ site_logo }}?v={{ site.github.build_revision | default: site.time | date: '%s' }}" alt="{{ site.title | escape }}" class="site-logo{% if site.logo_wordmark %} site-logo--wordmark{% endif %}"
+          onerror="this.onerror=null; this.src='{{ default_logo }}?v={{ site.github.build_revision | default: site.time | date: '%s' }}';">
             {% endif %}
             {% unless site.logo_wordmark %}<span>{{ site.title | escape }}</span>{% endunless %}
           </a>
         </p>
       {% endif %}
     </div>
-    {% unless page.layout == 'inventory' %}
+    {% if page.url == '/inventory/' or page.url contains '/inventory/' %}
     <div class="masthead-account" aria-label="Account actions" style="margin-left:auto; display:flex; align-items:center; gap:.5rem;">
       <button id="mh-logout" class="btn" type="button" style="display:none; padding:.25rem .6rem; font-size:.9rem;">로그아웃</button>
     </div>
-    {% endunless %}
+    {% endif %}
   </div>
 </header>
 

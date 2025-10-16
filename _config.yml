@@ -94,15 +94,13 @@ feed:
 nav:
   - title: "About"
     url: /about/
-  - title: "Talisman"
-    url: /Talisman/
-  - title: "News"
-    url: /news/
-  - title: "Feedback"
-    url: /feedback/
   - title: "Inventory"
     url: /inventory/
     target: _blank
+  - title: "News"
+    url: /news/
+  - title: "Contract"
+    url: /contact/
 
 permalink: /:title/
 
