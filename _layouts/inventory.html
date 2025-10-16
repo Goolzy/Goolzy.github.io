@@ -182,10 +182,32 @@ hide_sidebar: true
   function oauth(provider){
     clearError();
     saveRedirect();
-    AuthBridge.signInWith(provider).catch(function(e){
-      if(e && e.code !== 'auth/no-auth-event'){
-        showError(e.message || 'OAuth 로그인 실패');
+    
+    console.log('Inventory OAuth 시작:', provider);
+    
+    // Use POPUP instead of redirect
+    AuthBridge.signInWithPopup(provider).then(function(result){
+      console.log('Inventory popup 로그인 성공:', result.user.email);
+      
+      // Get redirect destination
+      var dest = '/inventory/';
+      try {
+        var stored = sessionStorage.getItem(POST_AUTH_KEY);
+        if(stored) dest = stored;
+        sessionStorage.removeItem(POST_AUTH_KEY);
+      } catch(e){}
+      
+      // Redirect after short delay
+      setTimeout(function(){ 
+        console.log('Inventory 리다이렉트:', dest);
+        location.assign(dest);
+      }, 100);
+    }).catch(function(e){
+      if(e && (e.code === 'auth/popup-closed-by-user' || e.code === 'auth/user-cancelled')){
+        console.log('팝업 취소됨');
+        return;
       }
+      showError(e.message || 'OAuth 로그인 실패');
     });
   }
 
