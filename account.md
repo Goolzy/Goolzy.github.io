@@ -241,40 +241,31 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
     [btnGoogle, btnApple, btnMs].forEach(function(el){ if(!el) return; el.style.pointerEvents = disabled ? 'none' : ''; el.style.opacity = disabled ? .6 : 1; });
     if (oauthProgress) oauthProgress.style.display = disabled ? 'block' : 'none';
   }
+  // OAuth login function
   function oauth(name){
-    // Check if user is already signed in
-    try {
-      var currentUser = AuthBridge.currentUser && AuthBridge.currentUser();
-      if (currentUser && currentUser.email) {
-        // User is already logged in, redirect to home
-        location.assign(SUCCESS_REDIRECT);
-        return;
-      }
-    } catch(_e){}
+    if (!window.AuthBridge) { 
+      showError({message:'인증 모듈이 초기화되지 않았습니다.'}); 
+      return; 
+    }
     
-    setOauthButtonsDisabled(true);
     clearError();
+    setOauthButtonsDisabled(true);
     
-    // Store where to redirect after successful login
+    // Store redirect destination
     try { sessionStorage.setItem(POST_AUTH_REDIRECT_KEY, SUCCESS_REDIRECT); } catch(_e){}
     
-    // Use redirect-based login
+    // Use redirect-based OAuth
     AuthBridge.signInWith(name).catch(function(e){ 
-      // Only show meaningful errors to users
-      var benignCodes = ['auth/no-auth-event', 'auth/popup-closed-by-user', 'auth/user-cancelled', 'auth/cancelled-popup-request'];
-      if (e && benignCodes.indexOf(e.code) === -1) {
-        showError(e);
-      } else {
-        console.log('Login cancelled or no event:', e && e.code);
-      }
       setOauthButtonsDisabled(false); 
+      showError(e);
     });
   }
+  
   btnGoogle.addEventListener('click', function(ev){ ev.preventDefault(); oauth('google'); });
   btnApple.addEventListener('click', function(ev){ ev.preventDefault(); oauth('apple'); });
   btnMs.addEventListener('click', function(ev){ ev.preventDefault(); oauth('microsoft'); });
 
-  // show password toggle
+  // Show password toggle
   try {
     var showPwd = document.getElementById('acc-showpwd');
     var pwdInput = document.getElementById('acc-password');
@@ -283,54 +274,39 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
     }
   } catch(_e){}
 
-  // Handle OAuth redirect result (similar to popup success flow)
-  if (AuthBridge.getRedirectResult) {
+  // Handle redirect result on page load
+  if (window.AuthBridge && AuthBridge.getRedirectResult) {
     AuthBridge.getRedirectResult().then(function(result){
-      // If we got a user from the redirect, login was successful
-      if (result && result.user && result.user.email) {
-        console.log('Redirect login successful:', result.user.email);
-        // Get where to redirect
+      if (result && result.user) {
+        // OAuth login successful - redirect to destination
         var dest = SUCCESS_REDIRECT;
         try { 
           var stored = sessionStorage.getItem(POST_AUTH_REDIRECT_KEY);
           if (stored) dest = stored;
           sessionStorage.removeItem(POST_AUTH_REDIRECT_KEY);
         } catch(_e){}
-        
-        console.log('Redirecting to:', dest);
         location.assign(dest);
-        return;
       }
-      
-      // No user from redirect - just show current auth state
-      console.log('No redirect result, checking current user state');
     }).catch(function(e){
-      // Silently handle expected errors
-      var benignCodes = ['auth/no-auth-event', 'auth/user-cancelled', 'auth/popup-closed-by-user'];
-      if (e && benignCodes.indexOf(e.code) !== -1) {
-        console.log('Benign redirect error:', e.code);
-        try { sessionStorage.removeItem(POST_AUTH_REDIRECT_KEY); } catch(_e){}
+      // Ignore benign errors
+      if (e && (e.code === 'auth/no-auth-event' || e.code === 'auth/user-cancelled' || e.code === 'auth/popup-closed-by-user')) {
         return;
       }
-      
-      // Show unexpected errors
-      if (e) {
-        console.error('Redirect error:', e);
-        showError(e);
-      }
+      // Show other errors
+      if (e) showError(e);
     });
   }
 
-  // State sync - watch for auth state changes
-  AuthBridge.onChange(function(user){
-    if(user && user.email){ 
-      console.log('Auth state changed: user signed in', user.email);
-      onSignedIn(user.email); 
-    } else { 
-      console.log('Auth state changed: user signed out');
-      onSignedOut(); 
-    }
-  });
+  // Auth state listener
+  if (window.AuthBridge && AuthBridge.onChange) {
+    AuthBridge.onChange(function(user){
+      if (user && user.email) { 
+        onSignedIn(user.email); 
+      } else { 
+        onSignedOut(); 
+      }
+    });
+  }
 
       // Verification actions
       if (btnSendVerify) btnSendVerify.addEventListener('click', function(){
