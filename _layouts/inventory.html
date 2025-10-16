@@ -4,6 +4,9 @@ hide_sidebar: true
 ---
 <div id="inventory-root">
   <div class="inventory-frame">
+    <div id="inv-loading" class="center-login" aria-live="polite" style="padding:1.25rem 0;">
+      <p style="text-align:center; margin:.25rem 0 .5rem;">로딩 중…</p>
+    </div>
     <div id="inv-locked" style="display:none;" class="center-login">
       <h2 style="text-align:center;">Inventory</h2>
       <p style="text-align:center;">이 페이지는 로그인 후 이용할 수 있습니다.</p>
@@ -112,8 +115,8 @@ hide_sidebar: true
     });
   } catch(_e){}
 
-  function show(section){ section.style.display=''; }
-  function hide(section){ section.style.display='none'; }
+  function show(section){ if(section) section.style.display=''; }
+  function hide(section){ if(section) section.style.display='none'; }
   // Prepare admin hint content
   try {
     var CURRENT_HOST = (location && location.host) ? location.host : '';
@@ -176,16 +179,22 @@ hide_sidebar: true
 
   function guard(){ if(!window.AuthBridge){ showError({message:'인증 모듈이 초기화되지 않았습니다.'}); return false; } return true; }
   function isVerified(u){ return !!(u && (u.emailVerified || (u.providerData && u.providerData.some(function(p){ return p.providerId !== 'password'; })))); }
-  function showVerified(){ hide(locked); if(unverified) hide(unverified); show(unlocked); }
-  function showUnverified(){ hide(locked); if(unverified) show(unverified); hide(unlocked); }
+  function showVerified(){ hide(locked); if(unverified) hide(unverified); hide(document.getElementById('inv-loading')); show(unlocked); }
+  function showUnverified(){ hide(locked); if(unverified) show(unverified); hide(document.getElementById('inv-loading')); hide(unlocked); }
+  function showLocked(){ show(locked); if(unverified) hide(unverified); hide(document.getElementById('inv-loading')); hide(unlocked); }
   function update(user){
     if (user) { if (isVerified(user)) showVerified(); else showUnverified(); }
-    else { show(locked); if(unverified) hide(unverified); hide(unlocked); }
+    else { showLocked(); }
   }
 
   function initGate(){
-    try { var u = (AuthBridge && AuthBridge.currentUser && AuthBridge.currentUser()) || null; update(u); } catch(_e){}
-    AuthBridge && AuthBridge.onChange && AuthBridge.onChange(update);
+    // Defer UI decision until the first auth state event to avoid flicker
+    var firstResolved = false;
+    if (AuthBridge && AuthBridge.onChange) {
+      AuthBridge.onChange(function(u){ if (!firstResolved) { firstResolved = true; } update(u); });
+    }
+    // Fallback: if no event arrives quickly, use currentUser snapshot
+    setTimeout(function(){ if (!firstResolved) { try { update(AuthBridge && AuthBridge.currentUser && AuthBridge.currentUser()); } catch(_e){} } }, 800);
     if (AuthBridge && AuthBridge.getRedirectResult) {
       AuthBridge.getRedirectResult().then(function(res){
         var user = (res && res.user) || (AuthBridge.currentUser && AuthBridge.currentUser());
