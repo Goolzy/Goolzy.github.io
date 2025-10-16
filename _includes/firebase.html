@@ -219,6 +219,7 @@
               return Promise.reject(err);
             }
             sessionStorage.setItem('__authRedirecting', '1');
+            sessionStorage.setItem('__lastOAuth', name);
             // Respect any pre-set redirect by the page (e.g., inventory wants to return to current path)
             if (!sessionStorage.getItem('postAuthRedirect')) {
               sessionStorage.setItem('postAuthRedirect', '/');
@@ -245,6 +246,34 @@
         }
       };
   try { window.dispatchEvent(new CustomEvent('auth:bridge-ready')); } catch(_e){}
+      // Handle email action codes present in URL (e.g., verifyEmail) to prevent generic errors on normal pages
+      try {
+        var qs2 = (location && location.search) ? new URLSearchParams(location.search) : null;
+        var mode = qs2 ? (qs2.get('mode') || qs2.get('MODE')) : null;
+        var oob = qs2 ? (qs2.get('oobCode') || qs2.get('oobcode')) : null;
+        if (mode && oob) {
+          if (String(mode).toLowerCase() === 'verifyemail') {
+            auth.applyActionCode(oob).then(function(){
+              try { window.__actionApplied = 'verifyEmail:success'; auth.currentUser && auth.currentUser.reload && auth.currentUser.reload(); } catch(_e){}
+            }).catch(function(e){
+              try { window.__actionError = e; } catch(_e){}
+            }).finally(function(){
+              try {
+                // Clean URL params to avoid repeated handling and spurious errors
+                var url = new URL(location.href);
+                url.searchParams.delete('mode');
+                url.searchParams.delete('oobCode');
+                url.searchParams.delete('continueUrl');
+                history.replaceState({}, document.title, url.toString());
+              } catch(_e){}
+            });
+          }
+          // For resetPassword action, forward to dedicated page with oobCode preserved
+          if (String(mode).toLowerCase() === 'resetpassword') {
+            try { location.assign('/password-reset/?oobCode=' + encodeURIComponent(oob)); } catch(_e){}
+          }
+        }
+      } catch(_e){}
     } catch(e) {
       console.error('Firebase init error', e);
     }
