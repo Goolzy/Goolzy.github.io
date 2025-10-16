@@ -209,7 +209,7 @@
         signInWith: function(name){
           var p = providers[name];
           if(!p) return Promise.reject(new Error('Provider not configured: '+name));
-          // Redirect-only to avoid popup windows; sign out first to clear stale sessions
+          // Redirect-only to avoid popup windows (no pre signOut to preserve redirect metadata)
           var doRedirect = function(){ return auth.signInWithRedirect(p); };
           try {
             // guard against multiple concurrent requests
@@ -223,13 +223,8 @@
             if (!sessionStorage.getItem('postAuthRedirect')) {
               sessionStorage.setItem('postAuthRedirect', '/');
             }
-            // Best-effort: clear any previous firebase:* entries that may cause stale credentials
-            for (var i = sessionStorage.length - 1; i >= 0; i--) {
-              var k = sessionStorage.key(i);
-              if (k && k.indexOf('firebase:') === 0) sessionStorage.removeItem(k);
-            }
           } catch(_e){}
-          return auth.signOut().catch(function(){ /* ignore */ }).then(doRedirect).catch(function(e){
+          return doRedirect().catch(function(e){
             if (maybeDisableAppCheckAndReload(e)) return new Promise(function(){});
             throw e;
           });
