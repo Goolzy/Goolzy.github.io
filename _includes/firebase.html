@@ -24,7 +24,7 @@
       } catch(_e){}
       if (!cfg.apiKey) { console.warn('Firebase enabled but apiKey is empty'); }
       window.firebaseApp = firebase.initializeApp(cfg);
-      // Optional: App Check (reCAPTCHA v3 or Enterprise). Configure in _config.yml -> firebase.app_check.*
+  // Optional: App Check (reCAPTCHA v3 or Enterprise). Configure in _config.yml -> firebase.app_check.*
       try {
         var appCheckCfg = (siteFirebase && siteFirebase.app_check) || {};
         var qs = (location && location.search) ? location.search : '';
@@ -67,11 +67,33 @@
           try {
             firebase.appCheck().activate(key, autoRefresh);
             window.__appCheckActivated = true;
-          } catch(e){ console.warn('App Check activate error', e); window.__appCheckActivated = false; }
+          } catch(e){ console.warn('App Check activate error', e); window.__appCheckActivated = false; window.__fbInitError = String(e && (e.code || e.message) || e); }
         } else {
           window.__appCheckActivated = 'skipped';
         }
-      } catch(e){ console.warn('App Check init warning', e); window.__appCheckActivated = false; }
+      } catch(e){ console.warn('App Check init warning', e); window.__appCheckActivated = false; window.__fbInitError = String(e && (e.code || e.message) || e); }
+
+      // Catch async App Check reCAPTCHA failures surfaced as unhandled promise rejections
+      try {
+        window.addEventListener('unhandledrejection', function(ev){
+          try {
+            var r = ev && ev.reason;
+            var msg = '' + (r && (r.code || r.message) || r || '');
+            var isRecaptcha = /appcheck\/recaptcha-error|recaptcha|appcheck/i.test(msg);
+            if (isRecaptcha || (r == null && window.__appCheckActivated === true)) {
+              window.__fbInitError = msg || 'AppCheck reCAPTCHA error';
+              var qsNow = (location && location.search) ? location.search : '';
+              var alreadyOff = (qsNow.indexOf('appcheck=off') !== -1);
+              try { if (sessionStorage.getItem('__disable_appcheck') === '1') alreadyOff = true; } catch(_e){}
+              if (!alreadyOff) {
+                try { sessionStorage.setItem('__disable_appcheck', '1'); } catch(_e){}
+                var url = location.pathname + qsNow + (qsNow ? '&' : '?') + 'appcheck=off';
+                location.replace(url);
+              }
+            }
+          } catch(_e){}
+        });
+      } catch(_e){}
       window.__fbInit = true;
   var auth = firebase.auth();
   // Use browser/device language for Firebase emails (e.g., password reset)
@@ -105,7 +127,7 @@
       function maybeDisableAppCheckAndReload(err){
         try {
           var msg = (err && (err.code || err.message)) ? (String(err.code) + ' ' + String(err.message)) : '';
-          if (/appcheck|recaptcha/i.test(msg)){
+          if (/appcheck|recaptcha/i.test(msg) || (!err && window.__appCheckActivated === true)){
             sessionStorage.setItem('__disable_appcheck', '1');
             var url = location.pathname + location.search + (location.search ? '&' : '?') + 'appcheck=off';
             location.replace(url);
@@ -154,7 +176,10 @@
               return Promise.reject(err);
             }
             sessionStorage.setItem('__authRedirecting', '1');
-            sessionStorage.setItem('postAuthRedirect', '/');
+            // Respect any pre-set redirect by the page (e.g., inventory wants to return to current path)
+            if (!sessionStorage.getItem('postAuthRedirect')) {
+              sessionStorage.setItem('postAuthRedirect', '/');
+            }
             // Best-effort: clear any previous firebase:* entries that may cause stale credentials
             for (var i = sessionStorage.length - 1; i >= 0; i--) {
               var k = sessionStorage.key(i);
