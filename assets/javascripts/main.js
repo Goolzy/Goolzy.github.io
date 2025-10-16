@@ -1,5 +1,4 @@
----
----
+/* Jekyll front matter placeholder intentionally left empty */
 
 /*!
  * Basically Basic Jekyll Theme 1.4.5
@@ -34,6 +33,7 @@ var mySearchToggle = document.querySelector('.search-toggle');
 
 // Toggle sidebar visibility
 function toggleClassMenu() {
+  if (!myMenu || !myToggle || !myWrapper) return;
   myMenu.classList.add('is--animatable');
   if (!myMenu.classList.contains('is--visible')) {
     myMenu.classList.add('is--visible');
@@ -48,18 +48,23 @@ function toggleClassMenu() {
 
 // Animation smoother
 function OnTransitionEnd() {
+  if (!myMenu) return;
   myMenu.classList.remove('is--animatable');
 }
 
-myMenu.addEventListener('transitionend', OnTransitionEnd, false);
-myToggle.addEventListener('click', function () {
-  toggleClassMenu();
-  animateMenuItems();
-}, false);
-myMenu.addEventListener('click', function () {
-  toggleClassMenu();
-  animateMenuItems();
-}, false);
+if (myMenu) {
+  myMenu.addEventListener('transitionend', OnTransitionEnd, false);
+  myMenu.addEventListener('click', function () {
+    toggleClassMenu();
+    animateMenuItems();
+  }, false);
+}
+if (myToggle) {
+  myToggle.addEventListener('click', function () {
+    toggleClassMenu();
+    animateMenuItems();
+  }, false);
+}
 if (mySearchToggle) {
   mySearchToggle.addEventListener('click', function () {
     toggleClassSearch();
@@ -68,9 +73,11 @@ if (mySearchToggle) {
 
 // Toggle search input and content visibility
 function toggleClassSearch() {
+  if (!mySearchContent || !myInitialContent) return;
   mySearchContent.classList.toggle('is--visible');
   myInitialContent.classList.toggle('is--hidden');
   setTimeout(function () {
-    document.querySelector('.search-content input').focus();
+    var input = document.querySelector('.search-content input');
+    if (input && input.focus) input.focus();
   }, 400);
 }
