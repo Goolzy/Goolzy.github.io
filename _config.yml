@@ -46,7 +46,7 @@ firebase:
   # Optional: Firebase App Check (reCAPTCHA v3/Enterprise site key). Strongly recommended for public clients.
   # Generate site key in Firebase Console → Build → App Check → Web app → reCAPTCHA v3, then paste here.
   app_check:
-    enabled: true
+    enabled: false
     site_key: "6Lc_-usrAAAAAMWrUjnrmFxM76mAKWfKT14SJPva" # backward-compatible default
     site_key_v3: "" # optional; if provided and provider=v3, use this; else falls back to site_key
     site_key_enterprise: "" # optional; if provided and provider=enterprise, use this; else falls back to site_key

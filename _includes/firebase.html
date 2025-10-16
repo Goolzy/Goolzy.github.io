@@ -13,6 +13,49 @@
       var siteFirebase = {};
       if (cfgNode) { try { siteFirebase = JSON.parse(cfgNode.textContent || '{}') || {}; } catch(_e){} }
       var cfg = siteFirebase.config || {};
+      // Early global handlers to catch App Check reCAPTCHA failures only when App Check is enabled
+      try {
+        var _cfgEarly = (siteFirebase && siteFirebase.app_check) || {};
+        var _enabledEarly = !(_cfgEarly && _cfgEarly.enabled === false);
+        if (_enabledEarly) {
+          if (!window.__apc_once) {
+            window.__apc_once = function(){
+              try {
+                if (window.__apc_tripped) return true;
+                window.__apc_tripped = true;
+                sessionStorage.setItem('__disable_appcheck', '1');
+                var qsNow = (location && location.search) ? location.search : '';
+                if (qsNow.indexOf('appcheck=off') === -1) {
+                  var url = location.pathname + qsNow + (qsNow ? '&' : '?') + 'appcheck=off';
+                  location.replace(url);
+                }
+              } catch(_e){}
+              return true;
+            };
+            window.addEventListener('unhandledrejection', function(ev){
+              try {
+                var r = ev && ev.reason;
+                var msg = '' + (r && (r.code || r.message) || r || '');
+                if (/appcheck\/recaptcha-error|recaptcha|appcheck/i.test(msg) || r == null) {
+                  window.__fbInitError = msg || 'AppCheck reCAPTCHA error';
+                  ev.preventDefault && ev.preventDefault();
+                  window.__apc_once();
+                }
+              } catch(_e){}
+            });
+            window.addEventListener('error', function(ev){
+              try {
+                var msg = '' + (ev && (ev.message || ev.error && (ev.error.code || ev.error.message)) || '');
+                if (/appcheck|recaptcha/i.test(msg)) {
+                  window.__fbInitError = msg;
+                  ev.preventDefault && ev.preventDefault();
+                  window.__apc_once();
+                }
+              } catch(_e){}
+            }, true);
+          }
+        }
+      } catch(_e){}
       // Optional host allowlist: if provided, only initialize on matching hostnames
       try {
         var allow = siteFirebase && siteFirebase.allowed_hosts;
