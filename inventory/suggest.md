@@ -24,9 +24,9 @@ permalink: /inventory/suggest/
     내용
     <textarea name="Proposal" required rows="6" style="width:100%; padding:.5rem; margin-top:.25rem;"></textarea>
   </label>
-  <label>이메일(자동 입력)
-    <input type="email" name="Email" placeholder="name@example.com" style="width:100%; padding:.5rem; margin-top:.25rem;">
-  </label>
+  <input type="hidden" name="Email" value="">
+  <input type="hidden" name="_replyto" value="">
+  <div class="muted" id="suggest-email-hint" style="margin:.5rem 0 1rem;">회신 이메일: <span id="suggest-email-value">확인 중…</span></div>
   <input type="hidden" name="uid" value="">
   
   <button class="btn" type="submit">제출</button>
@@ -54,13 +54,29 @@ permalink: /inventory/suggest/
   try {
     var form = document.getElementById('suggest-form');
     var emailInput = form.querySelector('input[name="Email"]');
+    var replyToInput = form.querySelector('input[name="_replyto"]');
     var uidInput = form.querySelector('input[name="uid"]');
+    var emailText = document.getElementById('suggest-email-value');
     if (window.AuthBridge) {
       var user = AuthBridge.currentUser && AuthBridge.currentUser();
-      if (user && user.email) { emailInput.value = user.email; }
+      if (user && user.email) {
+        emailInput.value = user.email;
+        if (replyToInput) replyToInput.value = user.email;
+        if (emailText) emailText.textContent = user.email;
+      } else {
+        if (emailText) emailText.textContent = '알 수 없음';
+      }
       if (user && user.uid && uidInput) { uidInput.value = user.uid; }
       AuthBridge.onChange(function(u){
-        if (u && u.email) emailInput.value = u.email; else emailInput.value = '';
+        if (u && u.email) {
+          emailInput.value = u.email;
+          if (replyToInput) replyToInput.value = u.email;
+          if (emailText) emailText.textContent = u.email;
+        } else {
+          emailInput.value = '';
+          if (replyToInput) replyToInput.value = '';
+          if (emailText) emailText.textContent = '알 수 없음';
+        }
         if (uidInput) uidInput.value = (u && u.uid) ? u.uid : '';
       });
     }
@@ -73,11 +89,13 @@ permalink: /inventory/suggest/
       if (status) { status.style.display='block'; status.textContent='보내는 중…'; }
       var btn = form.querySelector('button[type="submit"]');
       if (btn) { btn.disabled = true; btn.classList.add('loading'); }
-      var fd = new FormData(form);
+      // Mirror Email -> _replyto before building FormData
       try {
-        var emailInput = form.querySelector('input[name="Email"]');
-        if (emailInput && emailInput.value) fd.append('_replyto', emailInput.value);
+        var emailInput2 = form.querySelector('input[name="Email"]');
+        var replyToInput2 = form.querySelector('input[name="_replyto"]');
+        if (emailInput2 && replyToInput2) replyToInput2.value = emailInput2.value || '';
       } catch(_){ }
+      var fd = new FormData(form);
       var ctrl = (window.AbortController) ? new AbortController() : null;
       var to = setTimeout(function(){ try { ctrl && ctrl.abort(); } catch(_){} }, 12000);
       fetch('https://formsubmit.co/ajax/captain@goolzy.com', {
@@ -97,7 +115,8 @@ permalink: /inventory/suggest/
           msg += ' 수신자 이메일 인증이 완료되지 않았을 수 있습니다. 관리자는 formsubmit.co 확인 메일(스팸함 포함)을 승인해 주세요.';
         }
         if (status) { status.style.display='block'; status.textContent = msg + ' (표준 제출로 재시도합니다)'; }
-        try { form.target = '_blank'; form.submit(); } catch(_){ }
+        // Fallback: submit in the same tab
+        try { form.removeAttribute('target'); form.submit(); } catch(_){ }
       }).finally(function(){ if (btn) { btn.disabled=false; btn.classList.remove('loading'); } });
     });
   } catch(e){}
@@ -106,4 +125,5 @@ permalink: /inventory/suggest/
 
 <style>
 .notice { background: #eefcf7; border:1px solid #c9f1e6; padding:0.75rem 1rem; border-radius: 8px; margin-top: 1rem; }
+.muted { color:#6b7280; font-size:.9rem; }
 </style>

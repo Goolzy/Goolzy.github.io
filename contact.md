@@ -15,6 +15,7 @@ description: 파트너십·계약·납품 관련 문의를 받습니다.
 	<input type="hidden" name="Category" value="Contract">
 	<input type="hidden" name="_next" value="{{ '/contact/?success=1' | absolute_url }}">
 	<input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_replyto" value="">
 	<input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
 
 	<label>회사/단체명
@@ -59,7 +60,7 @@ description: 파트너십·계약·납품 관련 문의를 받습니다.
 	var form = document.getElementById('contract-form');
 	try { form.addEventListener('input', updateSubject); } catch(e){}
 
-	// AJAX 제출로 확실한 성공/오류를 표기하고, captcha 팝업을 비활성화합니다.
+	// AJAX 제출로 확실한 성공/오류를 표기하고, 실패 시 동일 탭 표준 제출로 폴백합니다.
 	try {
 		form.addEventListener('submit', function(e){
 			try { e.preventDefault(); } catch(_){}
@@ -67,6 +68,12 @@ description: 파트너십·계약·납품 관련 문의를 받습니다.
 				if (status) { status.style.display='block'; status.textContent='보내는 중…'; }
 			var btn = form.querySelector('button[type="submit"]');
 			if (btn) { btn.disabled = true; btn.classList.add('loading'); }
+			// Ensure _replyto mirrors Email BEFORE building FormData
+			try {
+				var emailInput = form.querySelector('input[name="Email"]');
+				var replyToInput = form.querySelector('input[name="_replyto"]');
+				if (emailInput && replyToInput) replyToInput.value = emailInput.value || '';
+			} catch(_){ }
 			var fd = new FormData(form);
 				var ctrl = (window.AbortController) ? new AbortController() : null;
 				var to = setTimeout(function(){ try { ctrl && ctrl.abort(); } catch(_){} }, 12000);
@@ -87,9 +94,9 @@ description: 파트너십·계약·납품 관련 문의를 받습니다.
 					msg += ' 수신자 이메일 인증이 완료되지 않았을 수 있습니다. 관리자는 수신함(스팸함 포함)에서 formsubmit.co 확인 메일을 승인해 주세요.';
 				}
 					if (status) { status.style.display='block'; status.textContent = msg + ' (표준 제출로 재시도합니다)'; }
-					// 폴백: 표준 POST 제출로 재시도(새 탭)
+					// 폴백: 동일 탭 표준 POST 제출로 재시도
 					try {
-						form.target = '_blank';
+						form.removeAttribute('target');
 						form.submit();
 					} catch(_){ }
 			}).finally(function(){ if (btn) { btn.disabled=false; btn.classList.remove('loading'); } });
