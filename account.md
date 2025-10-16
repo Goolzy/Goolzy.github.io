@@ -22,7 +22,10 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
           <input name="email" type="email" required placeholder="name@example.com">
         </label>
         <label>비밀번호
-          <input name="password" type="password" required minlength="8" placeholder="8자 이상">
+          <input name="password" type="password" required minlength="8" placeholder="8자 이상 (특수문자 포함)">
+          {% if site.firebase and site.firebase.enabled %}
+          <small style="display:block; color:rgba(0,0,0,.6);">현재 정책: 특수문자 1개 이상 포함 필수</small>
+          {% endif %}
         </label>
         <label class="agree-row">
           <input id="agree" type="checkbox" required>
@@ -57,6 +60,7 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
       <button class="btn btn--outline" id="btn-delete">회원 탈퇴(미리보기)</button>
     </div>
   </div>
+  <div id="auth-error" class="auth-error" style="display:none;"></div>
 </div>
 
 <p style="margin-top:1rem; color:rgba(0,0,0,.65);">피드백 페이지로 이동하면 이메일 자동채움이 작동하는지 확인할 수 있습니다: <a href="/feedback/">Feedback</a></p>
@@ -78,15 +82,30 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
 
   function onSignedIn(email){ emailSpan.textContent = email; out.style.display = 'none'; inn.style.display = ''; }
   function onSignedOut(){ out.style.display = ''; inn.style.display = 'none'; }
+  function showError(err){
+    var box = document.getElementById('auth-error');
+    if(!box) return;
+    var code = (err && err.code) ? ('['+err.code+'] ') : '';
+    var msg = (err && err.message) ? err.message : String(err || 'Unknown error');
+    box.style.display = 'block';
+    box.textContent = '로그인 실패: ' + code + msg;
+    console.error('Auth error', err);
+  }
 
   btnSignup.addEventListener('click', function(){
     if(!form.reportValidity()) return;
     if(!document.getElementById('agree').checked){ alert('개인정보 처리방침에 동의해 주세요.'); return; }
     const email = form.email.value.trim();
+    const pwd = form.password.value || '';
+    // Basic client-side check to match current Firebase policy (requires a non-alphanumeric)
+    if(!/[^A-Za-z0-9]/.test(pwd)){
+      showError({ code:'auth/password-does-not-meet-requirements', message:'비밀번호에 특수문자(예: !@#$% 등)를 1개 이상 포함해 주세요.' });
+      return;
+    }
     AuthBridge.emailSignUp(email, form.password.value).then(function(){
       onSignedIn(email);
       alert('가입(미리보기 또는 실제): 처리 완료');
-    }).catch(function(e){ alert('가입 실패: '+ (e && e.message || e)); });
+    }).catch(function(e){ showError(e); alert('가입 실패: '+ (e && e.message || e)); });
   });
   btnSignin.addEventListener('click', function(){
     if(!form.reportValidity()) return;
@@ -94,7 +113,7 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
     AuthBridge.emailSignIn(email, form.password.value).then(function(){
       onSignedIn(email);
       alert('로그인(미리보기 또는 실제): 처리 완료');
-    }).catch(function(e){ alert('로그인 실패: '+ (e && e.message || e)); });
+    }).catch(function(e){ showError(e); alert('로그인 실패: '+ (e && e.message || e)); });
   });
   btnSignout.addEventListener('click', function(){ AuthBridge.signOut().then(onSignedOut); });
   btnDelete.addEventListener('click', function(){
@@ -107,7 +126,7 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
       var email = user.email || 'user@example.com';
       onSignedIn(email);
       alert(name+' 로그인 완료');
-    }).catch(function(e){ alert(name+' 로그인 실패: '+ (e && e.message || e)); });
+    }).catch(function(e){ showError(e); alert(name+' 로그인 실패: '+ (e && e.message || e)); });
   }
   btnGoogle.addEventListener('click', function(){ oauth('google'); });
   btnApple.addEventListener('click', function(){ oauth('apple'); });
@@ -132,4 +151,5 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
 .or{ margin: .75rem 0; opacity:.7; font-size:.95rem; }
 .oauth-stack{ display:flex; flex-direction:column; gap:.5rem; align-items:center; }
 .oauth-btn img{ width: 280px; max-width: 100%; height: auto; display:block; }
+.auth-error{ margin-top: .75rem; background:#fff5f5; border:1px solid #ffd6d6; color:#be123c; padding:.75rem 1rem; border-radius:8px; }
 </style>
