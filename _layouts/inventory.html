@@ -54,15 +54,16 @@ hide_sidebar: true
 
     <!-- Unlocked (logged in) -->
     <div id="inv-unlocked" style="display:none;">
-      <nav style="display:flex; gap:.5rem; padding:.5rem 0 1rem; border-bottom:1px solid #e5e7eb; flex-wrap:wrap;">
+      <nav style="display:flex; gap:.5rem; padding:.5rem 0 1rem; border-bottom:1px solid #e5e7eb; flex-wrap:wrap; align-items:center;">
         <a href="/inventory/intro/" class="nav-link">소개</a>
         <a href="/inventory/manual/" class="nav-link">매뉴얼</a>
         <a href="/inventory/faq/" class="nav-link">FAQ</a>
         <a href="/inventory/suggest/" class="nav-link">건의하기</a>
         <a href="/inventory/bug-report/" class="nav-link">버그 리포트</a>
         <span style="flex:1"></span>
-        <a href="/" style="padding:.35rem .6rem; color:#6b7280;">Home</a>
-        <button id="inv-logout-btn" class="btn" type="button">로그아웃</button>
+        <span id="inv-user-email" style="font-size:.85rem; color:#6b7280; padding:.35rem .6rem;"></span>
+        <a href="/inventory/account/" class="btn btn--outline" style="padding:.35rem .6rem; font-size:.9rem;">계정</a>
+        <button id="inv-logout-btn" class="btn" type="button" style="padding:.35rem .6rem; font-size:.9rem;">로그아웃</button>
       </nav>
       
       <div style="padding-top:1rem;">
@@ -85,12 +86,21 @@ hide_sidebar: true
   var msBtn = document.getElementById('inv-ms-btn');
   var logoutBtn = document.getElementById('inv-logout-btn');
   var errorBox = document.getElementById('inv-error');
+  var userEmailEl = document.getElementById('inv-user-email');
 
   var POST_AUTH_KEY = 'postAuthRedirect';
 
   function showLoading(){ loading.style.display=''; locked.style.display='none'; unlocked.style.display='none'; }
   function showLocked(){ loading.style.display='none'; locked.style.display=''; unlocked.style.display='none'; }
-  function showUnlocked(){ loading.style.display='none'; locked.style.display='none'; unlocked.style.display=''; }
+  function showUnlocked(user){ 
+    loading.style.display='none'; 
+    locked.style.display='none'; 
+    unlocked.style.display=''; 
+    // Display user email
+    if(userEmailEl && user && user.email) {
+      userEmailEl.textContent = user.email;
+    }
+  }
   
   function showError(msg){
     if(!errorBox) return;
@@ -113,7 +123,7 @@ hide_sidebar: true
     // Check auth state
     AuthBridge.onChange(function(user){
       if(user){
-        showUnlocked();
+        showUnlocked(user);
       } else {
         showLocked();
       }
