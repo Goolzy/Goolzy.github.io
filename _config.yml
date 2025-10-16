@@ -18,7 +18,7 @@ title: Goolzy
 email: captain@goolzy.com
 description: 즐거움과 연결된 모든 엔터테인먼트 콘텐츠를 연구·개발합니다.
 baseurl: # the optional subpath of your site, e.g. "/blog"
-url: https://goolzy.github.io # 기본 GitHub Pages 주소 사용
+url: https://goolzy.com # 최종 커스텀 도메인
 repository: Goolzy/Goolzy.github.io
 author:
   name: Seungin Nam
@@ -55,6 +55,8 @@ firebase:
     provider: v3 # v3 or enterprise
   # Optional: Only initialize Firebase on these hosts
   allowed_hosts:
+    - "goolzy.com"
+    - "www.goolzy.com"
     - "goolzy.github.io"
     - "localhost"
     - "127.0.0.1"
