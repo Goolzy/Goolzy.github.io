@@ -78,6 +78,7 @@
           });
         }
       };
+  try { window.dispatchEvent(new CustomEvent('auth:bridge-ready')); } catch(_e){}
     } catch(e) {
       console.error('Firebase init error', e);
     }

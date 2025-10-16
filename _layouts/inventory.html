@@ -86,9 +86,18 @@ hide_sidebar: true
   function guard(){ if(!window.AuthBridge){ showError({message:'인증 모듈이 초기화되지 않았습니다.'}); return false; } return true; }
   function update(user){ if(user){ hide(locked); show(unlocked); } else { show(locked); hide(unlocked); } }
 
-  // initial gate
-  try { var u = (AuthBridge && AuthBridge.currentUser && AuthBridge.currentUser()) || null; update(u); } catch(_e){}
-  AuthBridge && AuthBridge.onChange && AuthBridge.onChange(update);
+  function initGate(){
+    try { var u = (AuthBridge && AuthBridge.currentUser && AuthBridge.currentUser()) || null; update(u); } catch(_e){}
+    AuthBridge && AuthBridge.onChange && AuthBridge.onChange(update);
+    if (AuthBridge && AuthBridge.getRedirectResult) {
+      AuthBridge.getRedirectResult().then(function(res){
+        var user = (res && res.user) || (AuthBridge.currentUser && AuthBridge.currentUser());
+        if (user) update(user);
+      }).catch(function(_e){ /* ignore */ });
+    }
+  }
+  if (window.AuthBridge) { initGate(); }
+  else { window.addEventListener('auth:bridge-ready', initGate, { once: true }); }
 
   // email login
   if (btnEmail) btnEmail.addEventListener('click', function(){
