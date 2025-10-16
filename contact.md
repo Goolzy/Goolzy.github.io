@@ -64,14 +64,17 @@ description: 파트너십·계약·납품 관련 문의를 받습니다.
 		form.addEventListener('submit', function(e){
 			try { e.preventDefault(); } catch(_){}
 			var status = document.getElementById('contract-status');
-			if (status) { status.style.display='none'; status.textContent=''; }
+				if (status) { status.style.display='block'; status.textContent='보내는 중…'; }
 			var btn = form.querySelector('button[type="submit"]');
 			if (btn) { btn.disabled = true; btn.classList.add('loading'); }
 			var fd = new FormData(form);
-			fetch('https://formsubmit.co/ajax/captain@goolzy.com', {
+				var ctrl = (window.AbortController) ? new AbortController() : null;
+				var to = setTimeout(function(){ try { ctrl && ctrl.abort(); } catch(_){} }, 12000);
+				fetch('https://formsubmit.co/ajax/captain@goolzy.com', {
 				method: 'POST',
 				body: fd,
-				headers: { 'Accept': 'application/json' }
+					headers: { 'Accept': 'application/json' },
+					signal: ctrl ? ctrl.signal : undefined
 			}).then(function(res){
 				if (!res.ok) throw new Error('FORM_SUBMIT_FAILED:' + res.status);
 				return res.json();
@@ -79,11 +82,16 @@ description: 파트너십·계약·납품 관련 문의를 받습니다.
 				if (status) { status.style.display='block'; status.textContent='감사합니다! 문의가 전송되었습니다. 곧 연락드리겠습니다.'; }
 				try { form.reset(); } catch(_){ }
 			}).catch(function(err){
-				var msg = '전송에 실패했습니다. 잠시 후 다시 시도해 주세요.';
+					var msg = '전송에 실패했습니다. 잠시 후 다시 시도해 주세요.';
 				if (String(err).indexOf('403')>=0 || String(err).indexOf('401')>=0 || String(err).indexOf('422')>=0) {
 					msg += ' 수신자 이메일 인증이 완료되지 않았을 수 있습니다. 관리자는 수신함(스팸함 포함)에서 formsubmit.co 확인 메일을 승인해 주세요.';
 				}
-				if (status) { status.style.display='block'; status.textContent = msg; }
+					if (status) { status.style.display='block'; status.textContent = msg + ' (표준 제출로 재시도합니다)'; }
+					// 폴백: 표준 POST 제출로 재시도(새 탭)
+					try {
+						form.target = '_blank';
+						form.submit();
+					} catch(_){ }
 			}).finally(function(){ if (btn) { btn.disabled=false; btn.classList.remove('loading'); } });
 		});
 	} catch(e){}
