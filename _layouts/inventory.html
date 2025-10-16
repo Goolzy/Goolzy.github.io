@@ -34,6 +34,16 @@ hide_sidebar: true
         </a>
       </div>
       <div id="inv-error" class="auth-error" style="display:none;"></div>
+      <div id="inv-unauth-hint" class="admin-hint" style="display:none; margin-top:.75rem;">
+        <strong>이 도메인이 Firebase에 등록되지 않았습니다.</strong>
+        <p style="margin:.25rem 0 .5rem;">관리자 안내: 아래 도메인을 Firebase Console → Authentication → Settings → Authorized domains에 추가해 주세요.</p>
+        <div style="display:flex; gap:.5rem; align-items:center; flex-wrap:wrap;">
+          <code id="inv-current-domain" style="padding:.15rem .4rem; border:1px solid rgba(0,0,0,.08); border-radius:6px; background:#fafafa;"></code>
+          <button class="btn btn--outline" id="inv-copy-domain" type="button">도메인 복사</button>
+          <a id="inv-open-fb-console" class="btn" target="_blank" rel="noopener">Firebase 콘솔 열기</a>
+          <button class="btn btn--alt-gradient" id="inv-retry" type="button">새로고침 후 다시 시도</button>
+        </div>
+      </div>
       </div>
     </div>
 
@@ -80,6 +90,11 @@ hide_sidebar: true
   var btnResend = document.getElementById('inv-resend-verify');
   var btnVerifyRefresh = document.getElementById('inv-verify-refresh');
   var verifyMsg = document.getElementById('inv-verify-msg');
+  var unauthBox = document.getElementById('inv-unauth-hint');
+  var domainEl = document.getElementById('inv-current-domain');
+  var copyBtn = document.getElementById('inv-copy-domain');
+  var retryBtn = document.getElementById('inv-retry');
+  var fbConsoleLink = document.getElementById('inv-open-fb-console');
   var POST_AUTH_REDIRECT_KEY = 'postAuthRedirect';
   // highlight active link
   try {
@@ -91,14 +106,43 @@ hide_sidebar: true
 
   function show(section){ section.style.display=''; }
   function hide(section){ section.style.display='none'; }
+  // Prepare admin hint content
+  try {
+    var CURRENT_HOST = (location && location.host) ? location.host : '';
+    var FB_PROJECT = "{{ site.firebase.config.projectId | default: '' }}";
+    var FB_CONSOLE_URL = FB_PROJECT ? ('https://console.firebase.google.com/project/' + FB_PROJECT + '/authentication/settings') : 'https://console.firebase.google.com/';
+    if (domainEl) domainEl.textContent = CURRENT_HOST;
+    if (fbConsoleLink) fbConsoleLink.href = FB_CONSOLE_URL;
+    if (copyBtn) copyBtn.addEventListener('click', function(){
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(CURRENT_HOST).then(function(){ copyBtn.textContent = '복사됨'; setTimeout(function(){ copyBtn.textContent = '도메인 복사'; }, 1500); });
+      } else {
+        var tmp = document.createElement('input'); tmp.value = CURRENT_HOST; document.body.appendChild(tmp); tmp.select(); document.execCommand('copy'); document.body.removeChild(tmp);
+        copyBtn.textContent = '복사됨'; setTimeout(function(){ copyBtn.textContent = '도메인 복사'; }, 1500);
+      }
+    });
+    if (retryBtn) retryBtn.addEventListener('click', function(){ location.reload(); });
+  } catch(_e){}
+
   function showError(e){
     if(!errBox) return;
-    var msg = (e && e.code) ? ('['+e.code+'] ') : '';
-    msg += (e && e.message) ? e.message : '로그인 중 오류가 발생했습니다.';
+    var code = e && e.code || '';
+    var msg = (code ? ('['+code+'] ') : '') + (mapError(e));
     errBox.style.display='block';
     errBox.textContent = msg;
+    if (code === 'auth/unauthorized-domain' && unauthBox) unauthBox.style.display = 'block';
   }
   function clearError(){ if(errBox){ errBox.style.display='none'; errBox.textContent=''; } }
+  function mapError(e){
+    var code = e && e.code || '';
+    switch(code){
+      case 'auth/unauthorized-domain': return '현재 사이트 도메인이 Firebase에 등록되지 않았습니다. 관리자에게 문의해 주세요.';
+      case 'auth/invalid-credential': return '세션이 만료되었거나 인증 정보가 올바르지 않습니다. 새로고침 후 다시 시도해 주세요.';
+      case 'auth/cancelled-popup-request': return '다른 인증 동작이 진행 중입니다. 잠시 후 다시 시도해 주세요.';
+      case 'auth/operation-in-progress': return '인증을 시작하는 중입니다. 잠시만 기다려 주세요.';
+      default: return (e && e.message) ? e.message : '로그인 중 오류가 발생했습니다.';
+    }
+  }
   function setLoading(btn, on){ if(!btn) return; btn.classList.toggle('loading', !!on); btn.disabled = !!on; }
   function toHereAfterAuth(){ try { sessionStorage.setItem(POST_AUTH_REDIRECT_KEY, location.pathname); } catch(_e){} }
 
@@ -118,7 +162,22 @@ hide_sidebar: true
       AuthBridge.getRedirectResult().then(function(res){
         var user = (res && res.user) || (AuthBridge.currentUser && AuthBridge.currentUser());
         if (user) update(user);
-      }).catch(function(_e){ /* ignore */ });
+      }).catch(function(e){
+        // Handle common benign or recoverable redirect errors
+        var benign = (e && (e.code === 'auth/no-auth-event' || e.code === 'auth/user-cancelled'));
+        if (e && e.code === 'auth/invalid-credential') {
+          try {
+            for (var i = sessionStorage.length - 1; i >= 0; i--) {
+              var k = sessionStorage.key(i);
+              if (k && k.indexOf('firebase:') === 0) sessionStorage.removeItem(k);
+            }
+          } catch(_e){}
+          try { AuthBridge.signOut && AuthBridge.signOut(); } catch(_e){}
+          showError({ code: 'auth/invalid-credential', message: '세션이 만료되어 로그인에 실패했습니다. 다시 시도해 주세요.' });
+          return;
+        }
+        if (!benign) showError(e);
+      });
     }
   }
   if (window.AuthBridge) { initGate(); }
