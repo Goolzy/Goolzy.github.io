@@ -302,6 +302,18 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
         AuthBridge.sendEmailVerification().then(function(){ if (verifyMsg) { verifyMsg.style.display='block'; verifyMsg.textContent='인증 메일을 다시 보냈습니다.'; } }).catch(showError).finally(function(){ setLoading(btnSendVerify,false); });
       });
       if (btnVerifyRefresh) btnVerifyRefresh.addEventListener('click', function(){ location.reload(); });
+
+      // Global safety net for unhandled auth errors so the user sees why login failed
+      try {
+        window.addEventListener('unhandledrejection', function(ev){
+          var r = ev && ev.reason;
+          var msg = (r && (r.code || r.message)) ? (String(r.code) + ' ' + String(r.message)) : String(r || '');
+          if (/auth\//i.test(msg) || /signInWithPassword|INVALID_PASSWORD|EMAIL_NOT_FOUND|INVALID_LOGIN_CREDENTIALS/i.test(msg)){
+            ev.preventDefault && ev.preventDefault();
+            showError(r || { message: '로그인 중 오류가 발생했습니다.' });
+          }
+        });
+      } catch(_e){}
 })();
 </script>
 

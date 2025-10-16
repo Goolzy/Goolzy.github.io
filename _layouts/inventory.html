@@ -285,6 +285,19 @@ hide_sidebar: true
       showPwd.addEventListener('change', function(){ pwdInput.type = showPwd.checked ? 'text' : 'password'; });
     }
   } catch(_e){}
+
+  // Global safety net: surface any unhandled auth errors to the UI (prevents silent flicker)
+  try {
+    window.addEventListener('unhandledrejection', function(ev){
+      var r = ev && ev.reason;
+      var msg = (r && (r.code || r.message)) ? (String(r.code) + ' ' + String(r.message)) : String(r || '');
+      // Only surface auth-related issues
+      if (/auth\//i.test(msg) || /signInWithPassword|INVALID_PASSWORD|EMAIL_NOT_FOUND|INVALID_LOGIN_CREDENTIALS/i.test(msg)){
+        ev.preventDefault && ev.preventDefault();
+        showError(r || { message: '로그인 중 오류가 발생했습니다.' });
+      }
+    });
+  } catch(_e){}
   if (btnInvLogout) btnInvLogout.addEventListener('click', function(){
     if (!window.AuthBridge) return;
     try { sessionStorage.removeItem(POST_AUTH_REDIRECT_KEY); } catch(_e){}
