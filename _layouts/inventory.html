@@ -1,0 +1,112 @@
+---
+layout: page
+---
+<div id="inventory-root">
+  <div id="inv-locked" style="display:none;">
+    <h2>Inventory</h2>
+    <p>이 페이지는 로그인 후 이용할 수 있습니다.</p>
+    <div class="card-glow" style="padding:1rem 1.25rem; border-radius:16px; max-width:420px;">
+      <form id="inv-login" onsubmit="return false;" class="auth-form">
+        <label>이메일
+          <input name="email" type="email" required placeholder="name@example.com" style="width:100%; padding:.5rem .6rem;">
+        </label>
+        <label>비밀번호
+          <input name="password" type="password" required minlength="8" placeholder="비밀번호" style="width:100%; padding:.5rem .6rem;">
+        </label>
+        <div style="display:flex; gap:.5rem;">
+          <button class="btn" id="inv-email-signin"><span class="spinner" aria-hidden="true"></span><span class="btn-text">로그인</span></button>
+          <a class="btn btn--outline" href="/password-reset/">비밀번호 재설정</a>
+        </div>
+      </form>
+      <div class="or">또는</div>
+      <div class="oauth-stack">
+        <a href="#" id="inv-google" class="oauth-btn" aria-label="Sign in with Google" role="button">
+          <img src="/assets/images/auth/google-signin.svg" alt="Sign in with Google">
+        </a>
+        <a href="#" id="inv-apple" class="oauth-btn" aria-label="Sign in with Apple" role="button">
+          <img src="/assets/images/auth/apple-signin.svg" alt="Sign in with Apple">
+        </a>
+        <a href="#" id="inv-ms" class="oauth-btn" aria-label="Sign in with Microsoft" role="button">
+          <img src="/assets/images/auth/microsoft-signin.svg" alt="Sign in with Microsoft">
+        </a>
+      </div>
+      <div id="inv-error" class="auth-error" style="display:none;"></div>
+    </div>
+  </div>
+
+  <div id="inv-unlocked" style="display:none;">
+    <nav class="subnav">
+      <a href="/inventory/intro/">어플리케이션 소개</a>
+      <a href="/inventory/manual/">사용자 매뉴얼</a>
+      <a href="/inventory/faq/">FAQ</a>
+      <a href="/inventory/suggest/">건의하기</a>
+      <a href="/inventory/bug-report/">버그 리포팅</a>
+    </nav>
+    <div class="subcontent">
+      {{ content }}
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var locked = document.getElementById('inv-locked');
+  var unlocked = document.getElementById('inv-unlocked');
+  var loginForm = document.getElementById('inv-login');
+  var btnEmail = document.getElementById('inv-email-signin');
+  var btnG = document.getElementById('inv-google');
+  var btnA = document.getElementById('inv-apple');
+  var btnM = document.getElementById('inv-ms');
+  var errBox = document.getElementById('inv-error');
+  var POST_AUTH_REDIRECT_KEY = 'postAuthRedirect';
+
+  function show(section){ section.style.display=''; }
+  function hide(section){ section.style.display='none'; }
+  function showError(e){
+    if(!errBox) return;
+    var msg = (e && e.code) ? ('['+e.code+'] ') : '';
+    msg += (e && e.message) ? e.message : '로그인 중 오류가 발생했습니다.';
+    errBox.style.display='block';
+    errBox.textContent = msg;
+  }
+  function clearError(){ if(errBox){ errBox.style.display='none'; errBox.textContent=''; } }
+  function setLoading(btn, on){ if(!btn) return; btn.classList.toggle('loading', !!on); btn.disabled = !!on; }
+  function toHereAfterAuth(){ try { sessionStorage.setItem(POST_AUTH_REDIRECT_KEY, location.pathname); } catch(_e){} }
+
+  function guard(){ if(!window.AuthBridge){ showError({message:'인증 모듈이 초기화되지 않았습니다.'}); return false; } return true; }
+  function update(user){ if(user){ hide(locked); show(unlocked); } else { show(locked); hide(unlocked); } }
+
+  // initial gate
+  try { var u = (AuthBridge && AuthBridge.currentUser && AuthBridge.currentUser()) || null; update(u); } catch(_e){}
+  AuthBridge && AuthBridge.onChange && AuthBridge.onChange(update);
+
+  // email login
+  if (btnEmail) btnEmail.addEventListener('click', function(){
+    if(!guard()) return; if(!loginForm.reportValidity()) return;
+    clearError(); setLoading(btnEmail, true); toHereAfterAuth();
+    var email = loginForm.email.value.trim();
+    AuthBridge.emailSignIn(email, loginForm.password.value).then(function(){
+      var dest = sessionStorage.getItem(POST_AUTH_REDIRECT_KEY) || '/inventory/';
+      try { sessionStorage.removeItem(POST_AUTH_REDIRECT_KEY); } catch(_e){}
+      location.assign(dest);
+    }).catch(showError).finally(function(){ setLoading(btnEmail, false); });
+  });
+
+  // OAuth
+  function oauth(name){ if(!guard()) return; clearError(); toHereAfterAuth(); AuthBridge.signInWith(name).catch(showError); }
+  if (btnG) btnG.addEventListener('click', function(e){ e.preventDefault(); oauth('google'); });
+  if (btnA) btnA.addEventListener('click', function(e){ e.preventDefault(); oauth('apple'); });
+  if (btnM) btnM.addEventListener('click', function(e){ e.preventDefault(); oauth('microsoft'); });
+})();
+</script>
+
+<style>
+.subnav{ display:flex; gap:.75rem; flex-wrap:wrap; padding:.5rem 0 1rem; border-bottom:1px solid rgba(0,0,0,.08); }
+.subnav a{ padding:.35rem .6rem; border-radius:999px; background:rgba(0,0,0,.04); }
+.subcontent{ padding-top:1rem; }
+.auth-error{ margin-top: .75rem; background:#fff5f5; border:1px solid #ffd6d6; color:#be123c; padding:.75rem 1rem; border-radius:8px; }
+.spinner{ display:none; width:1em; height:1em; border:.15em solid rgba(255,255,255,.6); border-top-color:#fff; border-radius:50%; animation:spin 1s linear infinite; margin-right:.4em; vertical-align:-.125em; }
+.btn.loading .spinner{ display:inline-block; }
+.btn.loading .btn-text{ opacity:.85; }
+@keyframes spin{ to{ transform: rotate(360deg); } }
+</style>

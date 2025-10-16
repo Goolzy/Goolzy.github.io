@@ -19,6 +19,7 @@ email: captain@goolzy.com
 description: 즐거움과 연결된 모든 엔터테인먼트 콘텐츠를 연구·개발합니다.
 baseurl: # the optional subpath of your site, e.g. "/blog"
 url: https://goolzy.github.io # 기본 GitHub Pages 주소 사용
+repository: Goolzy/Goolzy.github.io
 author:
   name: Seungin Nam
   twitter:

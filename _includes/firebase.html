@@ -14,14 +14,29 @@
       var cfg = siteFirebase.config || {};
       if (!cfg.apiKey) { console.warn('Firebase enabled but apiKey is empty'); }
       window.firebaseApp = firebase.initializeApp(cfg);
-      var auth = firebase.auth();
+  var auth = firebase.auth();
+  // Use browser/device language for Firebase emails (e.g., password reset)
+  try { auth.useDeviceLanguage(); } catch(_e) {}
+  try { auth.setPersistence(firebase.auth.Auth.Persistence.LOCAL); } catch(_e) {}
 
       // Providers from config
       var ap = siteFirebase.auth_providers || {};
       var providers = {};
-      if (ap.google) providers.google = new firebase.auth.GoogleAuthProvider();
-      if (ap.apple) providers.apple = new firebase.auth.OAuthProvider('apple.com');
-      if (ap.microsoft) providers.microsoft = new firebase.auth.OAuthProvider('microsoft.com');
+      if (ap.google) {
+        providers.google = new firebase.auth.GoogleAuthProvider();
+        try { providers.google.setCustomParameters({ prompt: 'select_account' }); } catch(_e) {}
+      }
+      if (ap.apple) {
+        providers.apple = new firebase.auth.OAuthProvider('apple.com');
+        try {
+          providers.apple.addScope('email');
+          providers.apple.addScope('name');
+        } catch(_e) {}
+      }
+      if (ap.microsoft) {
+        providers.microsoft = new firebase.auth.OAuthProvider('microsoft.com');
+        try { providers.microsoft.setCustomParameters({ prompt: 'select_account' }); } catch(_e) {}
+      }
 
       // Bridge
       window.AuthBridge = {
@@ -29,12 +44,38 @@
         currentUser: function(){ return auth.currentUser; },
         emailSignUp: function(email, password){ return auth.createUserWithEmailAndPassword(email, password); },
         emailSignIn: function(email, password){ return auth.signInWithEmailAndPassword(email, password); },
+        sendPasswordReset: function(email){
+          try {
+            var acs = undefined;
+            if (siteFirebase && siteFirebase.redirect_uri) {
+              acs = { url: siteFirebase.redirect_uri, handleCodeInApp: false };
+            }
+            return auth.sendPasswordResetEmail(email, acs);
+          } catch(e) { return Promise.reject(e); }
+        },
         signOut: function(){ return auth.signOut(); },
         deleteUser: function(){ return auth.currentUser ? auth.currentUser.delete() : Promise.resolve(); },
         signInWith: function(name){
           var p = providers[name];
           if(!p) return Promise.reject(new Error('Provider not configured: '+name));
-          return auth.signInWithPopup(p);
+          // Redirect-only to avoid popup windows; sign out first to clear stale sessions
+          var doRedirect = function(){ return auth.signInWithRedirect(p); };
+          try {
+            // guard against multiple concurrent requests
+            if (sessionStorage.getItem('__authRedirecting') === '1') {
+              var err = new Error('Another auth operation is in progress');
+              err.code = 'auth/operation-in-progress';
+              return Promise.reject(err);
+            }
+            sessionStorage.setItem('__authRedirecting', '1');
+            sessionStorage.setItem('postAuthRedirect', '/');
+          } catch(_e){}
+          return auth.signOut().catch(function(){ /* ignore */ }).then(doRedirect);
+        },
+        getRedirectResult: function(){
+          return auth.getRedirectResult().finally(function(){
+            try { sessionStorage.removeItem('__authRedirecting'); } catch(_e){}
+          });
         }
       };
     } catch(e) {

@@ -39,6 +39,10 @@
     },
     emailSignUp: function(email, _password){ setSignedIn(email); return Promise.resolve(); },
     emailSignIn: function(email, _password){ setSignedIn(email); return Promise.resolve(); },
+    sendPasswordReset: function(email){
+      // Preview: simulate success
+      return new Promise(function(resolve){ setTimeout(resolve, 400); });
+    },
     signOut: function(){ setSignedOut(); return Promise.resolve(); },
     deleteUser: function(){ setSignedOut(); return Promise.resolve(); },
     signInWith: function(_name){ return Promise.reject(new Error('OAuth 미리보기에서는 사용 불가')); }
