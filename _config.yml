@@ -34,8 +34,8 @@ firebase:
   auth_providers:
     email: true
     google: true
-    apple: false
-    microsoft: true
+    apple: true
+    microsoft: false
   config:
     apiKey: "AIzaSyAYQwz94EVCEHcAKC7LD2qVnCbDnZSTBnI"
     authDomain: "inventory-app-service.firebaseapp.com"

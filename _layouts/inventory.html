@@ -41,9 +41,11 @@ hide_sidebar: true
             <img src="/assets/images/auth/apple-signin.svg" alt="Sign in with Apple" style="height:40px;">
           </a>
           {% endif %}
+          {% if site.firebase.auth_providers.microsoft %}
           <a href="#" id="inv-ms-btn" style="display:block;">
             <img src="/assets/images/auth/microsoft-signin.svg" alt="Sign in with Microsoft" style="height:40px;">
           </a>
+          {% endif %}
         </div>
 
         <div id="inv-error" style="display:none; margin-top:1rem; padding:.75rem; background:#fee; border:1px solid #fcc; border-radius:6px; color:#c00;"></div>
