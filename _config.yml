@@ -81,6 +81,9 @@ nav:
     url: /news/
   - title: "Feedback"
     url: /feedback/
+  - title: "Inventory"
+    url: /inventory/
+    target: _blank
 
 permalink: /:title/
 

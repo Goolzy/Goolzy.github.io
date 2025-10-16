@@ -11,7 +11,7 @@
       <!-- Explicit nav from _config.yml -->
       {% for item in site.nav %}
         <li class="menu-item">
-          <a href="{{ item.url | relative_url }}" itemprop="url">
+          <a href="{{ item.url | relative_url }}" itemprop="url"{% if item.target %} target="{{ item.target }}" rel="noopener"{% endif %}>
             <span itemprop="name">{{ item.title | escape }}</span>
           </a>
         </li>

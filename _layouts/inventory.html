@@ -1,5 +1,6 @@
 ---
 layout: page
+hide_sidebar: true
 ---
 <div id="inventory-root">
   <div id="inv-locked" style="display:none;">
@@ -35,12 +36,14 @@ layout: page
   </div>
 
   <div id="inv-unlocked" style="display:none;">
-    <nav class="subnav">
-      <a href="/inventory/intro/">어플리케이션 소개</a>
-      <a href="/inventory/manual/">사용자 매뉴얼</a>
-      <a href="/inventory/faq/">FAQ</a>
-      <a href="/inventory/suggest/">건의하기</a>
-      <a href="/inventory/bug-report/">버그 리포팅</a>
+    <nav class="subnav" aria-label="Inventory navigation">
+      <a class="subnav__link" data-path="/inventory/intro/" href="/inventory/intro/">어플리케이션 소개</a>
+      <a class="subnav__link" data-path="/inventory/manual/" href="/inventory/manual/">사용자 매뉴얼</a>
+      <a class="subnav__link" data-path="/inventory/faq/" href="/inventory/faq/">FAQ</a>
+      <a class="subnav__link" data-path="/inventory/suggest/" href="/inventory/suggest/">건의하기</a>
+      <a class="subnav__link" data-path="/inventory/bug-report/" href="/inventory/bug-report/">버그 리포팅</a>
+      <span class="subnav__spacer"></span>
+      <a class="subnav__home" href="/">Home</a>
     </nav>
     <div class="subcontent">
       {{ content }}
@@ -59,6 +62,13 @@ layout: page
   var btnM = document.getElementById('inv-ms');
   var errBox = document.getElementById('inv-error');
   var POST_AUTH_REDIRECT_KEY = 'postAuthRedirect';
+  // highlight active link
+  try {
+    var here = location.pathname.replace(/\/?$/, '/');
+    Array.prototype.forEach.call(document.querySelectorAll('.subnav__link'), function(a){
+      if (a.getAttribute('data-path') === here) a.classList.add('is-active');
+    });
+  } catch(_e){}
 
   function show(section){ section.style.display=''; }
   function hide(section){ section.style.display='none'; }
@@ -101,8 +111,11 @@ layout: page
 </script>
 
 <style>
-.subnav{ display:flex; gap:.75rem; flex-wrap:wrap; padding:.5rem 0 1rem; border-bottom:1px solid rgba(0,0,0,.08); }
-.subnav a{ padding:.35rem .6rem; border-radius:999px; background:rgba(0,0,0,.04); }
+.subnav{ display:flex; gap:.5rem; flex-wrap:wrap; align-items:center; padding:.5rem 0 1rem; border-bottom:1px solid rgba(0,0,0,.08); }
+.subnav__link{ padding:.4rem .75rem; border-radius:999px; background:rgba(0,0,0,.04); border:1px solid rgba(0,0,0,.06); text-decoration:none; }
+.subnav__link.is-active{ background:linear-gradient(90deg, #7c3aed, #06b6d4); color:#fff; border-color:transparent; }
+.subnav__home{ margin-left:auto; padding:.35rem .6rem; color:rgba(0,0,0,.7); text-decoration:none; }
+.subnav__spacer{ flex:1 1 auto; }
 .subcontent{ padding-top:1rem; }
 .auth-error{ margin-top: .75rem; background:#fff5f5; border:1px solid #ffd6d6; color:#be123c; padding:.75rem 1rem; border-radius:8px; }
 .spinner{ display:none; width:1em; height:1em; border:.15em solid rgba(255,255,255,.6); border-top-color:#fff; border-radius:50%; animation:spin 1s linear infinite; margin-right:.4em; vertical-align:-.125em; }
