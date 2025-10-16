@@ -106,42 +106,44 @@ hide_sidebar: true
       return;
     }
 
+    var redirectHandled = false;
+
     // Check auth state
     AuthBridge.onChange(function(user){
       if(user){
         showUnlocked();
-        // If just logged in, restore redirect
-        try {
-          var dest = sessionStorage.getItem(POST_AUTH_KEY);
-          if(dest && dest !== location.pathname){
-            sessionStorage.removeItem(POST_AUTH_KEY);
-            location.assign(dest);
-          }
-        } catch(e){}
       } else {
         showLocked();
       }
     });
 
     // Handle redirect result
-    if(AuthBridge.getRedirectResult){
-      AuthBridge.getRedirectResult().then(function(result){
-        if(result && result.user){
-          // Success - will be handled by onChange
-          var dest = '/inventory/';
-          try {
-            var stored = sessionStorage.getItem(POST_AUTH_KEY);
-            if(stored) dest = stored;
-            sessionStorage.removeItem(POST_AUTH_KEY);
-          } catch(e){}
+    AuthBridge.getRedirectResult().then(function(result){
+      if(result && result.user){
+        console.log('OAuth 로그인 성공:', result.user.email);
+        redirectHandled = true;
+        
+        // Get redirect destination
+        var dest = '/inventory/';
+        try {
+          var stored = sessionStorage.getItem(POST_AUTH_KEY);
+          if(stored) dest = stored;
+          sessionStorage.removeItem(POST_AUTH_KEY);
+        } catch(e){}
+        
+        // Redirect after short delay to ensure state updates
+        setTimeout(function(){ 
           location.assign(dest);
-        }
-      }).catch(function(e){
-        if(e && e.code !== 'auth/no-auth-event'){
-          showError(e.message || '로그인 실패');
-        }
-      });
-    }
+        }, 100);
+      }
+    }).catch(function(e){
+      // Ignore benign errors
+      if(e && (e.code === 'auth/no-auth-event' || e.code === 'auth/user-cancelled' || e.code === 'auth/popup-closed-by-user')){
+        return;
+      }
+      // Show other errors
+      showError(e.message || '로그인 실패');
+    });
   }
 
   // Email login

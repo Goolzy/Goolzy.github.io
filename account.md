@@ -243,7 +243,10 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
   }
   // OAuth login function
   function oauth(name){
+    console.log('OAuth 시작:', name);
+    
     if (!window.AuthBridge) { 
+      console.error('AuthBridge 없음');
       showError({message:'인증 모듈이 초기화되지 않았습니다.'}); 
       return; 
     }
@@ -252,10 +255,17 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
     setOauthButtonsDisabled(true);
     
     // Store redirect destination
-    try { sessionStorage.setItem(POST_AUTH_REDIRECT_KEY, SUCCESS_REDIRECT); } catch(_e){}
+    try { 
+      sessionStorage.setItem(POST_AUTH_REDIRECT_KEY, SUCCESS_REDIRECT); 
+      console.log('리다이렉트 저장됨:', SUCCESS_REDIRECT);
+    } catch(_e){}
     
     // Use redirect-based OAuth
-    AuthBridge.signInWith(name).catch(function(e){ 
+    console.log('signInWith 호출 중...');
+    AuthBridge.signInWith(name).then(function(){
+      console.log('signInWith 성공');
+    }).catch(function(e){ 
+      console.error('signInWith 에러:', e);
       setOauthButtonsDisabled(false); 
       showError(e);
     });
@@ -274,22 +284,50 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
     }
   } catch(_e){}
 
-  // Handle redirect result on page load
-  if (window.AuthBridge && AuthBridge.getRedirectResult) {
+  // Initialize auth handling
+  function initAuth(){
+    console.log('initAuth 시작, AuthBridge:', !!window.AuthBridge);
+    
+    if (!window.AuthBridge) return;
+    
+    // Auth state listener
+    AuthBridge.onChange(function(user){
+      console.log('Auth state 변경:', user ? user.email : '로그아웃');
+      if (user && user.email) { 
+        onSignedIn(user.email); 
+      } else { 
+        onSignedOut(); 
+      }
+    });
+
+    // Handle redirect result
+    console.log('getRedirectResult 호출 중...');
     AuthBridge.getRedirectResult().then(function(result){
+      console.log('getRedirectResult 완료:', result);
       if (result && result.user) {
-        // OAuth login successful - redirect to destination
+        console.log('OAuth 로그인 성공:', result.user.email);
+        // Get redirect destination
         var dest = SUCCESS_REDIRECT;
         try { 
           var stored = sessionStorage.getItem(POST_AUTH_REDIRECT_KEY);
           if (stored) dest = stored;
           sessionStorage.removeItem(POST_AUTH_REDIRECT_KEY);
+          console.log('리다이렉트 목적지:', dest);
         } catch(_e){}
-        location.assign(dest);
+        
+        // Redirect after short delay to ensure state updates
+        setTimeout(function(){ 
+          console.log('리다이렉트 실행:', dest);
+          location.assign(dest); 
+        }, 100);
+      } else {
+        console.log('리다이렉트 결과 없음 (정상)');
       }
     }).catch(function(e){
+      console.log('getRedirectResult 에러:', e);
       // Ignore benign errors
       if (e && (e.code === 'auth/no-auth-event' || e.code === 'auth/user-cancelled' || e.code === 'auth/popup-closed-by-user')) {
+        console.log('무시 가능한 에러:', e.code);
         return;
       }
       // Show other errors
@@ -297,15 +335,16 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
     });
   }
 
-  // Auth state listener
-  if (window.AuthBridge && AuthBridge.onChange) {
-    AuthBridge.onChange(function(user){
-      if (user && user.email) { 
-        onSignedIn(user.email); 
-      } else { 
-        onSignedOut(); 
-      }
-    });
+  // Initialize when AuthBridge is ready
+  console.log('스크립트 로드됨, AuthBridge:', !!window.AuthBridge);
+  if (window.AuthBridge) {
+    initAuth();
+  } else {
+    console.log('auth:bridge-ready 이벤트 대기 중...');
+    window.addEventListener('auth:bridge-ready', function(){
+      console.log('auth:bridge-ready 이벤트 받음');
+      initAuth();
+    }, {once: true});
   }
 
       // Verification actions
