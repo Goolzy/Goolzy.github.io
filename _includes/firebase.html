@@ -19,24 +19,37 @@
         if (Array.isArray(allow) && allow.length > 0) {
           var host = (location && location.hostname) || '';
           var ok = allow.indexOf(host) !== -1;
-          if (!ok) { console.warn('Firebase init skipped: host not allowed', host); return; }
+          if (!ok) { console.warn('Firebase init skipped: host not allowed', host); window.__fbInitSkippedReason = 'host-not-allowed:' + host; return; }
         }
       } catch(_e){}
       if (!cfg.apiKey) { console.warn('Firebase enabled but apiKey is empty'); }
       window.firebaseApp = firebase.initializeApp(cfg);
-      // Optional: App Check (reCAPTCHA v3). Configure in _config.yml -> firebase.app_check.site_key
+      // Optional: App Check (reCAPTCHA v3). Configure in _config.yml -> firebase.app_check.*
       try {
         var appCheckCfg = (siteFirebase && siteFirebase.app_check) || {};
-        if (appCheckCfg && appCheckCfg.site_key) {
+        var qs = (location && location.search) ? location.search : '';
+        var appCheckEnabled = (appCheckCfg && appCheckCfg.enabled === false) ? false : true;
+        if (qs.indexOf('appcheck=off') !== -1) appCheckEnabled = false;
+        var debugAppCheck = !!(appCheckCfg && appCheckCfg.debug) || (qs.indexOf('appcheck=debug') !== -1);
+        if (debugAppCheck) { try { self.FIREBASE_APPCHECK_DEBUG_TOKEN = true; } catch(_e){} }
+        if (appCheckEnabled && appCheckCfg && appCheckCfg.site_key) {
           var autoRefresh = (appCheckCfg.auto_refresh !== false);
           // Using compat: pass site key directly for ReCaptcha v3
           firebase.appCheck().activate(appCheckCfg.site_key, autoRefresh);
+          window.__appCheckActivated = true;
+        } else {
+          window.__appCheckActivated = 'skipped';
         }
-      } catch(e){ console.warn('App Check init warning', e); }
+      } catch(e){ console.warn('App Check init warning', e); window.__appCheckActivated = false; }
+      window.__fbInit = true;
   var auth = firebase.auth();
   // Use browser/device language for Firebase emails (e.g., password reset)
   try { auth.useDeviceLanguage(); } catch(_e) {}
-  try { auth.setPersistence(firebase.auth.Auth.Persistence.LOCAL); } catch(_e) {}
+  try { auth.setPersistence(firebase.auth.Auth.Persistence.LOCAL); }
+  catch(_e1){
+    try { auth.setPersistence(firebase.auth.Auth.Persistence.SESSION); window.__fbPersistence = 'SESSION'; }
+    catch(_e2){ window.__fbPersistence = 'NONE'; }
+  }
 
       // Providers from config
       var ap = siteFirebase.auth_providers || {};
@@ -88,6 +101,11 @@
             }
             sessionStorage.setItem('__authRedirecting', '1');
             sessionStorage.setItem('postAuthRedirect', '/');
+            // Best-effort: clear any previous firebase:* entries that may cause stale credentials
+            for (var i = sessionStorage.length - 1; i >= 0; i--) {
+              var k = sessionStorage.key(i);
+              if (k && k.indexOf('firebase:') === 0) sessionStorage.removeItem(k);
+            }
           } catch(_e){}
           return auth.signOut().catch(function(){ /* ignore */ }).then(doRedirect);
         },

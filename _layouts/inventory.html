@@ -232,6 +232,25 @@ hide_sidebar: true
   if (btnG) btnG.addEventListener('click', function(e){ e.preventDefault(); oauth('google'); });
   if (btnA) btnA.addEventListener('click', function(e){ e.preventDefault(); oauth('apple'); });
   if (btnM) btnM.addEventListener('click', function(e){ e.preventDefault(); oauth('microsoft'); });
+
+  // Optional inline debug banner (hidden by default)
+  try {
+    var dbg = document.createElement('div');
+    dbg.style.cssText = 'position:sticky;top:0;z-index:2;margin:.5rem 0;padding:.35rem .5rem;border:1px dashed rgba(0,0,0,.15);border-radius:6px;font-size:.8rem;color:#334155;background:#f1f5f9;display:none;';
+    dbg.id = 'inv-debug';
+    var flags = [
+      'fbInit=' + (window.__fbInit===true),
+      'appCheck=' + (window.__appCheckActivated===true),
+      'persistence=' + (window.__fbPersistence||'LOCAL'),
+      'skip=' + (window.__fbInitSkippedReason||'')
+    ].join(' | ');
+    dbg.textContent = 'Auth debug: ' + flags;
+    // Enable banner when query has ?debug=1
+    if (location.search.indexOf('debug=1') !== -1) {
+      var frame = document.querySelector('.inventory-frame');
+      if (frame) { frame.insertBefore(dbg, frame.firstChild); dbg.style.display='block'; }
+    }
+  } catch(_e){}
 })();
 </script>
 
