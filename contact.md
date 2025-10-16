@@ -42,6 +42,7 @@ description: 파트너십·계약·납품 관련 문의를 받습니다.
 </form>
 
 <div id="contract-status" class="notice" style="display:none;"></div>
+<div id="contract-mailto" style="display:none; margin-top:.5rem;"></div>
 
 <script>
 (function(){
@@ -111,6 +112,19 @@ description: 파트너십·계약·납품 관련 문의를 받습니다.
 						status.style.display='block';
 						status.textContent = msg + (code ? ' (코드 ' + code + ')' : '') + detail + ' (표준 제출로 재시도합니다)';
 					}
+					// Last-resort: mailto fallback with prefilled content
+					try {
+						var mailtoBox = document.getElementById('contract-mailto');
+						var to = 'captain@goolzy.com';
+						var subj = document.getElementById('contract_subject').value || '[Contract 문의] 제출';
+						var fd2 = new FormData(form);
+						var lines = [];
+						fd2.forEach(function(v,k){ if (k.charAt(0) !== '_') lines.push(k+': '+v); });
+						var body = lines.join('\n');
+						var url = 'mailto:' + encodeURIComponent(to) + '?subject=' + encodeURIComponent(subj) + '&body=' + encodeURIComponent(body);
+						mailtoBox.innerHTML = '<a class="btn" href="'+url+'">이메일 앱으로 보내기</a>';
+						mailtoBox.style.display = 'block';
+					} catch(_){ }
 					// 폴백: 동일 탭 표준 POST 제출로 재시도
 					try {
 						form.removeAttribute('target');

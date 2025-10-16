@@ -43,6 +43,7 @@ permalink: /inventory/bug-report/
 </form>
 
 <div id="bug-status" class="notice" style="display:none;"></div>
+<div id="bug-mailto" style="display:none; margin-top:.5rem;"></div>
 
 <script>
 (function(){
@@ -149,6 +150,19 @@ permalink: /inventory/bug-report/
           status.style.display='block';
           status.textContent = msg + (code ? ' (코드 ' + code + ')' : '') + detail + ' (표준 제출로 재시도합니다)';
         }
+        // Last-resort: mailto fallback with prefilled content
+        try {
+          var mailtoBox = document.getElementById('bug-mailto');
+          var to = 'captain@goolzy.com';
+          var subj = document.getElementById('bug_subject').value || '[버그 리포트] 제출';
+          var fd2 = new FormData(form);
+          var lines = [];
+          fd2.forEach(function(v,k){ if (k.charAt(0) !== '_') lines.push(k+': '+v); });
+          var body = lines.join('\n');
+          var url = 'mailto:' + encodeURIComponent(to) + '?subject=' + encodeURIComponent(subj) + '&body=' + encodeURIComponent(body);
+          mailtoBox.innerHTML = '<a class="btn" href="'+url+'">이메일 앱으로 보내기</a>';
+          mailtoBox.style.display = 'block';
+        } catch(_){ }
         // Fallback: submit in the same tab
         try { form.removeAttribute('target'); form.submit(); } catch(_){ }
       }).finally(function(){ if (btn) { btn.disabled=false; btn.classList.remove('loading'); } });
