@@ -70,6 +70,7 @@ hide_sidebar: true
       <a class="subnav__link" data-path="/inventory/bug-report/" href="/inventory/bug-report/">버그 리포팅</a>
       <span class="subnav__spacer"></span>
       <a class="subnav__home" href="/">Home</a>
+      <button id="inv-logout" class="btn" type="button" style="margin-left:.5rem;">로그아웃</button>
     </nav>
       <div class="subcontent">
         {{ content }}
@@ -98,6 +99,7 @@ hide_sidebar: true
   var copyBtn = document.getElementById('inv-copy-domain');
   var retryBtn = document.getElementById('inv-retry');
   var fbConsoleLink = document.getElementById('inv-open-fb-console');
+  var btnInvLogout = document.getElementById('inv-logout');
   var POST_AUTH_REDIRECT_KEY = 'postAuthRedirect';
   // highlight active link
   try {
@@ -164,7 +166,16 @@ hide_sidebar: true
     if (AuthBridge && AuthBridge.getRedirectResult) {
       AuthBridge.getRedirectResult().then(function(res){
         var user = (res && res.user) || (AuthBridge.currentUser && AuthBridge.currentUser());
-        if (user) update(user);
+        if (user) {
+          update(user);
+          // If just signed-in and already verified, honor stored redirect
+          try {
+            if (isVerified(user)) {
+              var dest = sessionStorage.getItem(POST_AUTH_REDIRECT_KEY);
+              if (dest) { sessionStorage.removeItem(POST_AUTH_REDIRECT_KEY); location.assign(dest); return; }
+            }
+          } catch(_e){}
+        }
       }).catch(function(e){
         // Handle common benign or recoverable redirect errors
         var benign = (e && (e.code === 'auth/no-auth-event' || e.code === 'auth/user-cancelled'));
@@ -184,6 +195,12 @@ hide_sidebar: true
         if (!benign) showError(e);
       });
     }
+    // If initialization already recorded an App Check error, show hint immediately
+    try {
+      if (document.getElementById('inv-appcheck-hint') && String(window.__fbInitError||'').toLowerCase().indexOf('appcheck') >= 0) {
+        document.getElementById('inv-appcheck-hint').style.display='block';
+      }
+    } catch(_e){}
   }
   if (window.AuthBridge) { initGate(); }
   else { window.addEventListener('auth:bridge-ready', initGate, { once: true }); }
@@ -237,6 +254,11 @@ hide_sidebar: true
   if (btnG) btnG.addEventListener('click', function(e){ e.preventDefault(); oauth('google'); });
   if (btnA) btnA.addEventListener('click', function(e){ e.preventDefault(); oauth('apple'); });
   if (btnM) btnM.addEventListener('click', function(e){ e.preventDefault(); oauth('microsoft'); });
+  if (btnInvLogout) btnInvLogout.addEventListener('click', function(){
+    if (!window.AuthBridge) return;
+    try { sessionStorage.removeItem(POST_AUTH_REDIRECT_KEY); } catch(_e){}
+    AuthBridge.signOut().then(function(){ location.assign('/'); });
+  });
 
   // Optional inline debug banner (hidden by default)
   try {
