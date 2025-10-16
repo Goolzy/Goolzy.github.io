@@ -5,10 +5,10 @@
 {%- comment -%} Auth: Firebase include when enabled {%- endcomment -%}
 {% include firebase.html %}
 
-<script async src="{{ '/assets/javascripts/main.js' | relative_url }}"></script>
+<script async src="{{ '/assets/javascripts/main.js' | relative_url }}?v={{ site.github.build_revision | default: site.time | date: '%s' }}"></script>
 
 {%- comment -%} Site auth layer (works with or without Firebase) {%- endcomment -%}
-<script src="{{ '/assets/javascripts/auth.js' | relative_url }}"></script>
+<script src="{{ '/assets/javascripts/auth.js' | relative_url }}?v={{ site.github.build_revision | default: site.time | date: '%s' }}"></script>
 
 {% if site.search %}
   {%- assign search_provider = site.search_provider | default: "lunr" -%}
