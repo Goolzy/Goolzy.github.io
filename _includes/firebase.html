@@ -183,6 +183,7 @@
       window.AuthBridge = {
         onChange: function(cb){ return auth.onAuthStateChanged(cb); },
         currentUser: function(){ return auth.currentUser; },
+        getSignInMethods: function(email){ return auth.fetchSignInMethodsForEmail(email); },
         emailSignUp: function(email, password){
           return auth.createUserWithEmailAndPassword(email, password).catch(function(e){
             if (maybeDisableAppCheckAndReload(e)) return new Promise(function(){});
@@ -247,6 +248,12 @@
           return auth.getRedirectResult().finally(function(){
             try { sessionStorage.removeItem('__authRedirecting'); } catch(_e){}
           });
+        },
+        linkWith: function(name){
+          var p = providers[name];
+          if (!auth.currentUser) return Promise.reject(new Error('No authenticated user'));
+          if (!p) return Promise.reject(new Error('Provider not configured: '+name));
+          return auth.currentUser.linkWithRedirect(p);
         },
         sendEmailVerification: function(){
           if (!auth.currentUser) return Promise.reject(new Error('No authenticated user'));
