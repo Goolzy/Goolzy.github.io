@@ -12,7 +12,8 @@
 
     {% include skip-links.html %}
 
-    {% unless page.hide_sidebar %}
+    {% assign no_sidebar = page.hide_sidebar | default: layout.hide_sidebar %}
+    {% unless no_sidebar %}
       <div class="sidebar-toggle-wrapper">
         {% if site.search %}
           <button class="search-toggle" type="button">
@@ -32,7 +33,7 @@
       </div>
     {% endunless %}
 
-    {% unless page.hide_sidebar %}
+    {% unless no_sidebar %}
       <div id="sidebar" class="sidebar">
         <div class="inner">
           {% include navigation.html %}

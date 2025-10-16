@@ -3,10 +3,11 @@ layout: page
 hide_sidebar: true
 ---
 <div id="inventory-root">
-  <div id="inv-locked" style="display:none;">
-    <h2>Inventory</h2>
-    <p>이 페이지는 로그인 후 이용할 수 있습니다.</p>
-    <div class="card-glow" style="padding:1rem 1.25rem; border-radius:16px; max-width:420px;">
+  <div class="inventory-frame">
+    <div id="inv-locked" style="display:none;" class="center-login">
+      <h2 style="text-align:center;">Inventory</h2>
+      <p style="text-align:center;">이 페이지는 로그인 후 이용할 수 있습니다.</p>
+      <div class="card-glow" style="padding:1rem 1.25rem; border-radius:16px; max-width:420px; margin:0 auto;">
       <form id="inv-login" onsubmit="return false;" class="auth-form">
         <label>이메일
           <input name="email" type="email" required placeholder="name@example.com" style="width:100%; padding:.5rem .6rem;">
@@ -32,10 +33,10 @@ hide_sidebar: true
         </a>
       </div>
       <div id="inv-error" class="auth-error" style="display:none;"></div>
+      </div>
     </div>
-  </div>
 
-  <div id="inv-unlocked" style="display:none;">
+    <div id="inv-unlocked" style="display:none;">
     <nav class="subnav" aria-label="Inventory navigation">
       <a class="subnav__link" data-path="/inventory/intro/" href="/inventory/intro/">어플리케이션 소개</a>
       <a class="subnav__link" data-path="/inventory/manual/" href="/inventory/manual/">사용자 매뉴얼</a>
@@ -45,8 +46,9 @@ hide_sidebar: true
       <span class="subnav__spacer"></span>
       <a class="subnav__home" href="/">Home</a>
     </nav>
-    <div class="subcontent">
-      {{ content }}
+      <div class="subcontent">
+        {{ content }}
+      </div>
     </div>
   </div>
 </div>
@@ -120,6 +122,8 @@ hide_sidebar: true
 </script>
 
 <style>
+.inventory-frame{ border:2px solid #7c3aed; border-radius:18px; padding:1rem; }
+.center-login{ display:flex; flex-direction:column; gap:.5rem; }
 .subnav{ display:flex; gap:.5rem; flex-wrap:wrap; align-items:center; padding:.5rem 0 1rem; border-bottom:1px solid rgba(0,0,0,.08); }
 .subnav__link{ padding:.4rem .75rem; border-radius:999px; background:rgba(0,0,0,.04); border:1px solid rgba(0,0,0,.06); text-decoration:none; }
 .subnav__link.is-active{ background:linear-gradient(90deg, #7c3aed, #06b6d4); color:#fff; border-color:transparent; }
