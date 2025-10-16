@@ -32,7 +32,30 @@
   try { if (sessionStorage.getItem('__disable_appcheck') === '1') appCheckEnabled = false; } catch(_e){}
         if (qs.indexOf('appcheck=off') !== -1) appCheckEnabled = false;
         var debugAppCheck = !!(appCheckCfg && appCheckCfg.debug) || (qs.indexOf('appcheck=debug') !== -1);
+        // If debug is explicitly enabled, tell SDK to generate/accept a debug token (dev-only)
         if (debugAppCheck) { try { self.FIREBASE_APPCHECK_DEBUG_TOKEN = true; } catch(_e){} }
+        // If debug is NOT enabled, proactively clear any previously persisted debug token to avoid 403 exchangeDebugToken noise
+        // This can happen if a dev once enabled debug on this browser and the SDK cached the token in storage
+        try {
+          if (!debugAppCheck) {
+            try { delete self.FIREBASE_APPCHECK_DEBUG_TOKEN; } catch(_e){}
+            var L = window.localStorage;
+            if (L) {
+              for (var i = L.length - 1; i >= 0; i--) {
+                var k = L.key(i);
+                if (!k) continue;
+                var kk = k.toLowerCase();
+                if ((kk.indexOf('appcheck') !== -1 || kk.indexOf('app-check') !== -1) && kk.indexOf('debug') !== -1) {
+                  try { L.removeItem(k); } catch(_e){}
+                }
+                // Also clear known debug token aliases
+                if (kk.indexOf('firebase_app_check_debug_token') !== -1 || kk.indexOf('firebaseappcheckdebugtoken') !== -1) {
+                  try { L.removeItem(k); } catch(_e){}
+                }
+              }
+            }
+          }
+        } catch(_e){}
         if (appCheckEnabled && appCheckCfg) {
           var autoRefresh = (appCheckCfg.auto_refresh !== false);
           var provider = (appCheckCfg.provider || 'v3').toLowerCase();
