@@ -65,19 +65,26 @@ permalink: /inventory/suggest/
       });
     }
   } catch(e){}
-  // AJAX submit
+  // AJAX submit with timeout and fallback
   try {
     form.addEventListener('submit', function(e){
       try { e.preventDefault(); } catch(_){}
       var status = document.getElementById('suggest-status');
-      if (status) { status.style.display='none'; status.textContent=''; }
+      if (status) { status.style.display='block'; status.textContent='보내는 중…'; }
       var btn = form.querySelector('button[type="submit"]');
       if (btn) { btn.disabled = true; btn.classList.add('loading'); }
       var fd = new FormData(form);
+      try {
+        var emailInput = form.querySelector('input[name="Email"]');
+        if (emailInput && emailInput.value) fd.append('_replyto', emailInput.value);
+      } catch(_){ }
+      var ctrl = (window.AbortController) ? new AbortController() : null;
+      var to = setTimeout(function(){ try { ctrl && ctrl.abort(); } catch(_){} }, 12000);
       fetch('https://formsubmit.co/ajax/captain@goolzy.com', {
         method: 'POST',
         body: fd,
-        headers: { 'Accept': 'application/json' }
+        headers: { 'Accept': 'application/json' },
+        signal: ctrl ? ctrl.signal : undefined
       }).then(function(res){
         if (!res.ok) throw new Error('FORM_SUBMIT_FAILED:' + res.status);
         return res.json();
@@ -89,7 +96,8 @@ permalink: /inventory/suggest/
         if (String(err).indexOf('403')>=0 || String(err).indexOf('401')>=0 || String(err).indexOf('422')>=0) {
           msg += ' 수신자 이메일 인증이 완료되지 않았을 수 있습니다. 관리자는 formsubmit.co 확인 메일(스팸함 포함)을 승인해 주세요.';
         }
-        if (status) { status.style.display='block'; status.textContent = msg; }
+        if (status) { status.style.display='block'; status.textContent = msg + ' (표준 제출로 재시도합니다)'; }
+        try { form.target = '_blank'; form.submit(); } catch(_){ }
       }).finally(function(){ if (btn) { btn.disabled=false; btn.classList.remove('loading'); } });
     });
   } catch(e){}
