@@ -34,7 +34,7 @@ firebase:
   auth_providers:
     email: true
     google: true
-    apple: true
+    apple: false
     microsoft: true
   config:
     apiKey: "AIzaSyAYQwz94EVCEHcAKC7LD2qVnCbDnZSTBnI"

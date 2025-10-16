@@ -36,9 +36,11 @@ hide_sidebar: true
           <a href="#" id="inv-google-btn" style="display:block;">
             <img src="/assets/images/auth/google-signin.svg" alt="Sign in with Google" style="height:40px;">
           </a>
+          {% if site.firebase.auth_providers.apple %}
           <a href="#" id="inv-apple-btn" style="display:block;">
             <img src="/assets/images/auth/apple-signin.svg" alt="Sign in with Apple" style="height:40px;">
           </a>
+          {% endif %}
           <a href="#" id="inv-ms-btn" style="display:block;">
             <img src="/assets/images/auth/microsoft-signin.svg" alt="Sign in with Microsoft" style="height:40px;">
           </a>
