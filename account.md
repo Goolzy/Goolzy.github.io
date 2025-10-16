@@ -105,12 +105,31 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
 // === DEBUG: Test if script loads ===
 console.log('🔍 account.md 스크립트 시작!');
 var testBox = document.getElementById('test-alert');
-if(testBox) {
-  testBox.innerHTML = '<strong>✅ JavaScript 로딩 성공!</strong> AuthBridge: ' + (window.AuthBridge ? 'OK' : '대기중...');
-  testBox.style.background = '#d1fae5';
-  testBox.style.borderColor = '#10b981';
+
+function updateTestBox() {
+  if(testBox) {
+    var authStatus = window.AuthBridge ? 'OK ✅' : '로딩 중... ⏳';
+    testBox.innerHTML = '<strong>JavaScript 로딩 성공!</strong> AuthBridge: ' + authStatus;
+    if(window.AuthBridge) {
+      testBox.style.background = '#d1fae5';
+      testBox.style.borderColor = '#10b981';
+    }
+  }
 }
-alert('JavaScript가 실행되고 있습니다!');
+
+updateTestBox();
+
+// Check again after 1 second
+setTimeout(function() {
+  console.log('1초 후 AuthBridge 체크:', !!window.AuthBridge);
+  updateTestBox();
+}, 1000);
+
+// Check again after 3 seconds
+setTimeout(function() {
+  console.log('3초 후 AuthBridge 체크:', !!window.AuthBridge);
+  updateTestBox();
+}, 3000);
 // === END DEBUG ===
 
 (function(){
@@ -279,13 +298,23 @@ alert('JavaScript가 실행되고 있습니다!');
     console.log('signInWithPopup 호출 중...');
     AuthBridge.signInWithPopup(name).then(function(result){
       console.log('Popup 로그인 성공:', result.user.email);
+      console.log('User object:', result.user);
+      
       var dest = SUCCESS_REDIRECT;
       try { 
         var stored = sessionStorage.getItem(POST_AUTH_REDIRECT_KEY);
         if (stored) dest = stored;
         sessionStorage.removeItem(POST_AUTH_REDIRECT_KEY);
+        console.log('리다이렉트 목적지:', dest);
+        console.log('현재 location.origin:', location.origin);
+        console.log('현재 location.href:', location.href);
       } catch(_e){}
-      setTimeout(function(){ location.assign(dest); }, 100);
+      
+      // TEMP: Don't redirect, just log
+      console.log('🚫 리다이렉트 비활성화 (디버깅용)');
+      alert('로그인 성공! 콘솔을 확인하세요. (리다이렉트 안 함)');
+      
+      // setTimeout(function(){ location.assign(dest); }, 100);
     }).catch(function(e){ 
       console.error('signInWithPopup 에러:', e);
       setOauthButtonsDisabled(false); 
