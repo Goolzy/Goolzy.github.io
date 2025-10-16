@@ -2,6 +2,7 @@
   <!-- Firebase SDKs -->
   <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-app-check-compat.js"></script>
   <!-- Firebase Config JSON (rendered by Jekyll) -->
   <script id="firebase-config" type="application/json">{{ site.firebase | jsonify }}</script>
   <!-- Initialize Firebase -->
@@ -12,8 +13,26 @@
       var siteFirebase = {};
       if (cfgNode) { try { siteFirebase = JSON.parse(cfgNode.textContent || '{}') || {}; } catch(_e){} }
       var cfg = siteFirebase.config || {};
+      // Optional host allowlist: if provided, only initialize on matching hostnames
+      try {
+        var allow = siteFirebase && siteFirebase.allowed_hosts;
+        if (Array.isArray(allow) && allow.length > 0) {
+          var host = (location && location.hostname) || '';
+          var ok = allow.indexOf(host) !== -1;
+          if (!ok) { console.warn('Firebase init skipped: host not allowed', host); return; }
+        }
+      } catch(_e){}
       if (!cfg.apiKey) { console.warn('Firebase enabled but apiKey is empty'); }
       window.firebaseApp = firebase.initializeApp(cfg);
+      // Optional: App Check (reCAPTCHA v3). Configure in _config.yml -> firebase.app_check.site_key
+      try {
+        var appCheckCfg = (siteFirebase && siteFirebase.app_check) || {};
+        if (appCheckCfg && appCheckCfg.site_key) {
+          var autoRefresh = (appCheckCfg.auto_refresh !== false);
+          // Using compat: pass site key directly for ReCaptcha v3
+          firebase.appCheck().activate(appCheckCfg.site_key, autoRefresh);
+        }
+      } catch(e){ console.warn('App Check init warning', e); }
   var auth = firebase.auth();
   // Use browser/device language for Firebase emails (e.g., password reset)
   try { auth.useDeviceLanguage(); } catch(_e) {}

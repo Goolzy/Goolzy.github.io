@@ -43,6 +43,15 @@ firebase:
     appId: "1:370982765799:web:fea0f16f544e9ab217ce42"
     measurementId: "370982765799"
   redirect_uri: "" # optional: e.g., https://goolzy.github.io/account/
+  # Optional: Firebase App Check (reCAPTCHA v3/Enterprise site key). Strongly recommended for public clients.
+  # Generate site key in Firebase Console → Build → App Check → Web app → reCAPTCHA v3, then paste here.
+  app_check:
+    site_key: "" # e.g., 6Lc... (leave empty to disable)
+    auto_refresh: true
+  # Optional: Only initialize Firebase on these hosts
+  allowed_hosts:
+    - "goolzy.github.io"
+    # - "www.goolzy.com" # uncomment when custom domain is ready
 # Logos & Icons (drop your files under /assets/images)
 # - logo: square icon (used broadly)
 # - logo_wordmark: horizontal wordmark (header)
