@@ -242,10 +242,36 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
     if (oauthProgress) oauthProgress.style.display = disabled ? 'block' : 'none';
   }
   function oauth(name){
+    // Check if user is already signed in
+    try {
+      var currentUser = AuthBridge.currentUser && AuthBridge.currentUser();
+      if (currentUser && currentUser.email) {
+        // User is already logged in, redirect to home
+        location.assign(SUCCESS_REDIRECT);
+        return;
+      }
+    } catch(_e){}
+    
+    // Prevent duplicate OAuth attempts
+    try {
+      var lastOAuth = sessionStorage.getItem('__lastOAuth');
+      var authRedirecting = sessionStorage.getItem('__authRedirecting');
+      if (authRedirecting === '1') {
+        console.log('OAuth operation already in progress');
+        return;
+      }
+    } catch(_e){}
+    
     try { sessionStorage.setItem(POST_AUTH_REDIRECT_KEY, SUCCESS_REDIRECT); } catch(_e){}
     setOauthButtonsDisabled(true);
     clearError();
-    AuthBridge.signInWith(name).catch(function(e){ showError(e); setOauthButtonsDisabled(false); });
+    AuthBridge.signInWith(name).catch(function(e){ 
+      // Only show meaningful errors to users
+      if (e && e.code !== 'auth/no-auth-event' && e.code !== 'auth/popup-closed-by-user' && e.code !== 'auth/user-cancelled') {
+        showError(e);
+      }
+      setOauthButtonsDisabled(false); 
+    });
   }
   btnGoogle.addEventListener('click', function(ev){ ev.preventDefault(); oauth('google'); });
   btnApple.addEventListener('click', function(ev){ ev.preventDefault(); oauth('apple'); });
@@ -268,17 +294,51 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
   // Complete redirect result silently on load
   if (AuthBridge.getRedirectResult) {
     AuthBridge.getRedirectResult().then(function(res){
-      // Some browsers return empty redirect results when user cancels or nothing happened
-      var user = (res && res.user) || AuthBridge.currentUser();
+      // Check if we have a user from redirect result or current session
+      var user = (res && res.user) || null;
+      
+      // If redirect didn't return a user, check current user state
+      if (!user) {
+        try {
+          user = AuthBridge.currentUser();
+        } catch(_e){}
+      }
+      
+      // If user is authenticated, handle redirect
       if (user && user.email) {
         var dest = null;
-        try { dest = sessionStorage.getItem(POST_AUTH_REDIRECT_KEY); sessionStorage.removeItem(POST_AUTH_REDIRECT_KEY); } catch(_e){}
-        if (dest) { return location.assign(dest); }
+        try { 
+          dest = sessionStorage.getItem(POST_AUTH_REDIRECT_KEY); 
+          sessionStorage.removeItem(POST_AUTH_REDIRECT_KEY); 
+        } catch(_e){}
+        
+        // Only redirect if we have a destination and it's different from current page
+        if (dest && dest !== location.pathname) { 
+          location.assign(dest); 
+          return;
+        }
+        
         onSignedIn(user.email);
+      } else {
+        // No user found - this is normal when page loads without a redirect
+        // Clear any redirect flags
+        try { sessionStorage.removeItem(POST_AUTH_REDIRECT_KEY); } catch(_e){}
       }
     }).catch(function(e){
-      // Do not show error if it's a benign redirect issue (no credential)
-      var benign = (e && (e.code === 'auth/no-auth-event' || e.code === 'auth/user-cancelled'));
+      // Silently handle benign errors that are expected in normal flow
+      var benign = (e && (
+        e.code === 'auth/no-auth-event' || 
+        e.code === 'auth/user-cancelled' ||
+        e.code === 'auth/popup-closed-by-user'
+      ));
+      
+      if (benign) {
+        // Just clean up redirect flags, don't show error
+        try { sessionStorage.removeItem(POST_AUTH_REDIRECT_KEY); } catch(_e){}
+        console.log('OAuth redirect completed without sign-in (user may have cancelled)');
+        return;
+      }
+      
       if (e && e.code === 'auth/invalid-credential') {
         // Recover: clear firebase session keys and sign out, then let user try again
         try {
@@ -291,7 +351,9 @@ description: 계정 가입/로그인/탈퇴 미리보기(UI 데모)
         showError({ code: 'auth/invalid-credential', message: '세션이 만료되어 로그인에 실패했습니다. 다시 시도해 주세요.' });
         return;
       }
-      if (!benign) showError(e);
+      
+      // Only show unexpected errors
+      showError(e);
     });
   }
 
