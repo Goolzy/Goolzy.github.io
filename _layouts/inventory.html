@@ -34,6 +34,9 @@ hide_sidebar: true
         </a>
       </div>
       <div id="inv-error" class="auth-error" style="display:none;"></div>
+      <div id="inv-appcheck-hint" style="display:none; margin-top:.5rem; font-size:.9rem; color:#92400e; background:#fffbeb; border:1px solid #fde68a; padding:.5rem .75rem; border-radius:8px;">
+        reCAPTCHA(App Check) 검증에 실패했습니다. 브라우저 확장(광고/추적 차단)을 잠시 비활성화하거나 시크릿 창에서 시도해 주세요. 문제가 지속되면 관리자에게 문의해 주세요.
+      </div>
       <div id="inv-unauth-hint" class="admin-hint" style="display:none; margin-top:.75rem;">
         <strong>이 도메인이 Firebase에 등록되지 않았습니다.</strong>
         <p style="margin:.25rem 0 .5rem;">관리자 안내: 아래 도메인을 Firebase Console → Authentication → Settings → Authorized domains에 추가해 주세요.</p>
@@ -176,6 +179,8 @@ hide_sidebar: true
           showError({ code: 'auth/invalid-credential', message: '세션이 만료되어 로그인에 실패했습니다. 다시 시도해 주세요.' });
           return;
         }
+        // Surface App Check issues hint if recaptcha fails are observed upstream
+        try { if (window.__appCheckActivated && errBox && (String(window.__fbInitError||'').indexOf('AppCheck')>=0)) { document.getElementById('inv-appcheck-hint').style.display='block'; } } catch(_e){}
         if (!benign) showError(e);
       });
     }
