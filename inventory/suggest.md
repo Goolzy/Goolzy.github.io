@@ -13,6 +13,7 @@ permalink: /inventory/suggest/
   <input type="hidden" name="_subject" id="suggest_subject" value="[기능 제안] 제출">
   <input type="hidden" name="Category" value="기능 제안">
   <input type="hidden" name="_next" value="{{ '/inventory/suggest/?success=1' | absolute_url }}">
+  <input type="hidden" name="_captcha" value="false">
   <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
   <label style="display:block; margin-bottom:1rem;">
     제목
@@ -47,7 +48,8 @@ permalink: /inventory/suggest/
     var t = document.getElementById('suggest_title').value || '제목 미입력';
     document.getElementById('suggest_subject').value = '[기능 제안] ' + t;
   }
-  try { document.getElementById('suggest-form').addEventListener('input', updateSubject); } catch(e){}
+  var form = document.getElementById('suggest-form');
+  try { form.addEventListener('input', updateSubject); } catch(e){}
   // Autofill from AuthBridge (email, uid)
   try {
     var form = document.getElementById('suggest-form');
@@ -62,6 +64,34 @@ permalink: /inventory/suggest/
         if (uidInput) uidInput.value = (u && u.uid) ? u.uid : '';
       });
     }
+  } catch(e){}
+  // AJAX submit
+  try {
+    form.addEventListener('submit', function(e){
+      try { e.preventDefault(); } catch(_){}
+      var status = document.getElementById('suggest-status');
+      if (status) { status.style.display='none'; status.textContent=''; }
+      var btn = form.querySelector('button[type="submit"]');
+      if (btn) { btn.disabled = true; btn.classList.add('loading'); }
+      var fd = new FormData(form);
+      fetch('https://formsubmit.co/ajax/captain@goolzy.com', {
+        method: 'POST',
+        body: fd,
+        headers: { 'Accept': 'application/json' }
+      }).then(function(res){
+        if (!res.ok) throw new Error('FORM_SUBMIT_FAILED:' + res.status);
+        return res.json();
+      }).then(function(){
+        if (status) { status.style.display='block'; status.textContent='감사합니다! 제안이 전송되었습니다.'; }
+        try { form.reset(); } catch(_){ }
+      }).catch(function(err){
+        var msg = '전송에 실패했습니다. 잠시 후 다시 시도해 주세요.';
+        if (String(err).indexOf('403')>=0 || String(err).indexOf('401')>=0 || String(err).indexOf('422')>=0) {
+          msg += ' 수신자 이메일 인증이 완료되지 않았을 수 있습니다. 관리자는 formsubmit.co 확인 메일(스팸함 포함)을 승인해 주세요.';
+        }
+        if (status) { status.style.display='block'; status.textContent = msg; }
+      }).finally(function(){ if (btn) { btn.disabled=false; btn.classList.remove('loading'); } });
+    });
   } catch(e){}
 })();
 </script>
