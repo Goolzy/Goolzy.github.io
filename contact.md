@@ -100,9 +100,9 @@ description: 파트너십·계약·납품 관련 문의를 받습니다.
 			}).catch(function(err){
 					try { console.error('[Contract form] submit error:', err); } catch(_){ }
 					var msg = '전송에 실패했습니다. 잠시 후 다시 시도해 주세요.';
-				if (String(err).indexOf('403')>=0 || String(err).indexOf('401')>=0 || String(err).indexOf('422')>=0) {
-					msg += ' 수신자 이메일 인증이 완료되지 않았을 수 있습니다. 관리자는 수신함(스팸함 포함)에서 formsubmit.co 확인 메일을 승인해 주세요.';
-				}
+					if (String(err).indexOf('403')>=0 || String(err).indexOf('401')>=0 || String(err).indexOf('422')>=0) {
+						msg += ' 수신자 이메일 인증이 만료 또는 미완료일 수 있습니다. 관리자는 수신함(스팸함 포함)에서 formsubmit.co 확인 메일을 승인해 주세요. 새 인증 메일 보내기: ' + (location.origin + '/admin/formsubmit-verify/');
+					}
 					if (status) {
 						var code = (String(err).match(/FORM_SUBMIT_FAILED:(\d{3})/)||[])[1];
 						var detail = '';
