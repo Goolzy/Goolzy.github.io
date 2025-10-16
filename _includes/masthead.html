@@ -53,7 +53,12 @@
     if (logout && window.AuthBridge) {
       logout.addEventListener('click', function(){
         try { sessionStorage.removeItem('postAuthRedirect'); } catch(_e){}
-        AuthBridge.signOut().then(function(){ updateAuthUI(null); location.assign('/'); });
+        var isInventory = false;
+        try { isInventory = (location && /^\/inventory\//.test(location.pathname)) || (location && location.pathname === '/inventory/'); } catch(_e){}
+        AuthBridge.signOut().then(function(){
+          updateAuthUI(null);
+          location.assign(isInventory ? '/inventory/' : '/');
+        });
       });
       try { updateAuthUI(AuthBridge.currentUser && AuthBridge.currentUser()); } catch(_e){}
       try { AuthBridge.onChange && AuthBridge.onChange(updateAuthUI); } catch(_e){}
