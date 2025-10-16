@@ -50,6 +50,7 @@ firebase:
     site_key: "6Lc_-usrAAAAAMWrUjnrmFxM76mAKWfKT14SJPva" # e.g., 6Lc... (leave empty to disable)
     auto_refresh: true
       debug: false # set true or use ?appcheck=debug to enable debug token
+    provider: v3 # v3 or enterprise
   # Optional: Only initialize Firebase on these hosts
   allowed_hosts:
     - "goolzy.github.io"
