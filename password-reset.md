@@ -14,10 +14,7 @@ description: 이메일로 비밀번호 재설정 링크를 받아보세요.
     <label>이메일
       <input name="email" type="email" required placeholder="name@example.com" style="width:100%; padding:.5rem .6rem;">
     </label>
-    <div style="display:flex; gap:.5rem; align-items:center;">
-      <button class="btn btn--alt-gradient" id="btn-send">재설정 메일 보내기</button>
-      <a href="/account/" class="btn btn--outline">로그인 화면으로</a>
-    </div>
+    <button class="btn btn--alt-gradient" id="btn-send">재설정 메일 보내기</button>
   </form>
   <div id="pw-success" style="display:none; margin-top:.75rem; background:#ecfdf5; border:1px solid #a7f3d0; color:#065f46; padding:.75rem 1rem; border-radius:8px;"></div>
   <div id="pw-error" class="auth-error" style="display:none;"></div>
