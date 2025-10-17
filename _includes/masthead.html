@@ -38,45 +38,10 @@
         </p>
       {% endif %}
     </div>
-    {% if page.url == '/inventory/' or page.url contains '/inventory/' %}
-    <div class="masthead-account" aria-label="Account actions" style="margin-left:auto; display:flex; align-items:center; gap:.5rem;">
-      <button id="mh-logout" class="btn" type="button" style="display:none; padding:.25rem .6rem; font-size:.9rem;">로그아웃</button>
-    </div>
-    {% endif %}
+    {# inventory masthead에서 로그아웃 버튼 제거됨 #}
   </div>
 </header>
 
 <script>
-(function(){
-  function qs(id){ return document.getElementById(id); }
-  function updateAuthUI(user){
-    var logout = qs('mh-logout');
-    if (!logout) return;
-    if (user) {
-      logout.style.display = '';
-    } else {
-      logout.style.display = 'none';
-    }
-  }
-  function init(){
-    var logout = qs('mh-logout');
-    if (logout && window.AuthBridge) {
-      logout.addEventListener('click', function(){
-        try { sessionStorage.removeItem('postAuthRedirect'); } catch(_e){}
-        var isInventory = false;
-        try { isInventory = (location && /^\/inventory\//.test(location.pathname)) || (location && location.pathname === '/inventory/'); } catch(_e){}
-        AuthBridge.signOut().then(function(){
-          updateAuthUI(null);
-          location.assign(isInventory ? '/inventory/' : '/');
-        });
-      });
-      try { updateAuthUI(AuthBridge.currentUser && AuthBridge.currentUser()); } catch(_e){}
-      try { AuthBridge.onChange && AuthBridge.onChange(updateAuthUI); } catch(_e){}
-    } else {
-      // Wait for AuthBridge readiness if not yet available
-      window.addEventListener('auth:bridge-ready', init, { once: true });
-    }
-  }
-  if (window.AuthBridge) init(); else window.addEventListener('auth:bridge-ready', init, { once: true });
-})();
+// masthead: inventory 영역에서 로그아웃 UI를 제공하지 않습니다.
 </script>
