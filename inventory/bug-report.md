@@ -8,12 +8,9 @@ permalink: /inventory/bug-report/
 
 발견하신 버그를 신고해주세요.
 
-<form id="bug-form" action="https://formsubmit.co/captain@goolzy.com" method="POST" style="max-width:600px;">
-  <input type="hidden" name="_template" value="table">
+<form id="bug-form" style="max-width:600px;" data-workers-endpoint="{{ site.mail_gateway.workers_endpoint | default: '' }}">
   <input type="hidden" name="_subject" id="bug_subject" value="[버그 리포트] 제출">
   <input type="hidden" name="Category" value="버그 리포트">
-  <input type="hidden" name="_next" value="{{ '/inventory/bug-report/?success=1' | absolute_url }}">
-  <input type="hidden" name="_captcha" value="false">
   <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
   <label style="display:block; margin-bottom:1rem;">
     버그 제목
@@ -120,35 +117,34 @@ permalink: /inventory/bug-report/
         if (status) { status.style.display='block'; status.textContent='네트워크가 오프라인입니다. 연결 상태를 확인한 뒤 다시 시도해 주세요.'; }
         throw new Error('OFFLINE');
       }
-      fetch('https://formsubmit.co/ajax/captain@goolzy.com', {
-        method: 'POST',
-        body: fd,
-        headers: { 'Accept': 'application/json' },
-        signal: ctrl ? ctrl.signal : undefined
-      }).then(function(res){
+  var workers = form.getAttribute('data-workers-endpoint') || '';
+  if (!workers) { throw new Error('WORKERS_ENDPOINT_NOT_SET'); }
+  var submitUrl = workers.replace(/\/$/, '');
+      var obj = {};
+      fd.forEach(function(v,k){ obj[k] = v; });
+      var fetchOpts = { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, signal: ctrl ? ctrl.signal : undefined, body: JSON.stringify(obj) };
+      fetch(submitUrl, fetchOpts).then(function(res){
         if (!res.ok) {
-          return res.clone().json().catch(function(){ return res.text(); }).then(function(body){
+          return res.clone().text().then(function(body){
             var bodyStr = (typeof body === 'string') ? body : JSON.stringify(body);
             throw new Error('FORM_SUBMIT_FAILED:' + res.status + ':' + bodyStr);
           });
         }
-        return res.json();
+        return null;
       }).then(function(){
         if (status) { status.style.display='block'; status.textContent='감사합니다! 버그 리포트가 전송되었습니다.'; }
         try { form.reset(); } catch(_){ }
       }).catch(function(err){
         try { console.error('[Bug form] submit error:', err); } catch(_){ }
         var msg = '전송에 실패했습니다. 잠시 후 다시 시도해 주세요.';
-        if (String(err).indexOf('403')>=0 || String(err).indexOf('401')>=0 || String(err).indexOf('422')>=0) {
-          msg += ' 수신자 이메일 인증이 만료 또는 미완료일 수 있습니다. 관리자는 formsubmit.co 확인 메일(스팸함 포함)을 승인해 주세요. 새 인증 메일 보내기: ' + (location.origin + '/admin/formsubmit-verify/');
-        }
+        if (String(err).indexOf('WORKERS_ENDPOINT_NOT_SET')>=0) { msg = '메일 엔드포인트가 설정되지 않았습니다. _config.yml의 mail_gateway.workers_endpoint를 설정한 뒤 다시 시도해 주세요.'; }
         if (status) {
           var code = (String(err).match(/FORM_SUBMIT_FAILED:(\d{3})/)||[])[1];
           var detail = '';
           var m = String(err).match(/FORM_SUBMIT_FAILED:\d{3}:(.*)$/);
           if (m && m[1]) detail = ' 상세: ' + m[1].slice(0, 200);
           status.style.display='block';
-          status.textContent = msg + (code ? ' (코드 ' + code + ')' : '') + detail + ' (표준 제출로 재시도합니다)';
+          status.textContent = msg + (code ? ' (코드 ' + code + ')' : '') + detail;
         }
         // Last-resort: mailto fallback with prefilled content
         try {
@@ -163,8 +159,7 @@ permalink: /inventory/bug-report/
           mailtoBox.innerHTML = '<a class="btn" href="'+url+'">이메일 앱으로 보내기</a>';
           mailtoBox.style.display = 'block';
         } catch(_){ }
-        // Fallback: submit in the same tab
-        try { form.removeAttribute('target'); form.submit(); } catch(_){ }
+  // workers-only: no standard POST fallback
       }).finally(function(){ if (btn) { btn.disabled=false; btn.classList.remove('loading'); } });
     });
   } catch(e){}

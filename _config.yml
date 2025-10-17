@@ -28,6 +28,10 @@ company_name: Goolzy Co., Ltd.
 support_email: support@goolzy.com
 twitter_username:
 github_username:
+# Outbound mail gateway (forms). Default: formsubmit. Set provider: workers and workers_endpoint to switch.
+mail_gateway:
+  provider: workers # formsubmit | workers
+  workers_endpoint: https://script.google.com/a/macros/goolzy.com/s/AKfycbwL2obLLEMheXMrQmOR9cdURIoMw4hD46dCc8__00g1uoP3qAX4vHad9BDYWg5vyMtq/exec
 # Authentication (Firebase) — disabled by default. Fill config and set enabled: true to activate.
 firebase:
   enabled: true
