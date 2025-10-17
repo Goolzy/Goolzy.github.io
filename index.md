@@ -56,28 +56,6 @@ description: 굴지는 즐거움과 연결된 모든 엔터테인먼트 콘텐�
   <p class="intro-actions"><a class="btn btn--outline" href="/news/">뉴스 더보기</a></p>
 </section>
 
-<section class="callout-band" style="margin-top: 1.25rem;">
-  <div class="kicker" style="opacity: .7; font-weight: 600;">Feedback</div>
-  <h3 style="margin: .25rem 0 .5rem;">더 나은 경험을 위해 의견을 들려주세요</h3>
-  <p style="margin: 0 0 .5rem;">버그 제보와 기능 제안을 환영합니다. 짧게 보내주셔도 큰 도움이 됩니다.</p>
-  <a class="btn btn--alt-gradient" href="/feedback/">피드백 남기기</a>
-</section>
-<section>
-  <h2>지금 하는 일</h2>
-  <p>개인 디바이스로 연결된 공간 경험, <a href="/Talisman/">프로젝트 탈리스만</a>을 개발하고 있습니다. (2023.9~)</p>
-  <p class="intro-actions">
-    <a class="btn" href="/Talisman/">탈리스만 보러가기</a>
-    <a class="btn btn--outline" href="/news/">뉴스 더보기</a>
-  </p>
-</section>
-
-<section>
-  <h2>바로가기</h2>
-  <p>
-    <a href="/about/">About</a> · <a href="/news/">News</a> · <a href="/feedback/">Feedback</a>
-  </p>
-</section>
-
 <style>
 .hero--compact { margin-bottom: 0; }
 .hero--compact h1 { margin-bottom: .25rem; }
