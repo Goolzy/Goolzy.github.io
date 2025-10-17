@@ -2,7 +2,7 @@
   Prefer explicit logo path if set; otherwise allow a wordmark-specific key.
 {% endcomment %}
 {%- assign default_logo = site.logo_wordmark | default: site.logo | relative_url -%}
-{%- assign inv_logo = site.logo_wordmark_inventory | default: site.logo_wordmark | default: site.logo | relative_url -%}
+{%- assign inv_logo = site.logo_masthead_inventory | default: site.logo_wordmark_inventory | default: site.logo_wordmark | default: site.logo | relative_url -%}
 {%- assign is_inventory = false -%}
 {%- if page.url == '/inventory/' or page.url contains '/inventory/' -%}
   {%- assign is_inventory = true -%}
