@@ -31,7 +31,7 @@ github_username:
 # Outbound mail gateway (forms). Default: formsubmit. Set provider: workers and workers_endpoint to switch.
 mail_gateway:
   provider: workers # formsubmit | workers
-  workers_endpoint: https://script.google.com/a/macros/goolzy.com/s/AKfycbxoHbbdLsEoRxYSnuqETYfN_rdN7ic_EG3PcUGtDmVAwfNqh_dvMq5ezZsMxZedtNSm/exec
+  workers_endpoint: https://script.google.com/macros/s/AKfycbzTYxDM2Sb6YdybBPRwkn3oAevjpcDjXxfG13LqfndfZRy5kATcMoYHSrDwdFRWbOdu/exec
 # Authentication (Firebase) — disabled by default. Fill config and set enabled: true to activate.
 firebase:
   enabled: true

@@ -9,7 +9,7 @@ description: 파트너십·계약·납품 관련 문의를 받습니다.
 
 파트너십, 계약, 납품과 관련된 문의를 환영합니다. 아래 양식을 제출하시면 담당자에게 메일로 전달됩니다.
 
-<form id="contract-form" style="max-width:720px;" data-workers-endpoint="{{ site.mail_gateway.workers_endpoint | default: '' }}">
+<form id="contract-form" style="max-width:720px;" data-workers-endpoint="{{ site.mail_gateway.workers_endpoint | default: '' }}" data-endpoint-hint="/assets/mail-endpoint.txt">
 	<input type="hidden" name="_subject" id="contract_subject" value="[Contract 문의] 제출">
 	<input type="hidden" name="Category" value="Contract">
 	<input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
@@ -78,16 +78,29 @@ description: 파트너십·계약·납품 관련 문의를 받습니다.
 					if (status) { status.style.display='block'; status.textContent='네트워크가 오프라인입니다. 연결 상태를 확인한 뒤 다시 시도해 주세요.'; }
 					throw new Error('OFFLINE');
 				}
-				var workers = form.getAttribute('data-workers-endpoint') || '';
-				if (!workers) { throw new Error('WORKERS_ENDPOINT_NOT_SET'); }
-				var submitUrl = workers.replace(/\/$/, '');
-				var obj = {};
-				fd.forEach(function(v,k){ obj[k] = v; });
-				var fetchOpts = { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, signal: ctrl ? ctrl.signal : undefined, body: JSON.stringify(obj) };
-				fetch(submitUrl, fetchOpts).then(function(){
-				if (status) { status.style.display='block'; status.textContent='감사합니다! 문의가 전송되었습니다. 곧 연락드리겠습니다.'; }
-				try { form.reset(); } catch(_){ }
-			}).catch(function(err){
+								function deriveEndpointSync() {
+									var w = form.getAttribute('data-workers-endpoint') || '';
+									if (w) return w.replace(/\/$/, '');
+									return '';
+								}
+								function loadEndpoint() {
+									var url = deriveEndpointSync();
+									if (url) return Promise.resolve(url);
+									var hint = form.getAttribute('data-endpoint-hint') || '/assets/mail-endpoint.txt';
+									return fetch(hint, { cache: 'no-store' })
+										.then(function(r){ return r.text(); })
+										.then(function(t){ return (t||'').trim().replace(/\/$/, ''); });
+								}
+								var obj = {};
+								fd.forEach(function(v,k){ obj[k] = v; });
+								loadEndpoint().then(function(submitUrl){
+									if (!submitUrl) throw new Error('WORKERS_ENDPOINT_NOT_SET');
+									var fetchOpts = { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, signal: ctrl ? ctrl.signal : undefined, body: JSON.stringify(obj) };
+									return fetch(submitUrl, fetchOpts);
+								}).then(function(){
+									if (status) { status.style.display='block'; status.textContent='감사합니다! 문의가 전송되었습니다. 곧 연락드리겠습니다.'; }
+									try { form.reset(); } catch(_){ }
+								}).catch(function(err){
 					try { console.error('[Contract form] submit error:', err); } catch(_){ }
 					var msg = '전송에 실패했습니다. 잠시 후 다시 시도해 주세요.';
 					// workers-only: do not reference legacy providers
@@ -113,7 +126,7 @@ description: 파트너십·계약·납품 관련 문의를 받습니다.
 						mailtoBox.style.display = 'block';
 					} catch(_){ }
 					// 표준 POST 폴백 제거 (workers-only)
-			}).finally(function(){ if (btn) { btn.disabled=false; btn.classList.remove('loading'); } });
+				}).finally(function(){ if (btn) { btn.disabled=false; btn.classList.remove('loading'); } });
 		});
 	} catch(e){}
 })();

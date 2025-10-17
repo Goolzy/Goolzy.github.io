@@ -8,7 +8,7 @@ permalink: /inventory/suggest/
 
 새로운 기능이나 개선 사항을 제안해주세요.
 
-<form id="suggest-form" style="max-width:600px;" data-workers-endpoint="{{ site.mail_gateway.workers_endpoint | default: '' }}">
+<form id="suggest-form" style="max-width:600px;" data-workers-endpoint="{{ site.mail_gateway.workers_endpoint | default: '' }}" data-endpoint-hint="/assets/mail-endpoint.txt">
   <input type="hidden" name="_subject" id="suggest_subject" value="[기능 제안] 제출">
   <input type="hidden" name="Category" value="기능 제안">
   <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
@@ -104,13 +104,24 @@ permalink: /inventory/suggest/
         if (status) { status.style.display='block'; status.textContent='네트워크가 오프라인입니다. 연결 상태를 확인한 뒤 다시 시도해 주세요.'; }
         throw new Error('OFFLINE');
       }
-  var workers = form.getAttribute('data-workers-endpoint') || '';
-  if (!workers) { throw new Error('WORKERS_ENDPOINT_NOT_SET'); }
-  var submitUrl = workers.replace(/\/$/, '');
+  function deriveEndpointSync(){
+    var w = form.getAttribute('data-workers-endpoint') || '';
+    if (w) return w.replace(/\/$/, '');
+    return '';
+  }
+  function loadEndpoint(){
+    var url = deriveEndpointSync();
+    if (url) return Promise.resolve(url);
+    var hint = form.getAttribute('data-endpoint-hint') || '/assets/mail-endpoint.txt';
+    return fetch(hint, { cache: 'no-store' }).then(function(r){ return r.text(); }).then(function(t){ return (t||'').trim().replace(/\/$/, ''); });
+  }
       var obj = {};
       fd.forEach(function(v,k){ obj[k] = v; });
-      var fetchOpts = { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, signal: ctrl ? ctrl.signal : undefined, body: JSON.stringify(obj) };
-      fetch(submitUrl, fetchOpts).then(function(){
+      loadEndpoint().then(function(submitUrl){
+        if (!submitUrl) throw new Error('WORKERS_ENDPOINT_NOT_SET');
+        var fetchOpts = { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, signal: ctrl ? ctrl.signal : undefined, body: JSON.stringify(obj) };
+        return fetch(submitUrl, fetchOpts);
+      }).then(function(){
         if (status) { status.style.display='block'; status.textContent='감사합니다! 제안이 전송되었습니다.'; }
         try { form.reset(); } catch(_){ }
       }).catch(function(err){
