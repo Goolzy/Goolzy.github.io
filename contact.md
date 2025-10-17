@@ -83,16 +83,8 @@ description: 파트너십·계약·납품 관련 문의를 받습니다.
 				var submitUrl = workers.replace(/\/$/, '');
 				var obj = {};
 				fd.forEach(function(v,k){ obj[k] = v; });
-				var fetchOpts = { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, signal: ctrl ? ctrl.signal : undefined, body: JSON.stringify(obj) };
-				fetch(submitUrl, fetchOpts).then(function(res){
-				if (!res.ok) {
-					return res.clone().text().then(function(body){
-						var bodyStr = (typeof body === 'string') ? body : JSON.stringify(body);
-						throw new Error('FORM_SUBMIT_FAILED:' + res.status + ':' + bodyStr);
-					});
-				}
-				return null;
-			}).then(function(){
+				var fetchOpts = { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, signal: ctrl ? ctrl.signal : undefined, body: JSON.stringify(obj) };
+				fetch(submitUrl, fetchOpts).then(function(){
 				if (status) { status.style.display='block'; status.textContent='감사합니다! 문의가 전송되었습니다. 곧 연락드리겠습니다.'; }
 				try { form.reset(); } catch(_){ }
 			}).catch(function(err){
