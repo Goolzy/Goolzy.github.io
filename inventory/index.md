@@ -5,7 +5,7 @@ permalink: /inventory/
 description: Goolzy Inventory 포털
 ---
 
-## 🎯 Goolzy Inventory
+## 🎯 Inventory
 
 **인벤토리 가이드라인 페이지에 오신 것을 환영합니다!**
 
