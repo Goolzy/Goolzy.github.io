@@ -58,44 +58,64 @@ permalink: /inventory/bug-report/
   }
   var form = document.getElementById('bug-form');
   try { form.addEventListener('input', updateSubject); } catch(e){}
-  // Autofill from AuthBridge (email, uid). If bridge loads late, wait for 'auth:bridge-ready'.
+
+  // 🆕 앱에서 전달받은 인증 정보로 자동완성
   try {
     var form = document.getElementById('bug-form');
     var emailInput = form.querySelector('input[name="Email"]');
     var replyToInput = form.querySelector('input[name="_replyto"]');
     var uidInput = form.querySelector('input[name="uid"]');
     var emailText = document.getElementById('bug-email-value');
+
     function applyUser(u){
       if (u && u.email) {
         emailInput.value = u.email;
         if (replyToInput) replyToInput.value = u.email;
         if (emailText) emailText.textContent = u.email;
+        if (uidInput) uidInput.value = u.uid || '';
+        console.log('[Bug Report] 이메일 자동완성:', u.email);
       } else {
         emailInput.value = '';
         if (replyToInput) replyToInput.value = '';
         if (emailText) emailText.textContent = '알 수 없음';
+        if (uidInput) uidInput.value = '';
       }
-      if (uidInput) uidInput.value = (u && u.uid) ? u.uid : '';
     }
-    function wireBridge(){
-      if (!window.AuthBridge) return;
+
+    // 앱 인증 정보 적용
+    function applyAppAuth(){
       try {
-        var u0 = AuthBridge.currentUser && AuthBridge.currentUser();
-        applyUser(u0 || null);
-        AuthBridge.onChange(function(u){ applyUser(u || null); });
-      } catch(_){ }
+        // window.getAppAuth()는 inventory.html에서 제공
+        var appAuth = window.getAppAuth && window.getAppAuth();
+        if (appAuth) {
+          console.log('[Bug Report] 앱 인증 정보 사용');
+          applyUser(appAuth);
+          return true;
+        }
+      } catch(e){
+        console.warn('[Bug Report] 앱 인증 정보 사용 실패:', e);
+      }
+      return false;
     }
-    // Try now
-    if (window.AuthBridge) { wireBridge(); }
-    // Or wait for bridge-ready
-    try { window.addEventListener('auth:bridge-ready', function(){ wireBridge(); }, { once: true }); } catch(_){ }
-    // If still pending after a few seconds, show unknown
-    setTimeout(function(){
-      try {
-        if (emailText && emailText.textContent === '확인 중…') { emailText.textContent = '알 수 없음'; }
-      } catch(_){ }
-    }, 3000);
-  } catch(e){}
+
+    // 즉시 시도
+    if (!applyAppAuth()) {
+      // 앱 인증 정보가 없으면 이벤트 대기
+      window.addEventListener('app:auth-ready', function(e){
+        console.log('[Bug Report] app:auth-ready 이벤트 수신');
+        applyUser(e.detail);
+      }, { once: true });
+
+      // 3초 후에도 정보가 없으면 '알 수 없음' 표시
+      setTimeout(function(){
+        if (emailText && emailText.textContent === '확인 중…') {
+          emailText.textContent = '알 수 없음 (직접 입력 가능)';
+        }
+      }, 3000);
+    }
+  } catch(e){
+    console.error('[Bug Report] 자동완성 초기화 실패:', e);
+  }
   // AJAX submit with timeout and fallback
   try {
     form.addEventListener('submit', function(e){

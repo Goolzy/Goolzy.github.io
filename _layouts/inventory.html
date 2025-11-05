@@ -4,236 +4,141 @@ hide_sidebar: true
 ---
 <div id="inventory-root">
   <div class="inventory-frame">
-    <!-- Loading state -->
-    <div id="inv-loading" style="text-align:center; padding:2rem;">
-      <p>로딩 중...</p>
-    </div>
+    <!-- Navigation (always visible) -->
+    <nav style="display:flex; gap:.5rem; padding:.5rem 0 1rem; border-bottom:1px solid #e5e7eb; flex-wrap:wrap; align-items:center;">
+      <a href="/inventory/" class="nav-link">홈</a>
+      <a href="/inventory/changelog/" class="nav-link">버전 로그</a>
+      <a href="/inventory/manual/" class="nav-link">매뉴얼</a>
+      <a href="/inventory/faq/" class="nav-link">자주하는 질문</a>
+      <a href="/inventory/suggest/" class="nav-link">건의하기</a>
+      <a href="/inventory/bug-report/" class="nav-link">버그 리포트</a>
+      <span style="flex:1"></span>
+      <!-- 앱 모드일 때만 표시 -->
+      <span id="inv-user-email" style="display:none; font-size:.85rem; color:#6b7280; padding:.35rem .6rem;"></span>
+    </nav>
 
-    <!-- Locked (need login) -->
-    <div id="inv-locked" style="display:none;">
-      <h2 style="text-align:center;">Inventory</h2>
-      <p style="text-align:center; margin-bottom:1.5rem;">이 페이지는 로그인 후 이용할 수 있습니다.</p>
-      
-      <div class="login-card" style="max-width:400px; margin:0 auto; padding:1.5rem; border:1px solid #e5e7eb; border-radius:12px;">
-        <form id="inv-login-form" onsubmit="return false;">
-          <label style="display:block; margin-bottom:1rem;">
-            이메일
-            <input name="email" type="email" required placeholder="name@example.com" style="width:100%; padding:.5rem; margin-top:.25rem;">
-          </label>
-          <label style="display:block; margin-bottom:1rem;">
-            비밀번호
-            <input name="password" type="password" required minlength="8" placeholder="8자 이상" style="width:100%; padding:.5rem; margin-top:.25rem;">
-          </label>
-          <div style="display:flex; gap:.5rem; margin-bottom:1rem;">
-            <button class="btn" id="inv-signin-btn" type="button">로그인</button>
-            <button class="btn btn--outline" id="inv-signup-btn" type="button">가입</button>
-          </div>
-        </form>
-
-        <div style="text-align:center; margin:1rem 0; color:#6b7280;">또는</div>
-
-        <div style="display:flex; flex-direction:column; gap:.5rem; align-items:center;">
-          <a href="#" id="inv-google-btn" style="display:block;">
-            <img src="/assets/images/auth/google-signin.png" alt="Sign in with Google" style="height:40px;">
-          </a>
-          {% if site.firebase.auth_providers.apple %}
-          <a href="#" id="inv-apple-btn" style="display:block;">
-            <img src="/assets/images/auth/apple-signin.png" alt="Sign in with Apple" style="height:40px;">
-          </a>
-          {% endif %}
-          {% if site.firebase.auth_providers.microsoft %}
-          <a href="#" id="inv-ms-btn" style="display:block;">
-            <img src="/assets/images/auth/microsoft-signin.png" alt="Sign in with Microsoft" style="height:40px;">
-          </a>
-          {% endif %}
-        </div>
-
-        <div id="inv-error" style="display:none; margin-top:1rem; padding:.75rem; background:#fee; border:1px solid #fcc; border-radius:6px; color:#c00;"></div>
-        
-        <div style="margin-top:1.5rem; text-align:center; font-size:.85rem; color:#6b7280;">
-          <a href="/inventory/terms/" style="text-decoration:underline; color:#6b7280;">서비스 이용약관</a>
-          <span style="margin:0 .5rem;">|</span>
-          <a href="/inventory/privacy/" style="text-decoration:underline; color:#6b7280;">개인정보 처리방침</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Unlocked (logged in) -->
-    <div id="inv-unlocked" style="display:none;">
-      <nav style="display:flex; gap:.5rem; padding:.5rem 0 1rem; border-bottom:1px solid #e5e7eb; flex-wrap:wrap; align-items:center;">
-        <a href="/inventory/changelog/" class="nav-link">버전 로그</a>
-        <a href="/inventory/manual/" class="nav-link">매뉴얼</a>
-        <a href="/inventory/faq/" class="nav-link">자주하는 질문</a>
-        <a href="/inventory/suggest/" class="nav-link">건의하기</a>
-        <a href="/inventory/bug-report/" class="nav-link">버그 리포트</a>
-        <span style="flex:1"></span>
-        <span id="inv-user-email" style="font-size:.85rem; color:#6b7280; padding:.35rem .6rem;"></span>
-  <a href="/inventory/account/" class="btn btn--outline" style="padding:.35rem .6rem; font-size:.9rem;">계정</a>
-  <button id="inv-logout-btn" class="btn" type="button" style="padding:.35rem .6rem; font-size:.9rem;">로그아웃</button>
-      </nav>
-      
-      <div style="padding-top:1rem;">
-        {{ content }}
-      </div>
+    <!-- Content (always visible) -->
+    <div style="padding-top:1rem;">
+      {{ content }}
     </div>
   </div>
 </div>
 
 <script>
 (function(){
-  var loading = document.getElementById('inv-loading');
-  var locked = document.getElementById('inv-locked');
-  var unlocked = document.getElementById('inv-unlocked');
-  var loginForm = document.getElementById('inv-login-form');
-  var signinBtn = document.getElementById('inv-signin-btn');
-  var signupBtn = document.getElementById('inv-signup-btn');
-  var googleBtn = document.getElementById('inv-google-btn');
-  var appleBtn = document.getElementById('inv-apple-btn');
-  var msBtn = document.getElementById('inv-ms-btn');
-  var logoutBtn = document.getElementById('inv-logout-btn');
-  var errorBox = document.getElementById('inv-error');
+  var APP_AUTH_KEY = 'inv_app_auth'; // 앱에서 전달받은 인증 정보 키
   var userEmailEl = document.getElementById('inv-user-email');
 
-  var POST_AUTH_KEY = 'postAuthRedirect';
+  // 🆕 앱에서 사용자 정보를 받는 글로벌 함수
+  window.setAppAuth = function(authData){
+    try {
+      console.log('[Inventory] 앱으로부터 인증 정보 수신:', authData);
 
-  function showLoading(){ loading.style.display=''; locked.style.display='none'; unlocked.style.display='none'; }
-  function showLocked(){ loading.style.display='none'; locked.style.display=''; unlocked.style.display='none'; }
-  function showUnlocked(user){ 
-    loading.style.display='none'; 
-    locked.style.display='none'; 
-    unlocked.style.display=''; 
-    // Display user email
-    if(userEmailEl && user && user.email) {
-      userEmailEl.textContent = user.email;
-    }
-  }
-  
-  function showError(msg){
-    if(!errorBox) return;
-    errorBox.textContent = msg;
-    errorBox.style.display = 'block';
-  }
-  function clearError(){ if(errorBox) errorBox.style.display='none'; }
-
-  function saveRedirect(){
-    try { sessionStorage.setItem(POST_AUTH_KEY, location.pathname); } catch(e){}
-  }
-
-  function init(){
-    if(!window.AuthBridge){
-      showError('인증 시스템을 초기화할 수 없습니다.');
-      showLocked();
-      return;
-    }
-
-    // Check auth state
-    AuthBridge.onChange(function(user){
-      if(user){
-        showUnlocked(user);
-      } else {
-        showLocked();
-      }
-    });
-
-    // Handle redirect result (for OAuth redirect flow)
-    AuthBridge.getRedirectResult().then(function(result){
-      if(result && result.user){
-        console.log('OAuth 리다이렉트 로그인 성공:', result.user.email);
-        
-        // Get redirect destination
-        var dest = '/inventory/';
-        try {
-          var stored = sessionStorage.getItem(POST_AUTH_KEY);
-          if(stored) dest = stored;
-          sessionStorage.removeItem(POST_AUTH_KEY);
-        } catch(e){}
-        
-        // Redirect to original destination
-        setTimeout(function(){ 
-          location.assign(dest);
-        }, 100);
-      }
-    }).catch(function(e){
-      // Ignore benign errors
-      if(e && (e.code === 'auth/no-auth-event' || e.code === 'auth/user-cancelled')){
+      if (!authData || !authData.email) {
+        console.warn('[Inventory] 유효하지 않은 인증 정보');
         return;
       }
-      showError(e.message || '로그인 실패');
-    });
-  }
 
-  // Email login
-  if(signinBtn) signinBtn.addEventListener('click', function(){
-    if(!loginForm.reportValidity()) return;
-    clearError();
-    saveRedirect();
-    
-    var email = loginForm.email.value.trim();
-    var password = loginForm.password.value;
-    
-    AuthBridge.emailSignIn(email, password).then(function(){
-      // Success - onChange will handle UI
-    }).catch(function(e){
-      showError(e.message || '로그인 실패');
-    });
-  });
-
-  // Email signup
-  if(signupBtn) signupBtn.addEventListener('click', function(){
-    if(!loginForm.reportValidity()) return;
-    clearError();
-    saveRedirect();
-    
-    var email = loginForm.email.value.trim();
-    var password = loginForm.password.value;
-    
-    AuthBridge.emailSignUp(email, password).then(function(){
-      // Success - onChange will handle UI
-    }).catch(function(e){
-      showError(e.message || '가입 실패');
-    });
-  });
-
-  // OAuth
-  function oauth(provider){
-    clearError();
-    saveRedirect();
-    
-    // Use POPUP (more reliable)
-    AuthBridge.signInWithPopup(provider).then(function(result){
-      var dest = '/inventory/';
-      try {
-        var stored = sessionStorage.getItem(POST_AUTH_KEY);
-        if(stored) dest = stored;
-        sessionStorage.removeItem(POST_AUTH_KEY);
-      } catch(e){}
-      
-      setTimeout(function(){ location.assign(dest); }, 100);
-    }).catch(function(e){
-      if(e && (e.code === 'auth/popup-closed-by-user' || e.code === 'auth/user-cancelled')){
+      // 이메일 검증 (기본적인 형식 체크)
+      var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(authData.email)) {
+        console.warn('[Inventory] 유효하지 않은 이메일 형식:', authData.email);
         return;
       }
-      showError(e.message || 'OAuth 로그인 실패');
-    });
+
+      // sessionStorage에 저장 (새로고침 시에도 유지)
+      var userData = {
+        email: authData.email,
+        uid: authData.uid || 'app-user',
+        displayName: authData.displayName || authData.name || null,
+        timestamp: Date.now()
+      };
+
+      sessionStorage.setItem(APP_AUTH_KEY, JSON.stringify(userData));
+      console.log('[Inventory] 사용자 정보 저장 완료');
+
+      // UI 업데이트
+      updateUI(userData);
+
+      // 전역 이벤트 발생 (폼 페이지에서 리스닝)
+      window.dispatchEvent(new CustomEvent('app:auth-ready', {
+        detail: userData
+      }));
+
+    } catch(e) {
+      console.error('[Inventory] 앱 인증 정보 처리 실패:', e);
+    }
+  };
+
+  // 🆕 저장된 앱 인증 정보 불러오기
+  function loadAppAuth(){
+    try {
+      var stored = sessionStorage.getItem(APP_AUTH_KEY);
+      if (!stored) return null;
+
+      var userData = JSON.parse(stored);
+
+      // 타임스탬프 확인 (24시간 이내만 유효)
+      if (userData.timestamp && (Date.now() - userData.timestamp > 24 * 60 * 60 * 1000)) {
+        console.log('[Inventory] 인증 정보 만료됨');
+        sessionStorage.removeItem(APP_AUTH_KEY);
+        return null;
+      }
+
+      console.log('[Inventory] 저장된 인증 정보 복원:', userData.email);
+      return userData;
+
+    } catch(e) {
+      console.warn('[Inventory] 인증 정보 로드 실패:', e);
+      sessionStorage.removeItem(APP_AUTH_KEY);
+      return null;
+    }
   }
 
-  if(googleBtn) googleBtn.addEventListener('click', function(e){ e.preventDefault(); oauth('google'); });
-  if(appleBtn) appleBtn.addEventListener('click', function(e){ e.preventDefault(); oauth('apple'); });
-  if(msBtn) msBtn.addEventListener('click', function(e){ e.preventDefault(); oauth('microsoft'); });
+  // 🆕 UI 업데이트
+  function updateUI(userData){
+    if (!userData || !userData.email) return;
 
-  // Logout
-  if(logoutBtn) logoutBtn.addEventListener('click', function(){
-    AuthBridge.signOut().then(function(){
-      location.assign('/inventory/');
-    });
-  });
-
-  // Initialize
-  if(window.AuthBridge){
-    init();
-  } else {
-    window.addEventListener('auth:bridge-ready', init, {once:true});
+    // 이메일 표시
+    if (userEmailEl) {
+      userEmailEl.textContent = userData.email;
+      userEmailEl.style.display = 'block';
+    }
   }
+
+  // 🆕 앱 인증 정보 가져오기 (폼 페이지에서 사용)
+  window.getAppAuth = function(){
+    return loadAppAuth();
+  };
+
+  // 🆕 앱 인증 정보 초기화 (로그아웃 등)
+  window.clearAppAuth = function(){
+    try {
+      sessionStorage.removeItem(APP_AUTH_KEY);
+      if (userEmailEl) {
+        userEmailEl.style.display = 'none';
+        userEmailEl.textContent = '';
+      }
+      console.log('[Inventory] 인증 정보 삭제됨');
+    } catch(e) {
+      console.error('[Inventory] 인증 정보 삭제 실패:', e);
+    }
+  };
+
+  // 페이지 로드 시 저장된 인증 정보 확인
+  var savedAuth = loadAppAuth();
+  if (savedAuth) {
+    console.log('[Inventory] 페이지 로드: 기존 인증 정보 사용');
+    updateUI(savedAuth);
+
+    // 이미 인증 정보가 있으면 즉시 이벤트 발생
+    setTimeout(function(){
+      window.dispatchEvent(new CustomEvent('app:auth-ready', {
+        detail: savedAuth
+      }));
+    }, 100);
+  }
+
 })();
 </script>
 
