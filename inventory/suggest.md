@@ -6,6 +6,8 @@ permalink: /inventory/suggest/
 
 새로운 기능이나 개선 사항을 제안해주세요.
 
+---
+
 <form id="suggest-form" style="max-width:600px;" data-workers-endpoint="{{ site.mail_gateway.workers_endpoint | default: '' }}" data-endpoint-hint="/assets/mail-endpoint.txt">
   <input type="hidden" name="_subject" id="suggest_subject" value="[기능 제안] 제출">
   <input type="hidden" name="Category" value="기능 제안">
