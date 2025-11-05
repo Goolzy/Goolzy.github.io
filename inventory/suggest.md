@@ -4,8 +4,6 @@ title: 건의하기
 permalink: /inventory/suggest/
 ---
 
-### 기능 개선 건의
-
 새로운 기능이나 개선 사항을 제안해주세요.
 
 <form id="suggest-form" style="max-width:600px;" data-workers-endpoint="{{ site.mail_gateway.workers_endpoint | default: '' }}" data-endpoint-hint="/assets/mail-endpoint.txt">

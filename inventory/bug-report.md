@@ -4,8 +4,6 @@ title: 버그 리포트
 permalink: /inventory/bug-report/
 ---
 
-### 버그 신고
-
 발견하신 버그를 신고해주세요.
 
 <form id="bug-form" style="max-width:600px;" data-workers-endpoint="{{ site.mail_gateway.workers_endpoint | default: '' }}" data-endpoint-hint="/assets/mail-endpoint.txt">
