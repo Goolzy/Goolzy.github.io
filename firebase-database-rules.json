@@ -1,0 +1,55 @@
+{
+  "rules": {
+    "inline-chat": {
+      "messages": {
+        ".read": true,
+        ".write": "auth != null && (
+          root.child('inline-chat/messages').exists() === false ||
+          auth.token.email.endsWith('@goolzy.com')
+        )",
+        ".indexOn": ["timestamp"],
+        "$messageId": {
+          ".write": "auth != null",
+          ".validate": "newData.hasChildren(['email', 'text', 'timestamp'])",
+          "email": {
+            ".validate": "newData.isString() && newData.val().length > 0"
+          },
+          "text": {
+            ".validate": "newData.isString() && newData.val().length > 0 && newData.val().length <= 500"
+          },
+          "timestamp": {
+            ".validate": "newData.val() === now"
+          }
+        }
+      },
+      "connections": {
+        ".read": true,
+        "$connectionId": {
+          ".write": "auth != null"
+        }
+      },
+      "banned-users": {
+        ".read": "auth != null && auth.token.email.endsWith('@goolzy.com')",
+        "$sanitizedEmail": {
+          ".write": "auth != null && auth.token.email.endsWith('@goolzy.com')",
+          ".validate": "newData.hasChildren(['email', 'bannedBy', 'bannedAt', 'banUntil', 'duration'])",
+          "email": {
+            ".validate": "newData.isString() && newData.val().length > 0"
+          },
+          "bannedBy": {
+            ".validate": "newData.isString() && newData.val().length > 0"
+          },
+          "bannedAt": {
+            ".validate": "newData.val() === now"
+          },
+          "banUntil": {
+            ".validate": "newData.isNumber() && newData.val() > now"
+          },
+          "duration": {
+            ".validate": "newData.isNumber() && newData.val() > 0"
+          }
+        }
+      }
+    }
+  }
+}
