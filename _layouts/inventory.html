@@ -12,8 +12,6 @@ hide_sidebar: true
       <a href="/inventory/faq/" class="nav-link">자주하는 질문</a>
       <a href="/inventory/suggest/" class="nav-link">건의하기</a>
       <a href="/inventory/bug-report/" class="nav-link">버그 리포트</a>
-      <span style="flex:1"></span>
-      <span id="inv-user-email" class="user-badge"></span>
     </nav>
 
     <!-- Content -->
@@ -48,7 +46,6 @@ try {
 (function(){
   var APP_AUTH_KEY = 'inv_app_auth';
   var WEB_AUTH_KEY = 'inv_web_auth'; // 웹 로그인 정보
-  var userEmailEl = document.getElementById('inv-user-email');
 
   window.setAppAuth = function(authData){
     try {
@@ -74,8 +71,6 @@ try {
 
       sessionStorage.setItem(APP_AUTH_KEY, JSON.stringify(userData));
       console.log('[Inventory] 사용자 정보 저장 완료');
-
-      updateUI(userData);
 
       window.dispatchEvent(new CustomEvent('app:auth-ready', {
         detail: userData
@@ -109,14 +104,6 @@ try {
     }
   }
 
-  function updateUI(userData){
-    if (!userData || !userData.email) return;
-
-    if (userEmailEl) {
-      userEmailEl.textContent = userData.email;
-      userEmailEl.style.display = 'block';
-    }
-  }
 
   // 웹 Firebase 인증 정보 확인 (우선순위: 앱 > 웹)
   window.getAppAuth = function(){
@@ -200,7 +187,6 @@ try {
   var savedAuth = loadAppAuth();
   if (savedAuth) {
     console.log('[Inventory] 페이지 로드: 기존 앱 인증 정보 사용');
-    updateUI(savedAuth);
 
     setTimeout(function(){
       window.dispatchEvent(new CustomEvent('app:auth-ready', {
@@ -310,18 +296,6 @@ body::before {
 .nav-link:active {
   transform: translateY(0);
   background: rgba(168, 85, 247, 0.25);
-}
-
-.user-badge {
-  display: none;
-  font-size: 0.85rem;
-  color: var(--teal-bright);
-  padding: 0.65rem 1.1rem;
-  background: rgba(20, 184, 166, 0.15);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(20, 184, 166, 0.3);
-  border-radius: 12px;
-  font-weight: 600;
 }
 
 /* Glassmorphic Content */
