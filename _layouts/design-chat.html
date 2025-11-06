@@ -608,14 +608,24 @@ const database = firebase.database();
 
 // 실시간 채팅
 (function() {
+  // JavaScript 실행 확인
+  alert('🚀 JavaScript 로드됨!');
+  console.log('=== 스크립트 시작 ===');
+
   const chatSection = document.querySelector('.chat-section');
   const chatMessages = document.getElementById('chatMessages');
   const chatInput = document.getElementById('chatInput');
   const sendBtn = document.getElementById('sendBtn');
-  const onlineCount = document.getElementById('online-count');
   const userInfo = document.getElementById('userInfo');
   const userEmail = document.getElementById('userEmail');
   const logoutBtn = document.getElementById('logoutBtn');
+
+  console.log('DOM 요소 확인:', {
+    chatSection: !!chatSection,
+    chatMessages: !!chatMessages,
+    chatInput: !!chatInput,
+    sendBtn: !!sendBtn
+  });
 
   let currentUser = null;
   let messagesRef = database.ref('inline-chat/messages');
@@ -638,7 +648,10 @@ const database = firebase.database();
 
   // 인증 상태 확인
   auth.onAuthStateChanged((user) => {
+    console.log('🔐 onAuthStateChanged 호출됨, user:', user ? user.email : 'null');
+
     if (user) {
+      console.log('✅ 로그인 상태 확인됨:', user.email);
       currentUser = user;
       chatSection.classList.remove('locked');
 
@@ -648,7 +661,33 @@ const database = firebase.database();
 
       // 사용자 정보 표시
       if (userInfo && userEmail) {
+        const isAdmin = user.email.endsWith('@goolzy.com');
         userEmail.textContent = user.email;
+
+        // 관리자 배지 추가
+        if (isAdmin) {
+          const adminBadge = document.createElement('span');
+          adminBadge.className = 'admin-badge';
+          adminBadge.textContent = '관리자';
+          adminBadge.style.cssText = `
+            padding: 0.3rem 0.6rem;
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.3), rgba(20, 184, 166, 0.3));
+            border: 1px solid rgba(20, 184, 166, 0.5);
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--teal-bright);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+          `;
+
+          // 기존 배지가 있으면 제거
+          const existingBadge = userInfo.querySelector('.admin-badge');
+          if (existingBadge) existingBadge.remove();
+
+          userInfo.insertBefore(adminBadge, logoutBtn);
+        }
+
         userInfo.style.display = 'flex';
       }
 
@@ -656,9 +695,18 @@ const database = firebase.database();
       chatInput.disabled = false;
       sendBtn.disabled = false;
 
+      // 관리자인 경우 placeholder 변경
+      if (user.email.endsWith('@goolzy.com')) {
+        chatInput.placeholder = '메시지를 입력하세요... (관리자 명령: "클리어"로 모든 메시지 삭제)';
+      } else {
+        chatInput.placeholder = '메시지를 입력하세요...';
+      }
+
+      // 이벤트 리스너 등록 (로그인 후)
+      setupEventListeners();
+
       // 메시지 리스너 시작
       loadMessages();
-      updateOnlineCount();
     } else {
       currentUser = null;
       chatSection.classList.add('locked');
@@ -684,14 +732,15 @@ const database = firebase.database();
 
   // 로그아웃 버튼
   if (logoutBtn) {
-    logoutBtn.addEventListener('click', () => {
+    logoutBtn.addEventListener('click', async () => {
       if (confirm('로그아웃 하시겠습니까?')) {
-        auth.signOut().then(() => {
+        try {
+          await auth.signOut();
           console.log('로그아웃 성공');
-        }).catch((error) => {
+        } catch (error) {
           console.error('로그아웃 실패:', error);
           alert('로그아웃에 실패했습니다.');
-        });
+        }
       }
     });
   }
@@ -709,6 +758,19 @@ const database = firebase.database();
     const messageDiv = document.createElement('div');
     const isCurrentUser = currentUser && email === currentUser.email;
     const isGoolzyStaff = email && email.endsWith('@goolzy.com');
+    const isSystemMessage = email === 'system';
+
+    // 시스템 메시지 처리
+    if (isSystemMessage) {
+      messageDiv.className = 'message system-msg';
+      const contentDiv = document.createElement('div');
+      contentDiv.className = 'msg-content';
+      contentDiv.textContent = text;
+      messageDiv.appendChild(contentDiv);
+      chatMessages.appendChild(messageDiv);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+      return;
+    }
 
     messageDiv.className = `message ${isCurrentUser ? 'user-msg' : 'other-msg'}`;
     if (isGoolzyStaff && !isCurrentUser) {
@@ -735,16 +797,87 @@ const database = firebase.database();
   }
 
   // 메시지 전송
-  function sendMessage() {
+  async function sendMessage() {
+    console.log('=== sendMessage 함수 호출됨 ===');
+
     if (!currentUser) {
+      console.error('❌ currentUser가 null입니다');
       alert('로그인이 필요합니다.');
       return;
     }
 
     const text = chatInput.value.trim();
-    if (!text) return;
+    console.log('📝 입력된 텍스트:', `"${text}"`);
+    console.log('📝 텍스트 길이:', text.length);
 
-    // Firebase에 메시지 저장
+    if (!text) {
+      console.log('텍스트가 비어있어서 종료');
+      return;
+    }
+
+    console.log('👤 현재 사용자 이메일:', currentUser.email);
+    console.log('🔍 입력 텍스트 === "클리어"?', text === '클리어');
+    console.log('🔍 @goolzy.com 도메인?', currentUser.email.endsWith('@goolzy.com'));
+
+    // 관리자 명령: 채팅 클리어 (@goolzy.com 도메인 사용자만)
+    if (text === '클리어' && currentUser.email.endsWith('@goolzy.com')) {
+      console.log('✅ 관리자 클리어 명령 인식됨!');
+
+      const confirmClear = confirm(
+        '⚠️ 채팅창의 모든 메시지를 삭제하시겠습니까?\n\n' +
+        '이 작업은 되돌릴 수 없으며, 모든 사용자의 채팅 내역이 영구적으로 삭제됩니다.\n\n' +
+        '계속하려면 "확인"을 클릭하세요.'
+      );
+
+      console.log('확인 대화상자 결과:', confirmClear);
+
+      if (!confirmClear) {
+        chatInput.value = '';
+        console.log('사용자가 취소함');
+        return;
+      }
+
+      try {
+        console.log('메시지 삭제 시작...');
+
+        // 모든 메시지 삭제
+        await messagesRef.remove();
+        console.log('messagesRef.remove() 완료');
+
+        // UI 초기화
+        chatMessages.innerHTML = '';
+        console.log('UI 초기화 완료');
+
+        // 시스템 메시지 추가
+        const systemMsg = document.createElement('div');
+        systemMsg.className = 'message system-msg';
+        const content = document.createElement('div');
+        content.className = 'msg-content';
+        content.textContent = `채팅이 관리자(${currentUser.email})에 의해 클리어되었습니다.`;
+        systemMsg.appendChild(content);
+        chatMessages.appendChild(systemMsg);
+
+        chatInput.value = '';
+        console.log('✅ 채팅 클리어 완료!');
+
+        // 클리어 기록 메시지 서버에 저장
+        await messagesRef.push({
+          email: 'system',
+          text: `채팅이 관리자(${currentUser.email})에 의해 클리어되었습니다.`,
+          timestamp: firebase.database.ServerValue.TIMESTAMP
+        });
+        console.log('시스템 메시지 저장 완료');
+
+      } catch (error) {
+        console.error('❌ 채팅 클리어 실패:', error);
+        console.error('에러 코드:', error.code);
+        console.error('에러 메시지:', error.message);
+        alert('채팅 클리어에 실패했습니다: ' + error.message);
+      }
+      return;
+    }
+
+    // 일반 메시지 전송
     messagesRef.push({
       email: currentUser.email,
       text: text,
@@ -757,34 +890,39 @@ const database = firebase.database();
     });
   }
 
-  // 접속자 수 업데이트
-  function updateOnlineCount() {
-    const connectionsRef = database.ref('inline-chat/connections');
-    const myConnectionRef = connectionsRef.push();
+  // 이벤트 리스너 설정 (중복 방지)
+  let listenersSetup = false;
 
-    // 연결 상태 모니터링
-    database.ref('.info/connected').on('value', (snapshot) => {
-      if (snapshot.val() === true) {
-        myConnectionRef.set(true);
-        myConnectionRef.onDisconnect().remove();
-      }
-    });
-
-    // 실시간 접속자 수 표시
-    connectionsRef.on('value', (snapshot) => {
-      const count = snapshot.numChildren();
-      onlineCount.textContent = `${count}명 접속중`;
-    });
-  }
-
-  // 이벤트 리스너
-  sendBtn.addEventListener('click', sendMessage);
-  chatInput.addEventListener('keypress', (e) => {
-    if (e.key === 'Enter' && !e.shiftKey) {
-      e.preventDefault();
-      sendMessage();
+  function setupEventListeners() {
+    if (listenersSetup) {
+      console.log('이벤트 리스너 이미 등록됨');
+      return;
     }
-  });
+
+    console.log('이벤트 리스너 등록 시작');
+
+    if (sendBtn) {
+      sendBtn.addEventListener('click', () => {
+        console.log('전송 버튼 클릭됨');
+        sendMessage();
+      });
+      console.log('전송 버튼 리스너 등록 완료');
+    }
+
+    if (chatInput) {
+      chatInput.addEventListener('keypress', (e) => {
+        console.log('키 입력됨:', e.key);
+        if (e.key === 'Enter' && !e.shiftKey) {
+          console.log('Enter 키 감지됨');
+          e.preventDefault();
+          sendMessage();
+        }
+      });
+      console.log('채팅 입력 리스너 등록 완료');
+    }
+
+    listenersSetup = true;
+  }
 
   // 초기 환영 메시지
   setTimeout(() => {
