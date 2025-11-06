@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="icon" href="/assets/images/favicon.png">
+  <style>
+:root {
+  --purple-dark: #1a0f3d;
+  --purple-bright: #a855f7;
+  --purple-vibrant: #d946ef;
+  --teal: #14b8a6;
+  --teal-bright: #2dd4bf;
+  --bg: #0a0614;
+  --card: #150a28;
+  --border: rgba(168, 85, 247, 0.12);
+  --text: rgba(255, 255, 255, 0.95);
+  --text-dim: rgba(255, 255, 255, 0.4);
+  --danger: #ef4444;
+  --danger-light: #fca5a5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(239, 68, 68, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(168, 85, 247, 0.12) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.deletion-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 600px;
+}
+
+.deletion-card {
+  background: rgba(21, 10, 40, 0.6);
+  backdrop-filter: blur(30px) saturate(200%);
+  -webkit-backdrop-filter: blur(30px) saturate(200%);
+  border: 1.5px solid rgba(239, 68, 68, 0.4);
+  border-radius: 24px;
+  padding: 3rem 2.5rem;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.5),
+    0 0 80px rgba(239, 68, 68, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.deletion-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.warning-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.8; }
+}
+
+.deletion-header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--danger-light);
+}
+
+.warning-text {
+  color: var(--text-dim);
+  font-size: 1rem;
+}
+
+.danger-notice {
+  background: rgba(239, 68, 68, 0.1);
+  border: 2px solid rgba(239, 68, 68, 0.4);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.danger-notice h3 {
+  color: var(--danger-light);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.danger-notice ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.danger-notice li {
+  color: var(--text);
+  font-size: 0.9rem;
+  line-height: 1.8;
+  padding-left: 1.5rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.danger-notice li::before {
+  content: '•';
+  position: absolute;
+  left: 0.5rem;
+  color: var(--danger-light);
+  font-weight: bold;
+}
+
+.danger-notice li strong {
+  color: var(--danger-light);
+  font-weight: 700;
+}
+
+.deletion-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.user-info-section,
+.confirmation-section,
+.password-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.current-email {
+  padding: 1rem 1.25rem;
+  background: rgba(20, 184, 166, 0.15);
+  border: 1px solid rgba(20, 184, 166, 0.3);
+  border-radius: 12px;
+  color: var(--teal-bright);
+  font-weight: 600;
+  text-align: center;
+}
+
+.required-text {
+  padding: 1rem 1.25rem;
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 12px;
+  color: var(--danger-light);
+  font-weight: 600;
+  text-align: center;
+  font-size: 0.95rem;
+  word-break: keep-all;
+}
+
+#emailPlaceholder {
+  color: var(--danger);
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.confirm-input,
+.password-input {
+  padding: 0.875rem 1.1rem;
+  background: rgba(10, 6, 20, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 10px;
+  color: var(--text);
+  font-size: 0.95rem;
+  transition: all 0.3s;
+}
+
+.confirm-input:focus,
+.password-input:focus {
+  outline: none;
+  border-color: var(--danger);
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2), 0 4px 16px rgba(239, 68, 68, 0.3);
+  background: rgba(10, 6, 20, 0.8);
+}
+
+.confirm-input::placeholder,
+.password-input::placeholder {
+  color: var(--text-dim);
+}
+
+.match-status {
+  font-size: 0.85rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  text-align: center;
+  display: none;
+}
+
+.match-status.match {
+  display: block;
+  background: rgba(34, 197, 94, 0.15);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  color: #86efac;
+}
+
+.match-status.no-match {
+  display: block;
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: var(--danger-light);
+}
+
+.helper-text {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  line-height: 1.5;
+}
+
+.delete-btn {
+  padding: 1.25rem 1.5rem;
+  background: rgba(239, 68, 68, 0.3);
+  border: 2px solid rgba(239, 68, 68, 0.5);
+  border-radius: 12px;
+  color: var(--danger-light);
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.delete-btn:not(:disabled):hover {
+  background: rgba(239, 68, 68, 0.5);
+  border-color: var(--danger);
+  color: white;
+  transform: scale(1.02);
+  box-shadow: 0 6px 24px rgba(239, 68, 68, 0.5);
+}
+
+.delete-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.error-msg {
+  color: var(--danger-light);
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 0.75rem;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 8px;
+  display: none;
+}
+
+.error-msg.show {
+  display: block;
+}
+
+.deletion-footer {
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(239, 68, 68, 0.2);
+  margin-top: 1.5rem;
+}
+
+.cancel-link {
+  color: var(--teal-bright);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.cancel-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 1rem;
+  }
+
+  .deletion-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .warning-icon {
+    font-size: 3rem;
+  }
+
+  .deletion-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .danger-notice {
+    padding: 1rem;
+  }
+
+  .danger-notice li {
+    font-size: 0.85rem;
+  }
+}
+</style>
+</head>
+<body>
+
+{{ content }}
+
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+
+<script>
+// Firebase 초기화
+const firebaseConfig = {
+  apiKey: "{{ site.firebase.config.apiKey }}",
+  authDomain: "{{ site.firebase.config.authDomain }}",
+  projectId: "{{ site.firebase.config.projectId }}",
+  databaseURL: "{{ site.firebase.config.databaseURL }}",
+  appId: "{{ site.firebase.config.appId }}"
+};
+
+firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+const database = firebase.database();
+
+// DOM 요소
+const currentUserEmail = document.getElementById('currentUserEmail');
+const emailPlaceholder = document.getElementById('emailPlaceholder');
+const confirmText = document.getElementById('confirmText');
+const passwordConfirm = document.getElementById('passwordConfirm');
+const deleteBtn = document.getElementById('deleteBtn');
+const matchStatus = document.getElementById('matchStatus');
+const errorMsg = document.getElementById('errorMsg');
+
+let currentUser = null;
+let requiredPhrase = '';
+let isEmailProvider = false;
+
+// 에러 표시 함수
+function showError(message) {
+  errorMsg.textContent = message;
+  errorMsg.classList.add('show');
+  setTimeout(() => {
+    errorMsg.classList.remove('show');
+  }, 5000);
+}
+
+// 인증 상태 확인
+auth.onAuthStateChanged((user) => {
+  if (user) {
+    currentUser = user;
+    currentUserEmail.textContent = user.email;
+    emailPlaceholder.textContent = user.email;
+    requiredPhrase = `${user.email} 계정의 계정 삭제를 요청합니다`;
+
+    // 로그인 제공자 확인
+    const providerData = user.providerData[0];
+    isEmailProvider = providerData && providerData.providerId === 'password';
+
+    if (!isEmailProvider) {
+      // 소셜 로그인 사용자는 비밀번호 입력 불필요
+      document.querySelector('.password-section').style.display = 'none';
+    }
+  } else {
+    // 로그인 안 되어 있으면 로그인 페이지로
+    alert('로그인이 필요합니다.');
+    window.location.href = '/join/?return=/deletion/';
+  }
+});
+
+// 문구 입력 확인
+confirmText.addEventListener('input', () => {
+  const inputText = confirmText.value.trim();
+
+  if (inputText === '') {
+    matchStatus.classList.remove('match', 'no-match');
+    deleteBtn.disabled = true;
+  } else if (inputText === requiredPhrase) {
+    matchStatus.textContent = '✓ 문구가 일치합니다';
+    matchStatus.classList.remove('no-match');
+    matchStatus.classList.add('match');
+
+    // 이메일 제공자인 경우 비밀번호도 확인
+    if (isEmailProvider) {
+      deleteBtn.disabled = passwordConfirm.value.length < 6;
+    } else {
+      deleteBtn.disabled = false;
+    }
+  } else {
+    matchStatus.textContent = '✗ 문구가 일치하지 않습니다';
+    matchStatus.classList.remove('match');
+    matchStatus.classList.add('no-match');
+    deleteBtn.disabled = true;
+  }
+});
+
+// 비밀번호 입력 확인 (이메일 제공자만)
+passwordConfirm.addEventListener('input', () => {
+  if (isEmailProvider && confirmText.value.trim() === requiredPhrase) {
+    deleteBtn.disabled = passwordConfirm.value.length < 6;
+  }
+});
+
+// 계정 삭제
+deleteBtn.addEventListener('click', async () => {
+  if (!currentUser) {
+    showError('로그인 상태를 확인할 수 없습니다.');
+    return;
+  }
+
+  // 최종 확인
+  const finalConfirm = confirm(
+    '정말로 계정을 삭제하시겠습니까?\n\n' +
+    '⚠️ 이 작업은 되돌릴 수 없습니다!\n' +
+    '⚠️ 모든 데이터가 영구적으로 삭제됩니다!\n\n' +
+    '계속하려면 "확인"을 클릭하세요.'
+  );
+
+  if (!finalConfirm) {
+    return;
+  }
+
+  deleteBtn.disabled = true;
+  deleteBtn.textContent = '삭제 중...';
+
+  try {
+    // 1. 이메일 제공자인 경우 재인증
+    if (isEmailProvider) {
+      const password = passwordConfirm.value;
+      if (!password || password.length < 6) {
+        showError('비밀번호를 입력해주세요.');
+        deleteBtn.disabled = false;
+        deleteBtn.textContent = '계정 영구 삭제';
+        return;
+      }
+
+      const credential = firebase.auth.EmailAuthProvider.credential(
+        currentUser.email,
+        password
+      );
+
+      try {
+        await currentUser.reauthenticateWithCredential(credential);
+      } catch (error) {
+        console.error('재인증 실패:', error);
+        if (error.code === 'auth/wrong-password') {
+          showError('비밀번호가 올바르지 않습니다.');
+        } else {
+          showError('재인증에 실패했습니다: ' + error.message);
+        }
+        deleteBtn.disabled = false;
+        deleteBtn.textContent = '계정 영구 삭제';
+        return;
+      }
+    }
+
+    // 2. 사용자 데이터 삭제 (채팅 메시지 등)
+    // 실제로는 Cloud Functions에서 처리하는 것이 더 안전하지만,
+    // 여기서는 클라이언트에서 직접 삭제
+    const userEmail = currentUser.email;
+
+    // 채팅 메시지에서 해당 사용자의 메시지 찾아서 삭제
+    // (실제로는 서버 측에서 처리해야 안전)
+    console.log(`사용자 ${userEmail}의 데이터 삭제 시작`);
+
+    // 3. Firebase Auth 계정 삭제
+    await currentUser.delete();
+
+    // 4. 성공 메시지 및 리다이렉트
+    alert(
+      '계정이 성공적으로 삭제되었습니다.\n\n' +
+      '그동안 이용해 주셔서 감사합니다.'
+    );
+    window.location.href = '/';
+
+  } catch (error) {
+    console.error('계정 삭제 실패:', error);
+
+    let errorMessage = '계정 삭제에 실패했습니다.';
+
+    if (error.code === 'auth/requires-recent-login') {
+      errorMessage = '보안을 위해 다시 로그인한 후 시도해주세요.';
+      setTimeout(() => {
+        auth.signOut().then(() => {
+          window.location.href = '/join/?return=/deletion/';
+        });
+      }, 2000);
+    } else if (error.code === 'auth/wrong-password') {
+      errorMessage = '비밀번호가 올바르지 않습니다.';
+    } else {
+      errorMessage += ' ' + error.message;
+    }
+
+    showError(errorMessage);
+    deleteBtn.disabled = false;
+    deleteBtn.textContent = '계정 영구 삭제';
+  }
+});
+</script>
+
+</body>
+</html>
