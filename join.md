@@ -1,16 +1,16 @@
 ---
 layout: inventory-login
 title: 로그인
-permalink: /inventory/login/
-description: Inventory 커뮤니티 로그인
+permalink: /join/
+description: Goolzy 커뮤니티 로그인
 ---
 
 <div class="login-container">
   <div class="login-card">
     <div class="login-header">
       <img src="/assets/images/logo-icon.png" alt="Inventory" class="login-logo">
-      <h1>Inventory 로그인</h1>
-      <p>커뮤니티에 참여하려면 로그인해주세요</p>
+      <h1>Goolzy 로그인</h1>
+      <p>커뮤니티 채팅에 참여하려면 로그인해주세요</p>
     </div>
 
     <div id="loginUI">
