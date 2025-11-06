@@ -224,6 +224,12 @@ body::before {
   font-size: 1.5rem;
 }
 
+.chat-user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .online-count {
   display: flex;
   align-items: center;
@@ -243,6 +249,41 @@ body::before {
 @keyframes pulse {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.5; }
+}
+
+.user-info-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  background: rgba(168, 85, 247, 0.15);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.user-email {
+  font-size: 0.85rem;
+  color: var(--teal-bright);
+  font-weight: 600;
+}
+
+.logout-btn {
+  padding: 0.4rem 0.85rem;
+  background: rgba(239, 68, 68, 0.2);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  border-radius: 8px;
+  color: #fca5a5;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.logout-btn:hover {
+  background: rgba(239, 68, 68, 0.3);
+  border-color: rgba(239, 68, 68, 0.6);
+  color: #fecaca;
 }
 
 /* Chat Container */
@@ -513,6 +554,32 @@ body::before {
   .message {
     max-width: 90%;
   }
+
+  .chat-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .chat-user-info {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .user-info-badge {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .user-email {
+    font-size: 0.75rem;
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
 </style>
 </head>
@@ -546,6 +613,9 @@ const database = firebase.database();
   const chatInput = document.getElementById('chatInput');
   const sendBtn = document.getElementById('sendBtn');
   const onlineCount = document.getElementById('online-count');
+  const userInfo = document.getElementById('userInfo');
+  const userEmail = document.getElementById('userEmail');
+  const logoutBtn = document.getElementById('logoutBtn');
 
   let currentUser = null;
   let messagesRef = database.ref('inline-chat/messages');
@@ -576,6 +646,12 @@ const database = firebase.database();
       const existingOverlay = chatSection.querySelector('.login-overlay');
       if (existingOverlay) existingOverlay.remove();
 
+      // 사용자 정보 표시
+      if (userInfo && userEmail) {
+        userEmail.textContent = user.email;
+        userInfo.style.display = 'flex';
+      }
+
       // 채팅 입력 활성화
       chatInput.disabled = false;
       sendBtn.disabled = false;
@@ -586,6 +662,11 @@ const database = firebase.database();
     } else {
       currentUser = null;
       chatSection.classList.add('locked');
+
+      // 사용자 정보 숨김
+      if (userInfo) {
+        userInfo.style.display = 'none';
+      }
 
       // 로그인 오버레이 추가
       if (!chatSection.querySelector('.login-overlay')) {
@@ -600,6 +681,20 @@ const database = firebase.database();
       loadMessages();
     }
   });
+
+  // 로그아웃 버튼
+  if (logoutBtn) {
+    logoutBtn.addEventListener('click', () => {
+      if (confirm('로그아웃 하시겠습니까?')) {
+        auth.signOut().then(() => {
+          console.log('로그아웃 성공');
+        }).catch((error) => {
+          console.error('로그아웃 실패:', error);
+          alert('로그아웃에 실패했습니다.');
+        });
+      }
+    });
+  }
 
   // 메시지 로드 (실시간)
   function loadMessages() {

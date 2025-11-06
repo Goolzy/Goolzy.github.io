@@ -56,9 +56,15 @@ description: Inventory 앱 출시 예정 - 커뮤니티 채팅
         <span class="chat-icon">💬</span>
         <span>커뮤니티 채팅</span>
       </div>
-      <div class="online-count">
-        <span class="status-dot"></span>
-        <span id="online-count">실시간 참여자</span>
+      <div class="chat-user-info">
+        <div class="online-count">
+          <span class="status-dot"></span>
+          <span id="online-count">실시간 참여자</span>
+        </div>
+        <div id="userInfo" class="user-info-badge" style="display:none;">
+          <span id="userEmail" class="user-email"></span>
+          <button id="logoutBtn" class="logout-btn">로그아웃</button>
+        </div>
       </div>
     </div>
 
