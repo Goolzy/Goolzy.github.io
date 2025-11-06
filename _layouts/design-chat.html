@@ -809,6 +809,9 @@ const database = firebase.database();
     // 스마트 따옴표를 일반 따옴표로 변환 (macOS/iOS 자동 변환 대응)
     text = text.replace(/[""]/g, '"').replace(/['']/g, "'");
 
+    // 양쪽 따옴표 제거 (""클리어"" → 클리어)
+    text = text.replace(/^["']+|["']+$/g, '');
+
     console.log('📝 입력된 텍스트:', `"${text}"`);
     console.log('📝 텍스트 길이:', text.length);
 
