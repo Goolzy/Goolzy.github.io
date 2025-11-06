@@ -44,6 +44,7 @@ firebase:
     apiKey: "AIzaSyAYQwz94EVCEHcAKC7LD2qVnCbDnZSTBnI"
     authDomain: "inventory-app-service.firebaseapp.com"
     projectId: "inventory-app-service"
+    databaseURL: "https://inventory-app-service-default-rtdb.asia-southeast1.firebasedatabase.app"
     appId: "1:370982765799:web:fea0f16f544e9ab217ce42"
     measurementId: "370982765799"
   redirect_uri: "" # optional: e.g., https://goolzy.github.io/account/
