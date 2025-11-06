@@ -181,17 +181,20 @@ body::before {
   font-weight: 600;
 }
 
-/* Chat Section - Glassmorphism */
+/* Chat Section - Enhanced Glassmorphism */
 .chat-section {
   position: sticky;
   top: 2rem;
-  background: rgba(21, 10, 40, 0.4);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
-  border: 1px solid rgba(168, 85, 247, 0.2);
-  border-radius: 24px;
+  background: rgba(21, 10, 40, 0.25);
+  backdrop-filter: blur(30px) saturate(200%);
+  -webkit-backdrop-filter: blur(30px) saturate(200%);
+  border: 1.5px solid rgba(168, 85, 247, 0.3);
+  border-radius: 28px;
   overflow: hidden;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 60px rgba(168, 85, 247, 0.1);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.5),
+    0 0 80px rgba(168, 85, 247, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
   display: flex;
   flex-direction: column;
   height: calc(100vh - 4rem);
@@ -309,6 +312,13 @@ body::before {
   font-size: 0.8rem;
   color: var(--text-dim);
   padding: 0 0.75rem;
+  font-weight: 500;
+}
+
+.msg-sender.goolzy-staff {
+  color: var(--teal-bright);
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(20, 184, 166, 0.5);
 }
 
 .msg-content {
@@ -332,6 +342,13 @@ body::before {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px 16px 16px 4px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.other-msg.goolzy-staff .msg-content {
+  background: rgba(20, 184, 166, 0.12);
+  border: 1px solid rgba(20, 184, 166, 0.3);
+  box-shadow: 0 4px 16px rgba(20, 184, 166, 0.2);
+  font-weight: 600;
 }
 
 .system-msg .msg-content {
@@ -403,6 +420,62 @@ body::before {
   transform: scale(0.95);
 }
 
+.send-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* Login Overlay */
+.login-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 6, 20, 0.85);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  z-index: 10;
+  border-radius: 28px;
+}
+
+.login-overlay-icon {
+  font-size: 4rem;
+  opacity: 0.8;
+}
+
+.login-overlay-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  max-width: 300px;
+  line-height: 1.6;
+}
+
+.login-overlay-btn {
+  background: linear-gradient(135deg, var(--purple-bright), var(--teal));
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 20px rgba(168, 85, 247, 0.4);
+}
+
+.login-overlay-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 30px rgba(168, 85, 247, 0.6);
+}
+
+.chat-section.locked {
+  position: relative;
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .launch-page {
@@ -447,76 +520,113 @@ body::before {
 
 {{ content }}
 
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+
 <script>
-// 채팅 기능
+// Firebase 초기화
+const firebaseConfig = {
+  apiKey: "{{ site.firebase.config.apiKey }}",
+  authDomain: "{{ site.firebase.config.authDomain }}",
+  projectId: "{{ site.firebase.config.projectId }}",
+  databaseURL: "https://{{ site.firebase.config.projectId }}.firebaseio.com",
+  appId: "{{ site.firebase.config.appId }}"
+};
+
+firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+const database = firebase.database();
+
+// 실시간 채팅
 (function() {
+  const chatSection = document.querySelector('.chat-section');
   const chatMessages = document.getElementById('chatMessages');
   const chatInput = document.getElementById('chatInput');
   const sendBtn = document.getElementById('sendBtn');
   const onlineCount = document.getElementById('online-count');
 
-  // 랜덤 사용자 수
-  const randomOnline = Math.floor(Math.random() * 50) + 10;
-  onlineCount.textContent = `${randomOnline}명 접속중`;
+  let currentUser = null;
+  let messagesRef = database.ref('chat/messages');
 
-  // 봇 응답 (미리 정의된 답변)
-  const botResponses = [
-    "정식 출시가 정말 기대되네요! 😊",
-    "4개 플랫폼 모두 지원이라니 대단해요!",
-    "디지털 가방이라는 컨셉이 신선하네요",
-    "언제쯤 베타 테스트 신청할 수 있나요?",
-    "UI가 정말 깔끔할 것 같아요",
-    "친구들한테도 공유해야겠어요!",
-    "출시되면 바로 다운받을게요 👍",
-    "개발팀 화이팅입니다!",
-    "가격 정책은 어떻게 되나요?",
-    "클라우드 동기화도 지원하나요?"
-  ];
-
-  const botNames = ["민수", "지영", "현우", "서연", "태희", "준호", "수빈", "동현"];
-
-  // 로컬스토리지에서 메시지 로드
-  function loadMessages() {
-    const saved = localStorage.getItem('inventory_chat');
-    if (saved) {
-      try {
-        const messages = JSON.parse(saved);
-        messages.forEach(msg => {
-          addMessageToUI(msg.text, msg.type, msg.sender);
-        });
-      } catch(e) {
-        console.error('메시지 로드 실패:', e);
-      }
-    }
+  // 로그인 오버레이 생성
+  function createLoginOverlay() {
+    const overlay = document.createElement('div');
+    overlay.className = 'login-overlay';
+    overlay.innerHTML = `
+      <div class="login-overlay-icon">🔒</div>
+      <div class="login-overlay-text">
+        채팅에 참여하려면<br>로그인이 필요합니다
+      </div>
+      <button class="login-overlay-btn" onclick="window.location.href='/account/'">
+        로그인하기
+      </button>
+    `;
+    return overlay;
   }
 
-  // 메시지 저장
-  function saveMessage(text, type, sender) {
-    try {
-      const saved = localStorage.getItem('inventory_chat');
-      const messages = saved ? JSON.parse(saved) : [];
-      messages.push({ text, type, sender, time: Date.now() });
+  // 인증 상태 확인
+  auth.onAuthStateChanged((user) => {
+    if (user) {
+      currentUser = user;
+      chatSection.classList.remove('locked');
 
-      // 최근 50개만 유지
-      if (messages.length > 50) {
-        messages.shift();
+      // 로그인 오버레이 제거
+      const existingOverlay = chatSection.querySelector('.login-overlay');
+      if (existingOverlay) existingOverlay.remove();
+
+      // 채팅 입력 활성화
+      chatInput.disabled = false;
+      sendBtn.disabled = false;
+
+      // 메시지 리스너 시작
+      loadMessages();
+      updateOnlineCount();
+    } else {
+      currentUser = null;
+      chatSection.classList.add('locked');
+
+      // 로그인 오버레이 추가
+      if (!chatSection.querySelector('.login-overlay')) {
+        chatSection.appendChild(createLoginOverlay());
       }
 
-      localStorage.setItem('inventory_chat', JSON.stringify(messages));
-    } catch(e) {
-      console.error('메시지 저장 실패:', e);
+      // 채팅 입력 비활성화
+      chatInput.disabled = true;
+      sendBtn.disabled = true;
+
+      // 읽기 전용으로 메시지는 표시
+      loadMessages();
     }
+  });
+
+  // 메시지 로드 (실시간)
+  function loadMessages() {
+    messagesRef.limitToLast(50).on('child_added', (snapshot) => {
+      const msg = snapshot.val();
+      addMessageToUI(msg.text, msg.email, msg.timestamp);
+    });
   }
 
   // UI에 메시지 추가
-  function addMessageToUI(text, type = 'other', sender = null) {
+  function addMessageToUI(text, email, timestamp) {
     const messageDiv = document.createElement('div');
-    messageDiv.className = `message ${type}-msg`;
+    const isCurrentUser = currentUser && email === currentUser.email;
+    const isGoolzyStaff = email && email.endsWith('@goolzy.com');
 
-    if (sender && type === 'other') {
+    messageDiv.className = `message ${isCurrentUser ? 'user-msg' : 'other-msg'}`;
+    if (isGoolzyStaff && !isCurrentUser) {
+      messageDiv.classList.add('goolzy-staff');
+    }
+
+    if (!isCurrentUser && email) {
       const senderDiv = document.createElement('div');
       senderDiv.className = 'msg-sender';
-      senderDiv.textContent = sender;
+      if (isGoolzyStaff) {
+        senderDiv.classList.add('goolzy-staff');
+      }
+      senderDiv.textContent = email;
       messageDiv.appendChild(senderDiv);
     }
 
@@ -531,44 +641,63 @@ body::before {
 
   // 메시지 전송
   function sendMessage() {
+    if (!currentUser) {
+      alert('로그인이 필요합니다.');
+      return;
+    }
+
     const text = chatInput.value.trim();
     if (!text) return;
 
-    // 사용자 메시지 추가
-    addMessageToUI(text, 'user');
-    saveMessage(text, 'user', '나');
-    chatInput.value = '';
+    // Firebase에 메시지 저장
+    messagesRef.push({
+      email: currentUser.email,
+      text: text,
+      timestamp: firebase.database.ServerValue.TIMESTAMP
+    }).then(() => {
+      chatInput.value = '';
+    }).catch((error) => {
+      console.error('메시지 전송 실패:', error);
+      alert('메시지 전송에 실패했습니다.');
+    });
+  }
 
-    // 봇 응답 (2-4초 후)
-    const delay = Math.random() * 2000 + 2000;
-    setTimeout(() => {
-      const randomResponse = botResponses[Math.floor(Math.random() * botResponses.length)];
-      const randomName = botNames[Math.floor(Math.random() * botNames.length)];
-      addMessageToUI(randomResponse, 'other', randomName);
-      saveMessage(randomResponse, 'other', randomName);
-    }, delay);
+  // 접속자 수 업데이트
+  function updateOnlineCount() {
+    const connectionsRef = database.ref('chat/connections');
+    const myConnectionRef = connectionsRef.push();
+
+    // 연결 상태 모니터링
+    database.ref('.info/connected').on('value', (snapshot) => {
+      if (snapshot.val() === true) {
+        myConnectionRef.set(true);
+        myConnectionRef.onDisconnect().remove();
+      }
+    });
+
+    // 실시간 접속자 수 표시
+    connectionsRef.on('value', (snapshot) => {
+      const count = snapshot.numChildren();
+      onlineCount.textContent = `${count}명 접속중`;
+    });
   }
 
   // 이벤트 리스너
   sendBtn.addEventListener('click', sendMessage);
   chatInput.addEventListener('keypress', (e) => {
-    if (e.key === 'Enter') {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
       sendMessage();
     }
   });
 
-  // 초기 로드
-  loadMessages();
-
-  // 랜덤 봇 메시지 (10-20초마다)
-  setInterval(() => {
-    if (Math.random() > 0.7) {
-      const randomResponse = botResponses[Math.floor(Math.random() * botResponses.length)];
-      const randomName = botNames[Math.floor(Math.random() * botNames.length)];
-      addMessageToUI(randomResponse, 'other', randomName);
-      saveMessage(randomResponse, 'other', randomName);
+  // 초기 환영 메시지
+  setTimeout(() => {
+    if (chatMessages.children.length === 1) {
+      // 메시지가 환영 메시지 하나뿐이면 샘플 메시지 추가 (개발용)
+      // 실제 운영시엔 제거
     }
-  }, 15000);
+  }, 1000);
 })();
 </script>
 
