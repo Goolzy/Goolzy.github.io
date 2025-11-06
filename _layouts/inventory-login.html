@@ -293,7 +293,9 @@ const uiConfig = {
     firebase.auth.GoogleAuthProvider.PROVIDER_ID,
     {% endif %}
     {% if site.firebase.auth_providers.apple %}
-    firebase.auth.OAuthProvider.PROVIDER_ID,
+    {
+      provider: 'apple.com'
+    },
     {% endif %}
     {% if site.firebase.auth_providers.microsoft %}
     {
@@ -306,8 +308,7 @@ const uiConfig = {
     {% if site.firebase.auth_providers.email %}
     {
       provider: firebase.auth.EmailAuthProvider.PROVIDER_ID,
-      requireDisplayName: false,
-      signInMethod: firebase.auth.EmailAuthProvider.EMAIL_LINK_SIGN_IN_METHOD
+      requireDisplayName: false
     }
     {% endif %}
   ],
