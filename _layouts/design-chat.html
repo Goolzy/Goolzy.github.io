@@ -548,7 +548,7 @@ const database = firebase.database();
   const onlineCount = document.getElementById('online-count');
 
   let currentUser = null;
-  let messagesRef = database.ref('chat/messages');
+  let messagesRef = database.ref('inline-chat/messages');
 
   // 로그인 오버레이 생성
   function createLoginOverlay() {
@@ -664,7 +664,7 @@ const database = firebase.database();
 
   // 접속자 수 업데이트
   function updateOnlineCount() {
-    const connectionsRef = database.ref('chat/connections');
+    const connectionsRef = database.ref('inline-chat/connections');
     const myConnectionRef = connectionsRef.push();
 
     // 연결 상태 모니터링
