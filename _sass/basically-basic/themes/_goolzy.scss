@@ -2,14 +2,14 @@
    Goolzy theme skin (Primary: Purple, Secondary: Mint)
    ========================================================================== */
 
-/* Base on a light theme; keep text legible and accents brandy */
+/* Dark theme matching main goolzy.com design */
 $base-color: #393e46 !default;         /* neutral base for borders/tones */
-$text-color: #181c22 !default;         /* primary text */
-$accent-color: #7a5cff !default;       /* primary brand purple */
-$background-color: #ffffff !default;   /* light background */
-$code-background-color: tint($base-color, 95%) !default;
-$border-color: tint($base-color, 80%) !default;
+$text-color: rgba(255, 255, 255, 0.95) !default;         /* light text for dark theme */
+$accent-color: #a855f7 !default;       /* primary brand purple */
+$background-color: #0a0614 !default;   /* dark background matching main site */
+$code-background-color: #150a28 !default;
+$border-color: rgba(168, 85, 247, 0.12) !default;
 $overlay-color: $base-color !default;
 
-/* Optional secondary brand color (mint) for custom components */
-$secondary-accent-color: #22c1c3 !default;
+/* Optional secondary brand color (mint/teal) for custom components */
+$secondary-accent-color: #14b8a6 !default;
