@@ -695,7 +695,7 @@ const database = firebase.database();
 
       // 관리자인 경우 placeholder 변경
       if (user.email.endsWith('@goolzy.com')) {
-        chatInput.placeholder = '메시지를 입력하세요... (관리자 명령: "클리어"로 모든 메시지 삭제)';
+        chatInput.placeholder = '메시지를 입력하세요... (관리자 명령 사용 가능)';
       } else {
         chatInput.placeholder = '메시지를 입력하세요...';
       }
