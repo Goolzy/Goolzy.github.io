@@ -899,7 +899,10 @@ const database = firebase.database();
       }
 
       // 채팅금지 명령: "채팅금지 이메일 초"
+      console.log('🔍 채팅금지 명령 확인 중...');
+      console.log('🔍 텍스트 charCode:', Array.from(text).map(c => c.charCodeAt(0)).join(','));
       const banMatch = text.match(/^채팅금지\s+(\S+)\s+(\d+)$/);
+      console.log('🔍 banMatch 결과:', banMatch);
       if (banMatch) {
         const targetEmail = banMatch[1];
         const durationSeconds = parseInt(banMatch[2], 10);
