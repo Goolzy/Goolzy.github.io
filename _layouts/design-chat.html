@@ -859,27 +859,8 @@ const database = firebase.database();
 
           // UI 초기화
           chatMessages.innerHTML = '';
-          console.log('UI 초기화 완료');
-
-          // 시스템 메시지 추가
-          const systemMsg = document.createElement('div');
-          systemMsg.className = 'message system-msg';
-          const content = document.createElement('div');
-          content.className = 'msg-content';
-          content.textContent = `채팅이 관리자(${currentUser.email})에 의해 클리어되었습니다.`;
-          systemMsg.appendChild(content);
-          chatMessages.appendChild(systemMsg);
 
           chatInput.value = '';
-          console.log('✅ 채팅 클리어 완료!');
-
-          // 클리어 기록 메시지 서버에 저장
-          await messagesRef.push({
-            email: 'system',
-            text: `채팅이 관리자(${currentUser.email})에 의해 클리어되었습니다.`,
-            timestamp: firebase.database.ServerValue.TIMESTAMP
-          });
-          console.log('시스템 메시지 저장 완료');
 
         } catch (error) {
           console.error('❌ 채팅 클리어 실패:', error);
