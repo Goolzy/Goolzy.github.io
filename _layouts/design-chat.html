@@ -747,13 +747,27 @@ const database = firebase.database();
   function loadMessages() {
     messagesRef.limitToLast(50).on('child_added', (snapshot) => {
       const msg = snapshot.val();
-      addMessageToUI(msg.text, msg.email, msg.timestamp);
+      const msgId = snapshot.key;
+      addMessageToUI(msg.text, msg.email, msg.timestamp, msgId);
+    });
+
+    // 메시지 삭제 이벤트 리스닝 (클리어 명령 대응)
+    messagesRef.on('child_removed', (snapshot) => {
+      const msgId = snapshot.key;
+      const msgElement = document.querySelector(`[data-msg-id="${msgId}"]`);
+      if (msgElement) {
+        msgElement.remove();
+        console.log('메시지 삭제됨:', msgId);
+      }
     });
   }
 
   // UI에 메시지 추가
-  function addMessageToUI(text, email, timestamp) {
+  function addMessageToUI(text, email, timestamp, msgId) {
     const messageDiv = document.createElement('div');
+    if (msgId) {
+      messageDiv.setAttribute('data-msg-id', msgId);
+    }
     const isCurrentUser = currentUser && email === currentUser.email;
     const isGoolzyStaff = email && email.endsWith('@goolzy.com');
     const isSystemMessage = email === 'system';
@@ -824,75 +838,154 @@ const database = firebase.database();
     console.log('🔍 입력 텍스트 === "클리어"?', text === '클리어');
     console.log('🔍 @goolzy.com 도메인?', currentUser.email.endsWith('@goolzy.com'));
 
-    // 관리자 명령: 채팅 클리어 (@goolzy.com 도메인 사용자만)
-    if (text === '클리어' && currentUser.email.endsWith('@goolzy.com')) {
-      console.log('✅ 관리자 클리어 명령 인식됨!');
+    // 관리자 전용 명령어 처리 (@goolzy.com 도메인만)
+    if (currentUser.email.endsWith('@goolzy.com')) {
+      // 클리어 명령
+      if (text === '클리어') {
+        console.log('✅ 관리자 클리어 명령 인식됨!');
 
-      const confirmClear = confirm(
-        '⚠️ 채팅창의 모든 메시지를 삭제하시겠습니까?\n\n' +
-        '이 작업은 되돌릴 수 없으며, 모든 사용자의 채팅 내역이 영구적으로 삭제됩니다.\n\n' +
-        '계속하려면 "확인"을 클릭하세요.'
-      );
+        const confirmClear = confirm(
+          '⚠️ 채팅창의 모든 메시지를 삭제하시겠습니까?\n\n' +
+          '이 작업은 되돌릴 수 없으며, 모든 사용자의 채팅 내역이 영구적으로 삭제됩니다.\n\n' +
+          '계속하려면 "확인"을 클릭하세요.'
+        );
 
-      console.log('확인 대화상자 결과:', confirmClear);
+        console.log('확인 대화상자 결과:', confirmClear);
 
-      if (!confirmClear) {
-        chatInput.value = '';
-        console.log('사용자가 취소함');
+        if (!confirmClear) {
+          chatInput.value = '';
+          console.log('사용자가 취소함');
+          return;
+        }
+
+        try {
+          console.log('메시지 삭제 시작...');
+
+          // 모든 메시지 삭제
+          await messagesRef.remove();
+          console.log('messagesRef.remove() 완료');
+
+          // UI 초기화
+          chatMessages.innerHTML = '';
+          console.log('UI 초기화 완료');
+
+          // 시스템 메시지 추가
+          const systemMsg = document.createElement('div');
+          systemMsg.className = 'message system-msg';
+          const content = document.createElement('div');
+          content.className = 'msg-content';
+          content.textContent = `채팅이 관리자(${currentUser.email})에 의해 클리어되었습니다.`;
+          systemMsg.appendChild(content);
+          chatMessages.appendChild(systemMsg);
+
+          chatInput.value = '';
+          console.log('✅ 채팅 클리어 완료!');
+
+          // 클리어 기록 메시지 서버에 저장
+          await messagesRef.push({
+            email: 'system',
+            text: `채팅이 관리자(${currentUser.email})에 의해 클리어되었습니다.`,
+            timestamp: firebase.database.ServerValue.TIMESTAMP
+          });
+          console.log('시스템 메시지 저장 완료');
+
+        } catch (error) {
+          console.error('❌ 채팅 클리어 실패:', error);
+          console.error('에러 코드:', error.code);
+          console.error('에러 메시지:', error.message);
+          alert('채팅 클리어에 실패했습니다: ' + error.message);
+        }
         return;
       }
 
-      try {
-        console.log('메시지 삭제 시작...');
+      // 채팅금지 명령: "채팅금지 이메일 초"
+      const banMatch = text.match(/^채팅금지\s+(\S+)\s+(\d+)$/);
+      if (banMatch) {
+        const targetEmail = banMatch[1];
+        const durationSeconds = parseInt(banMatch[2], 10);
 
-        // 모든 메시지 삭제
-        await messagesRef.remove();
-        console.log('messagesRef.remove() 완료');
+        console.log('✅ 채팅금지 명령 인식됨!');
+        console.log('대상 이메일:', targetEmail);
+        console.log('금지 시간(초):', durationSeconds);
 
-        // UI 초기화
-        chatMessages.innerHTML = '';
-        console.log('UI 초기화 완료');
+        const confirmBan = confirm(
+          `⚠️ 사용자 채팅 금지\n\n` +
+          `대상: ${targetEmail}\n` +
+          `금지 시간: ${durationSeconds}초\n\n` +
+          `계속하시겠습니까?`
+        );
 
-        // 시스템 메시지 추가
-        const systemMsg = document.createElement('div');
-        systemMsg.className = 'message system-msg';
-        const content = document.createElement('div');
-        content.className = 'msg-content';
-        content.textContent = `채팅이 관리자(${currentUser.email})에 의해 클리어되었습니다.`;
-        systemMsg.appendChild(content);
-        chatMessages.appendChild(systemMsg);
+        if (!confirmBan) {
+          chatInput.value = '';
+          return;
+        }
 
-        chatInput.value = '';
-        console.log('✅ 채팅 클리어 완료!');
+        try {
+          const bannedUsersRef = firebase.database().ref('inline-chat/banned-users');
+          const banUntil = Date.now() + (durationSeconds * 1000);
 
-        // 클리어 기록 메시지 서버에 저장
-        await messagesRef.push({
-          email: 'system',
-          text: `채팅이 관리자(${currentUser.email})에 의해 클리어되었습니다.`,
-          timestamp: firebase.database.ServerValue.TIMESTAMP
-        });
-        console.log('시스템 메시지 저장 완료');
+          await bannedUsersRef.child(encodeURIComponent(targetEmail)).set({
+            bannedBy: currentUser.email,
+            bannedAt: firebase.database.ServerValue.TIMESTAMP,
+            banUntil: banUntil,
+            duration: durationSeconds
+          });
 
-      } catch (error) {
-        console.error('❌ 채팅 클리어 실패:', error);
-        console.error('에러 코드:', error.code);
-        console.error('에러 메시지:', error.message);
-        alert('채팅 클리어에 실패했습니다: ' + error.message);
+          // 시스템 메시지 전송
+          await messagesRef.push({
+            email: 'system',
+            text: `${targetEmail} 사용자가 ${durationSeconds}초 동안 채팅 금지되었습니다. (관리자: ${currentUser.email})`,
+            timestamp: firebase.database.ServerValue.TIMESTAMP
+          });
+
+          chatInput.value = '';
+          console.log('✅ 채팅 금지 완료!');
+
+        } catch (error) {
+          console.error('❌ 채팅 금지 실패:', error);
+          alert('채팅 금지에 실패했습니다: ' + error.message);
+        }
+        return;
       }
-      return;
     }
 
-    // 일반 메시지 전송
-    messagesRef.push({
-      email: currentUser.email,
-      text: text,
-      timestamp: firebase.database.ServerValue.TIMESTAMP
-    }).then(() => {
-      chatInput.value = '';
-    }).catch((error) => {
-      console.error('메시지 전송 실패:', error);
+    // 일반 메시지 전송 전에 채팅금지 여부 확인
+    try {
+      const bannedUsersRef = firebase.database().ref('inline-chat/banned-users');
+      const encodedEmail = encodeURIComponent(currentUser.email);
+      const banSnapshot = await bannedUsersRef.child(encodedEmail).once('value');
+      const banData = banSnapshot.val();
+
+      if (banData && banData.banUntil) {
+        const now = Date.now();
+        if (now < banData.banUntil) {
+          const remainingSeconds = Math.ceil((banData.banUntil - now) / 1000);
+          alert(`채팅이 금지되었습니다.\n남은 시간: ${remainingSeconds}초`);
+          console.log('채팅 금지 상태:', remainingSeconds, '초 남음');
+          chatInput.value = '';
+          return;
+        } else {
+          // 금지 시간이 만료되었으면 삭제
+          await bannedUsersRef.child(encodedEmail).remove();
+          console.log('채팅 금지 해제 (시간 만료)');
+        }
+      }
+
+      // 금지되지 않았으면 메시지 전송
+      messagesRef.push({
+        email: currentUser.email,
+        text: text,
+        timestamp: firebase.database.ServerValue.TIMESTAMP
+      }).then(() => {
+        chatInput.value = '';
+      }).catch((error) => {
+        console.error('메시지 전송 실패:', error);
+        alert('메시지 전송에 실패했습니다.');
+      });
+    } catch (error) {
+      console.error('채팅금지 확인 실패:', error);
       alert('메시지 전송에 실패했습니다.');
-    });
+    }
   }
 
   // 이벤트 리스너 설정 (중복 방지)
