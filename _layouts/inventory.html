@@ -227,9 +227,25 @@ try {
   --text-dim: rgba(255, 255, 255, 0.4);
 }
 
+/* 모든 상위 컨테이너도 다크 테마 강제 적용 */
+html,
+html body,
+body.layout--page,
 body {
-  background: var(--bg) !important;
-  color: var(--text) !important;
+  background: #0a0614 !important;
+  background-color: #0a0614 !important;
+  color: rgba(255, 255, 255, 0.95) !important;
+  min-height: 100vh;
+}
+
+/* 기본 wrapper들도 투명 배경 */
+.wrapper,
+.initial-content,
+.page-content,
+.inner,
+.entry-wrap,
+.entry-content {
+  background: transparent !important;
 }
 
 body::before {
