@@ -25,7 +25,7 @@ permalink: /inventory/suggest/
   </label>
   <input type="hidden" name="Email" value="">
   <input type="hidden" name="_replyto" value="">
-  <div class="muted" id="suggest-email-hint" style="margin:.5rem 0 1rem;">회신 이메일: <span id="suggest-email-value">확인 중…</span></div>
+  <div class="muted" id="suggest-email-hint" style="margin:.5rem 0 1rem; word-break: break-all;">회신 이메일: <span id="suggest-email-value" style="display: inline-block; max-width: 100%;">확인 중…</span></div>
   <input type="hidden" name="uid" value="">
   
   <button class="btn" type="submit">제출</button>
