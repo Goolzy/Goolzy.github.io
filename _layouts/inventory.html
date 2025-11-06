@@ -4,8 +4,8 @@ hide_sidebar: true
 ---
 <div id="inventory-root">
   <div class="inventory-frame">
-    <!-- Navigation (always visible) -->
-    <nav style="display:flex; gap:.5rem; padding:.5rem 0 1rem; border-bottom:1px solid #e5e7eb; flex-wrap:wrap; align-items:center;">
+    <!-- Navigation -->
+    <nav class="neumorphic-nav">
       <a href="/inventory/" class="nav-link">홈</a>
       <a href="/inventory/changelog/" class="nav-link">버전 로그</a>
       <a href="/inventory/manual/" class="nav-link">매뉴얼</a>
@@ -13,12 +13,11 @@ hide_sidebar: true
       <a href="/inventory/suggest/" class="nav-link">건의하기</a>
       <a href="/inventory/bug-report/" class="nav-link">버그 리포트</a>
       <span style="flex:1"></span>
-      <!-- 앱 모드일 때만 표시 -->
-      <span id="inv-user-email" style="display:none; font-size:.85rem; color:#6b7280; padding:.35rem .6rem;"></span>
+      <span id="inv-user-email" class="user-badge"></span>
     </nav>
 
-    <!-- Content (always visible) -->
-    <div style="padding-top:1rem;">
+    <!-- Content -->
+    <div class="neumorphic-content">
       {{ content }}
     </div>
   </div>
@@ -26,10 +25,9 @@ hide_sidebar: true
 
 <script>
 (function(){
-  var APP_AUTH_KEY = 'inv_app_auth'; // 앱에서 전달받은 인증 정보 키
+  var APP_AUTH_KEY = 'inv_app_auth';
   var userEmailEl = document.getElementById('inv-user-email');
 
-  // 🆕 앱에서 사용자 정보를 받는 글로벌 함수
   window.setAppAuth = function(authData){
     try {
       console.log('[Inventory] 앱으로부터 인증 정보 수신:', authData);
@@ -39,14 +37,12 @@ hide_sidebar: true
         return;
       }
 
-      // 이메일 검증 (기본적인 형식 체크)
       var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailPattern.test(authData.email)) {
         console.warn('[Inventory] 유효하지 않은 이메일 형식:', authData.email);
         return;
       }
 
-      // sessionStorage에 저장 (새로고침 시에도 유지)
       var userData = {
         email: authData.email,
         uid: authData.uid || 'app-user',
@@ -57,10 +53,8 @@ hide_sidebar: true
       sessionStorage.setItem(APP_AUTH_KEY, JSON.stringify(userData));
       console.log('[Inventory] 사용자 정보 저장 완료');
 
-      // UI 업데이트
       updateUI(userData);
 
-      // 전역 이벤트 발생 (폼 페이지에서 리스닝)
       window.dispatchEvent(new CustomEvent('app:auth-ready', {
         detail: userData
       }));
@@ -70,7 +64,6 @@ hide_sidebar: true
     }
   };
 
-  // 🆕 저장된 앱 인증 정보 불러오기
   function loadAppAuth(){
     try {
       var stored = sessionStorage.getItem(APP_AUTH_KEY);
@@ -78,7 +71,6 @@ hide_sidebar: true
 
       var userData = JSON.parse(stored);
 
-      // 타임스탬프 확인 (24시간 이내만 유효)
       if (userData.timestamp && (Date.now() - userData.timestamp > 24 * 60 * 60 * 1000)) {
         console.log('[Inventory] 인증 정보 만료됨');
         sessionStorage.removeItem(APP_AUTH_KEY);
@@ -95,23 +87,19 @@ hide_sidebar: true
     }
   }
 
-  // 🆕 UI 업데이트
   function updateUI(userData){
     if (!userData || !userData.email) return;
 
-    // 이메일 표시
     if (userEmailEl) {
       userEmailEl.textContent = userData.email;
       userEmailEl.style.display = 'block';
     }
   }
 
-  // 🆕 앱 인증 정보 가져오기 (폼 페이지에서 사용)
   window.getAppAuth = function(){
     return loadAppAuth();
   };
 
-  // 🆕 앱 인증 정보 초기화 (로그아웃 등)
   window.clearAppAuth = function(){
     try {
       sessionStorage.removeItem(APP_AUTH_KEY);
@@ -125,13 +113,11 @@ hide_sidebar: true
     }
   };
 
-  // 페이지 로드 시 저장된 인증 정보 확인
   var savedAuth = loadAppAuth();
   if (savedAuth) {
     console.log('[Inventory] 페이지 로드: 기존 인증 정보 사용');
     updateUI(savedAuth);
 
-    // 이미 인증 정보가 있으면 즉시 이벤트 발생
     setTimeout(function(){
       window.dispatchEvent(new CustomEvent('app:auth-ready', {
         detail: savedAuth
@@ -143,23 +129,357 @@ hide_sidebar: true
 </script>
 
 <style>
-.inventory-frame{
-  max-width: 960px;
+:root {
+  --neu-bg: #e0e5ec;
+  --neu-shadow-dark: #a3b1c6;
+  --neu-shadow-light: #ffffff;
+  --neu-text: #2d3748;
+  --neu-text-dim: #718096;
+  --neu-primary: #a855f7;
+  --neu-primary-light: #d946ef;
+  --neu-teal: #14b8a6;
+}
+
+body {
+  background: var(--neu-bg) !important;
+}
+
+.inventory-frame {
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 2rem 1.5rem;
 }
-.nav-link{
-  padding: .4rem .75rem;
-  border-radius: 6px;
-  background: #f3f4f6;
+
+/* Neumorphic Navigation */
+.neumorphic-nav {
+  display: flex;
+  gap: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--neu-bg);
+  border-radius: 20px;
+  box-shadow:
+    8px 8px 16px var(--neu-shadow-dark),
+    -8px -8px 16px var(--neu-shadow-light);
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.nav-link {
+  padding: 0.65rem 1.1rem;
+  border-radius: 12px;
+  background: var(--neu-bg);
+  box-shadow:
+    4px 4px 8px var(--neu-shadow-dark),
+    -4px -4px 8px var(--neu-shadow-light);
   text-decoration: none;
-  color: #374151;
+  color: var(--neu-text);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  border: none;
 }
-.nav-link:hover{
-  background: #e5e7eb;
+
+.nav-link:hover {
+  box-shadow:
+    2px 2px 4px var(--neu-shadow-dark),
+    -2px -2px 4px var(--neu-shadow-light);
+  transform: translateY(-1px);
+  color: var(--neu-primary);
 }
-/* 안전망: 좌측 상단(masthead)의 로그아웃만 숨김 처리 */
+
+.nav-link:active {
+  box-shadow:
+    inset 3px 3px 6px var(--neu-shadow-dark),
+    inset -3px -3px 6px var(--neu-shadow-light);
+  transform: translateY(0);
+}
+
+.user-badge {
+  display: none;
+  font-size: 0.85rem;
+  color: var(--neu-text-dim);
+  padding: 0.65rem 1.1rem;
+  background: var(--neu-bg);
+  border-radius: 12px;
+  box-shadow:
+    inset 3px 3px 6px var(--neu-shadow-dark),
+    inset -3px -3px 6px var(--neu-shadow-light);
+  font-weight: 500;
+}
+
+/* Neumorphic Content */
+.neumorphic-content {
+  background: var(--neu-bg);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  box-shadow:
+    8px 8px 16px var(--neu-shadow-dark),
+    -8px -8px 16px var(--neu-shadow-light);
+  color: var(--neu-text);
+  line-height: 1.7;
+}
+
+/* Typography */
+.neumorphic-content h1,
+.neumorphic-content h2,
+.neumorphic-content h3,
+.neumorphic-content h4 {
+  color: var(--neu-text);
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.neumorphic-content h1 {
+  font-size: 2rem;
+  background: linear-gradient(135deg, var(--neu-primary), var(--neu-teal));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.neumorphic-content h2 {
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  border-left: 4px solid var(--neu-primary);
+}
+
+.neumorphic-content h3 {
+  font-size: 1.25rem;
+}
+
+.neumorphic-content p {
+  margin-bottom: 1rem;
+  color: var(--neu-text);
+}
+
+.neumorphic-content a {
+  color: var(--neu-primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.neumorphic-content a:hover {
+  color: var(--neu-primary-light);
+  text-decoration: underline;
+}
+
+/* Lists */
+.neumorphic-content ul,
+.neumorphic-content ol {
+  margin: 1rem 0 1rem 1.5rem;
+  padding-left: 0.5rem;
+}
+
+.neumorphic-content li {
+  margin-bottom: 0.5rem;
+  color: var(--neu-text);
+}
+
+/* Code blocks */
+.neumorphic-content pre,
+.neumorphic-content code {
+  background: var(--neu-bg);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  box-shadow:
+    inset 3px 3px 6px var(--neu-shadow-dark),
+    inset -3px -3px 6px var(--neu-shadow-light);
+  font-family: 'Monaco', 'Courier New', monospace;
+  font-size: 0.9rem;
+  color: var(--neu-text);
+  overflow-x: auto;
+}
+
+.neumorphic-content code {
+  padding: 0.2rem 0.5rem;
+  display: inline;
+}
+
+.neumorphic-content pre code {
+  padding: 0;
+  box-shadow: none;
+}
+
+/* Tables */
+.neumorphic-content table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1.5rem 0;
+  background: var(--neu-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow:
+    4px 4px 8px var(--neu-shadow-dark),
+    -4px -4px 8px var(--neu-shadow-light);
+}
+
+.neumorphic-content th,
+.neumorphic-content td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(163, 177, 198, 0.2);
+}
+
+.neumorphic-content th {
+  background: var(--neu-bg);
+  font-weight: 700;
+  color: var(--neu-primary);
+  box-shadow:
+    inset 0 -2px 4px var(--neu-shadow-dark),
+    inset 0 2px 4px var(--neu-shadow-light);
+}
+
+.neumorphic-content tr:last-child td {
+  border-bottom: none;
+}
+
+/* Buttons */
+.neumorphic-content button,
+.neumorphic-content .btn,
+.neumorphic-content input[type="submit"],
+.neumorphic-content input[type="button"] {
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  background: var(--neu-bg);
+  box-shadow:
+    4px 4px 8px var(--neu-shadow-dark),
+    -4px -4px 8px var(--neu-shadow-light);
+  border: none;
+  color: var(--neu-text);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.neumorphic-content button:hover,
+.neumorphic-content .btn:hover,
+.neumorphic-content input[type="submit"]:hover,
+.neumorphic-content input[type="button"]:hover {
+  box-shadow:
+    2px 2px 4px var(--neu-shadow-dark),
+    -2px -2px 4px var(--neu-shadow-light);
+  transform: translateY(-1px);
+}
+
+.neumorphic-content button:active,
+.neumorphic-content .btn:active,
+.neumorphic-content input[type="submit"]:active,
+.neumorphic-content input[type="button"]:active {
+  box-shadow:
+    inset 3px 3px 6px var(--neu-shadow-dark),
+    inset -3px -3px 6px var(--neu-shadow-light);
+  transform: translateY(0);
+}
+
+/* Forms */
+.neumorphic-content input[type="text"],
+.neumorphic-content input[type="email"],
+.neumorphic-content textarea,
+.neumorphic-content select {
+  width: 100%;
+  padding: 0.85rem 1.1rem;
+  border-radius: 12px;
+  background: var(--neu-bg);
+  box-shadow:
+    inset 3px 3px 6px var(--neu-shadow-dark),
+    inset -3px -3px 6px var(--neu-shadow-light);
+  border: none;
+  color: var(--neu-text);
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.neumorphic-content input[type="text"]:focus,
+.neumorphic-content input[type="email"]:focus,
+.neumorphic-content textarea:focus,
+.neumorphic-content select:focus {
+  outline: none;
+  box-shadow:
+    inset 4px 4px 8px var(--neu-shadow-dark),
+    inset -4px -4px 8px var(--neu-shadow-light),
+    0 0 0 2px var(--neu-primary);
+}
+
+.neumorphic-content textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Cards / Sections */
+.neumorphic-content .card,
+.neumorphic-content .section {
+  background: var(--neu-bg);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  box-shadow:
+    6px 6px 12px var(--neu-shadow-dark),
+    -6px -6px 12px var(--neu-shadow-light);
+}
+
+/* Blockquotes */
+.neumorphic-content blockquote {
+  background: var(--neu-bg);
+  border-left: 4px solid var(--neu-teal);
+  border-radius: 0 12px 12px 0;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  box-shadow:
+    inset 2px 2px 4px var(--neu-shadow-dark),
+    inset -2px -2px 4px var(--neu-shadow-light);
+  color: var(--neu-text-dim);
+  font-style: italic;
+}
+
+/* HR */
+.neumorphic-content hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--neu-shadow-dark),
+    transparent
+  );
+  margin: 2rem 0;
+}
+
+/* Hide default page elements */
 #mh-logout { display: none !important; }
-/* 페이지 상단의 자동 생성 제목 숨김 (intro 헤더 전체) */
 .intro { display: none !important; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .inventory-frame {
+    padding: 1rem;
+  }
+
+  .neumorphic-nav {
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+
+  .nav-link {
+    padding: 0.5rem 0.85rem;
+    font-size: 0.85rem;
+  }
+
+  .neumorphic-content {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .neumorphic-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .neumorphic-content h2 {
+    font-size: 1.25rem;
+  }
+}
 </style>
