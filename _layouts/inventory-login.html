@@ -294,6 +294,15 @@ body::before {
   text-decoration: underline;
 }
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @media (max-width: 640px) {
   body {
     padding: 1rem;
@@ -336,12 +345,25 @@ firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 
 // 리다이렉트 URL
-const returnUrl = new URLSearchParams(window.location.search).get('return') || '/';
+const urlParams = new URLSearchParams(window.location.search);
+const returnUrl = urlParams.get('return') || '/';
 
 // 이미 로그인되어 있으면 리다이렉트
 auth.onAuthStateChanged((user) => {
   if (user) {
-    window.location.href = returnUrl;
+    console.log('로그인 확인됨:', user.email);
+    console.log('리다이렉트 URL:', returnUrl);
+
+    // 약간의 지연을 두어 에러 메시지가 있다면 표시되도록 함
+    setTimeout(() => {
+      try {
+        window.location.href = returnUrl;
+      } catch (error) {
+        console.error('리다이렉트 실패:', error);
+        alert('페이지 이동에 실패했습니다. 수동으로 홈페이지로 이동해주세요.');
+        window.location.href = '/';
+      }
+    }, 500);
   }
 });
 
@@ -449,28 +471,124 @@ signupForm.addEventListener('submit', async (e) => {
 // Google 로그인
 document.getElementById('googleLogin').addEventListener('click', async () => {
   const provider = new firebase.auth.GoogleAuthProvider();
+  const googleBtn = document.getElementById('googleLogin');
+
+  // 추가 스코프 요청 (선택사항)
+  provider.addScope('profile');
+  provider.addScope('email');
+
+  // 버튼 비활성화
+  googleBtn.disabled = true;
+  const originalText = googleBtn.innerHTML;
+  googleBtn.innerHTML = '<span style="display:inline-block;animation:spin 1s linear infinite;">⏳</span> 로그인 중...';
+
   try {
-    await auth.signInWithPopup(provider);
+    console.log('Google 로그인 시도...');
+    console.log('현재 URL:', window.location.href);
+    console.log('현재 hostname:', window.location.hostname);
+
+    const result = await auth.signInWithPopup(provider);
+    console.log('Google 로그인 성공:', result.user.email);
+    console.log('로그인 완료 - onAuthStateChanged에서 리다이렉트 처리됩니다');
     // 성공하면 onAuthStateChanged에서 리다이렉트
   } catch (error) {
     console.error('Google 로그인 실패:', error);
-    if (error.code !== 'auth/popup-closed-by-user') {
-      alert('Google 로그인에 실패했습니다: ' + error.message);
+    console.error('에러 코드:', error.code);
+    console.error('에러 메시지:', error.message);
+    console.error('전체 에러 객체:', JSON.stringify(error, null, 2));
+
+    // 버튼 복구
+    googleBtn.disabled = false;
+    googleBtn.innerHTML = originalText;
+
+    if (error.code === 'auth/popup-closed-by-user') {
+      // 사용자가 팝업을 닫은 경우 - 메시지 표시 안 함
+      return;
     }
+
+    let errorMsg = 'Google 로그인에 실패했습니다.\n\n';
+
+    if (error.code === 'auth/unauthorized-domain') {
+      errorMsg += '도메인이 승인되지 않았습니다.\n';
+      errorMsg += 'Firebase Console에서 승인된 도메인에 ' + window.location.hostname + '을(를) 추가해주세요.';
+    } else if (error.code === 'auth/operation-not-allowed') {
+      errorMsg += 'Google 로그인이 활성화되지 않았습니다.\n';
+      errorMsg += 'Firebase Console에서 Google 인증을 활성화해주세요.';
+    } else if (error.code === 'auth/popup-blocked') {
+      errorMsg += '팝업이 차단되었습니다.\n';
+      errorMsg += '브라우저 설정에서 팝업을 허용해주세요.';
+    } else if (error.code === 'auth/cancelled-popup-request') {
+      // 다른 팝업이 이미 열려있는 경우
+      errorMsg = '다른 로그인 팝업이 이미 열려있습니다.\n팝업을 닫고 다시 시도해주세요.';
+    } else if (error.code === 'auth/network-request-failed') {
+      errorMsg = '네트워크 연결을 확인해주세요.';
+    } else {
+      errorMsg += '에러 코드: ' + error.code + '\n';
+      errorMsg += error.message;
+    }
+
+    alert(errorMsg);
   }
 });
 
 // Apple 로그인
 document.getElementById('appleLogin').addEventListener('click', async () => {
   const provider = new firebase.auth.OAuthProvider('apple.com');
+  const appleBtn = document.getElementById('appleLogin');
+
+  // Apple 로그인 스코프
+  provider.addScope('email');
+  provider.addScope('name');
+
+  // 버튼 비활성화
+  appleBtn.disabled = true;
+  const originalText = appleBtn.innerHTML;
+  appleBtn.innerHTML = '<span style="display:inline-block;animation:spin 1s linear infinite;">⏳</span> 로그인 중...';
+
   try {
-    await auth.signInWithPopup(provider);
+    console.log('Apple 로그인 시도...');
+    console.log('현재 URL:', window.location.href);
+    console.log('현재 hostname:', window.location.hostname);
+
+    const result = await auth.signInWithPopup(provider);
+    console.log('Apple 로그인 성공:', result.user.email);
+    console.log('로그인 완료 - onAuthStateChanged에서 리다이렉트 처리됩니다');
     // 성공하면 onAuthStateChanged에서 리다이렉트
   } catch (error) {
     console.error('Apple 로그인 실패:', error);
-    if (error.code !== 'auth/popup-closed-by-user') {
-      alert('Apple 로그인에 실패했습니다: ' + error.message);
+    console.error('에러 코드:', error.code);
+    console.error('에러 메시지:', error.message);
+    console.error('전체 에러 객체:', JSON.stringify(error, null, 2));
+
+    // 버튼 복구
+    appleBtn.disabled = false;
+    appleBtn.innerHTML = originalText;
+
+    if (error.code === 'auth/popup-closed-by-user') {
+      return;
     }
+
+    let errorMsg = 'Apple 로그인에 실패했습니다.\n\n';
+
+    if (error.code === 'auth/unauthorized-domain') {
+      errorMsg += '도메인이 승인되지 않았습니다.\n';
+      errorMsg += 'Firebase Console에서 승인된 도메인에 ' + window.location.hostname + '을(를) 추가해주세요.';
+    } else if (error.code === 'auth/operation-not-allowed') {
+      errorMsg += 'Apple 로그인이 활성화되지 않았습니다.\n';
+      errorMsg += 'Firebase Console에서 Apple 인증을 설정해주세요.';
+    } else if (error.code === 'auth/popup-blocked') {
+      errorMsg += '팝업이 차단되었습니다.\n';
+      errorMsg += '브라우저 설정에서 팝업을 허용해주세요.';
+    } else if (error.code === 'auth/cancelled-popup-request') {
+      errorMsg = '다른 로그인 팝업이 이미 열려있습니다.\n팝업을 닫고 다시 시도해주세요.';
+    } else if (error.code === 'auth/network-request-failed') {
+      errorMsg = '네트워크 연결을 확인해주세요.';
+    } else {
+      errorMsg += '에러 코드: ' + error.code + '\n';
+      errorMsg += error.message;
+    }
+
+    alert(errorMsg);
   }
 });
 </script>

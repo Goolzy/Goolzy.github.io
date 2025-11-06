@@ -1,5 +1,11 @@
 {
   "rules": {
+    "user_sessions": {
+      "$userId": {
+        ".read": "auth != null && auth.uid == $userId",
+        ".write": "auth != null && auth.uid == $userId"
+      }
+    },
     "inline-chat": {
       "messages": {
         ".read": true,
@@ -31,7 +37,10 @@
       "banned-users": {
         ".read": "auth != null",
         "$sanitizedEmail": {
-          ".write": "auth != null && auth.token.email.endsWith('@goolzy.com')",
+          ".write": "auth != null && (
+            auth.token.email.endsWith('@goolzy.com') ||
+            (!newData.exists() && data.child('banUntil').val() < now)
+          )",
           ".validate": "newData.hasChildren(['email', 'bannedBy', 'bannedAt', 'banUntil', 'duration'])",
           "email": {
             ".validate": "newData.isString() && newData.val().length > 0"

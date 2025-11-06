@@ -608,7 +608,6 @@ const database = firebase.database();
 
 // 실시간 채팅
 (function() {
-  console.log('=== 스크립트 시작 ===');
 
   const chatSection = document.querySelector('.chat-section');
   const chatMessages = document.getElementById('chatMessages');
@@ -618,15 +617,10 @@ const database = firebase.database();
   const userEmail = document.getElementById('userEmail');
   const logoutBtn = document.getElementById('logoutBtn');
 
-  console.log('DOM 요소 확인:', {
-    chatSection: !!chatSection,
-    chatMessages: !!chatMessages,
-    chatInput: !!chatInput,
-    sendBtn: !!sendBtn
-  });
 
   let currentUser = null;
   let messagesRef = database.ref('inline-chat/messages');
+  let lastMessageTime = 0; // 마지막 메시지 전송 시간
 
   // 로그인 오버레이 생성
   function createLoginOverlay() {
@@ -646,10 +640,8 @@ const database = firebase.database();
 
   // 인증 상태 확인
   auth.onAuthStateChanged((user) => {
-    console.log('🔐 onAuthStateChanged 호출됨, user:', user ? user.email : 'null');
 
     if (user) {
-      console.log('✅ 로그인 상태 확인됨:', user.email);
       currentUser = user;
       chatSection.classList.remove('locked');
 
@@ -734,7 +726,6 @@ const database = firebase.database();
       if (confirm('로그아웃 하시겠습니까?')) {
         try {
           await auth.signOut();
-          console.log('로그아웃 성공');
         } catch (error) {
           console.error('로그아웃 실패:', error);
           alert('로그아웃에 실패했습니다.');
@@ -757,7 +748,6 @@ const database = firebase.database();
       const msgElement = document.querySelector(`[data-msg-id="${msgId}"]`);
       if (msgElement) {
         msgElement.remove();
-        console.log('메시지 삭제됨:', msgId);
       }
     });
   }
@@ -810,7 +800,6 @@ const database = firebase.database();
 
   // 메시지 전송
   async function sendMessage() {
-    console.log('=== sendMessage 함수 호출됨 ===');
 
     if (!currentUser) {
       console.error('❌ currentUser가 null입니다');
@@ -826,23 +815,30 @@ const database = firebase.database();
     // 양쪽 따옴표 제거 (""클리어"" → 클리어)
     text = text.replace(/^["']+|["']+$/g, '');
 
-    console.log('📝 입력된 텍스트:', `"${text}"`);
-    console.log('📝 텍스트 길이:', text.length);
 
     if (!text) {
-      console.log('텍스트가 비어있어서 종료');
       return;
     }
 
-    console.log('👤 현재 사용자 이메일:', currentUser.email);
-    console.log('🔍 입력 텍스트 === "클리어"?', text === '클리어');
-    console.log('🔍 @goolzy.com 도메인?', currentUser.email.endsWith('@goolzy.com'));
+
+    // 관리자가 아닌 경우 10초 제한 확인
+    const isAdmin = currentUser.email.endsWith('@goolzy.com');
+    if (!isAdmin) {
+      const now = Date.now();
+      const timeSinceLastMessage = (now - lastMessageTime) / 1000; // 초 단위
+
+      if (timeSinceLastMessage < 10) {
+        const remainingSeconds = Math.ceil(10 - timeSinceLastMessage);
+        alert(`메시지를 너무 빠르게 전송하고 있습니다.\n${remainingSeconds}초 후에 다시 시도해주세요.`);
+        chatInput.value = '';
+        return;
+      }
+    }
 
     // 관리자 전용 명령어 처리 (@goolzy.com 도메인만)
     if (currentUser.email.endsWith('@goolzy.com')) {
       // 클리어 명령
       if (text === '클리어') {
-        console.log('✅ 관리자 클리어 명령 인식됨!');
 
         const confirmClear = confirm(
           '⚠️ 채팅창의 모든 메시지를 삭제하시겠습니까?\n\n' +
@@ -850,20 +846,16 @@ const database = firebase.database();
           '계속하려면 "확인"을 클릭하세요.'
         );
 
-        console.log('확인 대화상자 결과:', confirmClear);
 
         if (!confirmClear) {
           chatInput.value = '';
-          console.log('사용자가 취소함');
           return;
         }
 
         try {
-          console.log('메시지 삭제 시작...');
 
           // 모든 메시지 삭제
           await messagesRef.remove();
-          console.log('messagesRef.remove() 완료');
 
           // UI 초기화
           chatMessages.innerHTML = '';
@@ -970,9 +962,12 @@ const database = firebase.database();
           chatInput.value = '';
           return;
         } else {
-          // 금지 시간이 만료되었으면 삭제
-          await bannedUsersRef.child(sanitizedEmail).remove();
-          console.log('채팅 금지 해제 (시간 만료)');
+          // 금지 시간이 만료되었으면 삭제 시도 (실패해도 메시지 전송 허용)
+          try {
+            await bannedUsersRef.child(sanitizedEmail).remove();
+          } catch (error) {
+            console.warn('밴 레코드 삭제 실패 (무시하고 진행):', error);
+          }
         }
       }
 
@@ -983,6 +978,8 @@ const database = firebase.database();
         timestamp: firebase.database.ServerValue.TIMESTAMP
       }).then(() => {
         chatInput.value = '';
+        // 메시지 전송 성공 시 마지막 전송 시간 업데이트
+        lastMessageTime = Date.now();
       }).catch((error) => {
         console.error('메시지 전송 실패:', error);
         alert('메시지 전송에 실패했습니다.');

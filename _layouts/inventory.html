@@ -37,7 +37,6 @@ var firebaseConfig = {
 try {
   if (typeof firebase !== 'undefined' && !firebase.apps.length) {
     firebase.initializeApp(firebaseConfig);
-    console.log('[Inventory] Firebase 초기화 완료');
   }
 } catch(e) {
   console.warn('[Inventory] Firebase 초기화 실패:', e);
@@ -49,7 +48,6 @@ try {
 
   window.setAppAuth = function(authData){
     try {
-      console.log('[Inventory] 앱으로부터 인증 정보 수신:', authData);
 
       if (!authData || !authData.email) {
         console.warn('[Inventory] 유효하지 않은 인증 정보');
@@ -70,7 +68,6 @@ try {
       };
 
       sessionStorage.setItem(APP_AUTH_KEY, JSON.stringify(userData));
-      console.log('[Inventory] 사용자 정보 저장 완료');
 
       window.dispatchEvent(new CustomEvent('app:auth-ready', {
         detail: userData
@@ -94,7 +91,6 @@ try {
         return null;
       }
 
-      console.log('[Inventory] 저장된 인증 정보 복원:', userData.email);
       return userData;
 
     } catch(e) {
@@ -110,7 +106,6 @@ try {
     // 1순위: 앱 인증 정보
     var appAuth = loadAppAuth();
     if (appAuth) {
-      console.log('[Inventory] getAppAuth: 앱 인증 반환');
       return appAuth;
     }
 
@@ -118,7 +113,6 @@ try {
     try {
       if (typeof firebase !== 'undefined' && firebase.auth && firebase.auth().currentUser) {
         var user = firebase.auth().currentUser;
-        console.log('[Inventory] getAppAuth: 웹 Firebase 인증 반환');
         return {
           email: user.email,
           uid: user.uid,
@@ -141,7 +135,6 @@ try {
         userEmailEl.style.display = 'none';
         userEmailEl.textContent = '';
       }
-      console.log('[Inventory] 인증 정보 삭제됨');
     } catch(e) {
       console.error('[Inventory] 인증 정보 삭제 실패:', e);
     }
@@ -152,7 +145,6 @@ try {
     if (typeof firebase !== 'undefined' && firebase.auth) {
       firebase.auth().onAuthStateChanged(function(user){
         if (user) {
-          console.log('[Inventory] Firebase 웹 로그인 감지:', user.email);
           var webAuth = {
             email: user.email,
             uid: user.uid,
@@ -169,7 +161,6 @@ try {
             }));
           }
         } else {
-          console.log('[Inventory] Firebase 웹 로그아웃 감지');
           // 앱 인증이 없으면 UI 초기화
           var appAuth = loadAppAuth();
           if (!appAuth && userEmailEl) {
@@ -186,7 +177,6 @@ try {
   // 앱 인증 정보 초기 로드
   var savedAuth = loadAppAuth();
   if (savedAuth) {
-    console.log('[Inventory] 페이지 로드: 기존 앱 인증 정보 사용');
 
     setTimeout(function(){
       window.dispatchEvent(new CustomEvent('app:auth-ready', {
