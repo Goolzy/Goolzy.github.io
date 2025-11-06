@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="icon" href="/assets/images/favicon.png">
+  <style>
+:root {
+  --purple-dark: #1a0f3d;
+  --purple-bright: #a855f7;
+  --purple-vibrant: #d946ef;
+  --teal: #14b8a6;
+  --teal-bright: #2dd4bf;
+  --bg: #0a0614;
+  --card: #150a28;
+  --border: rgba(168, 85, 247, 0.12);
+  --text: rgba(255, 255, 255, 0.95);
+  --text-dim: rgba(255, 255, 255, 0.4);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Background gradient */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(168, 85, 247, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(20, 184, 166, 0.12) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.launch-page {
+  position: relative;
+  z-index: 1;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.app-showcase {
+  text-align: center;
+}
+
+.app-icon-large {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 2rem;
+  filter: drop-shadow(0 12px 40px rgba(168, 85, 247, 0.5));
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.app-icon-large img {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.title-line {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  line-height: 1.2;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.title-line:nth-child(1) { animation-delay: 0.2s; }
+.title-line:nth-child(2) { animation-delay: 0.4s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.title-highlight {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--purple-vibrant), var(--teal-bright));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transform: scale(0.9);
+  animation: popIn 1s ease 0.6s forwards;
+}
+
+@keyframes popIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.launch-date {
+  font-size: 1.2rem;
+  color: var(--teal-bright);
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+  opacity: 0;
+  animation: fadeIn 0.8s ease 1s forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* Platforms */
+.platforms {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.platform-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.25rem 1rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  min-width: 90px;
+  transition: all 0.3s;
+}
+
+.platform-icon.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.platform-icon svg {
+  width: 32px;
+  height: 32px;
+  color: var(--text);
+}
+
+.platform-icon span {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Feature Image */
+.feature-image {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.feature-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Chat Section */
+.chat-section {
+  position: sticky;
+  top: 2rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 4rem);
+  max-height: 800px;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border);
+  background: rgba(168, 85, 247, 0.05);
+}
+
+.chat-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.chat-icon {
+  font-size: 1.5rem;
+}
+
+.online-count {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background: #22c55e;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* Chat Container */
+.chat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.chat-messages::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-messages::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+  background: rgba(168, 85, 247, 0.3);
+  border-radius: 4px;
+}
+
+/* Messages */
+.message {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  animation: slideIn 0.3s ease;
+  max-width: 80%;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.message.user-msg {
+  align-self: flex-end;
+}
+
+.message.other-msg {
+  align-self: flex-start;
+}
+
+.message.system-msg {
+  align-self: center;
+  max-width: 90%;
+}
+
+.msg-sender {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  padding: 0 0.75rem;
+}
+
+.msg-content {
+  background: var(--bg);
+  padding: 0.9rem 1.1rem;
+  border-radius: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.user-msg .msg-content {
+  background: linear-gradient(135deg, var(--purple-bright), var(--teal));
+  color: white;
+  border-radius: 16px 16px 4px 16px;
+}
+
+.other-msg .msg-content {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border);
+  border-radius: 16px 16px 16px 4px;
+}
+
+.system-msg .msg-content {
+  background: rgba(20, 184, 166, 0.1);
+  border: 1px solid rgba(20, 184, 166, 0.3);
+  color: var(--teal-bright);
+  text-align: center;
+  border-radius: 12px;
+  font-size: 0.9rem;
+}
+
+/* Chat Input */
+.chat-input-wrapper {
+  display: flex;
+  gap: 0.75rem;
+  padding: 1.5rem;
+  border-top: 1px solid var(--border);
+  background: rgba(168, 85, 247, 0.03);
+}
+
+.chat-input {
+  flex: 1;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  font-size: 0.95rem;
+  color: var(--text);
+  transition: all 0.3s;
+}
+
+.chat-input:focus {
+  outline: none;
+  border-color: var(--purple-bright);
+  box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.15);
+}
+
+.chat-input::placeholder {
+  color: var(--text-dim);
+}
+
+.send-btn {
+  width: 52px;
+  height: 52px;
+  background: linear-gradient(135deg, var(--purple-bright), var(--teal));
+  border: none;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: all 0.3s;
+}
+
+.send-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(168, 85, 247, 0.5);
+}
+
+.send-btn:active {
+  transform: scale(0.95);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .launch-page {
+    grid-template-columns: 1fr;
+    padding: 2rem 1.5rem;
+  }
+
+  .chat-section {
+    position: relative;
+    top: 0;
+    max-height: 600px;
+  }
+}
+
+@media (max-width: 640px) {
+  .app-icon-large {
+    width: 120px;
+    height: 120px;
+  }
+
+  .platforms {
+    gap: 1rem;
+  }
+
+  .platform-icon {
+    min-width: 75px;
+    padding: 1rem 0.75rem;
+  }
+
+  .platform-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .message {
+    max-width: 90%;
+  }
+}
+</style>
+</head>
+<body>
+
+{{ content }}
+
+<script>
+// 채팅 기능
+(function() {
+  const chatMessages = document.getElementById('chatMessages');
+  const chatInput = document.getElementById('chatInput');
+  const sendBtn = document.getElementById('sendBtn');
+  const onlineCount = document.getElementById('online-count');
+
+  // 랜덤 사용자 수
+  const randomOnline = Math.floor(Math.random() * 50) + 10;
+  onlineCount.textContent = `${randomOnline}명 접속중`;
+
+  // 봇 응답 (미리 정의된 답변)
+  const botResponses = [
+    "정식 출시가 정말 기대되네요! 😊",
+    "4개 플랫폼 모두 지원이라니 대단해요!",
+    "디지털 가방이라는 컨셉이 신선하네요",
+    "언제쯤 베타 테스트 신청할 수 있나요?",
+    "UI가 정말 깔끔할 것 같아요",
+    "친구들한테도 공유해야겠어요!",
+    "출시되면 바로 다운받을게요 👍",
+    "개발팀 화이팅입니다!",
+    "가격 정책은 어떻게 되나요?",
+    "클라우드 동기화도 지원하나요?"
+  ];
+
+  const botNames = ["민수", "지영", "현우", "서연", "태희", "준호", "수빈", "동현"];
+
+  // 로컬스토리지에서 메시지 로드
+  function loadMessages() {
+    const saved = localStorage.getItem('inventory_chat');
+    if (saved) {
+      try {
+        const messages = JSON.parse(saved);
+        messages.forEach(msg => {
+          addMessageToUI(msg.text, msg.type, msg.sender);
+        });
+      } catch(e) {
+        console.error('메시지 로드 실패:', e);
+      }
+    }
+  }
+
+  // 메시지 저장
+  function saveMessage(text, type, sender) {
+    try {
+      const saved = localStorage.getItem('inventory_chat');
+      const messages = saved ? JSON.parse(saved) : [];
+      messages.push({ text, type, sender, time: Date.now() });
+
+      // 최근 50개만 유지
+      if (messages.length > 50) {
+        messages.shift();
+      }
+
+      localStorage.setItem('inventory_chat', JSON.stringify(messages));
+    } catch(e) {
+      console.error('메시지 저장 실패:', e);
+    }
+  }
+
+  // UI에 메시지 추가
+  function addMessageToUI(text, type = 'other', sender = null) {
+    const messageDiv = document.createElement('div');
+    messageDiv.className = `message ${type}-msg`;
+
+    if (sender && type === 'other') {
+      const senderDiv = document.createElement('div');
+      senderDiv.className = 'msg-sender';
+      senderDiv.textContent = sender;
+      messageDiv.appendChild(senderDiv);
+    }
+
+    const contentDiv = document.createElement('div');
+    contentDiv.className = 'msg-content';
+    contentDiv.textContent = text;
+    messageDiv.appendChild(contentDiv);
+
+    chatMessages.appendChild(messageDiv);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+  }
+
+  // 메시지 전송
+  function sendMessage() {
+    const text = chatInput.value.trim();
+    if (!text) return;
+
+    // 사용자 메시지 추가
+    addMessageToUI(text, 'user');
+    saveMessage(text, 'user', '나');
+    chatInput.value = '';
+
+    // 봇 응답 (2-4초 후)
+    const delay = Math.random() * 2000 + 2000;
+    setTimeout(() => {
+      const randomResponse = botResponses[Math.floor(Math.random() * botResponses.length)];
+      const randomName = botNames[Math.floor(Math.random() * botNames.length)];
+      addMessageToUI(randomResponse, 'other', randomName);
+      saveMessage(randomResponse, 'other', randomName);
+    }, delay);
+  }
+
+  // 이벤트 리스너
+  sendBtn.addEventListener('click', sendMessage);
+  chatInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+      sendMessage();
+    }
+  });
+
+  // 초기 로드
+  loadMessages();
+
+  // 랜덤 봇 메시지 (10-20초마다)
+  setInterval(() => {
+    if (Math.random() > 0.7) {
+      const randomResponse = botResponses[Math.floor(Math.random() * botResponses.length)];
+      const randomName = botNames[Math.floor(Math.random() * botNames.length)];
+      addMessageToUI(randomResponse, 'other', randomName);
+      saveMessage(randomResponse, 'other', randomName);
+    }
+  }, 15000);
+})();
+</script>
+
+</body>
+</html>
