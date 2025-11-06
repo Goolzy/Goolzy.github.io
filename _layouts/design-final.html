@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="icon" href="/assets/images/favicon.png">
+  <style>
+/* 로고에서 추출한 정확한 브랜드 컬러 */
+:root {
+  --purple-dark: #1a0f3d;      /* 로고 진한 보라 */
+  --purple-bright: #a855f7;    /* 로고 밝은 보라 */
+  --purple-vibrant: #d946ef;   /* 로고 생생한 분홍보라 */
+  --teal: #14b8a6;             /* 로고 청록 */
+  --teal-bright: #2dd4bf;      /* 로고 밝은 청록 */
+
+  --bg: #0a0614;               /* 로고 다크와 조화 */
+  --card: #150a28;             /* 보라 톤 카드 */
+  --border: rgba(168, 85, 247, 0.12);  /* 보라 톤 보더 */
+  --text: rgba(255, 255, 255, 0.95);
+  --text-dim: rgba(255, 255, 255, 0.4);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 로고 컬러 기반 배경 그라디언트 */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(168, 85, 247, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(20, 184, 166, 0.12) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hub {
+  position: relative;
+  z-index: 1;
+  max-width: 680px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+/* Logo */
+.hub-logo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.logo-circle {
+  width: 120px;
+  height: 120px;
+  filter: drop-shadow(0 8px 32px rgba(168, 85, 247, 0.4));
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.logo-word {
+  height: 60px;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+}
+
+/* Values Row */
+.values-row {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.value {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.9rem 1.5rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  transition: all 0.3s;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.value:hover {
+  border-color: var(--purple-bright);
+  background: rgba(168, 85, 247, 0.08);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(168, 85, 247, 0.25);
+}
+
+.v-icon {
+  font-size: 1.4rem;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+/* Main Panel */
+.main-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.panel-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 2.5rem;
+  transition: all 0.3s;
+}
+
+.panel-card:hover {
+  border-color: rgba(168, 85, 247, 0.3);
+  box-shadow: 0 12px 40px rgba(168, 85, 247, 0.15);
+}
+
+.panel-card h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  background: linear-gradient(135deg, var(--purple-vibrant), var(--teal-bright));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  text-align: center;
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  margin-bottom: 1.75rem;
+}
+
+/* Form Inline */
+.form-inline {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.form-inline input {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  font-size: 0.95rem;
+  color: var(--text);
+  transition: all 0.3s;
+}
+
+.form-inline input:focus {
+  outline: none;
+  border-color: var(--purple-bright);
+  box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.15);
+  background: rgba(168, 85, 247, 0.03);
+}
+
+.form-inline input::placeholder {
+  color: var(--text-dim);
+}
+
+.form-inline button {
+  background: linear-gradient(135deg, var(--purple-bright), var(--teal));
+  color: white;
+  border: none;
+  border-radius: 12px;
+  width: 56px;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: grid;
+  place-items: center;
+}
+
+.form-inline button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(168, 85, 247, 0.5);
+}
+
+.form-inline button svg {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.form-links {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  font-size: 0.85rem;
+}
+
+.form-links a {
+  color: var(--text-dim);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.form-links a:hover {
+  color: var(--purple-bright);
+}
+
+.form-links span {
+  color: var(--border);
+}
+
+/* Downloads */
+.downloads {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.dl-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1.25rem 0.75rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  color: var(--text);
+  text-decoration: none;
+  transition: all 0.3s;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.dl-icon:hover {
+  border-color: var(--teal);
+  background: rgba(20, 184, 166, 0.08);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(20, 184, 166, 0.3);
+}
+
+.dl-icon svg {
+  opacity: 0.7;
+  transition: opacity 0.3s;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.dl-icon:hover svg {
+  opacity: 1;
+}
+
+/* Footer */
+.hub-footer {
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  width: 100%;
+}
+
+.hub-footer a {
+  color: var(--text-dim);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.hub-footer a:hover {
+  color: var(--teal-bright);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  body {
+    padding: 1.5rem;
+  }
+
+  .hub {
+    gap: 2rem;
+  }
+
+  .logo-circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .logo-word {
+    height: 50px;
+  }
+
+  .values-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .value {
+    justify-content: center;
+  }
+
+  .panel-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .form-inline {
+    grid-template-columns: 1fr;
+  }
+
+  .form-inline button {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .downloads {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+</style>
+</head>
+<body>
+
+{{ content }}
+
+</body>
+</html>
