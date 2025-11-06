@@ -61,7 +61,7 @@ description: Goolzy 커뮤니티 로그인
     </div>
 
     <div class="login-footer">
-      <p>로그인하면 <a href="/terms/">이용약관</a> 및 <a href="/privacy/">개인정보처리방침</a>에 동의하게 됩니다.</p>
+      <p>로그인하면 <a href="/inventory/terms/">이용약관</a> 및 <a href="/inventory/privacy/">개인정보처리방침</a>에 동의하게 됩니다.</p>
     </div>
   </div>
 </div>
