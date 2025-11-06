@@ -29,7 +29,7 @@
         }
       },
       "banned-users": {
-        ".read": "auth != null && auth.token.email.endsWith('@goolzy.com')",
+        ".read": "auth != null",
         "$sanitizedEmail": {
           ".write": "auth != null && auth.token.email.endsWith('@goolzy.com')",
           ".validate": "newData.hasChildren(['email', 'bannedBy', 'bannedAt', 'banUntil', 'duration'])",
