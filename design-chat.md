@@ -47,11 +47,6 @@ description: Inventory 앱 출시 예정 - 커뮤니티 채팅
         </div>
       </div>
     </div>
-
-    <!-- Feature Image -->
-    <div class="feature-image">
-      <img src="/assets/images/biz_3_01.png" alt="Inventory 사용 화면">
-    </div>
   </section>
 
   <!-- Chat Section -->
