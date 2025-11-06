@@ -36,7 +36,6 @@ body {
   padding: 2rem;
 }
 
-/* Background gradient */
 body::before {
   content: '';
   position: fixed;
@@ -101,86 +100,182 @@ body::before {
   font-size: 0.95rem;
 }
 
-#loginUI {
-  margin-bottom: 2rem;
+/* Social Login */
+.social-login {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
 }
 
-/* FirebaseUI 스타일 커스터마이징 */
-.firebaseui-container {
-  background: transparent !important;
-  box-shadow: none !important;
-  max-width: none !important;
-  width: 100% !important;
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1.25rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
-.firebaseui-card-content {
-  padding: 0 !important;
-}
-
-.firebaseui-idp-button {
-  background: rgba(255, 255, 255, 0.08) !important;
-  border: 1px solid rgba(255, 255, 255, 0.12) !important;
-  border-radius: 12px !important;
-  color: var(--text) !important;
-  padding: 1rem !important;
-  margin-bottom: 1rem !important;
-  transition: all 0.3s !important;
-  backdrop-filter: blur(10px);
-}
-
-.firebaseui-idp-button:hover {
-  background: rgba(255, 255, 255, 0.12) !important;
-  border-color: var(--purple-bright) !important;
+.social-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: var(--purple-bright);
   transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.3) !important;
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.3);
 }
 
-.firebaseui-idp-text {
-  color: var(--text) !important;
-  font-weight: 600 !important;
-  font-size: 0.95rem !important;
+.social-btn:active {
+  transform: translateY(0);
 }
 
-.firebaseui-textfield {
-  background: rgba(10, 6, 20, 0.6) !important;
-  border: 1px solid rgba(168, 85, 247, 0.2) !important;
-  border-radius: 10px !important;
-  color: var(--text) !important;
-  padding: 0.875rem 1rem !important;
-  margin-bottom: 1rem !important;
+.google-btn svg {
+  width: 18px;
+  height: 18px;
 }
 
-.firebaseui-textfield:focus {
-  border-color: var(--purple-bright) !important;
-  box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.2) !important;
+.apple-btn svg {
+  width: 18px;
+  height: 18px;
+  fill: white;
 }
 
-.firebaseui-label {
-  color: var(--text) !important;
-  font-weight: 600 !important;
-  margin-bottom: 0.5rem !important;
+/* Divider */
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 1.5rem 0;
+  color: var(--text-dim);
+  font-size: 0.875rem;
 }
 
-.mdl-button--raised.mdl-button--colored {
-  background: linear-gradient(135deg, var(--purple-bright), var(--teal)) !important;
-  color: white !important;
-  border: none !important;
-  border-radius: 12px !important;
-  padding: 1rem !important;
-  font-weight: 600 !important;
-  text-transform: none !important;
-  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.3) !important;
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid rgba(168, 85, 247, 0.2);
 }
 
-.mdl-button--raised.mdl-button--colored:hover {
+.divider span {
+  padding: 0 1rem;
+}
+
+/* Form Tabs */
+.form-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: var(--text-dim);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.tab-btn.active {
+  background: linear-gradient(135deg, var(--purple-bright), var(--teal));
+  border-color: transparent;
+  color: white;
+  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.4);
+}
+
+.tab-btn:not(.active):hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(168, 85, 247, 0.3);
+}
+
+/* Auth Form */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.auth-form input {
+  padding: 0.875rem 1.1rem;
+  background: rgba(10, 6, 20, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  border-radius: 10px;
+  color: var(--text);
+  font-size: 0.95rem;
+  transition: all 0.3s;
+}
+
+.auth-form input:focus {
+  outline: none;
+  border-color: var(--purple-bright);
+  box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.2), 0 4px 16px rgba(168, 85, 247, 0.3);
+  background: rgba(10, 6, 20, 0.8);
+}
+
+.auth-form input::placeholder {
+  color: var(--text-dim);
+}
+
+.submit-btn {
+  padding: 1rem 1.5rem;
+  background: linear-gradient(135deg, var(--purple-bright), var(--teal));
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.3);
+  margin-top: 0.5rem;
+}
+
+.submit-btn:hover {
   transform: scale(1.02);
-  box-shadow: 0 6px 24px rgba(168, 85, 247, 0.5) !important;
+  box-shadow: 0 6px 24px rgba(168, 85, 247, 0.5);
+}
+
+.submit-btn:active {
+  transform: scale(0.98);
+}
+
+.submit-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.error-msg {
+  color: #ef4444;
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 0.5rem;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 8px;
+  display: none;
+}
+
+.error-msg.show {
+  display: block;
 }
 
 .login-footer {
   text-align: center;
   padding-top: 1.5rem;
   border-top: 1px solid rgba(168, 85, 247, 0.15);
+  margin-top: 1.5rem;
 }
 
 .login-footer p {
@@ -199,25 +294,6 @@ body::before {
   text-decoration: underline;
 }
 
-/* 로딩 상태 */
-.loading {
-  text-align: center;
-  padding: 2rem;
-  color: var(--text-dim);
-}
-
-.loading::after {
-  content: '...';
-  animation: dots 1.5s steps(4, end) infinite;
-}
-
-@keyframes dots {
-  0%, 20% { content: '.'; }
-  40% { content: '..'; }
-  60%, 100% { content: '...'; }
-}
-
-/* 반응형 */
 @media (max-width: 640px) {
   body {
     padding: 1rem;
@@ -237,9 +313,6 @@ body::before {
   }
 }
 </style>
-
-<!-- FirebaseUI CSS -->
-<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.2/firebase-ui-auth.css" />
 </head>
 <body>
 
@@ -248,7 +321,6 @@ body::before {
 <!-- Firebase SDK -->
 <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/ui/6.0.2/firebase-ui-auth.js"></script>
 
 <script>
 // Firebase 초기화
@@ -263,61 +335,144 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 
+// 리다이렉트 URL
+const returnUrl = new URLSearchParams(window.location.search).get('return') || '/';
+
 // 이미 로그인되어 있으면 리다이렉트
 auth.onAuthStateChanged((user) => {
   if (user) {
-    // 로그인 성공 - 이전 페이지로 돌아가거나 홈페이지로
-    const returnUrl = new URLSearchParams(window.location.search).get('return') || '/';
     window.location.href = returnUrl;
   }
 });
 
-// FirebaseUI 설정
-const ui = new firebaseui.auth.AuthUI(auth);
+// Tab 전환
+const loginTab = document.getElementById('loginTab');
+const signupTab = document.getElementById('signupTab');
+const loginForm = document.getElementById('loginForm');
+const signupForm = document.getElementById('signupForm');
 
-const uiConfig = {
-  callbacks: {
-    signInSuccessWithAuthResult: function(authResult, redirectUrl) {
-      // 로그인 성공
-      return true; // 자동 리다이렉트
-    },
-    uiShown: function() {
-      // UI가 렌더링되면 로딩 숨김
-      document.getElementById('loginUI').style.display = 'block';
-    }
-  },
-  signInFlow: 'popup',
-  signInSuccessUrl: '/',
-  signInOptions: [
-    {% if site.firebase.auth_providers.google %}
-    firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-    {% endif %}
-    {% if site.firebase.auth_providers.apple %}
-    {
-      provider: 'apple.com'
-    },
-    {% endif %}
-    {% if site.firebase.auth_providers.microsoft %}
-    {
-      provider: 'microsoft.com',
-      providerName: 'Microsoft',
-      buttonColor: '#2F2F2F',
-      iconUrl: 'https://docs.microsoft.com/en-us/azure/active-directory/develop/media/howto-add-branding-in-azure-ad-apps/ms-symbollockup_mssymbol_19.png'
-    },
-    {% endif %}
-    {% if site.firebase.auth_providers.email %}
-    {
-      provider: firebase.auth.EmailAuthProvider.PROVIDER_ID,
-      requireDisplayName: false
-    }
-    {% endif %}
-  ],
-  tosUrl: '/terms/',
-  privacyPolicyUrl: '/privacy/'
-};
+loginTab.addEventListener('click', () => {
+  loginTab.classList.add('active');
+  signupTab.classList.remove('active');
+  loginForm.style.display = 'flex';
+  signupForm.style.display = 'none';
+});
 
-// UI 시작
-ui.start('#loginUI', uiConfig);
+signupTab.addEventListener('click', () => {
+  signupTab.classList.add('active');
+  loginTab.classList.remove('active');
+  signupForm.style.display = 'flex';
+  loginForm.style.display = 'none';
+});
+
+// 에러 표시 함수
+function showError(formId, message) {
+  const errorEl = document.getElementById(formId + 'Error');
+  errorEl.textContent = message;
+  errorEl.classList.add('show');
+  setTimeout(() => {
+    errorEl.classList.remove('show');
+  }, 5000);
+}
+
+// 로그인 폼
+loginForm.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const email = document.getElementById('loginEmail').value;
+  const password = document.getElementById('loginPassword').value;
+  const submitBtn = loginForm.querySelector('.submit-btn');
+
+  submitBtn.disabled = true;
+  submitBtn.textContent = '로그인 중...';
+
+  try {
+    await auth.signInWithEmailAndPassword(email, password);
+    // 성공하면 onAuthStateChanged에서 리다이렉트
+  } catch (error) {
+    console.error('로그인 실패:', error);
+    let errorMsg = '로그인에 실패했습니다.';
+    if (error.code === 'auth/wrong-password') {
+      errorMsg = '비밀번호가 올바르지 않습니다.';
+    } else if (error.code === 'auth/user-not-found') {
+      errorMsg = '등록되지 않은 이메일입니다.';
+    } else if (error.code === 'auth/invalid-email') {
+      errorMsg = '유효하지 않은 이메일 형식입니다.';
+    } else if (error.code === 'auth/too-many-requests') {
+      errorMsg = '너무 많은 시도입니다. 잠시 후 다시 시도해주세요.';
+    }
+    showError('login', errorMsg);
+    submitBtn.disabled = false;
+    submitBtn.textContent = '로그인';
+  }
+});
+
+// 회원가입 폼
+signupForm.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const email = document.getElementById('signupEmail').value;
+  const password = document.getElementById('signupPassword').value;
+  const passwordConfirm = document.getElementById('signupPasswordConfirm').value;
+  const submitBtn = signupForm.querySelector('.submit-btn');
+
+  if (password !== passwordConfirm) {
+    showError('signup', '비밀번호가 일치하지 않습니다.');
+    return;
+  }
+
+  if (password.length < 6) {
+    showError('signup', '비밀번호는 최소 6자 이상이어야 합니다.');
+    return;
+  }
+
+  submitBtn.disabled = true;
+  submitBtn.textContent = '가입 중...';
+
+  try {
+    await auth.createUserWithEmailAndPassword(email, password);
+    // 성공하면 onAuthStateChanged에서 리다이렉트
+  } catch (error) {
+    console.error('회원가입 실패:', error);
+    let errorMsg = '회원가입에 실패했습니다.';
+    if (error.code === 'auth/email-already-in-use') {
+      errorMsg = '이미 사용 중인 이메일입니다.';
+    } else if (error.code === 'auth/invalid-email') {
+      errorMsg = '유효하지 않은 이메일 형식입니다.';
+    } else if (error.code === 'auth/weak-password') {
+      errorMsg = '비밀번호가 너무 약합니다. 더 강력한 비밀번호를 사용하세요.';
+    }
+    showError('signup', errorMsg);
+    submitBtn.disabled = false;
+    submitBtn.textContent = '회원가입';
+  }
+});
+
+// Google 로그인
+document.getElementById('googleLogin').addEventListener('click', async () => {
+  const provider = new firebase.auth.GoogleAuthProvider();
+  try {
+    await auth.signInWithPopup(provider);
+    // 성공하면 onAuthStateChanged에서 리다이렉트
+  } catch (error) {
+    console.error('Google 로그인 실패:', error);
+    if (error.code !== 'auth/popup-closed-by-user') {
+      alert('Google 로그인에 실패했습니다: ' + error.message);
+    }
+  }
+});
+
+// Apple 로그인
+document.getElementById('appleLogin').addEventListener('click', async () => {
+  const provider = new firebase.auth.OAuthProvider('apple.com');
+  try {
+    await auth.signInWithPopup(provider);
+    // 성공하면 onAuthStateChanged에서 리다이렉트
+  } catch (error) {
+    console.error('Apple 로그인 실패:', error);
+    if (error.code !== 'auth/popup-closed-by-user') {
+      alert('Apple 로그인에 실패했습니다: ' + error.message);
+    }
+  }
+});
 </script>
 
 </body>
