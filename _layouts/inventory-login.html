@@ -266,8 +266,8 @@ const auth = firebase.auth();
 // 이미 로그인되어 있으면 리다이렉트
 auth.onAuthStateChanged((user) => {
   if (user) {
-    // 로그인 성공 - 이전 페이지로 돌아가거나 채팅 페이지로
-    const returnUrl = new URLSearchParams(window.location.search).get('return') || '/design-chat/';
+    // 로그인 성공 - 이전 페이지로 돌아가거나 홈페이지로
+    const returnUrl = new URLSearchParams(window.location.search).get('return') || '/';
     window.location.href = returnUrl;
   }
 });
@@ -287,7 +287,7 @@ const uiConfig = {
     }
   },
   signInFlow: 'popup',
-  signInSuccessUrl: '/design-chat/',
+  signInSuccessUrl: '/',
   signInOptions: [
     {% if site.firebase.auth_providers.google %}
     firebase.auth.GoogleAuthProvider.PROVIDER_ID,
