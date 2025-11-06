@@ -899,10 +899,7 @@ const database = firebase.database();
       }
 
       // 채팅금지 명령: "채팅금지 이메일 초"
-      console.log('🔍 채팅금지 명령 확인 중...');
-      console.log('🔍 텍스트 charCode:', Array.from(text).map(c => c.charCodeAt(0)).join(','));
       const banMatch = text.match(/^채팅금지\s+(\S+)\s+(\d+)$/);
-      console.log('🔍 banMatch 결과:', banMatch);
       if (banMatch) {
         const targetEmail = banMatch[1];
         const durationSeconds = parseInt(banMatch[2], 10);
@@ -927,7 +924,11 @@ const database = firebase.database();
           const bannedUsersRef = firebase.database().ref('inline-chat/banned-users');
           const banUntil = Date.now() + (durationSeconds * 1000);
 
-          await bannedUsersRef.child(encodeURIComponent(targetEmail)).set({
+          // Firebase 키로 사용 가능하도록 이메일 변환 (@ -> _at_, . -> ,)
+          const sanitizedEmail = targetEmail.replace(/@/g, '_at_').replace(/\./g, ',');
+
+          await bannedUsersRef.child(sanitizedEmail).set({
+            email: targetEmail, // 원본 이메일 저장
             bannedBy: currentUser.email,
             bannedAt: firebase.database.ServerValue.TIMESTAMP,
             banUntil: banUntil,
@@ -955,8 +956,9 @@ const database = firebase.database();
     // 일반 메시지 전송 전에 채팅금지 여부 확인
     try {
       const bannedUsersRef = firebase.database().ref('inline-chat/banned-users');
-      const encodedEmail = encodeURIComponent(currentUser.email);
-      const banSnapshot = await bannedUsersRef.child(encodedEmail).once('value');
+      // Firebase 키로 사용 가능하도록 이메일 변환 (@ -> _at_, . -> ,)
+      const sanitizedEmail = currentUser.email.replace(/@/g, '_at_').replace(/\./g, ',');
+      const banSnapshot = await bannedUsersRef.child(sanitizedEmail).once('value');
       const banData = banSnapshot.val();
 
       if (banData && banData.banUntil) {
@@ -969,7 +971,7 @@ const database = firebase.database();
           return;
         } else {
           // 금지 시간이 만료되었으면 삭제
-          await bannedUsersRef.child(encodedEmail).remove();
+          await bannedUsersRef.child(sanitizedEmail).remove();
           console.log('채팅 금지 해제 (시간 만료)');
         }
       }
