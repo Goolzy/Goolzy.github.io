@@ -804,7 +804,11 @@ const database = firebase.database();
       return;
     }
 
-    const text = chatInput.value.trim();
+    let text = chatInput.value.trim();
+
+    // 스마트 따옴표를 일반 따옴표로 변환 (macOS/iOS 자동 변환 대응)
+    text = text.replace(/[""]/g, '"').replace(/['']/g, "'");
+
     console.log('📝 입력된 텍스트:', `"${text}"`);
     console.log('📝 텍스트 길이:', text.length);
 
