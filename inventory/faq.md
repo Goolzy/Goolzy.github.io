@@ -15,9 +15,9 @@ permalink: /inventory/faq/
 <details open>
 <summary><strong>Q. 종이는 무엇인가요?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> 종이는 문서를 생성할 때 사용하는 앱 내 재화입니다.
+<strong>A.</strong> 종이는 아이템을 생성할 때 사용하는 앱 내 재화입니다.
 <ul>
-<li>문서 1개 생성 = 종이 1장 소모</li>
+<li>아이템 1개 생성 = 종이 1장 소모</li>
 <li>신규 가입 시 10장 무료 지급</li>
 <li>상점에서 추가 구매 가능</li>
 </ul>
@@ -40,7 +40,7 @@ permalink: /inventory/faq/
 <details>
 <summary><strong>Q. 종이가 부족하면 어떻게 하나요?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> 종이가 부족하면 새 문서를 생성할 수 없습니다. 상점에서 종이를 구매하거나, 아직 연동하지 않은 소셜 계정이 있다면 연동하여 추가 획득하세요.
+<strong>A.</strong> 종이가 부족하면 새 아이템을 생성할 수 없습니다. 상점에서 종이를 구매하거나, 아직 연동하지 않은 소셜 계정이 있다면 연동하여 추가 획득하세요.
 <br><br>
 기존에 생성한 아이템은 종이가 없어도 계속 보관됩니다.
 </div>
@@ -48,25 +48,25 @@ permalink: /inventory/faq/
 
 ---
 
-### 📄 문서 생성
+### 📄 아이템 생성
 
 <details>
-<summary><strong>Q. 문서는 어떻게 만드나요?</strong></summary>
+<summary><strong>Q. 아이템은 어떻게 만드나요?</strong></summary>
 <div class="answer-content">
 <strong>A.</strong> 다음 단계를 따라주세요:
 <ol>
 <li>홈 화면에서 보유 중인 <strong>종이</strong>를 탭</li>
 <li>하단 메뉴에서 <strong>"새 아이템 생성"</strong> 선택</li>
-<li>문서 정보 입력 (제목, 내용, 이미지 등)</li>
-<li>저장하면 종이 1장이 소모되고 문서가 생성됩니다</li>
+<li>아이템 정보 입력 (제목, 내용, 이미지 등)</li>
+<li>저장하면 종이 1장이 소모되고 아이템이 생성됩니다</li>
 </ol>
 </div>
 </details>
 
 <details>
-<summary><strong>Q. 문서에 유효기간을 설정할 수 있나요?</strong></summary>
+<summary><strong>Q. 아이템에 유효기간을 설정할 수 있나요?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> 네, 문서 생성 시 다음 날짜를 설정할 수 있습니다:
+<strong>A.</strong> 네, 아이템 생성 시 다음 날짜를 설정할 수 있습니다:
 <ul>
 <li><strong>개시일자</strong>: 이 날짜가 되기 전까지 내용이 블러 처리됨</li>
 <li><strong>유효기간</strong>: 이 날짜가 지나면 내용이 블러 처리되고, 로그 추가 불가</li>
@@ -189,7 +189,7 @@ permalink: /inventory/faq/
 <div class="answer-content">
 <strong>A.</strong> 네! 활성화된 스탬프(템플릿)와 종이를 함께 선택하면 <strong>"템플릿 복제"</strong> 메뉴가 나타납니다.
 <br><br>
-복제하면 종이 1장이 소모되고, 동일한 템플릿의 새 문서가 생성됩니다. 공유로그 모드라면 원본과 같은 공유 공간을 사용합니다.
+복제하면 종이 1장이 소모되고, 동일한 템플릿의 새 아이템이 생성됩니다. 공유로그 모드라면 원본과 같은 공유 공간을 사용합니다.
 </div>
 </details>
 
@@ -200,7 +200,7 @@ permalink: /inventory/faq/
 <details>
 <summary><strong>Q. 로그는 무엇인가요?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> 로그는 문서나 스탬프 템플릿에 기록을 남기는 기능입니다.
+<strong>A.</strong> 로그는 아이템이나 스탬프 템플릿에 기록을 남기는 기능입니다.
 <br><br>
 메시지 형태로 작성하면 채팅처럼 표시되고, <code>키:값</code> 형태로 작성하면 정보 카드로 표시됩니다.
 </div>
@@ -320,6 +320,19 @@ QR 코드에는 이메일 주소가 담겨있어 직접 입력 없이 빠르게 
 </div>
 </details>
 
+<details>
+<summary><strong>Q. 키워드 집계 기능이 무엇인가요?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 필터가 설정된 상태에서 아이템을 선택하면, 선택한 아이템들의 키워드 값이 자동으로 집계됩니다:
+<ul>
+<li><strong>숫자 값</strong>: 합계와 평균이 계산됩니다 (예: <code>합계: 6000  평균: 2000</code>)</li>
+<li><strong>문자열 값</strong>: 공백으로 연결됩니다 (예: <code>A B C</code>)</li>
+<li><strong>값 복사</strong>: 집계 결과 카드를 <strong>길게 누르면</strong> 클립보드에 복사됩니다</li>
+</ul>
+여러 아이템의 가격 합계를 계산하거나, 관련 태그들을 모을 때 유용합니다.
+</div>
+</details>
+
 ---
 
 ### 🛒 상점
@@ -329,7 +342,7 @@ QR 코드에는 이메일 주소가 담겨있어 직접 입력 없이 빠르게 
 <div class="answer-content">
 <strong>A.</strong> 다음 아이템을 구매할 수 있습니다:
 <ul>
-<li><strong>종이</strong>: 문서 생성용</li>
+<li><strong>종이</strong>: 아이템 생성용</li>
 <li><strong>스탬프</strong>: 템플릿 생성용</li>
 <li><strong>잉크</strong>: 테마 색상 변경용</li>
 <li><strong>뱃지</strong>: 고유 도메인 각인용</li>

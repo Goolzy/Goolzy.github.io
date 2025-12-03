@@ -21,171 +21,126 @@ hide_sidebar: true
   </div>
 </div>
 
-<!-- Firebase SDK for Web Authentication -->
-<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+<!-- Firebase SDK for Web Authentication + Firestore (Modular) -->
+<script type="module">
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js';
+import { getAuth, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/10.7.0/firebase-auth.js';
+import { getFirestore, collection, addDoc, serverTimestamp } from 'https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js';
 
-<script>
-// Firebase 초기화 (웹 로그인 지원)
-var firebaseConfig = {
+// Firebase 초기화
+const firebaseConfig = {
   apiKey: "{{ site.firebase.config.apiKey }}",
   authDomain: "{{ site.firebase.config.authDomain }}",
   projectId: "{{ site.firebase.config.projectId }}",
   appId: "{{ site.firebase.config.appId }}"
 };
 
-try {
-  if (typeof firebase !== 'undefined' && !firebase.apps.length) {
-    firebase.initializeApp(firebaseConfig);
-  }
-} catch(e) {
-  console.warn('[Inventory] Firebase 초기화 실패:', e);
-}
+const APP_AUTH_KEY = 'inv_app_auth';
 
-(function(){
-  var APP_AUTH_KEY = 'inv_app_auth';
-  var WEB_AUTH_KEY = 'inv_web_auth'; // 웹 로그인 정보
-
-  window.setAppAuth = function(authData){
-    try {
-
-      if (!authData || !authData.email) {
-        console.warn('[Inventory] 유효하지 않은 인증 정보');
-        return;
-      }
-
-      var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailPattern.test(authData.email)) {
-        console.warn('[Inventory] 유효하지 않은 이메일 형식:', authData.email);
-        return;
-      }
-
-      var userData = {
-        email: authData.email,
-        uid: authData.uid || 'app-user',
-        displayName: authData.displayName || authData.name || null,
-        timestamp: Date.now()
-      };
-
-      sessionStorage.setItem(APP_AUTH_KEY, JSON.stringify(userData));
-
-      window.dispatchEvent(new CustomEvent('app:auth-ready', {
-        detail: userData
-      }));
-
-    } catch(e) {
-      console.error('[Inventory] 앱 인증 정보 처리 실패:', e);
-    }
-  };
-
-  function loadAppAuth(){
-    try {
-      var stored = sessionStorage.getItem(APP_AUTH_KEY);
-      if (!stored) return null;
-
-      var userData = JSON.parse(stored);
-
-      if (userData.timestamp && (Date.now() - userData.timestamp > 24 * 60 * 60 * 1000)) {
-        console.log('[Inventory] 인증 정보 만료됨');
-        sessionStorage.removeItem(APP_AUTH_KEY);
-        return null;
-      }
-
-      return userData;
-
-    } catch(e) {
-      console.warn('[Inventory] 인증 정보 로드 실패:', e);
+function loadAppAuth() {
+  try {
+    const stored = sessionStorage.getItem(APP_AUTH_KEY);
+    if (!stored) return null;
+    const userData = JSON.parse(stored);
+    if (userData.timestamp && (Date.now() - userData.timestamp > 24 * 60 * 60 * 1000)) {
       sessionStorage.removeItem(APP_AUTH_KEY);
       return null;
     }
-  }
-
-
-  // 웹 Firebase 인증 정보 확인 (우선순위: 앱 > 웹)
-  window.getAppAuth = function(){
-    // 1순위: 앱 인증 정보
-    var appAuth = loadAppAuth();
-    if (appAuth) {
-      return appAuth;
-    }
-
-    // 2순위: 웹 Firebase 로그인 정보
-    try {
-      if (typeof firebase !== 'undefined' && firebase.auth && firebase.auth().currentUser) {
-        var user = firebase.auth().currentUser;
-        return {
-          email: user.email,
-          uid: user.uid,
-          displayName: user.displayName || null,
-          timestamp: Date.now()
-        };
-      }
-    } catch(e) {
-      console.warn('[Inventory] 웹 Firebase 인증 확인 실패:', e);
-    }
-
-    return null;
-  };
-
-  window.clearAppAuth = function(){
-    try {
-      sessionStorage.removeItem(APP_AUTH_KEY);
-      sessionStorage.removeItem(WEB_AUTH_KEY);
-      if (userEmailEl) {
-        userEmailEl.style.display = 'none';
-        userEmailEl.textContent = '';
-      }
-    } catch(e) {
-      console.error('[Inventory] 인증 정보 삭제 실패:', e);
-    }
-  };
-
-  // Firebase 웹 로그인 상태 감지
-  try {
-    if (typeof firebase !== 'undefined' && firebase.auth) {
-      firebase.auth().onAuthStateChanged(function(user){
-        if (user) {
-          var webAuth = {
-            email: user.email,
-            uid: user.uid,
-            displayName: user.displayName || null,
-            timestamp: Date.now()
-          };
-
-          // 앱 인증이 없을 때만 웹 인증 사용
-          var appAuth = loadAppAuth();
-          if (!appAuth) {
-            updateUI(webAuth);
-            window.dispatchEvent(new CustomEvent('app:auth-ready', {
-              detail: webAuth
-            }));
-          }
-        } else {
-          // 앱 인증이 없으면 UI 초기화
-          var appAuth = loadAppAuth();
-          if (!appAuth && userEmailEl) {
-            userEmailEl.style.display = 'none';
-            userEmailEl.textContent = '';
-          }
-        }
-      });
-    }
+    return userData;
   } catch(e) {
-    console.warn('[Inventory] Firebase 인증 리스너 등록 실패:', e);
+    sessionStorage.removeItem(APP_AUTH_KEY);
+    return null;
   }
+}
 
-  // 앱 인증 정보 초기 로드
-  var savedAuth = loadAppAuth();
-  if (savedAuth) {
+try {
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  // Named database 'inventory' 사용
+  const db = getFirestore(app, 'inventory');
 
-    setTimeout(function(){
-      window.dispatchEvent(new CustomEvent('app:auth-ready', {
-        detail: savedAuth
-      }));
-    }, 100);
+  // 전역 접근용
+  window.firebaseApp = app;
+  window.firebaseAuth = auth;
+  window.db = db;
+  window.firestoreHelpers = { collection, addDoc, serverTimestamp };
+
+  console.log('[Inventory] Firebase 초기화 완료 (database: inventory)');
+
+  // 웹 Firebase 로그인 상태 감지 (모듈러 SDK)
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      const webAuth = {
+        email: user.email,
+        uid: user.uid,
+        displayName: user.displayName || null,
+        timestamp: Date.now()
+      };
+      // 앱 인증이 없을 때만 웹 인증 사용
+      const appAuth = loadAppAuth();
+      if (!appAuth) {
+        window.dispatchEvent(new CustomEvent('app:auth-ready', { detail: webAuth }));
+      }
+    }
+  });
+
+} catch(e) {
+  console.error('[Inventory] Firebase 초기화 실패:', e);
+}
+
+// 전역 함수 설정
+window.setAppAuth = function(authData) {
+  try {
+    if (!authData || !authData.email) return;
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(authData.email)) return;
+
+    const userData = {
+      email: authData.email,
+      uid: authData.uid || 'app-user',
+      displayName: authData.displayName || authData.name || null,
+      timestamp: Date.now()
+    };
+    sessionStorage.setItem(APP_AUTH_KEY, JSON.stringify(userData));
+    window.dispatchEvent(new CustomEvent('app:auth-ready', { detail: userData }));
+  } catch(e) {
+    console.error('[Inventory] 앱 인증 정보 처리 실패:', e);
   }
+};
 
-})();
+window.getAppAuth = function() {
+  // 1순위: 앱 인증 정보
+  const appAuth = loadAppAuth();
+  if (appAuth) return appAuth;
+
+  // 2순위: 웹 Firebase 로그인 정보
+  try {
+    if (window.firebaseAuth && window.firebaseAuth.currentUser) {
+      const user = window.firebaseAuth.currentUser;
+      return {
+        email: user.email,
+        uid: user.uid,
+        displayName: user.displayName || null,
+        timestamp: Date.now()
+      };
+    }
+  } catch(e) {}
+  return null;
+};
+
+window.clearAppAuth = function() {
+  try {
+    sessionStorage.removeItem(APP_AUTH_KEY);
+  } catch(e) {}
+};
+
+// 앱 인증 정보 초기 로드
+const savedAuth = loadAppAuth();
+if (savedAuth) {
+  setTimeout(() => {
+    window.dispatchEvent(new CustomEvent('app:auth-ready', { detail: savedAuth }));
+  }, 100);
+}
 </script>
 
 <style>
