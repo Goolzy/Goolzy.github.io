@@ -26,6 +26,7 @@ hide_sidebar: true
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js';
 import { getAuth, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/10.7.0/firebase-auth.js';
 import { getFirestore, collection, addDoc, serverTimestamp } from 'https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js';
+import { getFunctions, httpsCallable } from 'https://www.gstatic.com/firebasejs/10.7.0/firebase-functions.js';
 
 // Firebase 초기화
 const firebaseConfig = {
@@ -58,14 +59,18 @@ try {
   const auth = getAuth(app);
   // Named database 'inventory' 사용
   const db = getFirestore(app, 'inventory');
+  // Cloud Functions (asia-northeast3 region)
+  const functions = getFunctions(app, 'asia-northeast3');
 
   // 전역 접근용
   window.firebaseApp = app;
   window.firebaseAuth = auth;
   window.db = db;
   window.firestoreHelpers = { collection, addDoc, serverTimestamp };
+  window.firebaseFunctions = functions;
+  window.httpsCallable = httpsCallable;
 
-  console.log('[Inventory] Firebase 초기화 완료 (database: inventory)');
+  console.log('[Inventory] Firebase 초기화 완료 (database: inventory, functions: asia-northeast3)');
 
   // 웹 Firebase 로그인 상태 감지 (모듈러 SDK)
   onAuthStateChanged(auth, (user) => {

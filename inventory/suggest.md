@@ -37,6 +37,21 @@ permalink: /inventory/suggest/
   var uidInput = document.getElementById('suggest_uid');
   var emailText = document.getElementById('suggest-email-value');
   var status = document.getElementById('suggest-status');
+  var isLoggedIn = false;
+
+  // 로그인 필요 UI 표시
+  function showLoginRequired(){
+    form.style.display = 'none';
+    status.style.display = 'block';
+    status.innerHTML = '건의하기는 로그인이 필요합니다.<br><br>앱에서 로그인 후 이용해주세요.<br><br><a href="/inventory/" class="btn">홈으로</a>';
+    status.className = 'notice';
+  }
+
+  // 폼 표시
+  function showForm(){
+    form.style.display = 'block';
+    status.style.display = 'none';
+  }
 
   // 인증 정보 적용
   function applyUser(u){
@@ -44,10 +59,13 @@ permalink: /inventory/suggest/
       emailInput.value = u.email;
       if (uidInput) uidInput.value = u.uid || '';
       if (emailText) emailText.textContent = u.email;
+      isLoggedIn = true;
+      showForm();
     } else {
       emailInput.value = '';
       if (uidInput) uidInput.value = '';
-      if (emailText) emailText.textContent = '알 수 없음 (로그인 필요)';
+      isLoggedIn = false;
+      showLoginRequired();
     }
   }
 
@@ -55,13 +73,19 @@ permalink: /inventory/suggest/
   function applyAppAuth(){
     try {
       var appAuth = window.getAppAuth && window.getAppAuth();
-      if (appAuth) {
+      if (appAuth && appAuth.email) {
         applyUser(appAuth);
         return true;
       }
     } catch(e){}
     return false;
   }
+
+  // 초기 상태: 폼 숨김
+  form.style.display = 'none';
+  status.style.display = 'block';
+  status.textContent = '로그인 상태 확인 중…';
+  status.className = 'notice';
 
   // 즉시 시도
   if (!applyAppAuth()) {
@@ -70,18 +94,19 @@ permalink: /inventory/suggest/
     }, { once: true });
 
     setTimeout(function(){
-      if (emailText && emailText.textContent === '확인 중…') {
-        emailText.textContent = '알 수 없음 (로그인 필요)';
+      if (!isLoggedIn) {
+        showLoginRequired();
       }
     }, 3000);
   }
 
-  // Firestore 제출
+  // Cloud Function 호출로 제출
   form.addEventListener('submit', async function(e){
     e.preventDefault();
 
-    // honeypot 체크
-    if (form.querySelector('input[name="website"]').value) {
+    // 로그인 재확인
+    if (!isLoggedIn || !emailInput.value) {
+      showLoginRequired();
       return;
     }
 
@@ -93,33 +118,41 @@ permalink: /inventory/suggest/
     status.className = 'notice';
 
     try {
-      // Firebase 모듈러 SDK 확인
-      if (!window.db || !window.firestoreHelpers) {
-        throw new Error('Firestore가 초기화되지 않았습니다. 잠시 후 다시 시도해주세요.');
+      // Cloud Functions 확인
+      if (!window.firebaseFunctions || !window.httpsCallable) {
+        throw new Error('Firebase가 초기화되지 않았습니다. 잠시 후 다시 시도해주세요.');
       }
 
-      var { collection, addDoc, serverTimestamp } = window.firestoreHelpers;
+      var submitFeedback = window.httpsCallable(window.firebaseFunctions, 'submitFeedbackFunc');
 
       var data = {
         title: form.querySelector('input[name="title"]').value.trim(),
         content: form.querySelector('textarea[name="content"]').value.trim(),
         email: emailInput.value || null,
         uid: uidInput.value || null,
-        status: 'pending',
-        createdAt: serverTimestamp(),
+        website: form.querySelector('input[name="website"]').value, // honeypot
         platform: navigator.platform || 'unknown',
         userAgent: navigator.userAgent || 'unknown'
       };
 
-      var docRef = await addDoc(collection(window.db, 'feedbacks'), data);
-      status.textContent = '감사합니다! 제안이 성공적으로 등록되었습니다. (ID: ' + docRef.id.slice(0,8) + '...)';
-      status.className = 'notice success';
-      form.reset();
-      applyAppAuth();
+      var result = await submitFeedback(data);
+
+      if (result.data.success) {
+        status.textContent = '감사합니다! 제안이 성공적으로 등록되었습니다. (ID: ' + result.data.id.slice(0,8) + '...)';
+        status.className = 'notice success';
+        form.reset();
+        applyAppAuth();
+      } else {
+        throw new Error('제출에 실패했습니다.');
+      }
 
     } catch(err) {
       console.error('[Suggest] 오류:', err);
-      status.textContent = '제출에 실패했습니다: ' + (err.message || err);
+      var errorMessage = err.message || '알 수 없는 오류가 발생했습니다.';
+      if (err.code === 'functions/invalid-argument') {
+        errorMessage = '제목과 내용을 모두 입력해주세요.';
+      }
+      status.textContent = '제출에 실패했습니다: ' + errorMessage;
       status.className = 'notice error';
     } finally {
       btn.disabled = false;
