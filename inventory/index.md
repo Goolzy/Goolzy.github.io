@@ -2,14 +2,14 @@
 layout: inventory
 title: Inventory
 permalink: /inventory/
-description: Goolzy Inventory - 디지털 문서 관리 앱
+description: Goolzy Inventory - 디지털 아이템 관리 앱
 ---
 
 ## 🎯 Inventory
 
-**문서를 디지털로 생성하고 다른 사람에게 전송하세요!**
+**아이템을 디지털로 생성하고 다른 사람에게 전송하세요!**
 
-종이 한 장으로 문서를 만들고, QR코드로 상대방에게 전송할 수 있습니다. 뱃지로 고유한 도메인명을 각인하고, 스탬프로 템플릿을 만들어 공유하세요.
+종이 한 장으로 아이템을 만들고, QR코드로 상대방에게 전송할 수 있습니다. 뱃지로 고유한 도메인명을 각인하고, 스탬프로 템플릿을 만들어 공유하세요.
 
 ---
 
@@ -45,14 +45,14 @@ description: Goolzy Inventory - 디지털 문서 관리 앱
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #a855f7;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">📄</div>
-    <h4 style="margin: 0 0 .5rem 0; color: #a855f7;">문서 생성</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">종이 1장으로 문서 생성. 제목, 내용, 이미지를 추가하고 개시일자/유효기간을 설정할 수 있습니다.</p>
+    <h4 style="margin: 0 0 .5rem 0; color: #a855f7;">아이템 생성</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">종이 1장으로 아이템 생성. 제목, 내용, 이미지를 추가하고 개시일자/유효기간을 설정할 수 있습니다.</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #14b8a6;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">🏷️</div>
     <h4 style="margin: 0 0 .5rem 0; color: #2dd4bf;">뱃지 시스템</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">고유한 도메인명을 각인하여 앱 내 신원으로 사용. @도메인명 형태로 모든 활동에 표시됩니다.</p>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">고유한 도메인명을 각인하여 앱 내 신원으로 사용. 각인한 도메인명이 모든 활동에 표시됩니다.</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #d946ef;">

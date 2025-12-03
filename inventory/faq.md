@@ -99,9 +99,9 @@ permalink: /inventory/faq/
 <div class="answer-content">
 <strong>A.</strong> 뱃지는 앱 내에서 사용할 <strong>고유한 신원(Identity)</strong>입니다.
 <br><br>
-뱃지에 도메인명을 각인하면, 앱 내 모든 활동에서 이메일 대신 <strong>"@도메인명"</strong> 형태로 표시됩니다.
+뱃지에 도메인명을 각인하면, 앱 내 모든 활동에서 이메일 대신 <strong>각인한 도메인명</strong>으로 표시됩니다.
 <br><br>
-예: <code>@MyBrand</code>, <code>@홍길동</code>
+예: <code>MyBrand</code>, <code>홍길동</code>
 </div>
 </details>
 
@@ -125,7 +125,7 @@ permalink: /inventory/faq/
 <div class="answer-content">
 <strong>A.</strong> 각인된 뱃지를 탭하면 상세 화면에서 <strong>"장착"</strong> 또는 <strong>"해제"</strong> 버튼이 표시됩니다.
 <ul>
-<li><strong>장착</strong>: 앱 내 모든 활동에서 @도메인명으로 표시됩니다</li>
+<li><strong>장착</strong>: 앱 내 모든 활동에서 각인한 도메인명으로 표시됩니다</li>
 <li><strong>해제</strong>: 기본 이메일로 다시 표시됩니다</li>
 </ul>
 여러 뱃지를 보유해도 한 번에 하나만 장착 가능합니다.
