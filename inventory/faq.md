@@ -10,71 +10,217 @@ permalink: /inventory/faq/
 
 ---
 
-### 📱 계정 및 로그인
+### 📱 시작하기
 
 <details open>
+<summary><strong>Q. Inventory 앱은 어떤 앱인가요?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 종이 보증서, 인증서, 영수증 등을 디지털로 안전하게 보관하는 앱입니다.
+<ul>
+<li>📄 제품 보증서, 정품 인증서, 영수증 등을 등록</li>
+<li>📤 중고 거래 시 보증서를 상대방에게 전송</li>
+<li>📂 폴더로 체계적으로 정리</li>
+<li>🔍 빠른 검색으로 필요할 때 바로 찾기</li>
+</ul>
+</div>
+</details>
+
+<details>
 <summary><strong>Q. 계정은 어떻게 만드나요?</strong></summary>
 <div class="answer-content">
 <strong>A.</strong> 다음 세 가지 방법으로 가입할 수 있습니다:
 <ul>
+<li><strong>Google 계정</strong>: Google 버튼 클릭 → 계정 선택</li>
+<li><strong>Apple 계정</strong>: Apple 버튼 클릭 → Face ID/Touch ID 인증</li>
 <li><strong>이메일/비밀번호</strong>: 직접 이메일과 비밀번호를 설정</li>
-<li><strong>Google 계정</strong>: Google 로그인 버튼 클릭</li>
-<li><strong>Apple 계정</strong>: Apple 로그인 버튼 클릭 (Apple 기기 권장)</li>
 </ul>
+💡 <strong>팁</strong>: 소셜 로그인을 사용하면 비밀번호를 따로 기억할 필요가 없어요!
 </div>
 </details>
 
 <details>
-<summary><strong>Q. 비밀번호를 잊어버렸어요</strong></summary>
+<summary><strong>Q. 무료로 사용할 수 있나요?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> 현재 비밀번호 재설정 기능을 준비 중입니다. 임시 해결 방법:
+<strong>A.</strong> 기본 기능은 무료로 제공됩니다.
 <ul>
-<li>소셜 로그인(Google/Apple)을 사용하세요</li>
-<li>또는 <a href="/inventory/suggest/">건의하기</a>를 통해 문의해주세요</li>
+<li>✅ 보증서 열람 및 검색</li>
+<li>✅ 폴더 정리</li>
+<li>✅ 클라우드 동기화</li>
+<li>💎 보증서 생성에는 "종이"가 필요합니다 (인앱 구매 또는 프로모션)</li>
 </ul>
-</div>
-</details>
-
-<details>
-<summary><strong>Q. 로그인이 안 돼요</strong></summary>
-<div class="answer-content">
-<strong>A.</strong> 다음을 확인해보세요:
-<ol>
-<li>이메일과 비밀번호가 정확한지 확인</li>
-<li>소셜 로그인의 경우 팝업 차단 해제</li>
-<li>브라우저 쿠키 허용 설정 확인</li>
-<li>시크릿 모드/프라이빗 브라우징이 아닌지 확인</li>
-</ol>
 </div>
 </details>
 
 ---
 
-### 💾 데이터 및 보안
+### 📄 보증서 관리
 
 <details>
-<summary><strong>Q. 데이터는 어디에 저장되나요?</strong></summary>
+<summary><strong>Q. 보증서는 어떻게 만드나요?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Firebase 클라우드에 안전하게 저장됩니다.
+<strong>A.</strong> 다음 단계를 따라주세요:
+<ol>
+<li>홈 화면에서 <strong>+</strong> 버튼 클릭</li>
+<li>보증서 종류 선택 (보증서/인증서/문서)</li>
+<li>제품명, 구입일, 구입처 등 정보 입력</li>
+<li>필요시 사진 첨부 (카메라 촬영 또는 갤러리 선택)</li>
+<li><strong>저장</strong> 클릭</li>
+</ol>
+⚠️ <strong>참고</strong>: 보증서 생성에는 "종이" 1장이 필요합니다.
+</div>
+</details>
+
+<details>
+<summary><strong>Q. "종이"가 뭔가요?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 보증서를 생성할 때 사용하는 앱 내 재화입니다.
 <ul>
-<li>Google의 보안 인프라 사용</li>
-<li>데이터 암호화 전송 (HTTPS)</li>
-<li>정기적인 백업 수행</li>
+<li>📄 보증서 1개 생성 = 종이 1장 소모</li>
+<li>💰 상점에서 종이 구매 가능</li>
+<li>🎁 프로모션 이벤트로 무료 획득 기회</li>
 </ul>
-자세한 내용은 <a href="/inventory/privacy/">개인정보 처리방침</a>을 참고하세요.
+</div>
+</details>
+
+<details>
+<summary><strong>Q. 보증서를 수정하거나 삭제할 수 있나요?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 네, 가능합니다.
+<ul>
+<li><strong>수정</strong>: 보증서 상세 화면 → 수정 버튼 → 내용 변경 후 저장</li>
+<li><strong>삭제</strong>: 보증서 상세 화면 → 메뉴 → 삭제</li>
+</ul>
+⚠️ <strong>주의</strong>: 삭제된 보증서는 복구할 수 없습니다.
+</div>
+</details>
+
+<details>
+<summary><strong>Q. 보증서를 폴더로 정리할 수 있나요?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 네! 다음 방법으로 폴더를 만들 수 있습니다:
+<ul>
+<li>빈 공간을 <strong>길게 누르기</strong> → 새 폴더 생성</li>
+<li>보증서 2개를 <strong>겹치면</strong> 자동으로 폴더 생성</li>
+<li>보증서를 <strong>드래그</strong>하여 폴더로 이동</li>
+</ul>
+</div>
+</details>
+
+---
+
+### 📤 보증서 전송
+
+<details>
+<summary><strong>Q. 보증서를 다른 사람에게 보낼 수 있나요?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 네, 중고 거래나 선물 시 보증서를 전송할 수 있습니다.
+<ol>
+<li>전송할 보증서 선택</li>
+<li><strong>보내기</strong> 버튼 클릭</li>
+<li>받는 사람 지정 (QR 스캔 또는 이메일 입력)</li>
+<li>2차 비밀번호 입력</li>
+<li>전송 완료!</li>
+</ol>
+⚠️ <strong>중요</strong>: 전송한 보증서는 내 인벤토리에서 사라집니다.
+</div>
+</details>
+
+<details>
+<summary><strong>Q. 받은 보증서는 어떻게 확인하나요?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 하단 메뉴에서 <strong>받기</strong> 탭을 선택하면 받은 보증서 목록이 표시됩니다.
+<ul>
+<li><strong>수락</strong>: 내 인벤토리에 추가</li>
+<li><strong>반송</strong>: 보낸 사람에게 돌려보내기</li>
+</ul>
+</div>
+</details>
+
+---
+
+### 🔐 보안
+
+<details>
+<summary><strong>Q. 2차 비밀번호가 뭔가요?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 보증서 전송 등 중요한 작업 시 추가로 확인하는 6자리 PIN입니다.
+<ul>
+<li>설정 → 보안 → 2차 비밀번호 설정에서 등록</li>
+<li>보증서 전송 시 필수 입력</li>
+<li>계정 탈취 시에도 보증서를 보호</li>
+</ul>
+⚠️ <strong>중요</strong>: 2차 비밀번호를 잊으면 보증서 전송이 불가능합니다!
+</div>
+</details>
+
+<details>
+<summary><strong>Q. 2차 비밀번호를 잊었어요</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 다음 단계를 따라주세요:
+<ol>
+<li>설정 → 보안 → 2차 비밀번호 재설정</li>
+<li>등록된 이메일로 인증 코드 발송</li>
+<li>인증 코드 입력 후 새 비밀번호 설정</li>
+</ol>
 </div>
 </details>
 
 <details>
 <summary><strong>Q. 내 데이터는 안전한가요?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> 네, 다음과 같은 보안 조치를 취하고 있습니다:
+<strong>A.</strong> 네, 다음과 같은 보안 조치를 적용하고 있습니다:
 <ul>
-<li>🔐 비밀번호 암호화 저장</li>
-<li>🔒 HTTPS 보안 연결</li>
-<li>🛡️ Firebase 보안 규칙 적용</li>
+<li>🔐 2차 비밀번호로 중요 작업 보호</li>
+<li>🔒 HTTPS 암호화 전송</li>
+<li>☁️ Firebase 클라우드에 안전하게 저장</li>
 <li>🔑 OAuth 2.0 인증 표준 사용</li>
 </ul>
+</div>
+</details>
+
+---
+
+### ⚙️ 기능
+
+<details>
+<summary><strong>Q. 오프라인에서도 사용할 수 있나요?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 네! 인터넷 없이도 저장된 보증서를 <strong>열람</strong>할 수 있습니다.
+<ul>
+<li>✅ 보증서 목록 보기</li>
+<li>✅ 보증서 상세 정보 확인</li>
+<li>❌ 새 보증서 생성 (인터넷 필요)</li>
+<li>❌ 보증서 전송 (인터넷 필요)</li>
+</ul>
+</div>
+</details>
+
+<details>
+<summary><strong>Q. 한글 초성으로 검색할 수 있나요?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 네! 초성만 입력해도 검색됩니다.
+<ul>
+<li><strong>ㅅㅍ</strong> → 스마트폰, 선풍기</li>
+<li><strong>ㄴㅌㅂ</strong> → 노트북</li>
+<li><strong>ㅇㅈㄱ</strong> → 에어컨</li>
+</ul>
+</div>
+</details>
+
+<details>
+<summary><strong>Q. 어떤 언어를 지원하나요?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 총 7개 언어를 지원합니다:
+<ul>
+<li>🇰🇷 한국어</li>
+<li>🇺🇸 English</li>
+<li>🇯🇵 日本語</li>
+<li>🇩🇪 Deutsch</li>
+<li>🇫🇷 Français</li>
+<li>🇪🇸 Español</li>
+<li>🇧🇷 Português</li>
+</ul>
+설정 → 언어에서 변경할 수 있습니다.
 </div>
 </details>
 
@@ -83,40 +229,9 @@ permalink: /inventory/faq/
 <div class="answer-content">
 <strong>A.</strong> 네! 같은 계정으로 로그인하면 모든 데이터가 자동으로 동기화됩니다.
 <ul>
-<li>PC, 노트북, 태블릿, 스마트폰 모두 지원</li>
-<li>실시간 동기화</li>
-<li>오프라인 접속 시 자동 동기화 대기</li>
+<li>📱 iOS / Android 스마트폰</li>
+<li>💻 macOS / Windows PC (관리자용)</li>
 </ul>
-</div>
-</details>
-
----
-
-### ⚙️ 기능 및 사용
-
-<details>
-<summary><strong>Q. 무료로 사용할 수 있나요?</strong></summary>
-<div class="answer-content">
-<strong>A.</strong> 네, 현재 모든 기능을 무료로 제공하고 있습니다.
-</div>
-</details>
-
-<details>
-<summary><strong>Q. 데이터를 내보낼 수 있나요?</strong></summary>
-<div class="answer-content">
-<strong>A.</strong> 데이터 내보내기 기능은 v1.2.0 업데이트에서 추가될 예정입니다.
-<ul>
-<li>CSV 형식 지원</li>
-<li>JSON 형식 지원</li>
-<li>Excel 호환 형식 지원</li>
-</ul>
-</div>
-</details>
-
-<details>
-<summary><strong>Q. 협업 기능이 있나요?</strong></summary>
-<div class="answer-content">
-<strong>A.</strong> 현재는 개인 사용자용으로 제공되며, 협업 기능은 향후 업데이트에서 추가될 예정입니다.
 </div>
 </details>
 
@@ -125,23 +240,27 @@ permalink: /inventory/faq/
 ### 🗑️ 계정 관리
 
 <details>
-<summary><strong>Q. 계정을 삭제하려면 어떻게 하나요?</strong></summary>
+<summary><strong>Q. 데이터를 백업할 수 있나요?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> 다음 단계를 따라주세요:
+<strong>A.</strong> 데이터는 자동으로 클라우드에 백업됩니다. 추가로 체크포인트를 만들 수 있습니다:
 <ol>
-<li>상단 메뉴에서 <strong>계정</strong> 클릭</li>
-<li>페이지 하단의 <strong>계정 삭제</strong> 버튼 클릭</li>
-<li>2단계 확인 절차 진행</li>
-<li>모든 데이터가 영구 삭제됩니다</li>
+<li>설정 → 데이터 관리</li>
+<li><strong>체크포인트 생성</strong> 클릭</li>
+<li>필요시 <strong>체크포인트 복원</strong>으로 이전 상태로 되돌리기</li>
 </ol>
-⚠️ <strong>주의</strong>: 삭제된 데이터는 복구할 수 없습니다!
 </div>
 </details>
 
 <details>
-<summary><strong>Q. 계정 정보를 수정할 수 있나요?</strong></summary>
+<summary><strong>Q. 계정을 삭제하려면 어떻게 하나요?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> 현재 이메일 주소는 변경할 수 없습니다. 프로필 정보 수정 기능은 향후 추가될 예정입니다.
+<strong>A.</strong> 다음 단계를 따라주세요:
+<ol>
+<li>설정 → 계정 관리</li>
+<li>페이지 하단의 <strong>계정 삭제</strong> 클릭</li>
+<li>2단계 확인 절차 진행</li>
+</ol>
+⚠️ <strong>주의</strong>: 삭제된 계정과 모든 데이터는 복구할 수 없습니다!
 </div>
 </details>
 

@@ -2,14 +2,14 @@
 layout: inventory
 title: Inventory
 permalink: /inventory/
-description: Goolzy Inventory 포털
+description: Goolzy Inventory - 디지털 보증서 관리 앱
 ---
 
 ## 🎯 Inventory
 
-**인벤토리 가이드라인 페이지에 오신 것을 환영합니다!**
+**소중한 물건의 보증서, 인증서를 디지털로 안전하게 관리하세요!**
 
-인벤토리 앱의 버전별 업데이트 내역과 사용 매뉴얼을 확인하실 수 있습니다.
+종이 보증서는 잃어버리기 쉽고, 필요할 때 찾기 어렵습니다. Inventory 앱으로 모든 보증서와 인증서를 스마트폰에 저장하고, 언제 어디서나 확인하세요.
 
 ---
 
@@ -39,32 +39,96 @@ description: Goolzy Inventory 포털
 
 ---
 
-### 💡 주요 기능
+### 💡 이런 분께 추천해요
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #a855f7;">
-    <div style="font-size: 2rem; margin-bottom: .5rem;">🔐</div>
-    <h4 style="margin: 0 0 .5rem 0; color: #a855f7;">안전한 인증</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Google, Apple 소셜 로그인 지원</p>
+    <div style="font-size: 2rem; margin-bottom: .5rem;">📱</div>
+    <h4 style="margin: 0 0 .5rem 0; color: #a855f7;">디지털 정리</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">종이 보증서를 자주 잃어버리시는 분</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #14b8a6;">
-    <div style="font-size: 2rem; margin-bottom: .5rem;">☁️</div>
-    <h4 style="margin: 0 0 .5rem 0; color: #2dd4bf;">클라우드 저장</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Firebase 기반 안전한 데이터 관리</p>
+    <div style="font-size: 2rem; margin-bottom: .5rem;">🤝</div>
+    <h4 style="margin: 0 0 .5rem 0; color: #2dd4bf;">중고 거래</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">정품 인증이 필요한 중고 거래를 하시는 분</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #d946ef;">
-    <div style="font-size: 2rem; margin-bottom: .5rem;">🔄</div>
-    <h4 style="margin: 0 0 .5rem 0; color: #d946ef;">실시간 동기화</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">모든 기기에서 동일한 데이터</p>
+    <div style="font-size: 2rem; margin-bottom: .5rem;">📁</div>
+    <h4 style="margin: 0 0 .5rem 0; color: #d946ef;">체계적 관리</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">여러 제품의 보증 기간을 한눈에 보고 싶은 분</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #a855f7;">
-    <div style="font-size: 2rem; margin-bottom: .5rem;">📱</div>
-    <h4 style="margin: 0 0 .5rem 0; color: #a855f7;">반응형 디자인</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">PC, 태블릿, 모바일 모두 지원</p>
+    <div style="font-size: 2rem; margin-bottom: .5rem;">🔒</div>
+    <h4 style="margin: 0 0 .5rem 0; color: #a855f7;">안전한 보관</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">중요 문서를 클라우드에 백업하고 싶은 분</p>
+  </div>
+
+</div>
+
+---
+
+### ✨ 주요 기능
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
+
+  <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #a855f7;">
+    <div style="font-size: 2rem; margin-bottom: .5rem;">📄</div>
+    <h4 style="margin: 0 0 .5rem 0; color: #a855f7;">보증서 생성</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">제품 정보와 구매 내역을 입력해 디지털 보증서 생성</p>
+  </div>
+
+  <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #14b8a6;">
+    <div style="font-size: 2rem; margin-bottom: .5rem;">📤</div>
+    <h4 style="margin: 0 0 .5rem 0; color: #2dd4bf;">보증서 전송</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">QR코드나 이메일로 다른 사람에게 전송 가능</p>
+  </div>
+
+  <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #d946ef;">
+    <div style="font-size: 2rem; margin-bottom: .5rem;">📂</div>
+    <h4 style="margin: 0 0 .5rem 0; color: #d946ef;">폴더 정리</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">드래그 앤 드롭으로 카테고리별 정리</p>
+  </div>
+
+  <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #a855f7;">
+    <div style="font-size: 2rem; margin-bottom: .5rem;">🔍</div>
+    <h4 style="margin: 0 0 .5rem 0; color: #a855f7;">빠른 검색</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">한글 초성 검색 지원 ('ㅅㅍ' → '스마트폰')</p>
+  </div>
+
+</div>
+
+---
+
+### 🛡️ 안전하게 보호됩니다
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
+
+  <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #14b8a6;">
+    <div style="font-size: 2rem; margin-bottom: .5rem;">🔐</div>
+    <h4 style="margin: 0 0 .5rem 0; color: #2dd4bf;">2차 비밀번호</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">중요 작업 시 6자리 PIN 추가 인증</p>
+  </div>
+
+  <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #d946ef;">
+    <div style="font-size: 2rem; margin-bottom: .5rem;">☁️</div>
+    <h4 style="margin: 0 0 .5rem 0; color: #d946ef;">클라우드 백업</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">휴대폰을 바꿔도 데이터 그대로</p>
+  </div>
+
+  <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #a855f7;">
+    <div style="font-size: 2rem; margin-bottom: .5rem;">📴</div>
+    <h4 style="margin: 0 0 .5rem 0; color: #a855f7;">오프라인 열람</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">인터넷 없이도 저장된 보증서 확인 가능</p>
+  </div>
+
+  <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #14b8a6;">
+    <div style="font-size: 2rem; margin-bottom: .5rem;">🌍</div>
+    <h4 style="margin: 0 0 .5rem 0; color: #2dd4bf;">다국어 지원</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">한국어, 영어, 일본어 등 7개 언어</p>
   </div>
 
 </div>
@@ -83,7 +147,7 @@ description: Goolzy Inventory 포털
 
 ---
 
-> 🔒 **개인정보 보호**: 귀하의 데이터는 안전하게 보호됩니다. 자세한 내용은 [개인정보 처리방침](/inventory/privacy/)을 참고하세요.
+> 🔒 **개인정보 보호**: 귀하의 데이터는 암호화되어 안전하게 보호됩니다. 자세한 내용은 [개인정보 처리방침](/inventory/privacy/)을 참고하세요.
 
 <style>
 /* 다크 글래스모픽 스타일 오버라이드 */
