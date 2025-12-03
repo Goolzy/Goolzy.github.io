@@ -209,13 +209,26 @@ permalink: /inventory/faq/
 <details>
 <summary><strong>Q. 로그에 특수 형식이 있나요?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> 네, 다음 특수 형식을 지원합니다:
+<strong>A.</strong> 네, 다양한 형식을 지원합니다:
+<br><br>
+<strong>기본 형식:</strong>
 <ul>
 <li><code>키:값</code> - 정보 카드로 표시 (키는 1~8자)</li>
 <li><code>---</code> - 구분선으로 표시</li>
 <li>일반 텍스트 - 채팅 말풍선으로 표시</li>
 </ul>
-같은 키를 여러 번 사용하면 이전 값과 비교해서 보여줍니다.
+<strong>텍스트 스타일링:</strong>
+<ul>
+<li><code>&lt;[텍스트]&gt;</code> - 메인 색상 카드</li>
+<li><code>[&lt;텍스트&gt;]</code> - 회색 카드 + 메인 색상 텍스트</li>
+<li><code>[텍스트]</code> - 회색 카드</li>
+<li><code>&lt;텍스트&gt;</code> - 메인 색상 텍스트</li>
+<li><code>(텍스트)</code> - 서브 색상 텍스트</li>
+<li><code>"텍스트"</code> - 굵게</li>
+<li><code>'텍스트'</code> - 밑줄</li>
+<li><code>!텍스트!</code> - 취소선</li>
+</ul>
+스타일은 최대 3단계까지 중첩 가능합니다. 같은 키를 여러 번 사용하면 <code>이전값 → 새값</code> 형태로 비교 표시됩니다.
 </div>
 </details>
 
