@@ -15,11 +15,11 @@ permalink: /inventory/faq/
 <details open>
 <summary><strong>Q. 종이는 무엇인가요?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> 종이는 보증서, 인증서, 문서를 생성할 때 사용하는 앱 내 재화입니다.
+<strong>A.</strong> 종이는 문서를 생성할 때 사용하는 앱 내 재화입니다.
 <ul>
-<li>아이템 1개 생성 = 종이 1장 소모</li>
+<li>문서 1개 생성 = 종이 1장 소모</li>
 <li>신규 가입 시 10장 무료 지급</li>
-<li>상점에서 10장 = $0.99에 구매 가능</li>
+<li>상점에서 추가 구매 가능</li>
 </ul>
 </div>
 </details>
@@ -40,54 +40,210 @@ permalink: /inventory/faq/
 <details>
 <summary><strong>Q. 종이가 부족하면 어떻게 하나요?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> 종이가 부족하면 새 아이템을 생성할 수 없습니다. 다음 방법으로 종이를 얻으세요:
-<ul>
-<li>상점에서 구매 (10장 = $0.99)</li>
-<li>아직 연동하지 않은 소셜 계정이 있다면 연동하여 추가 획득</li>
-</ul>
+<strong>A.</strong> 종이가 부족하면 새 문서를 생성할 수 없습니다. 상점에서 종이를 구매하거나, 아직 연동하지 않은 소셜 계정이 있다면 연동하여 추가 획득하세요.
+<br><br>
 기존에 생성한 아이템은 종이가 없어도 계속 보관됩니다.
 </div>
 </details>
 
 ---
 
-### 📄 아이템 생성
+### 📄 문서 생성
 
 <details>
-<summary><strong>Q. 아이템은 어떻게 만드나요?</strong></summary>
+<summary><strong>Q. 문서는 어떻게 만드나요?</strong></summary>
 <div class="answer-content">
 <strong>A.</strong> 다음 단계를 따라주세요:
 <ol>
-<li>홈 화면에서 보유한 <strong>종이</strong>를 탭</li>
-<li>"새 아이템 만들기" 선택</li>
-<li>종류 선택: 보증서 / 인증서 / 문서</li>
-<li>정보 입력 후 저장</li>
+<li>홈 화면에서 보유 중인 <strong>종이</strong>를 탭</li>
+<li>하단 메뉴에서 <strong>"새 아이템 생성"</strong> 선택</li>
+<li>문서 정보 입력 (제목, 내용, 이미지 등)</li>
+<li>저장하면 종이 1장이 소모되고 문서가 생성됩니다</li>
 </ol>
-종이 1장이 소모되고 아이템이 생성됩니다.
 </div>
 </details>
 
 <details>
-<summary><strong>Q. 보증서, 인증서, 문서의 차이점은?</strong></summary>
+<summary><strong>Q. 문서에 유효기간을 설정할 수 있나요?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> 용도에 따라 선택하세요:
+<strong>A.</strong> 네, 문서 생성 시 다음 날짜를 설정할 수 있습니다:
 <ul>
-<li><strong>보증서</strong>: 가전제품, 전자기기 등의 제품 보증</li>
-<li><strong>인증서</strong>: 정품 인증, 수료증, 자격증</li>
-<li><strong>문서</strong>: 영수증, 계약서 등 일반 문서</li>
+<li><strong>개시일자</strong>: 이 날짜가 되기 전까지 내용이 블러 처리됨</li>
+<li><strong>유효기간</strong>: 이 날짜가 지나면 내용이 블러 처리되고, 로그 추가 불가</li>
 </ul>
+설정하지 않으면 즉시 공개되고 영구적으로 유지됩니다.
 </div>
 </details>
 
 <details>
-<summary><strong>Q. 아이템을 수정하거나 삭제할 수 있나요?</strong></summary>
+<summary><strong>Q. 아이템을 삭제할 수 있나요?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> 네, 가능합니다.
+<strong>A.</strong> 네, 아이템 선택 후 하단 메뉴에서 삭제할 수 있습니다.
+<br><br>
+⚠️ <strong>주의</strong>:
 <ul>
-<li><strong>수정</strong>: 아이템 탭 → 수정 버튼 → 내용 변경 후 저장</li>
-<li><strong>삭제</strong>: 아이템 탭 → 메뉴 → 삭제</li>
+<li>삭제된 아이템은 복구할 수 없습니다</li>
+<li>종이(Paper)는 삭제할 수 없습니다</li>
+<li>미사용 소모품(잉크, 스탬프, 뱃지)도 삭제할 수 없습니다</li>
+<li>장착 중인 뱃지는 먼저 해제해야 삭제 가능합니다</li>
 </ul>
-⚠️ 삭제된 아이템은 복구할 수 없습니다.
+</div>
+</details>
+
+---
+
+### 🏷️ 뱃지 시스템
+
+<details>
+<summary><strong>Q. 뱃지는 무엇인가요?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 뱃지는 앱 내에서 사용할 <strong>고유한 신원(Identity)</strong>입니다.
+<br><br>
+뱃지에 도메인명을 각인하면, 앱 내 모든 활동에서 이메일 대신 <strong>"@도메인명"</strong> 형태로 표시됩니다.
+<br><br>
+예: <code>@MyBrand</code>, <code>@홍길동</code>
+</div>
+</details>
+
+<details>
+<summary><strong>Q. 뱃지를 어떻게 각인하나요?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 다음 단계를 따라주세요:
+<ol>
+<li>미사용 뱃지 선택 → <strong>"각인"</strong> 메뉴</li>
+<li>원하는 도메인명 입력 (최대 32자, 문자/숫자만)</li>
+<li><strong>"도메인 중복 확인"</strong> 버튼으로 사용 가능 여부 확인</li>
+<li>선택적으로 128x128 이미지 첨부</li>
+<li><strong>"각인하기"</strong> 버튼으로 완료</li>
+</ol>
+⚠️ <strong>중요</strong>: 한번 각인된 도메인명과 이미지는 <strong>영구적으로 변경 불가</strong>합니다.
+</div>
+</details>
+
+<details>
+<summary><strong>Q. 뱃지를 장착/해제하려면?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 각인된 뱃지를 탭하면 상세 화면에서 <strong>"장착"</strong> 또는 <strong>"해제"</strong> 버튼이 표시됩니다.
+<ul>
+<li><strong>장착</strong>: 앱 내 모든 활동에서 @도메인명으로 표시됩니다</li>
+<li><strong>해제</strong>: 기본 이메일로 다시 표시됩니다</li>
+</ul>
+여러 뱃지를 보유해도 한 번에 하나만 장착 가능합니다.
+</div>
+</details>
+
+<details>
+<summary><strong>Q. 같은 도메인명을 다른 사람이 사용할 수 있나요?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 아니요. 도메인명은 전체 사용자 중 <strong>유일</strong>해야 합니다.
+<br><br>
+단, 뱃지를 삭제하면 해당 도메인명이 해제되어 다른 사람이 사용할 수 있게 됩니다.
+</div>
+</details>
+
+---
+
+### 🔖 스탬프 시스템
+
+<details>
+<summary><strong>Q. 스탬프는 무엇인가요?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 스탬프는 <strong>템플릿</strong>을 만들어 다른 사람에게 전달할 수 있는 아이템입니다.
+<br><br>
+템플릿에는 이미지, 제목, 내용, 유효기간 등을 설정할 수 있고, <strong>로그 기능</strong>을 통해 기록을 남길 수 있습니다.
+</div>
+</details>
+
+<details>
+<summary><strong>Q. 스탬프 템플릿은 어떻게 만드나요?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 다음 단계를 따라주세요:
+<ol>
+<li>미사용 스탬프 선택 → <strong>"새 템플릿 생성"</strong> 메뉴</li>
+<li>템플릿 이미지 선택 (필수)</li>
+<li>제목과 내용 입력</li>
+<li>개시일자/유효기간 설정 (선택)</li>
+<li><strong>로그 모드</strong> 선택: 단독로그 또는 공유로그</li>
+<li><strong>"템플릿 생성"</strong> 버튼으로 완료</li>
+</ol>
+</div>
+</details>
+
+<details>
+<summary><strong>Q. 단독로그와 공유로그의 차이점은?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 로그 모드에 따라 기록 방식이 완전히 달라집니다:
+<br><br>
+<table>
+<tr><th>구분</th><th>단독로그</th><th>공유로그</th></tr>
+<tr><td>로그 저장</td><td>각자 개인 공간에 저장</td><td>원본 스탬프 기준 공유 공간에 저장</td></tr>
+<tr><td>볼 수 있는 로그</td><td>자신이 작성한 로그만</td><td>모든 소유자의 로그</td></tr>
+<tr><td>용도 예시</td><td>개인 일기, 메모</td><td>공동 작업, 의견 공유, 커뮤니티</td></tr>
+<tr><td>스탬프 삭제 시</td><td>영향 없음</td><td>공유로그 추가 불가 (읽기만 가능)</td></tr>
+</table>
+</div>
+</details>
+
+<details>
+<summary><strong>Q. 스탬프를 복제할 수 있나요?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 네! 활성화된 스탬프(템플릿)와 종이를 함께 선택하면 <strong>"템플릿 복제"</strong> 메뉴가 나타납니다.
+<br><br>
+복제하면 종이 1장이 소모되고, 동일한 템플릿의 새 문서가 생성됩니다. 공유로그 모드라면 원본과 같은 공유 공간을 사용합니다.
+</div>
+</details>
+
+---
+
+### 📝 로그 기능
+
+<details>
+<summary><strong>Q. 로그는 무엇인가요?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 로그는 문서나 스탬프 템플릿에 기록을 남기는 기능입니다.
+<br><br>
+메시지 형태로 작성하면 채팅처럼 표시되고, <code>키:값</code> 형태로 작성하면 정보 카드로 표시됩니다.
+</div>
+</details>
+
+<details>
+<summary><strong>Q. 로그에 특수 형식이 있나요?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 네, 다음 특수 형식을 지원합니다:
+<ul>
+<li><code>키:값</code> - 정보 카드로 표시 (키는 1~8자)</li>
+<li><code>---</code> - 구분선으로 표시</li>
+<li>일반 텍스트 - 채팅 말풍선으로 표시</li>
+</ul>
+같은 키를 여러 번 사용하면 이전 값과 비교해서 보여줍니다.
+</div>
+</details>
+
+<details>
+<summary><strong>Q. 공유로그가 중단되었다고 나와요</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 다음 경우에 공유로그 추가가 중단됩니다:
+<ul>
+<li><strong>원본 스탬프 삭제</strong>: "원본 스탬프가 삭제되어 공유로그가 중단되었습니다"</li>
+<li><strong>유효기간 만료</strong>: "만료기한이 지난 공유 로그에는 로그를 추가할 수 없습니다"</li>
+</ul>
+기존 로그는 계속 읽을 수 있지만, 새 로그를 추가할 수는 없습니다.
+</div>
+</details>
+
+---
+
+### 🎨 잉크 시스템
+
+<details>
+<summary><strong>Q. 잉크는 무엇인가요?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 잉크는 앱의 <strong>테마 색상</strong>을 변경하는 아이템입니다.
+<ul>
+<li><strong>블랙 잉크</strong>: 기본 검은색 테마</li>
+<li><strong>골드 잉크</strong>: 고급스러운 금색 테마</li>
+</ul>
+잉크를 탭하고 <strong>"테마 변경"</strong>을 선택하면 즉시 앱 전체 색상이 변경됩니다.
 </div>
 </details>
 
@@ -100,7 +256,7 @@ permalink: /inventory/faq/
 <div class="answer-content">
 <strong>A.</strong> 네, 즉시 사라집니다. 전송은 취소할 수 없으니 신중하게 진행해주세요.
 <br><br>
-단, 상대방이 "반송"을 선택하면 아이템이 다시 돌아옵니다.
+단, 상대방이 <strong>"반송"</strong>을 선택하면 아이템이 다시 돌아옵니다.
 </div>
 </details>
 
@@ -109,7 +265,7 @@ permalink: /inventory/faq/
 <div class="answer-content">
 <strong>A.</strong> <strong>프로필</strong> 화면에서 자신의 QR 코드를 확인할 수 있습니다.
 <ul>
-<li>보내는 사람: "QR 스캔" 버튼으로 상대방 QR 스캔</li>
+<li>보내는 사람: <strong>"QR 스캔"</strong> 버튼으로 상대방 QR 스캔</li>
 <li>받는 사람: 프로필에서 QR 코드 보여주기</li>
 </ul>
 QR 코드에는 이메일 주소가 담겨있어 직접 입력 없이 빠르게 전송할 수 있습니다.
@@ -123,10 +279,31 @@ QR 코드에는 이메일 주소가 담겨있어 직접 입력 없이 빠르게 
 </div>
 </details>
 
+---
+
+### 🔍 검색 기능
+
 <details>
-<summary><strong>Q. 받은 아이템을 거부할 수 있나요?</strong></summary>
+<summary><strong>Q. 검색창은 어떻게 사용하나요?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> 네, "반송" 버튼을 누르면 보낸 사람에게 다시 돌아갑니다.
+<strong>A.</strong> 상단 검색창을 탭하면 검색 모드가 활성화됩니다:
+<ul>
+<li>검색어를 입력하면 <strong>실시간</strong>으로 결과가 필터링됩니다</li>
+<li><strong>최근 검색어</strong>가 아래에 표시됩니다 (최대 5개)</li>
+<li><strong>"필터로 지정"</strong> 버튼으로 검색어를 저장하면 빠르게 재사용 가능합니다</li>
+</ul>
+</div>
+</details>
+
+<details>
+<summary><strong>Q. 필터는 어떻게 관리하나요?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 검색어를 필터로 저장하면:
+<ul>
+<li>검색창 아래에 필터 태그로 표시됩니다</li>
+<li>태그를 탭하면 해당 검색어로 즉시 필터링됩니다</li>
+<li>X 버튼으로 필터를 삭제할 수 있습니다</li>
+</ul>
 </div>
 </details>
 
@@ -138,118 +315,35 @@ QR 코드에는 이메일 주소가 담겨있어 직접 입력 없이 빠르게 
 <summary><strong>Q. 상점에서 무엇을 살 수 있나요?</strong></summary>
 <div class="answer-content">
 <strong>A.</strong> 다음 아이템을 구매할 수 있습니다:
-<table>
-<tr><th>상품</th><th>가격</th><th>용도</th></tr>
-<tr><td>종이 10장</td><td>$0.99</td><td>아이템 생성</td></tr>
-<tr><td>스탬프</td><td>$9.99</td><td>인증서에 도장 찍기</td></tr>
-<tr><td>뱃지</td><td>$99.99</td><td>인증서에 각인 새기기</td></tr>
-<tr><td>잉크 Gold</td><td>$9.99</td><td>금색 스탬프</td></tr>
-<tr><td>잉크 Black</td><td>무료</td><td>기본 스탬프 색상</td></tr>
-</table>
-</div>
-</details>
-
-<details>
-<summary><strong>Q. PC에서 상점 이용이 안 돼요</strong></summary>
-<div class="answer-content">
-<strong>A.</strong> Windows/macOS에서는 인앱 결제가 불가능합니다. 화면에 표시되는 QR 코드를 스캔하여 모바일 앱에서 구매해주세요.
-</div>
-</details>
-
-<details>
-<summary><strong>Q. 스탬프, 잉크, 뱃지는 뭔가요?</strong></summary>
-<div class="answer-content">
-<strong>A.</strong> 인증서나 문서를 더 공식적으로 만드는 기능입니다:
 <ul>
-<li><strong>스탬프</strong>: 공식 도장을 찍어 신뢰도 UP</li>
-<li><strong>잉크</strong>: 스탬프 색상 변경 (Black/Gold)</li>
-<li><strong>뱃지</strong>: 프리미엄 각인으로 고급스러운 마무리</li>
-</ul>
-</div>
-</details>
-
----
-
-### 📂 폴더
-
-<details>
-<summary><strong>Q. 폴더 안에 폴더를 만들 수 있나요?</strong></summary>
-<div class="answer-content">
-<strong>A.</strong> 아니요, 폴더는 1단계만 지원합니다. 폴더 안에 폴더를 넣을 수 없습니다.
-</div>
-</details>
-
-<details>
-<summary><strong>Q. 폴더가 다른 기기에서 안 보여요</strong></summary>
-<div class="answer-content">
-<strong>A.</strong> 폴더 구조는 현재 기기에만 저장됩니다. 다른 기기에서는 폴더가 동기화되지 않습니다.
-<br><br>
-아이템 자체는 클라우드에 저장되어 모든 기기에서 볼 수 있습니다.
-</div>
-</details>
-
-<details>
-<summary><strong>Q. 폴더를 삭제하면 아이템도 삭제되나요?</strong></summary>
-<div class="answer-content">
-<strong>A.</strong> 아니요, 폴더만 해제되고 아이템은 그대로 남습니다. 아이템은 폴더 바깥으로 나옵니다.
-</div>
-</details>
-
----
-
-### 🔐 보안
-
-<details>
-<summary><strong>Q. 2차 비밀번호를 잊었어요</strong></summary>
-<div class="answer-content">
-<strong>A.</strong> 다음 단계로 재설정하세요:
-<ol>
-<li>설정 → 보안 → 비밀번호 재설정</li>
-<li>등록된 이메일로 인증 코드 발송</li>
-<li>인증 코드 입력 후 새 비밀번호 설정</li>
-</ol>
-</div>
-</details>
-
-<details>
-<summary><strong>Q. 다른 기기에서 자동 로그아웃 됐어요</strong></summary>
-<div class="answer-content">
-<strong>A.</strong> 보안을 위해 동시에 하나의 기기에서만 로그인할 수 있습니다. 새 기기에서 로그인하면 기존 기기는 자동 로그아웃됩니다.
-</div>
-</details>
-
----
-
-### 💾 데이터
-
-<details>
-<summary><strong>Q. 체크포인트는 무엇인가요?</strong></summary>
-<div class="answer-content">
-<strong>A.</strong> 현재 아이템 상태를 저장해두고 나중에 되돌릴 수 있는 기능입니다.
-<ul>
-<li>중요한 변경 전에 체크포인트 생성 권장</li>
-<li>프로필 → 데이터 관리에서 생성/복원</li>
-</ul>
-⚠️ 복원하면 체크포인트 이후의 변경은 모두 사라집니다.
-</div>
-</details>
-
-<details>
-<summary><strong>Q. 오프라인에서도 사용할 수 있나요?</strong></summary>
-<div class="answer-content">
-<strong>A.</strong> 저장된 아이템은 오프라인에서도 볼 수 있습니다. 단, 다음은 인터넷이 필요합니다:
-<ul>
-<li>새 아이템 생성</li>
-<li>아이템 보내기/받기</li>
-<li>상점 이용</li>
+<li><strong>종이</strong>: 문서 생성용</li>
+<li><strong>스탬프</strong>: 템플릿 생성용</li>
+<li><strong>잉크</strong>: 테마 색상 변경용</li>
+<li><strong>뱃지</strong>: 고유 도메인 각인용</li>
 </ul>
 </div>
 </details>
 
 <details>
-<summary><strong>Q. 데이터 백업은 어떻게 하나요?</strong></summary>
+<summary><strong>Q. PC에서도 상점을 이용할 수 있나요?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> 모든 데이터는 자동으로 클라우드에 백업됩니다. 폰을 바꿔도 같은 계정으로 로그인하면 모든 아이템이 복원됩니다.
+<strong>A.</strong> 네, 모든 플랫폼(iOS, Android, Windows, macOS)에서 동일하게 상점을 이용할 수 있습니다.
+</div>
+</details>
+
+---
+
+### 📂 파티션
+
+<details>
+<summary><strong>Q. 파티션은 무엇인가요?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 파티션은 아이템을 그룹으로 정리하는 기능입니다.
+<ul>
+<li>아이템 선택 후 <strong>"파티션 생성"</strong>으로 새 파티션 생성</li>
+<li>파티션 이름은 최대 16자</li>
+</ul>
+⚠️ 파티션은 <strong>기기에만 저장</strong>됩니다. 다른 기기에서는 보이지 않습니다.
 </div>
 </details>
 
@@ -388,5 +482,12 @@ details[open] summary::before {
 
 .answer-content th {
   background: rgba(168, 85, 247, 0.2);
+}
+
+.answer-content code {
+  background: rgba(168, 85, 247, 0.2);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
 }
 </style>

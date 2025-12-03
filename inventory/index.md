@@ -2,14 +2,14 @@
 layout: inventory
 title: Inventory
 permalink: /inventory/
-description: Goolzy Inventory - 디지털 보증서 관리 앱
+description: Goolzy Inventory - 디지털 문서 관리 앱
 ---
 
 ## 🎯 Inventory
 
-**보증서, 인증서, 영수증을 디지털로 안전하게 관리하세요!**
+**문서를 디지털로 생성하고 다른 사람에게 전송하세요!**
 
-종이 보증서는 잃어버리기 쉽고, 필요할 때 찾기 어렵습니다. Inventory로 모든 문서를 스마트폰에 저장하고, **QR코드로 다른 사람에게 전송**하세요. 중고 거래 시 정품 인증도 간편하게!
+종이 한 장으로 문서를 만들고, QR코드로 상대방에게 전송할 수 있습니다. 뱃지로 고유한 도메인명을 각인하고, 스탬프로 템플릿을 만들어 공유하세요.
 
 ---
 
@@ -39,64 +39,44 @@ description: Goolzy Inventory - 디지털 보증서 관리 앱
 
 ---
 
-### 💡 이런 분께 추천해요
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
-
-  <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #a855f7;">
-    <div style="font-size: 2rem; margin-bottom: .5rem;">📱</div>
-    <h4 style="margin: 0 0 .5rem 0; color: #a855f7;">디지털 정리</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">종이 보증서를 자주 잃어버리시는 분</p>
-  </div>
-
-  <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #14b8a6;">
-    <div style="font-size: 2rem; margin-bottom: .5rem;">🤝</div>
-    <h4 style="margin: 0 0 .5rem 0; color: #2dd4bf;">중고 거래</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">정품 인증이 필요한 중고 거래를 하시는 분</p>
-  </div>
-
-  <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #d946ef;">
-    <div style="font-size: 2rem; margin-bottom: .5rem;">📁</div>
-    <h4 style="margin: 0 0 .5rem 0; color: #d946ef;">체계적 관리</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">여러 제품의 보증 기간을 한눈에 보고 싶은 분</p>
-  </div>
-
-  <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #a855f7;">
-    <div style="font-size: 2rem; margin-bottom: .5rem;">🔒</div>
-    <h4 style="margin: 0 0 .5rem 0; color: #a855f7;">안전한 보관</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">중요 문서를 클라우드에 백업하고 싶은 분</p>
-  </div>
-
-</div>
-
----
-
 ### ✨ 주요 기능
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #a855f7;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">📄</div>
-    <h4 style="margin: 0 0 .5rem 0; color: #a855f7;">3가지 아이템 유형</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;"><strong>보증서</strong>(가전, 전자기기), <strong>인증서</strong>(정품, 수료증), <strong>문서</strong>(영수증, 계약서)를 종이 1장으로 생성</p>
+    <h4 style="margin: 0 0 .5rem 0; color: #a855f7;">문서 생성</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">종이 1장으로 문서 생성. 제목, 내용, 이미지를 추가하고 개시일자/유효기간을 설정할 수 있습니다.</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #14b8a6;">
-    <div style="font-size: 2rem; margin-bottom: .5rem;">📤</div>
-    <h4 style="margin: 0 0 .5rem 0; color: #2dd4bf;">QR코드로 즉시 전송</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">상대방 QR 스캔 → 아이템 선택 → 전송 완료! 소유권이 즉시 이전됩니다</p>
+    <div style="font-size: 2rem; margin-bottom: .5rem;">🏷️</div>
+    <h4 style="margin: 0 0 .5rem 0; color: #2dd4bf;">뱃지 시스템</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">고유한 도메인명을 각인하여 앱 내 신원으로 사용. @도메인명 형태로 모든 활동에 표시됩니다.</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #d946ef;">
-    <div style="font-size: 2rem; margin-bottom: .5rem;">🛒</div>
-    <h4 style="margin: 0 0 .5rem 0; color: #d946ef;">상점 아이템</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;"><strong>종이</strong> 10장 $0.99 | <strong>스탬프</strong> $9.99 | <strong>뱃지</strong> $99.99 | <strong>잉크</strong> Gold $9.99</p>
+    <div style="font-size: 2rem; margin-bottom: .5rem;">🔖</div>
+    <h4 style="margin: 0 0 .5rem 0; color: #d946ef;">스탬프 & 로그</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">스탬프로 템플릿 생성. 단독로그(개인용) 또는 공유로그(커뮤니티) 모드로 기록을 남길 수 있습니다.</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #a855f7;">
+    <div style="font-size: 2rem; margin-bottom: .5rem;">📤</div>
+    <h4 style="margin: 0 0 .5rem 0; color: #a855f7;">QR코드 전송</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">상대방 QR 스캔 → 아이템 선택 → 전송 완료! 소유권이 즉시 이전됩니다.</p>
+  </div>
+
+  <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #14b8a6;">
+    <div style="font-size: 2rem; margin-bottom: .5rem;">🎨</div>
+    <h4 style="margin: 0 0 .5rem 0; color: #2dd4bf;">잉크 테마</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">잉크로 앱 테마 색상을 변경할 수 있습니다. 블랙, 골드 테마를 지원합니다.</p>
+  </div>
+
+  <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #d946ef;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">🔍</div>
-    <h4 style="margin: 0 0 .5rem 0; color: #a855f7;">초성 검색</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">'ㄴㅌㅂ' 입력 → '노트북' 검색! 한글 초성만으로 빠르게 찾기</p>
+    <h4 style="margin: 0 0 .5rem 0; color: #d946ef;">실시간 검색</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">검색어 입력 시 즉시 필터링. 필터로 저장하면 빠르게 재사용할 수 있습니다.</p>
   </div>
 
 </div>
@@ -106,7 +86,7 @@ description: Goolzy Inventory - 디지털 보증서 관리 앱
 ### 📝 종이(Paper) 시스템
 
 <div style="background: rgba(168, 85, 247, 0.15); backdrop-filter: blur(10px); border: 1px solid rgba(168, 85, 247, 0.3); border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0;">
-  <p style="margin: 0 0 1rem 0; color: rgba(255,255,255,0.9); font-size: 1.05rem;"><strong>종이</strong>는 아이템을 생성할 때 사용하는 앱 내 재화입니다.</p>
+  <p style="margin: 0 0 1rem 0; color: rgba(255,255,255,0.9); font-size: 1.05rem;"><strong>종이</strong>는 문서를 생성할 때 사용하는 앱 내 재화입니다.</p>
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem;">
     <div style="background: rgba(10, 6, 20, 0.4); padding: 1rem; border-radius: 8px;">
       <div style="font-size: 1.5rem; margin-bottom: .25rem;">🎁</div>
@@ -118,7 +98,7 @@ description: Goolzy Inventory - 디지털 보증서 관리 앱
     </div>
     <div style="background: rgba(10, 6, 20, 0.4); padding: 1rem; border-radius: 8px;">
       <div style="font-size: 1.5rem; margin-bottom: .25rem;">💰</div>
-      <p style="margin: 0; color: rgba(255,255,255,0.8); font-size: .9rem;"><strong>상점 구매</strong><br>10장 = $0.99</p>
+      <p style="margin: 0; color: rgba(255,255,255,0.8); font-size: .9rem;"><strong>상점 구매</strong><br>인앱 결제</p>
     </div>
   </div>
   <p style="margin: 1rem 0 0 0; color: rgba(255,255,255,0.7); font-size: .85rem;">💡 소셜 계정을 모두 연동하면 최대 <strong>30장</strong>까지 무료로 받을 수 있습니다!</p>
@@ -126,32 +106,32 @@ description: Goolzy Inventory - 디지털 보증서 관리 앱
 
 ---
 
-### 🛡️ 안전하게 보호됩니다
+### 🛒 상점 아이템
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
 
-  <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #14b8a6;">
-    <div style="font-size: 2rem; margin-bottom: .5rem;">🔐</div>
-    <h4 style="margin: 0 0 .5rem 0; color: #2dd4bf;">2차 비밀번호</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">아이템 전송, 삭제 시 6자리 PIN으로 한 번 더 확인</p>
+  <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; text-align: center;">
+    <div style="font-size: 2rem; margin-bottom: .5rem;">📄</div>
+    <h4 style="margin: 0 0 .25rem 0; color: #a855f7;">종이</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">문서 생성용</p>
   </div>
 
-  <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #d946ef;">
-    <div style="font-size: 2rem; margin-bottom: .5rem;">☁️</div>
-    <h4 style="margin: 0 0 .5rem 0; color: #d946ef;">자동 클라우드 백업</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">모든 아이템이 자동 저장. 기기 변경해도 로그인만 하면 OK</p>
+  <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; text-align: center;">
+    <div style="font-size: 2rem; margin-bottom: .5rem;">🔖</div>
+    <h4 style="margin: 0 0 .25rem 0; color: #14b8a6;">스탬프</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">템플릿 생성용</p>
   </div>
 
-  <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #a855f7;">
-    <div style="font-size: 2rem; margin-bottom: .5rem;">📴</div>
-    <h4 style="margin: 0 0 .5rem 0; color: #a855f7;">오프라인 열람</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">인터넷 없이도 저장된 아이템 확인 가능 (생성/전송은 온라인 필요)</p>
+  <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; text-align: center;">
+    <div style="font-size: 2rem; margin-bottom: .5rem;">🏷️</div>
+    <h4 style="margin: 0 0 .25rem 0; color: #d946ef;">뱃지</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">도메인 각인용</p>
   </div>
 
-  <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #14b8a6;">
-    <div style="font-size: 2rem; margin-bottom: .5rem;">🌍</div>
-    <h4 style="margin: 0 0 .5rem 0; color: #2dd4bf;">7개 언어 지원</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">한국어, English, 日本語, Deutsch, Español, Français, Português</p>
+  <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; text-align: center;">
+    <div style="font-size: 2rem; margin-bottom: .5rem;">🎨</div>
+    <h4 style="margin: 0 0 .25rem 0; color: #a855f7;">잉크</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">테마 색상 변경</p>
   </div>
 
 </div>
@@ -166,17 +146,25 @@ description: Goolzy Inventory - 디지털 보증서 관리 앱
     <div style="font-size: 2.5rem; margin-bottom: .5rem;">📱</div>
     <h4 style="margin: 0 0 .25rem 0; color: #a855f7;">모바일</h4>
     <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">iOS / Android</p>
-    <p style="margin: .25rem 0 0 0; color: rgba(255,255,255,0.5); font-size: .8rem;">인앱 결제 지원</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; text-align: center;">
     <div style="font-size: 2.5rem; margin-bottom: .5rem;">💻</div>
     <h4 style="margin: 0 0 .25rem 0; color: #14b8a6;">데스크톱</h4>
     <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">macOS / Windows</p>
-    <p style="margin: .25rem 0 0 0; color: rgba(255,255,255,0.5); font-size: .8rem;">QR 스캔으로 모바일 결제</p>
   </div>
 
 </div>
+
+<p style="text-align: center; color: rgba(255,255,255,0.6); font-size: .9rem; margin-top: 1rem;">모든 플랫폼에서 동일한 기능을 사용할 수 있습니다</p>
+
+---
+
+### 🌍 다국어 지원
+
+7개 언어를 지원합니다:
+- 🇰🇷 한국어, 🇺🇸 English, 🇯🇵 日本語
+- 🇩🇪 Deutsch, 🇫🇷 Français, 🇪🇸 Español, 🇧🇷 Português
 
 ---
 
