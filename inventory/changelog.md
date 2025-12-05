@@ -2,6 +2,15 @@
 layout: inventory
 title: 버전 로그
 permalink: /inventory/changelog/
+lang: ko
+translations:
+  ko: /inventory/changelog/
+  en: /inventory/changelog/en/
+  ja: /inventory/changelog/ja/
+  de: /inventory/changelog/de/
+  fr: /inventory/changelog/fr/
+  es: /inventory/changelog/es/
+  pt: /inventory/changelog/pt/
 ---
 
 ## 📋 버전 로그

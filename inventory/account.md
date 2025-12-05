@@ -2,6 +2,15 @@
 layout: inventory
 title: 계정 정보
 permalink: /inventory/account/
+lang: ko
+translations:
+  ko: /inventory/account/
+  en: /inventory/account/en/
+  ja: /inventory/account/ja/
+  de: /inventory/account/de/
+  fr: /inventory/account/fr/
+  es: /inventory/account/es/
+  pt: /inventory/account/pt/
 ---
 
 <div id="account-info" style="max-width:600px; margin:0 auto;">

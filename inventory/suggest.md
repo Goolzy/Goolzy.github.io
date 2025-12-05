@@ -2,6 +2,15 @@
 layout: inventory
 title: 건의하기
 permalink: /inventory/suggest/
+lang: ko
+translations:
+  ko: /inventory/suggest/
+  en: /inventory/suggest/en/
+  ja: /inventory/suggest/ja/
+  de: /inventory/suggest/de/
+  fr: /inventory/suggest/fr/
+  es: /inventory/suggest/es/
+  pt: /inventory/suggest/pt/
 ---
 
 ## 건의하기

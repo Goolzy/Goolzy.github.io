@@ -2,6 +2,15 @@
 layout: inventory
 title: 사용자 매뉴얼
 permalink: /inventory/manual/
+lang: ko
+translations:
+  ko: /inventory/manual/
+  en: /inventory/manual/en/
+  ja: /inventory/manual/ja/
+  de: /inventory/manual/de/
+  fr: /inventory/manual/fr/
+  es: /inventory/manual/es/
+  pt: /inventory/manual/pt/
 ---
 
 ## 📖 사용자 매뉴얼

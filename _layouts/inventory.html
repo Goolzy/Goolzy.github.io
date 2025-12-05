@@ -2,16 +2,77 @@
 layout: page
 hide_sidebar: true
 ---
+{% assign current_lang = page.lang | default: 'ko' %}
+
+{% comment %} Navigation labels by language {% endcomment %}
+{% case current_lang %}
+  {% when 'en' %}
+    {% assign nav_home = 'Home' %}
+    {% assign nav_changelog = 'Changelog' %}
+    {% assign nav_manual = 'Manual' %}
+    {% assign nav_faq = 'FAQ' %}
+    {% assign nav_suggest = 'Suggest' %}
+    {% assign nav_bug = 'Bug Report' %}
+  {% when 'ja' %}
+    {% assign nav_home = 'ホーム' %}
+    {% assign nav_changelog = '更新履歴' %}
+    {% assign nav_manual = 'マニュアル' %}
+    {% assign nav_faq = 'よくある質問' %}
+    {% assign nav_suggest = 'ご意見' %}
+    {% assign nav_bug = 'バグ報告' %}
+  {% when 'de' %}
+    {% assign nav_home = 'Startseite' %}
+    {% assign nav_changelog = 'Änderungen' %}
+    {% assign nav_manual = 'Handbuch' %}
+    {% assign nav_faq = 'FAQ' %}
+    {% assign nav_suggest = 'Vorschläge' %}
+    {% assign nav_bug = 'Fehlerbericht' %}
+  {% when 'fr' %}
+    {% assign nav_home = 'Accueil' %}
+    {% assign nav_changelog = 'Historique' %}
+    {% assign nav_manual = 'Manuel' %}
+    {% assign nav_faq = 'FAQ' %}
+    {% assign nav_suggest = 'Suggestions' %}
+    {% assign nav_bug = 'Signaler un bug' %}
+  {% when 'es' %}
+    {% assign nav_home = 'Inicio' %}
+    {% assign nav_changelog = 'Cambios' %}
+    {% assign nav_manual = 'Manual' %}
+    {% assign nav_faq = 'FAQ' %}
+    {% assign nav_suggest = 'Sugerencias' %}
+    {% assign nav_bug = 'Reportar error' %}
+  {% when 'pt' %}
+    {% assign nav_home = 'Início' %}
+    {% assign nav_changelog = 'Histórico' %}
+    {% assign nav_manual = 'Manual' %}
+    {% assign nav_faq = 'FAQ' %}
+    {% assign nav_suggest = 'Sugestões' %}
+    {% assign nav_bug = 'Reportar bug' %}
+  {% else %}
+    {% assign nav_home = '홈' %}
+    {% assign nav_changelog = '버전 로그' %}
+    {% assign nav_manual = '매뉴얼' %}
+    {% assign nav_faq = '자주하는 질문' %}
+    {% assign nav_suggest = '건의하기' %}
+    {% assign nav_bug = '버그 리포트' %}
+{% endcase %}
+
+{% if current_lang == 'ko' %}
+  {% assign lang_suffix = '' %}
+{% else %}
+  {% assign lang_suffix = current_lang | prepend: '/' %}
+{% endif %}
+
 <div id="inventory-root">
   <div class="inventory-frame">
     <!-- Navigation -->
     <nav class="neumorphic-nav">
-      <a href="/inventory/" class="nav-link">홈</a>
-      <a href="/inventory/changelog/" class="nav-link">버전 로그</a>
-      <a href="/inventory/manual/" class="nav-link">매뉴얼</a>
-      <a href="/inventory/faq/" class="nav-link">자주하는 질문</a>
-      <a href="/inventory/suggest/" class="nav-link">건의하기</a>
-      <a href="/inventory/bug-report/" class="nav-link">버그 리포트</a>
+      <a href="/inventory{{ lang_suffix }}/" class="nav-link">{{ nav_home }}</a>
+      <a href="/inventory/changelog{{ lang_suffix }}/" class="nav-link">{{ nav_changelog }}</a>
+      <a href="/inventory/manual{{ lang_suffix }}/" class="nav-link">{{ nav_manual }}</a>
+      <a href="/inventory/faq{{ lang_suffix }}/" class="nav-link">{{ nav_faq }}</a>
+      <a href="/inventory/suggest{{ lang_suffix }}/" class="nav-link">{{ nav_suggest }}</a>
+      <a href="/inventory/bug-report{{ lang_suffix }}/" class="nav-link">{{ nav_bug }}</a>
     </nav>
 
     <!-- Content -->

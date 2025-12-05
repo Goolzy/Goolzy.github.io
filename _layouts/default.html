@@ -13,8 +13,9 @@
     {% include skip-links.html %}
 
     {% assign no_sidebar = page.hide_sidebar | default: layout.hide_sidebar %}
-    {% unless no_sidebar %}
-      <div class="sidebar-toggle-wrapper">
+    <div class="top-right-controls">
+      {% include language-selector.html %}
+      {% unless no_sidebar %}
         {% if site.search %}
           <button class="search-toggle" type="button">
             <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
@@ -30,8 +31,8 @@
             <span class="navicon"></span>
           </span>
         </button>
-      </div>
-    {% endunless %}
+      {% endunless %}
+    </div>
 
     {% unless no_sidebar %}
       <div id="sidebar" class="sidebar">

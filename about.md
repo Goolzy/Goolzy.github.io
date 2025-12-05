@@ -3,6 +3,15 @@ layout: page
 title: About
 permalink: /about/
 description: 우리는 즐거움을 연구합니다.
+lang: ko
+translations:
+  ko: /about/
+  en: /about/en/
+  ja: /about/ja/
+  de: /about/de/
+  fr: /about/fr/
+  es: /about/es/
+  pt: /about/pt/
 ---
 
 ## 우리는 즐거움을 연구합니다.

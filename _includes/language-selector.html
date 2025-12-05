@@ -1,0 +1,198 @@
+{% comment %}
+  Language Selector Component
+  - Displays current language with dropdown for switching
+  - Uses page.lang and page.translations for linking
+{% endcomment %}
+
+{% assign current_lang = page.lang | default: 'ko' %}
+{% assign langs = "ko,en,ja,de,fr,es,pt" | split: "," %}
+
+{% assign lang_names = "한국어,English,日本語,Deutsch,Français,Español,Português" | split: "," %}
+{% assign lang_flags = "🇰🇷,🇺🇸,🇯🇵,🇩🇪,🇫🇷,🇪🇸,🇧🇷" | split: "," %}
+
+<div class="language-selector">
+  <button class="lang-toggle" aria-label="Select language" aria-expanded="false">
+    {% for lang in langs %}
+      {% if lang == current_lang %}
+        <span class="current-lang">{{ lang_flags[forloop.index0] }} {{ lang_names[forloop.index0] }}</span>
+      {% endif %}
+    {% endfor %}
+    <svg class="lang-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M3 5l3 3 3-3"/>
+    </svg>
+  </button>
+
+  <ul class="lang-dropdown" role="menu">
+    {% for lang in langs %}
+      {% assign is_current = false %}
+      {% if lang == current_lang %}
+        {% assign is_current = true %}
+      {% endif %}
+
+      {% comment %} Determine the URL for this language {% endcomment %}
+      {% assign lang_url = "" %}
+      {% if page.translations[lang] %}
+        {% assign lang_url = page.translations[lang] %}
+      {% elsif lang == 'ko' %}
+        {% comment %} Korean is the default, use base path {% endcomment %}
+        {% assign base_path = page.url | remove: "/en/" | remove: "/ja/" | remove: "/de/" | remove: "/fr/" | remove: "/es/" | remove: "/pt/" %}
+        {% assign lang_url = base_path %}
+      {% else %}
+        {% comment %} Append language code to path {% endcomment %}
+        {% assign base_path = page.url | remove: "/en/" | remove: "/ja/" | remove: "/de/" | remove: "/fr/" | remove: "/es/" | remove: "/pt/" %}
+        {% if base_path == "/" %}
+          {% assign lang_url = "/" | append: lang | append: "/" %}
+        {% else %}
+          {% assign clean_path = base_path | remove_first: "/" %}
+          {% if clean_path contains "/" %}
+            {% assign path_parts = clean_path | split: "/" %}
+            {% assign lang_url = "/" | append: path_parts[0] | append: "/" | append: lang | append: "/" %}
+            {% for i in (1..10) %}
+              {% if path_parts[i] %}
+                {% assign lang_url = lang_url | append: path_parts[i] | append: "/" %}
+              {% endif %}
+            {% endfor %}
+          {% else %}
+            {% assign lang_url = "/" | append: clean_path | append: lang | append: "/" %}
+          {% endif %}
+        {% endif %}
+      {% endif %}
+
+      <li role="menuitem">
+        <a href="{{ lang_url | relative_url }}"
+           class="lang-option{% if is_current %} active{% endif %}"
+           {% if is_current %}aria-current="true"{% endif %}
+           hreflang="{{ lang }}">
+          <span class="lang-flag">{{ lang_flags[forloop.index0] }}</span>
+          <span class="lang-name">{{ lang_names[forloop.index0] }}</span>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<style>
+.language-selector {
+  position: relative;
+  z-index: 1000;
+}
+
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: rgba(168, 85, 247, 0.15);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.lang-toggle:hover {
+  background: rgba(168, 85, 247, 0.25);
+  border-color: rgba(168, 85, 247, 0.5);
+}
+
+.lang-arrow {
+  transition: transform 0.2s ease;
+}
+
+.language-selector.open .lang-arrow {
+  transform: rotate(180deg);
+}
+
+.lang-dropdown {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  min-width: 160px;
+  padding: 0.5rem 0;
+  margin: 0;
+  list-style: none;
+  background: rgba(20, 10, 40, 0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.2s ease;
+}
+
+.language-selector.open .lang-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.lang-option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.625rem 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.lang-option:hover {
+  background: rgba(168, 85, 247, 0.2);
+  color: #fff;
+}
+
+.lang-option.active {
+  background: rgba(168, 85, 247, 0.3);
+  color: #a855f7;
+}
+
+.lang-flag {
+  font-size: 1.1rem;
+}
+
+.lang-name {
+  font-size: 0.875rem;
+}
+
+@media (max-width: 600px) {
+  .lang-toggle .current-lang {
+    display: none;
+  }
+  .lang-toggle::before {
+    content: "🌐";
+    font-size: 1.1rem;
+  }
+}
+</style>
+
+<script>
+(function() {
+  var selector = document.querySelector('.language-selector');
+  var toggle = document.querySelector('.lang-toggle');
+
+  if (!selector || !toggle) return;
+
+  toggle.addEventListener('click', function(e) {
+    e.stopPropagation();
+    selector.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', selector.classList.contains('open'));
+  });
+
+  document.addEventListener('click', function(e) {
+    if (!selector.contains(e.target)) {
+      selector.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      selector.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+})();
+</script>

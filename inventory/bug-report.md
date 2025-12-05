@@ -2,6 +2,15 @@
 layout: inventory
 title: 버그 리포트
 permalink: /inventory/bug-report/
+lang: ko
+translations:
+  ko: /inventory/bug-report/
+  en: /inventory/bug-report/en/
+  ja: /inventory/bug-report/ja/
+  de: /inventory/bug-report/de/
+  fr: /inventory/bug-report/fr/
+  es: /inventory/bug-report/es/
+  pt: /inventory/bug-report/pt/
 ---
 
 ## 버그 리포트

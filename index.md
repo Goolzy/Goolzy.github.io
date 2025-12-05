@@ -3,6 +3,15 @@ layout: design-chat
 title: "Inventory - Coming Soon"
 permalink: /
 description: Inventory 앱 출시 예정 - 커뮤니티 채팅
+lang: ko
+translations:
+  ko: /
+  en: /en/
+  ja: /ja/
+  de: /de/
+  fr: /fr/
+  es: /es/
+  pt: /pt/
 ---
 
 <div class="launch-page">

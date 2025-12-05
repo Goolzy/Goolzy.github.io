@@ -2,6 +2,15 @@
 layout: inventory
 title: 자주하는 질문
 permalink: /inventory/faq/
+lang: ko
+translations:
+  ko: /inventory/faq/
+  en: /inventory/faq/en/
+  ja: /inventory/faq/ja/
+  de: /inventory/faq/de/
+  fr: /inventory/faq/fr/
+  es: /inventory/faq/es/
+  pt: /inventory/faq/pt/
 ---
 
 ## ❓ 자주하는 질문

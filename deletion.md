@@ -3,6 +3,15 @@ layout: inventory-deletion
 title: 회원 탈퇴
 permalink: /deletion/
 description: Goolzy 계정 삭제
+lang: ko
+translations:
+  ko: /deletion/
+  en: /deletion/en/
+  ja: /deletion/ja/
+  de: /deletion/de/
+  fr: /deletion/fr/
+  es: /deletion/es/
+  pt: /deletion/pt/
 ---
 
 <div class="deletion-container">

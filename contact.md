@@ -3,6 +3,15 @@ layout: page
 title: Contract
 permalink: /contact/
 description: 파트너십·계약·납품 관련 문의를 받습니다.
+lang: ko
+translations:
+  ko: /contact/
+  en: /contact/en/
+  ja: /contact/ja/
+  de: /contact/de/
+  fr: /contact/fr/
+  es: /contact/es/
+  pt: /contact/pt/
 ---
 
 # Contract

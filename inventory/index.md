@@ -3,6 +3,15 @@ layout: inventory
 title: Inventory
 permalink: /inventory/
 description: Goolzy Inventory - 디지털 아이템 관리 앱
+lang: ko
+translations:
+  ko: /inventory/
+  en: /inventory/en/
+  ja: /inventory/ja/
+  de: /inventory/de/
+  fr: /inventory/fr/
+  es: /inventory/es/
+  pt: /inventory/pt/
 ---
 
 ## 🎯 Inventory
