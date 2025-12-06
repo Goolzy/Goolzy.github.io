@@ -170,6 +170,36 @@ body::before {
   cursor: not-allowed;
 }
 
+.platform-icon.beta {
+  opacity: 0.6;
+  cursor: pointer;
+  border-color: rgba(168, 85, 247, 0.4);
+  animation: betaPulse 2s ease-in-out infinite;
+}
+
+.platform-icon.beta:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.3);
+}
+
+@keyframes betaPulse {
+  0%, 100% { border-color: rgba(168, 85, 247, 0.4); }
+  50% { border-color: rgba(20, 184, 166, 0.6); }
+}
+
+.platform-icon.active {
+  opacity: 1;
+  cursor: pointer;
+  border-color: var(--teal-bright);
+  box-shadow: 0 0 20px rgba(20, 184, 166, 0.4);
+}
+
+.platform-icon.active:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 24px rgba(20, 184, 166, 0.5);
+}
+
 .platform-icon svg {
   width: 32px;
   height: 32px;
