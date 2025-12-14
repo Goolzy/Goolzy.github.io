@@ -65,6 +65,45 @@ Se não definido, será visível imediatamente e permanente.
 
 ---
 
+### 🔒 Bloqueio de Documento
+
+Você pode proteger itens de documento definindo uma senha.
+
+#### O que é o Bloqueio de Documento?
+
+Um documento bloqueado só pode ser visualizado após inserir a senha correta.
+
+| Status | Descrição |
+|--------|-----------|
+| **Desbloqueado** | Qualquer pessoa pode ver o conteúdo |
+| **Bloqueado** | Conteúdo visível apenas com senha |
+
+#### Como Bloquear
+
+1. Selecione os **documentos** que deseja bloquear na tela inicial (seleção múltipla possível)
+2. Selecione **"Bloquear Itens"** no menu inferior
+3. Digite uma senha numérica (até 16 dígitos)
+4. Digite a mesma senha novamente para confirmar
+5. Uma vez bloqueados, os itens exibirão um **ícone de cadeado** e efeito de **escala de cinza**
+
+#### Como Desbloquear
+
+1. Toque em um documento bloqueado para entrar na tela de detalhes
+2. Uma caixa de diálogo para inserir a senha aparecerá
+3. Digite a senha correta para desbloquear
+4. Uma vez desbloqueado, o bloqueio é removido permanentemente (para bloquear novamente, defina uma nova senha)
+
+> ⚠️ **Aviso**: Se você esquecer sua senha, ela não pode ser recuperada. Documentos bloqueados só podem ser **excluídos**.
+
+#### Recursos do Bloqueio
+
+- Senhas de bloqueio são **armazenadas na nuvem**
+- O status de bloqueio é mantido mesmo ao transferir itens para outras pessoas
+- Documentos bloqueados não aparecem nos resultados de pesquisa
+- Itens bloqueados ainda podem ser excluídos
+
+---
+
 ### 🏷️ Sistema de Emblema
 
 Um **Emblema** é uma identidade única que você pode usar dentro do aplicativo.

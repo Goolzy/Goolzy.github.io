@@ -19,6 +19,17 @@ Sehen Sie sich den Update-Verlauf der Inventory-App an.
 
 ---
 
+### 🔒 v1.0.1 <small style="color:#6b7280;">2025-01</small>
+
+#### 🔒 Dokumentsperre-Funktion
+- Numerisches Passwort für Dokumente festlegen (bis zu 16 Ziffern)
+- Gesperrte Dokumente zeigen Graustufen + Schloss-Symbol
+- Mit korrektem Passwort entsperren (einmalig)
+- Sperrstatus bleibt nach Gegenstandsübertragung erhalten
+- Gesperrte Dokumente werden aus Suchergebnissen ausgeschlossen
+
+---
+
 ### 🎉 v1.0.0 <small style="color:#6b7280;">2025-01</small>
 
 **Erste offizielle Veröffentlichung**

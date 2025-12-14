@@ -19,6 +19,17 @@ Consultez l'historique des mises à jour de l'application Inventory.
 
 ---
 
+### 🔒 v1.0.1 <small style="color:#6b7280;">2025-01</small>
+
+#### 🔒 Fonction de Verrouillage de Document
+- Définir un mot de passe numérique sur les documents (jusqu'à 16 chiffres)
+- Les documents verrouillés affichent niveaux de gris + icône de cadenas
+- Déverrouiller avec le mot de passe correct (usage unique)
+- L'état de verrouillage persiste après le transfert d'objet
+- Les documents verrouillés sont exclus des résultats de recherche
+
+---
+
 ### 🎉 v1.0.0 <small style="color:#6b7280;">2025-01</small>
 
 **Première version officielle**

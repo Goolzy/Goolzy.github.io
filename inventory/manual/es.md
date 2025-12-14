@@ -65,6 +65,45 @@ Si no se establece, será visible inmediatamente y permanente.
 
 ---
 
+### 🔒 Bloqueo de Documento
+
+Puedes proteger los documentos estableciendo una contraseña.
+
+#### ¿Qué es el Bloqueo de Documento?
+
+Un documento bloqueado solo puede verse después de introducir la contraseña correcta.
+
+| Estado | Descripción |
+|--------|-------------|
+| **Desbloqueado** | Cualquiera puede ver el contenido |
+| **Bloqueado** | Contenido visible solo con contraseña |
+
+#### Cómo Bloquear
+
+1. Selecciona los **documentos** que quieres bloquear en la pantalla de inicio (selección múltiple posible)
+2. Selecciona **"Bloquear Objetos"** desde el menú inferior
+3. Introduce una contraseña numérica (hasta 16 dígitos)
+4. Introduce la misma contraseña de nuevo para confirmar
+5. Una vez bloqueados, los objetos mostrarán un **icono de candado** y un efecto de **escala de grises**
+
+#### Cómo Desbloquear
+
+1. Toca un documento bloqueado para entrar a la pantalla de detalles
+2. Aparecerá un diálogo para introducir la contraseña
+3. Introduce la contraseña correcta para desbloquear
+4. Una vez desbloqueado, el bloqueo se elimina permanentemente (para bloquear de nuevo, establece una nueva contraseña)
+
+> ⚠️ **Advertencia**: Si olvidas tu contraseña, no se puede recuperar. Los documentos bloqueados solo pueden ser **eliminados**.
+
+#### Características del Bloqueo
+
+- Las contraseñas de bloqueo se **almacenan en la nube**
+- El estado de bloqueo se mantiene incluso al transferir objetos a otras personas
+- Los documentos bloqueados no aparecen en los resultados de búsqueda
+- Los objetos bloqueados aún pueden ser eliminados
+
+---
+
 ### 🏷️ Sistema de Insignias
 
 Una **Insignia** es una identidad única que puedes usar dentro de la aplicación.

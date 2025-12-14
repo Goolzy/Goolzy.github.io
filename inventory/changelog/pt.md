@@ -19,6 +19,17 @@ Confira o histórico de atualizações do aplicativo Inventory.
 
 ---
 
+### 🔒 v1.0.1 <small style="color:#6b7280;">2025-01</small>
+
+#### 🔒 Função de Bloqueio de Documento
+- Definir senha numérica em documentos (até 16 dígitos)
+- Documentos bloqueados exibem escala de cinza + ícone de cadeado
+- Desbloquear com senha correta (uso único)
+- O estado de bloqueio persiste após transferência de item
+- Documentos bloqueados são excluídos dos resultados de busca
+
+---
+
 ### 🎉 v1.0.0 <small style="color:#6b7280;">2025-01</small>
 
 **Primeira versão oficial**

@@ -65,6 +65,45 @@ Si non défini, il sera immédiatement visible et permanent.
 
 ---
 
+### 🔒 Verrouillage de Document
+
+Vous pouvez protéger les documents en définissant un mot de passe.
+
+#### Qu'est-ce que le Verrouillage de Document ?
+
+Un document verrouillé ne peut être consulté qu'après avoir saisi le mot de passe correct.
+
+| Statut | Description |
+|--------|-------------|
+| **Déverrouillé** | Tout le monde peut voir le contenu |
+| **Verrouillé** | Contenu visible uniquement avec mot de passe |
+
+#### Comment Verrouiller
+
+1. Sélectionnez les **documents** que vous souhaitez verrouiller sur l'écran d'accueil (sélection multiple possible)
+2. Sélectionnez **« Verrouiller les objets »** dans le menu inférieur
+3. Entrez un mot de passe numérique (jusqu'à 16 chiffres)
+4. Entrez le même mot de passe à nouveau pour confirmer
+5. Une fois verrouillés, les objets afficheront une **icône de cadenas** et un effet de **niveaux de gris**
+
+#### Comment Déverrouiller
+
+1. Appuyez sur un document verrouillé pour accéder à l'écran de détail
+2. Une boîte de dialogue de saisie de mot de passe apparaîtra
+3. Entrez le mot de passe correct pour déverrouiller
+4. Une fois déverrouillé, le verrouillage est définitivement supprimé (pour verrouiller à nouveau, définir un nouveau mot de passe)
+
+> ⚠️ **Avertissement** : Si vous oubliez votre mot de passe, il ne peut pas être récupéré. Les documents verrouillés peuvent uniquement être **supprimés**.
+
+#### Caractéristiques du Verrouillage
+
+- Les mots de passe sont **stockés dans le cloud**
+- L'état de verrouillage est maintenu même lors du transfert d'objets à d'autres personnes
+- Les documents verrouillés n'apparaissent pas dans les résultats de recherche
+- Les objets verrouillés peuvent toujours être supprimés
+
+---
+
 ### 🏷️ Système de Badge
 
 Un **Badge** est une identité unique que vous pouvez utiliser dans l'application.

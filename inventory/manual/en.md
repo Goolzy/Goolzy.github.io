@@ -65,6 +65,45 @@ If not set, it will be immediately visible and permanent.
 
 ---
 
+### 🔒 Document Lock
+
+You can protect document items by setting a password.
+
+#### What is Document Lock?
+
+A locked document can only be viewed after entering the correct password.
+
+| Status | Description |
+|--------|-------------|
+| **Unlocked** | Anyone can view the content |
+| **Locked** | Content viewable only with password |
+
+#### How to Lock
+
+1. Select the **documents** you want to lock on the home screen (multiple selection possible)
+2. Select **"Lock Items"** from the bottom menu
+3. Enter a numeric password (up to 16 digits)
+4. Enter the same password again to confirm
+5. Once locked, items will display a **lock icon** and **grayscale** effect
+
+#### How to Unlock
+
+1. Tap a locked document to enter the detail screen
+2. A password input dialog will appear
+3. Enter the correct password to unlock
+4. Once unlocked, the lock is permanently removed (lock again by setting a new password)
+
+> ⚠️ **Warning**: If you forget your password, it cannot be recovered. Locked documents can only be **deleted**.
+
+#### Lock Features
+
+- Lock passwords are **stored in the cloud**
+- Lock status is maintained even when transferring items to others
+- Locked documents do not appear in search results
+- Locked items can still be deleted
+
+---
+
 ### 🏷️ Badge System
 
 A **Badge** is a unique identity you can use within the app.

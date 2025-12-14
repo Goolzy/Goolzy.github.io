@@ -204,6 +204,50 @@ translations:
 
 ---
 
+### ⚡ 빠른 입력 (Quick Input)
+
+<details>
+<summary><strong>Q. Quick Input은 무엇인가요?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Quick Input은 로그 작성 시 특수 정보를 쉽게 입력할 수 있는 기능입니다.
+<br><br>
+로그 입력창 옆의 <strong>+</strong> 버튼을 누르면 다음 유형을 선택할 수 있습니다:
+<ul>
+<li><strong>키워드</strong>: 일반 키:값 형식</li>
+<li><strong>날짜 알람</strong>: 날짜 카드 (D-Day 자동 계산)</li>
+<li><strong>전화번호</strong>: 국가별 자동 포맷팅</li>
+<li><strong>위치</strong>: 주소/장소 정보</li>
+<li><strong>금액</strong>: 통화와 금액</li>
+</ul>
+</div>
+</details>
+
+<details>
+<summary><strong>Q. 특수 카드를 길게 누르면 무엇이 되나요?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 카드 유형에 따라 다른 동작이 실행됩니다:
+<ul>
+<li><strong>📅 날짜</strong>: 알람 설정/해제</li>
+<li><strong>📞 전화번호</strong>: 모바일에서 바로 전화, 데스크톱에서 복사</li>
+<li><strong>📍 위치</strong>: 모바일에서 지도 앱 열기, 데스크톱에서 복사</li>
+<li><strong>💰 금액</strong>: 클립보드 복사</li>
+</ul>
+</div>
+</details>
+
+<details>
+<summary><strong>Q. 날짜에 알람을 설정하려면?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 날짜 카드를 <strong>길게 누르면</strong> 알람 설정 확인 다이얼로그가 나타납니다.
+<br><br>
+알람이 설정되면 카드 색상이 변경되고 🔔 아이콘이 표시됩니다. 다시 길게 누르면 알람을 해제할 수 있습니다.
+<br><br>
+💡 날짜 카드에는 자동으로 D-Day가 계산됩니다 (예: D-5, D-Day, D+3)
+</div>
+</details>
+
+---
+
 ### 📝 로그 기능
 
 <details>

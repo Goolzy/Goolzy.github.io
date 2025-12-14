@@ -65,6 +65,45 @@ Wenn nicht festgelegt, ist es sofort sichtbar und dauerhaft.
 
 ---
 
+### 🔒 Dokumentsperre
+
+Sie können Dokumentelemente durch Festlegen eines Passworts schützen.
+
+#### Was ist eine Dokumentsperre?
+
+Ein gesperrtes Dokument kann nur nach Eingabe des korrekten Passworts angezeigt werden.
+
+| Status | Beschreibung |
+|--------|--------------|
+| **Entsperrt** | Jeder kann den Inhalt sehen |
+| **Gesperrt** | Inhalt nur mit Passwort einsehbar |
+
+#### So sperren Sie
+
+1. Wählen Sie auf dem Startbildschirm die **Dokumente** aus, die Sie sperren möchten (Mehrfachauswahl möglich)
+2. Wählen Sie **„Elemente sperren"** aus dem unteren Menü
+3. Geben Sie ein numerisches Passwort ein (bis zu 16 Ziffern)
+4. Geben Sie das gleiche Passwort zur Bestätigung erneut ein
+5. Nach dem Sperren zeigen die Elemente ein **Schloss-Symbol** und einen **Graustufen**-Effekt
+
+#### So entsperren Sie
+
+1. Tippen Sie auf ein gesperrtes Dokument, um zum Detailbildschirm zu gelangen
+2. Ein Passwort-Eingabedialog erscheint
+3. Geben Sie das korrekte Passwort zum Entsperren ein
+4. Einmal entsperrt, wird die Sperre dauerhaft entfernt (zum erneuten Sperren neues Passwort festlegen)
+
+> ⚠️ **Warnung**: Wenn Sie Ihr Passwort vergessen, kann es nicht wiederhergestellt werden. Gesperrte Dokumente können nur **gelöscht** werden.
+
+#### Sperr-Funktionen
+
+- Sperrpasswörter werden **in der Cloud gespeichert**
+- Der Sperrstatus bleibt auch bei der Übertragung von Elementen an andere erhalten
+- Gesperrte Dokumente erscheinen nicht in Suchergebnissen
+- Gesperrte Elemente können weiterhin gelöscht werden
+
+---
+
 ### 🏷️ Abzeichen-System
 
 Ein **Abzeichen** ist eine einzigartige Identität, die Sie in der App verwenden können.

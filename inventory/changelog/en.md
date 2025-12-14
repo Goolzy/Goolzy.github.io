@@ -19,6 +19,17 @@ Check out the update history for the Inventory app.
 
 ---
 
+### 🔒 v1.0.1 <small style="color:#6b7280;">2025-01</small>
+
+#### 🔒 Document Lock Feature
+- Set numeric password on documents (up to 16 digits)
+- Locked documents display grayscale + lock icon
+- Unlock with correct password (one-time)
+- Lock status persists after item transfer
+- Locked documents excluded from search results
+
+---
+
 ### 🎉 v1.0.0 <small style="color:#6b7280;">2025-01</small>
 
 **First Official Release**
