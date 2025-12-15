@@ -27,7 +27,7 @@ translations:
         <span class="title-highlight">Inventory</span>
       </h1>
       <p class="launch-date">
-        🤖 25년 12월 15일 구글 플레이 정식출시!<br>
+        🤖 25년 12월 15일 Android 정식 출시!<br>
         🎉 25년 12월 23일 macOS, iOS 정식출시!
       </p>
 
