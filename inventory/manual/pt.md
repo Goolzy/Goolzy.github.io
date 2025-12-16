@@ -215,6 +215,16 @@ Quando um item é transferido, um registro de transferência é automaticamente 
 - **Carimbo original excluído**: Não é possível adicionar registros compartilhados (somente leitura)
 - **Data de expiração passada**: Não é possível adicionar registros compartilhados (somente leitura)
 
+#### 🔔 Indicador de não lido
+
+Quando novos comentários são adicionados a um registro compartilhado, a borda do item **pulsa** na visualização do inventário.
+
+- A pulsação começa imediatamente quando outro usuário adiciona um comentário
+- A pulsação para quando você abre e visualiza o documento
+- O status de leitura é salvo na nuvem e sincronizado em todos os dispositivos
+
+> 💡 **Dica**: Verifique os itens que pulsam para não perder novos comentários!
+
 ---
 
 ### 🎨 Sistema de Tinta
@@ -363,6 +373,24 @@ Você pode agrupar itens com partições quando tiver muitos.
 - Partições são **salvas apenas no dispositivo**
 - A estrutura de partição não é visível em outros dispositivos
 - Os itens em si são armazenados na nuvem e visíveis em todos os dispositivos
+
+#### Recolher/Expandir
+
+Use o botão de seta (▼/▲) no lado direito do cabeçalho da partição para recolher ou expandir.
+
+- O estado recolhido é mantido após reiniciar o aplicativo
+- Todas as partições são automaticamente expandidas durante a busca
+- Você pode arrastar itens para partições recolhidas
+
+#### Selecionar tudo na Partição
+
+Toque no cabeçalho da partição para selecionar/desmarcar todos os itens nessa partição.
+
+| Indicador | Significado |
+|-----------|-------------|
+| ○ (Círculo vazio) | Nenhum selecionado |
+| ◐ (Semicírculo) | Alguns selecionados |
+| ● (Círculo cheio) | Todos selecionados |
 
 ---
 

@@ -19,6 +19,25 @@ Sehen Sie sich den Update-Verlauf der Inventory-App an.
 
 ---
 
+### ✨ v1.0.2 <small style="color:#6b7280;">2025-01</small>
+
+#### 🔔 Geteiltes Protokoll Ungelesen-Anzeige
+Wenn neue Kommentare zu geteilten Protokollen hinzugefügt werden, **pulsiert** der Rahmen des Elements.
+- Ungelesene geteilte Protokolle im Inventar leicht erkennen
+- Pulsieren stoppt, wenn Sie das Dokument öffnen
+- Lesestatus wird auf allen Geräten synchronisiert
+
+#### 📂 Partitionsverbesserungen
+- **Einklappen/Ausklappen**: Partitionen mit Pfeiltasten umschalten (▼/▲)
+- **Alle auswählen**: Partitionsheader antippen, um alle Elemente auszuwählen/abzuwählen
+- Auswahlstatusanzeigen (○/◐/●)
+- Drag & Drop zu eingeklappten Partitionen
+
+#### 🐛 Fehlerbehebungen
+- Push-Benachrichtigungsfehler auf bestimmten Plattformen behoben
+
+---
+
 ### 🔒 v1.0.1 <small style="color:#6b7280;">2025-01</small>
 
 #### 🔒 Dokumentsperre-Funktion

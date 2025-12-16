@@ -19,6 +19,25 @@ Consultez l'historique des mises à jour de l'application Inventory.
 
 ---
 
+### ✨ v1.0.2 <small style="color:#6b7280;">2025-01</small>
+
+#### 🔔 Indicateur de Journal Partagé Non Lu
+Lorsque de nouveaux commentaires sont ajoutés aux journaux partagés, la bordure de l'élément **pulse**.
+- Repérez facilement les journaux partagés non lus dans votre inventaire
+- La pulsation s'arrête lorsque vous ouvrez le document
+- L'état de lecture se synchronise sur tous les appareils
+
+#### 📂 Améliorations des Partitions
+- **Réduire/Développer**: Basculer les partitions avec les boutons fléchés (▼/▲)
+- **Tout sélectionner**: Appuyer sur l'en-tête de partition pour sélectionner/désélectionner tous les éléments
+- Indicateurs d'état de sélection (○/◐/●)
+- Glisser-déposer vers les partitions réduites
+
+#### 🐛 Corrections de bugs
+- Correction des problèmes de notification push sur certaines plateformes
+
+---
+
 ### 🔒 v1.0.1 <small style="color:#6b7280;">2025-01</small>
 
 #### 🔒 Fonction de Verrouillage de Document

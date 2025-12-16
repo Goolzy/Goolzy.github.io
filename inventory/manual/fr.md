@@ -215,6 +215,16 @@ Lorsqu'un objet est transféré, un journal de transfert est automatiquement enr
 - **Tampon original supprimé** : Impossible d'ajouter des journaux partagés (lecture seule)
 - **Date d'expiration dépassée** : Impossible d'ajouter des journaux partagés (lecture seule)
 
+#### 🔔 Indicateur non lu
+
+Lorsque de nouveaux commentaires sont ajoutés à un journal partagé, la bordure de l'élément **pulse** dans la vue inventaire.
+
+- La pulsation démarre immédiatement lorsqu'un autre utilisateur ajoute un commentaire
+- La pulsation s'arrête lorsque vous ouvrez et consultez le document
+- L'état de lecture est sauvegardé dans le cloud et synchronisé sur tous les appareils
+
+> 💡 **Astuce** : Vérifiez les éléments qui pulsent pour ne jamais manquer de nouveaux commentaires !
+
 ---
 
 ### 🎨 Système d'Encre
@@ -363,6 +373,24 @@ Vous pouvez grouper les objets avec des partitions quand vous en avez beaucoup.
 - Les partitions sont **enregistrées uniquement sur l'appareil**
 - La structure des partitions n'est pas visible sur les autres appareils
 - Les objets eux-mêmes sont stockés dans le cloud et visibles sur tous les appareils
+
+#### Réduire/Développer
+
+Utilisez le bouton fléché (▼/▲) à droite de l'en-tête de partition pour réduire ou développer.
+
+- L'état réduit est conservé après le redémarrage de l'application
+- Toutes les partitions sont automatiquement développées pendant la recherche
+- Vous pouvez glisser des éléments vers des partitions réduites
+
+#### Tout sélectionner dans la Partition
+
+Appuyez sur l'en-tête de partition pour sélectionner/désélectionner tous les éléments de cette partition.
+
+| Indicateur | Signification |
+|------------|---------------|
+| ○ (Cercle vide) | Aucun sélectionné |
+| ◐ (Demi-cercle) | Certains sélectionnés |
+| ● (Cercle plein) | Tous sélectionnés |
 
 ---
 

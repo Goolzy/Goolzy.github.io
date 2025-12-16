@@ -19,6 +19,25 @@ Consulta el historial de actualizaciones de la aplicación Inventory.
 
 ---
 
+### ✨ v1.0.2 <small style="color:#6b7280;">2025-01</small>
+
+#### 🔔 Indicador de Registro Compartido No Leído
+Cuando se agregan nuevos comentarios a los registros compartidos, el borde del elemento **pulsa**.
+- Identifica fácilmente los registros compartidos no leídos en tu inventario
+- La pulsación se detiene cuando abres el documento
+- El estado de lectura se sincroniza en todos los dispositivos
+
+#### 📂 Mejoras de Partición
+- **Contraer/Expandir**: Alternar particiones con botones de flecha (▼/▲)
+- **Seleccionar todo**: Toca el encabezado de partición para seleccionar/deseleccionar todos los elementos
+- Indicadores de estado de selección (○/◐/●)
+- Arrastrar y soltar a particiones contraídas
+
+#### 🐛 Corrección de errores
+- Corregidos problemas de notificación push en ciertas plataformas
+
+---
+
 ### 🔒 v1.0.1 <small style="color:#6b7280;">2025-01</small>
 
 #### 🔒 Función de Bloqueo de Documento

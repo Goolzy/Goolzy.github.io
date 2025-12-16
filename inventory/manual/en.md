@@ -215,6 +215,16 @@ When an item is transferred, a transfer log is automatically recorded:
 - **Original stamp deleted**: Cannot add shared logs (read-only)
 - **Expiry date passed**: Cannot add shared logs (read-only)
 
+#### 🔔 Unread Indicator
+
+When new comments are added to a shared log, the item border **pulses** in the inventory view.
+
+- Pulsing starts immediately when another user adds a comment
+- Pulsing stops when you open and view the document
+- Read status is saved to the cloud and synced across all devices
+
+> 💡 **Tip**: Check pulsing items to never miss new comments!
+
 ---
 
 ### 🎨 Ink System
@@ -363,6 +373,24 @@ You can group items with partitions when you have many items.
 - Partitions are **saved only on the device**
 - The partition structure is not visible on other devices
 - The items themselves are stored in the cloud and visible on all devices
+
+#### Collapse/Expand Partitions
+
+Use the arrow button (▼/▲) on the right side of the partition header to collapse or expand partitions.
+
+- Collapsed state is maintained after app restart
+- All partitions automatically expand during search
+- You can drag items to collapsed partitions
+
+#### Select All in Partition
+
+Tap the partition header to select/deselect all items in that partition.
+
+| Indicator | Meaning |
+|-----------|---------|
+| ○ (Empty circle) | None selected |
+| ◐ (Half circle) | Some selected |
+| ● (Filled circle) | All selected |
 
 ---
 

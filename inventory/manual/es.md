@@ -215,6 +215,16 @@ Cuando se transfiere un objeto, se registra automáticamente un registro de tran
 - **Sello original eliminado**: No se pueden agregar registros compartidos (solo lectura)
 - **Fecha de expiración pasada**: No se pueden agregar registros compartidos (solo lectura)
 
+#### 🔔 Indicador de no leído
+
+Cuando se agregan nuevos comentarios a un registro compartido, el borde del elemento **pulsa** en la vista de inventario.
+
+- La pulsación comienza inmediatamente cuando otro usuario agrega un comentario
+- La pulsación se detiene cuando abres y ves el documento
+- El estado de lectura se guarda en la nube y se sincroniza en todos los dispositivos
+
+> 💡 **Consejo**: ¡Revisa los elementos que pulsan para no perderte nuevos comentarios!
+
 ---
 
 ### 🎨 Sistema de Tinta
@@ -363,6 +373,24 @@ Puedes agrupar objetos con particiones cuando tienes muchos.
 - Las particiones se **guardan solo en el dispositivo**
 - La estructura de partición no es visible en otros dispositivos
 - Los objetos mismos se almacenan en la nube y son visibles en todos los dispositivos
+
+#### Contraer/Expandir
+
+Usa el botón de flecha (▼/▲) en el lado derecho del encabezado de partición para contraer o expandir.
+
+- El estado contraído se mantiene después de reiniciar la aplicación
+- Todas las particiones se expanden automáticamente durante la búsqueda
+- Puedes arrastrar elementos a particiones contraídas
+
+#### Seleccionar todo en Partición
+
+Toca el encabezado de partición para seleccionar/deseleccionar todos los elementos en esa partición.
+
+| Indicador | Significado |
+|-----------|-------------|
+| ○ (Círculo vacío) | Ninguno seleccionado |
+| ◐ (Semicírculo) | Algunos seleccionados |
+| ● (Círculo lleno) | Todos seleccionados |
 
 ---
 

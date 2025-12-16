@@ -215,6 +215,16 @@ Wenn ein Gegenstand übertragen wird, wird automatisch ein Übertragungsprotokol
 - **Original-Stempel gelöscht**: Keine geteilten Protokolle mehr hinzufügbar (nur lesen)
 - **Ablaufdatum überschritten**: Keine geteilten Protokolle mehr hinzufügbar (nur lesen)
 
+#### 🔔 Ungelesen-Anzeige
+
+Wenn neue Kommentare zu einem geteilten Protokoll hinzugefügt werden, **pulsiert** der Rahmen des Elements in der Inventaransicht.
+
+- Pulsieren beginnt sofort, wenn ein anderer Benutzer einen Kommentar hinzufügt
+- Pulsieren stoppt, wenn Sie das Dokument öffnen und anzeigen
+- Der Lesestatus wird in der Cloud gespeichert und über alle Geräte synchronisiert
+
+> 💡 **Tipp**: Überprüfen Sie pulsierende Elemente, um keine neuen Kommentare zu verpassen!
+
 ---
 
 ### 🎨 Tinten-System
@@ -363,6 +373,24 @@ Sie können Gegenstände mit Partitionen gruppieren, wenn Sie viele haben.
 - Partitionen werden **nur auf dem Gerät gespeichert**
 - Die Partitionsstruktur ist auf anderen Geräten nicht sichtbar
 - Die Gegenstände selbst werden in der Cloud gespeichert und sind auf allen Geräten sichtbar
+
+#### Einklappen/Ausklappen
+
+Verwenden Sie die Pfeiltaste (▼/▲) auf der rechten Seite des Partitionsheaders zum Ein- und Ausklappen.
+
+- Der eingeklappte Zustand bleibt nach dem App-Neustart erhalten
+- Alle Partitionen werden während der Suche automatisch ausgeklappt
+- Sie können Elemente in eingeklappte Partitionen ziehen
+
+#### Alle in Partition auswählen
+
+Tippen Sie auf den Partitionsheader, um alle Elemente in dieser Partition auszuwählen/abzuwählen.
+
+| Indikator | Bedeutung |
+|-----------|-----------|
+| ○ (Leerer Kreis) | Keine ausgewählt |
+| ◐ (Halbkreis) | Einige ausgewählt |
+| ● (Gefüllter Kreis) | Alle ausgewählt |
 
 ---
 

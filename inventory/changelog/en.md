@@ -19,6 +19,25 @@ Check out the update history for the Inventory app.
 
 ---
 
+### ✨ v1.0.2 <small style="color:#6b7280;">2025-01</small>
+
+#### 🔔 Shared Log Unread Indicator
+When new comments are added to shared logs, the item border **pulses**.
+- Easily spot unread shared logs in your inventory
+- Pulsing stops when you open the document
+- Read status syncs across all devices
+
+#### 📂 Partition Improvements
+- **Collapse/Expand**: Toggle partitions with arrow buttons (▼/▲)
+- **Select All**: Tap partition header to select/deselect all items
+- Selection status indicators (○/◐/●)
+- Drag and drop to collapsed partitions
+
+#### 🐛 Bug Fixes
+- Fixed push notification issues on certain platforms
+
+---
+
 ### 🔒 v1.0.1 <small style="color:#6b7280;">2025-01</small>
 
 #### 🔒 Document Lock Feature
