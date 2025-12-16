@@ -386,6 +386,29 @@ firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 const database = firebase.database();
 
+// 이메일 마스킹 함수
+// 로컬 파트만 마스킹 (도메인은 그대로)
+// 1-2자: 첫 1자, 3-4자: 첫 2자, 5자+: 첫 3자
+function maskEmail(email) {
+  if (!email || !email.includes('@')) return email;
+
+  const [local, domain] = email.split('@');
+  let masked;
+
+  if (local.length <= 2) {
+    // 1-2자: 첫 1자만 표시
+    masked = local[0] + '*'.repeat(local.length - 1 || 1);
+  } else if (local.length <= 4) {
+    // 3-4자: 첫 2자 표시
+    masked = local.slice(0, 2) + '*'.repeat(local.length - 2);
+  } else {
+    // 5자+: 첫 3자 표시
+    masked = local.slice(0, 3) + '*'.repeat(local.length - 3);
+  }
+
+  return masked + '@' + domain;
+}
+
 // 실시간 채팅
 (function() {
   const chatSection = document.querySelector('.chat-section');
@@ -484,7 +507,8 @@ const database = firebase.database();
       if (isGoolzyStaff) {
         senderDiv.classList.add('goolzy-staff');
       }
-      senderDiv.textContent = email;
+      // 프라이버시 보호: 이메일 마스킹 적용
+      senderDiv.textContent = maskEmail(email);
       messageDiv.appendChild(senderDiv);
     }
 
