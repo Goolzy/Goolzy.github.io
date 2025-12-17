@@ -133,11 +133,24 @@ Ejemplos: `MiMarca`, `JuanPérez`, `Empresa2025`
 - **Desequipada**: Tu email predeterminado se mostrará de nuevo
 - Aunque poseas múltiples insignias, solo una puede estar equipada a la vez
 
+#### Visualización en tarjeta de inventario
+
+Las insignias grabadas (estado activo) muestran una vista previa de la imagen grabada en la esquina superior derecha de la tarjeta de inventario.
+Esto permite identificar rápidamente a qué dominio pertenece la insignia.
+
 ---
 
 ### 🔖 Sistema de Sellos
 
 Un **Sello** es un objeto que te permite crear plantillas y compartirlas con otros.
+
+#### Visualización en tarjeta de inventario
+
+Los sellos con plantillas (estado activo) se muestran de manera especial en el inventario:
+- **Fondo**: Imagen de plantilla mostrada al 33% de opacidad
+- **Frente**: Imagen del sello grabado
+
+Esto permite identificar rápidamente de qué plantilla se trata.
 
 #### Crear una plantilla de Sello
 
@@ -288,6 +301,20 @@ Cuando hay un filtro establecido y seleccionas objetos, los **valores de palabra
 - Aparece una notificación cuando se completa la copia
 
 > 💡 **Ejemplo de uso**: Calcula rápidamente el precio total de varios objetos, o copia etiquetas relacionadas de una vez.
+
+---
+
+### 📱 Insignia del menú inferior
+
+Las insignias rojas en los iconos del menú inferior muestran el estado actual.
+
+| Menú | Significado de la insignia |
+|------|---------------------------|
+| **Enviar** | Número de objetos que se pueden enviar (transferibles entre los seleccionados) |
+| **Recibir** | Número de transacciones pendientes (requieren aceptar/devolver) |
+| **Acción** | Número de acciones disponibles con los objetos seleccionados |
+
+> 💡 Los números de las insignias se animan con un efecto de burbuja cuando cambian.
 
 ---
 

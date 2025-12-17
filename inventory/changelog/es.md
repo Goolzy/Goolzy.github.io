@@ -27,14 +27,35 @@ Cuando se agregan nuevos comentarios a los registros compartidos, el borde del e
 - La pulsación se detiene cuando abres el documento
 - El estado de lectura se sincroniza en todos los dispositivos
 
+#### 🔖 Guía de Uso del Sello
+Cuando seleccionas un sello grabado, los papeles disponibles **pulsan** para guiarte.
+- UX mejorada para duplicación de plantilla
+- Guía intuitiva al siguiente paso
+
 #### 📂 Mejoras de Partición
 - **Contraer/Expandir**: Alternar particiones con botones de flecha (▼/▲)
 - **Seleccionar todo**: Toca el encabezado de partición para seleccionar/deseleccionar todos los elementos
 - Indicadores de estado de selección (○/◐/●)
 - Arrastrar y soltar a particiones contraídas
 
+#### 🛒 Comodidad de la Tienda
+Proceso de pago simplificado para compras consecutivas del mismo artículo.
+- Diálogos de confirmación omitidos dentro de 10 minutos desde la última compra
+- Compra masiva más rápida
+
+#### 🎨 Mejoras de Interfaz
+- Legibilidad mejorada con nueva fuente de título
+- Las tarjetas de sello muestran vista previa de plantilla en el fondo (33% de opacidad)
+- Las tarjetas de insignia muestran vista previa de imagen grabada
+- El menú inferior muestra insignia de número de acciones disponibles
+- Ajuste de color del tema tinta negra (mejor legibilidad del texto)
+- Imágenes de productos optimizadas (tamaño reducido, carga más rápida)
+
 #### 🐛 Corrección de errores
-- Corregidos problemas de notificación push en ciertas plataformas
+- Corregido efecto de pulsación en comentarios propios
+- Corregido recorte de campo de entrada en navegación por gestos de Android
+- Corregida pantalla gris al contraer particiones
+- Mejorado manejo de permisos de notificación push en Android 13+
 
 ---
 

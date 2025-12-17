@@ -133,11 +133,24 @@ Exemples : `MaMarque`, `JeanDupont`, `Entreprise2025`
 - **Déséquipé** : Votre email par défaut sera à nouveau affiché
 - Même si vous possédez plusieurs badges, un seul peut être équipé à la fois
 
+#### Affichage de la carte d'inventaire
+
+Les badges gravés (état actif) affichent un aperçu de l'image gravée en haut à droite de la carte d'inventaire.
+Cela vous permet d'identifier rapidement à quel domaine appartient le badge.
+
 ---
 
 ### 🔖 Système de Tampon
 
 Un **Tampon** est un objet qui vous permet de créer des modèles et de les partager avec d'autres.
+
+#### Affichage de la carte d'inventaire
+
+Les tampons avec modèles (état actif) sont affichés de manière spéciale dans l'inventaire :
+- **Arrière-plan** : Image du modèle affichée à 33% d'opacité
+- **Premier plan** : Image du tampon gravé
+
+Cela vous permet d'identifier rapidement de quel modèle il s'agit.
 
 #### Créer un modèle de Tampon
 
@@ -288,6 +301,20 @@ Lorsqu'un filtre est défini et que vous sélectionnez des objets, les **valeurs
 - Une notification apparaît lorsque la copie est terminée
 
 > 💡 **Exemple d'utilisation** : Calculez rapidement le prix total de plusieurs objets, ou copiez les tags associés en une fois.
+
+---
+
+### 📱 Badge du menu inférieur
+
+Des badges rouges sur les icônes du menu inférieur indiquent l'état actuel.
+
+| Menu | Signification du badge |
+|------|------------------------|
+| **Envoyer** | Nombre d'objets pouvant être envoyés (transférables parmi les sélectionnés) |
+| **Recevoir** | Nombre de transactions en attente (nécessitant acceptation/retour) |
+| **Action** | Nombre d'actions disponibles avec les objets sélectionnés |
+
+> 💡 Les numéros des badges s'animent avec un effet de bulle lorsqu'ils changent.
 
 ---
 

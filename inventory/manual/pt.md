@@ -133,11 +133,24 @@ Exemplos: `MinhaMarca`, `JoãoSilva`, `Empresa2025`
 - **Desequipado**: Seu email padrão será exibido novamente
 - Mesmo possuindo múltiplos emblemas, apenas um pode ser equipado por vez
 
+#### Exibição no cartão de inventário
+
+Emblemas gravados (estado ativo) exibem uma prévia da imagem gravada no canto superior direito do cartão de inventário.
+Isso permite identificar rapidamente a qual domínio o emblema pertence.
+
 ---
 
 ### 🔖 Sistema de Carimbo
 
 Um **Carimbo** é um item que permite criar modelos e compartilhá-los com outros.
+
+#### Exibição no cartão de inventário
+
+Carimbos com modelos (estado ativo) são exibidos de forma especial no inventário:
+- **Fundo**: Imagem do modelo exibida com 33% de opacidade
+- **Frente**: Imagem do carimbo gravado
+
+Isso permite identificar rapidamente de qual modelo se trata.
 
 #### Criar um modelo de Carimbo
 
@@ -288,6 +301,20 @@ Quando um filtro está definido e você seleciona itens, os **valores de palavra
 - Uma notificação aparece quando a cópia é concluída
 
 > 💡 **Exemplo de uso**: Calcule rapidamente o preço total de vários itens, ou copie tags relacionadas de uma vez.
+
+---
+
+### 📱 Emblema do menu inferior
+
+Emblemas vermelhos nos ícones do menu inferior mostram o status atual.
+
+| Menu | Significado do emblema |
+|------|------------------------|
+| **Enviar** | Número de itens que podem ser enviados (transferíveis entre os selecionados) |
+| **Receber** | Número de transações pendentes (requerem aceitar/devolver) |
+| **Ação** | Número de ações disponíveis com os itens selecionados |
+
+> 💡 Os números dos emblemas animam com um efeito de bolha quando mudam.
 
 ---
 

@@ -27,14 +27,35 @@ When new comments are added to shared logs, the item border **pulses**.
 - Pulsing stops when you open the document
 - Read status syncs across all devices
 
+#### 🔖 Stamp Usage Guide
+When you select an engraved stamp, available papers **pulse** to guide you.
+- Improved UX for template duplication
+- Intuitive next-step guidance
+
 #### 📂 Partition Improvements
 - **Collapse/Expand**: Toggle partitions with arrow buttons (▼/▲)
 - **Select All**: Tap partition header to select/deselect all items
 - Selection status indicators (○/◐/●)
 - Drag and drop to collapsed partitions
 
+#### 🛒 Shop Convenience
+Streamlined checkout for consecutive purchases of the same item.
+- Skip confirmation dialogs within 10 minutes of last purchase
+- Faster bulk purchasing
+
+#### 🎨 UI Improvements
+- Improved readability with new headline font
+- Stamp cards show template preview in background (33% opacity)
+- Badge cards show engraved image preview
+- Bottom menu displays available action count badge
+- Black ink theme color adjustment (improved text readability)
+- Optimized product images (reduced size, faster loading)
+
 #### 🐛 Bug Fixes
-- Fixed push notification issues on certain platforms
+- Fixed pulsing effect on own comments
+- Fixed input field clipping on Android gesture navigation
+- Fixed gray screen when collapsing partitions
+- Improved Android 13+ push notification permission handling
 
 ---
 

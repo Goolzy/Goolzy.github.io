@@ -27,14 +27,35 @@ Lorsque de nouveaux commentaires sont ajoutés aux journaux partagés, la bordur
 - La pulsation s'arrête lorsque vous ouvrez le document
 - L'état de lecture se synchronise sur tous les appareils
 
+#### 🔖 Guide d'Utilisation du Tampon
+Lorsque vous sélectionnez un tampon gravé, les papiers disponibles **pulsent** pour vous guider.
+- UX améliorée pour la duplication de modèle
+- Guidage intuitif vers l'étape suivante
+
 #### 📂 Améliorations des Partitions
 - **Réduire/Développer**: Basculer les partitions avec les boutons fléchés (▼/▲)
 - **Tout sélectionner**: Appuyer sur l'en-tête de partition pour sélectionner/désélectionner tous les éléments
 - Indicateurs d'état de sélection (○/◐/●)
 - Glisser-déposer vers les partitions réduites
 
+#### 🛒 Commodité de la Boutique
+Processus de paiement simplifié pour les achats consécutifs du même article.
+- Dialogues de confirmation ignorés dans les 10 minutes suivant le dernier achat
+- Achat en gros plus rapide
+
+#### 🎨 Améliorations de l'Interface
+- Lisibilité améliorée avec nouvelle police de titre
+- Les cartes de tampon affichent l'aperçu du modèle en arrière-plan (33% d'opacité)
+- Les cartes de badge affichent l'aperçu de l'image gravée
+- Le menu inférieur affiche le badge du nombre d'actions disponibles
+- Ajustement des couleurs du thème encre noire (meilleure lisibilité du texte)
+- Images de produits optimisées (taille réduite, chargement plus rapide)
+
 #### 🐛 Corrections de bugs
-- Correction des problèmes de notification push sur certaines plateformes
+- Effet de pulsation sur ses propres commentaires corrigé
+- Coupure du champ de saisie sur la navigation gestuelle Android corrigée
+- Écran gris lors de la réduction des partitions corrigé
+- Gestion des permissions de notification push Android 13+ améliorée
 
 ---
 

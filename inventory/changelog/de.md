@@ -27,14 +27,35 @@ Wenn neue Kommentare zu geteilten Protokollen hinzugefügt werden, **pulsiert** 
 - Pulsieren stoppt, wenn Sie das Dokument öffnen
 - Lesestatus wird auf allen Geräten synchronisiert
 
+#### 🔖 Stempel-Nutzungsführung
+Wenn Sie einen gravierten Stempel auswählen, **pulsieren** verfügbare Papiere zur Führung.
+- Verbesserte UX für Vorlagen-Duplizierung
+- Intuitive Anleitung für nächsten Schritt
+
 #### 📂 Partitionsverbesserungen
 - **Einklappen/Ausklappen**: Partitionen mit Pfeiltasten umschalten (▼/▲)
 - **Alle auswählen**: Partitionsheader antippen, um alle Elemente auszuwählen/abzuwählen
 - Auswahlstatusanzeigen (○/◐/●)
 - Drag & Drop zu eingeklappten Partitionen
 
+#### 🛒 Shop-Komfort
+Vereinfachter Checkout bei aufeinanderfolgenden Käufen desselben Artikels.
+- Bestätigungsdialoge innerhalb von 10 Minuten nach dem letzten Kauf überspringen
+- Schnellerer Massenkauf
+
+#### 🎨 UI-Verbesserungen
+- Verbesserte Lesbarkeit mit neuer Überschriftenschrift
+- Stempelkarten zeigen Vorlagenvorschau im Hintergrund (33% Deckkraft)
+- Abzeichen-Karten zeigen gravierte Bildvorschau
+- Unteres Menü zeigt verfügbare Aktionsanzahl-Badge
+- Schwarze Tinte Themenfarbanpassung (verbesserte Textlesbarkeit)
+- Optimierte Produktbilder (reduzierte Größe, schnelleres Laden)
+
 #### 🐛 Fehlerbehebungen
-- Push-Benachrichtigungsfehler auf bestimmten Plattformen behoben
+- Pulsierungseffekt bei eigenen Kommentaren behoben
+- Eingabefeld-Abschneidung bei Android-Gestennavigation behoben
+- Grauer Bildschirm beim Einklappen von Partitionen behoben
+- Android 13+ Push-Benachrichtigungsberechtigung verbessert
 
 ---
 

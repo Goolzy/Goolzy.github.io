@@ -133,11 +133,24 @@ Beispiele: `MeineMarke`, `MaxMustermann`, `Firma2025`
 - **Abgelegt**: Ihre Standard-E-Mail wird wieder angezeigt
 - Auch wenn Sie mehrere Abzeichen besitzen, kann nur eines gleichzeitig angelegt werden
 
+#### Inventarkarten-Anzeige
+
+Gravierte Abzeichen (aktiver Zustand) zeigen in der Inventarkarte oben rechts eine Vorschau des gravierten Bildes.
+So können Sie schnell erkennen, zu welcher Domain das Abzeichen gehört.
+
 ---
 
 ### 🔖 Stempel-System
 
 Ein **Stempel** ist ein Gegenstand, mit dem Sie Vorlagen erstellen und mit anderen teilen können.
+
+#### Inventarkarten-Anzeige
+
+Stempel mit Vorlagen (aktiver Zustand) werden im Inventar besonders angezeigt:
+- **Hintergrund**: Vorlagenbild mit 33% Deckkraft
+- **Vordergrund**: Graviertes Stempel-Bild
+
+So können Sie schnell erkennen, um welche Vorlage es sich handelt.
 
 #### Eine Stempelvorlage erstellen
 
@@ -288,6 +301,20 @@ Wenn ein Filter gesetzt ist und Sie Gegenstände auswählen, werden die **Schlü
 - Eine Benachrichtigung erscheint, wenn das Kopieren abgeschlossen ist
 
 > 💡 **Anwendungsbeispiel**: Berechnen Sie schnell den Gesamtpreis mehrerer Gegenstände oder kopieren Sie verwandte Tags auf einmal.
+
+---
+
+### 📱 Unteres Menü-Badge
+
+Rote Badges auf den Symbolen des unteren Menüs zeigen den aktuellen Status an.
+
+| Menü | Badge-Bedeutung |
+|------|-----------------|
+| **Senden** | Anzahl sendbarer Gegenstände (übertragbare unter den ausgewählten) |
+| **Empfangen** | Anzahl ausstehender Transaktionen (Akzeptieren/Zurücksenden erforderlich) |
+| **Aktion** | Anzahl verfügbarer Aktionen mit ausgewählten Gegenständen |
+
+> 💡 Badge-Zahlen animieren mit einem Blaseneffekt, wenn sie sich ändern.
 
 ---
 

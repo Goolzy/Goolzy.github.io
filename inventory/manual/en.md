@@ -133,11 +133,24 @@ Examples: `MyBrand`, `JohnDoe`, `Company2025`
 - **Unequipped**: Your default email will be displayed again
 - Even if you own multiple badges, only one can be equipped at a time
 
+#### Inventory Card Display
+
+Engraved badges (active state) show the engraved image preview in the top-right corner of the inventory card.
+This allows you to quickly identify which domain the badge belongs to.
+
 ---
 
 ### 🔖 Stamp System
 
 A **Stamp** is an item that lets you create templates and share them with others.
+
+#### Inventory Card Display
+
+Stamps with templates (active state) are displayed specially in the inventory:
+- **Background**: Template image shown at 33% opacity
+- **Foreground**: Engraved stamp image
+
+This allows you to quickly identify which template it is.
 
 #### Creating a Stamp Template
 
@@ -288,6 +301,20 @@ When a filter is set and you select items, the **keyword values of selected item
 - A notification appears when copy is complete
 
 > 💡 **Example Use**: Quickly calculate the total price of multiple items, or copy related tags at once.
+
+---
+
+### 📱 Bottom Menu Badge
+
+Red badges on the bottom menu icons show current status.
+
+| Menu | Badge Meaning |
+|------|---------------|
+| **Send** | Number of items that can be sent (transferable items among selected) |
+| **Receive** | Number of pending trades (requiring accept/return) |
+| **Action** | Number of actions available with selected items |
+
+> 💡 Badge numbers animate with a bubble effect when they change.
 
 ---
 

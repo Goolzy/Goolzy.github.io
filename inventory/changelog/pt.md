@@ -27,14 +27,35 @@ Quando novos comentários são adicionados aos registros compartilhados, a borda
 - A pulsação para quando você abre o documento
 - O status de leitura sincroniza em todos os dispositivos
 
+#### 🔖 Guia de Uso do Carimbo
+Quando você seleciona um carimbo gravado, os papéis disponíveis **pulsam** para guiá-lo.
+- UX melhorada para duplicação de modelo
+- Orientação intuitiva para o próximo passo
+
 #### 📂 Melhorias de Partição
 - **Recolher/Expandir**: Alternar partições com botões de seta (▼/▲)
 - **Selecionar tudo**: Toque no cabeçalho da partição para selecionar/desmarcar todos os itens
 - Indicadores de status de seleção (○/◐/●)
 - Arrastar e soltar para partições recolhidas
 
+#### 🛒 Conveniência da Loja
+Processo de checkout simplificado para compras consecutivas do mesmo item.
+- Diálogos de confirmação ignorados dentro de 10 minutos da última compra
+- Compra em massa mais rápida
+
+#### 🎨 Melhorias de Interface
+- Legibilidade melhorada com nova fonte de título
+- Cartões de carimbo mostram pré-visualização do modelo no fundo (33% de opacidade)
+- Cartões de distintivo mostram pré-visualização da imagem gravada
+- Menu inferior exibe distintivo de número de ações disponíveis
+- Ajuste de cor do tema tinta preta (melhor legibilidade do texto)
+- Imagens de produtos otimizadas (tamanho reduzido, carregamento mais rápido)
+
 #### 🐛 Correção de bugs
-- Corrigidos problemas de notificação push em certas plataformas
+- Corrigido efeito de pulsação em comentários próprios
+- Corrigido corte do campo de entrada na navegação por gestos do Android
+- Corrigida tela cinza ao recolher partições
+- Melhorado tratamento de permissão de notificação push no Android 13+
 
 ---
 
