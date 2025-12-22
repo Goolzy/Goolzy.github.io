@@ -218,6 +218,60 @@ a.platform-icon {
   font-weight: 600;
 }
 
+/* QR Code Popup */
+.platform-icon {
+  position: relative;
+}
+
+.qr-popup {
+  position: absolute;
+  bottom: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%) scale(0.9);
+  background: rgba(21, 10, 40, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  border-radius: 16px;
+  padding: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 100;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 40px rgba(168, 85, 247, 0.2);
+}
+
+.qr-popup::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 8px solid transparent;
+  border-top-color: rgba(168, 85, 247, 0.4);
+}
+
+.platform-icon:hover .qr-popup {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) scale(1);
+}
+
+.qr-popup img {
+  width: 140px;
+  height: 140px;
+  border-radius: 8px;
+  background: white;
+  padding: 8px;
+}
+
+.qr-popup .qr-label {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+
 /* Chat Section - Enhanced Glassmorphism */
 .chat-section {
   position: sticky;
