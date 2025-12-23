@@ -39,6 +39,8 @@ Agrupe múltiplos documentos juntos para facilitar o gerenciamento.
 #### 🐛 Correções de Bugs
 - Itens clip eram contados individualmente na tela de recebimento - corrigido
 - O emblema de recebimento da barra de navegação incluía itens internos do clip - corrigido
+- O emblema (Nametag) não era desequipado ao reembolsar/excluir - corrigido
+- O domínio permanecia ocupado após a exclusão do emblema - corrigido
 
 ---
 

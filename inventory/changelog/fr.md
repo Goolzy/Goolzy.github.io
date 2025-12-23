@@ -39,6 +39,8 @@ Regroupez plusieurs documents ensemble pour une gestion plus facile.
 #### 🐛 Corrections de Bugs
 - Les éléments clip étaient comptés individuellement dans l'écran de réception - corrigé
 - Le badge de réception de la barre de navigation incluait les éléments internes du clip - corrigé
+- Le badge (Nametag) n'était pas déséquipé lors du remboursement/suppression - corrigé
+- Le domaine restait occupé après la suppression du badge - corrigé
 
 ---
 

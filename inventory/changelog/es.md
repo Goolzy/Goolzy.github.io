@@ -39,6 +39,8 @@ Agrupa múltiples documentos juntos para una gestión más fácil.
 #### 🐛 Correcciones de Errores
 - Los elementos clip se contaban individualmente en la pantalla de recepción - corregido
 - La insignia de recepción de la barra de navegación incluía elementos internos del clip - corregido
+- La insignia (Nametag) no se desequipaba al reembolsar/eliminar - corregido
+- El dominio permanecía ocupado después de eliminar la insignia - corregido
 
 ---
 

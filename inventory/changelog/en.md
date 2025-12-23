@@ -39,6 +39,8 @@ Bundle multiple documents together for easier management.
 #### 🐛 Bug Fixes
 - Fixed clip items being counted individually in receive screen
 - Fixed navigation bar receive badge including clip internal items
+- Fixed badge (Nametag) not being unequipped when refunded/deleted
+- Fixed domain remaining occupied after badge deletion
 
 ---
 

@@ -39,6 +39,8 @@ Bündeln Sie mehrere Dokumente zur einfacheren Verwaltung zusammen.
 #### 🐛 Fehlerbehebungen
 - Clip-Elemente wurden im Empfangsbildschirm einzeln gezählt - behoben
 - Navigationsleisten-Empfangsabzeichen enthielt interne Clip-Elemente - behoben
+- Abzeichen (Nametag) wurde bei Rückerstattung/Löschung nicht abgelegt - behoben
+- Domain blieb nach Löschung des Abzeichens belegt - behoben
 
 ---
 
