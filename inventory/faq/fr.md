@@ -271,6 +271,80 @@ Touchez l'encre et sélectionnez <strong>"Changer de thème"</strong> pour chang
 
 ---
 
+### 📎 Système de Clip
+
+<details>
+<summary><strong>Q. Qu'est-ce qu'un Clip ?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Un clip est une fonctionnalité qui regroupe plusieurs documents ensemble pour une gestion plus facile.
+<ul>
+<li>Gérer des documents liés comme un seul ensemble</li>
+<li>Les documents clippés affichent une icône 📎 en haut à droite</li>
+<li>Lors du transfert, ils se déplacent ensemble comme un ensemble</li>
+</ul>
+</div>
+</details>
+
+<details>
+<summary><strong>Q. Comment créer un Clip ?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Suivez ces étapes :
+<ol>
+<li>Sélectionnez <strong>2 documents ou plus</strong> sur l'écran d'accueil</li>
+<li>Sélectionnez <strong>"Clipper ensemble"</strong> dans le menu du bas</li>
+<li>Les documents sélectionnés sont regroupés en un seul clip</li>
+</ol>
+💡 <strong>Astuce</strong> : Le premier document sélectionné devient la <strong>couverture</strong> du clip !
+</div>
+</details>
+
+<details>
+<summary><strong>Q. Comment réordonner les éléments dans un Clip ?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Touchez le bouton <strong>"Info Clip"</strong> sur l'écran de détail du clip pour voir la liste des éléments à l'intérieur.
+<br><br>
+<strong>Glissez</strong> les éléments pour les réordonner comme souhaité.
+<br><br>
+⚠️ <strong>Note</strong> : La couverture (premier élément) ne peut pas être réordonnée.
+</div>
+</details>
+
+<details>
+<summary><strong>Q. Comment exclure un élément d'un Clip ?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Sur l'écran Info Clip, sélectionnez l'élément à exclure et touchez <strong>"Exclure du Clip"</strong>.
+<br><br>
+L'élément exclu devient un document séparé.
+<br><br>
+⚠️ <strong>Note</strong> :
+<ul>
+<li>La couverture ne peut pas être exclue</li>
+<li>S'il ne reste que 2 éléments dans un clip et que 1 est exclu, le clip se dissout automatiquement</li>
+</ul>
+</div>
+</details>
+
+<details>
+<summary><strong>Q. Comment défaire complètement un clip ?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Sélectionnez l'élément clip et touchez <strong>"Défaire le clip"</strong> dans le menu du bas pour séparer tous les éléments en documents individuels.
+</div>
+</details>
+
+<details>
+<summary><strong>Q. Que se passe-t-il quand je transfère un Clip ?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Les clips sont transférés comme un <strong>ensemble</strong>.
+<ul>
+<li>Tous les éléments du clip sont transférés ensemble</li>
+<li>L'état du clip est maintenu dans l'inventaire du destinataire</li>
+<li>Sur l'écran de réception, un clip compte comme <strong>1 élément</strong></li>
+</ul>
+</div>
+</details>
+
+---
+
 ### 📤 Envoyer/Recevoir
 
 <details>

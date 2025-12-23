@@ -104,6 +104,75 @@ Un documento bloqueado solo puede verse después de introducir la contraseña co
 
 ---
 
+### 📎 Sistema Clip
+
+**Clip** es una función que agrupa múltiples documentos para una gestión más fácil.
+
+#### ¿Qué es un Clip?
+
+Los clips te permiten gestionar documentos relacionados como un solo grupo.
+
+| Estado | Descripción |
+|--------|-------------|
+| **Documentos Individuales** | Documentos gestionados por separado |
+| **Documentos Clipeados** | Gestionados como grupo, movidos/transferidos juntos |
+
+#### Crear un Clip
+
+1. Selecciona **2 o más documentos** en la pantalla principal
+2. Toca **"Clipear juntos"** en el menú inferior
+3. Los documentos seleccionados se agrupan en un solo clip
+4. Los documentos clipeados muestran un **icono de clip (📎)** en la esquina superior derecha
+
+> 💡 **Consejo**: ¡El primer documento seleccionado se convierte en la **portada** del clip!
+
+#### Ver Info del Clip
+
+1. Entra en la **pantalla de detalle** de un documento clipeado
+2. Toca el botón **"Info del Clip"**
+3. Ve la lista de todos los elementos en el clip
+
+#### Reordenar Elementos en un Clip
+
+Puedes cambiar el orden de los elementos en la pantalla de info del clip:
+
+1. Mantén presionado el **controlador de arrastre (⋮⋮)** del elemento que quieres mover
+2. Arrastra a la posición deseada
+3. Suelta para guardar el orden
+
+> ⚠️ **Nota**: La portada (primer elemento) no se puede reordenar.
+
+#### Excluir Elementos de un Clip
+
+Puedes eliminar elementos específicos en la pantalla de info del clip:
+
+1. Toca el botón **"Excluir"** junto al elemento
+2. Confirma para eliminar el elemento del clip
+3. El elemento eliminado vuelve a ser un documento individual
+
+> ⚠️ **Nota**: La portada no se puede excluir. Si solo quedan 2 elementos y excluyes 1, el clip se disuelve automáticamente.
+
+#### Deshacer Clip
+
+1. Selecciona el documento clipeado
+2. Toca **"Deshacer clip"** en el menú inferior
+3. Todos los documentos se separan en documentos individuales
+
+#### Transferir Clips
+
+- Cuando envías un documento clipeado, el **grupo completo** se transfiere junto
+- Los destinatarios aceptan/rechazan clips como un **grupo**
+- Los elementos individuales dentro de un clip no se pueden enviar por separado
+
+#### Características del Clip
+
+- Los documentos clipeados se **mueven/transfieren juntos**
+- Establecer un bloqueo en la portada protege todo el clip
+- El icono de clip (📎) facilita identificar el estado del clip
+- Se necesitan al menos 2 documentos para mantener un clip
+
+---
+
 ### 🏷️ Sistema de Insignias
 
 Una **Insignia** es una identidad única que puedes usar dentro de la aplicación.

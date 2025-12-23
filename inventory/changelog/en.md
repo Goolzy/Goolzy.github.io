@@ -19,6 +19,29 @@ Check out the update history for the Inventory app.
 
 ---
 
+### 📎 v1.0.3 <small style="color:#6b7280;">2025-01</small>
+
+#### 📎 Clip Feature
+Bundle multiple documents together for easier management.
+- **Create Clip**: Select 2+ documents and tap "Clip Together"
+- **Clip Icon**: Clipped documents display a clip icon in the top-right corner
+- **Clip Details**: View internal items via "Clip Info" button in item detail screen
+- **Reorder**: Drag to reorder items within a clip (except cover)
+- **Exclude Items**: Remove specific items from a clip (except cover)
+- **Unclip**: Completely dissolve a clip into individual documents
+- **Auto-Dissolve**: Clip automatically dissolves when reduced to 1 item
+- **Transfer**: Clips are sent/received as a bundle
+
+#### 🔓 Password Unlock Improvement
+- Entering correct password now **permanently unlocks** the document
+- Before: Viewing only, lock remained → Now: Fully unlocked
+
+#### 🐛 Bug Fixes
+- Fixed clip items being counted individually in receive screen
+- Fixed navigation bar receive badge including clip internal items
+
+---
+
 ### ✨ v1.0.2 <small style="color:#6b7280;">2025-01</small>
 
 #### 🔔 Shared Log Unread Indicator

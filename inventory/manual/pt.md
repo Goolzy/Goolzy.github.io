@@ -104,6 +104,75 @@ Um documento bloqueado só pode ser visualizado após inserir a senha correta.
 
 ---
 
+### 📎 Sistema Clip
+
+**Clip** é uma funcionalidade que agrupa múltiplos documentos para facilitar o gerenciamento.
+
+#### O que é um Clip?
+
+Os clips permitem que você gerencie documentos relacionados como um único grupo.
+
+| Estado | Descrição |
+|--------|-----------|
+| **Documentos Individuais** | Documentos gerenciados separadamente |
+| **Documentos Clipados** | Gerenciados como grupo, movidos/transferidos juntos |
+
+#### Criar um Clip
+
+1. Selecione **2 ou mais documentos** na tela inicial
+2. Toque em **"Clipar juntos"** no menu inferior
+3. Os documentos selecionados são agrupados em um único clip
+4. Documentos clipados exibem um **ícone de clip (📎)** no canto superior direito
+
+> 💡 **Dica**: O primeiro documento selecionado se torna a **capa** do clip!
+
+#### Ver Info do Clip
+
+1. Entre na **tela de detalhes** de um documento clipado
+2. Toque no botão **"Info do Clip"**
+3. Veja a lista de todos os itens no clip
+
+#### Reordenar Itens em um Clip
+
+Você pode mudar a ordem dos itens na tela de info do clip:
+
+1. Pressione e segure a **alça de arrasto (⋮⋮)** do item que deseja mover
+2. Arraste para a posição desejada
+3. Solte para salvar a ordem
+
+> ⚠️ **Nota**: A capa (primeiro item) não pode ser reordenada.
+
+#### Excluir Itens de um Clip
+
+Você pode remover itens específicos na tela de info do clip:
+
+1. Toque no botão **"Excluir"** ao lado do item
+2. Confirme para remover o item do clip
+3. O item removido volta a ser um documento individual
+
+> ⚠️ **Nota**: A capa não pode ser excluída. Se restarem apenas 2 itens e você excluir 1, o clip se dissolve automaticamente.
+
+#### Desfazer Clip
+
+1. Selecione o documento clipado
+2. Toque em **"Desfazer clip"** no menu inferior
+3. Todos os documentos são separados em documentos individuais
+
+#### Transferir Clips
+
+- Quando você envia um documento clipado, o **grupo inteiro** é transferido junto
+- Os destinatários aceitam/rejeitam clips como um **grupo**
+- Itens individuais dentro de um clip não podem ser enviados separadamente
+
+#### Características do Clip
+
+- Documentos clipados são **movidos/transferidos juntos**
+- Definir um bloqueio na capa protege todo o clip
+- O ícone de clip (📎) facilita identificar o status do clip
+- São necessários pelo menos 2 documentos para manter um clip
+
+---
+
 ### 🏷️ Sistema de Emblema
 
 Um **Emblema** é uma identidade única que você pode usar dentro do aplicativo.

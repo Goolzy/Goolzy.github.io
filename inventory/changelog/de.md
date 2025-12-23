@@ -19,6 +19,29 @@ Sehen Sie sich den Update-Verlauf der Inventory-App an.
 
 ---
 
+### 📎 v1.0.3 <small style="color:#6b7280;">2025-01</small>
+
+#### 📎 Clip-Funktion
+Bündeln Sie mehrere Dokumente zur einfacheren Verwaltung zusammen.
+- **Clip erstellen**: Wählen Sie 2+ Dokumente und tippen Sie auf "Zusammenclipsen"
+- **Clip-Symbol**: Geclipste Dokumente zeigen ein Clip-Symbol in der oberen rechten Ecke
+- **Clip-Details**: Interne Elemente über die Schaltfläche "Clip-Info" im Elementdetailbildschirm anzeigen
+- **Neu anordnen**: Elemente innerhalb eines Clips per Drag & Drop neu anordnen (außer Cover)
+- **Elemente ausschließen**: Bestimmte Elemente aus einem Clip entfernen (außer Cover)
+- **Clip auflösen**: Einen Clip vollständig in einzelne Dokumente auflösen
+- **Automatische Auflösung**: Clip löst sich automatisch auf, wenn nur noch 1 Element übrig ist
+- **Übertragung**: Clips werden als Bündel gesendet/empfangen
+
+#### 🔓 Verbesserung der Passwort-Entsperrung
+- Die Eingabe des richtigen Passworts **entsperrt das Dokument dauerhaft**
+- Vorher: Nur Ansicht, Sperre blieb → Jetzt: Vollständig entsperrt
+
+#### 🐛 Fehlerbehebungen
+- Clip-Elemente wurden im Empfangsbildschirm einzeln gezählt - behoben
+- Navigationsleisten-Empfangsabzeichen enthielt interne Clip-Elemente - behoben
+
+---
+
 ### ✨ v1.0.2 <small style="color:#6b7280;">2025-01</small>
 
 #### 🔔 Geteiltes Protokoll Ungelesen-Anzeige

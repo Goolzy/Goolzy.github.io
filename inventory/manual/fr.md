@@ -104,6 +104,75 @@ Un document verrouillé ne peut être consulté qu'après avoir saisi le mot de 
 
 ---
 
+### 📎 Système Clip
+
+**Clip** est une fonctionnalité qui regroupe plusieurs documents ensemble pour une gestion plus facile.
+
+#### Qu'est-ce qu'un Clip ?
+
+Les clips vous permettent de gérer des documents liés comme un seul groupe.
+
+| État | Description |
+|------|-------------|
+| **Documents Individuels** | Documents gérés séparément |
+| **Documents Clipsés** | Gérés comme un groupe, déplacés/transférés ensemble |
+
+#### Créer un Clip
+
+1. Sélectionnez **2 documents ou plus** sur l'écran d'accueil
+2. Appuyez sur **"Clipser ensemble"** dans le menu du bas
+3. Les documents sélectionnés sont regroupés en un seul clip
+4. Les documents clipsés affichent une **icône clip (📎)** dans le coin supérieur droit
+
+> 💡 **Astuce** : Le premier document sélectionné devient la **couverture** du clip !
+
+#### Voir les Infos du Clip
+
+1. Entrez dans l'**écran de détail** d'un document clipsé
+2. Appuyez sur le bouton **"Infos Clip"**
+3. Consultez la liste de tous les éléments du clip
+
+#### Réorganiser les Éléments dans un Clip
+
+Vous pouvez modifier l'ordre des éléments dans l'écran d'infos du clip :
+
+1. Appuyez longuement sur la **poignée de glissement (⋮⋮)** de l'élément à déplacer
+2. Faites glisser vers la position souhaitée
+3. Relâchez pour sauvegarder l'ordre
+
+> ⚠️ **Note** : La couverture (premier élément) ne peut pas être réorganisée.
+
+#### Exclure des Éléments d'un Clip
+
+Vous pouvez retirer des éléments spécifiques dans l'écran d'infos du clip :
+
+1. Appuyez sur le bouton **"Exclure"** à côté de l'élément
+2. Confirmez pour retirer l'élément du clip
+3. L'élément retiré redevient un document individuel
+
+> ⚠️ **Note** : La couverture ne peut pas être exclue. S'il ne reste que 2 éléments et que vous en excluez 1, le clip se dissout automatiquement.
+
+#### Défaire un Clip
+
+1. Sélectionnez le document clipsé
+2. Appuyez sur **"Défaire le clip"** dans le menu du bas
+3. Tous les documents sont séparés en documents individuels
+
+#### Transférer des Clips
+
+- Quand vous envoyez un document clipsé, le **groupe entier** est transféré ensemble
+- Les destinataires acceptent/refusent les clips en tant que **groupe**
+- Les éléments individuels d'un clip ne peuvent pas être envoyés séparément
+
+#### Caractéristiques des Clips
+
+- Les documents clipsés sont **déplacés/transférés ensemble**
+- Définir un verrou sur la couverture protège tout le clip
+- L'icône clip (📎) permet d'identifier facilement l'état du clip
+- Au moins 2 documents sont nécessaires pour maintenir un clip
+
+---
+
 ### 🏷️ Système de Badge
 
 Un **Badge** est une identité unique que vous pouvez utiliser dans l'application.

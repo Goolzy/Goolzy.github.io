@@ -271,6 +271,80 @@ Tap ink and select <strong>"Change Theme"</strong> to immediately change the ent
 
 ---
 
+### 📎 Clip System
+
+<details>
+<summary><strong>Q. What is a Clip?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> A clip is a feature that bundles multiple documents together for easier management.
+<ul>
+<li>Manage related documents as a single bundle</li>
+<li>Clipped documents show a 📎 icon in the top-right corner</li>
+<li>When transferred, they move together as a bundle</li>
+</ul>
+</div>
+</details>
+
+<details>
+<summary><strong>Q. How do I create a Clip?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Follow these steps:
+<ol>
+<li>Select <strong>2 or more</strong> documents on the home screen</li>
+<li>Select <strong>"Clip Together"</strong> from the bottom menu</li>
+<li>Selected documents are bundled into a single clip</li>
+</ol>
+💡 <strong>Tip</strong>: The first selected document becomes the <strong>cover</strong> of the clip!
+</div>
+</details>
+
+<details>
+<summary><strong>Q. How do I reorder items in a Clip?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Tap the <strong>"Clip Info"</strong> button on the clip item's detail screen to see the list of items inside the clip.
+<br><br>
+<strong>Drag</strong> items to reorder them as desired.
+<br><br>
+⚠️ <strong>Note</strong>: The cover (first item) cannot be reordered.
+</div>
+</details>
+
+<details>
+<summary><strong>Q. How do I exclude an item from a Clip?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> On the Clip Info screen, select the item you want to exclude and tap <strong>"Exclude from Clip"</strong>.
+<br><br>
+The excluded item becomes a separate document.
+<br><br>
+⚠️ <strong>Note</strong>:
+<ul>
+<li>The cover cannot be excluded</li>
+<li>If only 2 items remain in a clip and 1 is excluded, the clip automatically dissolves</li>
+</ul>
+</div>
+</details>
+
+<details>
+<summary><strong>Q. How do I completely unclip?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Select the clip item and tap <strong>"Unclip"</strong> from the bottom menu to separate all items into individual documents.
+</div>
+</details>
+
+<details>
+<summary><strong>Q. What happens when I transfer a Clip?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Clips are transferred as a <strong>bundle</strong>.
+<ul>
+<li>All items in the clip are transferred together</li>
+<li>The clip status is maintained in the recipient's inventory</li>
+<li>On the receive screen, a clip counts as <strong>1 item</strong></li>
+</ul>
+</div>
+</details>
+
+---
+
 ### 📤 Send/Receive
 
 <details>

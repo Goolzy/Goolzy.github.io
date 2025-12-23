@@ -19,6 +19,29 @@ Consulta el historial de actualizaciones de la aplicación Inventory.
 
 ---
 
+### 📎 v1.0.3 <small style="color:#6b7280;">2025-01</small>
+
+#### 📎 Función Clip
+Agrupa múltiples documentos juntos para una gestión más fácil.
+- **Crear clip**: Selecciona 2+ documentos y toca "Clipear juntos"
+- **Icono de clip**: Los documentos clipeados muestran un icono de clip en la esquina superior derecha
+- **Detalles del clip**: Ver elementos internos a través del botón "Info del clip" en la pantalla de detalle
+- **Reordenar**: Arrastra para reordenar elementos dentro de un clip (excepto portada)
+- **Excluir elementos**: Eliminar elementos específicos de un clip (excepto portada)
+- **Deshacer clip**: Disolver completamente un clip en documentos individuales
+- **Disolución automática**: El clip se disuelve automáticamente cuando solo queda 1 elemento
+- **Transferencia**: Los clips se envían/reciben como un grupo
+
+#### 🔓 Mejora del Desbloqueo por Contraseña
+- Ingresar la contraseña correcta ahora **desbloquea permanentemente** el documento
+- Antes: Solo visualización, bloqueo mantenido → Ahora: Completamente desbloqueado
+
+#### 🐛 Correcciones de Errores
+- Los elementos clip se contaban individualmente en la pantalla de recepción - corregido
+- La insignia de recepción de la barra de navegación incluía elementos internos del clip - corregido
+
+---
+
 ### ✨ v1.0.2 <small style="color:#6b7280;">2025-01</small>
 
 #### 🔔 Indicador de Registro Compartido No Leído

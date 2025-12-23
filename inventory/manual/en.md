@@ -104,6 +104,75 @@ A locked document can only be viewed after entering the correct password.
 
 ---
 
+### 📎 Clip System
+
+**Clip** is a feature that bundles multiple documents together for easier management.
+
+#### What is a Clip?
+
+Clips allow you to manage related documents as a single bundle.
+
+| State | Description |
+|-------|-------------|
+| **Individual Documents** | Documents managed separately |
+| **Clipped Documents** | Managed as a bundle, moved/transferred together |
+
+#### Creating a Clip
+
+1. Select **2 or more documents** on the home screen
+2. Tap **"Clip Together"** in the bottom menu
+3. Selected documents are bundled into a single clip
+4. Clipped documents display a **clip icon (📎)** in the top-right corner
+
+> 💡 **Tip**: The first selected document becomes the **cover** of the clip!
+
+#### Viewing Clip Info
+
+1. Enter the **detail screen** of a clipped document
+2. Tap the **"Clip Info"** button
+3. View the list of all items in the clip
+
+#### Reordering Items in a Clip
+
+You can change the order of items in the clip info screen:
+
+1. Long-press the **drag handle (⋮⋮)** of the item you want to move
+2. Drag to the desired position
+3. Release to save the order
+
+> ⚠️ **Note**: The cover (first item) cannot be reordered.
+
+#### Excluding Items from a Clip
+
+You can remove specific items from a clip in the clip info screen:
+
+1. Tap the **"Exclude"** button next to the item
+2. Confirm to remove the item from the clip
+3. The removed item becomes an individual document again
+
+> ⚠️ **Note**: The cover cannot be excluded. If only 2 items remain and you exclude 1, the clip automatically dissolves.
+
+#### Unclipping
+
+1. Select the clipped document
+2. Tap **"Unclip"** in the bottom menu
+3. All documents are separated into individual documents
+
+#### Transferring Clips
+
+- When you send a clipped document, the **entire bundle** is transferred together
+- Recipients accept/reject clips as a **bundle**
+- Individual items within a clip cannot be sent separately
+
+#### Clip Features
+
+- Clipped documents are **moved/transferred together**
+- Setting a lock on the cover protects the entire clip
+- Clip icon (📎) makes it easy to identify clip status
+- At least 2 documents are required to maintain a clip
+
+---
+
 ### 🏷️ Badge System
 
 A **Badge** is a unique identity you can use within the app.

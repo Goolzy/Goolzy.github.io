@@ -271,6 +271,80 @@ translations:
 
 ---
 
+### 📎 クリップシステム
+
+<details>
+<summary><strong>Q. クリップとは何ですか？</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> クリップは複数のドキュメントを1つにまとめて管理する機能です。
+<ul>
+<li>関連するドキュメントを1つの束として管理</li>
+<li>クリップされたドキュメントは右上に📎アイコンを表示</li>
+<li>転送時は束ごと一緒に移動</li>
+</ul>
+</div>
+</details>
+
+<details>
+<summary><strong>Q. クリップはどうやって作りますか？</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 以下の手順に従ってください：
+<ol>
+<li>ホーム画面で<strong>2つ以上</strong>のドキュメントを選択</li>
+<li>下部メニューから<strong>「クリップでまとめる」</strong>を選択</li>
+<li>選択されたドキュメントが1つのクリップにまとまります</li>
+</ol>
+💡 <strong>ヒント</strong>：最初に選択したドキュメントがクリップの<strong>表紙</strong>になります！
+</div>
+</details>
+
+<details>
+<summary><strong>Q. クリップ内のアイテム順序を変更するには？</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> クリップアイテムの詳細画面で<strong>「クリップ情報」</strong>ボタンをタップすると、クリップ内部のアイテムリストが表示されます。
+<br><br>
+アイテムを<strong>ドラッグ</strong>して希望の順序に変更できます。
+<br><br>
+⚠️ <strong>注意</strong>：表紙（最初のアイテム）は順序変更できません。
+</div>
+</details>
+
+<details>
+<summary><strong>Q. クリップからアイテムを除外するには？</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> クリップ情報画面で除外したいアイテムを選択し、<strong>「クリップから除外」</strong>をタップしてください。
+<br><br>
+除外されたアイテムは個別のドキュメントになります。
+<br><br>
+⚠️ <strong>注意</strong>：
+<ul>
+<li>表紙は除外できません</li>
+<li>クリップに2つだけ残った状態で1つを除外すると、クリップは自動的に解体されます</li>
+</ul>
+</div>
+</details>
+
+<details>
+<summary><strong>Q. クリップを完全に解除するには？</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> クリップアイテムを選択し、下部メニューから<strong>「クリップ解除」</strong>をタップすると、すべてのアイテムが個別のドキュメントに分離されます。
+</div>
+</details>
+
+<details>
+<summary><strong>Q. クリップを転送するとどうなりますか？</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> クリップは<strong>束ごと</strong>転送されます。
+<ul>
+<li>クリップ内のすべてのアイテムが一緒に転送されます</li>
+<li>受信者のインベントリでもクリップ状態が維持されます</li>
+<li>受信画面ではクリップが<strong>1つ</strong>としてカウントされます</li>
+</ul>
+</div>
+</details>
+
+---
+
 ### 📤 送信/受信
 
 <details>

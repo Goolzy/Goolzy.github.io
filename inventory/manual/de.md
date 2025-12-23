@@ -104,6 +104,75 @@ Ein gesperrtes Dokument kann nur nach Eingabe des korrekten Passworts angezeigt 
 
 ---
 
+### 📎 Clip-System
+
+**Clip** ist eine Funktion, mit der Sie mehrere Dokumente zur einfacheren Verwaltung zusammenfassen können.
+
+#### Was ist ein Clip?
+
+Mit Clips können Sie verwandte Dokumente als ein Bündel verwalten.
+
+| Status | Beschreibung |
+|--------|--------------|
+| **Einzelne Dokumente** | Separat verwaltete Dokumente |
+| **Geclipte Dokumente** | Als Bündel verwaltet, gemeinsam verschoben/übertragen |
+
+#### Einen Clip erstellen
+
+1. Wählen Sie auf dem Startbildschirm **2 oder mehr Dokumente** aus
+2. Tippen Sie im unteren Menü auf **"Zusammenclipsen"**
+3. Die ausgewählten Dokumente werden zu einem Clip zusammengefasst
+4. Geclipte Dokumente zeigen ein **Clip-Symbol (📎)** in der oberen rechten Ecke
+
+> 💡 **Tipp**: Das zuerst ausgewählte Dokument wird zum **Cover** des Clips!
+
+#### Clip-Info anzeigen
+
+1. Öffnen Sie den **Detailbildschirm** eines geclipten Dokuments
+2. Tippen Sie auf die Schaltfläche **"Clip-Info"**
+3. Sehen Sie die Liste aller Elemente im Clip
+
+#### Elemente im Clip neu anordnen
+
+Sie können die Reihenfolge der Elemente im Clip-Info-Bildschirm ändern:
+
+1. Halten Sie den **Ziehgriff (⋮⋮)** des Elements, das Sie verschieben möchten, gedrückt
+2. Ziehen Sie es an die gewünschte Position
+3. Lassen Sie los, um die Reihenfolge zu speichern
+
+> ⚠️ **Hinweis**: Das Cover (erstes Element) kann nicht neu angeordnet werden.
+
+#### Elemente aus einem Clip ausschließen
+
+Sie können bestimmte Elemente im Clip-Info-Bildschirm entfernen:
+
+1. Tippen Sie auf die Schaltfläche **"Ausschließen"** neben dem Element
+2. Bestätigen Sie, um das Element aus dem Clip zu entfernen
+3. Das entfernte Element wird wieder zu einem einzelnen Dokument
+
+> ⚠️ **Hinweis**: Das Cover kann nicht ausgeschlossen werden. Wenn nur noch 2 Elemente übrig sind und Sie 1 ausschließen, löst sich der Clip automatisch auf.
+
+#### Clip auflösen
+
+1. Wählen Sie das geclipte Dokument aus
+2. Tippen Sie im unteren Menü auf **"Clip auflösen"**
+3. Alle Dokumente werden in einzelne Dokumente getrennt
+
+#### Clips übertragen
+
+- Wenn Sie ein gecliptes Dokument senden, wird das **gesamte Bündel** zusammen übertragen
+- Empfänger akzeptieren/lehnen Clips als **Bündel** ab
+- Einzelne Elemente innerhalb eines Clips können nicht separat gesendet werden
+
+#### Clip-Funktionen
+
+- Geclipte Dokumente werden **zusammen verschoben/übertragen**
+- Das Setzen einer Sperre auf dem Cover schützt den gesamten Clip
+- Das Clip-Symbol (📎) erleichtert die Identifizierung des Clip-Status
+- Mindestens 2 Dokumente sind erforderlich, um einen Clip zu erhalten
+
+---
+
 ### 🏷️ Abzeichen-System
 
 Ein **Abzeichen** ist eine einzigartige Identität, die Sie in der App verwenden können.

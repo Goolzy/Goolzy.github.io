@@ -315,6 +315,80 @@ translations:
 
 ---
 
+### 📎 클립 시스템
+
+<details>
+<summary><strong>Q. 클립은 무엇인가요?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 클립은 여러 문서를 하나로 묶어서 관리하는 기능입니다.
+<ul>
+<li>관련 있는 문서들을 하나의 묶음으로 관리</li>
+<li>클립된 문서는 우상단에 📎 아이콘 표시</li>
+<li>전송 시 묶음 단위로 함께 이동</li>
+</ul>
+</div>
+</details>
+
+<details>
+<summary><strong>Q. 클립을 어떻게 만드나요?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 다음 단계를 따라주세요:
+<ol>
+<li>홈 화면에서 <strong>2개 이상</strong>의 문서를 선택</li>
+<li>하단 메뉴에서 <strong>"클립으로 묶기"</strong> 선택</li>
+<li>선택된 문서들이 하나의 클립으로 묶입니다</li>
+</ol>
+💡 <strong>팁</strong>: 먼저 선택한 문서가 클립의 <strong>표지</strong>가 됩니다!
+</div>
+</details>
+
+<details>
+<summary><strong>Q. 클립 내 아이템 순서를 변경하려면?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 클립 아이템의 상세 화면에서 <strong>"클립 정보"</strong> 버튼을 탭하면 클립 내부 아이템 목록이 나타납니다.
+<br><br>
+아이템을 <strong>드래그</strong>하여 원하는 순서로 변경할 수 있습니다.
+<br><br>
+⚠️ <strong>주의</strong>: 표지(첫 번째 아이템)는 순서 변경이 불가능합니다.
+</div>
+</details>
+
+<details>
+<summary><strong>Q. 클립에서 아이템을 제외하려면?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 클립 정보 화면에서 제외하려는 아이템을 선택하고 <strong>"클립에서 제외"</strong>를 탭하세요.
+<br><br>
+제외된 아이템은 개별 문서로 분리됩니다.
+<br><br>
+⚠️ <strong>주의</strong>:
+<ul>
+<li>표지는 제외할 수 없습니다</li>
+<li>클립에 2개만 남았을 때 1개를 제외하면 클립이 자동으로 해체됩니다</li>
+</ul>
+</div>
+</details>
+
+<details>
+<summary><strong>Q. 클립을 완전히 해제하려면?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 클립 아이템을 선택하고 하단 메뉴에서 <strong>"클립 해제"</strong>를 탭하면 모든 아이템이 개별 문서로 분리됩니다.
+</div>
+</details>
+
+<details>
+<summary><strong>Q. 클립을 전송하면 어떻게 되나요?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 클립은 <strong>묶음 단위</strong>로 전송됩니다.
+<ul>
+<li>클립 내 모든 아이템이 함께 전송됩니다</li>
+<li>받는 사람의 인벤토리에서도 클립 상태가 유지됩니다</li>
+<li>받기 화면에서는 클립이 <strong>1개</strong>로 카운트됩니다</li>
+</ul>
+</div>
+</details>
+
+---
+
 ### 📤 보내기/받기
 
 <details>

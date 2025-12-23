@@ -271,6 +271,80 @@ Tippen Sie auf Tinte und wählen Sie <strong>"Thema ändern"</strong>, um sofort
 
 ---
 
+### 📎 Clip-System
+
+<details>
+<summary><strong>Q. Was ist ein Clip?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Ein Clip ist eine Funktion, die mehrere Dokumente zu einem Bündel zusammenfasst.
+<ul>
+<li>Verwandte Dokumente als ein Bündel verwalten</li>
+<li>Geclippte Dokumente zeigen ein 📎 Symbol oben rechts</li>
+<li>Bei Übertragung werden sie als Bündel verschoben</li>
+</ul>
+</div>
+</details>
+
+<details>
+<summary><strong>Q. Wie erstelle ich einen Clip?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Folgen Sie diesen Schritten:
+<ol>
+<li>Wählen Sie <strong>2 oder mehr</strong> Dokumente auf dem Startbildschirm</li>
+<li>Wählen Sie <strong>"Zusammen clippen"</strong> aus dem unteren Menü</li>
+<li>Die ausgewählten Dokumente werden zu einem Clip gebündelt</li>
+</ol>
+💡 <strong>Tipp</strong>: Das zuerst ausgewählte Dokument wird zum <strong>Cover</strong> des Clips!
+</div>
+</details>
+
+<details>
+<summary><strong>Q. Wie ordne ich Elemente in einem Clip neu an?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Tippen Sie auf den <strong>"Clip-Info"</strong> Button auf dem Detailbildschirm des Clips, um die Liste der Elemente im Clip zu sehen.
+<br><br>
+<strong>Ziehen</strong> Sie Elemente, um sie wie gewünscht neu anzuordnen.
+<br><br>
+⚠️ <strong>Hinweis</strong>: Das Cover (erstes Element) kann nicht neu angeordnet werden.
+</div>
+</details>
+
+<details>
+<summary><strong>Q. Wie entferne ich ein Element aus einem Clip?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Wählen Sie auf dem Clip-Info-Bildschirm das zu entfernende Element und tippen Sie auf <strong>"Aus Clip entfernen"</strong>.
+<br><br>
+Das entfernte Element wird zu einem separaten Dokument.
+<br><br>
+⚠️ <strong>Hinweis</strong>:
+<ul>
+<li>Das Cover kann nicht entfernt werden</li>
+<li>Wenn nur 2 Elemente im Clip verbleiben und 1 entfernt wird, löst sich der Clip automatisch auf</li>
+</ul>
+</div>
+</details>
+
+<details>
+<summary><strong>Q. Wie löse ich einen Clip vollständig auf?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Wählen Sie das Clip-Element und tippen Sie im unteren Menü auf <strong>"Clip auflösen"</strong>, um alle Elemente in einzelne Dokumente zu trennen.
+</div>
+</details>
+
+<details>
+<summary><strong>Q. Was passiert, wenn ich einen Clip übertrage?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Clips werden als <strong>Bündel</strong> übertragen.
+<ul>
+<li>Alle Elemente im Clip werden zusammen übertragen</li>
+<li>Der Clip-Status bleibt im Inventar des Empfängers erhalten</li>
+<li>Auf dem Empfangsbildschirm zählt ein Clip als <strong>1 Element</strong></li>
+</ul>
+</div>
+</details>
+
+---
+
 ### 📤 Senden/Empfangen
 
 <details>
