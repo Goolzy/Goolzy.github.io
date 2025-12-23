@@ -188,7 +188,7 @@ Entdecken Sie die Möglichkeiten von Inventory durch 100 verschiedene Anwendungs
 
 **Problem**: Mit meinem vollen Terminkalender vergesse ich oft das Verfallsdatum und werfe verdorbene Lebensmittel weg. Besonders Tofu und Milch verderben innerhalb von Tagen...
 
-**Lösung**: Ich habe für jede Zutat mit [Papier](/inventory/manual/de/#-papier-system) ein Element erstellt und [Ablaufdaten](/inventory/manual/de/#-startdatum--ablaufdatum) festgelegt. Jetzt bekomme ich 3 Tage vor Ablauf eine Benachrichtigung, sodass ich rechtzeitig kochen oder einfrieren kann.
+**Lösung**: Ich habe für jede Zutat mit [Papier](/inventory/manual/de/#paper) ein Element erstellt und [Ablaufdaten](/inventory/manual/de/#dates) festgelegt. Jetzt bekomme ich 3 Tage vor Ablauf eine Benachrichtigung, sodass ich rechtzeitig kochen oder einfrieren kann.
 
 **Ergebnis**: Lebensmittelverschwendung um 80% reduziert. 150€ bei den monatlichen Lebensmittelkosten gespart!
 
@@ -205,7 +205,7 @@ Entdecken Sie die Möglichkeiten von Inventory durch 100 verschiedene Anwendungs
 
 **Problem**: Netflix, YouTube Premium, Notion, GitHub... Ich habe über 10 Abonnements mit verschiedenen Verlängerungsdaten. Manche nutze ich nicht mal mehr, zahle aber weiter.
 
-**Lösung**: Alle Abonnements in Inventory registriert mit [Datumsalarmen](/inventory/manual/de/#-datumsalarm) 7 Tage vor Verlängerung. Monatliche Gebühren als [Schlüsselwörter](/inventory/manual/de/#-schlüsselwörter) für schnellen Überblick hinzugefügt.
+**Lösung**: Alle Abonnements in Inventory registriert mit [Datumsalarmen](/inventory/manual/de/#alarm) 7 Tage vor Verlängerung. Monatliche Gebühren als [Schlüsselwörter](/inventory/manual/de/#keyword) für schnellen Überblick hinzugefügt.
 
 **Ergebnis**: 3 ungenutzte Abonnements gekündigt, 40€/Monat gespart. Keine Überraschungsabbuchungen mehr!
 
@@ -222,7 +222,7 @@ Entdecken Sie die Möglichkeiten von Inventory durch 100 verschiedene Anwendungs
 
 **Problem**: Mit zwei Kindern mit unterschiedlichen Impfplänen wurde ich oft verwirrt. Manchmal rief die Praxis an, wenn es schon überfällig war.
 
-**Lösung**: Separate [Partitionen](/inventory/manual/de/#-partitionsfunktion) für jedes Kind erstellt und Impftermine mit [Datumsalarmen](/inventory/manual/de/#-datumsalarm) verwaltet. [Stempel](/inventory/manual/de/#-stempel-system) hinzugefügt wenn erledigt.
+**Lösung**: Separate [Partitionen](/inventory/manual/de/#partition) für jedes Kind erstellt und Impftermine mit [Datumsalarmen](/inventory/manual/de/#alarm) verwaltet. [Stempel](/inventory/manual/de/#stamp) hinzugefügt wenn erledigt.
 
 **Ergebnis**: Keinen einzigen Impftermin mehr verpasst. Kann mich auf Arztbesuche vorbereiten!
 
@@ -239,7 +239,7 @@ Entdecken Sie die Möglichkeiten von Inventory durch 100 verschiedene Anwendungs
 
 **Problem**: Ich ziehe oft für das Studium um. Jedes Mal verliere ich den Überblick, welche Kiste was enthält. Selbst mit Nummern öffne ich am Ende alle.
 
-**Lösung**: Vor dem Packen habe ich den Inhalt jeder Kiste fotografiert und in Inventory registriert. Mit [Schlüsselwörtern](/inventory/manual/de/#-schlüsselwörter) wie "Kiste1", "Küche" markiert.
+**Lösung**: Vor dem Packen habe ich den Inhalt jeder Kiste fotografiert und in Inventory registriert. Mit [Schlüsselwörtern](/inventory/manual/de/#keyword) wie "Kiste1", "Küche" markiert.
 
 **Ergebnis**: Auspackzeit halbiert. "Wo ist die Schere?" - sofortige Suche!
 
@@ -256,7 +256,7 @@ Entdecken Sie die Möglichkeiten von Inventory durch 100 verschiedene Anwendungs
 
 **Problem**: Muss Quittungen für Geschäftsausgaben aufbewahren, aber Papierquittungen verblassen und gehen verloren. Steuerzeit ist immer stressig...
 
-**Lösung**: Direkt nach der Zahlung fotografiere ich Quittungen und registriere sie in Inventory. Mit [Schlüsselwörtern](/inventory/manual/de/#-schlüsselwörter) wie "Ausgabe", "2024", "Verpflegung" für einfache Kategorisierung markiert.
+**Lösung**: Direkt nach der Zahlung fotografiere ich Quittungen und registriere sie in Inventory. Mit [Schlüsselwörtern](/inventory/manual/de/#keyword) wie "Ausgabe", "2024", "Verpflegung" für einfache Kategorisierung markiert.
 
 **Ergebnis**: Fast keine Papierquittungen mehr nötig. Zur Steuerzeit einfach suchen und finden. Mein Steuerberater liebt es!
 
@@ -273,7 +273,7 @@ Entdecken Sie die Möglichkeiten von Inventory durch 100 verschiedene Anwendungs
 
 **Problem**: Wenn ich Filmfotos entwickle, vergesse ich wann und wo ich sie aufgenommen habe. Abzüge stapeln sich ohne Organisation.
 
-**Lösung**: Nach jeder Entwicklung registriere ich repräsentative Aufnahmen in Inventory mit [Schlüsselwörtern](/inventory/manual/de/#-schlüsselwörter) für Ort, Datum und Filmtyp. Labor-Info kommt ins [Log](/inventory/manual/de/#-log-system).
+**Lösung**: Nach jeder Entwicklung registriere ich repräsentative Aufnahmen in Inventory mit [Schlüsselwörtern](/inventory/manual/de/#keyword) für Ort, Datum und Filmtyp. Labor-Info kommt ins [Log](/inventory/manual/de/#-log-system).
 
 **Ergebnis**: Mein eigenes Filmarchiv aufgebaut. Kann sofort Fotos von einer Reise vor 2 Jahren finden!
 
@@ -290,7 +290,7 @@ Entdecken Sie die Möglichkeiten von Inventory durch 100 verschiedene Anwendungs
 
 **Problem**: Verschiedene Kleidung braucht verschiedene Pflege - manche nur Reinigung, Pullover nur Handwäsche. Habe Kleidung durch falsche Methoden ruiniert.
 
-**Lösung**: Kleidung mit besonderer Pflege in Inventory registriert. Pflegeanleitung im [Log](/inventory/manual/de/#-log-system). Reinigungsabholtermine mit [Datumsalarmen](/inventory/manual/de/#-datumsalarm) verfolgt.
+**Lösung**: Kleidung mit besonderer Pflege in Inventory registriert. Pflegeanleitung im [Log](/inventory/manual/de/#-log-system). Reinigungsabholtermine mit [Datumsalarmen](/inventory/manual/de/#alarm) verfolgt.
 
 **Ergebnis**: Kleidungsschäden drastisch reduziert. Keine Säumnisgebühren mehr für vergessene Reinigung!
 
@@ -307,7 +307,7 @@ Entdecken Sie die Möglichkeiten von Inventory durch 100 verschiedene Anwendungs
 
 **Problem**: Der Arzt empfahl 5 verschiedene Präparate. Morgens/abends verwechsle ich die Dosen und verpasse Nachbestellungen.
 
-**Lösung**: Jedes Präparat mit [Papier](/inventory/manual/de/#-papier-system) registriert. Dosieranleitung im [Log](/inventory/manual/de/#-log-system), geschätztes Verbrauchsdatum als [Ablauf](/inventory/manual/de/#-startdatum--ablaufdatum).
+**Lösung**: Jedes Präparat mit [Papier](/inventory/manual/de/#paper) registriert. Dosieranleitung im [Log](/inventory/manual/de/#-log-system), geschätztes Verbrauchsdatum als [Ablauf](/inventory/manual/de/#dates).
 
 **Ergebnis**: Befolge den Plan jetzt perfekt. Bekomme Alarme bevor etwas ausgeht und kann rechtzeitig nachbestellen!
 
@@ -324,7 +324,7 @@ Entdecken Sie die Möglichkeiten von Inventory durch 100 verschiedene Anwendungs
 
 **Problem**: Klimaanlage kaputt und Garantie war einen Monat vorher abgelaufen. Konnte nicht mal die Garantiekarte finden. 300€ für Reparatur bezahlt.
 
-**Lösung**: Alle Haushaltsgeräte in Inventory registriert mit Garantiefotos. [Ablaufdaten](/inventory/manual/de/#-startdatum--ablaufdatum) für Garantieende mit 1-Monat-Voralarm gesetzt.
+**Lösung**: Alle Haushaltsgeräte in Inventory registriert mit Garantiefotos. [Ablaufdaten](/inventory/manual/de/#dates) für Garantieende mit 1-Monat-Voralarm gesetzt.
 
 **Ergebnis**: Jetzt beantrage ich Inspektionen oder prüfe Verlängerungen vor Garantieablauf. Waschmaschine kostenlos repariert bekommen!
 
@@ -341,7 +341,7 @@ Entdecken Sie die Möglichkeiten von Inventory durch 100 verschiedene Anwendungs
 
 **Problem**: Geburtstags- und Feiertagsgeschenkkarten verschwinden in Nachrichten und laufen ungenutzt ab.
 
-**Lösung**: Geschenkkarten sofort screenshotten und in Inventory registrieren mit [Ablaufdaten](/inventory/manual/de/#-startdatum--ablaufdatum). Eine Woche vor Ablauf Alarm.
+**Lösung**: Geschenkkarten sofort screenshotten und in Inventory registrieren mit [Ablaufdaten](/inventory/manual/de/#dates). Eine Woche vor Ablauf Alarm.
 
 **Ergebnis**: Eine 30€ Starbucks-Geschenkkarte gerettet! Nutze jetzt die Geschenke die ich bekomme.
 
@@ -358,7 +358,7 @@ Entdecken Sie die Möglichkeiten von Inventory durch 100 verschiedene Anwendungs
 
 **Problem**: Kann mich nicht erinnern wann und wo das Auto gewartet wurde. Verschiedene Werkstätten haben verschiedene Aufzeichnungen. Verpasse Ölwechseltermine.
 
-**Lösung**: Auto in Inventory registriert, jeden Service im [Log](/inventory/manual/de/#-log-system) eingetragen. Nächste Servicetermine als [Datumsalarme](/inventory/manual/de/#-datumsalarm) gesetzt.
+**Lösung**: Auto in Inventory registriert, jeden Service im [Log](/inventory/manual/de/#-log-system) eingetragen. Nächste Servicetermine als [Datumsalarme](/inventory/manual/de/#alarm) gesetzt.
 
 **Ergebnis**: Komplette Wartungshistorie aufgebaut. Beim Verkauf brachte die Historie einen besseren Preis!
 
@@ -375,7 +375,7 @@ Entdecken Sie die Möglichkeiten von Inventory durch 100 verschiedene Anwendungs
 
 **Problem**: Verträge, Versicherungspolicen, Grundbuchauszüge... wichtige Dokumente überall verteilt. Musste mal eine Ersatzkopie beantragen weil Original nicht auffindbar.
 
-**Lösung**: Alle wichtigen Dokumente fotografiert und in Inventory registriert mit [Dokumentensperre](/inventory/manual/de/#-dokumentensperre) für Sicherheit. Lagerort in [Schlüsselwörtern](/inventory/manual/de/#-schlüsselwörter) notiert.
+**Lösung**: Alle wichtigen Dokumente fotografiert und in Inventory registriert mit [Dokumentensperre](/inventory/manual/de/#-dokumentensperre) für Sicherheit. Lagerort in [Schlüsselwörtern](/inventory/manual/de/#keyword) notiert.
 
 **Ergebnis**: "Wo ist die Urkunde?" → Suche → Lagerort gefunden. 30 Sekunden!
 
@@ -392,7 +392,7 @@ Entdecken Sie die Möglichkeiten von Inventory durch 100 verschiedene Anwendungs
 
 **Problem**: Beim Kaufen begeistert, aber zuhause stapeln sie sich ungelesen. Habe mal das gleiche Buch zweimal gekauft.
 
-**Lösung**: Bücher direkt nach Kauf registrieren. [Startdatum](/inventory/manual/de/#-startdatum--ablaufdatum) beim Beginnen setzen, [Stempel](/inventory/manual/de/#-stempel-system) beim Beenden. Ungelesene Liste auf einen Blick sichtbar.
+**Lösung**: Bücher direkt nach Kauf registrieren. [Startdatum](/inventory/manual/de/#dates) beim Beginnen setzen, [Stempel](/inventory/manual/de/#stamp) beim Beenden. Ungelesene Liste auf einen Blick sichtbar.
 
 **Ergebnis**: Statt überwältigt zu sein, bin ich motiviert. 12 Bücher dieses Jahr gelesen - mehr als letztes Jahr insgesamt!
 
@@ -409,7 +409,7 @@ Entdecken Sie die Möglichkeiten von Inventory durch 100 verschiedene Anwendungs
 
 **Problem**: Wollte Zimmerpflanzen aber vergaß zu gießen oder goss zu viel. Alle starben.
 
-**Lösung**: Jede Pflanze in Inventory registriert mit Gieß-Erinnerungen via [Datumsalarm](/inventory/manual/de/#-datumsalarm). Umtopf- und Düngedaten im [Log](/inventory/manual/de/#-log-system).
+**Lösung**: Jede Pflanze in Inventory registriert mit Gieß-Erinnerungen via [Datumsalarm](/inventory/manual/de/#alarm). Umtopf- und Düngedaten im [Log](/inventory/manual/de/#-log-system).
 
 **Ergebnis**: Meine Monstera lebt seit 6 Monaten! Sogar 3 neue Blätter gewachsen!
 
@@ -443,7 +443,7 @@ Entdecken Sie die Möglichkeiten von Inventory durch 100 verschiedene Anwendungs
 
 **Problem**: Mann, Schwiegermutter, ich selbst... alle verschiedene Untersuchungstermine. Einmal die kostenlose Vorsorge verpasst und selbst zahlen müssen.
 
-**Lösung**: Vorsorge-Termine jedes Familienmitglieds registriert mit [Datumsalarmen](/inventory/manual/de/#-datumsalarm) zum Periodenbeginn.
+**Lösung**: Vorsorge-Termine jedes Familienmitglieds registriert mit [Datumsalarmen](/inventory/manual/de/#alarm) zum Periodenbeginn.
 
 **Ergebnis**: Keine Vorsorge für die ganze Familie mehr verpasst. Über 500€ jährlich bei Gesundheitskosten gespart!
 
@@ -460,7 +460,7 @@ Entdecken Sie die Möglichkeiten von Inventory durch 100 verschiedene Anwendungs
 
 **Problem**: Zwei Katzen mit verschiedenen Impfplänen und Tierarztunterlagen überall. Neue Tierärzte fragen immer nach Vorgeschichte und ich finde nichts.
 
-**Lösung**: [Partitionen](/inventory/manual/de/#-partitionsfunktion) für jede Katze erstellt. Jeden Tierarztbesuch im [Log](/inventory/manual/de/#-log-system). Nächste Impfungen mit [Datumsalarmen](/inventory/manual/de/#-datumsalarm).
+**Lösung**: [Partitionen](/inventory/manual/de/#partition) für jede Katze erstellt. Jeden Tierarztbesuch im [Log](/inventory/manual/de/#-log-system). Nächste Impfungen mit [Datumsalarmen](/inventory/manual/de/#alarm).
 
 **Ergebnis**: Tierärztin lobte wie organisiert ich bin. Im Notfall kann ich sofort Unterlagen zeigen. Beruhigend!
 
@@ -477,7 +477,7 @@ Entdecken Sie die Möglichkeiten von Inventory durch 100 verschiedene Anwendungs
 
 **Problem**: Vergesse Namen von Weinen die mir in Weinbars geschmeckt haben. Im Laden greife ich dann irgendwas.
 
-**Lösung**: Weinetiketten fotografieren und in Inventory registrieren. Verkostungsnotizen, Paarungen, Preise im [Log](/inventory/manual/de/#-log-system). [Schlüsselwörter](/inventory/manual/de/#-schlüsselwörter) wie "rot", "täglich", "Geschenk" markieren.
+**Lösung**: Weinetiketten fotografieren und in Inventory registrieren. Verkostungsnotizen, Paarungen, Preise im [Log](/inventory/manual/de/#-log-system). [Schlüsselwörter](/inventory/manual/de/#keyword) wie "rot", "täglich", "Geschenk" markieren.
 
 **Ergebnis**: Eigene Weindatenbank aufgebaut. "Was hatten wir am Jahrestag?" - sofort gefunden!
 
@@ -494,7 +494,7 @@ Entdecken Sie die Möglichkeiten von Inventory durch 100 verschiedene Anwendungs
 
 **Problem**: 3-Monats-Abo fürs Studio, gehe einen Monat fleißig, dann höre ich auf. Keine Motivation und ohne Aufzeichnungen kein Fortschritt sichtbar.
 
-**Lösung**: Jede Übungsart registrieren und Gewichte/Wiederholungen im [Log](/inventory/manual/de/#-log-system). [Stempel](/inventory/manual/de/#-stempel-system) für aufeinanderfolgende Besuche hinzufügen.
+**Lösung**: Jede Übungsart registrieren und Gewichte/Wiederholungen im [Log](/inventory/manual/de/#-log-system). [Stempel](/inventory/manual/de/#stamp) für aufeinanderfolgende Besuche hinzufügen.
 
 **Ergebnis**: Fortschritt von 40kg auf 70kg Bankdrücken ist dokumentiert. Aufzeichnungen sehen motiviert mich!
 
@@ -511,7 +511,7 @@ Entdecken Sie die Möglichkeiten von Inventory durch 100 verschiedene Anwendungs
 
 **Problem**: Sage im Meeting "Ich habe den Bericht nächste Woche fertig" und vergesse es dann. Unangenehm wenn jemand fragt "Ist das fertig?"
 
-**Lösung**: Meeting-Zusagen sofort registrieren mit [Datumsalarmen](/inventory/manual/de/#-datumsalarm) für Tag-vorher-Erinnerung. [Stempel](/inventory/manual/de/#-stempel-system) wenn erledigt!
+**Lösung**: Meeting-Zusagen sofort registrieren mit [Datumsalarmen](/inventory/manual/de/#alarm) für Tag-vorher-Erinnerung. [Stempel](/inventory/manual/de/#stamp) wenn erledigt!
 
 **Ergebnis**: "Susan liefert immer was sie verspricht" - das ist jetzt mein Ruf. Vertrauen aufgebaut!
 
@@ -625,7 +625,7 @@ Jobsuche. Jede Absage zerstörte mein Selbstvertrauen.
 
 Erstellte ein 'Wachstumstagebuch' in Inventory. Jede kleine Leistung festhalten. "30 Minuten Englisch-Konversation heute", "Portfolio mit Feedback aktualisiert", "Interviewer mochte meine Vorstellung"...
 
-Nach 3 Monaten hatten sich Aufzeichnungen angesammelt. An Absagetagen lese ich alte Einträge und tanke Kraft. "Ich bin so weit gewachsen." Als ich endlich die Zusage bekam, drückte ich den [Stempel](/inventory/manual/de/#-stempel-system) fest. Es war der hellste Stempel überhaupt.
+Nach 3 Monaten hatten sich Aufzeichnungen angesammelt. An Absagetagen lese ich alte Einträge und tanke Kraft. "Ich bin so weit gewachsen." Als ich endlich die Zusage bekam, drückte ich den [Stempel](/inventory/manual/de/#stamp) fest. Es war der hellste Stempel überhaupt.
 
 </div>
 </details>
@@ -691,7 +691,7 @@ Wenn mein Kind groß ist, zeige ich diese Aufzeichnungen. "So haben Mama und Pap
 
 Ich träume davon eines Tages einen Roman zu veröffentlichen. Noch unbekannt, aber ich schreibe jeden Tag ein bisschen.
 
-Erstellte 'Autorenreise' in Inventory. Wenn Inspiration kommt, registriere ich mit [Papier](/inventory/manual/de/#-papier-system) und führe ein Schreibtagebuch im [Log](/inventory/manual/de/#-log-system). "Heute 3 Seiten geschrieben", "Charaktername entschieden", "Schluss geändert"...
+Erstellte 'Autorenreise' in Inventory. Wenn Inspiration kommt, registriere ich mit [Papier](/inventory/manual/de/#paper) und führe ein Schreibtagebuch im [Log](/inventory/manual/de/#-log-system). "Heute 3 Seiten geschrieben", "Charaktername entschieden", "Schluss geändert"...
 
 Wenn mein Buch erscheint, möchte ich diese Aufzeichnungen teilen. "Hier ist die Reise zum ersten Satz."
 
@@ -716,7 +716,7 @@ Wenn mein Buch erscheint, möchte ich diese Aufzeichnungen teilen. "Hier ist die
 
 Ich war auf Backpacking-Tour durch Europa. Verlor meine Tasche in der Pariser Metro. Pass, Karten, Kamera... alles drin.
 
-Zum Glück hatte ich alle Tascheninhalte in Inventory registriert. Auf der Polizeistation, als man fragte "Was war in der Tasche?", suchte ich nach [Schlüsselwörtern](/inventory/manual/de/#-schlüsselwörter) und zeigte eine vollständige Liste. Sogar meine Passnummer war dokumentiert.
+Zum Glück hatte ich alle Tascheninhalte in Inventory registriert. Auf der Polizeistation, als man fragte "Was war in der Tasche?", suchte ich nach [Schlüsselwörtern](/inventory/manual/de/#keyword) und zeigte eine vollständige Liste. Sogar meine Passnummer war dokumentiert.
 
 Zwei Wochen später wurde die Tasche gefunden! Die Polizei sagte: "Die detaillierte Liste machte die Überprüfung einfach." Inventory war mein Retter.
 
@@ -767,7 +767,7 @@ Dann fand ich ein altes Dokument. Es stellte sich heraus: 70 Jahre alte Papiere 
 
 Ich sammle LEGO-Sets. Anfangs nur zum Spaß, aber es wurde schwer den Überblick zu behalten. Wurde über meine Sammlung verwirrt.
 
-Begann alle LEGO-Sets in Inventory zu registrieren. Kaufpreis, Geschäft, Baustatus im [Log](/inventory/manual/de/#-log-system), Serie und Teilezahl in [Schlüsselwörtern](/inventory/manual/de/#-schlüsselwörter) markiert.
+Begann alle LEGO-Sets in Inventory zu registrieren. Kaufpreis, Geschäft, Baustatus im [Log](/inventory/manual/de/#-log-system), Serie und Teilezahl in [Schlüsselwörtern](/inventory/manual/de/#keyword) markiert.
 
 Ein Jahr später sah die LEGO-Community mein Inventory und meldete sich. "Du bist so organisiert. Komm in unsere Gruppe." Jetzt bin ich Admin einer 500-Mitglieder-Community. Dokumentationsgewohnheit machte aus einem Hobby fast einen Beruf.
 
@@ -801,7 +801,7 @@ Nach einem Jahr erstellten wir aus den Aufzeichnungen "Unser Familienkochbuch". 
 
 Ich liebte Second-Hand und sammelte überall Vintage-Kleidung. Irgendwann war ein ganzes Zimmer voll.
 
-Begann zur Organisation in Inventory zu registrieren. Marke, Ära, Zustand, Herkunft jedes Stücks detailliert im [Log](/inventory/manual/de/#-log-system). Stil, Größe, Saison in [Schlüsselwörtern](/inventory/manual/de/#-schlüsselwörter) markiert.
+Begann zur Organisation in Inventory zu registrieren. Marke, Ära, Zustand, Herkunft jedes Stücks detailliert im [Log](/inventory/manual/de/#-log-system). Stil, Größe, Saison in [Schlüsselwörtern](/inventory/manual/de/#keyword) markiert.
 
 Freunde fragten "Verkaufst du das?" Das Inventory-Screen zeigen baute Vertrauen auf. Begann auf Instagram zu verkaufen, habe jetzt einen physischen Vintage-Laden. Organisation wurde zum Geschäft.
 
@@ -818,7 +818,7 @@ Freunde fragten "Verkaufst du das?" Das Inventory-Screen zeigen baute Vertrauen 
 
 Entschied auszuwandern. Musste 20 Jahre Hab und Gut sortieren.
 
-Registrierte alles im Haus in Inventory. Kategorisiert als: wegwerfen, verkaufen, mitnehmen, verschenken - in [Schlüsselwörtern](/inventory/manual/de/#-schlüsselwörter) markiert. Erinnerungsstücke bekamen ihre Geschichten im [Log](/inventory/manual/de/#-log-system).
+Registrierte alles im Haus in Inventory. Kategorisiert als: wegwerfen, verkaufen, mitnehmen, verschenken - in [Schlüsselwörtern](/inventory/manual/de/#keyword) markiert. Erinnerungsstücke bekamen ihre Geschichten im [Log](/inventory/manual/de/#-log-system).
 
 3 Monate Sortieren in 2 Wochen erledigt. Verkauf lief glatt, und bedeutungsvolle Stücke konnte ich mit Fotos als Andenken leicht loslassen. Gegenstände kann man entsorgen, aber Aufzeichnungen nimmt man mit.
 
@@ -894,7 +894,7 @@ Wenn ich diese Uhr meinem Sohn gebe, [übertrage](/inventory/manual/de/#-übertr
 
 Traumanalyse enthüllt das Unterbewusstsein. Also dokumentiere ich jeden Morgen erinnerte Träume in Inventory.
 
-Ich skizziere Traumszenen als Bilder und lade sie hoch, Details im [Log](/inventory/manual/de/#-log-system). Themen wie "Wasser", "Fallen", "Prüfungen" in [Schlüsselwörtern](/inventory/manual/de/#-schlüsselwörter) markiert.
+Ich skizziere Traumszenen als Bilder und lade sie hoch, Details im [Log](/inventory/manual/de/#-log-system). Themen wie "Wasser", "Fallen", "Prüfungen" in [Schlüsselwörtern](/inventory/manual/de/#keyword) markiert.
 
 Sechs Monate Analyse zeigten Muster. Ich träume von "Fallen" wenn ich gestresst bin. Fand einen Weg mit meinem Unterbewusstsein zu sprechen.
 
@@ -913,7 +913,7 @@ Nachthimmelbeobachtung ist mein Hobby. Wollte dokumentieren wann ich was sah.
 
 Jede Beobachtung kommt in Inventory. Datum, Ort, Ziel (Sternbild, Planet, Nebel), Wetter, Ausrüstung... im [Log](/inventory/manual/de/#-log-system) geloggt, Fotos angehängt.
 
-Meteorschwarm-Saisons bekomme ich Vorab-Alarme via [Datumsalarm](/inventory/manual/de/#-datumsalarm). Drei Jahre Aufzeichnungen wurden Erfahrungsdaten für "wann und wo am besten beobachten."
+Meteorschwarm-Saisons bekomme ich Vorab-Alarme via [Datumsalarm](/inventory/manual/de/#alarm). Drei Jahre Aufzeichnungen wurden Erfahrungsdaten für "wann und wo am besten beobachten."
 
 </div>
 </details>
@@ -928,7 +928,7 @@ Meteorschwarm-Saisons bekomme ich Vorab-Alarme via [Datumsalarm](/inventory/manu
 
 Ich sammle Parfüms aber fand es schwer mir Charakteristiken zu merken.
 
-Jedes Parfüm registriert mit Noten (Kopf, Herz, Basis), Haltbarkeit, Sillage, passende Jahreszeiten/Anlässe im [Log](/inventory/manual/de/#-log-system). [Schlüsselwörter](/inventory/manual/de/#-schlüsselwörter) wie "holzig", "blumig", "Date-Abend" markiert.
+Jedes Parfüm registriert mit Noten (Kopf, Herz, Basis), Haltbarkeit, Sillage, passende Jahreszeiten/Anlässe im [Log](/inventory/manual/de/#-log-system). [Schlüsselwörter](/inventory/manual/de/#keyword) wie "holzig", "blumig", "Date-Abend" markiert.
 
 Wenn Freunde nach Empfehlungen fragen, suche ich einfach und antworte. Meine eigene Parfüm-Enzyklopädie gebaut!
 
@@ -945,7 +945,7 @@ Wenn Freunde nach Empfehlungen fragen, suche ich einfach und antworte. Meine eig
 
 Startete ein Projekt: ein Jahr lang jeden Tag vom selben Ort den Himmel fotografieren.
 
-Tägliche Himmelsfotos hochgeladen mit Wetter, Stimmung, was an dem Tag passierte im [Log](/inventory/manual/de/#-log-system). Aufnahmedaten mit [Startdatum](/inventory/manual/de/#-startdatum--ablaufdatum) verwaltet.
+Tägliche Himmelsfotos hochgeladen mit Wetter, Stimmung, was an dem Tag passierte im [Log](/inventory/manual/de/#-log-system). Aufnahmedaten mit [Startdatum](/inventory/manual/de/#dates) verwaltet.
 
 365 Fotos wurden ein Zeitraffer-Video. Wechselnde Jahreszeiten am Himmel zusammen mit meinem Jahr. Auf Instagram gepostet und über 100k Aufrufe bekommen.
 
@@ -962,7 +962,7 @@ Tägliche Himmelsfotos hochgeladen mit Wetter, Stimmung, was an dem Tag passiert
 
 Ich spiele Pen-and-Paper-Rollenspiele aber Charakterbogen- und Gegenstandsverwaltung ist komplex.
 
-Charaktere und Inventargegenstände in Inventory registriert. Session-Ereignisse, Level-Ups, neue Fähigkeiten im [Log](/inventory/manual/de/#-log-system). [Partitionen](/inventory/manual/de/#-partitionsfunktion) nach Kampagne.
+Charaktere und Inventargegenstände in Inventory registriert. Session-Ereignisse, Level-Ups, neue Fähigkeiten im [Log](/inventory/manual/de/#-log-system). [Partitionen](/inventory/manual/de/#partition) nach Kampagne.
 
 Mit Gruppenmitgliedern via [Geteiltes Log](/inventory/manual/de/#-geteiltes-log-vs-einzellog) verbunden, jeder kann anderer Charakterinfos sehen. Auch der Spielleiter sagt "Das macht Sessions leiten einfacher!"
 
@@ -979,9 +979,9 @@ Mit Gruppenmitgliedern via [Geteiltes Log](/inventory/manual/de/#-geteiltes-log-
 
 Sprache lernen aber Vokabel-Apps passten mir nicht. Wollte auf meine Art organisieren.
 
-Unbekannte Wörter in Inventory registriert mit Beispielsätzen und Nuancenerklärungen im [Log](/inventory/manual/de/#-log-system). [Schlüsselwörter](/inventory/manual/de/#-schlüsselwörter) wie "B2", "Business", "in Serie gehört" markiert.
+Unbekannte Wörter in Inventory registriert mit Beispielsätzen und Nuancenerklärungen im [Log](/inventory/manual/de/#-log-system). [Schlüsselwörter](/inventory/manual/de/#keyword) wie "B2", "Business", "in Serie gehört" markiert.
 
-Gemerkte Wörter bekommen [Stempel](/inventory/manual/de/#-stempel-system). Nur ungestempelte wiederholen. Effizient! Sprachprüfung bestanden!
+Gemerkte Wörter bekommen [Stempel](/inventory/manual/de/#stamp). Nur ungestempelte wiederholen. Effizient! Sprachprüfung bestanden!
 
 </div>
 </details>
@@ -1013,7 +1013,7 @@ Ungetragenes aussortiert, leere Stellen nur mit Nötigem gefüllt. Inventory hil
 
 Besuche oft Museen aber vergesse gesehene Werke.
 
-Jede Ausstellung, registriere ich berührende Werke. Künstler, Jahr, Technik im [Log](/inventory/manual/de/#-log-system), plus "warum es mir gefiel." Genre, Ära, Emotion in [Schlüsselwörtern](/inventory/manual/de/#-schlüsselwörter) markiert.
+Jede Ausstellung, registriere ich berührende Werke. Künstler, Jahr, Technik im [Log](/inventory/manual/de/#-log-system), plus "warum es mir gefiel." Genre, Ära, Emotion in [Schlüsselwörtern](/inventory/manual/de/#keyword) markiert.
 
 Fünf Jahre Aufzeichnungen zeigen meinen Geschmack. Impressionismus, Abstrakt, Blautöne... Jetzt nutze ich diese Daten um Ausstellungen auszuwählen.
 
@@ -1030,7 +1030,7 @@ Fünf Jahre Aufzeichnungen zeigen meinen Geschmack. Impressionismus, Abstrakt, B
 
 Hunderte Visitenkarten gestapelt, kann mich nicht erinnern wer wer ist.
 
-Karten sofort fotografieren und in Inventory registrieren. Im [Log](/inventory/manual/de/#-log-system) notieren "wo getroffen", "worüber gesprochen." Branche, Interessen, Kooperationspotenzial in [Schlüsselwörtern](/inventory/manual/de/#-schlüsselwörter).
+Karten sofort fotografieren und in Inventory registrieren. Im [Log](/inventory/manual/de/#-log-system) notieren "wo getroffen", "worüber gesprochen." Branche, Interessen, Kooperationspotenzial in [Schlüsselwörtern](/inventory/manual/de/#keyword).
 
 "Der IT-Typ den ich mal traf" - sofortige Suche. Beim Wieder-Kontaktieren das vorherige Gespräch erwähnen beeindruckt die Leute!
 
@@ -1047,7 +1047,7 @@ Karten sofort fotografieren und in Inventory registrieren. Im [Log](/inventory/m
 
 Über 50 Brettspiele aber kann mich nicht erinnern was ich habe. Wenn Freunde kommen, fällt die Entscheidung schwer.
 
-Alle Spiele registriert mit Spielerzahl, Dauer, Genre, Schwierigkeit in [Schlüsselwörtern](/inventory/manual/de/#-schlüsselwörter). Spielbewertungen im [Log](/inventory/manual/de/#-log-system).
+Alle Spiele registriert mit Spielerzahl, Dauer, Genre, Schwierigkeit in [Schlüsselwörtern](/inventory/manual/de/#keyword). Spielbewertungen im [Log](/inventory/manual/de/#-log-system).
 
 Wenn Freunde kommen: "4 Spieler, 1 Stunde, leicht" suchen gibt sofortige Empfehlungen. Sie nennen mich den "Brettspiel-Sommelier!"
 

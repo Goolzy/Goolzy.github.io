@@ -188,7 +188,7 @@ Discover the possibilities of Inventory through 100 diverse use cases.
 
 **Problem**: With a busy schedule, I often forget about expiration dates and end up throwing away spoiled food. Especially things like tofu and milk go bad within days...
 
-**Solution**: I created items for each ingredient using [Paper](/inventory/manual/en/#-paper-system) and set [Expiry Dates](/inventory/manual/en/#-start-date--expiry). Now I get notifications 3 days before expiration, so I can cook or freeze items in time.
+**Solution**: I created items for each ingredient using [Paper](/inventory/manual/en/#paper) and set [Expiry Dates](/inventory/manual/en/#dates). Now I get notifications 3 days before expiration, so I can cook or freeze items in time.
 
 **Result**: Reduced food waste by 80%. Saved $150 on monthly groceries!
 
@@ -205,7 +205,7 @@ Discover the possibilities of Inventory through 100 diverse use cases.
 
 **Problem**: Netflix, YouTube Premium, Notion, GitHub... I have over 10 subscriptions with different renewal dates. Some I don't even use anymore but keep paying for.
 
-**Solution**: Registered all subscriptions in Inventory with [Date Alarms](/inventory/manual/en/#-date-alarm) set 7 days before renewal. Added monthly fees as [Keywords](/inventory/manual/en/#-keywords) for quick overview.
+**Solution**: Registered all subscriptions in Inventory with [Date Alarms](/inventory/manual/en/#alarm) set 7 days before renewal. Added monthly fees as [Keywords](/inventory/manual/en/#keyword) for quick overview.
 
 **Result**: Cancelled 3 unused subscriptions, saving $40/month. No more surprise charges!
 
@@ -222,7 +222,7 @@ Discover the possibilities of Inventory through 100 diverse use cases.
 
 **Problem**: With two kids on different vaccination schedules, I kept getting confused. Sometimes got calls from the clinic when it was already overdue.
 
-**Solution**: Created separate [Partitions](/inventory/manual/en/#-partition-feature) for each child and managed vaccination dates with [Date Alarms](/inventory/manual/en/#-date-alarm). Added [Stamps](/inventory/manual/en/#-stamp-system) when completed.
+**Solution**: Created separate [Partitions](/inventory/manual/en/#partition) for each child and managed vaccination dates with [Date Alarms](/inventory/manual/en/#alarm). Added [Stamps](/inventory/manual/en/#stamp) when completed.
 
 **Result**: Haven't missed a single vaccination appointment. Can prepare ahead of clinic visits!
 
@@ -239,7 +239,7 @@ Discover the possibilities of Inventory through 100 diverse use cases.
 
 **Problem**: I move often for school. Every time, I lose track of which box contains what. Even with box numbers, I end up opening everything.
 
-**Solution**: Before packing, I photographed each box's contents and registered them in Inventory. Tagged with [Keywords](/inventory/manual/en/#-keywords) like "Box1", "Kitchen".
+**Solution**: Before packing, I photographed each box's contents and registered them in Inventory. Tagged with [Keywords](/inventory/manual/en/#keyword) like "Box1", "Kitchen".
 
 **Result**: Cut unpacking time in half. "Where are the scissors?" - instant search!
 
@@ -256,7 +256,7 @@ Discover the possibilities of Inventory through 100 diverse use cases.
 
 **Problem**: Need to keep receipts for business expenses, but paper receipts fade and get lost. Tax season is always stressful...
 
-**Solution**: Right after payment, I photograph receipts and register them in Inventory. Tag with [Keywords](/inventory/manual/en/#-keywords) like "expense", "2024", "meals" for easy categorization.
+**Solution**: Right after payment, I photograph receipts and register them in Inventory. Tag with [Keywords](/inventory/manual/en/#keyword) like "expense", "2024", "meals" for easy categorization.
 
 **Result**: Almost no paper receipts needed. During tax season, I just search and find exactly what I need. My accountant loves it!
 
@@ -273,7 +273,7 @@ Discover the possibilities of Inventory through 100 diverse use cases.
 
 **Problem**: When I develop film photos, I forget when and where I took them. Printed photos just pile up with no organization.
 
-**Solution**: After each development, I register representative shots in Inventory with [Keywords](/inventory/manual/en/#-keywords) for location, date, and film type. Development lab info goes in [Log](/inventory/manual/en/#-log-system).
+**Solution**: After each development, I register representative shots in Inventory with [Keywords](/inventory/manual/en/#keyword) for location, date, and film type. Development lab info goes in [Log](/inventory/manual/en/#log).
 
 **Result**: Built my own film archive. Can instantly find photos from a trip 2 years ago!
 
@@ -290,7 +290,7 @@ Discover the possibilities of Inventory through 100 diverse use cases.
 
 **Problem**: Different clothes need different care - some dry clean only, sweaters hand wash only. I've ruined clothes by using the wrong method.
 
-**Solution**: Registered clothes requiring special care in Inventory. Care instructions in [Log](/inventory/manual/en/#-log-system). Dry cleaning pickup dates tracked with [Date Alarms](/inventory/manual/en/#-date-alarm).
+**Solution**: Registered clothes requiring special care in Inventory. Care instructions in [Log](/inventory/manual/en/#log). Dry cleaning pickup dates tracked with [Date Alarms](/inventory/manual/en/#alarm).
 
 **Result**: Dramatically reduced clothing damage. No more late fees from forgetting dry cleaning!
 
@@ -307,7 +307,7 @@ Discover the possibilities of Inventory through 100 diverse use cases.
 
 **Problem**: Doctor recommended 5 different supplements. I get confused about morning/evening doses and miss reorder timing.
 
-**Solution**: Registered each supplement with [Paper](/inventory/manual/en/#-paper-system). Dosage instructions in [Log](/inventory/manual/en/#-log-system), estimated depletion dates as [Expiry](/inventory/manual/en/#-start-date--expiry).
+**Solution**: Registered each supplement with [Paper](/inventory/manual/en/#paper). Dosage instructions in [Log](/inventory/manual/en/#log), estimated depletion dates as [Expiry](/inventory/manual/en/#dates).
 
 **Result**: Now following schedule perfectly. Get alerts before running out so I can reorder in time!
 
@@ -324,7 +324,7 @@ Discover the possibilities of Inventory through 100 diverse use cases.
 
 **Problem**: AC broke down and warranty had expired just a month before. Couldn't even find the warranty card. Paid $300 for repairs.
 
-**Solution**: Registered all appliances in Inventory with warranty photos attached. Set [Expiry Dates](/inventory/manual/en/#-start-date--expiry) for warranty expiration with 1-month advance alerts.
+**Solution**: Registered all appliances in Inventory with warranty photos attached. Set [Expiry Dates](/inventory/manual/en/#dates) for warranty expiration with 1-month advance alerts.
 
 **Result**: Now I request inspections or consider extensions before warranties expire. Got my washing machine fixed for free!
 
@@ -341,7 +341,7 @@ Discover the possibilities of Inventory through 100 diverse use cases.
 
 **Problem**: Birthday and holiday gift cards get buried in messages and expire unused.
 
-**Solution**: Screenshot gift cards immediately and register in Inventory with [Expiry Dates](/inventory/manual/en/#-start-date--expiry). Get alerts one week before expiration.
+**Solution**: Screenshot gift cards immediately and register in Inventory with [Expiry Dates](/inventory/manual/en/#dates). Get alerts one week before expiration.
 
 **Result**: Saved a $30 Starbucks gift card! Now I actually use the gifts I receive.
 
@@ -358,7 +358,7 @@ Discover the possibilities of Inventory through 100 diverse use cases.
 
 **Problem**: Can't remember when and where I got car serviced. Different shops have different records. Keep missing oil change timing.
 
-**Solution**: Registered my car in Inventory, logging every service in [Log](/inventory/manual/en/#-log-system). Next service dates set as [Date Alarms](/inventory/manual/en/#-date-alarm).
+**Solution**: Registered my car in Inventory, logging every service in [Log](/inventory/manual/en/#log). Next service dates set as [Date Alarms](/inventory/manual/en/#alarm).
 
 **Result**: Complete maintenance history built up. When selling, showing the history helped get a better price!
 
@@ -375,7 +375,7 @@ Discover the possibilities of Inventory through 100 diverse use cases.
 
 **Problem**: Contracts, insurance policies, property deeds... important documents scattered everywhere. Once had to get a replacement because I couldn't find the original.
 
-**Solution**: Photographed all important documents and registered in Inventory with [Document Lock](/inventory/manual/en/#-document-lock) for security. Storage location noted in [Keywords](/inventory/manual/en/#-keywords).
+**Solution**: Photographed all important documents and registered in Inventory with [Document Lock](/inventory/manual/en/#lock) for security. Storage location noted in [Keywords](/inventory/manual/en/#keyword).
 
 **Result**: "Where's the deed?" → Search → Storage location found. 30 seconds!
 
@@ -392,7 +392,7 @@ Discover the possibilities of Inventory through 100 diverse use cases.
 
 **Problem**: Excited when buying books, but they just pile up unread at home. Once bought the same book twice.
 
-**Solution**: Register books immediately after purchase. Set [Start Date](/inventory/manual/en/#-start-date--expiry) when beginning, add [Stamp](/inventory/manual/en/#-stamp-system) when finished. Unread list visible at a glance.
+**Solution**: Register books immediately after purchase. Set [Start Date](/inventory/manual/en/#dates) when beginning, add [Stamp](/inventory/manual/en/#stamp) when finished. Unread list visible at a glance.
 
 **Result**: Instead of feeling overwhelmed, I'm motivated. Read 12 books this year - more than all of last year!
 
@@ -409,7 +409,7 @@ Discover the possibilities of Inventory through 100 diverse use cases.
 
 **Problem**: Wanted indoor plants but kept forgetting to water them or overwatering. They all died.
 
-**Solution**: Registered each plant in Inventory with watering reminders via [Date Alarms](/inventory/manual/en/#-date-alarm). Repotting and fertilizing dates logged in [Log](/inventory/manual/en/#-log-system).
+**Solution**: Registered each plant in Inventory with watering reminders via [Date Alarms](/inventory/manual/en/#alarm). Repotting and fertilizing dates logged in [Log](/inventory/manual/en/#log).
 
 **Result**: My monstera has been alive for 6 months! Even grew 3 new leaves!
 
@@ -426,7 +426,7 @@ Discover the possibilities of Inventory through 100 diverse use cases.
 
 **Problem**: Different passwords for every site, can't remember them. Writing on sticky notes feels insecure...
 
-**Solution**: Registered accounts in Inventory with [Document Lock](/inventory/manual/en/#-document-lock) protection. Only store password hints, actual passwords use pattern combinations.
+**Solution**: Registered accounts in Inventory with [Document Lock](/inventory/manual/en/#lock) protection. Only store password hints, actual passwords use pattern combinations.
 
 **Result**: No more "Forgot Password" clicks. Secure and convenient management!
 
@@ -443,7 +443,7 @@ Discover the possibilities of Inventory through 100 diverse use cases.
 
 **Problem**: Husband, mother-in-law, myself... all different checkup schedules. Once missed the free annual checkup period and had to pay out of pocket.
 
-**Solution**: Registered each family member's checkup schedule with [Date Alarms](/inventory/manual/en/#-date-alarm) to notify when the checkup period begins.
+**Solution**: Registered each family member's checkup schedule with [Date Alarms](/inventory/manual/en/#alarm) to notify when the checkup period begins.
 
 **Result**: Never missed a free checkup for the whole family. Saving over $500 annually on health costs!
 
@@ -460,7 +460,7 @@ Discover the possibilities of Inventory through 100 diverse use cases.
 
 **Problem**: Two cats with different vaccination schedules and vet records everywhere. New vets always ask "Do you have previous records?" and I can't find them.
 
-**Solution**: Created [Partitions](/inventory/manual/en/#-partition-feature) for each cat. Logged every vet visit in [Log](/inventory/manual/en/#-log-system). Next vaccinations managed with [Date Alarms](/inventory/manual/en/#-date-alarm).
+**Solution**: Created [Partitions](/inventory/manual/en/#partition) for each cat. Logged every vet visit in [Log](/inventory/manual/en/#log). Next vaccinations managed with [Date Alarms](/inventory/manual/en/#alarm).
 
 **Result**: The vet praised how organized I am. In emergencies, I can show records instantly. Peace of mind!
 
@@ -477,7 +477,7 @@ Discover the possibilities of Inventory through 100 diverse use cases.
 
 **Problem**: Forget the name of wines I enjoyed at wine bars. At the store, I just grab anything.
 
-**Solution**: Photograph wine labels and register in Inventory. Log tasting notes, pairings, and prices in [Log](/inventory/manual/en/#-log-system). Tag with [Keywords](/inventory/manual/en/#-keywords) like "red", "daily", "gift".
+**Solution**: Photograph wine labels and register in Inventory. Log tasting notes, pairings, and prices in [Log](/inventory/manual/en/#log). Tag with [Keywords](/inventory/manual/en/#keyword) like "red", "daily", "gift".
 
 **Result**: Built my own wine database. "What did we have on our anniversary?" - instant find!
 
@@ -494,7 +494,7 @@ Discover the possibilities of Inventory through 100 diverse use cases.
 
 **Problem**: Sign up for 3-month gym memberships, go hard for one month, then quit. No motivation and no progress without records.
 
-**Solution**: Register each exercise type and log weights/reps in [Log](/inventory/manual/en/#-log-system). Add [Stamps](/inventory/manual/en/#-stamp-system) for consecutive attendance.
+**Solution**: Register each exercise type and log weights/reps in [Log](/inventory/manual/en/#log). Add [Stamps](/inventory/manual/en/#stamp) for consecutive attendance.
 
 **Result**: Progress from 40kg to 70kg bench press is all documented. Seeing records keeps me motivated!
 
@@ -511,7 +511,7 @@ Discover the possibilities of Inventory through 100 diverse use cases.
 
 **Problem**: I'd say "I'll have the report ready by next week" in meetings, then forget. Awkward when someone asks "Is that done?"
 
-**Solution**: Register meeting commitments immediately with [Date Alarms](/inventory/manual/en/#-date-alarm) for day-before reminders. [Stamp](/inventory/manual/en/#-stamp-system) when completed!
+**Solution**: Register meeting commitments immediately with [Date Alarms](/inventory/manual/en/#alarm) for day-before reminders. [Stamp](/inventory/manual/en/#stamp) when completed!
 
 **Result**: "Susan always delivers on her commitments" - that's my reputation now. Trust earned!
 
@@ -538,7 +538,7 @@ My 18-month-old said "Mama" for the first time. My heart felt like it would burs
 
 I recorded the moment on video, but that wasn't enough. I wanted to remember the emotions, the context, what happened the day before...
 
-In Inventory, I saved the video with a [Log](/inventory/manual/en/#-log-system) entry capturing every detail of that day. When daddy came home and he said "Mama" again, how I cried that evening...
+In Inventory, I saved the video with a [Log](/inventory/manual/en/#log) entry capturing every detail of that day. When daddy came home and he said "Mama" again, how I cried that evening...
 
 Five years later, when my son started elementary school, I read these records again. The emotions came flooding back. Inventory became our family's time capsule.
 
@@ -555,7 +555,7 @@ Five years later, when my son started elementary school, I read these records ag
 
 After my mother-in-law got ill, I worried about the family recipes passed down for generations. When I asked "How do you make this broth?", she'd just say "about this much"...
 
-I sat beside her, filmed her cooking, and transcribed everything exactly as she said into [Log](/inventory/manual/en/#-log-system). "Three finger-widths of red pepper flakes", "add soy sauce little by little"...
+I sat beside her, filmed her cooking, and transcribed everything exactly as she said into [Log](/inventory/manual/en/#log). "Three finger-widths of red pepper flakes", "add soy sauce little by little"...
 
 After she passed, I read these records whenever preparing family meals. I can almost hear her voice. Now I'll pass this Inventory to my daughter-in-law.
 
@@ -589,7 +589,7 @@ We're including these records in our wedding video. Years from now, we'll still 
 
 My 9-year-old dog 'Buddy' and I have been together for years. Knowing time is limited makes each day precious.
 
-Every day, I post Buddy's photos in Inventory. What he ate, what we saw on walks, his expression before sleep. I write it like a diary in [Log](/inventory/manual/en/#-log-system).
+Every day, I post Buddy's photos in Inventory. What he ate, what we saw on walks, his expression before sleep. I write it like a diary in [Log](/inventory/manual/en/#log).
 
 A friend asked "Why do you do this every day?" I replied: "When Buddy is gone, I want to remember how happy he was." It's sad, but these records will bring comfort later.
 
@@ -606,7 +606,7 @@ A friend asked "Why do you do this every day?" I replied: "When Buddy is gone, I
 
 While organizing my father's study, I found photos from the 1970s. Faded and creased, but capturing my young father.
 
-I scanned them digitally and registered in Inventory. For each photo, I asked my father and recorded his stories in [Log](/inventory/manual/en/#-log-system). "This was the suit from my first paycheck", "This was our honeymoon in the countryside"...
+I scanned them digitally and registered in Inventory. For each photo, I asked my father and recorded his stories in [Log](/inventory/manual/en/#log). "This was the suit from my first paycheck", "This was our honeymoon in the countryside"...
 
 For his 60th birthday, I made a video from these records. He cried. "When did you ask all these questions?" It was the most meaningful gift.
 
@@ -625,7 +625,7 @@ Job hunting. Every rejection crushed my confidence.
 
 Created a 'Growth Journal' in Inventory. Recording every small achievement. "30 minutes of English conversation today", "Updated portfolio with feedback", "Interviewer liked my introduction"...
 
-After 3 months, the records piled up. On rejection days, I read past entries and gain strength. "I've grown this much." When I finally got the offer, I pressed that [Stamp](/inventory/manual/en/#-stamp-system) hard. It was the brightest stamp ever.
+After 3 months, the records piled up. On rejection days, I read past entries and gain strength. "I've grown this much." When I finally got the offer, I pressed that [Stamp](/inventory/manual/en/#stamp) hard. It was the brightest stamp ever.
 
 </div>
 </details>
@@ -640,7 +640,7 @@ After 3 months, the records piled up. On rejection days, I read past entries and
 
 Music has the power to bring back memories. Certain songs transport me to specific moments.
 
-Created 'Life OST' in Inventory. For meaningful moments, I register the song playing and record the moment in [Log](/inventory/manual/en/#-log-system). The song on my first day at work, the song that comforted me after a breakup...
+Created 'Life OST' in Inventory. For meaningful moments, I register the song playing and record the moment in [Log](/inventory/manual/en/#log). The song on my first day at work, the song that comforted me after a breakup...
 
 On hard days, I play this playlist while reading the stories attached to each song. My life's soundtrack keeps growing richer.
 
@@ -657,7 +657,7 @@ On hard days, I play this playlist while reading the stories attached to each so
 
 I still have letters from my first class 10 years ago. Children's crooked handwriting saying "I love you teacher". The paper is aging and it breaks my heart.
 
-I photographed each letter and uploaded to Inventory. In [Log](/inventory/manual/en/#-log-system), I wrote memories of each child. "This one was shy at first but became the most active", "Got this letter on graduation day"...
+I photographed each letter and uploaded to Inventory. In [Log](/inventory/manual/en/#log), I wrote memories of each child. "This one was shy at first but became the most active", "Got this letter on graduation day"...
 
 On difficult days, I open these records. The children's love comes through and gives me strength. This is why I teach.
 
@@ -674,7 +674,7 @@ On difficult days, I open these records. The children's love comes through and g
 
 20 weeks pregnant. Every day brings something new as my belly grows. First kicks, first ultrasound, baby name candidates...
 
-Created 'Waiting for Baby' journal in Inventory. Each prenatal visit, I upload ultrasound photos and record my emotions in [Log](/inventory/manual/en/#-log-system). "Cried when I heard the heartbeat today", "Baby started kicking! Husband felt it too"...
+Created 'Waiting for Baby' journal in Inventory. Each prenatal visit, I upload ultrasound photos and record my emotions in [Log](/inventory/manual/en/#log). "Cried when I heard the heartbeat today", "Baby started kicking! Husband felt it too"...
 
 When my child grows up, I'll show them these records. "This is how mommy and daddy waited for you."
 
@@ -691,7 +691,7 @@ When my child grows up, I'll show them these records. "This is how mommy and dad
 
 I dream of publishing a novel someday. Still unknown, but writing a little every day.
 
-Created 'Writer's Journey' in Inventory. When inspiration strikes, I register with [Paper](/inventory/manual/en/#-paper-system) and keep a writing journal in [Log](/inventory/manual/en/#-log-system). "Wrote 3 pages today", "Decided on character name", "Changed the ending"...
+Created 'Writer's Journey' in Inventory. When inspiration strikes, I register with [Paper](/inventory/manual/en/#paper) and keep a writing journal in [Log](/inventory/manual/en/#log). "Wrote 3 pages today", "Decided on character name", "Changed the ending"...
 
 When my book is published, I want to share these records. "Here's the journey to that first sentence."
 
@@ -708,7 +708,7 @@ When my book is published, I want to share these records. "Here's the journey to
 
 Living alone, days just pass by. Nothing special, no one to remember.
 
-Started recording daily life in Inventory. Today's cooking, the sunset from my window, a movie watched alone... Small things go in [Log](/inventory/manual/en/#-log-system).
+Started recording daily life in Inventory. Today's cooking, the sunset from my window, a movie watched alone... Small things go in [Log](/inventory/manual/en/#log).
 
 A year later, I realized: my daily life is meaningful too. I'm alone but not lonely, because I'm recording myself.
 
@@ -725,7 +725,7 @@ A year later, I realized: my daily life is meaningful too. I'm alone but not lon
 
 Lost a friend suddenly 2 years ago. Feared memories would fade with time.
 
-Gathered all memories with my friend in Inventory. Photos together, chat screenshots, handwritten notes... In [Log](/inventory/manual/en/#-log-system), I wrote about moments together. "This photo from graduation trip", "This was when friend bought lunch with first paycheck"...
+Gathered all memories with my friend in Inventory. Photos together, chat screenshots, handwritten notes... In [Log](/inventory/manual/en/#log), I wrote about moments together. "This photo from graduation trip", "This was when friend bought lunch with first paycheck"...
 
 On anniversaries, I open these records. I think friend would say "Thanks for remembering me like this." Memories don't fade if you record them.
 
@@ -742,7 +742,7 @@ On anniversaries, I open these records. I think friend would say "Thanks for rem
 
 Redevelopment started and 30-year-old shops are closing one by one. The diner lady, the stationery shop owner, the laundry lady...
 
-Started recording them in Inventory before they disappear. Shop photos, owner interviews, recommended items... In [Log](/inventory/manual/en/#-log-system), my own memories with each place.
+Started recording them in Inventory before they disappear. Shop photos, owner interviews, recommended items... In [Log](/inventory/manual/en/#log), my own memories with each place.
 
 When I showed neighbors, they cried. "Thank you for keeping this." Inventory became our neighborhood's history.
 
@@ -759,7 +759,7 @@ When I showed neighbors, they cried. "Thank you for keeping this." Inventory bec
 
 My child asks "Why?" constantly. "Why is the sky blue?", "Why do dogs bark?", "Why does mommy work?"
 
-I register each question in Inventory and record my answers in [Log](/inventory/manual/en/#-log-system). When the same question comes up later, I show the old entry: "Remember what mommy said?"
+I register each question in Inventory and record my answers in [Log](/inventory/manual/en/#log). When the same question comes up later, I show the old entry: "Remember what mommy said?"
 
 My child is amazed. "Wow, I asked that?" A history of curiosity is building. What will they feel reading this when they're older?
 
@@ -776,7 +776,7 @@ My child is amazed. "Wow, I asked that?" A history of curiosity is building. Wha
 
 Started learning to cook but everything failed at first. Burnt, too salty, too tough...
 
-I thought about only posting successes, but decided to upload failures too. In [Log](/inventory/manual/en/#-log-system), I analyzed "why it failed."
+I thought about only posting successes, but decided to upload failures too. In [Log](/inventory/manual/en/#log), I analyzed "why it failed."
 
 Three months later, I compared my first disaster curry with today's curry. Night and day difference! The failure records are actually the most satisfying. "Look how much I've grown."
 
@@ -810,7 +810,7 @@ A year later, 365 gratitudes accumulated. On hard days, reading these reminds me
 
 Working in the city, can't visit my elderly parents in the countryside often. It hurts to see them aging.
 
-With permission, I record our phone calls and save them in Inventory. In [Log](/inventory/manual/en/#-log-system), I note what we talked about. "Today mom talked about neighborhood flowers", "Dad said take care of my health"...
+With permission, I record our phone calls and save them in Inventory. In [Log](/inventory/manual/en/#log), I note what we talked about. "Today mom talked about neighborhood flowers", "Dad said take care of my health"...
 
 When I miss them, I play the recordings. Their voices warm my heart. Knowing these voices will become even more precious someday.
 
@@ -827,7 +827,7 @@ When I miss them, I play the recordings. Their voices warm my heart. Knowing the
 
 Turning 30 made me seriously think "What do I want to do with my life?"
 
-Created a bucket list in Inventory. "See northern lights", "Complete a marathon", "Write a book"... Each accomplishment gets photos, [Log](/inventory/manual/en/#-log-system) entries, and a [Stamp](/inventory/manual/en/#-stamp-system).
+Created a bucket list in Inventory. "See northern lights", "Complete a marathon", "Write a book"... Each accomplishment gets photos, [Log](/inventory/manual/en/#log) entries, and a [Stamp](/inventory/manual/en/#stamp).
 
 Completed 7 out of 50. Still 43 to go, but no rush. I have time, and these records prove it.
 
@@ -844,7 +844,7 @@ Completed 7 out of 50. Still 43 to go, but no rush. I have time, and these recor
 
 My child's drawings are piling up. All precious, but paper keeps accumulating.
 
-I photograph each drawing and upload to Inventory. In [Log](/inventory/manual/en/#-log-system), I record their explanation: "This is daddy. This is a dinosaur." Their imagination captured as-is.
+I photograph each drawing and upload to Inventory. In [Log](/inventory/manual/en/#log), I record their explanation: "This is daddy. This is a dinosaur." Their imagination captured as-is.
 
 Years later, we'll see how their drawing evolved, how their imagination changed. Paper can be discarded, but records last forever.
 
@@ -861,7 +861,7 @@ Years later, we'll see how their drawing evolved, how their imagination changed.
 
 About to study abroad. Won't be able to come home for over 2 years, so preparing for homesickness in advance.
 
-Recording frequent places, favorite foods, familiar streets... all in Inventory. In [Log](/inventory/manual/en/#-log-system), writing "what happened here", "how I felt eating this"...
+Recording frequent places, favorite foods, familiar streets... all in Inventory. In [Log](/inventory/manual/en/#log), writing "what happened here", "how I felt eating this"...
 
 When I'm struggling overseas, I'll look at these records. Capturing the smells, tastes, and air of home. A virtual Korea trip package just for me.
 
@@ -886,7 +886,7 @@ When I'm struggling overseas, I'll look at these records. Capturing the smells, 
 
 I was backpacking through Europe. Lost my bag on the Paris metro. Passport, cards, camera... everything was inside.
 
-Fortunately, I had registered all bag contents in Inventory. At the police station, when asked "What was in the bag?", I searched by [Keywords](/inventory/manual/en/#-keywords) and showed a complete list. Even my passport number was recorded.
+Fortunately, I had registered all bag contents in Inventory. At the police station, when asked "What was in the bag?", I searched by [Keywords](/inventory/manual/en/#keyword) and showed a complete list. Even my passport number was recorded.
 
 Two weeks later, the bag was found! Police said: "The detailed list made verification easy." Inventory was my savior.
 
@@ -903,7 +903,7 @@ Two weeks later, the bag was found! Police said: "The detailed list made verific
 
 A friend transferred schools in high school. Lost contact after. Sometimes I'd think about them.
 
-I was organizing memories with that friend in Inventory. In [Log](/inventory/manual/en/#-log-system), I recorded "photo in our school uniform", "songs they liked", "the last day we met".
+I was organizing memories with that friend in Inventory. In [Log](/inventory/manual/en/#log), I recorded "photo in our school uniform", "songs they liked", "the last day we met".
 
 One day, I shared these records on social media. "Does anyone know this friend?" Amazingly, a friend of their friend reached out. After 10 years, we reunited. Inventory built the bridge.
 
@@ -920,7 +920,7 @@ One day, I shared these records on social media. "Does anyone know this friend?"
 
 After grandfather passed, we sorted through his belongings. There were many old items that I almost threw away without knowing their significance.
 
-I photographed everything and registered in Inventory, then asked my father about each item, recording in [Log](/inventory/manual/en/#-log-system). "This was grandfather's first watch", "This was used during the war"...
+I photographed everything and registered in Inventory, then asked my father about each item, recording in [Log](/inventory/manual/en/#log). "This was grandfather's first watch", "This was used during the war"...
 
 Then I found an old document. Turns out it was 70-year-old papers related to independence movement recognition! We contacted the government and grandfather's contributions were honored. Would have been buried forever if we'd just thrown it away.
 
@@ -937,7 +937,7 @@ Then I found an old document. Turns out it was 70-year-old papers related to ind
 
 I collect LEGO sets. Started just for fun, but it got hard to track what I had. Kept getting confused about my collection.
 
-Started registering all LEGO sets in Inventory. Purchase price, store, build status in [Log](/inventory/manual/en/#-log-system), series and piece count tagged in [Keywords](/inventory/manual/en/#-keywords).
+Started registering all LEGO sets in Inventory. Purchase price, store, build status in [Log](/inventory/manual/en/#log), series and piece count tagged in [Keywords](/inventory/manual/en/#keyword).
 
 A year later, the LEGO community saw my Inventory and reached out. "You're so organized. Join our group." Now I'm an admin for a 500-member community. Recording habits turned a hobby into something like a profession.
 
@@ -971,7 +971,7 @@ After a year, we compiled the records into "Our Family Cookbook." Made it oursel
 
 I loved thrifting and collected vintage clothes everywhere. Eventually filled an entire room.
 
-Started organizing by registering in Inventory. Each item's brand, era, condition, source detailed in [Log](/inventory/manual/en/#-log-system). Style, size, season tagged in [Keywords](/inventory/manual/en/#-keywords).
+Started organizing by registering in Inventory. Each item's brand, era, condition, source detailed in [Log](/inventory/manual/en/#log). Style, size, season tagged in [Keywords](/inventory/manual/en/#keyword).
 
 Friends started asking "Are you selling this?" Showing the Inventory screen built trust. Started selling on Instagram, now have a physical vintage shop. Organization became a business.
 
@@ -988,7 +988,7 @@ Friends started asking "Are you selling this?" Showing the Inventory screen buil
 
 Decided to emigrate. Had to sort through 20 years of belongings.
 
-Registered everything in the house in Inventory. Categorized as: throw away, sell, take, gift - tagged with [Keywords](/inventory/manual/en/#-keywords). Items with memories got their stories in [Log](/inventory/manual/en/#-log-system).
+Registered everything in the house in Inventory. Categorized as: throw away, sell, take, gift - tagged with [Keywords](/inventory/manual/en/#keyword). Items with memories got their stories in [Log](/inventory/manual/en/#log).
 
 Finished 3 months of organizing in 2 weeks. Second-hand sales went smoothly, and meaningful items I could let go of easily with photos as keepsakes. Objects can be discarded, but records come with me.
 
@@ -1005,7 +1005,7 @@ Finished 3 months of organizing in 2 weeks. Second-hand sales went smoothly, and
 
 Decided to pass my first violin to my high school sibling. It was hard to let go of an instrument I'd played for 10 years.
 
-I recorded all the violin's stories in Inventory. First purchase day, first recital, repair dates... Every moment captured in [Log](/inventory/manual/en/#-log-system).
+I recorded all the violin's stories in Inventory. First purchase day, first recital, repair dates... Every moment captured in [Log](/inventory/manual/en/#log).
 
 When I [Transferred](/inventory/manual/en/#-transfer-feature) the instrument with the Inventory records to my sibling, I said "Everything this violin has played is written here." They were moved to tears. I passed down not just the instrument, but its history.
 
@@ -1022,7 +1022,7 @@ When I [Transferred](/inventory/manual/en/#-transfer-feature) the instrument wit
 
 Adopted 'Luna' from a shelter. She has no known past, so I wanted to document her future even better.
 
-From day one, I recorded everything about Luna in Inventory. First day home, first tail wag, first nap spot... Daily diary entries in [Log](/inventory/manual/en/#-log-system).
+From day one, I recorded everything about Luna in Inventory. First day home, first tail wag, first nap spot... Daily diary entries in [Log](/inventory/manual/en/#log).
 
 On our first anniversary, I made a video from these records called "Luna's First Year." Shared with the community and many were touched, some even decided to adopt rescues. Records saved another life.
 
@@ -1039,7 +1039,7 @@ On our first anniversary, I made a video from these records called "Luna's First
 
 I have a 1960s Omega watch inherited from my father. A family treasure, but I'm the only one who knows its history now.
 
-Registered the watch in Inventory and recorded all of father's stories in [Log](/inventory/manual/en/#-log-system). "Bought with first paycheck", "Wore it the day he met mother", "Checked the time when elder brother was born"...
+Registered the watch in Inventory and recorded all of father's stories in [Log](/inventory/manual/en/#log). "Bought with first paycheck", "Wore it the day he met mother", "Checked the time when elder brother was born"...
 
 When I pass this watch to my son, I'll [Transfer](/inventory/manual/en/#-transfer-feature) the Inventory too. The value of objects comes from their history. Inventory will connect three generations.
 
@@ -1056,7 +1056,7 @@ When I pass this watch to my son, I'll [Transfer](/inventory/manual/en/#-transfe
 
 Whenever I noticed inconveniences in daily life, I recorded them in Inventory. "Wish there was something like this" kind of ideas.
 
-Three years of ideas totaled 200. When sorted by [Keywords](/inventory/manual/en/#-keywords), patterns emerged. Many ideas around 'single households', 'pets', 'health'.
+Three years of ideas totaled 200. When sorted by [Keywords](/inventory/manual/en/#keyword), patterns emerged. Many ideas around 'single households', 'pets', 'health'.
 
 Executed one idea and started an automatic pet feeder startup for singles. Showed investors three years of records and they said "You've thought about this deeply" and decided to invest. Records build trust.
 
@@ -1073,7 +1073,7 @@ Executed one idea and started an automatic pet feeder startup for singles. Showe
 
 Started a year-long graduation project. Decided to document the entire process from idea to final product in Inventory.
 
-Every day, sketches, prototypes, feedback, revisions logged in [Log](/inventory/manual/en/#-log-system). Failed attempts too. Why they failed, what I learned.
+Every day, sketches, prototypes, feedback, revisions logged in [Log](/inventory/manual/en/#log). Failed attempts too. Why they failed, what I learned.
 
 At the graduation exhibition, I displayed these records alongside the project. The judge said "Seeing the process makes it more moving." Inventory proved that process matters as much as result.
 
@@ -1090,7 +1090,7 @@ At the graduation exhibition, I displayed these records alongside the project. T
 
 A full marathon was on my bucket list. Could I really do it, having never exercised?
 
-Started recording from day one when I couldn't even run 1km. Distance, time, body condition logged in [Log](/inventory/manual/en/#-log-system). Training schedule managed with [Date Alarms](/inventory/manual/en/#-date-alarm).
+Started recording from day one when I couldn't even run 1km. Distance, time, body condition logged in [Log](/inventory/manual/en/#log). Training schedule managed with [Date Alarms](/inventory/manual/en/#alarm).
 
 One year later, marathon completed! At the finish line, I scrolled through my records. 1km → 5km → 10km → Half → Full... Tears came. "I struggled with 1km and made it here." Records don't lie.
 
@@ -1124,7 +1124,7 @@ On the anniversary, we showed them a video edited from these records. 50 years c
 
 I wanted to open a cafe. Started a "1000 cups project" before the opening.
 
-At every cafe, I registered the coffee in Inventory. Beans, roasting, brewing method, atmosphere, price... detailed in [Log](/inventory/manual/en/#-log-system). Categorized with [Keywords](/inventory/manual/en/#-keywords).
+At every cafe, I registered the coffee in Inventory. Beans, roasting, brewing method, atmosphere, price... detailed in [Log](/inventory/manual/en/#log). Categorized with [Keywords](/inventory/manual/en/#keyword).
 
 Over 2 years, recorded 1000 cups and developed my taste. Analyzed the data to decide on menu and concept. After opening, when I show customers these records, they say "You're really serious about this." 1000 cups of sincerity in the cafe.
 
@@ -1141,7 +1141,7 @@ Over 2 years, recorded 1000 cups and developed my taste. Analyzed the data to de
 
 Weak-willed, I never kept New Year's resolutions.
 
-This year was different. Daily habits - 6 AM wake-up, 30 minutes reading, 1 hour exercise - registered in Inventory with [Stamps](/inventory/manual/en/#-stamp-system) for each completion.
+This year was different. Daily habits - 6 AM wake-up, 30 minutes reading, 1 hour exercise - registered in Inventory with [Stamps](/inventory/manual/en/#stamp) for each completion.
 
 Started with lots of empty spaces. But seeing filled stamps made me want more. Six months later, it became habit. Opening Inventory shows exactly how much I've changed. Records become willpower.
 
@@ -1158,7 +1158,7 @@ Started with lots of empty spaces. But seeing filled stamps made me want more. S
 
 I restore broken ceramics. Piecing together hundreds of fragments requires meticulous records.
 
-Each fragment registered in Inventory, matching process logged in [Log](/inventory/manual/en/#-log-system). "Today pieces 23 and 47 matched", "This section has a missing piece"...
+Each fragment registered in Inventory, matching process logged in [Log](/inventory/manual/en/#log). "Today pieces 23 and 47 matched", "This section has a missing piece"...
 
 When a 3-year restoration finished, every step was in Inventory. The museum said "We'd like to exhibit the restoration process too." The process became art alongside the finished piece.
 
@@ -1175,7 +1175,7 @@ When a 3-year restoration finished, every step was in Inventory. The museum said
 
 At a life crossroads, decided to walk the Camino de Santiago.
 
-Daily distance, people met, emotions felt - all recorded in Inventory. Diary in [Log](/inventory/manual/en/#-log-system), [Stamps](/inventory/manual/en/#-stamp-system) for each credential stamp. 800km journey captured completely.
+Daily distance, people met, emotions felt - all recorded in Inventory. Diary in [Log](/inventory/manual/en/#log), [Stamps](/inventory/manual/en/#stamp) for each credential stamp. 800km journey captured completely.
 
 Back home, I made these records into a book. Self-published at first, but response was so good it got formally published. Without Inventory, this book wouldn't exist.
 
@@ -1192,7 +1192,7 @@ Back home, I made these records into a book. Self-published at first, but respon
 
 I manage health for all 4 family members. Hospital visits require records, but they were scattered everywhere.
 
-Created [Partitions](/inventory/manual/en/#-partition-feature) for each family member in Inventory. Hospital visits, test results, medications - all in [Log](/inventory/manual/en/#-log-system). Next checkups managed with [Date Alarms](/inventory/manual/en/#-date-alarm).
+Created [Partitions](/inventory/manual/en/#partition) for each family member in Inventory. Hospital visits, test results, medications - all in [Log](/inventory/manual/en/#log). Next checkups managed with [Date Alarms](/inventory/manual/en/#alarm).
 
 Doctors are impressed. "Never seen such organized patient records." 10 years of family health history built up. Inventory is like our family physician.
 
@@ -1209,7 +1209,7 @@ Doctors are impressed. "Never seen such organized patient records." 10 years of 
 
 Wedding planning was overwhelming. Venues, catering, flowers, invites... hundreds of decisions to make.
 
-Registered every vendor and option in Inventory. [Partitions](/inventory/manual/en/#-partition-feature) for each category. Quotes, pros/cons, visit notes in [Log](/inventory/manual/en/#-log-system). Deadlines tracked with [Date Alarms](/inventory/manual/en/#-date-alarm).
+Registered every vendor and option in Inventory. [Partitions](/inventory/manual/en/#partition) for each category. Quotes, pros/cons, visit notes in [Log](/inventory/manual/en/#log). Deadlines tracked with [Date Alarms](/inventory/manual/en/#alarm).
 
 The wedding was perfect because nothing was forgotten. The wedding planner even asked how I was so organized. Now I share my Inventory template with engaged friends!
 
@@ -1234,7 +1234,7 @@ The wedding was perfect because nothing was forgotten. The wedding planner even 
 
 Analyzing dreams reveals the subconscious. So every morning, I record remembered dreams in Inventory.
 
-I sketch dream scenes as images and upload, detail contents in [Log](/inventory/manual/en/#-log-system). Tag themes like "water", "falling", "exams" in [Keywords](/inventory/manual/en/#-keywords).
+I sketch dream scenes as images and upload, detail contents in [Log](/inventory/manual/en/#log). Tag themes like "water", "falling", "exams" in [Keywords](/inventory/manual/en/#keyword).
 
 Six months of analysis showed patterns. I dream about "falling" when stressed. Found a way to dialogue with my subconscious.
 
@@ -1251,9 +1251,9 @@ Six months of analysis showed patterns. I dream about "falling" when stressed. F
 
 Night sky observation is my hobby. Wanted to record when I saw what.
 
-Each observation goes in Inventory. Date, location, target (constellation, planet, nebula), weather, equipment... logged in [Log](/inventory/manual/en/#-log-system), photos attached.
+Each observation goes in Inventory. Date, location, target (constellation, planet, nebula), weather, equipment... logged in [Log](/inventory/manual/en/#log), photos attached.
 
-Meteor shower seasons get advance alerts via [Date Alarms](/inventory/manual/en/#-date-alarm). Three years of records became experience data for "when and where to observe best."
+Meteor shower seasons get advance alerts via [Date Alarms](/inventory/manual/en/#alarm). Three years of records became experience data for "when and where to observe best."
 
 </div>
 </details>
@@ -1268,7 +1268,7 @@ Meteor shower seasons get advance alerts via [Date Alarms](/inventory/manual/en/
 
 I collect perfumes but found it hard to remember each one's characteristics.
 
-Each perfume registered with notes (top, middle, base), longevity, sillage, suitable seasons/occasions in [Log](/inventory/manual/en/#-log-system). Tagged with [Keywords](/inventory/manual/en/#-keywords) like "woody", "floral", "date night".
+Each perfume registered with notes (top, middle, base), longevity, sillage, suitable seasons/occasions in [Log](/inventory/manual/en/#log). Tagged with [Keywords](/inventory/manual/en/#keyword) like "woody", "floral", "date night".
 
 When friends ask for recommendations, I just search and answer. Built my own perfume encyclopedia!
 
@@ -1285,7 +1285,7 @@ When friends ask for recommendations, I just search and answer. Built my own per
 
 Started a project: photograph the sky from the same spot every day for a year.
 
-Daily sky photos uploaded to Inventory with weather, mood, what happened that day in [Log](/inventory/manual/en/#-log-system). Shooting dates managed with [Start Date](/inventory/manual/en/#-start-date--expiry).
+Daily sky photos uploaded to Inventory with weather, mood, what happened that day in [Log](/inventory/manual/en/#log). Shooting dates managed with [Start Date](/inventory/manual/en/#dates).
 
 365 photos became a timelapse video. Changing seasons in the sky alongside my year. Posted on Instagram and got over 100k views.
 
@@ -1302,7 +1302,7 @@ Daily sky photos uploaded to Inventory with weather, mood, what happened that da
 
 I play tabletop RPGs but managing character sheets and items is complex.
 
-Characters and inventory items registered in Inventory. Session events, level-ups, new skills in [Log](/inventory/manual/en/#-log-system). [Partitions](/inventory/manual/en/#-partition-feature) by campaign.
+Characters and inventory items registered in Inventory. Session events, level-ups, new skills in [Log](/inventory/manual/en/#log). [Partitions](/inventory/manual/en/#partition) by campaign.
 
 Connected with party members via [Shared Log](/inventory/manual/en/#-shared-log-vs-solo-log), everyone can see each other's character info. Even the game master says "This makes running sessions easier!"
 
@@ -1319,9 +1319,9 @@ Connected with party members via [Shared Log](/inventory/manual/en/#-shared-log-
 
 Studying Japanese but vocabulary apps didn't suit me. Wanted to organize my own way.
 
-Unknown words registered in Inventory with example sentences and nuance explanations in [Log](/inventory/manual/en/#-log-system). Tagged with [Keywords](/inventory/manual/en/#-keywords) like "N1", "business", "heard in drama".
+Unknown words registered in Inventory with example sentences and nuance explanations in [Log](/inventory/manual/en/#log). Tagged with [Keywords](/inventory/manual/en/#keyword) like "N1", "business", "heard in drama".
 
-Memorized words get [Stamps](/inventory/manual/en/#-stamp-system). Only review unstamped ones. Efficient! Passed JLPT N1!
+Memorized words get [Stamps](/inventory/manual/en/#stamp). Only review unstamped ones. Efficient! Passed JLPT N1!
 
 </div>
 </details>
@@ -1336,7 +1336,7 @@ Memorized words get [Stamps](/inventory/manual/en/#-stamp-system). Only review u
 
 Tried the 'capsule wardrobe' challenge - 33 pieces for 3 months. Clear out the closet, keep only essentials!
 
-The 33 selected pieces registered in Inventory. Each wear logged in [Log](/inventory/manual/en/#-log-system). After 3 months, analysis shows what I actually wear vs. what I don't.
+The 33 selected pieces registered in Inventory. Each wear logged in [Log](/inventory/manual/en/#log). After 3 months, analysis shows what I actually wear vs. what I don't.
 
 Unworn items get donated, empty spots filled only with essentials. Inventory helps maintain minimal life.
 
@@ -1353,7 +1353,7 @@ Unworn items get donated, empty spots filled only with essentials. Inventory hel
 
 I visit museums often but forget the artworks I've seen.
 
-Every exhibition, I register pieces that moved me. Artist, year, technique in [Log](/inventory/manual/en/#-log-system), plus "why I liked it." Genre, era, emotion tagged in [Keywords](/inventory/manual/en/#-keywords).
+Every exhibition, I register pieces that moved me. Artist, year, technique in [Log](/inventory/manual/en/#log), plus "why I liked it." Genre, era, emotion tagged in [Keywords](/inventory/manual/en/#keyword).
 
 Five years of records show my taste. Impressionism, abstract, blue tones... Now I use this data to choose exhibitions.
 
@@ -1370,7 +1370,7 @@ Five years of records show my taste. Impressionism, abstract, blue tones... Now 
 
 Hundreds of business cards piled up, can't remember who's who.
 
-Photograph cards immediately and register in Inventory. In [Log](/inventory/manual/en/#-log-system), note "where we met", "what we discussed." Industry, interests, collaboration potential in [Keywords](/inventory/manual/en/#-keywords).
+Photograph cards immediately and register in Inventory. In [Log](/inventory/manual/en/#log), note "where we met", "what we discussed." Industry, interests, collaboration potential in [Keywords](/inventory/manual/en/#keyword).
 
 "That IT person I met before" - instant search. When reconnecting, mentioning our previous conversation impresses them!
 
@@ -1387,7 +1387,7 @@ Photograph cards immediately and register in Inventory. In [Log](/inventory/manu
 
 Own 50+ board games but can't remember what I have. When friends come over, I struggle to decide what to play.
 
-All games registered with player count, duration, genre, difficulty in [Keywords](/inventory/manual/en/#-keywords). Play reviews in [Log](/inventory/manual/en/#-log-system).
+All games registered with player count, duration, genre, difficulty in [Keywords](/inventory/manual/en/#keyword). Play reviews in [Log](/inventory/manual/en/#log).
 
 When friends visit: "4 players, 1 hour, light game" search gives instant recommendations. They call me the "board game sommelier!"
 
@@ -1404,7 +1404,7 @@ When friends visit: "4 players, 1 hour, light game" search gives instant recomme
 
 My skin is sensitive - certain foods or products cause immediate breakouts. Wanted to find the triggers.
 
-Daily skin photos in Inventory. That day's food, products used, stress level, sleep hours in [Log](/inventory/manual/en/#-log-system).
+Daily skin photos in Inventory. That day's food, products used, stress level, sleep hours in [Log](/inventory/manual/en/#log).
 
 Three months of data analysis revealed patterns. Breakouts follow dairy! The dermatologist saw my records and said "This is why documentation matters."
 
@@ -1421,9 +1421,9 @@ Three months of data analysis revealed patterns. Breakouts follow dairy! The der
 
 Always forget something when camping. Once went without a lantern, once without utensils...
 
-All camping gear registered with [Partitions](/inventory/manual/en/#-partition-feature) by type. "Overnight", "Backpacking", "Glamping" etc. Each partition has only necessary items.
+All camping gear registered with [Partitions](/inventory/manual/en/#partition) by type. "Overnight", "Backpacking", "Glamping" etc. Each partition has only necessary items.
 
-Before camping, open the relevant partition and check. No more forgetting! [Log](/inventory/manual/en/#-log-system) notes like "don't need to bring this next time" too.
+Before camping, open the relevant partition and check. No more forgetting! [Log](/inventory/manual/en/#log) notes like "don't need to bring this next time" too.
 
 </div>
 </details>
@@ -1438,7 +1438,7 @@ Before camping, open the relevant partition and check. No more forgetting! [Log]
 
 Frequent migraines, wanted to find causes. Doctor said "Try keeping a diary."
 
-Every headache recorded in Inventory. Intensity, location, duration in [Log](/inventory/manual/en/#-log-system), plus previous day's activities (sleep, diet, exercise, caffeine).
+Every headache recorded in Inventory. Intensity, location, duration in [Log](/inventory/manual/en/#log), plus previous day's activities (sleep, diet, exercise, caffeine).
 
 Showed 6 months of data to doctor who found the pattern. Sleep deprivation + caffeine combination was the trigger. Much better now!
 
@@ -1455,7 +1455,7 @@ Showed 6 months of data to doctor who found the pattern. Sleep deprivation + caf
 
 Wanted to properly answer "What's your favorite movie?"
 
-Every movie watched registered with 5-point rating and thoughts in [Log](/inventory/manual/en/#-log-system). Genre, director, mood in [Keywords](/inventory/manual/en/#-keywords).
+Every movie watched registered with 5-point rating and thoughts in [Log](/inventory/manual/en/#log). Genre, director, mood in [Keywords](/inventory/manual/en/#keyword).
 
 Filtered 5-star ratings to reveal my true favorites. Made a "My 100 Favorite Movies" list. Friends say "Your taste is really defined!"
 
@@ -1472,7 +1472,7 @@ Filtered 5-star ratings to reveal my true favorites. Made a "My 100 Favorite Mov
 
 I make furniture, lights... love DIY but can't remember details when making the same thing again.
 
-Each project registered. Materials, tools, measurements, process photos in [Log](/inventory/manual/en/#-log-system). Failed attempts noted with why they failed.
+Each project registered. Materials, tools, measurements, process photos in [Log](/inventory/manual/en/#log). Failed attempts noted with why they failed.
 
 When friends say "I want to make this too", I show them Inventory to teach. Building my own DIY manual collection!
 
@@ -1489,7 +1489,7 @@ When friends say "I want to make this too", I show them Inventory to teach. Buil
 
 Lead a monthly book club but lost track of what we'd read and discussed.
 
-Every book registered, members connected via [Shared Log](/inventory/manual/en/#-shared-log-vs-solo-log). Individual impressions in [Log](/inventory/manual/en/#-log-system), meeting discussion notes too.
+Every book registered, members connected via [Shared Log](/inventory/manual/en/#-shared-log-vs-solo-log). Individual impressions in [Log](/inventory/manual/en/#log), meeting discussion notes too.
 
 Two years of records: 24 books documented. When new members join, I can show them "Here's what we've read." It's become our club's history!
 
@@ -1506,7 +1506,7 @@ Two years of records: 24 books documented. When new members join, I can show the
 
 Keeping tropical fish is more complex than expected. When did I change water, what chemicals did I add...
 
-Aquarium registered in Inventory. Water change date, temperature, pH, fish condition in [Log](/inventory/manual/en/#-log-system). Illness symptoms and treatment also recorded.
+Aquarium registered in Inventory. Water change date, temperature, pH, fish condition in [Log](/inventory/manual/en/#log). Illness symptoms and treatment also recorded.
 
 Pattern analysis showed "30% water change every 7 days" is optimal for my tank. Fish are healthier!
 
@@ -1523,9 +1523,9 @@ Pattern analysis showed "30% water change every 7 days" is optimal for my tank. 
 
 Using clothing rental service but confused about what I borrowed and return dates.
 
-Borrowed items registered with return date as [Expiry](/inventory/manual/en/#-start-date--expiry). Get alerts 3 days before to prepare returns.
+Borrowed items registered with return date as [Expiry](/inventory/manual/en/#dates). Get alerts 3 days before to prepare returns.
 
-Never paid late fees! [Log](/inventory/manual/en/#-log-system) notes "this was great/not for me" help choose future rentals.
+Never paid late fees! [Log](/inventory/manual/en/#log) notes "this was great/not for me" help choose future rentals.
 
 </div>
 </details>
@@ -1540,7 +1540,7 @@ Never paid late fees! [Log](/inventory/manual/en/#-log-system) notes "this was g
 
 Daily meditation but couldn't feel if I was being consistent.
 
-Each session recorded. Time, method (breathing/walking/body scan), focus level in [Log](/inventory/manual/en/#-log-system), [Stamps](/inventory/manual/en/#-stamp-system) added.
+Each session recorded. Time, method (breathing/walking/body scan), focus level in [Log](/inventory/manual/en/#log), [Stamps](/inventory/manual/en/#stamp) added.
 
 The satisfaction of 100 consecutive stamps! Started struggling with 5 minutes, now 30 minutes is easy. Seeing growth keeps me motivated.
 
@@ -1557,7 +1557,7 @@ The satisfaction of 100 consecutive stamps! Started struggling with 5 minutes, n
 
 Job hunting and wanted to organize interview questions and my answers.
 
-Each expected question registered. Answer scripts, actual interview questions, atmosphere in [Log](/inventory/manual/en/#-log-system). Company, position, question type in [Keywords](/inventory/manual/en/#-keywords).
+Each expected question registered. Answer scripts, actual interview questions, atmosphere in [Log](/inventory/manual/en/#log). Company, position, question type in [Keywords](/inventory/manual/en/#keyword).
 
 When reaching round 3: "What did I say in round 1?" - instant search. Consistent answers built trust. Got the job!
 

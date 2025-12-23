@@ -19,7 +19,7 @@ Explora todas las funciones de la aplicación Inventory en detalle.
 
 ---
 
-### 📦 Sistema de Papel
+### 📦 Sistema de Papel {#paper}
 
 En Inventory, el **Papel** es la moneda principal utilizada para crear objetos.
 
@@ -40,7 +40,7 @@ En Inventory, el **Papel** es la moneda principal utilizada para crear objetos.
 
 ---
 
-### 📄 Creación de Objetos
+### 📄 Creación de Objetos {#create-item}
 
 #### Cómo crear un objeto
 
@@ -54,7 +54,7 @@ En Inventory, el **Papel** es la moneda principal utilizada para crear objetos.
    - Fecha de expiración (opcional)
 4. Presiona **Guardar** y se consumirá 1 Papel para crear el objeto
 
-#### Fecha de inicio y Fecha de expiración
+#### Fecha de inicio y Fecha de expiración {#dates}
 
 | Configuración | Descripción |
 |---------------|-------------|
@@ -65,7 +65,7 @@ Si no se establece, será visible inmediatamente y permanente.
 
 ---
 
-### 🔒 Bloqueo de Documento
+### 🔒 Bloqueo de Documento {#lock}
 
 Puedes proteger los documentos estableciendo una contraseña.
 
@@ -104,7 +104,7 @@ Un documento bloqueado solo puede verse después de introducir la contraseña co
 
 ---
 
-### 📎 Sistema Clip
+### 📎 Sistema Clip {#clip}
 
 **Clip** es una función que agrupa múltiples documentos para una gestión más fácil.
 
@@ -173,7 +173,7 @@ Puedes eliminar elementos específicos en la pantalla de info del clip:
 
 ---
 
-### 🏷️ Sistema de Insignias
+### 🏷️ Sistema de Insignias {#badge}
 
 Una **Insignia** es una identidad única que puedes usar dentro de la aplicación.
 
@@ -209,7 +209,7 @@ Esto permite identificar rápidamente a qué dominio pertenece la insignia.
 
 ---
 
-### 🔖 Sistema de Sellos
+### 🔖 Sistema de Sellos {#stamp}
 
 Un **Sello** es un objeto que te permite crear plantillas y compartirlas con otros.
 
@@ -244,7 +244,7 @@ Cuando seleccionas un sello activado (plantilla) y papel juntos, aparece el men�
 
 ---
 
-### 📝 Sistema de Registros
+### 📝 Sistema de Registros {#log}
 
 Los **Registros** son anotaciones que puedes agregar a objetos o plantillas de sellos.
 
@@ -309,7 +309,7 @@ Cuando se agregan nuevos comentarios a un registro compartido, el borde del elem
 
 ---
 
-### 🎨 Sistema de Tinta
+### 🎨 Sistema de Tinta {#ink}
 
 La **Tinta** es un objeto que cambia el color del tema de la aplicación.
 
@@ -328,7 +328,7 @@ La **Tinta** es un objeto que cambia el color del tema de la aplicación.
 
 ---
 
-### 🔍 Función de Búsqueda
+### 🔍 Función de Búsqueda {#search}
 
 #### Búsqueda básica
 
@@ -351,7 +351,7 @@ Cuando guardas un término de búsqueda con el botón **"Establecer como filtro"
 - Toca la etiqueta para filtrar instantáneamente
 - Elimina el filtro con el botón X
 
-#### Agregación de palabras clave
+#### Agregación de palabras clave {#keyword}
 
 Cuando hay un filtro establecido y seleccionas objetos, los **valores de palabras clave de los objetos seleccionados se agregan automáticamente**.
 
@@ -387,7 +387,7 @@ Las insignias rojas en los iconos del menú inferior muestran el estado actual.
 
 ---
 
-### 📤 Enviar Objetos
+### 📤 Enviar Objetos {#transfer}
 
 Puedes transferir objetos al vender de segunda mano o regalar.
 
@@ -454,7 +454,7 @@ Puedes comprar varios objetos en la tienda.
 
 ---
 
-### 📂 Función de Partición
+### 📂 Función de Partición {#partition}
 
 Puedes agrupar objetos con particiones cuando tienes muchos.
 

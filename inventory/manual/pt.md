@@ -19,7 +19,7 @@ Explore todas as funcionalidades do aplicativo Inventory em detalhes.
 
 ---
 
-### 📦 Sistema de Papel
+### 📦 Sistema de Papel {#paper}
 
 No Inventory, o **Papel** é a moeda principal usada para criar itens.
 
@@ -40,7 +40,7 @@ No Inventory, o **Papel** é a moeda principal usada para criar itens.
 
 ---
 
-### 📄 Criação de Itens
+### 📄 Criação de Itens {#create-item}
 
 #### Como criar um item
 
@@ -54,7 +54,7 @@ No Inventory, o **Papel** é a moeda principal usada para criar itens.
    - Data de expiração (opcional)
 4. Pressione **Salvar** e 1 Papel será consumido para criar o item
 
-#### Data de início e Data de expiração
+#### Data de início e Data de expiração {#dates}
 
 | Configuração | Descrição |
 |--------------|-----------|
@@ -65,7 +65,7 @@ Se não definido, será visível imediatamente e permanente.
 
 ---
 
-### 🔒 Bloqueio de Documento
+### 🔒 Bloqueio de Documento {#lock}
 
 Você pode proteger itens de documento definindo uma senha.
 
@@ -104,7 +104,7 @@ Um documento bloqueado só pode ser visualizado após inserir a senha correta.
 
 ---
 
-### 📎 Sistema Clip
+### 📎 Sistema Clip {#clip}
 
 **Clip** é uma funcionalidade que agrupa múltiplos documentos para facilitar o gerenciamento.
 
@@ -173,7 +173,7 @@ Você pode remover itens específicos na tela de info do clip:
 
 ---
 
-### 🏷️ Sistema de Emblema
+### 🏷️ Sistema de Emblema {#badge}
 
 Um **Emblema** é uma identidade única que você pode usar dentro do aplicativo.
 
@@ -209,7 +209,7 @@ Isso permite identificar rapidamente a qual domínio o emblema pertence.
 
 ---
 
-### 🔖 Sistema de Carimbo
+### 🔖 Sistema de Carimbo {#stamp}
 
 Um **Carimbo** é um item que permite criar modelos e compartilhá-los com outros.
 
@@ -244,7 +244,7 @@ Quando você seleciona um carimbo ativado (modelo) e papel juntos, o menu **"Dup
 
 ---
 
-### 📝 Sistema de Registro
+### 📝 Sistema de Registro {#log}
 
 Os **Registros** são anotações que você pode adicionar a itens ou modelos de carimbo.
 
@@ -309,7 +309,7 @@ Quando novos comentários são adicionados a um registro compartilhado, a borda 
 
 ---
 
-### 🎨 Sistema de Tinta
+### 🎨 Sistema de Tinta {#ink}
 
 A **Tinta** é um item que muda a cor do tema do aplicativo.
 
@@ -328,7 +328,7 @@ A **Tinta** é um item que muda a cor do tema do aplicativo.
 
 ---
 
-### 🔍 Função de Busca
+### 🔍 Função de Busca {#search}
 
 #### Busca básica
 
@@ -351,7 +351,7 @@ Quando você salva um termo de busca com o botão **"Definir como filtro"**:
 - Toque na etiqueta para filtrar instantaneamente
 - Exclua o filtro com o botão X
 
-#### Agregação de palavras-chave
+#### Agregação de palavras-chave {#keyword}
 
 Quando um filtro está definido e você seleciona itens, os **valores de palavras-chave dos itens selecionados são automaticamente agregados**.
 
@@ -387,7 +387,7 @@ Emblemas vermelhos nos ícones do menu inferior mostram o status atual.
 
 ---
 
-### 📤 Enviar Itens
+### 📤 Enviar Itens {#transfer}
 
 Você pode transferir itens ao vender usados ou dar presentes.
 
@@ -454,7 +454,7 @@ Você pode comprar vários itens na loja.
 
 ---
 
-### 📂 Função de Partição
+### 📂 Função de Partição {#partition}
 
 Você pode agrupar itens com partições quando tiver muitos.
 

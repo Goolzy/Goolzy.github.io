@@ -188,7 +188,7 @@ Découvrez les possibilités d'Inventory à travers 100 cas d'utilisation varié
 
 **Problème** : Avec mon emploi du temps chargé, j'oublie souvent les dates d'expiration et je jette des aliments gâtés. Surtout le tofu et le lait qui se gâtent en quelques jours...
 
-**Solution** : J'ai créé des éléments pour chaque ingrédient avec [Papier](/inventory/manual/fr/#-système-papier) et défini des [Dates d'Expiration](/inventory/manual/fr/#-date-de-début--expiration). Maintenant je reçois des notifications 3 jours avant, pour cuisiner ou congeler à temps.
+**Solution** : J'ai créé des éléments pour chaque ingrédient avec [Papier](/inventory/manual/fr/#paper) et défini des [Dates d'Expiration](/inventory/manual/fr/#dates). Maintenant je reçois des notifications 3 jours avant, pour cuisiner ou congeler à temps.
 
 **Résultat** : Gaspillage alimentaire réduit de 80%. 150€ économisés sur les courses mensuelles !
 
@@ -205,7 +205,7 @@ Découvrez les possibilités d'Inventory à travers 100 cas d'utilisation varié
 
 **Problème** : Netflix, YouTube Premium, Notion, GitHub... J'ai plus de 10 abonnements avec des dates de renouvellement différentes. Certains que je n'utilise plus mais que je paie encore.
 
-**Solution** : Tous les abonnements enregistrés dans Inventory avec des [Alarmes de Date](/inventory/manual/fr/#-alarme-de-date) 7 jours avant le renouvellement. Frais mensuels ajoutés en [Mots-clés](/inventory/manual/fr/#-mots-clés) pour un aperçu rapide.
+**Solution** : Tous les abonnements enregistrés dans Inventory avec des [Alarmes de Date](/inventory/manual/fr/#alarm) 7 jours avant le renouvellement. Frais mensuels ajoutés en [Mots-clés](/inventory/manual/fr/#keyword) pour un aperçu rapide.
 
 **Résultat** : 3 abonnements inutilisés résiliés, 40€/mois économisés. Plus de prélèvements surprises !
 
@@ -222,7 +222,7 @@ Découvrez les possibilités d'Inventory à travers 100 cas d'utilisation varié
 
 **Problème** : Avec deux enfants ayant des calendriers de vaccination différents, je m'y perds. Parfois le cabinet appelait quand c'était déjà en retard.
 
-**Solution** : [Partitions](/inventory/manual/fr/#-fonction-partition) séparées créées pour chaque enfant et dates de vaccination gérées avec des [Alarmes de Date](/inventory/manual/fr/#-alarme-de-date). [Tampons](/inventory/manual/fr/#-système-tampon) ajoutés une fois fait.
+**Solution** : [Partitions](/inventory/manual/fr/#partition) séparées créées pour chaque enfant et dates de vaccination gérées avec des [Alarmes de Date](/inventory/manual/fr/#alarm). [Tampons](/inventory/manual/fr/#stamp) ajoutés une fois fait.
 
 **Résultat** : Plus aucun rendez-vous de vaccination manqué. Je peux me préparer pour les visites médicales !
 
@@ -239,7 +239,7 @@ Découvrez les possibilités d'Inventory à travers 100 cas d'utilisation varié
 
 **Problème** : Je déménage souvent pour les études. À chaque fois, je perds le fil de ce que contient chaque carton. Même avec des numéros, j'ouvre tout.
 
-**Solution** : Avant d'emballer, j'ai photographié le contenu de chaque carton et l'ai enregistré dans Inventory. Étiqueté avec [Mots-clés](/inventory/manual/fr/#-mots-clés) comme "Carton1", "Cuisine".
+**Solution** : Avant d'emballer, j'ai photographié le contenu de chaque carton et l'ai enregistré dans Inventory. Étiqueté avec [Mots-clés](/inventory/manual/fr/#keyword) comme "Carton1", "Cuisine".
 
 **Résultat** : Temps de déballage divisé par deux. "Où sont les ciseaux ?" - recherche instantanée !
 
@@ -256,7 +256,7 @@ Découvrez les possibilités d'Inventory à travers 100 cas d'utilisation varié
 
 **Problème** : Je dois garder les reçus pour les dépenses professionnelles, mais les reçus papier se décolorent et se perdent. La période fiscale est toujours stressante...
 
-**Solution** : Juste après le paiement, je photographie les reçus et les enregistre dans Inventory. Étiquetés avec [Mots-clés](/inventory/manual/fr/#-mots-clés) comme "dépense", "2024", "repas" pour une catégorisation facile.
+**Solution** : Juste après le paiement, je photographie les reçus et les enregistre dans Inventory. Étiquetés avec [Mots-clés](/inventory/manual/fr/#keyword) comme "dépense", "2024", "repas" pour une catégorisation facile.
 
 **Résultat** : Presque plus de reçus papier nécessaires. Pendant la période fiscale, je cherche et trouve exactement ce qu'il me faut. Mon comptable adore !
 
@@ -273,7 +273,7 @@ Découvrez les possibilités d'Inventory à travers 100 cas d'utilisation varié
 
 **Problème** : Quand je développe mes photos argentiques, j'oublie quand et où je les ai prises. Les tirages s'empilent sans organisation.
 
-**Solution** : Après chaque développement, j'enregistre des photos représentatives dans Inventory avec des [Mots-clés](/inventory/manual/fr/#-mots-clés) pour le lieu, la date et le type de pellicule. Les infos du labo vont dans le [Journal](/inventory/manual/fr/#-système-journal).
+**Solution** : Après chaque développement, j'enregistre des photos représentatives dans Inventory avec des [Mots-clés](/inventory/manual/fr/#keyword) pour le lieu, la date et le type de pellicule. Les infos du labo vont dans le [Journal](/inventory/manual/fr/#log).
 
 **Résultat** : J'ai créé mes propres archives photo. Je peux retrouver instantanément des photos d'un voyage d'il y a 2 ans !
 
@@ -290,7 +290,7 @@ Découvrez les possibilités d'Inventory à travers 100 cas d'utilisation varié
 
 **Problème** : Différents vêtements nécessitent différents soins - certains pressing uniquement, pulls lavage main uniquement. J'ai abîmé des vêtements avec la mauvaise méthode.
 
-**Solution** : Vêtements nécessitant des soins spéciaux enregistrés dans Inventory. Instructions d'entretien dans le [Journal](/inventory/manual/fr/#-système-journal). Dates de récupération pressing suivies avec [Alarmes de Date](/inventory/manual/fr/#-alarme-de-date).
+**Solution** : Vêtements nécessitant des soins spéciaux enregistrés dans Inventory. Instructions d'entretien dans le [Journal](/inventory/manual/fr/#log). Dates de récupération pressing suivies avec [Alarmes de Date](/inventory/manual/fr/#alarm).
 
 **Résultat** : Dommages aux vêtements drastiquement réduits. Plus de pénalités de retard pour pressing oublié !
 
@@ -307,7 +307,7 @@ Découvrez les possibilités d'Inventory à travers 100 cas d'utilisation varié
 
 **Problème** : Le médecin a recommandé 5 compléments différents. Je confonds les doses matin/soir et rate les réapprovisionnements.
 
-**Solution** : Chaque complément enregistré avec [Papier](/inventory/manual/fr/#-système-papier). Instructions de dosage dans le [Journal](/inventory/manual/fr/#-système-journal), dates d'épuisement estimées en [Expiration](/inventory/manual/fr/#-date-de-début--expiration).
+**Solution** : Chaque complément enregistré avec [Papier](/inventory/manual/fr/#paper). Instructions de dosage dans le [Journal](/inventory/manual/fr/#log), dates d'épuisement estimées en [Expiration](/inventory/manual/fr/#dates).
 
 **Résultat** : Je suis maintenant le programme parfaitement. Alertes avant épuisement pour commander à temps !
 
@@ -324,7 +324,7 @@ Découvrez les possibilités d'Inventory à travers 100 cas d'utilisation varié
 
 **Problème** : Climatisation cassée et la garantie avait expiré un mois avant. Je n'ai même pas retrouvé la carte de garantie. 300€ de réparation payés.
 
-**Solution** : Tous les appareils électroménagers enregistrés dans Inventory avec photos de garantie jointes. [Dates d'Expiration](/inventory/manual/fr/#-date-de-début--expiration) pour fin de garantie avec alertes 1 mois avant.
+**Solution** : Tous les appareils électroménagers enregistrés dans Inventory avec photos de garantie jointes. [Dates d'Expiration](/inventory/manual/fr/#dates) pour fin de garantie avec alertes 1 mois avant.
 
 **Résultat** : Maintenant je demande des inspections ou envisage des extensions avant expiration. Machine à laver réparée gratuitement !
 
@@ -341,7 +341,7 @@ Découvrez les possibilités d'Inventory à travers 100 cas d'utilisation varié
 
 **Problème** : Les cartes cadeaux d'anniversaire et fêtes se perdent dans les messages et expirent inutilisées.
 
-**Solution** : Captures d'écran des cartes cadeaux immédiatement et enregistrement dans Inventory avec [Dates d'Expiration](/inventory/manual/fr/#-date-de-début--expiration). Alerte une semaine avant expiration.
+**Solution** : Captures d'écran des cartes cadeaux immédiatement et enregistrement dans Inventory avec [Dates d'Expiration](/inventory/manual/fr/#dates). Alerte une semaine avant expiration.
 
 **Résultat** : Une carte cadeau Starbucks de 30€ sauvée ! J'utilise maintenant vraiment les cadeaux que je reçois.
 
@@ -358,7 +358,7 @@ Découvrez les possibilités d'Inventory à travers 100 cas d'utilisation varié
 
 **Problème** : Je ne me souviens pas quand et où la voiture a été entretenue. Différents garages ont différents enregistrements. Je rate les vidanges.
 
-**Solution** : Voiture enregistrée dans Inventory, chaque entretien noté dans le [Journal](/inventory/manual/fr/#-système-journal). Prochains entretiens définis en [Alarmes de Date](/inventory/manual/fr/#-alarme-de-date).
+**Solution** : Voiture enregistrée dans Inventory, chaque entretien noté dans le [Journal](/inventory/manual/fr/#log). Prochains entretiens définis en [Alarmes de Date](/inventory/manual/fr/#alarm).
 
 **Résultat** : Historique d'entretien complet constitué. À la revente, montrer l'historique a permis d'obtenir un meilleur prix !
 
@@ -375,7 +375,7 @@ Découvrez les possibilités d'Inventory à travers 100 cas d'utilisation varié
 
 **Problème** : Contrats, polices d'assurance, actes de propriété... documents importants dispersés partout. J'ai dû demander un duplicata car je ne trouvais pas l'original.
 
-**Solution** : Tous les documents importants photographiés et enregistrés dans Inventory avec [Verrouillage de Document](/inventory/manual/fr/#-verrouillage-document) pour la sécurité. Lieu de stockage noté en [Mots-clés](/inventory/manual/fr/#-mots-clés).
+**Solution** : Tous les documents importants photographiés et enregistrés dans Inventory avec [Verrouillage de Document](/inventory/manual/fr/#lock) pour la sécurité. Lieu de stockage noté en [Mots-clés](/inventory/manual/fr/#keyword).
 
 **Résultat** : "Où est l'acte ?" → Recherche → Lieu de stockage trouvé. 30 secondes !
 
@@ -392,7 +392,7 @@ Découvrez les possibilités d'Inventory à travers 100 cas d'utilisation varié
 
 **Problème** : Enthousiaste à l'achat, mais ils s'empilent non lus à la maison. J'ai même acheté le même livre deux fois.
 
-**Solution** : Livres enregistrés immédiatement après achat. [Date de Début](/inventory/manual/fr/#-date-de-début--expiration) au commencement, [Tampon](/inventory/manual/fr/#-système-tampon) à la fin. Liste des non-lus visible en un coup d'œil.
+**Solution** : Livres enregistrés immédiatement après achat. [Date de Début](/inventory/manual/fr/#dates) au commencement, [Tampon](/inventory/manual/fr/#stamp) à la fin. Liste des non-lus visible en un coup d'œil.
 
 **Résultat** : Au lieu d'être submergée, je suis motivée. 12 livres lus cette année - plus que toute l'année dernière !
 
@@ -409,7 +409,7 @@ Découvrez les possibilités d'Inventory à travers 100 cas d'utilisation varié
 
 **Problème** : Je voulais des plantes d'intérieur mais j'oubliais de les arroser ou j'arrosais trop. Elles mouraient toutes.
 
-**Solution** : Chaque plante enregistrée dans Inventory avec rappels d'arrosage via [Alarme de Date](/inventory/manual/fr/#-alarme-de-date). Dates de rempotage et fertilisation dans le [Journal](/inventory/manual/fr/#-système-journal).
+**Solution** : Chaque plante enregistrée dans Inventory avec rappels d'arrosage via [Alarme de Date](/inventory/manual/fr/#alarm). Dates de rempotage et fertilisation dans le [Journal](/inventory/manual/fr/#log).
 
 **Résultat** : Mon monstera vit depuis 6 mois ! Même 3 nouvelles feuilles ont poussé !
 
@@ -426,7 +426,7 @@ Découvrez les possibilités d'Inventory à travers 100 cas d'utilisation varié
 
 **Problème** : Différents mots de passe pour chaque site, impossible de les retenir. Les noter sur post-it ne semble pas sécurisé...
 
-**Solution** : Informations de compte enregistrées dans Inventory avec [Verrouillage de Document](/inventory/manual/fr/#-verrouillage-document). Uniquement les indices stockés, vrais mots de passe utilisent des combinaisons de motifs.
+**Solution** : Informations de compte enregistrées dans Inventory avec [Verrouillage de Document](/inventory/manual/fr/#lock). Uniquement les indices stockés, vrais mots de passe utilisent des combinaisons de motifs.
 
 **Résultat** : Plus de "Mot de passe oublié" à cliquer. Gestion sécurisée et pratique !
 
@@ -443,7 +443,7 @@ Découvrez les possibilités d'Inventory à travers 100 cas d'utilisation varié
 
 **Problème** : Mari, belle-mère, moi-même... tous des calendriers de bilan différents. J'ai raté la période de bilan gratuit et dû payer de ma poche.
 
-**Solution** : Calendrier de bilan de chaque membre de la famille enregistré avec [Alarmes de Date](/inventory/manual/fr/#-alarme-de-date) pour notifier au début de la période.
+**Solution** : Calendrier de bilan de chaque membre de la famille enregistré avec [Alarmes de Date](/inventory/manual/fr/#alarm) pour notifier au début de la période.
 
 **Résultat** : Plus aucun bilan gratuit manqué pour toute la famille. Plus de 500€ économisés annuellement en frais de santé !
 
@@ -460,7 +460,7 @@ Découvrez les possibilités d'Inventory à travers 100 cas d'utilisation varié
 
 **Problème** : Deux chats avec différents calendriers de vaccination et dossiers vétérinaires partout. Les nouveaux vétérinaires demandent toujours l'historique que je ne trouve pas.
 
-**Solution** : [Partitions](/inventory/manual/fr/#-fonction-partition) créées pour chaque chat. Chaque visite vétérinaire dans le [Journal](/inventory/manual/fr/#-système-journal). Prochaines vaccinations gérées avec [Alarmes de Date](/inventory/manual/fr/#-alarme-de-date).
+**Solution** : [Partitions](/inventory/manual/fr/#partition) créées pour chaque chat. Chaque visite vétérinaire dans le [Journal](/inventory/manual/fr/#log). Prochaines vaccinations gérées avec [Alarmes de Date](/inventory/manual/fr/#alarm).
 
 **Résultat** : Le vétérinaire a salué mon organisation. En urgence, je peux montrer les dossiers instantanément. Tranquillité d'esprit !
 
@@ -477,7 +477,7 @@ Découvrez les possibilités d'Inventory à travers 100 cas d'utilisation varié
 
 **Problème** : J'oublie les noms des vins que j'ai aimés dans les bars à vin. Au magasin, je prends n'importe quoi.
 
-**Solution** : Photographier les étiquettes et enregistrer dans Inventory. Notes de dégustation, accords, prix dans le [Journal](/inventory/manual/fr/#-système-journal). [Mots-clés](/inventory/manual/fr/#-mots-clés) comme "rouge", "quotidien", "cadeau".
+**Solution** : Photographier les étiquettes et enregistrer dans Inventory. Notes de dégustation, accords, prix dans le [Journal](/inventory/manual/fr/#log). [Mots-clés](/inventory/manual/fr/#keyword) comme "rouge", "quotidien", "cadeau".
 
 **Résultat** : Ma propre base de données de vins créée. "Qu'avons-nous bu à notre anniversaire ?" - trouvé instantanément !
 
@@ -494,7 +494,7 @@ Découvrez les possibilités d'Inventory à travers 100 cas d'utilisation varié
 
 **Problème** : Abonnement de 3 mois à la salle, j'y vais assidûment un mois puis j'arrête. Pas de motivation et sans relevés pas de progression visible.
 
-**Solution** : Chaque type d'exercice enregistré et poids/répétitions dans le [Journal](/inventory/manual/fr/#-système-journal). [Tampons](/inventory/manual/fr/#-système-tampon) pour présences consécutives.
+**Solution** : Chaque type d'exercice enregistré et poids/répétitions dans le [Journal](/inventory/manual/fr/#log). [Tampons](/inventory/manual/fr/#stamp) pour présences consécutives.
 
 **Résultat** : Progression de 40kg à 70kg au développé couché documentée. Voir les relevés me motive !
 
@@ -511,7 +511,7 @@ Découvrez les possibilités d'Inventory à travers 100 cas d'utilisation varié
 
 **Problème** : Je dis en réunion "J'aurai le rapport la semaine prochaine" et j'oublie. Gênant quand quelqu'un demande "C'est fait ?"
 
-**Solution** : Engagements de réunion enregistrés immédiatement avec [Alarmes de Date](/inventory/manual/fr/#-alarme-de-date) pour rappel la veille. [Tampon](/inventory/manual/fr/#-système-tampon) quand c'est fait !
+**Solution** : Engagements de réunion enregistrés immédiatement avec [Alarmes de Date](/inventory/manual/fr/#alarm) pour rappel la veille. [Tampon](/inventory/manual/fr/#stamp) quand c'est fait !
 
 **Résultat** : "Susan livre toujours ce qu'elle promet" - c'est ma réputation maintenant. Confiance établie !
 
@@ -538,7 +538,7 @@ Mon fils de 18 mois a dit "Maman" pour la première fois. Mon cœur a failli exp
 
 J'ai filmé le moment, mais ce n'était pas suffisant. Je voulais me souvenir des émotions, du contexte, de ce qui s'était passé la veille...
 
-Dans Inventory, j'ai sauvegardé la vidéo avec une entrée [Journal](/inventory/manual/fr/#-système-journal) capturant chaque détail de ce jour. Quand papa est rentré et qu'il a dit "Maman" encore, comment j'ai pleuré le soir...
+Dans Inventory, j'ai sauvegardé la vidéo avec une entrée [Journal](/inventory/manual/fr/#log) capturant chaque détail de ce jour. Quand papa est rentré et qu'il a dit "Maman" encore, comment j'ai pleuré le soir...
 
 Cinq ans plus tard, à l'entrée en primaire de mon fils, j'ai relu ces notes. Les émotions sont revenues. Inventory est devenu notre capsule temporelle familiale.
 
@@ -555,7 +555,7 @@ Cinq ans plus tard, à l'entrée en primaire de mon fils, j'ai relu ces notes. L
 
 Après la maladie de ma belle-mère, je m'inquiétais des recettes familiales transmises depuis des générations. Quand je demandais "Comment faites-vous ce bouillon ?", elle disait juste "environ comme ça"...
 
-Je me suis assise à côté d'elle, j'ai filmé sa cuisine et transcrit tout exactement comme elle le disait dans le [Journal](/inventory/manual/fr/#-système-journal). "Trois largeurs de doigt de piment", "ajouter la sauce soja petit à petit"...
+Je me suis assise à côté d'elle, j'ai filmé sa cuisine et transcrit tout exactement comme elle le disait dans le [Journal](/inventory/manual/fr/#log). "Trois largeurs de doigt de piment", "ajouter la sauce soja petit à petit"...
 
 Après son décès, je relis ces notes à chaque repas de famille. J'entends presque sa voix. Maintenant je transmettrai cet Inventory à ma belle-fille.
 
@@ -589,7 +589,7 @@ Ces notes iront dans notre vidéo de mariage. Dans des années, on se souviendra
 
 Mon chien de 9 ans 'Buddy' et moi sommes ensemble depuis longtemps. Savoir que le temps est limité rend chaque jour précieux.
 
-Chaque jour, je poste les photos de Buddy dans Inventory. Ce qu'il a mangé, ce qu'on a vu en promenade, son expression avant de dormir. Je l'écris comme un journal dans le [Journal](/inventory/manual/fr/#-système-journal).
+Chaque jour, je poste les photos de Buddy dans Inventory. Ce qu'il a mangé, ce qu'on a vu en promenade, son expression avant de dormir. Je l'écris comme un journal dans le [Journal](/inventory/manual/fr/#log).
 
 Un ami a demandé "Pourquoi tu fais ça tous les jours ?" J'ai répondu : "Quand Buddy ne sera plus là, je veux me souvenir combien il était heureux." C'est triste, mais ces notes me consoleront plus tard.
 
@@ -606,7 +606,7 @@ Un ami a demandé "Pourquoi tu fais ça tous les jours ?" J'ai répondu : "Quand
 
 En rangeant le bureau de père, j'ai trouvé des photos des années 70. Fanées et froissées, mais avec mon jeune père dessus.
 
-Je les ai numérisées et enregistrées dans Inventory. Pour chaque photo, j'ai interrogé mon père et noté ses histoires dans le [Journal](/inventory/manual/fr/#-système-journal). "C'était le costume du premier salaire", "C'était notre voyage de noces à la campagne"...
+Je les ai numérisées et enregistrées dans Inventory. Pour chaque photo, j'ai interrogé mon père et noté ses histoires dans le [Journal](/inventory/manual/fr/#log). "C'était le costume du premier salaire", "C'était notre voyage de noces à la campagne"...
 
 Pour ses 60 ans, j'ai fait une vidéo de ces notes. Il a pleuré. "Quand as-tu posé toutes ces questions ?" C'était le cadeau le plus significatif.
 
@@ -625,7 +625,7 @@ Recherche d'emploi. Chaque refus détruisait ma confiance.
 
 Créé un 'Journal de Croissance' dans Inventory. Noter chaque petite réussite. "30 minutes de conversation anglaise aujourd'hui", "Portfolio mis à jour avec retours", "Le recruteur a aimé ma présentation"...
 
-Après 3 mois, les notes se sont accumulées. Les jours de refus, je relis les anciennes entrées et reprends courage. "J'ai tellement grandi." Quand j'ai enfin eu l'offre, j'ai appuyé fort sur ce [Tampon](/inventory/manual/fr/#-système-tampon). C'était le tampon le plus brillant.
+Après 3 mois, les notes se sont accumulées. Les jours de refus, je relis les anciennes entrées et reprends courage. "J'ai tellement grandi." Quand j'ai enfin eu l'offre, j'ai appuyé fort sur ce [Tampon](/inventory/manual/fr/#stamp). C'était le tampon le plus brillant.
 
 </div>
 </details>
@@ -640,7 +640,7 @@ Après 3 mois, les notes se sont accumulées. Les jours de refus, je relis les a
 
 La musique a le pouvoir de ramener des souvenirs. Certaines chansons me transportent à des moments précis.
 
-Créé 'OST de ma Vie' dans Inventory. Pour les moments significatifs, j'enregistre la chanson qui jouait et documente le moment dans le [Journal](/inventory/manual/fr/#-système-journal). La chanson du premier jour de travail, celle qui m'a consolé après une rupture...
+Créé 'OST de ma Vie' dans Inventory. Pour les moments significatifs, j'enregistre la chanson qui jouait et documente le moment dans le [Journal](/inventory/manual/fr/#log). La chanson du premier jour de travail, celle qui m'a consolé après une rupture...
 
 Les jours difficiles, je mets cette playlist en lisant les histoires attachées à chaque chanson. La bande-son de ma vie s'enrichit.
 
@@ -657,7 +657,7 @@ Les jours difficiles, je mets cette playlist en lisant les histoires attachées 
 
 J'ai encore des lettres de ma première classe il y a 10 ans. L'écriture d'enfant disant "Je vous aime maîtresse". Le papier vieillit et ça me brise le cœur.
 
-J'ai photographié chaque lettre et téléversé dans Inventory. Dans le [Journal](/inventory/manual/fr/#-système-journal), j'ai écrit des souvenirs de chaque enfant. "Celui-ci était timide au début mais est devenu le plus actif", "Cette lettre a été reçue le jour de la remise des diplômes"...
+J'ai photographié chaque lettre et téléversé dans Inventory. Dans le [Journal](/inventory/manual/fr/#log), j'ai écrit des souvenirs de chaque enfant. "Celui-ci était timide au début mais est devenu le plus actif", "Cette lettre a été reçue le jour de la remise des diplômes"...
 
 Les jours difficiles, j'ouvre ces notes. L'amour des enfants passe et me donne de la force. C'est pour ça que j'enseigne.
 
@@ -674,7 +674,7 @@ Les jours difficiles, j'ouvre ces notes. L'amour des enfants passe et me donne d
 
 20 semaines de grossesse. Chaque jour apporte quelque chose de nouveau pendant que mon ventre grandit. Premiers coups de pied, première échographie, prénoms candidats...
 
-Créé le journal 'En Attendant Bébé' dans Inventory. À chaque rendez-vous, je téléverse les échographies et documente mes émotions dans le [Journal](/inventory/manual/fr/#-système-journal). "Pleuré en entendant le cœur aujourd'hui", "Bébé commence à donner des coups ! Papa a senti aussi"...
+Créé le journal 'En Attendant Bébé' dans Inventory. À chaque rendez-vous, je téléverse les échographies et documente mes émotions dans le [Journal](/inventory/manual/fr/#log). "Pleuré en entendant le cœur aujourd'hui", "Bébé commence à donner des coups ! Papa a senti aussi"...
 
 Quand mon enfant sera grand, je lui montrerai ces notes. "Voilà comment maman et papa t'attendaient."
 
@@ -691,7 +691,7 @@ Quand mon enfant sera grand, je lui montrerai ces notes. "Voilà comment maman e
 
 Je rêve de publier un roman un jour. Encore inconnu, mais j'écris un peu chaque jour.
 
-Créé 'Parcours d'Écrivain' dans Inventory. Quand l'inspiration vient, j'enregistre avec [Papier](/inventory/manual/fr/#-système-papier) et tiens un journal d'écriture dans le [Journal](/inventory/manual/fr/#-système-journal). "3 pages écrites aujourd'hui", "Nom du personnage décidé", "Fin changée"...
+Créé 'Parcours d'Écrivain' dans Inventory. Quand l'inspiration vient, j'enregistre avec [Papier](/inventory/manual/fr/#paper) et tiens un journal d'écriture dans le [Journal](/inventory/manual/fr/#log). "3 pages écrites aujourd'hui", "Nom du personnage décidé", "Fin changée"...
 
 Quand mon livre sera publié, je veux partager ces notes. "Voici le voyage jusqu'à la première phrase."
 
@@ -716,7 +716,7 @@ Quand mon livre sera publié, je veux partager ces notes. "Voici le voyage jusqu
 
 Je faisais du backpacking en Europe. J'ai perdu mon sac dans le métro parisien. Passeport, cartes, appareil photo... tout était dedans.
 
-Heureusement, j'avais enregistré tout le contenu du sac dans Inventory. Au commissariat, quand on m'a demandé "Qu'y avait-il dans le sac ?", j'ai cherché par [Mots-clés](/inventory/manual/fr/#-mots-clés) et montré une liste complète. Même mon numéro de passeport était documenté.
+Heureusement, j'avais enregistré tout le contenu du sac dans Inventory. Au commissariat, quand on m'a demandé "Qu'y avait-il dans le sac ?", j'ai cherché par [Mots-clés](/inventory/manual/fr/#keyword) et montré une liste complète. Même mon numéro de passeport était documenté.
 
 Deux semaines plus tard, le sac a été retrouvé ! La police a dit : "La liste détaillée a facilité la vérification." Inventory m'a sauvé.
 
@@ -733,7 +733,7 @@ Deux semaines plus tard, le sac a été retrouvé ! La police a dit : "La liste 
 
 Un ami a changé d'école au lycée. Après, on a perdu contact. Parfois je pensais à lui.
 
-J'organisais les souvenirs avec cet ami dans Inventory. Dans le [Journal](/inventory/manual/fr/#-système-journal), j'ai documenté "photo en uniforme scolaire", "chansons qu'il aimait", "dernier jour qu'on s'est vus".
+J'organisais les souvenirs avec cet ami dans Inventory. Dans le [Journal](/inventory/manual/fr/#log), j'ai documenté "photo en uniforme scolaire", "chansons qu'il aimait", "dernier jour qu'on s'est vus".
 
 Un jour, j'ai partagé ces notes sur les réseaux sociaux. "Quelqu'un connaît cet ami ?" Incroyablement, un ami de son ami m'a contacté. Après 10 ans, on s'est retrouvés. Inventory a construit le pont.
 
@@ -750,7 +750,7 @@ Un jour, j'ai partagé ces notes sur les réseaux sociaux. "Quelqu'un connaît c
 
 Après le décès de grand-père, on a trié ses affaires. Beaucoup de vieux objets que j'ai failli jeter sans connaître leur signification.
 
-J'ai tout photographié et enregistré dans Inventory, puis demandé à mon père pour chaque objet, documentant dans le [Journal](/inventory/manual/fr/#-système-journal). "C'était la première montre de grand-père", "Ça a été utilisé pendant la guerre"...
+J'ai tout photographié et enregistré dans Inventory, puis demandé à mon père pour chaque objet, documentant dans le [Journal](/inventory/manual/fr/#log). "C'était la première montre de grand-père", "Ça a été utilisé pendant la guerre"...
 
 Puis j'ai trouvé un vieux document. Il s'est avéré que c'étaient des papiers de 70 ans sur ses mérites dans la résistance ! On a contacté les autorités et les contributions de grand-père ont été honorées. Ça aurait été perdu pour toujours si on avait jeté.
 
@@ -767,7 +767,7 @@ Puis j'ai trouvé un vieux document. Il s'est avéré que c'étaient des papiers
 
 Je collectionne les sets LEGO. Au début juste pour le plaisir, mais ça devenait dur de suivre. Je m'y perdais dans ma collection.
 
-J'ai commencé à enregistrer tous les sets LEGO dans Inventory. Prix d'achat, magasin, statut de construction dans le [Journal](/inventory/manual/fr/#-système-journal), série et nombre de pièces en [Mots-clés](/inventory/manual/fr/#-mots-clés).
+J'ai commencé à enregistrer tous les sets LEGO dans Inventory. Prix d'achat, magasin, statut de construction dans le [Journal](/inventory/manual/fr/#log), série et nombre de pièces en [Mots-clés](/inventory/manual/fr/#keyword).
 
 Un an plus tard, la communauté LEGO a vu mon Inventory et m'a contacté. "Vous êtes si organisé. Rejoignez notre groupe." Maintenant je suis admin d'une communauté de 500 membres. L'habitude de documenter a transformé un hobby en presque une profession.
 
@@ -801,7 +801,7 @@ Après un an, on a compilé les notes en "Notre Livre de Recettes Familial". Fai
 
 J'adorais chiner et collectionnais des vêtements vintage partout. Une pièce entière s'est remplie.
 
-J'ai commencé à organiser en enregistrant dans Inventory. Marque, époque, état, source de chaque article détaillés dans le [Journal](/inventory/manual/fr/#-système-journal). Style, taille, saison en [Mots-clés](/inventory/manual/fr/#-mots-clés).
+J'ai commencé à organiser en enregistrant dans Inventory. Marque, époque, état, source de chaque article détaillés dans le [Journal](/inventory/manual/fr/#log). Style, taille, saison en [Mots-clés](/inventory/manual/fr/#keyword).
 
 Les amis ont commencé à demander "Tu vends ça ?" Montrer l'écran Inventory a créé de la confiance. J'ai commencé à vendre sur Instagram, maintenant j'ai une boutique physique de vintage. L'organisation est devenue un business.
 
@@ -818,7 +818,7 @@ Les amis ont commencé à demander "Tu vends ça ?" Montrer l'écran Inventory a
 
 Décidé d'émigrer. Je devais trier 20 ans d'affaires.
 
-J'ai tout enregistré dans la maison dans Inventory. Catégorisé : jeter, vendre, emporter, offrir - marqué en [Mots-clés](/inventory/manual/fr/#-mots-clés). Les objets avec des souvenirs ont leurs histoires dans le [Journal](/inventory/manual/fr/#-système-journal).
+J'ai tout enregistré dans la maison dans Inventory. Catégorisé : jeter, vendre, emporter, offrir - marqué en [Mots-clés](/inventory/manual/fr/#keyword). Les objets avec des souvenirs ont leurs histoires dans le [Journal](/inventory/manual/fr/#log).
 
 3 mois de tri terminés en 2 semaines. Ventes fluides, et les objets significatifs faciles à lâcher avec des photos comme souvenirs. Les objets peuvent être jetés, mais les notes m'accompagnent.
 
@@ -835,7 +835,7 @@ J'ai tout enregistré dans la maison dans Inventory. Catégorisé : jeter, vendr
 
 J'ai décidé de donner mon premier violon à ma sœur au lycée. Difficile de se séparer d'un instrument avec lequel j'ai joué 10 ans.
 
-J'ai documenté toutes les histoires du violon dans Inventory. Premier jour d'achat, premier concert, jours de réparation... Chaque moment capturé dans le [Journal](/inventory/manual/fr/#-système-journal).
+J'ai documenté toutes les histoires du violon dans Inventory. Premier jour d'achat, premier concert, jours de réparation... Chaque moment capturé dans le [Journal](/inventory/manual/fr/#log).
 
 Quand j'ai [transféré](/inventory/manual/fr/#-fonction-transfert) l'instrument avec les notes Inventory à ma sœur, j'ai dit "Tout ce que ce violon a joué est écrit ici." Elle était émue aux larmes. J'ai transmis non seulement l'instrument, mais son histoire.
 
@@ -852,7 +852,7 @@ Quand j'ai [transféré](/inventory/manual/fr/#-fonction-transfert) l'instrument
 
 J'ai adopté 'Luna' au refuge. Elle n'a pas de passé connu, donc je voulais documenter son futur encore mieux.
 
-Dès le premier jour, j'ai tout documenté sur Luna dans Inventory. Premier jour à la maison, première queue remuante, premier endroit de sieste... Entrées de journal quotidiennes dans le [Journal](/inventory/manual/fr/#-système-journal).
+Dès le premier jour, j'ai tout documenté sur Luna dans Inventory. Premier jour à la maison, première queue remuante, premier endroit de sieste... Entrées de journal quotidiennes dans le [Journal](/inventory/manual/fr/#log).
 
 À notre premier anniversaire, j'ai fait une vidéo de ces notes appelée "La Première Année de Luna." Partagée avec la communauté, beaucoup ont été touchés, certains ont décidé d'adopter en refuge. Les notes ont sauvé une autre vie.
 
@@ -869,7 +869,7 @@ Dès le premier jour, j'ai tout documenté sur Luna dans Inventory. Premier jour
 
 J'ai une montre Omega des années 60 héritée de mon père. Un trésor familial, mais je suis le seul à connaître son histoire maintenant.
 
-J'ai enregistré la montre dans Inventory et documenté toutes les histoires de mon père dans le [Journal](/inventory/manual/fr/#-système-journal). "Achetée avec le premier salaire", "Portée le jour où il a rencontré maman", "Vérifié l'heure à la naissance du grand frère"...
+J'ai enregistré la montre dans Inventory et documenté toutes les histoires de mon père dans le [Journal](/inventory/manual/fr/#log). "Achetée avec le premier salaire", "Portée le jour où il a rencontré maman", "Vérifié l'heure à la naissance du grand frère"...
 
 Quand je donnerai cette montre à mon fils, je [transférerai](/inventory/manual/fr/#-fonction-transfert) l'Inventory aussi. La valeur des objets vient de leur histoire. Inventory connectera trois générations.
 
@@ -894,7 +894,7 @@ Quand je donnerai cette montre à mon fils, je [transférerai](/inventory/manual
 
 L'analyse des rêves révèle l'inconscient. Donc chaque matin, je documente les rêves dont je me souviens dans Inventory.
 
-Je dessine des scènes de rêve en images et téléverse, détails dans le [Journal](/inventory/manual/fr/#-système-journal). Thèmes comme "eau", "chute", "examens" en [Mots-clés](/inventory/manual/fr/#-mots-clés).
+Je dessine des scènes de rêve en images et téléverse, détails dans le [Journal](/inventory/manual/fr/#log). Thèmes comme "eau", "chute", "examens" en [Mots-clés](/inventory/manual/fr/#keyword).
 
 Six mois d'analyse ont montré des patterns. Je rêve de "chute" quand je suis stressée. J'ai trouvé un moyen de dialoguer avec mon inconscient.
 
@@ -911,9 +911,9 @@ Six mois d'analyse ont montré des patterns. Je rêve de "chute" quand je suis s
 
 L'observation du ciel nocturne est mon hobby. Je voulais documenter quand j'ai vu quoi.
 
-Chaque observation va dans Inventory. Date, lieu, cible (constellation, planète, nébuleuse), météo, équipement... noté dans le [Journal](/inventory/manual/fr/#-système-journal), photos jointes.
+Chaque observation va dans Inventory. Date, lieu, cible (constellation, planète, nébuleuse), météo, équipement... noté dans le [Journal](/inventory/manual/fr/#log), photos jointes.
 
-Les saisons de pluie de météores, je reçois des alertes à l'avance via [Alarme de Date](/inventory/manual/fr/#-alarme-de-date). Trois ans de notes sont devenues des données d'expérience pour "quand et où observer au mieux."
+Les saisons de pluie de météores, je reçois des alertes à l'avance via [Alarme de Date](/inventory/manual/fr/#alarm). Trois ans de notes sont devenues des données d'expérience pour "quand et où observer au mieux."
 
 </div>
 </details>
@@ -928,7 +928,7 @@ Les saisons de pluie de météores, je reçois des alertes à l'avance via [Alar
 
 Je collectionne les parfums mais je trouvais difficile de me souvenir des caractéristiques de chacun.
 
-Chaque parfum enregistré avec notes (tête, cœur, fond), tenue, sillage, saisons/occasions adaptées dans le [Journal](/inventory/manual/fr/#-système-journal). [Mots-clés](/inventory/manual/fr/#-mots-clés) comme "boisé", "floral", "soirée rendez-vous".
+Chaque parfum enregistré avec notes (tête, cœur, fond), tenue, sillage, saisons/occasions adaptées dans le [Journal](/inventory/manual/fr/#log). [Mots-clés](/inventory/manual/fr/#keyword) comme "boisé", "floral", "soirée rendez-vous".
 
 Quand des amis demandent des recommandations, je cherche juste et réponds. Ma propre encyclopédie des parfums créée !
 
@@ -945,7 +945,7 @@ Quand des amis demandent des recommandations, je cherche juste et réponds. Ma p
 
 J'ai lancé un projet : photographier le ciel depuis le même endroit chaque jour pendant un an.
 
-Photos du ciel quotidiennes téléversées avec météo, humeur, ce qui s'est passé ce jour dans le [Journal](/inventory/manual/fr/#-système-journal). Dates de prises gérées avec [Date de Début](/inventory/manual/fr/#-date-de-début--expiration).
+Photos du ciel quotidiennes téléversées avec météo, humeur, ce qui s'est passé ce jour dans le [Journal](/inventory/manual/fr/#log). Dates de prises gérées avec [Date de Début](/inventory/manual/fr/#dates).
 
 365 photos sont devenues un timelapse vidéo. Les saisons changeantes dans le ciel avec mon année. Posté sur Instagram et plus de 100k vues.
 
@@ -962,7 +962,7 @@ Photos du ciel quotidiennes téléversées avec météo, humeur, ce qui s'est pa
 
 Je joue aux JDR sur table mais la gestion des fiches de personnage et de l'inventaire est complexe.
 
-Personnages et objets d'inventaire enregistrés dans Inventory. Événements de session, montées de niveau, nouvelles compétences dans le [Journal](/inventory/manual/fr/#-système-journal). [Partitions](/inventory/manual/fr/#-fonction-partition) par campagne.
+Personnages et objets d'inventaire enregistrés dans Inventory. Événements de session, montées de niveau, nouvelles compétences dans le [Journal](/inventory/manual/fr/#log). [Partitions](/inventory/manual/fr/#partition) par campagne.
 
 Connecté avec les membres du groupe via [Journal Partagé](/inventory/manual/fr/#-journal-partagé-vs-solo), tout le monde peut voir les infos des personnages des autres. Même le MJ dit "Ça facilite les sessions !"
 
@@ -979,9 +979,9 @@ Connecté avec les membres du groupe via [Journal Partagé](/inventory/manual/fr
 
 J'apprends une langue mais les apps de vocabulaire ne me convenaient pas. Je voulais organiser à ma façon.
 
-Mots inconnus enregistrés dans Inventory avec phrases d'exemple et explications de nuances dans le [Journal](/inventory/manual/fr/#-système-journal). [Mots-clés](/inventory/manual/fr/#-mots-clés) comme "B2", "business", "entendu dans une série".
+Mots inconnus enregistrés dans Inventory avec phrases d'exemple et explications de nuances dans le [Journal](/inventory/manual/fr/#log). [Mots-clés](/inventory/manual/fr/#keyword) comme "B2", "business", "entendu dans une série".
 
-Les mots mémorisés reçoivent des [Tampons](/inventory/manual/fr/#-système-tampon). Réviser seulement les non-tamponnés. Efficace ! Examen de langue réussi !
+Les mots mémorisés reçoivent des [Tampons](/inventory/manual/fr/#stamp). Réviser seulement les non-tamponnés. Efficace ! Examen de langue réussi !
 
 </div>
 </details>
@@ -996,7 +996,7 @@ Les mots mémorisés reçoivent des [Tampons](/inventory/manual/fr/#-système-ta
 
 J'ai essayé le défi 'garde-robe capsule' - 33 pièces pour 3 mois. Vider le placard, ne garder que l'essentiel !
 
-Les 33 pièces sélectionnées enregistrées dans Inventory. Chaque port noté dans le [Journal](/inventory/manual/fr/#-système-journal). Après 3 mois, l'analyse montre ce que je porte vraiment vs. pas.
+Les 33 pièces sélectionnées enregistrées dans Inventory. Chaque port noté dans le [Journal](/inventory/manual/fr/#log). Après 3 mois, l'analyse montre ce que je porte vraiment vs. pas.
 
 Non portés triés, espaces vides remplis seulement de nécessaire. Inventory aide à maintenir un style de vie minimal.
 
@@ -1013,7 +1013,7 @@ Non portés triés, espaces vides remplis seulement de nécessaire. Inventory ai
 
 Je visite souvent les musées mais j'oublie les œuvres vues.
 
-Chaque expo, j'enregistre les œuvres qui m'ont touché. Artiste, année, technique dans le [Journal](/inventory/manual/fr/#-système-journal), plus "pourquoi ça m'a plu." Genre, époque, émotion en [Mots-clés](/inventory/manual/fr/#-mots-clés).
+Chaque expo, j'enregistre les œuvres qui m'ont touché. Artiste, année, technique dans le [Journal](/inventory/manual/fr/#log), plus "pourquoi ça m'a plu." Genre, époque, émotion en [Mots-clés](/inventory/manual/fr/#keyword).
 
 Cinq ans de notes montrent mes goûts. Impressionnisme, abstrait, tons bleus... Maintenant j'utilise ces données pour choisir les expos.
 
@@ -1030,7 +1030,7 @@ Cinq ans de notes montrent mes goûts. Impressionnisme, abstrait, tons bleus... 
 
 Des centaines de cartes de visite empilées, je ne me souviens pas de qui est qui.
 
-Photographier les cartes immédiatement et enregistrer dans Inventory. Noter dans le [Journal](/inventory/manual/fr/#-système-journal) "où rencontré", "de quoi discuté." Secteur, intérêts, potentiel de collaboration en [Mots-clés](/inventory/manual/fr/#-mots-clés).
+Photographier les cartes immédiatement et enregistrer dans Inventory. Noter dans le [Journal](/inventory/manual/fr/#log) "où rencontré", "de quoi discuté." Secteur, intérêts, potentiel de collaboration en [Mots-clés](/inventory/manual/fr/#keyword).
 
 "Le type IT que j'ai rencontré" - recherche instantanée. En recontactant, mentionner la conversation précédente impressionne les gens !
 
@@ -1047,7 +1047,7 @@ Photographier les cartes immédiatement et enregistrer dans Inventory. Noter dan
 
 Plus de 50 jeux de société mais je ne me souviens pas de ce que j'ai. Quand des amis viennent, dur de décider quoi jouer.
 
-Tous les jeux enregistrés avec nombre de joueurs, durée, genre, difficulté en [Mots-clés](/inventory/manual/fr/#-mots-clés). Avis de jeu dans le [Journal](/inventory/manual/fr/#-système-journal).
+Tous les jeux enregistrés avec nombre de joueurs, durée, genre, difficulté en [Mots-clés](/inventory/manual/fr/#keyword). Avis de jeu dans le [Journal](/inventory/manual/fr/#log).
 
 Quand des amis viennent : "4 joueurs, 1 heure, léger" cherche et donne des recommandations instantanées. Ils m'appellent le "sommelier des jeux de société !"
 
