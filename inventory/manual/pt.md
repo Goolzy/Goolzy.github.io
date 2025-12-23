@@ -19,7 +19,7 @@ Explore todas as funcionalidades do aplicativo Inventory em detalhes.
 
 ---
 
-### 📦 Sistema de Papel {#paper}
+<h3 id="paper">📦 Sistema de Papel</h3>
 
 No Inventory, o **Papel** é a moeda principal usada para criar itens.
 
@@ -40,7 +40,7 @@ No Inventory, o **Papel** é a moeda principal usada para criar itens.
 
 ---
 
-### 📄 Criação de Itens {#create-item}
+<h3 id="create-item">📄 Criação de Itens</h3>
 
 #### Como criar um item
 
@@ -54,7 +54,7 @@ No Inventory, o **Papel** é a moeda principal usada para criar itens.
    - Data de expiração (opcional)
 4. Pressione **Salvar** e 1 Papel será consumido para criar o item
 
-#### Data de início e Data de expiração {#dates}
+<h4 id="dates">Data de início e Data de expiração</h4>
 
 | Configuração | Descrição |
 |--------------|-----------|
@@ -65,7 +65,7 @@ Se não definido, será visível imediatamente e permanente.
 
 ---
 
-### 🔒 Bloqueio de Documento {#lock}
+<h3 id="lock">🔒 Bloqueio de Documento</h3>
 
 Você pode proteger itens de documento definindo uma senha.
 
@@ -104,7 +104,7 @@ Um documento bloqueado só pode ser visualizado após inserir a senha correta.
 
 ---
 
-### 📎 Sistema Clip {#clip}
+<h3 id="clip">📎 Sistema Clip</h3>
 
 **Clip** é uma funcionalidade que agrupa múltiplos documentos para facilitar o gerenciamento.
 
@@ -173,7 +173,7 @@ Você pode remover itens específicos na tela de info do clip:
 
 ---
 
-### 🏷️ Sistema de Emblema {#badge}
+<h3 id="badge">🏷️ Sistema de Emblema</h3>
 
 Um **Emblema** é uma identidade única que você pode usar dentro do aplicativo.
 
@@ -209,7 +209,7 @@ Isso permite identificar rapidamente a qual domínio o emblema pertence.
 
 ---
 
-### 🔖 Sistema de Carimbo {#stamp}
+<h3 id="stamp">🔖 Sistema de Carimbo</h3>
 
 Um **Carimbo** é um item que permite criar modelos e compartilhá-los com outros.
 
@@ -244,7 +244,7 @@ Quando você seleciona um carimbo ativado (modelo) e papel juntos, o menu **"Dup
 
 ---
 
-### 📝 Sistema de Registro {#log}
+<h3 id="log">📝 Sistema de Registro</h3>
 
 Os **Registros** são anotações que você pode adicionar a itens ou modelos de carimbo.
 
@@ -309,7 +309,7 @@ Quando novos comentários são adicionados a um registro compartilhado, a borda 
 
 ---
 
-### 🎨 Sistema de Tinta {#ink}
+<h3 id="ink">🎨 Sistema de Tinta</h3>
 
 A **Tinta** é um item que muda a cor do tema do aplicativo.
 
@@ -328,7 +328,7 @@ A **Tinta** é um item que muda a cor do tema do aplicativo.
 
 ---
 
-### 🔍 Função de Busca {#search}
+<h3 id="search">🔍 Função de Busca</h3>
 
 #### Busca básica
 
@@ -351,7 +351,7 @@ Quando você salva um termo de busca com o botão **"Definir como filtro"**:
 - Toque na etiqueta para filtrar instantaneamente
 - Exclua o filtro com o botão X
 
-#### Agregação de palavras-chave {#keyword}
+<h4 id="keyword">Agregação de palavras-chave</h4>
 
 Quando um filtro está definido e você seleciona itens, os **valores de palavras-chave dos itens selecionados são automaticamente agregados**.
 
@@ -387,7 +387,7 @@ Emblemas vermelhos nos ícones do menu inferior mostram o status atual.
 
 ---
 
-### 📤 Enviar Itens {#transfer}
+<h3 id="transfer">📤 Enviar Itens</h3>
 
 Você pode transferir itens ao vender usados ou dar presentes.
 
@@ -454,7 +454,7 @@ Você pode comprar vários itens na loja.
 
 ---
 
-### 📂 Função de Partição {#partition}
+<h3 id="partition">📂 Função de Partição</h3>
 
 Você pode agrupar itens com partições quando tiver muitos.
 

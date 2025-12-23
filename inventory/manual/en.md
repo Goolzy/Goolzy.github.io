@@ -19,7 +19,7 @@ Explore all the features of the Inventory app in detail.
 
 ---
 
-### 📦 Paper System {#paper}
+<h3 id="paper">📦 Paper System</h3>
 
 In Inventory, **Paper** is the core currency used to create items.
 
@@ -40,7 +40,7 @@ In Inventory, **Paper** is the core currency used to create items.
 
 ---
 
-### 📄 Creating Items {#create-item}
+<h3 id="create-item">📄 Creating Items</h3>
 
 #### How to Create an Item
 
@@ -54,7 +54,7 @@ In Inventory, **Paper** is the core currency used to create items.
    - Expiry Date (optional)
 4. Press **Save** and 1 Paper will be consumed to create the item
 
-#### Start Date and Expiry Date {#dates}
+<h4 id="dates">Start Date and Expiry Date</h4>
 
 | Setting | Description |
 |---------|-------------|
@@ -65,7 +65,7 @@ If not set, it will be immediately visible and permanent.
 
 ---
 
-### 🔒 Document Lock {#lock}
+<h3 id="lock">🔒 Document Lock</h3>
 
 You can protect document items by setting a password.
 
@@ -104,7 +104,7 @@ A locked document can only be viewed after entering the correct password.
 
 ---
 
-### 📎 Clip System {#clip}
+<h3 id="clip">📎 Clip System</h3>
 
 **Clip** is a feature that bundles multiple documents together for easier management.
 
@@ -173,7 +173,7 @@ You can remove specific items from a clip in the clip info screen:
 
 ---
 
-### 🏷️ Badge System {#badge}
+<h3 id="badge">🏷️ Badge System</h3>
 
 A **Badge** is a unique identity you can use within the app.
 
@@ -209,7 +209,7 @@ This allows you to quickly identify which domain the badge belongs to.
 
 ---
 
-### 🔖 Stamp System {#stamp}
+<h3 id="stamp">🔖 Stamp System</h3>
 
 A **Stamp** is an item that lets you create templates and share them with others.
 
@@ -244,7 +244,7 @@ When you select an activated stamp (template) and paper together, the **"Duplica
 
 ---
 
-### 📝 Log System {#log}
+<h3 id="log">📝 Log System</h3>
 
 **Logs** are records you can add to items or stamp templates.
 
@@ -309,7 +309,7 @@ When new comments are added to a shared log, the item border **pulses** in the i
 
 ---
 
-### 🎨 Ink System {#ink}
+<h3 id="ink">🎨 Ink System</h3>
 
 **Ink** is an item that changes the app's theme color.
 
@@ -351,7 +351,7 @@ When you save a search term with the **"Set as Filter"** button:
 - Tap the tag to instantly filter by that search term
 - Delete the filter with the X button
 
-#### Keyword Aggregation {#keyword}
+<h4 id="keyword">Keyword Aggregation</h4>
 
 When a filter is set and you select items, the **keyword values of selected items are automatically aggregated**.
 
@@ -387,7 +387,7 @@ Red badges on the bottom menu icons show current status.
 
 ---
 
-### 📤 Sending Items {#transfer}
+<h3 id="transfer">📤 Sending Items</h3>
 
 You can transfer items when selling second-hand or giving gifts.
 

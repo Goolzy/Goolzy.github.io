@@ -19,7 +19,7 @@ Entdecken Sie alle Funktionen der Inventory-App im Detail.
 
 ---
 
-### 📦 Papier-System {#paper}
+<h3 id="paper">📦 Papier-System</h3>
 
 In Inventory ist **Papier** die Kernwährung zum Erstellen von Gegenständen.
 
@@ -40,7 +40,7 @@ In Inventory ist **Papier** die Kernwährung zum Erstellen von Gegenständen.
 
 ---
 
-### 📄 Gegenstände erstellen {#create-item}
+<h3 id="create-item">📄 Gegenstände erstellen</h3>
 
 #### Wie man einen Gegenstand erstellt
 
@@ -54,7 +54,7 @@ In Inventory ist **Papier** die Kernwährung zum Erstellen von Gegenständen.
    - Ablaufdatum (optional)
 4. Drücken Sie **Speichern** und 1 Papier wird verbraucht, um den Gegenstand zu erstellen
 
-#### Startdatum und Ablaufdatum {#dates}
+<h4 id="dates">Startdatum und Ablaufdatum</h4>
 
 | Einstellung | Beschreibung |
 |-------------|--------------|
@@ -65,7 +65,7 @@ Wenn nicht festgelegt, ist es sofort sichtbar und dauerhaft.
 
 ---
 
-### 🔒 Dokumentsperre {#lock}
+<h3 id="lock">🔒 Dokumentsperre</h3>
 
 Sie können Dokumentelemente durch Festlegen eines Passworts schützen.
 
@@ -104,7 +104,7 @@ Ein gesperrtes Dokument kann nur nach Eingabe des korrekten Passworts angezeigt 
 
 ---
 
-### 📎 Clip-System {#clip}
+<h3 id="clip">📎 Clip-System</h3>
 
 **Clip** ist eine Funktion, mit der Sie mehrere Dokumente zur einfacheren Verwaltung zusammenfassen können.
 
@@ -173,7 +173,7 @@ Sie können bestimmte Elemente im Clip-Info-Bildschirm entfernen:
 
 ---
 
-### 🏷️ Abzeichen-System {#badge}
+<h3 id="badge">🏷️ Abzeichen-System</h3>
 
 Ein **Abzeichen** ist eine einzigartige Identität, die Sie in der App verwenden können.
 
@@ -209,7 +209,7 @@ So können Sie schnell erkennen, zu welcher Domain das Abzeichen gehört.
 
 ---
 
-### 🔖 Stempel-System {#stamp}
+<h3 id="stamp">🔖 Stempel-System</h3>
 
 Ein **Stempel** ist ein Gegenstand, mit dem Sie Vorlagen erstellen und mit anderen teilen können.
 
@@ -244,7 +244,7 @@ Wenn Sie einen aktivierten Stempel (Vorlage) und Papier zusammen auswählen, ers
 
 ---
 
-### 📝 Protokoll-System {#log}
+<h3 id="log">📝 Protokoll-System</h3>
 
 **Protokolle** sind Aufzeichnungen, die Sie zu Gegenständen oder Stempelvorlagen hinzufügen können.
 
@@ -309,7 +309,7 @@ Wenn neue Kommentare zu einem geteilten Protokoll hinzugefügt werden, **pulsier
 
 ---
 
-### 🎨 Tinten-System {#ink}
+<h3 id="ink">🎨 Tinten-System</h3>
 
 **Tinte** ist ein Gegenstand, der die Themenfarbe der App ändert.
 
@@ -328,7 +328,7 @@ Wenn neue Kommentare zu einem geteilten Protokoll hinzugefügt werden, **pulsier
 
 ---
 
-### 🔍 Suchfunktion {#search}
+<h3 id="search">🔍 Suchfunktion</h3>
 
 #### Grundlegende Suche
 
@@ -351,7 +351,7 @@ Wenn Sie einen Suchbegriff mit **"Als Filter setzen"** speichern:
 - Tippen Sie auf das Tag, um sofort nach diesem Begriff zu filtern
 - Löschen Sie den Filter mit dem X-Button
 
-#### Schlüsselwort-Aggregation {#keyword}
+<h4 id="keyword">Schlüsselwort-Aggregation</h4>
 
 Wenn ein Filter gesetzt ist und Sie Gegenstände auswählen, werden die **Schlüsselwortwerte der ausgewählten Gegenstände automatisch aggregiert**.
 
@@ -387,7 +387,7 @@ Rote Badges auf den Symbolen des unteren Menüs zeigen den aktuellen Status an.
 
 ---
 
-### 📤 Gegenstände senden {#transfer}
+<h3 id="transfer">📤 Gegenstände senden</h3>
 
 Sie können Gegenstände beim Gebrauchtverkauf oder Verschenken übertragen.
 
@@ -454,7 +454,7 @@ Sie können verschiedene Gegenstände im Shop kaufen.
 
 ---
 
-### 📂 Partitions-Funktion {#partition}
+<h3 id="partition">📂 Partitions-Funktion</h3>
 
 Sie können Gegenstände mit Partitionen gruppieren, wenn Sie viele haben.
 

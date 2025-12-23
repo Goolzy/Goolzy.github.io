@@ -19,7 +19,7 @@ Découvrez toutes les fonctionnalités de l'application Inventory en détail.
 
 ---
 
-### 📦 Système de Papier {#paper}
+<h3 id="paper">📦 Système de Papier</h3>
 
 Dans Inventory, le **Papier** est la monnaie principale utilisée pour créer des objets.
 
@@ -40,7 +40,7 @@ Dans Inventory, le **Papier** est la monnaie principale utilisée pour créer de
 
 ---
 
-### 📄 Création d'objets {#create-item}
+<h3 id="create-item">📄 Création d'objets</h3>
 
 #### Comment créer un objet
 
@@ -54,7 +54,7 @@ Dans Inventory, le **Papier** est la monnaie principale utilisée pour créer de
    - Date d'expiration (optionnel)
 4. Appuyez sur **Enregistrer** et 1 Papier sera consommé pour créer l'objet
 
-#### Date de début et Date d'expiration {#dates}
+<h4 id="dates">Date de début et Date d'expiration</h4>
 
 | Paramètre | Description |
 |-----------|-------------|
@@ -65,7 +65,7 @@ Si non défini, il sera immédiatement visible et permanent.
 
 ---
 
-### 🔒 Verrouillage de Document {#lock}
+<h3 id="lock">🔒 Verrouillage de Document</h3>
 
 Vous pouvez protéger les documents en définissant un mot de passe.
 
@@ -104,7 +104,7 @@ Un document verrouillé ne peut être consulté qu'après avoir saisi le mot de 
 
 ---
 
-### 📎 Système Clip {#clip}
+<h3 id="clip">📎 Système Clip</h3>
 
 **Clip** est une fonctionnalité qui regroupe plusieurs documents ensemble pour une gestion plus facile.
 
@@ -173,7 +173,7 @@ Vous pouvez retirer des éléments spécifiques dans l'écran d'infos du clip :
 
 ---
 
-### 🏷️ Système de Badge {#badge}
+<h3 id="badge">🏷️ Système de Badge</h3>
 
 Un **Badge** est une identité unique que vous pouvez utiliser dans l'application.
 
@@ -209,7 +209,7 @@ Cela vous permet d'identifier rapidement à quel domaine appartient le badge.
 
 ---
 
-### 🔖 Système de Tampon {#stamp}
+<h3 id="stamp">🔖 Système de Tampon</h3>
 
 Un **Tampon** est un objet qui vous permet de créer des modèles et de les partager avec d'autres.
 
@@ -244,7 +244,7 @@ Lorsque vous sélectionnez un tampon activé (modèle) et du papier ensemble, le
 
 ---
 
-### 📝 Système de Journal {#log}
+<h3 id="log">📝 Système de Journal</h3>
 
 Les **Journaux** sont des enregistrements que vous pouvez ajouter aux objets ou modèles de tampon.
 
@@ -309,7 +309,7 @@ Lorsque de nouveaux commentaires sont ajoutés à un journal partagé, la bordur
 
 ---
 
-### 🎨 Système d'Encre {#ink}
+<h3 id="ink">🎨 Système d'Encre</h3>
 
 L'**Encre** est un objet qui change la couleur du thème de l'application.
 
@@ -328,7 +328,7 @@ L'**Encre** est un objet qui change la couleur du thème de l'application.
 
 ---
 
-### 🔍 Fonction de Recherche {#search}
+<h3 id="search">🔍 Fonction de Recherche</h3>
 
 #### Recherche de base
 
@@ -351,7 +351,7 @@ Lorsque vous enregistrez un terme de recherche avec le bouton **"Définir comme 
 - Appuyez sur l'étiquette pour filtrer instantanément
 - Supprimez le filtre avec le bouton X
 
-#### Agrégation de mots-clés {#keyword}
+<h4 id="keyword">Agrégation de mots-clés</h4>
 
 Lorsqu'un filtre est défini et que vous sélectionnez des objets, les **valeurs de mots-clés des objets sélectionnés sont automatiquement agrégées**.
 
@@ -387,7 +387,7 @@ Des badges rouges sur les icônes du menu inférieur indiquent l'état actuel.
 
 ---
 
-### 📤 Envoyer des objets {#transfer}
+<h3 id="transfer">📤 Envoyer des objets</h3>
 
 Vous pouvez transférer des objets lors de ventes d'occasion ou de cadeaux.
 
@@ -454,7 +454,7 @@ Vous pouvez acheter divers objets dans la boutique.
 
 ---
 
-### 📂 Fonction Partition {#partition}
+<h3 id="partition">📂 Fonction Partition</h3>
 
 Vous pouvez grouper les objets avec des partitions quand vous en avez beaucoup.
 
