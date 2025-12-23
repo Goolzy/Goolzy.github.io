@@ -222,7 +222,7 @@ Entdecken Sie die Möglichkeiten von Inventory durch 100 verschiedene Anwendungs
 
 **Problem**: Mit zwei Kindern mit unterschiedlichen Impfplänen wurde ich oft verwirrt. Manchmal rief die Praxis an, wenn es schon überfällig war.
 
-**Lösung**: Separate [Partitionen](/inventory/manual/de/#partition) für jedes Kind erstellt und Impftermine mit [Datumsalarmen](/inventory/manual/de/#alarm) verwaltet. [Stempel](/inventory/manual/de/#stamp) hinzugefügt wenn erledigt.
+**Lösung**: Separate [Partitionen](/inventory/manual/de/#partition) für jedes Kind erstellt und Impftermine mit [Datumsalarmen](/inventory/manual/de/#alarm) verwaltet. Abschluss im [Log](/inventory/manual/de/#log) notiert.
 
 **Ergebnis**: Keinen einzigen Impftermin mehr verpasst. Kann mich auf Arztbesuche vorbereiten!
 
@@ -392,7 +392,7 @@ Entdecken Sie die Möglichkeiten von Inventory durch 100 verschiedene Anwendungs
 
 **Problem**: Beim Kaufen begeistert, aber zuhause stapeln sie sich ungelesen. Habe mal das gleiche Buch zweimal gekauft.
 
-**Lösung**: Bücher direkt nach Kauf registrieren. [Startdatum](/inventory/manual/de/#dates) beim Beginnen setzen, [Stempel](/inventory/manual/de/#stamp) beim Beenden. Ungelesene Liste auf einen Blick sichtbar.
+**Lösung**: Bücher direkt nach Kauf registrieren. [Startdatum](/inventory/manual/de/#dates) beim Beginnen setzen, Abschluss im [Log](/inventory/manual/de/#log) notieren. Ungelesene Liste auf einen Blick sichtbar.
 
 **Ergebnis**: Statt überwältigt zu sein, bin ich motiviert. 12 Bücher dieses Jahr gelesen - mehr als letztes Jahr insgesamt!
 
@@ -494,7 +494,7 @@ Entdecken Sie die Möglichkeiten von Inventory durch 100 verschiedene Anwendungs
 
 **Problem**: 3-Monats-Abo fürs Studio, gehe einen Monat fleißig, dann höre ich auf. Keine Motivation und ohne Aufzeichnungen kein Fortschritt sichtbar.
 
-**Lösung**: Jede Übungsart registrieren und Gewichte/Wiederholungen im [Log](/inventory/manual/de/#-log-system). [Stempel](/inventory/manual/de/#stamp) für aufeinanderfolgende Besuche hinzufügen.
+**Lösung**: Jede Übungsart registrieren und Gewichte/Wiederholungen im [Log](/inventory/manual/de/#log). Die wachsenden Aufzeichnungen aufeinanderfolgender Besuche motivieren.
 
 **Ergebnis**: Fortschritt von 40kg auf 70kg Bankdrücken ist dokumentiert. Aufzeichnungen sehen motiviert mich!
 
@@ -511,7 +511,7 @@ Entdecken Sie die Möglichkeiten von Inventory durch 100 verschiedene Anwendungs
 
 **Problem**: Sage im Meeting "Ich habe den Bericht nächste Woche fertig" und vergesse es dann. Unangenehm wenn jemand fragt "Ist das fertig?"
 
-**Lösung**: Meeting-Zusagen sofort registrieren mit [Datumsalarmen](/inventory/manual/de/#alarm) für Tag-vorher-Erinnerung. [Stempel](/inventory/manual/de/#stamp) wenn erledigt!
+**Lösung**: Meeting-Zusagen sofort registrieren mit [Datumsalarmen](/inventory/manual/de/#alarm) für Tag-vorher-Erinnerung. Im [Log](/inventory/manual/de/#log) notieren wenn erledigt!
 
 **Ergebnis**: "Susan liefert immer was sie verspricht" - das ist jetzt mein Ruf. Vertrauen aufgebaut!
 
@@ -625,7 +625,7 @@ Jobsuche. Jede Absage zerstörte mein Selbstvertrauen.
 
 Erstellte ein 'Wachstumstagebuch' in Inventory. Jede kleine Leistung festhalten. "30 Minuten Englisch-Konversation heute", "Portfolio mit Feedback aktualisiert", "Interviewer mochte meine Vorstellung"...
 
-Nach 3 Monaten hatten sich Aufzeichnungen angesammelt. An Absagetagen lese ich alte Einträge und tanke Kraft. "Ich bin so weit gewachsen." Als ich endlich die Zusage bekam, drückte ich den [Stempel](/inventory/manual/de/#stamp) fest. Es war der hellste Stempel überhaupt.
+Nach 3 Monaten hatten sich Aufzeichnungen angesammelt. An Absagetagen lese ich alte Einträge und tanke Kraft. "Ich bin so weit gewachsen." Als ich endlich die Zusage bekam, schrieb ich "Angenommen!" ins [Log](/inventory/manual/de/#log). Es war der hellste Eintrag überhaupt.
 
 </div>
 </details>
@@ -981,7 +981,7 @@ Sprache lernen aber Vokabel-Apps passten mir nicht. Wollte auf meine Art organis
 
 Unbekannte Wörter in Inventory registriert mit Beispielsätzen und Nuancenerklärungen im [Log](/inventory/manual/de/#-log-system). [Schlüsselwörter](/inventory/manual/de/#keyword) wie "B2", "Business", "in Serie gehört" markiert.
 
-Gemerkte Wörter bekommen [Stempel](/inventory/manual/de/#stamp). Nur ungestempelte wiederholen. Effizient! Sprachprüfung bestanden!
+Gemerkte Wörter werden mit [Schlüsselwort](/inventory/manual/de/#keyword) "gelernt" markiert. Nur unmarkierte wiederholen. Effizient! Sprachprüfung bestanden!
 
 </div>
 </details>

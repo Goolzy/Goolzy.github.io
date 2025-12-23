@@ -222,7 +222,7 @@ Découvrez les possibilités d'Inventory à travers 100 cas d'utilisation varié
 
 **Problème** : Avec deux enfants ayant des calendriers de vaccination différents, je m'y perds. Parfois le cabinet appelait quand c'était déjà en retard.
 
-**Solution** : [Partitions](/inventory/manual/fr/#partition) séparées créées pour chaque enfant et dates de vaccination gérées avec des [Alarmes de Date](/inventory/manual/fr/#alarm). [Tampons](/inventory/manual/fr/#stamp) ajoutés une fois fait.
+**Solution** : [Partitions](/inventory/manual/fr/#partition) séparées créées pour chaque enfant et dates de vaccination gérées avec des [Alarmes de Date](/inventory/manual/fr/#alarm). Achèvement noté dans le [Journal](/inventory/manual/fr/#log).
 
 **Résultat** : Plus aucun rendez-vous de vaccination manqué. Je peux me préparer pour les visites médicales !
 
@@ -392,7 +392,7 @@ Découvrez les possibilités d'Inventory à travers 100 cas d'utilisation varié
 
 **Problème** : Enthousiaste à l'achat, mais ils s'empilent non lus à la maison. J'ai même acheté le même livre deux fois.
 
-**Solution** : Livres enregistrés immédiatement après achat. [Date de Début](/inventory/manual/fr/#dates) au commencement, [Tampon](/inventory/manual/fr/#stamp) à la fin. Liste des non-lus visible en un coup d'œil.
+**Solution** : Livres enregistrés immédiatement après achat. [Date de Début](/inventory/manual/fr/#dates) au commencement, achèvement noté dans le [Journal](/inventory/manual/fr/#log). Liste des non-lus visible en un coup d'œil.
 
 **Résultat** : Au lieu d'être submergée, je suis motivée. 12 livres lus cette année - plus que toute l'année dernière !
 
@@ -494,7 +494,7 @@ Découvrez les possibilités d'Inventory à travers 100 cas d'utilisation varié
 
 **Problème** : Abonnement de 3 mois à la salle, j'y vais assidûment un mois puis j'arrête. Pas de motivation et sans relevés pas de progression visible.
 
-**Solution** : Chaque type d'exercice enregistré et poids/répétitions dans le [Journal](/inventory/manual/fr/#log). [Tampons](/inventory/manual/fr/#stamp) pour présences consécutives.
+**Solution** : Chaque type d'exercice enregistré et poids/répétitions dans le [Journal](/inventory/manual/fr/#log). Les enregistrements consécutifs s'accumulent et motivent.
 
 **Résultat** : Progression de 40kg à 70kg au développé couché documentée. Voir les relevés me motive !
 
@@ -511,7 +511,7 @@ Découvrez les possibilités d'Inventory à travers 100 cas d'utilisation varié
 
 **Problème** : Je dis en réunion "J'aurai le rapport la semaine prochaine" et j'oublie. Gênant quand quelqu'un demande "C'est fait ?"
 
-**Solution** : Engagements de réunion enregistrés immédiatement avec [Alarmes de Date](/inventory/manual/fr/#alarm) pour rappel la veille. [Tampon](/inventory/manual/fr/#stamp) quand c'est fait !
+**Solution** : Engagements de réunion enregistrés immédiatement avec [Alarmes de Date](/inventory/manual/fr/#alarm) pour rappel la veille. Noter dans le [Journal](/inventory/manual/fr/#log) quand c'est fait !
 
 **Résultat** : "Susan livre toujours ce qu'elle promet" - c'est ma réputation maintenant. Confiance établie !
 
@@ -625,7 +625,7 @@ Recherche d'emploi. Chaque refus détruisait ma confiance.
 
 Créé un 'Journal de Croissance' dans Inventory. Noter chaque petite réussite. "30 minutes de conversation anglaise aujourd'hui", "Portfolio mis à jour avec retours", "Le recruteur a aimé ma présentation"...
 
-Après 3 mois, les notes se sont accumulées. Les jours de refus, je relis les anciennes entrées et reprends courage. "J'ai tellement grandi." Quand j'ai enfin eu l'offre, j'ai appuyé fort sur ce [Tampon](/inventory/manual/fr/#stamp). C'était le tampon le plus brillant.
+Après 3 mois, les notes se sont accumulées. Les jours de refus, je relis les anciennes entrées et reprends courage. "J'ai tellement grandi." Quand j'ai enfin eu l'offre, j'ai écrit "Accepté !" dans le [Journal](/inventory/manual/fr/#log). C'était la plus belle entrée.
 
 </div>
 </details>
@@ -981,7 +981,7 @@ J'apprends une langue mais les apps de vocabulaire ne me convenaient pas. Je vou
 
 Mots inconnus enregistrés dans Inventory avec phrases d'exemple et explications de nuances dans le [Journal](/inventory/manual/fr/#log). [Mots-clés](/inventory/manual/fr/#keyword) comme "B2", "business", "entendu dans une série".
 
-Les mots mémorisés reçoivent des [Tampons](/inventory/manual/fr/#stamp). Réviser seulement les non-tamponnés. Efficace ! Examen de langue réussi !
+Les mots mémorisés sont marqués avec le [Mot-clé](/inventory/manual/fr/#keyword) "appris". Réviser seulement les non-marqués. Efficace ! Examen de langue réussi !
 
 </div>
 </details>

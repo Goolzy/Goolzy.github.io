@@ -222,7 +222,7 @@ Discover the possibilities of Inventory through 100 diverse use cases.
 
 **Problem**: With two kids on different vaccination schedules, I kept getting confused. Sometimes got calls from the clinic when it was already overdue.
 
-**Solution**: Created separate [Partitions](/inventory/manual/en/#partition) for each child and managed vaccination dates with [Date Alarms](/inventory/manual/en/#alarm). Added [Stamps](/inventory/manual/en/#stamp) when completed.
+**Solution**: Created separate [Partitions](/inventory/manual/en/#partition) for each child and managed vaccination dates with [Date Alarms](/inventory/manual/en/#alarm). Logged completion in [Log](/inventory/manual/en/#log).
 
 **Result**: Haven't missed a single vaccination appointment. Can prepare ahead of clinic visits!
 
@@ -392,7 +392,7 @@ Discover the possibilities of Inventory through 100 diverse use cases.
 
 **Problem**: Excited when buying books, but they just pile up unread at home. Once bought the same book twice.
 
-**Solution**: Register books immediately after purchase. Set [Start Date](/inventory/manual/en/#dates) when beginning, add [Stamp](/inventory/manual/en/#stamp) when finished. Unread list visible at a glance.
+**Solution**: Register books immediately after purchase. Set [Start Date](/inventory/manual/en/#dates) when beginning, log completion in [Log](/inventory/manual/en/#log) when finished. Unread list visible at a glance.
 
 **Result**: Instead of feeling overwhelmed, I'm motivated. Read 12 books this year - more than all of last year!
 
@@ -494,7 +494,7 @@ Discover the possibilities of Inventory through 100 diverse use cases.
 
 **Problem**: Sign up for 3-month gym memberships, go hard for one month, then quit. No motivation and no progress without records.
 
-**Solution**: Register each exercise type and log weights/reps in [Log](/inventory/manual/en/#log). Add [Stamps](/inventory/manual/en/#stamp) for consecutive attendance.
+**Solution**: Register each exercise type and log weights/reps in [Log](/inventory/manual/en/#log). Seeing consecutive records builds motivation.
 
 **Result**: Progress from 40kg to 70kg bench press is all documented. Seeing records keeps me motivated!
 
@@ -511,7 +511,7 @@ Discover the possibilities of Inventory through 100 diverse use cases.
 
 **Problem**: I'd say "I'll have the report ready by next week" in meetings, then forget. Awkward when someone asks "Is that done?"
 
-**Solution**: Register meeting commitments immediately with [Date Alarms](/inventory/manual/en/#alarm) for day-before reminders. [Stamp](/inventory/manual/en/#stamp) when completed!
+**Solution**: Register meeting commitments immediately with [Date Alarms](/inventory/manual/en/#alarm) for day-before reminders. Log completion in [Log](/inventory/manual/en/#log)!
 
 **Result**: "Susan always delivers on her commitments" - that's my reputation now. Trust earned!
 
@@ -625,7 +625,7 @@ Job hunting. Every rejection crushed my confidence.
 
 Created a 'Growth Journal' in Inventory. Recording every small achievement. "30 minutes of English conversation today", "Updated portfolio with feedback", "Interviewer liked my introduction"...
 
-After 3 months, the records piled up. On rejection days, I read past entries and gain strength. "I've grown this much." When I finally got the offer, I pressed that [Stamp](/inventory/manual/en/#stamp) hard. It was the brightest stamp ever.
+After 3 months, the records piled up. On rejection days, I read past entries and gain strength. "I've grown this much." When I finally got the offer, I wrote "Accepted!" in [Log](/inventory/manual/en/#log). That entry shines the brightest.
 
 </div>
 </details>
@@ -827,7 +827,7 @@ When I miss them, I play the recordings. Their voices warm my heart. Knowing the
 
 Turning 30 made me seriously think "What do I want to do with my life?"
 
-Created a bucket list in Inventory. "See northern lights", "Complete a marathon", "Write a book"... Each accomplishment gets photos, [Log](/inventory/manual/en/#log) entries, and a [Stamp](/inventory/manual/en/#stamp).
+Created a bucket list in Inventory. "See northern lights", "Complete a marathon", "Write a book"... Each accomplishment gets photos and [Log](/inventory/manual/en/#log) entries.
 
 Completed 7 out of 50. Still 43 to go, but no rush. I have time, and these records prove it.
 
@@ -1141,9 +1141,9 @@ Over 2 years, recorded 1000 cups and developed my taste. Analyzed the data to de
 
 Weak-willed, I never kept New Year's resolutions.
 
-This year was different. Daily habits - 6 AM wake-up, 30 minutes reading, 1 hour exercise - registered in Inventory with [Stamps](/inventory/manual/en/#stamp) for each completion.
+This year was different. Daily habits - 6 AM wake-up, 30 minutes reading, 1 hour exercise - registered in Inventory with completion logged in [Log](/inventory/manual/en/#log).
 
-Started with lots of empty spaces. But seeing filled stamps made me want more. Six months later, it became habit. Opening Inventory shows exactly how much I've changed. Records become willpower.
+Started with lots of empty spaces. But seeing filled records made me want more. Six months later, it became habit. Opening Inventory shows exactly how much I've changed. Records become willpower.
 
 </div>
 </details>
@@ -1175,7 +1175,7 @@ When a 3-year restoration finished, every step was in Inventory. The museum said
 
 At a life crossroads, decided to walk the Camino de Santiago.
 
-Daily distance, people met, emotions felt - all recorded in Inventory. Diary in [Log](/inventory/manual/en/#log), [Stamps](/inventory/manual/en/#stamp) for each credential stamp. 800km journey captured completely.
+Daily distance, people met, emotions felt - all recorded in Inventory. Diary in [Log](/inventory/manual/en/#log), credential stamps captured in photos. 800km journey captured completely.
 
 Back home, I made these records into a book. Self-published at first, but response was so good it got formally published. Without Inventory, this book wouldn't exist.
 
@@ -1321,7 +1321,7 @@ Studying Japanese but vocabulary apps didn't suit me. Wanted to organize my own 
 
 Unknown words registered in Inventory with example sentences and nuance explanations in [Log](/inventory/manual/en/#log). Tagged with [Keywords](/inventory/manual/en/#keyword) like "N1", "business", "heard in drama".
 
-Memorized words get [Stamps](/inventory/manual/en/#stamp). Only review unstamped ones. Efficient! Passed JLPT N1!
+Memorized words get tagged with [Keyword](/inventory/manual/en/#keyword) "memorized". Only review untagged ones. Efficient! Passed JLPT N1!
 
 </div>
 </details>
@@ -1540,9 +1540,9 @@ Never paid late fees! [Log](/inventory/manual/en/#log) notes "this was great/not
 
 Daily meditation but couldn't feel if I was being consistent.
 
-Each session recorded. Time, method (breathing/walking/body scan), focus level in [Log](/inventory/manual/en/#log), [Stamps](/inventory/manual/en/#stamp) added.
+Each session recorded. Time, method (breathing/walking/body scan), focus level in [Log](/inventory/manual/en/#log).
 
-The satisfaction of 100 consecutive stamps! Started struggling with 5 minutes, now 30 minutes is easy. Seeing growth keeps me motivated.
+The satisfaction of 100 consecutive records! Started struggling with 5 minutes, now 30 minutes is easy. Seeing growth keeps me motivated.
 
 </div>
 </details>
