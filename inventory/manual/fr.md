@@ -31,12 +31,12 @@ Dans Inventory, le **Papier** est la monnaie principale utilisée pour créer de
 
 | Méthode | Quantité | Note |
 |---------|----------|------|
-| Nouvelle inscription | 10 feuilles | Première fois uniquement |
-| Liaison Google | +10 feuilles | Lors de la liaison du compte |
-| Liaison Apple | +10 feuilles | Lors de la liaison du compte |
+| Nouvelle inscription | 10 Papiers + 3 Tampons | Première fois uniquement |
+| Liaison Google | +10 feuilles | Pour les utilisateurs existants |
+| Liaison Apple | +10 feuilles | Pour les utilisateurs existants |
 | Achat en boutique | 10 feuilles | Achat intégré |
 
-> 💡 **Astuce** : Liez vos comptes sociaux pour obtenir du Papier supplémentaire gratuitement !
+> 💡 **Astuce** : Les utilisateurs existants peuvent obtenir du Papier supplémentaire en liant de nouveaux comptes sociaux !
 
 ---
 
@@ -241,6 +241,42 @@ Lorsque vous sélectionnez un tampon activé (modèle) et du papier ensemble, le
 - 1 Papier est consommé
 - Un nouvel objet avec le même modèle est créé
 - En mode journal partagé, il utilise le même espace partagé que l'original
+
+---
+
+<h3 id="quick-input">⚡ Saisie Rapide</h3>
+
+Lors de l'ajout d'entrées de journal, appuyez sur le bouton `+` pour ouvrir le menu **Saisie Rapide** permettant une saisie facile d'informations spéciales.
+
+#### Types de Saisie Rapide
+
+| Type | Description | Exemple |
+|------|-------------|---------|
+| **Mot-clé** | Format Clé:Valeur | `État:Bon` |
+| **Date** | Date avec calcul J-J | J-5, Jour-J, J+3 |
+| **Téléphone** | Numéro de téléphone | Appel direct |
+| **Lieu** | Adresse/coordonnées | Ouvre l'app carte |
+| **Montant** | Format monétaire | Formatage auto |
+
+#### Actions Appui Long
+
+| Type de Carte | Action Appui Long |
+|--------------|------------------|
+| **📅 Date** | Définir/Supprimer alarme |
+| **📞 Téléphone** | Mobile: Appel direct, Bureau: Copier |
+| **📍 Lieu** | Mobile: Ouvrir la carte, Bureau: Copier |
+| **💰 Montant** | Copier dans le presse-papiers |
+
+<h4 id="alarm">Réglage d'Alarme de Date</h4>
+
+Appuyez longuement sur une carte de date pour définir une alarme :
+
+1. **Appui long** sur la carte de date
+2. Sélectionnez **Définir** dans la boîte de dialogue de confirmation
+3. Une fois définie, la couleur de la carte change et une icône 🔔 apparaît
+4. Appuyez à nouveau longuement pour supprimer l'alarme
+
+> 💡 **Astuce** : Les cartes de date affichent automatiquement le calcul J-J (ex : J-5, Jour-J, J+3)
 
 ---
 

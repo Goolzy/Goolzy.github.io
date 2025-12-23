@@ -31,12 +31,12 @@ In Inventory, **Paper** is the core currency used to create items.
 
 | Method | Amount | Note |
 |--------|--------|------|
-| New Sign-up | 10 sheets | First time only |
-| Google Link | +10 sheets | When linking account |
-| Apple Link | +10 sheets | When linking account |
+| New Sign-up | 10 Paper + 3 Stamps | First time only |
+| Google Link | +10 sheets | For existing users |
+| Apple Link | +10 sheets | For existing users |
 | Shop Purchase | 10 sheets | In-app purchase |
 
-> 💡 **Tip**: Link your social accounts to get extra Paper for free!
+> 💡 **Tip**: Existing users can get extra Paper by linking new social accounts!
 
 ---
 
@@ -244,6 +244,42 @@ When you select an activated stamp (template) and paper together, the **"Duplica
 
 ---
 
+<h3 id="quick-input">⚡ Quick Input</h3>
+
+When adding logs, tap the `+` button to open the **Quick Input** menu for easy special information entry.
+
+#### Quick Input Types
+
+| Type | Description | Example |
+|------|-------------|---------|
+| **Keyword** | Key:Value format | `Status:Good` |
+| **Date** | Dates with D-Day calculation | D-5, D-Day, D+3 |
+| **Phone** | Phone number | Can call directly |
+| **Location** | Address/coordinates | Opens in map app |
+| **Amount** | Currency format | Auto-formatted |
+
+#### Long Press Actions
+
+| Card Type | Long Press Action |
+|-----------|------------------|
+| **📅 Date** | Set/Remove alarm |
+| **📞 Phone** | Mobile: Call directly, Desktop: Copy |
+| **📍 Location** | Mobile: Open in map, Desktop: Copy |
+| **💰 Amount** | Copy to clipboard |
+
+<h4 id="alarm">Date Alarm Setting</h4>
+
+Long press a date card to set an alarm:
+
+1. **Long press** the date card
+2. Select **Set** in the confirmation dialog
+3. Once set, the card color changes and a 🔔 icon appears
+4. Long press again to remove the alarm
+
+> 💡 **Tip**: Date cards automatically display D-Day calculations (e.g., D-5, D-Day, D+3)
+
+---
+
 <h3 id="log">📝 Log System</h3>
 
 **Logs** are records you can add to items or stamp templates.
@@ -328,7 +364,7 @@ When new comments are added to a shared log, the item border **pulses** in the i
 
 ---
 
-### 🔍 Search Function
+<h3 id="search">🔍 Search Function</h3>
 
 #### Basic Search
 
@@ -454,7 +490,7 @@ You can purchase various items from the shop.
 
 ---
 
-### 📂 Partition Feature
+<h3 id="partition">📂 Partition Feature</h3>
 
 You can group items with partitions when you have many items.
 

@@ -31,12 +31,12 @@ No Inventory, o **Papel** é a moeda principal usada para criar itens.
 
 | Método | Quantidade | Nota |
 |--------|------------|------|
-| Novo cadastro | 10 folhas | Apenas primeira vez |
-| Vincular Google | +10 folhas | Ao vincular conta |
-| Vincular Apple | +10 folhas | Ao vincular conta |
+| Novo cadastro | 10 Papel + 3 Selos | Apenas primeira vez |
+| Vincular Google | +10 folhas | Para usuários existentes |
+| Vincular Apple | +10 folhas | Para usuários existentes |
 | Compra na loja | 10 folhas | Compra in-app |
 
-> 💡 **Dica**: Vincule suas contas sociais para ganhar Papel extra de graça!
+> 💡 **Dica**: Usuários existentes podem ganhar Papel extra vinculando novas contas sociais!
 
 ---
 
@@ -241,6 +241,42 @@ Quando você seleciona um carimbo ativado (modelo) e papel juntos, o menu **"Dup
 - 1 Papel é consumido
 - Um novo item com o mesmo modelo é criado
 - No modo de registro compartilhado, usa o mesmo espaço compartilhado do original
+
+---
+
+<h3 id="quick-input">⚡ Entrada Rápida</h3>
+
+Ao adicionar registros, toque no botão `+` para abrir o menu de **Entrada Rápida** para inserir informações especiais facilmente.
+
+#### Tipos de Entrada Rápida
+
+| Tipo | Descrição | Exemplo |
+|------|-----------|---------|
+| **Palavra-chave** | Formato Chave:Valor | `Status:Bom` |
+| **Data** | Datas com cálculo D-Day | D-5, D-Day, D+3 |
+| **Telefone** | Número de telefone | Pode ligar diretamente |
+| **Localização** | Endereço/coordenadas | Abre no app de mapas |
+| **Valor** | Formato de moeda | Formatação automática |
+
+#### Ações de Pressão Longa
+
+| Tipo de Cartão | Ação de Pressão Longa |
+|----------------|----------------------|
+| **📅 Data** | Definir/Remover alarme |
+| **📞 Telefone** | Mobile: Ligar, Desktop: Copiar |
+| **📍 Localização** | Mobile: Abrir no mapa, Desktop: Copiar |
+| **💰 Valor** | Copiar para área de transferência |
+
+<h4 id="alarm">Configuração de Alarme de Data</h4>
+
+Pressione longamente um cartão de data para definir um alarme:
+
+1. **Pressione longamente** o cartão de data
+2. Selecione **Definir** na caixa de diálogo de confirmação
+3. Uma vez definido, a cor do cartão muda e um ícone 🔔 aparece
+4. Pressione longamente novamente para remover o alarme
+
+> 💡 **Dica**: Os cartões de data exibem automaticamente cálculos D-Day (ex: D-5, D-Day, D+3)
 
 ---
 

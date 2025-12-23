@@ -31,12 +31,12 @@ In Inventory ist **Papier** die Kernwährung zum Erstellen von Gegenständen.
 
 | Methode | Menge | Hinweis |
 |---------|-------|---------|
-| Neuanmeldung | 10 Blatt | Nur einmalig |
-| Google-Verknüpfung | +10 Blatt | Bei Kontoverknüpfung |
-| Apple-Verknüpfung | +10 Blatt | Bei Kontoverknüpfung |
+| Neuanmeldung | 10 Papier + 3 Stempel | Nur einmalig |
+| Google-Verknüpfung | +10 Blatt | Für bestehende Benutzer |
+| Apple-Verknüpfung | +10 Blatt | Für bestehende Benutzer |
 | Shop-Kauf | 10 Blatt | In-App-Kauf |
 
-> 💡 **Tipp**: Verknüpfen Sie Ihre Social-Accounts, um kostenlos zusätzliches Papier zu erhalten!
+> 💡 **Tipp**: Bestehende Benutzer können zusätzliches Papier erhalten, indem sie neue Social-Accounts verknüpfen!
 
 ---
 
@@ -241,6 +241,42 @@ Wenn Sie einen aktivierten Stempel (Vorlage) und Papier zusammen auswählen, ers
 - 1 Papier wird verbraucht
 - Ein neuer Gegenstand mit derselben Vorlage wird erstellt
 - Im Modus Geteiltes Protokoll wird derselbe gemeinsame Raum wie das Original verwendet
+
+---
+
+<h3 id="quick-input">⚡ Schnelleingabe</h3>
+
+Beim Hinzufügen von Protokollen tippen Sie auf die `+`-Taste, um das **Schnelleingabe**-Menü für einfache Eingabe spezieller Informationen zu öffnen.
+
+#### Schnelleingabe-Typen
+
+| Typ | Beschreibung | Beispiel |
+|-----|--------------|----------|
+| **Schlüsselwort** | Schlüssel:Wert-Format | `Status:Gut` |
+| **Datum** | Datum mit D-Day-Berechnung | D-5, D-Day, D+3 |
+| **Telefon** | Telefonnummer | Direkt anrufen |
+| **Standort** | Adresse/Koordinaten | In Karten-App öffnen |
+| **Betrag** | Währungsformat | Automatisch formatiert |
+
+#### Langes Drücken Aktionen
+
+| Kartentyp | Aktion bei langem Drücken |
+|-----------|--------------------------|
+| **📅 Datum** | Alarm setzen/entfernen |
+| **📞 Telefon** | Mobil: Direkt anrufen, Desktop: Kopieren |
+| **📍 Standort** | Mobil: In Karte öffnen, Desktop: Kopieren |
+| **💰 Betrag** | In Zwischenablage kopieren |
+
+<h4 id="alarm">Datumsalarm einstellen</h4>
+
+Drücken Sie lange auf eine Datumskarte, um einen Alarm einzustellen:
+
+1. **Lang drücken** auf die Datumskarte
+2. Im Bestätigungsdialog **Einstellen** wählen
+3. Nach dem Einstellen ändert sich die Kartenfarbe und ein 🔔-Symbol erscheint
+4. Erneut lang drücken, um den Alarm zu entfernen
+
+> 💡 **Tipp**: Datumskarten zeigen automatisch D-Day-Berechnungen an (z.B. D-5, D-Day, D+3)
 
 ---
 

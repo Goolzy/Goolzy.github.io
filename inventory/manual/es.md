@@ -31,12 +31,12 @@ En Inventory, el **Papel** es la moneda principal utilizada para crear objetos.
 
 | Método | Cantidad | Nota |
 |--------|----------|------|
-| Nuevo registro | 10 hojas | Solo la primera vez |
-| Vincular Google | +10 hojas | Al vincular cuenta |
-| Vincular Apple | +10 hojas | Al vincular cuenta |
+| Nuevo registro | 10 Papel + 3 Sellos | Solo la primera vez |
+| Vincular Google | +10 hojas | Para usuarios existentes |
+| Vincular Apple | +10 hojas | Para usuarios existentes |
 | Compra en tienda | 10 hojas | Compra in-app |
 
-> 💡 **Consejo**: ¡Vincula tus cuentas sociales para obtener Papel extra gratis!
+> 💡 **Consejo**: ¡Los usuarios existentes pueden obtener Papel extra vinculando nuevas cuentas sociales!
 
 ---
 
@@ -241,6 +241,42 @@ Cuando seleccionas un sello activado (plantilla) y papel juntos, aparece el men�
 - Se consume 1 Papel
 - Se crea un nuevo objeto con la misma plantilla
 - En modo de registro compartido, usa el mismo espacio compartido que el original
+
+---
+
+<h3 id="quick-input">⚡ Entrada Rápida</h3>
+
+Al agregar registros, toca el botón `+` para abrir el menú **Entrada Rápida** para ingresar fácilmente información especial.
+
+#### Tipos de Entrada Rápida
+
+| Tipo | Descripción | Ejemplo |
+|------|-------------|---------|
+| **Palabra clave** | Formato Clave:Valor | `Estado:Bueno` |
+| **Fecha** | Fecha con cálculo D-Día | D-5, D-Day, D+3 |
+| **Teléfono** | Número telefónico | Llamar directamente |
+| **Ubicación** | Dirección/coordenadas | Abre app de mapas |
+| **Monto** | Formato de moneda | Formato automático |
+
+#### Acciones de Pulsación Larga
+
+| Tipo de Tarjeta | Acción de Pulsación Larga |
+|-----------------|--------------------------|
+| **📅 Fecha** | Configurar/Quitar alarma |
+| **📞 Teléfono** | Móvil: Llamar, Escritorio: Copiar |
+| **📍 Ubicación** | Móvil: Abrir mapa, Escritorio: Copiar |
+| **💰 Monto** | Copiar al portapapeles |
+
+<h4 id="alarm">Configuración de Alarma de Fecha</h4>
+
+Mantén presionada una tarjeta de fecha para configurar una alarma:
+
+1. **Mantén presionada** la tarjeta de fecha
+2. Selecciona **Configurar** en el diálogo de confirmación
+3. Una vez configurada, el color de la tarjeta cambia y aparece un ícono 🔔
+4. Mantén presionada de nuevo para quitar la alarma
+
+> 💡 **Consejo**: Las tarjetas de fecha muestran automáticamente el cálculo de D-Día (ej: D-5, D-Day, D+3)
 
 ---
 
