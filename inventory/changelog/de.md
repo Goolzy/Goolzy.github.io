@@ -19,7 +19,7 @@ Sehen Sie sich den Update-Verlauf der Inventory-App an.
 
 ---
 
-### 📎 v1.0.3 <small style="color:#6b7280;">2025-01</small>
+### 📎 v1.0.3 <small style="color:#6b7280;">2025-12-23</small>
 
 #### 📎 Clip-Funktion
 Bündeln Sie mehrere Dokumente zur einfacheren Verwaltung zusammen.
@@ -44,7 +44,7 @@ Bündeln Sie mehrere Dokumente zur einfacheren Verwaltung zusammen.
 
 ---
 
-### ✨ v1.0.2 <small style="color:#6b7280;">2025-01</small>
+### ✨ v1.0.2 <small style="color:#6b7280;">2025-12-22</small>
 
 #### 🔔 Geteiltes Protokoll Ungelesen-Anzeige
 Wenn neue Kommentare zu geteilten Protokollen hinzugefügt werden, **pulsiert** der Rahmen des Elements.
@@ -84,7 +84,7 @@ Vereinfachter Checkout bei aufeinanderfolgenden Käufen desselben Artikels.
 
 ---
 
-### 🔒 v1.0.1 <small style="color:#6b7280;">2025-01</small>
+### 🔒 v1.0.1 <small style="color:#6b7280;">2025-12-16</small>
 
 #### 🔒 Dokumentsperre-Funktion
 - Numerisches Passwort für Dokumente festlegen (bis zu 16 Ziffern)
@@ -95,7 +95,7 @@ Vereinfachter Checkout bei aufeinanderfolgenden Käufen desselben Artikels.
 
 ---
 
-### 🎉 v1.0.0 <small style="color:#6b7280;">2025-01</small>
+### 🎉 v1.0.0 <small style="color:#6b7280;">2025-12-13</small>
 
 **Erste offizielle Veröffentlichung**
 

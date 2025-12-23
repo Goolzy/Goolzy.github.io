@@ -19,7 +19,7 @@ Confira o histórico de atualizações do aplicativo Inventory.
 
 ---
 
-### 📎 v1.0.3 <small style="color:#6b7280;">2025-01</small>
+### 📎 v1.0.3 <small style="color:#6b7280;">2025-12-23</small>
 
 #### 📎 Função Clip
 Agrupe múltiplos documentos juntos para facilitar o gerenciamento.
@@ -44,7 +44,7 @@ Agrupe múltiplos documentos juntos para facilitar o gerenciamento.
 
 ---
 
-### ✨ v1.0.2 <small style="color:#6b7280;">2025-01</small>
+### ✨ v1.0.2 <small style="color:#6b7280;">2025-12-22</small>
 
 #### 🔔 Indicador de Registro Compartilhado Não Lido
 Quando novos comentários são adicionados aos registros compartilhados, a borda do item **pulsa**.
@@ -84,7 +84,7 @@ Processo de checkout simplificado para compras consecutivas do mesmo item.
 
 ---
 
-### 🔒 v1.0.1 <small style="color:#6b7280;">2025-01</small>
+### 🔒 v1.0.1 <small style="color:#6b7280;">2025-12-16</small>
 
 #### 🔒 Função de Bloqueio de Documento
 - Definir senha numérica em documentos (até 16 dígitos)
@@ -95,7 +95,7 @@ Processo de checkout simplificado para compras consecutivas do mesmo item.
 
 ---
 
-### 🎉 v1.0.0 <small style="color:#6b7280;">2025-01</small>
+### 🎉 v1.0.0 <small style="color:#6b7280;">2025-12-13</small>
 
 **Primeira versão oficial**
 

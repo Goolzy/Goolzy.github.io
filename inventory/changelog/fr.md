@@ -19,7 +19,7 @@ Consultez l'historique des mises à jour de l'application Inventory.
 
 ---
 
-### 📎 v1.0.3 <small style="color:#6b7280;">2025-01</small>
+### 📎 v1.0.3 <small style="color:#6b7280;">2025-12-23</small>
 
 #### 📎 Fonction Clip
 Regroupez plusieurs documents ensemble pour une gestion plus facile.
@@ -44,7 +44,7 @@ Regroupez plusieurs documents ensemble pour une gestion plus facile.
 
 ---
 
-### ✨ v1.0.2 <small style="color:#6b7280;">2025-01</small>
+### ✨ v1.0.2 <small style="color:#6b7280;">2025-12-22</small>
 
 #### 🔔 Indicateur de Journal Partagé Non Lu
 Lorsque de nouveaux commentaires sont ajoutés aux journaux partagés, la bordure de l'élément **pulse**.
@@ -84,7 +84,7 @@ Processus de paiement simplifié pour les achats consécutifs du même article.
 
 ---
 
-### 🔒 v1.0.1 <small style="color:#6b7280;">2025-01</small>
+### 🔒 v1.0.1 <small style="color:#6b7280;">2025-12-16</small>
 
 #### 🔒 Fonction de Verrouillage de Document
 - Définir un mot de passe numérique sur les documents (jusqu'à 16 chiffres)
@@ -95,7 +95,7 @@ Processus de paiement simplifié pour les achats consécutifs du même article.
 
 ---
 
-### 🎉 v1.0.0 <small style="color:#6b7280;">2025-01</small>
+### 🎉 v1.0.0 <small style="color:#6b7280;">2025-12-13</small>
 
 **Première version officielle**
 

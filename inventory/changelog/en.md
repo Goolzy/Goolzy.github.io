@@ -19,7 +19,7 @@ Check out the update history for the Inventory app.
 
 ---
 
-### 📎 v1.0.3 <small style="color:#6b7280;">2025-01</small>
+### 📎 v1.0.3 <small style="color:#6b7280;">2025-12-23</small>
 
 #### 📎 Clip Feature
 Bundle multiple documents together for easier management.
@@ -44,7 +44,7 @@ Bundle multiple documents together for easier management.
 
 ---
 
-### ✨ v1.0.2 <small style="color:#6b7280;">2025-01</small>
+### ✨ v1.0.2 <small style="color:#6b7280;">2025-12-22</small>
 
 #### 🔔 Shared Log Unread Indicator
 When new comments are added to shared logs, the item border **pulses**.
@@ -84,7 +84,7 @@ Streamlined checkout for consecutive purchases of the same item.
 
 ---
 
-### 🔒 v1.0.1 <small style="color:#6b7280;">2025-01</small>
+### 🔒 v1.0.1 <small style="color:#6b7280;">2025-12-16</small>
 
 #### 🔒 Document Lock Feature
 - Set numeric password on documents (up to 16 digits)
@@ -95,7 +95,7 @@ Streamlined checkout for consecutive purchases of the same item.
 
 ---
 
-### 🎉 v1.0.0 <small style="color:#6b7280;">2025-01</small>
+### 🎉 v1.0.0 <small style="color:#6b7280;">2025-12-13</small>
 
 **First Official Release**
 
