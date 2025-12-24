@@ -19,6 +19,21 @@ Check out the update history for the Inventory app.
 
 ---
 
+### v1.0.4 <small style="color:#6b7280;">2025-12-25</small>
+
+#### Media Link Cards
+URLs entered in logs are automatically displayed as **rich cards**.
+- **YouTube**: Thumbnail + title + channel name
+- **Spotify**: Album art + title + artist
+- **Google Drive**: File thumbnail + filename (public files)
+- **Dropbox**: Icon + filename
+- **OneDrive**: Icon + service name
+- **Web Pages**: Preview image + page title
+- Tap to open in external app/browser
+- Long-press to copy URL to clipboard
+
+---
+
 ### v1.0.3 <small style="color:#6b7280;">2025-12-23</small>
 
 #### Clip Feature

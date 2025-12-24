@@ -322,6 +322,25 @@ Utiliser la même clé plusieurs fois affiche `ancienne valeur → nouvelle vale
 
 > 💡 Les styles peuvent être imbriqués jusqu'à 3 niveaux. Exemple : `<["Gras couleur principale"]>`
 
+**Liens médias (Cartes URL) :**
+
+Lorsque vous entrez une URL dans un journal, elle s'affiche automatiquement comme **carte enrichie**.
+
+| Plateforme | Affichage | Exemple |
+|------------|-----------|---------|
+| **YouTube** | Miniature + Titre + Chaîne | `https://youtube.com/watch?v=...` |
+| **Spotify** | Pochette + Titre + Artiste | `https://open.spotify.com/track/...` |
+| **Google Drive** | Miniature fichier + Nom | `https://drive.google.com/file/d/...` |
+| **Dropbox** | Icône + Nom de fichier | `https://dropbox.com/s/...` |
+| **OneDrive** | Icône + Nom du service | `https://1drv.ms/...` |
+| **Pages web** | Miniature + Titre de page | `https://example.com` |
+
+- Utilisez le format `clé:URL` pour afficher avec un mot-clé (ex: `docs:https://youtube.com/...`)
+- **Touchez** la carte pour l'ouvrir dans l'app/navigateur externe
+- **Appuyez longuement** pour copier l'URL dans le presse-papiers
+
+> 💡 **Astuce** : Les fichiers Google Drive doivent être **partagés publiquement** pour afficher les miniatures.
+
 **Journaux automatiques :**
 
 Lorsqu'un objet est transféré, un journal de transfert est automatiquement enregistré :

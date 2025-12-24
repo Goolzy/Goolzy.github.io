@@ -322,6 +322,25 @@ Mehrfache Verwendung desselben Schlüssels zeigt `vorheriger Wert → neuer Wert
 
 > 💡 Stile können bis zu 3 Ebenen verschachtelt werden. Beispiel: `<["Fett Hauptfarbe"]>`
 
+**Medienlinks (URL-Karten):**
+
+Wenn Sie eine URL in ein Protokoll eingeben, wird sie automatisch als **Rich Card** angezeigt.
+
+| Plattform | Anzeige | Beispiel |
+|-----------|---------|----------|
+| **YouTube** | Vorschaubild + Titel + Kanal | `https://youtube.com/watch?v=...` |
+| **Spotify** | Albumcover + Titel + Künstler | `https://open.spotify.com/track/...` |
+| **Google Drive** | Dateivorschau + Dateiname | `https://drive.google.com/file/d/...` |
+| **Dropbox** | Symbol + Dateiname | `https://dropbox.com/s/...` |
+| **OneDrive** | Symbol + Dienstname | `https://1drv.ms/...` |
+| **Webseiten** | Vorschaubild + Seitentitel | `https://example.com` |
+
+- Verwenden Sie `Schlüssel:URL` Format zur Anzeige mit Stichwort (z.B. `Doku:https://youtube.com/...`)
+- **Tippen** Sie auf die Karte, um sie in externer App/Browser zu öffnen
+- **Lange drücken** kopiert die URL in die Zwischenablage
+
+> 💡 **Tipp**: Google Drive-Dateien müssen **öffentlich freigegeben** sein, damit Vorschaubilder angezeigt werden.
+
 **Automatische Protokolle:**
 
 Wenn ein Gegenstand übertragen wird, wird automatisch ein Übertragungsprotokoll aufgezeichnet:

@@ -19,6 +19,21 @@ Sehen Sie sich den Update-Verlauf der Inventory-App an.
 
 ---
 
+### v1.0.4 <small style="color:#6b7280;">2025-12-25</small>
+
+#### Medienlink-Karten
+In Protokollen eingegebene URLs werden automatisch als **Rich Cards** angezeigt.
+- **YouTube**: Vorschaubild + Titel + Kanalname
+- **Spotify**: Albumcover + Titel + Künstler
+- **Google Drive**: Dateivorschau + Dateiname (öffentliche Dateien)
+- **Dropbox**: Symbol + Dateiname
+- **OneDrive**: Symbol + Dienstname
+- **Webseiten**: Vorschaubild + Seitentitel
+- Tippen zum Öffnen in externer App/Browser
+- Lange drücken zum Kopieren der URL in die Zwischenablage
+
+---
+
 ### v1.0.3 <small style="color:#6b7280;">2025-12-23</small>
 
 #### Clip-Funktion

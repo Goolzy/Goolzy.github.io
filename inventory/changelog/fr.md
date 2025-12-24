@@ -19,6 +19,21 @@ Consultez l'historique des mises à jour de l'application Inventory.
 
 ---
 
+### v1.0.4 <small style="color:#6b7280;">2025-12-25</small>
+
+#### Cartes de liens médias
+Les URLs entrées dans les journaux s'affichent automatiquement comme **cartes enrichies**.
+- **YouTube** : Miniature + titre + nom de chaîne
+- **Spotify** : Pochette d'album + titre + artiste
+- **Google Drive** : Miniature de fichier + nom (fichiers publics)
+- **Dropbox** : Icône + nom de fichier
+- **OneDrive** : Icône + nom du service
+- **Pages web** : Image d'aperçu + titre de page
+- Touchez pour ouvrir dans l'app/navigateur externe
+- Appuyez longuement pour copier l'URL dans le presse-papiers
+
+---
+
 ### v1.0.3 <small style="color:#6b7280;">2025-12-23</small>
 
 #### Fonction Clip

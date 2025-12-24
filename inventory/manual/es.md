@@ -322,6 +322,25 @@ Usar la misma clave múltiples veces muestra `valor anterior → nuevo valor`.
 
 > 💡 Los estilos se pueden anidar hasta 3 niveles. Ejemplo: `<["Negrita color principal"]>`
 
+**Enlaces multimedia (Tarjetas URL):**
+
+Cuando ingresas una URL en un registro, se muestra automáticamente como **tarjeta enriquecida**.
+
+| Plataforma | Contenido mostrado | Ejemplo |
+|------------|--------------------|---------|
+| **YouTube** | Miniatura + Título + Canal | `https://youtube.com/watch?v=...` |
+| **Spotify** | Portada + Título + Artista | `https://open.spotify.com/track/...` |
+| **Google Drive** | Miniatura archivo + Nombre | `https://drive.google.com/file/d/...` |
+| **Dropbox** | Ícono + Nombre de archivo | `https://dropbox.com/s/...` |
+| **OneDrive** | Ícono + Nombre del servicio | `https://1drv.ms/...` |
+| **Páginas web** | Miniatura + Título de página | `https://example.com` |
+
+- Usa formato `clave:URL` para mostrar con palabra clave (ej: `docs:https://youtube.com/...`)
+- **Toca** la tarjeta para abrir en app/navegador externo
+- **Mantén presionado** para copiar la URL al portapapeles
+
+> 💡 **Consejo**: Los archivos de Google Drive deben estar **compartidos públicamente** para mostrar miniaturas.
+
 **Registros automáticos:**
 
 Cuando se transfiere un objeto, se registra automáticamente un registro de transferencia:

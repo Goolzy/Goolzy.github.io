@@ -322,6 +322,25 @@ Using the same key multiple times displays as `previous value → new value` com
 
 > 💡 Styles can be nested up to 3 levels. Example: `<["Bold main color"]>`
 
+**Media Links (URL Cards):**
+
+When you enter a URL in a log, it automatically displays as a **rich card**.
+
+| Platform | Display Content | Example |
+|----------|----------------|---------|
+| **YouTube** | Thumbnail + Title + Channel | `https://youtube.com/watch?v=...` |
+| **Spotify** | Album Art + Title + Artist | `https://open.spotify.com/track/...` |
+| **Google Drive** | File Thumbnail + Filename | `https://drive.google.com/file/d/...` |
+| **Dropbox** | Icon + Filename | `https://dropbox.com/s/...` |
+| **OneDrive** | Icon + Service Name | `https://1drv.ms/...` |
+| **Web Pages** | Thumbnail + Page Title | `https://example.com` |
+
+- Use `key:URL` format to display with a keyword (e.g., `docs:https://youtube.com/...`)
+- **Tap** the card to open in external app/browser
+- **Long-press** the card to copy the URL to clipboard
+
+> 💡 **Tip**: Google Drive files must be **publicly shared** for thumbnails to display.
+
 **Auto Logs:**
 
 When an item is transferred, a transfer log is automatically recorded:

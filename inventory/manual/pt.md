@@ -322,6 +322,25 @@ Usar a mesma chave múltiplas vezes exibe `valor anterior → novo valor`.
 
 > 💡 Estilos podem ser aninhados até 3 níveis. Exemplo: `<["Negrito cor principal"]>`
 
+**Links de mídia (Cartões URL):**
+
+Quando você insere uma URL em um registro, ela é automaticamente exibida como **cartão enriquecido**.
+
+| Plataforma | Conteúdo exibido | Exemplo |
+|------------|------------------|---------|
+| **YouTube** | Miniatura + Título + Canal | `https://youtube.com/watch?v=...` |
+| **Spotify** | Capa do álbum + Título + Artista | `https://open.spotify.com/track/...` |
+| **Google Drive** | Miniatura do arquivo + Nome | `https://drive.google.com/file/d/...` |
+| **Dropbox** | Ícone + Nome do arquivo | `https://dropbox.com/s/...` |
+| **OneDrive** | Ícone + Nome do serviço | `https://1drv.ms/...` |
+| **Páginas web** | Miniatura + Título da página | `https://example.com` |
+
+- Use formato `chave:URL` para exibir com palavra-chave (ex: `docs:https://youtube.com/...`)
+- **Toque** no cartão para abrir em app/navegador externo
+- **Pressione longamente** para copiar a URL para a área de transferência
+
+> 💡 **Dica**: Arquivos do Google Drive devem estar **compartilhados publicamente** para exibir miniaturas.
+
 **Registros automáticos:**
 
 Quando um item é transferido, um registro de transferência é automaticamente gravado:

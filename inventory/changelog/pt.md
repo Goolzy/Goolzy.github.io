@@ -19,6 +19,21 @@ Confira o histórico de atualizações do aplicativo Inventory.
 
 ---
 
+### v1.0.4 <small style="color:#6b7280;">2025-12-25</small>
+
+#### Cartões de Links de Mídia
+URLs inseridas nos registros são automaticamente exibidas como **cartões enriquecidos**.
+- **YouTube**: Miniatura + título + nome do canal
+- **Spotify**: Capa do álbum + título + artista
+- **Google Drive**: Miniatura do arquivo + nome (arquivos públicos)
+- **Dropbox**: Ícone + nome do arquivo
+- **OneDrive**: Ícone + nome do serviço
+- **Páginas web**: Imagem de visualização + título da página
+- Toque para abrir em app/navegador externo
+- Pressione longamente para copiar a URL para a área de transferência
+
+---
+
 ### v1.0.3 <small style="color:#6b7280;">2025-12-23</small>
 
 #### Função Clip
