@@ -242,6 +242,34 @@ Wenn Sie einen aktivierten Stempel (Vorlage) und Papier zusammen auswählen, ers
 - Ein neuer Gegenstand mit derselben Vorlage wird erstellt
 - Im Modus Geteiltes Protokoll wird derselbe gemeinsame Raum wie das Original verwendet
 
+#### Ihre Vorlage teilen
+
+Sie können Ihre Stempelvorlage teilen, damit andere Benutzer sie suchen und klonen können.
+
+1. Tippen Sie auf einen aktivierten Stempel (Vorlage) → Wählen Sie **"Freigabeeinstellungen"**
+2. Geben Sie Freigabeinformationen ein:
+   - **Beschreibung** - Eine kurze Beschreibung der Vorlage
+   - **Tags** - Schlüsselwörter für die Suche (kommagetrennt)
+   - **Freigabedauer** - Wie lange die Freigabe aktiv bleibt
+3. Klicken Sie auf **"Freigabe starten"** zum Abschließen
+
+Geteilte Vorlagen können von anderen Benutzern über Tag-Suche gefunden und geklont werden.
+
+> 💡 **Tipp**: Um die Freigabe zu beenden, wählen Sie **"Freigabe beenden"** aus demselben Menü.
+
+#### Geteilte Vorlagen suchen
+
+Sie können von anderen Benutzern geteilte Vorlagen suchen und klonen.
+
+1. Gehen Sie zum Profilbildschirm und wählen Sie **"Geteilte Vorlagen suchen"**
+2. Geben Sie Tags zur Suche ein oder tippen Sie auf beliebte/neueste Tags
+3. Tippen Sie auf eine Vorlage aus den Suchergebnissen, um Details anzuzeigen
+4. Klicken Sie auf **"Klonen"** um die Vorlage zu klonen
+
+- Klonen verbraucht 1 Papier
+- Die Klonen-Schaltfläche ist deaktiviert, wenn Sie kein Papier haben
+- Geklonte Gegenstände haben dieselben Vorlageninformationen wie das Original
+
 ---
 
 <h3 id="quick-input">⚡ Schnelleingabe</h3>

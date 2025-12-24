@@ -242,6 +242,34 @@ Quando você seleciona um carimbo ativado (modelo) e papel juntos, o menu **"Dup
 - Um novo item com o mesmo modelo é criado
 - No modo de registro compartilhado, usa o mesmo espaço compartilhado do original
 
+#### Compartilhar Seu Modelo
+
+Você pode compartilhar seu modelo de carimbo para que outros usuários possam pesquisá-lo e cloná-lo.
+
+1. Toque em um carimbo ativado (modelo) → Selecione **"Configurações de compartilhamento"**
+2. Insira as informações de compartilhamento:
+   - **Descrição** - Uma frase curta descrevendo o modelo
+   - **Tags** - Palavras-chave para pesquisa (separadas por vírgulas)
+   - **Duração do compartilhamento** - Por quanto tempo o compartilhamento permanecerá ativo
+3. Clique em **"Iniciar compartilhamento"** para concluir
+
+Modelos compartilhados podem ser encontrados e clonados por outros usuários via pesquisa por tags.
+
+> 💡 **Dica**: Para parar de compartilhar, selecione **"Parar compartilhamento"** no mesmo menu.
+
+#### Pesquisar Modelos Compartilhados
+
+Você pode pesquisar e clonar modelos compartilhados por outros usuários.
+
+1. Vá para a tela de Perfil e selecione **"Pesquisar modelos compartilhados"**
+2. Digite tags para pesquisar ou toque em tags populares/recentes
+3. Toque em um modelo nos resultados da pesquisa para ver os detalhes
+4. Clique no botão **"Clonar"** para clonar o modelo
+
+- Clonar consome 1 Papel
+- O botão de clonar fica desativado se você não tiver papel
+- Itens clonados têm as mesmas informações de modelo do original
+
 ---
 
 <h3 id="quick-input">⚡ Entrada Rápida</h3>

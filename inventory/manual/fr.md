@@ -242,6 +242,34 @@ Lorsque vous sélectionnez un tampon activé (modèle) et du papier ensemble, le
 - Un nouvel objet avec le même modèle est créé
 - En mode journal partagé, il utilise le même espace partagé que l'original
 
+#### Partager Votre Modèle
+
+Vous pouvez partager votre modèle de tampon pour que d'autres utilisateurs puissent le rechercher et le cloner.
+
+1. Appuyez sur un tampon activé (modèle) → Sélectionnez **"Paramètres de partage"**
+2. Entrez les informations de partage:
+   - **Description** - Une courte phrase décrivant le modèle
+   - **Tags** - Mots-clés pour la recherche (séparés par des virgules)
+   - **Durée de partage** - Combien de temps le partage restera actif
+3. Cliquez sur **"Démarrer le partage"** pour terminer
+
+Les modèles partagés peuvent être trouvés et clonés par d'autres utilisateurs via la recherche par tags.
+
+> 💡 **Astuce**: Pour arrêter le partage, sélectionnez **"Arrêter le partage"** dans le même menu.
+
+#### Rechercher des Modèles Partagés
+
+Vous pouvez rechercher et cloner des modèles partagés par d'autres utilisateurs.
+
+1. Allez à l'écran Profil et sélectionnez **"Rechercher des modèles partagés"**
+2. Entrez des tags pour rechercher, ou appuyez sur les tags populaires/récents
+3. Appuyez sur un modèle dans les résultats de recherche pour voir les détails
+4. Cliquez sur le bouton **"Cloner"** pour cloner le modèle
+
+- Le clonage consomme 1 Papier
+- Le bouton de clonage est désactivé si vous n'avez pas de papier
+- Les objets clonés ont les mêmes informations de modèle que l'original
+
 ---
 
 <h3 id="quick-input">⚡ Saisie Rapide</h3>

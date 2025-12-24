@@ -242,6 +242,34 @@ When you select an activated stamp (template) and paper together, the **"Duplica
 - A new item with the same template is created
 - If in shared log mode, it uses the same shared space as the original
 
+#### Sharing Your Template
+
+You can share your stamp template so other users can search and clone it.
+
+1. Tap an activated stamp (template) → Select **"Share Settings"** menu
+2. Enter share information:
+   - **Description** - A short phrase describing the template
+   - **Tags** - Keywords for searching (comma-separated)
+   - **Share Duration** - How long the share will remain active
+3. Click **"Start Sharing"** to complete
+
+Shared templates can be found and cloned by other users via tag search.
+
+> 💡 **Tip**: To stop sharing, select **"Stop Sharing"** from the same menu.
+
+#### Searching Shared Templates
+
+You can search and clone templates shared by other users.
+
+1. Go to Profile screen and select **"Search Shared Templates"**
+2. Enter tags to search, or tap popular/latest tags
+3. Tap a template from search results to view details
+4. Click **"Clone"** button to clone the template
+
+- Cloning consumes 1 Paper
+- Clone button is disabled if you have no paper
+- Cloned items have the same template information as the original
+
 ---
 
 <h3 id="quick-input">⚡ Quick Input</h3>

@@ -242,6 +242,34 @@ Cuando seleccionas un sello activado (plantilla) y papel juntos, aparece el men�
 - Se crea un nuevo objeto con la misma plantilla
 - En modo de registro compartido, usa el mismo espacio compartido que el original
 
+#### Compartir Tu Plantilla
+
+Puedes compartir tu plantilla de sello para que otros usuarios puedan buscarla y clonarla.
+
+1. Toca un sello activado (plantilla) → Selecciona **"Configuración de compartir"**
+2. Ingresa la información de compartir:
+   - **Descripción** - Una frase corta describiendo la plantilla
+   - **Etiquetas** - Palabras clave para búsqueda (separadas por comas)
+   - **Duración de compartir** - Cuánto tiempo permanecerá activo el compartir
+3. Haz clic en **"Iniciar compartir"** para completar
+
+Las plantillas compartidas pueden ser encontradas y clonadas por otros usuarios mediante búsqueda por etiquetas.
+
+> 💡 **Consejo**: Para dejar de compartir, selecciona **"Dejar de compartir"** desde el mismo menú.
+
+#### Buscar Plantillas Compartidas
+
+Puedes buscar y clonar plantillas compartidas por otros usuarios.
+
+1. Ve a la pantalla de Perfil y selecciona **"Buscar plantillas compartidas"**
+2. Ingresa etiquetas para buscar, o toca etiquetas populares/recientes
+3. Toca una plantilla de los resultados de búsqueda para ver detalles
+4. Haz clic en el botón **"Clonar"** para clonar la plantilla
+
+- Clonar consume 1 Papel
+- El botón de clonar está desactivado si no tienes papel
+- Los objetos clonados tienen la misma información de plantilla que el original
+
 ---
 
 <h3 id="quick-input">⚡ Entrada Rápida</h3>
