@@ -13,15 +13,15 @@ translations:
   pt: /inventory/changelog/pt/
 ---
 
-## 📋 Registro de cambios
+## Registro de cambios
 
 Consulta el historial de actualizaciones de la aplicación Inventory.
 
 ---
 
-### 📎 v1.0.3 <small style="color:#6b7280;">2025-12-23</small>
+### v1.0.3 <small style="color:#6b7280;">2025-12-23</small>
 
-#### 📎 Función Clip
+#### Función Clip
 Agrupa múltiples documentos juntos para una gestión más fácil.
 - **Crear clip**: Selecciona 2+ documentos y toca "Clipear juntos"
 - **Icono de clip**: Los documentos clipeados muestran un icono de clip en la esquina superior derecha
@@ -32,11 +32,19 @@ Agrupa múltiples documentos juntos para una gestión más fácil.
 - **Disolución automática**: El clip se disuelve automáticamente cuando solo queda 1 elemento
 - **Transferencia**: Los clips se envían/reciben como un grupo
 
-#### 🔓 Mejora del Desbloqueo por Contraseña
+#### Mejoras en la Búsqueda de Plantillas Compartidas
+Usabilidad mejorada para la pantalla de búsqueda de plantillas compartidas.
+- **Tarjetas en línea**: Los resultados de búsqueda se muestran en un formato de lista compacta
+- **Imagen completa**: Las miniaturas se muestran en proporción original sin recortar
+- **Detalles ampliados**: Ver contenido, palabras clave y fecha de vencimiento en la hoja de detalles
+- **Vista previa de palabras clave**: Ver las palabras clave predeterminadas de la plantilla
+- **Fecha de vencimiento**: Verificar cuándo expira la plantilla compartida
+
+#### Mejora del Desbloqueo por Contraseña
 - Ingresar la contraseña correcta ahora **desbloquea permanentemente** el documento
 - Antes: Solo visualización, bloqueo mantenido → Ahora: Completamente desbloqueado
 
-#### 🐛 Correcciones de Errores
+#### Correcciones de Errores
 - Los elementos clip se contaban individualmente en la pantalla de recepción - corregido
 - La insignia de recepción de la barra de navegación incluía elementos internos del clip - corregido
 - La insignia (Nametag) no se desequipaba al reembolsar/eliminar - corregido
@@ -44,31 +52,31 @@ Agrupa múltiples documentos juntos para una gestión más fácil.
 
 ---
 
-### ✨ v1.0.2 <small style="color:#6b7280;">2025-12-22</small>
+### v1.0.2 <small style="color:#6b7280;">2025-12-22</small>
 
-#### 🔔 Indicador de Registro Compartido No Leído
+#### Indicador de Registro Compartido No Leído
 Cuando se agregan nuevos comentarios a los registros compartidos, el borde del elemento **pulsa**.
 - Identifica fácilmente los registros compartidos no leídos en tu inventario
 - La pulsación se detiene cuando abres el documento
 - El estado de lectura se sincroniza en todos los dispositivos
 
-#### 🔖 Guía de Uso del Sello
+#### Guía de Uso del Sello
 Cuando seleccionas un sello grabado, los papeles disponibles **pulsan** para guiarte.
 - UX mejorada para duplicación de plantilla
 - Guía intuitiva al siguiente paso
 
-#### 📂 Mejoras de Partición
+#### Mejoras de Partición
 - **Contraer/Expandir**: Alternar particiones con botones de flecha (▼/▲)
 - **Seleccionar todo**: Toca el encabezado de partición para seleccionar/deseleccionar todos los elementos
 - Indicadores de estado de selección (○/◐/●)
 - Arrastrar y soltar a particiones contraídas
 
-#### 🛒 Comodidad de la Tienda
+#### Comodidad de la Tienda
 Proceso de pago simplificado para compras consecutivas del mismo artículo.
 - Diálogos de confirmación omitidos dentro de 10 minutos desde la última compra
 - Compra masiva más rápida
 
-#### 🎨 Mejoras de Interfaz
+#### Mejoras de Interfaz
 - Legibilidad mejorada con nueva fuente de título
 - Las tarjetas de sello muestran vista previa de plantilla en el fondo (33% de opacidad)
 - Las tarjetas de insignia muestran vista previa de imagen grabada
@@ -76,17 +84,17 @@ Proceso de pago simplificado para compras consecutivas del mismo artículo.
 - Ajuste de color del tema tinta negra (mejor legibilidad del texto)
 - Imágenes de productos optimizadas (tamaño reducido, carga más rápida)
 
-#### 🐛 Corrección de errores
+#### Corrección de errores
 - Corregido efecto de pulsación en comentarios propios
-- Corregido recorte de campo de entrada en navegación por gestos de Android
+- Corregido recorte de campo de entrada en navegación por gestos
 - Corregida pantalla gris al contraer particiones
-- Mejorado manejo de permisos de notificación push en Android 13+
+- Mejorado manejo de permisos de notificación push 
 
 ---
 
-### 🔒 v1.0.1 <small style="color:#6b7280;">2025-12-16</small>
+### v1.0.1 <small style="color:#6b7280;">2025-12-16</small>
 
-#### 🔒 Función de Bloqueo de Documento
+#### Función de Bloqueo de Documento
 - Establecer contraseña numérica en documentos (hasta 16 dígitos)
 - Los documentos bloqueados muestran escala de grises + icono de candado
 - Desbloquear con contraseña correcta (una sola vez)
@@ -95,78 +103,75 @@ Proceso de pago simplificado para compras consecutivas del mismo artículo.
 
 ---
 
-### 🎉 v1.0.0 <small style="color:#6b7280;">2025-12-13</small>
+### v1.0.0 <small style="color:#6b7280;">2025-12-13</small>
 
 **Primera versión oficial**
 
-#### 📦 Sistema de Papel
+#### Sistema de Papel
 - Introducción del sistema de moneda para creación de documentos
 - 10 hojas de Papel al registrarse
 - 10 hojas adicionales por cada vinculación Google/Apple
 - Papel disponible para compra en tienda
 
-#### 📄 Creación de documentos
+#### Creación de documentos
 - Crear documentos usando Papel
 - Agregar título, contenido e imágenes
 - Opciones de fecha de inicio/expiración
 
-#### 🏷️ Sistema de Insignia
+#### Sistema de Insignia
 - Función de grabado de nombre de dominio único
 - Nombre de dominio grabado usado como identidad de usuario
 - Gestión de activación mediante equipar/desequipar
 - Opción de adjuntar imagen 128x128
 
-#### 🔖 Sistema de Sello
+#### Sistema de Sello
 - Función de creación de plantilla
 - Selección de modo Registro solo/Registro compartido
 - Función de duplicación de plantilla
 - Configuración de fecha de inicio/expiración
 
-#### 📝 Función de Registro
+#### Función de Registro
 - Grabar registros en documentos/sellos
 - Registro solo: Solo registros personales
 - Registro compartido: Compartir con propietarios de duplicados
 - Soporte de tarjeta info formato clave:valor
 
-#### 🎨 Sistema de Tinta
+#### Sistema de Tinta
 - Función de cambio de color de tema
 - Tinta Negra, Tinta Dorada
 
-#### 🤝 Transferencia de objetos
+#### Transferencia de objetos
 - Enviar objetos vía dirección de email
 - Autocompletar email por escaneo QR
 - Aceptar o devolver objetos recibidos
 - Enviar múltiples objetos a la vez
 
-#### 📂 Partición
+#### Partición
 - Función de agrupación de objetos
 - Almacenamiento local específico del dispositivo
 
-#### 🔍 Función de búsqueda
+#### Función de búsqueda
 - Filtrado de búsqueda en tiempo real
 - Guardar términos de búsqueda como filtros
 - Guardado automático de búsquedas recientes (hasta 5)
 
-#### 🛒 Tienda
+#### Tienda
 - Comprar Papel, Sellos, Insignias, Tinta
 - Disponible en todas las plataformas
 
-#### 🔐 Cuenta
+#### Cuenta
 - Inicio de sesión con Google, Apple, Email
 - Obtener Papel adicional vinculando cuentas sociales
 
-#### 🌍 Soporte multilingüe
+#### Soporte multilingüe
 - 한국어, English, 日本語
 - Deutsch, Français, Español, Português
 
-#### 📱 Plataformas soportadas
-- iOS (iPhone, iPad)
-- Android (smartphones, tablets)
-- macOS, Windows
+#### Plataformas soportadas
 
 ---
 
-> 💡 **¡Sugiere nuevas funciones!** Comparte tus ideas en [Sugerencias](/inventory/suggest/es/) y las revisaremos activamente.
+> **¡Sugiere nuevas funciones!** Comparte tus ideas en [Sugerencias](/inventory/suggest/es/) y las revisaremos activamente.
 
 <style>
 h2 { color: #1f2937; border-bottom: 2px solid #e5e7eb; padding-bottom: .5rem; margin-bottom: 1.5rem; }

@@ -13,15 +13,15 @@ translations:
   pt: /inventory/changelog/pt/
 ---
 
-## 📋 Registro de alterações
+## Registro de alterações
 
 Confira o histórico de atualizações do aplicativo Inventory.
 
 ---
 
-### 📎 v1.0.3 <small style="color:#6b7280;">2025-12-23</small>
+### v1.0.3 <small style="color:#6b7280;">2025-12-23</small>
 
-#### 📎 Função Clip
+#### Função Clip
 Agrupe múltiplos documentos juntos para facilitar o gerenciamento.
 - **Criar clip**: Selecione 2+ documentos e toque em "Clipar juntos"
 - **Ícone de clip**: Documentos clipados exibem um ícone de clip no canto superior direito
@@ -32,11 +32,19 @@ Agrupe múltiplos documentos juntos para facilitar o gerenciamento.
 - **Dissolução automática**: O clip se dissolve automaticamente quando resta apenas 1 item
 - **Transferência**: Clips são enviados/recebidos como um grupo
 
-#### 🔓 Melhoria no Desbloqueio por Senha
+#### Melhorias na Busca de Modelos Compartilhados
+Usabilidade aprimorada para a tela de busca de modelos compartilhados.
+- **Cartões em linha**: Resultados de busca exibidos em formato de lista compacta
+- **Imagem completa**: Miniaturas exibidas na proporção original sem cortes
+- **Detalhes expandidos**: Ver conteúdo, palavras-chave e data de expiração na folha de detalhes
+- **Prévia de palavras-chave**: Ver as palavras-chave padrão definidas para o modelo
+- **Data de expiração**: Verificar quando o modelo compartilhado expira
+
+#### Melhoria no Desbloqueio por Senha
 - Inserir a senha correta agora **desbloqueia permanentemente** o documento
 - Antes: Apenas visualização, bloqueio mantido → Agora: Totalmente desbloqueado
 
-#### 🐛 Correções de Bugs
+#### Correções de Bugs
 - Itens clip eram contados individualmente na tela de recebimento - corrigido
 - O emblema de recebimento da barra de navegação incluía itens internos do clip - corrigido
 - O emblema (Nametag) não era desequipado ao reembolsar/excluir - corrigido
@@ -44,31 +52,31 @@ Agrupe múltiplos documentos juntos para facilitar o gerenciamento.
 
 ---
 
-### ✨ v1.0.2 <small style="color:#6b7280;">2025-12-22</small>
+### v1.0.2 <small style="color:#6b7280;">2025-12-22</small>
 
-#### 🔔 Indicador de Registro Compartilhado Não Lido
+#### Indicador de Registro Compartilhado Não Lido
 Quando novos comentários são adicionados aos registros compartilhados, a borda do item **pulsa**.
 - Identifique facilmente registros compartilhados não lidos no seu inventário
 - A pulsação para quando você abre o documento
 - O status de leitura sincroniza em todos os dispositivos
 
-#### 🔖 Guia de Uso do Carimbo
+#### Guia de Uso do Carimbo
 Quando você seleciona um carimbo gravado, os papéis disponíveis **pulsam** para guiá-lo.
 - UX melhorada para duplicação de modelo
 - Orientação intuitiva para o próximo passo
 
-#### 📂 Melhorias de Partição
+#### Melhorias de Partição
 - **Recolher/Expandir**: Alternar partições com botões de seta (▼/▲)
 - **Selecionar tudo**: Toque no cabeçalho da partição para selecionar/desmarcar todos os itens
 - Indicadores de status de seleção (○/◐/●)
 - Arrastar e soltar para partições recolhidas
 
-#### 🛒 Conveniência da Loja
+#### Conveniência da Loja
 Processo de checkout simplificado para compras consecutivas do mesmo item.
 - Diálogos de confirmação ignorados dentro de 10 minutos da última compra
 - Compra em massa mais rápida
 
-#### 🎨 Melhorias de Interface
+#### Melhorias de Interface
 - Legibilidade melhorada com nova fonte de título
 - Cartões de carimbo mostram pré-visualização do modelo no fundo (33% de opacidade)
 - Cartões de distintivo mostram pré-visualização da imagem gravada
@@ -76,17 +84,17 @@ Processo de checkout simplificado para compras consecutivas do mesmo item.
 - Ajuste de cor do tema tinta preta (melhor legibilidade do texto)
 - Imagens de produtos otimizadas (tamanho reduzido, carregamento mais rápido)
 
-#### 🐛 Correção de bugs
+#### Correção de bugs
 - Corrigido efeito de pulsação em comentários próprios
-- Corrigido corte do campo de entrada na navegação por gestos do Android
+- Corrigido corte do campo de entrada na navegação por gestos
 - Corrigida tela cinza ao recolher partições
-- Melhorado tratamento de permissão de notificação push no Android 13+
+- Melhorado tratamento de permissão de notificação push
 
 ---
 
-### 🔒 v1.0.1 <small style="color:#6b7280;">2025-12-16</small>
+### v1.0.1 <small style="color:#6b7280;">2025-12-16</small>
 
-#### 🔒 Função de Bloqueio de Documento
+#### Função de Bloqueio de Documento
 - Definir senha numérica em documentos (até 16 dígitos)
 - Documentos bloqueados exibem escala de cinza + ícone de cadeado
 - Desbloquear com senha correta (uso único)
@@ -95,78 +103,74 @@ Processo de checkout simplificado para compras consecutivas do mesmo item.
 
 ---
 
-### 🎉 v1.0.0 <small style="color:#6b7280;">2025-12-13</small>
+### v1.0.0 <small style="color:#6b7280;">2025-12-13</small>
 
 **Primeira versão oficial**
 
-#### 📦 Sistema de Papel
+#### Sistema de Papel
 - Introdução do sistema de moeda para criação de documentos
 - 10 folhas de Papel ao se registrar
 - 10 folhas adicionais para cada vinculação Google/Apple
 - Papel disponível para compra na loja
 
-#### 📄 Criação de documentos
+#### Criação de documentos
 - Criar documentos usando Papel
 - Adicionar título, conteúdo e imagens
 - Opções de data de início/expiração
 
-#### 🏷️ Sistema de Emblema
+#### Sistema de Emblema
 - Função de gravação de nome de domínio único
 - Nome de domínio gravado usado como identidade do usuário
 - Gerenciamento de ativação por equipar/desequipar
 - Opção de anexar imagem 128x128
 
-#### 🔖 Sistema de Carimbo
+#### Sistema de Carimbo
 - Função de criação de modelo
 - Seleção de modo Registro solo/Registro compartilhado
 - Função de duplicação de modelo
 - Configurações de data de início/expiração
 
-#### 📝 Função de Registro
+#### Função de Registro
 - Gravar registros em documentos/carimbos
 - Registro solo: Apenas registros pessoais
 - Registro compartilhado: Compartilhar com proprietários de duplicatas
 - Suporte a cartão info formato chave:valor
 
-#### 🎨 Sistema de Tinta
+#### Sistema de Tinta
 - Função de mudança de cor do tema
 - Tinta Preta, Tinta Dourada
 
-#### 🤝 Transferência de itens
+#### Transferência de itens
 - Enviar itens via endereço de email
 - Preencher email automaticamente por scan QR
 - Aceitar ou devolver itens recebidos
 - Enviar múltiplos itens de uma vez
 
-#### 📂 Partição
+#### Partição
 - Função de agrupamento de itens
 - Armazenamento local específico do dispositivo
 
-#### 🔍 Função de busca
+#### Função de busca
 - Filtragem de busca em tempo real
 - Salvar termos de busca como filtros
 - Salvamento automático de buscas recentes (até 5)
 
-#### 🛒 Loja
+#### Loja
 - Comprar Papel, Carimbos, Emblemas, Tinta
 - Disponível em todas as plataformas
 
-#### 🔐 Conta
+#### Conta
 - Login com Google, Apple, Email
 - Ganhar Papel adicional vinculando contas sociais
 
-#### 🌍 Suporte multilíngue
+#### Suporte multilíngue
 - 한국어, English, 日本語
 - Deutsch, Français, Español, Português
 
-#### 📱 Plataformas suportadas
-- iOS (iPhone, iPad)
-- Android (smartphones, tablets)
-- macOS, Windows
 
 ---
 
-> 💡 **Sugira novas funcionalidades!** Compartilhe suas ideias em [Sugestões](/inventory/suggest/pt/) e iremos analisá-las ativamente.
+> **Sugira novas funcionalidades!** Compartilhe suas ideias em [Sugestões](/inventory/suggest/pt/) e iremos analisá-las ativamente.
 
 <style>
 h2 { color: #1f2937; border-bottom: 2px solid #e5e7eb; padding-bottom: .5rem; margin-bottom: 1.5rem; }
