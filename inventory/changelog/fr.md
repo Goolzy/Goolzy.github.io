@@ -37,6 +37,13 @@ Les URLs entrées dans les journaux s'affichent automatiquement comme **cartes e
 - **Papier requis** : Le clonage est désactivé si aucun papier n'est disponible
 - **Design neumorphique** : L'écran de recherche utilise maintenant un style UI neumorphique
 
+#### Améliorations du système d'effets de l'éditeur d'images
+L'interface de sélection des effets spéciaux a été simplifiée.
+- **Sélection unique** : Choisissez un seul effet parmi 5
+- **Liste des effets** : Original / Suppression d'arrière-plan / Bokeh / Bloom / Monochrome
+- **Transitions fluides** : Indicateur de progression pendant le traitement
+- **Amélioration des performances** : Filtres Bloom/Monochrome traités en arrière-plan
+
 ---
 
 ### v1.0.3 <small style="color:#6b7280;">2025-12-23</small>

@@ -37,6 +37,13 @@ In Protokollen eingegebene URLs werden automatisch als **Rich Cards** angezeigt.
 - **Papier erforderlich**: Klonen ist deaktiviert wenn kein Papier verfügbar
 - **Neumorphes Design**: Suchbildschirm verwendet jetzt neumorphen UI-Stil
 
+#### Verbesserungen des Bildeditor-Effektsystems
+Die Spezialeffekt-Auswahl-UI wurde vereinfacht.
+- **Einzelauswahl**: Wählen Sie jeweils einen von 5 Effekten
+- **Effektliste**: Original / Hintergrund entfernen / Bokeh / Bloom / Monochrom
+- **Sanfte Übergänge**: Fortschrittsanzeige während der Effektverarbeitung
+- **Leistungssteigerung**: Bloom/Monochrom-Filter werden im Hintergrund verarbeitet
+
 ---
 
 ### v1.0.3 <small style="color:#6b7280;">2025-12-23</small>

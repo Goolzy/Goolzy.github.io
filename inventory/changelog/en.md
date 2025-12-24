@@ -37,6 +37,13 @@ URLs entered in logs are automatically displayed as **rich cards**.
 - **Paper Required**: Clone is disabled when no paper available
 - **Neumorphic Design**: Search screen now uses neumorphic UI style
 
+#### Image Editor Effect System Improvements
+The special effects selection UI has been simplified.
+- **Single Selection**: Choose one of 5 effects at a time
+- **Effect List**: None / Remove Background / Bokeh / Bloom / Monochrome
+- **Smooth Transitions**: Progress indicator shown during effect processing
+- **Performance Boost**: Bloom/Monochrome filters processed in background
+
 ---
 
 ### v1.0.3 <small style="color:#6b7280;">2025-12-23</small>

@@ -37,6 +37,13 @@ Las URLs ingresadas en los registros se muestran automáticamente como **tarjeta
 - **Papel requerido**: La clonación está deshabilitada cuando no hay papel disponible
 - **Diseño neumórfico**: La pantalla de búsqueda ahora usa estilo UI neumórfico
 
+#### Mejoras del sistema de efectos del editor de imágenes
+La interfaz de selección de efectos especiales se ha simplificado.
+- **Selección única**: Elige uno de los 5 efectos a la vez
+- **Lista de efectos**: Original / Eliminar fondo / Bokeh / Bloom / Monocromo
+- **Transiciones suaves**: Indicador de progreso durante el procesamiento
+- **Mejora de rendimiento**: Filtros Bloom/Monocromo procesados en segundo plano
+
 ---
 
 ### v1.0.3 <small style="color:#6b7280;">2025-12-23</small>

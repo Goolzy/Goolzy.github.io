@@ -37,6 +37,13 @@ URLs inseridas nos registros são automaticamente exibidas como **cartões enriq
 - **Papel necessário**: A clonagem é desativada quando não há papel disponível
 - **Design neumórfico**: A tela de busca agora usa estilo UI neumórfico
 
+#### Melhorias no sistema de efeitos do editor de imagens
+A interface de seleção de efeitos especiais foi simplificada.
+- **Seleção única**: Escolha um dos 5 efeitos por vez
+- **Lista de efeitos**: Original / Remover fundo / Bokeh / Bloom / Monocromático
+- **Transições suaves**: Indicador de progresso durante o processamento
+- **Melhoria de desempenho**: Filtros Bloom/Monocromático processados em segundo plano
+
 ---
 
 ### v1.0.3 <small style="color:#6b7280;">2025-12-23</small>
