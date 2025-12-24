@@ -32,6 +32,11 @@ URLs entered in logs are automatically displayed as **rich cards**.
 - Tap to open in external app/browser
 - Long-press to copy URL to clipboard
 
+#### Shared Template Search Improvements
+- **Paper Check**: Clone button shows remaining paper count (Paper:10)
+- **Paper Required**: Clone is disabled when no paper available
+- **Neumorphic Design**: Search screen now uses neumorphic UI style
+
 ---
 
 ### v1.0.3 <small style="color:#6b7280;">2025-12-23</small>

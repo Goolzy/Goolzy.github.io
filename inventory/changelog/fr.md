@@ -32,6 +32,11 @@ Les URLs entrées dans les journaux s'affichent automatiquement comme **cartes e
 - Touchez pour ouvrir dans l'app/navigateur externe
 - Appuyez longuement pour copier l'URL dans le presse-papiers
 
+#### Améliorations de la recherche de modèles partagés
+- **Vérification du papier** : Le bouton de clonage affiche le nombre de papiers restants (Papier:10)
+- **Papier requis** : Le clonage est désactivé si aucun papier n'est disponible
+- **Design neumorphique** : L'écran de recherche utilise maintenant un style UI neumorphique
+
 ---
 
 ### v1.0.3 <small style="color:#6b7280;">2025-12-23</small>

@@ -32,6 +32,11 @@ Las URLs ingresadas en los registros se muestran automáticamente como **tarjeta
 - Toca para abrir en app/navegador externo
 - Mantén presionado para copiar la URL al portapapeles
 
+#### Mejoras en la búsqueda de plantillas compartidas
+- **Verificación de papel**: El botón de clonar muestra la cantidad de papel restante (Papel:10)
+- **Papel requerido**: La clonación está deshabilitada cuando no hay papel disponible
+- **Diseño neumórfico**: La pantalla de búsqueda ahora usa estilo UI neumórfico
+
 ---
 
 ### v1.0.3 <small style="color:#6b7280;">2025-12-23</small>

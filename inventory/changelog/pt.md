@@ -32,6 +32,11 @@ URLs inseridas nos registros são automaticamente exibidas como **cartões enriq
 - Toque para abrir em app/navegador externo
 - Pressione longamente para copiar a URL para a área de transferência
 
+#### Melhorias na busca de modelos compartilhados
+- **Verificação de papel**: O botão de clonar mostra a quantidade de papel restante (Papel:10)
+- **Papel necessário**: A clonagem é desativada quando não há papel disponível
+- **Design neumórfico**: A tela de busca agora usa estilo UI neumórfico
+
 ---
 
 ### v1.0.3 <small style="color:#6b7280;">2025-12-23</small>

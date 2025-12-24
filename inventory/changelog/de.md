@@ -32,6 +32,11 @@ In Protokollen eingegebene URLs werden automatisch als **Rich Cards** angezeigt.
 - Tippen zum Öffnen in externer App/Browser
 - Lange drücken zum Kopieren der URL in die Zwischenablage
 
+#### Verbesserungen bei der Geteilten Vorlagensuche
+- **Papierprüfung**: Klonen-Button zeigt verbleibende Papieranzahl (Papier:10)
+- **Papier erforderlich**: Klonen ist deaktiviert wenn kein Papier verfügbar
+- **Neumorphes Design**: Suchbildschirm verwendet jetzt neumorphen UI-Stil
+
 ---
 
 ### v1.0.3 <small style="color:#6b7280;">2025-12-23</small>
