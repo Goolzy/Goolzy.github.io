@@ -458,6 +458,127 @@ Utile pour calculer les prix totaux ou rassembler les tags associés.
 
 ---
 
+### 📱 Compte/Synchronisation
+
+<details>
+<summary><strong>Q. Puis-je voir les mêmes éléments sur différents appareils ?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Oui ! Si vous vous connectez avec le même compte, tous les éléments seront automatiquement synchronisés sur tous vos appareils.
+<ul>
+<li><strong>Synchronisation en temps réel</strong> : Les modifications sont immédiatement reflétées sur les autres appareils</li>
+<li><strong>Sauvegarde cloud</strong> : Toutes les données sont stockées en sécurité dans le cloud</li>
+<li><strong>Aucune limite d'appareil</strong> : Utilisation simultanée sur plusieurs appareils possible</li>
+</ul>
+</div>
+</details>
+
+---
+
+### 🖼️ Images
+
+<details>
+<summary><strong>Q. Y a-t-il des restrictions de taille ou de format d'image ?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Les restrictions suivantes s'appliquent :
+<ul>
+<li><strong>Formats supportés</strong> : JPG, PNG, GIF, WebP</li>
+<li><strong>Taille maximale</strong> : 10 Mo par image</li>
+<li><strong>Dimensions recommandées</strong> : 1024x1024 ou moins (redimensionnement automatique)</li>
+</ul>
+Les images haute résolution sont automatiquement optimisées lors de la sauvegarde.
+</div>
+</details>
+
+<details>
+<summary><strong>Q. Qu'est-ce que la suppression de fond par IA ?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Cette fonctionnalité utilise l'IA pour supprimer automatiquement les arrière-plans des images dans l'éditeur d'images.
+<ul>
+<li>Sélectionnez une image d'élément et appuyez sur <strong>« Modifier »</strong></li>
+<li>Choisissez <strong>« Supprimer le fond »</strong></li>
+<li>L'IA reconnaît automatiquement le sujet principal et rend le fond transparent</li>
+</ul>
+Idéal pour les photos de produits ou les portraits pour des résultats nets.
+</div>
+</details>
+
+---
+
+### 🔔 Notifications
+
+<details>
+<summary><strong>Q. Comment désactiver ou configurer les notifications ?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Vous pouvez gérer les notifications dans les paramètres système de votre appareil :
+<ul>
+<li><strong>iOS</strong> : Réglages → Notifications → Inventory</li>
+<li><strong>Android</strong> : Paramètres → Applications → Inventory → Notifications</li>
+<li><strong>macOS</strong> : Préférences Système → Notifications → Inventory</li>
+</ul>
+Les alarmes de date individuelles peuvent être désactivées en appuyant longuement sur la carte de date.
+</div>
+</details>
+
+<details>
+<summary><strong>Q. Quand l'alarme D-Day se déclenche-t-elle ?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Les notifications push sont envoyées à <strong>9h00</strong> à la date définie.
+<br><br>
+💡 <strong>Astuce</strong> : Pour les événements importants, créez plusieurs cartes de date (J-7, J-3, J-1) pour recevoir des rappels à l'avance.
+</div>
+</details>
+
+---
+
+### 🔒 Sécurité/Confidentialité
+
+<details>
+<summary><strong>Q. Où mes données sont-elles stockées ?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Toutes les données sont stockées en sécurité dans <strong>Firebase Cloud</strong>.
+<ul>
+<li><strong>Transmission chiffrée</strong> : Toutes les communications sont chiffrées avec TLS</li>
+<li><strong>Stockage sécurisé</strong> : Géré sur l'infrastructure Google Cloud</li>
+<li><strong>Protection de la vie privée</strong> : Les autres utilisateurs ne peuvent pas accéder à vos éléments</li>
+</ul>
+Pour plus de détails, consultez notre <a href="/inventory/privacy/">Politique de confidentialité</a>.
+</div>
+</details>
+
+<details>
+<summary><strong>Q. Y a-t-il une fonction de verrouillage de document ?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Oui ! Vous pouvez définir un <strong>verrouillage</strong> sur les éléments.
+<ul>
+<li>Écran de détail de l'élément → Menu du bas → <strong>« Verrouiller »</strong></li>
+<li>Les éléments verrouillés ont leur contenu flouté</li>
+<li>L'authentification de l'appareil (Face ID, empreinte digitale, PIN) est requise pour voir</li>
+</ul>
+Gardez les informations sensibles en sécurité.
+</div>
+</details>
+
+---
+
+### 💡 Conseils d'utilisation
+
+<details>
+<summary><strong>Q. Comment puis-je utiliser Inventory ?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Vous pouvez l'utiliser à diverses fins :
+<ul>
+<li><strong>Gestion des garanties/reçus</strong> : Photos avec dates d'expiration</li>
+<li><strong>Stockage de mots de passe</strong> : Conserver en sécurité avec la fonction de verrouillage</li>
+<li><strong>Gestion du calendrier</strong> : Alarmes D-Day pour les dates importantes</li>
+<li><strong>Organisation de collections</strong> : Catégoriser avec des partitions</li>
+<li><strong>Collaboration d'équipe</strong> : Travailler ensemble avec des journaux partagés</li>
+</ul>
+Pour plus d'idées, consultez <a href="/inventory/usecases/fr/">100 Cas d'utilisation</a> !
+</div>
+</details>
+
+---
+
 ### 🆘 Autres
 
 <details>

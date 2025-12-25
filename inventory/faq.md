@@ -502,6 +502,127 @@ QR 코드에는 이메일 주소가 담겨있어 직접 입력 없이 빠르게 
 
 ---
 
+### 📱 계정/동기화
+
+<details>
+<summary><strong>Q. 다른 기기에서도 같은 아이템을 볼 수 있나요?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 네! 동일한 계정으로 로그인하면 모든 기기에서 아이템이 자동으로 동기화됩니다.
+<ul>
+<li><strong>실시간 동기화</strong>: 변경사항이 즉시 다른 기기에 반영됩니다</li>
+<li><strong>클라우드 백업</strong>: 모든 데이터가 안전하게 클라우드에 저장됩니다</li>
+<li><strong>기기 제한 없음</strong>: 여러 기기에서 동시에 사용 가능합니다</li>
+</ul>
+</div>
+</details>
+
+---
+
+### 🖼️ 이미지
+
+<details>
+<summary><strong>Q. 이미지 용량이나 형식에 제한이 있나요?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 다음과 같은 제한이 있습니다:
+<ul>
+<li><strong>지원 형식</strong>: JPG, PNG, GIF, WebP</li>
+<li><strong>최대 용량</strong>: 이미지당 10MB</li>
+<li><strong>권장 크기</strong>: 1024x1024 이하 (자동 리사이징됨)</li>
+</ul>
+고해상도 이미지는 자동으로 최적화되어 저장됩니다.
+</div>
+</details>
+
+<details>
+<summary><strong>Q. AI 배경 제거 기능은 무엇인가요?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 이미지 편집기에서 AI가 자동으로 배경을 제거해주는 기능입니다.
+<ul>
+<li>아이템 이미지 선택 시 <strong>"편집"</strong> 버튼 탭</li>
+<li><strong>"배경 제거"</strong> 옵션 선택</li>
+<li>AI가 자동으로 주요 피사체를 인식하고 배경을 투명하게 처리</li>
+</ul>
+제품 사진이나 인물 사진에서 깔끔한 결과물을 얻을 수 있습니다.
+</div>
+</details>
+
+---
+
+### 🔔 알림
+
+<details>
+<summary><strong>Q. 알림을 끄거나 설정하려면?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 기기의 시스템 설정에서 관리할 수 있습니다:
+<ul>
+<li><strong>iOS</strong>: 설정 → 알림 → Inventory</li>
+<li><strong>Android</strong>: 설정 → 앱 → Inventory → 알림</li>
+<li><strong>macOS</strong>: 시스템 설정 → 알림 → Inventory</li>
+</ul>
+개별 날짜 알람은 해당 날짜 카드를 길게 눌러 해제할 수 있습니다.
+</div>
+</details>
+
+<details>
+<summary><strong>Q. D-Day 알람은 언제 울리나요?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 설정된 날짜의 <strong>오전 9시</strong>에 푸시 알림이 발송됩니다.
+<br><br>
+💡 <strong>팁</strong>: 중요한 일정은 D-7, D-3, D-1 등 여러 날짜 카드를 만들어 미리 알림을 받으세요.
+</div>
+</details>
+
+---
+
+### 🔒 보안/프라이버시
+
+<details>
+<summary><strong>Q. 내 데이터는 어디에 저장되나요?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 모든 데이터는 <strong>Firebase 클라우드</strong>에 안전하게 저장됩니다.
+<ul>
+<li><strong>암호화 전송</strong>: 모든 통신은 TLS로 암호화됩니다</li>
+<li><strong>안전한 저장</strong>: Google Cloud 인프라에서 관리됩니다</li>
+<li><strong>개인정보 보호</strong>: 다른 사용자는 귀하의 아이템에 접근할 수 없습니다</li>
+</ul>
+자세한 내용은 <a href="/inventory/privacy/">개인정보처리방침</a>을 참고하세요.
+</div>
+</details>
+
+<details>
+<summary><strong>Q. 문서 잠금 기능이 있나요?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 네! 아이템에 <strong>잠금</strong>을 설정할 수 있습니다.
+<ul>
+<li>아이템 상세 화면 → 하단 메뉴 → <strong>"잠금"</strong></li>
+<li>잠금된 아이템은 내용이 블러 처리됩니다</li>
+<li>확인하려면 기기 인증(Face ID, 지문, PIN)이 필요합니다</li>
+</ul>
+민감한 정보를 안전하게 보관할 수 있습니다.
+</div>
+</details>
+
+---
+
+### 💡 활용 팁
+
+<details>
+<summary><strong>Q. Inventory를 어떻게 활용할 수 있나요?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 다양한 용도로 활용할 수 있습니다:
+<ul>
+<li><strong>보증서/영수증 관리</strong>: 사진과 유효기간 설정</li>
+<li><strong>비밀번호 저장</strong>: 잠금 기능으로 안전하게 보관</li>
+<li><strong>일정 관리</strong>: D-Day 알람으로 중요 일정 관리</li>
+<li><strong>수집품 정리</strong>: 파티션으로 분류하여 관리</li>
+<li><strong>공동 작업</strong>: 공유로그로 팀원과 협업</li>
+</ul>
+더 많은 아이디어는 <a href="/inventory/usecases/">활용방법 100가지</a>를 확인해보세요!
+</div>
+</details>
+
+---
+
 ### 🆘 기타
 
 <details>

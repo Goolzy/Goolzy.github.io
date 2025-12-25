@@ -458,6 +458,127 @@ El código QR contiene tu dirección de email para transferencias rápidas sin e
 
 ---
 
+### 📱 Cuenta/Sincronización
+
+<details>
+<summary><strong>Q. ¿Puedo ver los mismos elementos en diferentes dispositivos?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> ¡Sí! Si inicias sesión con la misma cuenta, todos los elementos se sincronizarán automáticamente en todos tus dispositivos.
+<ul>
+<li><strong>Sincronización en tiempo real</strong>: Los cambios se reflejan inmediatamente en otros dispositivos</li>
+<li><strong>Respaldo en la nube</strong>: Todos los datos se almacenan de forma segura en la nube</li>
+<li><strong>Sin límite de dispositivos</strong>: Uso simultáneo en múltiples dispositivos</li>
+</ul>
+</div>
+</details>
+
+---
+
+### 🖼️ Imágenes
+
+<details>
+<summary><strong>Q. ¿Hay restricciones de tamaño o formato de imagen?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Se aplican las siguientes restricciones:
+<ul>
+<li><strong>Formatos soportados</strong>: JPG, PNG, GIF, WebP</li>
+<li><strong>Tamaño máximo</strong>: 10MB por imagen</li>
+<li><strong>Dimensiones recomendadas</strong>: 1024x1024 o menor (redimensionamiento automático)</li>
+</ul>
+Las imágenes de alta resolución se optimizan automáticamente al guardar.
+</div>
+</details>
+
+<details>
+<summary><strong>Q. ¿Qué es la eliminación de fondo con IA?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Esta función usa IA para eliminar automáticamente fondos de imágenes en el editor de imágenes.
+<ul>
+<li>Selecciona una imagen de elemento y toca <strong>"Editar"</strong></li>
+<li>Elige <strong>"Eliminar fondo"</strong></li>
+<li>La IA reconoce automáticamente el sujeto principal y hace el fondo transparente</li>
+</ul>
+Ideal para fotos de productos o retratos para obtener resultados limpios.
+</div>
+</details>
+
+---
+
+### 🔔 Notificaciones
+
+<details>
+<summary><strong>Q. ¿Cómo desactivo o configuro las notificaciones?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Puedes gestionar las notificaciones en la configuración del sistema de tu dispositivo:
+<ul>
+<li><strong>iOS</strong>: Ajustes → Notificaciones → Inventory</li>
+<li><strong>Android</strong>: Ajustes → Apps → Inventory → Notificaciones</li>
+<li><strong>macOS</strong>: Configuración del Sistema → Notificaciones → Inventory</li>
+</ul>
+Las alarmas de fecha individuales se pueden desactivar manteniendo presionada la tarjeta de fecha.
+</div>
+</details>
+
+<details>
+<summary><strong>Q. ¿Cuándo suena la alarma D-Day?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Las notificaciones push se envían a las <strong>9:00 AM</strong> en la fecha establecida.
+<br><br>
+💡 <strong>Consejo</strong>: Para eventos importantes, crea múltiples tarjetas de fecha (D-7, D-3, D-1) para recibir recordatorios anticipados.
+</div>
+</details>
+
+---
+
+### 🔒 Seguridad/Privacidad
+
+<details>
+<summary><strong>Q. ¿Dónde se almacenan mis datos?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Todos los datos se almacenan de forma segura en <strong>Firebase Cloud</strong>.
+<ul>
+<li><strong>Transmisión encriptada</strong>: Todas las comunicaciones están encriptadas con TLS</li>
+<li><strong>Almacenamiento seguro</strong>: Gestionado en la infraestructura de Google Cloud</li>
+<li><strong>Protección de privacidad</strong>: Otros usuarios no pueden acceder a tus elementos</li>
+</ul>
+Para más detalles, consulta nuestra <a href="/inventory/privacy/">Política de Privacidad</a>.
+</div>
+</details>
+
+<details>
+<summary><strong>Q. ¿Hay una función de bloqueo de documentos?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> ¡Sí! Puedes establecer un <strong>bloqueo</strong> en los elementos.
+<ul>
+<li>Pantalla de detalle del elemento → Menú inferior → <strong>"Bloquear"</strong></li>
+<li>Los elementos bloqueados tienen su contenido difuminado</li>
+<li>Se requiere autenticación del dispositivo (Face ID, huella dactilar, PIN) para ver</li>
+</ul>
+Mantén la información sensible segura.
+</div>
+</details>
+
+---
+
+### 💡 Consejos de Uso
+
+<details>
+<summary><strong>Q. ¿Cómo puedo usar Inventory?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Puedes usarlo para varios propósitos:
+<ul>
+<li><strong>Gestión de garantías/recibos</strong>: Fotos con fechas de vencimiento</li>
+<li><strong>Almacenamiento de contraseñas</strong>: Mantener seguro con función de bloqueo</li>
+<li><strong>Gestión de agenda</strong>: Alarmas D-Day para fechas importantes</li>
+<li><strong>Organización de colecciones</strong>: Categorizar con particiones</li>
+<li><strong>Colaboración en equipo</strong>: Trabajar juntos con registros compartidos</li>
+</ul>
+¡Para más ideas, consulta <a href="/inventory/usecases/es/">100 Casos de Uso</a>!
+</div>
+</details>
+
+---
+
 ### 🆘 Otros
 
 <details>

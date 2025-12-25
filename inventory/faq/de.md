@@ -458,6 +458,127 @@ Nützlich für die Berechnung von Gesamtpreisen oder das Sammeln verwandter Tags
 
 ---
 
+### 📱 Konto/Synchronisation
+
+<details>
+<summary><strong>Q. Kann ich dieselben Elemente auf verschiedenen Geräten sehen?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Ja! Wenn Sie sich mit demselben Konto anmelden, werden alle Elemente automatisch auf allen Geräten synchronisiert.
+<ul>
+<li><strong>Echtzeit-Synchronisation</strong>: Änderungen werden sofort auf anderen Geräten übernommen</li>
+<li><strong>Cloud-Backup</strong>: Alle Daten werden sicher in der Cloud gespeichert</li>
+<li><strong>Keine Gerätebeschränkung</strong>: Gleichzeitige Nutzung auf mehreren Geräten möglich</li>
+</ul>
+</div>
+</details>
+
+---
+
+### 🖼️ Bilder
+
+<details>
+<summary><strong>Q. Gibt es Beschränkungen für Bildgröße oder Format?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Folgende Beschränkungen gelten:
+<ul>
+<li><strong>Unterstützte Formate</strong>: JPG, PNG, GIF, WebP</li>
+<li><strong>Maximale Größe</strong>: 10MB pro Bild</li>
+<li><strong>Empfohlene Abmessungen</strong>: 1024x1024 oder kleiner (automatische Größenanpassung)</li>
+</ul>
+Hochauflösende Bilder werden beim Speichern automatisch optimiert.
+</div>
+</details>
+
+<details>
+<summary><strong>Q. Was ist die KI-Hintergrundentfernung?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Diese Funktion verwendet KI, um automatisch Hintergründe aus Bildern im Bildeditor zu entfernen.
+<ul>
+<li>Wählen Sie ein Elementbild und tippen Sie auf <strong>„Bearbeiten"</strong></li>
+<li>Wählen Sie <strong>„Hintergrund entfernen"</strong></li>
+<li>KI erkennt automatisch das Hauptmotiv und macht den Hintergrund transparent</li>
+</ul>
+Ideal für Produktfotos oder Porträtbilder für saubere Ergebnisse.
+</div>
+</details>
+
+---
+
+### 🔔 Benachrichtigungen
+
+<details>
+<summary><strong>Q. Wie kann ich Benachrichtigungen ausschalten oder konfigurieren?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Sie können Benachrichtigungen in den Systemeinstellungen Ihres Geräts verwalten:
+<ul>
+<li><strong>iOS</strong>: Einstellungen → Mitteilungen → Inventory</li>
+<li><strong>Android</strong>: Einstellungen → Apps → Inventory → Benachrichtigungen</li>
+<li><strong>macOS</strong>: Systemeinstellungen → Mitteilungen → Inventory</li>
+</ul>
+Einzelne Datumsalarme können durch langes Drücken der Datumskarte deaktiviert werden.
+</div>
+</details>
+
+<details>
+<summary><strong>Q. Wann wird der D-Day-Alarm ausgelöst?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Push-Benachrichtigungen werden am eingestellten Datum um <strong>9:00 Uhr</strong> gesendet.
+<br><br>
+💡 <strong>Tipp</strong>: Erstellen Sie für wichtige Termine mehrere Datumskarten (D-7, D-3, D-1), um Vorab-Erinnerungen zu erhalten.
+</div>
+</details>
+
+---
+
+### 🔒 Sicherheit/Datenschutz
+
+<details>
+<summary><strong>Q. Wo werden meine Daten gespeichert?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Alle Daten werden sicher in <strong>Firebase Cloud</strong> gespeichert.
+<ul>
+<li><strong>Verschlüsselte Übertragung</strong>: Alle Kommunikation ist mit TLS verschlüsselt</li>
+<li><strong>Sichere Speicherung</strong>: Verwaltet auf Google Cloud-Infrastruktur</li>
+<li><strong>Datenschutz</strong>: Andere Benutzer können nicht auf Ihre Elemente zugreifen</li>
+</ul>
+Weitere Details finden Sie in unserer <a href="/inventory/privacy/">Datenschutzrichtlinie</a>.
+</div>
+</details>
+
+<details>
+<summary><strong>Q. Gibt es eine Dokumentensperrfunktion?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Ja! Sie können eine <strong>Sperre</strong> für Elemente setzen.
+<ul>
+<li>Elementdetailbildschirm → Unteres Menü → <strong>„Sperren"</strong></li>
+<li>Gesperrte Elemente werden mit unscharfem Inhalt angezeigt</li>
+<li>Geräteauthentifizierung (Face ID, Fingerabdruck, PIN) ist zum Anzeigen erforderlich</li>
+</ul>
+Bewahren Sie sensible Informationen sicher auf.
+</div>
+</details>
+
+---
+
+### 💡 Nutzungstipps
+
+<details>
+<summary><strong>Q. Wie kann ich Inventory nutzen?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Sie können es für verschiedene Zwecke nutzen:
+<ul>
+<li><strong>Garantie/Quittungsverwaltung</strong>: Fotos mit Ablaufdaten</li>
+<li><strong>Passwortspeicherung</strong>: Sicher aufbewahren mit Sperrfunktion</li>
+<li><strong>Terminverwaltung</strong>: D-Day-Alarme für wichtige Termine</li>
+<li><strong>Sammlungsorganisation</strong>: Mit Partitionen kategorisieren</li>
+<li><strong>Teamzusammenarbeit</strong>: Mit geteilten Protokollen zusammenarbeiten</li>
+</ul>
+Für mehr Ideen besuchen Sie <a href="/inventory/usecases/de/">100 Anwendungsfälle</a>!
+</div>
+</details>
+
+---
+
 ### 🆘 Sonstiges
 
 <details>

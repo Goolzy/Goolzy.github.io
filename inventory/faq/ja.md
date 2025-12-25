@@ -458,6 +458,127 @@ QRコードにはメールアドレスが含まれており、直接入力なし
 
 ---
 
+### 📱 アカウント/同期
+
+<details>
+<summary><strong>Q. 他のデバイスでも同じアイテムを見られますか？</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> はい！同じアカウントでログインすれば、すべてのデバイスでアイテムが自動的に同期されます。
+<ul>
+<li><strong>リアルタイム同期</strong>：変更がすぐに他のデバイスに反映されます</li>
+<li><strong>クラウドバックアップ</strong>：すべてのデータがクラウドに安全に保存されます</li>
+<li><strong>デバイス制限なし</strong>：複数のデバイスで同時に使用可能です</li>
+</ul>
+</div>
+</details>
+
+---
+
+### 🖼️ 画像
+
+<details>
+<summary><strong>Q. 画像のサイズや形式に制限はありますか？</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 以下の制限があります：
+<ul>
+<li><strong>対応形式</strong>：JPG、PNG、GIF、WebP</li>
+<li><strong>最大サイズ</strong>：1画像あたり10MB</li>
+<li><strong>推奨サイズ</strong>：1024x1024以下（自動リサイズ）</li>
+</ul>
+高解像度画像は保存時に自動的に最適化されます。
+</div>
+</details>
+
+<details>
+<summary><strong>Q. AI背景除去機能とは何ですか？</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 画像エディタでAIが自動的に背景を除去する機能です。
+<ul>
+<li>アイテム画像を選択し<strong>「編集」</strong>をタップ</li>
+<li><strong>「背景を削除」</strong>を選択</li>
+<li>AIが自動的に主要な被写体を認識し、背景を透明にします</li>
+</ul>
+製品写真やポートレート写真できれいな結果が得られます。
+</div>
+</details>
+
+---
+
+### 🔔 通知
+
+<details>
+<summary><strong>Q. 通知をオフまたは設定するには？</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> デバイスのシステム設定で管理できます：
+<ul>
+<li><strong>iOS</strong>：設定 → 通知 → Inventory</li>
+<li><strong>Android</strong>：設定 → アプリ → Inventory → 通知</li>
+<li><strong>macOS</strong>：システム設定 → 通知 → Inventory</li>
+</ul>
+個別の日付アラームは、日付カードを長押しして解除できます。
+</div>
+</details>
+
+<details>
+<summary><strong>Q. D-Dayアラームはいつ鳴りますか？</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> 設定された日付の<strong>午前9時</strong>にプッシュ通知が送信されます。
+<br><br>
+💡 <strong>ヒント</strong>：重要な予定にはD-7、D-3、D-1など複数の日付カードを作成して事前にリマインダーを受け取りましょう。
+</div>
+</details>
+
+---
+
+### 🔒 セキュリティ/プライバシー
+
+<details>
+<summary><strong>Q. 私のデータはどこに保存されますか？</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> すべてのデータは<strong>Firebaseクラウド</strong>に安全に保存されます。
+<ul>
+<li><strong>暗号化通信</strong>：すべての通信はTLSで暗号化されます</li>
+<li><strong>安全な保管</strong>：Google Cloudインフラで管理されます</li>
+<li><strong>プライバシー保護</strong>：他のユーザーはあなたのアイテムにアクセスできません</li>
+</ul>
+詳細は<a href="/inventory/privacy/">プライバシーポリシー</a>をご覧ください。
+</div>
+</details>
+
+<details>
+<summary><strong>Q. ドキュメントロック機能はありますか？</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> はい！アイテムに<strong>ロック</strong>を設定できます。
+<ul>
+<li>アイテム詳細画面 → 下部メニュー → <strong>「ロック」</strong></li>
+<li>ロックされたアイテムは内容がぼかされます</li>
+<li>確認するにはデバイス認証（Face ID、指紋、PIN）が必要です</li>
+</ul>
+機密情報を安全に保管できます。
+</div>
+</details>
+
+---
+
+### 💡 活用のヒント
+
+<details>
+<summary><strong>Q. Inventoryをどのように活用できますか？</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> さまざまな用途に活用できます：
+<ul>
+<li><strong>保証書/領収書管理</strong>：写真と有効期限を設定</li>
+<li><strong>パスワード保存</strong>：ロック機能で安全に保管</li>
+<li><strong>スケジュール管理</strong>：D-Dayアラームで重要な予定を管理</li>
+<li><strong>コレクション整理</strong>：パーティションで分類して管理</li>
+<li><strong>チームコラボ</strong>：共有ログでチームメンバーと協力</li>
+</ul>
+もっとアイデアを見るには<a href="/inventory/usecases/ja/">活用方法100選</a>をチェック！
+</div>
+</details>
+
+---
+
 ### 🆘 その他
 
 <details>

@@ -458,6 +458,127 @@ Useful for calculating total prices of multiple items or gathering related tags.
 
 ---
 
+### 📱 Account/Sync
+
+<details>
+<summary><strong>Q. Can I see the same items on different devices?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Yes! If you log in with the same account, all items will automatically sync across all your devices.
+<ul>
+<li><strong>Real-time sync</strong>: Changes are immediately reflected on other devices</li>
+<li><strong>Cloud backup</strong>: All data is securely stored in the cloud</li>
+<li><strong>No device limit</strong>: Use on multiple devices simultaneously</li>
+</ul>
+</div>
+</details>
+
+---
+
+### 🖼️ Images
+
+<details>
+<summary><strong>Q. Are there any image size or format restrictions?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> The following restrictions apply:
+<ul>
+<li><strong>Supported formats</strong>: JPG, PNG, GIF, WebP</li>
+<li><strong>Maximum size</strong>: 10MB per image</li>
+<li><strong>Recommended dimensions</strong>: 1024x1024 or smaller (auto-resized)</li>
+</ul>
+High-resolution images are automatically optimized when saved.
+</div>
+</details>
+
+<details>
+<summary><strong>Q. What is the AI background removal feature?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> This feature uses AI to automatically remove backgrounds from images in the image editor.
+<ul>
+<li>Select an item image and tap <strong>"Edit"</strong></li>
+<li>Choose <strong>"Remove Background"</strong></li>
+<li>AI automatically recognizes the main subject and makes the background transparent</li>
+</ul>
+Great for product photos or portrait images to get clean results.
+</div>
+</details>
+
+---
+
+### 🔔 Notifications
+
+<details>
+<summary><strong>Q. How do I turn off or configure notifications?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> You can manage notifications in your device's system settings:
+<ul>
+<li><strong>iOS</strong>: Settings → Notifications → Inventory</li>
+<li><strong>Android</strong>: Settings → Apps → Inventory → Notifications</li>
+<li><strong>macOS</strong>: System Settings → Notifications → Inventory</li>
+</ul>
+Individual date alarms can be disabled by long-pressing the date card.
+</div>
+</details>
+
+<details>
+<summary><strong>Q. When does the D-Day alarm go off?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Push notifications are sent at <strong>9:00 AM</strong> on the set date.
+<br><br>
+💡 <strong>Tip</strong>: For important events, create multiple date cards (D-7, D-3, D-1) to get advance reminders.
+</div>
+</details>
+
+---
+
+### 🔒 Security/Privacy
+
+<details>
+<summary><strong>Q. Where is my data stored?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> All data is securely stored in <strong>Firebase Cloud</strong>.
+<ul>
+<li><strong>Encrypted transmission</strong>: All communications are encrypted with TLS</li>
+<li><strong>Secure storage</strong>: Managed on Google Cloud infrastructure</li>
+<li><strong>Privacy protection</strong>: Other users cannot access your items</li>
+</ul>
+For more details, see our <a href="/inventory/privacy/">Privacy Policy</a>.
+</div>
+</details>
+
+<details>
+<summary><strong>Q. Is there a document lock feature?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Yes! You can set a <strong>lock</strong> on items.
+<ul>
+<li>Item detail screen → Bottom menu → <strong>"Lock"</strong></li>
+<li>Locked items have their content blurred</li>
+<li>Device authentication (Face ID, fingerprint, PIN) is required to view</li>
+</ul>
+Keep sensitive information safe and secure.
+</div>
+</details>
+
+---
+
+### 💡 Usage Tips
+
+<details>
+<summary><strong>Q. How can I use Inventory?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> You can use it for various purposes:
+<ul>
+<li><strong>Warranty/receipt management</strong>: Photos with expiration dates</li>
+<li><strong>Password storage</strong>: Keep secure with lock feature</li>
+<li><strong>Schedule management</strong>: D-Day alarms for important dates</li>
+<li><strong>Collection organization</strong>: Categorize with partitions</li>
+<li><strong>Team collaboration</strong>: Work together with shared logs</li>
+</ul>
+For more ideas, check out <a href="/inventory/usecases/en/">100 Use Cases</a>!
+</div>
+</details>
+
+---
+
 ### 🆘 Other
 
 <details>
