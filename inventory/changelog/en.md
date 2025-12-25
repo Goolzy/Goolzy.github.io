@@ -44,6 +44,13 @@ The special effects selection UI has been simplified.
 - **Smooth Transitions**: Progress indicator shown during effect processing
 - **Performance Boost**: Bloom/Monochrome filters processed in background
 
+#### Performance & Stability
+Internal app structure has been optimized.
+- **Query Optimization**: Parallel processing for faster clip/filter loading
+- **Code Cleanup**: Removed 12 unused code modules
+- **Dependency Cleanup**: Removed 7 unused libraries
+- **Asset Cleanup**: Removed unused fonts/images (approx. 16MB reduction)
+
 ---
 
 ### v1.0.3 <small style="color:#6b7280;">2025-12-23</small>

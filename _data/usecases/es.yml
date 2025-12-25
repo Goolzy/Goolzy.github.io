@@ -1,0 +1,423 @@
+page:
+  title: "Casos de Uso"
+  intro: "Descubre las diversas formas en que las personas utilizan Inventory en su vida diaria."
+  expand: "Ver más ↓"
+  collapse: "Ocultar ↑"
+  share_title: "Comparte tu uso de Inventory"
+  share_text: "¿Cómo usas Inventory? ¡Esperamos tus ideas creativas!"
+  share_btn: "Compartir mi historia"
+  share_link: "/inventory/suggest/es/"
+  manual_base: "/inventory/manual/es/"
+
+categories:
+  - id: problem-solving
+    title: "Resolución de Problemas - Enfrentando desafíos cotidianos"
+    items:
+      - type: "Resolución"
+        title: "Mi jefe siempre pide datos antiguos de repente"
+        persona: "Miguel (34 años, Gerente de Proyecto)"
+        content: |
+          **Problema**: En las reuniones de planificación trimestral, el jefe pedía datos de hace 2-3 meses. Cada vez tenía que buscar urgentemente en Slack y correos.
+
+          **Solución**: Ahora uso [Papel](/inventory/manual/es/#paper) para registrar decisiones clave y datos de cada reunión. Cuando el jefe los pide, los encuentro en 3 segundos.
+
+          **Resultado**: Los colegas preguntan: "¿Cómo tienes todo tan ordenado?" Ya no paso vergüenza en las reuniones.
+
+      - type: "Resolución"
+        title: "Olvidé el PIN de mi cuenta"
+        persona: "Ana (45 años, Madre de familia)"
+        content: |
+          **Problema**: Cada banco usa PIN diferente, y las reglas de contraseña son distintas. Cuando llamo al banco, olvido cuál era.
+
+          **Solución**: Con [Bloqueo de Documento](/inventory/manual/es/#lock), guardo los PINs de forma segura. Solo yo puedo verlos desbloqueando.
+
+          **Resultado**: Ahora hago trámites bancarios con confianza. No más momentos de pensar "¿Cuál era el PIN?"
+
+      - type: "Resolución"
+        title: "No sé qué comida le di al bebé ayer"
+        persona: "Carmen (32 años, Madre primeriza)"
+        content: |
+          **Problema**: Empezando la alimentación complementaria a los 6 meses. Necesito introducir nuevos alimentos cada 3 días para detectar alergias, pero olvido qué le di.
+
+          **Solución**: Con [Registro](/inventory/manual/es/#log) guardo fotos de cada comida con ingredientes. Ahora veo claramente qué le di y cuándo.
+
+          **Resultado**: En la revisión pediátrica, mostré el registro y el doctor lo elogió. "Esto es mejor que un diario de alimentación."
+
+      - type: "Resolución"
+        title: "El plazo del proyecto está cerca pero no lo sabía"
+        persona: "Daniel (29 años, Diseñador Freelance)"
+        content: |
+          **Problema**: Manejando 5-6 proyectos a la vez. Los plazos a veces se me escapaban y perdía la confianza del cliente.
+
+          **Solución**: Uso [Alarma de Fecha](/inventory/manual/es/#alarm) para cada proyecto. Recibo alertas 7 días, 3 días y 1 día antes.
+
+          **Resultado**: Desde que uso esto, he entregado a tiempo durante 6 meses. Los clientes quedaron tan impresionados que me recomiendan a otros.
+
+      - type: "Resolución"
+        title: "Las contraseñas de todos los sitios son diferentes"
+        persona: "Roberto (52 años, Dueño de pequeña empresa)"
+        content: |
+          **Problema**: Sitios de compras, banca, gobierno... Antes usaba la misma contraseña pero me hackearon. Intenté usar diferentes pero no las recuerdo.
+
+          **Solución**: Las guardo con [Bloqueo de Documento](/inventory/manual/es/#lock). Organizadas por categoría para encontrarlas fácilmente.
+
+          **Resultado**: Ahora puedo tener contraseñas complejas y únicas para cada sitio. Eso es la verdadera seguridad.
+
+      - type: "Resolución"
+        title: "¿Cuándo fue la última revisión del auto?"
+        persona: "Francisco (41 años, Representante de Ventas)"
+        content: |
+          **Problema**: Conduciendo 30,000 km al año, es difícil recordar cuándo cambié aceite o neumáticos.
+
+          **Solución**: Registro cada mantenimiento con [Registro](/inventory/manual/es/#log) y configuro [Alarma de Fecha](/inventory/manual/es/#alarm) para el próximo.
+
+          **Resultado**: Puedo mostrar el historial completo al vender. Obtuve mejor precio porque tenía registros detallados.
+
+      - type: "Resolución"
+        title: "¿Cuándo caduca este medicamento?"
+        persona: "Isabel (67 años, Jubilada)"
+        content: |
+          **Problema**: Tomando 5 medicamentos diferentes. Preocupada por caducidades y reabastecimiento.
+
+          **Solución**: Fotografío cada medicamento y uso [Fecha de Caducidad](/inventory/manual/es/#dates). Me avisa una semana antes.
+
+          **Resultado**: Ahora no tomo medicamentos caducados ni me quedo sin ellos. Mi hija dice que manejo mejor mi salud ahora.
+
+      - type: "Resolución"
+        title: "¿Dónde guardé el certificado de garantía?"
+        persona: "Laura (38 años, Ama de casa)"
+        content: |
+          **Problema**: Cuando los electrodomésticos fallan, nunca encuentro la garantía. Termino pagando reparación aunque esté en garantía.
+
+          **Solución**: Fotografío cada garantía al comprar. Uso [Palabras Clave](/inventory/manual/es/#keyword) como #garantía #Samsung #refrigerador.
+
+          **Resultado**: Busco "garantía refrigerador" y aparece al instante. He ahorrado mucho en reparaciones.
+
+      - type: "Resolución"
+        title: "No recuerdo qué película vi"
+        persona: "Pedro (25 años, Ingeniero de Software)"
+        content: |
+          **Problema**: Veo películas cada fin de semana pero después no recuerdo ni el título. Cuando me preguntan, solo puedo decir "era buena".
+
+          **Solución**: Registro cada película con [Registro](/inventory/manual/es/#log). Guardo cartel, puntuación, escenas favoritas.
+
+          **Resultado**: Cuando alguien pide recomendaciones, las busco por género. Me dicen "eres como una base de datos de cine".
+
+      - type: "Resolución"
+        title: "No sé qué vino pedí la última vez"
+        persona: "Marina (35 años, Gerente de Marketing)"
+        content: |
+          **Problema**: Cuando encuentro un buen vino, quiero recordarlo pero siempre olvido el nombre. Incluso si tomo foto, luego no la encuentro.
+
+          **Solución**: Fotografío las etiquetas y uso [Palabras Clave](/inventory/manual/es/#keyword) con variedad, país, precio, sabor.
+
+          **Resultado**: Ahora tengo mi propia lista de vinos. Mis amigos me piden recomendaciones según su presupuesto.
+
+      - type: "Resolución"
+        title: "¿Cuándo renovar el pasaporte?"
+        persona: "Carlos (44 años, Consultor Internacional)"
+        content: |
+          **Problema**: Viajo frecuentemente. Casi pierdo un vuelo porque el pasaporte caducó sin darme cuenta.
+
+          **Solución**: Registro pasaporte y visas con [Fecha de Caducidad](/inventory/manual/es/#dates). Alertas automáticas 2 meses antes.
+
+          **Resultado**: Ahora nunca me sorprende una caducidad. También registro números de viajero frecuente y membresías de aerolíneas.
+
+      - type: "Resolución"
+        title: "Compré lo mismo dos veces"
+        persona: "Teresa (55 años, Organizadora de eventos)"
+        content: |
+          **Problema**: Comprando cosas para fiestas familiares, a veces compro decoraciones que ya tenía.
+
+          **Solución**: Registro todos mis suministros con [Papel](/inventory/manual/es/#paper). Reviso antes de ir de compras.
+
+          **Resultado**: No más compras duplicadas. Y sé exactamente dónde está cada cosa guardada.
+
+  - id: emotional-experience
+    title: "Experiencias Emocionales - Dando significado a la vida"
+    items:
+      - type: "Emoción"
+        title: "Quiero guardar lo que dice mi hijo antes de olvidarlo"
+        persona: "Lucía (36 años, Madre trabajadora)"
+        content: |
+          Mi hijo de 4 años dice cosas adorables y únicas. Quiero recordarlas pero siempre las olvido.
+
+          Uso [Papel](/inventory/manual/es/#paper) para registrar sus palabras al instante. A veces con foto de su carita.
+
+          Ya tengo 300 "frases memorables". Será el mejor regalo cuando crezca. Lloro de felicidad leyéndolas.
+
+      - type: "Emoción"
+        title: "Registro las cartas de mamá"
+        persona: "Antonio (48 años, Empresario)"
+        content: |
+          Mamá me mandaba cartas cuando trabajaba en el extranjero. Temo que se deterioren con el tiempo.
+
+          Digitalicé todas las cartas con [Papel](/inventory/manual/es/#paper). Puedo ver su letra cuando la extraño.
+
+          Mamá falleció el año pasado. Estas cartas son ahora mi tesoro más preciado.
+
+      - type: "Emoción"
+        title: "Guardando el camino hacia mi sueño"
+        persona: "Sofía (23 años, Aspirante a diseñadora)"
+        content: |
+          Preparándome para mi propia marca. Quiero guardar cada boceto, inspiración y comentario.
+
+          Organizo todo con [Partición](/inventory/manual/es/#partition): inspiración, bocetos, muestras, feedback.
+
+          Cuando me siento desanimada, veo mi progreso desde el principio. Me recuerda cuánto he avanzado.
+
+      - type: "Emoción"
+        title: "Colecciono atardeceres"
+        persona: "Fernando (62 años, Profesor jubilado)"
+        content: |
+          Empecé a fotografiar atardeceres como hobby. Quiero recordar dónde y cuándo vi cada uno.
+
+          Registro cada atardecer con [Registro](/inventory/manual/es/#log). Lugar, clima, mis emociones del momento.
+
+          Mi colección de 500 atardeceres es mi galería personal. Cada uno tiene una historia especial.
+
+      - type: "Emoción"
+        title: "Nuestra historia de amor"
+        persona: "Pablo y Elena (Pareja de 5 años)"
+        content: |
+          Queremos recordar cada momento especial de nuestra relación. Las fotos en el teléfono se pierden entre miles.
+
+          Creamos un espacio compartido con [Registro Compartido](/inventory/manual/es/#-registro-compartido-vs-solo). Cada fecha especial, cada pequeño momento.
+
+          Lo repasamos en cada aniversario. Es nuestro álbum de amor digital.
+
+      - type: "Emoción"
+        title: "Mis plantas son mi familia"
+        persona: "Raquel (29 años, Diseñadora gráfica)"
+        content: |
+          Tengo 47 plantas en casa. Cada una tiene necesidades diferentes de agua y luz.
+
+          Cada planta tiene su [Papel](/inventory/manual/es/#paper) con nombre, fecha de adopción, cuidados especiales.
+
+          Mis amigas dicen que trato mis plantas mejor que algunas personas tratan a sus mascotas. Y tienen razón.
+
+      - type: "Emoción"
+        title: "El progreso de mi perro"
+        persona: "Jorge (33 años, Ingeniero civil)"
+        content: |
+          Max llegó a mi vida hace 2 años. Quiero recordar cada etapa de su crecimiento.
+
+          Con [Registro](/inventory/manual/es/#log) guardo fotos mensuales, visitas al veterinario, trucos aprendidos.
+
+          Ver su transformación de cachorro a adulto me llena de alegría. Es como un álbum de su vida.
+
+      - type: "Emoción"
+        title: "Cada café es una historia"
+        persona: "Natalia (27 años, Barista)"
+        content: |
+          Visito cafeterías por todo el país. Quiero recordar cada lugar especial y qué pedí.
+
+          Registro cada café con [Papel](/inventory/manual/es/#paper). Foto del lugar, del café, notas de sabor.
+
+          Ya tengo 200 cafeterías registradas. Mis seguidores en redes me piden mi "mapa de cafés".
+
+      - type: "Emoción"
+        title: "Mi viaje de pérdida de peso"
+        persona: "Marcos (38 años, Contador)"
+        content: |
+          Decidí cambiar mi vida. Quería documentar cada paso, cada pequeña victoria.
+
+          Registro comidas, ejercicio y pesajes con [Registro](/inventory/manual/es/#log). Fotos semanales del espejo.
+
+          Ver 18 meses de progreso me emociona. Cuando dudo, miro el inicio. Nunca volveré atrás.
+
+      - type: "Emoción"
+        title: "Las recetas de la abuela"
+        persona: "Carmen (42 años, Maestra)"
+        content: |
+          La abuela cocinaba increíble pero nunca escribió sus recetas. Cuando falleció, temí perderlas.
+
+          Grabé a mamá cocinando los platos de la abuela. Todo en [Papel](/inventory/manual/es/#paper) con fotos y notas.
+
+          Ahora enseño a mis hijos. Las recetas de la abuela vivirán por generaciones.
+
+  - id: stories
+    title: "Historias - Cómo Inventory cambió vidas"
+    items:
+      - type: "Historia"
+        title: "Manejando 3 propiedades de alquiler sin estrés"
+        persona: "Alberto (56 años, Médico)"
+        content: |
+          **Situación**: Tengo 3 apartamentos de alquiler. Contratos, reparaciones, pagos... Todo era un caos.
+
+          **Solución**: Con [Partición](/inventory/manual/es/#partition) organizo cada propiedad: contratos, recibos, comunicaciones con inquilinos.
+
+          **Resultado**: Cuando un inquilino pregunta algo, lo encuentro en segundos. Antes me tomaba media hora buscar papeles.
+
+      - type: "Historia"
+        title: "Mi abuelo nunca perdió una cita médica"
+        persona: "Rosa (34 años, Nieta cuidadora)"
+        content: |
+          **Situación**: El abuelo tiene 82 años y múltiples especialistas. Yo manejo todas sus citas y medicamentos.
+
+          **Solución**: Configuré [Alarma de Fecha](/inventory/manual/es/#alarm) para cada cita. También registro resultados con [Registro](/inventory/manual/es/#log).
+
+          **Resultado**: Los médicos me felicitan por tener todo tan organizado. El abuelo está mejor cuidado que nunca.
+
+      - type: "Historia"
+        title: "Mi negocio de pasteles creció gracias a esto"
+        persona: "Patricia (31 años, Pastelera)"
+        content: |
+          **Situación**: Empecé vendiendo pasteles desde casa. Recetas, pedidos, costos... Todo mezclado en mi cabeza.
+
+          **Solución**: Organicé recetas con [Papel](/inventory/manual/es/#paper), pedidos con [Alarma de Fecha](/inventory/manual/es/#alarm).
+
+          **Resultado**: Pasé de 5 pedidos al mes a 50. Nunca olvido una entrega. Los clientes confían en mi profesionalismo.
+
+      - type: "Historia"
+        title: "Sobreviví la planificación de mi boda"
+        persona: "Alejandra (28 años, Novia)"
+        content: |
+          **Situación**: Planificar una boda es un trabajo de tiempo completo. Proveedores, presupuesto, invitados...
+
+          **Solución**: Todo en [Partición](/inventory/manual/es/#partition): venue, catering, vestido, invitaciones. Plazos con [Alarma](/inventory/manual/es/#alarm).
+
+          **Resultado**: Mi organizadora de bodas dijo que nunca vio una novia tan organizada. La boda fue perfecta.
+
+      - type: "Historia"
+        title: "Administro el inventario de mi restaurante"
+        persona: "Miguel (45 años, Restaurantero)"
+        content: |
+          **Situación**: Un restaurante pequeño no justifica un sistema caro. Pero necesito controlar stock y proveedores.
+
+          **Solución**: Uso [Papel](/inventory/manual/es/#paper) para cada producto. [Caducidad](/inventory/manual/es/#dates) para perecederos.
+
+          **Resultado**: Reduje el desperdicio un 30%. Sé exactamente qué pedir y cuándo. Simple pero efectivo.
+
+      - type: "Historia"
+        title: "Documenté toda la renovación de mi casa"
+        persona: "David (40 años, Propietario)"
+        content: |
+          **Situación**: Renovación de 6 meses. Presupuestos, facturas, garantías, antes/después de cada habitación.
+
+          **Solución**: Todo en [Partición](/inventory/manual/es/#partition) por habitación y tipo de documento. Fotos con [Registro](/inventory/manual/es/#log).
+
+          **Resultado**: Cuando algo falla, tengo el contacto del contratista y la garantía al instante. Invaluable.
+
+      - type: "Historia"
+        title: "Mi colección de vinilos está catalogada"
+        persona: "Rodrigo (52 años, Coleccionista)"
+        content: |
+          **Situación**: 2,000 vinilos acumulados en 30 años. Sabía que tenía duplicados pero no sabía cuáles.
+
+          **Solución**: Fotografié cada uno con [Papel](/inventory/manual/es/#paper). Artista, año, estado, precio pagado.
+
+          **Resultado**: Encontré que tenía 50 duplicados. Los vendí y compré vinilos que realmente quería.
+
+      - type: "Historia"
+        title: "Nunca más pierdo facturas para impuestos"
+        persona: "Marta (39 años, Autónoma)"
+        content: |
+          **Situación**: Cada año, buscar facturas para la declaración era una pesadilla. Algunas las había perdido.
+
+          **Solución**: Fotografío cada factura inmediatamente. Las organizo con [Palabras Clave](/inventory/manual/es/#keyword) por tipo de gasto.
+
+          **Resultado**: Mi contable dice que soy su cliente más organizada. Y deduzco más porque no pierdo nada.
+
+      - type: "Historia"
+        title: "Coordino un equipo de voluntarios"
+        persona: "Elena (50 años, Coordinadora de ONG)"
+        content: |
+          **Situación**: Manejo 30 voluntarios para un banco de alimentos. Horarios, contactos, certificaciones...
+
+          **Solución**: Cada voluntario tiene un [Papel](/inventory/manual/es/#paper). Comparto información con [Registro Compartido](/inventory/manual/es/#-registro-compartido-vs-solo).
+
+          **Resultado**: La coordinación mejoró muchísimo. Los voluntarios se sienten valorados porque tengo sus datos al día.
+
+      - type: "Historia"
+        title: "Mi hijo estudió mejor para sus exámenes"
+        persona: "Beatriz (44 años, Madre)"
+        content: |
+          **Situación**: Mi hijo tenía problemas organizando el estudio para exámenes. Siempre olvidaba fechas.
+
+          **Solución**: Le enseñé a usar [Alarma de Fecha](/inventory/manual/es/#alarm) para exámenes y [Papel](/inventory/manual/es/#paper) para apuntes clave.
+
+          **Resultado**: Sus notas mejoraron notablemente. Dice que ahora sabe exactamente qué estudiar y cuándo.
+
+  - id: creative-uses
+    title: "Usos Creativos - Posibilidades inesperadas"
+    items:
+      - type: "Creativo"
+        title: "Mi diario de sueños"
+        persona: "Andrea (26 años, Estudiante de psicología)"
+        content: |
+          Me interesa el análisis de sueños. Quería registrarlos pero siempre olvidaba detalles al despertar.
+
+          Tengo Inventory en la mesita de noche. Al despertar, registro inmediatamente con [Papel](/inventory/manual/es/#paper).
+
+          Después de un año, encontré patrones fascinantes. Mi tesis de grado será sobre esto.
+
+      - type: "Creativo"
+        title: "Catálogo de mis obras de arte"
+        persona: "Javier (35 años, Artista plástico)"
+        content: |
+          Tengo más de 200 obras en 10 años. Dimensiones, técnica, precio, ubicación... Era imposible rastrear.
+
+          Cada obra tiene su [Papel](/inventory/manual/es/#paper). Foto de alta calidad, todos los detalles, historial de ventas.
+
+          Cuando una galería pregunta por mis obras, envío información profesional al instante.
+
+      - type: "Creativo"
+        title: "Mi archivo de tipografías"
+        persona: "Daniela (29 años, Diseñadora gráfica)"
+        content: |
+          Colecciono tipografías inspiradoras. Capturas de carteles, empaques, señalización...
+
+          Las organizo con [Palabras Clave](/inventory/manual/es/#keyword): estilo, uso, época.
+
+          Es mi biblioteca de referencia personal. Cuando necesito inspiración, la encuentro en segundos.
+
+      - type: "Creativo"
+        title: "Documentando mi jardín estación por estación"
+        persona: "Roberto (58 años, Jardinero aficionado)"
+        content: |
+          Mi jardín cambia dramáticamente cada estación. Quiero recordar qué planté dónde y cómo floreció.
+
+          Cada planta tiene [Registro](/inventory/manual/es/#log) mensual. Foto, estado, cuidados aplicados.
+
+          Ahora planifico mejor cada temporada. Sé exactamente qué funcionó y qué no en años anteriores.
+
+      - type: "Creativo"
+        title: "Mi registro de meditación"
+        persona: "Carolina (32 años, Instructora de yoga)"
+        content: |
+          Medito diariamente. Quería registrar duración, técnica, y cómo me sentía después.
+
+          Con [Registro](/inventory/manual/es/#log) guardo cada sesión. También guardo frases inspiradoras que encuentro.
+
+          Puedo ver mi progreso de 10 minutos a 45. También comparto técnicas con mis alumnos.
+
+      - type: "Creativo"
+        title: "Mi lista de lugares por visitar"
+        persona: "Tomás (27 años, Diseñador industrial)"
+        content: |
+          Cuando veo un lugar interesante en redes o películas, quiero guardarlo para visitarlo algún día.
+
+          Cada lugar con [Papel](/inventory/manual/es/#paper). Foto, ubicación, por qué quiero ir, mejor época para visitar.
+
+          Mi lista de "algún día" ya tiene 150 lugares. Cada viaje que planifico, consulto mi inventario de sueños.
+
+      - type: "Creativo"
+        title: "Archivo de mi banda"
+        persona: "Luis (24 años, Guitarrista)"
+        content: |
+          Mi banda tiene 5 años. Letras, progresiones, demos, carteles de conciertos... Todo disperso.
+
+          Centralicé todo en [Partición](/inventory/manual/es/#partition). Canciones, merchandising, contactos, historial de shows.
+
+          Cuando una disquera preguntó por nuestra historia, teníamos todo profesionalmente documentado.
+
+      - type: "Creativo"
+        title: "Mi guía de restaurantes personalizada"
+        persona: "Ana María (37 años, Crítica gastronómica)"
+        content: |
+          Como fuera frecuentemente. Google Maps no me deja anotar qué pedí o cómo estaba realmente.
+
+          Cada restaurante con [Papel](/inventory/manual/es/#paper). Fotos de platos, precios, ambiente, qué pedir y qué evitar.
+
+          Mis amigos siempre me piden recomendaciones. Les comparto exactamente qué ordenar en cada lugar.

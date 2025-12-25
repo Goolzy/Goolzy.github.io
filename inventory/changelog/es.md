@@ -44,6 +44,13 @@ La interfaz de selección de efectos especiales se ha simplificado.
 - **Transiciones suaves**: Indicador de progreso durante el procesamiento
 - **Mejora de rendimiento**: Filtros Bloom/Monocromo procesados en segundo plano
 
+#### Rendimiento y estabilidad
+La estructura interna de la aplicación ha sido optimizada.
+- **Optimización de consultas**: Procesamiento paralelo para carga más rápida de clips/filtros
+- **Limpieza de código**: 12 módulos de código no utilizados eliminados
+- **Limpieza de dependencias**: 7 bibliotecas no utilizadas eliminadas
+- **Limpieza de recursos**: Fuentes/imágenes no utilizadas eliminadas (reducción de aprox. 16MB)
+
 ---
 
 ### v1.0.3 <small style="color:#6b7280;">2025-12-23</small>

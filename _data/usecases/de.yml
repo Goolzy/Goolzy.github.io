@@ -1,0 +1,525 @@
+page:
+  title: "Inventory Anwendungsfälle"
+  intro: "Entdecken Sie die Möglichkeiten von Inventory durch 100 verschiedene Anwendungsfälle."
+  expand: "Mehr anzeigen ↓"
+  collapse: "Weniger anzeigen ↑"
+  share_title: "Teilen Sie Ihre Inventory-Nutzung"
+  share_text: "Wie nutzen Sie Inventory? Wir freuen uns auf Ihre kreativen Ideen!"
+  share_btn: "Geschichte teilen"
+  share_link: "/inventory/suggest/de/"
+  manual_base: "/inventory/manual/de/"
+
+categories:
+  - id: problem-solving
+    title: "Problemlösung - Alltägliche Herausforderungen meistern"
+    items:
+      - type: "Problemlösung"
+        title: "Lebensmittel verderben ständig im Kühlschrank"
+        persona: "Sarah (32, Berufstätige Mutter)"
+        content: |
+          <strong>Problem</strong>: Mit meinem vollen Terminkalender vergesse ich oft das Verfallsdatum und werfe verdorbene Lebensmittel weg. Besonders Tofu und Milch verderben innerhalb von Tagen...
+
+          <strong>Lösung</strong>: Ich habe für jede Zutat mit <a href="/inventory/manual/de/#paper">Papier</a> ein Element erstellt und <a href="/inventory/manual/de/#dates">Ablaufdaten</a> festgelegt. Jetzt bekomme ich 3 Tage vor Ablauf eine Benachrichtigung, sodass ich rechtzeitig kochen oder einfrieren kann.
+
+          <strong>Ergebnis</strong>: Lebensmittelverschwendung um 80% reduziert. 150€ bei den monatlichen Lebensmittelkosten gespart!
+
+      - type: "Problemlösung"
+        title: "Zu viele Abonnements zum Verwalten"
+        persona: "Michael (28, IT-Entwickler)"
+        content: |
+          <strong>Problem</strong>: Netflix, YouTube Premium, Notion, GitHub... Ich habe über 10 Abonnements mit verschiedenen Verlängerungsdaten. Manche nutze ich nicht mal mehr, zahle aber weiter.
+
+          <strong>Lösung</strong>: Alle Abonnements in Inventory registriert mit <a href="/inventory/manual/de/#alarm">Datumsalarmen</a> 7 Tage vor Verlängerung. Monatliche Gebühren als <a href="/inventory/manual/de/#keyword">Schlüsselwörter</a> für schnellen Überblick hinzugefügt.
+
+          <strong>Ergebnis</strong>: 3 ungenutzte Abonnements gekündigt, 40€/Monat gespart. Keine Überraschungsabbuchungen mehr!
+
+      - type: "Problemlösung"
+        title: "Impftermine der Kinder verpassen"
+        persona: "Jennifer (35, Berufstätige Mutter von Zwei)"
+        content: |
+          <strong>Problem</strong>: Mit zwei Kindern mit unterschiedlichen Impfplänen wurde ich oft verwirrt. Manchmal rief die Praxis an, wenn es schon überfällig war.
+
+          <strong>Lösung</strong>: Separate <a href="/inventory/manual/de/#partition">Partitionen</a> für jedes Kind erstellt und Impftermine mit <a href="/inventory/manual/de/#alarm">Datumsalarmen</a> verwaltet. Abschluss im <a href="/inventory/manual/de/#log">Log</a> notiert.
+
+          <strong>Ergebnis</strong>: Keinen einzigen Impftermin mehr verpasst. Kann mich auf Arztbesuche vorbereiten!
+
+      - type: "Problemlösung"
+        title: "Umzugschaos - nichts wiederfinden"
+        persona: "David (27, Doktorand)"
+        content: |
+          <strong>Problem</strong>: Ich ziehe oft für das Studium um. Jedes Mal verliere ich den Überblick, welche Kiste was enthält. Selbst mit Nummern öffne ich am Ende alle.
+
+          <strong>Lösung</strong>: Vor dem Packen habe ich den Inhalt jeder Kiste fotografiert und in Inventory registriert. Mit <a href="/inventory/manual/de/#keyword">Schlüsselwörtern</a> wie "Kiste1", "Küche" markiert.
+
+          <strong>Ergebnis</strong>: Auspackzeit halbiert. "Wo ist die Schere?" - sofortige Suche!
+
+      - type: "Problemlösung"
+        title: "Quittungsverwaltung ist ein Albtraum"
+        persona: "Emma (40, Kleinunternehmerin)"
+        content: |
+          <strong>Problem</strong>: Muss Quittungen für Geschäftsausgaben aufbewahren, aber Papierquittungen verblassen und gehen verloren. Steuerzeit ist immer stressig...
+
+          <strong>Lösung</strong>: Direkt nach der Zahlung fotografiere ich Quittungen und registriere sie in Inventory. Mit <a href="/inventory/manual/de/#keyword">Schlüsselwörtern</a> wie "Ausgabe", "2024", "Verpflegung" für einfache Kategorisierung markiert.
+
+          <strong>Ergebnis</strong>: Fast keine Papierquittungen mehr nötig. Zur Steuerzeit einfach suchen und finden. Mein Steuerberater liebt es!
+
+      - type: "Problemlösung"
+        title: "Analoge Fotos organisieren"
+        persona: "Hannah (26, Fotografie-Enthusiastin)"
+        content: |
+          <strong>Problem</strong>: Wenn ich Filmfotos entwickle, vergesse ich wann und wo ich sie aufgenommen habe. Abzüge stapeln sich ohne Organisation.
+
+          <strong>Lösung</strong>: Nach jeder Entwicklung registriere ich repräsentative Aufnahmen in Inventory mit <a href="/inventory/manual/de/#keyword">Schlüsselwörtern</a> für Ort, Datum und Filmtyp. Labor-Info kommt ins <a href="/inventory/manual/de/#log">Log</a>.
+
+          <strong>Ergebnis</strong>: Mein eigenes Filmarchiv aufgebaut. Kann sofort Fotos von einer Reise vor 2 Jahren finden!
+
+      - type: "Problemlösung"
+        title: "Wäschepflege ist kompliziert"
+        persona: "Kevin (29, Fashion-Blogger)"
+        content: |
+          <strong>Problem</strong>: Verschiedene Kleidung braucht verschiedene Pflege - manche nur Reinigung, Pullover nur Handwäsche. Habe Kleidung durch falsche Methoden ruiniert.
+
+          <strong>Lösung</strong>: Kleidung mit besonderer Pflege in Inventory registriert. Pflegeanleitung im <a href="/inventory/manual/de/#log">Log</a>. Reinigungsabholtermine mit <a href="/inventory/manual/de/#alarm">Datumsalarmen</a> verfolgt.
+
+          <strong>Ergebnis</strong>: Kleidungsschäden drastisch reduziert. Keine Säumnisgebühren mehr für vergessene Reinigung!
+
+      - type: "Problemlösung"
+        title: "Zu viele Nahrungsergänzungsmittel"
+        persona: "Patricia (55, Gesundheitsbewusst)"
+        content: |
+          <strong>Problem</strong>: Der Arzt empfahl 5 verschiedene Präparate. Morgens/abends verwechsle ich die Dosen und verpasse Nachbestellungen.
+
+          <strong>Lösung</strong>: Jedes Präparat mit <a href="/inventory/manual/de/#paper">Papier</a> registriert. Dosieranleitung im <a href="/inventory/manual/de/#log">Log</a>, geschätztes Verbrauchsdatum als <a href="/inventory/manual/de/#dates">Ablauf</a>.
+
+          <strong>Ergebnis</strong>: Befolge den Plan jetzt perfekt. Bekomme Alarme bevor etwas ausgeht und kann rechtzeitig nachbestellen!
+
+      - type: "Problemlösung"
+        title: "Garantie abgelaufen - teure Reparatur"
+        persona: "James (34, Frisch verheiratet)"
+        content: |
+          <strong>Problem</strong>: Klimaanlage kaputt und Garantie war einen Monat vorher abgelaufen. Konnte nicht mal die Garantiekarte finden. 300€ für Reparatur bezahlt.
+
+          <strong>Lösung</strong>: Alle Haushaltsgeräte in Inventory registriert mit Garantiefotos. <a href="/inventory/manual/de/#dates">Ablaufdaten</a> für Garantieende mit 1-Monat-Voralarm gesetzt.
+
+          <strong>Ergebnis</strong>: Jetzt beantrage ich Inspektionen oder prüfe Verlängerungen vor Garantieablauf. Waschmaschine kostenlos repariert bekommen!
+
+      - type: "Problemlösung"
+        title: "Geschenkkarten laufen immer ab"
+        persona: "Jessica (25, Studentin)"
+        content: |
+          <strong>Problem</strong>: Geburtstags- und Feiertagsgeschenkkarten verschwinden in Nachrichten und laufen ungenutzt ab.
+
+          <strong>Lösung</strong>: Geschenkkarten sofort screenshotten und in Inventory registrieren mit <a href="/inventory/manual/de/#dates">Ablaufdaten</a>. Eine Woche vor Ablauf Alarm.
+
+          <strong>Ergebnis</strong>: Eine 30€ Starbucks-Geschenkkarte gerettet! Nutze jetzt die Geschenke die ich bekomme.
+
+      - type: "Problemlösung"
+        title: "Autowartungshistorie verstreut"
+        persona: "Robert (42, Vertriebsmitarbeiter)"
+        content: |
+          <strong>Problem</strong>: Kann mich nicht erinnern wann und wo das Auto gewartet wurde. Verschiedene Werkstätten haben verschiedene Aufzeichnungen. Verpasse Ölwechseltermine.
+
+          <strong>Lösung</strong>: Auto in Inventory registriert, jeden Service im <a href="/inventory/manual/de/#log">Log</a> eingetragen. Nächste Servicetermine als <a href="/inventory/manual/de/#alarm">Datumsalarme</a> gesetzt.
+
+          <strong>Ergebnis</strong>: Komplette Wartungshistorie aufgebaut. Beim Verkauf brachte die Historie einen besseren Preis!
+
+      - type: "Problemlösung"
+        title: "Wichtige Dokumente überall verstreut"
+        persona: "Michelle (38, Freiberuflerin)"
+        content: |
+          <strong>Problem</strong>: Verträge, Versicherungspolicen, Grundbuchauszüge... wichtige Dokumente überall verteilt. Musste mal eine Ersatzkopie beantragen weil Original nicht auffindbar.
+
+          <strong>Lösung</strong>: Alle wichtigen Dokumente fotografiert und in Inventory registriert mit <a href="/inventory/manual/de/#lock">Dokumentensperre</a> für Sicherheit. Lagerort in <a href="/inventory/manual/de/#keyword">Schlüsselwörtern</a> notiert.
+
+          <strong>Ergebnis</strong>: "Wo ist die Urkunde?" → Suche → Lagerort gefunden. 30 Sekunden!
+
+      - type: "Problemlösung"
+        title: "Bücher stapeln sich ungelesen"
+        persona: "Lisa (30, Marketing)"
+        content: |
+          <strong>Problem</strong>: Beim Kaufen begeistert, aber zuhause stapeln sie sich ungelesen. Habe mal das gleiche Buch zweimal gekauft.
+
+          <strong>Lösung</strong>: Bücher direkt nach Kauf registrieren. <a href="/inventory/manual/de/#dates">Startdatum</a> beim Beginnen setzen, Abschluss im <a href="/inventory/manual/de/#log">Log</a> notieren. Ungelesene Liste auf einen Blick sichtbar.
+
+          <strong>Ergebnis</strong>: Statt überwältigt zu sein, bin ich motiviert. 12 Bücher dieses Jahr gelesen - mehr als letztes Jahr insgesamt!
+
+      - type: "Problemlösung"
+        title: "Bringe meine Pflanzen um"
+        persona: "Amy (24, Berufseinsteigerin)"
+        content: |
+          <strong>Problem</strong>: Wollte Zimmerpflanzen aber vergaß zu gießen oder goss zu viel. Alle starben.
+
+          <strong>Lösung</strong>: Jede Pflanze in Inventory registriert mit Gieß-Erinnerungen via <a href="/inventory/manual/de/#alarm">Datumsalarm</a>. Umtopf- und Düngedaten im <a href="/inventory/manual/de/#log">Log</a>.
+
+          <strong>Ergebnis</strong>: Meine Monstera lebt seit 6 Monaten! Sogar 3 neue Blätter gewachsen!
+
+      - type: "Problemlösung"
+        title: "Passwort-Chaos"
+        persona: "Georg (50, Beamter)"
+        content: |
+          <strong>Problem</strong>: Verschiedene Passwörter für jede Seite, kann mir keine merken. Auf Klebezetteln fühlt sich unsicher an...
+
+          <strong>Lösung</strong>: Kontoinformationen in Inventory registriert mit <a href="/inventory/manual/de/#lock">Dokumentensperre</a>. Nur Passwort-Hinweise gespeichert, echte Passwörter nutzen Musterkombinationen.
+
+          <strong>Ergebnis</strong>: Kein "Passwort vergessen" mehr klicken. Sichere und bequeme Verwaltung!
+
+      - type: "Problemlösung"
+        title: "Familien-Vorsorgeuntersuchungen verpassen"
+        persona: "Helene (58, Hausfrau)"
+        content: |
+          <strong>Problem</strong>: Mann, Schwiegermutter, ich selbst... alle verschiedene Untersuchungstermine. Einmal die kostenlose Vorsorge verpasst und selbst zahlen müssen.
+
+          <strong>Lösung</strong>: Vorsorge-Termine jedes Familienmitglieds registriert mit <a href="/inventory/manual/de/#alarm">Datumsalarmen</a> zum Periodenbeginn.
+
+          <strong>Ergebnis</strong>: Keine Vorsorge für die ganze Familie mehr verpasst. Über 500€ jährlich bei Gesundheitskosten gespart!
+
+      - type: "Problemlösung"
+        title: "Tierarztunterlagen verstreut"
+        persona: "Mina (31, Katzenbesitzerin)"
+        content: |
+          <strong>Problem</strong>: Zwei Katzen mit verschiedenen Impfplänen und Tierarztunterlagen überall. Neue Tierärzte fragen immer nach Vorgeschichte und ich finde nichts.
+
+          <strong>Lösung</strong>: <a href="/inventory/manual/de/#partition">Partitionen</a> für jede Katze erstellt. Jeden Tierarztbesuch im <a href="/inventory/manual/de/#log">Log</a>. Nächste Impfungen mit <a href="/inventory/manual/de/#alarm">Datumsalarmen</a>.
+
+          <strong>Ergebnis</strong>: Tierärztin lobte wie organisiert ich bin. Im Notfall kann ich sofort Unterlagen zeigen. Beruhigend!
+
+      - type: "Problemlösung"
+        title: "Weinempfehlungen vergessen"
+        persona: "Chris (36, Wein-Anfänger)"
+        content: |
+          <strong>Problem</strong>: Vergesse Namen von Weinen die mir in Weinbars geschmeckt haben. Im Laden greife ich dann irgendwas.
+
+          <strong>Lösung</strong>: Weinetiketten fotografieren und in Inventory registrieren. Verkostungsnotizen, Paarungen, Preise im <a href="/inventory/manual/de/#log">Log</a>. <a href="/inventory/manual/de/#keyword">Schlüsselwörter</a> wie "rot", "täglich", "Geschenk" markieren.
+
+          <strong>Ergebnis</strong>: Eigene Weindatenbank aufgebaut. "Was hatten wir am Jahrestag?" - sofort gefunden!
+
+      - type: "Problemlösung"
+        title: "Trainingsroutine nicht durchhalten"
+        persona: "Jason (29, Büroangestellter)"
+        content: |
+          <strong>Problem</strong>: 3-Monats-Abo fürs Studio, gehe einen Monat fleißig, dann höre ich auf. Keine Motivation und ohne Aufzeichnungen kein Fortschritt sichtbar.
+
+          <strong>Lösung</strong>: Jede Übungsart registrieren und Gewichte/Wiederholungen im <a href="/inventory/manual/de/#log">Log</a>. Die wachsenden Aufzeichnungen aufeinanderfolgender Besuche motivieren.
+
+          <strong>Ergebnis</strong>: Fortschritt von 40kg auf 70kg Bankdrücken ist dokumentiert. Aufzeichnungen sehen motiviert mich!
+
+      - type: "Problemlösung"
+        title: "Meeting-Zusagen vergessen"
+        persona: "Susan (33, Teamleiterin)"
+        content: |
+          <strong>Problem</strong>: Sage im Meeting "Ich habe den Bericht nächste Woche fertig" und vergesse es dann. Unangenehm wenn jemand fragt "Ist das fertig?"
+
+          <strong>Lösung</strong>: Meeting-Zusagen sofort registrieren mit <a href="/inventory/manual/de/#alarm">Datumsalarmen</a> für Tag-vorher-Erinnerung. Im <a href="/inventory/manual/de/#log">Log</a> notieren wenn erledigt!
+
+          <strong>Ergebnis</strong>: "Susan liefert immer was sie verspricht" - das ist jetzt mein Ruf. Vertrauen aufgebaut!
+
+  - id: emotional-experience
+    title: "Emotionale Erfahrungen - Dem Leben Bedeutung geben"
+    items:
+      - type: "Emotionale Erfahrung"
+        title: "Babys erste Worte und Schritte festhalten"
+        persona: "Grace (33, Junge Mutter)"
+        content: |
+          Mein 18 Monate alter Sohn sagte zum ersten Mal "Mama". Mein Herz fühlte sich an als würde es platzen.
+
+          Ich habe den Moment auf Video aufgenommen, aber das war nicht genug. Ich wollte die Emotionen, den Kontext, was am Tag davor passiert war, festhalten...
+
+          In Inventory habe ich das Video mit einem <a href="/inventory/manual/de/#log">Log</a>-Eintrag gespeichert, der jedes Detail dieses Tages festhält. Als Papa nach Hause kam und er wieder "Mama" sagte, wie ich abends weinte...
+
+          Fünf Jahre später, als mein Sohn eingeschult wurde, habe ich diese Aufzeichnungen wieder gelesen. Die Emotionen kamen zurück. Inventory wurde unsere Familienkapsel.
+
+      - type: "Emotionale Erfahrung"
+        title: "Omas Rezepte für immer bewahren"
+        persona: "Linda (45, Familienmatriarchin)"
+        content: |
+          Nachdem meine Schwiegermutter krank wurde, machte ich mir Sorgen um die Familienrezepte die seit Generationen weitergegeben wurden. Wenn ich fragte "Wie machen Sie diese Brühe?", sagte sie nur "ungefähr so viel"...
+
+          Ich setzte mich neben sie, filmte sie beim Kochen und schrieb alles genau so auf wie sie es sagte im <a href="/inventory/manual/de/#log">Log</a>. "Drei Fingerbreit Chiliflocken", "Sojasoße nach und nach hinzufügen"...
+
+          Nach ihrem Tod lese ich diese Aufzeichnungen immer wenn ich Familiengerichte zubereite. Ich kann ihre Stimme fast hören. Jetzt werde ich dieses Inventory an meine Schwiegertochter weitergeben.
+
+      - type: "Emotionale Erfahrung"
+        title: "Unsere gemeinsame Erinnerungskarte erstellen"
+        persona: "David & Sarah (28, Paar)"
+        content: |
+          Drei Jahre zusammen. Das Café wo wir uns zum ersten Mal an den Händen hielten, der Park des ersten Kusses, das Restaurant des Antrags... wir haben unsere besonderen Orte, aber ich sorgte mich dass wir sie mit der Zeit vergessen.
+
+          'Unsere Orte' in Inventory mit <a href="/inventory/manual/de/#-geteiltes-log-vs-einzellog">Geteiltem Log</a> erstellt. Nach jedem Date fügen wir Fotos hinzu und dokumentieren unsere Gespräche und Gefühle. Gemeinsames Dokumentieren verdoppelt die Erinnerungen.
+
+          Diese Aufzeichnungen kommen in unser Hochzeitsvideo. In Jahren werden wir uns noch erinnern wie wir begannen.
+
+      - type: "Emotionale Erfahrung"
+        title: "Zeit mit meinem Seniorhund dokumentieren"
+        persona: "Chelsea (27, Hundebesitzerin)"
+        content: |
+          Mein 9-jähriger Hund 'Buddy' und ich sind schon lange zusammen. Das Wissen um die begrenzte Zeit macht jeden Tag kostbar.
+
+          Jeden Tag poste ich Buddys Fotos in Inventory. Was er aß, was wir auf Spaziergängen sahen, sein Ausdruck vor dem Schlafengehen. Ich schreibe es wie ein Tagebuch im <a href="/inventory/manual/de/#log">Log</a>.
+
+          Ein Freund fragte "Warum machst du das jeden Tag?" Ich antwortete: "Wenn Buddy nicht mehr da ist, möchte ich mich erinnern wie glücklich er war." Es ist traurig, aber diese Aufzeichnungen werden später trösten.
+
+      - type: "Emotionale Erfahrung"
+        title: "Vaters verblasste Fotos wiederbeleben"
+        persona: "Thomas (40, Sohn)"
+        content: |
+          Beim Aufräumen von Vaters Arbeitszimmer fand ich Fotos aus den 1970ern. Verblasst und zerknittert, aber mit meinem jungen Vater darauf.
+
+          Ich scannte sie digital und registrierte sie in Inventory. Für jedes Foto fragte ich meinen Vater und notierte seine Geschichten im <a href="/inventory/manual/de/#log">Log</a>. "Das war der Anzug vom ersten Gehalt", "Das war unsere Hochzeitsreise aufs Land"...
+
+          Zu seinem 60. Geburtstag machte ich ein Video aus diesen Aufzeichnungen. Er weinte. "Wann hast du das alles gefragt?" Es war das bedeutungsvollste Geschenk.
+
+      - type: "Emotionale Erfahrung"
+        title: "Meine Wachstumsreise dokumentieren"
+        persona: "Sophie (23, Berufsanfängerin)"
+        content: |
+          Jobsuche. Jede Absage zerstörte mein Selbstvertrauen.
+
+          Erstellte ein 'Wachstumstagebuch' in Inventory. Jede kleine Leistung festhalten. "30 Minuten Englisch-Konversation heute", "Portfolio mit Feedback aktualisiert", "Interviewer mochte meine Vorstellung"...
+
+          Nach 3 Monaten hatten sich Aufzeichnungen angesammelt. An Absagetagen lese ich alte Einträge und tanke Kraft. "Ich bin so weit gewachsen." Als ich endlich die Zusage bekam, schrieb ich "Angenommen!" ins <a href="/inventory/manual/de/#log">Log</a>. Es war der hellste Eintrag überhaupt.
+
+      - type: "Emotionale Erfahrung"
+        title: "Momente mit Musik dokumentieren"
+        persona: "Jake (35, Musikliebhaber)"
+        content: |
+          Musik hat die Kraft Erinnerungen zurückzubringen. Bestimmte Lieder transportieren mich zu bestimmten Momenten.
+
+          Erstellte 'Lebens-OST' in Inventory. Für bedeutende Momente registriere ich das spielende Lied und dokumentiere den Moment im <a href="/inventory/manual/de/#log">Log</a>. Das Lied am ersten Arbeitstag, das Lied das mich nach einer Trennung tröstete...
+
+          An schweren Tagen spiele ich diese Playlist und lese die Geschichten zu jedem Lied. Mein Lebens-Soundtrack wird immer reicher.
+
+      - type: "Emotionale Erfahrung"
+        title: "Handgeschriebene Briefe digital bewahren"
+        persona: "Mary (29, Lehrerin)"
+        content: |
+          Ich habe noch Briefe von meiner ersten Klasse vor 10 Jahren. Kinderschrift "Ich hab Sie lieb Frau Lehrerin". Das Papier altert und es bricht mir das Herz.
+
+          Ich fotografierte jeden Brief und lud ihn in Inventory hoch. Im <a href="/inventory/manual/de/#log">Log</a> schrieb ich Erinnerungen an jedes Kind. "Dieses war erst schüchtern wurde aber am aktivsten", "Diesen Brief bekam ich am Abschlusstag"...
+
+          An schwierigen Tagen öffne ich diese Aufzeichnungen. Die Liebe der Kinder kommt durch und gibt mir Kraft. Deshalb bin ich Lehrerin.
+
+      - type: "Emotionale Erfahrung"
+        title: "Mein Weg zur Mutterschaft dokumentieren"
+        persona: "Yuna (32, Werdende Mutter)"
+        content: |
+          20 Wochen schwanger. Jeder Tag bringt etwas Neues während mein Bauch wächst. Erste Tritte, erster Ultraschall, Namenskandidaten...
+
+          Erstellte 'Warten aufs Baby' Tagebuch in Inventory. Bei jedem Termin lade ich Ultraschallbilder hoch und dokumentiere meine Gefühle im <a href="/inventory/manual/de/#log">Log</a>. "Heute geweint als ich den Herzschlag hörte", "Baby fängt an zu treten! Papa hat es auch gespürt"...
+
+          Wenn mein Kind groß ist, zeige ich diese Aufzeichnungen. "So haben Mama und Papa auf dich gewartet."
+
+      - type: "Emotionale Erfahrung"
+        title: "Meinen Weg zu Träumen festhalten"
+        persona: "Junho (26, Angehender Autor)"
+        content: |
+          Ich träume davon eines Tages einen Roman zu veröffentlichen. Noch unbekannt, aber ich schreibe jeden Tag ein bisschen.
+
+          Erstellte 'Autorenreise' in Inventory. Wenn Inspiration kommt, registriere ich mit <a href="/inventory/manual/de/#paper">Papier</a> und führe ein Schreibtagebuch im <a href="/inventory/manual/de/#log">Log</a>. "Heute 3 Seiten geschrieben", "Charaktername entschieden", "Schluss geändert"...
+
+          Wenn mein Buch erscheint, möchte ich diese Aufzeichnungen teilen. "Hier ist die Reise zum ersten Satz."
+
+  - id: story
+    title: "Geschichten - Wie Inventory Leben veränderte"
+    items:
+      - type: "Geschichte"
+        title: "Die verlorene Tasche die wiedergefunden wurde"
+        persona: "Seunghyun (29, Reisender)"
+        content: |
+          Ich war auf Backpacking-Tour durch Europa. Verlor meine Tasche in der Pariser Metro. Pass, Karten, Kamera... alles drin.
+
+          Zum Glück hatte ich alle Tascheninhalte in Inventory registriert. Auf der Polizeistation, als man fragte "Was war in der Tasche?", suchte ich nach <a href="/inventory/manual/de/#keyword">Schlüsselwörtern</a> und zeigte eine vollständige Liste. Sogar meine Passnummer war dokumentiert.
+
+          Zwei Wochen später wurde die Tasche gefunden! Die Polizei sagte: "Die detaillierte Liste machte die Überprüfung einfach." Inventory war mein Retter.
+
+      - type: "Geschichte"
+        title: "Nach 10 Jahren wiedervereint"
+        persona: "Jihyun (35, Suchende)"
+        content: |
+          Ein Freund wechselte in der Schule die Schule. Danach verloren wir den Kontakt. Manchmal dachte ich an ihn.
+
+          Ich ordnete Erinnerungen mit diesem Freund in Inventory. Im <a href="/inventory/manual/de/#log">Log</a> dokumentierte ich "Foto in Schuluniform", "Lieder die er mochte", "letzter Tag den wir uns sahen".
+
+          Eines Tages teilte ich diese Aufzeichnungen in Social Media. "Kennt jemand diesen Freund?" Erstaunlicherweise meldete sich ein Freund des Freundes. Nach 10 Jahren wiedervereint. Inventory baute die Brücke.
+
+      - type: "Geschichte"
+        title: "Schatz in Großvaters Nachlass gefunden"
+        persona: "Taewoo (33, Enkel)"
+        content: |
+          Nach Großvaters Tod sortierten wir seine Sachen. Viele alte Gegenstände die ich fast weggeworfen hätte ohne ihre Bedeutung zu kennen.
+
+          Ich fotografierte alles und registrierte es in Inventory, fragte dann meinen Vater zu jedem Stück und dokumentierte im <a href="/inventory/manual/de/#log">Log</a>. "Das war Großvaters erste Uhr", "Das wurde im Krieg benutzt"...
+
+          Dann fand ich ein altes Dokument. Es stellte sich heraus: 70 Jahre alte Papiere über seine Verdienste im Widerstand! Wir kontaktierten die Behörden und Großvaters Beitrag wurde gewürdigt. Wäre für immer verloren gewesen wenn wir es weggeworfen hätten.
+
+      - type: "Geschichte"
+        title: "Vom Hobbyisten zum Community-Leiter"
+        persona: "Seojun (24, LEGO-Sammler)"
+        content: |
+          Ich sammle LEGO-Sets. Anfangs nur zum Spaß, aber es wurde schwer den Überblick zu behalten. Wurde über meine Sammlung verwirrt.
+
+          Begann alle LEGO-Sets in Inventory zu registrieren. Kaufpreis, Geschäft, Baustatus im <a href="/inventory/manual/de/#log">Log</a>, Serie und Teilezahl in <a href="/inventory/manual/de/#keyword">Schlüsselwörtern</a> markiert.
+
+          Ein Jahr später sah die LEGO-Community mein Inventory und meldete sich. "Du bist so organisiert. Komm in unsere Gruppe." Jetzt bin ich Admin einer 500-Mitglieder-Community. Dokumentationsgewohnheit machte aus einem Hobby fast einen Beruf.
+
+      - type: "Geschichte"
+        title: "Familien-Kochwettbewerb"
+        persona: "Sua (40, Mutter von Drei)"
+        content: |
+          Meine drei Kinder interessierten sich fürs Kochen. Also starteten wir einen wöchentlichen "Familien-Kochwettbewerb."
+
+          Jede Woche werden Gerichte in Inventory registriert, Familie stimmt ab und bewertet via <a href="/inventory/manual/de/#-geteiltes-log-vs-einzellog">Geteiltes Log</a>. "Bruders Pasta zu salzig", "Jüngstes Salat ist hübsch" - ehrliche Bewertungen sammeln sich.
+
+          Nach einem Jahr erstellten wir aus den Aufzeichnungen "Unser Familienkochbuch". Selbst gemacht und an Großeltern verschenkt - sie liebten es absolut. Inventory schuf eine Familientradition.
+
+      - type: "Geschichte"
+        title: "Vintage-Kleidungsgeschäft gestartet"
+        persona: "Hayoung (26, Vintage-Ladenbesitzerin)"
+        content: |
+          Ich liebte Second-Hand und sammelte überall Vintage-Kleidung. Irgendwann war ein ganzes Zimmer voll.
+
+          Begann zur Organisation in Inventory zu registrieren. Marke, Ära, Zustand, Herkunft jedes Stücks detailliert im <a href="/inventory/manual/de/#log">Log</a>. Stil, Größe, Saison in <a href="/inventory/manual/de/#keyword">Schlüsselwörtern</a> markiert.
+
+          Freunde fragten "Verkaufst du das?" Das Inventory-Screen zeigen baute Vertrauen auf. Begann auf Instagram zu verkaufen, habe jetzt einen physischen Vintage-Laden. Organisation wurde zum Geschäft.
+
+      - type: "Geschichte"
+        title: "Komplette Organisation vor dem Umzug"
+        persona: "Mingyu (45, Auswanderer)"
+        content: |
+          Entschied auszuwandern. Musste 20 Jahre Hab und Gut sortieren.
+
+          Registrierte alles im Haus in Inventory. Kategorisiert als: wegwerfen, verkaufen, mitnehmen, verschenken - in <a href="/inventory/manual/de/#keyword">Schlüsselwörtern</a> markiert. Erinnerungsstücke bekamen ihre Geschichten im <a href="/inventory/manual/de/#log">Log</a>.
+
+          3 Monate Sortieren in 2 Wochen erledigt. Verkauf lief glatt, und bedeutungsvolle Stücke konnte ich mit Fotos als Andenken leicht loslassen. Gegenstände kann man entsorgen, aber Aufzeichnungen nimmt man mit.
+
+      - type: "Geschichte"
+        title: "Mein erstes Instrument weitergeben"
+        persona: "Yeeun (22, Musikstudentin)"
+        content: |
+          Beschloss meine erste Geige an meine Schwester in der Oberstufe zu geben. Ein Instrument loszulassen mit dem ich 10 Jahre gespielt hatte war schwer.
+
+          Ich dokumentierte alle Geschichten der Geige in Inventory. Erster Kauftag, erstes Konzert, Reparaturtage... Jeder Moment im <a href="/inventory/manual/de/#log">Log</a> festgehalten.
+
+          Als ich das Instrument mit den Inventory-Aufzeichnungen an meine Schwester <a href="/inventory/manual/de/#-übertragungsfunktion">übertrug</a>, sagte ich "Alles was diese Geige gespielt hat steht hier drin." Sie war zu Tränen gerührt. Ich gab nicht nur das Instrument weiter, sondern seine Geschichte.
+
+      - type: "Geschichte"
+        title: "Aufzeichnungen nach Adoption eines Tierheimhundes"
+        persona: "Sejin (30, Hundebesitzer)"
+        content: |
+          Adoptierte 'Luna' aus dem Tierheim. Sie hat keine bekannte Vergangenheit, also wollte ich ihre Zukunft umso besser dokumentieren.
+
+          Vom ersten Tag an dokumentierte ich alles über Luna in Inventory. Erster Tag zuhause, erstes Schwanzwedeln, erster Schlafplatz... Tägliche Tagebucheinträge im <a href="/inventory/manual/de/#log">Log</a>.
+
+          An unserem ersten Jahrestag machte ich ein Video aus diesen Aufzeichnungen namens "Lunas erstes Jahr." Mit der Community geteilt und viele waren gerührt, einige entschieden sich für Tierheimadoptionen. Aufzeichnungen retteten ein weiteres Leben.
+
+      - type: "Geschichte"
+        title: "Geschichte des ältesten Erbstücks"
+        persona: "Jihoon (55, Uhrensammler)"
+        content: |
+          Ich habe eine Omega-Uhr aus den 1960ern von meinem Vater geerbt. Ein Familienschatz, aber ich bin der Einzige der ihre Geschichte noch kennt.
+
+          Registrierte die Uhr in Inventory und dokumentierte alle Geschichten meines Vaters im <a href="/inventory/manual/de/#log">Log</a>. "Vom ersten Gehalt gekauft", "An dem Tag getragen als er Mutter traf", "Die Zeit gecheckt als der große Bruder geboren wurde"...
+
+          Wenn ich diese Uhr meinem Sohn gebe, <a href="/inventory/manual/de/#-übertragungsfunktion">übertrage</a> ich das Inventory mit. Der Wert von Gegenständen kommt aus ihrer Geschichte. Inventory wird drei Generationen verbinden.
+
+  - id: creative
+    title: "Kreative Nutzung - Unerwartete Möglichkeiten"
+    items:
+      - type: "Kreativ"
+        title: "Meine Träume dokumentieren"
+        persona: "Sumin (24, Psychologiestudentin)"
+        content: |
+          Traumanalyse enthüllt das Unterbewusstsein. Also dokumentiere ich jeden Morgen erinnerte Träume in Inventory.
+
+          Ich skizziere Traumszenen als Bilder und lade sie hoch, Details im <a href="/inventory/manual/de/#log">Log</a>. Themen wie "Wasser", "Fallen", "Prüfungen" in <a href="/inventory/manual/de/#keyword">Schlüsselwörtern</a> markiert.
+
+          Sechs Monate Analyse zeigten Muster. Ich träume von "Fallen" wenn ich gestresst bin. Fand einen Weg mit meinem Unterbewusstsein zu sprechen.
+
+      - type: "Kreativ"
+        title: "Sternbeobachtungslog"
+        persona: "Haneul (31, Amateurastronom)"
+        content: |
+          Nachthimmelbeobachtung ist mein Hobby. Wollte dokumentieren wann ich was sah.
+
+          Jede Beobachtung kommt in Inventory. Datum, Ort, Ziel (Sternbild, Planet, Nebel), Wetter, Ausrüstung... im <a href="/inventory/manual/de/#log">Log</a> geloggt, Fotos angehängt.
+
+          Meteorschwarm-Saisons bekomme ich Vorab-Alarme via <a href="/inventory/manual/de/#alarm">Datumsalarm</a>. Drei Jahre Aufzeichnungen wurden Erfahrungsdaten für "wann und wo am besten beobachten."
+
+      - type: "Kreativ"
+        title: "Parfüm-Notizen-Sammlung"
+        persona: "Sujin (29, Duftliebhaberin)"
+        content: |
+          Ich sammle Parfüms aber fand es schwer mir Charakteristiken zu merken.
+
+          Jedes Parfüm registriert mit Noten (Kopf, Herz, Basis), Haltbarkeit, Sillage, passende Jahreszeiten/Anlässe im <a href="/inventory/manual/de/#log">Log</a>. <a href="/inventory/manual/de/#keyword">Schlüsselwörter</a> wie "holzig", "blumig", "Date-Abend" markiert.
+
+          Wenn Freunde nach Empfehlungen fragen, suche ich einfach und antworte. Meine eigene Parfüm-Enzyklopädie gebaut!
+
+      - type: "Kreativ"
+        title: "Tägliches Himmelfoto-Projekt"
+        persona: "Yuri (26, Fotografin)"
+        content: |
+          Startete ein Projekt: ein Jahr lang jeden Tag vom selben Ort den Himmel fotografieren.
+
+          Tägliche Himmelsfotos hochgeladen mit Wetter, Stimmung, was an dem Tag passierte im <a href="/inventory/manual/de/#log">Log</a>. Aufnahmedaten mit <a href="/inventory/manual/de/#dates">Startdatum</a> verwaltet.
+
+          365 Fotos wurden ein Zeitraffer-Video. Wechselnde Jahreszeiten am Himmel zusammen mit meinem Jahr. Auf Instagram gepostet und über 100k Aufrufe bekommen.
+
+      - type: "Kreativ"
+        title: "TRPG-Charakterverwaltung"
+        persona: "Minhyuk (22, Gamer)"
+        content: |
+          Ich spiele Pen-and-Paper-Rollenspiele aber Charakterbogen- und Gegenstandsverwaltung ist komplex.
+
+          Charaktere und Inventargegenstände in Inventory registriert. Session-Ereignisse, Level-Ups, neue Fähigkeiten im <a href="/inventory/manual/de/#log">Log</a>. <a href="/inventory/manual/de/#partition">Partitionen</a> nach Kampagne.
+
+          Mit Gruppenmitgliedern via <a href="/inventory/manual/de/#-geteiltes-log-vs-einzellog">Geteiltes Log</a> verbunden, jeder kann anderer Charakterinfos sehen. Auch der Spielleiter sagt "Das macht Sessions leiten einfacher!"
+
+      - type: "Kreativ"
+        title: "Eigener Vokabeltrainer"
+        persona: "Jeonga (28, Sprachschülerin)"
+        content: |
+          Sprache lernen aber Vokabel-Apps passten mir nicht. Wollte auf meine Art organisieren.
+
+          Unbekannte Wörter in Inventory registriert mit Beispielsätzen und Nuancenerklärungen im <a href="/inventory/manual/de/#log">Log</a>. <a href="/inventory/manual/de/#keyword">Schlüsselwörter</a> wie "B2", "Business", "in Serie gehört" markiert.
+
+          Gemerkte Wörter werden mit <a href="/inventory/manual/de/#keyword">Schlüsselwort</a> "gelernt" markiert. Nur unmarkierte wiederholen. Effizient! Sprachprüfung bestanden!
+
+      - type: "Kreativ"
+        title: "Kapselgarderobe verwalten"
+        persona: "Seoyeon (27, Minimalistin)"
+        content: |
+          Versuchte die 'Kapselgarderobe' Herausforderung - 33 Teile für 3 Monate. Schrank leeren, nur Wesentliches behalten!
+
+          Die 33 ausgewählten Teile in Inventory registriert. Jedes Tragen im <a href="/inventory/manual/de/#log">Log</a>. Nach 3 Monaten zeigt die Analyse was ich wirklich trage vs. was nicht.
+
+          Ungetragenes aussortiert, leere Stellen nur mit Nötigem gefüllt. Inventory hilft minimalistischen Lebensstil beizubehalten.
+
+      - type: "Kreativ"
+        title: "Kunstgalerie-Kuratierung"
+        persona: "Yejin (34, Kunstliebhaberin)"
+        content: |
+          Besuche oft Museen aber vergesse gesehene Werke.
+
+          Jede Ausstellung, registriere ich berührende Werke. Künstler, Jahr, Technik im <a href="/inventory/manual/de/#log">Log</a>, plus "warum es mir gefiel." Genre, Ära, Emotion in <a href="/inventory/manual/de/#keyword">Schlüsselwörtern</a> markiert.
+
+          Fünf Jahre Aufzeichnungen zeigen meinen Geschmack. Impressionismus, Abstrakt, Blautöne... Jetzt nutze ich diese Daten um Ausstellungen auszuwählen.
+
+      - type: "Kreativ"
+        title: "Clevere Visitenkartenverwaltung"
+        persona: "Jongmin (42, Vertrieb)"
+        content: |
+          Hunderte Visitenkarten gestapelt, kann mich nicht erinnern wer wer ist.
+
+          Karten sofort fotografieren und in Inventory registrieren. Im <a href="/inventory/manual/de/#log">Log</a> notieren "wo getroffen", "worüber gesprochen." Branche, Interessen, Kooperationspotenzial in <a href="/inventory/manual/de/#keyword">Schlüsselwörtern</a>.
+
+          "Der IT-Typ den ich mal traf" - sofortige Suche. Beim Wieder-Kontaktieren das vorherige Gespräch erwähnen beeindruckt die Leute!
+
+      - type: "Kreativ"
+        title: "Brettspielsammlung verwalten"
+        persona: "Jaewon (29, Brettspiel-Enthusiast)"
+        content: |
+          Über 50 Brettspiele aber kann mich nicht erinnern was ich habe. Wenn Freunde kommen, fällt die Entscheidung schwer.
+
+          Alle Spiele registriert mit Spielerzahl, Dauer, Genre, Schwierigkeit in <a href="/inventory/manual/de/#keyword">Schlüsselwörtern</a>. Spielbewertungen im <a href="/inventory/manual/de/#log">Log</a>.
+
+          Wenn Freunde kommen: "4 Spieler, 1 Stunde, leicht" suchen gibt sofortige Empfehlungen. Sie nennen mich den "Brettspiel-Sommelier!"

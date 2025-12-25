@@ -44,6 +44,13 @@ Die Spezialeffekt-Auswahl-UI wurde vereinfacht.
 - **Sanfte Übergänge**: Fortschrittsanzeige während der Effektverarbeitung
 - **Leistungssteigerung**: Bloom/Monochrom-Filter werden im Hintergrund verarbeitet
 
+#### Leistung und Stabilität
+Die interne App-Struktur wurde optimiert.
+- **Abfrage-Optimierung**: Parallele Verarbeitung für schnelleres Clip/Filter-Laden
+- **Code-Bereinigung**: 12 ungenutzte Code-Module entfernt
+- **Abhängigkeits-Bereinigung**: 7 ungenutzte Bibliotheken entfernt
+- **Asset-Bereinigung**: Ungenutzte Schriftarten/Bilder entfernt (ca. 16MB Reduktion)
+
 ---
 
 ### v1.0.3 <small style="color:#6b7280;">2025-12-23</small>

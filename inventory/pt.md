@@ -191,6 +191,10 @@ Crie itens com uma única folha de papel e transfira-os via código QR. Grave um
 
 > 🔒 **Proteção de privacidade**: Seus dados estão criptografados e protegidos. Veja nossa [Política de Privacidade](/inventory/privacy/) para mais detalhes.
 
+---
+
+{% include usecases-scroll.html lang="pt" %}
+
 <style>
 .neumorphic-content h2 {
   background: linear-gradient(135deg, #a855f7, #2dd4bf) !important;

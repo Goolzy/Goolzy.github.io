@@ -1,0 +1,154 @@
+{% comment %}
+  메인 페이지용 Scroll 스타일 컴포넌트 (주루룩 나열)
+  사용법: {% include usecases-scroll.html lang="ko" %}
+{% endcomment %}
+
+{% assign lang = include.lang | default: page.lang | default: 'ko' %}
+{% assign data = site.data.usecases[lang] %}
+
+{% if lang == 'ko' %}
+  {% assign section_title = "이런 곳에서 활용해보세요" %}
+  {% assign more_link_text = "더 많은 활용 사례 보기" %}
+{% elsif lang == 'en' %}
+  {% assign section_title = "Discover How to Use Inventory" %}
+  {% assign more_link_text = "See more use cases" %}
+{% elsif lang == 'ja' %}
+  {% assign section_title = "こんな場面で活用できます" %}
+  {% assign more_link_text = "もっと活用事例を見る" %}
+{% elsif lang == 'de' %}
+  {% assign section_title = "Entdecken Sie die Möglichkeiten" %}
+  {% assign more_link_text = "Weitere Anwendungsfälle" %}
+{% elsif lang == 'fr' %}
+  {% assign section_title = "Découvrez les possibilités" %}
+  {% assign more_link_text = "Voir plus de cas d'utilisation" %}
+{% elsif lang == 'es' %}
+  {% assign section_title = "Descubre cómo utilizarlo" %}
+  {% assign more_link_text = "Ver más casos de uso" %}
+{% elsif lang == 'pt' %}
+  {% assign section_title = "Descubra como usar" %}
+  {% assign more_link_text = "Ver mais casos de uso" %}
+{% else %}
+  {% assign section_title = "이런 곳에서 활용해보세요" %}
+  {% assign more_link_text = "더 많은 활용 사례 보기" %}
+{% endif %}
+
+{% if lang == 'ko' %}
+  {% assign usecases_link = "/inventory/usecases/" %}
+{% else %}
+  {% assign usecases_link = "/inventory/usecases/" | append: lang | append: "/" %}
+{% endif %}
+
+<style>
+.usecases-scroll-section {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: rgba(10, 6, 20, 0.4);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  border-radius: 20px;
+}
+
+.usecases-scroll-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  background: linear-gradient(135deg, var(--purple-bright), var(--teal-bright));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.usecases-scroll-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.usecase-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.85rem 1rem;
+  background: rgba(168, 85, 247, 0.08);
+  border: 1px solid rgba(168, 85, 247, 0.15);
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.usecase-item:hover {
+  background: rgba(168, 85, 247, 0.15);
+  border-color: rgba(168, 85, 247, 0.3);
+  transform: translateX(4px);
+}
+
+.usecase-item .item-number {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--purple-bright);
+  min-width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(168, 85, 247, 0.2);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.usecase-item .item-title {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.usecases-more-link {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  background: rgba(168, 85, 247, 0.15);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 12px;
+  color: var(--purple-bright);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.usecases-more-link:hover {
+  background: rgba(168, 85, 247, 0.25);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.3);
+}
+
+@media (max-width: 768px) {
+  .usecases-scroll-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .usecases-scroll-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<div class="usecases-scroll-section">
+  <h3 class="usecases-scroll-title">{{ section_title }}</h3>
+
+  <div class="usecases-scroll-grid">
+    {% assign counter = 0 %}
+    {% for category in data.categories %}
+      {% for item in category.items %}
+        {% assign counter = counter | plus: 1 %}
+        <a href="{{ usecases_link }}#item-{{ counter }}" class="usecase-item">
+          <span class="item-number">{{ counter }}</span>
+          <span class="item-title">{{ item.title }}</span>
+        </a>
+      {% endfor %}
+    {% endfor %}
+  </div>
+
+  <a href="{{ usecases_link }}" class="usecases-more-link">{{ more_link_text }} →</a>
+</div>

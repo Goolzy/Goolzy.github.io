@@ -191,6 +191,10 @@ Erstellen Sie Artikel mit einem einzigen Blatt Papier und übertragen Sie sie pe
 
 > 🔒 **Datenschutz**: Ihre Daten sind verschlüsselt und sicher geschützt. Siehe unsere [Datenschutzrichtlinie](/inventory/privacy/) für Details.
 
+---
+
+{% include usecases-scroll.html lang="de" %}
+
 <style>
 .neumorphic-content h2 {
   background: linear-gradient(135deg, #a855f7, #2dd4bf) !important;

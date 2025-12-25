@@ -191,6 +191,10 @@ translations:
 
 > 🔒 **プライバシー保護**: お客様のデータは暗号化され、安全に保護されています。詳細は[プライバシーポリシー](/inventory/privacy/)をご覧ください。
 
+---
+
+{% include usecases-scroll.html lang="ja" %}
+
 <style>
 .neumorphic-content h2 {
   background: linear-gradient(135deg, #a855f7, #2dd4bf) !important;

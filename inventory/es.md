@@ -191,6 +191,10 @@ Crea artículos con una sola hoja de papel y transfiérelos mediante código QR.
 
 > 🔒 **Protección de privacidad**: Tus datos están encriptados y protegidos. Ver nuestra [Política de privacidad](/inventory/privacy/) para más detalles.
 
+---
+
+{% include usecases-scroll.html lang="es" %}
+
 <style>
 .neumorphic-content h2 {
   background: linear-gradient(135deg, #a855f7, #2dd4bf) !important;

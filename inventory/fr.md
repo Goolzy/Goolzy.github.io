@@ -191,6 +191,10 @@ Créez des articles avec une seule feuille de papier et transférez-les via code
 
 > 🔒 **Protection de la vie privée** : Vos données sont cryptées et protégées. Voir notre [Politique de confidentialité](/inventory/privacy/) pour plus de détails.
 
+---
+
+{% include usecases-scroll.html lang="fr" %}
+
 <style>
 .neumorphic-content h2 {
   background: linear-gradient(135deg, #a855f7, #2dd4bf) !important;

@@ -191,6 +191,10 @@ Create items with a single sheet of paper, and transfer them to others via QR co
 
 > 🔒 **Privacy Protection**: Your data is encrypted and securely protected. See our [Privacy Policy](/inventory/privacy/) for details.
 
+---
+
+{% include usecases-scroll.html lang="en" %}
+
 <style>
 /* Dark glassmorphic style override */
 .neumorphic-content h2 {

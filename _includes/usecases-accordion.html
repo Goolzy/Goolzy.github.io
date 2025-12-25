@@ -1,0 +1,197 @@
+{% comment %}
+  활용방법 페이지용 Accordion 스타일 컴포넌트
+  사용법: {% include usecases-accordion.html lang="ko" %}
+{% endcomment %}
+
+{% assign lang = include.lang | default: page.lang | default: 'ko' %}
+{% assign data = site.data.usecases[lang] %}
+{% assign manual_base = data.page.manual_base %}
+
+<style>
+.usecase-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+
+.usecase-card {
+  background: rgba(10, 6, 20, 0.5);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.usecase-card:hover {
+  border-color: rgba(168, 85, 247, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(168, 85, 247, 0.2);
+}
+
+.usecase-card summary {
+  padding: 1.25rem;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.usecase-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.usecase-card summary::after {
+  content: '{{ data.page.expand }}';
+  font-size: 0.75rem;
+  color: var(--purple-bright);
+  opacity: 0.7;
+  margin-top: 0.5rem;
+}
+
+.usecase-card[open] summary::after {
+  content: '{{ data.page.collapse }}';
+}
+
+.usecase-card .card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.usecase-card .card-persona {
+  font-size: 0.85rem;
+  color: var(--teal-bright);
+  opacity: 0.9;
+}
+
+.usecase-card .card-type {
+  display: inline-block;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  background: rgba(168, 85, 247, 0.2);
+  color: var(--purple-bright);
+  width: fit-content;
+}
+
+.usecase-card .card-content {
+  padding: 0 1.25rem 1.25rem;
+  border-top: 1px solid rgba(168, 85, 247, 0.1);
+  margin-top: 0.5rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.usecase-card .card-content p {
+  margin: 1rem 0;
+}
+
+.usecase-card .card-content strong {
+  color: var(--teal-bright);
+}
+
+.usecase-card .card-content a {
+  color: var(--purple-bright);
+  text-decoration: none;
+}
+
+.usecase-card .card-content a:hover {
+  text-decoration: underline;
+}
+
+.category-section {
+  margin: 3rem 0;
+}
+
+.category-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-left: 4px solid var(--teal);
+}
+
+.share-section {
+  text-align: center;
+  padding: 3rem 2rem;
+  margin-top: 4rem;
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(20, 184, 166, 0.1));
+  border-radius: 20px;
+  border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.share-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--purple-bright), var(--teal-bright));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.share-section p {
+  color: var(--text-dim);
+  margin-bottom: 1.5rem;
+}
+
+.share-btn {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  background: rgba(168, 85, 247, 0.2);
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  border-radius: 12px;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.share-btn:hover {
+  background: rgba(168, 85, 247, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.3);
+}
+
+@media (max-width: 768px) {
+  .usecase-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<h1>{{ data.page.title }}</h1>
+
+<p>{{ data.page.intro }}</p>
+
+<hr>
+
+{% for category in data.categories %}
+<div class="category-section">
+<h2 class="category-title">{{ category.title }}</h2>
+
+<div class="usecase-grid">
+{% for item in category.items %}
+<details class="usecase-card">
+<summary>
+<span class="card-type">{{ item.type }}</span>
+<span class="card-title">{{ item.title }}</span>
+<span class="card-persona">{{ item.persona }}</span>
+</summary>
+<div class="card-content">
+{{ item.content }}
+</div>
+</details>
+{% endfor %}
+</div>
+</div>
+{% endfor %}
+
+<hr>
+
+<div class="share-section">
+<h3>{{ data.page.share_title }}</h3>
+<p>{{ data.page.share_text }}</p>
+<a href="{{ data.page.share_link }}" class="share-btn">{{ data.page.share_btn }}</a>
+</div>
