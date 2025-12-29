@@ -32,6 +32,14 @@ Se han añadido tutoriales paso a paso para guiarte en el uso de la aplicación.
 - **Función de búsqueda**: Uso de filtros y guardado de términos de búsqueda
 - Se muestra solo en el primer uso; puede verse de nuevo en Ajustes
 
+#### Optimización del rendimiento del registro
+Se ha mejorado significativamente la velocidad de carga y el uso de datos de los registros compartidos/independientes.
+- **Carga rápida**: Cargar primero solo los últimos 100 comentarios
+- **Desplazamiento infinito**: Cargar 50 comentarios anteriores al desplazarse
+- **Caché local**: Visualización instantánea usando caché en revisitas
+- **Sincronización en tiempo real**: Recibir eficientemente solo comentarios nuevos
+- **Ahorro de datos**: Previene descargas innecesarias
+
 ---
 
 ### v1.0.4 <small style="color:#6b7280;">2025-12-25</small>

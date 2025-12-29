@@ -32,6 +32,14 @@ Step-by-step tutorials have been added to guide you through app usage.
 - **Search Feature**: Filter usage and search term saving
 - Shown only on first use; can be viewed again in Settings
 
+#### Log Performance Optimization
+Loading speed and data usage for shared/independent logs have been significantly improved.
+- **Fast Loading**: Load only the latest 100 comments first
+- **Infinite Scroll**: Scroll to load 50 more older comments at a time
+- **Local Caching**: Instant display using cache on revisit
+- **Real-time Sync**: Efficiently receive only new comments
+- **Data Saving**: Prevents unnecessary re-downloads
+
 ---
 
 ### v1.0.4 <small style="color:#6b7280;">2025-12-25</small>

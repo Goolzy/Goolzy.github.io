@@ -32,6 +32,14 @@ Des tutoriels étape par étape ont été ajoutés pour vous guider dans l'utili
 - **Fonction de recherche** : Utilisation des filtres et sauvegarde des termes de recherche
 - Affiché uniquement lors de la première utilisation ; peut être revu dans les Paramètres
 
+#### Optimisation des performances des journaux
+La vitesse de chargement et l'utilisation des données des journaux partagés/indépendants ont été considérablement améliorées.
+- **Chargement rapide** : Charger d'abord uniquement les 100 derniers commentaires
+- **Défilement infini** : Charger 50 commentaires plus anciens en faisant défiler
+- **Cache local** : Affichage instantané grâce au cache lors des revisites
+- **Sync en temps réel** : Recevoir efficacement uniquement les nouveaux commentaires
+- **Économie de données** : Empêche les re-téléchargements inutiles
+
 ---
 
 ### v1.0.4 <small style="color:#6b7280;">2025-12-25</small>

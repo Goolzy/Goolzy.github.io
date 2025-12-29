@@ -32,6 +32,14 @@ Schritt-für-Schritt-Tutorials wurden hinzugefügt, um Sie durch die App-Nutzung
 - **Suchfunktion**: Filternutzung und Suchbegriffspeicherung
 - Wird nur beim ersten Mal angezeigt; kann in den Einstellungen erneut angesehen werden
 
+#### Log-Leistungsoptimierung
+Ladegeschwindigkeit und Datenverbrauch für gemeinsame/unabhängige Logs wurden deutlich verbessert.
+- **Schnelles Laden**: Zuerst nur die neuesten 100 Kommentare laden
+- **Unendliches Scrollen**: Beim Scrollen 50 ältere Kommentare nachladen
+- **Lokales Caching**: Sofortige Anzeige durch Cache bei erneutem Besuch
+- **Echtzeit-Sync**: Nur neue Kommentare effizient empfangen
+- **Datensparend**: Verhindert unnötige Neudownloads
+
 ---
 
 ### v1.0.4 <small style="color:#6b7280;">2025-12-25</small>

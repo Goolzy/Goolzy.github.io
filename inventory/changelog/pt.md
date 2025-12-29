@@ -32,6 +32,14 @@ Tutoriais passo a passo foram adicionados para guiá-lo no uso do aplicativo.
 - **Função de busca**: Uso de filtros e salvamento de termos de busca
 - Exibido apenas no primeiro uso; pode ser visto novamente em Configurações
 
+#### Otimização de desempenho do registro
+A velocidade de carregamento e o uso de dados dos registros compartilhados/independentes foram significativamente melhorados.
+- **Carregamento rápido**: Carregar primeiro apenas os últimos 100 comentários
+- **Rolagem infinita**: Carregar mais 50 comentários antigos ao rolar
+- **Cache local**: Exibição instantânea usando cache em revisitas
+- **Sync em tempo real**: Receber eficientemente apenas novos comentários
+- **Economia de dados**: Previne re-downloads desnecessários
+
 ---
 
 ### v1.0.4 <small style="color:#6b7280;">2025-12-25</small>
