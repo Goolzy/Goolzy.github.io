@@ -547,6 +547,70 @@ body::before {
   margin: 2rem 0;
 }
 
+/* Accordion (details/summary) */
+.neumorphic-content details {
+  background: rgba(10, 6, 20, 0.4);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  border-radius: 16px;
+  margin: 1rem 0;
+  overflow: hidden;
+}
+
+.neumorphic-content details[open] {
+  border-color: rgba(168, 85, 247, 0.4);
+}
+
+.neumorphic-content summary {
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background 0.3s ease;
+}
+
+.neumorphic-content summary::-webkit-details-marker {
+  display: none;
+}
+
+.neumorphic-content summary::before {
+  content: '▶';
+  font-size: 0.75rem;
+  color: var(--purple-bright);
+  transition: transform 0.3s ease;
+}
+
+.neumorphic-content details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.neumorphic-content summary:hover {
+  background: rgba(168, 85, 247, 0.1);
+}
+
+.neumorphic-content summary h3 {
+  margin: 0;
+  display: inline;
+  font-size: 1.1rem;
+}
+
+.neumorphic-content .manual-content {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.neumorphic-content .manual-content h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--teal-bright);
+  font-size: 1rem;
+}
+
+.neumorphic-content .manual-content p:first-child {
+  margin-top: 0;
+}
+
 /* Hide default page elements */
 #mh-logout { display: none !important; }
 .intro { display: none !important; }
