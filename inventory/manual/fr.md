@@ -19,7 +19,9 @@ Découvrez toutes les fonctionnalités de l'application Inventory en détail.
 
 ---
 
-<h3 id="paper">📦 Système de Papier</h3>
+<details open>
+<summary><h3 id="paper">📦 Système de Papier</h3></summary>
+<div class="manual-content">
 
 Dans Inventory, le **Papier** est la monnaie principale utilisée pour créer des objets.
 
@@ -38,9 +40,14 @@ Dans Inventory, le **Papier** est la monnaie principale utilisée pour créer de
 
 > 💡 **Astuce** : Les utilisateurs existants peuvent obtenir du Papier supplémentaire en liant de nouveaux comptes sociaux !
 
+</div>
+</details>
+
 ---
 
-<h3 id="create-item">📄 Création d'objets</h3>
+<details>
+<summary><h3 id="create-item">📄 Création d'objets</h3></summary>
+<div class="manual-content">
 
 #### Comment créer un objet
 
@@ -63,9 +70,14 @@ Dans Inventory, le **Papier** est la monnaie principale utilisée pour créer de
 
 Si non défini, il sera immédiatement visible et permanent.
 
+</div>
+</details>
+
 ---
 
-<h3 id="lock">🔒 Verrouillage de Document</h3>
+<details>
+<summary><h3 id="lock">🔒 Verrouillage de Document</h3></summary>
+<div class="manual-content">
 
 Vous pouvez protéger les documents en définissant un mot de passe.
 
@@ -102,9 +114,14 @@ Un document verrouillé ne peut être consulté qu'après avoir saisi le mot de 
 - Les documents verrouillés n'apparaissent pas dans les résultats de recherche
 - Les objets verrouillés peuvent toujours être supprimés
 
+</div>
+</details>
+
 ---
 
-<h3 id="clip">📎 Système Clip</h3>
+<details>
+<summary><h3 id="clip">📎 Système Clip</h3></summary>
+<div class="manual-content">
 
 **Clip** est une fonctionnalité qui regroupe plusieurs documents ensemble pour une gestion plus facile.
 
@@ -171,9 +188,14 @@ Vous pouvez retirer des éléments spécifiques dans l'écran d'infos du clip :
 - L'icône clip (📎) permet d'identifier facilement l'état du clip
 - Au moins 2 documents sont nécessaires pour maintenir un clip
 
+</div>
+</details>
+
 ---
 
-<h3 id="badge">🏷️ Système de Badge</h3>
+<details>
+<summary><h3 id="badge">🏷️ Système de Badge</h3></summary>
+<div class="manual-content">
 
 Un **Badge** est une identité unique que vous pouvez utiliser dans l'application.
 
@@ -207,9 +229,14 @@ Exemples : `MaMarque`, `JeanDupont`, `Entreprise2025`
 Les badges gravés (état actif) affichent un aperçu de l'image gravée en haut à droite de la carte d'inventaire.
 Cela vous permet d'identifier rapidement à quel domaine appartient le badge.
 
+</div>
+</details>
+
 ---
 
-<h3 id="stamp">🔖 Système de Tampon</h3>
+<details>
+<summary><h3 id="stamp">🔖 Système de Tampon</h3></summary>
+<div class="manual-content">
 
 Un **Tampon** est un objet qui vous permet de créer des modèles et de les partager avec d'autres.
 
@@ -270,9 +297,14 @@ Vous pouvez rechercher et cloner des modèles partagés par d'autres utilisateur
 - Le bouton de clonage est désactivé si vous n'avez pas de papier
 - Les objets clonés ont les mêmes informations de modèle que l'original
 
+</div>
+</details>
+
 ---
 
-<h3 id="quick-input">⚡ Saisie Rapide</h3>
+<details>
+<summary><h3 id="quick-input">⚡ Saisie Rapide</h3></summary>
+<div class="manual-content">
 
 Lors de l'ajout d'entrées de journal, appuyez sur le bouton `+` pour ouvrir le menu **Saisie Rapide** permettant une saisie facile d'informations spéciales.
 
@@ -306,9 +338,14 @@ Appuyez longuement sur une carte de date pour définir une alarme :
 
 > 💡 **Astuce** : Les cartes de date affichent automatiquement le calcul J-J (ex : J-5, Jour-J, J+3)
 
+</div>
+</details>
+
 ---
 
-<h3 id="log">📝 Système de Journal</h3>
+<details>
+<summary><h3 id="log">📝 Système de Journal</h3></summary>
+<div class="manual-content">
 
 Les **Journaux** sont des enregistrements que vous pouvez ajouter aux objets ou modèles de tampon.
 
@@ -390,9 +427,14 @@ Lorsque de nouveaux commentaires sont ajoutés à un journal partagé, la bordur
 
 > 💡 **Astuce** : Vérifiez les éléments qui pulsent pour ne jamais manquer de nouveaux commentaires !
 
+</div>
+</details>
+
 ---
 
-<h3 id="ink">🎨 Système d'Encre</h3>
+<details>
+<summary><h3 id="ink">🎨 Système d'Encre</h3></summary>
+<div class="manual-content">
 
 L'**Encre** est un objet qui change la couleur du thème de l'application.
 
@@ -409,9 +451,14 @@ L'**Encre** est un objet qui change la couleur du thème de l'application.
 | **Encre Noire** | Thème noir par défaut |
 | **Encre Dorée** | Thème doré luxueux |
 
+</div>
+</details>
+
 ---
 
-<h3 id="search">🔍 Fonction de Recherche</h3>
+<details>
+<summary><h3 id="search">🔍 Fonction de Recherche</h3></summary>
+<div class="manual-content">
 
 #### Recherche de base
 
@@ -454,9 +501,14 @@ Lorsqu'un filtre est défini et que vous sélectionnez des objets, les **valeurs
 
 > 💡 **Exemple d'utilisation** : Calculez rapidement le prix total de plusieurs objets, ou copiez les tags associés en une fois.
 
+</div>
+</details>
+
 ---
 
-### 📱 Badge du menu inférieur
+<details>
+<summary><h3 id="bottom-menu">📱 Badge du menu inférieur</h3></summary>
+<div class="manual-content">
 
 Des badges rouges sur les icônes du menu inférieur indiquent l'état actuel.
 
@@ -468,9 +520,14 @@ Des badges rouges sur les icônes du menu inférieur indiquent l'état actuel.
 
 > 💡 Les numéros des badges s'animent avec un effet de bulle lorsqu'ils changent.
 
+</div>
+</details>
+
 ---
 
-<h3 id="transfer">📤 Envoyer des objets</h3>
+<details>
+<summary><h3 id="transfer">📤 Envoyer des objets</h3></summary>
+<div class="manual-content">
 
 Vous pouvez transférer des objets lors de ventes d'occasion ou de cadeaux.
 
@@ -492,9 +549,14 @@ Au lieu de taper l'email du destinataire, vous pouvez utiliser un QR code :
 
 > ⚠️ **Important** : Les objets transférés **disparaissent immédiatement** de votre inventaire. Les transferts ne peuvent pas être annulés.
 
+</div>
+</details>
+
 ---
 
-### 📥 Recevoir des objets
+<details>
+<summary><h3 id="receive">📥 Recevoir des objets</h3></summary>
+<div class="manual-content">
 
 Vous pouvez recevoir des objets envoyés par d'autres.
 
@@ -511,9 +573,14 @@ Vous pouvez recevoir des objets envoyés par d'autres.
 - Vous recevez des notifications push lors de l'arrivée de nouveaux objets (si activées)
 - L'onglet Recevoir affiche le nombre d'objets non acceptés
 
+</div>
+</details>
+
 ---
 
-### 🛒 Utiliser la Boutique
+<details>
+<summary><h3 id="shop">🛒 Utiliser la Boutique</h3></summary>
+<div class="manual-content">
 
 Vous pouvez acheter divers objets dans la boutique.
 
@@ -535,9 +602,14 @@ Vous pouvez acheter divers objets dans la boutique.
 
 > 💡 La boutique est disponible sur toutes les plateformes (iOS, Android, Windows, macOS).
 
+</div>
+</details>
+
 ---
 
-<h3 id="partition">📂 Fonction Partition</h3>
+<details>
+<summary><h3 id="partition">📂 Fonction Partition</h3></summary>
+<div class="manual-content">
 
 Vous pouvez grouper les objets avec des partitions quand vous en avez beaucoup.
 
@@ -571,9 +643,14 @@ Appuyez sur l'en-tête de partition pour sélectionner/désélectionner tous les
 | ◐ (Demi-cercle) | Certains sélectionnés |
 | ● (Cercle plein) | Tous sélectionnés |
 
+</div>
+</details>
+
 ---
 
-### 🌍 Changer de langue
+<details>
+<summary><h3 id="language">🌍 Changer de langue</h3></summary>
+<div class="manual-content">
 
 7 langues sont prises en charge :
 - 🇰🇷 한국어
@@ -586,6 +663,9 @@ Appuyez sur l'en-tête de partition pour sélectionner/désélectionner tous les
 
 **Comment changer :**
 Paramètres → Langue → Sélectionnez la langue souhaitée
+
+</div>
+</details>
 
 ---
 
@@ -603,4 +683,13 @@ table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
 th, td { padding: .75rem; border: 1px solid #e5e7eb; text-align: left; }
 th { background: #f9fafb; font-weight: 600; }
 code { background: #f3f4f6; padding: .2rem .4rem; border-radius: 3px; font-size: .9em; }
+
+/* Collapsible section styles */
+details { margin: 1rem 0; border: 1px solid #e5e7eb; border-radius: 8px; overflow: hidden; }
+summary { cursor: pointer; padding: 0; list-style: none; background: #f9fafb; }
+summary::-webkit-details-marker { display: none; }
+summary h3 { display: inline-block; margin: 0; padding: 1rem 1.5rem; color: #374151; font-size: 1.1rem; }
+summary:hover { background: #f3f4f6; }
+details[open] summary { border-bottom: 1px solid #e5e7eb; }
+.manual-content { padding: 1.5rem; }
 </style>

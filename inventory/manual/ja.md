@@ -19,7 +19,9 @@ Inventoryアプリのすべての機能を詳しく見てみましょう。
 
 ---
 
-<h3 id="paper">📦 ペーパーシステム</h3>
+<details open>
+<summary><h3 id="paper">📦 ペーパーシステム</h3></summary>
+<div class="manual-content">
 
 Inventoryでは、**ペーパー**はアイテムを作成する際に使用する基本通貨です。
 
@@ -38,9 +40,14 @@ Inventoryでは、**ペーパー**はアイテムを作成する際に使用す�
 
 > 💡 **ヒント**: 既存ユーザーが新しいソーシャルアカウントを連携すると、無料で追加のペーパーがもらえます！
 
+</div>
+</details>
+
 ---
 
-<h3 id="create-item">📄 アイテム作成</h3>
+<details>
+<summary><h3 id="create-item">📄 アイテム作成</h3></summary>
+<div class="manual-content">
 
 #### アイテムの作成方法
 
@@ -63,9 +70,14 @@ Inventoryでは、**ペーパー**はアイテムを作成する際に使用す�
 
 設定しなければ、即座に公開され永続的に維持されます。
 
+</div>
+</details>
+
 ---
 
-<h3 id="lock">🔒 ドキュメントロック</h3>
+<details>
+<summary><h3 id="lock">🔒 ドキュメントロック</h3></summary>
+<div class="manual-content">
 
 ドキュメントアイテムにパスワードを設定して内容を保護できます。
 
@@ -102,9 +114,14 @@ Inventoryでは、**ペーパー**はアイテムを作成する際に使用す�
 - ロックされたドキュメントは検索結果に表示されません
 - ロックされた状態でも削除は可能です
 
+</div>
+</details>
+
 ---
 
-<h3 id="clip">📎 クリップシステム</h3>
+<details>
+<summary><h3 id="clip">📎 クリップシステム</h3></summary>
+<div class="manual-content">
 
 **クリップ**は複数のドキュメントを1つにまとめて管理する機能です。
 
@@ -171,9 +188,14 @@ Inventoryでは、**ペーパー**はアイテムを作成する際に使用す�
 - クリップアイコン(📎)でクリップ状態を簡単に確認できます
 - 少なくとも2つ以上のドキュメントが必要です
 
+</div>
+</details>
+
 ---
 
-<h3 id="badge">🏷️ バッジシステム</h3>
+<details>
+<summary><h3 id="badge">🏷️ バッジシステム</h3></summary>
+<div class="manual-content">
 
 **バッジ**はアプリ内で使用する固有のアイデンティティです。
 
@@ -207,9 +229,14 @@ Inventoryでは、**ペーパー**はアイテムを作成する際に使用す�
 刻印されたバッジ（有効状態）は、インベントリカードの右上に刻印画像のプレビューが表示されます。
 これにより、どのドメインのバッジかを素早く確認できます。
 
+</div>
+</details>
+
 ---
 
-<h3 id="stamp">🔖 スタンプシステム</h3>
+<details>
+<summary><h3 id="stamp">🔖 スタンプシステム</h3></summary>
+<div class="manual-content">
 
 **スタンプ**はテンプレートを作成して他の人に渡すことができるアイテムです。
 
@@ -270,9 +297,14 @@ Inventoryでは、**ペーパー**はアイテムを作成する際に使用す�
 - ペーパーがない場合、複製ボタンは無効になります
 - 複製されたアイテムはオリジナルと同じテンプレート情報を持ちます
 
+</div>
+</details>
+
 ---
 
-<h3 id="quick-input">⚡ クイック入力</h3>
+<details>
+<summary><h3 id="quick-input">⚡ クイック入力</h3></summary>
+<div class="manual-content">
 
 ログ追加時に`+`ボタンをタップすると、特別な情報を簡単に入力できる**クイック入力**メニューが表示されます。
 
@@ -306,9 +338,14 @@ Inventoryでは、**ペーパー**はアイテムを作成する際に使用す�
 
 > 💡 **ヒント**: 日付カードには自動的にD-Dayが計算されて表示されます（例：D-5, D-Day, D+3）
 
+</div>
+</details>
+
 ---
 
-<h3 id="log">📝 ログシステム</h3>
+<details>
+<summary><h3 id="log">📝 ログシステム</h3></summary>
+<div class="manual-content">
 
 **ログ**はアイテムやスタンプテンプレートに記録を残す機能です。
 
@@ -390,9 +427,14 @@ Inventoryでは、**ペーパー**はアイテムを作成する際に使用す�
 
 > 💡 **ヒント**: 点滅しているアイテムをチェックして、新しいコメントを見逃さないようにしましょう！
 
+</div>
+</details>
+
 ---
 
-<h3 id="ink">🎨 インクシステム</h3>
+<details>
+<summary><h3 id="ink">🎨 インクシステム</h3></summary>
+<div class="manual-content">
 
 **インク**はアプリのテーマカラーを変更するアイテムです。
 
@@ -409,9 +451,14 @@ Inventoryでは、**ペーパー**はアイテムを作成する際に使用す�
 | **ブラックインク** | デフォルトの黒テーマ |
 | **ゴールドインク** | 高級感のある金テーマ |
 
+</div>
+</details>
+
 ---
 
-<h3 id="search">🔍 検索機能</h3>
+<details>
+<summary><h3 id="search">🔍 検索機能</h3></summary>
+<div class="manual-content">
 
 #### 基本検索
 
@@ -454,9 +501,14 @@ Inventoryでは、**ペーパー**はアイテムを作成する際に使用す�
 
 > 💡 **活用例**: 複数のアイテムの価格合計を素早く計算したり、関連タグを一度にコピーできます。
 
+</div>
+</details>
+
 ---
 
-### 📱 下部メニューバッジ
+<details>
+<summary><h3 id="bottom-menu">📱 下部メニューバッジ</h3></summary>
+<div class="manual-content">
 
 下部メニューのアイコンに赤いバッジが表示され、現在の状態をお知らせします。
 
@@ -468,9 +520,14 @@ Inventoryでは、**ペーパー**はアイテムを作成する際に使用す�
 
 > 💡 バッジの数字が変更されると、バブルアニメーションで注意を引きます。
 
+</div>
+</details>
+
 ---
 
-<h3 id="transfer">📤 アイテムを送る</h3>
+<details>
+<summary><h3 id="transfer">📤 アイテムを送る</h3></summary>
+<div class="manual-content">
 
 中古取引やプレゼント時にアイテムを一緒に転送できます。
 
@@ -492,9 +549,14 @@ Inventoryでは、**ペーパー**はアイテムを作成する際に使用す�
 
 > ⚠️ **重要**: 転送したアイテムは自分のインベントリから**即座に消えます**。転送後はキャンセルできません。
 
+</div>
+</details>
+
 ---
 
-### 📥 アイテムを受け取る
+<details>
+<summary><h3 id="receive">📥 アイテムを受け取る</h3></summary>
+<div class="manual-content">
 
 他の人が送ったアイテムを受け取ることができます。
 
@@ -511,9 +573,14 @@ Inventoryでは、**ペーパー**はアイテムを作成する際に使用す�
 - 新しいアイテムが届くとプッシュ通知を受け取ります（通知を許可している場合）
 - 受取タブに未承認アイテムの数が表示されます
 
+</div>
+</details>
+
 ---
 
-### 🛒 ショップの利用
+<details>
+<summary><h3 id="shop">🛒 ショップの利用</h3></summary>
+<div class="manual-content">
 
 ショップで様々なアイテムを購入できます。
 
@@ -535,9 +602,14 @@ Inventoryでは、**ペーパー**はアイテムを作成する際に使用す�
 
 > 💡 すべてのプラットフォーム（iOS、Android、Windows、macOS）で同様にショップを利用できます。
 
+</div>
+</details>
+
 ---
 
-<h3 id="partition">📂 パーティション機能</h3>
+<details>
+<summary><h3 id="partition">📂 パーティション機能</h3></summary>
+<div class="manual-content">
 
 アイテムが多くなったらパーティションでグループ化できます。
 
@@ -571,9 +643,14 @@ Inventoryでは、**ペーパー**はアイテムを作成する際に使用す�
 | ◐（半円） | 一部選択 |
 | ●（塗りつぶし円） | 全選択 |
 
+</div>
+</details>
+
 ---
 
-### 🌍 言語変更
+<details>
+<summary><h3 id="language">🌍 言語変更</h3></summary>
+<div class="manual-content">
 
 7言語に対応しています：
 - 🇰🇷 한국어
@@ -586,6 +663,9 @@ Inventoryでは、**ペーパー**はアイテムを作成する際に使用す�
 
 **変更方法：**
 設定 → 言語 → 希望する言語を選択
+
+</div>
+</details>
 
 ---
 
@@ -603,4 +683,13 @@ table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
 th, td { padding: .75rem; border: 1px solid #e5e7eb; text-align: left; }
 th { background: #f9fafb; font-weight: 600; }
 code { background: #f3f4f6; padding: .2rem .4rem; border-radius: 3px; font-size: .9em; }
+
+/* Collapsible sections styling */
+details { margin: 1rem 0; border: 1px solid #e5e7eb; border-radius: 8px; overflow: hidden; }
+summary { cursor: pointer; padding: 0; list-style: none; background: #f9fafb; }
+summary::-webkit-details-marker { display: none; }
+summary h3 { display: inline-block; margin: 0; padding: 1rem 1.5rem; color: #374151; font-size: 1.1rem; }
+summary:hover { background: #f3f4f6; }
+details[open] summary { border-bottom: 1px solid #e5e7eb; }
+.manual-content { padding: 1.5rem; }
 </style>

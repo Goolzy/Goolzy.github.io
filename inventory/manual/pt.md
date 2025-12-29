@@ -19,7 +19,9 @@ Explore todas as funcionalidades do aplicativo Inventory em detalhes.
 
 ---
 
-<h3 id="paper">📦 Sistema de Papel</h3>
+<details open>
+<summary><h3 id="paper">📦 Sistema de Papel</h3></summary>
+<div class="manual-content">
 
 No Inventory, o **Papel** é a moeda principal usada para criar itens.
 
@@ -38,9 +40,14 @@ No Inventory, o **Papel** é a moeda principal usada para criar itens.
 
 > 💡 **Dica**: Usuários existentes podem ganhar Papel extra vinculando novas contas sociais!
 
+</div>
+</details>
+
 ---
 
-<h3 id="create-item">📄 Criação de Itens</h3>
+<details>
+<summary><h3 id="create-item">📄 Criação de Itens</h3></summary>
+<div class="manual-content">
 
 #### Como criar um item
 
@@ -63,9 +70,14 @@ No Inventory, o **Papel** é a moeda principal usada para criar itens.
 
 Se não definido, será visível imediatamente e permanente.
 
+</div>
+</details>
+
 ---
 
-<h3 id="lock">🔒 Bloqueio de Documento</h3>
+<details>
+<summary><h3 id="lock">🔒 Bloqueio de Documento</h3></summary>
+<div class="manual-content">
 
 Você pode proteger itens de documento definindo uma senha.
 
@@ -102,9 +114,14 @@ Um documento bloqueado só pode ser visualizado após inserir a senha correta.
 - Documentos bloqueados não aparecem nos resultados de pesquisa
 - Itens bloqueados ainda podem ser excluídos
 
+</div>
+</details>
+
 ---
 
-<h3 id="clip">📎 Sistema Clip</h3>
+<details>
+<summary><h3 id="clip">📎 Sistema Clip</h3></summary>
+<div class="manual-content">
 
 **Clip** é uma funcionalidade que agrupa múltiplos documentos para facilitar o gerenciamento.
 
@@ -171,9 +188,14 @@ Você pode remover itens específicos na tela de info do clip:
 - O ícone de clip (📎) facilita identificar o status do clip
 - São necessários pelo menos 2 documentos para manter um clip
 
+</div>
+</details>
+
 ---
 
-<h3 id="badge">🏷️ Sistema de Emblema</h3>
+<details>
+<summary><h3 id="badge">🏷️ Sistema de Emblema</h3></summary>
+<div class="manual-content">
 
 Um **Emblema** é uma identidade única que você pode usar dentro do aplicativo.
 
@@ -207,9 +229,14 @@ Exemplos: `MinhaMarca`, `JoãoSilva`, `Empresa2025`
 Emblemas gravados (estado ativo) exibem uma prévia da imagem gravada no canto superior direito do cartão de inventário.
 Isso permite identificar rapidamente a qual domínio o emblema pertence.
 
+</div>
+</details>
+
 ---
 
-<h3 id="stamp">🔖 Sistema de Carimbo</h3>
+<details>
+<summary><h3 id="stamp">🔖 Sistema de Carimbo</h3></summary>
+<div class="manual-content">
 
 Um **Carimbo** é um item que permite criar modelos e compartilhá-los com outros.
 
@@ -270,9 +297,14 @@ Você pode pesquisar e clonar modelos compartilhados por outros usuários.
 - O botão de clonar fica desativado se você não tiver papel
 - Itens clonados têm as mesmas informações de modelo do original
 
+</div>
+</details>
+
 ---
 
-<h3 id="quick-input">⚡ Entrada Rápida</h3>
+<details>
+<summary><h3 id="quick-input">⚡ Entrada Rápida</h3></summary>
+<div class="manual-content">
 
 Ao adicionar registros, toque no botão `+` para abrir o menu de **Entrada Rápida** para inserir informações especiais facilmente.
 
@@ -306,9 +338,14 @@ Pressione longamente um cartão de data para definir um alarme:
 
 > 💡 **Dica**: Os cartões de data exibem automaticamente cálculos D-Day (ex: D-5, D-Day, D+3)
 
+</div>
+</details>
+
 ---
 
-<h3 id="log">📝 Sistema de Registro</h3>
+<details>
+<summary><h3 id="log">📝 Sistema de Registro</h3></summary>
+<div class="manual-content">
 
 Os **Registros** são anotações que você pode adicionar a itens ou modelos de carimbo.
 
@@ -390,9 +427,14 @@ Quando novos comentários são adicionados a um registro compartilhado, a borda 
 
 > 💡 **Dica**: Verifique os itens que pulsam para não perder novos comentários!
 
+</div>
+</details>
+
 ---
 
-<h3 id="ink">🎨 Sistema de Tinta</h3>
+<details>
+<summary><h3 id="ink">🎨 Sistema de Tinta</h3></summary>
+<div class="manual-content">
 
 A **Tinta** é um item que muda a cor do tema do aplicativo.
 
@@ -409,9 +451,14 @@ A **Tinta** é um item que muda a cor do tema do aplicativo.
 | **Tinta Preta** | Tema preto padrão |
 | **Tinta Dourada** | Tema dourado luxuoso |
 
+</div>
+</details>
+
 ---
 
-<h3 id="search">🔍 Função de Busca</h3>
+<details>
+<summary><h3 id="search">🔍 Função de Busca</h3></summary>
+<div class="manual-content">
 
 #### Busca básica
 
@@ -454,9 +501,14 @@ Quando um filtro está definido e você seleciona itens, os **valores de palavra
 
 > 💡 **Exemplo de uso**: Calcule rapidamente o preço total de vários itens, ou copie tags relacionadas de uma vez.
 
+</div>
+</details>
+
 ---
 
-### 📱 Emblema do menu inferior
+<details>
+<summary><h3 id="bottom-menu">📱 Emblema do menu inferior</h3></summary>
+<div class="manual-content">
 
 Emblemas vermelhos nos ícones do menu inferior mostram o status atual.
 
@@ -468,9 +520,14 @@ Emblemas vermelhos nos ícones do menu inferior mostram o status atual.
 
 > 💡 Os números dos emblemas animam com um efeito de bolha quando mudam.
 
+</div>
+</details>
+
 ---
 
-<h3 id="transfer">📤 Enviar Itens</h3>
+<details>
+<summary><h3 id="transfer">📤 Enviar Itens</h3></summary>
+<div class="manual-content">
 
 Você pode transferir itens ao vender usados ou dar presentes.
 
@@ -492,9 +549,14 @@ Em vez de digitar o email do destinatário, você pode usar um código QR:
 
 > ⚠️ **Importante**: Itens transferidos **desaparecem imediatamente** do seu inventário. Transferências não podem ser desfeitas.
 
+</div>
+</details>
+
 ---
 
-### 📥 Receber Itens
+<details>
+<summary><h3 id="receive">📥 Receber Itens</h3></summary>
+<div class="manual-content">
 
 Você pode receber itens enviados por outros.
 
@@ -511,9 +573,14 @@ Você pode receber itens enviados por outros.
 - Você recebe notificações push quando novos itens chegam (se habilitadas)
 - A aba Receber mostra o número de itens não aceitos
 
+</div>
+</details>
+
 ---
 
-### 🛒 Usar a Loja
+<details>
+<summary><h3 id="shop">🛒 Usar a Loja</h3></summary>
+<div class="manual-content">
 
 Você pode comprar vários itens na loja.
 
@@ -535,9 +602,14 @@ Você pode comprar vários itens na loja.
 
 > 💡 A loja está disponível em todas as plataformas (iOS, Android, Windows, macOS).
 
+</div>
+</details>
+
 ---
 
-<h3 id="partition">📂 Função de Partição</h3>
+<details>
+<summary><h3 id="partition">📂 Função de Partição</h3></summary>
+<div class="manual-content">
 
 Você pode agrupar itens com partições quando tiver muitos.
 
@@ -571,9 +643,14 @@ Toque no cabeçalho da partição para selecionar/desmarcar todos os itens nessa
 | ◐ (Semicírculo) | Alguns selecionados |
 | ● (Círculo cheio) | Todos selecionados |
 
+</div>
+</details>
+
 ---
 
-### 🌍 Mudar idioma
+<details>
+<summary><h3 id="language">🌍 Mudar idioma</h3></summary>
+<div class="manual-content">
 
 7 idiomas são suportados:
 - 🇰🇷 한국어
@@ -586,6 +663,9 @@ Toque no cabeçalho da partição para selecionar/desmarcar todos os itens nessa
 
 **Como mudar:**
 Configurações → Idioma → Selecione o idioma desejado
+
+</div>
+</details>
 
 ---
 
@@ -603,4 +683,12 @@ table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
 th, td { padding: .75rem; border: 1px solid #e5e7eb; text-align: left; }
 th { background: #f9fafb; font-weight: 600; }
 code { background: #f3f4f6; padding: .2rem .4rem; border-radius: 3px; font-size: .9em; }
+
+details { margin: 1rem 0; border: 1px solid #e5e7eb; border-radius: 8px; overflow: hidden; }
+summary { cursor: pointer; padding: 0; list-style: none; background: #f9fafb; }
+summary::-webkit-details-marker { display: none; }
+summary h3 { display: inline-block; margin: 0; padding: 1rem 1.5rem; color: #374151; font-size: 1.1rem; }
+summary:hover { background: #f3f4f6; }
+details[open] summary { border-bottom: 1px solid #e5e7eb; }
+.manual-content { padding: 1.5rem; }
 </style>

@@ -19,7 +19,9 @@ Explora todas las funciones de la aplicación Inventory en detalle.
 
 ---
 
-<h3 id="paper">📦 Sistema de Papel</h3>
+<details open>
+<summary><h3 id="paper">📦 Sistema de Papel</h3></summary>
+<div class="manual-content">
 
 En Inventory, el **Papel** es la moneda principal utilizada para crear objetos.
 
@@ -38,9 +40,14 @@ En Inventory, el **Papel** es la moneda principal utilizada para crear objetos.
 
 > 💡 **Consejo**: ¡Los usuarios existentes pueden obtener Papel extra vinculando nuevas cuentas sociales!
 
+</div>
+</details>
+
 ---
 
-<h3 id="create-item">📄 Creación de Objetos</h3>
+<details>
+<summary><h3 id="create-item">📄 Creación de Objetos</h3></summary>
+<div class="manual-content">
 
 #### Cómo crear un objeto
 
@@ -63,9 +70,14 @@ En Inventory, el **Papel** es la moneda principal utilizada para crear objetos.
 
 Si no se establece, será visible inmediatamente y permanente.
 
+</div>
+</details>
+
 ---
 
-<h3 id="lock">🔒 Bloqueo de Documento</h3>
+<details>
+<summary><h3 id="lock">🔒 Bloqueo de Documento</h3></summary>
+<div class="manual-content">
 
 Puedes proteger los documentos estableciendo una contraseña.
 
@@ -102,9 +114,14 @@ Un documento bloqueado solo puede verse después de introducir la contraseña co
 - Los documentos bloqueados no aparecen en los resultados de búsqueda
 - Los objetos bloqueados aún pueden ser eliminados
 
+</div>
+</details>
+
 ---
 
-<h3 id="clip">📎 Sistema Clip</h3>
+<details>
+<summary><h3 id="clip">📎 Sistema Clip</h3></summary>
+<div class="manual-content">
 
 **Clip** es una función que agrupa múltiples documentos para una gestión más fácil.
 
@@ -171,9 +188,14 @@ Puedes eliminar elementos específicos en la pantalla de info del clip:
 - El icono de clip (📎) facilita identificar el estado del clip
 - Se necesitan al menos 2 documentos para mantener un clip
 
+</div>
+</details>
+
 ---
 
-<h3 id="badge">🏷️ Sistema de Insignias</h3>
+<details>
+<summary><h3 id="badge">🏷️ Sistema de Insignias</h3></summary>
+<div class="manual-content">
 
 Una **Insignia** es una identidad única que puedes usar dentro de la aplicación.
 
@@ -207,9 +229,14 @@ Ejemplos: `MiMarca`, `JuanPérez`, `Empresa2025`
 Las insignias grabadas (estado activo) muestran una vista previa de la imagen grabada en la esquina superior derecha de la tarjeta de inventario.
 Esto permite identificar rápidamente a qué dominio pertenece la insignia.
 
+</div>
+</details>
+
 ---
 
-<h3 id="stamp">🔖 Sistema de Sellos</h3>
+<details>
+<summary><h3 id="stamp">🔖 Sistema de Sellos</h3></summary>
+<div class="manual-content">
 
 Un **Sello** es un objeto que te permite crear plantillas y compartirlas con otros.
 
@@ -270,9 +297,14 @@ Puedes buscar y clonar plantillas compartidas por otros usuarios.
 - El botón de clonar está desactivado si no tienes papel
 - Los objetos clonados tienen la misma información de plantilla que el original
 
+</div>
+</details>
+
 ---
 
-<h3 id="quick-input">⚡ Entrada Rápida</h3>
+<details>
+<summary><h3 id="quick-input">⚡ Entrada Rápida</h3></summary>
+<div class="manual-content">
 
 Al agregar registros, toca el botón `+` para abrir el menú **Entrada Rápida** para ingresar fácilmente información especial.
 
@@ -306,9 +338,14 @@ Mantén presionada una tarjeta de fecha para configurar una alarma:
 
 > 💡 **Consejo**: Las tarjetas de fecha muestran automáticamente el cálculo de D-Día (ej: D-5, D-Day, D+3)
 
+</div>
+</details>
+
 ---
 
-<h3 id="log">📝 Sistema de Registros</h3>
+<details>
+<summary><h3 id="log">📝 Sistema de Registros</h3></summary>
+<div class="manual-content">
 
 Los **Registros** son anotaciones que puedes agregar a objetos o plantillas de sellos.
 
@@ -390,9 +427,14 @@ Cuando se agregan nuevos comentarios a un registro compartido, el borde del elem
 
 > 💡 **Consejo**: ¡Revisa los elementos que pulsan para no perderte nuevos comentarios!
 
+</div>
+</details>
+
 ---
 
-<h3 id="ink">🎨 Sistema de Tinta</h3>
+<details>
+<summary><h3 id="ink">🎨 Sistema de Tinta</h3></summary>
+<div class="manual-content">
 
 La **Tinta** es un objeto que cambia el color del tema de la aplicación.
 
@@ -409,9 +451,14 @@ La **Tinta** es un objeto que cambia el color del tema de la aplicación.
 | **Tinta Negra** | Tema negro predeterminado |
 | **Tinta Dorada** | Tema dorado lujoso |
 
+</div>
+</details>
+
 ---
 
-<h3 id="search">🔍 Función de Búsqueda</h3>
+<details>
+<summary><h3 id="search">🔍 Función de Búsqueda</h3></summary>
+<div class="manual-content">
 
 #### Búsqueda básica
 
@@ -454,9 +501,14 @@ Cuando hay un filtro establecido y seleccionas objetos, los **valores de palabra
 
 > 💡 **Ejemplo de uso**: Calcula rápidamente el precio total de varios objetos, o copia etiquetas relacionadas de una vez.
 
+</div>
+</details>
+
 ---
 
-### 📱 Insignia del menú inferior
+<details>
+<summary><h3 id="bottom-menu">📱 Insignia del menú inferior</h3></summary>
+<div class="manual-content">
 
 Las insignias rojas en los iconos del menú inferior muestran el estado actual.
 
@@ -468,9 +520,14 @@ Las insignias rojas en los iconos del menú inferior muestran el estado actual.
 
 > 💡 Los números de las insignias se animan con un efecto de burbuja cuando cambian.
 
+</div>
+</details>
+
 ---
 
-<h3 id="transfer">📤 Enviar Objetos</h3>
+<details>
+<summary><h3 id="transfer">📤 Enviar Objetos</h3></summary>
+<div class="manual-content">
 
 Puedes transferir objetos al vender de segunda mano o regalar.
 
@@ -492,9 +549,14 @@ En lugar de escribir el email del destinatario, puedes usar un código QR:
 
 > ⚠️ **Importante**: Los objetos transferidos **desaparecen inmediatamente** de tu inventario. Las transferencias no se pueden deshacer.
 
+</div>
+</details>
+
 ---
 
-### 📥 Recibir Objetos
+<details>
+<summary><h3 id="receive">📥 Recibir Objetos</h3></summary>
+<div class="manual-content">
 
 Puedes recibir objetos enviados por otros.
 
@@ -511,9 +573,14 @@ Puedes recibir objetos enviados por otros.
 - Recibes notificaciones push cuando llegan nuevos objetos (si están habilitadas)
 - La pestaña Recibir muestra el número de objetos no aceptados
 
+</div>
+</details>
+
 ---
 
-### 🛒 Usar la Tienda
+<details>
+<summary><h3 id="shop">🛒 Usar la Tienda</h3></summary>
+<div class="manual-content">
 
 Puedes comprar varios objetos en la tienda.
 
@@ -535,9 +602,14 @@ Puedes comprar varios objetos en la tienda.
 
 > 💡 La tienda está disponible en todas las plataformas (iOS, Android, Windows, macOS).
 
+</div>
+</details>
+
 ---
 
-<h3 id="partition">📂 Función de Partición</h3>
+<details>
+<summary><h3 id="partition">📂 Función de Partición</h3></summary>
+<div class="manual-content">
 
 Puedes agrupar objetos con particiones cuando tienes muchos.
 
@@ -571,9 +643,14 @@ Toca el encabezado de partición para seleccionar/deseleccionar todos los elemen
 | ◐ (Semicírculo) | Algunos seleccionados |
 | ● (Círculo lleno) | Todos seleccionados |
 
+</div>
+</details>
+
 ---
 
-### 🌍 Cambiar idioma
+<details>
+<summary><h3 id="language">🌍 Cambiar idioma</h3></summary>
+<div class="manual-content">
 
 Se admiten 7 idiomas:
 - 🇰🇷 한국어
@@ -586,6 +663,9 @@ Se admiten 7 idiomas:
 
 **Cómo cambiar:**
 Configuración → Idioma → Selecciona el idioma deseado
+
+</div>
+</details>
 
 ---
 
@@ -603,4 +683,12 @@ table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
 th, td { padding: .75rem; border: 1px solid #e5e7eb; text-align: left; }
 th { background: #f9fafb; font-weight: 600; }
 code { background: #f3f4f6; padding: .2rem .4rem; border-radius: 3px; font-size: .9em; }
+
+details { margin: 1rem 0; border: 1px solid #e5e7eb; border-radius: 8px; overflow: hidden; }
+summary { cursor: pointer; padding: 0; list-style: none; background: #f9fafb; }
+summary::-webkit-details-marker { display: none; }
+summary h3 { display: inline-block; margin: 0; padding: 1rem 1.5rem; color: #374151; font-size: 1.1rem; }
+summary:hover { background: #f3f4f6; }
+details[open] summary { border-bottom: 1px solid #e5e7eb; }
+.manual-content { padding: 1.5rem; }
 </style>

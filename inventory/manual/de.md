@@ -19,7 +19,9 @@ Entdecken Sie alle Funktionen der Inventory-App im Detail.
 
 ---
 
-<h3 id="paper">📦 Papier-System</h3>
+<details open>
+<summary><h3 id="paper">📦 Papier-System</h3></summary>
+<div class="manual-content">
 
 In Inventory ist **Papier** die Kernwährung zum Erstellen von Gegenständen.
 
@@ -38,9 +40,14 @@ In Inventory ist **Papier** die Kernwährung zum Erstellen von Gegenständen.
 
 > 💡 **Tipp**: Bestehende Benutzer können zusätzliches Papier erhalten, indem sie neue Social-Accounts verknüpfen!
 
+</div>
+</details>
+
 ---
 
-<h3 id="create-item">📄 Gegenstände erstellen</h3>
+<details>
+<summary><h3 id="create-item">📄 Gegenstände erstellen</h3></summary>
+<div class="manual-content">
 
 #### Wie man einen Gegenstand erstellt
 
@@ -63,9 +70,14 @@ In Inventory ist **Papier** die Kernwährung zum Erstellen von Gegenständen.
 
 Wenn nicht festgelegt, ist es sofort sichtbar und dauerhaft.
 
+</div>
+</details>
+
 ---
 
-<h3 id="lock">🔒 Dokumentsperre</h3>
+<details>
+<summary><h3 id="lock">🔒 Dokumentsperre</h3></summary>
+<div class="manual-content">
 
 Sie können Dokumentelemente durch Festlegen eines Passworts schützen.
 
@@ -102,9 +114,14 @@ Ein gesperrtes Dokument kann nur nach Eingabe des korrekten Passworts angezeigt 
 - Gesperrte Dokumente erscheinen nicht in Suchergebnissen
 - Gesperrte Elemente können weiterhin gelöscht werden
 
+</div>
+</details>
+
 ---
 
-<h3 id="clip">📎 Clip-System</h3>
+<details>
+<summary><h3 id="clip">📎 Clip-System</h3></summary>
+<div class="manual-content">
 
 **Clip** ist eine Funktion, mit der Sie mehrere Dokumente zur einfacheren Verwaltung zusammenfassen können.
 
@@ -171,9 +188,14 @@ Sie können bestimmte Elemente im Clip-Info-Bildschirm entfernen:
 - Das Clip-Symbol (📎) erleichtert die Identifizierung des Clip-Status
 - Mindestens 2 Dokumente sind erforderlich, um einen Clip zu erhalten
 
+</div>
+</details>
+
 ---
 
-<h3 id="badge">🏷️ Abzeichen-System</h3>
+<details>
+<summary><h3 id="badge">🏷️ Abzeichen-System</h3></summary>
+<div class="manual-content">
 
 Ein **Abzeichen** ist eine einzigartige Identität, die Sie in der App verwenden können.
 
@@ -207,9 +229,14 @@ Beispiele: `MeineMarke`, `MaxMustermann`, `Firma2025`
 Gravierte Abzeichen (aktiver Zustand) zeigen in der Inventarkarte oben rechts eine Vorschau des gravierten Bildes.
 So können Sie schnell erkennen, zu welcher Domain das Abzeichen gehört.
 
+</div>
+</details>
+
 ---
 
-<h3 id="stamp">🔖 Stempel-System</h3>
+<details>
+<summary><h3 id="stamp">🔖 Stempel-System</h3></summary>
+<div class="manual-content">
 
 Ein **Stempel** ist ein Gegenstand, mit dem Sie Vorlagen erstellen und mit anderen teilen können.
 
@@ -270,9 +297,14 @@ Sie können von anderen Benutzern geteilte Vorlagen suchen und klonen.
 - Die Klonen-Schaltfläche ist deaktiviert, wenn Sie kein Papier haben
 - Geklonte Gegenstände haben dieselben Vorlageninformationen wie das Original
 
+</div>
+</details>
+
 ---
 
-<h3 id="quick-input">⚡ Schnelleingabe</h3>
+<details>
+<summary><h3 id="quick-input">⚡ Schnelleingabe</h3></summary>
+<div class="manual-content">
 
 Beim Hinzufügen von Protokollen tippen Sie auf die `+`-Taste, um das **Schnelleingabe**-Menü für einfache Eingabe spezieller Informationen zu öffnen.
 
@@ -306,9 +338,14 @@ Drücken Sie lange auf eine Datumskarte, um einen Alarm einzustellen:
 
 > 💡 **Tipp**: Datumskarten zeigen automatisch D-Day-Berechnungen an (z.B. D-5, D-Day, D+3)
 
+</div>
+</details>
+
 ---
 
-<h3 id="log">📝 Protokoll-System</h3>
+<details>
+<summary><h3 id="log">📝 Protokoll-System</h3></summary>
+<div class="manual-content">
 
 **Protokolle** sind Aufzeichnungen, die Sie zu Gegenständen oder Stempelvorlagen hinzufügen können.
 
@@ -390,9 +427,14 @@ Wenn neue Kommentare zu einem geteilten Protokoll hinzugefügt werden, **pulsier
 
 > 💡 **Tipp**: Überprüfen Sie pulsierende Elemente, um keine neuen Kommentare zu verpassen!
 
+</div>
+</details>
+
 ---
 
-<h3 id="ink">🎨 Tinten-System</h3>
+<details>
+<summary><h3 id="ink">🎨 Tinten-System</h3></summary>
+<div class="manual-content">
 
 **Tinte** ist ein Gegenstand, der die Themenfarbe der App ändert.
 
@@ -409,9 +451,14 @@ Wenn neue Kommentare zu einem geteilten Protokoll hinzugefügt werden, **pulsier
 | **Schwarze Tinte** | Standard-Schwarz-Thema |
 | **Goldene Tinte** | Luxuriöses Gold-Thema |
 
+</div>
+</details>
+
 ---
 
-<h3 id="search">🔍 Suchfunktion</h3>
+<details>
+<summary><h3 id="search">🔍 Suchfunktion</h3></summary>
+<div class="manual-content">
 
 #### Grundlegende Suche
 
@@ -454,9 +501,14 @@ Wenn ein Filter gesetzt ist und Sie Gegenstände auswählen, werden die **Schlü
 
 > 💡 **Anwendungsbeispiel**: Berechnen Sie schnell den Gesamtpreis mehrerer Gegenstände oder kopieren Sie verwandte Tags auf einmal.
 
+</div>
+</details>
+
 ---
 
-### 📱 Unteres Menü-Badge
+<details>
+<summary><h3 id="bottom-menu">📱 Unteres Menü-Badge</h3></summary>
+<div class="manual-content">
 
 Rote Badges auf den Symbolen des unteren Menüs zeigen den aktuellen Status an.
 
@@ -468,9 +520,14 @@ Rote Badges auf den Symbolen des unteren Menüs zeigen den aktuellen Status an.
 
 > 💡 Badge-Zahlen animieren mit einem Blaseneffekt, wenn sie sich ändern.
 
+</div>
+</details>
+
 ---
 
-<h3 id="transfer">📤 Gegenstände senden</h3>
+<details>
+<summary><h3 id="transfer">📤 Gegenstände senden</h3></summary>
+<div class="manual-content">
 
 Sie können Gegenstände beim Gebrauchtverkauf oder Verschenken übertragen.
 
@@ -492,9 +549,14 @@ Anstatt die E-Mail des Empfängers einzutippen, können Sie einen QR-Code verwen
 
 > ⚠️ **Wichtig**: Übertragene Gegenstände **verschwinden sofort** aus Ihrem Inventar. Übertragungen können nicht rückgängig gemacht werden.
 
+</div>
+</details>
+
 ---
 
-### 📥 Gegenstände empfangen
+<details>
+<summary><h3 id="receive">📥 Gegenstände empfangen</h3></summary>
+<div class="manual-content">
 
 Sie können von anderen gesendete Gegenstände empfangen.
 
@@ -511,9 +573,14 @@ Sie können von anderen gesendete Gegenstände empfangen.
 - Sie erhalten Push-Benachrichtigungen bei neuen Gegenständen (wenn Benachrichtigungen aktiviert sind)
 - Der Empfangen-Tab zeigt die Anzahl nicht akzeptierter Gegenstände
 
+</div>
+</details>
+
 ---
 
-### 🛒 Shop nutzen
+<details>
+<summary><h3 id="shop">🛒 Shop nutzen</h3></summary>
+<div class="manual-content">
 
 Sie können verschiedene Gegenstände im Shop kaufen.
 
@@ -535,9 +602,14 @@ Sie können verschiedene Gegenstände im Shop kaufen.
 
 > 💡 Der Shop ist auf allen Plattformen verfügbar (iOS, Android, Windows, macOS).
 
+</div>
+</details>
+
 ---
 
-<h3 id="partition">📂 Partitions-Funktion</h3>
+<details>
+<summary><h3 id="partition">📂 Partitions-Funktion</h3></summary>
+<div class="manual-content">
 
 Sie können Gegenstände mit Partitionen gruppieren, wenn Sie viele haben.
 
@@ -571,9 +643,14 @@ Tippen Sie auf den Partitionsheader, um alle Elemente in dieser Partition auszuw
 | ◐ (Halbkreis) | Einige ausgewählt |
 | ● (Gefüllter Kreis) | Alle ausgewählt |
 
+</div>
+</details>
+
 ---
 
-### 🌍 Sprache ändern
+<details>
+<summary><h3 id="language">🌍 Sprache ändern</h3></summary>
+<div class="manual-content">
 
 7 Sprachen werden unterstützt:
 - 🇰🇷 한국어
@@ -586,6 +663,9 @@ Tippen Sie auf den Partitionsheader, um alle Elemente in dieser Partition auszuw
 
 **Wie man ändert:**
 Einstellungen → Sprache → Gewünschte Sprache auswählen
+
+</div>
+</details>
 
 ---
 
@@ -603,4 +683,13 @@ table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
 th, td { padding: .75rem; border: 1px solid #e5e7eb; text-align: left; }
 th { background: #f9fafb; font-weight: 600; }
 code { background: #f3f4f6; padding: .2rem .4rem; border-radius: 3px; font-size: .9em; }
+
+/* Collapsible details styling */
+details { margin: 1rem 0; border: 1px solid #e5e7eb; border-radius: 8px; overflow: hidden; }
+summary { cursor: pointer; padding: 0; list-style: none; background: #f9fafb; }
+summary::-webkit-details-marker { display: none; }
+summary h3 { display: inline-block; margin: 0; padding: 1rem 1.5rem; color: #374151; font-size: 1.1rem; }
+summary:hover { background: #f3f4f6; }
+details[open] summary { border-bottom: 1px solid #e5e7eb; }
+.manual-content { padding: 1.5rem; }
 </style>

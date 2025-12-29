@@ -19,7 +19,9 @@ Inventory 앱의 모든 기능을 상세하게 알아보세요.
 
 ---
 
-<h3 id="paper">📦 종이(Paper) 시스템</h3>
+<details open>
+<summary><h3 id="paper">📦 종이(Paper) 시스템</h3></summary>
+<div class="manual-content">
 
 Inventory에서 **종이**는 아이템을 만들 때 사용하는 핵심 재화입니다.
 
@@ -38,9 +40,14 @@ Inventory에서 **종이**는 아이템을 만들 때 사용하는 핵심 재화
 
 > 💡 **팁**: 기존 사용자가 새 소셜 계정을 연동하면 무료로 종이를 추가로 받을 수 있어요!
 
+</div>
+</details>
+
 ---
 
-<h3 id="create-item">📄 아이템 생성</h3>
+<details>
+<summary><h3 id="create-item">📄 아이템 생성</h3></summary>
+<div class="manual-content">
 
 #### 아이템 생성하기
 
@@ -63,9 +70,14 @@ Inventory에서 **종이**는 아이템을 만들 때 사용하는 핵심 재화
 
 설정하지 않으면 즉시 공개되고 영구적으로 유지됩니다.
 
+</div>
+</details>
+
 ---
 
-<h3 id="lock">🔒 문서 잠금</h3>
+<details>
+<summary><h3 id="lock">🔒 문서 잠금</h3></summary>
+<div class="manual-content">
 
 문서 아이템에 비밀번호를 설정하여 내용을 보호할 수 있습니다.
 
@@ -102,9 +114,14 @@ Inventory에서 **종이**는 아이템을 만들 때 사용하는 핵심 재화
 - 잠긴 문서는 검색 결과에 표시되지 않습니다
 - 잠긴 상태에서도 삭제는 가능합니다
 
+</div>
+</details>
+
 ---
 
-<h3 id="clip">📎 클립 시스템</h3>
+<details>
+<summary><h3 id="clip">📎 클립 시스템</h3></summary>
+<div class="manual-content">
 
 **클립**은 여러 문서를 하나로 묶어서 관리하는 기능입니다.
 
@@ -171,9 +188,14 @@ Inventory에서 **종이**는 아이템을 만들 때 사용하는 핵심 재화
 - 클립 아이콘(📎)으로 클립 상태를 쉽게 확인할 수 있습니다
 - 최소 2개 이상의 문서가 있어야 클립을 유지할 수 있습니다
 
+</div>
+</details>
+
 ---
 
-<h3 id="badge">🏷️ 뱃지 시스템</h3>
+<details>
+<summary><h3 id="badge">🏷️ 뱃지 시스템</h3></summary>
+<div class="manual-content">
 
 **뱃지**는 앱 내에서 사용할 고유한 신원(Identity)입니다.
 
@@ -207,9 +229,14 @@ Inventory에서 **종이**는 아이템을 만들 때 사용하는 핵심 재화
 각인된 뱃지(활성화 상태)는 인벤토리에서 우측 상단에 각인 이미지가 미리보기로 표시됩니다.
 이를 통해 어떤 도메인의 뱃지인지 빠르게 확인할 수 있습니다.
 
+</div>
+</details>
+
 ---
 
-<h3 id="stamp">🔖 스탬프 시스템</h3>
+<details>
+<summary><h3 id="stamp">🔖 스탬프 시스템</h3></summary>
+<div class="manual-content">
 
 **스탬프**는 템플릿을 만들어 다른 사람에게 전달할 수 있는 아이템입니다.
 
@@ -270,9 +297,14 @@ Inventory에서 **종이**는 아이템을 만들 때 사용하는 핵심 재화
 - 종이가 없으면 복제 버튼이 비활성화됩니다
 - 복제된 아이템은 원본과 동일한 템플릿 정보를 가집니다
 
+</div>
+</details>
+
 ---
 
-<h3 id="quick-input">⚡ 빠른 입력 (Quick Input)</h3>
+<details>
+<summary><h3 id="quick-input">⚡ 빠른 입력 (Quick Input)</h3></summary>
+<div class="manual-content">
 
 로그 작성 시 `+` 버튼을 누르면 특수 정보를 쉽게 입력할 수 있는 **Quick Input** 메뉴가 나타납니다.
 
@@ -308,9 +340,14 @@ Inventory에서 **종이**는 아이템을 만들 때 사용하는 핵심 재화
 
 > 💡 **팁**: 날짜 카드에는 자동으로 D-Day가 계산되어 표시됩니다 (예: D-5, D-Day, D+3)
 
+</div>
+</details>
+
 ---
 
-<h3 id="log">📝 로그 시스템</h3>
+<details>
+<summary><h3 id="log">📝 로그 시스템</h3></summary>
+<div class="manual-content">
 
 **로그**는 아이템이나 스탬프 템플릿에 기록을 남기는 기능입니다.
 
@@ -392,9 +429,14 @@ Inventory에서 **종이**는 아이템을 만들 때 사용하는 핵심 재화
 
 > 💡 **팁**: 점멸하는 아이템을 확인하면 새 댓글을 놓치지 않을 수 있어요!
 
+</div>
+</details>
+
 ---
 
-<h3 id="ink">🎨 잉크 시스템</h3>
+<details>
+<summary><h3 id="ink">🎨 잉크 시스템</h3></summary>
+<div class="manual-content">
 
 **잉크**는 앱의 테마 색상을 변경하는 아이템입니다.
 
@@ -411,9 +453,14 @@ Inventory에서 **종이**는 아이템을 만들 때 사용하는 핵심 재화
 | **블랙 잉크** | 기본 검은색 테마 |
 | **골드 잉크** | 고급스러운 금색 테마 |
 
+</div>
+</details>
+
 ---
 
-<h3 id="search">🔍 검색 기능</h3>
+<details>
+<summary><h3 id="search">🔍 검색 기능</h3></summary>
+<div class="manual-content">
 
 #### 기본 검색
 
@@ -456,9 +503,14 @@ Inventory에서 **종이**는 아이템을 만들 때 사용하는 핵심 재화
 
 > 💡 **활용 예시**: 여러 아이템의 가격 합계를 빠르게 계산하거나, 관련 태그들을 한 번에 복사할 수 있습니다.
 
+</div>
+</details>
+
 ---
 
-### 📱 하단 메뉴 배지
+<details>
+<summary><h3 id="bottom-menu">📱 하단 메뉴 배지</h3></summary>
+<div class="manual-content">
 
 하단 메뉴의 아이콘에 빨간 배지가 표시되어 현재 상태를 알려줍니다.
 
@@ -470,9 +522,14 @@ Inventory에서 **종이**는 아이템을 만들 때 사용하는 핵심 재화
 
 > 💡 배지 숫자가 변경되면 버블 애니메이션으로 주의를 끕니다.
 
+</div>
+</details>
+
 ---
 
-<h3 id="transfer">📤 아이템 보내기</h3>
+<details>
+<summary><h3 id="transfer">📤 아이템 보내기</h3></summary>
+<div class="manual-content">
 
 중고 거래나 선물 시 아이템을 함께 전송할 수 있습니다.
 
@@ -494,9 +551,14 @@ Inventory에서 **종이**는 아이템을 만들 때 사용하는 핵심 재화
 
 > ⚠️ **중요**: 전송한 아이템은 내 인벤토리에서 **즉시 사라집니다**. 전송 후에는 취소할 수 없습니다.
 
+</div>
+</details>
+
 ---
 
-### 📥 아이템 받기
+<details>
+<summary><h3 id="receive">📥 아이템 받기</h3></summary>
+<div class="manual-content">
 
 다른 사람이 보낸 아이템을 받을 수 있습니다.
 
@@ -513,9 +575,14 @@ Inventory에서 **종이**는 아이템을 만들 때 사용하는 핵심 재화
 - 새 아이템이 도착하면 푸시 알림을 받습니다 (알림 허용 시)
 - 받기 탭에 미수락 아이템 개수가 표시됩니다
 
+</div>
+</details>
+
 ---
 
-### 🛒 상점 이용하기
+<details>
+<summary><h3 id="shop">🛒 상점 이용하기</h3></summary>
+<div class="manual-content">
 
 상점에서 다양한 아이템을 구매할 수 있습니다.
 
@@ -537,9 +604,14 @@ Inventory에서 **종이**는 아이템을 만들 때 사용하는 핵심 재화
 
 > 💡 모든 플랫폼(iOS, Android, Windows, macOS)에서 동일하게 상점을 이용할 수 있습니다.
 
+</div>
+</details>
+
 ---
 
-<h3 id="partition">📂 파티션 기능</h3>
+<details>
+<summary><h3 id="partition">📂 파티션 기능</h3></summary>
+<div class="manual-content">
 
 아이템이 많아지면 파티션으로 그룹화할 수 있습니다.
 
@@ -573,9 +645,14 @@ Inventory에서 **종이**는 아이템을 만들 때 사용하는 핵심 재화
 | ◐ (반원) | 일부 선택 |
 | ● (채워진 원) | 전체 선택 |
 
+</div>
+</details>
+
 ---
 
-### 🌍 언어 변경
+<details>
+<summary><h3 id="language">🌍 언어 변경</h3></summary>
+<div class="manual-content">
 
 7개 언어를 지원합니다:
 - 🇰🇷 한국어
@@ -589,17 +666,26 @@ Inventory에서 **종이**는 아이템을 만들 때 사용하는 핵심 재화
 **변경 방법:**
 설정 → 언어 → 원하는 언어 선택
 
+</div>
+</details>
+
 ---
 
 > 📚 **더 궁금한 점이 있나요?** [자주하는 질문](/inventory/faq/)을 확인하거나 [건의하기](/inventory/suggest/)를 통해 문의해 주세요.
 
 <style>
 h2 { color: #1f2937; border-bottom: 2px solid #e5e7eb; padding-bottom: .5rem; margin-bottom: 1.5rem; }
-h3 { color: #374151; margin-top: 2.5rem; margin-bottom: 1rem; padding-bottom: .3rem; border-bottom: 1px solid #f3f4f6; }
-h4 { color: #4b5563; font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: .75rem; }
+details { margin: 1rem 0; border: 1px solid #e5e7eb; border-radius: 8px; overflow: hidden; }
+summary { cursor: pointer; padding: 0; list-style: none; background: #f9fafb; }
+summary::-webkit-details-marker { display: none; }
+summary h3 { display: inline-block; margin: 0; padding: 1rem 1.5rem; color: #374151; font-size: 1.1rem; }
+summary:hover { background: #f3f4f6; }
+details[open] summary { border-bottom: 1px solid #e5e7eb; }
+.manual-content { padding: 1.5rem; }
+h4 { color: #4b5563; font-size: 1rem; margin-top: 1.5rem; margin-bottom: .75rem; }
 ul, ol { line-height: 1.8; }
 li { margin-bottom: .5rem; }
-hr { border: none; border-top: 1px solid #e5e7eb; margin: 2.5rem 0; }
+hr { border: none; border-top: 1px solid #e5e7eb; margin: 1.5rem 0; }
 blockquote { background: #f0f9ff; border-left: 4px solid #3b82f6; padding: 1rem 1.5rem; margin: 1.5rem 0; border-radius: 4px; color: #1e40af; }
 table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
 th, td { padding: .75rem; border: 1px solid #e5e7eb; text-align: left; }

@@ -19,7 +19,9 @@ Explore all the features of the Inventory app in detail.
 
 ---
 
-<h3 id="paper">📦 Paper System</h3>
+<details open>
+<summary><h3 id="paper">📦 Paper System</h3></summary>
+<div class="manual-content">
 
 In Inventory, **Paper** is the core currency used to create items.
 
@@ -38,9 +40,14 @@ In Inventory, **Paper** is the core currency used to create items.
 
 > 💡 **Tip**: Existing users can get extra Paper by linking new social accounts!
 
+</div>
+</details>
+
 ---
 
-<h3 id="create-item">📄 Creating Items</h3>
+<details>
+<summary><h3 id="create-item">📄 Creating Items</h3></summary>
+<div class="manual-content">
 
 #### How to Create an Item
 
@@ -63,9 +70,14 @@ In Inventory, **Paper** is the core currency used to create items.
 
 If not set, it will be immediately visible and permanent.
 
+</div>
+</details>
+
 ---
 
-<h3 id="lock">🔒 Document Lock</h3>
+<details>
+<summary><h3 id="lock">🔒 Document Lock</h3></summary>
+<div class="manual-content">
 
 You can protect document items by setting a password.
 
@@ -102,9 +114,14 @@ A locked document can only be viewed after entering the correct password.
 - Locked documents do not appear in search results
 - Locked items can still be deleted
 
+</div>
+</details>
+
 ---
 
-<h3 id="clip">📎 Clip System</h3>
+<details>
+<summary><h3 id="clip">📎 Clip System</h3></summary>
+<div class="manual-content">
 
 **Clip** is a feature that bundles multiple documents together for easier management.
 
@@ -171,9 +188,14 @@ You can remove specific items from a clip in the clip info screen:
 - Clip icon (📎) makes it easy to identify clip status
 - At least 2 documents are required to maintain a clip
 
+</div>
+</details>
+
 ---
 
-<h3 id="badge">🏷️ Badge System</h3>
+<details>
+<summary><h3 id="badge">🏷️ Badge System</h3></summary>
+<div class="manual-content">
 
 A **Badge** is a unique identity you can use within the app.
 
@@ -207,9 +229,14 @@ Examples: `MyBrand`, `JohnDoe`, `Company2025`
 Engraved badges (active state) show the engraved image preview in the top-right corner of the inventory card.
 This allows you to quickly identify which domain the badge belongs to.
 
+</div>
+</details>
+
 ---
 
-<h3 id="stamp">🔖 Stamp System</h3>
+<details>
+<summary><h3 id="stamp">🔖 Stamp System</h3></summary>
+<div class="manual-content">
 
 A **Stamp** is an item that lets you create templates and share them with others.
 
@@ -270,9 +297,14 @@ You can search and clone templates shared by other users.
 - Clone button is disabled if you have no paper
 - Cloned items have the same template information as the original
 
+</div>
+</details>
+
 ---
 
-<h3 id="quick-input">⚡ Quick Input</h3>
+<details>
+<summary><h3 id="quick-input">⚡ Quick Input</h3></summary>
+<div class="manual-content">
 
 When adding logs, tap the `+` button to open the **Quick Input** menu for easy special information entry.
 
@@ -306,9 +338,14 @@ Long press a date card to set an alarm:
 
 > 💡 **Tip**: Date cards automatically display D-Day calculations (e.g., D-5, D-Day, D+3)
 
+</div>
+</details>
+
 ---
 
-<h3 id="log">📝 Log System</h3>
+<details>
+<summary><h3 id="log">📝 Log System</h3></summary>
+<div class="manual-content">
 
 **Logs** are records you can add to items or stamp templates.
 
@@ -390,9 +427,14 @@ When new comments are added to a shared log, the item border **pulses** in the i
 
 > 💡 **Tip**: Check pulsing items to never miss new comments!
 
+</div>
+</details>
+
 ---
 
-<h3 id="ink">🎨 Ink System</h3>
+<details>
+<summary><h3 id="ink">🎨 Ink System</h3></summary>
+<div class="manual-content">
 
 **Ink** is an item that changes the app's theme color.
 
@@ -409,9 +451,14 @@ When new comments are added to a shared log, the item border **pulses** in the i
 | **Black Ink** | Default black theme |
 | **Gold Ink** | Luxurious gold theme |
 
+</div>
+</details>
+
 ---
 
-<h3 id="search">🔍 Search Function</h3>
+<details>
+<summary><h3 id="search">🔍 Search Function</h3></summary>
+<div class="manual-content">
 
 #### Basic Search
 
@@ -454,9 +501,14 @@ When a filter is set and you select items, the **keyword values of selected item
 
 > 💡 **Example Use**: Quickly calculate the total price of multiple items, or copy related tags at once.
 
+</div>
+</details>
+
 ---
 
-### 📱 Bottom Menu Badge
+<details>
+<summary><h3 id="bottom-menu">📱 Bottom Menu Badge</h3></summary>
+<div class="manual-content">
 
 Red badges on the bottom menu icons show current status.
 
@@ -468,9 +520,14 @@ Red badges on the bottom menu icons show current status.
 
 > 💡 Badge numbers animate with a bubble effect when they change.
 
+</div>
+</details>
+
 ---
 
-<h3 id="transfer">📤 Sending Items</h3>
+<details>
+<summary><h3 id="transfer">📤 Sending Items</h3></summary>
+<div class="manual-content">
 
 You can transfer items when selling second-hand or giving gifts.
 
@@ -492,9 +549,14 @@ Instead of typing the recipient's email, you can use a QR code:
 
 > ⚠️ **Important**: Transferred items **immediately disappear** from your inventory. Transfers cannot be undone.
 
+</div>
+</details>
+
 ---
 
-### 📥 Receiving Items
+<details>
+<summary><h3 id="receive">📥 Receiving Items</h3></summary>
+<div class="manual-content">
 
 You can receive items sent by others.
 
@@ -511,9 +573,14 @@ You can receive items sent by others.
 - You receive push notifications when new items arrive (if notifications are enabled)
 - The Receive tab shows the number of unaccepted items
 
+</div>
+</details>
+
 ---
 
-### 🛒 Using the Shop
+<details>
+<summary><h3 id="shop">🛒 Using the Shop</h3></summary>
+<div class="manual-content">
 
 You can purchase various items from the shop.
 
@@ -535,9 +602,14 @@ You can purchase various items from the shop.
 
 > 💡 The shop is available on all platforms (iOS, Android, Windows, macOS).
 
+</div>
+</details>
+
 ---
 
-<h3 id="partition">📂 Partition Feature</h3>
+<details>
+<summary><h3 id="partition">📂 Partition Feature</h3></summary>
+<div class="manual-content">
 
 You can group items with partitions when you have many items.
 
@@ -571,9 +643,14 @@ Tap the partition header to select/deselect all items in that partition.
 | ◐ (Half circle) | Some selected |
 | ● (Filled circle) | All selected |
 
+</div>
+</details>
+
 ---
 
-### 🌍 Changing Language
+<details>
+<summary><h3 id="language">🌍 Changing Language</h3></summary>
+<div class="manual-content">
 
 7 languages are supported:
 - 🇰🇷 한국어
@@ -587,17 +664,26 @@ Tap the partition header to select/deselect all items in that partition.
 **How to Change:**
 Settings → Language → Select desired language
 
+</div>
+</details>
+
 ---
 
 > 📚 **Have more questions?** Check the [FAQ](/inventory/faq/en/) or contact us through [Suggestions](/inventory/suggest/en/).
 
 <style>
 h2 { color: #1f2937; border-bottom: 2px solid #e5e7eb; padding-bottom: .5rem; margin-bottom: 1.5rem; }
-h3 { color: #374151; margin-top: 2.5rem; margin-bottom: 1rem; padding-bottom: .3rem; border-bottom: 1px solid #f3f4f6; }
-h4 { color: #4b5563; font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: .75rem; }
+details { margin: 1rem 0; border: 1px solid #e5e7eb; border-radius: 8px; overflow: hidden; }
+summary { cursor: pointer; padding: 0; list-style: none; background: #f9fafb; }
+summary::-webkit-details-marker { display: none; }
+summary h3 { display: inline-block; margin: 0; padding: 1rem 1.5rem; color: #374151; font-size: 1.1rem; }
+summary:hover { background: #f3f4f6; }
+details[open] summary { border-bottom: 1px solid #e5e7eb; }
+.manual-content { padding: 1.5rem; }
+h4 { color: #4b5563; font-size: 1rem; margin-top: 1.5rem; margin-bottom: .75rem; }
 ul, ol { line-height: 1.8; }
 li { margin-bottom: .5rem; }
-hr { border: none; border-top: 1px solid #e5e7eb; margin: 2.5rem 0; }
+hr { border: none; border-top: 1px solid #e5e7eb; margin: 1.5rem 0; }
 blockquote { background: #f0f9ff; border-left: 4px solid #3b82f6; padding: 1rem 1.5rem; margin: 1.5rem 0; border-radius: 4px; color: #1e40af; }
 table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
 th, td { padding: .75rem; border: 1px solid #e5e7eb; text-align: left; }
