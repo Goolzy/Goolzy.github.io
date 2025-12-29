@@ -19,6 +19,21 @@ Confira o histórico de atualizações do aplicativo Inventory.
 
 ---
 
+### v1.1.0 <small style="color:#6b7280;">2025-12-29</small>
+
+#### Sistema de tutoriais
+Tutoriais passo a passo foram adicionados para guiá-lo no uso do aplicativo.
+- **Tela de inventário**: Seleção de itens, movimento de partição, uso do menu inferior (8 etapas)
+- **Tela Enviar/Receber**: Entrada do destinatário, escaneamento QR, métodos de transferência/recebimento
+- **Tela da loja**: Navegação de categorias de produtos e métodos de compra
+- **Tela de perfil**: Informações da conta e configurações
+- **Tela de configurações**: Configurações do aplicativo e mudança de tema
+- **Modelo de carimbo**: Processo completo de criação de modelo (9 etapas)
+- **Função de busca**: Uso de filtros e salvamento de termos de busca
+- Exibido apenas no primeiro uso; pode ser visto novamente em Configurações
+
+---
+
 ### v1.0.4 <small style="color:#6b7280;">2025-12-25</small>
 
 #### Cartões de Links de Mídia

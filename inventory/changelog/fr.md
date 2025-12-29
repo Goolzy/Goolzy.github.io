@@ -19,6 +19,21 @@ Consultez l'historique des mises à jour de l'application Inventory.
 
 ---
 
+### v1.1.0 <small style="color:#6b7280;">2025-12-29</small>
+
+#### Système de tutoriels
+Des tutoriels étape par étape ont été ajoutés pour vous guider dans l'utilisation de l'application.
+- **Écran d'inventaire** : Sélection d'éléments, déplacement de partition, utilisation du menu inférieur (8 étapes)
+- **Écran Envoyer/Recevoir** : Saisie du destinataire, scan QR, méthodes de transfert/réception
+- **Écran Boutique** : Navigation des catégories de produits et méthodes d'achat
+- **Écran Profil** : Informations du compte et paramètres
+- **Écran Paramètres** : Paramètres de l'application et changement de thème
+- **Modèle de tampon** : Processus complet de création de modèle (9 étapes)
+- **Fonction de recherche** : Utilisation des filtres et sauvegarde des termes de recherche
+- Affiché uniquement lors de la première utilisation ; peut être revu dans les Paramètres
+
+---
+
 ### v1.0.4 <small style="color:#6b7280;">2025-12-25</small>
 
 #### Cartes de liens médias

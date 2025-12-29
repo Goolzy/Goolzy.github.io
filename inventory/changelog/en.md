@@ -19,6 +19,21 @@ Check out the update history for the Inventory app.
 
 ---
 
+### v1.1.0 <small style="color:#6b7280;">2025-12-29</small>
+
+#### Tutorial System
+Step-by-step tutorials have been added to guide you through app usage.
+- **Inventory Screen**: Item selection, partition movement, bottom menu usage (8 steps)
+- **Send/Receive Screen**: Recipient input, QR scan, transfer/receive methods
+- **Store Screen**: Product category browsing and purchase methods
+- **Profile Screen**: Account information and settings
+- **Settings Screen**: App settings and theme changes
+- **Stamp Template**: Complete template creation process (9 steps)
+- **Search Feature**: Filter usage and search term saving
+- Shown only on first use; can be viewed again in Settings
+
+---
+
 ### v1.0.4 <small style="color:#6b7280;">2025-12-25</small>
 
 #### Media Link Cards

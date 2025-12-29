@@ -19,6 +19,21 @@ Consulta el historial de actualizaciones de la aplicación Inventory.
 
 ---
 
+### v1.1.0 <small style="color:#6b7280;">2025-12-29</small>
+
+#### Sistema de tutoriales
+Se han añadido tutoriales paso a paso para guiarte en el uso de la aplicación.
+- **Pantalla de inventario**: Selección de artículos, movimiento de partición, uso del menú inferior (8 pasos)
+- **Pantalla Enviar/Recibir**: Entrada del destinatario, escaneo QR, métodos de transferencia/recepción
+- **Pantalla de tienda**: Navegación de categorías de productos y métodos de compra
+- **Pantalla de perfil**: Información de cuenta y configuración
+- **Pantalla de ajustes**: Configuración de la aplicación y cambio de tema
+- **Plantilla de sello**: Proceso completo de creación de plantilla (9 pasos)
+- **Función de búsqueda**: Uso de filtros y guardado de términos de búsqueda
+- Se muestra solo en el primer uso; puede verse de nuevo en Ajustes
+
+---
+
 ### v1.0.4 <small style="color:#6b7280;">2025-12-25</small>
 
 #### Tarjetas de enlaces multimedia

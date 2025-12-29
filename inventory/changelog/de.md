@@ -19,6 +19,21 @@ Sehen Sie sich den Update-Verlauf der Inventory-App an.
 
 ---
 
+### v1.1.0 <small style="color:#6b7280;">2025-12-29</small>
+
+#### Tutorial-System
+Schritt-für-Schritt-Tutorials wurden hinzugefügt, um Sie durch die App-Nutzung zu führen.
+- **Inventar-Bildschirm**: Artikelauswahl, Partitionsbewegung, Nutzung des unteren Menüs (8 Schritte)
+- **Senden/Empfangen-Bildschirm**: Empfängereingabe, QR-Scan, Übertragungs-/Empfangsmethoden
+- **Shop-Bildschirm**: Produktkategorie-Durchsuchen und Kaufmethoden
+- **Profil-Bildschirm**: Kontoinformationen und Einstellungen
+- **Einstellungen-Bildschirm**: App-Einstellungen und Themenwechsel
+- **Stempel-Vorlage**: Vollständiger Vorlagenerstellungsprozess (9 Schritte)
+- **Suchfunktion**: Filternutzung und Suchbegriffspeicherung
+- Wird nur beim ersten Mal angezeigt; kann in den Einstellungen erneut angesehen werden
+
+---
+
 ### v1.0.4 <small style="color:#6b7280;">2025-12-25</small>
 
 #### Medienlink-Karten
