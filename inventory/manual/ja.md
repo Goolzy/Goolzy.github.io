@@ -672,24 +672,153 @@ Inventoryでは、**ペーパー**はアイテムを作成する際に使用す�
 > 📚 **もっと質問がありますか？** [よくある質問](/inventory/faq/ja/)を確認するか、[ご意見・ご要望](/inventory/suggest/ja/)からお問い合わせください。
 
 <style>
-h2 { color: #1f2937; border-bottom: 2px solid #e5e7eb; padding-bottom: .5rem; margin-bottom: 1.5rem; }
-h3 { color: #374151; margin-top: 2.5rem; margin-bottom: 1rem; padding-bottom: .3rem; border-bottom: 1px solid #f3f4f6; }
-h4 { color: #4b5563; font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: .75rem; }
-ul, ol { line-height: 1.8; }
-li { margin-bottom: .5rem; }
-hr { border: none; border-top: 1px solid #e5e7eb; margin: 2.5rem 0; }
-blockquote { background: #f0f9ff; border-left: 4px solid #3b82f6; padding: 1rem 1.5rem; margin: 1.5rem 0; border-radius: 4px; color: #1e40af; }
-table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
-th, td { padding: .75rem; border: 1px solid #e5e7eb; text-align: left; }
-th { background: #f9fafb; font-weight: 600; }
-code { background: #f3f4f6; padding: .2rem .4rem; border-radius: 3px; font-size: .9em; }
+details {
+  background: rgba(21, 10, 40, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(168, 85, 247, 0.25);
+  border-radius: 12px;
+  padding: 0;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
 
-/* Collapsible sections styling */
-details { margin: 1rem 0; border: 1px solid #e5e7eb; border-radius: 8px; overflow: hidden; }
-summary { cursor: pointer; padding: 0; list-style: none; background: #f9fafb; }
-summary::-webkit-details-marker { display: none; }
-summary h3 { display: inline-block; margin: 0; padding: 1rem 1.5rem; color: #374151; font-size: 1.1rem; }
-summary:hover { background: #f3f4f6; }
-details[open] summary { border-bottom: 1px solid #e5e7eb; }
-.manual-content { padding: 1.5rem; }
+details:hover {
+  border-color: rgba(168, 85, 247, 0.5);
+  background: rgba(21, 10, 40, 0.5);
+  box-shadow: 0 6px 24px rgba(168, 85, 247, 0.2);
+  transform: translateY(-2px);
+}
+
+details[open] {
+  border-color: rgba(168, 85, 247, 0.6);
+  background: rgba(21, 10, 40, 0.6);
+  box-shadow: 0 8px 32px rgba(168, 85, 247, 0.3);
+}
+
+summary {
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::before {
+  content: '▶';
+  display: inline-block;
+  margin-right: .5rem;
+  color: #a855f7;
+  transition: transform 0.2s;
+  font-size: 0.9rem;
+}
+
+details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+summary h3 {
+  display: inline;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+details[open] summary {
+  border-bottom: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.manual-content {
+  padding: 1rem 1.25rem 1.25rem;
+  background: rgba(10, 6, 20, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 0 0 10px 10px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.manual-content h4 {
+  color: #14b8a6;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: .75rem;
+}
+
+.manual-content strong {
+  color: #14b8a6;
+}
+
+.manual-content ul,
+.manual-content ol {
+  line-height: 1.8;
+  margin-top: .75rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.manual-content li {
+  margin-bottom: .5rem;
+}
+
+.manual-content a {
+  color: #a855f7;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.manual-content a:hover {
+  color: #14b8a6;
+  text-decoration: underline;
+}
+
+.manual-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: .75rem 0;
+}
+
+.manual-content th,
+.manual-content td {
+  padding: .5rem .75rem;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  text-align: left;
+}
+
+.manual-content th {
+  background: rgba(168, 85, 247, 0.2);
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.manual-content td {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.manual-content code {
+  background: rgba(168, 85, 247, 0.2);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+  color: #a855f7;
+}
+
+.manual-content blockquote {
+  background: rgba(20, 184, 166, 0.15);
+  border-left: 4px solid #14b8a6;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.manual-content p {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+}
 </style>
