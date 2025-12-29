@@ -21,6 +21,14 @@ Consultez l'historique des mises à jour de l'application Inventory.
 
 ### v1.1.0 <small style="color:#6b7280;">2025-12-29</small>
 
+#### Traduction Automatique Multilingue
+Les documents, tampons et journaux sont automatiquement traduits dans votre langue.
+- **Traduction automatique** : Traduction automatique dans la langue de l'utilisateur lors de la consultation des documents, tampons et journaux
+- **Langues prises en charge** : Coréen, anglais, japonais, espagnol, français, allemand, portugais
+- **Basculer vers l'original** : Passez de l'original à la traduction avec le bouton [Voir l'original]
+- **Cache de traduction** : Le cache serveur et local empêche les demandes de re-traduction
+- **Cache par langue** : Utilise instantanément le cache enregistré lors du changement de langue
+
 #### Système de tutoriels
 Des tutoriels étape par étape ont été ajoutés pour vous guider dans l'utilisation de l'application.
 - **Écran d'inventaire** : Sélection d'éléments, déplacement de partition, utilisation du menu inférieur (8 étapes)

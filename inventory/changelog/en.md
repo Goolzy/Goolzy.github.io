@@ -21,6 +21,14 @@ Check out the update history for the Inventory app.
 
 ### v1.1.0 <small style="color:#6b7280;">2025-12-29</small>
 
+#### Automatic Multilingual Translation
+Documents, stamps, and log contents are automatically translated to your language.
+- **Auto Translation**: Automatic translation to user's language when viewing documents, stamps, and logs
+- **Supported Languages**: Korean, English, Japanese, Spanish, French, German, Portuguese
+- **Original Toggle**: Switch between original and translation with the [Show Original] button
+- **Translation Caching**: Server and local caching prevents re-translation requests
+- **Language-specific Cache**: Instantly uses cached translation when switching languages
+
 #### Tutorial System
 Step-by-step tutorials have been added to guide you through app usage.
 - **Inventory Screen**: Item selection, partition movement, bottom menu usage (8 steps)

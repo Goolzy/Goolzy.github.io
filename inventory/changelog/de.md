@@ -21,6 +21,14 @@ Sehen Sie sich den Update-Verlauf der Inventory-App an.
 
 ### v1.1.0 <small style="color:#6b7280;">2025-12-29</small>
 
+#### Automatische Mehrsprachige Übersetzung
+Dokumente, Stempel und Protokollinhalte werden automatisch in Ihre Sprache übersetzt.
+- **Auto-Übersetzung**: Automatische Übersetzung in die Benutzersprache beim Anzeigen von Dokumenten, Stempeln und Protokollen
+- **Unterstützte Sprachen**: Koreanisch, Englisch, Japanisch, Spanisch, Französisch, Deutsch, Portugiesisch
+- **Original-Toggle**: Wechseln Sie zwischen Original und Übersetzung mit der Schaltfläche [Original anzeigen]
+- **Übersetzungs-Caching**: Server- und lokales Caching verhindert erneute Übersetzungsanfragen
+- **Sprachspezifischer Cache**: Verwendet sofort den gespeicherten Cache beim Sprachwechsel
+
 #### Tutorial-System
 Schritt-für-Schritt-Tutorials wurden hinzugefügt, um Sie durch die App-Nutzung zu führen.
 - **Inventar-Bildschirm**: Artikelauswahl, Partitionsbewegung, Nutzung des unteren Menüs (8 Schritte)

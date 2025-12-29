@@ -21,6 +21,14 @@ Consulta el historial de actualizaciones de la aplicación Inventory.
 
 ### v1.1.0 <small style="color:#6b7280;">2025-12-29</small>
 
+#### Traducción Automática Multilingüe
+Los documentos, sellos y registros se traducen automáticamente a tu idioma.
+- **Traducción automática**: Traducción automática al idioma del usuario al ver documentos, sellos y registros
+- **Idiomas compatibles**: Coreano, inglés, japonés, español, francés, alemán, portugués
+- **Alternar original**: Cambia entre original y traducción con el botón [Ver original]
+- **Caché de traducción**: El caché en servidor y local previene solicitudes de re-traducción
+- **Caché por idioma**: Usa instantáneamente el caché guardado al cambiar de idioma
+
 #### Sistema de tutoriales
 Se han añadido tutoriales paso a paso para guiarte en el uso de la aplicación.
 - **Pantalla de inventario**: Selección de artículos, movimiento de partición, uso del menú inferior (8 pasos)

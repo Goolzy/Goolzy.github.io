@@ -21,6 +21,14 @@ Confira o histórico de atualizações do aplicativo Inventory.
 
 ### v1.1.0 <small style="color:#6b7280;">2025-12-29</small>
 
+#### Tradução Automática Multilíngue
+Documentos, carimbos e registros são automaticamente traduzidos para seu idioma.
+- **Tradução automática**: Tradução automática para o idioma do usuário ao visualizar documentos, carimbos e registros
+- **Idiomas suportados**: Coreano, inglês, japonês, espanhol, francês, alemão, português
+- **Alternar original**: Alterne entre original e tradução com o botão [Ver original]
+- **Cache de tradução**: Cache no servidor e local previne solicitações de re-tradução
+- **Cache por idioma**: Usa instantaneamente o cache salvo ao trocar de idioma
+
 #### Sistema de tutoriais
 Tutoriais passo a passo foram adicionados para guiá-lo no uso do aplicativo.
 - **Tela de inventário**: Seleção de itens, movimento de partição, uso do menu inferior (8 etapas)
