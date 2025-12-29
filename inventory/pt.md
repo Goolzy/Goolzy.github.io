@@ -193,8 +193,6 @@ Crie itens com uma única folha de papel e transfira-os via código QR. Grave um
 
 ---
 
-{% include usecases-scroll.html lang="pt" %}
-
 <style>
 .neumorphic-content h2 {
   background: linear-gradient(135deg, #a855f7, #2dd4bf) !important;

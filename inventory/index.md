@@ -193,8 +193,6 @@ translations:
 
 ---
 
-{% include usecases-scroll.html lang="ko" %}
-
 <style>
 /* 다크 글래스모픽 스타일 오버라이드 */
 .neumorphic-content h2 {

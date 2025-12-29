@@ -193,8 +193,6 @@ Erstellen Sie Artikel mit einem einzigen Blatt Papier und übertragen Sie sie pe
 
 ---
 
-{% include usecases-scroll.html lang="de" %}
-
 <style>
 .neumorphic-content h2 {
   background: linear-gradient(135deg, #a855f7, #2dd4bf) !important;

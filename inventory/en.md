@@ -193,8 +193,6 @@ Create items with a single sheet of paper, and transfer them to others via QR co
 
 ---
 
-{% include usecases-scroll.html lang="en" %}
-
 <style>
 /* Dark glassmorphic style override */
 .neumorphic-content h2 {

@@ -193,8 +193,6 @@ Créez des articles avec une seule feuille de papier et transférez-les via code
 
 ---
 
-{% include usecases-scroll.html lang="fr" %}
-
 <style>
 .neumorphic-content h2 {
   background: linear-gradient(135deg, #a855f7, #2dd4bf) !important;
