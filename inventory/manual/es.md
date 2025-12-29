@@ -21,7 +21,7 @@ Explora todas las funciones de la aplicación Inventory en detalle.
 
 <details open>
 <summary><h3 id="paper">📦 Sistema de Papel</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 En Inventory, el **Papel** es la moneda principal utilizada para crear objetos.
 
@@ -47,7 +47,7 @@ En Inventory, el **Papel** es la moneda principal utilizada para crear objetos.
 
 <details>
 <summary><h3 id="create-item">📄 Creación de Objetos</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 #### Cómo crear un objeto
 
@@ -77,7 +77,7 @@ Si no se establece, será visible inmediatamente y permanente.
 
 <details>
 <summary><h3 id="lock">🔒 Bloqueo de Documento</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Puedes proteger los documentos estableciendo una contraseña.
 
@@ -121,7 +121,7 @@ Un documento bloqueado solo puede verse después de introducir la contraseña co
 
 <details>
 <summary><h3 id="clip">📎 Sistema Clip</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 **Clip** es una función que agrupa múltiples documentos para una gestión más fácil.
 
@@ -195,7 +195,7 @@ Puedes eliminar elementos específicos en la pantalla de info del clip:
 
 <details>
 <summary><h3 id="badge">🏷️ Sistema de Insignias</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Una **Insignia** es una identidad única que puedes usar dentro de la aplicación.
 
@@ -236,7 +236,7 @@ Esto permite identificar rápidamente a qué dominio pertenece la insignia.
 
 <details>
 <summary><h3 id="stamp">🔖 Sistema de Sellos</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Un **Sello** es un objeto que te permite crear plantillas y compartirlas con otros.
 
@@ -304,7 +304,7 @@ Puedes buscar y clonar plantillas compartidas por otros usuarios.
 
 <details>
 <summary><h3 id="quick-input">⚡ Entrada Rápida</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Al agregar registros, toca el botón `+` para abrir el menú **Entrada Rápida** para ingresar fácilmente información especial.
 
@@ -345,7 +345,7 @@ Mantén presionada una tarjeta de fecha para configurar una alarma:
 
 <details>
 <summary><h3 id="log">📝 Sistema de Registros</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Los **Registros** son anotaciones que puedes agregar a objetos o plantillas de sellos.
 
@@ -434,7 +434,7 @@ Cuando se agregan nuevos comentarios a un registro compartido, el borde del elem
 
 <details>
 <summary><h3 id="ink">🎨 Sistema de Tinta</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 La **Tinta** es un objeto que cambia el color del tema de la aplicación.
 
@@ -458,7 +458,7 @@ La **Tinta** es un objeto que cambia el color del tema de la aplicación.
 
 <details>
 <summary><h3 id="search">🔍 Función de Búsqueda</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 #### Búsqueda básica
 
@@ -508,7 +508,7 @@ Cuando hay un filtro establecido y seleccionas objetos, los **valores de palabra
 
 <details>
 <summary><h3 id="bottom-menu">📱 Insignia del menú inferior</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Las insignias rojas en los iconos del menú inferior muestran el estado actual.
 
@@ -527,7 +527,7 @@ Las insignias rojas en los iconos del menú inferior muestran el estado actual.
 
 <details>
 <summary><h3 id="transfer">📤 Enviar Objetos</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Puedes transferir objetos al vender de segunda mano o regalar.
 
@@ -556,7 +556,7 @@ En lugar de escribir el email del destinatario, puedes usar un código QR:
 
 <details>
 <summary><h3 id="receive">📥 Recibir Objetos</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Puedes recibir objetos enviados por otros.
 
@@ -580,7 +580,7 @@ Puedes recibir objetos enviados por otros.
 
 <details>
 <summary><h3 id="shop">🛒 Usar la Tienda</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Puedes comprar varios objetos en la tienda.
 
@@ -609,7 +609,7 @@ Puedes comprar varios objetos en la tienda.
 
 <details>
 <summary><h3 id="partition">📂 Función de Partición</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Puedes agrupar objetos con particiones cuando tienes muchos.
 
@@ -650,7 +650,7 @@ Toca el encabezado de partición para seleccionar/deseleccionar todos los elemen
 
 <details>
 <summary><h3 id="language">🌍 Cambiar idioma</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Se admiten 7 idiomas:
 - 🇰🇷 한국어

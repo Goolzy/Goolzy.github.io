@@ -21,7 +21,7 @@ Explore all the features of the Inventory app in detail.
 
 <details open>
 <summary><h3 id="paper">📦 Paper System</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 In Inventory, **Paper** is the core currency used to create items.
 
@@ -47,7 +47,7 @@ In Inventory, **Paper** is the core currency used to create items.
 
 <details>
 <summary><h3 id="create-item">📄 Creating Items</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 #### How to Create an Item
 
@@ -77,7 +77,7 @@ If not set, it will be immediately visible and permanent.
 
 <details>
 <summary><h3 id="lock">🔒 Document Lock</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 You can protect document items by setting a password.
 
@@ -121,7 +121,7 @@ A locked document can only be viewed after entering the correct password.
 
 <details>
 <summary><h3 id="clip">📎 Clip System</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 **Clip** is a feature that bundles multiple documents together for easier management.
 
@@ -195,7 +195,7 @@ You can remove specific items from a clip in the clip info screen:
 
 <details>
 <summary><h3 id="badge">🏷️ Badge System</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 A **Badge** is a unique identity you can use within the app.
 
@@ -236,7 +236,7 @@ This allows you to quickly identify which domain the badge belongs to.
 
 <details>
 <summary><h3 id="stamp">🔖 Stamp System</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 A **Stamp** is an item that lets you create templates and share them with others.
 
@@ -304,7 +304,7 @@ You can search and clone templates shared by other users.
 
 <details>
 <summary><h3 id="quick-input">⚡ Quick Input</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 When adding logs, tap the `+` button to open the **Quick Input** menu for easy special information entry.
 
@@ -345,7 +345,7 @@ Long press a date card to set an alarm:
 
 <details>
 <summary><h3 id="log">📝 Log System</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 **Logs** are records you can add to items or stamp templates.
 
@@ -434,7 +434,7 @@ When new comments are added to a shared log, the item border **pulses** in the i
 
 <details>
 <summary><h3 id="ink">🎨 Ink System</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 **Ink** is an item that changes the app's theme color.
 
@@ -458,7 +458,7 @@ When new comments are added to a shared log, the item border **pulses** in the i
 
 <details>
 <summary><h3 id="search">🔍 Search Function</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 #### Basic Search
 
@@ -508,7 +508,7 @@ When a filter is set and you select items, the **keyword values of selected item
 
 <details>
 <summary><h3 id="bottom-menu">📱 Bottom Menu Badge</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Red badges on the bottom menu icons show current status.
 
@@ -527,7 +527,7 @@ Red badges on the bottom menu icons show current status.
 
 <details>
 <summary><h3 id="transfer">📤 Sending Items</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 You can transfer items when selling second-hand or giving gifts.
 
@@ -556,7 +556,7 @@ Instead of typing the recipient's email, you can use a QR code:
 
 <details>
 <summary><h3 id="receive">📥 Receiving Items</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 You can receive items sent by others.
 
@@ -580,7 +580,7 @@ You can receive items sent by others.
 
 <details>
 <summary><h3 id="shop">🛒 Using the Shop</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 You can purchase various items from the shop.
 
@@ -609,7 +609,7 @@ You can purchase various items from the shop.
 
 <details>
 <summary><h3 id="partition">📂 Partition Feature</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 You can group items with partitions when you have many items.
 
@@ -650,7 +650,7 @@ Tap the partition header to select/deselect all items in that partition.
 
 <details>
 <summary><h3 id="language">🌍 Changing Language</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 7 languages are supported:
 - 🇰🇷 한국어

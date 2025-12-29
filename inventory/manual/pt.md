@@ -21,7 +21,7 @@ Explore todas as funcionalidades do aplicativo Inventory em detalhes.
 
 <details open>
 <summary><h3 id="paper">📦 Sistema de Papel</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 No Inventory, o **Papel** é a moeda principal usada para criar itens.
 
@@ -47,7 +47,7 @@ No Inventory, o **Papel** é a moeda principal usada para criar itens.
 
 <details>
 <summary><h3 id="create-item">📄 Criação de Itens</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 #### Como criar um item
 
@@ -77,7 +77,7 @@ Se não definido, será visível imediatamente e permanente.
 
 <details>
 <summary><h3 id="lock">🔒 Bloqueio de Documento</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Você pode proteger itens de documento definindo uma senha.
 
@@ -121,7 +121,7 @@ Um documento bloqueado só pode ser visualizado após inserir a senha correta.
 
 <details>
 <summary><h3 id="clip">📎 Sistema Clip</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 **Clip** é uma funcionalidade que agrupa múltiplos documentos para facilitar o gerenciamento.
 
@@ -195,7 +195,7 @@ Você pode remover itens específicos na tela de info do clip:
 
 <details>
 <summary><h3 id="badge">🏷️ Sistema de Emblema</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Um **Emblema** é uma identidade única que você pode usar dentro do aplicativo.
 
@@ -236,7 +236,7 @@ Isso permite identificar rapidamente a qual domínio o emblema pertence.
 
 <details>
 <summary><h3 id="stamp">🔖 Sistema de Carimbo</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Um **Carimbo** é um item que permite criar modelos e compartilhá-los com outros.
 
@@ -304,7 +304,7 @@ Você pode pesquisar e clonar modelos compartilhados por outros usuários.
 
 <details>
 <summary><h3 id="quick-input">⚡ Entrada Rápida</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Ao adicionar registros, toque no botão `+` para abrir o menu de **Entrada Rápida** para inserir informações especiais facilmente.
 
@@ -345,7 +345,7 @@ Pressione longamente um cartão de data para definir um alarme:
 
 <details>
 <summary><h3 id="log">📝 Sistema de Registro</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Os **Registros** são anotações que você pode adicionar a itens ou modelos de carimbo.
 
@@ -434,7 +434,7 @@ Quando novos comentários são adicionados a um registro compartilhado, a borda 
 
 <details>
 <summary><h3 id="ink">🎨 Sistema de Tinta</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 A **Tinta** é um item que muda a cor do tema do aplicativo.
 
@@ -458,7 +458,7 @@ A **Tinta** é um item que muda a cor do tema do aplicativo.
 
 <details>
 <summary><h3 id="search">🔍 Função de Busca</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 #### Busca básica
 
@@ -508,7 +508,7 @@ Quando um filtro está definido e você seleciona itens, os **valores de palavra
 
 <details>
 <summary><h3 id="bottom-menu">📱 Emblema do menu inferior</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Emblemas vermelhos nos ícones do menu inferior mostram o status atual.
 
@@ -527,7 +527,7 @@ Emblemas vermelhos nos ícones do menu inferior mostram o status atual.
 
 <details>
 <summary><h3 id="transfer">📤 Enviar Itens</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Você pode transferir itens ao vender usados ou dar presentes.
 
@@ -556,7 +556,7 @@ Em vez de digitar o email do destinatário, você pode usar um código QR:
 
 <details>
 <summary><h3 id="receive">📥 Receber Itens</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Você pode receber itens enviados por outros.
 
@@ -580,7 +580,7 @@ Você pode receber itens enviados por outros.
 
 <details>
 <summary><h3 id="shop">🛒 Usar a Loja</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Você pode comprar vários itens na loja.
 
@@ -609,7 +609,7 @@ Você pode comprar vários itens na loja.
 
 <details>
 <summary><h3 id="partition">📂 Função de Partição</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Você pode agrupar itens com partições quando tiver muitos.
 
@@ -650,7 +650,7 @@ Toque no cabeçalho da partição para selecionar/desmarcar todos os itens nessa
 
 <details>
 <summary><h3 id="language">🌍 Mudar idioma</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 7 idiomas são suportados:
 - 🇰🇷 한국어

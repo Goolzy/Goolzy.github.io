@@ -21,7 +21,7 @@ Découvrez toutes les fonctionnalités de l'application Inventory en détail.
 
 <details open>
 <summary><h3 id="paper">📦 Système de Papier</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Dans Inventory, le **Papier** est la monnaie principale utilisée pour créer des objets.
 
@@ -47,7 +47,7 @@ Dans Inventory, le **Papier** est la monnaie principale utilisée pour créer de
 
 <details>
 <summary><h3 id="create-item">📄 Création d'objets</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 #### Comment créer un objet
 
@@ -77,7 +77,7 @@ Si non défini, il sera immédiatement visible et permanent.
 
 <details>
 <summary><h3 id="lock">🔒 Verrouillage de Document</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Vous pouvez protéger les documents en définissant un mot de passe.
 
@@ -121,7 +121,7 @@ Un document verrouillé ne peut être consulté qu'après avoir saisi le mot de 
 
 <details>
 <summary><h3 id="clip">📎 Système Clip</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 **Clip** est une fonctionnalité qui regroupe plusieurs documents ensemble pour une gestion plus facile.
 
@@ -195,7 +195,7 @@ Vous pouvez retirer des éléments spécifiques dans l'écran d'infos du clip :
 
 <details>
 <summary><h3 id="badge">🏷️ Système de Badge</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Un **Badge** est une identité unique que vous pouvez utiliser dans l'application.
 
@@ -236,7 +236,7 @@ Cela vous permet d'identifier rapidement à quel domaine appartient le badge.
 
 <details>
 <summary><h3 id="stamp">🔖 Système de Tampon</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Un **Tampon** est un objet qui vous permet de créer des modèles et de les partager avec d'autres.
 
@@ -304,7 +304,7 @@ Vous pouvez rechercher et cloner des modèles partagés par d'autres utilisateur
 
 <details>
 <summary><h3 id="quick-input">⚡ Saisie Rapide</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Lors de l'ajout d'entrées de journal, appuyez sur le bouton `+` pour ouvrir le menu **Saisie Rapide** permettant une saisie facile d'informations spéciales.
 
@@ -345,7 +345,7 @@ Appuyez longuement sur une carte de date pour définir une alarme :
 
 <details>
 <summary><h3 id="log">📝 Système de Journal</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Les **Journaux** sont des enregistrements que vous pouvez ajouter aux objets ou modèles de tampon.
 
@@ -434,7 +434,7 @@ Lorsque de nouveaux commentaires sont ajoutés à un journal partagé, la bordur
 
 <details>
 <summary><h3 id="ink">🎨 Système d'Encre</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 L'**Encre** est un objet qui change la couleur du thème de l'application.
 
@@ -458,7 +458,7 @@ L'**Encre** est un objet qui change la couleur du thème de l'application.
 
 <details>
 <summary><h3 id="search">🔍 Fonction de Recherche</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 #### Recherche de base
 
@@ -508,7 +508,7 @@ Lorsqu'un filtre est défini et que vous sélectionnez des objets, les **valeurs
 
 <details>
 <summary><h3 id="bottom-menu">📱 Badge du menu inférieur</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Des badges rouges sur les icônes du menu inférieur indiquent l'état actuel.
 
@@ -527,7 +527,7 @@ Des badges rouges sur les icônes du menu inférieur indiquent l'état actuel.
 
 <details>
 <summary><h3 id="transfer">📤 Envoyer des objets</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Vous pouvez transférer des objets lors de ventes d'occasion ou de cadeaux.
 
@@ -556,7 +556,7 @@ Au lieu de taper l'email du destinataire, vous pouvez utiliser un QR code :
 
 <details>
 <summary><h3 id="receive">📥 Recevoir des objets</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Vous pouvez recevoir des objets envoyés par d'autres.
 
@@ -580,7 +580,7 @@ Vous pouvez recevoir des objets envoyés par d'autres.
 
 <details>
 <summary><h3 id="shop">🛒 Utiliser la Boutique</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Vous pouvez acheter divers objets dans la boutique.
 
@@ -609,7 +609,7 @@ Vous pouvez acheter divers objets dans la boutique.
 
 <details>
 <summary><h3 id="partition">📂 Fonction Partition</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Vous pouvez grouper les objets avec des partitions quand vous en avez beaucoup.
 
@@ -650,7 +650,7 @@ Appuyez sur l'en-tête de partition pour sélectionner/désélectionner tous les
 
 <details>
 <summary><h3 id="language">🌍 Changer de langue</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 7 langues sont prises en charge :
 - 🇰🇷 한국어

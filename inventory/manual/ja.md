@@ -21,7 +21,7 @@ Inventoryアプリのすべての機能を詳しく見てみましょう。
 
 <details open>
 <summary><h3 id="paper">📦 ペーパーシステム</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Inventoryでは、**ペーパー**はアイテムを作成する際に使用する基本通貨です。
 
@@ -47,7 +47,7 @@ Inventoryでは、**ペーパー**はアイテムを作成する際に使用す�
 
 <details>
 <summary><h3 id="create-item">📄 アイテム作成</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 #### アイテムの作成方法
 
@@ -77,7 +77,7 @@ Inventoryでは、**ペーパー**はアイテムを作成する際に使用す�
 
 <details>
 <summary><h3 id="lock">🔒 ドキュメントロック</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 ドキュメントアイテムにパスワードを設定して内容を保護できます。
 
@@ -121,7 +121,7 @@ Inventoryでは、**ペーパー**はアイテムを作成する際に使用す�
 
 <details>
 <summary><h3 id="clip">📎 クリップシステム</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 **クリップ**は複数のドキュメントを1つにまとめて管理する機能です。
 
@@ -195,7 +195,7 @@ Inventoryでは、**ペーパー**はアイテムを作成する際に使用す�
 
 <details>
 <summary><h3 id="badge">🏷️ バッジシステム</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 **バッジ**はアプリ内で使用する固有のアイデンティティです。
 
@@ -236,7 +236,7 @@ Inventoryでは、**ペーパー**はアイテムを作成する際に使用す�
 
 <details>
 <summary><h3 id="stamp">🔖 スタンプシステム</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 **スタンプ**はテンプレートを作成して他の人に渡すことができるアイテムです。
 
@@ -304,7 +304,7 @@ Inventoryでは、**ペーパー**はアイテムを作成する際に使用す�
 
 <details>
 <summary><h3 id="quick-input">⚡ クイック入力</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 ログ追加時に`+`ボタンをタップすると、特別な情報を簡単に入力できる**クイック入力**メニューが表示されます。
 
@@ -345,7 +345,7 @@ Inventoryでは、**ペーパー**はアイテムを作成する際に使用す�
 
 <details>
 <summary><h3 id="log">📝 ログシステム</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 **ログ**はアイテムやスタンプテンプレートに記録を残す機能です。
 
@@ -434,7 +434,7 @@ Inventoryでは、**ペーパー**はアイテムを作成する際に使用す�
 
 <details>
 <summary><h3 id="ink">🎨 インクシステム</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 **インク**はアプリのテーマカラーを変更するアイテムです。
 
@@ -458,7 +458,7 @@ Inventoryでは、**ペーパー**はアイテムを作成する際に使用す�
 
 <details>
 <summary><h3 id="search">🔍 検索機能</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 #### 基本検索
 
@@ -508,7 +508,7 @@ Inventoryでは、**ペーパー**はアイテムを作成する際に使用す�
 
 <details>
 <summary><h3 id="bottom-menu">📱 下部メニューバッジ</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 下部メニューのアイコンに赤いバッジが表示され、現在の状態をお知らせします。
 
@@ -527,7 +527,7 @@ Inventoryでは、**ペーパー**はアイテムを作成する際に使用す�
 
 <details>
 <summary><h3 id="transfer">📤 アイテムを送る</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 中古取引やプレゼント時にアイテムを一緒に転送できます。
 
@@ -556,7 +556,7 @@ Inventoryでは、**ペーパー**はアイテムを作成する際に使用す�
 
 <details>
 <summary><h3 id="receive">📥 アイテムを受け取る</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 他の人が送ったアイテムを受け取ることができます。
 
@@ -580,7 +580,7 @@ Inventoryでは、**ペーパー**はアイテムを作成する際に使用す�
 
 <details>
 <summary><h3 id="shop">🛒 ショップの利用</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 ショップで様々なアイテムを購入できます。
 
@@ -609,7 +609,7 @@ Inventoryでは、**ペーパー**はアイテムを作成する際に使用す�
 
 <details>
 <summary><h3 id="partition">📂 パーティション機能</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 アイテムが多くなったらパーティションでグループ化できます。
 
@@ -650,7 +650,7 @@ Inventoryでは、**ペーパー**はアイテムを作成する際に使用す�
 
 <details>
 <summary><h3 id="language">🌍 言語変更</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 7言語に対応しています：
 - 🇰🇷 한국어

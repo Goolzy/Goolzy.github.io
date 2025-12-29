@@ -21,7 +21,7 @@ Entdecken Sie alle Funktionen der Inventory-App im Detail.
 
 <details open>
 <summary><h3 id="paper">📦 Papier-System</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 In Inventory ist **Papier** die Kernwährung zum Erstellen von Gegenständen.
 
@@ -47,7 +47,7 @@ In Inventory ist **Papier** die Kernwährung zum Erstellen von Gegenständen.
 
 <details>
 <summary><h3 id="create-item">📄 Gegenstände erstellen</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 #### Wie man einen Gegenstand erstellt
 
@@ -77,7 +77,7 @@ Wenn nicht festgelegt, ist es sofort sichtbar und dauerhaft.
 
 <details>
 <summary><h3 id="lock">🔒 Dokumentsperre</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Sie können Dokumentelemente durch Festlegen eines Passworts schützen.
 
@@ -121,7 +121,7 @@ Ein gesperrtes Dokument kann nur nach Eingabe des korrekten Passworts angezeigt 
 
 <details>
 <summary><h3 id="clip">📎 Clip-System</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 **Clip** ist eine Funktion, mit der Sie mehrere Dokumente zur einfacheren Verwaltung zusammenfassen können.
 
@@ -195,7 +195,7 @@ Sie können bestimmte Elemente im Clip-Info-Bildschirm entfernen:
 
 <details>
 <summary><h3 id="badge">🏷️ Abzeichen-System</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Ein **Abzeichen** ist eine einzigartige Identität, die Sie in der App verwenden können.
 
@@ -236,7 +236,7 @@ So können Sie schnell erkennen, zu welcher Domain das Abzeichen gehört.
 
 <details>
 <summary><h3 id="stamp">🔖 Stempel-System</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Ein **Stempel** ist ein Gegenstand, mit dem Sie Vorlagen erstellen und mit anderen teilen können.
 
@@ -304,7 +304,7 @@ Sie können von anderen Benutzern geteilte Vorlagen suchen und klonen.
 
 <details>
 <summary><h3 id="quick-input">⚡ Schnelleingabe</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Beim Hinzufügen von Protokollen tippen Sie auf die `+`-Taste, um das **Schnelleingabe**-Menü für einfache Eingabe spezieller Informationen zu öffnen.
 
@@ -345,7 +345,7 @@ Drücken Sie lange auf eine Datumskarte, um einen Alarm einzustellen:
 
 <details>
 <summary><h3 id="log">📝 Protokoll-System</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 **Protokolle** sind Aufzeichnungen, die Sie zu Gegenständen oder Stempelvorlagen hinzufügen können.
 
@@ -434,7 +434,7 @@ Wenn neue Kommentare zu einem geteilten Protokoll hinzugefügt werden, **pulsier
 
 <details>
 <summary><h3 id="ink">🎨 Tinten-System</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 **Tinte** ist ein Gegenstand, der die Themenfarbe der App ändert.
 
@@ -458,7 +458,7 @@ Wenn neue Kommentare zu einem geteilten Protokoll hinzugefügt werden, **pulsier
 
 <details>
 <summary><h3 id="search">🔍 Suchfunktion</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 #### Grundlegende Suche
 
@@ -508,7 +508,7 @@ Wenn ein Filter gesetzt ist und Sie Gegenstände auswählen, werden die **Schlü
 
 <details>
 <summary><h3 id="bottom-menu">📱 Unteres Menü-Badge</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Rote Badges auf den Symbolen des unteren Menüs zeigen den aktuellen Status an.
 
@@ -527,7 +527,7 @@ Rote Badges auf den Symbolen des unteren Menüs zeigen den aktuellen Status an.
 
 <details>
 <summary><h3 id="transfer">📤 Gegenstände senden</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Sie können Gegenstände beim Gebrauchtverkauf oder Verschenken übertragen.
 
@@ -556,7 +556,7 @@ Anstatt die E-Mail des Empfängers einzutippen, können Sie einen QR-Code verwen
 
 <details>
 <summary><h3 id="receive">📥 Gegenstände empfangen</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Sie können von anderen gesendete Gegenstände empfangen.
 
@@ -580,7 +580,7 @@ Sie können von anderen gesendete Gegenstände empfangen.
 
 <details>
 <summary><h3 id="shop">🛒 Shop nutzen</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Sie können verschiedene Gegenstände im Shop kaufen.
 
@@ -609,7 +609,7 @@ Sie können verschiedene Gegenstände im Shop kaufen.
 
 <details>
 <summary><h3 id="partition">📂 Partitions-Funktion</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Sie können Gegenstände mit Partitionen gruppieren, wenn Sie viele haben.
 
@@ -650,7 +650,7 @@ Tippen Sie auf den Partitionsheader, um alle Elemente in dieser Partition auszuw
 
 <details>
 <summary><h3 id="language">🌍 Sprache ändern</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 7 Sprachen werden unterstützt:
 - 🇰🇷 한국어

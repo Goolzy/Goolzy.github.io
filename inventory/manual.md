@@ -21,7 +21,7 @@ Inventory 앱의 모든 기능을 상세하게 알아보세요.
 
 <details open>
 <summary><h3 id="paper">📦 종이(Paper) 시스템</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Inventory에서 **종이**는 아이템을 만들 때 사용하는 핵심 재화입니다.
 
@@ -47,7 +47,7 @@ Inventory에서 **종이**는 아이템을 만들 때 사용하는 핵심 재화
 
 <details>
 <summary><h3 id="create-item">📄 아이템 생성</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 #### 아이템 생성하기
 
@@ -77,7 +77,7 @@ Inventory에서 **종이**는 아이템을 만들 때 사용하는 핵심 재화
 
 <details>
 <summary><h3 id="lock">🔒 문서 잠금</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 문서 아이템에 비밀번호를 설정하여 내용을 보호할 수 있습니다.
 
@@ -121,7 +121,7 @@ Inventory에서 **종이**는 아이템을 만들 때 사용하는 핵심 재화
 
 <details>
 <summary><h3 id="clip">📎 클립 시스템</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 **클립**은 여러 문서를 하나로 묶어서 관리하는 기능입니다.
 
@@ -195,7 +195,7 @@ Inventory에서 **종이**는 아이템을 만들 때 사용하는 핵심 재화
 
 <details>
 <summary><h3 id="badge">🏷️ 뱃지 시스템</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 **뱃지**는 앱 내에서 사용할 고유한 신원(Identity)입니다.
 
@@ -236,7 +236,7 @@ Inventory에서 **종이**는 아이템을 만들 때 사용하는 핵심 재화
 
 <details>
 <summary><h3 id="stamp">🔖 스탬프 시스템</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 **스탬프**는 템플릿을 만들어 다른 사람에게 전달할 수 있는 아이템입니다.
 
@@ -304,7 +304,7 @@ Inventory에서 **종이**는 아이템을 만들 때 사용하는 핵심 재화
 
 <details>
 <summary><h3 id="quick-input">⚡ 빠른 입력 (Quick Input)</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 로그 작성 시 `+` 버튼을 누르면 특수 정보를 쉽게 입력할 수 있는 **Quick Input** 메뉴가 나타납니다.
 
@@ -347,7 +347,7 @@ Inventory에서 **종이**는 아이템을 만들 때 사용하는 핵심 재화
 
 <details>
 <summary><h3 id="log">📝 로그 시스템</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 **로그**는 아이템이나 스탬프 템플릿에 기록을 남기는 기능입니다.
 
@@ -436,7 +436,7 @@ Inventory에서 **종이**는 아이템을 만들 때 사용하는 핵심 재화
 
 <details>
 <summary><h3 id="ink">🎨 잉크 시스템</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 **잉크**는 앱의 테마 색상을 변경하는 아이템입니다.
 
@@ -460,7 +460,7 @@ Inventory에서 **종이**는 아이템을 만들 때 사용하는 핵심 재화
 
 <details>
 <summary><h3 id="search">🔍 검색 기능</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 #### 기본 검색
 
@@ -510,7 +510,7 @@ Inventory에서 **종이**는 아이템을 만들 때 사용하는 핵심 재화
 
 <details>
 <summary><h3 id="bottom-menu">📱 하단 메뉴 배지</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 하단 메뉴의 아이콘에 빨간 배지가 표시되어 현재 상태를 알려줍니다.
 
@@ -529,7 +529,7 @@ Inventory에서 **종이**는 아이템을 만들 때 사용하는 핵심 재화
 
 <details>
 <summary><h3 id="transfer">📤 아이템 보내기</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 중고 거래나 선물 시 아이템을 함께 전송할 수 있습니다.
 
@@ -558,7 +558,7 @@ Inventory에서 **종이**는 아이템을 만들 때 사용하는 핵심 재화
 
 <details>
 <summary><h3 id="receive">📥 아이템 받기</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 다른 사람이 보낸 아이템을 받을 수 있습니다.
 
@@ -582,7 +582,7 @@ Inventory에서 **종이**는 아이템을 만들 때 사용하는 핵심 재화
 
 <details>
 <summary><h3 id="shop">🛒 상점 이용하기</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 상점에서 다양한 아이템을 구매할 수 있습니다.
 
@@ -611,7 +611,7 @@ Inventory에서 **종이**는 아이템을 만들 때 사용하는 핵심 재화
 
 <details>
 <summary><h3 id="partition">📂 파티션 기능</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 아이템이 많아지면 파티션으로 그룹화할 수 있습니다.
 
@@ -652,7 +652,7 @@ Inventory에서 **종이**는 아이템을 만들 때 사용하는 핵심 재화
 
 <details>
 <summary><h3 id="language">🌍 언어 변경</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 7개 언어를 지원합니다:
 - 🇰🇷 한국어
