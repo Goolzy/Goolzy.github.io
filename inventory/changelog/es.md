@@ -19,6 +19,14 @@ Consulta el historial de actualizaciones de la aplicación Inventory.
 
 ---
 
+### v1.1.2 <small style="color:#6b7280;">2025-12-31</small>
+
+#### Corrección de errores
+- **Corrección de temblor de desplazamiento**: Solucionado el parpadeo de pantalla al desplazarse hacia arriba en documentos/sellos con pocos registros
+- **Corrección de desplazamiento superior**: Solucionado el problema donde no se podía llegar a la información del autor desplazándose en elementos con registros
+
+---
+
 ### v1.1.0 <small style="color:#6b7280;">2025-12-29</small>
 
 #### Traducción Automática Multilingüe

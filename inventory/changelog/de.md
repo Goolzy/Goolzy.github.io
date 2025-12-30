@@ -19,6 +19,14 @@ Sehen Sie sich den Update-Verlauf der Inventory-App an.
 
 ---
 
+### v1.1.2 <small style="color:#6b7280;">2025-12-31</small>
+
+#### Fehlerbehebungen
+- **Scroll-Zittern behoben**: Bildschirmflackern beim Hochscrollen in Dokumenten/Stempeln mit wenigen Protokollen behoben
+- **Top-Scroll behoben**: Problem behoben, bei dem Autoreninformationen in Elementen mit Protokollen nicht durch Scrollen erreicht werden konnten
+
+---
+
 ### v1.1.0 <small style="color:#6b7280;">2025-12-29</small>
 
 #### Automatische Mehrsprachige Übersetzung

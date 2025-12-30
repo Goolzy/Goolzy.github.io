@@ -19,6 +19,14 @@ Confira o histórico de atualizações do aplicativo Inventory.
 
 ---
 
+### v1.1.2 <small style="color:#6b7280;">2025-12-31</small>
+
+#### Correções de bugs
+- **Correção de tremor de rolagem**: Resolvido o tremor da tela ao rolar para cima em documentos/carimbos com poucos registros
+- **Correção de rolagem para o topo**: Resolvido o problema onde as informações do autor não podiam ser alcançadas pela rolagem em itens com registros
+
+---
+
 ### v1.1.0 <small style="color:#6b7280;">2025-12-29</small>
 
 #### Tradução Automática Multilíngue

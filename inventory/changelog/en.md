@@ -19,6 +19,14 @@ Check out the update history for the Inventory app.
 
 ---
 
+### v1.1.2 <small style="color:#6b7280;">2025-12-31</small>
+
+#### Bug Fixes
+- **Scroll Jitter Fixed**: Resolved screen flickering when scrolling up in documents/stamps with few logs
+- **Top Scroll Fixed**: Resolved issue where author information couldn't be reached by scrolling in items with logs
+
+---
+
 ### v1.1.0 <small style="color:#6b7280;">2025-12-29</small>
 
 #### Automatic Multilingual Translation
