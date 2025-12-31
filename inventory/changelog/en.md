@@ -21,14 +21,14 @@ Check out the update history for the Inventory app.
 
 ### v1.1.2 <small style="color:#6b7280;">2025-12-31</small>
 
-#### 🆕 Recent Recipients Autocomplete
+#### Recent Recipients Autocomplete
 Quickly select recent recipients on the send screen.
 - **Autocomplete List**: Dropdown showing up to 30 recent recipients when input field is focused
 - **Quick Selection**: Automatically searches when selecting a recipient from the list
 - **Re-search**: Clear selection with X button to search for another recipient
 - **Local Storage**: Recipient information automatically saved on successful send
 
-#### 🐛 Bug Fixes
+#### Bug Fixes
 - **Scroll Jitter Fixed**: Resolved screen flickering when scrolling up in documents/stamps with few logs
 - **Top Scroll Fixed**: Resolved issue where author information couldn't be reached by scrolling in items with logs
 

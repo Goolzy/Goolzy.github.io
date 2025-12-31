@@ -21,14 +21,14 @@ Confira o histórico de atualizações do aplicativo Inventory.
 
 ### v1.1.2 <small style="color:#6b7280;">2025-12-31</small>
 
-#### 🆕 Autocompletar Destinatários Recentes
+#### Autocompletar Destinatários Recentes
 Selecione rapidamente destinatários recentes na tela de envio.
 - **Lista de autocompletar**: Menu suspenso mostrando até 30 destinatários recentes quando o campo de entrada está em foco
 - **Seleção rápida**: Pesquisa automática ao selecionar um destinatário da lista
 - **Nova pesquisa**: Limpe a seleção com o botão X para pesquisar outro destinatário
 - **Armazenamento local**: Informações do destinatário salvas automaticamente ao enviar com sucesso
 
-#### 🐛 Correções de bugs
+#### Correções de bugs
 - **Correção de tremor de rolagem**: Resolvido o tremor da tela ao rolar para cima em documentos/carimbos com poucos registros
 - **Correção de rolagem para o topo**: Resolvido o problema onde as informações do autor não podiam ser alcançadas pela rolagem em itens com registros
 

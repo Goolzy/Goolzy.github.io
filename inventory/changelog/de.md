@@ -21,14 +21,14 @@ Sehen Sie sich den Update-Verlauf der Inventory-App an.
 
 ### v1.1.2 <small style="color:#6b7280;">2025-12-31</small>
 
-#### 🆕 Autovervollständigung für Letzte Empfänger
+#### Autovervollständigung für Letzte Empfänger
 Wählen Sie kürzliche Empfänger auf dem Sendebildschirm schnell aus.
 - **Autovervollständigungsliste**: Dropdown mit bis zu 30 letzten Empfängern bei Eingabefeld-Fokus
 - **Schnellauswahl**: Automatische Suche bei Auswahl eines Empfängers aus der Liste
 - **Neusuche**: Auswahl mit X-Button löschen, um nach einem anderen Empfänger zu suchen
 - **Lokale Speicherung**: Empfängerinformationen werden bei erfolgreicher Sendung automatisch gespeichert
 
-#### 🐛 Fehlerbehebungen
+#### Fehlerbehebungen
 - **Scroll-Zittern behoben**: Bildschirmflackern beim Hochscrollen in Dokumenten/Stempeln mit wenigen Protokollen behoben
 - **Top-Scroll behoben**: Problem behoben, bei dem Autoreninformationen in Elementen mit Protokollen nicht durch Scrollen erreicht werden konnten
 
