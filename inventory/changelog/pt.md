@@ -64,11 +64,18 @@ A pesquisa em tempo real foi expandida para incluir nomes de itens e palavras-ch
 - **Pesquisa por palavra-chave**: Pesquise por palavras-chave salvas em carimbos e emblemas
 - **Pesquisa por tag**: Pesquise tambem por tags de modelo de carimbo
 
+#### Melhoria das Notificacoes no App
+As notificacoes toast em tempo real foram aprimoradas.
+- **Exibicao do emblema do remetente**: A imagem do emblema do remetente e exibida inline na notificacao
+- **Estilo Dynamic Island**: Animacao toast elegante no estilo Dynamic Island do iOS
+- **Deteccao em tempo real**: Deteccao precisa de novas notificacoes e atualizacoes com base em ID+timestamp
+
 #### Correcoes de Bugs
 - **Correção de tremor de rolagem**: Resolvido o tremor da tela ao rolar para cima em documentos/carimbos com poucos registros
 - **Correção de rolagem para o topo**: Resolvido o problema onde as informações do autor não podiam ser alcançadas pela rolagem em itens com registros
 - **Formato de log de reação melhorado**: Emoticons e nomes agora são exibidos juntos
 - **Exibição do nome de usuário corrigida**: O nome de domínio agora é exibido corretamente ao usar um emblema
+- **Correcao da primeira notificacao do log compartilhado**: Resolvido o problema onde o primeiro toast do log compartilhado nao era exibido
 
 </div>
 </details>

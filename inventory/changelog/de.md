@@ -64,11 +64,18 @@ Die Echtzeitsuche wurde erweitert, um Artikelnamen und Schluesselwoerter einzube
 - **Schluesselwort-Suche**: Suche nach in Stempeln und Abzeichen gespeicherten Schluesselwoertern
 - **Tag-Suche**: Suche auch nach Stempel-Vorlagen-Tags moeglich
 
+#### Verbesserung der In-App-Benachrichtigungen
+Echtzeit-Toast-Benachrichtigungen wurden verbessert.
+- **Absender-Badge-Anzeige**: Das Badge-Bild des Absenders wird inline in der Benachrichtigung angezeigt
+- **Dynamic Island-Stil**: Elegante Toast-Animationen im iOS Dynamic Island-Stil
+- **Echtzeit-Erkennung**: Neue und aktualisierte Benachrichtigungen werden praezise anhand von ID und Zeitstempel erkannt
+
 #### Fehlerbehebungen
 - **Scroll-Zittern behoben**: Bildschirmflackern beim Hochscrollen in Dokumenten/Stempeln mit wenigen Protokollen behoben
 - **Top-Scroll behoben**: Problem behoben, bei dem Autoreninformationen in Elementen mit Protokollen nicht durch Scrollen erreicht werden konnten
 - **Reaktionslog-Format verbessert**: Emoticons und Namen werden jetzt zusammen angezeigt
 - **Benutzernamensanzeige behoben**: Domain-Name wird jetzt korrekt angezeigt, wenn ein Abzeichen getragen wird
+- **Erste Benachrichtigung fuer geteilte Protokolle behoben**: Problem behoben, bei dem der erste Toast fuer geteilte Protokolle nicht angezeigt wurde
 
 </div>
 </details>

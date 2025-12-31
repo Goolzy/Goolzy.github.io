@@ -64,11 +64,18 @@ La recherche en temps réel inclut désormais les noms d'éléments et les mots-
 - **Recherche par mot-clé** : Recherchez par mots-clés enregistrés sur les tampons et badges
 - **Recherche par tag** : Recherchez également par tags de modèle de tampon
 
+#### Amélioration des Notifications In-App
+Les notifications toast en temps réel ont été améliorées.
+- **Affichage du badge de l'expéditeur** : L'image du badge de l'expéditeur s'affiche en ligne dans la notification
+- **Style Dynamic Island** : Animation toast élégante dans le style Dynamic Island d'iOS
+- **Détection en temps réel** : Détection précise des nouvelles notifications et des mises à jour basée sur l'ID et l'horodatage
+
 #### Corrections de bugs
 - **Correction du tremblement de défilement** : Résolution du scintillement de l'écran lors du défilement vers le haut dans les documents/tampons avec peu de journaux
 - **Correction du défilement vers le haut** : Résolution du problème où les informations de l'auteur ne pouvaient pas être atteintes par défilement dans les éléments avec des journaux
 - **Format du journal de réaction amélioré** : Les émoticônes et les noms sont maintenant affichés ensemble
 - **Affichage du nom d'utilisateur corrigé** : Le nom de domaine s'affiche maintenant correctement lorsqu'un badge est porté
+- **Correction de la première notification du journal partagé** : Résolution du problème où le premier toast du journal partagé ne s'affichait pas
 
 </div>
 </details>

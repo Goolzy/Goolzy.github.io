@@ -64,11 +64,18 @@ Real-time search has been expanded to include item names and keywords.
 - **Keyword Search**: Search by keywords saved in stamps and badges
 - **Tag Search**: Search by stamp template tags
 
+#### In-App Notification Improvement
+Real-time toast notifications have been improved.
+- **Sender Badge Display**: Sender's badge image is displayed inline in the notification
+- **Dynamic Island Style**: Sleek toast animation inspired by iOS Dynamic Island style
+- **Real-time Detection**: Accurately detects new and updated notifications based on ID+timestamp
+
 #### Bug Fixes
 - **Scroll Jitter Fixed**: Resolved screen flickering when scrolling up in documents/stamps with few logs
 - **Top Scroll Fixed**: Resolved issue where author information couldn't be reached by scrolling in items with logs
 - **Reaction Log Format Improved**: Emoticons and names are now displayed together
 - **User Name Display Fixed**: Domain name is now correctly displayed when wearing a badge
+- **Shared Log First Notification Fixed**: Resolved issue where the first toast notification for shared logs was not displayed
 
 </div>
 </details>

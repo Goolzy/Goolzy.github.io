@@ -64,11 +64,18 @@ La busqueda en tiempo real ahora incluye nombres de elementos y palabras clave.
 - **Busqueda por palabra clave**: Busca por palabras clave guardadas en sellos e insignias
 - **Busqueda por etiqueta**: Tambien puedes buscar por etiquetas de plantillas de sello
 
+#### Mejora de Notificaciones en la App
+Se han mejorado las notificaciones toast en tiempo real.
+- **Visualización de insignia del remitente**: La imagen de la insignia del remitente se muestra en línea en la notificación
+- **Estilo Dynamic Island**: Elegante animación toast estilo Dynamic Island de iOS
+- **Detección en tiempo real**: Detección precisa de nuevas notificaciones y actualizaciones basada en ID+marca de tiempo
+
 #### Corrección de errores
 - **Corrección de temblor de desplazamiento**: Solucionado el parpadeo de pantalla al desplazarse hacia arriba en documentos/sellos con pocos registros
 - **Corrección de desplazamiento superior**: Solucionado el problema donde no se podía llegar a la información del autor desplazándose en elementos con registros
 - **Formato de registro de reacción mejorado**: Los emoticonos y los nombres ahora se muestran juntos
 - **Visualización del nombre de usuario corregida**: El nombre de dominio ahora se muestra correctamente al usar una insignia
+- **Corrección de primera notificación del registro compartido**: Solucionado el problema donde la primera notificación toast del registro compartido no se mostraba
 
 </div>
 </details>
