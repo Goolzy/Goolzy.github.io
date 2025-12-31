@@ -27,6 +27,17 @@ Sehen Sie sich den Update-Verlauf der Inventory-App an.
 </summary>
 <div class="version-content" markdown="1">
 
+#### Badge-Bearbeitungsfunktion
+Bearbeiten Sie das Bild und die Schlüsselwörter von gravierten Badges.
+- **Bearbeitungsmenü**: "Badge bearbeiten"-Menü erscheint bei Auswahl eines gravierten Badges
+- **Bildänderung**: Badge-Bild durch ein neues ersetzen
+- **Schlüsselwortverwaltung**: 5 Arten von Schlüsselwörtern hinzufügen, löschen oder ändern
+
+#### Bildleistungsoptimierung
+Die Ladegeschwindigkeit von Netzwerkbildern wurde erheblich verbessert.
+- **Lokaler Cache**: Einmal geladene Bilder werden lokal gespeichert und sofort angezeigt
+- **Badge-Bildsynchronisation**: Badge-Bildänderungen werden sofort in allen Protokollen übernommen
+
 #### Autovervollständigung für Letzte Empfänger
 Wählen Sie kürzliche Empfänger auf dem Sendebildschirm schnell aus.
 - **Autovervollständigungsliste**: Dropdown mit bis zu 30 letzten Empfängern bei Eingabefeld-Fokus

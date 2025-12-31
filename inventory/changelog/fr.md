@@ -27,6 +27,17 @@ Consultez l'historique des mises à jour de l'application Inventory.
 </summary>
 <div class="version-content" markdown="1">
 
+#### Fonction d'Édition de Badge
+Modifiez l'image et les mots-clés des badges gravés.
+- **Menu d'édition** : Le menu "Modifier le badge" apparaît lors de la sélection d'un badge gravé
+- **Changement d'image** : Remplacez l'image du badge par une nouvelle
+- **Gestion des mots-clés** : Ajoutez, supprimez ou modifiez 5 types de mots-clés
+
+#### Optimisation des Performances d'Image
+La vitesse de chargement des images réseau a été considérablement améliorée.
+- **Cache local** : Les images chargées une fois sont enregistrées localement pour un affichage instantané
+- **Synchronisation d'image de badge** : Les changements d'image de badge sont immédiatement reflétés dans tous les journaux
+
 #### Auto-complétion des Destinataires Récents
 Sélectionnez rapidement les destinataires récents sur l'écran d'envoi.
 - **Liste d'auto-complétion** : Menu déroulant affichant jusqu'à 30 destinataires récents quand le champ de saisie est actif

@@ -27,6 +27,17 @@ Check out the update history for the Inventory app.
 </summary>
 <div class="version-content" markdown="1">
 
+#### Badge Editing Feature
+Edit the image and keywords of engraved badges.
+- **Edit Menu**: "Edit Badge" menu appears when selecting an engraved badge
+- **Image Change**: Replace badge image with a new one
+- **Keyword Management**: Add, delete, or modify 5 types of keywords
+
+#### Image Performance Optimization
+Network image loading speed has been significantly improved.
+- **Local Cache**: Once loaded, images are saved locally for instant display
+- **Badge Image Sync**: Badge image changes are immediately reflected across all logs
+
 #### Recent Recipients Autocomplete
 Quickly select recent recipients on the send screen.
 - **Autocomplete List**: Dropdown showing up to 30 recent recipients when input field is focused

@@ -27,6 +27,17 @@ Confira o histórico de atualizações do aplicativo Inventory.
 </summary>
 <div class="version-content" markdown="1">
 
+#### Função de Edição de Emblema
+Edite a imagem e as palavras-chave dos emblemas gravados.
+- **Menu de edição**: O menu "Editar emblema" aparece ao selecionar um emblema gravado
+- **Alteração de imagem**: Substitua a imagem do emblema por uma nova
+- **Gerenciamento de palavras-chave**: Adicione, exclua ou modifique 5 tipos de palavras-chave
+
+#### Otimização de Desempenho de Imagem
+A velocidade de carregamento de imagens de rede foi significativamente melhorada.
+- **Cache local**: Imagens carregadas uma vez são salvas localmente para exibição instantânea
+- **Sincronização de imagem de emblema**: Alterações na imagem do emblema são refletidas imediatamente em todos os registros
+
 #### Autocompletar Destinatários Recentes
 Selecione rapidamente destinatários recentes na tela de envio.
 - **Lista de autocompletar**: Menu suspenso mostrando até 30 destinatários recentes quando o campo de entrada está em foco

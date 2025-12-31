@@ -27,6 +27,17 @@ Consulta el historial de actualizaciones de la aplicación Inventory.
 </summary>
 <div class="version-content" markdown="1">
 
+#### Función de Edición de Insignias
+Edita la imagen y las palabras clave de las insignias grabadas.
+- **Menú de edición**: El menú "Editar insignia" aparece al seleccionar una insignia grabada
+- **Cambio de imagen**: Reemplaza la imagen de la insignia por una nueva
+- **Gestión de palabras clave**: Añade, elimina o modifica 5 tipos de palabras clave
+
+#### Optimización del Rendimiento de Imágenes
+La velocidad de carga de imágenes de red ha mejorado significativamente.
+- **Caché local**: Las imágenes cargadas una vez se guardan localmente para visualización instantánea
+- **Sincronización de imagen de insignia**: Los cambios de imagen de insignia se reflejan inmediatamente en todos los registros
+
 #### Autocompletado de Destinatarios Recientes
 Selecciona rápidamente destinatarios recientes en la pantalla de envío.
 - **Lista de autocompletado**: Menú desplegable que muestra hasta 30 destinatarios recientes cuando el campo de entrada está enfocado
