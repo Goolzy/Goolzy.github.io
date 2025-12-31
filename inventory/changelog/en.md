@@ -45,7 +45,7 @@ Quickly select recent recipients on the send screen.
 - **Re-search**: Clear selection with X button to search for another recipient
 - **Local Storage**: Recipient information automatically saved on successful send
 
-#### Send Restrictions Improved
+#### Send Restrictions Improvement
 Equipped badges and shared stamps are now restricted from being sent.
 - **Equipped Badges**: Unequip the badge to send it
 - **Shared Stamps**: Revoke sharing to send the stamp
@@ -57,6 +57,12 @@ React to items with emotional expressions.
 - **Reaction Toggle**: Cancel by clicking the selected reaction again
 - **Log Recording**: System logs record when reactions are selected or cancelled
 - **Multilingual Support**: Reaction names displayed in the user's language
+
+#### Search Functionality Improvement
+Real-time search has been expanded to include item names and keywords.
+- **Item Name Search**: Search by document title, stamp description, or badge domain name
+- **Keyword Search**: Search by keywords saved in stamps and badges
+- **Tag Search**: Search by stamp template tags
 
 #### Bug Fixes
 - **Scroll Jitter Fixed**: Resolved screen flickering when scrolling up in documents/stamps with few logs

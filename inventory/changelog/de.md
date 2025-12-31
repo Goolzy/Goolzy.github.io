@@ -58,6 +58,12 @@ Reagieren Sie auf Elemente mit emotionalen Ausdrücken.
 - **Protokollierung**: Systemprotokolle zeichnen auf, wenn Reaktionen ausgewählt oder abgebrochen werden
 - **Mehrsprachige Unterstützung**: Reaktionsnamen werden in der Sprache des Benutzers angezeigt
 
+#### Verbesserung der Suchfunktion
+Die Echtzeitsuche wurde erweitert, um Artikelnamen und Schluesselwoerter einzubeziehen.
+- **Artikelnamen-Suche**: Suche nach Dokumenttitel, Stempelbeschreibung, Abzeichen-Domainnamen
+- **Schluesselwort-Suche**: Suche nach in Stempeln und Abzeichen gespeicherten Schluesselwoertern
+- **Tag-Suche**: Suche auch nach Stempel-Vorlagen-Tags moeglich
+
 #### Fehlerbehebungen
 - **Scroll-Zittern behoben**: Bildschirmflackern beim Hochscrollen in Dokumenten/Stempeln mit wenigen Protokollen behoben
 - **Top-Scroll behoben**: Problem behoben, bei dem Autoreninformationen in Elementen mit Protokollen nicht durch Scrollen erreicht werden konnten

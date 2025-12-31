@@ -58,7 +58,13 @@ Reaja aos itens com expressões emocionais.
 - **Registro de logs**: Os logs do sistema registram quando as reações são selecionadas ou canceladas
 - **Suporte multilíngue**: Os nomes das reações são exibidos no idioma do usuário
 
-#### Correções de bugs
+#### Melhoria da Funcao de Pesquisa
+A pesquisa em tempo real foi expandida para incluir nomes de itens e palavras-chave.
+- **Pesquisa por nome de item**: Pesquise por titulo de documento, descricao de carimbo ou nome de dominio de emblema
+- **Pesquisa por palavra-chave**: Pesquise por palavras-chave salvas em carimbos e emblemas
+- **Pesquisa por tag**: Pesquise tambem por tags de modelo de carimbo
+
+#### Correcoes de Bugs
 - **Correção de tremor de rolagem**: Resolvido o tremor da tela ao rolar para cima em documentos/carimbos com poucos registros
 - **Correção de rolagem para o topo**: Resolvido o problema onde as informações do autor não podiam ser alcançadas pela rolagem em itens com registros
 - **Formato de log de reação melhorado**: Emoticons e nomes agora são exibidos juntos

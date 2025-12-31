@@ -58,6 +58,12 @@ Reacciona a los elementos con expresiones emocionales.
 - **Registro de logs**: Los registros del sistema registran cuando se seleccionan o cancelan las reacciones
 - **Soporte multilingüe**: Los nombres de las reacciones se muestran en el idioma del usuario
 
+#### Mejora de la Funcion de Busqueda
+La busqueda en tiempo real ahora incluye nombres de elementos y palabras clave.
+- **Busqueda por nombre de elemento**: Busca por titulo de documento, descripcion de sello o nombre de dominio de insignia
+- **Busqueda por palabra clave**: Busca por palabras clave guardadas en sellos e insignias
+- **Busqueda por etiqueta**: Tambien puedes buscar por etiquetas de plantillas de sello
+
 #### Corrección de errores
 - **Corrección de temblor de desplazamiento**: Solucionado el parpadeo de pantalla al desplazarse hacia arriba en documentos/sellos con pocos registros
 - **Corrección de desplazamiento superior**: Solucionado el problema donde no se podía llegar a la información del autor desplazándose en elementos con registros

@@ -58,6 +58,12 @@ Réagissez aux éléments avec des expressions émotionnelles.
 - **Enregistrement des journaux** : Les journaux système enregistrent quand les réactions sont sélectionnées ou annulées
 - **Support multilingue** : Les noms des réactions sont affichés dans la langue de l'utilisateur
 
+#### Amélioration de la Fonction de Recherche
+La recherche en temps réel inclut désormais les noms d'éléments et les mots-clés.
+- **Recherche par nom d'élément** : Recherchez par titre de document, description de tampon ou nom de domaine de badge
+- **Recherche par mot-clé** : Recherchez par mots-clés enregistrés sur les tampons et badges
+- **Recherche par tag** : Recherchez également par tags de modèle de tampon
+
 #### Corrections de bugs
 - **Correction du tremblement de défilement** : Résolution du scintillement de l'écran lors du défilement vers le haut dans les documents/tampons avec peu de journaux
 - **Correction du défilement vers le haut** : Résolution du problème où les informations de l'auteur ne pouvaient pas être atteintes par défilement dans les éléments avec des journaux
