@@ -17,9 +17,15 @@ translations:
 
 Inventory 앱의 업데이트 내역을 확인하세요.
 
----
-
-### v1.1.2 <small style="color:#6b7280;">2025-12-31</small>
+<details class="changelog-version" open>
+<summary>
+  <span class="version-title">v1.1.2 <small>2025-12-31</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="18" height="18" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
 
 #### 최근 수신자 자동완성
 보내기 화면에서 최근 보낸 수신자를 빠르게 선택할 수 있습니다.
@@ -32,9 +38,18 @@ Inventory 앱의 업데이트 내역을 확인하세요.
 - **스크롤 떨림 수정**: 로그가 적은 문서/스탬프에서 상단 스크롤 시 화면이 떨리던 문제 해결
 - **최상단 도달 불가 수정**: 로그가 있는 아이템에서 작성자 정보까지 스크롤되지 않던 문제 해결
 
----
+</div>
+</details>
 
-### v1.1.0 <small style="color:#6b7280;">2025-12-29</small>
+<details class="changelog-version" open>
+<summary>
+  <span class="version-title">v1.1.0 <small>2025-12-29</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="18" height="18" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
 
 #### 다국어 자동 번역
 문서/스탬프/로그 내용이 사용자 언어로 자동 번역됩니다.
@@ -63,9 +78,18 @@ Inventory 앱의 업데이트 내역을 확인하세요.
 - **실시간 동기화**: 새 댓글만 효율적으로 수신
 - **데이터 절약**: 불필요한 재다운로드 방지
 
----
+</div>
+</details>
 
-### v1.0.4 <small style="color:#6b7280;">2025-12-25</small>
+<details class="changelog-version">
+<summary>
+  <span class="version-title">v1.0.4 <small>2025-12-25</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="18" height="18" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
 
 #### 미디어 링크 카드
 로그에 URL을 입력하면 **리치 카드**로 자동 표시됩니다.
@@ -97,9 +121,18 @@ Inventory 앱의 업데이트 내역을 확인하세요.
 - **의존성 정리**: 미사용 라이브러리 7개 제거
 - **에셋 정리**: 미사용 폰트/이미지 파일 제거 (약 16MB 감소)
 
----
+</div>
+</details>
 
-### v1.0.3 <small style="color:#6b7280;">2025-12-23</small>
+<details class="changelog-version">
+<summary>
+  <span class="version-title">v1.0.3 <small>2025-12-23</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="18" height="18" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
 
 #### 클립(Clip) 기능
 여러 문서를 하나로 묶어서 관리하는 클립 기능이 추가되었습니다.
@@ -130,9 +163,18 @@ Inventory 앱의 업데이트 내역을 확인하세요.
 - 뱃지(Nametag) 환불/삭제 시 장착 상태가 해제되지 않던 문제 수정
 - 뱃지 삭제 후 도메인이 점유 상태로 남아있던 문제 수정
 
----
+</div>
+</details>
 
-### v1.0.2 <small style="color:#6b7280;">2025-12-22</small>
+<details class="changelog-version">
+<summary>
+  <span class="version-title">v1.0.2 <small>2025-12-22</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="18" height="18" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
 
 #### 공유 로그 미읽음 표시
 공유 로그에 새 댓글이 달리면 해당 아이템의 테두리가 **점멸**합니다.
@@ -170,9 +212,18 @@ Inventory 앱의 업데이트 내역을 확인하세요.
 - 파티션 접기 시 화면이 회색으로 표시되던 문제 수정
 - 푸시 알림 권한 처리 개선
 
----
+</div>
+</details>
 
-### v1.0.1 <small style="color:#6b7280;">2025-12-16</small>
+<details class="changelog-version">
+<summary>
+  <span class="version-title">v1.0.1 <small>2025-12-16</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="18" height="18" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
 
 #### 문서 잠금 기능
 - 문서에 숫자 비밀번호 설정 가능 (최대 16자리)
@@ -201,9 +252,18 @@ Inventory 앱의 업데이트 내역을 확인하세요.
 - 검색창 스크롤 개선
 - 아이템 상세 화면 AppBar에 아이템 이름 표시
 
----
+</div>
+</details>
 
-### v1.0.0 <small style="color:#6b7280;">2025-12-13</small>
+<details class="changelog-version">
+<summary>
+  <span class="version-title">v1.0.0 <small>2025-12-13</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="18" height="18" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
 
 **첫 정식 출시 버전**
 
@@ -267,17 +327,178 @@ Inventory 앱의 업데이트 내역을 확인하세요.
 - 한국어, English, 日本語
 - Deutsch, Français, Español, Português
 
----
+</div>
+</details>
 
-> **새로운 기능을 제안해주세요!** [건의하기](/inventory/suggest/)에서 아이디어를 공유해주시면 적극 검토하겠습니다.
+<div class="changelog-footer">
+<strong>새로운 기능을 제안해주세요!</strong> <a href="/inventory/suggest/">건의하기</a>에서 아이디어를 공유해주시면 적극 검토하겠습니다.
+</div>
 
 <style>
-h2 { color: #1f2937; border-bottom: 2px solid #e5e7eb; padding-bottom: .5rem; margin-bottom: 1.5rem; }
-h3 { color: #374151; margin-top: 2rem; margin-bottom: 1rem; }
-h4 { color: #4b5563; font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: .75rem; }
-ul { line-height: 1.8; }
-li { margin-bottom: .5rem; }
-hr { border: none; border-top: 1px solid #e5e7eb; margin: 2rem 0; }
-blockquote { background: #f9fafb; border-left: 4px solid #3b82f6; padding: 1rem 1.5rem; margin: 1.5rem 0; border-radius: 4px; }
-small { font-size: .85rem; }
+/* 버전 컨테이너 */
+details.changelog-version {
+  background: rgba(21, 10, 40, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(168, 85, 247, 0.25);
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+details.changelog-version:hover {
+  border-color: rgba(168, 85, 247, 0.5);
+  transform: translateY(-2px);
+}
+
+details.changelog-version[open] {
+  border-color: rgba(168, 85, 247, 0.6);
+  box-shadow: 0 8px 32px rgba(168, 85, 247, 0.3);
+}
+
+/* Summary 헤더 */
+details.changelog-version summary {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+}
+
+details.changelog-version summary::-webkit-details-marker { display: none; }
+
+/* 화살표 아이콘 */
+details.changelog-version summary::before {
+  content: '▶';
+  margin-right: 0.75rem;
+  color: #a855f7;
+  transition: transform 0.25s ease;
+  font-size: 0.85rem;
+}
+
+details.changelog-version[open] summary::before {
+  transform: rotate(90deg);
+}
+
+details.changelog-version[open] summary {
+  border-bottom: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+/* 버전 제목 */
+.version-title {
+  flex: 1;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.version-title small {
+  color: #9ca3af;
+  font-size: 0.85rem;
+  font-weight: 400;
+  margin-left: 0.5rem;
+}
+
+/* 복사 버튼 */
+.copy-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: rgba(168, 85, 247, 0.15);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.copy-btn:hover {
+  background: rgba(168, 85, 247, 0.25);
+  transform: scale(1.05);
+}
+
+.copy-btn svg { fill: #a855f7; }
+.copy-btn:hover svg { fill: #14b8a6; }
+.copy-btn.copied { background: rgba(20, 184, 166, 0.2); }
+.copy-btn.copied svg { fill: #14b8a6; }
+
+/* 버전 내용 */
+.version-content {
+  padding: 1.25rem 1.5rem;
+  background: rgba(10, 6, 20, 0.4);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.version-content h4 {
+  color: #14b8a6;
+  font-size: 1.05rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.version-content h4:first-child { margin-top: 0; }
+.version-content ul { line-height: 1.8; }
+.version-content li { margin-bottom: 0.5rem; }
+.version-content strong { color: #14b8a6; }
+
+/* 하단 안내 */
+.changelog-footer {
+  background: rgba(20, 184, 166, 0.15);
+  border-left: 4px solid #14b8a6;
+  padding: 1rem 1.25rem;
+  margin-top: 2rem;
+  border-radius: 0 8px 8px 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.changelog-footer a { color: #a855f7; }
+.changelog-footer a:hover { color: #14b8a6; }
+
+h2 {
+  color: rgba(255, 255, 255, 0.95);
+  border-bottom: 2px solid rgba(168, 85, 247, 0.3);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
 </style>
+
+<script>
+function copyVersionContent(button, event) {
+  event.stopPropagation();
+  event.preventDefault();
+
+  const details = button.closest('details.changelog-version');
+  const versionContent = details.querySelector('.version-content');
+  const versionTitle = details.querySelector('.version-title');
+
+  const titleText = versionTitle ? versionTitle.textContent.trim() : '';
+  const contentClone = versionContent.cloneNode(true);
+
+  contentClone.querySelectorAll('h4').forEach(h4 => {
+    h4.textContent = '\n## ' + h4.textContent.trim() + '\n';
+  });
+  contentClone.querySelectorAll('li').forEach(li => {
+    li.textContent = '- ' + li.textContent.trim();
+  });
+
+  const text = '# ' + titleText + '\n' + contentClone.textContent
+    .replace(/\n{3,}/g, '\n\n').trim();
+
+  navigator.clipboard.writeText(text).then(() => {
+    const copyIcon = button.querySelector('.copy-icon');
+    const checkIcon = button.querySelector('.check-icon');
+    copyIcon.style.display = 'none';
+    checkIcon.style.display = 'block';
+    button.classList.add('copied');
+    setTimeout(() => {
+      copyIcon.style.display = 'block';
+      checkIcon.style.display = 'none';
+      button.classList.remove('copied');
+    }, 2000);
+  });
+}
+</script>

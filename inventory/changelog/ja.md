@@ -17,9 +17,15 @@ translations:
 
 Inventoryアプリのアップデート履歴をご確認ください。
 
----
-
-### v1.1.2 <small style="color:#6b7280;">2025-12-31</small>
+<details class="changelog-version" open>
+<summary>
+  <span class="version-title">v1.1.2 <small>2025-12-31</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="コピー">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="18" height="18" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
 
 #### 最近の受信者オートコンプリート
 送信画面で最近送信した受信者をすばやく選択できます。
@@ -32,9 +38,18 @@ Inventoryアプリのアップデート履歴をご確認ください。
 - **スクロールの揺れ修正**: ログが少ないドキュメント/スタンプで上にスクロールする際の画面のちらつきを解決
 - **最上部スクロール修正**: ログがあるアイテムで作成者情報までスクロールできなかった問題を解決
 
----
+</div>
+</details>
 
-### v1.1.0 <small style="color:#6b7280;">2025-12-29</small>
+<details class="changelog-version" open>
+<summary>
+  <span class="version-title">v1.1.0 <small>2025-12-29</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="コピー">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="18" height="18" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
 
 #### 多言語自動翻訳
 ドキュメント、スタンプ、ログの内容がユーザーの言語に自動翻訳されます。
@@ -63,9 +78,18 @@ Inventoryアプリのアップデート履歴をご確認ください。
 - **リアルタイム同期**: 新しいコメントのみを効率的に受信
 - **データ節約**: 不要な再ダウンロードを防止
 
----
+</div>
+</details>
 
-### v1.0.4 <small style="color:#6b7280;">2025-12-25</small>
+<details class="changelog-version">
+<summary>
+  <span class="version-title">v1.0.4 <small>2025-12-25</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="コピー">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="18" height="18" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
 
 #### メディアリンクカード
 ログに入力したURLが自動的に**リッチカード**で表示されます。
@@ -97,9 +121,18 @@ Inventoryアプリのアップデート履歴をご確認ください。
 - **依存関係整理**: 未使用ライブラリ7個を削除
 - **アセット整理**: 未使用フォント/画像ファイルを削除（約16MB削減）
 
----
+</div>
+</details>
 
-### v1.0.3 <small style="color:#6b7280;">2025-12-23</small>
+<details class="changelog-version">
+<summary>
+  <span class="version-title">v1.0.3 <small>2025-12-23</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="コピー">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="18" height="18" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
 
 #### クリップ機能
 複数のドキュメントをまとめて管理できるクリップ機能が追加されました。
@@ -130,9 +163,18 @@ Inventoryアプリのアップデート履歴をご確認ください。
 - バッジ(Nametag)の返金/削除時に装着状態が解除されない問題を修正
 - バッジ削除後もドメインが占有状態のまま残る問題を修正
 
----
+</div>
+</details>
 
-### v1.0.2 <small style="color:#6b7280;">2025-12-22</small>
+<details class="changelog-version">
+<summary>
+  <span class="version-title">v1.0.2 <small>2025-12-22</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="コピー">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="18" height="18" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
 
 #### 共有ログ未読表示
 共有ログに新しいコメントが追加されると、アイテムの枠が**点滅**します。
@@ -170,9 +212,18 @@ Inventoryアプリのアップデート履歴をご確認ください。
 - パーティション折りたたみ時に画面がグレーになる問題を修正
 - プッシュ通知権限処理を改善
 
----
+</div>
+</details>
 
-### v1.0.1 <small style="color:#6b7280;">2025-12-16</small>
+<details class="changelog-version">
+<summary>
+  <span class="version-title">v1.0.1 <small>2025-12-16</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="コピー">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="18" height="18" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
 
 #### ドキュメントロック機能
 - 文書に数字パスワードを設定可能（最大16桁）
@@ -181,9 +232,38 @@ Inventoryアプリのアップデート履歴をご確認ください。
 - ロック状態はアイテム転送後も維持
 - ロックされた文書は検索結果から除外
 
----
+#### クイック入力システム
+ログ入力時に`+`ボタンで特殊情報を簡単に入力できます：
+- **キーワード:値** - 一般キーワードカード
+- **日付アラーム** - 日付カード（D-Day自動計算、アラーム設定可能）
+- **電話番号** - 国別自動フォーマット（韓国、米国、日本など）
+- **位置/住所** - 地図アプリ連携
+- **金額** - 通貨記号自動表示
 
-### v1.0.0 <small style="color:#6b7280;">2025-12-13</small>
+#### 特殊カードアクション
+ログに入力された特殊情報を**長押し**すると追加機能が有効になります：
+- **日付カード**: アラーム設定/解除
+- **電話番号カード**: 直接電話 / クリップボードにコピー
+- **位置カード**: 地図アプリで開く / クリップボードにコピー
+- **金額カード**: クリップボードにコピー
+
+#### UI改善
+- フィルターチップにニューモーフィックデザイン適用
+- 検索バーのスクロール改善
+- アイテム詳細画面のAppBarにアイテム名を表示
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
+  <span class="version-title">v1.0.0 <small>2025-12-13</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="コピー">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="18" height="18" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
 
 **初の正式リリース版**
 
@@ -247,18 +327,178 @@ Inventoryアプリのアップデート履歴をご確認ください。
 - 한국어、English、日本語
 - Deutsch、Français、Español、Português
 
+</div>
+</details>
 
----
-
-> **新機能を提案してください！** [ご意見・ご要望](/inventory/suggest/ja/)でアイデアを共有いただければ、積極的に検討いたします。
+<div class="changelog-footer">
+<strong>新機能を提案してください！</strong> <a href="/inventory/suggest/ja/">ご意見・ご要望</a>でアイデアを共有いただければ、積極的に検討いたします。
+</div>
 
 <style>
-h2 { color: #1f2937; border-bottom: 2px solid #e5e7eb; padding-bottom: .5rem; margin-bottom: 1.5rem; }
-h3 { color: #374151; margin-top: 2rem; margin-bottom: 1rem; }
-h4 { color: #4b5563; font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: .75rem; }
-ul { line-height: 1.8; }
-li { margin-bottom: .5rem; }
-hr { border: none; border-top: 1px solid #e5e7eb; margin: 2rem 0; }
-blockquote { background: #f9fafb; border-left: 4px solid #3b82f6; padding: 1rem 1.5rem; margin: 1.5rem 0; border-radius: 4px; }
-small { font-size: .85rem; }
+/* バージョンコンテナ */
+details.changelog-version {
+  background: rgba(21, 10, 40, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(168, 85, 247, 0.25);
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+details.changelog-version:hover {
+  border-color: rgba(168, 85, 247, 0.5);
+  transform: translateY(-2px);
+}
+
+details.changelog-version[open] {
+  border-color: rgba(168, 85, 247, 0.6);
+  box-shadow: 0 8px 32px rgba(168, 85, 247, 0.3);
+}
+
+/* Summary ヘッダー */
+details.changelog-version summary {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+}
+
+details.changelog-version summary::-webkit-details-marker { display: none; }
+
+/* 矢印アイコン */
+details.changelog-version summary::before {
+  content: '▶';
+  margin-right: 0.75rem;
+  color: #a855f7;
+  transition: transform 0.25s ease;
+  font-size: 0.85rem;
+}
+
+details.changelog-version[open] summary::before {
+  transform: rotate(90deg);
+}
+
+details.changelog-version[open] summary {
+  border-bottom: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+/* バージョンタイトル */
+.version-title {
+  flex: 1;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.version-title small {
+  color: #9ca3af;
+  font-size: 0.85rem;
+  font-weight: 400;
+  margin-left: 0.5rem;
+}
+
+/* コピーボタン */
+.copy-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: rgba(168, 85, 247, 0.15);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.copy-btn:hover {
+  background: rgba(168, 85, 247, 0.25);
+  transform: scale(1.05);
+}
+
+.copy-btn svg { fill: #a855f7; }
+.copy-btn:hover svg { fill: #14b8a6; }
+.copy-btn.copied { background: rgba(20, 184, 166, 0.2); }
+.copy-btn.copied svg { fill: #14b8a6; }
+
+/* バージョン内容 */
+.version-content {
+  padding: 1.25rem 1.5rem;
+  background: rgba(10, 6, 20, 0.4);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.version-content h4 {
+  color: #14b8a6;
+  font-size: 1.05rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.version-content h4:first-child { margin-top: 0; }
+.version-content ul { line-height: 1.8; }
+.version-content li { margin-bottom: 0.5rem; }
+.version-content strong { color: #14b8a6; }
+
+/* フッター */
+.changelog-footer {
+  background: rgba(20, 184, 166, 0.15);
+  border-left: 4px solid #14b8a6;
+  padding: 1rem 1.25rem;
+  margin-top: 2rem;
+  border-radius: 0 8px 8px 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.changelog-footer a { color: #a855f7; }
+.changelog-footer a:hover { color: #14b8a6; }
+
+h2 {
+  color: rgba(255, 255, 255, 0.95);
+  border-bottom: 2px solid rgba(168, 85, 247, 0.3);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
 </style>
+
+<script>
+function copyVersionContent(button, event) {
+  event.stopPropagation();
+  event.preventDefault();
+
+  const details = button.closest('details.changelog-version');
+  const versionContent = details.querySelector('.version-content');
+  const versionTitle = details.querySelector('.version-title');
+
+  const titleText = versionTitle ? versionTitle.textContent.trim() : '';
+  const contentClone = versionContent.cloneNode(true);
+
+  contentClone.querySelectorAll('h4').forEach(h4 => {
+    h4.textContent = '\n## ' + h4.textContent.trim() + '\n';
+  });
+  contentClone.querySelectorAll('li').forEach(li => {
+    li.textContent = '- ' + li.textContent.trim();
+  });
+
+  const text = '# ' + titleText + '\n' + contentClone.textContent
+    .replace(/\n{3,}/g, '\n\n').trim();
+
+  navigator.clipboard.writeText(text).then(() => {
+    const copyIcon = button.querySelector('.copy-icon');
+    const checkIcon = button.querySelector('.check-icon');
+    copyIcon.style.display = 'none';
+    checkIcon.style.display = 'block';
+    button.classList.add('copied');
+    setTimeout(() => {
+      copyIcon.style.display = 'block';
+      checkIcon.style.display = 'none';
+      button.classList.remove('copied');
+    }, 2000);
+  });
+}
+</script>

@@ -17,9 +17,15 @@ translations:
 
 Consulta el historial de actualizaciones de la aplicación Inventory.
 
----
-
-### v1.1.2 <small style="color:#6b7280;">2025-12-31</small>
+<details class="changelog-version" open>
+<summary>
+  <span class="version-title">v1.1.2 <small>2025-12-31</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="18" height="18" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
 
 #### Autocompletado de Destinatarios Recientes
 Selecciona rápidamente destinatarios recientes en la pantalla de envío.
@@ -32,9 +38,18 @@ Selecciona rápidamente destinatarios recientes en la pantalla de envío.
 - **Corrección de temblor de desplazamiento**: Solucionado el parpadeo de pantalla al desplazarse hacia arriba en documentos/sellos con pocos registros
 - **Corrección de desplazamiento superior**: Solucionado el problema donde no se podía llegar a la información del autor desplazándose en elementos con registros
 
----
+</div>
+</details>
 
-### v1.1.0 <small style="color:#6b7280;">2025-12-29</small>
+<details class="changelog-version" open>
+<summary>
+  <span class="version-title">v1.1.0 <small>2025-12-29</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="18" height="18" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
 
 #### Traducción Automática Multilingüe
 Los documentos, sellos y registros se traducen automáticamente a tu idioma.
@@ -63,9 +78,18 @@ Se ha mejorado significativamente la velocidad de carga y el uso de datos de los
 - **Sincronización en tiempo real**: Recibir eficientemente solo comentarios nuevos
 - **Ahorro de datos**: Previene descargas innecesarias
 
----
+</div>
+</details>
 
-### v1.0.4 <small style="color:#6b7280;">2025-12-25</small>
+<details class="changelog-version">
+<summary>
+  <span class="version-title">v1.0.4 <small>2025-12-25</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="18" height="18" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
 
 #### Tarjetas de enlaces multimedia
 Las URLs ingresadas en los registros se muestran automáticamente como **tarjetas enriquecidas**.
@@ -97,9 +121,18 @@ La estructura interna de la aplicación ha sido optimizada.
 - **Limpieza de dependencias**: 7 bibliotecas no utilizadas eliminadas
 - **Limpieza de recursos**: Fuentes/imágenes no utilizadas eliminadas (reducción de aprox. 16MB)
 
----
+</div>
+</details>
 
-### v1.0.3 <small style="color:#6b7280;">2025-12-23</small>
+<details class="changelog-version">
+<summary>
+  <span class="version-title">v1.0.3 <small>2025-12-23</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="18" height="18" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
 
 #### Función Clip
 Agrupa múltiples documentos juntos para una gestión más fácil.
@@ -130,9 +163,18 @@ Usabilidad mejorada para la pantalla de búsqueda de plantillas compartidas.
 - La insignia (Nametag) no se desequipaba al reembolsar/eliminar - corregido
 - El dominio permanecía ocupado después de eliminar la insignia - corregido
 
----
+</div>
+</details>
 
-### v1.0.2 <small style="color:#6b7280;">2025-12-22</small>
+<details class="changelog-version">
+<summary>
+  <span class="version-title">v1.0.2 <small>2025-12-22</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="18" height="18" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
 
 #### Indicador de Registro Compartido No Leído
 Cuando se agregan nuevos comentarios a los registros compartidos, el borde del elemento **pulsa**.
@@ -168,11 +210,20 @@ Proceso de pago simplificado para compras consecutivas del mismo artículo.
 - Corregido efecto de pulsación en comentarios propios
 - Corregido recorte de campo de entrada en navegación por gestos
 - Corregida pantalla gris al contraer particiones
-- Mejorado manejo de permisos de notificación push 
+- Mejorado manejo de permisos de notificación push
 
----
+</div>
+</details>
 
-### v1.0.1 <small style="color:#6b7280;">2025-12-16</small>
+<details class="changelog-version">
+<summary>
+  <span class="version-title">v1.0.1 <small>2025-12-16</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="18" height="18" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
 
 #### Función de Bloqueo de Documento
 - Establecer contraseña numérica en documentos (hasta 16 dígitos)
@@ -181,9 +232,38 @@ Proceso de pago simplificado para compras consecutivas del mismo artículo.
 - El estado de bloqueo persiste después de la transferencia
 - Los documentos bloqueados se excluyen de los resultados de búsqueda
 
----
+#### Sistema de Entrada Rápida
+Ingresa fácilmente información especial a través del botón `+` al escribir registros:
+- **Palabra clave:Valor** - Tarjeta de palabra clave general
+- **Alarma de fecha** - Tarjeta de fecha (cálculo D-Day automático, configuración de alarma)
+- **Número de teléfono** - Formateo automático por país
+- **Ubicación/Dirección** - Integración con app de mapas
+- **Cantidad** - Visualización automática del símbolo de moneda
 
-### v1.0.0 <small style="color:#6b7280;">2025-12-13</small>
+#### Acciones de Tarjetas Especiales
+**Mantén presionada** la información especial en los registros para activar funciones adicionales:
+- **Tarjeta de fecha**: Establecer/cancelar alarma
+- **Tarjeta de teléfono**: Llamar directamente / Copiar al portapapeles
+- **Tarjeta de ubicación**: Abrir en app de mapas / Copiar al portapapeles
+- **Tarjeta de cantidad**: Copiar al portapapeles
+
+#### Mejoras de Interfaz
+- Diseño neumórfico de chips de filtro
+- Mejora del desplazamiento de la barra de búsqueda
+- La AppBar de la pantalla de detalle del elemento muestra el nombre del elemento
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
+  <span class="version-title">v1.0.0 <small>2025-12-13</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="18" height="18"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="18" height="18" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
 
 **Primera versión oficial**
 
@@ -247,19 +327,178 @@ Proceso de pago simplificado para compras consecutivas del mismo artículo.
 - 한국어, English, 日本語
 - Deutsch, Français, Español, Português
 
-#### Plataformas soportadas
+</div>
+</details>
 
----
-
-> **¡Sugiere nuevas funciones!** Comparte tus ideas en [Sugerencias](/inventory/suggest/es/) y las revisaremos activamente.
+<div class="changelog-footer">
+<strong>¡Sugiere nuevas funciones!</strong> Comparte tus ideas en <a href="/inventory/suggest/es/">Sugerencias</a> y las revisaremos activamente.
+</div>
 
 <style>
-h2 { color: #1f2937; border-bottom: 2px solid #e5e7eb; padding-bottom: .5rem; margin-bottom: 1.5rem; }
-h3 { color: #374151; margin-top: 2rem; margin-bottom: 1rem; }
-h4 { color: #4b5563; font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: .75rem; }
-ul { line-height: 1.8; }
-li { margin-bottom: .5rem; }
-hr { border: none; border-top: 1px solid #e5e7eb; margin: 2rem 0; }
-blockquote { background: #f9fafb; border-left: 4px solid #3b82f6; padding: 1rem 1.5rem; margin: 1.5rem 0; border-radius: 4px; }
-small { font-size: .85rem; }
+/* Contenedor de versión */
+details.changelog-version {
+  background: rgba(21, 10, 40, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(168, 85, 247, 0.25);
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+details.changelog-version:hover {
+  border-color: rgba(168, 85, 247, 0.5);
+  transform: translateY(-2px);
+}
+
+details.changelog-version[open] {
+  border-color: rgba(168, 85, 247, 0.6);
+  box-shadow: 0 8px 32px rgba(168, 85, 247, 0.3);
+}
+
+/* Encabezado Summary */
+details.changelog-version summary {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+}
+
+details.changelog-version summary::-webkit-details-marker { display: none; }
+
+/* Icono de flecha */
+details.changelog-version summary::before {
+  content: '▶';
+  margin-right: 0.75rem;
+  color: #a855f7;
+  transition: transform 0.25s ease;
+  font-size: 0.85rem;
+}
+
+details.changelog-version[open] summary::before {
+  transform: rotate(90deg);
+}
+
+details.changelog-version[open] summary {
+  border-bottom: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+/* Título de versión */
+.version-title {
+  flex: 1;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.version-title small {
+  color: #9ca3af;
+  font-size: 0.85rem;
+  font-weight: 400;
+  margin-left: 0.5rem;
+}
+
+/* Botón de copiar */
+.copy-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: rgba(168, 85, 247, 0.15);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.copy-btn:hover {
+  background: rgba(168, 85, 247, 0.25);
+  transform: scale(1.05);
+}
+
+.copy-btn svg { fill: #a855f7; }
+.copy-btn:hover svg { fill: #14b8a6; }
+.copy-btn.copied { background: rgba(20, 184, 166, 0.2); }
+.copy-btn.copied svg { fill: #14b8a6; }
+
+/* Contenido de versión */
+.version-content {
+  padding: 1.25rem 1.5rem;
+  background: rgba(10, 6, 20, 0.4);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.version-content h4 {
+  color: #14b8a6;
+  font-size: 1.05rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.version-content h4:first-child { margin-top: 0; }
+.version-content ul { line-height: 1.8; }
+.version-content li { margin-bottom: 0.5rem; }
+.version-content strong { color: #14b8a6; }
+
+/* Pie de página */
+.changelog-footer {
+  background: rgba(20, 184, 166, 0.15);
+  border-left: 4px solid #14b8a6;
+  padding: 1rem 1.25rem;
+  margin-top: 2rem;
+  border-radius: 0 8px 8px 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.changelog-footer a { color: #a855f7; }
+.changelog-footer a:hover { color: #14b8a6; }
+
+h2 {
+  color: rgba(255, 255, 255, 0.95);
+  border-bottom: 2px solid rgba(168, 85, 247, 0.3);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
 </style>
+
+<script>
+function copyVersionContent(button, event) {
+  event.stopPropagation();
+  event.preventDefault();
+
+  const details = button.closest('details.changelog-version');
+  const versionContent = details.querySelector('.version-content');
+  const versionTitle = details.querySelector('.version-title');
+
+  const titleText = versionTitle ? versionTitle.textContent.trim() : '';
+  const contentClone = versionContent.cloneNode(true);
+
+  contentClone.querySelectorAll('h4').forEach(h4 => {
+    h4.textContent = '\n## ' + h4.textContent.trim() + '\n';
+  });
+  contentClone.querySelectorAll('li').forEach(li => {
+    li.textContent = '- ' + li.textContent.trim();
+  });
+
+  const text = '# ' + titleText + '\n' + contentClone.textContent
+    .replace(/\n{3,}/g, '\n\n').trim();
+
+  navigator.clipboard.writeText(text).then(() => {
+    const copyIcon = button.querySelector('.copy-icon');
+    const checkIcon = button.querySelector('.check-icon');
+    copyIcon.style.display = 'none';
+    checkIcon.style.display = 'block';
+    button.classList.add('copied');
+    setTimeout(() => {
+      copyIcon.style.display = 'block';
+      checkIcon.style.display = 'none';
+      button.classList.remove('copied');
+    }, 2000);
+  });
+}
+</script>
