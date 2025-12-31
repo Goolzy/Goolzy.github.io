@@ -34,6 +34,12 @@ Selecciona rápidamente destinatarios recientes en la pantalla de envío.
 - **Rebúsqueda**: Borra la selección con el botón X para buscar otro destinatario
 - **Almacenamiento local**: Información del destinatario guardada automáticamente al enviar con éxito
 
+#### Mejoras en Restricciones de Envío
+Las insignias equipadas y los sellos compartidos ahora tienen restricciones de envío.
+- **Insignias equipadas**: Desequipa la insignia para enviarla
+- **Sellos compartidos**: Revoca el uso compartido para enviar el sello
+- **Guía detallada**: Muestra mensajes específicos explicando el motivo de la restricción
+
 #### Corrección de errores
 - **Corrección de temblor de desplazamiento**: Solucionado el parpadeo de pantalla al desplazarse hacia arriba en documentos/sellos con pocos registros
 - **Corrección de desplazamiento superior**: Solucionado el problema donde no se podía llegar a la información del autor desplazándose en elementos con registros

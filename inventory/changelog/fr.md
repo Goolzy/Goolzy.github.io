@@ -34,6 +34,12 @@ Sélectionnez rapidement les destinataires récents sur l'écran d'envoi.
 - **Nouvelle recherche** : Effacez la sélection avec le bouton X pour chercher un autre destinataire
 - **Stockage local** : Informations du destinataire sauvegardées automatiquement lors d'un envoi réussi
 
+#### Restrictions d'Envoi Améliorées
+Les badges équipés et les tampons partagés ne peuvent plus être envoyés.
+- **Badges équipés** : Déséquipez le badge pour l'envoyer
+- **Tampons partagés** : Révoquez le partage pour envoyer le tampon
+- **Guide détaillé** : Affiche des messages spécifiques expliquant la raison de la restriction
+
 #### Corrections de bugs
 - **Correction du tremblement de défilement** : Résolution du scintillement de l'écran lors du défilement vers le haut dans les documents/tampons avec peu de journaux
 - **Correction du défilement vers le haut** : Résolution du problème où les informations de l'auteur ne pouvaient pas être atteintes par défilement dans les éléments avec des journaux

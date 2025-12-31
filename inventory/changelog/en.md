@@ -34,6 +34,12 @@ Quickly select recent recipients on the send screen.
 - **Re-search**: Clear selection with X button to search for another recipient
 - **Local Storage**: Recipient information automatically saved on successful send
 
+#### Send Restrictions Improved
+Equipped badges and shared stamps are now restricted from being sent.
+- **Equipped Badges**: Unequip the badge to send it
+- **Shared Stamps**: Revoke sharing to send the stamp
+- **Detailed Guidance**: Displays specific messages explaining the restriction reason
+
 #### Bug Fixes
 - **Scroll Jitter Fixed**: Resolved screen flickering when scrolling up in documents/stamps with few logs
 - **Top Scroll Fixed**: Resolved issue where author information couldn't be reached by scrolling in items with logs

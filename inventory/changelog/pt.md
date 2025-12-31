@@ -34,6 +34,12 @@ Selecione rapidamente destinatários recentes na tela de envio.
 - **Nova pesquisa**: Limpe a seleção com o botão X para pesquisar outro destinatário
 - **Armazenamento local**: Informações do destinatário salvas automaticamente ao enviar com sucesso
 
+#### Restrições de Envio Melhoradas
+Emblemas equipados e carimbos compartilhados agora têm restrições de envio.
+- **Emblemas equipados**: Desequipe o emblema para enviá-lo
+- **Carimbos compartilhados**: Revogue o compartilhamento para enviar o carimbo
+- **Orientação detalhada**: Exibe mensagens específicas explicando o motivo da restrição
+
 #### Correções de bugs
 - **Correção de tremor de rolagem**: Resolvido o tremor da tela ao rolar para cima em documentos/carimbos com poucos registros
 - **Correção de rolagem para o topo**: Resolvido o problema onde as informações do autor não podiam ser alcançadas pela rolagem em itens com registros

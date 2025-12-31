@@ -34,6 +34,12 @@ Wählen Sie kürzliche Empfänger auf dem Sendebildschirm schnell aus.
 - **Neusuche**: Auswahl mit X-Button löschen, um nach einem anderen Empfänger zu suchen
 - **Lokale Speicherung**: Empfängerinformationen werden bei erfolgreicher Sendung automatisch gespeichert
 
+#### Verbesserte Sendebeschränkungen
+Ausgerüstete Abzeichen und geteilte Stempel können nicht gesendet werden.
+- **Ausgerüstete Abzeichen**: Abzeichen ablegen, um es zu senden
+- **Geteilte Stempel**: Freigabe widerrufen, um den Stempel zu senden
+- **Detaillierte Anleitung**: Zeigt spezifische Nachrichten an, die den Einschränkungsgrund erklären
+
 #### Fehlerbehebungen
 - **Scroll-Zittern behoben**: Bildschirmflackern beim Hochscrollen in Dokumenten/Stempeln mit wenigen Protokollen behoben
 - **Top-Scroll behoben**: Problem behoben, bei dem Autoreninformationen in Elementen mit Protokollen nicht durch Scrollen erreicht werden konnten
