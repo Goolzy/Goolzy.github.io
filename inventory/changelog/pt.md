@@ -51,9 +51,18 @@ Emblemas equipados e carimbos compartilhados agora têm restrições de envio.
 - **Carimbos compartilhados**: Revogue o compartilhamento para enviar o carimbo
 - **Orientação detalhada**: Exibe mensagens específicas explicando o motivo da restrição
 
+#### Sistema de Reações
+Reaja aos itens com expressões emocionais.
+- **12 Reações**: Várias expressões emocionais como Curtir, Amor, Melhor, Parabéns e mais
+- **Alternar reação**: Cancele clicando novamente na reação selecionada
+- **Registro de logs**: Os logs do sistema registram quando as reações são selecionadas ou canceladas
+- **Suporte multilíngue**: Os nomes das reações são exibidos no idioma do usuário
+
 #### Correções de bugs
 - **Correção de tremor de rolagem**: Resolvido o tremor da tela ao rolar para cima em documentos/carimbos com poucos registros
 - **Correção de rolagem para o topo**: Resolvido o problema onde as informações do autor não podiam ser alcançadas pela rolagem em itens com registros
+- **Formato de log de reação melhorado**: Emoticons e nomes agora são exibidos juntos
+- **Exibição do nome de usuário corrigida**: O nome de domínio agora é exibido corretamente ao usar um emblema
 
 </div>
 </details>

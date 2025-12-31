@@ -51,9 +51,18 @@ Les badges équipés et les tampons partagés ne peuvent plus être envoyés.
 - **Tampons partagés** : Révoquez le partage pour envoyer le tampon
 - **Guide détaillé** : Affiche des messages spécifiques expliquant la raison de la restriction
 
+#### Système de Réactions
+Réagissez aux éléments avec des expressions émotionnelles.
+- **12 Réactions** : Diverses expressions émotionnelles comme J'aime, J'adore, Meilleur, Félicitations, et plus
+- **Basculer la réaction** : Annulez en cliquant à nouveau sur la réaction sélectionnée
+- **Enregistrement des journaux** : Les journaux système enregistrent quand les réactions sont sélectionnées ou annulées
+- **Support multilingue** : Les noms des réactions sont affichés dans la langue de l'utilisateur
+
 #### Corrections de bugs
 - **Correction du tremblement de défilement** : Résolution du scintillement de l'écran lors du défilement vers le haut dans les documents/tampons avec peu de journaux
 - **Correction du défilement vers le haut** : Résolution du problème où les informations de l'auteur ne pouvaient pas être atteintes par défilement dans les éléments avec des journaux
+- **Format du journal de réaction amélioré** : Les émoticônes et les noms sont maintenant affichés ensemble
+- **Affichage du nom d'utilisateur corrigé** : Le nom de domaine s'affiche maintenant correctement lorsqu'un badge est porté
 
 </div>
 </details>

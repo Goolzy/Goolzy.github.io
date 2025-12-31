@@ -51,9 +51,18 @@ Equipped badges and shared stamps are now restricted from being sent.
 - **Shared Stamps**: Revoke sharing to send the stamp
 - **Detailed Guidance**: Displays specific messages explaining the restriction reason
 
+#### Reaction System
+React to items with emotional expressions.
+- **12 Reactions**: Various emotional expressions including Like, Love, Best, Congrats, and more
+- **Reaction Toggle**: Cancel by clicking the selected reaction again
+- **Log Recording**: System logs record when reactions are selected or cancelled
+- **Multilingual Support**: Reaction names displayed in the user's language
+
 #### Bug Fixes
 - **Scroll Jitter Fixed**: Resolved screen flickering when scrolling up in documents/stamps with few logs
 - **Top Scroll Fixed**: Resolved issue where author information couldn't be reached by scrolling in items with logs
+- **Reaction Log Format Improved**: Emoticons and names are now displayed together
+- **User Name Display Fixed**: Domain name is now correctly displayed when wearing a badge
 
 </div>
 </details>

@@ -51,9 +51,18 @@ Ausgerüstete Abzeichen und geteilte Stempel können nicht gesendet werden.
 - **Geteilte Stempel**: Freigabe widerrufen, um den Stempel zu senden
 - **Detaillierte Anleitung**: Zeigt spezifische Nachrichten an, die den Einschränkungsgrund erklären
 
+#### Reaktionssystem
+Reagieren Sie auf Elemente mit emotionalen Ausdrücken.
+- **12 Reaktionen**: Verschiedene emotionale Ausdrücke wie Gefällt mir, Liebe, Beste, Glückwunsch und mehr
+- **Reaktions-Toggle**: Abbrechen durch erneutes Klicken auf die ausgewählte Reaktion
+- **Protokollierung**: Systemprotokolle zeichnen auf, wenn Reaktionen ausgewählt oder abgebrochen werden
+- **Mehrsprachige Unterstützung**: Reaktionsnamen werden in der Sprache des Benutzers angezeigt
+
 #### Fehlerbehebungen
 - **Scroll-Zittern behoben**: Bildschirmflackern beim Hochscrollen in Dokumenten/Stempeln mit wenigen Protokollen behoben
 - **Top-Scroll behoben**: Problem behoben, bei dem Autoreninformationen in Elementen mit Protokollen nicht durch Scrollen erreicht werden konnten
+- **Reaktionslog-Format verbessert**: Emoticons und Namen werden jetzt zusammen angezeigt
+- **Benutzernamensanzeige behoben**: Domain-Name wird jetzt korrekt angezeigt, wenn ein Abzeichen getragen wird
 
 </div>
 </details>

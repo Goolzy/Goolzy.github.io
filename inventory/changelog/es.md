@@ -51,9 +51,18 @@ Las insignias equipadas y los sellos compartidos ahora tienen restricciones de e
 - **Sellos compartidos**: Revoca el uso compartido para enviar el sello
 - **Guía detallada**: Muestra mensajes específicos explicando el motivo de la restricción
 
+#### Sistema de Reacciones
+Reacciona a los elementos con expresiones emocionales.
+- **12 Reacciones**: Diversas expresiones emocionales como Me gusta, Amor, Mejor, Felicitaciones y más
+- **Alternar reacción**: Cancela haciendo clic nuevamente en la reacción seleccionada
+- **Registro de logs**: Los registros del sistema registran cuando se seleccionan o cancelan las reacciones
+- **Soporte multilingüe**: Los nombres de las reacciones se muestran en el idioma del usuario
+
 #### Corrección de errores
 - **Corrección de temblor de desplazamiento**: Solucionado el parpadeo de pantalla al desplazarse hacia arriba en documentos/sellos con pocos registros
 - **Corrección de desplazamiento superior**: Solucionado el problema donde no se podía llegar a la información del autor desplazándose en elementos con registros
+- **Formato de registro de reacción mejorado**: Los emoticonos y los nombres ahora se muestran juntos
+- **Visualización del nombre de usuario corregida**: El nombre de dominio ahora se muestra correctamente al usar una insignia
 
 </div>
 </details>
