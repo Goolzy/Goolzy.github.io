@@ -42,8 +42,7 @@ Para usar a API, voce primeiro precisa de uma chave API.
 1. Abra a tela de **Perfil** no aplicativo Inventory
 2. Encontre a secao **Chave API**
 3. Toque no botao **Gerar chave**
-4. Digite sua senha secundaria para autenticacao
-5. Sua chave API sera exibida na tela
+4. Sua chave API sera exibida na tela
 
 > **Importante**: A chave API e mostrada **apenas uma vez** quando gerada. Certifique-se de copia-la e guarda-la em um local seguro. Se perder, precisara regenera-la.
 
@@ -134,7 +133,7 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 
 <details>
 <summary><h3>GET /items - Listar itens</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Recupera uma lista de itens (documentos) que voce possui.
 
@@ -187,7 +186,7 @@ curl -H "Authorization: Bearer inv_xxx" \
 
 <details>
 <summary><h3>POST /templates - Criar modelo</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Cria um novo modelo (carimbo).
 
@@ -247,7 +246,7 @@ As palavras-chave devem seguir o formato `chave:valor`.
 
 <details>
 <summary><h3>POST /templates/{token}/share - Compartilhar modelo</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Compartilha um modelo para que outros usuarios possam descobri-lo.
 

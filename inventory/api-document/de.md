@@ -42,8 +42,7 @@ Um die API zu nutzen, benotigen Sie zunachst einen API-Schlussel.
 1. Offnen Sie den **Profil**-Bildschirm in der Inventory-App
 2. Suchen Sie den **API-Schlussel**-Bereich
 3. Tippen Sie auf die Schaltflache **Schlussel generieren**
-4. Geben Sie Ihr sekundares Passwort zur Authentifizierung ein
-5. Ihr API-Schlussel wird auf dem Bildschirm angezeigt
+4. Ihr API-Schlussel wird auf dem Bildschirm angezeigt
 
 > **Wichtig**: Der API-Schlussel wird bei der Generierung **nur einmal** angezeigt. Stellen Sie sicher, dass Sie ihn kopieren und an einem sicheren Ort aufbewahren. Bei Verlust muss er neu generiert werden.
 
@@ -134,7 +133,7 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 
 <details>
 <summary><h3>GET /items - Artikel auflisten</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Ruft eine Liste der Artikel (Dokumente) ab, die Sie besitzen.
 
@@ -187,7 +186,7 @@ curl -H "Authorization: Bearer inv_xxx" \
 
 <details>
 <summary><h3>GET /items/{token} - Artikeldetails</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Ruft detaillierte Informationen uber einen bestimmten Artikel ab.
 
@@ -222,7 +221,7 @@ curl -H "Authorization: Bearer inv_xxx" \
 
 <details>
 <summary><h3>POST /templates - Vorlage erstellen</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Erstellt eine neue Vorlage (Stempel).
 
@@ -282,7 +281,7 @@ Schlusselworter mussen dem Format `schlussel:wert` folgen.
 
 <details>
 <summary><h3>POST /templates/{token}/share - Vorlage teilen</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Teilt eine Vorlage, damit andere Benutzer sie finden konnen.
 

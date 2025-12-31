@@ -42,8 +42,7 @@ To use the API, you first need an API key.
 1. Open the **Profile** screen in the Inventory app
 2. Find the **API Key** section
 3. Tap the **Generate Key** button
-4. Enter your secondary password for authentication
-5. Your API key will be displayed on screen
+4. Your API key will be displayed on screen
 
 > **Important**: The API key is shown **only once** when generated. Make sure to copy and store it in a safe place. You will need to regenerate if lost.
 
@@ -134,7 +133,7 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 
 <details>
 <summary><h3>GET /items - List Items</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Retrieves a list of items (documents) you own.
 
@@ -187,7 +186,7 @@ curl -H "Authorization: Bearer inv_xxx" \
 
 <details>
 <summary><h3>GET /items/{token} - Item Details</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Retrieves detailed information about a specific item.
 
@@ -222,7 +221,7 @@ curl -H "Authorization: Bearer inv_xxx" \
 
 <details>
 <summary><h3>GET /templates - List Templates</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Retrieves a list of templates (stamps) you own.
 
@@ -272,7 +271,7 @@ curl -H "Authorization: Bearer inv_xxx" \
 
 <details>
 <summary><h3>GET /templates/shared - Shared Templates</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Retrieves a list of templates you are currently sharing.
 
@@ -308,7 +307,7 @@ curl -H "Authorization: Bearer inv_xxx" \
 
 <details>
 <summary><h3>GET /user/stats - User Statistics</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Retrieves your usage statistics.
 
@@ -347,7 +346,7 @@ curl -H "Authorization: Bearer inv_xxx" \
 
 <details>
 <summary><h3>POST /templates - Create Template</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Creates a new template (stamp).
 
@@ -415,7 +414,7 @@ Keywords must follow the `key:value` format.
 
 <details>
 <summary><h3>POST /templates/{token}/share - Share Template</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Shares a template so other users can discover it.
 
@@ -467,7 +466,7 @@ curl -X POST \
 
 <details>
 <summary><h3>POST /templates/revoke - Revoke Share</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Cancels sharing of a template that is currently being shared.
 
@@ -505,7 +504,7 @@ curl -X POST \
 
 <details>
 <summary><h3>POST /templates/{token}/send - Send Template</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Clones a template and sends it to another user.
 

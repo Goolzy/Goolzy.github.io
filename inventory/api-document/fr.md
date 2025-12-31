@@ -42,8 +42,7 @@ Pour utiliser l'API, vous avez d'abord besoin d'une cle API.
 1. Ouvrez l'ecran **Profil** dans l'application Inventory
 2. Trouvez la section **Cle API**
 3. Appuyez sur le bouton **Generer la cle**
-4. Entrez votre mot de passe secondaire pour l'authentification
-5. Votre cle API sera affichee a l'ecran
+4. Votre cle API sera affichee a l'ecran
 
 > **Important**: La cle API n'est affichee qu'**une seule fois** lors de sa generation. Assurez-vous de la copier et de la conserver dans un endroit sur. En cas de perte, vous devrez la regenerer.
 
@@ -134,7 +133,7 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 
 <details>
 <summary><h3>GET /items - Lister les articles</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Recupere une liste des articles (documents) que vous possedez.
 
@@ -187,7 +186,7 @@ curl -H "Authorization: Bearer inv_xxx" \
 
 <details>
 <summary><h3>POST /templates - Creer un modele</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Cree un nouveau modele (tampon).
 
@@ -247,7 +246,7 @@ Les mots-cles doivent suivre le format `cle:valeur`.
 
 <details>
 <summary><h3>POST /templates/{token}/share - Partager un modele</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Partage un modele pour que d'autres utilisateurs puissent le decouvrir.
 

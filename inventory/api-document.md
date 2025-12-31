@@ -42,8 +42,7 @@ API를 사용하려면 먼저 API 키가 필요합니다.
 1. 인벤토리 앱에서 **프로필 화면**으로 이동합니다
 2. **API 키** 섹션을 찾습니다
 3. **키 생성** 버튼을 탭합니다
-4. 2차 비밀번호를 입력하여 인증합니다
-5. 생성된 API 키가 화면에 표시됩니다
+4. 생성된 API 키가 화면에 표시됩니다
 
 > **중요**: API 키는 생성 시 **한 번만** 표시됩니다. 반드시 안전한 곳에 복사하여 보관하세요. 분실 시 재발급이 필요합니다.
 
@@ -134,7 +133,7 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 
 <details>
 <summary><h3>GET /items - 아이템 목록</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 본인 소유의 아이템(문서) 목록을 조회합니다.
 
@@ -187,7 +186,7 @@ curl -H "Authorization: Bearer inv_xxx" \
 
 <details>
 <summary><h3>GET /items/{token} - 아이템 상세</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 특정 아이템의 상세 정보를 조회합니다.
 
@@ -222,7 +221,7 @@ curl -H "Authorization: Bearer inv_xxx" \
 
 <details>
 <summary><h3>GET /templates - 템플릿 목록</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 본인 소유의 템플릿(스탬프) 목록을 조회합니다.
 
@@ -272,7 +271,7 @@ curl -H "Authorization: Bearer inv_xxx" \
 
 <details>
 <summary><h3>GET /templates/shared - 공유 중인 템플릿</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 현재 공유 중인 템플릿 목록을 조회합니다.
 
@@ -308,7 +307,7 @@ curl -H "Authorization: Bearer inv_xxx" \
 
 <details>
 <summary><h3>GET /user/stats - 사용자 통계</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 본인의 사용 통계를 조회합니다.
 
@@ -347,7 +346,7 @@ curl -H "Authorization: Bearer inv_xxx" \
 
 <details>
 <summary><h3>POST /templates - 템플릿 생성</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 새로운 템플릿(스탬프)을 생성합니다.
 
@@ -415,7 +414,7 @@ curl -X POST \
 
 <details>
 <summary><h3>POST /templates/{token}/share - 템플릿 공유</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 템플릿을 공유하여 다른 사용자가 검색할 수 있게 합니다.
 
@@ -467,7 +466,7 @@ curl -X POST \
 
 <details>
 <summary><h3>POST /templates/revoke - 공유 회수</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 공유 중인 템플릿의 공유를 취소합니다.
 
@@ -505,7 +504,7 @@ curl -X POST \
 
 <details>
 <summary><h3>POST /templates/{token}/send - 템플릿 전송</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 템플릿을 복제하여 다른 사용자에게 전송합니다.
 

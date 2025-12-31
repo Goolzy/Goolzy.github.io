@@ -42,8 +42,7 @@ Para usar la API, primero necesita una clave API.
 1. Abra la pantalla de **Perfil** en la aplicacion Inventory
 2. Busque la seccion **Clave API**
 3. Toque el boton **Generar clave**
-4. Ingrese su contrasena secundaria para autenticacion
-5. Su clave API se mostrara en pantalla
+4. Su clave API se mostrara en pantalla
 
 > **Importante**: La clave API se muestra **solo una vez** cuando se genera. Asegurese de copiarla y guardarla en un lugar seguro. Si la pierde, necesitara regenerarla.
 
@@ -134,7 +133,7 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 
 <details>
 <summary><h3>GET /items - Listar articulos</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Recupera una lista de articulos (documentos) que posee.
 
@@ -187,7 +186,7 @@ curl -H "Authorization: Bearer inv_xxx" \
 
 <details>
 <summary><h3>POST /templates - Crear plantilla</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Crea una nueva plantilla (sello).
 
@@ -247,7 +246,7 @@ Las palabras clave deben seguir el formato `clave:valor`.
 
 <details>
 <summary><h3>POST /templates/{token}/share - Compartir plantilla</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 Comparte una plantilla para que otros usuarios puedan descubrirla.
 

@@ -42,8 +42,7 @@ APIを使用するには、まずAPIキーが必要です。
 1. インベントリアプリで**プロフィール**画面を開きます
 2. **APIキー**セクションを見つけます
 3. **キーを生成**ボタンをタップします
-4. 二次パスワードを入力して認証します
-5. 生成されたAPIキーが画面に表示されます
+4. 生成されたAPIキーが画面に表示されます
 
 > **重要**: APIキーは生成時に**一度だけ**表示されます。必ず安全な場所にコピーして保管してください。紛失した場合は再発行が必要です。
 
@@ -134,7 +133,7 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 
 <details>
 <summary><h3>GET /items - アイテム一覧</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 所有するアイテム（ドキュメント）の一覧を取得します。
 
@@ -187,7 +186,7 @@ curl -H "Authorization: Bearer inv_xxx" \
 
 <details>
 <summary><h3>GET /items/{token} - アイテム詳細</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 特定のアイテムの詳細情報を取得します。
 
@@ -222,7 +221,7 @@ curl -H "Authorization: Bearer inv_xxx" \
 
 <details>
 <summary><h3>GET /templates - テンプレート一覧</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 所有するテンプレート（スタンプ）の一覧を取得します。
 
@@ -272,7 +271,7 @@ curl -H "Authorization: Bearer inv_xxx" \
 
 <details>
 <summary><h3>GET /templates/shared - 共有中のテンプレート</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 現在共有中のテンプレート一覧を取得します。
 
@@ -308,7 +307,7 @@ curl -H "Authorization: Bearer inv_xxx" \
 
 <details>
 <summary><h3>GET /user/stats - ユーザー統計</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 使用統計を取得します。
 
@@ -347,7 +346,7 @@ curl -H "Authorization: Bearer inv_xxx" \
 
 <details>
 <summary><h3>POST /templates - テンプレート作成</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 新しいテンプレート（スタンプ）を作成します。
 
@@ -415,7 +414,7 @@ curl -X POST \
 
 <details>
 <summary><h3>POST /templates/{token}/share - テンプレート共有</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 テンプレートを共有し、他のユーザーが検索できるようにします。
 
@@ -467,7 +466,7 @@ curl -X POST \
 
 <details>
 <summary><h3>POST /templates/revoke - 共有解除</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 共有中のテンプレートの共有を解除します。
 
@@ -505,7 +504,7 @@ curl -X POST \
 
 <details>
 <summary><h3>POST /templates/{token}/send - テンプレート送信</h3></summary>
-<div class="manual-content">
+<div class="manual-content" markdown="1">
 
 テンプレートを複製して他のユーザーに送信します。
 
