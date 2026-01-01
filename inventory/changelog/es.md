@@ -71,6 +71,7 @@ Se han mejorado las notificaciones toast en tiempo real.
 - **Detección en tiempo real**: Detección precisa de nuevas notificaciones y actualizaciones basada en ID+marca de tiempo
 
 #### Corrección de errores
+- **Estabilización de UI de detalle de documento**: Se corrigió el problema donde la barra de búsqueda y los filtros temblaban cuando los logs compartidos/individuales estaban en el límite de la pantalla
 - **Corrección de temblor de desplazamiento**: Solucionado el parpadeo de pantalla al desplazarse hacia arriba en documentos/sellos con pocos registros
 - **Corrección de desplazamiento superior**: Solucionado el problema donde no se podía llegar a la información del autor desplazándose en elementos con registros
 - **Formato de registro de reacción mejorado**: Los emoticonos y los nombres ahora se muestran juntos

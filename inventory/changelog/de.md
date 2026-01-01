@@ -71,6 +71,7 @@ Echtzeit-Toast-Benachrichtigungen wurden verbessert.
 - **Echtzeit-Erkennung**: Neue und aktualisierte Benachrichtigungen werden praezise anhand von ID und Zeitstempel erkannt
 
 #### Fehlerbehebungen
+- **Stabilisierung der Dokumentdetail-UI**: Problem behoben, bei dem Suchleiste und Filter wackelten, wenn geteilte/einzelne Logs am Bildschirmrand waren
 - **Scroll-Zittern behoben**: Bildschirmflackern beim Hochscrollen in Dokumenten/Stempeln mit wenigen Protokollen behoben
 - **Top-Scroll behoben**: Problem behoben, bei dem Autoreninformationen in Elementen mit Protokollen nicht durch Scrollen erreicht werden konnten
 - **Reaktionslog-Format verbessert**: Emoticons und Namen werden jetzt zusammen angezeigt

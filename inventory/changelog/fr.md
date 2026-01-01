@@ -71,6 +71,7 @@ Les notifications toast en temps réel ont été améliorées.
 - **Détection en temps réel** : Détection précise des nouvelles notifications et des mises à jour basée sur l'ID et l'horodatage
 
 #### Corrections de bugs
+- **Stabilisation de l'UI détail du document**: Correction du problème où la barre de recherche et les filtres tremblaient lorsque les logs partagés/individuels étaient à la limite de l'écran
 - **Correction du tremblement de défilement** : Résolution du scintillement de l'écran lors du défilement vers le haut dans les documents/tampons avec peu de journaux
 - **Correction du défilement vers le haut** : Résolution du problème où les informations de l'auteur ne pouvaient pas être atteintes par défilement dans les éléments avec des journaux
 - **Format du journal de réaction amélioré** : Les émoticônes et les noms sont maintenant affichés ensemble

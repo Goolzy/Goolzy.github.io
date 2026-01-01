@@ -71,6 +71,7 @@ Real-time toast notifications have been improved.
 - **Real-time Detection**: Accurately detects new and updated notifications based on ID+timestamp
 
 #### Bug Fixes
+- **Document detail UI stabilization**: Fixed issue where search bar and filters would shake when shared/solo logs were at screen boundary
 - **Scroll Jitter Fixed**: Resolved screen flickering when scrolling up in documents/stamps with few logs
 - **Top Scroll Fixed**: Resolved issue where author information couldn't be reached by scrolling in items with logs
 - **Reaction Log Format Improved**: Emoticons and names are now displayed together
