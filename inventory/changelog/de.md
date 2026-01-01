@@ -29,7 +29,7 @@ Sehen Sie sich den Update-Verlauf der Inventory-App an.
 
 #### Badge-Bearbeitungsfunktion
 Bearbeiten Sie das Bild und die Schlüsselwörter von gravierten Badges.
-- **Bearbeitungsmenü**: "Badge bearbeiten"-Menü erscheint bei Auswahl eines gravierten Badges
+- **Bearbeitungsmenü**: "Badge bearbeiten"-Menü wird bei Auswahl eines gravierten Badges angezeigt
 - **Bildänderung**: Badge-Bild durch ein neues ersetzen
 - **Schlüsselwortverwaltung**: 5 Arten von Schlüsselwörtern hinzufügen, löschen oder ändern
 
@@ -38,45 +38,47 @@ Die Ladegeschwindigkeit von Netzwerkbildern wurde erheblich verbessert.
 - **Lokaler Cache**: Einmal geladene Bilder werden lokal gespeichert und sofort angezeigt
 - **Badge-Bildsynchronisation**: Badge-Bildänderungen werden sofort in allen Protokollen übernommen
 
-#### Autovervollständigung für Letzte Empfänger
-Wählen Sie kürzliche Empfänger auf dem Sendebildschirm schnell aus.
+#### Autovervollständigung für letzte Empfänger
+Wählen Sie kürzlich versendete Empfänger auf dem Sendebildschirm schnell aus.
 - **Autovervollständigungsliste**: Dropdown mit bis zu 30 letzten Empfängern bei Eingabefeld-Fokus
 - **Schnellauswahl**: Automatische Suche bei Auswahl eines Empfängers aus der Liste
 - **Neusuche**: Auswahl mit X-Button löschen, um nach einem anderen Empfänger zu suchen
 - **Lokale Speicherung**: Empfängerinformationen werden bei erfolgreicher Sendung automatisch gespeichert
 
-#### Verbesserte Sendebeschränkungen
-Ausgerüstete Abzeichen und geteilte Stempel können nicht gesendet werden.
-- **Ausgerüstete Abzeichen**: Abzeichen ablegen, um es zu senden
-- **Geteilte Stempel**: Freigabe widerrufen, um den Stempel zu senden
-- **Detaillierte Anleitung**: Zeigt spezifische Nachrichten an, die den Einschränkungsgrund erklären
+#### Verbesserung der Sendebeschränkungen
+Ausgerüstete Badges und gemeinsame Stempel können nicht gesendet werden.
+- **Ausgerüstete Badges**: Badge ablegen, um es zu senden
+- **Gemeinsame Stempel**: Freigabe widerrufen, um den Stempel zu senden
+- **Detaillierte Anleitung**: Zeigt spezifische Nachrichten an, die den Grund für die Einschränkung erklären
 
-#### Reaktionssystem
+#### Emotionale Reaktionssystem
 Reagieren Sie auf Elemente mit emotionalen Ausdrücken.
-- **12 Reaktionen**: Verschiedene emotionale Ausdrücke wie Gefällt mir, Liebe, Beste, Glückwunsch und mehr
+- **12 Reaktionen**: Verschiedene emotionale Ausdrücke wie Gefällt mir, Liebe, Großartig, Glückwunsch und mehr
 - **Reaktions-Toggle**: Abbrechen durch erneutes Klicken auf die ausgewählte Reaktion
 - **Protokollierung**: Systemprotokolle zeichnen auf, wenn Reaktionen ausgewählt oder abgebrochen werden
 - **Mehrsprachige Unterstützung**: Reaktionsnamen werden in der Sprache des Benutzers angezeigt
 
 #### Verbesserung der Suchfunktion
-Die Echtzeitsuche wurde erweitert, um Artikelnamen und Schluesselwoerter einzubeziehen.
-- **Artikelnamen-Suche**: Suche nach Dokumenttitel, Stempelbeschreibung, Abzeichen-Domainnamen
-- **Schluesselwort-Suche**: Suche nach in Stempeln und Abzeichen gespeicherten Schluesselwoertern
-- **Tag-Suche**: Suche auch nach Stempel-Vorlagen-Tags moeglich
+Die Echtzeitsuche wurde erweitert, um Elementnamen und Schlüsselwörter einzubeziehen.
+- **Elementname-Suche**: Suche nach Dokumenttitel, Stempel-Beschreibung, Badge-Domainname
+- **Schlüsselwort-Suche**: Suche nach Schlüsselwörtern, die in Stempeln und Badges gespeichert sind
+- **Tag-Suche**: Suche auch nach Stempel-Template-Tags möglich
 
 #### Verbesserung der In-App-Benachrichtigungen
 Echtzeit-Toast-Benachrichtigungen wurden verbessert.
 - **Absender-Badge-Anzeige**: Das Badge-Bild des Absenders wird inline in der Benachrichtigung angezeigt
 - **Dynamic Island-Stil**: Elegante Toast-Animationen im iOS Dynamic Island-Stil
-- **Echtzeit-Erkennung**: Neue und aktualisierte Benachrichtigungen werden praezise anhand von ID und Zeitstempel erkannt
+- **Echtzeit-Erkennung**: Neue und aktualisierte Benachrichtigungen werden präzise anhand von ID und Zeitstempel erkannt
+- **Automatisches Löschen**: Beim Zugriff auf den Artikel-Detailbildschirm werden Benachrichtigungen im Zusammenhang mit diesem Artikel automatisch gelöscht
 
 #### Fehlerbehebungen
-- **Stabilisierung der Dokumentdetail-UI**: Problem behoben, bei dem Suchleiste und Filter wackelten, wenn geteilte/einzelne Logs am Bildschirmrand waren
+- **Stabilisierung der Dokumentdetail-UI**: Problem behoben, bei dem die Suchleiste und Filter zitterten, wenn geteilte/einzelne Protokolle am Bildschirmrand waren
 - **Scroll-Zittern behoben**: Bildschirmflackern beim Hochscrollen in Dokumenten/Stempeln mit wenigen Protokollen behoben
-- **Top-Scroll behoben**: Problem behoben, bei dem Autoreninformationen in Elementen mit Protokollen nicht durch Scrollen erreicht werden konnten
-- **Reaktionslog-Format verbessert**: Emoticons und Namen werden jetzt zusammen angezeigt
-- **Benutzernamensanzeige behoben**: Domain-Name wird jetzt korrekt angezeigt, wenn ein Abzeichen getragen wird
-- **Erste Benachrichtigung fuer geteilte Protokolle behoben**: Problem behoben, bei dem der erste Toast fuer geteilte Protokolle nicht angezeigt wurde
+- **Erreichbarkeit des obersten Bereichs behoben**: Problem behoben, bei dem Autoreninformationen in Elementen mit Protokollen nicht durch Scrollen erreicht werden konnten
+- **Reaktionsprotokoll-Format verbessert**: Emoticons und Namen werden jetzt zusammen angezeigt
+- **Benutzernamensanzeige behoben**: Domainname wird jetzt korrekt angezeigt, wenn ein Badge getragen wird
+- **Erste Benachrichtigung für geteilte Protokolle behoben**: Problem behoben, bei dem der erste Toast für geteilte Protokolle nicht angezeigt wurde
+- **Push-Benachrichtigungsbild behoben**: Dokumentbild wird bevorzugt angezeigt (statt Badge-Bild)
 
 </div>
 </details>

@@ -42,7 +42,7 @@ A velocidade de carregamento de imagens de rede foi significativamente melhorada
 Selecione rapidamente destinatários recentes na tela de envio.
 - **Lista de autocompletar**: Menu suspenso mostrando até 30 destinatários recentes quando o campo de entrada está em foco
 - **Seleção rápida**: Pesquisa automática ao selecionar um destinatário da lista
-- **Nova pesquisa**: Limpe a seleção com o botão X para pesquisar outro destinatário
+- **Pesquisa novamente**: Limpe a seleção com o botão X para pesquisar outro destinatário
 - **Armazenamento local**: Informações do destinatário salvas automaticamente ao enviar com sucesso
 
 #### Restrições de Envio Melhoradas
@@ -51,32 +51,34 @@ Emblemas equipados e carimbos compartilhados agora têm restrições de envio.
 - **Carimbos compartilhados**: Revogue o compartilhamento para enviar o carimbo
 - **Orientação detalhada**: Exibe mensagens específicas explicando o motivo da restrição
 
-#### Sistema de Reações
+#### Sistema de Reações Emocionais
 Reaja aos itens com expressões emocionais.
-- **12 Reações**: Várias expressões emocionais como Curtir, Amor, Melhor, Parabéns e mais
+- **12 reações**: Curtir, Adorar, Excelente, Parabéns e muito mais para diversas expressões emocionais
 - **Alternar reação**: Cancele clicando novamente na reação selecionada
-- **Registro de logs**: Os logs do sistema registram quando as reações são selecionadas ou canceladas
+- **Registro em log**: As reações selecionadas/canceladas são registradas no log do sistema
 - **Suporte multilíngue**: Os nomes das reações são exibidos no idioma do usuário
 
-#### Melhoria da Funcao de Pesquisa
+#### Melhoria da Função de Pesquisa
 A pesquisa em tempo real foi expandida para incluir nomes de itens e palavras-chave.
-- **Pesquisa por nome de item**: Pesquise por titulo de documento, descricao de carimbo ou nome de dominio de emblema
+- **Pesquisa por nome de item**: Pesquise por título do documento, descrição do carimbo ou nome de domínio do emblema
 - **Pesquisa por palavra-chave**: Pesquise por palavras-chave salvas em carimbos e emblemas
-- **Pesquisa por tag**: Pesquise tambem por tags de modelo de carimbo
+- **Pesquisa por tag**: Pesquise também por tags de modelo de carimbo
 
-#### Melhoria das Notificacoes no App
-As notificacoes toast em tempo real foram aprimoradas.
-- **Exibicao do emblema do remetente**: A imagem do emblema do remetente e exibida inline na notificacao
-- **Estilo Dynamic Island**: Animacao toast elegante no estilo Dynamic Island do iOS
-- **Deteccao em tempo real**: Deteccao precisa de novas notificacoes e atualizacoes com base em ID+timestamp
+#### Melhoria das Notificações no App
+As notificações toast em tempo real foram aprimoradas.
+- **Exibição do emblema do remetente**: A imagem do emblema do remetente é exibida inline na notificação
+- **Estilo Dynamic Island**: Animação toast elegante no estilo Dynamic Island do iOS
+- **Detecção em tempo real**: Detecção precisa de novas notificações e atualizações com base em ID+timestamp
+- **Limpeza automática**: As notificações relacionadas ao item são removidas automaticamente ao entrar na tela de detalhes do item
 
-#### Correcoes de Bugs
+#### Correções de Bugs
 - **Estabilização da UI de detalhes do documento**: Corrigido problema onde a barra de pesquisa e os filtros tremiam quando os logs compartilhados/individuais estavam no limite da tela
 - **Correção de tremor de rolagem**: Resolvido o tremor da tela ao rolar para cima em documentos/carimbos com poucos registros
 - **Correção de rolagem para o topo**: Resolvido o problema onde as informações do autor não podiam ser alcançadas pela rolagem em itens com registros
-- **Formato de log de reação melhorado**: Emoticons e nomes agora são exibidos juntos
+- **Formato de log de reação melhorado**: Emojis e nomes agora são exibidos juntos
 - **Exibição do nome de usuário corrigida**: O nome de domínio agora é exibido corretamente ao usar um emblema
-- **Correcao da primeira notificacao do log compartilhado**: Resolvido o problema onde o primeiro toast do log compartilhado nao era exibido
+- **Correção da primeira notificação do log compartilhado**: Resolvido o problema onde o primeiro toast do log compartilhado não era exibido
+- **Correção de imagem de notificação push**: A imagem do documento é priorizada (em vez da imagem do emblema)
 
 </div>
 </details>

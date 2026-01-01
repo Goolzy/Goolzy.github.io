@@ -69,14 +69,16 @@ Les notifications toast en temps réel ont été améliorées.
 - **Affichage du badge de l'expéditeur** : L'image du badge de l'expéditeur s'affiche en ligne dans la notification
 - **Style Dynamic Island** : Animation toast élégante dans le style Dynamic Island d'iOS
 - **Détection en temps réel** : Détection précise des nouvelles notifications et des mises à jour basée sur l'ID et l'horodatage
+- **Suppression automatique** : Les notifications associées aux éléments sont automatiquement supprimées lors de l'accès à leur écran de détails
 
 #### Corrections de bugs
-- **Stabilisation de l'UI détail du document**: Correction du problème où la barre de recherche et les filtres tremblaient lorsque les logs partagés/individuels étaient à la limite de l'écran
+- **Stabilisation de l'UI détail du document** : Correction du problème où la barre de recherche et les filtres tremblaient lorsque les journaux partagés/individuels étaient à la limite de l'écran
 - **Correction du tremblement de défilement** : Résolution du scintillement de l'écran lors du défilement vers le haut dans les documents/tampons avec peu de journaux
 - **Correction du défilement vers le haut** : Résolution du problème où les informations de l'auteur ne pouvaient pas être atteintes par défilement dans les éléments avec des journaux
 - **Format du journal de réaction amélioré** : Les émoticônes et les noms sont maintenant affichés ensemble
 - **Affichage du nom d'utilisateur corrigé** : Le nom de domaine s'affiche maintenant correctement lorsqu'un badge est porté
 - **Correction de la première notification du journal partagé** : Résolution du problème où le premier toast du journal partagé ne s'affichait pas
+- **Correction de l'image de notification push** : L'image du document s'affiche maintenant en priorité (au lieu de l'image du badge)
 
 </div>
 </details>

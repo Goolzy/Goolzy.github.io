@@ -28,55 +28,57 @@ Consulta el historial de actualizaciones de la aplicación Inventory.
 <div class="version-content" markdown="1">
 
 #### Función de Edición de Insignias
-Edita la imagen y las palabras clave de las insignias grabadas.
+Puedes modificar la imagen y las palabras clave de las insignias grabadas.
 - **Menú de edición**: El menú "Editar insignia" aparece al seleccionar una insignia grabada
-- **Cambio de imagen**: Reemplaza la imagen de la insignia por una nueva
+- **Cambio de imagen**: Reemplaza la imagen de la insignia con una nueva imagen
 - **Gestión de palabras clave**: Añade, elimina o modifica 5 tipos de palabras clave
 
 #### Optimización del Rendimiento de Imágenes
 La velocidad de carga de imágenes de red ha mejorado significativamente.
-- **Caché local**: Las imágenes cargadas una vez se guardan localmente para visualización instantánea
+- **Caché local**: Las imágenes cargadas una vez se guardan localmente para una visualización instantánea
 - **Sincronización de imagen de insignia**: Los cambios de imagen de insignia se reflejan inmediatamente en todos los registros
 
 #### Autocompletado de Destinatarios Recientes
 Selecciona rápidamente destinatarios recientes en la pantalla de envío.
 - **Lista de autocompletado**: Menú desplegable que muestra hasta 30 destinatarios recientes cuando el campo de entrada está enfocado
-- **Selección rápida**: Búsqueda automática al seleccionar un destinatario de la lista
-- **Rebúsqueda**: Borra la selección con el botón X para buscar otro destinatario
-- **Almacenamiento local**: Información del destinatario guardada automáticamente al enviar con éxito
+- **Selección rápida**: La búsqueda se ejecuta automáticamente al seleccionar un destinatario de la lista
+- **Rebúsqueda**: Cancela la selección con el botón X para buscar otro destinatario
+- **Almacenamiento local**: La información del destinatario se guarda automáticamente al enviar con éxito
 
 #### Mejoras en Restricciones de Envío
-Las insignias equipadas y los sellos compartidos ahora tienen restricciones de envío.
-- **Insignias equipadas**: Desequipa la insignia para enviarla
-- **Sellos compartidos**: Revoca el uso compartido para enviar el sello
-- **Guía detallada**: Muestra mensajes específicos explicando el motivo de la restricción
+Las insignias equipadas y los sellos compartidos tienen restricciones de envío.
+- **Insignias equipadas**: Desequipa la insignia para poder enviarla
+- **Sellos compartidos**: Revoca el uso compartido para poder enviar el sello
+- **Guía detallada**: Muestra mensajes de alerta específicos según el motivo de la restricción
 
-#### Sistema de Reacciones
+#### Sistema de Expresión Emocional
 Reacciona a los elementos con expresiones emocionales.
-- **12 Reacciones**: Diversas expresiones emocionales como Me gusta, Amor, Mejor, Felicitaciones y más
+- **12 tipos de reacciones**: Incluye Me gusta, Amor, Excelente, Felicitaciones y muchas más
 - **Alternar reacción**: Cancela haciendo clic nuevamente en la reacción seleccionada
-- **Registro de logs**: Los registros del sistema registran cuando se seleccionan o cancelan las reacciones
+- **Registro de logs**: Se registran en el registro del sistema cuando se seleccionan o cancelan las reacciones
 - **Soporte multilingüe**: Los nombres de las reacciones se muestran en el idioma del usuario
 
-#### Mejora de la Funcion de Busqueda
-La busqueda en tiempo real ahora incluye nombres de elementos y palabras clave.
-- **Busqueda por nombre de elemento**: Busca por titulo de documento, descripcion de sello o nombre de dominio de insignia
-- **Busqueda por palabra clave**: Busca por palabras clave guardadas en sellos e insignias
-- **Busqueda por etiqueta**: Tambien puedes buscar por etiquetas de plantillas de sello
+#### Mejora de la Función de Búsqueda
+La búsqueda en tiempo real ahora se extiende para incluir nombres de elementos y palabras clave.
+- **Búsqueda por nombre de elemento**: Busca por título de documento, descripción de sello o nombre de dominio de insignia
+- **Búsqueda por palabra clave**: Busca por palabras clave almacenadas en sellos e insignias
+- **Búsqueda por etiqueta**: También puedes buscar por etiquetas de plantillas de sello
 
 #### Mejora de Notificaciones en la App
 Se han mejorado las notificaciones toast en tiempo real.
-- **Visualización de insignia del remitente**: La imagen de la insignia del remitente se muestra en línea en la notificación
-- **Estilo Dynamic Island**: Elegante animación toast estilo Dynamic Island de iOS
+- **Visualización de insignia del remitente**: La imagen de la insignia del remitente aparece en línea en la notificación
+- **Estilo Dynamic Island**: Animación toast elegante al estilo de Dynamic Island de iOS
 - **Detección en tiempo real**: Detección precisa de nuevas notificaciones y actualizaciones basada en ID+marca de tiempo
+- **Eliminación automática**: Los avisos relacionados con un elemento se eliminan automáticamente al entrar en la pantalla de detalles del elemento
 
 #### Corrección de errores
-- **Estabilización de UI de detalle de documento**: Se corrigió el problema donde la barra de búsqueda y los filtros temblaban cuando los logs compartidos/individuales estaban en el límite de la pantalla
-- **Corrección de temblor de desplazamiento**: Solucionado el parpadeo de pantalla al desplazarse hacia arriba en documentos/sellos con pocos registros
-- **Corrección de desplazamiento superior**: Solucionado el problema donde no se podía llegar a la información del autor desplazándose en elementos con registros
+- **Estabilización de UI de detalle de documento**: Se corrigió el problema donde la barra de búsqueda y los filtros temblaban cuando los registros compartidos/individuales estaban en el límite de la pantalla
+- **Corrección de temblor de desplazamiento**: Se solucionó el parpadeo de pantalla al desplazarse hacia arriba en documentos/sellos con pocos registros
+- **Corrección de desplazamiento superior**: Se solucionó el problema donde no se podía llegar a la información del autor desplazándose en elementos con registros
 - **Formato de registro de reacción mejorado**: Los emoticonos y los nombres ahora se muestran juntos
-- **Visualización del nombre de usuario corregida**: El nombre de dominio ahora se muestra correctamente al usar una insignia
-- **Corrección de primera notificación del registro compartido**: Solucionado el problema donde la primera notificación toast del registro compartido no se mostraba
+- **Visualización del nombre de usuario corregida**: El nombre de dominio ahora se muestra correctamente cuando se usa una insignia
+- **Corrección de primera notificación del registro compartido**: Se solucionó el problema donde la primera notificación toast del registro compartido no se mostraba
+- **Corrección de imagen en notificación push**: Se muestra la imagen del documento en primer lugar (en lugar de la imagen de la insignia)
 
 </div>
 </details>

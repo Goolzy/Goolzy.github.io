@@ -77,6 +77,7 @@ Real-time toast notifications have been improved.
 - **Reaction Log Format Improved**: Emoticons and names are now displayed together
 - **User Name Display Fixed**: Domain name is now correctly displayed when wearing a badge
 - **Shared Log First Notification Fixed**: Resolved issue where the first toast notification for shared logs was not displayed
+- **Push Notification Image Fixed**: Document image is now prioritized over badge image in push notifications
 
 </div>
 </details>
