@@ -46,27 +46,50 @@ Dans Inventory, le **Papier** est la monnaie principale utilisée pour créer de
 ---
 
 <details>
-<summary><h3 id="create-item">📄 Création d'objets</h3></summary>
+<summary><h3 id="create-item">📄 Créer des Articles</h3></summary>
 <div class="manual-content" markdown="1">
 
-#### Comment créer un objet
+Sélectionnez du papier pour créer des documents de journal. Selon le nombre de papiers sélectionnés, vous pouvez créer des journaux privés ou partagés.
 
-1. Appuyez sur votre **Papier** sur l'écran d'accueil
-2. Sélectionnez **"Créer un nouvel objet"** dans le menu du bas
-3. Entrez les informations de l'objet :
+| Type de Journal | Papiers | Objectif |
+|-----------------|---------|----------|
+| **Journal Privé** | 1 | Notes personnelles, journal intime, messages unidirectionnels |
+| **Journal Partagé** | 2 ou plus | Conversation bidirectionnelle, communication |
+
+<h4 id="private-log">Créer un Article de Journal Privé</h4>
+
+1. Sélectionnez **1 Papier** sur l'écran d'accueil
+2. Sélectionnez **"Créer un Nouvel Article (Journal Privé)"** dans le menu du bas
+3. Entrez les informations de l'article :
    - Titre (obligatoire)
    - Contenu
    - Image (optionnel)
-   - Date de début (optionnel)
-   - Date d'expiration (optionnel)
-4. Appuyez sur **Enregistrer** et 1 Papier sera consommé pour créer l'objet
+   - Date de Début (optionnel)
+   - Date d'Expiration (optionnel)
+4. Appuyez sur **Enregistrer** et 1 Papier sera consommé pour créer le document
 
-<h4 id="dates">Date de début et Date d'expiration</h4>
+> 💡 **Journal Privé** : Seul vous pouvez voir les journaux que vous écrivez. Après l'envoi, seul le destinataire peut ajouter des journaux.
+
+<h4 id="shared-log">Créer un Article de Journal Partagé</h4>
+
+1. Sélectionnez **2 Papiers ou plus** sur l'écran d'accueil
+2. Sélectionnez **"Créer un Nouvel Article (Journal Partagé)"** dans le menu du bas
+3. Entrez les informations de l'article :
+   - Titre (obligatoire)
+   - Contenu
+   - Image (optionnel)
+   - Date de Début (optionnel)
+   - Date d'Expiration (optionnel)
+4. Appuyez sur **Enregistrer** et des documents égaux au nombre de papiers sélectionnés seront créés
+
+> 💡 **Journal Partagé** : Les documents créés partagent le même espace de commentaires. Envoyez des documents à différentes personnes pour voir les journaux de chacun en temps réel, comme une discussion.
+
+<h4 id="dates">Date de Début et Date d'Expiration</h4>
 
 | Paramètre | Description |
 |-----------|-------------|
-| **Date de début** | Le contenu sera flouté jusqu'à cette date |
-| **Date d'expiration** | Le contenu sera flouté et l'ajout de journaux désactivé après cette date |
+| **Date de Début** | Le contenu sera flouté jusqu'à cette date |
+| **Date d'Expiration** | Le contenu sera flouté et l'ajout de journaux sera désactivé après cette date |
 
 Si non défini, il sera immédiatement visible et permanent.
 

@@ -46,27 +46,50 @@ In Inventory ist **Papier** die Kernwährung zum Erstellen von Gegenständen.
 ---
 
 <details>
-<summary><h3 id="create-item">📄 Gegenstände erstellen</h3></summary>
+<summary><h3 id="create-item">📄 Artikel erstellen</h3></summary>
 <div class="manual-content" markdown="1">
 
-#### Wie man einen Gegenstand erstellt
+Wählen Sie Papier aus, um Log-Dokumente zu erstellen. Je nach Anzahl der ausgewählten Papiere können Sie private Logs oder gemeinsame Logs erstellen.
 
-1. Tippen Sie auf dem Startbildschirm auf Ihr **Papier**
-2. Wählen Sie **"Neuen Gegenstand erstellen"** aus dem unteren Menü
-3. Geben Sie die Gegenstandsinformationen ein:
+| Log-Typ | Papiere | Verwendung |
+|---------|---------|------------|
+| **Privates Log** | 1 | Persönliche Notizen, Tagebuch, Einweg-Nachrichten |
+| **Gemeinsames Log** | 2 oder mehr | Zweiwege-Gespräch, Kommunikation |
+
+<h4 id="private-log">Privates Log-Artikel erstellen</h4>
+
+1. Wählen Sie **1 Papier** auf dem Startbildschirm
+2. Wählen Sie **"Neuen Artikel erstellen (Privates Log)"** aus dem unteren Menü
+3. Geben Sie Artikelinformationen ein:
    - Titel (erforderlich)
    - Inhalt
    - Bild (optional)
    - Startdatum (optional)
    - Ablaufdatum (optional)
-4. Drücken Sie **Speichern** und 1 Papier wird verbraucht, um den Gegenstand zu erstellen
+4. Drücken Sie **Speichern** und 1 Papier wird verbraucht, um das Dokument zu erstellen
+
+> 💡 **Privates Log**: Nur Sie können Ihre geschriebenen Logs sehen. Nach dem Senden kann nur der Empfänger Logs hinzufügen.
+
+<h4 id="shared-log">Gemeinsames Log-Artikel erstellen</h4>
+
+1. Wählen Sie **2 oder mehr Papiere** auf dem Startbildschirm
+2. Wählen Sie **"Neuen Artikel erstellen (Gemeinsames Log)"** aus dem unteren Menü
+3. Geben Sie Artikelinformationen ein:
+   - Titel (erforderlich)
+   - Inhalt
+   - Bild (optional)
+   - Startdatum (optional)
+   - Ablaufdatum (optional)
+4. Drücken Sie **Speichern** und es werden Dokumente entsprechend der Anzahl der ausgewählten Papiere erstellt
+
+> 💡 **Gemeinsames Log**: Erstellte Dokumente teilen denselben Kommentarbereich. Senden Sie Dokumente an verschiedene Personen, um gegenseitig Logs in Echtzeit zu sehen, wie ein Chat.
 
 <h4 id="dates">Startdatum und Ablaufdatum</h4>
 
 | Einstellung | Beschreibung |
 |-------------|--------------|
-| **Startdatum** | Der Inhalt wird bis zu diesem Datum unscharf angezeigt |
-| **Ablaufdatum** | Der Inhalt wird unscharf und Protokolleinträge werden nach diesem Datum deaktiviert |
+| **Startdatum** | Inhalt wird bis zu diesem Datum unscharf angezeigt |
+| **Ablaufdatum** | Inhalt wird unscharf angezeigt und Log-Hinzufügungen werden nach diesem Datum deaktiviert |
 
 Wenn nicht festgelegt, ist es sofort sichtbar und dauerhaft.
 

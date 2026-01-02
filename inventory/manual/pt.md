@@ -46,29 +46,52 @@ No Inventory, o **Papel** é a moeda principal usada para criar itens.
 ---
 
 <details>
-<summary><h3 id="create-item">📄 Criação de Itens</h3></summary>
+<summary><h3 id="create-item">📄 Criar Itens</h3></summary>
 <div class="manual-content" markdown="1">
 
-#### Como criar um item
+Selecione papel para criar documentos de log. Dependendo do número de papéis selecionados, você pode criar logs privados ou compartilhados.
 
-1. Toque no seu **Papel** na tela inicial
-2. Selecione **"Criar novo item"** no menu inferior
+| Tipo de Log | Papéis | Finalidade |
+|-------------|--------|------------|
+| **Log Privado** | 1 | Notas pessoais, diário, mensagens unidirecionais |
+| **Log Compartilhado** | 2 ou mais | Conversa bidirecional, comunicação |
+
+<h4 id="private-log">Criar Item de Log Privado</h4>
+
+1. Selecione **1 Papel** na tela inicial
+2. Selecione **"Criar Novo Item (Log Privado)"** no menu inferior
 3. Insira as informações do item:
    - Título (obrigatório)
    - Conteúdo
    - Imagem (opcional)
-   - Data de início (opcional)
-   - Data de expiração (opcional)
-4. Pressione **Salvar** e 1 Papel será consumido para criar o item
+   - Data de Início (opcional)
+   - Data de Expiração (opcional)
+4. Pressione **Salvar** e 1 Papel será consumido para criar o documento
 
-<h4 id="dates">Data de início e Data de expiração</h4>
+> 💡 **Log Privado**: Apenas você pode ver os logs que escreve. Após enviar, apenas o destinatário pode adicionar logs.
+
+<h4 id="shared-log">Criar Item de Log Compartilhado</h4>
+
+1. Selecione **2 ou mais Papéis** na tela inicial
+2. Selecione **"Criar Novo Item (Log Compartilhado)"** no menu inferior
+3. Insira as informações do item:
+   - Título (obrigatório)
+   - Conteúdo
+   - Imagem (opcional)
+   - Data de Início (opcional)
+   - Data de Expiração (opcional)
+4. Pressione **Salvar** e serão criados documentos iguais ao número de papéis selecionados
+
+> 💡 **Log Compartilhado**: Documentos criados compartilham a mesma sala de comentários. Envie documentos para diferentes pessoas para ver os logs um do outro em tempo real, como um chat.
+
+<h4 id="dates">Data de Início e Data de Expiração</h4>
 
 | Configuração | Descrição |
 |--------------|-----------|
-| **Data de início** | O conteúdo ficará desfocado até esta data |
-| **Data de expiração** | O conteúdo ficará desfocado e a adição de registros será desativada após esta data |
+| **Data de Início** | O conteúdo ficará desfocado até esta data |
+| **Data de Expiração** | O conteúdo ficará desfocado e adições de log serão desativadas após esta data |
 
-Se não definido, será visível imediatamente e permanente.
+Se não configurado, será visível imediatamente e permanente.
 
 </div>
 </details>

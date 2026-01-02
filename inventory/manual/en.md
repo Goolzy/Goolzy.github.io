@@ -49,17 +49,40 @@ In Inventory, **Paper** is the core currency used to create items.
 <summary><h3 id="create-item">📄 Creating Items</h3></summary>
 <div class="manual-content" markdown="1">
 
-#### How to Create an Item
+Select paper to create log documents. Depending on the number of papers selected, you can create private logs or shared logs.
 
-1. Tap on your **Paper** on the home screen
-2. Select **"Create New Item"** from the bottom menu
+| Log Type | Papers | Purpose |
+|----------|--------|---------|
+| **Private Log** | 1 | Personal notes, diary, one-way messages |
+| **Shared Log** | 2 or more | Two-way conversation, communication |
+
+<h4 id="private-log">Creating Private Log Items</h4>
+
+1. Select **1 Paper** on the home screen
+2. Select **"Create New Item (Private Log)"** from the bottom menu
 3. Enter item information:
    - Title (required)
    - Content
    - Image (optional)
    - Start Date (optional)
    - Expiry Date (optional)
-4. Press **Save** and 1 Paper will be consumed to create the item
+4. Press **Save** and 1 Paper will be consumed to create the document
+
+> 💡 **Private Log**: Only you can see logs you write. After sending to someone else, only the recipient can add logs.
+
+<h4 id="shared-log">Creating Shared Log Items</h4>
+
+1. Select **2 or more Papers** on the home screen
+2. Select **"Create New Item (Shared Log)"** from the bottom menu
+3. Enter item information:
+   - Title (required)
+   - Content
+   - Image (optional)
+   - Start Date (optional)
+   - Expiry Date (optional)
+4. Press **Save** and documents equal to the number of papers selected will be created
+
+> 💡 **Shared Log**: Created documents share the same comment room. Send documents to different people to see each other's logs in real-time, like a chat.
 
 <h4 id="dates">Start Date and Expiry Date</h4>
 

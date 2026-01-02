@@ -46,29 +46,52 @@ En Inventory, el **Papel** es la moneda principal utilizada para crear objetos.
 ---
 
 <details>
-<summary><h3 id="create-item">📄 Creación de Objetos</h3></summary>
+<summary><h3 id="create-item">📄 Crear Artículos</h3></summary>
 <div class="manual-content" markdown="1">
 
-#### Cómo crear un objeto
+Selecciona papel para crear documentos de registro. Dependiendo del número de papeles seleccionados, puedes crear registros privados o compartidos.
 
-1. Toca tu **Papel** en la pantalla principal
-2. Selecciona **"Crear nuevo objeto"** del menú inferior
-3. Ingresa la información del objeto:
+| Tipo de Registro | Papeles | Propósito |
+|------------------|---------|-----------|
+| **Registro Privado** | 1 | Notas personales, diario, mensajes unidireccionales |
+| **Registro Compartido** | 2 o más | Conversación bidireccional, comunicación |
+
+<h4 id="private-log">Crear Artículo de Registro Privado</h4>
+
+1. Selecciona **1 Papel** en la pantalla de inicio
+2. Selecciona **"Crear Nuevo Artículo (Registro Privado)"** del menú inferior
+3. Ingresa la información del artículo:
    - Título (obligatorio)
    - Contenido
    - Imagen (opcional)
-   - Fecha de inicio (opcional)
-   - Fecha de expiración (opcional)
-4. Presiona **Guardar** y se consumirá 1 Papel para crear el objeto
+   - Fecha de Inicio (opcional)
+   - Fecha de Expiración (opcional)
+4. Presiona **Guardar** y se consumirá 1 Papel para crear el documento
 
-<h4 id="dates">Fecha de inicio y Fecha de expiración</h4>
+> 💡 **Registro Privado**: Solo tú puedes ver los registros que escribes. Después de enviarlo, solo el destinatario puede agregar registros.
+
+<h4 id="shared-log">Crear Artículo de Registro Compartido</h4>
+
+1. Selecciona **2 o más Papeles** en la pantalla de inicio
+2. Selecciona **"Crear Nuevo Artículo (Registro Compartido)"** del menú inferior
+3. Ingresa la información del artículo:
+   - Título (obligatorio)
+   - Contenido
+   - Imagen (opcional)
+   - Fecha de Inicio (opcional)
+   - Fecha de Expiración (opcional)
+4. Presiona **Guardar** y se crearán documentos igual al número de papeles seleccionados
+
+> 💡 **Registro Compartido**: Los documentos creados comparten la misma sala de comentarios. Envía documentos a diferentes personas para ver los registros del otro en tiempo real, como un chat.
+
+<h4 id="dates">Fecha de Inicio y Fecha de Expiración</h4>
 
 | Configuración | Descripción |
 |---------------|-------------|
-| **Fecha de inicio** | El contenido estará difuminado hasta esta fecha |
-| **Fecha de expiración** | El contenido estará difuminado y se desactivará agregar registros después de esta fecha |
+| **Fecha de Inicio** | El contenido estará borroso hasta esta fecha |
+| **Fecha de Expiración** | El contenido estará borroso y no se podrán agregar registros después de esta fecha |
 
-Si no se establece, será visible inmediatamente y permanente.
+Si no se configura, será visible inmediatamente y permanente.
 
 </div>
 </details>
