@@ -34,6 +34,12 @@ When dragging items, the screen automatically scrolls at the edges.
 - **Haptic Feedback**: Light vibration notification when entering the scroll zone
 - **Cross-Partition Navigation**: Quickly browse many items or multiple partitions
 
+#### Scroll Navigation
+Quickly jump to the top or bottom in the detail view screen.
+- **Navigation Buttons**: Scroll buttons appear next to the search bar when there are many comments
+- **Position-Based Display**: Only the bottom button shows at top, only the top button shows at bottom
+- **Neumorphic Design**: Button style consistent with the app design
+
 </div>
 </details>
 

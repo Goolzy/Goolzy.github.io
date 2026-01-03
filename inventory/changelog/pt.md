@@ -34,6 +34,12 @@ A tela rola automaticamente quando você arrasta itens para as bordas.
 - **Feedback háptico**: Vibração leve ao entrar na zona de rolagem
 - **Conveniência entre partições**: Navegue rapidamente por muitos itens ou várias partições
 
+#### Navegação por Rolagem
+Navegue rapidamente para o topo ou fundo na tela de detalhes.
+- **Botões de navegação**: Botões de navegação aparecem ao lado da barra de pesquisa quando há muitos comentários
+- **Exibição por posição**: Na parte superior, apenas o botão para baixo é exibido; na parte inferior, apenas o botão para cima
+- **Design neumórfico**: Estilo de botão consistente com o design do aplicativo
+
 </div>
 </details>
 

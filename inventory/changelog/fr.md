@@ -34,6 +34,12 @@ Lorsque vous faites glisser un élément, l'écran défile automatiquement aux b
 - **Retour haptique** : Une légère vibration vous avertit lorsque vous entrez dans la zone de défilement
 - **Navigation facilitée entre partitions** : Parcourez rapidement de nombreux éléments ou plusieurs partitions
 
+#### Navigation par défilement
+Naviguez rapidement vers le haut ou le bas dans l'écran de détail.
+- **Boutons de navigation** : Des boutons de déplacement apparaissent à côté de la barre de recherche lorsqu'il y a beaucoup de commentaires
+- **Affichage selon la position** : En haut, seul le bouton vers le bas s'affiche ; en bas, seul le bouton vers le haut s'affiche
+- **Design neumorphique** : Style de bouton cohérent avec le design de l'application
+
 </div>
 </details>
 

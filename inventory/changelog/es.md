@@ -34,6 +34,12 @@ Cuando arrastras un elemento, la pantalla se desplaza automáticamente en los bo
 - **Retroalimentación háptica**: Vibración suave al entrar en la zona de desplazamiento
 - **Conveniencia entre particiones**: Navega rápidamente entre muchos elementos o varias particiones
 
+#### Navegación por Desplazamiento
+Navega rápidamente al principio o al final en la pantalla de detalles.
+- **Botones de navegación**: Los botones de desplazamiento aparecen junto a la barra de búsqueda cuando hay muchos comentarios
+- **Visualización según posición**: Solo se muestra el botón inferior en la parte superior y solo el botón superior en la parte inferior
+- **Diseño neumórfico**: Estilo de botón coherente con el diseño de la aplicación
+
 </div>
 </details>
 

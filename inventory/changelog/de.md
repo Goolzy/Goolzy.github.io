@@ -34,6 +34,12 @@ Beim Ziehen von Elementen scrollt der Bildschirm automatisch am Rand.
 - **Haptisches Feedback**: Leichte Vibration beim Betreten des Scroll-Bereichs
 - **Partitionsübergreifende Bewegung**: Schnelles Durchsuchen vieler Elemente oder mehrerer Partitionen
 
+#### Scroll-Navigation
+Schnelle Navigation zum Anfang/Ende im Detailansichtsfenster.
+- **Navigationsbuttons**: Navigationsbuttons werden neben der Suchleiste angezeigt, wenn viele Kommentare vorhanden sind
+- **Positionsabhängige Anzeige**: Am oberen Rand nur der Button nach unten, am unteren Rand nur der Button nach oben
+- **Neumorphes Design**: Buttonstil passend zum App-Design
+
 </div>
 </details>
 
