@@ -52,6 +52,12 @@ Se ha aplicado diseño neumórfico a las pantallas de Enviar, Recibir y Tienda, 
 - **Pantalla de Tienda**: Efectos de brillo en botones de pestañas, tarjetas de productos con estilo neumórfico
 - **Diseño de Campo de Entrada**: Estilo hundido que distingue claramente las áreas de entrada
 
+#### Estabilización de Base de Datos
+Se han resuelto los problemas de compatibilidad de la base de datos que podían ocurrir durante las actualizaciones de la app.
+- **Recuperación Automática**: La base de datos se recrea automáticamente cuando hay incompatibilidad de versiones
+- **Preservación de Datos**: Sin pérdida de datos gracias a la sincronización automática con el servidor
+- **Todas las Plataformas**: Misma solución aplicada a iOS, Android, macOS y Windows
+
 </div>
 </details>
 

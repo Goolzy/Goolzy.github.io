@@ -52,6 +52,12 @@ Neumorphes Design wurde auf die Senden-, Empfangen- und Shop-Bildschirme angewen
 - **Shop-Bildschirm**: Glow-Effekte auf Tab-Buttons, neumorphe Produktkarten
 - **Eingabefeld-Design**: Vertiefter Stil unterscheidet Eingabebereiche deutlich
 
+#### Datenbank-Stabilisierung
+Datenbankkompatibilitätsprobleme, die bei App-Updates auftreten konnten, wurden behoben.
+- **Automatische Wiederherstellung**: Datenbank wird bei Versionskonflikt automatisch neu erstellt
+- **Datenerhaltung**: Kein Datenverlust dank automatischer Server-Synchronisation
+- **Alle Plattformen**: Gleiche Lösung für iOS, Android, macOS und Windows
+
 </div>
 </details>
 

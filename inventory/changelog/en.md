@@ -52,6 +52,12 @@ Neumorphic design has been applied to the Send, Receive, and Shop screens, unify
 - **Shop Screen**: Glow effects on tab buttons, neumorphic style product cards
 - **Input Field Design**: Inset style clearly distinguishes input areas
 
+#### Database Stabilization
+Database compatibility issues that could occur during app updates have been resolved.
+- **Auto Recovery**: Automatically recreates the database when version mismatch occurs
+- **Data Preservation**: No data loss thanks to automatic server synchronization
+- **All Platforms**: Same fix applied to iOS, Android, macOS, and Windows
+
 </div>
 </details>
 

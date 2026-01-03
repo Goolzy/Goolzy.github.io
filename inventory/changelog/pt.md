@@ -52,6 +52,12 @@ O design neumórfico foi aplicado às telas de Enviar, Receber e Loja, unificand
 - **Tela da Loja**: Efeitos de brilho em botões de abas, cartões de produtos estilo neumórfico
 - **Design do Campo de Entrada**: Estilo rebaixado distingue claramente as áreas de entrada
 
+#### Estabilização do Banco de Dados
+Problemas de compatibilidade do banco de dados que poderiam ocorrer durante atualizações do app foram resolvidos.
+- **Recuperação Automática**: O banco de dados é recriado automaticamente quando há incompatibilidade de versão
+- **Preservação de Dados**: Sem perda de dados graças à sincronização automática com o servidor
+- **Todas as Plataformas**: Mesma solução aplicada no iOS, Android, macOS e Windows
+
 </div>
 </details>
 
