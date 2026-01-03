@@ -46,6 +46,12 @@ Se ha restaurado la animacion de volteo en la barra de navegacion inferior y la 
 - **Paginas de registro/tienda**: Animacion de volteo aplicada
 - **Pantalla de recepcion**: Animacion de volteo aplicada en el boton de buzon y enlace profundo de notificacion
 
+#### Unificación del Diseño de UI
+Se ha aplicado diseño neumórfico a las pantallas de Enviar, Recibir y Tienda, unificando toda la aplicación.
+- **Pantallas de Enviar/Recibir**: Sombras neumórficas aplicadas a tarjetas y diálogos
+- **Pantalla de Tienda**: Efectos de brillo en botones de pestañas, tarjetas de productos con estilo neumórfico
+- **Diseño de Campo de Entrada**: Estilo hundido que distingue claramente las áreas de entrada
+
 </div>
 </details>
 

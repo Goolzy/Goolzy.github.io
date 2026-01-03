@@ -46,6 +46,12 @@ The flip animation for the bottom navigation bar and receive screen has been res
 - **Log/Shop Pages**: Flip animation applied
 - **Receive Screen**: Flip animation applied from mailbox button and notification deep links
 
+#### UI Design Unification
+Neumorphic design has been applied to the Send, Receive, and Shop screens, unifying the entire app.
+- **Send/Receive Screens**: Neumorphic shadows applied to cards and dialogs
+- **Shop Screen**: Glow effects on tab buttons, neumorphic style product cards
+- **Input Field Design**: Inset style clearly distinguishes input areas
+
 </div>
 </details>
 

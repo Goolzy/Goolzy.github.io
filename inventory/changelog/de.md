@@ -46,6 +46,12 @@ Die Flip-Animation der unteren Navigationsleiste und des Empfangsbildschirms wur
 - **Log-/Shop-Seiten**: Flip-Animation angewendet
 - **Empfangsbildschirm**: Flip-Animation bei Postfach-Button und Benachrichtigungs-Deeplink angewendet
 
+#### UI-Design-Vereinheitlichung
+Neumorphes Design wurde auf die Senden-, Empfangen- und Shop-Bildschirme angewendet und vereinheitlicht die gesamte App.
+- **Senden/Empfangen-Bildschirme**: Neumorphe Schatten auf Karten und Dialoge angewendet
+- **Shop-Bildschirm**: Glow-Effekte auf Tab-Buttons, neumorphe Produktkarten
+- **Eingabefeld-Design**: Vertiefter Stil unterscheidet Eingabebereiche deutlich
+
 </div>
 </details>
 

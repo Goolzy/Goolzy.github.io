@@ -46,6 +46,12 @@ As animacoes de flip da barra de navegacao inferior e da tela de recebimento for
 - **Paginas de Log/Loja**: Animacao de flip aplicada
 - **Tela de recebimento**: Animacao de flip aplicada no botao da caixa de correio e no deep link de notificacao
 
+#### Unificação do Design de UI
+O design neumórfico foi aplicado às telas de Enviar, Receber e Loja, unificando todo o aplicativo.
+- **Telas de Enviar/Receber**: Sombras neumórficas aplicadas a cartões e diálogos
+- **Tela da Loja**: Efeitos de brilho em botões de abas, cartões de produtos estilo neumórfico
+- **Design do Campo de Entrada**: Estilo rebaixado distingue claramente as áreas de entrada
+
 </div>
 </details>
 

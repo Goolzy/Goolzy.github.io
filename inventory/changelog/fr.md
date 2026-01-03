@@ -46,6 +46,12 @@ L'animation de retournement de la barre de navigation inferieure et de l'ecran d
 - **Pages Journal/Boutique** : Animation de retournement appliquee
 - **Ecran de reception** : Animation de retournement appliquee depuis le bouton boite aux lettres et le lien profond des notifications
 
+#### Unification du design UI
+Le design neumorphique a été appliqué aux écrans Envoyer, Recevoir et Boutique, unifiant l'ensemble de l'application.
+- **Écrans Envoyer/Recevoir** : Ombres neumorphiques appliquées aux cartes et dialogues
+- **Écran Boutique** : Effets de lueur sur les boutons d'onglets, cartes de produits style neumorphique
+- **Design des champs de saisie** : Style en creux distinguant clairement les zones de saisie
+
 </div>
 </details>
 
