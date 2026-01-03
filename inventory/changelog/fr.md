@@ -64,6 +64,13 @@ Les problèmes de compatibilité de la base de données pouvant survenir lors de
 - **Préservation des Données**: Aucune perte de données grâce à la synchronisation automatique avec le serveur
 - **Toutes les Plateformes**: Même solution appliquée sur iOS, Android, macOS et Windows
 
+#### Amélioration du verrouillage par mot de passe
+La sécurité et la convivialité des éléments protégés par mot de passe ont été considérablement améliorées.
+- **Superposition floue**: Le contenu est entièrement masqué lors de l'accès aux éléments verrouillés
+- **Design neumorphique**: Les dialogues de configuration/déverrouillage utilisent le style neumorphique
+- **Affichage à 16 chiffres**: 16 petits cercles montrent l'état de saisie du mot de passe
+- **Saisie sur deux lignes**: Saisissez et confirmez le mot de passe sur le même écran
+
 </div>
 </details>
 

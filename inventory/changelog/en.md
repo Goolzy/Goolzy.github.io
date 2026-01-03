@@ -64,6 +64,13 @@ Database compatibility issues that could occur during app updates have been reso
 - **Data Preservation**: No data loss thanks to automatic server synchronization
 - **All Platforms**: Same fix applied to iOS, Android, macOS, and Windows
 
+#### Password Lock Improvement
+Security and usability of password-protected items have been significantly improved.
+- **Blur Overlay**: Content is completely hidden when entering locked items for enhanced security
+- **Neumorphic Design**: Password set/unlock dialogs now use neumorphic styling
+- **16-Digit Display**: Small circles (16 total) show password input status
+- **Two-Line Input**: Set password and confirm on the same screen
+
 </div>
 </details>
 

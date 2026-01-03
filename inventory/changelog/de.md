@@ -64,6 +64,13 @@ Datenbankkompatibilitätsprobleme, die bei App-Updates auftreten konnten, wurden
 - **Datenerhaltung**: Kein Datenverlust dank automatischer Server-Synchronisation
 - **Alle Plattformen**: Gleiche Lösung für iOS, Android, macOS und Windows
 
+#### Passwortsperre verbessert
+Sicherheit und Benutzerfreundlichkeit von passwortgeschützten Elementen wurden erheblich verbessert.
+- **Unschärfe-Overlay**: Inhalte werden beim Zugriff auf gesperrte Elemente vollständig verborgen
+- **Neumorphes Design**: Dialoge zum Setzen/Entsperren von Passwörtern im neumorphen Stil
+- **16-stellige Anzeige**: 16 kleine Kreise zeigen den Passworteingabestatus an
+- **Zweizeilige Eingabe**: Passwort eingeben und bestätigen auf einem Bildschirm
+
 </div>
 </details>
 

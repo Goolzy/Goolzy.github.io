@@ -64,6 +64,13 @@ Problemas de compatibilidade do banco de dados que poderiam ocorrer durante atua
 - **Preservação de Dados**: Sem perda de dados graças à sincronização automática com o servidor
 - **Todas as Plataformas**: Mesma solução aplicada no iOS, Android, macOS e Windows
 
+#### Melhoria do bloqueio por senha
+A segurança e usabilidade de itens protegidos por senha foram significativamente melhoradas.
+- **Sobreposição de desfoque**: O conteúdo é completamente oculto ao acessar itens bloqueados
+- **Design neumórfico**: Diálogos de configuração/desbloqueio de senha usam estilo neumórfico
+- **Indicador de 16 dígitos**: 16 pequenos círculos mostram o estado de entrada da senha
+- **Entrada em duas linhas**: Digite e confirme a senha na mesma tela
+
 </div>
 </details>
 

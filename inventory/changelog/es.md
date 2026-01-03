@@ -64,6 +64,13 @@ Se han resuelto los problemas de compatibilidad de la base de datos que podían 
 - **Preservación de Datos**: Sin pérdida de datos gracias a la sincronización automática con el servidor
 - **Todas las Plataformas**: Misma solución aplicada a iOS, Android, macOS y Windows
 
+#### Mejora del bloqueo con contraseña
+La seguridad y usabilidad de los elementos protegidos con contraseña han mejorado significativamente.
+- **Superposición de desenfoque**: El contenido se oculta completamente al acceder a elementos bloqueados
+- **Diseño neumórfico**: Los diálogos de configuración/desbloqueo de contraseña usan estilo neumórfico
+- **Indicador de 16 dígitos**: 16 pequeños círculos muestran el estado de entrada de contraseña
+- **Entrada en dos líneas**: Ingrese y confirme la contraseña en la misma pantalla
+
 </div>
 </details>
 
