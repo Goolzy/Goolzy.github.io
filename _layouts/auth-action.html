@@ -19,6 +19,7 @@
   --text-dim: rgba(255, 255, 255, 0.4);
   --success: #22c55e;
   --error: #ef4444;
+  --warning: #f59e0b;
 }
 
 * {
@@ -36,17 +37,61 @@ body {
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  overflow: hidden;
 }
 
+/* Animated Background */
 body::before {
   content: '';
   position: fixed;
   inset: 0;
   background:
-    radial-gradient(circle at 20% 30%, rgba(168, 85, 247, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 80% 70%, rgba(20, 184, 166, 0.12) 0%, transparent 50%);
+    radial-gradient(circle at 20% 30%, rgba(168, 85, 247, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(20, 184, 166, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(217, 70, 239, 0.1) 0%, transparent 60%);
+  animation: bgPulse 8s ease-in-out infinite alternate;
   pointer-events: none;
   z-index: 0;
+}
+
+@keyframes bgPulse {
+  0% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0.8; transform: scale(1.1); }
+}
+
+/* Floating Particles */
+.particles {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: linear-gradient(135deg, var(--purple-bright), var(--teal));
+  border-radius: 50%;
+  opacity: 0.4;
+  animation: float-particle 15s infinite ease-in-out;
+}
+
+.particle:nth-child(1) { left: 10%; top: 20%; animation-delay: 0s; animation-duration: 12s; }
+.particle:nth-child(2) { left: 20%; top: 80%; animation-delay: 2s; animation-duration: 18s; }
+.particle:nth-child(3) { left: 30%; top: 40%; animation-delay: 4s; animation-duration: 14s; }
+.particle:nth-child(4) { left: 50%; top: 10%; animation-delay: 1s; animation-duration: 16s; }
+.particle:nth-child(5) { left: 70%; top: 60%; animation-delay: 3s; animation-duration: 13s; }
+.particle:nth-child(6) { left: 80%; top: 30%; animation-delay: 5s; animation-duration: 17s; }
+.particle:nth-child(7) { left: 90%; top: 70%; animation-delay: 2.5s; animation-duration: 15s; }
+.particle:nth-child(8) { left: 15%; top: 50%; animation-delay: 3.5s; animation-duration: 11s; }
+
+@keyframes float-particle {
+  0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.4; }
+  25% { transform: translate(30px, -50px) scale(1.2); opacity: 0.6; }
+  50% { transform: translate(-20px, -100px) scale(0.8); opacity: 0.3; }
+  75% { transform: translate(40px, -50px) scale(1.1); opacity: 0.5; }
 }
 
 .auth-container {
@@ -57,17 +102,24 @@ body::before {
 }
 
 .auth-card {
-  background: rgba(21, 10, 40, 0.6);
-  backdrop-filter: blur(30px) saturate(200%);
-  -webkit-backdrop-filter: blur(30px) saturate(200%);
-  border: 1.5px solid rgba(168, 85, 247, 0.3);
-  border-radius: 24px;
+  background: rgba(21, 10, 40, 0.7);
+  backdrop-filter: blur(40px) saturate(200%);
+  -webkit-backdrop-filter: blur(40px) saturate(200%);
+  border: 1.5px solid rgba(168, 85, 247, 0.35);
+  border-radius: 28px;
   padding: 3rem 2.5rem;
   box-shadow:
     0 8px 32px rgba(0, 0, 0, 0.5),
-    0 0 80px rgba(168, 85, 247, 0.15),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    0 0 100px rgba(168, 85, 247, 0.2),
+    0 0 60px rgba(20, 184, 166, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
   text-align: center;
+  animation: cardAppear 0.6s ease-out;
+}
+
+@keyframes cardAppear {
+  from { opacity: 0; transform: translateY(30px) scale(0.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 .auth-header {
@@ -75,26 +127,53 @@ body::before {
 }
 
 .auth-logo {
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   margin-bottom: 1.5rem;
-  filter: drop-shadow(0 8px 24px rgba(168, 85, 247, 0.5));
+  filter: drop-shadow(0 8px 30px rgba(168, 85, 247, 0.6));
   animation: float 4s ease-in-out infinite;
+}
+
+.icon-wrapper {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 1.5rem;
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.3), rgba(20, 184, 166, 0.3));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: float 4s ease-in-out infinite;
+  box-shadow: 0 8px 30px rgba(168, 85, 247, 0.4);
+}
+
+.icon-wrapper svg {
+  width: 45px;
+  height: 45px;
+  color: var(--text);
 }
 
 @keyframes float {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+  50% { transform: translateY(-12px); }
 }
 
 .auth-header h1 {
-  font-size: 1.75rem;
+  font-size: 1.85rem;
   font-weight: 700;
   margin-bottom: 0.75rem;
   background: linear-gradient(135deg, var(--purple-vibrant), var(--teal-bright));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: shimmer 3s ease-in-out infinite;
+  background-size: 200% auto;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% center; }
+  50% { background-position: 100% center; }
+  100% { background-position: 0% center; }
 }
 
 .auth-header p {
@@ -107,13 +186,14 @@ body::before {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.75rem 1.25rem;
-  background: rgba(168, 85, 247, 0.15);
-  border: 1px solid rgba(168, 85, 247, 0.3);
-  border-radius: 12px;
+  padding: 0.85rem 1.35rem;
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.15), rgba(20, 184, 166, 0.1));
+  border: 1px solid rgba(168, 85, 247, 0.35);
+  border-radius: 14px;
   margin: 1.5rem 0;
   font-size: 0.95rem;
   color: var(--text);
+  box-shadow: 0 4px 20px rgba(168, 85, 247, 0.15);
 }
 
 .email-badge svg {
@@ -125,30 +205,47 @@ body::before {
 .action-btn {
   display: block;
   width: 100%;
-  padding: 1rem 1.5rem;
+  padding: 1.1rem 1.5rem;
   background: linear-gradient(135deg, var(--purple-bright), var(--teal));
   border: none;
-  border-radius: 12px;
+  border-radius: 14px;
   color: white;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.05rem;
   cursor: pointer;
-  transition: all 0.3s;
-  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 6px 24px rgba(168, 85, 247, 0.4);
   margin-top: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.action-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: 0.5s;
+}
+
+.action-btn:hover::before {
+  left: 100%;
 }
 
 .action-btn:hover {
-  transform: scale(1.02);
-  box-shadow: 0 6px 24px rgba(168, 85, 247, 0.5);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 35px rgba(168, 85, 247, 0.5);
 }
 
 .action-btn:active {
-  transform: scale(0.98);
+  transform: translateY(-1px);
 }
 
 .action-btn:disabled {
-  opacity: 0.5;
+  opacity: 0.6;
   cursor: not-allowed;
   transform: none;
 }
@@ -160,10 +257,10 @@ body::before {
 .secondary-btn {
   display: block;
   width: 100%;
-  padding: 0.875rem 1.25rem;
+  padding: 0.95rem 1.25rem;
   background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 14px;
   color: var(--text);
   font-weight: 600;
   font-size: 0.95rem;
@@ -177,39 +274,48 @@ body::before {
 .secondary-btn:hover {
   background: rgba(255, 255, 255, 0.12);
   border-color: var(--purple-bright);
+  transform: translateY(-2px);
 }
 
 /* Status Icons */
 .status-icon {
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   margin: 0 auto 1.5rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .status-icon.loading {
-  background: rgba(168, 85, 247, 0.2);
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.25), rgba(20, 184, 166, 0.2));
 }
 
 .status-icon.success {
-  background: rgba(34, 197, 94, 0.2);
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.25), rgba(20, 184, 166, 0.2));
+  animation: successPop 0.5s ease-out;
 }
 
 .status-icon.error {
-  background: rgba(239, 68, 68, 0.2);
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.25), rgba(239, 68, 68, 0.15));
+}
+
+@keyframes successPop {
+  0% { transform: scale(0); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
 }
 
 .status-icon svg {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
 }
 
 .status-icon.loading svg {
   color: var(--purple-bright);
-  animation: spin 1.5s linear infinite;
+  animation: spin 1.2s linear infinite;
 }
 
 .status-icon.success svg {
@@ -233,12 +339,33 @@ body::before {
   margin-top: 1.5rem;
 }
 
+.input-group {
+  position: relative;
+}
+
+.input-group svg {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  color: var(--text-dim);
+  transition: color 0.3s;
+  pointer-events: none;
+}
+
+.input-group input:focus + svg {
+  color: var(--purple-bright);
+}
+
 .reset-form input {
-  padding: 0.875rem 1.1rem;
-  background: rgba(10, 6, 20, 0.6);
+  width: 100%;
+  padding: 1rem 1.1rem 1rem 3rem;
+  background: rgba(10, 6, 20, 0.7);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(168, 85, 247, 0.2);
-  border-radius: 10px;
+  border: 1.5px solid rgba(168, 85, 247, 0.25);
+  border-radius: 12px;
   color: var(--text);
   font-size: 0.95rem;
   transition: all 0.3s;
@@ -247,29 +374,77 @@ body::before {
 .reset-form input:focus {
   outline: none;
   border-color: var(--purple-bright);
-  box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.2), 0 4px 16px rgba(168, 85, 247, 0.3);
-  background: rgba(10, 6, 20, 0.8);
+  box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.15), 0 6px 20px rgba(168, 85, 247, 0.25);
+  background: rgba(10, 6, 20, 0.9);
 }
 
 .reset-form input::placeholder {
   color: var(--text-dim);
 }
 
+/* Password Strength Indicator */
+.password-strength {
+  display: flex;
+  gap: 6px;
+  margin-top: -0.25rem;
+  padding: 0 0.25rem;
+}
+
+.strength-bar {
+  flex: 1;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+.strength-bar.active {
+  background: var(--error);
+}
+
+.strength-bar.active.medium {
+  background: var(--warning);
+}
+
+.strength-bar.active.strong {
+  background: var(--success);
+}
+
 .password-hint {
   font-size: 0.8rem;
   color: var(--text-dim);
   text-align: left;
-  margin-top: -0.5rem;
+  margin-top: -0.25rem;
+  padding-left: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.password-hint.valid {
+  color: var(--success);
+}
+
+.password-hint svg {
+  width: 14px;
+  height: 14px;
 }
 
 .error-msg {
   color: var(--error);
   font-size: 0.85rem;
-  padding: 0.75rem;
-  background: rgba(239, 68, 68, 0.1);
-  border: 1px solid rgba(239, 68, 68, 0.3);
-  border-radius: 8px;
+  padding: 0.85rem;
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  border-radius: 10px;
   display: none;
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-5px); }
+  40%, 80% { transform: translateX(5px); }
 }
 
 .error-msg.show {
@@ -279,7 +454,7 @@ body::before {
 .auth-footer {
   text-align: center;
   padding-top: 1.5rem;
-  border-top: 1px solid rgba(168, 85, 247, 0.15);
+  border-top: 1px solid rgba(168, 85, 247, 0.2);
   margin-top: 1.5rem;
 }
 
@@ -306,6 +481,43 @@ body::before {
 
 .view.active {
   display: block;
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Confetti */
+.confetti-container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  opacity: 0;
+}
+
+.confetti.active {
+  animation: confetti-fall 3s ease-out forwards;
+}
+
+@keyframes confetti-fall {
+  0% {
+    opacity: 1;
+    transform: translateY(-100vh) rotate(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100vh) rotate(720deg);
+  }
 }
 
 @media (max-width: 640px) {
@@ -315,16 +527,17 @@ body::before {
 
   .auth-card {
     padding: 2rem 1.5rem;
+    border-radius: 24px;
   }
 
-  .auth-logo, .status-icon {
-    width: 64px;
-    height: 64px;
+  .auth-logo, .icon-wrapper, .status-icon {
+    width: 72px;
+    height: 72px;
   }
 
-  .status-icon svg {
-    width: 32px;
-    height: 32px;
+  .icon-wrapper svg, .status-icon svg {
+    width: 36px;
+    height: 36px;
   }
 
   .auth-header h1 {
@@ -334,6 +547,21 @@ body::before {
 </style>
 </head>
 <body>
+
+<!-- Floating Particles -->
+<div class="particles">
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+</div>
+
+<!-- Confetti Container -->
+<div id="confettiContainer" class="confetti-container"></div>
 
 <div class="auth-container">
   <div class="auth-card">
@@ -345,7 +573,7 @@ body::before {
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
         </svg>
       </div>
-      <h1 style="font-size: 1.5rem; margin-bottom: 0.5rem;">처리 중...</h1>
+      <h1 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--text);">처리 중...</h1>
       <p style="color: var(--text-dim);">잠시만 기다려주세요</p>
     </div>
 
@@ -369,7 +597,7 @@ body::before {
       </button>
 
       <div class="auth-footer">
-        <p>인증 후 앱에서 자동으로 로그인됩니다</p>
+        <p>인증 후 앱에서 로그인하실 수 있습니다</p>
       </div>
     </div>
 
@@ -377,7 +605,7 @@ body::before {
     <div id="verifySuccessView" class="view">
       <div class="status-icon success">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
         </svg>
       </div>
       <div class="auth-header">
@@ -391,28 +619,55 @@ body::before {
     <!-- Password Reset View -->
     <div id="resetPasswordView" class="view">
       <div class="auth-header">
-        <img src="/assets/images/logo-icon.png" alt="Inventory" class="auth-logo">
+        <div class="icon-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+          </svg>
+        </div>
         <h1>비밀번호 재설정</h1>
         <p>새로운 비밀번호를 입력해주세요</p>
       </div>
 
       <div class="email-badge">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
         </svg>
         <span id="resetEmail">email@example.com</span>
       </div>
 
       <form class="reset-form" onsubmit="resetPassword(event)">
-        <input type="password" id="newPassword" placeholder="새 비밀번호" required minlength="12">
-        <p class="password-hint">최소 12자 이상 입력해주세요</p>
-        <input type="password" id="confirmPassword" placeholder="비밀번호 확인" required minlength="12">
+        <div class="input-group">
+          <input type="password" id="newPassword" placeholder="새 비밀번호" required minlength="12" oninput="checkPasswordStrength()">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
+          </svg>
+        </div>
+        <div class="password-strength">
+          <div class="strength-bar" id="str1"></div>
+          <div class="strength-bar" id="str2"></div>
+          <div class="strength-bar" id="str3"></div>
+          <div class="strength-bar" id="str4"></div>
+        </div>
+        <p class="password-hint" id="passwordHint">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <span>최소 12자 이상 입력해주세요</span>
+        </p>
+        <div class="input-group">
+          <input type="password" id="confirmPassword" placeholder="비밀번호 확인" required minlength="12" oninput="checkPasswordMatch()">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+          </svg>
+        </div>
         <div id="resetError" class="error-msg"></div>
-        <button type="submit" id="resetBtn" class="action-btn">비밀번호 변경</button>
+        <button type="submit" id="resetBtn" class="action-btn">
+          비밀번호 변경하기
+        </button>
       </form>
 
       <div class="auth-footer">
-        <p>비밀번호 변경 후 앱에서 로그인하세요</p>
+        <p>변경 후 새 비밀번호로 로그인하세요</p>
       </div>
     </div>
 
@@ -420,12 +675,12 @@ body::before {
     <div id="resetSuccessView" class="view">
       <div class="status-icon success">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       </div>
       <div class="auth-header">
         <h1>변경 완료!</h1>
-        <p>비밀번호가 성공적으로 변경되었습니다.<br>새 비밀번호로 로그인하세요.</p>
+        <p>비밀번호가 성공적으로 변경되었습니다.<br>새 비밀번호로 앱에서 로그인하세요.</p>
       </div>
 
       <a href="/" class="secondary-btn">홈으로 돌아가기</a>
@@ -435,7 +690,7 @@ body::before {
     <div id="errorView" class="view">
       <div class="status-icon error">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
         </svg>
       </div>
       <div class="auth-header">
@@ -454,7 +709,7 @@ body::before {
 <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
 
 <script>
-// Firebase 초기화
+// Firebase Config
 const firebaseConfig = {
   apiKey: "{{ site.firebase.config.apiKey }}",
   authDomain: "{{ site.firebase.config.authDomain }}",
@@ -466,13 +721,12 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 
-// URL 파라미터 파싱
+// URL params
 const urlParams = new URLSearchParams(window.location.search);
 const mode = urlParams.get('mode');
 const oobCode = urlParams.get('oobCode');
-const continueUrl = urlParams.get('continueUrl');
 
-// 뷰 전환 함수
+// View functions
 function showView(viewId) {
   document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
   document.getElementById(viewId).classList.add('active');
@@ -483,7 +737,86 @@ function showError(message) {
   showView('errorView');
 }
 
-// 초기화
+// Password strength checker
+function checkPasswordStrength() {
+  const password = document.getElementById('newPassword').value;
+  const bars = [
+    document.getElementById('str1'),
+    document.getElementById('str2'),
+    document.getElementById('str3'),
+    document.getElementById('str4')
+  ];
+  const hint = document.getElementById('passwordHint');
+
+  let strength = 0;
+  if (password.length >= 8) strength++;
+  if (password.length >= 12) strength++;
+  if (/[A-Z]/.test(password) && /[a-z]/.test(password)) strength++;
+  if (/[0-9]/.test(password) || /[^A-Za-z0-9]/.test(password)) strength++;
+
+  bars.forEach((bar, i) => {
+    bar.classList.remove('active', 'medium', 'strong');
+    if (i < strength) {
+      bar.classList.add('active');
+      if (strength >= 3) bar.classList.add('strong');
+      else if (strength >= 2) bar.classList.add('medium');
+    }
+  });
+
+  if (password.length >= 12) {
+    hint.classList.add('valid');
+    hint.innerHTML = `
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+      </svg>
+      <span>12자 이상 입력됨</span>
+    `;
+  } else {
+    hint.classList.remove('valid');
+    hint.innerHTML = `
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+      <span>${password.length}/12자</span>
+    `;
+  }
+}
+
+function checkPasswordMatch() {
+  const newPassword = document.getElementById('newPassword').value;
+  const confirmPassword = document.getElementById('confirmPassword').value;
+  const errorEl = document.getElementById('resetError');
+
+  if (confirmPassword && newPassword !== confirmPassword) {
+    errorEl.textContent = '비밀번호가 일치하지 않습니다.';
+    errorEl.classList.add('show');
+  } else {
+    errorEl.classList.remove('show');
+  }
+}
+
+// Confetti
+function launchConfetti() {
+  const container = document.getElementById('confettiContainer');
+  const colors = ['#a855f7', '#d946ef', '#14b8a6', '#2dd4bf', '#22c55e', '#fbbf24'];
+
+  for (let i = 0; i < 60; i++) {
+    const confetti = document.createElement('div');
+    confetti.className = 'confetti';
+    confetti.style.left = Math.random() * 100 + '%';
+    confetti.style.background = colors[Math.floor(Math.random() * colors.length)];
+    confetti.style.animationDelay = Math.random() * 0.5 + 's';
+    confetti.style.borderRadius = Math.random() > 0.5 ? '50%' : '2px';
+    confetti.style.width = (Math.random() * 8 + 6) + 'px';
+    confetti.style.height = (Math.random() * 8 + 6) + 'px';
+    container.appendChild(confetti);
+
+    setTimeout(() => confetti.classList.add('active'), 10);
+    setTimeout(() => confetti.remove(), 3500);
+  }
+}
+
+// Init
 async function init() {
   if (!mode || !oobCode) {
     showError('잘못된 링크입니다. 이메일의 링크를 다시 확인해주세요.');
@@ -491,7 +824,6 @@ async function init() {
   }
 
   try {
-    // oobCode 정보 확인
     const info = await auth.checkActionCode(oobCode);
     const email = info.data.email;
 
@@ -506,9 +838,8 @@ async function init() {
     }
   } catch (error) {
     console.error('Action code check failed:', error);
-
     if (error.code === 'auth/expired-action-code') {
-      showError('링크가 만료되었습니다. 새로운 인증 메일을 요청해주세요.');
+      showError('링크가 만료되었습니다. 새로운 메일을 요청해주세요.');
     } else if (error.code === 'auth/invalid-action-code') {
       showError('유효하지 않은 링크입니다. 이미 사용되었거나 만료되었을 수 있습니다.');
     } else {
@@ -517,7 +848,7 @@ async function init() {
   }
 }
 
-// 이메일 인증
+// Email verification
 async function verifyEmail() {
   const btn = document.getElementById('verifyBtn');
   btn.disabled = true;
@@ -525,6 +856,7 @@ async function verifyEmail() {
 
   try {
     await auth.applyActionCode(oobCode);
+    launchConfetti();
     showView('verifySuccessView');
   } catch (error) {
     console.error('Email verification failed:', error);
@@ -541,7 +873,7 @@ async function verifyEmail() {
   }
 }
 
-// 비밀번호 재설정
+// Password reset
 async function resetPassword(event) {
   event.preventDefault();
 
@@ -550,7 +882,6 @@ async function resetPassword(event) {
   const errorEl = document.getElementById('resetError');
   const btn = document.getElementById('resetBtn');
 
-  // 유효성 검사
   if (newPassword !== confirmPassword) {
     errorEl.textContent = '비밀번호가 일치하지 않습니다.';
     errorEl.classList.add('show');
@@ -569,11 +900,12 @@ async function resetPassword(event) {
 
   try {
     await auth.confirmPasswordReset(oobCode, newPassword);
+    launchConfetti();
     showView('resetSuccessView');
   } catch (error) {
     console.error('Password reset failed:', error);
     btn.disabled = false;
-    btn.textContent = '비밀번호 변경';
+    btn.textContent = '비밀번호 변경하기';
 
     if (error.code === 'auth/expired-action-code') {
       showError('링크가 만료되었습니다. 새로운 비밀번호 재설정 메일을 요청해주세요.');
@@ -588,7 +920,6 @@ async function resetPassword(event) {
   }
 }
 
-// 페이지 로드 시 초기화
 init();
 </script>
 
