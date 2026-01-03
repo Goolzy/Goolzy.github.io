@@ -52,6 +52,12 @@ Le design neumorphique a été appliqué aux écrans Envoyer, Recevoir et Boutiq
 - **Écran Boutique** : Effets de lueur sur les boutons d'onglets, cartes de produits style neumorphique
 - **Design des champs de saisie** : Style en creux distinguant clairement les zones de saisie
 
+#### Animation de Réorganisation des Journaux
+Une animation fluide est appliquée lorsqu'un élément remonte dans la liste des journaux suite à un nouveau commentaire.
+- **Effet d'échelle** : L'élément s'agrandit légèrement puis retrouve sa taille d'origine après le déplacement
+- **Traitement séquentiel** : Animation ordonnée lorsque plusieurs éléments se déplacent simultanément
+- **Mise en évidence visuelle** : Identification claire de l'élément le plus récent
+
 #### Stabilisation de la Base de Données
 Les problèmes de compatibilité de la base de données pouvant survenir lors des mises à jour de l'application ont été résolus.
 - **Récupération Automatique**: La base de données est automatiquement recréée en cas d'incompatibilité de version

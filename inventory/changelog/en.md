@@ -52,6 +52,12 @@ Neumorphic design has been applied to the Send, Receive, and Shop screens, unify
 - **Shop Screen**: Glow effects on tab buttons, neumorphic style product cards
 - **Input Field Design**: Inset style clearly distinguishes input areas
 
+#### Log Reordering Animation
+When items move to the top of the log list due to new comments, smooth animations are applied.
+- **Scale Effect**: Items briefly scale up, then return to normal size after repositioning
+- **Sequential Processing**: Multiple items animate in order when moved simultaneously
+- **Visual Emphasis**: Clearly indicates which items are the most recent
+
 #### Database Stabilization
 Database compatibility issues that could occur during app updates have been resolved.
 - **Auto Recovery**: Automatically recreates the database when version mismatch occurs

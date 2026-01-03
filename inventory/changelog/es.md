@@ -52,6 +52,12 @@ Se ha aplicado diseño neumórfico a las pantallas de Enviar, Recibir y Tienda, 
 - **Pantalla de Tienda**: Efectos de brillo en botones de pestañas, tarjetas de productos con estilo neumórfico
 - **Diseño de Campo de Entrada**: Estilo hundido que distingue claramente las áreas de entrada
 
+#### Animación de Reordenamiento de Registros
+Se aplica una animación fluida cuando los elementos suben en la lista de registros debido a nuevos comentarios.
+- **Efecto de escala**: El elemento crece ligeramente y luego vuelve a su tamaño original después del movimiento
+- **Procesamiento secuencial**: Cuando varios elementos se mueven simultáneamente, se animan en orden
+- **Énfasis visual**: Reconocimiento claro de qué elemento es el más reciente
+
 #### Estabilización de Base de Datos
 Se han resuelto los problemas de compatibilidad de la base de datos que podían ocurrir durante las actualizaciones de la app.
 - **Recuperación Automática**: La base de datos se recrea automáticamente cuando hay incompatibilidad de versiones

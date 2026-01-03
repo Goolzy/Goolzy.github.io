@@ -52,6 +52,12 @@ Neumorphes Design wurde auf die Senden-, Empfangen- und Shop-Bildschirme angewen
 - **Shop-Bildschirm**: Glow-Effekte auf Tab-Buttons, neumorphe Produktkarten
 - **Eingabefeld-Design**: Vertiefter Stil unterscheidet Eingabebereiche deutlich
 
+#### Log-Neuanordnungs-Animation
+Wenn ein Element aufgrund neuer Kommentare in der Log-Liste nach oben verschoben wird, wird eine fließende Animation angewendet.
+- **Skalierungseffekt**: Element wird leicht vergrößert und kehrt nach der Bewegung zur Originalgröße zurück
+- **Sequenzielle Verarbeitung**: Bei gleichzeitiger Bewegung mehrerer Elemente werden Animationen nacheinander abgespielt
+- **Visuelle Hervorhebung**: Klare Erkennbarkeit, welches Element das aktuellste ist
+
 #### Datenbank-Stabilisierung
 Datenbankkompatibilitätsprobleme, die bei App-Updates auftreten konnten, wurden behoben.
 - **Automatische Wiederherstellung**: Datenbank wird bei Versionskonflikt automatisch neu erstellt
