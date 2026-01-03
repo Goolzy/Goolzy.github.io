@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="icon" href="/assets/images/favicon.png">
+  <style>
+:root {
+  --purple-dark: #1a0f3d;
+  --purple-bright: #a855f7;
+  --purple-vibrant: #d946ef;
+  --teal: #14b8a6;
+  --teal-bright: #2dd4bf;
+  --bg: #0a0614;
+  --card: #150a28;
+  --border: rgba(168, 85, 247, 0.12);
+  --text: rgba(255, 255, 255, 0.95);
+  --text-dim: rgba(255, 255, 255, 0.4);
+  --success: #22c55e;
+  --error: #ef4444;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(168, 85, 247, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(20, 184, 166, 0.12) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.auth-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 450px;
+}
+
+.auth-card {
+  background: rgba(21, 10, 40, 0.6);
+  backdrop-filter: blur(30px) saturate(200%);
+  -webkit-backdrop-filter: blur(30px) saturate(200%);
+  border: 1.5px solid rgba(168, 85, 247, 0.3);
+  border-radius: 24px;
+  padding: 3rem 2.5rem;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.5),
+    0 0 80px rgba(168, 85, 247, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.auth-header {
+  margin-bottom: 2rem;
+}
+
+.auth-logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1.5rem;
+  filter: drop-shadow(0 8px 24px rgba(168, 85, 247, 0.5));
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.auth-header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  background: linear-gradient(135deg, var(--purple-vibrant), var(--teal-bright));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.auth-header p {
+  color: var(--text-dim);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.email-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background: rgba(168, 85, 247, 0.15);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 12px;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.email-badge svg {
+  width: 18px;
+  height: 18px;
+  color: var(--purple-bright);
+}
+
+.action-btn {
+  display: block;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(135deg, var(--purple-bright), var(--teal));
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.3);
+  margin-top: 1rem;
+}
+
+.action-btn:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 24px rgba(168, 85, 247, 0.5);
+}
+
+.action-btn:active {
+  transform: scale(0.98);
+}
+
+.action-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.action-btn.success {
+  background: linear-gradient(135deg, var(--success), var(--teal));
+}
+
+.secondary-btn {
+  display: block;
+  width: 100%;
+  padding: 0.875rem 1.25rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 0.75rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+.secondary-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: var(--purple-bright);
+}
+
+/* Status Icons */
+.status-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.status-icon.loading {
+  background: rgba(168, 85, 247, 0.2);
+}
+
+.status-icon.success {
+  background: rgba(34, 197, 94, 0.2);
+}
+
+.status-icon.error {
+  background: rgba(239, 68, 68, 0.2);
+}
+
+.status-icon svg {
+  width: 40px;
+  height: 40px;
+}
+
+.status-icon.loading svg {
+  color: var(--purple-bright);
+  animation: spin 1.5s linear infinite;
+}
+
+.status-icon.success svg {
+  color: var(--success);
+}
+
+.status-icon.error svg {
+  color: var(--error);
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Password Reset Form */
+.reset-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.reset-form input {
+  padding: 0.875rem 1.1rem;
+  background: rgba(10, 6, 20, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  border-radius: 10px;
+  color: var(--text);
+  font-size: 0.95rem;
+  transition: all 0.3s;
+}
+
+.reset-form input:focus {
+  outline: none;
+  border-color: var(--purple-bright);
+  box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.2), 0 4px 16px rgba(168, 85, 247, 0.3);
+  background: rgba(10, 6, 20, 0.8);
+}
+
+.reset-form input::placeholder {
+  color: var(--text-dim);
+}
+
+.password-hint {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  text-align: left;
+  margin-top: -0.5rem;
+}
+
+.error-msg {
+  color: var(--error);
+  font-size: 0.85rem;
+  padding: 0.75rem;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 8px;
+  display: none;
+}
+
+.error-msg.show {
+  display: block;
+}
+
+.auth-footer {
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(168, 85, 247, 0.15);
+  margin-top: 1.5rem;
+}
+
+.auth-footer p {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.auth-footer a {
+  color: var(--teal-bright);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Views */
+.view {
+  display: none;
+}
+
+.view.active {
+  display: block;
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 1rem;
+  }
+
+  .auth-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .auth-logo, .status-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .status-icon svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .auth-header h1 {
+    font-size: 1.5rem;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="auth-container">
+  <div class="auth-card">
+
+    <!-- Loading View -->
+    <div id="loadingView" class="view active">
+      <div class="status-icon loading">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+        </svg>
+      </div>
+      <h1 style="font-size: 1.5rem; margin-bottom: 0.5rem;">처리 중...</h1>
+      <p style="color: var(--text-dim);">잠시만 기다려주세요</p>
+    </div>
+
+    <!-- Email Verification View -->
+    <div id="verifyEmailView" class="view">
+      <div class="auth-header">
+        <img src="/assets/images/logo-icon.png" alt="Inventory" class="auth-logo">
+        <h1>이메일 인증</h1>
+        <p>아래 버튼을 눌러 이메일 인증을 완료하세요</p>
+      </div>
+
+      <div class="email-badge">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        </svg>
+        <span id="verifyEmail">email@example.com</span>
+      </div>
+
+      <button id="verifyBtn" class="action-btn" onclick="verifyEmail()">
+        이메일 인증하기
+      </button>
+
+      <div class="auth-footer">
+        <p>인증 후 앱에서 자동으로 로그인됩니다</p>
+      </div>
+    </div>
+
+    <!-- Verification Success View -->
+    <div id="verifySuccessView" class="view">
+      <div class="status-icon success">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+      <div class="auth-header">
+        <h1>인증 완료!</h1>
+        <p>이메일 인증이 성공적으로 완료되었습니다.<br>이제 앱에서 로그인하실 수 있습니다.</p>
+      </div>
+
+      <a href="/" class="secondary-btn">홈으로 돌아가기</a>
+    </div>
+
+    <!-- Password Reset View -->
+    <div id="resetPasswordView" class="view">
+      <div class="auth-header">
+        <img src="/assets/images/logo-icon.png" alt="Inventory" class="auth-logo">
+        <h1>비밀번호 재설정</h1>
+        <p>새로운 비밀번호를 입력해주세요</p>
+      </div>
+
+      <div class="email-badge">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        </svg>
+        <span id="resetEmail">email@example.com</span>
+      </div>
+
+      <form class="reset-form" onsubmit="resetPassword(event)">
+        <input type="password" id="newPassword" placeholder="새 비밀번호" required minlength="12">
+        <p class="password-hint">최소 12자 이상 입력해주세요</p>
+        <input type="password" id="confirmPassword" placeholder="비밀번호 확인" required minlength="12">
+        <div id="resetError" class="error-msg"></div>
+        <button type="submit" id="resetBtn" class="action-btn">비밀번호 변경</button>
+      </form>
+
+      <div class="auth-footer">
+        <p>비밀번호 변경 후 앱에서 로그인하세요</p>
+      </div>
+    </div>
+
+    <!-- Reset Success View -->
+    <div id="resetSuccessView" class="view">
+      <div class="status-icon success">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+      <div class="auth-header">
+        <h1>변경 완료!</h1>
+        <p>비밀번호가 성공적으로 변경되었습니다.<br>새 비밀번호로 로그인하세요.</p>
+      </div>
+
+      <a href="/" class="secondary-btn">홈으로 돌아가기</a>
+    </div>
+
+    <!-- Error View -->
+    <div id="errorView" class="view">
+      <div class="status-icon error">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </div>
+      <div class="auth-header">
+        <h1>오류 발생</h1>
+        <p id="errorMessage">알 수 없는 오류가 발생했습니다.</p>
+      </div>
+
+      <a href="/" class="secondary-btn">홈으로 돌아가기</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+
+<script>
+// Firebase 초기화
+const firebaseConfig = {
+  apiKey: "{{ site.firebase.config.apiKey }}",
+  authDomain: "{{ site.firebase.config.authDomain }}",
+  projectId: "{{ site.firebase.config.projectId }}",
+  databaseURL: "{{ site.firebase.config.databaseURL }}",
+  appId: "{{ site.firebase.config.appId }}"
+};
+
+firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+
+// URL 파라미터 파싱
+const urlParams = new URLSearchParams(window.location.search);
+const mode = urlParams.get('mode');
+const oobCode = urlParams.get('oobCode');
+const continueUrl = urlParams.get('continueUrl');
+
+// 뷰 전환 함수
+function showView(viewId) {
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+  document.getElementById(viewId).classList.add('active');
+}
+
+function showError(message) {
+  document.getElementById('errorMessage').textContent = message;
+  showView('errorView');
+}
+
+// 초기화
+async function init() {
+  if (!mode || !oobCode) {
+    showError('잘못된 링크입니다. 이메일의 링크를 다시 확인해주세요.');
+    return;
+  }
+
+  try {
+    // oobCode 정보 확인
+    const info = await auth.checkActionCode(oobCode);
+    const email = info.data.email;
+
+    if (mode === 'verifyEmail') {
+      document.getElementById('verifyEmail').textContent = email;
+      showView('verifyEmailView');
+    } else if (mode === 'resetPassword') {
+      document.getElementById('resetEmail').textContent = email;
+      showView('resetPasswordView');
+    } else {
+      showError('지원하지 않는 작업입니다.');
+    }
+  } catch (error) {
+    console.error('Action code check failed:', error);
+
+    if (error.code === 'auth/expired-action-code') {
+      showError('링크가 만료되었습니다. 새로운 인증 메일을 요청해주세요.');
+    } else if (error.code === 'auth/invalid-action-code') {
+      showError('유효하지 않은 링크입니다. 이미 사용되었거나 만료되었을 수 있습니다.');
+    } else {
+      showError('링크를 처리할 수 없습니다. 잠시 후 다시 시도해주세요.');
+    }
+  }
+}
+
+// 이메일 인증
+async function verifyEmail() {
+  const btn = document.getElementById('verifyBtn');
+  btn.disabled = true;
+  btn.textContent = '인증 중...';
+
+  try {
+    await auth.applyActionCode(oobCode);
+    showView('verifySuccessView');
+  } catch (error) {
+    console.error('Email verification failed:', error);
+    btn.disabled = false;
+    btn.textContent = '이메일 인증하기';
+
+    if (error.code === 'auth/expired-action-code') {
+      showError('링크가 만료되었습니다. 새로운 인증 메일을 요청해주세요.');
+    } else if (error.code === 'auth/invalid-action-code') {
+      showError('이미 인증되었거나 유효하지 않은 링크입니다.');
+    } else {
+      showError('인증에 실패했습니다. 잠시 후 다시 시도해주세요.');
+    }
+  }
+}
+
+// 비밀번호 재설정
+async function resetPassword(event) {
+  event.preventDefault();
+
+  const newPassword = document.getElementById('newPassword').value;
+  const confirmPassword = document.getElementById('confirmPassword').value;
+  const errorEl = document.getElementById('resetError');
+  const btn = document.getElementById('resetBtn');
+
+  // 유효성 검사
+  if (newPassword !== confirmPassword) {
+    errorEl.textContent = '비밀번호가 일치하지 않습니다.';
+    errorEl.classList.add('show');
+    return;
+  }
+
+  if (newPassword.length < 12) {
+    errorEl.textContent = '비밀번호는 최소 12자 이상이어야 합니다.';
+    errorEl.classList.add('show');
+    return;
+  }
+
+  errorEl.classList.remove('show');
+  btn.disabled = true;
+  btn.textContent = '변경 중...';
+
+  try {
+    await auth.confirmPasswordReset(oobCode, newPassword);
+    showView('resetSuccessView');
+  } catch (error) {
+    console.error('Password reset failed:', error);
+    btn.disabled = false;
+    btn.textContent = '비밀번호 변경';
+
+    if (error.code === 'auth/expired-action-code') {
+      showError('링크가 만료되었습니다. 새로운 비밀번호 재설정 메일을 요청해주세요.');
+    } else if (error.code === 'auth/invalid-action-code') {
+      showError('유효하지 않은 링크입니다. 이미 사용되었을 수 있습니다.');
+    } else if (error.code === 'auth/weak-password') {
+      errorEl.textContent = '비밀번호가 너무 약합니다. 더 강력한 비밀번호를 사용해주세요.';
+      errorEl.classList.add('show');
+    } else {
+      showError('비밀번호 변경에 실패했습니다. 잠시 후 다시 시도해주세요.');
+    }
+  }
+}
+
+// 페이지 로드 시 초기화
+init();
+</script>
+
+</body>
+</html>
