@@ -40,6 +40,12 @@ Quickly jump to the top or bottom in the detail view screen.
 - **Position-Based Display**: Only the bottom button shows at top, only the top button shows at bottom
 - **Neumorphic Design**: Button style consistent with the app design
 
+#### Page Transition Animation Restored
+The flip animation for the bottom navigation bar and receive screen has been restored.
+- **3D Flip Effect**: Page transitions with 180-degree rotation on the Y-axis
+- **Log/Shop Pages**: Flip animation applied
+- **Receive Screen**: Flip animation applied from mailbox button and notification deep links
+
 </div>
 </details>
 

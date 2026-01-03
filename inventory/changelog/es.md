@@ -40,6 +40,12 @@ Navega rápidamente al principio o al final en la pantalla de detalles.
 - **Visualización según posición**: Solo se muestra el botón inferior en la parte superior y solo el botón superior en la parte inferior
 - **Diseño neumórfico**: Estilo de botón coherente con el diseño de la aplicación
 
+#### Restauracion de Animacion de Transicion de Pagina
+Se ha restaurado la animacion de volteo en la barra de navegacion inferior y la pantalla de recepcion.
+- **Efecto de volteo 3D**: Transicion de pagina con rotacion de 180 grados en el eje Y
+- **Paginas de registro/tienda**: Animacion de volteo aplicada
+- **Pantalla de recepcion**: Animacion de volteo aplicada en el boton de buzon y enlace profundo de notificacion
+
 </div>
 </details>
 

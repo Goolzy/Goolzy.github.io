@@ -40,6 +40,12 @@ Navegue rapidamente para o topo ou fundo na tela de detalhes.
 - **Exibição por posição**: Na parte superior, apenas o botão para baixo é exibido; na parte inferior, apenas o botão para cima
 - **Design neumórfico**: Estilo de botão consistente com o design do aplicativo
 
+#### Restauracao da Animacao de Transicao de Pagina
+As animacoes de flip da barra de navegacao inferior e da tela de recebimento foram restauradas.
+- **Efeito de flip 3D**: Transicao de pagina com rotacao de 180 graus no eixo Y
+- **Paginas de Log/Loja**: Animacao de flip aplicada
+- **Tela de recebimento**: Animacao de flip aplicada no botao da caixa de correio e no deep link de notificacao
+
 </div>
 </details>
 

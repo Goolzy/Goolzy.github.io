@@ -40,6 +40,12 @@ Naviguez rapidement vers le haut ou le bas dans l'écran de détail.
 - **Affichage selon la position** : En haut, seul le bouton vers le bas s'affiche ; en bas, seul le bouton vers le haut s'affiche
 - **Design neumorphique** : Style de bouton cohérent avec le design de l'application
 
+#### Restauration de l'animation de transition de page
+L'animation de retournement de la barre de navigation inferieure et de l'ecran de reception a ete restauree.
+- **Effet de retournement 3D** : Transition de page par rotation de 180 degres sur l'axe Y
+- **Pages Journal/Boutique** : Animation de retournement appliquee
+- **Ecran de reception** : Animation de retournement appliquee depuis le bouton boite aux lettres et le lien profond des notifications
+
 </div>
 </details>
 

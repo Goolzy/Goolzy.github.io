@@ -40,6 +40,12 @@ Schnelle Navigation zum Anfang/Ende im Detailansichtsfenster.
 - **Positionsabhängige Anzeige**: Am oberen Rand nur der Button nach unten, am unteren Rand nur der Button nach oben
 - **Neumorphes Design**: Buttonstil passend zum App-Design
 
+#### Seitenwechsel-Animation wiederhergestellt
+Die Flip-Animation der unteren Navigationsleiste und des Empfangsbildschirms wurde wiederhergestellt.
+- **3D-Flip-Effekt**: Seitenwechsel durch 180-Grad-Drehung um die Y-Achse
+- **Log-/Shop-Seiten**: Flip-Animation angewendet
+- **Empfangsbildschirm**: Flip-Animation bei Postfach-Button und Benachrichtigungs-Deeplink angewendet
+
 </div>
 </details>
 
