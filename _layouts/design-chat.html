@@ -216,16 +216,6 @@ body::before {
   transform: translateX(-50%) scale(1);
 }
 
-/* Release Date under platform icons */
-.release-date {
-  font-size: 0.5rem;
-  color: var(--text-dim);
-  font-weight: 400;
-  opacity: 0.4;
-  margin-top: 0.25rem;
-  line-height: 1.2;
-}
-
 @keyframes fadeIn {
   to { opacity: 1; }
 }
@@ -412,6 +402,14 @@ a.platform-icon {
   margin-top: 0.5rem;
   font-size: 0.75rem;
   color: var(--text-dim);
+}
+
+.qr-popup .qr-date {
+  text-align: center;
+  margin-top: 0.35rem;
+  font-size: 0.7rem;
+  color: var(--teal-bright);
+  font-weight: 600;
 }
 
 /* Chat Section - Enhanced Glassmorphism */
@@ -819,12 +817,8 @@ a.platform-icon {
     height: 22px;
   }
 
-  .platform-icon > span:not(.release-date) {
+  .platform-icon > span {
     font-size: 0.6rem;
-  }
-
-  .release-date {
-    font-size: 0.4rem;
   }
 
   .message {
@@ -894,12 +888,8 @@ a.platform-icon {
     height: 18px;
   }
 
-  .platform-icon > span:not(.release-date) {
+  .platform-icon > span {
     font-size: 0.5rem;
-  }
-
-  .release-date {
-    font-size: 0.35rem;
   }
 }
 </style>
