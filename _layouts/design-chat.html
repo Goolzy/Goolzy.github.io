@@ -316,6 +316,33 @@ a.platform-icon {
   margin-right: 0.5rem;
 }
 
+/* 퀵 가이드 토글 버튼 */
+.guide-toggle-btn {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0.75rem auto 0;
+  padding: 0.75rem 1.5rem;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.guide-toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(168, 85, 247, 0.4);
+  color: var(--text);
+}
+
+.guide-toggle-btn span {
+  margin-right: 0.5rem;
+}
+
 .platform-icon.active:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 24px rgba(20, 184, 166, 0.5);

@@ -104,6 +104,10 @@ translations:
       <a href="https://www.goolzy.com/inventory" class="homepage-btn">
         <span>📖</span> 인벤토리 홈페이지 가기
       </a>
+      <!-- 퀵 가이드 토글 버튼 -->
+      <button class="guide-toggle-btn" id="guideToggleBtn">
+        <span>📚</span> 인벤토리 퀵 가이드 보기
+      </button>
     </div>
   </section>
 
@@ -149,7 +153,23 @@ translations:
   </section>
 </div>
 
-<!-- Use Cases Section (Full Width Below) -->
-<section class="usecases-section" style="max-width: 1400px; margin: 0 auto; padding: 0 2rem 3rem;">
+<!-- Use Cases Section (Full Width Below) - Hidden by default -->
+<section class="usecases-section" id="usecasesSection" style="max-width: 1400px; margin: 0 auto; padding: 0 2rem 3rem; display: none;">
   {% include usecases-accordion.html lang="ko" %}
 </section>
+
+<script>
+// 퀵 가이드 토글
+document.getElementById('guideToggleBtn').addEventListener('click', function() {
+  const section = document.getElementById('usecasesSection');
+  const btn = this;
+  if (section.style.display === 'none') {
+    section.style.display = 'block';
+    btn.innerHTML = '<span>📚</span> 퀵 가이드 숨기기';
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  } else {
+    section.style.display = 'none';
+    btn.innerHTML = '<span>📚</span> 인벤토리 퀵 가이드 보기';
+  }
+});
+</script>
