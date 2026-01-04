@@ -18,7 +18,7 @@ page:
 categories:
   # ===== 1. 종이 활용법 (Paper) =====
   - id: paper-usage
-    title: "📄 종이 활용법"
+    title: "종이 활용법"
     icon: "📄"
     description: "종이(Paper)로 할 수 있는 모든 것"
     items:
@@ -177,7 +177,7 @@ categories:
 
   # ===== 2. 스탬프 활용법 (Stamp) =====
   - id: stamp-usage
-    title: "🔖 스탬프 활용법"
+    title: "스탬프 활용법"
     icon: "🔖"
     description: "스탬프(Stamp)로 템플릿 만들고 복제하기"
     items:
@@ -442,7 +442,7 @@ categories:
 
   # ===== 3. 뱃지 활용법 (Badge) =====
   - id: badge-usage
-    title: "🏷️ 뱃지 활용법"
+    title: "뱃지 활용법"
     icon: "🏷️"
     description: "뱃지(Badge)로 브랜딩하고 신뢰 구축하기"
     items:
@@ -633,7 +633,7 @@ categories:
 
   # ===== 4. 잉크 활용법 (Ink) =====
   - id: ink-usage
-    title: "🎨 잉크 활용법"
+    title: "잉크 활용법"
     icon: "🎨"
     description: "잉크(Ink)로 앱 테마 커스터마이징하기"
     items:
