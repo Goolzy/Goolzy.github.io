@@ -172,4 +172,22 @@ document.getElementById('guideToggleBtn').addEventListener('click', function() {
     btn.innerHTML = '<span>📚</span> 인벤토리 퀵 가이드 보기';
   }
 });
+
+// 핵심 장점 카드 클릭 토글
+document.querySelectorAll('.advantage-card').forEach(card => {
+  card.addEventListener('click', function(e) {
+    e.stopPropagation();
+    const wasActive = this.classList.contains('active');
+    // 다른 카드 닫기
+    document.querySelectorAll('.advantage-card').forEach(c => c.classList.remove('active'));
+    // 토글
+    if (!wasActive) {
+      this.classList.add('active');
+    }
+  });
+});
+// 외부 클릭 시 닫기
+document.addEventListener('click', function() {
+  document.querySelectorAll('.advantage-card').forEach(c => c.classList.remove('active'));
+});
 </script>
