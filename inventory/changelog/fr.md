@@ -11,6 +11,7 @@ translations:
   fr: /inventory/changelog/fr/
   es: /inventory/changelog/es/
   pt: /inventory/changelog/pt/
+  zh: /inventory/changelog/zh/
 ---
 
 ## Journal des modifications

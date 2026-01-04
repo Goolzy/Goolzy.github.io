@@ -11,6 +11,7 @@ translations:
   fr: /inventory/usecases/fr/
   es: /inventory/usecases/es/
   pt: /inventory/usecases/pt/
+  zh: /inventory/usecases/zh/
 ---
 
 {% include usecases-accordion.html lang="de" %}

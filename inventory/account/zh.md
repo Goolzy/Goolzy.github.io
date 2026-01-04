@@ -1,8 +1,8 @@
 ---
 layout: inventory
-title: Kontoinformationen
-permalink: /inventory/account/de/
-lang: de
+title: "账户管理"
+permalink: /inventory/account/zh/
+lang: zh
 translations:
   ko: /inventory/account/
   en: /inventory/account/en/
@@ -17,29 +17,29 @@ translations:
 <div id="account-info" style="max-width:600px; margin:0 auto;">
 
   <div id="account-content">
-    <h2>Kontoinformationen</h2>
+    <h2>账户信息</h2>
 
     <div style="background:#f9fafb; border:1px solid #e5e7eb; border-radius:8px; padding:1.5rem; margin-bottom:2rem;">
       <div style="margin-bottom:1rem;">
-        <strong>E-Mail:</strong>
-        <div id="user-email" style="margin-top:.25rem; color:#374151;">Wird geprüft...</div>
+        <strong>邮箱：</strong>
+        <div id="user-email" style="margin-top:.25rem; color:#374151;">正在检查...</div>
       </div>
 
       <div id="user-uid-section" style="margin-bottom:1rem; display:none;">
-        <strong>Benutzer-ID:</strong>
+        <strong>用户ID：</strong>
         <div id="user-uid" style="margin-top:.25rem; color:#6b7280; font-family:monospace; font-size:.9rem;"></div>
       </div>
 
       <div id="user-name-section" style="margin-bottom:1rem; display:none;">
-        <strong>Name:</strong>
+        <strong>姓名：</strong>
         <div id="user-name" style="margin-top:.25rem; color:#374151;"></div>
       </div>
     </div>
 
     <div style="background:#f0f9ff; border:1px solid #bae6fd; border-radius:8px; padding:1.5rem;">
-      <h4 style="margin-top:0; color:#0c4a6e;">Kontoverwaltung</h4>
+      <h4 style="margin-top:0; color:#0c4a6e;">账户管理</h4>
       <p style="color:#0c4a6e; margin-bottom:0;">
-        Kontolöschung oder Informationsänderungen können im Einstellungsmenü der App vorgenommen werden.
+        账户删除或信息修改可以在应用的设置菜单中进行。
       </p>
     </div>
   </div>
@@ -55,56 +55,56 @@ translations:
 
   function displayUserInfo(userData){
     if (!userData) {
-      emailEl.textContent = 'Informationen konnten nicht geladen werden';
+      emailEl.textContent = '无法加载信息';
       return;
     }
 
-    // E-Mail anzeigen
-    emailEl.textContent = userData.email || 'Unbekannt';
+    // Display email
+    emailEl.textContent = userData.email || '未知';
 
-    // UID anzeigen (falls vorhanden)
+    // Display UID (if available)
     if (userData.uid && userData.uid !== 'app-user') {
       uidEl.textContent = userData.uid;
       uidSection.style.display = 'block';
     }
 
-    // Name anzeigen (falls vorhanden)
+    // Display name (if available)
     if (userData.displayName) {
       nameEl.textContent = userData.displayName;
       nameSection.style.display = 'block';
     }
 
-    console.log('[Account] Benutzerinformationen angezeigt');
+    console.log('[Account] User info displayed');
   }
 
-  // App-Auth-Informationen laden
+  // Load app auth info
   function loadInfo(){
     try {
       var appAuth = window.getAppAuth && window.getAppAuth();
       if (appAuth) {
-        console.log('[Account] Verwende App-Auth-Informationen');
+        console.log('[Account] Using app auth info');
         displayUserInfo(appAuth);
         return;
       }
     } catch(e){
-      console.warn('[Account] Fehler beim Laden der App-Auth-Informationen:', e);
+      console.warn('[Account] Failed to load app auth info:', e);
     }
 
-    // Auf App-Auth-Event warten, falls nicht verfügbar
+    // Wait for app auth event if not available
     window.addEventListener('app:auth-ready', function(e){
-      console.log('[Account] app:auth-ready Event empfangen');
+      console.log('[Account] Received app:auth-ready event');
       displayUserInfo(e.detail);
     }, { once: true });
 
-    // Nachricht anzeigen, wenn nach 3 Sekunden keine Info
+    // Show message if no info after 3 seconds
     setTimeout(function(){
-      if (emailEl.textContent === 'Wird geprüft...') {
-        emailEl.textContent = 'Bitte melden Sie sich in der App an';
+      if (emailEl.textContent === '正在检查...') {
+        emailEl.textContent = '请先从应用登录';
       }
     }, 3000);
   }
 
-  // Beim Laden der Seite ausführen
+  // Run on page load
   loadInfo();
 })();
 </script>

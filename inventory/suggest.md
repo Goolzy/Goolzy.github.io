@@ -11,6 +11,7 @@ translations:
   fr: /inventory/suggest/fr/
   es: /inventory/suggest/es/
   pt: /inventory/suggest/pt/
+  zh: /inventory/suggest/zh/
 ---
 
 ## 건의하기

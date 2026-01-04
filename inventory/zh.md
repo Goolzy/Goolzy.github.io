@@ -1,9 +1,9 @@
 ---
 layout: inventory
 title: Inventory
-permalink: /inventory/es/
-description: Goolzy Inventory - Aplicación de gestión de artículos digitales
-lang: es
+permalink: /inventory/zh/
+description: Goolzy Inventory - 数字物品管理应用
+lang: zh
 translations:
   ko: /inventory/
   en: /inventory/en/
@@ -17,188 +17,189 @@ translations:
 
 ## 🎯 Inventory
 
-**¡Crea artículos digitales y envíalos a otros!**
+**创建数字物品并发送给他人！**
 
-Crea artículos con una sola hoja de papel y transfiérelos mediante código QR. Graba un nombre de dominio único con una insignia y crea plantillas con sellos para compartir.
+用一张纸创建物品，通过二维码转移给他人。用徽章刻印独特的域名，用印章创建模板并分享。
 
 ---
 
-### 📚 Guía de inicio rápido
+### 📚 快速入门指南
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
 
   <div style="background: rgba(168, 85, 247, 0.2); backdrop-filter: blur(10px); border: 1px solid rgba(168, 85, 247, 0.3); padding: 1.5rem; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.3);">
-    <h3 style="margin: 0 0 .5rem 0; color: #a855f7; font-size: 1.3rem;">📋 Registro de cambios</h3>
-    <p style="margin: 0 0 1rem 0; color: rgba(255,255,255,0.8); font-size: .95rem;">Consulta las últimas actualizaciones</p>
-    <a href="/inventory/changelog/es/" style="display: inline-block; background: rgba(168,85,247,0.3); border: 1px solid rgba(168,85,247,0.5); color: white; padding: .5rem 1rem; border-radius: 8px; text-decoration: none; font-weight: 500; transition: all 0.3s;">Ver detalles →</a>
+    <h3 style="margin: 0 0 .5rem 0; color: #a855f7; font-size: 1.3rem;">📋 更新日志</h3>
+    <p style="margin: 0 0 1rem 0; color: rgba(255,255,255,0.8); font-size: .95rem;">查看最新更新和变更</p>
+    <a href="/inventory/changelog/zh/" style="display: inline-block; background: rgba(168,85,247,0.3); border: 1px solid rgba(168,85,247,0.5); color: white; padding: .5rem 1rem; border-radius: 8px; text-decoration: none; font-weight: 500; transition: all 0.3s;">查看详情 →</a>
   </div>
 
   <div style="background: rgba(217, 70, 239, 0.2); backdrop-filter: blur(10px); border: 1px solid rgba(217, 70, 239, 0.3); padding: 1.5rem; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.3);">
-    <h3 style="margin: 0 0 .5rem 0; color: #d946ef; font-size: 1.3rem;">📖 Manual</h3>
-    <p style="margin: 0 0 1rem 0; color: rgba(255,255,255,0.8); font-size: .95rem;">Aprende a usar la app paso a paso</p>
-    <a href="/inventory/manual/es/" style="display: inline-block; background: rgba(217,70,239,0.3); border: 1px solid rgba(217,70,239,0.5); color: white; padding: .5rem 1rem; border-radius: 8px; text-decoration: none; font-weight: 500; transition: all 0.3s;">Comenzar →</a>
+    <h3 style="margin: 0 0 .5rem 0; color: #d946ef; font-size: 1.3rem;">📖 使用手册</h3>
+    <p style="margin: 0 0 1rem 0; color: rgba(255,255,255,0.8); font-size: .95rem;">逐步学习如何使用应用</p>
+    <a href="/inventory/manual/zh/" style="display: inline-block; background: rgba(217,70,239,0.3); border: 1px solid rgba(217,70,239,0.5); color: white; padding: .5rem 1rem; border-radius: 8px; text-decoration: none; font-weight: 500; transition: all 0.3s;">开始使用 →</a>
   </div>
 
   <div style="background: rgba(20, 184, 166, 0.2); backdrop-filter: blur(10px); border: 1px solid rgba(20, 184, 166, 0.3); padding: 1.5rem; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.3);">
-    <h3 style="margin: 0 0 .5rem 0; color: #2dd4bf; font-size: 1.3rem;">❓ FAQ</h3>
-    <p style="margin: 0 0 1rem 0; color: rgba(255,255,255,0.8); font-size: .95rem;">Preguntas frecuentes y respuestas</p>
-    <a href="/inventory/faq/es/" style="display: inline-block; background: rgba(20,184,166,0.3); border: 1px solid rgba(20,184,166,0.5); color: white; padding: .5rem 1rem; border-radius: 8px; text-decoration: none; font-weight: 500; transition: all 0.3s;">Ver FAQ →</a>
+    <h3 style="margin: 0 0 .5rem 0; color: #2dd4bf; font-size: 1.3rem;">❓ 常见问题</h3>
+    <p style="margin: 0 0 1rem 0; color: rgba(255,255,255,0.8); font-size: .95rem;">查找常见问题的答案</p>
+    <a href="/inventory/faq/zh/" style="display: inline-block; background: rgba(20,184,166,0.3); border: 1px solid rgba(20,184,166,0.5); color: white; padding: .5rem 1rem; border-radius: 8px; text-decoration: none; font-weight: 500; transition: all 0.3s;">查看问答 →</a>
   </div>
 
 </div>
 
 ---
 
-### ✨ Características principales
+### ✨ 核心功能
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #a855f7;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">📄</div>
-    <h4 style="margin: 0 0 .5rem 0; color: #a855f7;">Creación de artículos</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Crea artículos con 1 hoja. Agrega título, contenido, imágenes y establece fechas de inicio/expiración.</p>
+    <h4 style="margin: 0 0 .5rem 0; color: #a855f7;">物品创建</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">用1张纸创建物品。添加标题、内容、图片，并设置开始日期/到期日期。</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #14b8a6;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">🏷️</div>
-    <h4 style="margin: 0 0 .5rem 0; color: #2dd4bf;">Sistema de insignias</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Graba un nombre de dominio único como tu identidad in-app. Tu dominio aparece en todas las actividades.</p>
+    <h4 style="margin: 0 0 .5rem 0; color: #2dd4bf;">徽章系统</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">刻印独特的域名作为您的应用内身份。您的域名将显示在所有活动中。</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #d946ef;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">🔖</div>
-    <h4 style="margin: 0 0 .5rem 0; color: #d946ef;">Sellos y registros</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Crea plantillas con sellos. Deja registros en modo privado o compartido (comunidad).</p>
+    <h4 style="margin: 0 0 .5rem 0; color: #d946ef;">印章与日志</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">用印章创建模板。在私人日志或共享日志（社区）模式下留下记录。</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #a855f7;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">📤</div>
-    <h4 style="margin: 0 0 .5rem 0; color: #a855f7;">Transferencia por código QR</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Escanear QR del destinatario → Seleccionar artículo → ¡Transferencia completa! Propiedad transferida al instante.</p>
+    <h4 style="margin: 0 0 .5rem 0; color: #a855f7;">二维码转移</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">扫描接收者的二维码 → 选择物品 → 转移完成！所有权即时转移。</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #14b8a6;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">🎨</div>
-    <h4 style="margin: 0 0 .5rem 0; color: #2dd4bf;">Temas de tinta</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Cambia los colores del tema con tinta. Temas negro y dorado disponibles.</p>
+    <h4 style="margin: 0 0 .5rem 0; color: #2dd4bf;">墨水主题</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">用墨水更改应用主题颜色。支持黑色和金色主题。</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #d946ef;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">🔍</div>
-    <h4 style="margin: 0 0 .5rem 0; color: #d946ef;">Búsqueda en tiempo real</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Filtrado instantáneo al escribir. Guarda como filtro para reutilización rápida.</p>
+    <h4 style="margin: 0 0 .5rem 0; color: #d946ef;">实时搜索</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">输入时即时过滤。保存为筛选器以便快速重用。</p>
   </div>
 
 </div>
 
 ---
 
-{% include usecases-summary.html lang="es" %}
+{% include usecases-summary.html lang="zh" %}
 
 ---
 
-### 📝 Sistema de papel
+### 📝 纸张系统
 
 <div style="background: rgba(168, 85, 247, 0.15); backdrop-filter: blur(10px); border: 1px solid rgba(168, 85, 247, 0.3); border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0;">
-  <p style="margin: 0 0 1rem 0; color: rgba(255,255,255,0.9); font-size: 1.05rem;"><strong>Papel</strong> es una moneda in-app usada para crear documentos.</p>
+  <p style="margin: 0 0 1rem 0; color: rgba(255,255,255,0.9); font-size: 1.05rem;"><strong>纸张</strong>是用于创建文档的应用内货币。</p>
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem;">
     <div style="background: rgba(10, 6, 20, 0.4); padding: 1rem; border-radius: 8px;">
       <div style="font-size: 1.5rem; margin-bottom: .25rem;">🎁</div>
-      <p style="margin: 0; color: rgba(255,255,255,0.8); font-size: .9rem;"><strong>Nuevo registro</strong><br>10 hojas gratis</p>
+      <p style="margin: 0; color: rgba(255,255,255,0.8); font-size: .9rem;"><strong>新用户注册</strong><br>免费10张</p>
     </div>
     <div style="background: rgba(10, 6, 20, 0.4); padding: 1rem; border-radius: 8px;">
       <div style="font-size: 1.5rem; margin-bottom: .25rem;">🔗</div>
-      <p style="margin: 0; color: rgba(255,255,255,0.8); font-size: .9rem;"><strong>Enlace social</strong><br>Google +10, Apple +10</p>
+      <p style="margin: 0; color: rgba(255,255,255,0.8); font-size: .9rem;"><strong>社交账号关联</strong><br>Google +10, Apple +10</p>
     </div>
     <div style="background: rgba(10, 6, 20, 0.4); padding: 1rem; border-radius: 8px;">
       <div style="font-size: 1.5rem; margin-bottom: .25rem;">💰</div>
-      <p style="margin: 0; color: rgba(255,255,255,0.8); font-size: .9rem;"><strong>Compra en tienda</strong><br>Compra in-app</p>
+      <p style="margin: 0; color: rgba(255,255,255,0.8); font-size: .9rem;"><strong>商店购买</strong><br>应用内购买</p>
     </div>
   </div>
-  <p style="margin: 1rem 0 0 0; color: rgba(255,255,255,0.7); font-size: .85rem;">💡 ¡Vincula todas las cuentas sociales para obtener hasta <strong>30 hojas</strong> gratis!</p>
+  <p style="margin: 1rem 0 0 0; color: rgba(255,255,255,0.7); font-size: .85rem;">💡 关联所有社交账号，最多可免费获得<strong>30张</strong>！</p>
 </div>
 
 ---
 
-### 🛒 Artículos de la tienda
+### 🛒 商店物品
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; text-align: center;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">📄</div>
-    <h4 style="margin: 0 0 .25rem 0; color: #a855f7;">Papel</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Para crear documentos</p>
+    <h4 style="margin: 0 0 .25rem 0; color: #a855f7;">纸张</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">用于文档创建</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; text-align: center;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">🔖</div>
-    <h4 style="margin: 0 0 .25rem 0; color: #14b8a6;">Sello</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Para crear plantillas</p>
+    <h4 style="margin: 0 0 .25rem 0; color: #14b8a6;">印章</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">用于模板创建</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; text-align: center;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">🏷️</div>
-    <h4 style="margin: 0 0 .25rem 0; color: #d946ef;">Insignia</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Para grabar dominio</p>
+    <h4 style="margin: 0 0 .25rem 0; color: #d946ef;">徽章</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">用于域名刻印</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; text-align: center;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">🎨</div>
-    <h4 style="margin: 0 0 .25rem 0; color: #a855f7;">Tinta</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Para cambiar color de tema</p>
+    <h4 style="margin: 0 0 .25rem 0; color: #a855f7;">墨水</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">用于主题颜色更改</p>
   </div>
 
 </div>
 
 ---
 
-### 📱 Plataformas compatibles
+### 📱 支持平台
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; text-align: center;">
     <div style="font-size: 2.5rem; margin-bottom: .5rem;">📱</div>
-    <h4 style="margin: 0 0 .25rem 0; color: #a855f7;">Móvil</h4>
+    <h4 style="margin: 0 0 .25rem 0; color: #a855f7;">移动端</h4>
     <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">iOS / Android</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; text-align: center;">
     <div style="font-size: 2.5rem; margin-bottom: .5rem;">💻</div>
-    <h4 style="margin: 0 0 .25rem 0; color: #14b8a6;">Escritorio</h4>
+    <h4 style="margin: 0 0 .25rem 0; color: #14b8a6;">桌面端</h4>
     <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">macOS / Windows</p>
   </div>
 
 </div>
 
-<p style="text-align: center; color: rgba(255,255,255,0.6); font-size: .9rem; margin-top: 1rem;">Mismas funciones en todas las plataformas</p>
+<p style="text-align: center; color: rgba(255,255,255,0.6); font-size: .9rem; margin-top: 1rem;">所有平台功能相同</p>
 
 ---
 
-### 🌍 Soporte multilingüe
+### 🌍 多语言支持
 
-7 idiomas soportados:
-- 🇰🇷 한국어, 🇺🇸 English, 🇯🇵 日本語
+支持8种语言：
+- 🇰🇷 한국어, 🇺🇸 English, 🇯🇵 日本語, 🇨🇳 简体中文
 - 🇩🇪 Deutsch, 🇫🇷 Français, 🇪🇸 Español, 🇧🇷 Português
 
 ---
 
-### 🆘 ¿Necesitas ayuda?
+### 🆘 需要帮助？
 
 <div style="background: rgba(20, 184, 166, 0.15); backdrop-filter: blur(10px); border: 1px solid rgba(20, 184, 166, 0.3); border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0;">
-  <p style="margin: 0 0 1rem 0; color: rgba(255,255,255,0.9);">¿Tienes problemas o quieres sugerir una nueva función?</p>
+  <p style="margin: 0 0 1rem 0; color: rgba(255,255,255,0.9);">遇到问题或想建议新功能？</p>
   <div style="display: flex; gap: .75rem; flex-wrap: wrap;">
-    <a href="/inventory/suggest/es/" style="display: inline-block; background: rgba(168,85,247,0.3); border: 1px solid rgba(168,85,247,0.5); color: white; padding: .6rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 500; transition: all 0.3s;">💬 Sugerir</a>
-    <a href="/inventory/bug-report/es/" style="display: inline-block; background: rgba(217,70,239,0.3); border: 1px solid rgba(217,70,239,0.5); color: white; padding: .6rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 500; transition: all 0.3s;">🐛 Reportar bug</a>
+    <a href="/inventory/suggest/zh/" style="display: inline-block; background: rgba(168,85,247,0.3); border: 1px solid rgba(168,85,247,0.5); color: white; padding: .6rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 500; transition: all 0.3s;">💬 建议</a>
+    <a href="/inventory/bug-report/zh/" style="display: inline-block; background: rgba(217,70,239,0.3); border: 1px solid rgba(217,70,239,0.5); color: white; padding: .6rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 500; transition: all 0.3s;">🐛 报告问题</a>
   </div>
 </div>
 
 ---
 
-> 🔒 **Protección de privacidad**: Tus datos están encriptados y protegidos. Ver nuestra [Política de privacidad](/inventory/privacy/) para más detalles.
+> 🔒 **隐私保护**：您的数据经过加密并受到安全保护。详情请参阅我们的[隐私政策](/inventory/privacy/)。
 
 ---
 
 <style>
+/* Dark glassmorphic style override */
 .neumorphic-content h2 {
   background: linear-gradient(135deg, #a855f7, #2dd4bf) !important;
   background-clip: text !important;

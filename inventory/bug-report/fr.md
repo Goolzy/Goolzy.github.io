@@ -11,6 +11,7 @@ translations:
   fr: /inventory/bug-report/fr/
   es: /inventory/bug-report/es/
   pt: /inventory/bug-report/pt/
+  zh: /inventory/bug-report/zh/
 ---
 
 ## Rapport de bug

@@ -11,6 +11,7 @@ translations:
   fr: /inventory/manual/fr/
   es: /inventory/manual/es/
   pt: /inventory/manual/pt/
+  zh: /inventory/manual/zh/
 ---
 
 ## 📖 사용자 매뉴얼

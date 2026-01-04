@@ -11,6 +11,7 @@ translations:
   fr: /inventory/api-document/fr/
   es: /inventory/api-document/es/
   pt: /inventory/api-document/pt/
+  zh: /inventory/api-document/zh/
 ---
 
 # Documentation API

@@ -1,8 +1,8 @@
 ---
 layout: inventory
-title: Reporte de errores
-permalink: /inventory/bug-report/es/
-lang: es
+title: "问题反馈"
+permalink: /inventory/bug-report/zh/
+lang: zh
 translations:
   ko: /inventory/bug-report/
   en: /inventory/bug-report/en/
@@ -14,38 +14,38 @@ translations:
   zh: /inventory/bug-report/zh/
 ---
 
-## Reporte de errores
+## 问题反馈
 
-Por favor reporta cualquier error que hayas encontrado.
+请报告您发现的任何问题。
 
 ---
 
 <form id="bug-form" style="max-width:600px;">
   <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
   <label style="display:block; margin-bottom:1rem;">
-    Título del error
-    <input type="text" name="title" id="bug_title" required style="width:100%; padding:.5rem; margin-top:.25rem;" placeholder="Resume el error en una línea">
+    问题标题
+    <input type="text" name="title" id="bug_title" required style="width:100%; padding:.5rem; margin-top:.25rem;" placeholder="请用一句话概括问题">
   </label>
 
   <label style="display:block; margin-bottom:1rem;">
-    Pasos para reproducir
-    <textarea name="steps" required rows="4" style="width:100%; padding:.5rem; margin-top:.25rem;" placeholder="1. Hacer clic en el botón ...&#10;2. Ingresar ...&#10;3. Ocurre el error"></textarea>
+    重现步骤
+    <textarea name="steps" required rows="4" style="width:100%; padding:.5rem; margin-top:.25rem;" placeholder="1. 点击...按钮&#10;2. 输入...&#10;3. 出现错误"></textarea>
   </label>
 
   <label style="display:block; margin-bottom:1rem;">
-    Comportamiento esperado
+    预期行为
     <textarea name="expected" required rows="2" style="width:100%; padding:.5rem; margin-top:.25rem;"></textarea>
   </label>
 
   <label style="display:block; margin-bottom:1rem;">
-    Comportamiento real
+    实际行为
     <textarea name="actual" required rows="2" style="width:100%; padding:.5rem; margin-top:.25rem;"></textarea>
   </label>
   <input type="hidden" name="email" id="bug_email" value="">
   <input type="hidden" name="uid" id="bug_uid" value="">
-  <div class="muted" id="bug-email-hint" style="margin:.5rem 0 1rem; word-break: break-all;">Reportado por: <span id="bug-email-value" style="display: inline-block; max-width: 100%;">Verificando...</span></div>
+  <div class="muted" id="bug-email-hint" style="margin:.5rem 0 1rem; word-break: break-all;">报告者：<span id="bug-email-value" style="display: inline-block; max-width: 100%;">正在检查...</span></div>
 
-  <button class="btn" type="submit">Enviar reporte</button>
+  <button class="btn" type="submit">提交报告</button>
 </form>
 
 <div id="bug-status" class="notice" style="display:none;"></div>
@@ -53,14 +53,14 @@ Por favor reporta cualquier error que hayas encontrado.
 <script>
 (function(){
   var msg = {
-    checking: 'Verificando estado de inicio de sesión...',
-    loginRequired: 'Se requiere iniciar sesión para reportar errores.<br><br>Por favor inicia sesión primero desde la app.<br><br><a href="/inventory/es/" class="btn">Inicio</a>',
-    submitting: 'Enviando...',
-    success: '¡Gracias! Tu reporte de error se ha enviado correctamente. (ID: ',
-    errorSubmit: 'Error al enviar: ',
-    errorFields: 'Por favor completa todos los campos.',
-    errorUnknown: 'Ocurrió un error desconocido.',
-    errorFirebase: 'Firebase no está inicializado. Por favor intenta más tarde.'
+    checking: '正在检查登录状态...',
+    loginRequired: '提交问题报告需要登录。<br><br>请先从应用登录。<br><br><a href="/inventory/zh/" class="btn">首页</a>',
+    submitting: '正在提交...',
+    success: '感谢您！问题报告已成功提交。（ID：',
+    errorSubmit: '提交失败：',
+    errorFields: '请填写所有字段。',
+    errorUnknown: '发生未知错误。',
+    errorFirebase: 'Firebase未初始化。请稍后重试。'
   };
 
   var form = document.getElementById('bug-form');
@@ -167,7 +167,7 @@ Por favor reporta cualquier error que hayas encontrado.
         form.reset();
         applyAppAuth();
       } else {
-        throw new Error('Error al enviar.');
+        throw new Error('Submission failed.');
       }
 
     } catch(err) {

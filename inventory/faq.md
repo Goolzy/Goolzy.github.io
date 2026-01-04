@@ -11,6 +11,7 @@ translations:
   fr: /inventory/faq/fr/
   es: /inventory/faq/es/
   pt: /inventory/faq/pt/
+  zh: /inventory/faq/zh/
 ---
 
 ## ❓ 자주하는 질문

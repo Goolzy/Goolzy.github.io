@@ -1,73 +1,63 @@
 ---
 layout: inventory
-title: Reporte de errores
-permalink: /inventory/bug-report/es/
-lang: es
+title: "建议与反馈"
+permalink: /inventory/suggest/zh/
+lang: zh
 translations:
-  ko: /inventory/bug-report/
-  en: /inventory/bug-report/en/
-  ja: /inventory/bug-report/ja/
-  de: /inventory/bug-report/de/
-  fr: /inventory/bug-report/fr/
-  es: /inventory/bug-report/es/
-  pt: /inventory/bug-report/pt/
-  zh: /inventory/bug-report/zh/
+  ko: /inventory/suggest/
+  en: /inventory/suggest/en/
+  ja: /inventory/suggest/ja/
+  de: /inventory/suggest/de/
+  fr: /inventory/suggest/fr/
+  es: /inventory/suggest/es/
+  pt: /inventory/suggest/pt/
+  zh: /inventory/suggest/zh/
 ---
 
-## Reporte de errores
+## 建议与反馈
 
-Por favor reporta cualquier error que hayas encontrado.
+请提出新功能建议或改进意见。
 
 ---
 
-<form id="bug-form" style="max-width:600px;">
+<form id="suggest-form" style="max-width:600px;">
   <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
   <label style="display:block; margin-bottom:1rem;">
-    Título del error
-    <input type="text" name="title" id="bug_title" required style="width:100%; padding:.5rem; margin-top:.25rem;" placeholder="Resume el error en una línea">
+    标题
+    <input type="text" name="title" id="suggest_title" required style="width:100%; padding:.5rem; margin-top:.25rem;" placeholder="请用一句话概括您的建议">
   </label>
 
   <label style="display:block; margin-bottom:1rem;">
-    Pasos para reproducir
-    <textarea name="steps" required rows="4" style="width:100%; padding:.5rem; margin-top:.25rem;" placeholder="1. Hacer clic en el botón ...&#10;2. Ingresar ...&#10;3. Ocurre el error"></textarea>
+    内容
+    <textarea name="content" required rows="6" style="width:100%; padding:.5rem; margin-top:.25rem;" placeholder="请详细描述"></textarea>
   </label>
+  <input type="hidden" name="email" id="suggest_email" value="">
+  <input type="hidden" name="uid" id="suggest_uid" value="">
+  <div class="muted" id="suggest-email-hint" style="margin:.5rem 0 1rem; word-break: break-all;">提交者：<span id="suggest-email-value" style="display: inline-block; max-width: 100%;">正在检查...</span></div>
 
-  <label style="display:block; margin-bottom:1rem;">
-    Comportamiento esperado
-    <textarea name="expected" required rows="2" style="width:100%; padding:.5rem; margin-top:.25rem;"></textarea>
-  </label>
-
-  <label style="display:block; margin-bottom:1rem;">
-    Comportamiento real
-    <textarea name="actual" required rows="2" style="width:100%; padding:.5rem; margin-top:.25rem;"></textarea>
-  </label>
-  <input type="hidden" name="email" id="bug_email" value="">
-  <input type="hidden" name="uid" id="bug_uid" value="">
-  <div class="muted" id="bug-email-hint" style="margin:.5rem 0 1rem; word-break: break-all;">Reportado por: <span id="bug-email-value" style="display: inline-block; max-width: 100%;">Verificando...</span></div>
-
-  <button class="btn" type="submit">Enviar reporte</button>
+  <button class="btn" type="submit">提交</button>
 </form>
 
-<div id="bug-status" class="notice" style="display:none;"></div>
+<div id="suggest-status" class="notice" style="display:none;"></div>
 
 <script>
 (function(){
   var msg = {
-    checking: 'Verificando estado de inicio de sesión...',
-    loginRequired: 'Se requiere iniciar sesión para reportar errores.<br><br>Por favor inicia sesión primero desde la app.<br><br><a href="/inventory/es/" class="btn">Inicio</a>',
-    submitting: 'Enviando...',
-    success: '¡Gracias! Tu reporte de error se ha enviado correctamente. (ID: ',
-    errorSubmit: 'Error al enviar: ',
-    errorFields: 'Por favor completa todos los campos.',
-    errorUnknown: 'Ocurrió un error desconocido.',
-    errorFirebase: 'Firebase no está inicializado. Por favor intenta más tarde.'
+    checking: '正在检查登录状态...',
+    loginRequired: '提交建议需要登录。<br><br>请先从应用登录。<br><br><a href="/inventory/zh/" class="btn">首页</a>',
+    submitting: '正在提交...',
+    success: '感谢您！建议已成功提交。（ID：',
+    errorSubmit: '提交失败：',
+    errorFields: '请输入标题和内容。',
+    errorUnknown: '发生未知错误。',
+    errorFirebase: 'Firebase未初始化。请稍后重试。'
   };
 
-  var form = document.getElementById('bug-form');
-  var emailInput = document.getElementById('bug_email');
-  var uidInput = document.getElementById('bug_uid');
-  var emailText = document.getElementById('bug-email-value');
-  var status = document.getElementById('bug-status');
+  var form = document.getElementById('suggest-form');
+  var emailInput = document.getElementById('suggest_email');
+  var uidInput = document.getElementById('suggest_uid');
+  var emailText = document.getElementById('suggest-email-value');
+  var status = document.getElementById('suggest-status');
   var isLoggedIn = false;
 
   function showLoginRequired(){
@@ -145,13 +135,11 @@ Por favor reporta cualquier error que hayas encontrado.
         throw new Error(msg.errorFirebase);
       }
 
-      var submitBugReport = window.httpsCallable(window.firebaseFunctions, 'submitBugReportFunc');
+      var submitFeedback = window.httpsCallable(window.firebaseFunctions, 'submitFeedbackFunc');
 
       var data = {
         title: form.querySelector('input[name="title"]').value.trim(),
-        steps: form.querySelector('textarea[name="steps"]').value.trim(),
-        expected: form.querySelector('textarea[name="expected"]').value.trim(),
-        actual: form.querySelector('textarea[name="actual"]').value.trim(),
+        content: form.querySelector('textarea[name="content"]').value.trim(),
         email: emailInput.value || null,
         uid: uidInput.value || null,
         website: form.querySelector('input[name="website"]').value,
@@ -159,7 +147,7 @@ Por favor reporta cualquier error que hayas encontrado.
         userAgent: navigator.userAgent || 'unknown'
       };
 
-      var result = await submitBugReport(data);
+      var result = await submitFeedback(data);
 
       if (result.data.success) {
         status.textContent = msg.success + result.data.id.slice(0,8) + '...)';
@@ -167,11 +155,11 @@ Por favor reporta cualquier error que hayas encontrado.
         form.reset();
         applyAppAuth();
       } else {
-        throw new Error('Error al enviar.');
+        throw new Error('Submission failed.');
       }
 
     } catch(err) {
-      console.error('[BugReport] Error:', err);
+      console.error('[Suggest] Error:', err);
       var errorMessage = err.message || msg.errorUnknown;
       if (err.code === 'functions/invalid-argument') {
         errorMessage = msg.errorFields;

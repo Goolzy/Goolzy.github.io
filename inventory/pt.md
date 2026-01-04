@@ -12,6 +12,7 @@ translations:
   fr: /inventory/fr/
   es: /inventory/es/
   pt: /inventory/pt/
+  zh: /inventory/zh/
 ---
 
 ## 🎯 Inventory

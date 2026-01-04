@@ -5,10 +5,10 @@
 {% endcomment %}
 
 {% assign current_lang = page.lang | default: 'ko' %}
-{% assign langs = "ko,en,ja,de,fr,es,pt" | split: "," %}
+{% assign langs = "ko,en,ja,de,fr,es,pt,zh" | split: "," %}
 
-{% assign lang_names = "한국어,English,日本語,Deutsch,Français,Español,Português" | split: "," %}
-{% assign lang_flags = "🇰🇷,🇺🇸,🇯🇵,🇩🇪,🇫🇷,🇪🇸,🇧🇷" | split: "," %}
+{% assign lang_names = "한국어,English,日本語,Deutsch,Français,Español,Português,中文" | split: "," %}
+{% assign lang_flags = "🇰🇷,🇺🇸,🇯🇵,🇩🇪,🇫🇷,🇪🇸,🇧🇷,🇨🇳" | split: "," %}
 
 <div class="language-selector">
   <button class="lang-toggle" aria-label="Select language" aria-expanded="false">
@@ -35,11 +35,11 @@
         {% assign lang_url = page.translations[lang] %}
       {% elsif lang == 'ko' %}
         {% comment %} Korean is the default, use base path {% endcomment %}
-        {% assign base_path = page.url | remove: "/en/" | remove: "/ja/" | remove: "/de/" | remove: "/fr/" | remove: "/es/" | remove: "/pt/" %}
+        {% assign base_path = page.url | remove: "/en/" | remove: "/ja/" | remove: "/de/" | remove: "/fr/" | remove: "/es/" | remove: "/pt/" | remove: "/zh/" %}
         {% assign lang_url = base_path %}
       {% else %}
         {% comment %} Append language code to path {% endcomment %}
-        {% assign base_path = page.url | remove: "/en/" | remove: "/ja/" | remove: "/de/" | remove: "/fr/" | remove: "/es/" | remove: "/pt/" %}
+        {% assign base_path = page.url | remove: "/en/" | remove: "/ja/" | remove: "/de/" | remove: "/fr/" | remove: "/es/" | remove: "/pt/" | remove: "/zh/" %}
         {% if base_path == "/" %}
           {% assign lang_url = "/" | append: lang | append: "/" %}
         {% else %}

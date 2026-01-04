@@ -1,0 +1,674 @@
+# 库存活用方法数据 (简体中文) - 全面改版
+page:
+  title: "库存使用指南"
+  intro: "了解库存能为您做什么。从简单到高级功能，一步步为您讲解。"
+  expand: "跟着做 ↓"
+  collapse: "收起 ↑"
+  share_title: "分享您的使用方法"
+  share_text: "您是如何使用的？期待您的新创意。"
+  share_btn: "分享使用方法"
+  share_link: "/inventory/suggest/"
+  manual_base: "/inventory/manual/"
+  levels:
+    beginner: "初级"
+    intermediate: "中级"
+    advanced: "高级"
+    expert: "专家"
+
+categories:
+  # ===== 1. 纸张活用法 (Paper) =====
+  - id: paper-usage
+    title: "纸张活用法"
+    icon: "📄"
+    description: "纸张(Paper)能做的一切"
+    items:
+      # 1-1. 单独记录
+      - type: "初级"
+        title: "创建我的记录"
+        subtitle: "从1张Paper开始的个人档案"
+        content: |
+          <p><strong>概述</strong>：将空白纸张文档化，记录图片和文字，并可在日志中持续添加内容。</p>
+
+          <p><strong>跟着做</strong></p>
+          <ol>
+            <li>在库存中长按<strong>空白纸张</strong>，进入<strong>查看详情</strong><br/>
+                <em>或者</em>选择空白纸张后点击<strong>操作</strong>按钮</li>
+            <li>选择<strong>创建新项目</strong>菜单</li>
+            <li>输入项目信息：
+              <ul>
+                <li>图片（可选）</li>
+                <li>标题（必填）</li>
+                <li>内容（必填）</li>
+                <li>期限（可选）</li>
+              </ul>
+            </li>
+            <li>点击<strong>创建</strong>完成 → 转换为已文档化的纸张</li>
+            <li>已文档化的纸张将在库存中显示图片和标题</li>
+          </ol>
+
+          <p><strong>使用示例</strong></p>
+          <ul>
+            <li>📔 <strong>日记/笔记本</strong>：用图片和文字保存每日记录，持续添加到日志</li>
+            <li>📸 <strong>相册</strong>：用图片记录特别的时刻</li>
+            <li>📋 <strong>保修卡管理</strong>：保存产品保修卡照片，设置期限获取到期提醒</li>
+            <li>🧾 <strong>收据保管</strong>：将重要收据数字化保存</li>
+          </ul>
+
+          <p><strong>整理技巧</strong>：相似的文档可用<strong>回形针</strong>装订，不同类别可用<strong>分区</strong>区分。</p>
+
+      # 1-2. 共享模板复制
+      - type: "初级"
+        title: "获取共享模板"
+        subtitle: "将其他用户的模板变成自己的"
+        content: |
+          <p><strong>概述</strong>：您可以复制其他用户共享的印章，作为自己的文档使用。</p>
+
+          <p><strong>跟着做</strong></p>
+          <ol>
+            <li>在顶部<strong>超级搜索栏</strong>中搜索想要的标签</li>
+            <li>在搜索结果中选择<strong>共享模板</strong>标签页</li>
+            <li>选择想要的共享模板进入详情页面</li>
+            <li>点击<strong>复制</strong></li>
+            <li>选择我的库存中的<strong>空白纸张</strong></li>
+            <li>复制完成 → 印章内容已复制到纸张上</li>
+          </ol>
+
+          <p><strong>使用示例</strong></p>
+          <ul>
+            <li>✅ <strong>清单</strong>：复制并使用旅行准备、购物等共享模板</li>
+            <li>🎁 <strong>活动参与</strong>：复制品牌/商店共享的活动模板</li>
+            <li>📝 <strong>表格使用</strong>：复制其他用户制作的实用表格</li>
+          </ul>
+
+      # 1-3. 共享日志 - 聊天室
+      - type: "中级"
+        title: "与朋友一起记录"
+        subtitle: "用共享日志创建群组空间"
+        content: |
+          <p><strong>概述</strong>：用多张纸张创建共享文档，所有参与者都可以在同一个日志中记录。</p>
+
+          <p><strong>跟着做</strong></p>
+          <ol>
+            <li>根据共享人数选择相应数量的<strong>空白纸张</strong>（2张以上）</li>
+            <li>点击<strong>操作</strong>按钮</li>
+            <li>选择<strong>创建新项目（共享日志）</strong></li>
+            <li>输入标题、说明后创建</li>
+            <li>将创建的共享文档<strong>发送</strong>给参与者</li>
+          </ol>
+
+          <p><strong>人数与Paper使用量</strong></p>
+          <ul>
+            <li>👫 2人：2张Paper（情侣日记、一对一聊天）</li>
+            <li>👨‍👩‍👧 3人：3张Paper（小型团队项目）</li>
+            <li>👨‍👩‍👧‍👦 4人以上：4张以上Paper（家庭聚会、社团、大型群组）</li>
+          </ul>
+
+          <p><strong>使用示例</strong></p>
+          <ul>
+            <li>💑 <strong>情侣日记</strong>：共同记录两人的回忆</li>
+            <li>👨‍👩‍👧‍👦 <strong>家庭相册</strong>：共享家庭活动、日常生活</li>
+            <li>📚 <strong>学习小组</strong>：共同记录学习内容、问题</li>
+          </ul>
+
+      # 1-4. 文档整理高级
+      - type: "高级"
+        title: "系统化文档管理"
+        subtitle: "用回形针和分区整理档案"
+        content: |
+          <p><strong>概述</strong>：当文档增多时，可以利用回形针和分区进行系统化整理。</p>
+
+          <p><strong>用回形针装订文档</strong></p>
+          <ol>
+            <li>多选要装订的<strong>纸张</strong></li>
+            <li>点击<strong>操作</strong>按钮</li>
+            <li>选择<strong>用回形针装订</strong></li>
+            <li>输入回形针名称后完成</li>
+          </ol>
+
+          <p><strong>用分区划分区域</strong></p>
+          <ol>
+            <li>在库存中点击<strong>添加分区</strong></li>
+            <li>输入分区名称（如：工作、个人、爱好）</li>
+            <li>将文档拖动到相应分区</li>
+          </ol>
+
+          <p><strong>使用示例</strong></p>
+          <ul>
+            <li>📁 <strong>按项目整理</strong>：将各项目用回形针装订，用分区分类</li>
+            <li>📅 <strong>按年份归档</strong>：用2024、2025分区按年管理</li>
+            <li>🏷️ <strong>按类别分类</strong>：照片、文档、笔记等按类型分区</li>
+          </ul>
+
+      # 1-5. 业务文档化专家
+      - type: "专家"
+        title: "构建业务系统"
+        subtitle: "从项目管理到工作交接"
+        content: |
+          <p><strong>概述</strong>：利用纸张的日志功能，系统化管理业务历史记录。</p>
+
+          <p><strong>项目管理</strong></p>
+          <ol>
+            <li>每个项目创建<strong>1张纸张</strong></li>
+            <li>在日志中记录每日进展、问题、决策事项</li>
+            <li>通过Dropbox、Google Drive、OneDrive链接附加资料</li>
+            <li>用<strong>锁定设置</strong>加强敏感业务文档的安全性</li>
+          </ol>
+
+          <p><strong>工作交接文档</strong></p>
+          <ol>
+            <li>按负责业务创建纸张</li>
+            <li>整理业务流程、注意事项、联系方式</li>
+            <li>转换为共享文档后交给接任者</li>
+          </ol>
+
+          <p><strong>会议记录管理</strong></p>
+          <ol>
+            <li>每次定期会议创建纸张</li>
+            <li>在日志中记录参会者、议题、决策事项</li>
+            <li>用回形针装订同一会议体的会议记录</li>
+          </ol>
+
+          <p><strong>使用技巧</strong></p>
+          <ul>
+            <li>📊 项目结束时转为回顾录</li>
+            <li>🔍 用超级搜索快速检索过去记录</li>
+            <li>📤 需要时导出为PDF</li>
+          </ul>
+
+  # ===== 2. 印章活用法 (Stamp) =====
+  - id: stamp-usage
+    title: "印章活用法"
+    icon: "🔖"
+    description: "用印章(Stamp)创建模板并复制"
+    items:
+      # 2-0. 印章基础 (初级)
+      - type: "初级"
+        title: "了解印章"
+        subtitle: "模板的概念和基本使用方法"
+        content: |
+          <p><strong>概述</strong>：印章是可以快速创建重复格式文档的模板。创建一次后，可以在多张纸上复制相同的格式。</p>
+
+          <p><strong>什么是印章？</strong></p>
+          <ul>
+            <li>🔖 <strong>模板</strong>：预设格式（图片、标题、内容、关键词）</li>
+            <li>📋 <strong>复制</strong>：在空白纸张上盖章即可生成相同格式的文档</li>
+            <li>🔄 <strong>重复使用</strong>：一个印章可以无限复制</li>
+          </ul>
+
+          <p><strong>印章使用示例</strong></p>
+          <ul>
+            <li>📔 每天使用的日记格式</li>
+            <li>✅ 重复使用的清单</li>
+            <li>📊 定期报告模板</li>
+            <li>🏋️ 运动/饮食记录表</li>
+          </ul>
+
+          <p><strong>印章 vs 纸张</strong></p>
+          <ul>
+            <li>📄 <strong>纸张</strong>：单独文档，记录独特内容</li>
+            <li>🔖 <strong>印章</strong>：格式（模板），重复使用的模板</li>
+          </ul>
+
+      # 2-1. 单独日志印章
+      - type: "中级"
+        title: "创建我的模板"
+        subtitle: "用印章批量生产相同格式的文档"
+        content: |
+          <p><strong>概述</strong>：印章刻印后就成为模板。将这个模板复制到纸张上，可以快速创建多个相同格式的文档。</p>
+
+          <p><strong>刻印印章</strong></p>
+          <ol>
+            <li>在库存中长按<strong>空白印章</strong>，进入<strong>查看详情</strong><br/>
+                <em>或者</em>选择空白印章后点击<strong>操作</strong>按钮</li>
+            <li>选择<strong>创建新模板</strong>菜单</li>
+            <li>输入模板信息：
+              <ul>
+                <li>图片（必填）</li>
+                <li>标题（必填）</li>
+                <li>内容（必填）</li>
+                <li>期限（可选）</li>
+                <li>默认关键词（最多128个）</li>
+              </ul>
+            </li>
+            <li>点击<strong>创建</strong>完成 → 转换为已刻印的印章</li>
+          </ol>
+
+          <p><strong>复制到纸张</strong></p>
+          <ol>
+            <li>选择已刻印的<strong>印章</strong></li>
+            <li>再选择需要数量的<strong>空白纸张</strong></li>
+            <li>点击<strong>操作</strong>按钮</li>
+            <li>选择<strong>复制</strong>菜单</li>
+            <li>印章刻印的内容将复制到所选纸张上</li>
+          </ol>
+
+          <p><strong>使用示例</strong></p>
+          <ul>
+            <li>📋 <strong>传单/通知</strong>：批量分发相同内容</li>
+            <li>🏷️ <strong>产品信息</strong>：复制并分享产品规格、价格</li>
+            <li>📜 <strong>公告</strong>：在多处发布相同内容的公告</li>
+          </ul>
+
+          <p><strong>整理技巧</strong>：用印章生成的文档可用<strong>回形针</strong>装订成系列管理。</p>
+
+      # 2-2. 共享日志印章
+      - type: "高级"
+        title: "创建开放社区"
+        subtitle: "用共享日志印章持续添加参与者"
+        content: |
+          <p><strong>概述</strong>：以共享日志模式创建印章，任何人都可以通过复制参与，形成公开空间。</p>
+
+          <p><strong>跟着做</strong></p>
+          <ol>
+            <li>选择<strong>空白印章</strong>后进入<strong>创建新模板</strong></li>
+            <li>输入模板信息：图片、标题、内容、期限、关键词</li>
+            <li>选择<strong>日志模式：共享</strong> ⭐</li>
+            <li>点击<strong>创建</strong>完成</li>
+          </ol>
+
+          <p><strong>添加参与者方法</strong></p>
+          <ol>
+            <li>在顶部<strong>超级搜索栏</strong>中用该模板的关键词搜索</li>
+            <li>选择搜索到的共享模板并<strong>下载</strong></li>
+            <li>用下载的模板执行<strong>复制</strong></li>
+            <li>复制的用户自动参与共享日志</li>
+            <li>可无人数限制地持续添加</li>
+          </ol>
+
+          <p><strong>使用示例</strong></p>
+          <ul>
+            <li>💬 <strong>开放聊天室</strong>：任何人都可以参与的公开讨论空间</li>
+            <li>🎤 <strong>粉丝俱乐部</strong>：艺人/品牌粉丝聚会</li>
+            <li>📢 <strong>社区公告板</strong>：运营基于兴趣的社区</li>
+          </ul>
+
+      # 2-3. 印章共享 - 小商户
+      - type: "专家"
+        title: "店铺运营活用"
+        subtitle: "面向小商户的印章营销"
+        content: |
+          <p><strong>概述</strong>：通过共享印章与客户沟通，分发店铺信息。</p>
+
+          <p>🍽️ <strong>店铺菜单</strong></p>
+          <ol>
+            <li>用菜单照片创建印章模板</li>
+            <li>在关键词中设置菜名、价格、说明</li>
+            <li>共享印章生成二维码 → 放置在餐桌上</li>
+            <li>客户扫描二维码 → 复制后查看菜单信息</li>
+          </ol>
+
+          <p>🎫 <strong>优惠券/活动分发</strong></p>
+          <ol>
+            <li>用活动图片创建印章模板</li>
+            <li>在关键词中设置折扣内容、有效期</li>
+            <li>向客户分享印章链接/二维码</li>
+            <li>客户复制 → 作为优惠券保存和出示</li>
+          </ol>
+
+          <p>📋 <strong>客户反馈收集</strong></p>
+          <ol>
+            <li>以共享日志模式创建反馈模板</li>
+            <li>用关键词设置评分/意见输入栏</li>
+            <li>客户复制 → 在共享日志中写评价</li>
+            <li>所有评价汇集在一处方便查看</li>
+          </ol>
+
+          <p><strong>其他用途</strong></p>
+          <ul>
+            <li>🆕 新菜品上市通知</li>
+            <li>📅 预约指南模板</li>
+            <li>📍 店铺位置/营业时间指南</li>
+          </ul>
+
+      # 2-4. 创作者/网红
+      - type: "专家"
+        title: "创作者活动"
+        subtitle: "与粉丝互动并分发内容"
+        content: |
+          <p><strong>概述</strong>：创作者、网红可以与粉丝互动并举办活动。</p>
+
+          <p>🎉 <strong>粉丝活动</strong></p>
+          <ol>
+            <li>以共享日志模式创建活动印章</li>
+            <li>向粉丝分享印章链接</li>
+            <li>粉丝复制后参与</li>
+            <li>在共享日志中进行问答、抽奖</li>
+          </ol>
+
+          <p>🛍️ <strong>周边商品目录</strong></p>
+          <ol>
+            <li>用周边商品照片创建印章</li>
+            <li>在关键词中设置商品名、价格、购买链接</li>
+            <li>粉丝复制后作为心愿单使用</li>
+          </ol>
+
+          <p>❓ <strong>问答空间</strong></p>
+          <ol>
+            <li>以共享日志模式创建问答印章</li>
+            <li>粉丝复制后在日志中写问题</li>
+            <li>创作者在共享日志中回答</li>
+          </ol>
+
+          <p><strong>其他用途</strong></p>
+          <ul>
+            <li>📅 粉丝见面会日程/地点/参与方式指南</li>
+            <li>🎬 幕后故事、制作过程分享</li>
+            <li>📁 过往内容归档</li>
+          </ul>
+
+      # 2-6. 爱好/兴趣
+      - type: "中级"
+        title: "分享爱好"
+        subtitle: "基于兴趣的内容分享"
+        content: |
+          <p><strong>概述</strong>：将爱好和兴趣制作成印章，与其他用户分享。</p>
+
+          <p>🍳 <strong>食谱分享</strong></p>
+          <ol>
+            <li>用完成的料理照片创建印章</li>
+            <li>在关键词中设置食材、烹饪时间</li>
+            <li>设置为共享日志模式 → 复制的用户分享心得</li>
+          </ol>
+
+          <p>🏃 <strong>运动计划分享</strong></p>
+          <ol>
+            <li>创建30天挑战、居家健身计划印章</li>
+            <li>设置为共享日志模式</li>
+            <li>参与者复制后每天记录完成情况</li>
+          </ol>
+
+          <p>✈️ <strong>旅行指南</strong></p>
+          <ol>
+            <li>用旅行地照片+推荐路线创建印章</li>
+            <li>在关键词中整理美食、住宿信息</li>
+            <li>共享 → 去过的人添加评价</li>
+          </ol>
+
+          <p><strong>其他用途</strong></p>
+          <ul>
+            <li>🎮 游戏攻略、配装分享</li>
+            <li>🔨 DIY项目指南</li>
+            <li>🌱 植物养护、浇水时间表</li>
+            <li>🐕 宠物护理技巧</li>
+          </ul>
+
+      # 2-7. 地区/家庭社区
+      - type: "中级"
+        title: "运营群组活动"
+        subtitle: "地区、家庭、朋友群组的沟通空间"
+        content: |
+          <p><strong>概述</strong>：为社区、家庭聚会、朋友群组创建印章共享空间。</p>
+
+          <p>🏘️ <strong>社区</strong></p>
+          <ul>
+            <li>🍜 社区美食地图：居民通过共享日志推荐美食</li>
+            <li>🎪 社区活动通知：节日、集市、文化活动信息</li>
+            <li>🏃 社团招募：登山、跑步、读书等社团介绍</li>
+            <li>🏠 业主会/住户沟通：公寓公告分享</li>
+          </ul>
+
+          <p>👨‍👩‍👧‍👦 <strong>家庭/朋友群组</strong></p>
+          <ul>
+            <li>🍳 家庭食谱：代代相传的家传食谱</li>
+            <li>🎂 朋友生日日历：生日管理及礼物创意</li>
+            <li>✅ 群组心愿清单：一起想实现的目标</li>
+            <li>✈️ 家庭旅行计划：日程、准备物品、预算分享</li>
+            <li>💒 婚丧喜庆通知：婚礼、周岁宴信息分享</li>
+          </ul>
+
+      # 2-8. 业务/活动
+      - type: "高级"
+        title: "业务和活动活用"
+        subtitle: "团队协作和特别日子记录"
+        content: |
+          <p><strong>概述</strong>：为业务协作和特别活动创建印章共享空间。</p>
+
+          <p>💼 <strong>业务/协作</strong></p>
+          <ul>
+            <li>📊 团队项目：通过共享日志分享进度</li>
+            <li>📝 会议记录格式：用印章标准化会议记录模板</li>
+            <li>📋 工作交接：整理并交接负责业务</li>
+            <li>👋 新人入职：分享公司适应指南</li>
+          </ul>
+
+          <p>🎉 <strong>活动/特别日子</strong></p>
+          <ul>
+            <li>💒 结婚请帖：共享印章用于请帖+出席确认+祝福留言</li>
+            <li>🎈 派对邀请：生日、乔迁、年终聚会邀请</li>
+            <li>👶 周岁/百日宴：宝宝照片+祝福留言汇集</li>
+            <li>🕯️ 追思/纪念日：共同分享回忆的空间</li>
+            <li>📨 时间胶囊：给未来自己的留言</li>
+          </ul>
+
+  # ===== 3. 徽章活用法 (Badge) =====
+  - id: badge-usage
+    title: "徽章活用法"
+    icon: "🏷️"
+    description: "用徽章(Badge)打造品牌并建立信任"
+    items:
+      # 3-0. 徽章基础 (初级)
+      - type: "初级"
+        title: "了解徽章"
+        subtitle: "域名和品牌塑造基础"
+        content: |
+          <p><strong>概述</strong>：徽章是让您在库存中拥有专属域名（昵称）的道具。</p>
+
+          <p><strong>什么是徽章？</strong></p>
+          <ul>
+            <li>🏷️ <strong>域名</strong>：专属名称（如：myshop、creator_kim）</li>
+            <li>👤 <strong>品牌塑造</strong>：用域名代替邮箱进行活动</li>
+            <li>🔐 <strong>隐私保护</strong>：可以隐藏真实邮箱地址</li>
+          </ul>
+
+          <p><strong>徽章的状态</strong></p>
+          <ul>
+            <li>⚪ <strong>空白徽章</strong>：尚未刻印的状态</li>
+            <li>🏷️ <strong>已刻印徽章</strong>：已刻上域名的状态</li>
+            <li>✅ <strong>已佩戴徽章</strong>：当前激活使用中的状态</li>
+          </ul>
+
+          <p><strong>谁在使用徽章？</strong></p>
+          <ul>
+            <li>🏢 企业/品牌：以官方账号活动</li>
+            <li>🎨 创作者：用专属昵称分发内容</li>
+            <li>🔒 个人：通过隐藏邮箱保护隐私</li>
+          </ul>
+
+      # 3-1. 徽章刻印 (中级)
+      - type: "中级"
+        title: "刻印第一枚徽章"
+        subtitle: "创建专属域名"
+        content: |
+          <p><strong>概述</strong>：刻印空白徽章，设置专属域名。</p>
+
+          <p><strong>跟着做</strong></p>
+          <ol>
+            <li>在库存中长按<strong>空白徽章</strong>，进入<strong>查看详情</strong><br/>
+                <em>或者</em>选择空白徽章后点击<strong>操作</strong>按钮</li>
+            <li>选择<strong>刻印</strong>菜单</li>
+            <li>输入徽章信息：
+              <ul>
+                <li>徽章图片（必填）- Logo、头像等</li>
+                <li>输入域名（仅限英文、数字、下划线）</li>
+              </ul>
+            </li>
+            <li>点击<strong>检查重复</strong>按钮确认是否可用</li>
+            <li>点击<strong>刻印</strong>完成</li>
+          </ol>
+
+          <p>⚠️ <strong>注意事项</strong></p>
+          <ul>
+            <li>域名<strong>一旦刻印无法更改</strong></li>
+            <li>请谨慎选择！</li>
+            <li>已被使用的域名无法选择</li>
+          </ul>
+
+          <p><strong>域名选择技巧</strong></p>
+          <ul>
+            <li>简短易记的名字</li>
+            <li>与品牌/活动相关的名字</li>
+            <li>用下划线(_)代替特殊字符</li>
+          </ul>
+
+      # 3-2. 徽章佩戴 (高级)
+      - type: "高级"
+        title: "佩戴并使用徽章"
+        subtitle: "开始用域名活动"
+        content: |
+          <p><strong>概述</strong>：佩戴已刻印的徽章后，所有活动都将显示域名。</p>
+
+          <p><strong>佩戴徽章</strong></p>
+          <ol>
+            <li>选择已刻印的<strong>徽章</strong></li>
+            <li>点击<strong>操作</strong>按钮</li>
+            <li>选择<strong>佩戴</strong></li>
+          </ol>
+
+          <p><strong>摘下徽章</strong></p>
+          <ol>
+            <li>选择正在佩戴的<strong>徽章</strong></li>
+            <li>点击<strong>操作</strong>按钮</li>
+            <li>选择<strong>摘下</strong></li>
+          </ol>
+
+          <p><strong>佩戴后的效果</strong></p>
+          <ul>
+            <li>📝 所有撰写的文档都显示"域名"作为作者</li>
+            <li>💬 在共享日志中显示域名而非邮箱</li>
+            <li>🔍 其他用户可以通过域名搜索</li>
+          </ul>
+
+          <p><strong>使用技巧</strong></p>
+          <ul>
+            <li>发布官方文档时务必佩戴徽章</li>
+            <li>个人活动时可摘下以区分</li>
+            <li>可按用途使用多个徽章（同时只能佩戴1个）</li>
+          </ul>
+
+      # 3-3. 品牌形象宣传
+      - type: "专家"
+        title: "构建品牌形象"
+        subtitle: "用专属域名打造个人品牌"
+        content: |
+          <p><strong>概述</strong>：刻印徽章后可获得专属域名。佩戴徽章后，该域名将显示在所有活动中。</p>
+
+          <p><strong>刻印徽章</strong></p>
+          <ol>
+            <li>在库存中长按<strong>空白徽章</strong>，进入<strong>查看详情</strong><br/>
+                <em>或者</em>选择空白徽章后点击<strong>操作</strong>按钮</li>
+            <li>选择<strong>刻印</strong>菜单</li>
+            <li>输入徽章信息：
+              <ul>
+                <li>徽章图片（必填）</li>
+                <li>输入域名（如：myshop、creator_kim）</li>
+              </ul>
+            </li>
+            <li><strong>检查重复</strong>后点击<strong>刻印</strong>完成</li>
+          </ol>
+
+          <p>⚠️ <strong>注意</strong>：域名一旦刻印无法更改！</p>
+
+          <p><strong>佩戴/摘下徽章</strong></p>
+          <ol>
+            <li>选择已刻印的<strong>徽章</strong>后点击<strong>操作</strong>按钮</li>
+            <li>选择<strong>佩戴</strong> → 徽章激活</li>
+            <li>要摘下时再次在操作中选择<strong>摘下</strong></li>
+          </ol>
+
+          <p><strong>佩戴后的效果</strong></p>
+          <ul>
+            <li>🔍 可通过域名搜索（代替邮箱）</li>
+            <li>📝 所有创建的印章和纸张作者显示为"域名"</li>
+            <li>📋 写日志时也显示域名</li>
+          </ul>
+
+          <p><strong>使用示例</strong></p>
+          <ul>
+            <li>🏢 <strong>企业/品牌</strong>：用Logo和品牌名运营官方账号</li>
+            <li>🎨 <strong>创作者</strong>：用专属昵称分发内容</li>
+            <li>👔 <strong>专家档案</strong>：使用代表专业领域的域名</li>
+          </ul>
+
+      # 3-2. 邮箱隐藏
+      - type: "专家"
+        title: "保护隐私"
+        subtitle: "用域名代替邮箱活动"
+        content: |
+          <p><strong>概述</strong>：佩戴徽章后，显示"域名"而非真实邮箱，从而保护个人信息。</p>
+
+          <p><strong>优势</strong></p>
+          <ul>
+            <li>🔒 <strong>隐私保护</strong>：不暴露真实邮箱地址</li>
+            <li>📧 <strong>防止垃圾邮件</strong>：公开活动时也能保护邮箱</li>
+            <li>🎭 <strong>匿名活动</strong>：可用想要的名字活动</li>
+          </ul>
+
+          <p><strong>适用范围</strong></p>
+          <ul>
+            <li>创建印章/纸张时显示"域名"作为制作者信息</li>
+            <li>在共享日志中显示"域名"而非邮箱</li>
+            <li>其他用户搜索时用域名而非邮箱</li>
+          </ul>
+
+      # 3-3. 文档刻印担保
+      - type: "专家"
+        title: "为文档来源担保"
+        subtitle: "所有文档都刻上徽章"
+        content: |
+          <p><strong>概述</strong>：佩戴徽章后，创建的所有文档都包含徽章信息。以此可为文档来源担保。</p>
+
+          <p><strong>使用示例</strong></p>
+          <ul>
+            <li>✅ <strong>官方文档认证</strong>：所有文档标注域名以担保来源</li>
+            <li>📜 <strong>品牌官方发布</strong>：证明是品牌/企业的官方文档</li>
+            <li>🔐 <strong>防伪</strong>：通过徽章域名可确认原创作者</li>
+          </ul>
+
+          <p><strong>使用技巧</strong></p>
+          <ul>
+            <li>发放店铺优惠券时用徽章认证为官方优惠券</li>
+            <li>创作者内容用徽章标注版权</li>
+            <li>企业公告标注官方账号</li>
+          </ul>
+
+  # ===== 4. 墨水活用法 (Ink) =====
+  - id: ink-usage
+    title: "墨水活用法"
+    icon: "🎨"
+    description: "用墨水(Ink)自定义App主题"
+    items:
+      # 4-1. 墨水基础 (初级)
+      - type: "初级"
+        title: "用墨水更换主题"
+        subtitle: "自定义专属App配色"
+        content: |
+          <p><strong>概述</strong>：墨水是可以更改App主色和副色的道具。选择喜欢的墨水，尝试更换主题吧。</p>
+
+          <p><strong>跟着做</strong></p>
+          <ol>
+            <li>在库存中选择想要的<strong>墨水</strong></li>
+            <li>点击<strong>操作</strong>按钮</li>
+            <li>选择<strong>更换主题</strong></li>
+            <li>App的主色和副色将更换为该墨水的颜色</li>
+          </ol>
+
+          <p><strong>墨水的特点</strong></p>
+          <ul>
+            <li>🎨 每种墨水都有独特的主色和副色组合</li>
+            <li>🔄 随时可以换成其他墨水主题</li>
+            <li>✨ 颜色应用于整个App界面</li>
+          </ul>
+
+          <p><strong>须知</strong></p>
+          <ul>
+            <li>📱 主题颜色<strong>保存在设备本地</strong></li>
+            <li>👤 切换账号后颜色仍保持</li>
+            <li>🔄 删除App后恢复默认颜色</li>
+          </ul>
+
+          <p><strong>使用技巧</strong></p>
+          <ul>
+            <li>🌙 深色墨水减轻眼睛疲劳</li>
+            <li>🌈 根据心情更换主题颜色</li>
+            <li>💼 用主题区分工作/个人用途</li>
+          </ul>

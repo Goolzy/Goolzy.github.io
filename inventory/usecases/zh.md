@@ -1,8 +1,8 @@
 ---
 layout: inventory
-title: Cas d'Usage
-permalink: /inventory/usecases/fr/
-lang: fr
+title: "使用案例"
+permalink: /inventory/usecases/zh/
+lang: zh
 translations:
   ko: /inventory/usecases/
   en: /inventory/usecases/en/
@@ -14,6 +14,6 @@ translations:
   zh: /inventory/usecases/zh/
 ---
 
-{% include usecases-accordion.html lang="fr" %}
+{% include usecases-accordion.html lang="zh" %}
 
-{% include user-usecases.html lang="fr" %}
+{% include user-usecases.html lang="zh" %}

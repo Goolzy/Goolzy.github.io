@@ -11,6 +11,7 @@ translations:
   fr: /inventory/account/fr/
   es: /inventory/account/es/
   pt: /inventory/account/pt/
+  zh: /inventory/account/zh/
 ---
 
 <div id="account-info" style="max-width:600px; margin:0 auto;">
