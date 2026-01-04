@@ -34,6 +34,10 @@ Cuando los resultados de búsqueda de plantillas compartidas superan los 20, pue
 - **Indicador de carga**: Se muestra un indicador de progreso en la parte inferior durante la carga adicional
 - **Compatibilidad retroactiva**: Las versiones anteriores de la app siguen mostrando 20 resultados como antes
 
+#### Actualizaciones del sitio web
+- **Soporte de chino (simplificado)**: Localización 中文(简体) añadida al sitio web (8º idioma)
+- **Indicadores de idiomas soportados**: Iconos de banderas de 8 idiomas mostrados bajo los iconos de descarga de plataformas
+
 </div>
 </details>
 

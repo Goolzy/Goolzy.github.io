@@ -34,6 +34,10 @@ Wenn die Suchergebnisse für geteilte Vorlagen mehr als 20 Einträge umfassen, k
 - **Ladeanzeige**: Fortschrittsanzeige am unteren Rand während des zusätzlichen Ladens
 - **Abwärtskompatibilität**: Ältere App-Versionen zeigen weiterhin 20 Ergebnisse an
 
+#### Homepage-Updates
+- **Chinesisch (vereinfacht) Unterstützung**: 中文(简体) Lokalisierung zur Homepage hinzugefügt (8. Sprache)
+- **Unterstützte Sprachen anzeigen**: 8 Sprachflaggensymbole unter den Plattform-Download-Symbolen
+
 </div>
 </details>
 

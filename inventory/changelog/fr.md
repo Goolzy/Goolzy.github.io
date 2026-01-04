@@ -34,6 +34,10 @@ Lorsqu'il y a plus de 20 résultats de recherche de modèles partagés, vous pou
 - **Indicateur de chargement** : Un indicateur de progression s'affiche en bas pendant le chargement supplémentaire
 - **Rétrocompatibilité** : Les versions antérieures de l'application affichent toujours 20 résultats comme avant
 
+#### Mises à jour du site web
+- **Support du chinois (simplifié)** : Localisation 中文(简体) ajoutée au site web (8e langue)
+- **Affichage des langues prises en charge** : Icônes de drapeaux des 8 langues affichées sous les icônes de téléchargement des plateformes
+
 </div>
 </details>
 

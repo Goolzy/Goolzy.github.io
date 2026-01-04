@@ -34,6 +34,10 @@ Quando os resultados da busca de modelos compartilhados excedem 20, você pode r
 - **Indicador de carregamento**: Exibe indicador de progresso na parte inferior durante o carregamento adicional
 - **Compatibilidade retroativa**: Versões anteriores do app continuam exibindo 20 resultados como antes
 
+#### Atualizações do site
+- **Suporte ao chinês (simplificado)**: Localização 中文(简体) adicionada ao site (8º idioma)
+- **Exibição de idiomas suportados**: Ícones de bandeiras de 8 idiomas exibidos abaixo dos ícones de download das plataformas
+
 </div>
 </details>
 

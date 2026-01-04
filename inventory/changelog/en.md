@@ -34,6 +34,10 @@ When there are more than 20 shared template search results, you can scroll to lo
 - **Loading Indicator**: Progress indicator shown at the bottom while loading more
 - **Backward Compatibility**: Previous app versions still display 20 results as before
 
+#### Homepage Updates
+- **Chinese (Simplified) Support**: Added 中文(简体) localization to homepage (8th language)
+- **Supported Languages Display**: 8 language flag icons displayed below platform download icons
+
 </div>
 </details>
 
