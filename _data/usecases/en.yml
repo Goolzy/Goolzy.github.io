@@ -1,7 +1,7 @@
-# Inventory Use Cases Data (English) - Reorganized Version
+# Inventory Use Cases Data (English) - Complete Overhaul
 page:
   title: "Inventory Usage Guide"
-  intro: "Discover what you can do with Inventory. From basics to advanced features, we'll guide you step by step."
+  intro: "Discover what you can do with Inventory. From basics to advanced features, we guide you step by step."
   expand: "Follow Along ↓"
   collapse: "Collapse ↑"
   share_title: "Share Your Usage Methods Too"
@@ -18,71 +18,81 @@ page:
 categories:
   # ===== 1. Paper Usage =====
   - id: paper-usage
-    title: "Paper Usage"
+    title: "📄 Paper Usage"
     icon: "📄"
     description: "Everything you can do with Paper"
     items:
-      # 1-1. Solo Recording
+      # 1-1. Personal Records
       - type: "Beginner"
         title: "Create Your Own Records"
         subtitle: "Start your personal archive with just 1 Paper"
         content: |
-          <p><strong>Overview</strong>: With just 1 Paper, you can create a document and continuously add records to the log.</p>
+          <p><strong>Overview</strong>: Document a blank paper to record images and text, and continuously add content to the log.</p>
 
           <p><strong>Follow Along</strong></p>
           <ol>
-            <li>Tap the <strong>+</strong> button at the bottom of the home screen</li>
-            <li>Select <strong>Document</strong> → Consumes 1 Paper</li>
-            <li>Enter title, description + add image (optional)</li>
-            <li>After creation, add notes in the <strong>Log</strong> tab</li>
+            <li>Long press a <strong>blank paper</strong> in your inventory to enter <strong>View Details</strong><br/>
+                <em>Or</em> select the blank paper and tap the <strong>Action</strong> button</li>
+            <li>Select <strong>Create New Item</strong> menu</li>
+            <li>Enter item information:
+              <ul>
+                <li>Image (optional)</li>
+                <li>Title (required)</li>
+                <li>Content (optional)</li>
+                <li>Deadline (optional)</li>
+              </ul>
+            </li>
+            <li>Complete <strong>Create</strong> → Converted to documented paper</li>
+            <li>The documented paper appears with image and title in your inventory</li>
           </ol>
 
           <p><strong>Usage Examples</strong></p>
           <ul>
-            <li>📔 <strong>Diary/Notepad</strong>: Save daily records with images and text</li>
-            <li>📸 <strong>Photo Album</strong>: Capture special moments with images, leave memories in the log</li>
-            <li>📋 <strong>Warranty Management</strong>: Save product warranty photos, set expiry alerts</li>
-            <li>🧾 <strong>Receipt Storage</strong>: Digitally store important receipts</li>
+            <li>📔 <strong>Diary/Notepad</strong>: Save daily records with images and text, keep adding to the log</li>
+            <li>📸 <strong>Photo Album</strong>: Record special moments with images</li>
+            <li>📋 <strong>Warranty Management</strong>: Save product warranty photos, set deadline for expiration alerts</li>
+            <li>🧾 <strong>Receipt Storage</strong>: Keep important receipts digitally</li>
           </ul>
 
           <p><strong>Organization Tip</strong>: Group similar documents with <strong>Clips</strong>, and organize categories with <strong>Partitions</strong>.</p>
 
-      # 1-2. Shared Template Duplication
+      # 1-2. Clone Shared Templates
       - type: "Beginner"
-        title: "Import Shared Templates"
-        subtitle: "Make another user's template your own"
+        title: "Get Shared Templates"
+        subtitle: "Make other users' templates your own"
         content: |
-          <p><strong>Overview</strong>: You can duplicate stamps shared by other users and use them as your own documents.</p>
+          <p><strong>Overview</strong>: You can duplicate stamps shared by other users to use as your own documents.</p>
 
           <p><strong>Follow Along</strong></p>
           <ol>
             <li>Click the shared stamp link or scan the QR code</li>
             <li>Tap <strong>Duplicate</strong> on the stamp detail screen</li>
-            <li>Consumes 1 Paper → Duplication complete in your inventory</li>
-            <li>Modify keyword values to suit your needs</li>
+            <li>Select a <strong>blank paper</strong> from your inventory</li>
+            <li>Duplication complete → Stamp content is copied to the paper</li>
+            <li>Modify keyword values as needed</li>
           </ol>
 
           <p><strong>Usage Examples</strong></p>
           <ul>
-            <li>✅ <strong>Checklists</strong>: Use shared templates for travel prep, grocery shopping, etc.</li>
-            <li>🎁 <strong>Event Participation</strong>: Duplicate event templates from brands/stores</li>
-            <li>📝 <strong>Form Templates</strong>: Duplicate useful forms created by other users</li>
+            <li>✅ <strong>Checklists</strong>: Duplicate shared templates for travel prep, grocery shopping, etc.</li>
+            <li>🎁 <strong>Event Participation</strong>: Duplicate event templates shared by brands/stores</li>
+            <li>📝 <strong>Form Usage</strong>: Duplicate useful forms created by other users</li>
           </ul>
 
       # 1-3. Shared Log - Chat Room
       - type: "Intermediate"
         title: "Record Together with Friends"
-        subtitle: "Create group chat rooms with shared logs"
+        subtitle: "Create group spaces with Shared Log"
         content: |
-          <p><strong>Overview</strong>: When you create a shared document with multiple Papers, all participants can record in the same log.</p>
+          <p><strong>Overview</strong>: When you create a shared document with multiple papers, all participants can record in the same log.</p>
 
           <p><strong>Follow Along</strong></p>
           <ol>
-            <li>Tap the <strong>+</strong> button at the bottom of the home screen</li>
-            <li>Select <strong>Shared Document</strong></li>
-            <li>Select Papers for the number of participants (2-10 Papers)</li>
+            <li>Select <strong>blank papers</strong> equal to the number of participants (2-10 papers)</li>
+            <li>Tap the <strong>Action</strong> button</li>
+            <li>Select <strong>Create Shared Document</strong></li>
             <li>Enter title and description, then create</li>
-            <li><strong>Send</strong> the created document to participants</li>
+            <li><strong>Send</strong> the created shared document to participants</li>
           </ol>
 
           <p><strong>Paper Usage by Number of People</strong></p>
@@ -96,75 +106,84 @@ categories:
           <ul>
             <li>💑 <strong>Couple Diary</strong>: Record memories together, just the two of you</li>
             <li>👨‍👩‍👧‍👦 <strong>Family Album</strong>: Share family events and daily life together</li>
-            <li>📚 <strong>Study Group</strong>: Record study materials and questions together</li>
+            <li>📚 <strong>Study Group</strong>: Record study content and questions together</li>
           </ul>
 
   # ===== 2. Stamp Usage =====
   - id: stamp-usage
-    title: "Stamp Usage"
+    title: "🔖 Stamp Usage"
     icon: "🔖"
-    description: "Create and share templates with Stamps"
+    description: "Create templates with Stamps and duplicate them"
     items:
-      # 2-1. Solo Log Stamp
+      # 2-1. Personal Log Stamp
       - type: "Advanced"
-        title: "Create Your Own Templates"
-        subtitle: "Mass produce documents with solo log stamps"
+        title: "Create Your Own Template"
+        subtitle: "Mass produce documents with the same format using Stamps"
         content: |
-          <p><strong>Overview</strong>: When you create a template with a stamp, you can quickly create multiple documents in the same format.</p>
+          <p><strong>Overview</strong>: Engraving a stamp turns it into a template. You can duplicate this template onto papers to quickly create multiple documents with the same format.</p>
 
-          <p><strong>Follow Along</strong></p>
+          <p><strong>Engrave a Stamp</strong></p>
           <ol>
-            <li>Tap the <strong>+</strong> button at the bottom of the home screen</li>
-            <li>Select <strong>Stamp Template</strong> → Consumes 1 Stamp</li>
-            <li>Enter template info: title, description, image</li>
-            <li>Select <strong>Log Mode: Solo</strong></li>
-            <li>Set keywords (up to 10)</li>
-            <li>Template creation complete</li>
+            <li>Long press a <strong>blank stamp</strong> in your inventory to enter <strong>View Details</strong><br/>
+                <em>Or</em> select the blank stamp and tap the <strong>Action</strong> button</li>
+            <li>Select <strong>Create New Template</strong> menu</li>
+            <li>Enter template information:
+              <ul>
+                <li>Image (optional)</li>
+                <li>Title (required)</li>
+                <li>Content (optional)</li>
+                <li>Deadline (optional)</li>
+                <li>Default keywords (up to 10)</li>
+              </ul>
+            </li>
+            <li>Complete <strong>Create</strong> → Converted to engraved stamp</li>
           </ol>
 
-          <p><strong>How to Duplicate Documents</strong></p>
+          <p><strong>Duplicate to Paper</strong></p>
           <ol>
-            <li>Select the created stamp</li>
-            <li>Tap <strong>Duplicate</strong></li>
-            <li>Select Paper to duplicate → Creates document in the same format</li>
+            <li>Select the engraved <strong>Stamp</strong></li>
+            <li>Additionally select the number of <strong>blank papers</strong> you need to duplicate</li>
+            <li>Tap the <strong>Action</strong> button</li>
+            <li>Select <strong>Duplicate</strong> menu</li>
+            <li>The content engraved on the stamp is duplicated to the selected papers</li>
           </ol>
 
           <p><strong>Usage Examples</strong></p>
           <ul>
-            <li>🏋️ <strong>Workout Log</strong>: Record workouts in the same format every day</li>
+            <li>🏋️ <strong>Workout Log</strong>: Record exercise content in the same format every day</li>
             <li>📖 <strong>Reading Log</strong>: Write book reviews in the same format for each book</li>
-            <li>🍷 <strong>Collection Management</strong>: Catalog collectibles like wine, LEGO, figurines</li>
+            <li>🍷 <strong>Collection Management</strong>: Catalog collections like wine, LEGO, figurines</li>
           </ul>
 
-          <p><strong>Organization Tip</strong>: Group accumulated series documents with <strong>Clips</strong>.</p>
+          <p><strong>Organization Tip</strong>: Group documents created from stamps with <strong>Clips</strong> to manage them as a series.</p>
 
       # 2-2. Shared Log Stamp
       - type: "Advanced"
         title: "Create an Open Community"
-        subtitle: "Continuously add users with shared log stamps"
+        subtitle: "Continuously add participants with Shared Log Stamps"
         content: |
-          <p><strong>Overview</strong>: A shared log stamp is an open space where anyone can duplicate and participate.</p>
+          <p><strong>Overview</strong>: When you create a stamp in shared log mode, it becomes a public space that anyone can join by duplicating.</p>
 
           <p><strong>Follow Along</strong></p>
           <ol>
-            <li>Tap the <strong>+</strong> button at the bottom of the home screen</li>
-            <li>Select <strong>Stamp Template</strong> → Consumes 1 Stamp</li>
-            <li>Enter template info: title, description, image</li>
+            <li>Select a <strong>blank stamp</strong> and enter <strong>Create New Template</strong></li>
+            <li>Enter template information: image, title, content, deadline, keywords</li>
             <li>Select <strong>Log Mode: Shared</strong> ⭐</li>
-            <li>Set keywords and create</li>
+            <li>Complete <strong>Create</strong></li>
           </ol>
 
           <p><strong>How to Add Participants</strong></p>
           <ol>
-            <li>Share the stamp link/QR with other users</li>
-            <li>When they duplicate, they automatically join the shared log</li>
-            <li>Unlimited number of people can be added continuously</li>
+            <li>Select the created stamp and share the link/QR via <strong>Share</strong></li>
+            <li>Others execute <strong>Duplicate</strong> through the link</li>
+            <li>Users who duplicated automatically join the shared log</li>
+            <li>Can continuously add more without participant limits</li>
           </ol>
 
           <p><strong>Usage Examples</strong></p>
           <ul>
             <li>💬 <strong>Open Chat Room</strong>: Public discussion space anyone can join</li>
-            <li>🎤 <strong>Fan Club</strong>: Fan community for artists/brands</li>
+            <li>🎤 <strong>Fan Club</strong>: Fan gatherings for artists/brands</li>
             <li>📢 <strong>Community Board</strong>: Run interest-based communities</li>
           </ul>
 
@@ -173,114 +192,108 @@ categories:
         title: "Use for Shop Operations"
         subtitle: "Stamp marketing for small business owners"
         content: |
-          <p><strong>Overview</strong>: Share stamps to communicate with customers and run your own events.</p>
-
-          <p><strong>Usage Methods</strong></p>
+          <p><strong>Overview</strong>: Share stamps to communicate with customers and distribute shop information.</p>
 
           <p>🍽️ <strong>Shop Menu</strong></p>
           <ol>
             <li>Create a stamp template with menu photos</li>
-            <li>Set menu names and prices as keywords</li>
-            <li>Display QR codes on tables</li>
-            <li>Customers duplicate and use as order records</li>
+            <li>Set menu names, prices, descriptions in keywords</li>
+            <li>Share the stamp to generate QR code → Display on tables</li>
+            <li>Customers scan QR → Duplicate to view menu information</li>
           </ol>
 
-          <p>🎫 <strong>Loyalty Card</strong></p>
+          <p>🎫 <strong>Coupon/Event Distribution</strong></p>
           <ol>
-            <li>Create a "Free drink after 10 visits" template</li>
-            <li>Customers duplicate → Stamp in log with each visit</li>
-            <li>Provide rewards when 10 stamps collected</li>
+            <li>Create a stamp template with event images</li>
+            <li>Set discount details, expiration in keywords</li>
+            <li>Share stamp link/QR with customers</li>
+            <li>Customers duplicate → Keep and present as coupon</li>
           </ol>
 
           <p>📋 <strong>Customer Feedback Collection</strong></p>
           <ol>
-            <li>Create a satisfaction survey template</li>
-            <li>Set rating/comment fields as keywords</li>
-            <li>Customers duplicate → Write feedback</li>
+            <li>Create a feedback template in shared log mode</li>
+            <li>Set rating/comment fields with keywords</li>
+            <li>Customers duplicate → Write reviews in shared log</li>
+            <li>All reviews are collected in one place for review</li>
           </ol>
 
           <p><strong>Other Uses</strong></p>
           <ul>
-            <li>🆕 New menu launch announcements + tasting reviews sharing</li>
-            <li>🎟️ Discount coupon distribution</li>
-            <li>📅 Reservation system operation</li>
+            <li>🆕 New menu launch announcements</li>
+            <li>📅 Reservation guide templates</li>
+            <li>📍 Shop location/business hours information</li>
           </ul>
 
       # 2-4. Personal Archive
       - type: "Intermediate"
         title: "Create a Personal Archive"
-        subtitle: "Turn your favorite content into your own collection"
+        subtitle: "Organize your favorite content into your own collection"
         content: |
           <p><strong>Overview</strong>: Systematically organize your favorite content like YouTube, Spotify, books, and movies.</p>
 
           <p>🎬 <strong>YouTube Playlist</strong></p>
           <ol>
-            <li>Create a "My YouTube Collection" document with 1 Paper</li>
+            <li>Create a "My YouTube Collection" document with blank paper</li>
             <li>Add video links + one-line notes to the log</li>
             <li>As videos accumulate, group by genre with <strong>Clips</strong></li>
-            <li>Separate categories like music/cooking/workout with <strong>Partitions</strong></li>
           </ol>
 
           <p>🎵 <strong>Spotify Music Collection</strong></p>
           <ol>
-            <li>Create a "2024 Playlist" document with 1 Paper</li>
-            <li>Add Spotify links + emotions/situations at the time to the log</li>
+            <li>Create a "2024 Playlist" document with blank paper</li>
+            <li>Record Spotify links + emotions/situations at the time in the log</li>
             <li>Organize by season and mood with <strong>Clips</strong></li>
           </ol>
 
           <p>📚 <strong>Books Read Archive</strong></p>
           <ol>
-            <li>Create a document with 1 Paper for each book</li>
-            <li>Add book cover photo + title/author</li>
-            <li>Record memorable quotes and reviews in the log</li>
-            <li>Categorize genres with <strong>Partitions</strong>, group series with <strong>Clips</strong></li>
+            <li>Create a stamp with a book cover template (keywords: author, rating, etc.)</li>
+            <li>Duplicate the stamp to paper for each book</li>
+            <li>Record memorable quotes and book reviews in the log</li>
+            <li>Group series with <strong>Clips</strong></li>
           </ol>
 
           <p>🎞️ <strong>Movies/Shows Watched Log</strong></p>
           <ol>
-            <li>1 Paper + poster image</li>
-            <li>One-line review + rating in the log</li>
-            <li><strong>Clips</strong> by year, <strong>Partitions</strong> by genre</li>
-          </ol>
-
-          <p>📱 <strong>Instagram/TikTok Saves</strong></p>
-          <ol>
-            <li>Record screenshots + original links in the log</li>
-            <li>Organize by interest with <strong>Partitions</strong></li>
+            <li>Create a stamp with a movie poster template</li>
+            <li>Duplicate to paper for each movie</li>
+            <li>One-line review + star rating in the log</li>
           </ol>
 
       # 2-5. Creator/Influencer
       - type: "Expert"
         title: "Creator Activities"
-        subtitle: "Connect with fans and distribute content"
+        subtitle: "Communicate with fans and distribute content"
         content: |
-          <p><strong>Overview</strong>: Creators and influencers can connect with fans and run events.</p>
+          <p><strong>Overview</strong>: Creators and influencers can communicate with fans and run events.</p>
 
           <p>🎉 <strong>Fan Events</strong></p>
           <ol>
-            <li>Create a shared stamp for the event</li>
-            <li>Fans duplicate to participate</li>
-            <li>Run quizzes and giveaways in the shared log</li>
+            <li>Create an event stamp in shared log mode</li>
+            <li>Share the stamp link with fans</li>
+            <li>Fans participate by duplicating</li>
+            <li>Run quizzes and raffles in the shared log</li>
           </ol>
 
           <p>🛍️ <strong>Merchandise Catalog</strong></p>
           <ol>
             <li>Create stamps with merchandise photos</li>
-            <li>Set product name, price, and purchase link as keywords</li>
-            <li>Fans duplicate and use as wishlists</li>
+            <li>Set product name, price, purchase link in keywords</li>
+            <li>Fans duplicate to use as a wishlist</li>
           </ol>
 
           <p>❓ <strong>Q&A Space</strong></p>
           <ol>
-            <li>Create a shared log stamp</li>
-            <li>Fans write questions in the log</li>
-            <li>Creator replies to questions</li>
+            <li>Create a Q&A stamp in shared log mode</li>
+            <li>Fans duplicate and write questions in the log</li>
+            <li>Creator answers in the shared log</li>
           </ol>
 
           <p><strong>Other Uses</strong></p>
           <ul>
-            <li>📅 Fan meeting schedule/location/participation info</li>
-            <li>🎬 Behind-the-scenes stories and production process sharing</li>
+            <li>📅 Fan meeting schedule/location/participation information</li>
+            <li>🎬 Behind-the-scenes stories, production process sharing</li>
             <li>📁 Past content archive</li>
           </ul>
 
@@ -289,31 +302,32 @@ categories:
         title: "Share Your Hobbies"
         subtitle: "Interest-based content sharing"
         content: |
-          <p><strong>Overview</strong>: Share hobbies and interests with other users through shared stamps.</p>
+          <p><strong>Overview</strong>: Create stamps of your hobbies and interests to share with other users.</p>
 
           <p>🍳 <strong>Recipe Sharing</strong></p>
           <ol>
-            <li>Create a stamp with finished dish photos</li>
-            <li>Set ingredients and cooking time as keywords</li>
-            <li>Users who duplicate share reviews in the shared log</li>
+            <li>Create a stamp with a finished dish photo</li>
+            <li>Set ingredients and cooking time in keywords</li>
+            <li>Set to shared log mode → Users who duplicate can share their reviews</li>
           </ol>
 
           <p>🏃 <strong>Workout Routine Sharing</strong></p>
           <ol>
-            <li>Create 30-day challenge or home workout routine templates</li>
-            <li>Participants record daily completions</li>
+            <li>Create 30-day challenge, home workout routine stamps</li>
+            <li>Set to shared log mode</li>
+            <li>Participants duplicate and record daily completion</li>
           </ol>
 
-          <p>✈️ <strong>Travel Guide</strong></p>
+          <p>✈️ <strong>Travel Guides</strong></p>
           <ol>
-            <li>Destination photos + recommended itinerary template</li>
-            <li>Organize restaurant and accommodation info as keywords</li>
-            <li>Those who've visited add reviews</li>
+            <li>Create stamps with destination photos + recommended courses</li>
+            <li>Organize restaurant and accommodation info in keywords</li>
+            <li>Share → People who visited can add reviews</li>
           </ol>
 
           <p><strong>Other Uses</strong></p>
           <ul>
-            <li>🎮 Game walkthroughs, build sharing</li>
+            <li>🎮 Game guides, build sharing</li>
             <li>🔨 DIY project guides</li>
             <li>🌱 Plant care tips, watering schedules</li>
             <li>🐕 Pet care tips</li>
@@ -322,80 +336,99 @@ categories:
       # 2-7. Local/Family Community
       - type: "Intermediate"
         title: "Run Group Activities"
-        subtitle: "Communication space for local, family, and friend groups"
+        subtitle: "Communication spaces for local, family, and friend groups"
         content: |
-          <p><strong>Overview</strong>: Create shared spaces for local communities, family gatherings, and friend groups.</p>
+          <p><strong>Overview</strong>: Create shared spaces with stamps for local communities, family gatherings, and friend groups.</p>
 
           <p>🏘️ <strong>Local Community</strong></p>
           <ul>
-            <li>🍜 Neighborhood Restaurant Map: Restaurant list recommended by residents</li>
-            <li>🎪 Local Event Info: Festival, market, cultural event information</li>
-            <li>🏃 Club Recruitment: Introduce hiking, running, book clubs, etc.</li>
-            <li>🏠 Resident Communication: Share apartment announcements</li>
+            <li>🍜 Neighborhood restaurant map: Residents recommend restaurants via shared log</li>
+            <li>🎪 Local event information: Festival, market, cultural event info</li>
+            <li>🏃 Club recruitment: Introduce clubs for hiking, running, reading, etc.</li>
+            <li>🏠 Residents' association communication: Share apartment announcements</li>
           </ul>
 
           <p>👨‍👩‍👧‍👦 <strong>Family/Friend Groups</strong></p>
           <ul>
-            <li>🍳 Family Recipe Book: Family recipes passed down through generations</li>
-            <li>🎂 Friends' Birthday Calendar: Manage birthdays and gift ideas</li>
-            <li>✅ Group Bucket List: Goals to achieve together</li>
-            <li>✈️ Family Trip Planning: Share schedules, packing lists, budgets</li>
-            <li>💒 Life Events Info: Share wedding, first birthday party information</li>
+            <li>🍳 Family recipe book: Recipes passed down through generations</li>
+            <li>🎂 Friend birthday calendar: Birthday management and gift ideas</li>
+            <li>✅ Group bucket list: Goals you want to achieve together</li>
+            <li>✈️ Family trip planning: Share schedules, packing lists, budgets</li>
+            <li>💒 Life events: Share wedding, birthday party information</li>
           </ul>
 
       # 2-8. Work/Events
       - type: "Advanced"
         title: "Use for Work and Events"
-        subtitle: "Team collaboration and special day records"
+        subtitle: "Team collaboration and special occasion recording"
         content: |
-          <p><strong>Overview</strong>: Create shared spaces for work collaboration and special events.</p>
+          <p><strong>Overview</strong>: Create shared spaces with stamps for work collaboration and special events.</p>
 
           <p>💼 <strong>Work/Collaboration</strong></p>
           <ul>
-            <li>📊 Team Project: Progress sharing template</li>
-            <li>📝 Meeting Minutes: Standardized meeting minutes template</li>
-            <li>📋 Work Handover: Organize and transfer responsibilities</li>
-            <li>👋 New Employee Onboarding: Share company adaptation guide</li>
+            <li>📊 Team projects: Share progress via shared log</li>
+            <li>📝 Meeting minutes template: Standardized meeting minutes template with stamps</li>
+            <li>📋 Work handover: Organize and transfer responsibilities</li>
+            <li>👋 New employee onboarding: Share company adaptation guides</li>
           </ul>
 
-          <p>🎉 <strong>Events/Special Days</strong></p>
+          <p>🎉 <strong>Events/Special Occasions</strong></p>
           <ul>
-            <li>💒 Wedding Invitation: Invitation + RSVP + congratulatory messages</li>
-            <li>🎈 Party Invitation: Birthday, housewarming, year-end party invites</li>
-            <li>👶 First Birthday/100 Days: Baby photos + congratulatory message collection</li>
-            <li>🕯️ Memorial/Anniversary: Space to share memories together</li>
-            <li>📨 Time Capsule: Messages to your future self</li>
+            <li>💒 Wedding invitations: Shared stamp for invitation + RSVP + congratulatory messages</li>
+            <li>🎈 Party invitations: Birthday, housewarming, year-end party invitations</li>
+            <li>👶 First birthday/100-day celebrations: Baby photos + collection of congratulatory messages</li>
+            <li>🕯️ Memorials/Anniversaries: A space to share memories together</li>
+            <li>📨 Time capsule: Messages to your future self</li>
           </ul>
 
   # ===== 3. Badge Usage =====
   - id: badge-usage
-    title: "Badge Usage"
+    title: "🏷️ Badge Usage"
     icon: "🏷️"
-    description: "Build branding and trust with Badges"
+    description: "Brand yourself and build trust with Badges"
     items:
       # 3-1. Brand Image Promotion
       - type: "Expert"
-        title: "Build Brand Identity"
+        title: "Build Your Brand Identity"
         subtitle: "Create your own brand with a unique domain name"
         content: |
-          <p><strong>Overview</strong>: When you engrave a badge, you get a unique domain name. This domain name is displayed in all your activities.</p>
+          <p><strong>Overview</strong>: Engraving a badge gives you a unique domain name. When you equip the badge, this domain name is displayed on all your activities.</p>
 
-          <p><strong>Follow Along</strong></p>
+          <p><strong>Engrave a Badge</strong></p>
           <ol>
-            <li>Profile → Select <strong>Engrave Badge</strong></li>
-            <li>Enter your desired domain name (e.g., myshop, creator_kim)</li>
-            <li><strong>Check availability</strong> is required</li>
-            <li>Select badge image (required)</li>
-            <li><strong>Engrave</strong> → Consumes 1 Badge</li>
+            <li>Long press a <strong>blank badge</strong> in your inventory to enter <strong>View Details</strong><br/>
+                <em>Or</em> select the blank badge and tap the <strong>Action</strong> button</li>
+            <li>Select <strong>Engrave</strong> menu</li>
+            <li>Enter badge information:
+              <ul>
+                <li>Badge image (required)</li>
+                <li>Enter domain name (e.g., myshop, creator_kim)</li>
+              </ul>
+            </li>
+            <li><strong>Check for duplicates</strong> then complete <strong>Engrave</strong></li>
           </ol>
 
-          <p>⚠️ <strong>Warning</strong>: Domain names cannot be changed once engraved!</p>
+          <p>⚠️ <strong>Warning</strong>: Once engraved, the domain name cannot be changed!</p>
+
+          <p><strong>Equip/Unequip Badge</strong></p>
+          <ol>
+            <li>Select the engraved <strong>Badge</strong> and tap the <strong>Action</strong> button</li>
+            <li>Select <strong>Equip</strong> → Badge is activated</li>
+            <li>To unequip, select <strong>Unequip</strong> from Action again</li>
+          </ol>
+
+          <p><strong>Effects When Equipped</strong></p>
+          <ul>
+            <li>🔍 Searchable by domain name (instead of email)</li>
+            <li>📝 All stamps and papers you create show author as "domain name"</li>
+            <li>📋 Log entries also display as domain name</li>
+          </ul>
 
           <p><strong>Usage Examples</strong></p>
           <ul>
-            <li>🏢 <strong>Business/Brand</strong>: Run official account with logo and brand name</li>
-            <li>🎨 <strong>Creator</strong>: Distribute content under a unique nickname</li>
-            <li>👔 <strong>Professional Profile</strong>: Use domain name representing your expertise</li>
+            <li>🏢 <strong>Companies/Brands</strong>: Run official accounts with logo and brand name</li>
+            <li>🎨 <strong>Creators</strong>: Distribute content with a unique nickname</li>
+            <li>👔 <strong>Professional Profile</strong>: Use a domain name that represents your expertise</li>
           </ul>
 
       # 3-2. Email Privacy
@@ -403,46 +436,39 @@ categories:
         title: "Protect Your Privacy"
         subtitle: "Use domain name instead of email"
         content: |
-          <p><strong>Overview</strong>: When you engrave a badge, your actual email is replaced with "domainname".</p>
+          <p><strong>Overview</strong>: When you equip a badge, your "domain name" is displayed instead of your actual email, protecting your personal information.</p>
 
-          <p><strong>Benefits</strong></p>
+          <p><strong>Advantages</strong></p>
           <ul>
             <li>🔒 <strong>Privacy Protection</strong>: Your actual email address is not exposed</li>
-            <li>📧 <strong>Spam Prevention</strong>: Email protected even during public activities</li>
-            <li>🎭 <strong>Anonymous Activity</strong>: Operate anonymously under any name you choose</li>
+            <li>📧 <strong>Spam Prevention</strong>: Email protection even during public activities</li>
+            <li>🎭 <strong>Anonymous Activity</strong>: Operate under any name you choose</li>
           </ul>
 
-          <p><strong>Usage Examples</strong></p>
+          <p><strong>Scope of Application</strong></p>
           <ul>
-            <li>Domain name shown as creator info when distributing shared stamps</li>
-            <li>Identified by domain name instead of email in shared logs</li>
-            <li>Domain name shown to the other party instead of email during transactions</li>
+            <li>"Domain name" displayed as creator info when creating stamps/papers</li>
+            <li>"Domain name" shown instead of email in shared logs</li>
+            <li>Other users search by domain name instead of email</li>
           </ul>
 
-      # 3-3. Document Engraving Verification
+      # 3-3. Document Certification
       - type: "Expert"
-        title: "Verify Document Origin"
-        subtitle: "Badge engraved on all documents"
+        title: "Certify Document Origin"
+        subtitle: "Badge engraving on all documents"
         content: |
-          <p><strong>Overview</strong>: When you equip a badge, it's engraved on all documents you create. This verifies the document's origin.</p>
-
-          <p><strong>How to Equip</strong></p>
-          <ol>
-            <li>Profile → <strong>Badge Management</strong></li>
-            <li>Select engraved badge</li>
-            <li>Tap <strong>Equip</strong></li>
-          </ol>
+          <p><strong>Overview</strong>: When you equip a badge, all documents you create include badge information. This certifies the origin of your documents.</p>
 
           <p><strong>Usage Examples</strong></p>
           <ul>
-            <li>✅ <strong>Production Document Certification</strong>: Badge engraved on all documents to verify origin</li>
-            <li>📜 <strong>Official Document Issuance</strong>: Prove it's an official document from the brand/company</li>
-            <li>🔐 <strong>Forgery Prevention</strong>: Verify authenticity through badge engraving</li>
+            <li>✅ <strong>Official Document Certification</strong>: Domain name displayed on all documents certifies origin</li>
+            <li>📜 <strong>Official Brand Publication</strong>: Proves the document is officially from the brand/company</li>
+            <li>🔐 <strong>Forgery Prevention</strong>: Badge domain allows verification of original creator</li>
           </ul>
 
           <p><strong>Usage Tips</strong></p>
           <ul>
-            <li>Authenticate official coupons with badge when issuing shop coupons</li>
-            <li>Mark copyright on creator content with badge</li>
-            <li>Show official account status on company announcements</li>
+            <li>Certify shop coupons as official with badge</li>
+            <li>Display copyright on creator content with badge</li>
+            <li>Mark official account on company announcements</li>
           </ul>

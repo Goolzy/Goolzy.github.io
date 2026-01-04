@@ -8,6 +8,111 @@
 {% assign manual_base = data.page.manual_base %}
 
 <style>
+/* 필터 탭 컨테이너 */
+.filter-container {
+  margin-bottom: 2rem;
+}
+
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.filter-row:last-child {
+  margin-bottom: 0;
+}
+
+.filter-label {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  margin-right: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.filter-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 20px;
+  background: rgba(10, 6, 20, 0.5);
+  color: var(--text-dim);
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  border-color: rgba(168, 85, 247, 0.5);
+  color: var(--text);
+}
+
+.filter-btn.active {
+  background: rgba(168, 85, 247, 0.3);
+  border-color: var(--purple-bright);
+  color: var(--text);
+}
+
+/* 카테고리별 색상 */
+.filter-btn[data-category="paper-usage"].active {
+  background: rgba(59, 130, 246, 0.3);
+  border-color: #3b82f6;
+}
+
+.filter-btn[data-category="stamp-usage"].active {
+  background: rgba(168, 85, 247, 0.3);
+  border-color: #a855f7;
+}
+
+.filter-btn[data-category="badge-usage"].active {
+  background: rgba(20, 184, 166, 0.3);
+  border-color: #14b8a6;
+}
+
+/* 난이도별 색상 */
+.filter-btn[data-level="beginner"].active {
+  background: rgba(34, 197, 94, 0.3);
+  border-color: #22c55e;
+}
+
+.filter-btn[data-level="intermediate"].active {
+  background: rgba(59, 130, 246, 0.3);
+  border-color: #3b82f6;
+}
+
+.filter-btn[data-level="advanced"].active {
+  background: rgba(168, 85, 247, 0.3);
+  border-color: #a855f7;
+}
+
+.filter-btn[data-level="expert"].active {
+  background: rgba(239, 68, 68, 0.3);
+  border-color: #ef4444;
+}
+
+/* 필터링된 카드 숨김 */
+.usecase-card.hidden {
+  display: none;
+}
+
+.usecase-section.hidden {
+  display: none;
+}
+
+/* 결과 없음 메시지 */
+.no-results {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: var(--text-dim);
+  display: none;
+}
+
+.no-results.show {
+  display: block;
+}
+
 /* 카테고리 섹션 */
 .usecase-section {
   margin: 3rem 0;
@@ -255,6 +360,34 @@
 
 <p>{{ data.page.intro }}</p>
 
+<!-- 2열 필터 탭 -->
+<div class="filter-container">
+  <!-- 1열: 카테고리 필터 -->
+  <div class="filter-row" id="category-filter">
+    <button class="filter-btn active" data-category="all">
+      {% if lang == 'ko' %}전체{% elsif lang == 'ja' %}すべて{% elsif lang == 'de' %}Alle{% elsif lang == 'fr' %}Tout{% elsif lang == 'es' %}Todo{% elsif lang == 'pt' %}Tudo{% else %}All{% endif %}
+    </button>
+    {% for category in data.categories %}
+    <button class="filter-btn" data-category="{{ category.id }}">{{ category.icon }} {{ category.title | split: ' ' | last }}</button>
+    {% endfor %}
+  </div>
+
+  <!-- 2열: 난이도 필터 -->
+  <div class="filter-row" id="level-filter">
+    <button class="filter-btn active" data-level="all">
+      {% if lang == 'ko' %}전체{% elsif lang == 'ja' %}すべて{% elsif lang == 'de' %}Alle{% elsif lang == 'fr' %}Tout{% elsif lang == 'es' %}Todo{% elsif lang == 'pt' %}Tudo{% else %}All{% endif %}
+    </button>
+    <button class="filter-btn" data-level="beginner">{{ data.page.levels.beginner }}</button>
+    <button class="filter-btn" data-level="intermediate">{{ data.page.levels.intermediate }}</button>
+    <button class="filter-btn" data-level="advanced">{{ data.page.levels.advanced }}</button>
+    <button class="filter-btn" data-level="expert">{{ data.page.levels.expert }}</button>
+  </div>
+</div>
+
+<div class="no-results" id="no-results">
+  {% if lang == 'ko' %}선택한 조건에 맞는 활용방법이 없습니다.{% elsif lang == 'ja' %}選択した条件に一致する使用方法がありません。{% elsif lang == 'de' %}Keine Verwendungsmethoden gefunden.{% elsif lang == 'fr' %}Aucune méthode trouvée.{% elsif lang == 'es' %}No se encontraron métodos.{% elsif lang == 'pt' %}Nenhum método encontrado.{% else %}No use cases match your selection.{% endif %}
+</div>
+
 <hr>
 
 {% for category in data.categories %}
@@ -278,7 +411,7 @@
       {% assign level_class = 'expert' %}
     {% endif %}
 
-    <details class="usecase-card">
+    <details class="usecase-card" data-category="{{ category.id }}" data-level="{{ level_class }}">
       <summary>
         <span class="card-level {{ level_class }}">{{ item.type }}</span>
         <span class="card-title">{{ item.title }}</span>
@@ -304,3 +437,79 @@
   <p>{{ data.page.share_text }}</p>
   <a href="{{ data.page.share_link }}" class="share-btn">{{ data.page.share_btn }}</a>
 </div>
+
+<script>
+(function() {
+  // 필터 상태
+  let activeCategory = 'all';
+  let activeLevel = 'all';
+
+  // 필터 버튼들
+  const categoryBtns = document.querySelectorAll('#category-filter .filter-btn');
+  const levelBtns = document.querySelectorAll('#level-filter .filter-btn');
+  const cards = document.querySelectorAll('.usecase-card');
+  const sections = document.querySelectorAll('.usecase-section');
+  const noResults = document.getElementById('no-results');
+
+  // 필터 적용 함수
+  function applyFilters() {
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+      const cardCategory = card.dataset.category;
+      const cardLevel = card.dataset.level;
+
+      const matchCategory = activeCategory === 'all' || cardCategory === activeCategory;
+      const matchLevel = activeLevel === 'all' || cardLevel === activeLevel;
+
+      if (matchCategory && matchLevel) {
+        card.classList.remove('hidden');
+        visibleCount++;
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+
+    // 섹션 표시/숨김 처리
+    sections.forEach(section => {
+      const sectionId = section.id;
+      const visibleCardsInSection = section.querySelectorAll('.usecase-card:not(.hidden)').length;
+
+      if (activeCategory !== 'all' && sectionId !== activeCategory) {
+        section.classList.add('hidden');
+      } else if (visibleCardsInSection === 0) {
+        section.classList.add('hidden');
+      } else {
+        section.classList.remove('hidden');
+      }
+    });
+
+    // 결과 없음 메시지
+    if (visibleCount === 0) {
+      noResults.classList.add('show');
+    } else {
+      noResults.classList.remove('show');
+    }
+  }
+
+  // 카테고리 필터 클릭 이벤트
+  categoryBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      categoryBtns.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      activeCategory = this.dataset.category;
+      applyFilters();
+    });
+  });
+
+  // 난이도 필터 클릭 이벤트
+  levelBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      levelBtns.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      activeLevel = this.dataset.level;
+      applyFilters();
+    });
+  });
+})();
+</script>

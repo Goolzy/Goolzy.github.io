@@ -1,11 +1,11 @@
-# Guia de Uso do Inventory (Português) - Versão Reformulada
+# Dados de uso do Inventário (Português) - Revisão completa
 page:
-  title: "Guia de Uso do Inventory"
-  intro: "Descubra o que você pode fazer com o Inventory. Apresentamos passo a passo, desde o básico até recursos avançados."
-  expand: "Tutorial ↓"
-  collapse: "Ocultar ↑"
-  share_title: "Compartilhe sua forma de uso também"
-  share_text: "Como você está usando? Aguardamos suas novas ideias."
+  title: "Guia de Uso do Inventário"
+  intro: "Descubra o que você pode fazer com o Inventário. Do básico às funções avançadas, guiamos você passo a passo."
+  expand: "Seguir os passos ↓"
+  collapse: "Fechar ↑"
+  share_title: "Compartilhe sua forma de usar"
+  share_text: "Como você está usando? Esperamos suas novas ideias."
   share_btn: "Compartilhar forma de uso"
   share_link: "/inventory/suggest/"
   manual_base: "/inventory/manual/"
@@ -16,271 +16,284 @@ page:
     expert: "Especialista"
 
 categories:
-  # ===== 1. Uso de Paper (Papel) =====
+  # ===== 1. Uso do Papel (Paper) =====
   - id: paper-usage
-    title: "📄 Uso de Paper"
+    title: "📄 Uso do Papel"
     icon: "📄"
-    description: "Tudo o que você pode fazer com Paper"
+    description: "Tudo que você pode fazer com o Papel (Paper)"
     items:
       # 1-1. Registro individual
       - type: "Iniciante"
         title: "Criar meu próprio registro"
-        subtitle: "Arquivo pessoal começando com 1 Paper"
+        subtitle: "Arquivo pessoal começando com 1 Papel"
         content: |
-          <p><strong>Visão geral</strong>: Com 1 Paper, você pode criar um documento e fazer registros contínuos no log.</p>
+          <p><strong>Visão geral</strong>: Você pode documentar um papel em branco para registrar imagens e textos, e adicionar conteúdo continuamente ao registro.</p>
 
-          <p><strong>Tutorial</strong></p>
+          <p><strong>Passo a passo</strong></p>
           <ol>
-            <li>Toque no botão <strong>+</strong> na parte inferior da tela inicial</li>
-            <li>Selecione <strong>Documento</strong> → Consome 1 Paper</li>
-            <li>Digite título, descrição + adicione imagem (opcional)</li>
-            <li>Após a criação, adicione notas na aba <strong>Log</strong></li>
+            <li>No inventário, pressione e segure o <strong>papel em branco</strong> para acessar <strong>Ver detalhes</strong><br/>
+                <em>Ou</em> selecione o papel em branco e toque no botão <strong>Ação</strong></li>
+            <li>Selecione o menu <strong>Criar novo item</strong></li>
+            <li>Insira as informações do item:
+              <ul>
+                <li>Imagem (opcional)</li>
+                <li>Título (obrigatório)</li>
+                <li>Conteúdo (opcional)</li>
+                <li>Prazo (opcional)</li>
+              </ul>
+            </li>
+            <li>Complete <strong>Criar</strong> → Converte para papel documentado</li>
+            <li>O papel documentado aparece no inventário com imagem e título</li>
           </ol>
 
           <p><strong>Exemplos de uso</strong></p>
           <ul>
-            <li>📔 <strong>Diário/Bloco de notas</strong>: Salve registros diários com imagens e texto</li>
-            <li>📸 <strong>Álbum de fotos</strong>: Registre momentos especiais em imagens, deixe memórias no log</li>
-            <li>📋 <strong>Gerenciamento de garantias</strong>: Salve fotos de certificados de garantia, configure data de validade para alertas de expiração</li>
-            <li>🧾 <strong>Arquivo de recibos</strong>: Armazene recibos importantes digitalmente</li>
+            <li>📔 <strong>Diário/Bloco de notas</strong>: Salve registros diários com imagens e texto, continue adicionando ao registro</li>
+            <li>📸 <strong>Álbum de fotos</strong>: Registre momentos especiais em imagens</li>
+            <li>📋 <strong>Gestão de garantias</strong>: Salve fotos de garantias de produtos, configure prazo para alertas de vencimento</li>
+            <li>🧾 <strong>Armazenamento de recibos</strong>: Guarde recibos importantes digitalmente</li>
           </ul>
 
-          <p><strong>Dica de organização</strong>: Agrupe documentos similares com <strong>Clip</strong> e separe categorias com <strong>Partition</strong>.</p>
+          <p><strong>Dica de organização</strong>: Agrupe documentos semelhantes com <strong>Clip</strong> e separe categorias com <strong>Partição</strong>.</p>
 
-      # 1-2. Duplicar template compartilhado
+      # 1-2. Duplicação de modelo compartilhado
       - type: "Iniciante"
-        title: "Importar template compartilhado"
-        subtitle: "Transforme templates de outros usuários nos seus"
+        title: "Obter modelo compartilhado"
+        subtitle: "Transforme o modelo de outros usuários no seu"
         content: |
-          <p><strong>Visão geral</strong>: Você pode duplicar Stamps compartilhados por outros usuários e usá-los como seus próprios documentos.</p>
+          <p><strong>Visão geral</strong>: Você pode duplicar carimbos compartilhados por outros usuários e usá-los como seus próprios documentos.</p>
 
-          <p><strong>Tutorial</strong></p>
+          <p><strong>Passo a passo</strong></p>
           <ol>
-            <li>Clique no link do Stamp recebido ou escaneie o QR</li>
-            <li>Na tela de detalhes do Stamp, toque em <strong>Duplicar</strong></li>
-            <li>Consome 1 Paper → Duplicação completa no seu inventário</li>
-            <li>Modifique os valores das palavras-chave conforme necessário</li>
+            <li>Clique no link do carimbo compartilhado ou escaneie o QR</li>
+            <li>Na tela de detalhes do carimbo, toque em <strong>Duplicar</strong></li>
+            <li>Selecione um <strong>papel em branco</strong> do seu inventário</li>
+            <li>Duplicação completa → O conteúdo do carimbo é copiado para o papel</li>
+            <li>Você pode modificar os valores das palavras-chave conforme necessário</li>
           </ol>
 
           <p><strong>Exemplos de uso</strong></p>
           <ul>
-            <li>✅ <strong>Checklist</strong>: Use templates compartilhados para preparação de viagem, lista de compras, etc.</li>
-            <li>🎁 <strong>Participação em eventos</strong>: Duplique templates de eventos de marcas/lojas</li>
+            <li>✅ <strong>Lista de verificação</strong>: Duplique e use modelos compartilhados para preparação de viagem, compras, etc.</li>
+            <li>🎁 <strong>Participação em eventos</strong>: Duplique modelos de eventos compartilhados por marcas/lojas</li>
             <li>📝 <strong>Uso de formulários</strong>: Duplique formulários úteis criados por outros usuários</li>
           </ul>
 
-      # 1-3. Log compartilhado - Sala de chat
+      # 1-3. Registro compartilhado - Sala de chat
       - type: "Intermediário"
         title: "Registrar junto com amigos"
-        subtitle: "Sala de chat em grupo com log compartilhado"
+        subtitle: "Espaço de grupo com registro compartilhado"
         content: |
-          <p><strong>Visão geral</strong>: Ao criar um documento compartilhado com vários Papers, todos os participantes podem registrar no mesmo log.</p>
+          <p><strong>Visão geral</strong>: Quando você cria um documento compartilhado com várias folhas de papel, todos os participantes podem registrar no mesmo log.</p>
 
-          <p><strong>Tutorial</strong></p>
+          <p><strong>Passo a passo</strong></p>
           <ol>
-            <li>Toque no botão <strong>+</strong> na parte inferior da tela inicial</li>
-            <li>Selecione <strong>Documento compartilhado</strong></li>
-            <li>Selecione Papers conforme o número de participantes (2-10)</li>
-            <li>Digite título e descrição, depois crie</li>
-            <li><strong>Envie</strong> o documento criado aos participantes</li>
+            <li>Selecione <strong>papéis em branco</strong> de acordo com o número de participantes (2 a 10 folhas)</li>
+            <li>Toque no botão <strong>Ação</strong></li>
+            <li>Selecione <strong>Criar documento compartilhado</strong></li>
+            <li>Insira o título e a descrição e crie</li>
+            <li><strong>Envie</strong> o documento compartilhado criado para os participantes</li>
           </ol>
 
-          <p><strong>Consumo de Paper por número de pessoas</strong></p>
+          <p><strong>Uso de papel por número de pessoas</strong></p>
           <ul>
-            <li>👫 2 pessoas: 2 Papers (diário de casal, chat 1:1)</li>
-            <li>👨‍👩‍👧 3 pessoas: 3 Papers (projeto de grupo pequeno)</li>
-            <li>👨‍👩‍👧‍👦 4-10 pessoas: 4-10 Papers (reunião familiar, clube)</li>
+            <li>👫 2 pessoas: 2 folhas de Papel (diário de casal, chat 1:1)</li>
+            <li>👨‍👩‍👧 3 pessoas: 3 folhas de Papel (projeto em pequeno grupo)</li>
+            <li>👨‍👩‍👧‍👦 4 a 10 pessoas: 4 a 10 folhas de Papel (reunião familiar, clube)</li>
           </ul>
 
           <p><strong>Exemplos de uso</strong></p>
           <ul>
-            <li>💑 <strong>Diário de casal</strong>: Registrem memórias juntos, só de vocês dois</li>
-            <li>👨‍👩‍👧‍👦 <strong>Álbum de família</strong>: Compartilhem eventos familiares e o dia a dia</li>
-            <li>📚 <strong>Grupo de estudos</strong>: Registrem conteúdo de estudo e dúvidas juntos</li>
+            <li>💑 <strong>Diário de casal</strong>: Registre memórias juntos, só vocês dois</li>
+            <li>👨‍👩‍👧‍👦 <strong>Álbum familiar</strong>: Compartilhe eventos familiares e vida cotidiana</li>
+            <li>📚 <strong>Grupo de estudo</strong>: Registre juntos conteúdos de estudo e perguntas</li>
           </ul>
 
-  # ===== 2. Uso de Stamp (Carimbo) =====
+  # ===== 2. Uso do Carimbo (Stamp) =====
   - id: stamp-usage
-    title: "🔖 Uso de Stamp"
+    title: "🔖 Uso do Carimbo"
     icon: "🔖"
-    description: "Crie e compartilhe templates com Stamp"
+    description: "Criar modelos e duplicar com Carimbo (Stamp)"
     items:
-      # 2-1. Stamp de log individual
+      # 2-1. Carimbo de registro individual
       - type: "Avançado"
-        title: "Criar meu próprio template"
-        subtitle: "Produção em massa de documentos com Stamp de log individual"
+        title: "Criar meu próprio modelo"
+        subtitle: "Produção em massa de documentos no mesmo formato com carimbo"
         content: |
-          <p><strong>Visão geral</strong>: Ao criar um template com Stamp, você pode criar rapidamente vários documentos no mesmo formato.</p>
+          <p><strong>Visão geral</strong>: Quando você grava um carimbo, ele se torna um modelo. Você pode duplicar este modelo no papel para criar rapidamente vários documentos no mesmo formato.</p>
 
-          <p><strong>Tutorial</strong></p>
+          <p><strong>Gravar o carimbo</strong></p>
           <ol>
-            <li>Toque no botão <strong>+</strong> na parte inferior da tela inicial</li>
-            <li>Selecione <strong>Template Stamp</strong> → Consome 1 Stamp</li>
-            <li>Digite informações do template: título, descrição, imagem</li>
-            <li>Selecione <strong>Modo de log: Individual</strong></li>
-            <li>Configure palavras-chave (máximo 10)</li>
-            <li>Criação do template completa</li>
+            <li>No inventário, pressione e segure o <strong>carimbo em branco</strong> para acessar <strong>Ver detalhes</strong><br/>
+                <em>Ou</em> selecione o carimbo em branco e toque no botão <strong>Ação</strong></li>
+            <li>Selecione o menu <strong>Criar novo modelo</strong></li>
+            <li>Insira as informações do modelo:
+              <ul>
+                <li>Imagem (opcional)</li>
+                <li>Título (obrigatório)</li>
+                <li>Conteúdo (opcional)</li>
+                <li>Prazo (opcional)</li>
+                <li>Palavras-chave padrão (máximo 10)</li>
+              </ul>
+            </li>
+            <li>Complete <strong>Criar</strong> → Converte para carimbo gravado</li>
           </ol>
 
-          <p><strong>Como duplicar documentos</strong></p>
+          <p><strong>Duplicar no papel</strong></p>
           <ol>
-            <li>Selecione o Stamp criado</li>
-            <li>Toque em <strong>Duplicar</strong></li>
-            <li>Selecione Paper para duplicar → Documento no mesmo formato criado</li>
+            <li>Selecione o <strong>carimbo</strong> gravado</li>
+            <li>Selecione adicionalmente a quantidade necessária de <strong>papéis em branco</strong> para duplicar</li>
+            <li>Toque no botão <strong>Ação</strong></li>
+            <li>Selecione o menu <strong>Duplicar</strong></li>
+            <li>O conteúdo gravado no carimbo é duplicado nos papéis selecionados</li>
           </ol>
 
           <p><strong>Exemplos de uso</strong></p>
           <ul>
-            <li>🏋️ <strong>Registro de exercícios</strong>: Registre conteúdo de exercícios no mesmo formato todos os dias</li>
-            <li>📖 <strong>Registro de leitura</strong>: Escreva resenhas no mesmo formato para cada livro</li>
-            <li>🍷 <strong>Gerenciamento de coleção</strong>: Catálogo de itens colecionáveis como vinhos, Lego, figuras</li>
+            <li>🏋️ <strong>Registro de exercícios</strong>: Registre o conteúdo dos exercícios diariamente no mesmo formato</li>
+            <li>📖 <strong>Registro de leitura</strong>: Escreva resenhas de livros em formato uniforme para cada livro</li>
+            <li>🍷 <strong>Gestão de coleções</strong>: Catálogo de colecionáveis como vinhos, Lego, figuras</li>
           </ul>
 
-          <p><strong>Dica de organização</strong>: Agrupe documentos em série com <strong>Clip</strong> para gerenciar.</p>
+          <p><strong>Dica de organização</strong>: Agrupe documentos gerados por carimbos com <strong>Clip</strong> para gerenciar como séries.</p>
 
-      # 2-2. Stamp de log compartilhado
+      # 2-2. Carimbo de registro compartilhado
       - type: "Avançado"
         title: "Criar comunidade aberta"
-        subtitle: "Adicione usuários continuamente com Stamp de log compartilhado"
+        subtitle: "Adicione participantes continuamente com carimbo de registro compartilhado"
         content: |
-          <p><strong>Visão geral</strong>: Stamp de log compartilhado é um espaço aberto onde qualquer pessoa pode duplicar e participar.</p>
+          <p><strong>Visão geral</strong>: Ao criar um carimbo no modo de registro compartilhado, ele se torna um espaço público onde qualquer pessoa pode duplicar e participar.</p>
 
-          <p><strong>Tutorial</strong></p>
+          <p><strong>Passo a passo</strong></p>
           <ol>
-            <li>Toque no botão <strong>+</strong> na parte inferior da tela inicial</li>
-            <li>Selecione <strong>Template Stamp</strong> → Consome 1 Stamp</li>
-            <li>Digite informações do template: título, descrição, imagem</li>
-            <li>Selecione <strong>Modo de log: Compartilhado</strong> ⭐</li>
-            <li>Configure palavras-chave e crie</li>
+            <li>Selecione <strong>carimbo em branco</strong> e acesse <strong>Criar novo modelo</strong></li>
+            <li>Insira as informações do modelo: imagem, título, conteúdo, prazo, palavras-chave</li>
+            <li>Selecione <strong>Modo de registro: Compartilhado</strong> ⭐</li>
+            <li>Complete <strong>Criar</strong></li>
           </ol>
 
           <p><strong>Como adicionar participantes</strong></p>
           <ol>
-            <li>Compartilhe o link/QR do Stamp com outros usuários</li>
-            <li>Quando duplicarem, participam automaticamente do log compartilhado</li>
-            <li>Podem ser adicionados continuamente sem limite de pessoas</li>
+            <li>Selecione o carimbo criado e envie o link/QR via <strong>Compartilhar</strong></li>
+            <li>A outra pessoa executa <strong>Duplicar</strong> através do link</li>
+            <li>O usuário que duplicou participa automaticamente do registro compartilhado</li>
+            <li>Pode adicionar continuamente sem limite de pessoas</li>
           </ol>
 
           <p><strong>Exemplos de uso</strong></p>
           <ul>
-            <li>💬 <strong>Sala de chat aberta</strong>: Espaço de discussão aberta onde qualquer pessoa pode participar</li>
-            <li>🎤 <strong>Fã clube</strong>: Reunião de fãs de artistas/marcas</li>
-            <li>📢 <strong>Fórum comunitário</strong>: Operação de comunidade baseada em interesses</li>
+            <li>💬 <strong>Sala de chat aberta</strong>: Espaço de discussão pública onde qualquer pessoa pode participar</li>
+            <li>🎤 <strong>Fã-clube</strong>: Encontro de fãs de artistas/marcas</li>
+            <li>📢 <strong>Fórum da comunidade</strong>: Operação de comunidade baseada em interesses</li>
           </ul>
 
-      # 2-3. Compartilhamento de Stamp - Pequenos empresários
+      # 2-3. Compartilhamento de carimbo - Pequenos comerciantes
       - type: "Especialista"
-        title: "Usar na operação da loja"
-        subtitle: "Marketing com Stamp para pequenos empresários"
+        title: "Usar na operação de loja"
+        subtitle: "Marketing de carimbo para pequenos comerciantes"
         content: |
-          <p><strong>Visão geral</strong>: Você pode compartilhar Stamps para se comunicar com clientes e realizar seus próprios eventos.</p>
-
-          <p><strong>Formas de uso</strong></p>
+          <p><strong>Visão geral</strong>: Você pode compartilhar carimbos para se comunicar com clientes e distribuir informações da loja.</p>
 
           <p>🍽️ <strong>Cardápio da loja</strong></p>
           <ol>
-            <li>Crie template Stamp com fotos do menu</li>
-            <li>Configure nome do item e preço nas palavras-chave</li>
-            <li>Disponibilize código QR nas mesas</li>
-            <li>Clientes duplicam e usam como registro de pedidos</li>
+            <li>Crie um modelo de carimbo com fotos do cardápio</li>
+            <li>Configure nome do prato, preço, descrição nas palavras-chave</li>
+            <li>Compartilhe o carimbo para gerar código QR → Coloque nas mesas</li>
+            <li>Cliente escaneia o QR → Duplica para ver informações do cardápio</li>
           </ol>
 
-          <p>🎫 <strong>Cartão de fidelidade</strong></p>
+          <p>🎫 <strong>Distribuição de cupons/eventos</strong></p>
           <ol>
-            <li>Crie template "Bebida grátis após 10 visitas"</li>
-            <li>Cliente duplica → Carimbo no log a cada visita</li>
-            <li>Ofereça benefício quando completar 10</li>
+            <li>Crie modelo de carimbo com imagem do evento</li>
+            <li>Configure conteúdo do desconto, validade nas palavras-chave</li>
+            <li>Compartilhe link/QR do carimbo com clientes</li>
+            <li>Cliente duplica → Guarda e apresenta como cupom</li>
           </ol>
 
-          <p>📋 <strong>Coleta de feedback do cliente</strong></p>
+          <p>📋 <strong>Coleta de feedback de clientes</strong></p>
           <ol>
-            <li>Crie template de pesquisa de satisfação</li>
+            <li>Crie modelo de feedback no modo de registro compartilhado</li>
             <li>Configure campos de avaliação/opinião nas palavras-chave</li>
-            <li>Cliente duplica → Escreve feedback</li>
+            <li>Cliente duplica → Escreve avaliação no registro compartilhado</li>
+            <li>Todas as avaliações são reunidas e podem ser verificadas em um só lugar</li>
           </ol>
 
           <p><strong>Outros usos</strong></p>
           <ul>
-            <li>🆕 Anúncio de novo menu + compartilhamento de avaliações de degustação</li>
-            <li>🎟️ Distribuição de cupons de desconto</li>
-            <li>📅 Operação de sistema de reservas</li>
+            <li>🆕 Anúncio de lançamento de novo cardápio</li>
+            <li>📅 Modelo de informações de reserva</li>
+            <li>📍 Informações de localização da loja/horário de funcionamento</li>
           </ul>
 
       # 2-4. Arquivo pessoal
       - type: "Intermediário"
         title: "Criar arquivo pessoal"
-        subtitle: "Organize conteúdo favorito na sua própria coleção"
+        subtitle: "Organize seus conteúdos favoritos em sua própria coleção"
         content: |
-          <p><strong>Visão geral</strong>: Organize sistematicamente conteúdos favoritos como YouTube, Spotify, livros, filmes.</p>
+          <p><strong>Visão geral</strong>: Organize sistematicamente seus conteúdos favoritos como YouTube, Spotify, livros, filmes.</p>
 
           <p>🎬 <strong>Playlist do YouTube</strong></p>
           <ol>
-            <li>Crie documento "Minha Coleção YouTube" com 1 Paper</li>
-            <li>Adicione link do vídeo + nota curta no log</li>
-            <li>Quando acumular vídeos, agrupe por gênero com <strong>Clip</strong></li>
-            <li>Separe áreas com <strong>Partition</strong> como música/culinária/exercícios</li>
+            <li>Crie um documento "Minha Coleção do YouTube" com papel em branco</li>
+            <li>Adicione links de vídeos + notas rápidas ao registro</li>
+            <li>Quando os vídeos se acumularem, agrupe por gênero com <strong>Clip</strong></li>
           </ol>
 
-          <p>🎵 <strong>Coleção de músicas Spotify</strong></p>
+          <p>🎵 <strong>Coleção de músicas do Spotify</strong></p>
           <ol>
-            <li>Crie documento "Playlist 2024" com 1 Paper</li>
-            <li>Adicione link do Spotify + emoção/situação daquele momento no log</li>
-            <li>Organize com <strong>Clip</strong> por temporada e clima</li>
+            <li>Crie um documento "Playlist 2024" com papel em branco</li>
+            <li>Adicione links do Spotify + registre a emoção/situação do momento</li>
+            <li>Organize com <strong>Clip</strong> por temporada, ambiente</li>
           </ol>
 
           <p>📚 <strong>Arquivo de livros lidos</strong></p>
           <ol>
-            <li>Crie documento com 1 Paper para cada livro</li>
-            <li>Foto da capa + título/autor</li>
-            <li>Registre trechos marcantes e resenhas no log</li>
-            <li>Classifique gêneros com <strong>Partition</strong>, agrupe séries com <strong>Clip</strong></li>
+            <li>Crie um carimbo com modelo de capa de livro (palavras-chave: autor, avaliação, etc.)</li>
+            <li>Duplique o carimbo no papel para cada livro</li>
+            <li>Registre trechos marcantes, resenhas no registro</li>
+            <li>Agrupe séries com <strong>Clip</strong></li>
           </ol>
 
           <p>🎞️ <strong>Registro de filmes/séries assistidos</strong></p>
           <ol>
-            <li>1 Paper + imagem do pôster</li>
-            <li>Comentário curto + nota (★★★★☆) no log</li>
-            <li><strong>Clip</strong> por ano, <strong>Partition</strong> por gênero</li>
+            <li>Crie um carimbo com modelo de pôster de filme</li>
+            <li>Duplique no papel para cada filme</li>
+            <li>Adicione comentário breve + classificação (★★★★☆) no registro</li>
           </ol>
 
-          <p>📱 <strong>Salvos do Instagram/TikTok</strong></p>
-          <ol>
-            <li>Registre screenshot + link original no log</li>
-            <li>Organize com <strong>Partition</strong> por interesse</li>
-          </ol>
-
-      # 2-5. Criador/Influenciador
+      # 2-5. Criadores/Influenciadores
       - type: "Especialista"
         title: "Atuar como criador"
-        subtitle: "Comunique-se com fãs e distribua conteúdo"
+        subtitle: "Comunicar com fãs e distribuir conteúdo"
         content: |
           <p><strong>Visão geral</strong>: Criadores e influenciadores podem se comunicar com fãs e realizar eventos.</p>
 
-          <p>🎉 <strong>Evento para fãs</strong></p>
+          <p>🎉 <strong>Evento de fãs</strong></p>
           <ol>
-            <li>Crie Stamp compartilhado para evento</li>
-            <li>Fãs duplicam e participam</li>
-            <li>Realize quiz e sorteios no log compartilhado</li>
+            <li>Crie carimbo de evento no modo de registro compartilhado</li>
+            <li>Compartilhe o link do carimbo com os fãs</li>
+            <li>Fãs duplicam para participar</li>
+            <li>Realize quiz, sorteios no registro compartilhado</li>
           </ol>
 
           <p>🛍️ <strong>Catálogo de produtos</strong></p>
           <ol>
-            <li>Crie Stamp com fotos de produtos</li>
-            <li>Nome do produto, preço, link de compra nas palavras-chave</li>
-            <li>Fãs duplicam e usam como lista de desejos</li>
+            <li>Crie carimbo com fotos de produtos</li>
+            <li>Configure nome do produto, preço, link de compra nas palavras-chave</li>
+            <li>Fãs duplicam para usar como lista de desejos</li>
           </ol>
 
-          <p>❓ <strong>Espaço de Q&A</strong></p>
+          <p>❓ <strong>Espaço de perguntas e respostas</strong></p>
           <ol>
-            <li>Crie Stamp de log compartilhado</li>
-            <li>Fãs escrevem perguntas no log</li>
-            <li>Criador responde</li>
+            <li>Crie carimbo de Q&A no modo de registro compartilhado</li>
+            <li>Fãs duplicam e escrevem perguntas no registro</li>
+            <li>Criador responde no registro compartilhado</li>
           </ol>
 
           <p><strong>Outros usos</strong></p>
           <ul>
-            <li>📅 Informações de encontro com fãs: data/local/como participar</li>
-            <li>🎬 Compartilhamento de bastidores e processo de produção</li>
+            <li>📅 Informações de encontro com fãs/local/como participar</li>
+            <li>🎬 Histórias dos bastidores, processo de produção</li>
             <li>📁 Arquivo de conteúdos antigos</li>
           </ul>
 
@@ -289,58 +302,59 @@ categories:
         title: "Compartilhar hobbies"
         subtitle: "Compartilhamento de conteúdo baseado em interesses"
         content: |
-          <p><strong>Visão geral</strong>: Você pode compartilhar hobbies e interesses com outros usuários através de Stamps compartilhados.</p>
+          <p><strong>Visão geral</strong>: Você pode criar carimbos com seus hobbies e interesses e compartilhá-los com outros usuários.</p>
 
-          <p>🍳 <strong>Compartilhamento de receitas</strong></p>
+          <p>🍳 <strong>Compartilhar receitas</strong></p>
           <ol>
-            <li>Crie Stamp com foto do prato finalizado</li>
-            <li>Configure ingredientes e tempo de preparo nas palavras-chave</li>
-            <li>Usuários que duplicaram registram avaliações no log compartilhado</li>
+            <li>Crie carimbo com foto do prato pronto</li>
+            <li>Configure ingredientes, tempo de preparo nas palavras-chave</li>
+            <li>Configure modo de registro compartilhado → Usuários que duplicarem compartilham avaliações</li>
           </ol>
 
-          <p>🏃 <strong>Compartilhamento de rotina de exercícios</strong></p>
+          <p>🏃 <strong>Compartilhar rotina de exercícios</strong></p>
           <ol>
-            <li>Crie template de desafio de 30 dias ou rotina de treino em casa</li>
-            <li>Participantes registram conclusão diária</li>
+            <li>Crie carimbo de desafio de 30 dias, rotina de treino em casa</li>
+            <li>Configure modo de registro compartilhado</li>
+            <li>Participantes duplicam e registram conclusão diária</li>
           </ol>
 
           <p>✈️ <strong>Guia de viagem</strong></p>
           <ol>
-            <li>Template com foto do destino + roteiro recomendado</li>
-            <li>Organize informações de restaurantes e hospedagem em palavras-chave</li>
-            <li>Pessoas que visitaram adicionam avaliações</li>
+            <li>Crie carimbo com foto do destino + roteiro recomendado</li>
+            <li>Organize informações de restaurantes, hospedagem nas palavras-chave</li>
+            <li>Compartilhe → Pessoas que foram adicionam avaliações</li>
           </ol>
 
           <p><strong>Outros usos</strong></p>
           <ul>
-            <li>🎮 Guias e builds de jogos</li>
-            <li>🔨 Guias de projetos DIY</li>
-            <li>🌱 Dicas de cuidados com plantas, cronograma de rega</li>
-            <li>🐕 Dicas de cuidados com pets</li>
+            <li>🎮 Dicas de jogos, builds</li>
+            <li>🔨 Guia de projetos DIY</li>
+            <li>🌱 Cuidados com plantas, cronograma de rega</li>
+            <li>🐕 Dicas de cuidados com animais de estimação</li>
           </ul>
 
       # 2-7. Comunidade local/familiar
       - type: "Intermediário"
-        title: "Gerenciar atividades de grupo"
-        subtitle: "Espaço de comunicação para comunidades locais, famílias e amigos"
+        title: "Operar atividades em grupo"
+        subtitle: "Espaço de comunicação para grupos locais, familiares e de amigos"
         content: |
-          <p><strong>Visão geral</strong>: Você pode criar espaços compartilhados para comunidades locais, reuniões familiares e grupos de amigos.</p>
+          <p><strong>Visão geral</strong>: Você pode criar espaços compartilhados com carimbos para comunidades locais, reuniões familiares e grupos de amigos.</p>
 
           <p>🏘️ <strong>Comunidade local</strong></p>
           <ul>
-            <li>🍜 Mapa de restaurantes do bairro: Lista de restaurantes recomendados pelos moradores</li>
+            <li>🍜 Mapa de restaurantes do bairro: Moradores recomendam restaurantes no registro compartilhado</li>
             <li>🎪 Informações de eventos locais: Festivais, feiras, eventos culturais</li>
-            <li>🏃 Recrutamento de clubes: Apresentação de clubes de caminhada, corrida, leitura, etc.</li>
-            <li>🏠 Comunicação de condomínio: Compartilhamento de avisos do prédio</li>
+            <li>🏃 Recrutamento de clubes: Apresentação de clubes de caminhada, corrida, leitura</li>
+            <li>🏠 Comunicação de moradores/condomínio: Compartilhamento de avisos do prédio</li>
           </ul>
 
-          <p>👨‍👩‍👧‍👦 <strong>Grupo familiar/amigos</strong></p>
+          <p>👨‍👩‍👧‍👦 <strong>Grupos familiares/de amigos</strong></p>
           <ul>
-            <li>🍳 Livro de receitas da família: Receitas tradicionais passadas por gerações</li>
-            <li>🎂 Calendário de aniversários de amigos: Gerenciamento de aniversários e ideias de presentes</li>
-            <li>✅ Lista de desejos do grupo: Objetivos que querem alcançar juntos</li>
-            <li>✈️ Planejamento de viagem em família: Compartilhamento de itinerário, lista de preparação, orçamento</li>
-            <li>💒 Informações de eventos: Casamentos, festas de aniversário</li>
+            <li>🍳 Livro de receitas da família: Receitas tradicionais da família</li>
+            <li>🎂 Calendário de aniversários de amigos: Gestão de aniversários e ideias de presentes</li>
+            <li>✅ Lista de desejos do grupo: Objetivos a realizar juntos</li>
+            <li>✈️ Planejamento de viagem familiar: Compartilhamento de itinerário, itens necessários, orçamento</li>
+            <li>💒 Informações de ocasiões especiais: Compartilhamento de casamentos, festas de aniversário</li>
           </ul>
 
       # 2-8. Trabalho/Eventos
@@ -348,101 +362,113 @@ categories:
         title: "Usar no trabalho e eventos"
         subtitle: "Colaboração em equipe e registro de dias especiais"
         content: |
-          <p><strong>Visão geral</strong>: Você pode criar espaços compartilhados para colaboração no trabalho e eventos especiais.</p>
+          <p><strong>Visão geral</strong>: Você pode criar espaços compartilhados com carimbos para colaboração no trabalho e eventos especiais.</p>
 
           <p>💼 <strong>Trabalho/Colaboração</strong></p>
           <ul>
-            <li>📊 Projeto de equipe: Template de compartilhamento de progresso</li>
-            <li>📝 Formato de ata de reunião: Template padronizado de atas</li>
+            <li>📊 Projeto de equipe: Compartilhe o progresso com registro compartilhado</li>
+            <li>📝 Modelo de ata de reunião: Modelo padronizado de ata com carimbo</li>
             <li>📋 Passagem de tarefas: Organização e transferência de responsabilidades</li>
-            <li>👋 Onboarding de novos funcionários: Compartilhamento de guia de adaptação à empresa</li>
+            <li>👋 Integração de novos funcionários: Compartilhamento de guia de adaptação à empresa</li>
           </ul>
 
           <p>🎉 <strong>Eventos/Dias especiais</strong></p>
           <ul>
-            <li>💒 Convite de casamento: Convite + confirmação de presença + mensagens de felicitações</li>
-            <li>🎈 Convites de festa: Aniversário, inauguração de casa, confraternização</li>
-            <li>👶 Festas de bebê: Fotos do bebê + coleção de mensagens de felicitações</li>
+            <li>💒 Convite de casamento: Carimbo compartilhado com convite + confirmação de presença + mensagens de felicitações</li>
+            <li>🎈 Convite de festa: Convites para aniversário, festa de casa nova, confraternização</li>
+            <li>👶 Festa de bebê/batizado: Fotos do bebê + coleção de mensagens de felicitações</li>
             <li>🕯️ Memorial/Datas comemorativas: Espaço para compartilhar memórias juntos</li>
             <li>📨 Cápsula do tempo: Mensagem para o eu do futuro</li>
           </ul>
 
-  # ===== 3. Uso de Badge (Distintivo) =====
+  # ===== 3. Uso do Distintivo (Badge) =====
   - id: badge-usage
-    title: "🏷️ Uso de Badge"
+    title: "🏷️ Uso do Distintivo"
     icon: "🏷️"
-    description: "Construa marca e confiança com Badge"
+    description: "Criar marca e construir confiança com Distintivo (Badge)"
     items:
-      # 3-1. Promoção da imagem da marca
+      # 3-1. Promoção de imagem de marca
       - type: "Especialista"
         title: "Construir identidade de marca"
         subtitle: "Crie sua própria marca com nome de domínio exclusivo"
         content: |
-          <p><strong>Visão geral</strong>: Ao gravar um Badge, você pode ter um nome de domínio exclusivo. Este nome de domínio aparece em todas as suas atividades.</p>
+          <p><strong>Visão geral</strong>: Ao gravar um distintivo, você obtém um nome de domínio exclusivo. Quando você equipa o distintivo, este nome de domínio aparece em todas as suas atividades.</p>
 
-          <p><strong>Tutorial</strong></p>
+          <p><strong>Gravar o distintivo</strong></p>
           <ol>
-            <li>Perfil → Selecione <strong>Gravar Badge</strong></li>
-            <li>Digite o nome de domínio desejado (ex: minhaloja, criador_silva)</li>
-            <li><strong>Verificação de duplicidade</strong> obrigatória</li>
-            <li>Selecione imagem do Badge (obrigatório)</li>
-            <li><strong>Gravar</strong> → Consome 1 Badge</li>
+            <li>No inventário, pressione e segure o <strong>distintivo em branco</strong> para acessar <strong>Ver detalhes</strong><br/>
+                <em>Ou</em> selecione o distintivo em branco e toque no botão <strong>Ação</strong></li>
+            <li>Selecione o menu <strong>Gravar</strong></li>
+            <li>Insira as informações do distintivo:
+              <ul>
+                <li>Imagem do distintivo (obrigatório)</li>
+                <li>Digite o nome de domínio (ex: minhaloja, criador_kim)</li>
+              </ul>
+            </li>
+            <li>Após <strong>verificar disponibilidade</strong>, complete <strong>Gravar</strong></li>
           </ol>
 
-          <p>⚠️ <strong>Atenção</strong>: O nome de domínio não pode ser alterado após a gravação!</p>
+          <p>⚠️ <strong>Atenção</strong>: O nome de domínio não pode ser alterado após ser gravado!</p>
+
+          <p><strong>Equipar/Desequipar distintivo</strong></p>
+          <ol>
+            <li>Selecione o <strong>distintivo</strong> gravado e toque no botão <strong>Ação</strong></li>
+            <li>Selecione <strong>Equipar</strong> → Distintivo ativado</li>
+            <li>Para remover, selecione <strong>Desequipar</strong> novamente na Ação</li>
+          </ol>
+
+          <p><strong>Efeitos ao equipar</strong></p>
+          <ul>
+            <li>🔍 Pesquisável pelo nome de domínio (em vez de e-mail)</li>
+            <li>📝 Todos os carimbos e papéis que você criar mostram o autor como "nome de domínio"</li>
+            <li>📋 Ao escrever no registro, também aparece como nome de domínio</li>
+          </ul>
 
           <p><strong>Exemplos de uso</strong></p>
           <ul>
-            <li>🏢 <strong>Empresa/Marca</strong>: Opere conta oficial com logo e nome da marca</li>
+            <li>🏢 <strong>Empresa/Marca</strong>: Opere uma conta oficial com logo e nome da marca</li>
             <li>🎨 <strong>Criador</strong>: Distribua conteúdo com apelido exclusivo</li>
-            <li>👔 <strong>Perfil profissional</strong>: Use nome de domínio que representa sua área de especialização</li>
+            <li>👔 <strong>Perfil profissional</strong>: Use nome de domínio que represente sua área de especialização</li>
           </ul>
 
       # 3-2. E-mail privado
       - type: "Especialista"
         title: "Proteger privacidade"
-        subtitle: "Atue com nome de domínio em vez de e-mail"
+        subtitle: "Atuar com nome de domínio em vez de e-mail"
         content: |
-          <p><strong>Visão geral</strong>: Ao gravar um Badge, seu e-mail real é substituído por "nomedodominio".</p>
+          <p><strong>Visão geral</strong>: Ao equipar o distintivo, seu "nome de domínio" aparece em vez do e-mail real, protegendo suas informações pessoais.</p>
 
           <p><strong>Vantagens</strong></p>
           <ul>
-            <li>🔒 <strong>Proteção de privacidade</strong>: Endereço de e-mail real não é exposto</li>
+            <li>🔒 <strong>Proteção de privacidade</strong>: Seu endereço de e-mail real não é exposto</li>
             <li>📧 <strong>Prevenção de spam</strong>: E-mail protegido mesmo em atividades públicas</li>
-            <li>🎭 <strong>Atividade anônima</strong>: Possibilidade de atividade anônima com nome desejado</li>
+            <li>🎭 <strong>Atividade anônima</strong>: Possível atuar com o nome que desejar</li>
           </ul>
 
-          <p><strong>Exemplos de uso</strong></p>
+          <p><strong>Âmbito de aplicação</strong></p>
           <ul>
-            <li>Nome de domínio exibido como informação do criador ao distribuir Stamps compartilhados</li>
-            <li>Identificação por nome de domínio em vez de e-mail em logs compartilhados</li>
-            <li>Nome de domínio exibido para a outra parte em transações em vez de e-mail</li>
+            <li>Ao criar carimbo/papel, "nome de domínio" aparece como informação do criador</li>
+            <li>No registro compartilhado, "nome de domínio" aparece em vez de e-mail</li>
+            <li>Quando outros usuários pesquisam, pesquisam pelo nome de domínio, não pelo e-mail</li>
           </ul>
 
-      # 3-3. Garantia de gravação de documento
+      # 3-3. Garantia de documento gravado
       - type: "Especialista"
         title: "Garantir origem do documento"
-        subtitle: "Gravação de Badge em todos os documentos"
+        subtitle: "Distintivo gravado em todos os documentos"
         content: |
-          <p><strong>Visão geral</strong>: Ao equipar um Badge, todos os documentos que você cria recebem a gravação do Badge. Isso garante a origem do documento.</p>
-
-          <p><strong>Como equipar</strong></p>
-          <ol>
-            <li>Perfil → <strong>Gerenciamento de Badge</strong></li>
-            <li>Selecione o Badge gravado</li>
-            <li>Toque em <strong>Equipar</strong></li>
-          </ol>
+          <p><strong>Visão geral</strong>: Ao equipar o distintivo, todos os documentos que você criar incluem as informações do distintivo. Isso permite garantir a origem do documento.</p>
 
           <p><strong>Exemplos de uso</strong></p>
           <ul>
-            <li>✅ <strong>Certificação de documentos produzidos</strong>: Badge gravado em todos os documentos garante a origem</li>
-            <li>📜 <strong>Emissão de documentos oficiais</strong>: Comprovação de que é documento oficial da marca/empresa</li>
-            <li>🔐 <strong>Prevenção de falsificação</strong>: Verificação de originalidade possível através da gravação do Badge</li>
+            <li>✅ <strong>Autenticação de documentos oficiais</strong>: Todos os documentos mostram o nome de domínio para garantir a origem</li>
+            <li>📜 <strong>Emissão oficial de marca</strong>: Prova de que é um documento oficial da marca/empresa</li>
+            <li>🔐 <strong>Prevenção de falsificação</strong>: Verificação do criador original através do domínio do distintivo</li>
           </ul>
 
           <p><strong>Dicas de uso</strong></p>
           <ul>
-            <li>Certificar que é cupom oficial ao emitir cupons da loja</li>
-            <li>Indicar direitos autorais com Badge em conteúdo de criadores</li>
-            <li>Indicar conta oficial em comunicados empresariais</li>
+            <li>Ao emitir cupons da loja, autentique como cupom oficial com distintivo</li>
+            <li>Marque direitos autorais com distintivo em conteúdo de criadores</li>
+            <li>Mostre conta oficial em comunicados corporativos</li>
           </ul>
