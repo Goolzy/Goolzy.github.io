@@ -38,7 +38,7 @@ categories:
               <ul>
                 <li>이미지 (선택)</li>
                 <li>제목 (필수)</li>
-                <li>내용 (선택)</li>
+                <li>내용 (필수)</li>
                 <li>기한 (선택)</li>
               </ul>
             </li>
@@ -174,8 +174,9 @@ categories:
 
           <p><strong>참여자 추가 방법</strong></p>
           <ol>
-            <li>생성된 스탬프를 선택 후 <strong>공유하기</strong>로 링크/QR 전달</li>
-            <li>상대방이 링크를 통해 <strong>복제하기</strong> 실행</li>
+            <li>상단 <strong>슈퍼서치바</strong>에서 해당 템플릿의 키워드로 검색</li>
+            <li>검색된 공유 템플릿을 선택하여 <strong>다운로드</strong></li>
+            <li>다운로드한 템플릿으로 <strong>복제하기</strong> 실행</li>
             <li>복제한 사용자가 자동으로 공유 로그에 참여</li>
             <li>인원 제한 없이 지속적으로 추가 가능</li>
           </ol>

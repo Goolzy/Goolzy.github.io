@@ -8,120 +8,121 @@
 {% assign manual_base = data.page.manual_base %}
 
 <style>
-/* 탭 메뉴 컨테이너 */
-.tab-container {
-  background: rgba(10, 6, 20, 0.6);
-  border: 1px solid rgba(168, 85, 247, 0.2);
-  border-radius: 16px;
-  padding: 1.25rem;
-  margin-bottom: 2.5rem;
+/* 필터 영역 */
+.filter-section {
+  margin-bottom: 2rem;
 }
 
-.tab-group {
-  margin-bottom: 1rem;
-}
-
-.tab-group:last-child {
-  margin-bottom: 0;
-}
-
-.tab-group-label {
-  font-size: 0.7rem;
-  color: var(--text-dim);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom: 0.5rem;
-  padding-left: 0.5rem;
-}
-
-.tab-row {
+.filter-row {
   display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 12px;
-  padding: 0.5rem;
 }
 
-/* 탭 버튼 스타일 */
-.tab-btn {
-  position: relative;
-  padding: 0.6rem 1.2rem;
-  border: none;
-  border-radius: 8px;
-  background: transparent;
+.filter-label {
+  font-size: 0.75rem;
+  font-weight: 600;
   color: var(--text-dim);
+  min-width: 60px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* 세그먼트 컨트롤 */
+.segment-control {
+  display: inline-flex;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 3px;
+  gap: 2px;
+}
+
+.segment-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.5);
   cursor: pointer;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 500;
-  transition: all 0.2s ease;
+  transition: all 0.15s ease;
+  white-space: nowrap;
 }
 
-.tab-btn:hover {
-  color: var(--text);
-  background: rgba(168, 85, 247, 0.1);
+.segment-btn:hover {
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.05);
 }
 
-.tab-btn.active {
-  color: var(--text);
-  background: rgba(168, 85, 247, 0.25);
-  box-shadow: 0 2px 8px rgba(168, 85, 247, 0.3);
+.segment-btn.active {
+  color: #fff;
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.6), rgba(139, 92, 246, 0.6));
+  box-shadow: 0 2px 8px rgba(168, 85, 247, 0.25);
 }
 
 /* 카테고리별 활성 색상 */
-.tab-btn[data-category="paper-usage"].active {
-  background: rgba(59, 130, 246, 0.25);
+.segment-btn[data-category="paper-usage"].active {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.7), rgba(37, 99, 235, 0.7));
   box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
-  color: #60a5fa;
 }
 
-.tab-btn[data-category="stamp-usage"].active {
-  background: rgba(168, 85, 247, 0.25);
+.segment-btn[data-category="stamp-usage"].active {
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.7), rgba(139, 92, 246, 0.7));
   box-shadow: 0 2px 8px rgba(168, 85, 247, 0.3);
-  color: #c084fc;
 }
 
-.tab-btn[data-category="badge-usage"].active {
-  background: rgba(20, 184, 166, 0.25);
+.segment-btn[data-category="badge-usage"].active {
+  background: linear-gradient(135deg, rgba(20, 184, 166, 0.7), rgba(13, 148, 136, 0.7));
   box-shadow: 0 2px 8px rgba(20, 184, 166, 0.3);
-  color: #2dd4bf;
 }
 
 /* 난이도별 활성 색상 */
-.tab-btn[data-level="beginner"].active {
-  background: rgba(34, 197, 94, 0.25);
+.segment-btn[data-level="beginner"].active {
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.7), rgba(22, 163, 74, 0.7));
   box-shadow: 0 2px 8px rgba(34, 197, 94, 0.3);
-  color: #4ade80;
 }
 
-.tab-btn[data-level="intermediate"].active {
-  background: rgba(59, 130, 246, 0.25);
+.segment-btn[data-level="intermediate"].active {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.7), rgba(37, 99, 235, 0.7));
   box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
-  color: #60a5fa;
 }
 
-.tab-btn[data-level="advanced"].active {
-  background: rgba(168, 85, 247, 0.25);
+.segment-btn[data-level="advanced"].active {
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.7), rgba(139, 92, 246, 0.7));
   box-shadow: 0 2px 8px rgba(168, 85, 247, 0.3);
-  color: #c084fc;
 }
 
-.tab-btn[data-level="expert"].active {
-  background: rgba(239, 68, 68, 0.25);
+.segment-btn[data-level="expert"].active {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.7), rgba(220, 38, 38, 0.7));
   box-shadow: 0 2px 8px rgba(239, 68, 68, 0.3);
-  color: #f87171;
 }
 
 /* 모바일 대응 */
 @media (max-width: 600px) {
-  .tab-container {
-    padding: 1rem;
+  .filter-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
   }
 
-  .tab-btn {
-    padding: 0.5rem 0.8rem;
+  .filter-label {
+    min-width: auto;
+  }
+
+  .segment-control {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .segment-btn {
+    padding: 0.45rem 0.7rem;
     font-size: 0.75rem;
+    flex: 1;
+    text-align: center;
   }
 }
 
@@ -393,36 +394,25 @@
 
 <p>{{ data.page.intro }}</p>
 
-<!-- 2열 탭 메뉴 -->
-<div class="tab-container">
-  <!-- 1열: 카테고리 탭 -->
-  <div class="tab-group">
-    <div class="tab-group-label">
-      {% if lang == 'ko' %}카테고리{% elsif lang == 'ja' %}カテゴリ{% elsif lang == 'de' %}Kategorie{% elsif lang == 'fr' %}Catégorie{% elsif lang == 'es' %}Categoría{% elsif lang == 'pt' %}Categoria{% else %}Category{% endif %}
-    </div>
-    <div class="tab-row" id="category-filter">
-      <button class="tab-btn active" data-category="all">
-        {% if lang == 'ko' %}전체{% elsif lang == 'ja' %}すべて{% elsif lang == 'de' %}Alle{% elsif lang == 'fr' %}Tout{% elsif lang == 'es' %}Todo{% elsif lang == 'pt' %}Tudo{% else %}All{% endif %}
-      </button>
+<!-- 필터 영역 -->
+<div class="filter-section">
+  <div class="filter-row">
+    <span class="filter-label">{% if lang == 'ko' %}유형{% elsif lang == 'ja' %}種類{% elsif lang == 'de' %}Typ{% elsif lang == 'fr' %}Type{% elsif lang == 'es' %}Tipo{% elsif lang == 'pt' %}Tipo{% else %}Type{% endif %}</span>
+    <div class="segment-control" id="category-filter">
+      <button class="segment-btn active" data-category="all">{% if lang == 'ko' %}전체{% elsif lang == 'ja' %}すべて{% elsif lang == 'de' %}Alle{% elsif lang == 'fr' %}Tout{% elsif lang == 'es' %}Todo{% elsif lang == 'pt' %}Tudo{% else %}All{% endif %}</button>
       {% for category in data.categories %}
-      <button class="tab-btn" data-category="{{ category.id }}">{{ category.title }}</button>
+      <button class="segment-btn" data-category="{{ category.id }}">{{ category.title }}</button>
       {% endfor %}
     </div>
   </div>
-
-  <!-- 2열: 난이도 탭 -->
-  <div class="tab-group">
-    <div class="tab-group-label">
-      {% if lang == 'ko' %}난이도{% elsif lang == 'ja' %}難易度{% elsif lang == 'de' %}Schwierigkeit{% elsif lang == 'fr' %}Difficulté{% elsif lang == 'es' %}Dificultad{% elsif lang == 'pt' %}Dificuldade{% else %}Difficulty{% endif %}
-    </div>
-    <div class="tab-row" id="level-filter">
-      <button class="tab-btn active" data-level="all">
-        {% if lang == 'ko' %}전체{% elsif lang == 'ja' %}すべて{% elsif lang == 'de' %}Alle{% elsif lang == 'fr' %}Tout{% elsif lang == 'es' %}Todo{% elsif lang == 'pt' %}Tudo{% else %}All{% endif %}
-      </button>
-      <button class="tab-btn" data-level="beginner">{{ data.page.levels.beginner }}</button>
-      <button class="tab-btn" data-level="intermediate">{{ data.page.levels.intermediate }}</button>
-      <button class="tab-btn" data-level="advanced">{{ data.page.levels.advanced }}</button>
-      <button class="tab-btn" data-level="expert">{{ data.page.levels.expert }}</button>
+  <div class="filter-row">
+    <span class="filter-label">{% if lang == 'ko' %}난이도{% elsif lang == 'ja' %}難易度{% elsif lang == 'de' %}Level{% elsif lang == 'fr' %}Niveau{% elsif lang == 'es' %}Nivel{% elsif lang == 'pt' %}Nível{% else %}Level{% endif %}</span>
+    <div class="segment-control" id="level-filter">
+      <button class="segment-btn active" data-level="all">{% if lang == 'ko' %}전체{% elsif lang == 'ja' %}すべて{% elsif lang == 'de' %}Alle{% elsif lang == 'fr' %}Tout{% elsif lang == 'es' %}Todo{% elsif lang == 'pt' %}Tudo{% else %}All{% endif %}</button>
+      <button class="segment-btn" data-level="beginner">{{ data.page.levels.beginner }}</button>
+      <button class="segment-btn" data-level="intermediate">{{ data.page.levels.intermediate }}</button>
+      <button class="segment-btn" data-level="advanced">{{ data.page.levels.advanced }}</button>
+      <button class="segment-btn" data-level="expert">{{ data.page.levels.expert }}</button>
     </div>
   </div>
 </div>
@@ -487,9 +477,9 @@
   let activeCategory = 'all';
   let activeLevel = 'all';
 
-  // 탭 버튼들
-  const categoryBtns = document.querySelectorAll('#category-filter .tab-btn');
-  const levelBtns = document.querySelectorAll('#level-filter .tab-btn');
+  // 세그먼트 버튼들
+  const categoryBtns = document.querySelectorAll('#category-filter .segment-btn');
+  const levelBtns = document.querySelectorAll('#level-filter .segment-btn');
   const cards = document.querySelectorAll('.usecase-card');
   const sections = document.querySelectorAll('.usecase-section');
   const noResults = document.getElementById('no-results');
