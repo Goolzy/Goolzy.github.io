@@ -630,3 +630,38 @@ categories:
             <li>크리에이터 콘텐츠에 뱃지로 저작권 표시</li>
             <li>기업 공지사항에 공식 계정 표시</li>
           </ul>
+
+  # ===== 4. 잉크 활용법 (Ink) =====
+  - id: ink-usage
+    title: "🎨 잉크 활용법"
+    icon: "🎨"
+    description: "잉크(Ink)로 앱 테마 커스터마이징하기"
+    items:
+      # 4-1. 잉크 기초 (초급)
+      - type: "초급"
+        title: "잉크로 테마 변경하기"
+        subtitle: "나만의 앱 색상 커스터마이징"
+        content: |
+          <p><strong>개요</strong>: 잉크는 앱의 메인 컬러와 서브 컬러를 변경할 수 있는 아이템입니다. 원하는 잉크를 선택하고 테마를 변경해보세요.</p>
+
+          <p><strong>따라하기</strong></p>
+          <ol>
+            <li>인벤토리에서 원하는 <strong>잉크</strong>를 선택</li>
+            <li><strong>액션</strong> 버튼 터치</li>
+            <li><strong>테마 변경하기</strong> 선택</li>
+            <li>앱의 메인 컬러와 서브 컬러가 해당 잉크의 색상으로 변경됨</li>
+          </ol>
+
+          <p><strong>잉크의 특징</strong></p>
+          <ul>
+            <li>🎨 각 잉크마다 고유한 메인 컬러와 서브 컬러 조합</li>
+            <li>🔄 언제든지 다른 잉크로 테마 변경 가능</li>
+            <li>✨ 앱 전체 UI에 색상이 적용됨</li>
+          </ul>
+
+          <p><strong>활용 팁</strong></p>
+          <ul>
+            <li>🌙 어두운 색상의 잉크로 눈의 피로 감소</li>
+            <li>🌈 기분에 따라 테마 색상 변경</li>
+            <li>💼 업무용/개인용으로 테마 구분</li>
+          </ul>
