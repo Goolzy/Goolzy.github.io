@@ -71,6 +71,19 @@ Sicherheit und Benutzerfreundlichkeit von passwortgeschützten Elementen wurden 
 - **16-stellige Anzeige**: 16 kleine Kreise zeigen den Passworteingabestatus an
 - **Zweizeilige Eingabe**: Passwort eingeben und bestätigen auf einem Bildschirm
 
+#### Verbesserung der Push-Benachrichtigungseinstellungen
+Der Bildschirm für Push-Benachrichtigungseinstellungen wurde nach Kategorien neu organisiert, um eine einfachere Verwaltung zu ermöglichen.
+- **7 Kategorien**: Unterteilt in Transaktion, Log, Ablaufdatum, Reaktion, Schlüsselwort, Freigabe und System
+- **Gruppen-Toggle**: Alle Benachrichtigungen einer Kategorie auf einmal ein- oder ausschalten
+- **Akkordeon-UI**: Nur relevante Kategorien ausklappen und anzeigen
+- **Zusätzliche Detailbenachrichtigungen**: Neue Benachrichtigungen für Transaktionsannahme/-ablehnung, Reaktion, Schlüsselwort, Freigabe-Ablaufdatum/-Melding und Systembenachrichtigungen
+- **Neumorphes Design**: Neumorphe Stilisierung auf einzelnen Benachrichtigungselementen angewendet
+
+#### Verbesserung der Soundeinstellungen
+Der Stummschalter-Button wurde mit neumorphem Design versehen, das den Druckzustand intuitiv darstellt.
+- **Druckeffekt**: Beim Stummschalten wird der Button nach innen gedrückt aussehen
+- **Neumorphe Schatten**: Im Standardzustand gewölbt, im gedrückten Zustand konkav mit Schatten
+
 </div>
 </details>
 

@@ -71,6 +71,19 @@ A segurança e usabilidade de itens protegidos por senha foram significativament
 - **Indicador de 16 dígitos**: 16 pequenos círculos mostram o estado de entrada da senha
 - **Entrada em duas linhas**: Digite e confirme a senha na mesma tela
 
+#### Melhoria das Configurações de Notificação Push
+A tela de configurações de notificação push foi reorganizada por categorias para gerenciamento mais conveniente.
+- **7 categorias**: Classificadas em Transação, Log, Expiração, Reação, Palavra-chave, Compartilhamento e Sistema
+- **Alternância de grupo**: Ativar ou desativar uma categoria inteira de uma vez
+- **Recolher/Expandir**: Interface de sanfona para visualizar apenas as categorias necessárias
+- **Notificações detalhadas adicionadas**: Aceitação/rejeição de transação, reação, palavra-chave, expiração/denúncia de compartilhamento, notificações do sistema adicionadas
+- **Design neumórfico**: Estilo neumórfico aplicado a itens de notificação individuais
+
+#### Melhoria das Configurações de Som
+Botão de silencioso com design neumórfico que expressa intuitivamente o estado pressionado.
+- **Efeito de pressão**: O botão parece ser pressionado para dentro quando silenciado
+- **Sombra neumórfica**: Estado padrão é convexo, estado pressionado é côncavo
+
 </div>
 </details>
 

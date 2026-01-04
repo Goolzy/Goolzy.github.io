@@ -71,6 +71,19 @@ Security and usability of password-protected items have been significantly impro
 - **16-Digit Display**: Small circles (16 total) show password input status
 - **Two-Line Input**: Set password and confirm on the same screen
 
+#### Push Notification Settings Improvement
+Push notification settings screen has been reorganized by category for more convenient management.
+- **7 Categories**: Classified into Transaction, Log, Expiry, Reaction, Keyword, Sharing, and System
+- **Group Toggle**: Turn entire category on or off at once
+- **Collapse/Expand**: Accordion UI allows viewing only necessary categories
+- **Detailed Notifications**: Added transaction accept/reject, reaction, keyword, sharing expiry/report, and system notifications
+- **Neumorphic Design**: Neumorphic style applied to individual notification items
+
+#### Sound Settings Improvement
+Mute button now features neumorphic design for intuitive representation of pressed state.
+- **Press Effect**: Button appears to be pressed inward when muted
+- **Neumorphic Shadow**: Default state shows convex shadow, pressed state shows concave shadow
+
 </div>
 </details>
 

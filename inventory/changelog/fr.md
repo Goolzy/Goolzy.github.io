@@ -71,6 +71,19 @@ La sécurité et la convivialité des éléments protégés par mot de passe ont
 - **Affichage à 16 chiffres**: 16 petits cercles montrent l'état de saisie du mot de passe
 - **Saisie sur deux lignes**: Saisissez et confirmez le mot de passe sur le même écran
 
+#### Amélioration des paramètres de notification push
+L'écran des paramètres de notification push a été réorganisé par catégories pour une gestion plus facile.
+- **7 catégories**: Classées par Transaction, Journal, Expiration, Réaction, Mot-clé, Partage, Système
+- **Basculement de groupe**: Activer ou désactiver une catégorie entière en un seul clic
+- **Réduction/Extension**: Interface en accordéon pour afficher uniquement les catégories nécessaires
+- **Notifications détaillées ajoutées**: Acceptation/Refus de transaction, Réaction, Mot-clé, Expiration/Signalement de partage, Notifications système
+- **Design neumorphique**: Style neumorphique appliqué aux éléments de notification individuelle
+
+#### Amélioration des paramètres de son
+Le bouton de sourdine a reçu un design neumorphique pour exprimer l'état appuyé de manière intuitive.
+- **Effet enfoncé**: Le bouton apparaît enfoncé lors de la sourdine
+- **Ombre neumorphique**: État par défaut convexe, état enfoncé concave
+
 </div>
 </details>
 

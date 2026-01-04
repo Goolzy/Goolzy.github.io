@@ -71,6 +71,19 @@ La seguridad y usabilidad de los elementos protegidos con contraseña han mejora
 - **Indicador de 16 dígitos**: 16 pequeños círculos muestran el estado de entrada de contraseña
 - **Entrada en dos líneas**: Ingrese y confirme la contraseña en la misma pantalla
 
+#### Mejora de la configuración de notificaciones push
+La pantalla de configuración de notificaciones push se ha reorganizado por categorías para facilitar su gestión.
+- **7 categorías**: Clasificadas en Transacciones, Registros, Vencimiento, Reacciones, Palabras clave, Compartir y Sistema
+- **Alternar grupos**: Enciende o apaga una categoría completa de una sola vez
+- **Contraer/Expandir**: Interfaz acordeón para ver solo las categorías que necesitas
+- **Notificaciones detalladas añadidas**: Aceptación/rechazo de transacciones, reacciones, palabras clave, vencimiento/denuncia de compartir y notificaciones del sistema
+- **Diseño neomórfico**: Estilo neomórfico aplicado a cada elemento de notificación individual
+
+#### Mejora de la configuración de sonido
+El botón de silencio ahora cuenta con diseño neomórfico que expresa intuitivamente el estado de pulsación.
+- **Efecto de pulsación**: El botón parece hundirse cuando se activa el silencio
+- **Sombra neomórfica**: La sombra es convexa en estado normal y cóncava cuando está pulsada
+
 </div>
 </details>
 
