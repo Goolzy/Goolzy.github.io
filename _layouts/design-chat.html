@@ -232,14 +232,18 @@ body::before {
 .supported-languages {
   display: flex;
   justify-content: center;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 0.4rem;
   margin-top: 1rem;
 }
 
 .supported-languages .lang-flag {
-  font-size: 1.25rem;
-  opacity: 0.7;
+  width: 24px;
+  height: 18px;
+  border-radius: 3px;
+  opacity: 0.75;
   transition: all 0.2s;
+  object-fit: cover;
 }
 
 .supported-languages .lang-flag:hover {
