@@ -659,6 +659,13 @@ categories:
             <li>✨ 앱 전체 UI에 색상이 적용됨</li>
           </ul>
 
+          <p><strong>알아두세요</strong></p>
+          <ul>
+            <li>📱 테마 색상은 <strong>기기에 로컬 저장</strong>됩니다</li>
+            <li>👤 다른 계정으로 로그인해도 색상이 유지됩니다</li>
+            <li>🔄 앱을 삭제하면 기본 색상으로 초기화됩니다</li>
+          </ul>
+
           <p><strong>활용 팁</strong></p>
           <ul>
             <li>🌙 어두운 색상의 잉크로 눈의 피로 감소</li>
