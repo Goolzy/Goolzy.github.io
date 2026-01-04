@@ -92,6 +92,10 @@ Créez des articles avec une seule feuille de papier et transférez-les via code
 
 ---
 
+{% include usecases-summary.html lang="fr" %}
+
+---
+
 ### 📝 Système de papier
 
 <div style="background: rgba(168, 85, 247, 0.15); backdrop-filter: blur(10px); border: 1px solid rgba(168, 85, 247, 0.3); border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0;">

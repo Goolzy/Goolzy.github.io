@@ -1,525 +1,448 @@
+# Guide d'utilisation d'Inventory (Français) - Version révisée
 page:
-  title: "Cas d'Utilisation d'Inventory"
-  intro: "Découvrez les possibilités d'Inventory à travers 100 cas d'utilisation variés."
-  expand: "Voir plus ↓"
+  title: "Guide d'utilisation d'Inventory"
+  intro: "Découvrez ce que vous pouvez faire avec Inventory. Des fonctions simples aux fonctions avancées, nous vous guidons étape par étape."
+  expand: "Suivre le guide ↓"
   collapse: "Réduire ↑"
-  share_title: "Partagez votre utilisation d'Inventory"
-  share_text: "Comment utilisez-vous Inventory ? Nous attendons vos idées créatives !"
-  share_btn: "Partager mon histoire"
-  share_link: "/inventory/suggest/fr/"
-  manual_base: "/inventory/manual/fr/"
+  share_title: "Partagez aussi votre façon d'utiliser"
+  share_text: "Comment l'utilisez-vous ? Nous attendons vos nouvelles idées."
+  share_btn: "Partager mon utilisation"
+  share_link: "/inventory/suggest/"
+  manual_base: "/inventory/manual/"
+  levels:
+    beginner: "Débutant"
+    intermediate: "Intermédiaire"
+    advanced: "Avancé"
+    expert: "Expert"
 
 categories:
-  - id: problem-solving
-    title: "Résolution de Problèmes - Relever les défis quotidiens"
+  # ===== 1. Utilisation du Papier (Paper) =====
+  - id: paper-usage
+    title: "📄 Utilisation du Papier"
+    icon: "📄"
+    description: "Tout ce que vous pouvez faire avec le Papier (Paper)"
     items:
-      - type: "Résolution"
-        title: "Les aliments se gâtent dans mon frigo"
-        persona: "Sarah (32 ans, Mère active)"
+      # 1-1. Enregistrement individuel
+      - type: "Débutant"
+        title: "Créer mes propres archives"
+        subtitle: "Archives personnelles avec 1 feuille de Papier"
         content: |
-          <strong>Problème</strong> : Avec mon emploi du temps chargé, j'oublie souvent les dates d'expiration et je jette des aliments gâtés. Surtout le tofu et le lait qui se gâtent en quelques jours...
+          <p><strong>Aperçu</strong> : Avec 1 feuille de Papier, vous pouvez créer un document et continuer à enregistrer dans le Journal.</p>
 
-          <strong>Solution</strong> : J'ai créé des éléments pour chaque ingrédient avec <a href="/inventory/manual/fr/#paper">Papier</a> et défini des <a href="/inventory/manual/fr/#dates">Dates d'Expiration</a>. Maintenant je reçois des notifications 3 jours avant, pour cuisiner ou congeler à temps.
+          <p><strong>Suivre le guide</strong></p>
+          <ol>
+            <li>Appuyez sur le bouton <strong>+</strong> en bas de l'écran d'accueil</li>
+            <li>Sélectionnez <strong>Document</strong> → Consomme 1 feuille de Papier</li>
+            <li>Entrez le titre, la description + ajoutez une image (optionnel)</li>
+            <li>Une fois créé, ajoutez des mémos dans l'onglet <strong>Journal</strong></li>
+          </ol>
 
-          <strong>Résultat</strong> : Gaspillage alimentaire réduit de 80%. 150€ économisés sur les courses mensuelles !
+          <p><strong>Exemples d'utilisation</strong></p>
+          <ul>
+            <li>📔 <strong>Journal/Carnet de notes</strong> : Enregistrez vos notes quotidiennes avec images et texte</li>
+            <li>📸 <strong>Album photo</strong> : Capturez les moments spéciaux en images, gardez des souvenirs dans le Journal</li>
+            <li>📋 <strong>Gestion des garanties</strong> : Sauvegardez les photos des garanties, définissez des dates d'expiration pour les alertes</li>
+            <li>🧾 <strong>Conservation des reçus</strong> : Conservez numériquement les reçus importants</li>
+          </ul>
 
-      - type: "Résolution"
-        title: "Trop d'abonnements à gérer"
-        persona: "Michel (28 ans, Développeur IT)"
+          <p><strong>Conseil d'organisation</strong> : Regroupez les documents similaires avec des <strong>Clips</strong>, et séparez les catégories avec des <strong>Partitions</strong>.</p>
+
+      # 1-2. Copie de modèle partagé
+      - type: "Débutant"
+        title: "Importer un modèle partagé"
+        subtitle: "Faites vôtre le modèle d'un autre utilisateur"
         content: |
-          <strong>Problème</strong> : Netflix, YouTube Premium, Notion, GitHub... J'ai plus de 10 abonnements avec des dates de renouvellement différentes. Certains que je n'utilise plus mais que je paie encore.
+          <p><strong>Aperçu</strong> : Vous pouvez copier un Tampon partagé par un autre utilisateur et l'utiliser comme votre propre document.</p>
 
-          <strong>Solution</strong> : Tous les abonnements enregistrés dans Inventory avec des <a href="/inventory/manual/fr/#alarm">Alarmes de Date</a> 7 jours avant le renouvellement. Frais mensuels ajoutés en <a href="/inventory/manual/fr/#keyword">Mots-clés</a> pour un aperçu rapide.
+          <p><strong>Suivre le guide</strong></p>
+          <ol>
+            <li>Cliquez sur le lien du Tampon partagé ou scannez le QR</li>
+            <li>Appuyez sur <strong>Copier</strong> sur l'écran de détail du Tampon</li>
+            <li>Consomme 1 feuille de Papier → Copie terminée dans votre Inventory</li>
+            <li>Modifiez les valeurs des mots-clés selon vos besoins</li>
+          </ol>
 
-          <strong>Résultat</strong> : 3 abonnements inutilisés résiliés, 40€/mois économisés. Plus de prélèvements surprises !
+          <p><strong>Exemples d'utilisation</strong></p>
+          <ul>
+            <li>✅ <strong>Liste de contrôle</strong> : Utilisez des modèles partagés pour la préparation de voyage, les courses, etc.</li>
+            <li>🎁 <strong>Participation aux événements</strong> : Copiez les modèles d'événements des marques/magasins</li>
+            <li>📝 <strong>Utilisation de formulaires</strong> : Copiez les formulaires utiles créés par d'autres utilisateurs</li>
+          </ul>
 
-      - type: "Résolution"
-        title: "J'oublie les vaccinations de mes enfants"
-        persona: "Jennifer (35 ans, Mère de deux enfants)"
+      # 1-3. Journal partagé - Salle de discussion
+      - type: "Intermédiaire"
+        title: "Enregistrer ensemble avec des amis"
+        subtitle: "Créer un salon de discussion avec un Journal partagé"
         content: |
-          <strong>Problème</strong> : Avec deux enfants ayant des calendriers de vaccination différents, je m'y perds. Parfois le cabinet appelait quand c'était déjà en retard.
+          <p><strong>Aperçu</strong> : Lorsque vous créez un document partagé avec plusieurs feuilles de Papier, tous les participants peuvent enregistrer dans le même Journal.</p>
 
-          <strong>Solution</strong> : <a href="/inventory/manual/fr/#partition">Partitions</a> séparées créées pour chaque enfant et dates de vaccination gérées avec des <a href="/inventory/manual/fr/#alarm">Alarmes de Date</a>. Achèvement noté dans le <a href="/inventory/manual/fr/#log">Journal</a>.
+          <p><strong>Suivre le guide</strong></p>
+          <ol>
+            <li>Appuyez sur le bouton <strong>+</strong> en bas de l'écran d'accueil</li>
+            <li>Sélectionnez <strong>Document partagé</strong></li>
+            <li>Sélectionnez autant de Papiers que de participants (2 à 10 feuilles)</li>
+            <li>Entrez le titre, la description puis créez</li>
+            <li><strong>Envoyez</strong> le document créé aux participants</li>
+          </ol>
 
-          <strong>Résultat</strong> : Plus aucun rendez-vous de vaccination manqué. Je peux me préparer pour les visites médicales !
+          <p><strong>Consommation de Papier par nombre de personnes</strong></p>
+          <ul>
+            <li>👫 2 personnes : 2 feuilles de Papier (journal de couple, discussion 1:1)</li>
+            <li>👨‍👩‍👧 3 personnes : 3 feuilles de Papier (projet de petit groupe)</li>
+            <li>👨‍👩‍👧‍👦 4-10 personnes : 4-10 feuilles de Papier (réunion familiale, club)</li>
+          </ul>
 
-      - type: "Résolution"
-        title: "Chaos du déménagement - rien ne se retrouve"
-        persona: "David (27 ans, Doctorant)"
-        content: |
-          <strong>Problème</strong> : Je déménage souvent pour les études. À chaque fois, je perds le fil de ce que contient chaque carton. Même avec des numéros, j'ouvre tout.
+          <p><strong>Exemples d'utilisation</strong></p>
+          <ul>
+            <li>💑 <strong>Journal de couple</strong> : Enregistrez ensemble vos souvenirs à deux</li>
+            <li>👨‍👩‍👧‍👦 <strong>Album familial</strong> : Partagez ensemble les événements familiaux et le quotidien</li>
+            <li>📚 <strong>Groupe d'étude</strong> : Enregistrez ensemble le contenu des études et les questions</li>
+          </ul>
 
-          <strong>Solution</strong> : Avant d'emballer, j'ai photographié le contenu de chaque carton et l'ai enregistré dans Inventory. Étiqueté avec <a href="/inventory/manual/fr/#keyword">Mots-clés</a> comme "Carton1", "Cuisine".
-
-          <strong>Résultat</strong> : Temps de déballage divisé par deux. "Où sont les ciseaux ?" - recherche instantanée !
-
-      - type: "Résolution"
-        title: "La gestion des reçus est un cauchemar"
-        persona: "Emma (40 ans, Entrepreneuse)"
-        content: |
-          <strong>Problème</strong> : Je dois garder les reçus pour les dépenses professionnelles, mais les reçus papier se décolorent et se perdent. La période fiscale est toujours stressante...
-
-          <strong>Solution</strong> : Juste après le paiement, je photographie les reçus et les enregistre dans Inventory. Étiquetés avec <a href="/inventory/manual/fr/#keyword">Mots-clés</a> comme "dépense", "2024", "repas" pour une catégorisation facile.
-
-          <strong>Résultat</strong> : Presque plus de reçus papier nécessaires. Pendant la période fiscale, je cherche et trouve exactement ce qu'il me faut. Mon comptable adore !
-
-      - type: "Résolution"
-        title: "Je n'arrive pas à organiser mes photos argentiques"
-        persona: "Hannah (26 ans, Passionnée de photo)"
-        content: |
-          <strong>Problème</strong> : Quand je développe mes photos argentiques, j'oublie quand et où je les ai prises. Les tirages s'empilent sans organisation.
-
-          <strong>Solution</strong> : Après chaque développement, j'enregistre des photos représentatives dans Inventory avec des <a href="/inventory/manual/fr/#keyword">Mots-clés</a> pour le lieu, la date et le type de pellicule. Les infos du labo vont dans le <a href="/inventory/manual/fr/#log">Journal</a>.
-
-          <strong>Résultat</strong> : J'ai créé mes propres archives photo. Je peux retrouver instantanément des photos d'un voyage d'il y a 2 ans !
-
-      - type: "Résolution"
-        title: "L'entretien des vêtements est compliqué"
-        persona: "Kevin (29 ans, Blogueur mode)"
-        content: |
-          <strong>Problème</strong> : Différents vêtements nécessitent différents soins - certains pressing uniquement, pulls lavage main uniquement. J'ai abîmé des vêtements avec la mauvaise méthode.
-
-          <strong>Solution</strong> : Vêtements nécessitant des soins spéciaux enregistrés dans Inventory. Instructions d'entretien dans le <a href="/inventory/manual/fr/#log">Journal</a>. Dates de récupération pressing suivies avec <a href="/inventory/manual/fr/#alarm">Alarmes de Date</a>.
-
-          <strong>Résultat</strong> : Dommages aux vêtements drastiquement réduits. Plus de pénalités de retard pour pressing oublié !
-
-      - type: "Résolution"
-        title: "Trop de compléments alimentaires à suivre"
-        persona: "Patricia (55 ans, Soucieuse de santé)"
-        content: |
-          <strong>Problème</strong> : Le médecin a recommandé 5 compléments différents. Je confonds les doses matin/soir et rate les réapprovisionnements.
-
-          <strong>Solution</strong> : Chaque complément enregistré avec <a href="/inventory/manual/fr/#paper">Papier</a>. Instructions de dosage dans le <a href="/inventory/manual/fr/#log">Journal</a>, dates d'épuisement estimées en <a href="/inventory/manual/fr/#dates">Expiration</a>.
-
-          <strong>Résultat</strong> : Je suis maintenant le programme parfaitement. Alertes avant épuisement pour commander à temps !
-
-      - type: "Résolution"
-        title: "Garantie expirée - réparation coûteuse"
-        persona: "Jacques (34 ans, Jeune marié)"
-        content: |
-          <strong>Problème</strong> : Climatisation cassée et la garantie avait expiré un mois avant. Je n'ai même pas retrouvé la carte de garantie. 300€ de réparation payés.
-
-          <strong>Solution</strong> : Tous les appareils électroménagers enregistrés dans Inventory avec photos de garantie jointes. <a href="/inventory/manual/fr/#dates">Dates d'Expiration</a> pour fin de garantie avec alertes 1 mois avant.
-
-          <strong>Résultat</strong> : Maintenant je demande des inspections ou envisage des extensions avant expiration. Machine à laver réparée gratuitement !
-
-      - type: "Résolution"
-        title: "Les cartes cadeaux expirent toujours"
-        persona: "Jessica (25 ans, Étudiante)"
-        content: |
-          <strong>Problème</strong> : Les cartes cadeaux d'anniversaire et fêtes se perdent dans les messages et expirent inutilisées.
-
-          <strong>Solution</strong> : Captures d'écran des cartes cadeaux immédiatement et enregistrement dans Inventory avec <a href="/inventory/manual/fr/#dates">Dates d'Expiration</a>. Alerte une semaine avant expiration.
-
-          <strong>Résultat</strong> : Une carte cadeau Starbucks de 30€ sauvée ! J'utilise maintenant vraiment les cadeaux que je reçois.
-
-      - type: "Résolution"
-        title: "Historique d'entretien auto éparpillé"
-        persona: "Robert (42 ans, Commercial)"
-        content: |
-          <strong>Problème</strong> : Je ne me souviens pas quand et où la voiture a été entretenue. Différents garages ont différents enregistrements. Je rate les vidanges.
-
-          <strong>Solution</strong> : Voiture enregistrée dans Inventory, chaque entretien noté dans le <a href="/inventory/manual/fr/#log">Journal</a>. Prochains entretiens définis en <a href="/inventory/manual/fr/#alarm">Alarmes de Date</a>.
-
-          <strong>Résultat</strong> : Historique d'entretien complet constitué. À la revente, montrer l'historique a permis d'obtenir un meilleur prix !
-
-      - type: "Résolution"
-        title: "Documents importants éparpillés partout"
-        persona: "Michelle (38 ans, Freelance)"
-        content: |
-          <strong>Problème</strong> : Contrats, polices d'assurance, actes de propriété... documents importants dispersés partout. J'ai dû demander un duplicata car je ne trouvais pas l'original.
-
-          <strong>Solution</strong> : Tous les documents importants photographiés et enregistrés dans Inventory avec <a href="/inventory/manual/fr/#lock">Verrouillage de Document</a> pour la sécurité. Lieu de stockage noté en <a href="/inventory/manual/fr/#keyword">Mots-clés</a>.
-
-          <strong>Résultat</strong> : "Où est l'acte ?" → Recherche → Lieu de stockage trouvé. 30 secondes !
-
-      - type: "Résolution"
-        title: "Les livres s'empilent non lus"
-        persona: "Lisa (30 ans, Marketing)"
-        content: |
-          <strong>Problème</strong> : Enthousiaste à l'achat, mais ils s'empilent non lus à la maison. J'ai même acheté le même livre deux fois.
-
-          <strong>Solution</strong> : Livres enregistrés immédiatement après achat. <a href="/inventory/manual/fr/#dates">Date de Début</a> au commencement, achèvement noté dans le <a href="/inventory/manual/fr/#log">Journal</a>. Liste des non-lus visible en un coup d'œil.
-
-          <strong>Résultat</strong> : Au lieu d'être submergée, je suis motivée. 12 livres lus cette année - plus que toute l'année dernière !
-
-      - type: "Résolution"
-        title: "Je tue mes plantes"
-        persona: "Amy (24 ans, Jeune active)"
-        content: |
-          <strong>Problème</strong> : Je voulais des plantes d'intérieur mais j'oubliais de les arroser ou j'arrosais trop. Elles mouraient toutes.
-
-          <strong>Solution</strong> : Chaque plante enregistrée dans Inventory avec rappels d'arrosage via <a href="/inventory/manual/fr/#alarm">Alarme de Date</a>. Dates de rempotage et fertilisation dans le <a href="/inventory/manual/fr/#log">Journal</a>.
-
-          <strong>Résultat</strong> : Mon monstera vit depuis 6 mois ! Même 3 nouvelles feuilles ont poussé !
-
-      - type: "Résolution"
-        title: "Chaos des mots de passe"
-        persona: "Georges (50 ans, Fonctionnaire)"
-        content: |
-          <strong>Problème</strong> : Différents mots de passe pour chaque site, impossible de les retenir. Les noter sur post-it ne semble pas sécurisé...
-
-          <strong>Solution</strong> : Informations de compte enregistrées dans Inventory avec <a href="/inventory/manual/fr/#lock">Verrouillage de Document</a>. Uniquement les indices stockés, vrais mots de passe utilisent des combinaisons de motifs.
-
-          <strong>Résultat</strong> : Plus de "Mot de passe oublié" à cliquer. Gestion sécurisée et pratique !
-
-      - type: "Résolution"
-        title: "Bilans de santé familiaux manqués"
-        persona: "Hélène (58 ans, Femme au foyer)"
-        content: |
-          <strong>Problème</strong> : Mari, belle-mère, moi-même... tous des calendriers de bilan différents. J'ai raté la période de bilan gratuit et dû payer de ma poche.
-
-          <strong>Solution</strong> : Calendrier de bilan de chaque membre de la famille enregistré avec <a href="/inventory/manual/fr/#alarm">Alarmes de Date</a> pour notifier au début de la période.
-
-          <strong>Résultat</strong> : Plus aucun bilan gratuit manqué pour toute la famille. Plus de 500€ économisés annuellement en frais de santé !
-
-      - type: "Résolution"
-        title: "Dossiers vétérinaires éparpillés"
-        persona: "Mina (31 ans, Maman chat)"
-        content: |
-          <strong>Problème</strong> : Deux chats avec différents calendriers de vaccination et dossiers vétérinaires partout. Les nouveaux vétérinaires demandent toujours l'historique que je ne trouve pas.
-
-          <strong>Solution</strong> : <a href="/inventory/manual/fr/#partition">Partitions</a> créées pour chaque chat. Chaque visite vétérinaire dans le <a href="/inventory/manual/fr/#log">Journal</a>. Prochaines vaccinations gérées avec <a href="/inventory/manual/fr/#alarm">Alarmes de Date</a>.
-
-          <strong>Résultat</strong> : Le vétérinaire a salué mon organisation. En urgence, je peux montrer les dossiers instantanément. Tranquillité d'esprit !
-
-      - type: "Résolution"
-        title: "J'oublie les recommandations de vin"
-        persona: "Chris (36 ans, Débutant en vin)"
-        content: |
-          <strong>Problème</strong> : J'oublie les noms des vins que j'ai aimés dans les bars à vin. Au magasin, je prends n'importe quoi.
-
-          <strong>Solution</strong> : Photographier les étiquettes et enregistrer dans Inventory. Notes de dégustation, accords, prix dans le <a href="/inventory/manual/fr/#log">Journal</a>. <a href="/inventory/manual/fr/#keyword">Mots-clés</a> comme "rouge", "quotidien", "cadeau".
-
-          <strong>Résultat</strong> : Ma propre base de données de vins créée. "Qu'avons-nous bu à notre anniversaire ?" - trouvé instantanément !
-
-      - type: "Résolution"
-        title: "Je ne maintiens pas ma routine sportive"
-        persona: "Jason (29 ans, Employé de bureau)"
-        content: |
-          <strong>Problème</strong> : Abonnement de 3 mois à la salle, j'y vais assidûment un mois puis j'arrête. Pas de motivation et sans relevés pas de progression visible.
-
-          <strong>Solution</strong> : Chaque type d'exercice enregistré et poids/répétitions dans le <a href="/inventory/manual/fr/#log">Journal</a>. Les enregistrements consécutifs s'accumulent et motivent.
-
-          <strong>Résultat</strong> : Progression de 40kg à 70kg au développé couché documentée. Voir les relevés me motive !
-
-      - type: "Résolution"
-        title: "J'oublie les engagements de réunion"
-        persona: "Susan (33 ans, Chef d'équipe)"
-        content: |
-          <strong>Problème</strong> : Je dis en réunion "J'aurai le rapport la semaine prochaine" et j'oublie. Gênant quand quelqu'un demande "C'est fait ?"
-
-          <strong>Solution</strong> : Engagements de réunion enregistrés immédiatement avec <a href="/inventory/manual/fr/#alarm">Alarmes de Date</a> pour rappel la veille. Noter dans le <a href="/inventory/manual/fr/#log">Journal</a> quand c'est fait !
-
-          <strong>Résultat</strong> : "Susan livre toujours ce qu'elle promet" - c'est ma réputation maintenant. Confiance établie !
-
-  - id: emotional-experience
-    title: "Expériences Émotionnelles - Donner du sens à la vie"
+  # ===== 2. Utilisation du Tampon (Stamp) =====
+  - id: stamp-usage
+    title: "🔖 Utilisation du Tampon"
+    icon: "🔖"
+    description: "Créer et partager des modèles avec le Tampon (Stamp)"
     items:
-      - type: "Émotion"
-        title: "Enregistrer les premiers mots et pas de bébé"
-        persona: "Grace (33 ans, Jeune maman)"
+      # 2-1. Tampon Journal individuel
+      - type: "Avancé"
+        title: "Créer mon propre modèle"
+        subtitle: "Production en masse de documents avec un Tampon Journal individuel"
         content: |
-          Mon fils de 18 mois a dit "Maman" pour la première fois. Mon cœur a failli exploser.
+          <p><strong>Aperçu</strong> : En créant un modèle avec un Tampon, vous pouvez rapidement créer plusieurs documents du même format.</p>
 
-          J'ai filmé le moment, mais ce n'était pas suffisant. Je voulais me souvenir des émotions, du contexte, de ce qui s'était passé la veille...
+          <p><strong>Suivre le guide</strong></p>
+          <ol>
+            <li>Appuyez sur le bouton <strong>+</strong> en bas de l'écran d'accueil</li>
+            <li>Sélectionnez <strong>Modèle Tampon</strong> → Consomme 1 Tampon</li>
+            <li>Entrez les informations du modèle : titre, description, image</li>
+            <li>Sélectionnez <strong>Mode Journal : Individuel</strong></li>
+            <li>Configurez les mots-clés (maximum 10)</li>
+            <li>Création du modèle terminée</li>
+          </ol>
 
-          Dans Inventory, j'ai sauvegardé la vidéo avec une entrée <a href="/inventory/manual/fr/#log">Journal</a> capturant chaque détail de ce jour. Quand papa est rentré et qu'il a dit "Maman" encore, comment j'ai pleuré le soir...
+          <p><strong>Méthode de copie de document</strong></p>
+          <ol>
+            <li>Sélectionnez le Tampon créé</li>
+            <li>Appuyez sur <strong>Copier</strong></li>
+            <li>Sélectionnez le Papier à copier → Document du même format créé</li>
+          </ol>
 
-          Cinq ans plus tard, à l'entrée en primaire de mon fils, j'ai relu ces notes. Les émotions sont revenues. Inventory est devenu notre capsule temporelle familiale.
+          <p><strong>Exemples d'utilisation</strong></p>
+          <ul>
+            <li>🏋️ <strong>Suivi d'exercice</strong> : Enregistrez le contenu de l'exercice chaque jour dans le même format</li>
+            <li>📖 <strong>Suivi de lecture</strong> : Rédigez des notes de lecture dans le même format pour chaque livre</li>
+            <li>🍷 <strong>Gestion de collection</strong> : Cataloguez vos collections de vin, LEGO, figurines, etc.</li>
+          </ul>
 
-      - type: "Émotion"
-        title: "Préserver les recettes de grand-mère pour toujours"
-        persona: "Linda (45 ans, Matriarche familiale)"
+          <p><strong>Conseil d'organisation</strong> : Regroupez les documents accumulés en série avec des <strong>Clips</strong>.</p>
+
+      # 2-2. Tampon Journal partagé
+      - type: "Avancé"
+        title: "Créer une communauté ouverte"
+        subtitle: "Ajout continu d'utilisateurs avec un Tampon Journal partagé"
         content: |
-          Après la maladie de ma belle-mère, je m'inquiétais des recettes familiales transmises depuis des générations. Quand je demandais "Comment faites-vous ce bouillon ?", elle disait juste "environ comme ça"...
+          <p><strong>Aperçu</strong> : Un Tampon Journal partagé est un espace public où n'importe qui peut copier et participer.</p>
 
-          Je me suis assise à côté d'elle, j'ai filmé sa cuisine et transcrit tout exactement comme elle le disait dans le <a href="/inventory/manual/fr/#log">Journal</a>. "Trois largeurs de doigt de piment", "ajouter la sauce soja petit à petit"...
+          <p><strong>Suivre le guide</strong></p>
+          <ol>
+            <li>Appuyez sur le bouton <strong>+</strong> en bas de l'écran d'accueil</li>
+            <li>Sélectionnez <strong>Modèle Tampon</strong> → Consomme 1 Tampon</li>
+            <li>Entrez les informations du modèle : titre, description, image</li>
+            <li>Sélectionnez <strong>Mode Journal : Partagé</strong> ⭐</li>
+            <li>Configurez les mots-clés et créez</li>
+          </ol>
 
-          Après son décès, je relis ces notes à chaque repas de famille. J'entends presque sa voix. Maintenant je transmettrai cet Inventory à ma belle-fille.
+          <p><strong>Méthode d'ajout de participants</strong></p>
+          <ol>
+            <li>Partagez le lien/QR du Tampon avec d'autres utilisateurs</li>
+            <li>Lorsqu'ils copient, ils rejoignent automatiquement le Journal partagé</li>
+            <li>Ajout continu possible sans limite de nombre</li>
+          </ol>
 
-      - type: "Émotion"
-        title: "Créer notre carte des souvenirs de couple"
-        persona: "David & Sarah (28 ans, Couple)"
+          <p><strong>Exemples d'utilisation</strong></p>
+          <ul>
+            <li>💬 <strong>Salon de discussion ouvert</strong> : Espace de discussion public où n'importe qui peut participer</li>
+            <li>🎤 <strong>Fan club</strong> : Rassemblement de fans d'artistes/marques</li>
+            <li>📢 <strong>Forum communautaire</strong> : Gestion de communauté basée sur les centres d'intérêt</li>
+          </ul>
+
+      # 2-3. Partage de Tampon - Petits commerçants
+      - type: "Expert"
+        title: "Utiliser pour gérer un commerce"
+        subtitle: "Marketing par Tampon pour les petits commerçants"
         content: |
-          Trois ans ensemble. Le café où on s'est tenu la main pour la première fois, le parc du premier baiser, le restaurant de la demande en mariage... nous avons nos lieux spéciaux, mais je craignais qu'on les oublie avec le temps.
+          <p><strong>Aperçu</strong> : En partageant des Tampons, vous pouvez communiquer avec vos clients et organiser vos propres événements.</p>
 
-          Créé 'Nos Lieux' dans Inventory avec <a href="/inventory/manual/fr/#-journal-partagé-vs-solo">Journal Partagé</a>. Après chaque rendez-vous, on ajoute des photos et on documente nos conversations et sentiments. Documenter ensemble double les souvenirs.
+          <p><strong>Méthodes d'utilisation</strong></p>
 
-          Ces notes iront dans notre vidéo de mariage. Dans des années, on se souviendra encore de nos débuts.
+          <p>🍽️ <strong>Menu du restaurant</strong></p>
+          <ol>
+            <li>Créez un modèle Tampon avec des photos de menu</li>
+            <li>Configurez les noms de plats et prix en mots-clés</li>
+            <li>Placez le code QR sur les tables</li>
+            <li>Les clients copient et utilisent comme carnet de commandes</li>
+          </ol>
 
-      - type: "Émotion"
-        title: "Documenter le temps avec mon vieux chien"
-        persona: "Chelsea (27 ans, Propriétaire d'animal)"
+          <p>🎫 <strong>Carte de fidélité</strong></p>
+          <ol>
+            <li>Créez un modèle "Boisson gratuite après 10 visites"</li>
+            <li>Le client copie → tampon dans le Journal à chaque visite</li>
+            <li>À 10 tampons, offrez l'avantage</li>
+          </ol>
+
+          <p>📋 <strong>Collecte de retours clients</strong></p>
+          <ol>
+            <li>Créez un modèle d'enquête de satisfaction</li>
+            <li>Configurez les champs de note/commentaire en mots-clés</li>
+            <li>Le client copie → rédige son retour</li>
+          </ol>
+
+          <p><strong>Autres utilisations</strong></p>
+          <ul>
+            <li>🆕 Annonce de nouveaux produits + partage d'avis de dégustation</li>
+            <li>🎟️ Distribution de coupons de réduction</li>
+            <li>📅 Gestion d'un système de réservation</li>
+          </ul>
+
+      # 2-4. Archives personnelles
+      - type: "Intermédiaire"
+        title: "Créer des archives personnelles"
+        subtitle: "Transformez vos contenus préférés en collection personnelle"
         content: |
-          Mon chien de 9 ans 'Buddy' et moi sommes ensemble depuis longtemps. Savoir que le temps est limité rend chaque jour précieux.
+          <p><strong>Aperçu</strong> : Organisez systématiquement vos contenus préférés : YouTube, Spotify, livres, films, etc.</p>
 
-          Chaque jour, je poste les photos de Buddy dans Inventory. Ce qu'il a mangé, ce qu'on a vu en promenade, son expression avant de dormir. Je l'écris comme un journal dans le <a href="/inventory/manual/fr/#log">Journal</a>.
+          <p>🎬 <strong>Playlist YouTube</strong></p>
+          <ol>
+            <li>Créez un document "Ma collection YouTube" avec 1 feuille de Papier</li>
+            <li>Ajoutez des liens vidéo + une note courte dans le Journal</li>
+            <li>Une fois les vidéos accumulées, regroupez par genre avec des <strong>Clips</strong></li>
+            <li>Séparez les zones comme Musique/Cuisine/Sport avec des <strong>Partitions</strong></li>
+          </ol>
 
-          Un ami a demandé "Pourquoi tu fais ça tous les jours ?" J'ai répondu : "Quand Buddy ne sera plus là, je veux me souvenir combien il était heureux." C'est triste, mais ces notes me consoleront plus tard.
+          <p>🎵 <strong>Collection musicale Spotify</strong></p>
+          <ol>
+            <li>Créez un document "Playlist 2024" avec 1 feuille de Papier</li>
+            <li>Ajoutez des liens Spotify + enregistrez l'émotion/la situation du moment dans le Journal</li>
+            <li>Organisez avec des <strong>Clips</strong> par saison ou ambiance</li>
+          </ol>
 
-      - type: "Émotion"
-        title: "Faire revivre les photos fanées de père"
-        persona: "Thomas (40 ans, Fils)"
+          <p>📚 <strong>Archives de livres lus</strong></p>
+          <ol>
+            <li>Créez un document avec 1 feuille de Papier par livre</li>
+            <li>Photo de couverture + titre/auteur</li>
+            <li>Enregistrez les passages marquants et notes de lecture dans le Journal</li>
+            <li>Classez par genre avec des <strong>Partitions</strong>, regroupez les séries avec des <strong>Clips</strong></li>
+          </ol>
+
+          <p>🎞️ <strong>Suivi de films/séries</strong></p>
+          <ol>
+            <li>1 feuille de Papier + image d'affiche</li>
+            <li>Critique courte + note (★★★★☆) dans le Journal</li>
+            <li><strong>Clips</strong> par année, <strong>Partitions</strong> par genre</li>
+          </ol>
+
+          <p>📱 <strong>Sauvegardes Instagram/TikTok</strong></p>
+          <ol>
+            <li>Capture d'écran + lien original enregistrés dans le Journal</li>
+            <li>Organisez par centre d'intérêt avec des <strong>Partitions</strong></li>
+          </ol>
+
+      # 2-5. Créateur/Influenceur
+      - type: "Expert"
+        title: "Activité de créateur"
+        subtitle: "Communiquer avec les fans et distribuer du contenu"
         content: |
-          En rangeant le bureau de père, j'ai trouvé des photos des années 70. Fanées et froissées, mais avec mon jeune père dessus.
+          <p><strong>Aperçu</strong> : Les créateurs et influenceurs peuvent communiquer avec leurs fans et organiser des événements.</p>
 
-          Je les ai numérisées et enregistrées dans Inventory. Pour chaque photo, j'ai interrogé mon père et noté ses histoires dans le <a href="/inventory/manual/fr/#log">Journal</a>. "C'était le costume du premier salaire", "C'était notre voyage de noces à la campagne"...
+          <p>🎉 <strong>Événement fan</strong></p>
+          <ol>
+            <li>Créez un Tampon partagé pour l'événement</li>
+            <li>Les fans copient et participent</li>
+            <li>Quiz, tirage au sort dans le Journal partagé</li>
+          </ol>
 
-          Pour ses 60 ans, j'ai fait une vidéo de ces notes. Il a pleuré. "Quand as-tu posé toutes ces questions ?" C'était le cadeau le plus significatif.
+          <p>🛍️ <strong>Catalogue de goodies</strong></p>
+          <ol>
+            <li>Créez un Tampon avec des photos de goodies</li>
+            <li>Nom du produit, prix, lien d'achat en mots-clés</li>
+            <li>Les fans copient et utilisent comme liste de souhaits</li>
+          </ol>
 
-      - type: "Émotion"
-        title: "Documenter mon parcours de croissance"
-        persona: "Sophie (23 ans, Diplômée récente)"
+          <p>❓ <strong>Espace Q&A</strong></p>
+          <ol>
+            <li>Créez un Tampon Journal partagé</li>
+            <li>Les fans écrivent leurs questions dans le Journal</li>
+            <li>Le créateur répond</li>
+          </ol>
+
+          <p><strong>Autres utilisations</strong></p>
+          <ul>
+            <li>📅 Informations sur les fan meetings : date/lieu/participation</li>
+            <li>🎬 Coulisses, partage du processus de création</li>
+            <li>📁 Archives de contenus passés</li>
+          </ul>
+
+      # 2-6. Loisirs/Centres d'intérêt
+      - type: "Intermédiaire"
+        title: "Partager ses loisirs"
+        subtitle: "Partage de contenu basé sur les centres d'intérêt"
         content: |
-          Recherche d'emploi. Chaque refus détruisait ma confiance.
+          <p><strong>Aperçu</strong> : Partagez vos loisirs et centres d'intérêt avec d'autres utilisateurs via des Tampons partagés.</p>
 
-          Créé un 'Journal de Croissance' dans Inventory. Noter chaque petite réussite. "30 minutes de conversation anglaise aujourd'hui", "Portfolio mis à jour avec retours", "Le recruteur a aimé ma présentation"...
+          <p>🍳 <strong>Partage de recettes</strong></p>
+          <ol>
+            <li>Créez un Tampon avec une photo du plat fini</li>
+            <li>Configurez les ingrédients et le temps de cuisson en mots-clés</li>
+            <li>Les utilisateurs qui copient partagent leurs avis dans le Journal partagé</li>
+          </ol>
 
-          Après 3 mois, les notes se sont accumulées. Les jours de refus, je relis les anciennes entrées et reprends courage. "J'ai tellement grandi." Quand j'ai enfin eu l'offre, j'ai écrit "Accepté !" dans le <a href="/inventory/manual/fr/#log">Journal</a>. C'était la plus belle entrée.
+          <p>🏃 <strong>Partage de routines d'exercice</strong></p>
+          <ol>
+            <li>Créez un modèle de défi 30 jours ou routine à domicile</li>
+            <li>Les participants enregistrent leur progression quotidienne</li>
+          </ol>
 
-      - type: "Émotion"
-        title: "Documenter les moments avec la musique"
-        persona: "Jake (35 ans, Mélomane)"
+          <p>✈️ <strong>Guide de voyage</strong></p>
+          <ol>
+            <li>Photo de destination + modèle d'itinéraire recommandé</li>
+            <li>Restaurants, hébergements organisés en mots-clés</li>
+            <li>Ceux qui ont visité ajoutent leurs avis</li>
+          </ol>
+
+          <p><strong>Autres utilisations</strong></p>
+          <ul>
+            <li>🎮 Guides de jeux, partage de builds</li>
+            <li>🔨 Guides de projets DIY</li>
+            <li>🌱 Conseils d'entretien des plantes, calendrier d'arrosage</li>
+            <li>🐕 Conseils de soins pour animaux de compagnie</li>
+          </ul>
+
+      # 2-7. Communauté locale/familiale
+      - type: "Intermédiaire"
+        title: "Gérer des activités de groupe"
+        subtitle: "Espace de communication pour quartier, famille, amis"
         content: |
-          La musique a le pouvoir de ramener des souvenirs. Certaines chansons me transportent à des moments précis.
+          <p><strong>Aperçu</strong> : Créez des espaces partagés pour les communautés locales, réunions familiales et groupes d'amis.</p>
 
-          Créé 'OST de ma Vie' dans Inventory. Pour les moments significatifs, j'enregistre la chanson qui jouait et documente le moment dans le <a href="/inventory/manual/fr/#log">Journal</a>. La chanson du premier jour de travail, celle qui m'a consolé après une rupture...
+          <p>🏘️ <strong>Communauté locale</strong></p>
+          <ul>
+            <li>🍜 Carte des bons restaurants : Liste de restaurants recommandés par les habitants</li>
+            <li>🎪 Informations sur les événements locaux : Festivals, marchés, événements culturels</li>
+            <li>🏃 Recrutement de clubs : Présentation de clubs de randonnée, course, lecture</li>
+            <li>🏠 Communication entre résidents : Partage d'annonces d'immeuble</li>
+          </ul>
 
-          Les jours difficiles, je mets cette playlist en lisant les histoires attachées à chaque chanson. La bande-son de ma vie s'enrichit.
+          <p>👨‍👩‍👧‍👦 <strong>Groupe famille/amis</strong></p>
+          <ul>
+            <li>🍳 Livre de recettes familial : Recettes transmises de génération en génération</li>
+            <li>🎂 Calendrier des anniversaires d'amis : Gestion des anniversaires et idées cadeaux</li>
+            <li>✅ Bucket list de groupe : Objectifs à réaliser ensemble</li>
+            <li>✈️ Planification de voyage familial : Partage d'itinéraire, bagages, budget</li>
+            <li>💒 Informations sur les événements : Mariages, fêtes de naissance</li>
+          </ul>
 
-      - type: "Émotion"
-        title: "Préserver les lettres manuscrites numériquement"
-        persona: "Marie (29 ans, Enseignante)"
+      # 2-8. Travail/Événements
+      - type: "Avancé"
+        title: "Utiliser pour le travail et les événements"
+        subtitle: "Collaboration d'équipe et documentation de moments spéciaux"
         content: |
-          J'ai encore des lettres de ma première classe il y a 10 ans. L'écriture d'enfant disant "Je vous aime maîtresse". Le papier vieillit et ça me brise le cœur.
+          <p><strong>Aperçu</strong> : Créez des espaces partagés pour la collaboration professionnelle et les événements spéciaux.</p>
 
-          J'ai photographié chaque lettre et téléversé dans Inventory. Dans le <a href="/inventory/manual/fr/#log">Journal</a>, j'ai écrit des souvenirs de chaque enfant. "Celui-ci était timide au début mais est devenu le plus actif", "Cette lettre a été reçue le jour de la remise des diplômes"...
+          <p>💼 <strong>Travail/Collaboration</strong></p>
+          <ul>
+            <li>📊 Projet d'équipe : Modèle de partage de progression</li>
+            <li>📝 Formulaire de compte-rendu : Modèle de compte-rendu standardisé</li>
+            <li>📋 Passation de tâches : Organisation et transmission des responsabilités</li>
+            <li>👋 Intégration des nouveaux : Partage du guide d'intégration</li>
+          </ul>
 
-          Les jours difficiles, j'ouvre ces notes. L'amour des enfants passe et me donne de la force. C'est pour ça que j'enseigne.
+          <p>🎉 <strong>Événements/Occasions spéciales</strong></p>
+          <ul>
+            <li>💒 Faire-part de mariage : Invitation + confirmation de présence + messages de félicitations</li>
+            <li>🎈 Carton d'invitation : Anniversaires, pendaisons de crémaillère, fêtes de fin d'année</li>
+            <li>👶 Fête de bébé : Photos de bébé + collection de messages de félicitations</li>
+            <li>🕯️ Commémoration/Anniversaire : Espace pour partager des souvenirs ensemble</li>
+            <li>📨 Capsule temporelle : Message à son futur soi</li>
+          </ul>
 
-      - type: "Émotion"
-        title: "Documenter mon chemin vers la maternité"
-        persona: "Yuna (32 ans, Future maman)"
-        content: |
-          20 semaines de grossesse. Chaque jour apporte quelque chose de nouveau pendant que mon ventre grandit. Premiers coups de pied, première échographie, prénoms candidats...
-
-          Créé le journal 'En Attendant Bébé' dans Inventory. À chaque rendez-vous, je téléverse les échographies et documente mes émotions dans le <a href="/inventory/manual/fr/#log">Journal</a>. "Pleuré en entendant le cœur aujourd'hui", "Bébé commence à donner des coups ! Papa a senti aussi"...
-
-          Quand mon enfant sera grand, je lui montrerai ces notes. "Voilà comment maman et papa t'attendaient."
-
-      - type: "Émotion"
-        title: "Documenter mon chemin vers mes rêves"
-        persona: "Junho (26 ans, Aspirant écrivain)"
-        content: |
-          Je rêve de publier un roman un jour. Encore inconnu, mais j'écris un peu chaque jour.
-
-          Créé 'Parcours d'Écrivain' dans Inventory. Quand l'inspiration vient, j'enregistre avec <a href="/inventory/manual/fr/#paper">Papier</a> et tiens un journal d'écriture dans le <a href="/inventory/manual/fr/#log">Journal</a>. "3 pages écrites aujourd'hui", "Nom du personnage décidé", "Fin changée"...
-
-          Quand mon livre sera publié, je veux partager ces notes. "Voici le voyage jusqu'à la première phrase."
-
-  - id: story
-    title: "Histoires - Comment Inventory a changé des vies"
+  # ===== 3. Utilisation du Badge =====
+  - id: badge-usage
+    title: "🏷️ Utilisation du Badge"
+    icon: "🏷️"
+    description: "Construire sa marque et sa crédibilité avec le Badge"
     items:
-      - type: "Histoire"
-        title: "Le sac perdu qui a été retrouvé"
-        persona: "Seunghyun (29 ans, Voyageur)"
+      # 3-1. Promotion de l'image de marque
+      - type: "Expert"
+        title: "Construire son identité de marque"
+        subtitle: "Créer sa propre marque avec un nom de domaine unique"
         content: |
-          Je faisais du backpacking en Europe. J'ai perdu mon sac dans le métro parisien. Passeport, cartes, appareil photo... tout était dedans.
+          <p><strong>Aperçu</strong> : En gravant un Badge, vous obtenez un nom de domaine unique. Ce nom de domaine s'affiche sur toutes vos activités.</p>
 
-          Heureusement, j'avais enregistré tout le contenu du sac dans Inventory. Au commissariat, quand on m'a demandé "Qu'y avait-il dans le sac ?", j'ai cherché par <a href="/inventory/manual/fr/#keyword">Mots-clés</a> et montré une liste complète. Même mon numéro de passeport était documenté.
+          <p><strong>Suivre le guide</strong></p>
+          <ol>
+            <li>Profil → Sélectionnez <strong>Graver un Badge</strong></li>
+            <li>Entrez le nom de domaine souhaité (ex : maboutique, createur_martin)</li>
+            <li><strong>Vérification de disponibilité</strong> obligatoire</li>
+            <li>Sélectionnez une image de Badge (optionnel)</li>
+            <li><strong>Graver</strong> → Consomme 1 Badge</li>
+          </ol>
 
-          Deux semaines plus tard, le sac a été retrouvé ! La police a dit : "La liste détaillée a facilité la vérification." Inventory m'a sauvé.
+          <p>⚠️ <strong>Attention</strong> : Une fois gravé, le nom de domaine ne peut plus être modifié !</p>
 
-      - type: "Histoire"
-        title: "Retrouvailles après 10 ans"
-        persona: "Jihyun (35 ans, Chercheur)"
+          <p><strong>Exemples d'utilisation</strong></p>
+          <ul>
+            <li>🏢 <strong>Entreprise/Marque</strong> : Gérer un compte officiel avec logo et nom de marque</li>
+            <li>🎨 <strong>Créateur</strong> : Distribuer du contenu avec un pseudonyme unique</li>
+            <li>👔 <strong>Profil professionnel</strong> : Utiliser un nom de domaine représentant son domaine d'expertise</li>
+          </ul>
+
+      # 3-2. Confidentialité de l'email
+      - type: "Expert"
+        title: "Protéger sa vie privée"
+        subtitle: "Agir avec son nom de domaine au lieu de son email"
         content: |
-          Un ami a changé d'école au lycée. Après, on a perdu contact. Parfois je pensais à lui.
+          <p><strong>Aperçu</strong> : En gravant un Badge, votre email réel est remplacé par le format "nomdedomaine@goolzy".</p>
 
-          J'organisais les souvenirs avec cet ami dans Inventory. Dans le <a href="/inventory/manual/fr/#log">Journal</a>, j'ai documenté "photo en uniforme scolaire", "chansons qu'il aimait", "dernier jour qu'on s'est vus".
+          <p><strong>Avantages</strong></p>
+          <ul>
+            <li>🔒 <strong>Protection de la vie privée</strong> : Votre adresse email réelle n'est pas exposée</li>
+            <li>📧 <strong>Protection anti-spam</strong> : Email protégé même lors d'activités publiques</li>
+            <li>🎭 <strong>Activité anonyme</strong> : Possibilité d'agir anonymement sous le nom souhaité</li>
+          </ul>
 
-          Un jour, j'ai partagé ces notes sur les réseaux sociaux. "Quelqu'un connaît cet ami ?" Incroyablement, un ami de son ami m'a contacté. Après 10 ans, on s'est retrouvés. Inventory a construit le pont.
+          <p><strong>Exemples d'utilisation</strong></p>
+          <ul>
+            <li>Lors de la distribution de Tampons partagés, le nom de domaine s'affiche comme info créateur</li>
+            <li>Dans les Journaux partagés, identification par nom de domaine au lieu de l'email</li>
+            <li>Lors des échanges, affichage du nom de domaine au lieu de l'email pour l'autre partie</li>
+          </ul>
 
-      - type: "Histoire"
-        title: "Trésor trouvé dans les affaires de grand-père"
-        persona: "Taewoo (33 ans, Petit-fils)"
+      # 3-3. Garantie de gravure de document
+      - type: "Expert"
+        title: "Garantir la provenance des documents"
+        subtitle: "Badge gravé sur tous les documents"
         content: |
-          Après le décès de grand-père, on a trié ses affaires. Beaucoup de vieux objets que j'ai failli jeter sans connaître leur signification.
+          <p><strong>Aperçu</strong> : En portant un Badge, tous les documents que vous créez sont gravés avec le Badge. Cela permet de garantir la provenance des documents.</p>
 
-          J'ai tout photographié et enregistré dans Inventory, puis demandé à mon père pour chaque objet, documentant dans le <a href="/inventory/manual/fr/#log">Journal</a>. "C'était la première montre de grand-père", "Ça a été utilisé pendant la guerre"...
+          <p><strong>Méthode d'équipement</strong></p>
+          <ol>
+            <li>Profil → <strong>Gestion des Badges</strong></li>
+            <li>Sélectionnez le Badge gravé</li>
+            <li>Appuyez sur <strong>Équiper</strong></li>
+          </ol>
 
-          Puis j'ai trouvé un vieux document. Il s'est avéré que c'étaient des papiers de 70 ans sur ses mérites dans la résistance ! On a contacté les autorités et les contributions de grand-père ont été honorées. Ça aurait été perdu pour toujours si on avait jeté.
+          <p><strong>Exemples d'utilisation</strong></p>
+          <ul>
+            <li>✅ <strong>Certification des documents produits</strong> : Tous les documents sont gravés avec le Badge, garantissant leur provenance</li>
+            <li>📜 <strong>Émission de documents officiels</strong> : Preuve qu'il s'agit d'un document officiel de la marque/entreprise</li>
+            <li>🔐 <strong>Protection contre la contrefaçon</strong> : Vérification de l'original possible grâce à la gravure du Badge</li>
+          </ul>
 
-      - type: "Histoire"
-        title: "De hobbyiste à leader de communauté"
-        persona: "Seojun (24 ans, Collectionneur LEGO)"
-        content: |
-          Je collectionne les sets LEGO. Au début juste pour le plaisir, mais ça devenait dur de suivre. Je m'y perdais dans ma collection.
-
-          J'ai commencé à enregistrer tous les sets LEGO dans Inventory. Prix d'achat, magasin, statut de construction dans le <a href="/inventory/manual/fr/#log">Journal</a>, série et nombre de pièces en <a href="/inventory/manual/fr/#keyword">Mots-clés</a>.
-
-          Un an plus tard, la communauté LEGO a vu mon Inventory et m'a contacté. "Vous êtes si organisé. Rejoignez notre groupe." Maintenant je suis admin d'une communauté de 500 membres. L'habitude de documenter a transformé un hobby en presque une profession.
-
-      - type: "Histoire"
-        title: "Concours de cuisine familial"
-        persona: "Sua (40 ans, Mère de trois)"
-        content: |
-          Mes trois enfants s'intéressaient à la cuisine. On a lancé un "Concours de Cuisine Familial" hebdomadaire.
-
-          Chaque semaine, les plats sont enregistrés dans Inventory, la famille vote et évalue via <a href="/inventory/manual/fr/#-journal-partagé-vs-solo">Journal Partagé</a>. "Les pâtes du frère trop salées", "La salade de la petite est jolie" - des avis honnêtes s'accumulent.
-
-          Après un an, on a compilé les notes en "Notre Livre de Recettes Familial". Fait maison et offert aux grands-parents - ils ont adoré. Inventory a créé une tradition familiale.
-
-      - type: "Histoire"
-        title: "Lancer une boutique de vêtements vintage"
-        persona: "Hayoung (26 ans, Propriétaire de friperie)"
-        content: |
-          J'adorais chiner et collectionnais des vêtements vintage partout. Une pièce entière s'est remplie.
-
-          J'ai commencé à organiser en enregistrant dans Inventory. Marque, époque, état, source de chaque article détaillés dans le <a href="/inventory/manual/fr/#log">Journal</a>. Style, taille, saison en <a href="/inventory/manual/fr/#keyword">Mots-clés</a>.
-
-          Les amis ont commencé à demander "Tu vends ça ?" Montrer l'écran Inventory a créé de la confiance. J'ai commencé à vendre sur Instagram, maintenant j'ai une boutique physique de vintage. L'organisation est devenue un business.
-
-      - type: "Histoire"
-        title: "Organisation complète avant déménagement"
-        persona: "Mingyu (45 ans, Émigrant)"
-        content: |
-          Décidé d'émigrer. Je devais trier 20 ans d'affaires.
-
-          J'ai tout enregistré dans la maison dans Inventory. Catégorisé : jeter, vendre, emporter, offrir - marqué en <a href="/inventory/manual/fr/#keyword">Mots-clés</a>. Les objets avec des souvenirs ont leurs histoires dans le <a href="/inventory/manual/fr/#log">Journal</a>.
-
-          3 mois de tri terminés en 2 semaines. Ventes fluides, et les objets significatifs faciles à lâcher avec des photos comme souvenirs. Les objets peuvent être jetés, mais les notes m'accompagnent.
-
-      - type: "Histoire"
-        title: "Transmettre mon premier instrument"
-        persona: "Yeeun (22 ans, Étudiante en musique)"
-        content: |
-          J'ai décidé de donner mon premier violon à ma sœur au lycée. Difficile de se séparer d'un instrument avec lequel j'ai joué 10 ans.
-
-          J'ai documenté toutes les histoires du violon dans Inventory. Premier jour d'achat, premier concert, jours de réparation... Chaque moment capturé dans le <a href="/inventory/manual/fr/#log">Journal</a>.
-
-          Quand j'ai <a href="/inventory/manual/fr/#-fonction-transfert">transféré</a> l'instrument avec les notes Inventory à ma sœur, j'ai dit "Tout ce que ce violon a joué est écrit ici." Elle était émue aux larmes. J'ai transmis non seulement l'instrument, mais son histoire.
-
-      - type: "Histoire"
-        title: "Notes après adoption d'un chien de refuge"
-        persona: "Sejin (30 ans, Propriétaire d'animal)"
-        content: |
-          J'ai adopté 'Luna' au refuge. Elle n'a pas de passé connu, donc je voulais documenter son futur encore mieux.
-
-          Dès le premier jour, j'ai tout documenté sur Luna dans Inventory. Premier jour à la maison, première queue remuante, premier endroit de sieste... Entrées de journal quotidiennes dans le <a href="/inventory/manual/fr/#log">Journal</a>.
-
-          À notre premier anniversaire, j'ai fait une vidéo de ces notes appelée "La Première Année de Luna." Partagée avec la communauté, beaucoup ont été touchés, certains ont décidé d'adopter en refuge. Les notes ont sauvé une autre vie.
-
-      - type: "Histoire"
-        title: "Histoire de l'héritage le plus ancien"
-        persona: "Jihoon (55 ans, Collectionneur de montres)"
-        content: |
-          J'ai une montre Omega des années 60 héritée de mon père. Un trésor familial, mais je suis le seul à connaître son histoire maintenant.
-
-          J'ai enregistré la montre dans Inventory et documenté toutes les histoires de mon père dans le <a href="/inventory/manual/fr/#log">Journal</a>. "Achetée avec le premier salaire", "Portée le jour où il a rencontré maman", "Vérifié l'heure à la naissance du grand frère"...
-
-          Quand je donnerai cette montre à mon fils, je <a href="/inventory/manual/fr/#-fonction-transfert">transférerai</a> l'Inventory aussi. La valeur des objets vient de leur histoire. Inventory connectera trois générations.
-
-  - id: creative
-    title: "Utilisations Créatives - Possibilités inattendues"
-    items:
-      - type: "Créatif"
-        title: "Documenter mes rêves"
-        persona: "Sumin (24 ans, Étudiante en psycho)"
-        content: |
-          L'analyse des rêves révèle l'inconscient. Donc chaque matin, je documente les rêves dont je me souviens dans Inventory.
-
-          Je dessine des scènes de rêve en images et téléverse, détails dans le <a href="/inventory/manual/fr/#log">Journal</a>. Thèmes comme "eau", "chute", "examens" en <a href="/inventory/manual/fr/#keyword">Mots-clés</a>.
-
-          Six mois d'analyse ont montré des patterns. Je rêve de "chute" quand je suis stressée. J'ai trouvé un moyen de dialoguer avec mon inconscient.
-
-      - type: "Créatif"
-        title: "Journal d'observation des étoiles"
-        persona: "Haneul (31 ans, Astronome amateur)"
-        content: |
-          L'observation du ciel nocturne est mon hobby. Je voulais documenter quand j'ai vu quoi.
-
-          Chaque observation va dans Inventory. Date, lieu, cible (constellation, planète, nébuleuse), météo, équipement... noté dans le <a href="/inventory/manual/fr/#log">Journal</a>, photos jointes.
-
-          Les saisons de pluie de météores, je reçois des alertes à l'avance via <a href="/inventory/manual/fr/#alarm">Alarme de Date</a>. Trois ans de notes sont devenues des données d'expérience pour "quand et où observer au mieux."
-
-      - type: "Créatif"
-        title: "Collection de notes de parfum"
-        persona: "Sujin (29 ans, Passionnée de parfum)"
-        content: |
-          Je collectionne les parfums mais je trouvais difficile de me souvenir des caractéristiques de chacun.
-
-          Chaque parfum enregistré avec notes (tête, cœur, fond), tenue, sillage, saisons/occasions adaptées dans le <a href="/inventory/manual/fr/#log">Journal</a>. <a href="/inventory/manual/fr/#keyword">Mots-clés</a> comme "boisé", "floral", "soirée rendez-vous".
-
-          Quand des amis demandent des recommandations, je cherche juste et réponds. Ma propre encyclopédie des parfums créée !
-
-      - type: "Créatif"
-        title: "Projet photo quotidien du ciel"
-        persona: "Yuri (26 ans, Photographe)"
-        content: |
-          J'ai lancé un projet : photographier le ciel depuis le même endroit chaque jour pendant un an.
-
-          Photos du ciel quotidiennes téléversées avec météo, humeur, ce qui s'est passé ce jour dans le <a href="/inventory/manual/fr/#log">Journal</a>. Dates de prises gérées avec <a href="/inventory/manual/fr/#dates">Date de Début</a>.
-
-          365 photos sont devenues un timelapse vidéo. Les saisons changeantes dans le ciel avec mon année. Posté sur Instagram et plus de 100k vues.
-
-      - type: "Créatif"
-        title: "Gestion de personnages JDR"
-        persona: "Minhyuk (22 ans, Gamer)"
-        content: |
-          Je joue aux JDR sur table mais la gestion des fiches de personnage et de l'inventaire est complexe.
-
-          Personnages et objets d'inventaire enregistrés dans Inventory. Événements de session, montées de niveau, nouvelles compétences dans le <a href="/inventory/manual/fr/#log">Journal</a>. <a href="/inventory/manual/fr/#partition">Partitions</a> par campagne.
-
-          Connecté avec les membres du groupe via <a href="/inventory/manual/fr/#-journal-partagé-vs-solo">Journal Partagé</a>, tout le monde peut voir les infos des personnages des autres. Même le MJ dit "Ça facilite les sessions !"
-
-      - type: "Créatif"
-        title: "Mon propre carnet de vocabulaire"
-        persona: "Jeonga (28 ans, Apprenante de langue)"
-        content: |
-          J'apprends une langue mais les apps de vocabulaire ne me convenaient pas. Je voulais organiser à ma façon.
-
-          Mots inconnus enregistrés dans Inventory avec phrases d'exemple et explications de nuances dans le <a href="/inventory/manual/fr/#log">Journal</a>. <a href="/inventory/manual/fr/#keyword">Mots-clés</a> comme "B2", "business", "entendu dans une série".
-
-          Les mots mémorisés sont marqués avec le <a href="/inventory/manual/fr/#keyword">Mot-clé</a> "appris". Réviser seulement les non-marqués. Efficace ! Examen de langue réussi !
-
-      - type: "Créatif"
-        title: "Gestion de garde-robe capsule"
-        persona: "Seoyeon (27 ans, Minimaliste)"
-        content: |
-          J'ai essayé le défi 'garde-robe capsule' - 33 pièces pour 3 mois. Vider le placard, ne garder que l'essentiel !
-
-          Les 33 pièces sélectionnées enregistrées dans Inventory. Chaque port noté dans le <a href="/inventory/manual/fr/#log">Journal</a>. Après 3 mois, l'analyse montre ce que je porte vraiment vs. pas.
-
-          Non portés triés, espaces vides remplis seulement de nécessaire. Inventory aide à maintenir un style de vie minimal.
-
-      - type: "Créatif"
-        title: "Curation de galerie d'art"
-        persona: "Yejin (34 ans, Amatrice d'art)"
-        content: |
-          Je visite souvent les musées mais j'oublie les œuvres vues.
-
-          Chaque expo, j'enregistre les œuvres qui m'ont touché. Artiste, année, technique dans le <a href="/inventory/manual/fr/#log">Journal</a>, plus "pourquoi ça m'a plu." Genre, époque, émotion en <a href="/inventory/manual/fr/#keyword">Mots-clés</a>.
-
-          Cinq ans de notes montrent mes goûts. Impressionnisme, abstrait, tons bleus... Maintenant j'utilise ces données pour choisir les expos.
-
-      - type: "Créatif"
-        title: "Gestion intelligente de cartes de visite"
-        persona: "Jongmin (42 ans, Commercial)"
-        content: |
-          Des centaines de cartes de visite empilées, je ne me souviens pas de qui est qui.
-
-          Photographier les cartes immédiatement et enregistrer dans Inventory. Noter dans le <a href="/inventory/manual/fr/#log">Journal</a> "où rencontré", "de quoi discuté." Secteur, intérêts, potentiel de collaboration en <a href="/inventory/manual/fr/#keyword">Mots-clés</a>.
-
-          "Le type IT que j'ai rencontré" - recherche instantanée. En recontactant, mentionner la conversation précédente impressionne les gens !
-
-      - type: "Créatif"
-        title: "Gestion de collection de jeux de société"
-        persona: "Jaewon (29 ans, Fan de jeux de société)"
-        content: |
-          Plus de 50 jeux de société mais je ne me souviens pas de ce que j'ai. Quand des amis viennent, dur de décider quoi jouer.
-
-          Tous les jeux enregistrés avec nombre de joueurs, durée, genre, difficulté en <a href="/inventory/manual/fr/#keyword">Mots-clés</a>. Avis de jeu dans le <a href="/inventory/manual/fr/#log">Journal</a>.
-
-          Quand des amis viennent : "4 joueurs, 1 heure, léger" cherche et donne des recommandations instantanées. Ils m'appellent le "sommelier des jeux de société !"
+          <p><strong>Conseils d'utilisation</strong></p>
+          <ul>
+            <li>Lors de l'émission de coupons de magasin, le Badge certifie qu'il s'agit d'un coupon officiel</li>
+            <li>Sur le contenu des créateurs, le Badge indique les droits d'auteur</li>
+            <li>Sur les annonces d'entreprise, indication du compte officiel</li>
+          </ul>

@@ -1,0 +1,229 @@
+{% comment %}
+  메인 페이지용 활용방법 요약 컴포넌트
+  사용법: {% include usecases-summary.html lang="ko" %}
+{% endcomment %}
+
+{% assign lang = include.lang | default: page.lang | default: 'ko' %}
+{% assign data = site.data.usecases[lang] %}
+
+{% comment %} 언어별 링크 생성 {% endcomment %}
+{% if lang == 'ko' %}
+  {% assign usecases_link = '/inventory/usecases/' %}
+{% else %}
+  {% assign usecases_link = '/inventory/usecases/' | append: lang | append: '/' %}
+{% endif %}
+
+<style>
+/* 활용방법 요약 섹션 */
+.usecases-summary {
+  margin: 2rem 0;
+}
+
+.usecases-summary-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.usecases-summary-header h3 {
+  margin: 0;
+  color: #a855f7;
+  font-size: 1.3rem;
+}
+
+.usecases-summary-link {
+  display: inline-block;
+  background: rgba(168, 85, 247, 0.2);
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.usecases-summary-link:hover {
+  background: rgba(168, 85, 247, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
+}
+
+/* 카테고리 그리드 */
+.usecases-categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+/* 카테고리 카드 */
+.usecases-category-card {
+  background: rgba(10, 6, 20, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.usecases-category-card:hover {
+  border-color: rgba(168, 85, 247, 0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(168, 85, 247, 0.2);
+}
+
+.category-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.category-card-icon {
+  font-size: 2rem;
+}
+
+.category-card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.category-card-description {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  margin: 0 0 1rem 0;
+  line-height: 1.5;
+}
+
+/* 예시 목록 */
+.category-examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.category-example-tag {
+  background: rgba(168, 85, 247, 0.15);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 20px;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* 난이도 표시 */
+.category-levels {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.level-badge {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.level-badge.beginner {
+  background: rgba(34, 197, 94, 0.2);
+  color: #22c55e;
+}
+
+.level-badge.intermediate {
+  background: rgba(59, 130, 246, 0.2);
+  color: #3b82f6;
+}
+
+.level-badge.advanced {
+  background: rgba(168, 85, 247, 0.2);
+  color: #a855f7;
+}
+
+.level-badge.expert {
+  background: rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+}
+
+/* 더보기 버튼 */
+.category-more-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--purple-bright, #a855f7);
+  font-size: 0.85rem;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.category-more-link:hover {
+  color: var(--teal-bright, #2dd4bf);
+}
+
+@media (max-width: 768px) {
+  .usecases-summary-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .usecases-categories-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<div class="usecases-summary">
+  <div class="usecases-summary-header">
+    <h3>💡 활용 가이드</h3>
+    <a href="{{ usecases_link }}" class="usecases-summary-link">전체 보기 →</a>
+  </div>
+
+  <div class="usecases-categories-grid">
+    {% for category in data.categories %}
+    <div class="usecases-category-card">
+      <div class="category-card-header">
+        <span class="category-card-icon">{{ category.icon }}</span>
+        <h4 class="category-card-title">{{ category.title | remove: category.icon | strip }}</h4>
+      </div>
+
+      <p class="category-card-description">{{ category.description }}</p>
+
+      <div class="category-examples">
+        {% for item in category.items limit:3 %}
+        <span class="category-example-tag">{{ item.title }}</span>
+        {% endfor %}
+      </div>
+
+      <div class="category-levels">
+        {% assign levels_shown = "" %}
+        {% for item in category.items %}
+          {% unless levels_shown contains item.type %}
+            {% assign level_class = 'beginner' %}
+            {% if item.type == '중급' %}
+              {% assign level_class = 'intermediate' %}
+            {% elsif item.type == '고급' %}
+              {% assign level_class = 'advanced' %}
+            {% elsif item.type == '전문가' %}
+              {% assign level_class = 'expert' %}
+            {% endif %}
+            <span class="level-badge {{ level_class }}">{{ item.type }}</span>
+            {% assign levels_shown = levels_shown | append: item.type | append: "," %}
+          {% endunless %}
+        {% endfor %}
+      </div>
+
+      <a href="{{ usecases_link }}#{{ category.id }}" class="category-more-link">
+        {{ category.items.size }}개 활용법 보기 →
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>

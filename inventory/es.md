@@ -92,6 +92,10 @@ Crea artículos con una sola hoja de papel y transfiérelos mediante código QR.
 
 ---
 
+{% include usecases-summary.html lang="es" %}
+
+---
+
 ### 📝 Sistema de papel
 
 <div style="background: rgba(168, 85, 247, 0.15); backdrop-filter: blur(10px); border: 1px solid rgba(168, 85, 247, 0.3); border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0;">

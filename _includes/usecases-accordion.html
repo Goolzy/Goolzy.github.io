@@ -1,5 +1,5 @@
 {% comment %}
-  활용방법 페이지용 Accordion 스타일 컴포넌트
+  활용방법 페이지용 Accordion 스타일 컴포넌트 (개편 버전)
   사용법: {% include usecases-accordion.html lang="ko" %}
 {% endcomment %}
 
@@ -8,13 +8,45 @@
 {% assign manual_base = data.page.manual_base %}
 
 <style>
+/* 카테고리 섹션 */
+.usecase-section {
+  margin: 3rem 0;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-icon {
+  font-size: 2rem;
+}
+
+.section-info h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  background: linear-gradient(135deg, #a855f7, #2dd4bf);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-info p {
+  margin: 0.25rem 0 0 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+
+/* 카드 그리드 */
 .usecase-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.25rem;
-  margin: 2rem 0;
 }
 
+/* 카드 스타일 */
 .usecase-card {
   background: rgba(10, 6, 20, 0.5);
   border: 1px solid rgba(168, 85, 247, 0.2);
@@ -54,30 +86,52 @@
   content: '{{ data.page.collapse }}';
 }
 
-.usecase-card .card-title {
+/* 난이도 뱃지 */
+.card-level {
+  display: inline-block;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  width: fit-content;
+  font-weight: 600;
+}
+
+.card-level.beginner {
+  background: rgba(34, 197, 94, 0.2);
+  color: #22c55e;
+}
+
+.card-level.intermediate {
+  background: rgba(59, 130, 246, 0.2);
+  color: #3b82f6;
+}
+
+.card-level.advanced {
+  background: rgba(168, 85, 247, 0.2);
+  color: #a855f7;
+}
+
+.card-level.expert {
+  background: rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+}
+
+/* 카드 제목/부제목 */
+.card-title {
   font-size: 1.1rem;
   font-weight: 700;
   color: var(--text);
   line-height: 1.4;
 }
 
-.usecase-card .card-persona {
+.card-subtitle {
   font-size: 0.85rem;
   color: var(--teal-bright);
   opacity: 0.9;
 }
 
-.usecase-card .card-type {
-  display: inline-block;
-  font-size: 0.7rem;
-  padding: 0.2rem 0.6rem;
-  border-radius: 20px;
-  background: rgba(168, 85, 247, 0.2);
-  color: var(--purple-bright);
-  width: fit-content;
-}
-
-.usecase-card .card-content {
+/* 카드 콘텐츠 */
+.card-content {
   padding: 0 1.25rem 1.25rem;
   border-top: 1px solid rgba(168, 85, 247, 0.1);
   margin-top: 0.5rem;
@@ -85,34 +139,64 @@
   color: rgba(255, 255, 255, 0.85);
 }
 
-.usecase-card .card-content p {
+.card-content p {
   margin: 1rem 0;
 }
 
-.usecase-card .card-content strong {
+.card-content strong {
   color: var(--teal-bright);
 }
 
-.usecase-card .card-content a {
+.card-content a {
   color: var(--purple-bright);
   text-decoration: none;
 }
 
-.usecase-card .card-content a:hover {
+.card-content a:hover {
   text-decoration: underline;
 }
 
-.category-section {
-  margin: 3rem 0;
+/* 리스트 스타일 */
+.card-content ol,
+.card-content ul {
+  margin: 0.75rem 0;
+  padding-left: 1.5rem;
 }
 
-.category-title {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-  padding-left: 1rem;
-  border-left: 4px solid var(--teal);
+.card-content ol li,
+.card-content ul li {
+  margin: 0.5rem 0;
 }
 
+.card-content ol {
+  counter-reset: step-counter;
+  list-style: none;
+  padding-left: 0;
+}
+
+.card-content ol li {
+  counter-increment: step-counter;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.card-content ol li::before {
+  content: counter(step-counter);
+  position: absolute;
+  left: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: rgba(168, 85, 247, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--purple-bright);
+}
+
+/* 공유 섹션 */
 .share-section {
   text-align: center;
   padding: 3rem 2rem;
@@ -158,6 +242,12 @@
   .usecase-grid {
     grid-template-columns: 1fr;
   }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
 }
 </style>
 
@@ -168,30 +258,49 @@
 <hr>
 
 {% for category in data.categories %}
-<div class="category-section">
-<h2 class="category-title">{{ category.title }}</h2>
+<div class="usecase-section" id="{{ category.id }}">
+  <div class="section-header">
+    <span class="section-icon">{{ category.icon }}</span>
+    <div class="section-info">
+      <h2>{{ category.title }}</h2>
+      <p>{{ category.description }}</p>
+    </div>
+  </div>
 
-<div class="usecase-grid">
-{% for item in category.items %}
-<details class="usecase-card">
-<summary>
-<span class="card-type">{{ item.type }}</span>
-<span class="card-title">{{ item.title }}</span>
-<span class="card-persona">{{ item.persona }}</span>
-</summary>
-<div class="card-content">
-{{ item.content }}
-</div>
-</details>
-{% endfor %}
-</div>
+  <div class="usecase-grid">
+  {% for item in category.items %}
+    {% assign level_class = 'beginner' %}
+    {% if item.type == data.page.levels.intermediate or item.type == '중급' %}
+      {% assign level_class = 'intermediate' %}
+    {% elsif item.type == data.page.levels.advanced or item.type == '고급' %}
+      {% assign level_class = 'advanced' %}
+    {% elsif item.type == data.page.levels.expert or item.type == '전문가' %}
+      {% assign level_class = 'expert' %}
+    {% endif %}
+
+    <details class="usecase-card">
+      <summary>
+        <span class="card-level {{ level_class }}">{{ item.type }}</span>
+        <span class="card-title">{{ item.title }}</span>
+        {% if item.subtitle %}
+        <span class="card-subtitle">{{ item.subtitle }}</span>
+        {% elsif item.persona %}
+        <span class="card-subtitle">{{ item.persona }}</span>
+        {% endif %}
+      </summary>
+      <div class="card-content">
+        {{ item.content }}
+      </div>
+    </details>
+  {% endfor %}
+  </div>
 </div>
 {% endfor %}
 
 <hr>
 
 <div class="share-section">
-<h3>{{ data.page.share_title }}</h3>
-<p>{{ data.page.share_text }}</p>
-<a href="{{ data.page.share_link }}" class="share-btn">{{ data.page.share_btn }}</a>
+  <h3>{{ data.page.share_title }}</h3>
+  <p>{{ data.page.share_text }}</p>
+  <a href="{{ data.page.share_link }}" class="share-btn">{{ data.page.share_btn }}</a>
 </div>

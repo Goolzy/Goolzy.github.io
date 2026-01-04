@@ -1,423 +1,448 @@
+# Datos de casos de uso de Inventory (Espanol) - Version renovada
 page:
-  title: "Casos de Uso"
-  intro: "Descubre las diversas formas en que las personas utilizan Inventory en su vida diaria."
-  expand: "Ver más ↓"
+  title: "Guia de Uso de Inventory"
+  intro: "Descubre lo que puedes hacer con Inventory. Te guiamos paso a paso, desde lo basico hasta las funciones avanzadas."
+  expand: "Seguir los pasos ↓"
   collapse: "Ocultar ↑"
-  share_title: "Comparte tu uso de Inventory"
-  share_text: "¿Cómo usas Inventory? ¡Esperamos tus ideas creativas!"
-  share_btn: "Compartir mi historia"
-  share_link: "/inventory/suggest/es/"
-  manual_base: "/inventory/manual/es/"
+  share_title: "Comparte tu forma de uso"
+  share_text: "Como lo usas tu? Esperamos nuevas ideas."
+  share_btn: "Compartir mi uso"
+  share_link: "/inventory/suggest/"
+  manual_base: "/inventory/manual/"
+  levels:
+    beginner: "Principiante"
+    intermediate: "Intermedio"
+    advanced: "Avanzado"
+    expert: "Experto"
 
 categories:
-  - id: problem-solving
-    title: "Resolución de Problemas - Enfrentando desafíos cotidianos"
+  # ===== 1. Uso del Papel (Paper) =====
+  - id: paper-usage
+    title: "📄 Uso del Papel"
+    icon: "📄"
+    description: "Todo lo que puedes hacer con el Papel (Paper)"
     items:
-      - type: "Resolución"
-        title: "Mi jefe siempre pide datos antiguos de repente"
-        persona: "Miguel (34 años, Gerente de Proyecto)"
+      # 1-1. Registro individual
+      - type: "Principiante"
+        title: "Crear mis propios registros"
+        subtitle: "Archivo personal comenzando con 1 Papel"
         content: |
-          **Problema**: En las reuniones de planificación trimestral, el jefe pedía datos de hace 2-3 meses. Cada vez tenía que buscar urgentemente en Slack y correos.
+          <p><strong>Resumen</strong>: Con 1 Papel puedes crear un documento y dejar registros continuos en el log.</p>
 
-          **Solución**: Ahora uso [Papel](/inventory/manual/es/#paper) para registrar decisiones clave y datos de cada reunión. Cuando el jefe los pide, los encuentro en 3 segundos.
+          <p><strong>Pasos a seguir</strong></p>
+          <ol>
+            <li>Toca el boton <strong>+</strong> en la parte inferior de la pantalla principal</li>
+            <li>Selecciona <strong>Documento</strong> → Consume 1 Papel</li>
+            <li>Ingresa titulo, descripcion + agrega imagen (opcional)</li>
+            <li>Una vez creado, anade notas en la pestana <strong>Log</strong></li>
+          </ol>
 
-          **Resultado**: Los colegas preguntan: "¿Cómo tienes todo tan ordenado?" Ya no paso vergüenza en las reuniones.
+          <p><strong>Ejemplos de uso</strong></p>
+          <ul>
+            <li>📔 <strong>Diario/Bloc de notas</strong>: Guarda registros diarios con imagenes y texto</li>
+            <li>📸 <strong>Album de fotos</strong>: Registra momentos especiales con imagenes, deja recuerdos en el log</li>
+            <li>📋 <strong>Gestion de garantias</strong>: Guarda fotos de garantias, configura alertas de vencimiento</li>
+            <li>🧾 <strong>Archivo de recibos</strong>: Guarda recibos importantes digitalmente</li>
+          </ul>
 
-      - type: "Resolución"
-        title: "Olvidé el PIN de mi cuenta"
-        persona: "Ana (45 años, Madre de familia)"
+          <p><strong>Consejo de organizacion</strong>: Agrupa documentos similares con <strong>Clips</strong> y separa categorias con <strong>Particiones</strong>.</p>
+
+      # 1-2. Duplicar plantillas compartidas
+      - type: "Principiante"
+        title: "Obtener plantillas compartidas"
+        subtitle: "Haz tuyas las plantillas de otros usuarios"
         content: |
-          **Problema**: Cada banco usa PIN diferente, y las reglas de contraseña son distintas. Cuando llamo al banco, olvido cuál era.
+          <p><strong>Resumen</strong>: Puedes duplicar sellos compartidos por otros usuarios y usarlos como tus propios documentos.</p>
 
-          **Solución**: Con [Bloqueo de Documento](/inventory/manual/es/#lock), guardo los PINs de forma segura. Solo yo puedo verlos desbloqueando.
+          <p><strong>Pasos a seguir</strong></p>
+          <ol>
+            <li>Haz clic en el enlace del sello compartido o escanea el QR</li>
+            <li>En la pantalla de detalles del sello, toca <strong>Duplicar</strong></li>
+            <li>Consume 1 Papel → Duplicacion completada en tu inventario</li>
+            <li>Modifica los valores de palabras clave segun tus necesidades</li>
+          </ol>
 
-          **Resultado**: Ahora hago trámites bancarios con confianza. No más momentos de pensar "¿Cuál era el PIN?"
+          <p><strong>Ejemplos de uso</strong></p>
+          <ul>
+            <li>✅ <strong>Listas de verificacion</strong>: Usa plantillas compartidas para viajes, compras, etc.</li>
+            <li>🎁 <strong>Participacion en eventos</strong>: Duplica plantillas de eventos de marcas/tiendas</li>
+            <li>📝 <strong>Uso de formularios</strong>: Duplica formularios utiles creados por otros usuarios</li>
+          </ul>
 
-      - type: "Resolución"
-        title: "No sé qué comida le di al bebé ayer"
-        persona: "Carmen (32 años, Madre primeriza)"
+      # 1-3. Log compartido - Sala de chat
+      - type: "Intermedio"
+        title: "Registrar junto con amigos"
+        subtitle: "Sala de chat grupal con log compartido"
         content: |
-          **Problema**: Empezando la alimentación complementaria a los 6 meses. Necesito introducir nuevos alimentos cada 3 días para detectar alergias, pero olvido qué le di.
+          <p><strong>Resumen</strong>: Al crear un documento compartido con varios papeles, todos los participantes pueden registrar en el mismo log.</p>
 
-          **Solución**: Con [Registro](/inventory/manual/es/#log) guardo fotos de cada comida con ingredientes. Ahora veo claramente qué le di y cuándo.
+          <p><strong>Pasos a seguir</strong></p>
+          <ol>
+            <li>Toca el boton <strong>+</strong> en la parte inferior de la pantalla principal</li>
+            <li>Selecciona <strong>Documento compartido</strong></li>
+            <li>Selecciona tantos Papeles como participantes (2-10)</li>
+            <li>Ingresa titulo y descripcion, luego crea</li>
+            <li><strong>Envia</strong> el documento creado a los participantes</li>
+          </ol>
 
-          **Resultado**: En la revisión pediátrica, mostré el registro y el doctor lo elogió. "Esto es mejor que un diario de alimentación."
+          <p><strong>Uso de Papel por numero de personas</strong></p>
+          <ul>
+            <li>👫 2 personas: 2 Papeles (diario de pareja, chat 1:1)</li>
+            <li>👨‍👩‍👧 3 personas: 3 Papeles (proyecto de grupo pequeno)</li>
+            <li>👨‍👩‍👧‍👦 4-10 personas: 4-10 Papeles (reuniones familiares, clubes)</li>
+          </ul>
 
-      - type: "Resolución"
-        title: "El plazo del proyecto está cerca pero no lo sabía"
-        persona: "Daniel (29 años, Diseñador Freelance)"
-        content: |
-          **Problema**: Manejando 5-6 proyectos a la vez. Los plazos a veces se me escapaban y perdía la confianza del cliente.
+          <p><strong>Ejemplos de uso</strong></p>
+          <ul>
+            <li>💑 <strong>Diario de pareja</strong>: Registra recuerdos juntos solo para ustedes dos</li>
+            <li>👨‍👩‍👧‍👦 <strong>Album familiar</strong>: Comparte eventos familiares y vida cotidiana</li>
+            <li>📚 <strong>Grupo de estudio</strong>: Registra contenido de estudio y preguntas juntos</li>
+          </ul>
 
-          **Solución**: Uso [Alarma de Fecha](/inventory/manual/es/#alarm) para cada proyecto. Recibo alertas 7 días, 3 días y 1 día antes.
-
-          **Resultado**: Desde que uso esto, he entregado a tiempo durante 6 meses. Los clientes quedaron tan impresionados que me recomiendan a otros.
-
-      - type: "Resolución"
-        title: "Las contraseñas de todos los sitios son diferentes"
-        persona: "Roberto (52 años, Dueño de pequeña empresa)"
-        content: |
-          **Problema**: Sitios de compras, banca, gobierno... Antes usaba la misma contraseña pero me hackearon. Intenté usar diferentes pero no las recuerdo.
-
-          **Solución**: Las guardo con [Bloqueo de Documento](/inventory/manual/es/#lock). Organizadas por categoría para encontrarlas fácilmente.
-
-          **Resultado**: Ahora puedo tener contraseñas complejas y únicas para cada sitio. Eso es la verdadera seguridad.
-
-      - type: "Resolución"
-        title: "¿Cuándo fue la última revisión del auto?"
-        persona: "Francisco (41 años, Representante de Ventas)"
-        content: |
-          **Problema**: Conduciendo 30,000 km al año, es difícil recordar cuándo cambié aceite o neumáticos.
-
-          **Solución**: Registro cada mantenimiento con [Registro](/inventory/manual/es/#log) y configuro [Alarma de Fecha](/inventory/manual/es/#alarm) para el próximo.
-
-          **Resultado**: Puedo mostrar el historial completo al vender. Obtuve mejor precio porque tenía registros detallados.
-
-      - type: "Resolución"
-        title: "¿Cuándo caduca este medicamento?"
-        persona: "Isabel (67 años, Jubilada)"
-        content: |
-          **Problema**: Tomando 5 medicamentos diferentes. Preocupada por caducidades y reabastecimiento.
-
-          **Solución**: Fotografío cada medicamento y uso [Fecha de Caducidad](/inventory/manual/es/#dates). Me avisa una semana antes.
-
-          **Resultado**: Ahora no tomo medicamentos caducados ni me quedo sin ellos. Mi hija dice que manejo mejor mi salud ahora.
-
-      - type: "Resolución"
-        title: "¿Dónde guardé el certificado de garantía?"
-        persona: "Laura (38 años, Ama de casa)"
-        content: |
-          **Problema**: Cuando los electrodomésticos fallan, nunca encuentro la garantía. Termino pagando reparación aunque esté en garantía.
-
-          **Solución**: Fotografío cada garantía al comprar. Uso [Palabras Clave](/inventory/manual/es/#keyword) como #garantía #Samsung #refrigerador.
-
-          **Resultado**: Busco "garantía refrigerador" y aparece al instante. He ahorrado mucho en reparaciones.
-
-      - type: "Resolución"
-        title: "No recuerdo qué película vi"
-        persona: "Pedro (25 años, Ingeniero de Software)"
-        content: |
-          **Problema**: Veo películas cada fin de semana pero después no recuerdo ni el título. Cuando me preguntan, solo puedo decir "era buena".
-
-          **Solución**: Registro cada película con [Registro](/inventory/manual/es/#log). Guardo cartel, puntuación, escenas favoritas.
-
-          **Resultado**: Cuando alguien pide recomendaciones, las busco por género. Me dicen "eres como una base de datos de cine".
-
-      - type: "Resolución"
-        title: "No sé qué vino pedí la última vez"
-        persona: "Marina (35 años, Gerente de Marketing)"
-        content: |
-          **Problema**: Cuando encuentro un buen vino, quiero recordarlo pero siempre olvido el nombre. Incluso si tomo foto, luego no la encuentro.
-
-          **Solución**: Fotografío las etiquetas y uso [Palabras Clave](/inventory/manual/es/#keyword) con variedad, país, precio, sabor.
-
-          **Resultado**: Ahora tengo mi propia lista de vinos. Mis amigos me piden recomendaciones según su presupuesto.
-
-      - type: "Resolución"
-        title: "¿Cuándo renovar el pasaporte?"
-        persona: "Carlos (44 años, Consultor Internacional)"
-        content: |
-          **Problema**: Viajo frecuentemente. Casi pierdo un vuelo porque el pasaporte caducó sin darme cuenta.
-
-          **Solución**: Registro pasaporte y visas con [Fecha de Caducidad](/inventory/manual/es/#dates). Alertas automáticas 2 meses antes.
-
-          **Resultado**: Ahora nunca me sorprende una caducidad. También registro números de viajero frecuente y membresías de aerolíneas.
-
-      - type: "Resolución"
-        title: "Compré lo mismo dos veces"
-        persona: "Teresa (55 años, Organizadora de eventos)"
-        content: |
-          **Problema**: Comprando cosas para fiestas familiares, a veces compro decoraciones que ya tenía.
-
-          **Solución**: Registro todos mis suministros con [Papel](/inventory/manual/es/#paper). Reviso antes de ir de compras.
-
-          **Resultado**: No más compras duplicadas. Y sé exactamente dónde está cada cosa guardada.
-
-  - id: emotional-experience
-    title: "Experiencias Emocionales - Dando significado a la vida"
+  # ===== 2. Uso del Sello (Stamp) =====
+  - id: stamp-usage
+    title: "🔖 Uso del Sello"
+    icon: "🔖"
+    description: "Crea y comparte plantillas con Sellos (Stamp)"
     items:
-      - type: "Emoción"
-        title: "Quiero guardar lo que dice mi hijo antes de olvidarlo"
-        persona: "Lucía (36 años, Madre trabajadora)"
+      # 2-1. Sello de log individual
+      - type: "Avanzado"
+        title: "Crear mis propias plantillas"
+        subtitle: "Produccion masiva de documentos con sello de log individual"
         content: |
-          Mi hijo de 4 años dice cosas adorables y únicas. Quiero recordarlas pero siempre las olvido.
+          <p><strong>Resumen</strong>: Al crear una plantilla con un sello, puedes crear rapidamente multiples documentos con el mismo formato.</p>
 
-          Uso [Papel](/inventory/manual/es/#paper) para registrar sus palabras al instante. A veces con foto de su carita.
+          <p><strong>Pasos a seguir</strong></p>
+          <ol>
+            <li>Toca el boton <strong>+</strong> en la parte inferior de la pantalla principal</li>
+            <li>Selecciona <strong>Plantilla de Sello</strong> → Consume 1 Sello</li>
+            <li>Ingresa informacion de la plantilla: titulo, descripcion, imagen</li>
+            <li>Selecciona <strong>Modo de log: Individual</strong></li>
+            <li>Configura palabras clave (maximo 10)</li>
+            <li>Creacion de plantilla completada</li>
+          </ol>
 
-          Ya tengo 300 "frases memorables". Será el mejor regalo cuando crezca. Lloro de felicidad leyéndolas.
+          <p><strong>Como duplicar documentos</strong></p>
+          <ol>
+            <li>Selecciona el sello creado</li>
+            <li>Toca <strong>Duplicar</strong></li>
+            <li>Selecciona Papel para duplicar → Se crea documento con formato identico</li>
+          </ol>
 
-      - type: "Emoción"
-        title: "Registro las cartas de mamá"
-        persona: "Antonio (48 años, Empresario)"
+          <p><strong>Ejemplos de uso</strong></p>
+          <ul>
+            <li>🏋️ <strong>Registro de ejercicio</strong>: Registra contenido de ejercicio con el mismo formato cada dia</li>
+            <li>📖 <strong>Registro de lectura</strong>: Escribe resenas con el mismo formato para cada libro</li>
+            <li>🍷 <strong>Gestion de colecciones</strong>: Catalogo de colecciones como vinos, LEGO, figuras</li>
+          </ul>
+
+          <p><strong>Consejo de organizacion</strong>: Agrupa los documentos acumulados en series con <strong>Clips</strong>.</p>
+
+      # 2-2. Sello de log compartido
+      - type: "Avanzado"
+        title: "Crear una comunidad abierta"
+        subtitle: "Agrega usuarios continuamente con sello de log compartido"
         content: |
-          Mamá me mandaba cartas cuando trabajaba en el extranjero. Temo que se deterioren con el tiempo.
+          <p><strong>Resumen</strong>: El sello de log compartido es un espacio publico donde cualquiera puede duplicar y participar.</p>
 
-          Digitalicé todas las cartas con [Papel](/inventory/manual/es/#paper). Puedo ver su letra cuando la extraño.
+          <p><strong>Pasos a seguir</strong></p>
+          <ol>
+            <li>Toca el boton <strong>+</strong> en la parte inferior de la pantalla principal</li>
+            <li>Selecciona <strong>Plantilla de Sello</strong> → Consume 1 Sello</li>
+            <li>Ingresa informacion de la plantilla: titulo, descripcion, imagen</li>
+            <li>Selecciona <strong>Modo de log: Compartido</strong> ⭐</li>
+            <li>Configura palabras clave y crea</li>
+          </ol>
 
-          Mamá falleció el año pasado. Estas cartas son ahora mi tesoro más preciado.
+          <p><strong>Como agregar participantes</strong></p>
+          <ol>
+            <li>Comparte el enlace/QR del sello con otros usuarios</li>
+            <li>Cuando la otra persona duplica, automaticamente se une al log compartido</li>
+            <li>Se pueden agregar continuamente sin limite de personas</li>
+          </ol>
 
-      - type: "Emoción"
-        title: "Guardando el camino hacia mi sueño"
-        persona: "Sofía (23 años, Aspirante a diseñadora)"
+          <p><strong>Ejemplos de uso</strong></p>
+          <ul>
+            <li>💬 <strong>Sala de chat abierta</strong>: Espacio de discusion publica donde cualquiera puede participar</li>
+            <li>🎤 <strong>Club de fans</strong>: Reunion de fans de artistas/marcas</li>
+            <li>📢 <strong>Foro comunitario</strong>: Opera una comunidad basada en intereses</li>
+          </ul>
+
+      # 2-3. Compartir sellos - Pequenos negocios
+      - type: "Experto"
+        title: "Usar para operar una tienda"
+        subtitle: "Marketing con sellos para pequenos negocios"
         content: |
-          Preparándome para mi propia marca. Quiero guardar cada boceto, inspiración y comentario.
+          <p><strong>Resumen</strong>: Puedes compartir sellos para comunicarte con clientes y realizar tus propios eventos.</p>
 
-          Organizo todo con [Partición](/inventory/manual/es/#partition): inspiración, bocetos, muestras, feedback.
+          <p><strong>Formas de uso</strong></p>
 
-          Cuando me siento desanimada, veo mi progreso desde el principio. Me recuerda cuánto he avanzado.
+          <p>🍽️ <strong>Menu de la tienda</strong></p>
+          <ol>
+            <li>Crea una plantilla de sello con fotos del menu</li>
+            <li>Configura nombre y precio del menu en palabras clave</li>
+            <li>Coloca el codigo QR en las mesas</li>
+            <li>Los clientes duplican y lo usan como registro de pedidos</li>
+          </ol>
 
-      - type: "Emoción"
-        title: "Colecciono atardeceres"
-        persona: "Fernando (62 años, Profesor jubilado)"
+          <p>🎫 <strong>Tarjeta de sellos de fidelidad</strong></p>
+          <ol>
+            <li>Crea plantilla "Bebida gratis al visitar 10 veces"</li>
+            <li>El cliente duplica → Sella en el log cada visita</li>
+            <li>Al completar 10, ofrece el beneficio</li>
+          </ol>
+
+          <p>📋 <strong>Recopilacion de comentarios de clientes</strong></p>
+          <ol>
+            <li>Crea plantilla de encuesta de satisfaccion</li>
+            <li>Configura campos de puntuacion/opinion con palabras clave</li>
+            <li>Cliente duplica → Escribe comentarios</li>
+          </ol>
+
+          <p><strong>Otros usos</strong></p>
+          <ul>
+            <li>🆕 Anuncio de nuevo menu + compartir resenas de degustacion</li>
+            <li>🎟️ Distribucion de cupones de descuento</li>
+            <li>📅 Operacion de sistema de reservas</li>
+          </ul>
+
+      # 2-4. Archivo personal
+      - type: "Intermedio"
+        title: "Crear archivo personal"
+        subtitle: "Organiza tu contenido favorito en tu propia coleccion"
         content: |
-          Empecé a fotografiar atardeceres como hobby. Quiero recordar dónde y cuándo vi cada uno.
+          <p><strong>Resumen</strong>: Organiza sistematicamente tu contenido favorito como YouTube, Spotify, libros y peliculas.</p>
 
-          Registro cada atardecer con [Registro](/inventory/manual/es/#log). Lugar, clima, mis emociones del momento.
+          <p>🎬 <strong>Lista de reproduccion de YouTube</strong></p>
+          <ol>
+            <li>Crea documento "Mi coleccion de YouTube" con 1 Papel</li>
+            <li>Agrega enlaces de videos + notas breves en el log</li>
+            <li>Cuando se acumulen videos, agrupa por genero con <strong>Clips</strong></li>
+            <li>Separa areas como musica/cocina/ejercicio con <strong>Particiones</strong></li>
+          </ol>
 
-          Mi colección de 500 atardeceres es mi galería personal. Cada uno tiene una historia especial.
+          <p>🎵 <strong>Coleccion de musica de Spotify</strong></p>
+          <ol>
+            <li>Crea documento "Playlist 2024" con 1 Papel</li>
+            <li>Registra enlaces de Spotify + emocion/situacion del momento en el log</li>
+            <li>Organiza por temporada y ambiente con <strong>Clips</strong></li>
+          </ol>
 
-      - type: "Emoción"
-        title: "Nuestra historia de amor"
-        persona: "Pablo y Elena (Pareja de 5 años)"
+          <p>📚 <strong>Archivo de libros leidos</strong></p>
+          <ol>
+            <li>Crea un documento con 1 Papel por cada libro</li>
+            <li>Foto de portada + titulo/autor</li>
+            <li>Registra pasajes impresionantes y resenas en el log</li>
+            <li>Clasifica por genero con <strong>Particiones</strong>, agrupa series con <strong>Clips</strong></li>
+          </ol>
+
+          <p>🎞️ <strong>Registro de peliculas/series vistas</strong></p>
+          <ol>
+            <li>1 Papel + imagen del poster</li>
+            <li>Comentario breve + puntuacion (★★★★☆) en el log</li>
+            <li><strong>Clips</strong> por ano, <strong>Particiones</strong> por genero</li>
+          </ol>
+
+          <p>📱 <strong>Guardar de Instagram/TikTok</strong></p>
+          <ol>
+            <li>Registra captura de pantalla + enlace original en el log</li>
+            <li>Organiza por interes con <strong>Particiones</strong></li>
+          </ol>
+
+      # 2-5. Creador/Influencer
+      - type: "Experto"
+        title: "Actividad como creador"
+        subtitle: "Comunicate con fans y distribuye contenido"
         content: |
-          Queremos recordar cada momento especial de nuestra relación. Las fotos en el teléfono se pierden entre miles.
+          <p><strong>Resumen</strong>: Creadores e influencers pueden comunicarse con fans y realizar eventos.</p>
 
-          Creamos un espacio compartido con [Registro Compartido](/inventory/manual/es/#-registro-compartido-vs-solo). Cada fecha especial, cada pequeño momento.
+          <p>🎉 <strong>Eventos para fans</strong></p>
+          <ol>
+            <li>Crea sello compartido para eventos</li>
+            <li>Los fans duplican para participar</li>
+            <li>Realiza quizzes y sorteos en el log compartido</li>
+          </ol>
 
-          Lo repasamos en cada aniversario. Es nuestro álbum de amor digital.
+          <p>🛍️ <strong>Catalogo de merchandising</strong></p>
+          <ol>
+            <li>Crea sello con fotos de merchandising</li>
+            <li>Nombre del producto, precio, enlace de compra en palabras clave</li>
+            <li>Los fans duplican y lo usan como lista de deseos</li>
+          </ol>
 
-      - type: "Emoción"
-        title: "Mis plantas son mi familia"
-        persona: "Raquel (29 años, Diseñadora gráfica)"
+          <p>❓ <strong>Espacio de preguntas y respuestas</strong></p>
+          <ol>
+            <li>Crea sello de log compartido</li>
+            <li>Los fans escriben preguntas en el log</li>
+            <li>El creador responde</li>
+          </ol>
+
+          <p><strong>Otros usos</strong></p>
+          <ul>
+            <li>📅 Informacion de encuentro con fans: horario/lugar/como participar</li>
+            <li>🎬 Compartir historias detras de camaras y proceso de creacion</li>
+            <li>📁 Archivo de contenido pasado</li>
+          </ul>
+
+      # 2-6. Hobbies/Intereses
+      - type: "Intermedio"
+        title: "Compartir hobbies"
+        subtitle: "Comparte contenido basado en intereses"
         content: |
-          Tengo 47 plantas en casa. Cada una tiene necesidades diferentes de agua y luz.
+          <p><strong>Resumen</strong>: Puedes compartir hobbies e intereses con otros usuarios a traves de sellos compartidos.</p>
 
-          Cada planta tiene su [Papel](/inventory/manual/es/#paper) con nombre, fecha de adopción, cuidados especiales.
+          <p>🍳 <strong>Compartir recetas</strong></p>
+          <ol>
+            <li>Crea sello con foto del plato terminado</li>
+            <li>Configura ingredientes y tiempo de coccion en palabras clave</li>
+            <li>Los usuarios que duplican comparten resenas en el log compartido</li>
+          </ol>
 
-          Mis amigas dicen que trato mis plantas mejor que algunas personas tratan a sus mascotas. Y tienen razón.
+          <p>🏃 <strong>Compartir rutinas de ejercicio</strong></p>
+          <ol>
+            <li>Crea plantilla de reto de 30 dias o rutina en casa</li>
+            <li>Los participantes registran completado diariamente</li>
+          </ol>
 
-      - type: "Emoción"
-        title: "El progreso de mi perro"
-        persona: "Jorge (33 años, Ingeniero civil)"
+          <p>✈️ <strong>Guia de viaje</strong></p>
+          <ol>
+            <li>Fotos del destino + plantilla de ruta recomendada</li>
+            <li>Organiza informacion de restaurantes y alojamiento con palabras clave</li>
+            <li>Los que han visitado agregan resenas</li>
+          </ol>
+
+          <p><strong>Otros usos</strong></p>
+          <ul>
+            <li>🎮 Guias de juegos, compartir builds</li>
+            <li>🔨 Guias de proyectos DIY</li>
+            <li>🌱 Cuidado de plantas, programas de riego</li>
+            <li>🐕 Consejos de cuidado de mascotas</li>
+          </ul>
+
+      # 2-7. Comunidad local/familiar
+      - type: "Intermedio"
+        title: "Operar actividades grupales"
+        subtitle: "Espacio de comunicacion para grupos locales, familiares y de amigos"
         content: |
-          Max llegó a mi vida hace 2 años. Quiero recordar cada etapa de su crecimiento.
+          <p><strong>Resumen</strong>: Puedes crear espacios compartidos para comunidades locales, reuniones familiares y grupos de amigos.</p>
 
-          Con [Registro](/inventory/manual/es/#log) guardo fotos mensuales, visitas al veterinario, trucos aprendidos.
+          <p>🏘️ <strong>Comunidad local</strong></p>
+          <ul>
+            <li>🍜 Mapa de restaurantes del barrio: Lista de restaurantes recomendados por vecinos</li>
+            <li>🎪 Informacion de eventos locales: Festivales, mercados, eventos culturales</li>
+            <li>🏃 Reclutamiento de clubes: Presentacion de clubes de senderismo, running, lectura</li>
+            <li>🏠 Comunicacion de residentes/vecinos: Compartir avisos del edificio</li>
+          </ul>
 
-          Ver su transformación de cachorro a adulto me llena de alegría. Es como un álbum de su vida.
+          <p>👨‍👩‍👧‍👦 <strong>Grupos familiares/de amigos</strong></p>
+          <ul>
+            <li>🍳 Recetario familiar: Recetas familiares transmitidas de generacion en generacion</li>
+            <li>🎂 Calendario de cumpleanos de amigos: Gestion de cumpleanos e ideas de regalos</li>
+            <li>✅ Lista de deseos grupal: Metas que quieren lograr juntos</li>
+            <li>✈️ Planificacion de viajes familiares: Compartir itinerario, lista de cosas y presupuesto</li>
+            <li>💒 Informacion de eventos especiales: Compartir informacion de bodas, fiestas de cumpleanos</li>
+          </ul>
 
-      - type: "Emoción"
-        title: "Cada café es una historia"
-        persona: "Natalia (27 años, Barista)"
+      # 2-8. Trabajo/Eventos
+      - type: "Avanzado"
+        title: "Usar para trabajo y eventos"
+        subtitle: "Colaboracion en equipo y registro de dias especiales"
         content: |
-          Visito cafeterías por todo el país. Quiero recordar cada lugar especial y qué pedí.
+          <p><strong>Resumen</strong>: Puedes crear espacios compartidos para colaboracion laboral y eventos especiales.</p>
 
-          Registro cada café con [Papel](/inventory/manual/es/#paper). Foto del lugar, del café, notas de sabor.
+          <p>💼 <strong>Trabajo/Colaboracion</strong></p>
+          <ul>
+            <li>📊 Proyecto de equipo: Plantilla para compartir progreso</li>
+            <li>📝 Formato de actas de reunion: Plantilla de actas estandarizada</li>
+            <li>📋 Traspaso de trabajo: Organizacion y entrega de tareas a cargo</li>
+            <li>👋 Onboarding de nuevos empleados: Compartir guia de adaptacion a la empresa</li>
+          </ul>
 
-          Ya tengo 200 cafeterías registradas. Mis seguidores en redes me piden mi "mapa de cafés".
+          <p>🎉 <strong>Eventos/Dias especiales</strong></p>
+          <ul>
+            <li>💒 Invitacion de boda: Invitacion + confirmacion de asistencia + mensajes de felicitacion</li>
+            <li>🎈 Invitacion a fiesta: Cumpleanos, inauguracion de casa, fin de ano</li>
+            <li>👶 Fiesta de primer ano/100 dias: Fotos del bebe + coleccion de mensajes de felicitacion</li>
+            <li>🕯️ Conmemoracion/Aniversario: Espacio para compartir recuerdos juntos</li>
+            <li>📨 Capsula del tiempo: Mensaje para tu yo del futuro</li>
+          </ul>
 
-      - type: "Emoción"
-        title: "Mi viaje de pérdida de peso"
-        persona: "Marcos (38 años, Contador)"
-        content: |
-          Decidí cambiar mi vida. Quería documentar cada paso, cada pequeña victoria.
-
-          Registro comidas, ejercicio y pesajes con [Registro](/inventory/manual/es/#log). Fotos semanales del espejo.
-
-          Ver 18 meses de progreso me emociona. Cuando dudo, miro el inicio. Nunca volveré atrás.
-
-      - type: "Emoción"
-        title: "Las recetas de la abuela"
-        persona: "Carmen (42 años, Maestra)"
-        content: |
-          La abuela cocinaba increíble pero nunca escribió sus recetas. Cuando falleció, temí perderlas.
-
-          Grabé a mamá cocinando los platos de la abuela. Todo en [Papel](/inventory/manual/es/#paper) con fotos y notas.
-
-          Ahora enseño a mis hijos. Las recetas de la abuela vivirán por generaciones.
-
-  - id: stories
-    title: "Historias - Cómo Inventory cambió vidas"
+  # ===== 3. Uso de la Insignia (Badge) =====
+  - id: badge-usage
+    title: "🏷️ Uso de la Insignia"
+    icon: "🏷️"
+    description: "Construye marca y confianza con Insignias (Badge)"
     items:
-      - type: "Historia"
-        title: "Manejando 3 propiedades de alquiler sin estrés"
-        persona: "Alberto (56 años, Médico)"
+      # 3-1. Promocion de imagen de marca
+      - type: "Experto"
+        title: "Construir identidad de marca"
+        subtitle: "Crea tu propia marca con un nombre de dominio unico"
         content: |
-          **Situación**: Tengo 3 apartamentos de alquiler. Contratos, reparaciones, pagos... Todo era un caos.
+          <p><strong>Resumen</strong>: Al grabar una insignia, puedes tener un nombre de dominio unico. Este nombre de dominio se muestra en todas tus actividades.</p>
 
-          **Solución**: Con [Partición](/inventory/manual/es/#partition) organizo cada propiedad: contratos, recibos, comunicaciones con inquilinos.
+          <p><strong>Pasos a seguir</strong></p>
+          <ol>
+            <li>Perfil → Selecciona <strong>Grabar Insignia</strong></li>
+            <li>Ingresa el nombre de dominio deseado (ej: myshop, creator_kim)</li>
+            <li><strong>Verificar disponibilidad</strong> obligatorio</li>
+            <li>Selecciona imagen de insignia (opcional)</li>
+            <li><strong>Grabar</strong> → Consume 1 Insignia</li>
+          </ol>
 
-          **Resultado**: Cuando un inquilino pregunta algo, lo encuentro en segundos. Antes me tomaba media hora buscar papeles.
+          <p>⚠️ <strong>Atencion</strong>: El nombre de dominio no se puede cambiar una vez grabado!</p>
 
-      - type: "Historia"
-        title: "Mi abuelo nunca perdió una cita médica"
-        persona: "Rosa (34 años, Nieta cuidadora)"
+          <p><strong>Ejemplos de uso</strong></p>
+          <ul>
+            <li>🏢 <strong>Empresa/Marca</strong>: Opera cuenta oficial con logo y nombre de marca</li>
+            <li>🎨 <strong>Creador</strong>: Distribuye contenido con nickname unico</li>
+            <li>👔 <strong>Perfil profesional</strong>: Usa nombre de dominio que represente tu especialidad</li>
+          </ul>
+
+      # 3-2. Privacidad de email
+      - type: "Experto"
+        title: "Proteger la privacidad"
+        subtitle: "Actua con nombre de dominio en lugar de email"
         content: |
-          **Situación**: El abuelo tiene 82 años y múltiples especialistas. Yo manejo todas sus citas y medicamentos.
+          <p><strong>Resumen</strong>: Al grabar una insignia, se muestra como "nombredominio@goolzy" en lugar de tu email real.</p>
 
-          **Solución**: Configuré [Alarma de Fecha](/inventory/manual/es/#alarm) para cada cita. También registro resultados con [Registro](/inventory/manual/es/#log).
+          <p><strong>Ventajas</strong></p>
+          <ul>
+            <li>🔒 <strong>Proteccion de privacidad</strong>: Tu direccion de email real no se expone</li>
+            <li>📧 <strong>Prevencion de spam</strong>: Email protegido incluso en actividades publicas</li>
+            <li>🎭 <strong>Actividad anonima</strong>: Posibilidad de actividad anonima con el nombre deseado</li>
+          </ul>
 
-          **Resultado**: Los médicos me felicitan por tener todo tan organizado. El abuelo está mejor cuidado que nunca.
+          <p><strong>Ejemplos de uso</strong></p>
+          <ul>
+            <li>Al distribuir sellos compartidos, se muestra el nombre de dominio como informacion del creador</li>
+            <li>En logs compartidos, identificacion por nombre de dominio en lugar de email</li>
+            <li>En transacciones, se muestra nombre de dominio a la otra parte en lugar de email</li>
+          </ul>
 
-      - type: "Historia"
-        title: "Mi negocio de pasteles creció gracias a esto"
-        persona: "Patricia (31 años, Pastelera)"
+      # 3-3. Garantia de grabado de documentos
+      - type: "Experto"
+        title: "Garantizar origen de documentos"
+        subtitle: "Insignia grabada en todos los documentos"
         content: |
-          **Situación**: Empecé vendiendo pasteles desde casa. Recetas, pedidos, costos... Todo mezclado en mi cabeza.
+          <p><strong>Resumen</strong>: Al equipar una insignia, se graba en todos los documentos que creas. Esto garantiza el origen de los documentos.</p>
 
-          **Solución**: Organicé recetas con [Papel](/inventory/manual/es/#paper), pedidos con [Alarma de Fecha](/inventory/manual/es/#alarm).
+          <p><strong>Como equipar</strong></p>
+          <ol>
+            <li>Perfil → <strong>Gestion de Insignias</strong></li>
+            <li>Selecciona la insignia grabada</li>
+            <li>Toca <strong>Equipar</strong></li>
+          </ol>
 
-          **Resultado**: Pasé de 5 pedidos al mes a 50. Nunca olvido una entrega. Los clientes confían en mi profesionalismo.
+          <p><strong>Ejemplos de uso</strong></p>
+          <ul>
+            <li>✅ <strong>Certificacion de documentos producidos</strong>: Garantia de origen con insignia grabada en todos los documentos</li>
+            <li>📜 <strong>Emision de documentos oficiales</strong>: Demuestra que es un documento oficial de la marca/empresa</li>
+            <li>🔐 <strong>Prevencion de falsificacion</strong>: Verificacion del original posible mediante grabado de insignia</li>
+          </ul>
 
-      - type: "Historia"
-        title: "Sobreviví la planificación de mi boda"
-        persona: "Alejandra (28 años, Novia)"
-        content: |
-          **Situación**: Planificar una boda es un trabajo de tiempo completo. Proveedores, presupuesto, invitados...
-
-          **Solución**: Todo en [Partición](/inventory/manual/es/#partition): venue, catering, vestido, invitaciones. Plazos con [Alarma](/inventory/manual/es/#alarm).
-
-          **Resultado**: Mi organizadora de bodas dijo que nunca vio una novia tan organizada. La boda fue perfecta.
-
-      - type: "Historia"
-        title: "Administro el inventario de mi restaurante"
-        persona: "Miguel (45 años, Restaurantero)"
-        content: |
-          **Situación**: Un restaurante pequeño no justifica un sistema caro. Pero necesito controlar stock y proveedores.
-
-          **Solución**: Uso [Papel](/inventory/manual/es/#paper) para cada producto. [Caducidad](/inventory/manual/es/#dates) para perecederos.
-
-          **Resultado**: Reduje el desperdicio un 30%. Sé exactamente qué pedir y cuándo. Simple pero efectivo.
-
-      - type: "Historia"
-        title: "Documenté toda la renovación de mi casa"
-        persona: "David (40 años, Propietario)"
-        content: |
-          **Situación**: Renovación de 6 meses. Presupuestos, facturas, garantías, antes/después de cada habitación.
-
-          **Solución**: Todo en [Partición](/inventory/manual/es/#partition) por habitación y tipo de documento. Fotos con [Registro](/inventory/manual/es/#log).
-
-          **Resultado**: Cuando algo falla, tengo el contacto del contratista y la garantía al instante. Invaluable.
-
-      - type: "Historia"
-        title: "Mi colección de vinilos está catalogada"
-        persona: "Rodrigo (52 años, Coleccionista)"
-        content: |
-          **Situación**: 2,000 vinilos acumulados en 30 años. Sabía que tenía duplicados pero no sabía cuáles.
-
-          **Solución**: Fotografié cada uno con [Papel](/inventory/manual/es/#paper). Artista, año, estado, precio pagado.
-
-          **Resultado**: Encontré que tenía 50 duplicados. Los vendí y compré vinilos que realmente quería.
-
-      - type: "Historia"
-        title: "Nunca más pierdo facturas para impuestos"
-        persona: "Marta (39 años, Autónoma)"
-        content: |
-          **Situación**: Cada año, buscar facturas para la declaración era una pesadilla. Algunas las había perdido.
-
-          **Solución**: Fotografío cada factura inmediatamente. Las organizo con [Palabras Clave](/inventory/manual/es/#keyword) por tipo de gasto.
-
-          **Resultado**: Mi contable dice que soy su cliente más organizada. Y deduzco más porque no pierdo nada.
-
-      - type: "Historia"
-        title: "Coordino un equipo de voluntarios"
-        persona: "Elena (50 años, Coordinadora de ONG)"
-        content: |
-          **Situación**: Manejo 30 voluntarios para un banco de alimentos. Horarios, contactos, certificaciones...
-
-          **Solución**: Cada voluntario tiene un [Papel](/inventory/manual/es/#paper). Comparto información con [Registro Compartido](/inventory/manual/es/#-registro-compartido-vs-solo).
-
-          **Resultado**: La coordinación mejoró muchísimo. Los voluntarios se sienten valorados porque tengo sus datos al día.
-
-      - type: "Historia"
-        title: "Mi hijo estudió mejor para sus exámenes"
-        persona: "Beatriz (44 años, Madre)"
-        content: |
-          **Situación**: Mi hijo tenía problemas organizando el estudio para exámenes. Siempre olvidaba fechas.
-
-          **Solución**: Le enseñé a usar [Alarma de Fecha](/inventory/manual/es/#alarm) para exámenes y [Papel](/inventory/manual/es/#paper) para apuntes clave.
-
-          **Resultado**: Sus notas mejoraron notablemente. Dice que ahora sabe exactamente qué estudiar y cuándo.
-
-  - id: creative-uses
-    title: "Usos Creativos - Posibilidades inesperadas"
-    items:
-      - type: "Creativo"
-        title: "Mi diario de sueños"
-        persona: "Andrea (26 años, Estudiante de psicología)"
-        content: |
-          Me interesa el análisis de sueños. Quería registrarlos pero siempre olvidaba detalles al despertar.
-
-          Tengo Inventory en la mesita de noche. Al despertar, registro inmediatamente con [Papel](/inventory/manual/es/#paper).
-
-          Después de un año, encontré patrones fascinantes. Mi tesis de grado será sobre esto.
-
-      - type: "Creativo"
-        title: "Catálogo de mis obras de arte"
-        persona: "Javier (35 años, Artista plástico)"
-        content: |
-          Tengo más de 200 obras en 10 años. Dimensiones, técnica, precio, ubicación... Era imposible rastrear.
-
-          Cada obra tiene su [Papel](/inventory/manual/es/#paper). Foto de alta calidad, todos los detalles, historial de ventas.
-
-          Cuando una galería pregunta por mis obras, envío información profesional al instante.
-
-      - type: "Creativo"
-        title: "Mi archivo de tipografías"
-        persona: "Daniela (29 años, Diseñadora gráfica)"
-        content: |
-          Colecciono tipografías inspiradoras. Capturas de carteles, empaques, señalización...
-
-          Las organizo con [Palabras Clave](/inventory/manual/es/#keyword): estilo, uso, época.
-
-          Es mi biblioteca de referencia personal. Cuando necesito inspiración, la encuentro en segundos.
-
-      - type: "Creativo"
-        title: "Documentando mi jardín estación por estación"
-        persona: "Roberto (58 años, Jardinero aficionado)"
-        content: |
-          Mi jardín cambia dramáticamente cada estación. Quiero recordar qué planté dónde y cómo floreció.
-
-          Cada planta tiene [Registro](/inventory/manual/es/#log) mensual. Foto, estado, cuidados aplicados.
-
-          Ahora planifico mejor cada temporada. Sé exactamente qué funcionó y qué no en años anteriores.
-
-      - type: "Creativo"
-        title: "Mi registro de meditación"
-        persona: "Carolina (32 años, Instructora de yoga)"
-        content: |
-          Medito diariamente. Quería registrar duración, técnica, y cómo me sentía después.
-
-          Con [Registro](/inventory/manual/es/#log) guardo cada sesión. También guardo frases inspiradoras que encuentro.
-
-          Puedo ver mi progreso de 10 minutos a 45. También comparto técnicas con mis alumnos.
-
-      - type: "Creativo"
-        title: "Mi lista de lugares por visitar"
-        persona: "Tomás (27 años, Diseñador industrial)"
-        content: |
-          Cuando veo un lugar interesante en redes o películas, quiero guardarlo para visitarlo algún día.
-
-          Cada lugar con [Papel](/inventory/manual/es/#paper). Foto, ubicación, por qué quiero ir, mejor época para visitar.
-
-          Mi lista de "algún día" ya tiene 150 lugares. Cada viaje que planifico, consulto mi inventario de sueños.
-
-      - type: "Creativo"
-        title: "Archivo de mi banda"
-        persona: "Luis (24 años, Guitarrista)"
-        content: |
-          Mi banda tiene 5 años. Letras, progresiones, demos, carteles de conciertos... Todo disperso.
-
-          Centralicé todo en [Partición](/inventory/manual/es/#partition). Canciones, merchandising, contactos, historial de shows.
-
-          Cuando una disquera preguntó por nuestra historia, teníamos todo profesionalmente documentado.
-
-      - type: "Creativo"
-        title: "Mi guía de restaurantes personalizada"
-        persona: "Ana María (37 años, Crítica gastronómica)"
-        content: |
-          Como fuera frecuentemente. Google Maps no me deja anotar qué pedí o cómo estaba realmente.
-
-          Cada restaurante con [Papel](/inventory/manual/es/#paper). Fotos de platos, precios, ambiente, qué pedir y qué evitar.
-
-          Mis amigos siempre me piden recomendaciones. Les comparto exactamente qué ordenar en cada lugar.
+          <p><strong>Consejos de uso</strong></p>
+          <ul>
+            <li>Al emitir cupones de tienda, certifica que es un cupon oficial con la insignia</li>
+            <li>Marca derechos de autor en contenido de creadores con la insignia</li>
+            <li>Indica cuenta oficial en comunicados de empresa</li>
+          </ul>

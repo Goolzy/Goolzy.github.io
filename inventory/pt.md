@@ -92,6 +92,10 @@ Crie itens com uma única folha de papel e transfira-os via código QR. Grave um
 
 ---
 
+{% include usecases-summary.html lang="pt" %}
+
+---
+
 ### 📝 Sistema de papel
 
 <div style="background: rgba(168, 85, 247, 0.15); backdrop-filter: blur(10px); border: 1px solid rgba(168, 85, 247, 0.3); border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0;">

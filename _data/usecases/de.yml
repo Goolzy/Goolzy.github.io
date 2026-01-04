@@ -1,525 +1,448 @@
+# Inventory Anwendungsleitfaden Daten (Deutsch) - Überarbeitete Version
 page:
-  title: "Inventory Anwendungsfälle"
-  intro: "Entdecken Sie die Möglichkeiten von Inventory durch 100 verschiedene Anwendungsfälle."
-  expand: "Mehr anzeigen ↓"
-  collapse: "Weniger anzeigen ↑"
-  share_title: "Teilen Sie Ihre Inventory-Nutzung"
-  share_text: "Wie nutzen Sie Inventory? Wir freuen uns auf Ihre kreativen Ideen!"
-  share_btn: "Geschichte teilen"
-  share_link: "/inventory/suggest/de/"
-  manual_base: "/inventory/manual/de/"
+  title: "Inventory Anwendungsleitfaden"
+  intro: "Entdecken Sie, was Sie mit Inventory alles machen können. Von einfachen bis zu fortgeschrittenen Funktionen - wir führen Sie Schritt für Schritt."
+  expand: "Anleitung anzeigen ↓"
+  collapse: "Einklappen ↑"
+  share_title: "Teilen Sie Ihre Nutzungsweise"
+  share_text: "Wie nutzen Sie Inventory? Wir freuen uns auf Ihre neuen Ideen."
+  share_btn: "Nutzungsweise teilen"
+  share_link: "/inventory/suggest/"
+  manual_base: "/inventory/manual/"
+  levels:
+    beginner: "Anfänger"
+    intermediate: "Mittelstufe"
+    advanced: "Fortgeschritten"
+    expert: "Experte"
 
 categories:
-  - id: problem-solving
-    title: "Problemlösung - Alltägliche Herausforderungen meistern"
+  # ===== 1. Papier-Anwendungen (Paper) =====
+  - id: paper-usage
+    title: "📄 Papier-Anwendungen"
+    icon: "📄"
+    description: "Alles, was Sie mit Papier (Paper) machen können"
     items:
-      - type: "Problemlösung"
-        title: "Lebensmittel verderben ständig im Kühlschrank"
-        persona: "Sarah (32, Berufstätige Mutter)"
+      # 1-1. Einzelne Aufzeichnung
+      - type: "Anfänger"
+        title: "Eigene Aufzeichnungen erstellen"
+        subtitle: "Persönliches Archiv mit 1 Blatt Paper starten"
         content: |
-          <strong>Problem</strong>: Mit meinem vollen Terminkalender vergesse ich oft das Verfallsdatum und werfe verdorbene Lebensmittel weg. Besonders Tofu und Milch verderben innerhalb von Tagen...
+          <p><strong>Überblick</strong>: Mit 1 Blatt Papier können Sie ein Dokument erstellen und fortlaufend Einträge im Log hinterlassen.</p>
 
-          <strong>Lösung</strong>: Ich habe für jede Zutat mit <a href="/inventory/manual/de/#paper">Papier</a> ein Element erstellt und <a href="/inventory/manual/de/#dates">Ablaufdaten</a> festgelegt. Jetzt bekomme ich 3 Tage vor Ablauf eine Benachrichtigung, sodass ich rechtzeitig kochen oder einfrieren kann.
+          <p><strong>Anleitung</strong></p>
+          <ol>
+            <li>Tippen Sie auf die <strong>+</strong>-Schaltfläche am unteren Rand des Startbildschirms</li>
+            <li>Wählen Sie <strong>Dokument</strong> → 1 Paper wird verbraucht</li>
+            <li>Geben Sie Titel und Beschreibung ein + Bild hinzufügen (optional)</li>
+            <li>Nach der Erstellung können Sie im <strong>Log</strong>-Tab Notizen hinzufügen</li>
+          </ol>
 
-          <strong>Ergebnis</strong>: Lebensmittelverschwendung um 80% reduziert. 150€ bei den monatlichen Lebensmittelkosten gespart!
+          <p><strong>Anwendungsbeispiele</strong></p>
+          <ul>
+            <li>📔 <strong>Tagebuch/Notizblock</strong>: Tägliche Aufzeichnungen mit Bildern und Text speichern</li>
+            <li>📸 <strong>Fotoalbum</strong>: Besondere Momente als Bilder festhalten, Erinnerungen im Log hinterlassen</li>
+            <li>📋 <strong>Garantieverwaltung</strong>: Produktgarantiescheine fotografieren, Ablaufalarm mit Ablaufdatum einstellen</li>
+            <li>🧾 <strong>Quittungsaufbewahrung</strong>: Wichtige Quittungen digital aufbewahren</li>
+          </ul>
 
-      - type: "Problemlösung"
-        title: "Zu viele Abonnements zum Verwalten"
-        persona: "Michael (28, IT-Entwickler)"
+          <p><strong>Organisationstipp</strong>: Ähnliche Dokumente mit <strong>Clip</strong> bündeln und Kategorien mit <strong>Partition</strong> trennen.</p>
+
+      # 1-2. Geteilte Vorlagen kopieren
+      - type: "Anfänger"
+        title: "Geteilte Vorlagen importieren"
+        subtitle: "Vorlagen anderer Nutzer übernehmen"
         content: |
-          <strong>Problem</strong>: Netflix, YouTube Premium, Notion, GitHub... Ich habe über 10 Abonnements mit verschiedenen Verlängerungsdaten. Manche nutze ich nicht mal mehr, zahle aber weiter.
+          <p><strong>Überblick</strong>: Sie können von anderen Nutzern geteilte Stempel kopieren und als eigene Dokumente verwenden.</p>
 
-          <strong>Lösung</strong>: Alle Abonnements in Inventory registriert mit <a href="/inventory/manual/de/#alarm">Datumsalarmen</a> 7 Tage vor Verlängerung. Monatliche Gebühren als <a href="/inventory/manual/de/#keyword">Schlüsselwörter</a> für schnellen Überblick hinzugefügt.
+          <p><strong>Anleitung</strong></p>
+          <ol>
+            <li>Klicken Sie auf den geteilten Stempel-Link oder scannen Sie den QR-Code</li>
+            <li>Tippen Sie auf <strong>Kopieren</strong> im Stempel-Detailbildschirm</li>
+            <li>1 Paper wird verbraucht → Kopie in Ihrem Inventory erstellt</li>
+            <li>Passen Sie die Schlüsselwortwerte nach Bedarf an</li>
+          </ol>
 
-          <strong>Ergebnis</strong>: 3 ungenutzte Abonnements gekündigt, 40€/Monat gespart. Keine Überraschungsabbuchungen mehr!
+          <p><strong>Anwendungsbeispiele</strong></p>
+          <ul>
+            <li>✅ <strong>Checklisten</strong>: Geteilte Vorlagen für Reisevorbereitung, Einkaufslisten usw. nutzen</li>
+            <li>🎁 <strong>Event-Teilnahme</strong>: Event-Vorlagen von Marken/Geschäften kopieren</li>
+            <li>📝 <strong>Formularnutzung</strong>: Nützliche Formulare anderer Nutzer kopieren</li>
+          </ul>
 
-      - type: "Problemlösung"
-        title: "Impftermine der Kinder verpassen"
-        persona: "Jennifer (35, Berufstätige Mutter von Zwei)"
+      # 1-3. Geteiltes Log - Chatroom
+      - type: "Mittelstufe"
+        title: "Gemeinsam mit Freunden aufzeichnen"
+        subtitle: "Gruppen-Chatroom mit geteiltem Log erstellen"
         content: |
-          <strong>Problem</strong>: Mit zwei Kindern mit unterschiedlichen Impfplänen wurde ich oft verwirrt. Manchmal rief die Praxis an, wenn es schon überfällig war.
+          <p><strong>Überblick</strong>: Wenn Sie ein geteiltes Dokument mit mehreren Blättern Papier erstellen, können alle Teilnehmer in dasselbe Log schreiben.</p>
 
-          <strong>Lösung</strong>: Separate <a href="/inventory/manual/de/#partition">Partitionen</a> für jedes Kind erstellt und Impftermine mit <a href="/inventory/manual/de/#alarm">Datumsalarmen</a> verwaltet. Abschluss im <a href="/inventory/manual/de/#log">Log</a> notiert.
+          <p><strong>Anleitung</strong></p>
+          <ol>
+            <li>Tippen Sie auf die <strong>+</strong>-Schaltfläche am unteren Rand des Startbildschirms</li>
+            <li>Wählen Sie <strong>Geteiltes Dokument</strong></li>
+            <li>Wählen Sie Paper entsprechend der Teilnehmerzahl (2-10 Blätter)</li>
+            <li>Geben Sie Titel und Beschreibung ein und erstellen Sie</li>
+            <li><strong>Senden</strong> Sie das erstellte Dokument an die Teilnehmer</li>
+          </ol>
 
-          <strong>Ergebnis</strong>: Keinen einzigen Impftermin mehr verpasst. Kann mich auf Arztbesuche vorbereiten!
+          <p><strong>Paper-Verbrauch nach Personenzahl</strong></p>
+          <ul>
+            <li>👫 2 Personen: 2 Paper (Pärchen-Tagebuch, 1:1 Chat)</li>
+            <li>👨‍👩‍👧 3 Personen: 3 Paper (Kleingruppen-Projekt)</li>
+            <li>👨‍👩‍👧‍👦 4-10 Personen: 4-10 Paper (Familientreffen, Vereine)</li>
+          </ul>
 
-      - type: "Problemlösung"
-        title: "Umzugschaos - nichts wiederfinden"
-        persona: "David (27, Doktorand)"
-        content: |
-          <strong>Problem</strong>: Ich ziehe oft für das Studium um. Jedes Mal verliere ich den Überblick, welche Kiste was enthält. Selbst mit Nummern öffne ich am Ende alle.
+          <p><strong>Anwendungsbeispiele</strong></p>
+          <ul>
+            <li>💑 <strong>Pärchen-Tagebuch</strong>: Gemeinsame Erinnerungen zu zweit festhalten</li>
+            <li>👨‍👩‍👧‍👦 <strong>Familienalbum</strong>: Familienfeiern und Alltag gemeinsam teilen</li>
+            <li>📚 <strong>Lerngruppe</strong>: Lerninhalte und Fragen gemeinsam festhalten</li>
+          </ul>
 
-          <strong>Lösung</strong>: Vor dem Packen habe ich den Inhalt jeder Kiste fotografiert und in Inventory registriert. Mit <a href="/inventory/manual/de/#keyword">Schlüsselwörtern</a> wie "Kiste1", "Küche" markiert.
-
-          <strong>Ergebnis</strong>: Auspackzeit halbiert. "Wo ist die Schere?" - sofortige Suche!
-
-      - type: "Problemlösung"
-        title: "Quittungsverwaltung ist ein Albtraum"
-        persona: "Emma (40, Kleinunternehmerin)"
-        content: |
-          <strong>Problem</strong>: Muss Quittungen für Geschäftsausgaben aufbewahren, aber Papierquittungen verblassen und gehen verloren. Steuerzeit ist immer stressig...
-
-          <strong>Lösung</strong>: Direkt nach der Zahlung fotografiere ich Quittungen und registriere sie in Inventory. Mit <a href="/inventory/manual/de/#keyword">Schlüsselwörtern</a> wie "Ausgabe", "2024", "Verpflegung" für einfache Kategorisierung markiert.
-
-          <strong>Ergebnis</strong>: Fast keine Papierquittungen mehr nötig. Zur Steuerzeit einfach suchen und finden. Mein Steuerberater liebt es!
-
-      - type: "Problemlösung"
-        title: "Analoge Fotos organisieren"
-        persona: "Hannah (26, Fotografie-Enthusiastin)"
-        content: |
-          <strong>Problem</strong>: Wenn ich Filmfotos entwickle, vergesse ich wann und wo ich sie aufgenommen habe. Abzüge stapeln sich ohne Organisation.
-
-          <strong>Lösung</strong>: Nach jeder Entwicklung registriere ich repräsentative Aufnahmen in Inventory mit <a href="/inventory/manual/de/#keyword">Schlüsselwörtern</a> für Ort, Datum und Filmtyp. Labor-Info kommt ins <a href="/inventory/manual/de/#log">Log</a>.
-
-          <strong>Ergebnis</strong>: Mein eigenes Filmarchiv aufgebaut. Kann sofort Fotos von einer Reise vor 2 Jahren finden!
-
-      - type: "Problemlösung"
-        title: "Wäschepflege ist kompliziert"
-        persona: "Kevin (29, Fashion-Blogger)"
-        content: |
-          <strong>Problem</strong>: Verschiedene Kleidung braucht verschiedene Pflege - manche nur Reinigung, Pullover nur Handwäsche. Habe Kleidung durch falsche Methoden ruiniert.
-
-          <strong>Lösung</strong>: Kleidung mit besonderer Pflege in Inventory registriert. Pflegeanleitung im <a href="/inventory/manual/de/#log">Log</a>. Reinigungsabholtermine mit <a href="/inventory/manual/de/#alarm">Datumsalarmen</a> verfolgt.
-
-          <strong>Ergebnis</strong>: Kleidungsschäden drastisch reduziert. Keine Säumnisgebühren mehr für vergessene Reinigung!
-
-      - type: "Problemlösung"
-        title: "Zu viele Nahrungsergänzungsmittel"
-        persona: "Patricia (55, Gesundheitsbewusst)"
-        content: |
-          <strong>Problem</strong>: Der Arzt empfahl 5 verschiedene Präparate. Morgens/abends verwechsle ich die Dosen und verpasse Nachbestellungen.
-
-          <strong>Lösung</strong>: Jedes Präparat mit <a href="/inventory/manual/de/#paper">Papier</a> registriert. Dosieranleitung im <a href="/inventory/manual/de/#log">Log</a>, geschätztes Verbrauchsdatum als <a href="/inventory/manual/de/#dates">Ablauf</a>.
-
-          <strong>Ergebnis</strong>: Befolge den Plan jetzt perfekt. Bekomme Alarme bevor etwas ausgeht und kann rechtzeitig nachbestellen!
-
-      - type: "Problemlösung"
-        title: "Garantie abgelaufen - teure Reparatur"
-        persona: "James (34, Frisch verheiratet)"
-        content: |
-          <strong>Problem</strong>: Klimaanlage kaputt und Garantie war einen Monat vorher abgelaufen. Konnte nicht mal die Garantiekarte finden. 300€ für Reparatur bezahlt.
-
-          <strong>Lösung</strong>: Alle Haushaltsgeräte in Inventory registriert mit Garantiefotos. <a href="/inventory/manual/de/#dates">Ablaufdaten</a> für Garantieende mit 1-Monat-Voralarm gesetzt.
-
-          <strong>Ergebnis</strong>: Jetzt beantrage ich Inspektionen oder prüfe Verlängerungen vor Garantieablauf. Waschmaschine kostenlos repariert bekommen!
-
-      - type: "Problemlösung"
-        title: "Geschenkkarten laufen immer ab"
-        persona: "Jessica (25, Studentin)"
-        content: |
-          <strong>Problem</strong>: Geburtstags- und Feiertagsgeschenkkarten verschwinden in Nachrichten und laufen ungenutzt ab.
-
-          <strong>Lösung</strong>: Geschenkkarten sofort screenshotten und in Inventory registrieren mit <a href="/inventory/manual/de/#dates">Ablaufdaten</a>. Eine Woche vor Ablauf Alarm.
-
-          <strong>Ergebnis</strong>: Eine 30€ Starbucks-Geschenkkarte gerettet! Nutze jetzt die Geschenke die ich bekomme.
-
-      - type: "Problemlösung"
-        title: "Autowartungshistorie verstreut"
-        persona: "Robert (42, Vertriebsmitarbeiter)"
-        content: |
-          <strong>Problem</strong>: Kann mich nicht erinnern wann und wo das Auto gewartet wurde. Verschiedene Werkstätten haben verschiedene Aufzeichnungen. Verpasse Ölwechseltermine.
-
-          <strong>Lösung</strong>: Auto in Inventory registriert, jeden Service im <a href="/inventory/manual/de/#log">Log</a> eingetragen. Nächste Servicetermine als <a href="/inventory/manual/de/#alarm">Datumsalarme</a> gesetzt.
-
-          <strong>Ergebnis</strong>: Komplette Wartungshistorie aufgebaut. Beim Verkauf brachte die Historie einen besseren Preis!
-
-      - type: "Problemlösung"
-        title: "Wichtige Dokumente überall verstreut"
-        persona: "Michelle (38, Freiberuflerin)"
-        content: |
-          <strong>Problem</strong>: Verträge, Versicherungspolicen, Grundbuchauszüge... wichtige Dokumente überall verteilt. Musste mal eine Ersatzkopie beantragen weil Original nicht auffindbar.
-
-          <strong>Lösung</strong>: Alle wichtigen Dokumente fotografiert und in Inventory registriert mit <a href="/inventory/manual/de/#lock">Dokumentensperre</a> für Sicherheit. Lagerort in <a href="/inventory/manual/de/#keyword">Schlüsselwörtern</a> notiert.
-
-          <strong>Ergebnis</strong>: "Wo ist die Urkunde?" → Suche → Lagerort gefunden. 30 Sekunden!
-
-      - type: "Problemlösung"
-        title: "Bücher stapeln sich ungelesen"
-        persona: "Lisa (30, Marketing)"
-        content: |
-          <strong>Problem</strong>: Beim Kaufen begeistert, aber zuhause stapeln sie sich ungelesen. Habe mal das gleiche Buch zweimal gekauft.
-
-          <strong>Lösung</strong>: Bücher direkt nach Kauf registrieren. <a href="/inventory/manual/de/#dates">Startdatum</a> beim Beginnen setzen, Abschluss im <a href="/inventory/manual/de/#log">Log</a> notieren. Ungelesene Liste auf einen Blick sichtbar.
-
-          <strong>Ergebnis</strong>: Statt überwältigt zu sein, bin ich motiviert. 12 Bücher dieses Jahr gelesen - mehr als letztes Jahr insgesamt!
-
-      - type: "Problemlösung"
-        title: "Bringe meine Pflanzen um"
-        persona: "Amy (24, Berufseinsteigerin)"
-        content: |
-          <strong>Problem</strong>: Wollte Zimmerpflanzen aber vergaß zu gießen oder goss zu viel. Alle starben.
-
-          <strong>Lösung</strong>: Jede Pflanze in Inventory registriert mit Gieß-Erinnerungen via <a href="/inventory/manual/de/#alarm">Datumsalarm</a>. Umtopf- und Düngedaten im <a href="/inventory/manual/de/#log">Log</a>.
-
-          <strong>Ergebnis</strong>: Meine Monstera lebt seit 6 Monaten! Sogar 3 neue Blätter gewachsen!
-
-      - type: "Problemlösung"
-        title: "Passwort-Chaos"
-        persona: "Georg (50, Beamter)"
-        content: |
-          <strong>Problem</strong>: Verschiedene Passwörter für jede Seite, kann mir keine merken. Auf Klebezetteln fühlt sich unsicher an...
-
-          <strong>Lösung</strong>: Kontoinformationen in Inventory registriert mit <a href="/inventory/manual/de/#lock">Dokumentensperre</a>. Nur Passwort-Hinweise gespeichert, echte Passwörter nutzen Musterkombinationen.
-
-          <strong>Ergebnis</strong>: Kein "Passwort vergessen" mehr klicken. Sichere und bequeme Verwaltung!
-
-      - type: "Problemlösung"
-        title: "Familien-Vorsorgeuntersuchungen verpassen"
-        persona: "Helene (58, Hausfrau)"
-        content: |
-          <strong>Problem</strong>: Mann, Schwiegermutter, ich selbst... alle verschiedene Untersuchungstermine. Einmal die kostenlose Vorsorge verpasst und selbst zahlen müssen.
-
-          <strong>Lösung</strong>: Vorsorge-Termine jedes Familienmitglieds registriert mit <a href="/inventory/manual/de/#alarm">Datumsalarmen</a> zum Periodenbeginn.
-
-          <strong>Ergebnis</strong>: Keine Vorsorge für die ganze Familie mehr verpasst. Über 500€ jährlich bei Gesundheitskosten gespart!
-
-      - type: "Problemlösung"
-        title: "Tierarztunterlagen verstreut"
-        persona: "Mina (31, Katzenbesitzerin)"
-        content: |
-          <strong>Problem</strong>: Zwei Katzen mit verschiedenen Impfplänen und Tierarztunterlagen überall. Neue Tierärzte fragen immer nach Vorgeschichte und ich finde nichts.
-
-          <strong>Lösung</strong>: <a href="/inventory/manual/de/#partition">Partitionen</a> für jede Katze erstellt. Jeden Tierarztbesuch im <a href="/inventory/manual/de/#log">Log</a>. Nächste Impfungen mit <a href="/inventory/manual/de/#alarm">Datumsalarmen</a>.
-
-          <strong>Ergebnis</strong>: Tierärztin lobte wie organisiert ich bin. Im Notfall kann ich sofort Unterlagen zeigen. Beruhigend!
-
-      - type: "Problemlösung"
-        title: "Weinempfehlungen vergessen"
-        persona: "Chris (36, Wein-Anfänger)"
-        content: |
-          <strong>Problem</strong>: Vergesse Namen von Weinen die mir in Weinbars geschmeckt haben. Im Laden greife ich dann irgendwas.
-
-          <strong>Lösung</strong>: Weinetiketten fotografieren und in Inventory registrieren. Verkostungsnotizen, Paarungen, Preise im <a href="/inventory/manual/de/#log">Log</a>. <a href="/inventory/manual/de/#keyword">Schlüsselwörter</a> wie "rot", "täglich", "Geschenk" markieren.
-
-          <strong>Ergebnis</strong>: Eigene Weindatenbank aufgebaut. "Was hatten wir am Jahrestag?" - sofort gefunden!
-
-      - type: "Problemlösung"
-        title: "Trainingsroutine nicht durchhalten"
-        persona: "Jason (29, Büroangestellter)"
-        content: |
-          <strong>Problem</strong>: 3-Monats-Abo fürs Studio, gehe einen Monat fleißig, dann höre ich auf. Keine Motivation und ohne Aufzeichnungen kein Fortschritt sichtbar.
-
-          <strong>Lösung</strong>: Jede Übungsart registrieren und Gewichte/Wiederholungen im <a href="/inventory/manual/de/#log">Log</a>. Die wachsenden Aufzeichnungen aufeinanderfolgender Besuche motivieren.
-
-          <strong>Ergebnis</strong>: Fortschritt von 40kg auf 70kg Bankdrücken ist dokumentiert. Aufzeichnungen sehen motiviert mich!
-
-      - type: "Problemlösung"
-        title: "Meeting-Zusagen vergessen"
-        persona: "Susan (33, Teamleiterin)"
-        content: |
-          <strong>Problem</strong>: Sage im Meeting "Ich habe den Bericht nächste Woche fertig" und vergesse es dann. Unangenehm wenn jemand fragt "Ist das fertig?"
-
-          <strong>Lösung</strong>: Meeting-Zusagen sofort registrieren mit <a href="/inventory/manual/de/#alarm">Datumsalarmen</a> für Tag-vorher-Erinnerung. Im <a href="/inventory/manual/de/#log">Log</a> notieren wenn erledigt!
-
-          <strong>Ergebnis</strong>: "Susan liefert immer was sie verspricht" - das ist jetzt mein Ruf. Vertrauen aufgebaut!
-
-  - id: emotional-experience
-    title: "Emotionale Erfahrungen - Dem Leben Bedeutung geben"
+  # ===== 2. Stempel-Anwendungen (Stamp) =====
+  - id: stamp-usage
+    title: "🔖 Stempel-Anwendungen"
+    icon: "🔖"
+    description: "Vorlagen mit Stempel (Stamp) erstellen und teilen"
     items:
-      - type: "Emotionale Erfahrung"
-        title: "Babys erste Worte und Schritte festhalten"
-        persona: "Grace (33, Junge Mutter)"
+      # 2-1. Einzellog-Stempel
+      - type: "Fortgeschritten"
+        title: "Eigene Vorlagen erstellen"
+        subtitle: "Dokumente massenweise mit Einzellog-Stempel produzieren"
         content: |
-          Mein 18 Monate alter Sohn sagte zum ersten Mal "Mama". Mein Herz fühlte sich an als würde es platzen.
+          <p><strong>Überblick</strong>: Wenn Sie eine Vorlage mit Stempel erstellen, können Sie schnell mehrere Dokumente im gleichen Format erstellen.</p>
 
-          Ich habe den Moment auf Video aufgenommen, aber das war nicht genug. Ich wollte die Emotionen, den Kontext, was am Tag davor passiert war, festhalten...
+          <p><strong>Anleitung</strong></p>
+          <ol>
+            <li>Tippen Sie auf die <strong>+</strong>-Schaltfläche am unteren Rand des Startbildschirms</li>
+            <li>Wählen Sie <strong>Stempel-Vorlage</strong> → 1 Stamp wird verbraucht</li>
+            <li>Geben Sie Vorlageninformationen ein: Titel, Beschreibung, Bild</li>
+            <li>Wählen Sie <strong>Log-Modus: Einzeln</strong></li>
+            <li>Legen Sie Schlüsselwörter fest (max. 10)</li>
+            <li>Vorlagenerstellung abgeschlossen</li>
+          </ol>
 
-          In Inventory habe ich das Video mit einem <a href="/inventory/manual/de/#log">Log</a>-Eintrag gespeichert, der jedes Detail dieses Tages festhält. Als Papa nach Hause kam und er wieder "Mama" sagte, wie ich abends weinte...
+          <p><strong>Dokument kopieren</strong></p>
+          <ol>
+            <li>Wählen Sie den erstellten Stempel</li>
+            <li>Tippen Sie auf <strong>Kopieren</strong></li>
+            <li>Wählen Sie Paper zum Kopieren → Dokument im gleichen Format erstellt</li>
+          </ol>
 
-          Fünf Jahre später, als mein Sohn eingeschult wurde, habe ich diese Aufzeichnungen wieder gelesen. Die Emotionen kamen zurück. Inventory wurde unsere Familienkapsel.
+          <p><strong>Anwendungsbeispiele</strong></p>
+          <ul>
+            <li>🏋️ <strong>Trainingsprotokoll</strong>: Täglich Trainingsinhalt im gleichen Format festhalten</li>
+            <li>📖 <strong>Leseprotokoll</strong>: Buchrezensionen im einheitlichen Format für jedes Buch</li>
+            <li>🍷 <strong>Sammlungsverwaltung</strong>: Katalog für Wein, LEGO, Figuren usw.</li>
+          </ul>
 
-      - type: "Emotionale Erfahrung"
-        title: "Omas Rezepte für immer bewahren"
-        persona: "Linda (45, Familienmatriarchin)"
+          <p><strong>Organisationstipp</strong>: Angesammelte Seriendokumente mit <strong>Clip</strong> bündeln und verwalten.</p>
+
+      # 2-2. Geteilter Log-Stempel
+      - type: "Fortgeschritten"
+        title: "Offene Community erstellen"
+        subtitle: "Mit geteiltem Log-Stempel kontinuierlich Nutzer hinzufügen"
         content: |
-          Nachdem meine Schwiegermutter krank wurde, machte ich mir Sorgen um die Familienrezepte die seit Generationen weitergegeben wurden. Wenn ich fragte "Wie machen Sie diese Brühe?", sagte sie nur "ungefähr so viel"...
+          <p><strong>Überblick</strong>: Ein geteilter Log-Stempel ist ein öffentlicher Raum, den jeder kopieren und beitreten kann.</p>
 
-          Ich setzte mich neben sie, filmte sie beim Kochen und schrieb alles genau so auf wie sie es sagte im <a href="/inventory/manual/de/#log">Log</a>. "Drei Fingerbreit Chiliflocken", "Sojasoße nach und nach hinzufügen"...
+          <p><strong>Anleitung</strong></p>
+          <ol>
+            <li>Tippen Sie auf die <strong>+</strong>-Schaltfläche am unteren Rand des Startbildschirms</li>
+            <li>Wählen Sie <strong>Stempel-Vorlage</strong> → 1 Stamp wird verbraucht</li>
+            <li>Geben Sie Vorlageninformationen ein: Titel, Beschreibung, Bild</li>
+            <li>Wählen Sie <strong>Log-Modus: Geteilt</strong> ⭐</li>
+            <li>Legen Sie Schlüsselwörter fest und erstellen Sie</li>
+          </ol>
 
-          Nach ihrem Tod lese ich diese Aufzeichnungen immer wenn ich Familiengerichte zubereite. Ich kann ihre Stimme fast hören. Jetzt werde ich dieses Inventory an meine Schwiegertochter weitergeben.
+          <p><strong>Teilnehmer hinzufügen</strong></p>
+          <ol>
+            <li>Teilen Sie den Stempel-Link/QR mit anderen Nutzern</li>
+            <li>Wenn diese kopieren, treten sie automatisch dem geteilten Log bei</li>
+            <li>Unbegrenzt weitere Teilnehmer möglich</li>
+          </ol>
 
-      - type: "Emotionale Erfahrung"
-        title: "Unsere gemeinsame Erinnerungskarte erstellen"
-        persona: "David & Sarah (28, Paar)"
+          <p><strong>Anwendungsbeispiele</strong></p>
+          <ul>
+            <li>💬 <strong>Offener Chatroom</strong>: Öffentlicher Diskussionsraum für alle</li>
+            <li>🎤 <strong>Fanclub</strong>: Fangemeinschaft für Künstler/Marken</li>
+            <li>📢 <strong>Community-Forum</strong>: Interessenbasierte Community betreiben</li>
+          </ul>
+
+      # 2-3. Stempel teilen - Kleinunternehmer
+      - type: "Experte"
+        title: "Für den Geschäftsbetrieb nutzen"
+        subtitle: "Stempel-Marketing für Kleinunternehmer"
         content: |
-          Drei Jahre zusammen. Das Café wo wir uns zum ersten Mal an den Händen hielten, der Park des ersten Kusses, das Restaurant des Antrags... wir haben unsere besonderen Orte, aber ich sorgte mich dass wir sie mit der Zeit vergessen.
+          <p><strong>Überblick</strong>: Teilen Sie Stempel, um mit Kunden zu kommunizieren und eigene Events durchzuführen.</p>
 
-          'Unsere Orte' in Inventory mit <a href="/inventory/manual/de/#-geteiltes-log-vs-einzellog">Geteiltem Log</a> erstellt. Nach jedem Date fügen wir Fotos hinzu und dokumentieren unsere Gespräche und Gefühle. Gemeinsames Dokumentieren verdoppelt die Erinnerungen.
+          <p><strong>Anwendungsmethoden</strong></p>
 
-          Diese Aufzeichnungen kommen in unser Hochzeitsvideo. In Jahren werden wir uns noch erinnern wie wir begannen.
+          <p>🍽️ <strong>Restaurant-Speisekarte</strong></p>
+          <ol>
+            <li>Stempel-Vorlage mit Menüfotos erstellen</li>
+            <li>Gerichtnamen und Preise als Schlüsselwörter festlegen</li>
+            <li>QR-Code auf Tischen platzieren</li>
+            <li>Kunden kopieren und als Bestellaufzeichnung nutzen</li>
+          </ol>
 
-      - type: "Emotionale Erfahrung"
-        title: "Zeit mit meinem Seniorhund dokumentieren"
-        persona: "Chelsea (27, Hundebesitzerin)"
+          <p>🎫 <strong>Stempelkarte</strong></p>
+          <ol>
+            <li>Vorlage "Bei 10 Besuchen ein Getränk gratis" erstellen</li>
+            <li>Kunde kopiert → Bei jedem Besuch Stempel ins Log</li>
+            <li>Bei 10 Stempeln Vergünstigung gewähren</li>
+          </ol>
+
+          <p>📋 <strong>Kundenfeedback sammeln</strong></p>
+          <ol>
+            <li>Zufriedenheitsumfrage-Vorlage erstellen</li>
+            <li>Bewertungs-/Meinungsfelder als Schlüsselwörter einrichten</li>
+            <li>Kunde kopiert → Feedback schreiben</li>
+          </ol>
+
+          <p><strong>Weitere Anwendungen</strong></p>
+          <ul>
+            <li>🆕 Neue Menüs ankündigen + Verkostungserfahrungen teilen</li>
+            <li>🎟️ Rabattcoupons verteilen</li>
+            <li>📅 Reservierungssystem betreiben</li>
+          </ul>
+
+      # 2-4. Persönliches Archiv
+      - type: "Mittelstufe"
+        title: "Persönliches Archiv erstellen"
+        subtitle: "Lieblingsinhalt zur eigenen Sammlung machen"
         content: |
-          Mein 9-jähriger Hund 'Buddy' und ich sind schon lange zusammen. Das Wissen um die begrenzte Zeit macht jeden Tag kostbar.
+          <p><strong>Überblick</strong>: Organisieren Sie YouTube, Spotify, Bücher, Filme und andere Lieblingsinhalte systematisch.</p>
 
-          Jeden Tag poste ich Buddys Fotos in Inventory. Was er aß, was wir auf Spaziergängen sahen, sein Ausdruck vor dem Schlafengehen. Ich schreibe es wie ein Tagebuch im <a href="/inventory/manual/de/#log">Log</a>.
+          <p>🎬 <strong>YouTube-Playlist</strong></p>
+          <ol>
+            <li>Dokument "Meine YouTube-Sammlung" mit 1 Paper erstellen</li>
+            <li>Video-Links + kurze Notizen ins Log eintragen</li>
+            <li>Angesammelte Videos nach Genre mit <strong>Clip</strong> bündeln</li>
+            <li>Musik/Kochen/Sport usw. mit <strong>Partition</strong> in Bereiche trennen</li>
+          </ol>
 
-          Ein Freund fragte "Warum machst du das jeden Tag?" Ich antwortete: "Wenn Buddy nicht mehr da ist, möchte ich mich erinnern wie glücklich er war." Es ist traurig, aber diese Aufzeichnungen werden später trösten.
+          <p>🎵 <strong>Spotify-Musiksammlung</strong></p>
+          <ol>
+            <li>Dokument "2024 Playlist" mit 1 Paper erstellen</li>
+            <li>Spotify-Links + Emotionen/Situationen der Zeit im Log festhalten</li>
+            <li>Nach Saison, Stimmung mit <strong>Clip</strong> organisieren</li>
+          </ol>
 
-      - type: "Emotionale Erfahrung"
-        title: "Vaters verblasste Fotos wiederbeleben"
-        persona: "Thomas (40, Sohn)"
+          <p>📚 <strong>Gelesene Bücher-Archiv</strong></p>
+          <ol>
+            <li>Pro Buch 1 Paper für ein Dokument</li>
+            <li>Buchcover fotografieren + Titel/Autor eingeben</li>
+            <li>Eindrucksvolle Passagen, Buchrezension im Log festhalten</li>
+            <li>Genres mit <strong>Partition</strong>, Serien mit <strong>Clip</strong> bündeln</li>
+          </ol>
+
+          <p>🎞️ <strong>Gesehene Filme/Serien festhalten</strong></p>
+          <ol>
+            <li>1 Paper + Posterbild</li>
+            <li>Kurzkritik + Sternebewertung (★★★★☆) ins Log</li>
+            <li><strong>Clip</strong> nach Jahr, <strong>Partition</strong> nach Genre</li>
+          </ol>
+
+          <p>📱 <strong>Instagram/TikTok speichern</strong></p>
+          <ol>
+            <li>Screenshot + Original-Link ins Log eintragen</li>
+            <li>Nach Interessen mit <strong>Partition</strong> organisieren</li>
+          </ol>
+
+      # 2-5. Creator/Influencer
+      - type: "Experte"
+        title: "Als Creator aktiv sein"
+        subtitle: "Mit Fans kommunizieren und Inhalte verbreiten"
         content: |
-          Beim Aufräumen von Vaters Arbeitszimmer fand ich Fotos aus den 1970ern. Verblasst und zerknittert, aber mit meinem jungen Vater darauf.
+          <p><strong>Überblick</strong>: Creator und Influencer können mit Fans kommunizieren und Events durchführen.</p>
 
-          Ich scannte sie digital und registrierte sie in Inventory. Für jedes Foto fragte ich meinen Vater und notierte seine Geschichten im <a href="/inventory/manual/de/#log">Log</a>. "Das war der Anzug vom ersten Gehalt", "Das war unsere Hochzeitsreise aufs Land"...
+          <p>🎉 <strong>Fan-Events</strong></p>
+          <ol>
+            <li>Geteilten Stempel für Event erstellen</li>
+            <li>Fans kopieren zur Teilnahme</li>
+            <li>Quiz, Verlosungen im geteilten Log durchführen</li>
+          </ol>
 
-          Zu seinem 60. Geburtstag machte ich ein Video aus diesen Aufzeichnungen. Er weinte. "Wann hast du das alles gefragt?" Es war das bedeutungsvollste Geschenk.
+          <p>🛍️ <strong>Merchandise-Katalog</strong></p>
+          <ol>
+            <li>Stempel mit Merchandise-Fotos erstellen</li>
+            <li>Produktname, Preis, Kauflink als Schlüsselwörter</li>
+            <li>Fans kopieren als Wunschliste</li>
+          </ol>
 
-      - type: "Emotionale Erfahrung"
-        title: "Meine Wachstumsreise dokumentieren"
-        persona: "Sophie (23, Berufsanfängerin)"
+          <p>❓ <strong>Q&A-Bereich</strong></p>
+          <ol>
+            <li>Geteilten Log-Stempel erstellen</li>
+            <li>Fans schreiben Fragen ins Log</li>
+            <li>Creator beantwortet</li>
+          </ol>
+
+          <p><strong>Weitere Anwendungen</strong></p>
+          <ul>
+            <li>📅 Fanmeeting-Termine/Orte/Teilnahmeanleitung</li>
+            <li>🎬 Behind-the-Scenes, Produktionsprozess teilen</li>
+            <li>📁 Archiv vergangener Inhalte</li>
+          </ul>
+
+      # 2-6. Hobbys/Interessen
+      - type: "Mittelstufe"
+        title: "Hobbys teilen"
+        subtitle: "Interessenbasierte Inhalte austauschen"
         content: |
-          Jobsuche. Jede Absage zerstörte mein Selbstvertrauen.
+          <p><strong>Überblick</strong>: Teilen Sie Hobbys und Interessen mit anderen Nutzern über geteilte Stempel.</p>
 
-          Erstellte ein 'Wachstumstagebuch' in Inventory. Jede kleine Leistung festhalten. "30 Minuten Englisch-Konversation heute", "Portfolio mit Feedback aktualisiert", "Interviewer mochte meine Vorstellung"...
+          <p>🍳 <strong>Rezepte teilen</strong></p>
+          <ol>
+            <li>Stempel mit fertigem Gerichtfoto erstellen</li>
+            <li>Zutaten, Kochzeit als Schlüsselwörter festlegen</li>
+            <li>Nutzer die kopiert haben teilen Erfahrungen im geteilten Log</li>
+          </ol>
 
-          Nach 3 Monaten hatten sich Aufzeichnungen angesammelt. An Absagetagen lese ich alte Einträge und tanke Kraft. "Ich bin so weit gewachsen." Als ich endlich die Zusage bekam, schrieb ich "Angenommen!" ins <a href="/inventory/manual/de/#log">Log</a>. Es war der hellste Eintrag überhaupt.
+          <p>🏃 <strong>Trainingsroutinen teilen</strong></p>
+          <ol>
+            <li>30-Tage-Challenge, Home-Workout-Routine-Vorlage erstellen</li>
+            <li>Teilnehmer protokollieren täglich ihren Abschluss</li>
+          </ol>
 
-      - type: "Emotionale Erfahrung"
-        title: "Momente mit Musik dokumentieren"
-        persona: "Jake (35, Musikliebhaber)"
+          <p>✈️ <strong>Reiseführer</strong></p>
+          <ol>
+            <li>Reisezielfotos + empfohlene Routen-Vorlage</li>
+            <li>Restaurant-, Unterkunftsinformationen als Schlüsselwörter</li>
+            <li>Reisende fügen Erfahrungsberichte hinzu</li>
+          </ol>
+
+          <p><strong>Weitere Anwendungen</strong></p>
+          <ul>
+            <li>🎮 Spielstrategien, Builds teilen</li>
+            <li>🔨 DIY-Projektanleitungen</li>
+            <li>🌱 Pflanzenpflege, Gießpläne</li>
+            <li>🐕 Haustierpflege-Tipps</li>
+          </ul>
+
+      # 2-7. Lokale/Familien-Community
+      - type: "Mittelstufe"
+        title: "Gruppenaktivitäten organisieren"
+        subtitle: "Kommunikationsraum für lokale, Familien-, Freundesgruppen"
         content: |
-          Musik hat die Kraft Erinnerungen zurückzubringen. Bestimmte Lieder transportieren mich zu bestimmten Momenten.
+          <p><strong>Überblick</strong>: Erstellen Sie geteilte Räume für lokale Gemeinschaften, Familientreffen und Freundesgruppen.</p>
 
-          Erstellte 'Lebens-OST' in Inventory. Für bedeutende Momente registriere ich das spielende Lied und dokumentiere den Moment im <a href="/inventory/manual/de/#log">Log</a>. Das Lied am ersten Arbeitstag, das Lied das mich nach einer Trennung tröstete...
+          <p>🏘️ <strong>Lokale Gemeinschaft</strong></p>
+          <ul>
+            <li>🍜 Nachbarschafts-Restaurantführer: Von Anwohnern empfohlene Restaurants</li>
+            <li>🎪 Lokale Veranstaltungen: Festivals, Märkte, Kulturveranstaltungen</li>
+            <li>🏃 Vereinsmitglieder suchen: Wandern, Laufen, Lesen usw.</li>
+            <li>🏠 Hausversammlung/Bewohnerkommunikation: Wohnungsankündigungen teilen</li>
+          </ul>
 
-          An schweren Tagen spiele ich diese Playlist und lese die Geschichten zu jedem Lied. Mein Lebens-Soundtrack wird immer reicher.
+          <p>👨‍👩‍👧‍👦 <strong>Familien/Freundesgruppen</strong></p>
+          <ul>
+            <li>🍳 Familien-Rezeptbuch: Generationenalte Familienrezepte</li>
+            <li>🎂 Freundes-Geburtstagskalender: Geburtstage und Geschenkideen verwalten</li>
+            <li>✅ Gruppen-Bucket-List: Gemeinsame Ziele</li>
+            <li>✈️ Familienreiseplanung: Termine, Packlisten, Budget teilen</li>
+            <li>💒 Familienfeiern: Hochzeits-, Geburtstagsfeier-Informationen teilen</li>
+          </ul>
 
-      - type: "Emotionale Erfahrung"
-        title: "Handgeschriebene Briefe digital bewahren"
-        persona: "Mary (29, Lehrerin)"
+      # 2-8. Arbeit/Events
+      - type: "Fortgeschritten"
+        title: "Für Arbeit und Events nutzen"
+        subtitle: "Teamzusammenarbeit und besondere Tage festhalten"
         content: |
-          Ich habe noch Briefe von meiner ersten Klasse vor 10 Jahren. Kinderschrift "Ich hab Sie lieb Frau Lehrerin". Das Papier altert und es bricht mir das Herz.
+          <p><strong>Überblick</strong>: Erstellen Sie geteilte Räume für Teamarbeit und besondere Events.</p>
 
-          Ich fotografierte jeden Brief und lud ihn in Inventory hoch. Im <a href="/inventory/manual/de/#log">Log</a> schrieb ich Erinnerungen an jedes Kind. "Dieses war erst schüchtern wurde aber am aktivsten", "Diesen Brief bekam ich am Abschlusstag"...
+          <p>💼 <strong>Arbeit/Zusammenarbeit</strong></p>
+          <ul>
+            <li>📊 Teamprojekt: Vorlage für Fortschrittsberichte</li>
+            <li>📝 Protokollformat: Standardisierte Besprechungsprotokolle</li>
+            <li>📋 Aufgabenübergabe: Zuständigkeiten organisieren und übergeben</li>
+            <li>👋 Einarbeitung neuer Mitarbeiter: Einführungsleitfaden teilen</li>
+          </ul>
 
-          An schwierigen Tagen öffne ich diese Aufzeichnungen. Die Liebe der Kinder kommt durch und gibt mir Kraft. Deshalb bin ich Lehrerin.
+          <p>🎉 <strong>Events/Besondere Anlässe</strong></p>
+          <ul>
+            <li>💒 Hochzeitseinladung: Einladung + Teilnahmebestätigung + Glückwünsche</li>
+            <li>🎈 Partyeinladung: Geburtstag, Einweihung, Jahresendfeier</li>
+            <li>👶 Babyparty/100-Tage-Feier: Babyfotos + Glückwünsche sammeln</li>
+            <li>🕯️ Gedenken/Jahrestage: Raum für gemeinsame Erinnerungen</li>
+            <li>📨 Zeitkapsel: Nachrichten an mein zukünftiges Ich</li>
+          </ul>
 
-      - type: "Emotionale Erfahrung"
-        title: "Mein Weg zur Mutterschaft dokumentieren"
-        persona: "Yuna (32, Werdende Mutter)"
-        content: |
-          20 Wochen schwanger. Jeder Tag bringt etwas Neues während mein Bauch wächst. Erste Tritte, erster Ultraschall, Namenskandidaten...
-
-          Erstellte 'Warten aufs Baby' Tagebuch in Inventory. Bei jedem Termin lade ich Ultraschallbilder hoch und dokumentiere meine Gefühle im <a href="/inventory/manual/de/#log">Log</a>. "Heute geweint als ich den Herzschlag hörte", "Baby fängt an zu treten! Papa hat es auch gespürt"...
-
-          Wenn mein Kind groß ist, zeige ich diese Aufzeichnungen. "So haben Mama und Papa auf dich gewartet."
-
-      - type: "Emotionale Erfahrung"
-        title: "Meinen Weg zu Träumen festhalten"
-        persona: "Junho (26, Angehender Autor)"
-        content: |
-          Ich träume davon eines Tages einen Roman zu veröffentlichen. Noch unbekannt, aber ich schreibe jeden Tag ein bisschen.
-
-          Erstellte 'Autorenreise' in Inventory. Wenn Inspiration kommt, registriere ich mit <a href="/inventory/manual/de/#paper">Papier</a> und führe ein Schreibtagebuch im <a href="/inventory/manual/de/#log">Log</a>. "Heute 3 Seiten geschrieben", "Charaktername entschieden", "Schluss geändert"...
-
-          Wenn mein Buch erscheint, möchte ich diese Aufzeichnungen teilen. "Hier ist die Reise zum ersten Satz."
-
-  - id: story
-    title: "Geschichten - Wie Inventory Leben veränderte"
+  # ===== 3. Abzeichen-Anwendungen (Badge) =====
+  - id: badge-usage
+    title: "🏷️ Abzeichen-Anwendungen"
+    icon: "🏷️"
+    description: "Mit Abzeichen (Badge) Branding und Vertrauen aufbauen"
     items:
-      - type: "Geschichte"
-        title: "Die verlorene Tasche die wiedergefunden wurde"
-        persona: "Seunghyun (29, Reisender)"
+      # 3-1. Markenimage bewerben
+      - type: "Experte"
+        title: "Markenidentität aufbauen"
+        subtitle: "Eigene Marke mit einzigartigem Domainnamen erstellen"
         content: |
-          Ich war auf Backpacking-Tour durch Europa. Verlor meine Tasche in der Pariser Metro. Pass, Karten, Kamera... alles drin.
+          <p><strong>Überblick</strong>: Wenn Sie ein Abzeichen prägen, erhalten Sie einen einzigartigen Domainnamen. Dieser wird bei allen Aktivitäten angezeigt.</p>
 
-          Zum Glück hatte ich alle Tascheninhalte in Inventory registriert. Auf der Polizeistation, als man fragte "Was war in der Tasche?", suchte ich nach <a href="/inventory/manual/de/#keyword">Schlüsselwörtern</a> und zeigte eine vollständige Liste. Sogar meine Passnummer war dokumentiert.
+          <p><strong>Anleitung</strong></p>
+          <ol>
+            <li>Profil → <strong>Abzeichen prägen</strong> wählen</li>
+            <li>Gewünschten Domainnamen eingeben (z.B. myshop, creator_kim)</li>
+            <li><strong>Verfügbarkeit prüfen</strong> - erforderlich</li>
+            <li>Abzeichen-Bild wählen (optional)</li>
+            <li><strong>Prägen</strong> → 1 Badge wird verbraucht</li>
+          </ol>
 
-          Zwei Wochen später wurde die Tasche gefunden! Die Polizei sagte: "Die detaillierte Liste machte die Überprüfung einfach." Inventory war mein Retter.
+          <p>⚠️ <strong>Achtung</strong>: Der Domainname kann nach dem Prägen nicht mehr geändert werden!</p>
 
-      - type: "Geschichte"
-        title: "Nach 10 Jahren wiedervereint"
-        persona: "Jihyun (35, Suchende)"
+          <p><strong>Anwendungsbeispiele</strong></p>
+          <ul>
+            <li>🏢 <strong>Unternehmen/Marke</strong>: Offizielles Konto mit Logo und Markenname betreiben</li>
+            <li>🎨 <strong>Creator</strong>: Inhalte unter einzigartigem Nickname verbreiten</li>
+            <li>👔 <strong>Experten-Profil</strong>: Domainnamen für Fachgebiet verwenden</li>
+          </ul>
+
+      # 3-2. E-Mail verbergen
+      - type: "Experte"
+        title: "Privatsphäre schützen"
+        subtitle: "Mit Domainnamen statt E-Mail aktiv sein"
         content: |
-          Ein Freund wechselte in der Schule die Schule. Danach verloren wir den Kontakt. Manchmal dachte ich an ihn.
+          <p><strong>Überblick</strong>: Wenn Sie ein Abzeichen prägen, wird statt Ihrer echten E-Mail "domainname@goolzy" angezeigt.</p>
 
-          Ich ordnete Erinnerungen mit diesem Freund in Inventory. Im <a href="/inventory/manual/de/#log">Log</a> dokumentierte ich "Foto in Schuluniform", "Lieder die er mochte", "letzter Tag den wir uns sahen".
+          <p><strong>Vorteile</strong></p>
+          <ul>
+            <li>🔒 <strong>Privatsphäre</strong>: Echte E-Mail-Adresse wird nicht offengelegt</li>
+            <li>📧 <strong>Spam-Schutz</strong>: E-Mail-Schutz auch bei öffentlicher Aktivität</li>
+            <li>🎭 <strong>Anonyme Aktivität</strong>: Unter gewünschtem Namen anonym aktiv sein</li>
+          </ul>
 
-          Eines Tages teilte ich diese Aufzeichnungen in Social Media. "Kennt jemand diesen Freund?" Erstaunlicherweise meldete sich ein Freund des Freundes. Nach 10 Jahren wiedervereint. Inventory baute die Brücke.
+          <p><strong>Anwendungsbeispiele</strong></p>
+          <ul>
+            <li>Bei geteilten Stempeln wird Domainname als Ersteller angezeigt</li>
+            <li>Im geteilten Log Identifikation per Domainname statt E-Mail</li>
+            <li>Bei Transaktionen wird dem Gegenüber Domainname statt E-Mail gezeigt</li>
+          </ul>
 
-      - type: "Geschichte"
-        title: "Schatz in Großvaters Nachlass gefunden"
-        persona: "Taewoo (33, Enkel)"
+      # 3-3. Dokument-Prägung/Garantie
+      - type: "Experte"
+        title: "Dokumentherkunft garantieren"
+        subtitle: "Abzeichen auf allen Dokumenten prägen"
         content: |
-          Nach Großvaters Tod sortierten wir seine Sachen. Viele alte Gegenstände die ich fast weggeworfen hätte ohne ihre Bedeutung zu kennen.
+          <p><strong>Überblick</strong>: Wenn Sie ein Abzeichen tragen, wird es auf allen erstellten Dokumenten geprägt. Damit können Sie die Herkunft von Dokumenten garantieren.</p>
 
-          Ich fotografierte alles und registrierte es in Inventory, fragte dann meinen Vater zu jedem Stück und dokumentierte im <a href="/inventory/manual/de/#log">Log</a>. "Das war Großvaters erste Uhr", "Das wurde im Krieg benutzt"...
+          <p><strong>Anlegen</strong></p>
+          <ol>
+            <li>Profil → <strong>Abzeichen verwalten</strong></li>
+            <li>Geprägtes Abzeichen auswählen</li>
+            <li>Auf <strong>Anlegen</strong> tippen</li>
+          </ol>
 
-          Dann fand ich ein altes Dokument. Es stellte sich heraus: 70 Jahre alte Papiere über seine Verdienste im Widerstand! Wir kontaktierten die Behörden und Großvaters Beitrag wurde gewürdigt. Wäre für immer verloren gewesen wenn wir es weggeworfen hätten.
+          <p><strong>Anwendungsbeispiele</strong></p>
+          <ul>
+            <li>✅ <strong>Produktdokument-Zertifizierung</strong>: Alle Dokumente tragen Abzeichen als Herkunftsnachweis</li>
+            <li>📜 <strong>Offizielle Dokumente ausstellen</strong>: Nachweis als offizielles Marken-/Unternehmensdokument</li>
+            <li>🔐 <strong>Fälschungsschutz</strong>: Originalprüfung durch Abzeichen-Prägung möglich</li>
+          </ul>
 
-      - type: "Geschichte"
-        title: "Vom Hobbyisten zum Community-Leiter"
-        persona: "Seojun (24, LEGO-Sammler)"
-        content: |
-          Ich sammle LEGO-Sets. Anfangs nur zum Spaß, aber es wurde schwer den Überblick zu behalten. Wurde über meine Sammlung verwirrt.
-
-          Begann alle LEGO-Sets in Inventory zu registrieren. Kaufpreis, Geschäft, Baustatus im <a href="/inventory/manual/de/#log">Log</a>, Serie und Teilezahl in <a href="/inventory/manual/de/#keyword">Schlüsselwörtern</a> markiert.
-
-          Ein Jahr später sah die LEGO-Community mein Inventory und meldete sich. "Du bist so organisiert. Komm in unsere Gruppe." Jetzt bin ich Admin einer 500-Mitglieder-Community. Dokumentationsgewohnheit machte aus einem Hobby fast einen Beruf.
-
-      - type: "Geschichte"
-        title: "Familien-Kochwettbewerb"
-        persona: "Sua (40, Mutter von Drei)"
-        content: |
-          Meine drei Kinder interessierten sich fürs Kochen. Also starteten wir einen wöchentlichen "Familien-Kochwettbewerb."
-
-          Jede Woche werden Gerichte in Inventory registriert, Familie stimmt ab und bewertet via <a href="/inventory/manual/de/#-geteiltes-log-vs-einzellog">Geteiltes Log</a>. "Bruders Pasta zu salzig", "Jüngstes Salat ist hübsch" - ehrliche Bewertungen sammeln sich.
-
-          Nach einem Jahr erstellten wir aus den Aufzeichnungen "Unser Familienkochbuch". Selbst gemacht und an Großeltern verschenkt - sie liebten es absolut. Inventory schuf eine Familientradition.
-
-      - type: "Geschichte"
-        title: "Vintage-Kleidungsgeschäft gestartet"
-        persona: "Hayoung (26, Vintage-Ladenbesitzerin)"
-        content: |
-          Ich liebte Second-Hand und sammelte überall Vintage-Kleidung. Irgendwann war ein ganzes Zimmer voll.
-
-          Begann zur Organisation in Inventory zu registrieren. Marke, Ära, Zustand, Herkunft jedes Stücks detailliert im <a href="/inventory/manual/de/#log">Log</a>. Stil, Größe, Saison in <a href="/inventory/manual/de/#keyword">Schlüsselwörtern</a> markiert.
-
-          Freunde fragten "Verkaufst du das?" Das Inventory-Screen zeigen baute Vertrauen auf. Begann auf Instagram zu verkaufen, habe jetzt einen physischen Vintage-Laden. Organisation wurde zum Geschäft.
-
-      - type: "Geschichte"
-        title: "Komplette Organisation vor dem Umzug"
-        persona: "Mingyu (45, Auswanderer)"
-        content: |
-          Entschied auszuwandern. Musste 20 Jahre Hab und Gut sortieren.
-
-          Registrierte alles im Haus in Inventory. Kategorisiert als: wegwerfen, verkaufen, mitnehmen, verschenken - in <a href="/inventory/manual/de/#keyword">Schlüsselwörtern</a> markiert. Erinnerungsstücke bekamen ihre Geschichten im <a href="/inventory/manual/de/#log">Log</a>.
-
-          3 Monate Sortieren in 2 Wochen erledigt. Verkauf lief glatt, und bedeutungsvolle Stücke konnte ich mit Fotos als Andenken leicht loslassen. Gegenstände kann man entsorgen, aber Aufzeichnungen nimmt man mit.
-
-      - type: "Geschichte"
-        title: "Mein erstes Instrument weitergeben"
-        persona: "Yeeun (22, Musikstudentin)"
-        content: |
-          Beschloss meine erste Geige an meine Schwester in der Oberstufe zu geben. Ein Instrument loszulassen mit dem ich 10 Jahre gespielt hatte war schwer.
-
-          Ich dokumentierte alle Geschichten der Geige in Inventory. Erster Kauftag, erstes Konzert, Reparaturtage... Jeder Moment im <a href="/inventory/manual/de/#log">Log</a> festgehalten.
-
-          Als ich das Instrument mit den Inventory-Aufzeichnungen an meine Schwester <a href="/inventory/manual/de/#-übertragungsfunktion">übertrug</a>, sagte ich "Alles was diese Geige gespielt hat steht hier drin." Sie war zu Tränen gerührt. Ich gab nicht nur das Instrument weiter, sondern seine Geschichte.
-
-      - type: "Geschichte"
-        title: "Aufzeichnungen nach Adoption eines Tierheimhundes"
-        persona: "Sejin (30, Hundebesitzer)"
-        content: |
-          Adoptierte 'Luna' aus dem Tierheim. Sie hat keine bekannte Vergangenheit, also wollte ich ihre Zukunft umso besser dokumentieren.
-
-          Vom ersten Tag an dokumentierte ich alles über Luna in Inventory. Erster Tag zuhause, erstes Schwanzwedeln, erster Schlafplatz... Tägliche Tagebucheinträge im <a href="/inventory/manual/de/#log">Log</a>.
-
-          An unserem ersten Jahrestag machte ich ein Video aus diesen Aufzeichnungen namens "Lunas erstes Jahr." Mit der Community geteilt und viele waren gerührt, einige entschieden sich für Tierheimadoptionen. Aufzeichnungen retteten ein weiteres Leben.
-
-      - type: "Geschichte"
-        title: "Geschichte des ältesten Erbstücks"
-        persona: "Jihoon (55, Uhrensammler)"
-        content: |
-          Ich habe eine Omega-Uhr aus den 1960ern von meinem Vater geerbt. Ein Familienschatz, aber ich bin der Einzige der ihre Geschichte noch kennt.
-
-          Registrierte die Uhr in Inventory und dokumentierte alle Geschichten meines Vaters im <a href="/inventory/manual/de/#log">Log</a>. "Vom ersten Gehalt gekauft", "An dem Tag getragen als er Mutter traf", "Die Zeit gecheckt als der große Bruder geboren wurde"...
-
-          Wenn ich diese Uhr meinem Sohn gebe, <a href="/inventory/manual/de/#-übertragungsfunktion">übertrage</a> ich das Inventory mit. Der Wert von Gegenständen kommt aus ihrer Geschichte. Inventory wird drei Generationen verbinden.
-
-  - id: creative
-    title: "Kreative Nutzung - Unerwartete Möglichkeiten"
-    items:
-      - type: "Kreativ"
-        title: "Meine Träume dokumentieren"
-        persona: "Sumin (24, Psychologiestudentin)"
-        content: |
-          Traumanalyse enthüllt das Unterbewusstsein. Also dokumentiere ich jeden Morgen erinnerte Träume in Inventory.
-
-          Ich skizziere Traumszenen als Bilder und lade sie hoch, Details im <a href="/inventory/manual/de/#log">Log</a>. Themen wie "Wasser", "Fallen", "Prüfungen" in <a href="/inventory/manual/de/#keyword">Schlüsselwörtern</a> markiert.
-
-          Sechs Monate Analyse zeigten Muster. Ich träume von "Fallen" wenn ich gestresst bin. Fand einen Weg mit meinem Unterbewusstsein zu sprechen.
-
-      - type: "Kreativ"
-        title: "Sternbeobachtungslog"
-        persona: "Haneul (31, Amateurastronom)"
-        content: |
-          Nachthimmelbeobachtung ist mein Hobby. Wollte dokumentieren wann ich was sah.
-
-          Jede Beobachtung kommt in Inventory. Datum, Ort, Ziel (Sternbild, Planet, Nebel), Wetter, Ausrüstung... im <a href="/inventory/manual/de/#log">Log</a> geloggt, Fotos angehängt.
-
-          Meteorschwarm-Saisons bekomme ich Vorab-Alarme via <a href="/inventory/manual/de/#alarm">Datumsalarm</a>. Drei Jahre Aufzeichnungen wurden Erfahrungsdaten für "wann und wo am besten beobachten."
-
-      - type: "Kreativ"
-        title: "Parfüm-Notizen-Sammlung"
-        persona: "Sujin (29, Duftliebhaberin)"
-        content: |
-          Ich sammle Parfüms aber fand es schwer mir Charakteristiken zu merken.
-
-          Jedes Parfüm registriert mit Noten (Kopf, Herz, Basis), Haltbarkeit, Sillage, passende Jahreszeiten/Anlässe im <a href="/inventory/manual/de/#log">Log</a>. <a href="/inventory/manual/de/#keyword">Schlüsselwörter</a> wie "holzig", "blumig", "Date-Abend" markiert.
-
-          Wenn Freunde nach Empfehlungen fragen, suche ich einfach und antworte. Meine eigene Parfüm-Enzyklopädie gebaut!
-
-      - type: "Kreativ"
-        title: "Tägliches Himmelfoto-Projekt"
-        persona: "Yuri (26, Fotografin)"
-        content: |
-          Startete ein Projekt: ein Jahr lang jeden Tag vom selben Ort den Himmel fotografieren.
-
-          Tägliche Himmelsfotos hochgeladen mit Wetter, Stimmung, was an dem Tag passierte im <a href="/inventory/manual/de/#log">Log</a>. Aufnahmedaten mit <a href="/inventory/manual/de/#dates">Startdatum</a> verwaltet.
-
-          365 Fotos wurden ein Zeitraffer-Video. Wechselnde Jahreszeiten am Himmel zusammen mit meinem Jahr. Auf Instagram gepostet und über 100k Aufrufe bekommen.
-
-      - type: "Kreativ"
-        title: "TRPG-Charakterverwaltung"
-        persona: "Minhyuk (22, Gamer)"
-        content: |
-          Ich spiele Pen-and-Paper-Rollenspiele aber Charakterbogen- und Gegenstandsverwaltung ist komplex.
-
-          Charaktere und Inventargegenstände in Inventory registriert. Session-Ereignisse, Level-Ups, neue Fähigkeiten im <a href="/inventory/manual/de/#log">Log</a>. <a href="/inventory/manual/de/#partition">Partitionen</a> nach Kampagne.
-
-          Mit Gruppenmitgliedern via <a href="/inventory/manual/de/#-geteiltes-log-vs-einzellog">Geteiltes Log</a> verbunden, jeder kann anderer Charakterinfos sehen. Auch der Spielleiter sagt "Das macht Sessions leiten einfacher!"
-
-      - type: "Kreativ"
-        title: "Eigener Vokabeltrainer"
-        persona: "Jeonga (28, Sprachschülerin)"
-        content: |
-          Sprache lernen aber Vokabel-Apps passten mir nicht. Wollte auf meine Art organisieren.
-
-          Unbekannte Wörter in Inventory registriert mit Beispielsätzen und Nuancenerklärungen im <a href="/inventory/manual/de/#log">Log</a>. <a href="/inventory/manual/de/#keyword">Schlüsselwörter</a> wie "B2", "Business", "in Serie gehört" markiert.
-
-          Gemerkte Wörter werden mit <a href="/inventory/manual/de/#keyword">Schlüsselwort</a> "gelernt" markiert. Nur unmarkierte wiederholen. Effizient! Sprachprüfung bestanden!
-
-      - type: "Kreativ"
-        title: "Kapselgarderobe verwalten"
-        persona: "Seoyeon (27, Minimalistin)"
-        content: |
-          Versuchte die 'Kapselgarderobe' Herausforderung - 33 Teile für 3 Monate. Schrank leeren, nur Wesentliches behalten!
-
-          Die 33 ausgewählten Teile in Inventory registriert. Jedes Tragen im <a href="/inventory/manual/de/#log">Log</a>. Nach 3 Monaten zeigt die Analyse was ich wirklich trage vs. was nicht.
-
-          Ungetragenes aussortiert, leere Stellen nur mit Nötigem gefüllt. Inventory hilft minimalistischen Lebensstil beizubehalten.
-
-      - type: "Kreativ"
-        title: "Kunstgalerie-Kuratierung"
-        persona: "Yejin (34, Kunstliebhaberin)"
-        content: |
-          Besuche oft Museen aber vergesse gesehene Werke.
-
-          Jede Ausstellung, registriere ich berührende Werke. Künstler, Jahr, Technik im <a href="/inventory/manual/de/#log">Log</a>, plus "warum es mir gefiel." Genre, Ära, Emotion in <a href="/inventory/manual/de/#keyword">Schlüsselwörtern</a> markiert.
-
-          Fünf Jahre Aufzeichnungen zeigen meinen Geschmack. Impressionismus, Abstrakt, Blautöne... Jetzt nutze ich diese Daten um Ausstellungen auszuwählen.
-
-      - type: "Kreativ"
-        title: "Clevere Visitenkartenverwaltung"
-        persona: "Jongmin (42, Vertrieb)"
-        content: |
-          Hunderte Visitenkarten gestapelt, kann mich nicht erinnern wer wer ist.
-
-          Karten sofort fotografieren und in Inventory registrieren. Im <a href="/inventory/manual/de/#log">Log</a> notieren "wo getroffen", "worüber gesprochen." Branche, Interessen, Kooperationspotenzial in <a href="/inventory/manual/de/#keyword">Schlüsselwörtern</a>.
-
-          "Der IT-Typ den ich mal traf" - sofortige Suche. Beim Wieder-Kontaktieren das vorherige Gespräch erwähnen beeindruckt die Leute!
-
-      - type: "Kreativ"
-        title: "Brettspielsammlung verwalten"
-        persona: "Jaewon (29, Brettspiel-Enthusiast)"
-        content: |
-          Über 50 Brettspiele aber kann mich nicht erinnern was ich habe. Wenn Freunde kommen, fällt die Entscheidung schwer.
-
-          Alle Spiele registriert mit Spielerzahl, Dauer, Genre, Schwierigkeit in <a href="/inventory/manual/de/#keyword">Schlüsselwörtern</a>. Spielbewertungen im <a href="/inventory/manual/de/#log">Log</a>.
-
-          Wenn Freunde kommen: "4 Spieler, 1 Stunde, leicht" suchen gibt sofortige Empfehlungen. Sie nennen mich den "Brettspiel-Sommelier!"
+          <p><strong>Anwendungstipps</strong></p>
+          <ul>
+            <li>Bei Coupon-Ausgabe im Geschäft mit Abzeichen als offizieller Coupon authentifizieren</li>
+            <li>Bei Creator-Inhalten mit Abzeichen Urheberrecht kennzeichnen</li>
+            <li>Bei Unternehmensankündigungen offizielles Konto markieren</li>
+          </ul>
