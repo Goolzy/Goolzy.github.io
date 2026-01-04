@@ -65,11 +65,12 @@ categories:
 
           <p><strong>따라하기</strong></p>
           <ol>
-            <li>공유받은 스탬프 링크 클릭 또는 QR 스캔</li>
-            <li>스탬프 상세 화면에서 <strong>복제하기</strong> 터치</li>
+            <li>상단 <strong>슈퍼서치바</strong>에서 원하는 태그 검색</li>
+            <li>검색 결과에서 <strong>공유 템플릿</strong> 탭 선택</li>
+            <li>원하는 공유 템플릿 선택하여 상세 화면 진입</li>
+            <li><strong>복제하기</strong> 터치</li>
             <li>내 인벤토리의 <strong>빈 종이</strong> 선택</li>
             <li>복제 완료 → 스탬프 내용이 종이에 복제됨</li>
-            <li>필요에 따라 키워드 값 수정 가능</li>
           </ol>
 
           <p><strong>활용 예시</strong></p>
