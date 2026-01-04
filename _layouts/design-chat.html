@@ -135,7 +135,7 @@ body::before {
 /* Advantage Cards */
 .advantage-cards {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 2.5rem;
@@ -144,40 +144,75 @@ body::before {
 }
 
 .advantage-card {
-  flex: 1;
-  min-width: 160px;
-  max-width: 200px;
-  padding: 1.25rem 1rem;
-  background: rgba(21, 10, 40, 0.6);
-  border: 1px solid rgba(168, 85, 247, 0.3);
-  border-radius: 16px;
-  text-align: center;
-  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 1.25rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  min-width: 100px;
+  cursor: default;
+  transition: all 0.3s;
 }
 
 .advantage-card:hover {
   border-color: var(--teal-bright);
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(20, 184, 166, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 24px rgba(20, 184, 166, 0.3);
 }
 
 .advantage-icon {
-  font-size: 2rem;
-  display: block;
-  margin-bottom: 0.75rem;
+  font-size: 1.75rem;
 }
 
 .advantage-card h3 {
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--teal-bright);
-  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0;
 }
 
-.advantage-card p {
+/* Advantage Popup (hover) */
+.advantage-popup {
+  position: absolute;
+  bottom: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%) scale(0.9);
+  background: rgba(21, 10, 40, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(20, 184, 166, 0.4);
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  width: 200px;
   font-size: 0.8rem;
-  color: var(--text-dim);
-  line-height: 1.4;
+  line-height: 1.5;
+  color: var(--text);
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 100;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 40px rgba(20, 184, 166, 0.15);
+}
+
+.advantage-popup::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 8px solid transparent;
+  border-top-color: rgba(20, 184, 166, 0.4);
+}
+
+.advantage-card:hover .advantage-popup {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) scale(1);
 }
 
 /* Release Date under platform icons */
@@ -720,8 +755,8 @@ a.platform-icon {
   }
 
   .advantage-card {
-    min-width: 140px;
-    padding: 1rem 0.75rem;
+    min-width: 90px;
+    padding: 0.75rem 1rem;
   }
 
   .advantage-icon {
@@ -729,11 +764,13 @@ a.platform-icon {
   }
 
   .advantage-card h3 {
-    font-size: 0.9rem;
+    font-size: 0.75rem;
   }
 
-  .advantage-card p {
+  .advantage-popup {
+    width: 180px;
     font-size: 0.75rem;
+    padding: 0.75rem;
   }
 
   .platforms {
