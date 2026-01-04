@@ -223,11 +223,11 @@ categories:
             <li><strong>새 템플릿 생성</strong> 메뉴 선택</li>
             <li>템플릿 정보 입력:
               <ul>
-                <li>이미지 (선택)</li>
+                <li>이미지 (필수)</li>
                 <li>제목 (필수)</li>
-                <li>내용 (선택)</li>
+                <li>내용 (필수)</li>
                 <li>기한 (선택)</li>
-                <li>기본 키워드 (최대 10개)</li>
+                <li>기본 키워드 (최대 128개)</li>
               </ul>
             </li>
             <li><strong>만들기</strong> 완료 → 각인된 스탬프로 변환</li>
@@ -244,9 +244,9 @@ categories:
 
           <p><strong>활용 예시</strong></p>
           <ul>
-            <li>🏋️ <strong>운동 기록</strong>: 매일 같은 형식으로 운동 내용 기록</li>
-            <li>📖 <strong>독서 기록</strong>: 책마다 동일한 양식으로 독후감 작성</li>
-            <li>🍷 <strong>컬렉션 관리</strong>: 와인, 레고, 피규어 등 소장품 카탈로그</li>
+            <li>📋 <strong>전단지/안내문</strong>: 동일한 내용을 여러 장 배포</li>
+            <li>🏷️ <strong>제품 정보</strong>: 상품 스펙, 가격을 복제해서 공유</li>
+            <li>📜 <strong>공지사항</strong>: 같은 내용의 공지를 여러 곳에 게시</li>
           </ul>
 
           <p><strong>정리 팁</strong>: 스탬프로 생성된 문서들은 <strong>클립</strong>으로 묶어 시리즈로 관리하세요.</p>
