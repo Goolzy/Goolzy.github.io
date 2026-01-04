@@ -150,8 +150,8 @@ categories:
           <ol>
             <li>프로젝트마다 <strong>종이 1장</strong> 생성</li>
             <li>로그에 일별 진행사항, 이슈, 결정사항 기록</li>
-            <li>이미지로 회의 자료, 스크린샷 첨부</li>
-            <li>기한 설정으로 마일스톤 관리</li>
+            <li>Dropbox, Google Drive, OneDrive 링크로 자료 첨부</li>
+            <li><strong>잠금 설정</strong>으로 민감한 업무 문서 보안 강화</li>
           </ol>
 
           <p><strong>인수인계 문서</strong></p>
