@@ -84,6 +84,12 @@ Mute button now features neumorphic design for intuitive representation of press
 - **Press Effect**: Button appears to be pressed inward when muted
 - **Neumorphic Shadow**: Default state shows convex shadow, pressed state shows concave shadow
 
+#### Log Loading Performance Improvement
+Shared log loading speed has been improved.
+- **Cache-first Loading**: Previously viewed logs are displayed instantly from cache
+- **Data Savings**: No server requests when revisiting, uses local data
+- **Real-time New Comments**: New comments are received in real-time even when using cache
+
 </div>
 </details>
 

@@ -84,6 +84,12 @@ Botão de silencioso com design neumórfico que expressa intuitivamente o estado
 - **Efeito de pressão**: O botão parece ser pressionado para dentro quando silenciado
 - **Sombra neumórfica**: Estado padrão é convexo, estado pressionado é côncavo
 
+#### Melhoria no desempenho de carregamento de logs
+A velocidade de carregamento dos logs compartilhados foi melhorada.
+- **Carregamento com prioridade de cache**: Logs vistos anteriormente são exibidos instantaneamente do cache
+- **Economia de dados**: Sem solicitações ao servidor ao revisitar, usa dados locais
+- **Novos comentários em tempo real**: Novos comentários são recebidos em tempo real mesmo usando cache
+
 </div>
 </details>
 

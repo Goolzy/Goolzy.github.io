@@ -84,6 +84,12 @@ El botón de silencio ahora cuenta con diseño neomórfico que expresa intuitiva
 - **Efecto de pulsación**: El botón parece hundirse cuando se activa el silencio
 - **Sombra neomórfica**: La sombra es convexa en estado normal y cóncava cuando está pulsada
 
+#### Mejora del rendimiento de carga de registros
+Se ha mejorado la velocidad de carga de los registros compartidos.
+- **Carga con prioridad de caché**: Los registros vistos anteriormente se muestran instantáneamente desde la caché
+- **Ahorro de datos**: Sin solicitudes al servidor al revisitar, se usan datos locales
+- **Nuevos comentarios en tiempo real**: Los nuevos comentarios se reciben en tiempo real incluso usando caché
+
 </div>
 </details>
 

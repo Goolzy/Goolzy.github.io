@@ -84,6 +84,12 @@ Der Stummschalter-Button wurde mit neumorphem Design versehen, das den Druckzust
 - **Druckeffekt**: Beim Stummschalten wird der Button nach innen gedrückt aussehen
 - **Neumorphe Schatten**: Im Standardzustand gewölbt, im gedrückten Zustand konkav mit Schatten
 
+#### Verbesserung der Log-Ladegeschwindigkeit
+Die Ladegeschwindigkeit von geteilten Logs wurde verbessert.
+- **Cache-First-Laden**: Zuvor angesehene Logs werden sofort aus dem Cache angezeigt
+- **Datenersparnis**: Bei erneuten Besuchen keine Serveranfragen, lokale Daten werden verwendet
+- **Echtzeit-Neue-Kommentare**: Neue Kommentare werden auch bei Cache-Nutzung in Echtzeit empfangen
+
 </div>
 </details>
 

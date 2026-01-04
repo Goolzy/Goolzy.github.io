@@ -84,6 +84,12 @@ Le bouton de sourdine a reçu un design neumorphique pour exprimer l'état appuy
 - **Effet enfoncé**: Le bouton apparaît enfoncé lors de la sourdine
 - **Ombre neumorphique**: État par défaut convexe, état enfoncé concave
 
+#### Amélioration des performances de chargement des journaux
+La vitesse de chargement des journaux partagés a été améliorée.
+- **Chargement prioritaire du cache**: Les journaux déjà consultés s'affichent instantanément depuis le cache
+- **Économie de données**: Pas de requêtes serveur lors des revisites, utilisation des données locales
+- **Nouveaux commentaires en temps réel**: Les nouveaux commentaires sont reçus en temps réel même avec le cache
+
 </div>
 </details>
 
