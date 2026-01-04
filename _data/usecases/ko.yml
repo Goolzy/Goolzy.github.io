@@ -385,7 +385,7 @@ categories:
             <li>프로필 → <strong>뱃지 각인</strong> 선택</li>
             <li>원하는 도메인명 입력 (예: myshop, creator_kim)</li>
             <li><strong>중복 확인</strong> 필수</li>
-            <li>뱃지 이미지 선택 (선택사항)</li>
+            <li>뱃지 이미지 선택 (필수)</li>
             <li><strong>각인하기</strong> → Badge 1개 소비</li>
           </ol>
 
@@ -403,7 +403,7 @@ categories:
         title: "프라이버시 보호하기"
         subtitle: "이메일 대신 도메인명으로 활동"
         content: |
-          <p><strong>개요</strong>: 뱃지를 각인하면 실제 이메일 대신 "도메인명@goolzy" 형태로 표시됩니다.</p>
+          <p><strong>개요</strong>: 뱃지를 각인하면 실제 이메일 대신 "도메인명"으로 표시됩니다.</p>
 
           <p><strong>장점</strong></p>
           <ul>

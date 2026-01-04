@@ -385,7 +385,7 @@ categories:
             <li>Profil → Sélectionnez <strong>Graver un Badge</strong></li>
             <li>Entrez le nom de domaine souhaité (ex : maboutique, createur_martin)</li>
             <li><strong>Vérification de disponibilité</strong> obligatoire</li>
-            <li>Sélectionnez une image de Badge (optionnel)</li>
+            <li>Sélectionnez une image de Badge (obligatoire)</li>
             <li><strong>Graver</strong> → Consomme 1 Badge</li>
           </ol>
 
@@ -403,7 +403,7 @@ categories:
         title: "Protéger sa vie privée"
         subtitle: "Agir avec son nom de domaine au lieu de son email"
         content: |
-          <p><strong>Aperçu</strong> : En gravant un Badge, votre email réel est remplacé par le format "nomdedomaine@goolzy".</p>
+          <p><strong>Aperçu</strong> : En gravant un Badge, votre email réel est remplacé par "nomdedomaine".</p>
 
           <p><strong>Avantages</strong></p>
           <ul>

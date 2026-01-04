@@ -385,7 +385,7 @@ categories:
             <li>Profile → Select <strong>Engrave Badge</strong></li>
             <li>Enter your desired domain name (e.g., myshop, creator_kim)</li>
             <li><strong>Check availability</strong> is required</li>
-            <li>Select badge image (optional)</li>
+            <li>Select badge image (required)</li>
             <li><strong>Engrave</strong> → Consumes 1 Badge</li>
           </ol>
 
@@ -403,7 +403,7 @@ categories:
         title: "Protect Your Privacy"
         subtitle: "Use domain name instead of email"
         content: |
-          <p><strong>Overview</strong>: When you engrave a badge, your actual email is displayed as "domainname@goolzy" format instead.</p>
+          <p><strong>Overview</strong>: When you engrave a badge, your actual email is replaced with "domainname".</p>
 
           <p><strong>Benefits</strong></p>
           <ul>

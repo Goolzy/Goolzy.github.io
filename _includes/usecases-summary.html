@@ -1,16 +1,61 @@
 {% comment %}
-  메인 페이지용 활용방법 요약 컴포넌트
+  메인 페이지용 활용방법 요약 컴포넌트 (2열 탭 메뉴 버전)
   사용법: {% include usecases-summary.html lang="ko" %}
 {% endcomment %}
 
 {% assign lang = include.lang | default: page.lang | default: 'ko' %}
 {% assign data = site.data.usecases[lang] %}
 
-{% comment %} 언어별 링크 생성 {% endcomment %}
+{% comment %} 언어별 링크 및 라벨 {% endcomment %}
 {% if lang == 'ko' %}
   {% assign usecases_link = '/inventory/usecases/' %}
-{% else %}
-  {% assign usecases_link = '/inventory/usecases/' | append: lang | append: '/' %}
+  {% assign all_label = '전체' %}
+  {% assign guide_title = '💡 활용 가이드' %}
+  {% assign view_all = '전체 보기' %}
+  {% assign items_suffix = '개 활용법' %}
+  {% assign share_title = '당신의 활용방법도 알려주세요' %}
+{% elsif lang == 'en' %}
+  {% assign usecases_link = '/inventory/usecases/en/' %}
+  {% assign all_label = 'All' %}
+  {% assign guide_title = '💡 Usage Guide' %}
+  {% assign view_all = 'View All' %}
+  {% assign items_suffix = ' use cases' %}
+  {% assign share_title = 'Share your use case' %}
+{% elsif lang == 'ja' %}
+  {% assign usecases_link = '/inventory/usecases/ja/' %}
+  {% assign all_label = '全て' %}
+  {% assign guide_title = '💡 活用ガイド' %}
+  {% assign view_all = '全て見る' %}
+  {% assign items_suffix = '件の活用法' %}
+  {% assign share_title = 'あなたの活用法も教えてください' %}
+{% elsif lang == 'de' %}
+  {% assign usecases_link = '/inventory/usecases/de/' %}
+  {% assign all_label = 'Alle' %}
+  {% assign guide_title = '💡 Anwendungsbeispiele' %}
+  {% assign view_all = 'Alle ansehen' %}
+  {% assign items_suffix = ' Anwendungen' %}
+  {% assign share_title = 'Teilen Sie Ihre Anwendung' %}
+{% elsif lang == 'fr' %}
+  {% assign usecases_link = '/inventory/usecases/fr/' %}
+  {% assign all_label = 'Tous' %}
+  {% assign guide_title = "💡 Guide d'utilisation" %}
+  {% assign view_all = 'Voir tout' %}
+  {% assign items_suffix = " cas d'usage" %}
+  {% assign share_title = 'Partagez votre utilisation' %}
+{% elsif lang == 'es' %}
+  {% assign usecases_link = '/inventory/usecases/es/' %}
+  {% assign all_label = 'Todos' %}
+  {% assign guide_title = '💡 Guía de uso' %}
+  {% assign view_all = 'Ver todo' %}
+  {% assign items_suffix = ' casos de uso' %}
+  {% assign share_title = 'Comparte tu caso de uso' %}
+{% elsif lang == 'pt' %}
+  {% assign usecases_link = '/inventory/usecases/pt/' %}
+  {% assign all_label = 'Todos' %}
+  {% assign guide_title = '💡 Guia de Uso' %}
+  {% assign view_all = 'Ver tudo' %}
+  {% assign items_suffix = ' casos de uso' %}
+  {% assign share_title = 'Compartilhe seu caso de uso' %}
 {% endif %}
 
 <style>
@@ -53,81 +98,119 @@
   box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
 }
 
-/* 카테고리 그리드 */
-.usecases-categories-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.25rem;
+/* 2열 탭 필터 */
+.usecases-filters {
+  margin-bottom: 1.5rem;
 }
 
-/* 카테고리 카드 */
-.usecases-category-card {
+.filter-row {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+
+.filter-btn {
+  background: rgba(10, 6, 20, 0.5);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.filter-btn:hover {
+  border-color: rgba(168, 85, 247, 0.5);
+  color: white;
+}
+
+.filter-btn.active {
+  background: rgba(168, 85, 247, 0.3);
+  border-color: #a855f7;
+  color: white;
+  font-weight: 600;
+}
+
+/* 난이도별 색상 */
+.filter-btn[data-level="beginner"].active {
+  background: rgba(34, 197, 94, 0.3);
+  border-color: #22c55e;
+}
+
+.filter-btn[data-level="intermediate"].active {
+  background: rgba(59, 130, 246, 0.3);
+  border-color: #3b82f6;
+}
+
+.filter-btn[data-level="advanced"].active {
+  background: rgba(168, 85, 247, 0.3);
+  border-color: #a855f7;
+}
+
+.filter-btn[data-level="expert"].active {
+  background: rgba(239, 68, 68, 0.3);
+  border-color: #ef4444;
+}
+
+/* 카드 그리드 */
+.usecases-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+/* 개별 카드 */
+.usecase-item-card {
   background: rgba(10, 6, 20, 0.5);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(168, 85, 247, 0.2);
-  border-radius: 16px;
-  padding: 1.5rem;
+  border-radius: 12px;
+  padding: 1.25rem;
   transition: all 0.3s ease;
 }
 
-.usecases-category-card:hover {
+.usecase-item-card:hover {
   border-color: rgba(168, 85, 247, 0.4);
-  transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(168, 85, 247, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(168, 85, 247, 0.15);
 }
 
-.category-card-header {
+.usecase-item-card.hidden {
+  display: none;
+}
+
+.usecase-card-header {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 1rem;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
-.category-card-icon {
-  font-size: 2rem;
+.usecase-card-category {
+  font-size: 1.25rem;
 }
 
-.category-card-title {
-  font-size: 1.1rem;
-  font-weight: 700;
+.usecase-card-title {
+  font-size: 1rem;
+  font-weight: 600;
   color: white;
   margin: 0;
+  flex: 1;
 }
 
-.category-card-description {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 0.9rem;
-  margin: 0 0 1rem 0;
-  line-height: 1.5;
+.usecase-card-subtitle {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.85rem;
+  margin: 0 0 0.75rem 0;
 }
 
-/* 예시 목록 */
-.category-examples {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.category-example-tag {
-  background: rgba(168, 85, 247, 0.15);
-  border: 1px solid rgba(168, 85, 247, 0.3);
-  border-radius: 20px;
-  padding: 0.35rem 0.75rem;
-  font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.85);
-}
-
-/* 난이도 표시 */
-.category-levels {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-}
-
+/* 난이도 뱃지 */
 .level-badge {
   font-size: 0.7rem;
-  padding: 0.2rem 0.5rem;
+  padding: 0.2rem 0.6rem;
   border-radius: 12px;
   font-weight: 600;
 }
@@ -152,20 +235,43 @@
   color: #ef4444;
 }
 
-/* 더보기 버튼 */
-.category-more-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.25rem;
-  color: var(--purple-bright, #a855f7);
-  font-size: 0.85rem;
-  text-decoration: none;
-  margin-top: 0.5rem;
-  transition: all 0.2s ease;
+/* 공유 섹션 */
+.usecases-share-section {
+  margin-top: 2rem;
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(168, 85, 247, 0.1);
+  border: 1px dashed rgba(168, 85, 247, 0.3);
+  border-radius: 12px;
 }
 
-.category-more-link:hover {
-  color: var(--teal-bright, #2dd4bf);
+.usecases-share-section p {
+  margin: 0 0 1rem 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.share-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #a855f7 0%, #6366f1 100%);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.share-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);
+}
+
+/* 빈 결과 메시지 */
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 2rem;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 @media (max-width: 768px) {
@@ -174,7 +280,18 @@
     align-items: flex-start;
   }
 
-  .usecases-categories-grid {
+  .filter-row {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.5rem;
+  }
+
+  .filter-btn {
+    flex-shrink: 0;
+  }
+
+  .usecases-cards-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -182,48 +299,150 @@
 
 <div class="usecases-summary">
   <div class="usecases-summary-header">
-    <h3>💡 활용 가이드</h3>
-    <a href="{{ usecases_link }}" class="usecases-summary-link">전체 보기 →</a>
+    <h3>{{ guide_title }}</h3>
+    <a href="{{ usecases_link }}" class="usecases-summary-link">{{ view_all }} →</a>
   </div>
 
-  <div class="usecases-categories-grid">
-    {% for category in data.categories %}
-    <div class="usecases-category-card">
-      <div class="category-card-header">
-        <span class="category-card-icon">{{ category.icon }}</span>
-        <h4 class="category-card-title">{{ category.title | remove: category.icon | strip }}</h4>
-      </div>
-
-      <p class="category-card-description">{{ category.description }}</p>
-
-      <div class="category-examples">
-        {% for item in category.items limit:3 %}
-        <span class="category-example-tag">{{ item.title }}</span>
-        {% endfor %}
-      </div>
-
-      <div class="category-levels">
-        {% assign levels_shown = "" %}
-        {% for item in category.items %}
-          {% unless levels_shown contains item.type %}
-            {% assign level_class = 'beginner' %}
-            {% if item.type == '중급' %}
-              {% assign level_class = 'intermediate' %}
-            {% elsif item.type == '고급' %}
-              {% assign level_class = 'advanced' %}
-            {% elsif item.type == '전문가' %}
-              {% assign level_class = 'expert' %}
-            {% endif %}
-            <span class="level-badge {{ level_class }}">{{ item.type }}</span>
-            {% assign levels_shown = levels_shown | append: item.type | append: "," %}
-          {% endunless %}
-        {% endfor %}
-      </div>
-
-      <a href="{{ usecases_link }}#{{ category.id }}" class="category-more-link">
-        {{ category.items.size }}개 활용법 보기 →
-      </a>
+  <!-- 2열 탭 필터 -->
+  <div class="usecases-filters">
+    <!-- 1행: 카테고리 필터 -->
+    <div class="filter-row" id="categoryFilter">
+      <button class="filter-btn active" data-category="all">{{ all_label }}</button>
+      {% for category in data.categories %}
+      <button class="filter-btn" data-category="{{ category.id }}">{{ category.icon }} {{ category.title | remove: category.icon | strip }}</button>
+      {% endfor %}
     </div>
+
+    <!-- 2행: 난이도 필터 -->
+    <div class="filter-row" id="levelFilter">
+      <button class="filter-btn active" data-level="all">{{ all_label }}</button>
+      {% if lang == 'ko' %}
+      <button class="filter-btn" data-level="beginner">초급</button>
+      <button class="filter-btn" data-level="intermediate">중급</button>
+      <button class="filter-btn" data-level="advanced">고급</button>
+      <button class="filter-btn" data-level="expert">전문가</button>
+      {% elsif lang == 'en' %}
+      <button class="filter-btn" data-level="beginner">Beginner</button>
+      <button class="filter-btn" data-level="intermediate">Intermediate</button>
+      <button class="filter-btn" data-level="advanced">Advanced</button>
+      <button class="filter-btn" data-level="expert">Expert</button>
+      {% elsif lang == 'ja' %}
+      <button class="filter-btn" data-level="beginner">初級</button>
+      <button class="filter-btn" data-level="intermediate">中級</button>
+      <button class="filter-btn" data-level="advanced">上級</button>
+      <button class="filter-btn" data-level="expert">エキスパート</button>
+      {% elsif lang == 'de' %}
+      <button class="filter-btn" data-level="beginner">Anfänger</button>
+      <button class="filter-btn" data-level="intermediate">Mittelstufe</button>
+      <button class="filter-btn" data-level="advanced">Fortgeschritten</button>
+      <button class="filter-btn" data-level="expert">Experte</button>
+      {% elsif lang == 'fr' %}
+      <button class="filter-btn" data-level="beginner">Débutant</button>
+      <button class="filter-btn" data-level="intermediate">Intermédiaire</button>
+      <button class="filter-btn" data-level="advanced">Avancé</button>
+      <button class="filter-btn" data-level="expert">Expert</button>
+      {% elsif lang == 'es' %}
+      <button class="filter-btn" data-level="beginner">Principiante</button>
+      <button class="filter-btn" data-level="intermediate">Intermedio</button>
+      <button class="filter-btn" data-level="advanced">Avanzado</button>
+      <button class="filter-btn" data-level="expert">Experto</button>
+      {% elsif lang == 'pt' %}
+      <button class="filter-btn" data-level="beginner">Iniciante</button>
+      <button class="filter-btn" data-level="intermediate">Intermediário</button>
+      <button class="filter-btn" data-level="advanced">Avançado</button>
+      <button class="filter-btn" data-level="expert">Especialista</button>
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- 카드 그리드 -->
+  <div class="usecases-cards-grid" id="usecasesGrid">
+    {% for category in data.categories %}
+      {% for item in category.items %}
+        {% assign level_class = 'beginner' %}
+        {% assign level_key = 'beginner' %}
+        {% if item.type == '중급' or item.type == 'Intermediate' or item.type == '中級' or item.type == 'Mittelstufe' or item.type == 'Intermédiaire' or item.type == 'Intermedio' or item.type == 'Intermediário' %}
+          {% assign level_class = 'intermediate' %}
+          {% assign level_key = 'intermediate' %}
+        {% elsif item.type == '고급' or item.type == 'Advanced' or item.type == '上級' or item.type == 'Fortgeschritten' or item.type == 'Avancé' or item.type == 'Avanzado' or item.type == 'Avançado' %}
+          {% assign level_class = 'advanced' %}
+          {% assign level_key = 'advanced' %}
+        {% elsif item.type == '전문가' or item.type == 'Expert' or item.type == 'エキスパート' or item.type == 'Experte' or item.type == 'Experto' or item.type == 'Especialista' %}
+          {% assign level_class = 'expert' %}
+          {% assign level_key = 'expert' %}
+        {% endif %}
+        <div class="usecase-item-card" data-category="{{ category.id }}" data-level="{{ level_key }}">
+          <div class="usecase-card-header">
+            <span class="usecase-card-category">{{ category.icon }}</span>
+            <h4 class="usecase-card-title">{{ item.title }}</h4>
+            <span class="level-badge {{ level_class }}">{{ item.type }}</span>
+          </div>
+          {% if item.subtitle %}
+          <p class="usecase-card-subtitle">{{ item.subtitle }}</p>
+          {% endif %}
+        </div>
+      {% endfor %}
     {% endfor %}
+    <div class="no-results" id="noResults" style="display: none;">
+      {% if lang == 'ko' %}해당 조건의 활용방법이 없습니다.{% else %}No results found.{% endif %}
+    </div>
+  </div>
+
+  <!-- 공유 섹션 -->
+  <div class="usecases-share-section">
+    <p>{{ share_title }}</p>
+    <a href="{{ usecases_link }}#user-usecases" class="share-btn">✨ {{ data.page.share_btn | default: '활용방법 공유하기' }}</a>
   </div>
 </div>
+
+<script>
+(function() {
+  let activeCategory = 'all';
+  let activeLevel = 'all';
+
+  function filterCards() {
+    const cards = document.querySelectorAll('.usecase-item-card');
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+      const cardCategory = card.dataset.category;
+      const cardLevel = card.dataset.level;
+
+      const matchCategory = activeCategory === 'all' || cardCategory === activeCategory;
+      const matchLevel = activeLevel === 'all' || cardLevel === activeLevel;
+
+      if (matchCategory && matchLevel) {
+        card.classList.remove('hidden');
+        visibleCount++;
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+
+    const noResults = document.getElementById('noResults');
+    if (noResults) {
+      noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+    }
+  }
+
+  // 카테고리 필터 이벤트
+  document.querySelectorAll('#categoryFilter .filter-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('#categoryFilter .filter-btn').forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      activeCategory = this.dataset.category;
+      filterCards();
+    });
+  });
+
+  // 난이도 필터 이벤트
+  document.querySelectorAll('#levelFilter .filter-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('#levelFilter .filter-btn').forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      activeLevel = this.dataset.level;
+      filterCards();
+    });
+  });
+})();
+</script>

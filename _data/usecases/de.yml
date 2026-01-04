@@ -385,7 +385,7 @@ categories:
             <li>Profil → <strong>Abzeichen prägen</strong> wählen</li>
             <li>Gewünschten Domainnamen eingeben (z.B. myshop, creator_kim)</li>
             <li><strong>Verfügbarkeit prüfen</strong> - erforderlich</li>
-            <li>Abzeichen-Bild wählen (optional)</li>
+            <li>Abzeichen-Bild wählen (erforderlich)</li>
             <li><strong>Prägen</strong> → 1 Badge wird verbraucht</li>
           </ol>
 
@@ -403,7 +403,7 @@ categories:
         title: "Privatsphäre schützen"
         subtitle: "Mit Domainnamen statt E-Mail aktiv sein"
         content: |
-          <p><strong>Überblick</strong>: Wenn Sie ein Abzeichen prägen, wird statt Ihrer echten E-Mail "domainname@goolzy" angezeigt.</p>
+          <p><strong>Überblick</strong>: Wenn Sie ein Abzeichen prägen, wird statt Ihrer echten E-Mail "Domainname" angezeigt.</p>
 
           <p><strong>Vorteile</strong></p>
           <ul>

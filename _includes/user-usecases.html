@@ -1,0 +1,550 @@
+{% comment %}
+  사용자 활용방법 게시판 컴포넌트
+  사용법: {% include user-usecases.html lang="ko" %}
+{% endcomment %}
+
+{% assign lang = include.lang | default: page.lang | default: 'ko' %}
+
+{% comment %} 언어별 라벨 {% endcomment %}
+{% if lang == 'ko' %}
+  {% assign section_title = '사용자들의 활용방법' %}
+  {% assign share_title = '당신의 활용방법도 알려주세요' %}
+  {% assign login_required = '로그인 후 작성할 수 있습니다' %}
+  {% assign login_btn = '로그인하기' %}
+  {% assign materials_label = '필요 재료' %}
+  {% assign materials_placeholder = '예: 종이 2장, 스탬프 1개' %}
+  {% assign content_label = '활용 방법' %}
+  {% assign content_placeholder = '나만의 활용 방법을 자유롭게 작성해주세요...' %}
+  {% assign submit_btn = '등록하기' %}
+  {% assign submitting_btn = '등록 중...' %}
+  {% assign pending_msg = '관리자 승인 후 게시됩니다' %}
+  {% assign success_msg = '등록되었습니다! 관리자 승인 후 게시됩니다.' %}
+  {% assign error_msg = '오류가 발생했습니다. 다시 시도해주세요.' %}
+  {% assign no_posts = '아직 등록된 활용방법이 없습니다' %}
+  {% assign loading = '불러오는 중...' %}
+{% elsif lang == 'en' %}
+  {% assign section_title = 'User Shared Use Cases' %}
+  {% assign share_title = 'Share your use case' %}
+  {% assign login_required = 'Please log in to submit' %}
+  {% assign login_btn = 'Log In' %}
+  {% assign materials_label = 'Materials Needed' %}
+  {% assign materials_placeholder = 'e.g., 2 Papers, 1 Stamp' %}
+  {% assign content_label = 'How to Use' %}
+  {% assign content_placeholder = 'Share your unique use case...' %}
+  {% assign submit_btn = 'Submit' %}
+  {% assign submitting_btn = 'Submitting...' %}
+  {% assign pending_msg = 'Will be posted after admin approval' %}
+  {% assign success_msg = 'Submitted! Will be posted after admin approval.' %}
+  {% assign error_msg = 'Error occurred. Please try again.' %}
+  {% assign no_posts = 'No use cases shared yet' %}
+  {% assign loading = 'Loading...' %}
+{% elsif lang == 'ja' %}
+  {% assign section_title = 'ユーザーの活用法' %}
+  {% assign share_title = 'あなたの活用法も教えてください' %}
+  {% assign login_required = 'ログイン後に投稿できます' %}
+  {% assign login_btn = 'ログイン' %}
+  {% assign materials_label = '必要な材料' %}
+  {% assign materials_placeholder = '例: Paper 2枚、Stamp 1個' %}
+  {% assign content_label = '活用方法' %}
+  {% assign content_placeholder = 'あなたの活用方法を自由に書いてください...' %}
+  {% assign submit_btn = '投稿する' %}
+  {% assign submitting_btn = '投稿中...' %}
+  {% assign pending_msg = '管理者承認後に公開されます' %}
+  {% assign success_msg = '投稿されました！管理者承認後に公開されます。' %}
+  {% assign error_msg = 'エラーが発生しました。もう一度お試しください。' %}
+  {% assign no_posts = 'まだ投稿された活用法がありません' %}
+  {% assign loading = '読み込み中...' %}
+{% else %}
+  {% assign section_title = 'User Shared Use Cases' %}
+  {% assign share_title = 'Share your use case' %}
+  {% assign login_required = 'Please log in to submit' %}
+  {% assign login_btn = 'Log In' %}
+  {% assign materials_label = 'Materials Needed' %}
+  {% assign materials_placeholder = 'e.g., 2 Papers, 1 Stamp' %}
+  {% assign content_label = 'How to Use' %}
+  {% assign content_placeholder = 'Share your unique use case...' %}
+  {% assign submit_btn = 'Submit' %}
+  {% assign submitting_btn = 'Submitting...' %}
+  {% assign pending_msg = 'Will be posted after admin approval' %}
+  {% assign success_msg = 'Submitted! Will be posted after admin approval.' %}
+  {% assign error_msg = 'Error occurred. Please try again.' %}
+  {% assign no_posts = 'No use cases shared yet' %}
+  {% assign loading = 'Loading...' %}
+{% endif %}
+
+<style>
+/* 사용자 활용방법 섹션 */
+.user-usecases-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.user-usecases-section h2 {
+  color: #a855f7;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+/* 게시글 목록 */
+.user-usecases-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.user-usecase-card {
+  background: rgba(10, 6, 20, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  border-radius: 12px;
+  padding: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.user-usecase-card:hover {
+  border-color: rgba(168, 85, 247, 0.4);
+}
+
+.usecase-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.usecase-author {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.85rem;
+}
+
+.usecase-materials {
+  background: rgba(168, 85, 247, 0.15);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 16px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.usecase-content {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+  white-space: pre-wrap;
+  margin-bottom: 0.75rem;
+}
+
+.usecase-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.like-btn {
+  background: transparent;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: rgba(255, 255, 255, 0.6);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.like-btn:hover {
+  border-color: rgba(239, 68, 68, 0.5);
+  color: white;
+}
+
+.like-btn.liked {
+  background: rgba(239, 68, 68, 0.2);
+  border-color: #ef4444;
+  color: #ef4444;
+}
+
+.like-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* 입력 폼 섹션 */
+.user-usecases-form-section {
+  background: rgba(168, 85, 247, 0.1);
+  border: 1px dashed rgba(168, 85, 247, 0.3);
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+.form-title {
+  color: #a855f7;
+  font-size: 1.1rem;
+  margin: 0 0 1rem 0;
+  text-align: center;
+}
+
+/* 로그인 필요 상태 */
+.login-required-msg {
+  text-align: center;
+  padding: 1rem;
+}
+
+.login-required-msg p {
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 0 1rem 0;
+}
+
+.login-required-msg .login-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #a855f7 0%, #6366f1 100%);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.login-required-msg .login-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);
+}
+
+/* 입력 폼 */
+.usecase-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  background: rgba(10, 6, 20, 0.6);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 8px;
+  padding: 0.75rem;
+  color: white;
+  font-size: 0.95rem;
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #a855f7;
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.form-submit-btn {
+  background: linear-gradient(135deg, #a855f7 0%, #6366f1 100%);
+  border: none;
+  color: white;
+  padding: 0.85rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.form-submit-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);
+}
+
+.form-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-note {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+/* 메시지 */
+.form-message {
+  padding: 0.75rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.form-message.success {
+  background: rgba(34, 197, 94, 0.2);
+  border: 1px solid rgba(34, 197, 94, 0.4);
+  color: #22c55e;
+}
+
+.form-message.error {
+  background: rgba(239, 68, 68, 0.2);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  color: #ef4444;
+}
+
+/* 로딩/빈 상태 */
+.loading-state,
+.empty-state {
+  text-align: center;
+  padding: 2rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  .user-usecases-form-section {
+    padding: 1rem;
+  }
+}
+</style>
+
+<div class="user-usecases-section" id="user-usecases">
+  <h2>{{ section_title }}</h2>
+
+  <!-- 게시글 목록 -->
+  <div class="user-usecases-list" id="usecasesList">
+    <div class="loading-state" id="usecasesLoading">{{ loading }}</div>
+    <div class="empty-state" id="usecasesEmpty" style="display: none;">{{ no_posts }}</div>
+  </div>
+
+  <!-- 입력 폼 섹션 -->
+  <div class="user-usecases-form-section" id="usecasesFormSection">
+    <h3 class="form-title">{{ share_title }}</h3>
+
+    <!-- 로그인 안 된 상태 -->
+    <div class="login-required-msg" id="loginRequired">
+      <p>{{ login_required }}</p>
+      <a href="/join/" class="login-btn">{{ login_btn }}</a>
+    </div>
+
+    <!-- 로그인 된 상태: 입력 폼 -->
+    <form class="usecase-form" id="usecaseForm" style="display: none;">
+      <div class="form-group">
+        <label for="usecaseMaterials">{{ materials_label }}</label>
+        <input type="text" id="usecaseMaterials" placeholder="{{ materials_placeholder }}" required>
+      </div>
+      <div class="form-group">
+        <label for="usecaseContent">{{ content_label }}</label>
+        <textarea id="usecaseContent" placeholder="{{ content_placeholder }}" required></textarea>
+      </div>
+      <button type="submit" class="form-submit-btn" id="submitBtn">{{ submit_btn }}</button>
+      <p class="form-note">{{ pending_msg }}</p>
+      <div class="form-message" id="formMessage" style="display: none;"></div>
+    </form>
+  </div>
+</div>
+
+<script>
+(function() {
+  var labels = {
+    submit_btn: '{{ submit_btn }}',
+    submitting_btn: '{{ submitting_btn }}',
+    success_msg: '{{ success_msg }}',
+    error_msg: '{{ error_msg }}',
+    no_posts: '{{ no_posts }}'
+  };
+
+  // DOM 요소
+  var listEl = document.getElementById('usecasesList');
+  var loadingEl = document.getElementById('usecasesLoading');
+  var emptyEl = document.getElementById('usecasesEmpty');
+  var loginRequiredEl = document.getElementById('loginRequired');
+  var formEl = document.getElementById('usecaseForm');
+  var submitBtn = document.getElementById('submitBtn');
+  var messageEl = document.getElementById('formMessage');
+  var materialsInput = document.getElementById('usecaseMaterials');
+  var contentInput = document.getElementById('usecaseContent');
+
+  var currentUser = null;
+
+  // Firebase 준비 대기
+  function waitForFirebase() {
+    if (window.FirestoreBridge && window.AuthBridge) {
+      init();
+    } else {
+      window.addEventListener('firestore:bridge-ready', init);
+      // 2초 후에도 없으면 Firebase 없이 표시
+      setTimeout(function() {
+        if (!window.FirestoreBridge) {
+          loadingEl.style.display = 'none';
+          emptyEl.style.display = 'block';
+        }
+      }, 2000);
+    }
+  }
+
+  function init() {
+    // 인증 상태 감지
+    AuthBridge.onChange(function(user) {
+      currentUser = user;
+      if (user) {
+        loginRequiredEl.style.display = 'none';
+        formEl.style.display = 'flex';
+      } else {
+        loginRequiredEl.style.display = 'block';
+        formEl.style.display = 'none';
+      }
+    });
+
+    // 게시글 목록 로드
+    loadPosts();
+
+    // 폼 제출
+    formEl.addEventListener('submit', handleSubmit);
+  }
+
+  function loadPosts() {
+    if (!window.FirestoreBridge) return;
+
+    FirestoreBridge.userUsecases.getApproved(20).then(function(posts) {
+      loadingEl.style.display = 'none';
+
+      if (posts.length === 0) {
+        emptyEl.style.display = 'block';
+        return;
+      }
+
+      posts.forEach(function(post) {
+        var card = createPostCard(post);
+        listEl.appendChild(card);
+      });
+    }).catch(function(err) {
+      console.error('Failed to load posts:', err);
+      loadingEl.style.display = 'none';
+      emptyEl.textContent = labels.error_msg;
+      emptyEl.style.display = 'block';
+    });
+  }
+
+  function createPostCard(post) {
+    var card = document.createElement('div');
+    card.className = 'user-usecase-card';
+    card.dataset.id = post.id;
+
+    var isLiked = currentUser && (post.likedBy || []).indexOf(currentUser.uid) !== -1;
+
+    card.innerHTML =
+      '<div class="usecase-card-meta">' +
+        '<span class="usecase-author">' + escapeHtml(post.authorEmail) + '</span>' +
+        '<span class="usecase-materials">' + escapeHtml(post.materials) + '</span>' +
+      '</div>' +
+      '<div class="usecase-content">' + escapeHtml(post.content) + '</div>' +
+      '<div class="usecase-footer">' +
+        '<button class="like-btn' + (isLiked ? ' liked' : '') + '" data-id="' + post.id + '"' + (!currentUser ? ' disabled' : '') + '>' +
+          '<span class="like-icon">' + (isLiked ? '❤️' : '🤍') + '</span>' +
+          '<span class="like-count">' + (post.likes || 0) + '</span>' +
+        '</button>' +
+      '</div>';
+
+    // 좋아요 버튼 이벤트
+    var likeBtn = card.querySelector('.like-btn');
+    likeBtn.addEventListener('click', function() {
+      handleLike(post.id, likeBtn);
+    });
+
+    return card;
+  }
+
+  function handleLike(docId, btn) {
+    if (!currentUser || btn.disabled) return;
+
+    btn.disabled = true;
+    FirestoreBridge.userUsecases.toggleLike(docId).then(function(isLiked) {
+      var countEl = btn.querySelector('.like-count');
+      var iconEl = btn.querySelector('.like-icon');
+      var currentCount = parseInt(countEl.textContent) || 0;
+
+      if (isLiked) {
+        btn.classList.add('liked');
+        iconEl.textContent = '❤️';
+        countEl.textContent = currentCount + 1;
+      } else {
+        btn.classList.remove('liked');
+        iconEl.textContent = '🤍';
+        countEl.textContent = Math.max(0, currentCount - 1);
+      }
+      btn.disabled = false;
+    }).catch(function(err) {
+      console.error('Like error:', err);
+      btn.disabled = false;
+    });
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    if (!currentUser) return;
+
+    var materials = materialsInput.value.trim();
+    var content = contentInput.value.trim();
+
+    if (!materials || !content) return;
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = labels.submitting_btn;
+    messageEl.style.display = 'none';
+
+    FirestoreBridge.userUsecases.create({
+      materials: materials,
+      content: content
+    }).then(function() {
+      materialsInput.value = '';
+      contentInput.value = '';
+      messageEl.className = 'form-message success';
+      messageEl.textContent = labels.success_msg;
+      messageEl.style.display = 'block';
+      submitBtn.disabled = false;
+      submitBtn.textContent = labels.submit_btn;
+    }).catch(function(err) {
+      console.error('Submit error:', err);
+      messageEl.className = 'form-message error';
+      messageEl.textContent = labels.error_msg;
+      messageEl.style.display = 'block';
+      submitBtn.disabled = false;
+      submitBtn.textContent = labels.submit_btn;
+    });
+  }
+
+  function escapeHtml(str) {
+    if (!str) return '';
+    var div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+  }
+
+  // 시작
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', waitForFirebase);
+  } else {
+    waitForFirebase();
+  }
+})();
+</script>

@@ -2,6 +2,7 @@
   <!-- Firebase SDKs -->
   <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-app-check-compat.js"></script>
   <!-- Firebase Config JSON (rendered by Jekyll) -->
   <script id="firebase-config" type="application/json">{{ site.firebase | jsonify }}</script>
@@ -266,6 +267,77 @@
         }
       };
   try { window.dispatchEvent(new CustomEvent('auth:bridge-ready')); } catch(_e){}
+
+      // Firestore Bridge for user-generated content
+      var db = firebase.firestore();
+      window.FirestoreBridge = {
+        // 사용자 활용방법 게시판
+        userUsecases: {
+          // 승인된 게시글 목록 조회
+          getApproved: function(limitCount) {
+            limitCount = limitCount || 50;
+            return db.collection('userUsecases')
+              .where('status', '==', 'approved')
+              .orderBy('approvedAt', 'desc')
+              .limit(limitCount)
+              .get()
+              .then(function(snapshot) {
+                return snapshot.docs.map(function(doc) {
+                  return Object.assign({ id: doc.id }, doc.data());
+                });
+              });
+          },
+          // 게시글 작성 (pending 상태로)
+          create: function(data) {
+            var user = auth.currentUser;
+            if (!user) return Promise.reject(new Error('로그인이 필요합니다'));
+            var email = user.email || '';
+            var maskedEmail = email.replace(/(.{2}).*(@.*)/, '$1****$2');
+            return db.collection('userUsecases').add({
+              author: user.uid,
+              authorEmail: maskedEmail,
+              materials: data.materials || '',
+              content: data.content || '',
+              likes: 0,
+              likedBy: [],
+              status: 'pending',
+              createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+              approvedAt: null
+            });
+          },
+          // 좋아요 토글
+          toggleLike: function(docId) {
+            var user = auth.currentUser;
+            if (!user) return Promise.reject(new Error('로그인이 필요합니다'));
+            var docRef = db.collection('userUsecases').doc(docId);
+            return db.runTransaction(function(transaction) {
+              return transaction.get(docRef).then(function(doc) {
+                if (!doc.exists) throw new Error('게시글을 찾을 수 없습니다');
+                var data = doc.data();
+                var likedBy = data.likedBy || [];
+                var idx = likedBy.indexOf(user.uid);
+                if (idx === -1) {
+                  likedBy.push(user.uid);
+                } else {
+                  likedBy.splice(idx, 1);
+                }
+                transaction.update(docRef, {
+                  likedBy: likedBy,
+                  likes: likedBy.length
+                });
+                return idx === -1; // true if liked, false if unliked
+              });
+            });
+          },
+          // 내가 좋아요 했는지 확인
+          isLikedByMe: function(docData) {
+            var user = auth.currentUser;
+            if (!user) return false;
+            return (docData.likedBy || []).indexOf(user.uid) !== -1;
+          }
+        }
+      };
+      try { window.dispatchEvent(new CustomEvent('firestore:bridge-ready')); } catch(_e){}
       // Handle email action codes present in URL (e.g., verifyEmail) to prevent generic errors on normal pages
       try {
         var qs2 = (location && location.search) ? new URLSearchParams(location.search) : null;

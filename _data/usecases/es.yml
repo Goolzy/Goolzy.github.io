@@ -385,7 +385,7 @@ categories:
             <li>Perfil → Selecciona <strong>Grabar Insignia</strong></li>
             <li>Ingresa el nombre de dominio deseado (ej: myshop, creator_kim)</li>
             <li><strong>Verificar disponibilidad</strong> obligatorio</li>
-            <li>Selecciona imagen de insignia (opcional)</li>
+            <li>Selecciona imagen de insignia (obligatorio)</li>
             <li><strong>Grabar</strong> → Consume 1 Insignia</li>
           </ol>
 
@@ -403,7 +403,7 @@ categories:
         title: "Proteger la privacidad"
         subtitle: "Actua con nombre de dominio en lugar de email"
         content: |
-          <p><strong>Resumen</strong>: Al grabar una insignia, se muestra como "nombredominio@goolzy" en lugar de tu email real.</p>
+          <p><strong>Resumen</strong>: Al grabar una insignia, se muestra como "nombredominio" en lugar de tu email real.</p>
 
           <p><strong>Ventajas</strong></p>
           <ul>

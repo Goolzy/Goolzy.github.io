@@ -14,3 +14,5 @@ translations:
 ---
 
 {% include usecases-accordion.html lang="pt" %}
+
+{% include user-usecases.html lang="pt" %}

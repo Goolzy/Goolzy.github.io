@@ -385,7 +385,7 @@ categories:
             <li>Perfil → Selecione <strong>Gravar Badge</strong></li>
             <li>Digite o nome de domínio desejado (ex: minhaloja, criador_silva)</li>
             <li><strong>Verificação de duplicidade</strong> obrigatória</li>
-            <li>Selecione imagem do Badge (opcional)</li>
+            <li>Selecione imagem do Badge (obrigatório)</li>
             <li><strong>Gravar</strong> → Consome 1 Badge</li>
           </ol>
 
@@ -403,7 +403,7 @@ categories:
         title: "Proteger privacidade"
         subtitle: "Atue com nome de domínio em vez de e-mail"
         content: |
-          <p><strong>Visão geral</strong>: Ao gravar um Badge, seu e-mail real é exibido no formato "nomedodominio@goolzy".</p>
+          <p><strong>Visão geral</strong>: Ao gravar um Badge, seu e-mail real é substituído por "nomedodominio".</p>
 
           <p><strong>Vantagens</strong></p>
           <ul>
