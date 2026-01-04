@@ -132,13 +132,61 @@ body::before {
   }
 }
 
-.launch-date {
-  font-size: 1.2rem;
-  color: var(--teal-bright);
-  font-weight: 600;
+/* Advantage Cards */
+.advantage-cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 2.5rem;
   opacity: 0;
   animation: fadeIn 0.8s ease 1s forwards;
+}
+
+.advantage-card {
+  flex: 1;
+  min-width: 160px;
+  max-width: 200px;
+  padding: 1.25rem 1rem;
+  background: rgba(21, 10, 40, 0.6);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 16px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.advantage-card:hover {
+  border-color: var(--teal-bright);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(20, 184, 166, 0.2);
+}
+
+.advantage-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.advantage-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--teal-bright);
+  margin-bottom: 0.5rem;
+}
+
+.advantage-card p {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  line-height: 1.4;
+}
+
+/* Release Date under platform icons */
+.release-date {
+  font-size: 0.7rem;
+  color: var(--teal-bright);
+  font-weight: 500;
+  opacity: 0.8;
+  margin-top: 0.25rem;
 }
 
 @keyframes fadeIn {
@@ -666,6 +714,27 @@ a.platform-icon {
     height: 120px;
   }
 
+  .advantage-cards {
+    gap: 0.75rem;
+  }
+
+  .advantage-card {
+    min-width: 140px;
+    padding: 1rem 0.75rem;
+  }
+
+  .advantage-icon {
+    font-size: 1.5rem;
+  }
+
+  .advantage-card h3 {
+    font-size: 0.9rem;
+  }
+
+  .advantage-card p {
+    font-size: 0.75rem;
+  }
+
   .platforms {
     gap: 1rem;
   }
@@ -678,6 +747,10 @@ a.platform-icon {
   .platform-icon svg {
     width: 28px;
     height: 28px;
+  }
+
+  .release-date {
+    font-size: 0.6rem;
   }
 
   .message {
