@@ -1,5 +1,5 @@
 {% comment %}
-  활용방법 페이지용 Accordion 스타일 컴포넌트 (개편 버전)
+  활용방법 페이지용 탭 패널 컴포넌트
   사용법: {% include usecases-accordion.html lang="ko" %}
 {% endcomment %}
 
@@ -8,134 +8,158 @@
 {% assign manual_base = data.page.manual_base %}
 
 <style>
-/* 필터 영역 */
-.filter-section {
-  margin-bottom: 2rem;
+/* 메인 컨테이너 */
+.guide-panel {
+  background: rgba(10, 6, 20, 0.7);
+  border: 1px solid rgba(168, 85, 247, 0.25);
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 2rem 0;
 }
 
-.filter-row {
+/* 탭 헤더 영역 */
+.guide-tabs {
+  display: flex;
+  background: rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.guide-tab {
+  flex: 1;
+  padding: 1rem 0.5rem;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  position: relative;
+}
+
+.guide-tab:hover {
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.guide-tab.active {
+  color: #fff;
+  background: rgba(168, 85, 247, 0.15);
+}
+
+.guide-tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #a855f7, #2dd4bf);
+}
+
+.guide-tab[data-category="paper-usage"].active {
+  background: rgba(59, 130, 246, 0.15);
+}
+.guide-tab[data-category="paper-usage"].active::after {
+  background: #3b82f6;
+}
+
+.guide-tab[data-category="stamp-usage"].active {
+  background: rgba(168, 85, 247, 0.15);
+}
+.guide-tab[data-category="stamp-usage"].active::after {
+  background: #a855f7;
+}
+
+.guide-tab[data-category="badge-usage"].active {
+  background: rgba(20, 184, 166, 0.15);
+}
+.guide-tab[data-category="badge-usage"].active::after {
+  background: #14b8a6;
+}
+
+.tab-icon {
+  font-size: 1.5rem;
+}
+
+.tab-label {
+  font-size: 0.8rem;
+}
+
+/* 서브 필터 (난이도) */
+.guide-subfilter {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 0.75rem;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(168, 85, 247, 0.1);
   flex-wrap: wrap;
 }
 
-.filter-label {
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: var(--text-dim);
-  min-width: 60px;
+.subfilter-label {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.4);
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  margin-right: 0.5rem;
 }
 
-/* 세그먼트 컨트롤 */
-.segment-control {
-  display: inline-flex;
-  background: rgba(0, 0, 0, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 8px;
-  padding: 3px;
-  gap: 2px;
-}
-
-.segment-btn {
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 6px;
+.level-btn {
+  padding: 0.35rem 0.75rem;
   background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
   color: rgba(255, 255, 255, 0.5);
-  cursor: pointer;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 500;
+  cursor: pointer;
   transition: all 0.15s ease;
-  white-space: nowrap;
 }
 
-.segment-btn:hover {
+.level-btn:hover {
+  border-color: rgba(255, 255, 255, 0.3);
   color: rgba(255, 255, 255, 0.8);
-  background: rgba(255, 255, 255, 0.05);
 }
 
-.segment-btn.active {
+.level-btn.active {
+  background: rgba(168, 85, 247, 0.3);
+  border-color: rgba(168, 85, 247, 0.5);
   color: #fff;
-  background: linear-gradient(135deg, rgba(168, 85, 247, 0.6), rgba(139, 92, 246, 0.6));
-  box-shadow: 0 2px 8px rgba(168, 85, 247, 0.25);
 }
 
-/* 카테고리별 활성 색상 */
-.segment-btn[data-category="paper-usage"].active {
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.7), rgba(37, 99, 235, 0.7));
-  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+.level-btn[data-level="beginner"].active {
+  background: rgba(34, 197, 94, 0.3);
+  border-color: rgba(34, 197, 94, 0.5);
 }
 
-.segment-btn[data-category="stamp-usage"].active {
-  background: linear-gradient(135deg, rgba(168, 85, 247, 0.7), rgba(139, 92, 246, 0.7));
-  box-shadow: 0 2px 8px rgba(168, 85, 247, 0.3);
+.level-btn[data-level="intermediate"].active {
+  background: rgba(59, 130, 246, 0.3);
+  border-color: rgba(59, 130, 246, 0.5);
 }
 
-.segment-btn[data-category="badge-usage"].active {
-  background: linear-gradient(135deg, rgba(20, 184, 166, 0.7), rgba(13, 148, 136, 0.7));
-  box-shadow: 0 2px 8px rgba(20, 184, 166, 0.3);
+.level-btn[data-level="advanced"].active {
+  background: rgba(168, 85, 247, 0.3);
+  border-color: rgba(168, 85, 247, 0.5);
 }
 
-/* 난이도별 활성 색상 */
-.segment-btn[data-level="beginner"].active {
-  background: linear-gradient(135deg, rgba(34, 197, 94, 0.7), rgba(22, 163, 74, 0.7));
-  box-shadow: 0 2px 8px rgba(34, 197, 94, 0.3);
+.level-btn[data-level="expert"].active {
+  background: rgba(239, 68, 68, 0.3);
+  border-color: rgba(239, 68, 68, 0.5);
 }
 
-.segment-btn[data-level="intermediate"].active {
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.7), rgba(37, 99, 235, 0.7));
-  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+/* 콘텐츠 영역 */
+.guide-content {
+  padding: 1.5rem;
+  min-height: 300px;
 }
 
-.segment-btn[data-level="advanced"].active {
-  background: linear-gradient(135deg, rgba(168, 85, 247, 0.7), rgba(139, 92, 246, 0.7));
-  box-shadow: 0 2px 8px rgba(168, 85, 247, 0.3);
-}
-
-.segment-btn[data-level="expert"].active {
-  background: linear-gradient(135deg, rgba(239, 68, 68, 0.7), rgba(220, 38, 38, 0.7));
-  box-shadow: 0 2px 8px rgba(239, 68, 68, 0.3);
-}
-
-/* 모바일 대응 */
-@media (max-width: 600px) {
-  .filter-row {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-
-  .filter-label {
-    min-width: auto;
-  }
-
-  .segment-control {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .segment-btn {
-    padding: 0.45rem 0.7rem;
-    font-size: 0.75rem;
-    flex: 1;
-    text-align: center;
-  }
-}
-
-/* 필터링된 카드 숨김 */
-.usecase-card.hidden {
-  display: none;
-}
-
-.usecase-section.hidden {
-  display: none;
-}
-
-/* 결과 없음 메시지 */
+/* 결과 없음 */
 .no-results {
   text-align: center;
   padding: 3rem 2rem;
@@ -149,90 +173,88 @@
 
 /* 카테고리 섹션 */
 .usecase-section {
-  margin: 3rem 0;
+  display: none;
+}
+
+.usecase-section.active {
+  display: block;
 }
 
 .section-header {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(168, 85, 247, 0.15);
 }
 
 .section-icon {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .section-info h2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 0;
-  background: linear-gradient(135deg, #a855f7, #2dd4bf);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #fff;
 }
 
 .section-info p {
-  margin: 0.25rem 0 0 0;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 0.9rem;
+  margin: 0.15rem 0 0 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.8rem;
 }
 
-/* 카드 그리드 */
-.usecase-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.25rem;
+/* 카드 리스트 */
+.usecase-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 /* 카드 스타일 */
 .usecase-card {
-  background: rgba(10, 6, 20, 0.5);
-  border: 1px solid rgba(168, 85, 247, 0.2);
-  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .usecase-card:hover {
-  border-color: rgba(168, 85, 247, 0.4);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(168, 85, 247, 0.2);
+  border-color: rgba(168, 85, 247, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.usecase-card.hidden {
+  display: none;
 }
 
 .usecase-card summary {
-  padding: 1.25rem;
+  padding: 1rem 1.25rem;
   cursor: pointer;
   list-style: none;
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .usecase-card summary::-webkit-details-marker {
   display: none;
 }
 
-.usecase-card summary::after {
-  content: '{{ data.page.expand }}';
-  font-size: 0.75rem;
-  color: var(--purple-bright);
-  opacity: 0.7;
-  margin-top: 0.5rem;
-}
-
-.usecase-card[open] summary::after {
-  content: '{{ data.page.collapse }}';
+.usecase-card[open] {
+  border-color: rgba(168, 85, 247, 0.4);
 }
 
 /* 난이도 뱃지 */
 .card-level {
   display: inline-block;
-  font-size: 0.7rem;
-  padding: 0.2rem 0.6rem;
-  border-radius: 20px;
-  width: fit-content;
+  font-size: 0.65rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
   font-weight: 600;
+  flex-shrink: 0;
 }
 
 .card-level.beginner {
@@ -255,31 +277,48 @@
   color: #ef4444;
 }
 
-/* 카드 제목/부제목 */
+/* 카드 정보 */
+.card-info {
+  flex: 1;
+  min-width: 0;
+}
+
 .card-title {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--text);
-  line-height: 1.4;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
 }
 
 .card-subtitle {
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   color: var(--teal-bright);
-  opacity: 0.9;
+  margin-top: 0.15rem;
+}
+
+/* 확장 아이콘 */
+.card-toggle {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 0.8rem;
+  transition: transform 0.2s ease;
+}
+
+.usecase-card[open] .card-toggle {
+  transform: rotate(180deg);
 }
 
 /* 카드 콘텐츠 */
 .card-content {
   padding: 0 1.25rem 1.25rem;
-  border-top: 1px solid rgba(168, 85, 247, 0.1);
-  margin-top: 0.5rem;
-  line-height: 1.8;
-  color: rgba(255, 255, 255, 0.85);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  margin-top: 0;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
 }
 
 .card-content p {
-  margin: 1rem 0;
+  margin: 0.75rem 0;
 }
 
 .card-content strong {
@@ -295,16 +334,15 @@
   text-decoration: underline;
 }
 
-/* 리스트 스타일 */
 .card-content ol,
 .card-content ul {
-  margin: 0.75rem 0;
-  padding-left: 1.5rem;
+  margin: 0.5rem 0;
+  padding-left: 1.25rem;
 }
 
 .card-content ol li,
 .card-content ul li {
-  margin: 0.5rem 0;
+  margin: 0.35rem 0;
 }
 
 .card-content ol {
@@ -316,21 +354,21 @@
 .card-content ol li {
   counter-increment: step-counter;
   position: relative;
-  padding-left: 2rem;
+  padding-left: 1.75rem;
 }
 
 .card-content ol li::before {
   content: counter(step-counter);
   position: absolute;
   left: 0;
-  width: 1.5rem;
-  height: 1.5rem;
-  background: rgba(168, 85, 247, 0.3);
+  width: 1.25rem;
+  height: 1.25rem;
+  background: rgba(168, 85, 247, 0.25);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 700;
   color: var(--purple-bright);
 }
@@ -338,156 +376,196 @@
 /* 공유 섹션 */
 .share-section {
   text-align: center;
-  padding: 3rem 2rem;
-  margin-top: 4rem;
-  background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(20, 184, 166, 0.1));
-  border-radius: 20px;
-  border: 1px solid rgba(168, 85, 247, 0.2);
+  padding: 2rem 1.5rem;
+  background: rgba(168, 85, 247, 0.05);
+  border-top: 1px solid rgba(168, 85, 247, 0.15);
 }
 
 .share-section h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  background: linear-gradient(135deg, var(--purple-bright), var(--teal-bright));
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
 }
 
 .share-section p {
-  color: var(--text-dim);
-  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
 }
 
 .share-btn {
   display: inline-block;
-  padding: 0.85rem 2rem;
+  padding: 0.6rem 1.5rem;
   background: rgba(168, 85, 247, 0.2);
   border: 1px solid rgba(168, 85, 247, 0.4);
-  border-radius: 12px;
-  color: var(--text);
+  border-radius: 8px;
+  color: #fff;
   text-decoration: none;
+  font-size: 0.85rem;
   font-weight: 600;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .share-btn:hover {
   background: rgba(168, 85, 247, 0.3);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.3);
+  transform: translateY(-1px);
 }
 
-@media (max-width: 768px) {
-  .usecase-grid {
-    grid-template-columns: 1fr;
+/* 모바일 대응 */
+@media (max-width: 600px) {
+  .guide-tab {
+    padding: 0.75rem 0.25rem;
   }
 
-  .section-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
+  .tab-icon {
+    font-size: 1.2rem;
+  }
+
+  .tab-label {
+    font-size: 0.7rem;
+  }
+
+  .guide-subfilter {
+    padding: 0.6rem 0.75rem;
+    gap: 0.35rem;
+  }
+
+  .level-btn {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.7rem;
+  }
+
+  .guide-content {
+    padding: 1rem;
+  }
+
+  .usecase-card summary {
+    padding: 0.85rem 1rem;
+    flex-wrap: wrap;
+  }
+
+  .card-level {
+    order: -1;
+    margin-bottom: 0.25rem;
+  }
+
+  .card-info {
+    width: 100%;
   }
 }
 </style>
 
 <h1>{{ data.page.title }}</h1>
-
 <p>{{ data.page.intro }}</p>
 
-<!-- 필터 영역 -->
-<div class="filter-section">
-  <div class="filter-row">
-    <span class="filter-label">{% if lang == 'ko' %}유형{% elsif lang == 'ja' %}種類{% elsif lang == 'de' %}Typ{% elsif lang == 'fr' %}Type{% elsif lang == 'es' %}Tipo{% elsif lang == 'pt' %}Tipo{% else %}Type{% endif %}</span>
-    <div class="segment-control" id="category-filter">
-      <button class="segment-btn active" data-category="all">{% if lang == 'ko' %}전체{% elsif lang == 'ja' %}すべて{% elsif lang == 'de' %}Alle{% elsif lang == 'fr' %}Tout{% elsif lang == 'es' %}Todo{% elsif lang == 'pt' %}Tudo{% else %}All{% endif %}</button>
-      {% for category in data.categories %}
-      <button class="segment-btn" data-category="{{ category.id }}">{{ category.title }}</button>
-      {% endfor %}
-    </div>
-  </div>
-  <div class="filter-row">
-    <span class="filter-label">{% if lang == 'ko' %}난이도{% elsif lang == 'ja' %}難易度{% elsif lang == 'de' %}Level{% elsif lang == 'fr' %}Niveau{% elsif lang == 'es' %}Nivel{% elsif lang == 'pt' %}Nível{% else %}Level{% endif %}</span>
-    <div class="segment-control" id="level-filter">
-      <button class="segment-btn active" data-level="all">{% if lang == 'ko' %}전체{% elsif lang == 'ja' %}すべて{% elsif lang == 'de' %}Alle{% elsif lang == 'fr' %}Tout{% elsif lang == 'es' %}Todo{% elsif lang == 'pt' %}Tudo{% else %}All{% endif %}</button>
-      <button class="segment-btn" data-level="beginner">{{ data.page.levels.beginner }}</button>
-      <button class="segment-btn" data-level="intermediate">{{ data.page.levels.intermediate }}</button>
-      <button class="segment-btn" data-level="advanced">{{ data.page.levels.advanced }}</button>
-      <button class="segment-btn" data-level="expert">{{ data.page.levels.expert }}</button>
-    </div>
-  </div>
-</div>
-
-<div class="no-results" id="no-results">
-  {% if lang == 'ko' %}선택한 조건에 맞는 활용방법이 없습니다.{% elsif lang == 'ja' %}選択した条件に一致する使用方法がありません。{% elsif lang == 'de' %}Keine Verwendungsmethoden gefunden.{% elsif lang == 'fr' %}Aucune méthode trouvée.{% elsif lang == 'es' %}No se encontraron métodos.{% elsif lang == 'pt' %}Nenhum método encontrado.{% else %}No use cases match your selection.{% endif %}
-</div>
-
-<hr>
-
-{% for category in data.categories %}
-<div class="usecase-section" id="{{ category.id }}">
-  <div class="section-header">
-    <span class="section-icon">{{ category.icon }}</span>
-    <div class="section-info">
-      <h2>{{ category.title }}</h2>
-      <p>{{ category.description }}</p>
-    </div>
+<div class="guide-panel">
+  <!-- 메인 탭 -->
+  <div class="guide-tabs" id="category-tabs">
+    <button class="guide-tab active" data-category="all">
+      <span class="tab-icon">📚</span>
+      <span class="tab-label">{% if lang == 'ko' %}전체{% elsif lang == 'ja' %}すべて{% elsif lang == 'de' %}Alle{% elsif lang == 'fr' %}Tout{% elsif lang == 'es' %}Todo{% elsif lang == 'pt' %}Tudo{% else %}All{% endif %}</span>
+    </button>
+    {% for category in data.categories %}
+    <button class="guide-tab" data-category="{{ category.id }}">
+      <span class="tab-icon">{{ category.icon }}</span>
+      <span class="tab-label">{{ category.title }}</span>
+    </button>
+    {% endfor %}
   </div>
 
-  <div class="usecase-grid">
-  {% for item in category.items %}
-    {% assign level_class = 'beginner' %}
-    {% if item.type == data.page.levels.intermediate or item.type == '중급' %}
-      {% assign level_class = 'intermediate' %}
-    {% elsif item.type == data.page.levels.advanced or item.type == '고급' %}
-      {% assign level_class = 'advanced' %}
-    {% elsif item.type == data.page.levels.expert or item.type == '전문가' %}
-      {% assign level_class = 'expert' %}
-    {% endif %}
+  <!-- 난이도 필터 -->
+  <div class="guide-subfilter" id="level-filter">
+    <span class="subfilter-label">{% if lang == 'ko' %}난이도{% elsif lang == 'ja' %}難易度{% elsif lang == 'de' %}Level{% elsif lang == 'fr' %}Niveau{% elsif lang == 'es' %}Nivel{% elsif lang == 'pt' %}Nível{% else %}Level{% endif %}</span>
+    <button class="level-btn active" data-level="all">{% if lang == 'ko' %}전체{% elsif lang == 'ja' %}すべて{% elsif lang == 'de' %}Alle{% elsif lang == 'fr' %}Tout{% elsif lang == 'es' %}Todo{% elsif lang == 'pt' %}Tudo{% else %}All{% endif %}</button>
+    <button class="level-btn" data-level="beginner">{{ data.page.levels.beginner }}</button>
+    <button class="level-btn" data-level="intermediate">{{ data.page.levels.intermediate }}</button>
+    <button class="level-btn" data-level="advanced">{{ data.page.levels.advanced }}</button>
+    <button class="level-btn" data-level="expert">{{ data.page.levels.expert }}</button>
+  </div>
 
-    <details class="usecase-card" data-category="{{ category.id }}" data-level="{{ level_class }}">
-      <summary>
-        <span class="card-level {{ level_class }}">{{ item.type }}</span>
-        <span class="card-title">{{ item.title }}</span>
-        {% if item.subtitle %}
-        <span class="card-subtitle">{{ item.subtitle }}</span>
-        {% elsif item.persona %}
-        <span class="card-subtitle">{{ item.persona }}</span>
-        {% endif %}
-      </summary>
-      <div class="card-content">
-        {{ item.content }}
+  <!-- 콘텐츠 영역 -->
+  <div class="guide-content">
+    <div class="no-results" id="no-results">
+      {% if lang == 'ko' %}선택한 조건에 맞는 활용방법이 없습니다.{% elsif lang == 'ja' %}選択した条件に一致する使用方法がありません。{% elsif lang == 'de' %}Keine Verwendungsmethoden gefunden.{% elsif lang == 'fr' %}Aucune méthode trouvée.{% elsif lang == 'es' %}No se encontraron métodos.{% elsif lang == 'pt' %}Nenhum método encontrado.{% else %}No use cases match your selection.{% endif %}
+    </div>
+
+    {% for category in data.categories %}
+    <div class="usecase-section" id="{{ category.id }}" data-category="{{ category.id }}">
+      <div class="section-header">
+        <span class="section-icon">{{ category.icon }}</span>
+        <div class="section-info">
+          <h2>{{ category.title }}</h2>
+          <p>{{ category.description }}</p>
+        </div>
       </div>
-    </details>
-  {% endfor %}
+
+      <div class="usecase-list">
+      {% for item in category.items %}
+        {% assign level_class = 'beginner' %}
+        {% if item.type == data.page.levels.intermediate or item.type == '중급' %}
+          {% assign level_class = 'intermediate' %}
+        {% elsif item.type == data.page.levels.advanced or item.type == '고급' %}
+          {% assign level_class = 'advanced' %}
+        {% elsif item.type == data.page.levels.expert or item.type == '전문가' %}
+          {% assign level_class = 'expert' %}
+        {% endif %}
+
+        <details class="usecase-card" data-category="{{ category.id }}" data-level="{{ level_class }}">
+          <summary>
+            <span class="card-level {{ level_class }}">{{ item.type }}</span>
+            <div class="card-info">
+              <div class="card-title">{{ item.title }}</div>
+              {% if item.subtitle %}
+              <div class="card-subtitle">{{ item.subtitle }}</div>
+              {% elsif item.persona %}
+              <div class="card-subtitle">{{ item.persona }}</div>
+              {% endif %}
+            </div>
+            <span class="card-toggle">▼</span>
+          </summary>
+          <div class="card-content">
+            {{ item.content }}
+          </div>
+        </details>
+      {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
   </div>
-</div>
-{% endfor %}
 
-<hr>
-
-<div class="share-section">
-  <h3>{{ data.page.share_title }}</h3>
-  <p>{{ data.page.share_text }}</p>
-  <a href="{{ data.page.share_link }}" class="share-btn">{{ data.page.share_btn }}</a>
+  <!-- 공유 섹션 -->
+  <div class="share-section">
+    <h3>{{ data.page.share_title }}</h3>
+    <p>{{ data.page.share_text }}</p>
+    <a href="{{ data.page.share_link }}" class="share-btn">{{ data.page.share_btn }}</a>
+  </div>
 </div>
 
 <script>
 (function() {
-  // 필터 상태
   let activeCategory = 'all';
   let activeLevel = 'all';
 
-  // 세그먼트 버튼들
-  const categoryBtns = document.querySelectorAll('#category-filter .segment-btn');
-  const levelBtns = document.querySelectorAll('#level-filter .segment-btn');
-  const cards = document.querySelectorAll('.usecase-card');
+  const categoryTabs = document.querySelectorAll('#category-tabs .guide-tab');
+  const levelBtns = document.querySelectorAll('#level-filter .level-btn');
   const sections = document.querySelectorAll('.usecase-section');
+  const cards = document.querySelectorAll('.usecase-card');
   const noResults = document.getElementById('no-results');
 
-  // 필터 적용 함수
   function applyFilters() {
     let visibleCount = 0;
 
+    // 섹션 표시/숨김
+    sections.forEach(section => {
+      const sectionCategory = section.dataset.category;
+      if (activeCategory === 'all' || sectionCategory === activeCategory) {
+        section.classList.add('active');
+      } else {
+        section.classList.remove('active');
+      }
+    });
+
+    // 카드 필터링
     cards.forEach(card => {
       const cardCategory = card.dataset.category;
       const cardLevel = card.dataset.level;
@@ -503,21 +581,17 @@
       }
     });
 
-    // 섹션 표시/숨김 처리
+    // 빈 섹션 숨김
     sections.forEach(section => {
-      const sectionId = section.id;
-      const visibleCardsInSection = section.querySelectorAll('.usecase-card:not(.hidden)').length;
-
-      if (activeCategory !== 'all' && sectionId !== activeCategory) {
-        section.classList.add('hidden');
-      } else if (visibleCardsInSection === 0) {
-        section.classList.add('hidden');
-      } else {
-        section.classList.remove('hidden');
+      if (section.classList.contains('active')) {
+        const visibleCards = section.querySelectorAll('.usecase-card:not(.hidden)').length;
+        if (visibleCards === 0) {
+          section.classList.remove('active');
+        }
       }
     });
 
-    // 결과 없음 메시지
+    // 결과 없음
     if (visibleCount === 0) {
       noResults.classList.add('show');
     } else {
@@ -525,17 +599,17 @@
     }
   }
 
-  // 카테고리 필터 클릭 이벤트
-  categoryBtns.forEach(btn => {
-    btn.addEventListener('click', function() {
-      categoryBtns.forEach(b => b.classList.remove('active'));
+  // 카테고리 탭 클릭
+  categoryTabs.forEach(tab => {
+    tab.addEventListener('click', function() {
+      categoryTabs.forEach(t => t.classList.remove('active'));
       this.classList.add('active');
       activeCategory = this.dataset.category;
       applyFilters();
     });
   });
 
-  // 난이도 필터 클릭 이벤트
+  // 난이도 버튼 클릭
   levelBtns.forEach(btn => {
     btn.addEventListener('click', function() {
       levelBtns.forEach(b => b.classList.remove('active'));
@@ -544,5 +618,8 @@
       applyFilters();
     });
   });
+
+  // 초기 상태
+  applyFilters();
 })();
 </script>
