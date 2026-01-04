@@ -10,100 +10,118 @@
 <style>
 /* 탭 메뉴 컨테이너 */
 .tab-container {
+  background: rgba(10, 6, 20, 0.6);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  border-radius: 16px;
+  padding: 1.25rem;
   margin-bottom: 2.5rem;
+}
+
+.tab-group {
+  margin-bottom: 1rem;
+}
+
+.tab-group:last-child {
+  margin-bottom: 0;
+}
+
+.tab-group-label {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 .tab-row {
   display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
   justify-content: center;
-  margin-bottom: 0.75rem;
-  border-bottom: 1px solid rgba(168, 85, 247, 0.2);
-}
-
-.tab-row:last-child {
-  margin-bottom: 0;
-}
-
-.tab-label {
-  font-size: 0.75rem;
-  color: var(--text-dim);
-  padding: 0.5rem 0;
-  margin-right: 1rem;
-  white-space: nowrap;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  padding: 0.5rem;
 }
 
 /* 탭 버튼 스타일 */
 .tab-btn {
   position: relative;
-  padding: 0.75rem 1.25rem;
+  padding: 0.6rem 1.2rem;
   border: none;
+  border-radius: 8px;
   background: transparent;
   color: var(--text-dim);
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
-  transition: all 0.3s ease;
-  border-bottom: 2px solid transparent;
-  margin-bottom: -1px;
+  transition: all 0.2s ease;
 }
 
 .tab-btn:hover {
   color: var(--text);
+  background: rgba(168, 85, 247, 0.1);
 }
 
 .tab-btn.active {
   color: var(--text);
-  border-bottom-color: var(--purple-bright);
+  background: rgba(168, 85, 247, 0.25);
+  box-shadow: 0 2px 8px rgba(168, 85, 247, 0.3);
 }
 
 /* 카테고리별 활성 색상 */
 .tab-btn[data-category="paper-usage"].active {
-  color: #3b82f6;
-  border-bottom-color: #3b82f6;
+  background: rgba(59, 130, 246, 0.25);
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+  color: #60a5fa;
 }
 
 .tab-btn[data-category="stamp-usage"].active {
-  color: #a855f7;
-  border-bottom-color: #a855f7;
+  background: rgba(168, 85, 247, 0.25);
+  box-shadow: 0 2px 8px rgba(168, 85, 247, 0.3);
+  color: #c084fc;
 }
 
 .tab-btn[data-category="badge-usage"].active {
-  color: #14b8a6;
-  border-bottom-color: #14b8a6;
+  background: rgba(20, 184, 166, 0.25);
+  box-shadow: 0 2px 8px rgba(20, 184, 166, 0.3);
+  color: #2dd4bf;
 }
 
 /* 난이도별 활성 색상 */
 .tab-btn[data-level="beginner"].active {
-  color: #22c55e;
-  border-bottom-color: #22c55e;
+  background: rgba(34, 197, 94, 0.25);
+  box-shadow: 0 2px 8px rgba(34, 197, 94, 0.3);
+  color: #4ade80;
 }
 
 .tab-btn[data-level="intermediate"].active {
-  color: #3b82f6;
-  border-bottom-color: #3b82f6;
+  background: rgba(59, 130, 246, 0.25);
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+  color: #60a5fa;
 }
 
 .tab-btn[data-level="advanced"].active {
-  color: #a855f7;
-  border-bottom-color: #a855f7;
+  background: rgba(168, 85, 247, 0.25);
+  box-shadow: 0 2px 8px rgba(168, 85, 247, 0.3);
+  color: #c084fc;
 }
 
 .tab-btn[data-level="expert"].active {
-  color: #ef4444;
-  border-bottom-color: #ef4444;
+  background: rgba(239, 68, 68, 0.25);
+  box-shadow: 0 2px 8px rgba(239, 68, 68, 0.3);
+  color: #f87171;
 }
 
 /* 모바일 대응 */
 @media (max-width: 600px) {
-  .tab-row {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0;
+  .tab-container {
+    padding: 1rem;
   }
 
   .tab-btn {
-    padding: 0.6rem 0.8rem;
-    font-size: 0.8rem;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.75rem;
   }
 }
 
@@ -378,24 +396,34 @@
 <!-- 2열 탭 메뉴 -->
 <div class="tab-container">
   <!-- 1열: 카테고리 탭 -->
-  <div class="tab-row" id="category-filter">
-    <button class="tab-btn active" data-category="all">
-      {% if lang == 'ko' %}전체{% elsif lang == 'ja' %}すべて{% elsif lang == 'de' %}Alle{% elsif lang == 'fr' %}Tout{% elsif lang == 'es' %}Todo{% elsif lang == 'pt' %}Tudo{% else %}All{% endif %}
-    </button>
-    {% for category in data.categories %}
-    <button class="tab-btn" data-category="{{ category.id }}">{{ category.title }}</button>
-    {% endfor %}
+  <div class="tab-group">
+    <div class="tab-group-label">
+      {% if lang == 'ko' %}카테고리{% elsif lang == 'ja' %}カテゴリ{% elsif lang == 'de' %}Kategorie{% elsif lang == 'fr' %}Catégorie{% elsif lang == 'es' %}Categoría{% elsif lang == 'pt' %}Categoria{% else %}Category{% endif %}
+    </div>
+    <div class="tab-row" id="category-filter">
+      <button class="tab-btn active" data-category="all">
+        {% if lang == 'ko' %}전체{% elsif lang == 'ja' %}すべて{% elsif lang == 'de' %}Alle{% elsif lang == 'fr' %}Tout{% elsif lang == 'es' %}Todo{% elsif lang == 'pt' %}Tudo{% else %}All{% endif %}
+      </button>
+      {% for category in data.categories %}
+      <button class="tab-btn" data-category="{{ category.id }}">{{ category.title }}</button>
+      {% endfor %}
+    </div>
   </div>
 
   <!-- 2열: 난이도 탭 -->
-  <div class="tab-row" id="level-filter">
-    <button class="tab-btn active" data-level="all">
-      {% if lang == 'ko' %}전체{% elsif lang == 'ja' %}すべて{% elsif lang == 'de' %}Alle{% elsif lang == 'fr' %}Tout{% elsif lang == 'es' %}Todo{% elsif lang == 'pt' %}Tudo{% else %}All{% endif %}
-    </button>
-    <button class="tab-btn" data-level="beginner">{{ data.page.levels.beginner }}</button>
-    <button class="tab-btn" data-level="intermediate">{{ data.page.levels.intermediate }}</button>
-    <button class="tab-btn" data-level="advanced">{{ data.page.levels.advanced }}</button>
-    <button class="tab-btn" data-level="expert">{{ data.page.levels.expert }}</button>
+  <div class="tab-group">
+    <div class="tab-group-label">
+      {% if lang == 'ko' %}난이도{% elsif lang == 'ja' %}難易度{% elsif lang == 'de' %}Schwierigkeit{% elsif lang == 'fr' %}Difficulté{% elsif lang == 'es' %}Dificultad{% elsif lang == 'pt' %}Dificuldade{% else %}Difficulty{% endif %}
+    </div>
+    <div class="tab-row" id="level-filter">
+      <button class="tab-btn active" data-level="all">
+        {% if lang == 'ko' %}전체{% elsif lang == 'ja' %}すべて{% elsif lang == 'de' %}Alle{% elsif lang == 'fr' %}Tout{% elsif lang == 'es' %}Todo{% elsif lang == 'pt' %}Tudo{% else %}All{% endif %}
+      </button>
+      <button class="tab-btn" data-level="beginner">{{ data.page.levels.beginner }}</button>
+      <button class="tab-btn" data-level="intermediate">{{ data.page.levels.intermediate }}</button>
+      <button class="tab-btn" data-level="advanced">{{ data.page.levels.advanced }}</button>
+      <button class="tab-btn" data-level="expert">{{ data.page.levels.expert }}</button>
+    </div>
   </div>
 </div>
 
