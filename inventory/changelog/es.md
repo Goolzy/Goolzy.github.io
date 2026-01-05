@@ -50,6 +50,9 @@ Cuando los resultados de búsqueda de plantillas compartidas superan los 20, pue
 #### Configuración de idiomas en App Store
 - **Idiomas soportados en iOS/macOS**: Chino (zh) añadido a CFBundleLocalizations
 
+#### Mejora de Selección de Fechas
+- **Rango de selección expandido**: Selecciona fechas desde 1900 en el UI de selección de fechas (anteriormente 2000)
+
 </div>
 </details>
 

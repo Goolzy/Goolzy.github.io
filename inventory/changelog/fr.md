@@ -50,6 +50,9 @@ Lorsqu'il y a plus de 20 résultats de recherche de modèles partagés, vous pou
 #### Paramètres de langue App Store
 - **Langues prises en charge iOS/macOS** : Chinois (zh) ajouté à CFBundleLocalizations
 
+#### Amélioration de la sélection des dates
+- **Plage de sélection étendue** : Possibilité de sélectionner les dates à partir de 1900 dans l'interface de sélection de date (anciennement 2000)
+
 </div>
 </details>
 

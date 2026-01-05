@@ -50,6 +50,9 @@ Inventory 앱의 업데이트 내역을 확인하세요.
 #### App Store 언어 설정
 - **iOS/macOS 지원 언어 추가**: CFBundleLocalizations에 중국어(zh) 추가
 
+#### 날짜 선택 개선
+- **선택 범위 확대**: 날짜 선택 UI에서 1900년부터 선택 가능 (기존 2000년)
+
 </div>
 </details>
 

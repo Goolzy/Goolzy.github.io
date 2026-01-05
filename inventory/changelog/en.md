@@ -38,10 +38,10 @@ Check out the update history for the Inventory app.
 <div class="version-content" markdown="1">
 
 #### Shared Template Search Infinite Scroll
-When there are more than 20 shared template search results, you can scroll to load more.
-- **Infinite Scroll**: Automatically loads the next 20 results when reaching the bottom
-- **Loading Indicator**: Progress indicator shown at the bottom while loading more
-- **Backward Compatibility**: Previous app versions still display 20 results as before
+When there are 20 or more shared template search results, you can scroll to load more.
+- **Infinite Scroll**: Automatically loads the next 20 results when reaching the bottom of search results
+- **Loading Indicator**: Progress indicator displayed at the bottom while loading additional results
+- **Backward Compatibility**: Previous app versions display 20 results as before
 
 #### Homepage Updates
 - **Chinese (Simplified) Support**: Added 中文(简体) localization to homepage (8th language)
@@ -49,6 +49,9 @@ When there are more than 20 shared template search results, you can scroll to lo
 
 #### App Store Language Settings
 - **iOS/macOS Supported Languages**: Added Chinese (zh) to CFBundleLocalizations
+
+#### Date Selection Improvement
+- **Expanded Selection Range**: Date selection UI now allows selection from 1900 onwards (previously 2000)
 
 </div>
 </details>

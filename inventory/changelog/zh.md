@@ -30,7 +30,7 @@ translations:
 <details class="changelog-version" open>
 <summary>
   <span class="version-title">v1.2.1 <small>2026-01-04</small></span>
-  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
   </button>
@@ -38,10 +38,10 @@ translations:
 <div class="version-content" markdown="1">
 
 #### 共享模板搜索无限滚动
-当共享模板搜索结果超过20个时，可以滚动加载更多。
-- **无限滚动**：滚动到底部时自动加载下一组20个结果
-- **加载指示器**：加载更多时底部显示进度指示器
-- **向后兼容**：之前版本的应用仍然显示20个结果
+当共享模板搜索结果超过20个时，可以滚动加载更多结果。
+- **无限滚动**：滚动到搜索结果底部时自动加载下一组20个
+- **加载指示器**：加载更多内容时在底部显示进度指示器
+- **向后兼容**：之前版本的应用仍然正常显示20个结果
 
 #### 网站更新
 - **中文(简体)支持**：网站新增中文(简体)本地化（第8种语言）
@@ -50,13 +50,16 @@ translations:
 #### App Store 语言设置
 - **iOS/macOS 支持语言**：CFBundleLocalizations 新增中文(zh)
 
+#### 日期选择改进
+- **选择范围扩大**：日期选择UI现在支持从1900年开始选择（之前为2000年）
+
 </div>
 </details>
 
 <details class="changelog-version">
 <summary>
   <span class="version-title">v1.2.0 <small>2026-01-03</small></span>
-  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
   </button>
@@ -132,7 +135,7 @@ translations:
 <details class="changelog-version">
 <summary>
   <span class="version-title">v1.1.3 <small>2026-01-03</small></span>
-  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
   </button>
@@ -152,7 +155,7 @@ translations:
 <details class="changelog-version">
 <summary>
   <span class="version-title">v1.1.2 <small>2025-12-31</small></span>
-  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
   </button>
@@ -217,7 +220,7 @@ translations:
 <details class="changelog-version">
 <summary>
   <span class="version-title">v1.1.0 <small>2025-12-29</small></span>
-  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
   </button>
@@ -257,7 +260,7 @@ translations:
 <details class="changelog-version">
 <summary>
   <span class="version-title">v1.0.4 <small>2025-12-25</small></span>
-  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
   </button>
@@ -300,7 +303,7 @@ translations:
 <details class="changelog-version">
 <summary>
   <span class="version-title">v1.0.3 <small>2025-12-23</small></span>
-  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
   </button>
@@ -342,7 +345,7 @@ translations:
 <details class="changelog-version">
 <summary>
   <span class="version-title">v1.0.2 <small>2025-12-22</small></span>
-  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
   </button>
@@ -391,7 +394,7 @@ translations:
 <details class="changelog-version">
 <summary>
   <span class="version-title">v1.0.1 <small>2025-12-16</small></span>
-  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
   </button>
@@ -431,7 +434,7 @@ translations:
 <details class="changelog-version">
 <summary>
   <span class="version-title">v1.0.0 <small>2025-12-13</small></span>
-  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
   </button>

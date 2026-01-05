@@ -50,6 +50,9 @@ Wenn die Suchergebnisse für geteilte Vorlagen mehr als 20 Einträge umfassen, k
 #### App Store Spracheinstellungen
 - **iOS/macOS unterstützte Sprachen**: Chinesisch (zh) zu CFBundleLocalizations hinzugefügt
 
+#### Datumsauswahl verbessert
+- **Auswahlbereich erweitert**: Datumsauswahl-UI ermöglicht nun die Auswahl ab 1900 (vorher 2000)
+
 </div>
 </details>
 

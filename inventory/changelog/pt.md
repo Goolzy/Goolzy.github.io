@@ -50,6 +50,9 @@ Quando os resultados da busca de modelos compartilhados excedem 20, você pode r
 #### Configurações de idioma da App Store
 - **Idiomas suportados no iOS/macOS**: Chinês (zh) adicionado ao CFBundleLocalizations
 
+#### Melhoria na Seleção de Datas
+- **Intervalo de seleção expandido**: Seleção de datas agora disponível a partir de 1900 (anteriormente 2000)
+
 </div>
 </details>
 
