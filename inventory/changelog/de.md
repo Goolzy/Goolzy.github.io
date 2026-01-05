@@ -71,6 +71,13 @@ Der Sperrzustand von Elementen, die zu einem Clip gehören, wird synchronisiert.
 - **Massensperre/-entsperrung**: Beim Sperren des Clip-Repräsentantenelements werden auch alle untergeordneten Elemente gesperrt
 - **Passwort-Synchronisierung**: Alle Elemente im Clip verwenden dasselbe Sperrpasswort
 
+#### Rich-Text-Editor-Verbesserungen
+Die Anwendung von Textstilen beim Verfassen von Stempel-Vorlagen wurde intuitiver gestaltet.
+- **6 grundlegende Stile**: Fett, Unterstrichen, Durchgestrichen, Primärfarbe, Sekundärfarbe, Box
+- **Verschachtelte Stile**: Mehrere Stile können nacheinander angewendet werden (z. B. Fett + Unterstrichen)
+- **Saubere Bearbeitung**: Markierungen sind nicht sichtbar, nur Stile werden angezeigt
+- **Dynamische Symbolleiste**: Symbolleiste positioniert sich automatisch unter dem ausgewählten Bereich
+
 </div>
 </details>
 

@@ -71,6 +71,13 @@ L'état de verrouillage des éléments appartenant à un clip est synchronisé.
 - **Verrouillage/déverrouillage en masse** : Le verrouillage de l'élément représentatif du clip entraîne le verrouillage de tous les éléments enfants
 - **Synchronisation du mot de passe** : Tous les éléments du clip utilisent le même mot de passe de verrouillage
 
+#### Amélioration de l'éditeur de texte riche
+La manipulation des styles de texte lors de la création de modèles de tampon a été améliorée pour être plus intuitive.
+- **6 styles de base** : Gras, souligné, barré, couleur principale, couleur secondaire, boîte
+- **Styles imbriqués** : Possibilité d'appliquer plusieurs styles séquentiellement (ex: gras + souligné)
+- **Édition claire** : Les marqueurs ne sont pas visibles et seuls les styles sont affichés
+- **Barre d'outils dynamique** : La barre d'outils se positionne automatiquement sous la zone sélectionnée
+
 </div>
 </details>
 

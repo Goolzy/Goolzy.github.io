@@ -77,6 +77,13 @@ Fixed a bug where locking a clip didn't lock internal items.
 - **Clip Detail Lock**: Added lock verification when opening clip detail screen
 - **Unclip Password UI**: Updated unclip password dialog to new neumorphic design
 
+#### Rich Text Editor Improvements
+Text styling in stamp template creation is now more intuitive.
+- **6 Basic Styles**: Bold, Underline, Strikethrough, Primary Color, Secondary Color, Box
+- **Nested Styling**: Apply multiple styles sequentially (e.g., Bold + Underline)
+- **Clean Editing**: Markers are hidden and only styles are displayed
+- **Dynamic Toolbar**: Toolbar automatically positioned below selected text
+
 </div>
 </details>
 

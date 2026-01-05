@@ -71,6 +71,13 @@ El estado de bloqueo de los elementos que pertenecen a un clip se sincroniza.
 - **Bloqueo/Desbloqueo masivo**: Cuando se bloquea el elemento representativo del clip, todos los elementos secundarios se bloquean también
 - **Sincronización de contraseña**: Todos los elementos dentro del clip utilizan la misma contraseña de bloqueo
 
+#### Mejora del Editor de Texto Enriquecido
+La aplicación de estilos de texto se ha mejorado para ser más intuitiva al crear plantillas de sellos.
+- **6 estilos básicos**: Negrita, subrayado, tachado, color principal, color secundario y caja
+- **Estilos anidados**: Aplicar varios estilos secuencialmente es posible (p. ej.: negrita+subrayado)
+- **Edición limpia**: Los marcadores no son visibles y solo se muestra el estilo
+- **Barra de herramientas dinámica**: La barra de herramientas se posiciona automáticamente debajo del área seleccionada
+
 </div>
 </details>
 

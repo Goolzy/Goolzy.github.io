@@ -71,6 +71,13 @@ Os estados de bloqueio dos itens em um clip são sincronizados automaticamente.
 - **Bloqueio/Desbloqueio em lote**: Quando o item representativo do clip é bloqueado, todos os itens filhos são bloqueados também
 - **Sincronização de senha**: Todos os itens no clip usam a mesma senha de bloqueio
 
+#### Melhoria do Editor de Texto Enriquecido
+Ao criar modelos de carimbo, a aplicação de estilos de texto tornou-se mais intuitiva.
+- **6 estilos básicos**: Negrito, sublinhado, tachado, cor primária, cor secundária, caixa
+- **Estilos aninhados**: Aplique vários estilos sequencialmente (por exemplo: negrito + sublinhado)
+- **Edição limpa**: Apenas o estilo é exibido, sem marcadores visíveis
+- **Barra de ferramentas dinâmica**: A barra de ferramentas se posiciona automaticamente abaixo da área selecionada
+
 </div>
 </details>
 
