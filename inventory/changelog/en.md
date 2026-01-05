@@ -53,6 +53,12 @@ When there are 20 or more shared template search results, you can scroll to load
 #### Date Selection Improvement
 - **Expanded Selection Range**: Date selection UI now allows selection from 1900 onwards (previously 2000)
 
+#### Clip Lock Synchronization
+Fixed a bug where locking a clip didn't lock internal items.
+- **Unified Lock/Unlock**: Locking or unlocking any item in a clip now applies to all items in the clip
+- **Clip Detail Lock**: Added lock verification when opening clip detail screen
+- **Unclip Password UI**: Updated unclip password dialog to new neumorphic design
+
 </div>
 </details>
 

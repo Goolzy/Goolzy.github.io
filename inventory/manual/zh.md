@@ -12,6 +12,15 @@ translations:
   es: /inventory/manual/es/
   pt: /inventory/manual/pt/
   zh: /inventory/manual/zh/
+  ar: /inventory/manual/ar/
+  hi: /inventory/manual/hi/
+  id: /inventory/manual/id/
+  ru: /inventory/manual/ru/
+  it: /inventory/manual/it/
+  tr: /inventory/manual/tr/
+  vi: /inventory/manual/vi/
+  th: /inventory/manual/th/
+  pl: /inventory/manual/pl/
 ---
 
 ## 📖 用户手册

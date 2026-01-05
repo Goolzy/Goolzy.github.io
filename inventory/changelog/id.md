@@ -53,6 +53,12 @@ Ketika ada lebih dari 20 hasil pencarian template bersama, Anda dapat scroll unt
 #### Peningkatan Pemilihan Tanggal
 - **Memperluas Jangkauan Pemilihan**: Sekarang dapat memilih dari tahun 1900 di UI pemilihan tanggal (sebelumnya tahun 2000)
 
+#### Sinkronisasi Kunci Clip
+Memperbaiki bug di mana mengunci clip tidak mengunci item internal.
+- **Kunci/Buka Kunci Terpadu**: Mengunci atau membuka kunci item apa pun dalam clip berlaku untuk semua item dalam clip
+- **Kunci Detail Clip**: Menambahkan verifikasi kunci saat membuka layar detail clip
+- **UI Kata Sandi Lepas Clip**: Dialog kata sandi lepas clip diperbarui ke desain neumorphic baru
+
 </div>
 </details>
 
