@@ -12,6 +12,15 @@ translations:
   es: /inventory/changelog/es/
   pt: /inventory/changelog/pt/
   zh: /inventory/changelog/zh/
+  ar: /inventory/changelog/ar/
+  hi: /inventory/changelog/hi/
+  id: /inventory/changelog/id/
+  ru: /inventory/changelog/ru/
+  it: /inventory/changelog/it/
+  tr: /inventory/changelog/tr/
+  vi: /inventory/changelog/vi/
+  th: /inventory/changelog/th/
+  pl: /inventory/changelog/pl/
 ---
 
 ## Änderungsprotokoll
@@ -37,6 +46,9 @@ Wenn die Suchergebnisse für geteilte Vorlagen mehr als 20 Einträge umfassen, k
 #### Homepage-Updates
 - **Chinesisch (vereinfacht) Unterstützung**: 中文(简体) Lokalisierung zur Homepage hinzugefügt (8. Sprache)
 - **Unterstützte Sprachen anzeigen**: 8 Sprachflaggensymbole unter den Plattform-Download-Symbolen
+
+#### App Store Spracheinstellungen
+- **iOS/macOS unterstützte Sprachen**: Chinesisch (zh) zu CFBundleLocalizations hinzugefügt
 
 </div>
 </details>

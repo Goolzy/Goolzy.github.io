@@ -12,6 +12,15 @@ translations:
   es: /inventory/changelog/es/
   pt: /inventory/changelog/pt/
   zh: /inventory/changelog/zh/
+  ar: /inventory/changelog/ar/
+  hi: /inventory/changelog/hi/
+  id: /inventory/changelog/id/
+  ru: /inventory/changelog/ru/
+  it: /inventory/changelog/it/
+  tr: /inventory/changelog/tr/
+  vi: /inventory/changelog/vi/
+  th: /inventory/changelog/th/
+  pl: /inventory/changelog/pl/
 ---
 
 ## 更新日志
@@ -37,6 +46,9 @@ translations:
 #### 网站更新
 - **中文(简体)支持**：网站新增中文(简体)本地化（第8种语言）
 - **支持语言展示**：平台下载图标下方显示8种语言的国旗图标
+
+#### App Store 语言设置
+- **iOS/macOS 支持语言**：CFBundleLocalizations 新增中文(zh)
 
 </div>
 </details>

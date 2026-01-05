@@ -12,6 +12,15 @@ translations:
   es: /inventory/changelog/es/
   pt: /inventory/changelog/pt/
   zh: /inventory/changelog/zh/
+  ar: /inventory/changelog/ar/
+  hi: /inventory/changelog/hi/
+  id: /inventory/changelog/id/
+  ru: /inventory/changelog/ru/
+  it: /inventory/changelog/it/
+  tr: /inventory/changelog/tr/
+  vi: /inventory/changelog/vi/
+  th: /inventory/changelog/th/
+  pl: /inventory/changelog/pl/
 ---
 
 ## Registro de alterações
@@ -37,6 +46,9 @@ Quando os resultados da busca de modelos compartilhados excedem 20, você pode r
 #### Atualizações do site
 - **Suporte ao chinês (simplificado)**: Localização 中文(简体) adicionada ao site (8º idioma)
 - **Exibição de idiomas suportados**: Ícones de bandeiras de 8 idiomas exibidos abaixo dos ícones de download das plataformas
+
+#### Configurações de idioma da App Store
+- **Idiomas suportados no iOS/macOS**: Chinês (zh) adicionado ao CFBundleLocalizations
 
 </div>
 </details>

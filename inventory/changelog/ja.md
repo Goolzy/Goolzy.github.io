@@ -12,6 +12,15 @@ translations:
   es: /inventory/changelog/es/
   pt: /inventory/changelog/pt/
   zh: /inventory/changelog/zh/
+  ar: /inventory/changelog/ar/
+  hi: /inventory/changelog/hi/
+  id: /inventory/changelog/id/
+  ru: /inventory/changelog/ru/
+  it: /inventory/changelog/it/
+  tr: /inventory/changelog/tr/
+  vi: /inventory/changelog/vi/
+  th: /inventory/changelog/th/
+  pl: /inventory/changelog/pl/
 ---
 
 ## 更新履歴
@@ -37,6 +46,9 @@ Inventoryアプリのアップデート履歴をご確認ください。
 #### ホームページ更新
 - **中国語(簡体)対応**: ホームページに中文(简体)ローカライズを追加（8番目の言語）
 - **対応言語表示**: プラットフォームダウンロードアイコンの下に8言語の国旗アイコンを表示
+
+#### App Store言語設定
+- **iOS/macOS対応言語追加**: CFBundleLocalizationsに中国語(zh)を追加
 
 </div>
 </details>

@@ -12,6 +12,15 @@ translations:
   es: /inventory/changelog/es/
   pt: /inventory/changelog/pt/
   zh: /inventory/changelog/zh/
+  ar: /inventory/changelog/ar/
+  hi: /inventory/changelog/hi/
+  id: /inventory/changelog/id/
+  ru: /inventory/changelog/ru/
+  it: /inventory/changelog/it/
+  tr: /inventory/changelog/tr/
+  vi: /inventory/changelog/vi/
+  th: /inventory/changelog/th/
+  pl: /inventory/changelog/pl/
 ---
 
 ## 버전 로그
@@ -37,6 +46,9 @@ Inventory 앱의 업데이트 내역을 확인하세요.
 #### 홈페이지 업데이트
 - **중국어(간체) 지원**: 홈페이지에 中文(简体) 로컬라이징 추가 (8번째 언어)
 - **지원 언어 표시**: 플랫폼 다운로드 아이콘 아래 8개 언어 국기 표시
+
+#### App Store 언어 설정
+- **iOS/macOS 지원 언어 추가**: CFBundleLocalizations에 중국어(zh) 추가
 
 </div>
 </details>

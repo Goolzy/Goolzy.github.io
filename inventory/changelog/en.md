@@ -12,6 +12,15 @@ translations:
   es: /inventory/changelog/es/
   pt: /inventory/changelog/pt/
   zh: /inventory/changelog/zh/
+  ar: /inventory/changelog/ar/
+  hi: /inventory/changelog/hi/
+  id: /inventory/changelog/id/
+  ru: /inventory/changelog/ru/
+  it: /inventory/changelog/it/
+  tr: /inventory/changelog/tr/
+  vi: /inventory/changelog/vi/
+  th: /inventory/changelog/th/
+  pl: /inventory/changelog/pl/
 ---
 
 ## Changelog
@@ -37,6 +46,9 @@ When there are more than 20 shared template search results, you can scroll to lo
 #### Homepage Updates
 - **Chinese (Simplified) Support**: Added 中文(简体) localization to homepage (8th language)
 - **Supported Languages Display**: 8 language flag icons displayed below platform download icons
+
+#### App Store Language Settings
+- **iOS/macOS Supported Languages**: Added Chinese (zh) to CFBundleLocalizations
 
 </div>
 </details>
