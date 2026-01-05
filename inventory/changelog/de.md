@@ -59,6 +59,18 @@ Wenn die Suchergebnisse für geteilte Vorlagen mehr als 20 Einträge umfassen, k
 #### Datumsauswahl verbessert
 - **Auswahlbereich erweitert**: Datumsauswahl-UI ermöglicht nun die Auswahl ab 1900 (vorher 2000)
 
+#### Dokumentfreigabe-Funktion
+Kopieren oder versenden Sie Inhalte aus der Dokumentdetailansicht in die Zwischenablage oder per E-Mail.
+- **In Zwischenablage kopieren**: Kopieren als reiner Text mit entfernten Rich-Text-Markern
+- **Per E-Mail versenden**: Versand in HTML-Format mit angewendeter Formatierung
+- **Optionale Auswahl**: Titel, Inhalt, Schlüsselwörter, Konversation und Systemprotokoll einzeln auswählen
+- **Clip-Modus-Unterstützung**: Gleiche Funktionalität in der Clip-Detailansicht
+
+#### Clip-Sperrungssynchronisierung
+Der Sperrzustand von Elementen, die zu einem Clip gehören, wird synchronisiert.
+- **Massensperre/-entsperrung**: Beim Sperren des Clip-Repräsentantenelements werden auch alle untergeordneten Elemente gesperrt
+- **Passwort-Synchronisierung**: Alle Elemente im Clip verwenden dasselbe Sperrpasswort
+
 </div>
 </details>
 

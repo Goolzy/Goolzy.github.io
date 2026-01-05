@@ -59,6 +59,18 @@ Cuando los resultados de búsqueda de plantillas compartidas superan los 20, pue
 #### Mejora de Selección de Fechas
 - **Rango de selección expandido**: Selecciona fechas desde 1900 en el UI de selección de fechas (anteriormente 2000)
 
+#### Función de Compartir Documento
+Puedes copiar el contenido al portapapeles o enviarlo por correo electrónico desde la pantalla de detalles del documento.
+- **Copiar al portapapeles**: Copia como texto plano puro sin marcadores de texto enriquecido
+- **Enviar por correo electrónico**: Envía por correo electrónico en formato HTML con formato aplicado
+- **Inclusión selectiva**: Selecciona solo los elementos que deseas entre título, contenido, palabras clave, conversación y registro del sistema
+- **Soporte de modo clip**: Disponible también en la vista de detalles del clip
+
+#### Sincronización de Bloqueo de Clip
+El estado de bloqueo de los elementos que pertenecen a un clip se sincroniza.
+- **Bloqueo/Desbloqueo masivo**: Cuando se bloquea el elemento representativo del clip, todos los elementos secundarios se bloquean también
+- **Sincronización de contraseña**: Todos los elementos dentro del clip utilizan la misma contraseña de bloqueo
+
 </div>
 </details>
 

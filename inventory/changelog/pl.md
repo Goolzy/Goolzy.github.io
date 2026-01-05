@@ -59,6 +59,18 @@ Gdy wyników wyszukiwania szablonów udostępnionych jest więcej niż 20, może
 #### Ulepszenie wyboru daty
 - **Rozszerzony zakres wyboru**: Wybieranie dat od 1900 roku w interfejsie wyboru daty (wcześniej od 2000 roku)
 
+#### Funkcja udostępniania dokumentów
+Na ekranie szczegółów dokumentu możesz skopiować zawartość do schowka lub wysłać je pocztą elektroniczną.
+- **Kopiowanie do schowka**: Kopiowanie jako czysty tekst z usunięciem bogatych znaczników tekstowych
+- **Wysyłanie e-mailem**: Wysłanie w sformatowanym formacie HTML z zastosowaniem formatowania
+- **Selektywne włączanie**: Wybór tylko żądanych elementów spośród tytułu, zawartości, słów kluczowych, rozmowy i dziennika systemowego
+- **Obsługa trybu klipu**: Dostępne również w widoku szczegółów klipu
+
+#### Synchronizacja blokady klipu
+Stan blokady elementów należących do klipu jest synchronizowany.
+- **Zbiorcze blokowanie/odblokowywanie**: Blokowanie elementu reprezentatywnego klipu powoduje blokowanie również wszystkich podrzędnych elementów
+- **Synchronizacja hasła**: Wszystkie elementy w klipu używają tego samego hasła blokady
+
 </div>
 </details>
 

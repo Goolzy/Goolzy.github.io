@@ -59,6 +59,18 @@ When there are 20 or more shared template search results, you can scroll to load
 #### Date Selection Improvement
 - **Expanded Selection Range**: Date selection UI now allows selection from 1900 onwards (previously 2000)
 
+#### Document Sharing
+You can copy document content to clipboard or send via email from the document detail view.
+- **Clipboard Copy**: Copy as plain text with rich text markers removed
+- **Email Send**: Send email in formatted HTML style
+- **Selective Include**: Choose which items to include: title, content, keywords, conversation, system logs
+- **Clip Mode Support**: Also available in clip detail view
+
+#### Clip Lock Sync
+Lock status synchronizes across items in a clip.
+- **Batch Lock/Unlock**: Locking the clip representative item locks all child items
+- **Password Sync**: All items in a clip use the same lock password
+
 #### Clip Lock Synchronization
 Fixed a bug where locking a clip didn't lock internal items.
 - **Unified Lock/Unlock**: Locking or unlocking any item in a clip now applies to all items in the clip

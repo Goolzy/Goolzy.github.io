@@ -59,6 +59,18 @@ Lorsqu'il y a plus de 20 résultats de recherche de modèles partagés, vous pou
 #### Amélioration de la sélection des dates
 - **Plage de sélection étendue** : Possibilité de sélectionner les dates à partir de 1900 dans l'interface de sélection de date (anciennement 2000)
 
+#### Fonction de partage de documents
+Partage du contenu de documents depuis l'écran de détail avec la possibilité de copier ou d'envoyer par email.
+- **Copie en presse-papiers** : Copie du texte pur après suppression des marqueurs de texte riche
+- **Envoi par email** : Envoi au format HTML avec mise en forme conservée
+- **Sélection facultative** : Choix de l'inclusion du titre, contenu, mots-clés, conversations et journaux système
+- **Support mode clip** : Même fonctionnalité disponible dans l'écran détail des clips
+
+#### Synchronisation du verrouillage des clips
+L'état de verrouillage des éléments appartenant à un clip est synchronisé.
+- **Verrouillage/déverrouillage en masse** : Le verrouillage de l'élément représentatif du clip entraîne le verrouillage de tous les éléments enfants
+- **Synchronisation du mot de passe** : Tous les éléments du clip utilisent le même mot de passe de verrouillage
+
 </div>
 </details>
 

@@ -59,6 +59,18 @@ Quando os resultados da busca de modelos compartilhados excedem 20, você pode r
 #### Melhoria na Seleção de Datas
 - **Intervalo de seleção expandido**: Seleção de datas agora disponível a partir de 1900 (anteriormente 2000)
 
+#### Função de Compartilhamento de Documento
+Compartilhe conteúdo do documento na tela de detalhes copiando para a área de transferência ou enviando por email.
+- **Copiar para clipboard**: Copia para clipboard como texto puro com marcadores de rich text removidos
+- **Enviar por email**: Envia por email em formato HTML com formatação aplicada
+- **Seleção opcional**: Escolha quais itens incluir entre título, conteúdo, palavras-chave, conversas e log do sistema
+- **Suporte para modo Clip**: Mesma funcionalidade disponível na tela de detalhes do clip
+
+#### Sincronização de Bloqueio de Clip
+Os estados de bloqueio dos itens em um clip são sincronizados automaticamente.
+- **Bloqueio/Desbloqueio em lote**: Quando o item representativo do clip é bloqueado, todos os itens filhos são bloqueados também
+- **Sincronização de senha**: Todos os itens no clip usam a mesma senha de bloqueio
+
 </div>
 </details>
 

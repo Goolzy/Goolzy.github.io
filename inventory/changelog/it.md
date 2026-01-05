@@ -59,6 +59,18 @@ Quando i risultati della ricerca di modelli condivisi superano i 20 elementi, pu
 #### Miglioramenti della selezione delle date
 - **Intervallo di selezione esteso**: Selezione data UI ora disponibile dal 1900 (precedentemente 2000)
 
+#### Funzione di condivisione documenti
+Condividi il contenuto da visualizzazione dettagli documento copiando negli appunti o inviando via email.
+- **Copia negli appunti**: Copia come testo puro con i marcatori di testo ricco rimossi
+- **Invio email**: Invia via email in formato HTML con formattazione applicata
+- **Inclusione selettiva**: Seleziona solo i dati desiderati tra titolo, contenuto, parole chiave, conversazione e log di sistema
+- **Supporto modalità clip**: Disponibile anche nella vista dettagli clip con la stessa funzionalità
+
+#### Sincronizzazione blocco clip
+Lo stato di blocco degli elementi appartenenti a un clip viene sincronizzato.
+- **Blocco/Sblocco in blocco**: Quando si blocca l'elemento rappresentativo del clip, tutti gli elementi secondari vengono bloccati insieme
+- **Sincronizzazione password**: Tutti gli elementi nel clip utilizzano la stessa password di blocco
+
 </div>
 </details>
 

@@ -59,10 +59,17 @@ Ketika ada lebih dari 20 hasil pencarian template bersama, Anda dapat scroll unt
 #### Peningkatan Pemilihan Tanggal
 - **Memperluas Jangkauan Pemilihan**: Sekarang dapat memilih dari tahun 1900 di UI pemilihan tanggal (sebelumnya tahun 2000)
 
+#### Fitur Berbagi Dokumen
+Salin konten ke clipboard atau kirim melalui email dari layar detail dokumen.
+- **Salin ke Clipboard**: Salin sebagai teks murni dengan penanda laya kaya dihapus
+- **Kirim Email**: Kirim dalam format HTML dengan pemformatan diterapkan
+- **Pemilihan Selektif**: Pilih item yang ingin disertakan dari judul, konten, kata kunci, percakapan, dan log sistem
+- **Dukungan Mode Clip**: Fitur yang sama tersedia di layar detail clip
+
 #### Sinkronisasi Kunci Clip
-Memperbaiki bug di mana mengunci clip tidak mengunci item internal.
-- **Kunci/Buka Kunci Terpadu**: Mengunci atau membuka kunci item apa pun dalam clip berlaku untuk semua item dalam clip
-- **Kunci Detail Clip**: Menambahkan verifikasi kunci saat membuka layar detail clip
+Item dalam clip dapat dikunci bersama.
+- **Kunci/Buka Kunci Bersama**: Mengunci item perwakilan clip mengunci semua item dalam clip
+- **Sinkronisasi Kata Sandi**: Semua item dalam clip menggunakan kata sandi kunci yang sama
 - **UI Kata Sandi Lepas Clip**: Dialog kata sandi lepas clip diperbarui ke desain neumorphic baru
 
 </div>

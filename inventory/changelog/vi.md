@@ -59,6 +59,18 @@ Khi có hơn 20 kết quả tìm kiếm mẫu dùng chung, bạn có thể cuộ
 #### Cải Thiện Lựa Chọn Ngày
 - **Mở Rộng Phạm Vi Chọn**: Có thể chọn từ năm 1900 trong giao diện chọn ngày (trước đó là năm 2000)
 
+#### Tính Năng Chia Sẻ Tài Liệu
+Sao chép nội dung vào bộ nhớ tạm hoặc gửi qua email từ màn hình chi tiết tài liệu.
+- **Sao Chép Bộ Nhớ Tạm**: Sao chép vào bộ nhớ tạm dưới dạng văn bản thuần túy với các ký hiệu văn bản phong phú bị loại bỏ
+- **Gửi Email**: Gửi qua email dưới dạng HTML với định dạng được áp dụng
+- **Lựa Chọn Tùy Chỉnh**: Chọn các mục cụ thể từ tiêu đề, nội dung, từ khóa, cuộc trò chuyện và nhật ký hệ thống
+- **Hỗ Trợ Chế Độ Clip**: Sử dụng cùng một cách trong chi tiết clip
+
+#### Đồng Bộ Hóa Khóa Clip
+Trạng thái khóa của các mục thuộc clip được đồng bộ hóa.
+- **Khóa/Mở Khóa Hàng Loạt**: Khi khóa mục đại diện của clip, tất cả các mục con cũng bị khóa cùng lúc
+- **Đồng Bộ Hóa Mật Khẩu**: Tất cả các mục trong clip sử dụng cùng một mật khẩu khóa
+
 </div>
 </details>
 

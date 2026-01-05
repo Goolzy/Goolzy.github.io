@@ -59,6 +59,18 @@ Paylaşılan şablon arama sonucu 20'den fazla olduğunda, daha fazla sonucu yü
 #### Tarih Seçimi İyileştirmesi
 - **Seçim Aralığı Genişletildi**: Tarih seçim arayüzünde 1900 yılından seçim yapılabilir (önceki 2000 yıl)
 
+#### Belge Paylaşma Özelliği
+Belge ayrıntı görünümünde içeriği panoya kopyalayabilir veya e-posta ile gönderebilirsiniz.
+- **Panoya Kopyala**: İçeriği zengin metin işaretleyiciləri silinerek saf metin olarak kopyala
+- **E-posta Gönderimi**: Biçimlendirilmiş HTML formatında e-posta gönder
+- **Seçmeli Dahil Etme**: Başlık, içerik, anahtar kelimeler, sohbet ve sistem günlüğü arasından istediğiniz öğeleri seçin
+- **Klip Modu Desteği**: Klip ayrıntı görünümünde de aynı şekilde kullanılabilir
+
+#### Klip Kilit Senkronizasyonu
+Klipe ait öğelerin kilit durumu senkronize edilir.
+- **Toplu Kilit/Kilit Aç**: Klip ana öğesi kilitlendiğinde tüm alt öğeler de birlikte kilitlenir
+- **Parola Sinkronizasyonu**: Klip içindeki tüm öğeler aynı kilit parolasını kullanır
+
 </div>
 </details>
 
