@@ -29,13 +29,19 @@ Hãy xem lịch sử cập nhật ứng dụng Inventory.
 
 <details class="changelog-version" open>
 <summary>
-  <span class="version-title">v1.2.1 <small>2026-01-04</small></span>
+  <span class="version-title">v1.2.1 <small>2026-01-05</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Sao chép">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
   </button>
 </summary>
 <div class="version-content" markdown="1">
+
+#### Bố Cục Phản Ứng Của Bảng Phản Ứng
+Bảng phản ứng hình ảnh trong lượt xem chi tiết mục được hiển thị chính xác trên tất cả các kích thước màn hình.
+- **Bố Cục Phản Ứng**: Các nút phản ứng được phân bổ đều ngay cả trên màn hình hẹp
+- **Sử Dụng Toàn Bộ Chiều Rộng**: Bảng sử dụng toàn bộ chiều rộng màn hình bất kể kích thước hình ảnh
+- **Thiết Kế Gọn Nhẹ**: Tối ưu hóa phần đệm để che phủ ít ảnh hơn trong khi duy trì vùng chạm
 
 #### Cuộn Vô Hạn Tìm Kiếm Mẫu Dùng Chung
 Khi có hơn 20 kết quả tìm kiếm mẫu dùng chung, bạn có thể cuộn để tải thêm.
