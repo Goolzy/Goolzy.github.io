@@ -56,6 +56,12 @@ Neues neomorphes Design für den Partitionsnamen-Dialog und Drag-to-Reorder-Funk
 - **Drag-Neuordnung**: Halten Sie das Griffsymbol gedrückt, um Partitionen per Drag-and-Drop neu zu ordnen
 - **Name bei Erstellung**: Legen Sie beim Erstellen einer neuen Partition einen benutzerdefinierten Namen fest
 
+#### Link-Vorschau mit Beschreibung anzeigen
+In Protokollen angefügte Link-Karten zeigen nun die Webseiten-Beschreibung (OpenGraph-Beschreibung) an.
+- **Beschreibung automatisch extrahieren**: Beschreibung aus dem og:description Meta-Tag der Webseite extrahiert
+- **Verbessertes Karten-UI**: Beschreibung wird unter dem Titel mit maximal 2 Zeilen angezeigt
+- **Unterstützte Plattformen**: YouTube, Spotify, allgemeine Webseiten und alle anderen Link-Typen
+
 </div>
 </details>
 

@@ -56,6 +56,12 @@ Novo design neomórfico para o diálogo de nome de partição e função de arra
 - **Reordenar arrastando**: Mantenha pressionado o ícone de alça para arrastar e reordenar as partições
 - **Nome na criação**: Defina um nome de partição personalizado ao criar uma nova
 
+#### Visualização de Descrição em Cartões de Link
+Cartões de links anexados aos registros agora exibem a descrição da página web.
+- **Extração automática de descrição**: Descrição extraída da metatag og:description da página web
+- **Melhorias na interface do cartão**: Descrição exibida abaixo do título com até 2 linhas
+- **Suporte multiplataforma**: Todos os tipos de links suportados, incluindo YouTube, Spotify, páginas web gerais e outros
+
 </div>
 </details>
 

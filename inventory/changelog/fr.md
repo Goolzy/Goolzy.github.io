@@ -56,6 +56,12 @@ Nouveau design néomorphique pour le dialogue de nom de partition et fonction de
 - **Réorganisation par glisser**: Maintenez l'icône de poignée enfoncée pour glisser et réorganiser les partitions
 - **Nom à la création**: Définissez un nom de partition personnalisé lors de la création
 
+#### Affichage de la description d'aperçu des liens
+Les cartes de liens attachées aux journaux affichent désormais la description de la page web (description OpenGraph).
+- **Extraction automatique de la description**: La description est extraite de la métabalise og:description de la page web
+- **Amélioration de l'interface de la carte**: La description s'affiche sur un maximum de 2 lignes sous le titre
+- **Plateformes prises en charge**: Tous les types de liens incluant YouTube, Spotify, pages web générales, etc.
+
 </div>
 </details>
 

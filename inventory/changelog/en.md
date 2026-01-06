@@ -56,6 +56,12 @@ New neomorphic design partition name dialog and drag-to-reorder functionality.
 - **Drag Reordering**: Long-press the handle icon to drag and reorder partitions
 - **Name on Creation**: Set custom partition name when creating a new partition
 
+#### Link Preview Descriptions
+URLs attached to logs now display webpage descriptions (OpenGraph description) in link cards.
+- **Auto Description Extraction**: Description automatically extracted from the og:description meta tag of the webpage
+- **Card UI Enhancement**: Description displays up to 2 lines below the title
+- **Platform Support**: All link types supported including YouTube, Spotify, and general web pages
+
 </div>
 </details>
 

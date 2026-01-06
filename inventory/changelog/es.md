@@ -56,6 +56,12 @@ Nuevo diseño neomórfico para el diálogo de nombre de partición y función de
 - **Reordenar arrastrando**: Mantén pulsado el icono de arrastre para arrastrar y reordenar las particiones
 - **Nombre al crear**: Establece un nombre de partición personalizado al crear una nueva
 
+#### Vista Previa de Enlaces con Descripción
+Las tarjetas de enlaces adjuntos en los registros ahora muestran la descripción de la página web (descripción de OpenGraph).
+- **Extracción automática de descripción**: Se extrae la descripción del meta-etiqueta og:description de la página web
+- **Mejora de UI de tarjeta**: La descripción se muestra debajo del título con un máximo de 2 líneas
+- **Plataformas compatibles**: YouTube, Spotify, páginas web generales y otros tipos de enlaces
+
 </div>
 </details>
 
