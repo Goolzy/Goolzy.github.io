@@ -1,8 +1,8 @@
 ---
 layout: inventory
-title: Inventory
+title: 인벤토리 - Inventory
 permalink: /inventory/
-description: Goolzy Inventory - 디지털 아이템 관리 앱
+description: 나를 기억하는 나를 기록하는 나의 인벤토리
 lang: ko
 translations:
   ko: /inventory/
