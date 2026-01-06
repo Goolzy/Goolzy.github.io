@@ -43,6 +43,13 @@ Lorsque vous lancez l'application, la musique en lecture sur votre appareil (Spo
 - **Mélange des effets sonores** : Les effets sonores de l'application sont lus ensemble avec la musique de fond
 - **Synchronisation du mode silencieux** : En mode silencieux, les effets sonores de l'application sont également mis en sourdine
 
+#### Améliorations de l'historique de recherche et des filtres
+La barre de recherche Super enregistre maintenant l'historique de recherche et la fonction de filtre a été améliorée.
+- **Sauvegarde de l'historique**: Les termes de recherche sont automatiquement sauvegardés lors de l'ajout de filtres ou de la recherche de modèles partagés
+- **Affichage des recherches récentes**: Affiche 5 recherches récentes lors du focus sur la barre de recherche
+- **Ajout rapide de filtre**: Appuyez sur une recherche récente pour l'ajouter instantanément comme filtre
+- **Amélioration de l'interface des boutons**: Les boutons Ajouter filtre et Modèles partagés sont maintenant disposés de manière compacte sur une seule ligne
+
 </div>
 </details>
 

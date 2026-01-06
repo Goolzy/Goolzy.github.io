@@ -43,6 +43,13 @@ Cuando abres la aplicación, la música que se estaba reproduciendo en tu dispos
 - **Mezcla de efectos de sonido**: Los efectos de sonido de la aplicación se reproducen junto con la música de fondo
 - **Integración con modo silencioso**: En modo silencioso, los efectos de sonido de la aplicación también se silencian
 
+#### Mejoras en el historial de búsqueda y filtros
+La barra de búsqueda Super ahora guarda el historial de búsqueda y se ha mejorado la función de filtro.
+- **Guardar historial de búsqueda**: Los términos de búsqueda se guardan automáticamente al añadir filtros o buscar plantillas compartidas
+- **Mostrar búsquedas recientes**: Muestra 5 búsquedas recientes al enfocar la barra de búsqueda
+- **Añadir filtro rápido**: Toca una búsqueda reciente para añadirla instantáneamente como filtro
+- **Mejora de la interfaz de botones**: Los botones Añadir filtro y Plantillas compartidas ahora están dispuestos de forma compacta en una sola línea
+
 </div>
 </details>
 

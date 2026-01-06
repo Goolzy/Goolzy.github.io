@@ -43,6 +43,13 @@ A música que estava sendo reproduzida no dispositivo (Spotify, YouTube Music, A
 - **Mixagem de efeitos sonoros**: Os efeitos sonoros do aplicativo são reproduzidos juntamente com a música de fundo
 - **Integração com modo silencioso**: No modo silencioso, os efeitos sonoros do aplicativo também são silenciados
 
+#### Melhorias no histórico de pesquisa e filtros
+A barra de pesquisa Super agora salva o histórico de pesquisa e a função de filtro foi melhorada.
+- **Salvar histórico de pesquisa**: Os termos de pesquisa são salvos automaticamente ao adicionar filtros ou pesquisar modelos compartilhados
+- **Exibir pesquisas recentes**: Mostra 5 pesquisas recentes ao focar na barra de pesquisa
+- **Adicionar filtro rápido**: Toque em uma pesquisa recente para adicioná-la instantaneamente como filtro
+- **Melhoria da interface dos botões**: Os botões Adicionar filtro e Modelos compartilhados agora estão dispostos de forma compacta em uma única linha
+
 </div>
 </details>
 

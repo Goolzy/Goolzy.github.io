@@ -43,6 +43,13 @@ Music playing on your device (Spotify, YouTube Music, Apple Music, etc.) continu
 - **Sound Mixing**: App sound effects play alongside background music
 - **Mute Mode Sync**: In silent/mute mode, app sound effects are also muted
 
+#### Search History and Filter Improvements
+Super Search Bar now saves search history and filter functionality has been improved.
+- **Search History Saving**: Search terms are automatically saved when adding filters or searching shared templates
+- **Recent Searches Display**: Shows 5 recent search terms when focusing on search bar
+- **Quick Filter Add**: Tap a recent search to instantly add it as a filter
+- **Button UI Improvement**: Add Filter and Shared Templates buttons are now compactly arranged in a single row
+
 </div>
 </details>
 

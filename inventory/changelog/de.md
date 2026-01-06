@@ -103,6 +103,13 @@ Das Problem wurde behoben, bei dem die untere Systemnavigationsleiste auf Androi
 - **Automatische Inset-Verarbeitung**: Unteres Padding wird automatisch um den Bereich der Systemnavigationsleiste erhöht
 - **Abwärtskompatibilität beibehalten**: Android 14 und älter funktionieren wie zuvor
 
+#### Verbesserungen bei Suchverlauf und Filter
+Die Super-Suchleiste speichert jetzt den Suchverlauf und die Filterfunktion wurde verbessert.
+- **Suchverlauf speichern**: Suchbegriffe werden automatisch gespeichert beim Hinzufügen von Filtern oder bei der Suche nach geteilten Vorlagen
+- **Letzte Suchen anzeigen**: Zeigt 5 letzte Suchbegriffe beim Fokussieren der Suchleiste
+- **Schnelles Filter hinzufügen**: Tippen Sie auf eine letzte Suche, um sie sofort als Filter hinzuzufügen
+- **Button-UI-Verbesserung**: Filter hinzufügen und Geteilte Vorlagen Buttons sind jetzt kompakt in einer Zeile angeordnet
+
 </div>
 </details>
 
