@@ -23,27 +23,27 @@ Create items with a single sheet of paper, and transfer them to others via QR co
 
 ---
 
-### 📚 Quick Start Guide
+### 📱 Download
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
 
-  <div style="background: rgba(168, 85, 247, 0.2); backdrop-filter: blur(10px); border: 1px solid rgba(168, 85, 247, 0.3); padding: 1.5rem; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.3);">
-    <h3 style="margin: 0 0 .5rem 0; color: #a855f7; font-size: 1.3rem;">📋 Changelog</h3>
-    <p style="margin: 0 0 1rem 0; color: rgba(255,255,255,0.8); font-size: .95rem;">Check the latest updates and changes</p>
-    <a href="/inventory/changelog/en/" style="display: inline-block; background: rgba(168,85,247,0.3); border: 1px solid rgba(168,85,247,0.5); color: white; padding: .5rem 1rem; border-radius: 8px; text-decoration: none; font-weight: 500; transition: all 0.3s;">View Details →</a>
-  </div>
+  <a href="https://apps.apple.com/kr/app/inventory/id6753644524" target="_blank" style="display: block; padding: 1.5rem; background: rgba(168, 85, 247, 0.2); backdrop-filter: blur(10px); border: 1px solid rgba(168, 85, 247, 0.3); border-radius: 16px; text-decoration: none; text-align: center;">
+    <div style="font-size: 2.5rem; margin-bottom: .5rem;">🍎</div>
+    <h4 style="margin: 0 0 .25rem 0; color: #a855f7;">App Store</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">iOS</p>
+  </a>
 
-  <div style="background: rgba(217, 70, 239, 0.2); backdrop-filter: blur(10px); border: 1px solid rgba(217, 70, 239, 0.3); padding: 1.5rem; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.3);">
-    <h3 style="margin: 0 0 .5rem 0; color: #d946ef; font-size: 1.3rem;">📖 Manual</h3>
-    <p style="margin: 0 0 1rem 0; color: rgba(255,255,255,0.8); font-size: .95rem;">Learn how to use the app step by step</p>
-    <a href="/inventory/manual/en/" style="display: inline-block; background: rgba(217,70,239,0.3); border: 1px solid rgba(217,70,239,0.5); color: white; padding: .5rem 1rem; border-radius: 8px; text-decoration: none; font-weight: 500; transition: all 0.3s;">Get Started →</a>
-  </div>
+  <a href="https://play.google.com/store/apps/details?id=com.goolzy.inventory" target="_blank" style="display: block; padding: 1.5rem; background: rgba(20, 184, 166, 0.2); backdrop-filter: blur(10px); border: 1px solid rgba(20, 184, 166, 0.3); border-radius: 16px; text-decoration: none; text-align: center;">
+    <div style="font-size: 2.5rem; margin-bottom: .5rem;">🤖</div>
+    <h4 style="margin: 0 0 .25rem 0; color: #2dd4bf;">Play Store</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Android</p>
+  </a>
 
-  <div style="background: rgba(20, 184, 166, 0.2); backdrop-filter: blur(10px); border: 1px solid rgba(20, 184, 166, 0.3); padding: 1.5rem; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.3);">
-    <h3 style="margin: 0 0 .5rem 0; color: #2dd4bf; font-size: 1.3rem;">❓ FAQ</h3>
-    <p style="margin: 0 0 1rem 0; color: rgba(255,255,255,0.8); font-size: .95rem;">Find answers to frequently asked questions</p>
-    <a href="/inventory/faq/en/" style="display: inline-block; background: rgba(20,184,166,0.3); border: 1px solid rgba(20,184,166,0.5); color: white; padding: .5rem 1rem; border-radius: 8px; text-decoration: none; font-weight: 500; transition: all 0.3s;">View FAQ →</a>
-  </div>
+  <a href="https://apps.apple.com/kr/app/inventory/id6753644524?platform=mac" target="_blank" style="display: block; padding: 1.5rem; background: rgba(217, 70, 239, 0.2); backdrop-filter: blur(10px); border: 1px solid rgba(217, 70, 239, 0.3); border-radius: 16px; text-decoration: none; text-align: center;">
+    <div style="font-size: 2.5rem; margin-bottom: .5rem;">💻</div>
+    <h4 style="margin: 0 0 .25rem 0; color: #d946ef;">Mac App Store</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">macOS</p>
+  </a>
 
 </div>
 
@@ -93,115 +93,36 @@ Create items with a single sheet of paper, and transfer them to others via QR co
 
 ---
 
-{% include usecases-summary.html lang="en" %}
+### 📚 Documents & Help
 
----
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
 
-### 📝 Paper System
+  <a href="/inventory/manual/en/" style="display: block; padding: 1.25rem; background: rgba(168, 85, 247, 0.2); backdrop-filter: blur(10px); border: 1px solid rgba(168, 85, 247, 0.3); border-radius: 12px; text-decoration: none; text-align: center;">
+    <div style="font-size: 1.5rem; margin-bottom: .5rem;">📖</div>
+    <h4 style="margin: 0; color: #a855f7;">Manual</h4>
+  </a>
 
-<div style="background: rgba(168, 85, 247, 0.15); backdrop-filter: blur(10px); border: 1px solid rgba(168, 85, 247, 0.3); border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0;">
-  <p style="margin: 0 0 1rem 0; color: rgba(255,255,255,0.9); font-size: 1.05rem;"><strong>Paper</strong> is an in-app currency used to create documents.</p>
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem;">
-    <div style="background: rgba(10, 6, 20, 0.4); padding: 1rem; border-radius: 8px;">
-      <div style="font-size: 1.5rem; margin-bottom: .25rem;">🎁</div>
-      <p style="margin: 0; color: rgba(255,255,255,0.8); font-size: .9rem;"><strong>New Sign-up</strong><br>10 sheets free</p>
-    </div>
-    <div style="background: rgba(10, 6, 20, 0.4); padding: 1rem; border-radius: 8px;">
-      <div style="font-size: 1.5rem; margin-bottom: .25rem;">🔗</div>
-      <p style="margin: 0; color: rgba(255,255,255,0.8); font-size: .9rem;"><strong>Social Link</strong><br>Google +10, Apple +10</p>
-    </div>
-    <div style="background: rgba(10, 6, 20, 0.4); padding: 1rem; border-radius: 8px;">
-      <div style="font-size: 1.5rem; margin-bottom: .25rem;">💰</div>
-      <p style="margin: 0; color: rgba(255,255,255,0.8); font-size: .9rem;"><strong>Shop Purchase</strong><br>In-app purchase</p>
-    </div>
-  </div>
-  <p style="margin: 1rem 0 0 0; color: rgba(255,255,255,0.7); font-size: .85rem;">💡 Link all social accounts to get up to <strong>30 sheets</strong> for free!</p>
+  <a href="/inventory/faq/en/" style="display: block; padding: 1.25rem; background: rgba(20, 184, 166, 0.2); backdrop-filter: blur(10px); border: 1px solid rgba(20, 184, 166, 0.3); border-radius: 12px; text-decoration: none; text-align: center;">
+    <div style="font-size: 1.5rem; margin-bottom: .5rem;">❓</div>
+    <h4 style="margin: 0; color: #2dd4bf;">FAQ</h4>
+  </a>
+
+  <a href="/inventory/changelog/en/" style="display: block; padding: 1.25rem; background: rgba(217, 70, 239, 0.2); backdrop-filter: blur(10px); border: 1px solid rgba(217, 70, 239, 0.3); border-radius: 12px; text-decoration: none; text-align: center;">
+    <div style="font-size: 1.5rem; margin-bottom: .5rem;">📋</div>
+    <h4 style="margin: 0; color: #d946ef;">Changelog</h4>
+  </a>
+
+</div>
+
+<div style="display: flex; gap: .75rem; flex-wrap: wrap; justify-content: center; margin: 1rem 0;">
+  <a href="/inventory/suggest/en/" style="display: inline-block; background: rgba(168,85,247,0.3); border: 1px solid rgba(168,85,247,0.5); color: white; padding: .6rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 500;">💬 Suggest</a>
+  <a href="/inventory/bug-report/en/" style="display: inline-block; background: rgba(217,70,239,0.3); border: 1px solid rgba(217,70,239,0.5); color: white; padding: .6rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 500;">🐛 Report Bug</a>
+  <a href="mailto:captain@goolzy.com" style="display: inline-block; background: rgba(59,130,246,0.3); border: 1px solid rgba(59,130,246,0.5); color: white; padding: .6rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 500;">📧 API Inquiry</a>
 </div>
 
 ---
 
-### 🛒 Shop Items
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
-
-  <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; text-align: center;">
-    <div style="font-size: 2rem; margin-bottom: .5rem;">📄</div>
-    <h4 style="margin: 0 0 .25rem 0; color: #a855f7;">Paper</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">For document creation</p>
-  </div>
-
-  <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; text-align: center;">
-    <div style="font-size: 2rem; margin-bottom: .5rem;">🔖</div>
-    <h4 style="margin: 0 0 .25rem 0; color: #14b8a6;">Stamp</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">For template creation</p>
-  </div>
-
-  <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; text-align: center;">
-    <div style="font-size: 2rem; margin-bottom: .5rem;">🏷️</div>
-    <h4 style="margin: 0 0 .25rem 0; color: #d946ef;">Badge</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">For domain engraving</p>
-  </div>
-
-  <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; text-align: center;">
-    <div style="font-size: 2rem; margin-bottom: .5rem;">🎨</div>
-    <h4 style="margin: 0 0 .25rem 0; color: #a855f7;">Ink</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">For theme color change</p>
-  </div>
-
-</div>
-
----
-
-### 📱 Supported Platforms
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
-
-  <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; text-align: center;">
-    <div style="font-size: 2.5rem; margin-bottom: .5rem;">📱</div>
-    <h4 style="margin: 0 0 .25rem 0; color: #a855f7;">Mobile</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">iOS / Android</p>
-  </div>
-
-  <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; text-align: center;">
-    <div style="font-size: 2.5rem; margin-bottom: .5rem;">💻</div>
-    <h4 style="margin: 0 0 .25rem 0; color: #14b8a6;">Desktop</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">macOS / Windows</p>
-  </div>
-
-</div>
-
-<p style="text-align: center; color: rgba(255,255,255,0.6); font-size: .9rem; margin-top: 1rem;">Same features available on all platforms</p>
-
----
-
-### 🌍 Multi-language Support
-
-7 languages supported:
-- 🇰🇷 한국어, 🇺🇸 English, 🇯🇵 日本語
-- 🇩🇪 Deutsch, 🇫🇷 Français, 🇪🇸 Español, 🇧🇷 Português
-
----
-
-### 🆘 Need Help?
-
-<div style="background: rgba(20, 184, 166, 0.15); backdrop-filter: blur(10px); border: 1px solid rgba(20, 184, 166, 0.3); border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0;">
-  <p style="margin: 0 0 1rem 0; color: rgba(255,255,255,0.9);">Having issues or want to suggest a new feature?</p>
-  <div style="display: flex; gap: .75rem; flex-wrap: wrap;">
-    <a href="/inventory/suggest/en/" style="display: inline-block; background: rgba(168,85,247,0.3); border: 1px solid rgba(168,85,247,0.5); color: white; padding: .6rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 500; transition: all 0.3s;">💬 Suggest</a>
-    <a href="/inventory/bug-report/en/" style="display: inline-block; background: rgba(217,70,239,0.3); border: 1px solid rgba(217,70,239,0.5); color: white; padding: .6rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 500; transition: all 0.3s;">🐛 Report Bug</a>
-  </div>
-</div>
-
----
-
-### 🔌 External API Integration
-
-<div style="background: rgba(59, 130, 246, 0.15); backdrop-filter: blur(10px); border: 1px solid rgba(59, 130, 246, 0.3); border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0;">
-  <p style="margin: 0 0 1rem 0; color: rgba(255,255,255,0.9);">For template creation and item creation via external API, please contact us at the email below.</p>
-  <a href="mailto:captain@goolzy.com" style="display: inline-block; background: rgba(59,130,246,0.3); border: 1px solid rgba(59,130,246,0.5); color: white; padding: .6rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 500; transition: all 0.3s;">📧 captain@goolzy.com</a>
-</div>
-
----
+<p style="text-align: center; color: rgba(255,255,255,0.6); font-size: .9rem; margin: 1rem 0;">🌍 8 languages supported: English, 한국어, 日本語, Deutsch, Français, Español, Português, 中文</p>
 
 > 🔒 **Privacy Protection**: Your data is encrypted and securely protected. See our [Privacy Policy](/inventory/privacy/) for details.
 
