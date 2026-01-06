@@ -78,6 +78,12 @@ Die Anwendung von Textstilen beim Verfassen von Stempel-Vorlagen wurde intuitive
 - **Saubere Bearbeitung**: Markierungen sind nicht sichtbar, nur Stile werden angezeigt
 - **Dynamische Symbolleiste**: Symbolleiste positioniert sich automatisch unter dem ausgewählten Bereich
 
+#### Android 15 Unteren Abstands-Korrektur
+Das Problem wurde behoben, bei dem die untere Systemnavigationsleiste auf Android 15 und höher Inhalte verdeckt.
+- **Bildschirme ohne untere Navigationsleiste**: Elementdetail, Dokumenterstellung, Stempelerstellung und 6 weitere Bildschirme
+- **Automatische Inset-Verarbeitung**: Unteres Padding wird automatisch um den Bereich der Systemnavigationsleiste erhöht
+- **Abwärtskompatibilität beibehalten**: Android 14 und älter funktionieren wie zuvor
+
 </div>
 </details>
 

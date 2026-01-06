@@ -78,6 +78,12 @@ La manipulation des styles de texte lors de la création de modèles de tampon a
 - **Édition claire** : Les marqueurs ne sont pas visibles et seuls les styles sont affichés
 - **Barre d'outils dynamique** : La barre d'outils se positionne automatiquement sous la zone sélectionnée
 
+#### Correction de l'espacement inférieur Android 15
+Correction du problème de chevauchement de la barre de navigation système en bas sur les appareils Android 15 et supérieurs.
+- **6 écrans sans barre de navigation en bas** : Détails de l'article, création de document, création de modèle de tampon et autres
+- **Traitement automatique des insertions** : Espacement inférieur ajouté automatiquement selon la zone de la barre de navigation système
+- **Compatibilité descendante maintenue** : Fonctionnement identique sur Android 14 et les versions antérieures
+
 </div>
 </details>
 

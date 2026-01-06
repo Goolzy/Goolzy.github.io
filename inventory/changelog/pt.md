@@ -78,6 +78,12 @@ Ao criar modelos de carimbo, a aplicação de estilos de texto tornou-se mais in
 - **Edição limpa**: Apenas o estilo é exibido, sem marcadores visíveis
 - **Barra de ferramentas dinâmica**: A barra de ferramentas se posiciona automaticamente abaixo da área selecionada
 
+#### Corrigir Margem Inferior do Android 15
+Corrigido o problema em dispositivos Android 15 ou superior onde a barra de navegação do sistema na parte inferior obscurecia o conteúdo.
+- **Telas sem barra de navegação inferior**: Detalhes do item, criação de documento, criação de carimbo e outras 6 telas
+- **Processamento automático de insets**: Preenchimento inferior adicionado automaticamente correspondente à área da barra de navegação do sistema
+- **Compatibilidade com versões anteriores**: Funciona da mesma forma em Android 14 ou inferior
+
 </div>
 </details>
 

@@ -84,6 +84,12 @@ Text styling in stamp template creation is now more intuitive.
 - **Clean Editing**: Markers are hidden and only styles are displayed
 - **Dynamic Toolbar**: Toolbar automatically positioned below selected text
 
+#### Android 15 Bottom Margin Fix
+Fixed an issue where the bottom system navigation bar obstructed content on Android 15 and later devices.
+- **Navigation Bar-less Screens**: 6 screens including item detail, document creation, and stamp creation
+- **Automatic Inset Handling**: Bottom padding automatically added to match system navigation bar area
+- **Backward Compatibility**: Operates identically on Android 14 and earlier
+
 </div>
 </details>
 

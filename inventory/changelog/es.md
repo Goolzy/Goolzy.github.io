@@ -78,6 +78,12 @@ La aplicación de estilos de texto se ha mejorado para ser más intuitiva al cre
 - **Edición limpia**: Los marcadores no son visibles y solo se muestra el estilo
 - **Barra de herramientas dinámica**: La barra de herramientas se posiciona automáticamente debajo del área seleccionada
 
+#### Corrección de Margen Inferior en Android 15
+Se ha corregido un problema en dispositivos Android 15 o superior donde la barra de navegación del sistema en la parte inferior ocultaba el contenido.
+- **Pantallas sin barra de navegación inferior**: Detalles del artículo, creación de documento, creación de sello y otras 6 pantallas
+- **Manejo automático de inserción**: Se añade automáticamente relleno inferior en el área de la barra de navegación del sistema
+- **Compatibilidad hacia atrás**: Funcionamiento idéntico al anterior en Android 14 e inferior
+
 </div>
 </details>
 
