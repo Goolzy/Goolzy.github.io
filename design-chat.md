@@ -1,6 +1,6 @@
 ---
 layout: design-chat
-title: "Inventory - Coming Soon"
+title: "Goolzy - Inventory launched!"
 permalink: /design-chat/
 description: Inventory 앱 출시 예정 - 커뮤니티 채팅
 ---
