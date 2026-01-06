@@ -127,6 +127,7 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 | `POST /templates/{token}/share` | 共享模板 |
 | `POST /templates/revoke` | 撤销共享 |
 | `POST /templates/{token}/send` | 发送模板 |
+| `POST /templates/{token}/check-ownership` | 检查克隆项目所有权 |
 
 ---
 
@@ -517,7 +518,8 @@ curl -X POST \
      -H "Content-Type: application/json" \
      -d '{
        "recipientEmail": "recipient@example.com",
-       "message": "送给你的礼物！"
+       "message": "送给你的礼物！",
+       "keywords": ["日期:2025-01-15", "金额:50000"]
      }' \
      "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/send"
 ```
@@ -528,6 +530,21 @@ curl -X POST \
 |-----|------|-----|------|
 | recipientEmail | string | 是 | 接收者邮箱 |
 | message | string | 否 | 消息（最多200个字符） |
+| keywords | string[] | 否 | 要添加/覆盖的关键字数组 |
+
+#### 关键字合并规则
+
+`keywords`参数允许您覆盖模板默认关键字或添加新关键字。
+
+| 情况 | 行为 |
+|------|------|
+| 存在相同键 | 用API值**覆盖** |
+| 新键 | **添加**到关键字列表 |
+
+**示例：**
+- 模板关键字：`["日期:@date@", "价格:0"]`
+- API关键字：`["日期:2025-01-15", "姓名:张三"]`
+- **结果**：`["日期:2025-01-15", "价格:0", "姓名:张三"]`
 
 #### 响应
 
@@ -541,6 +558,63 @@ curl -X POST \
   }
 }
 ```
+
+</div>
+</details>
+
+<details>
+<summary><h3>POST /templates/{token}/check-ownership - 检查克隆项目所有权</h3></summary>
+<div class="manual-content" markdown="1">
+
+检查特定用户是否拥有从此模板克隆的项目。
+
+#### 请求
+
+```bash
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "email": "user@example.com",
+       "keywordKeys": ["日期", "金额"]
+     }' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/check-ownership"
+```
+
+#### 安全性
+
+**安全性**：您只能查询自己拥有的模板。无法查询其他用户的模板。
+
+#### 请求体
+
+| 字段 | 类型 | 必填 | 说明 |
+|-----|------|-----|------|
+| email | string | 是 | 要检查的用户电子邮件 |
+| keywordKeys | string[] | 否 | 要获取的关键字键列表 |
+
+#### 响应
+
+```json
+{
+  "success": true,
+  "data": {
+    "hasItem": true,
+    "itemTokens": ["encrypted_item_id_1", "encrypted_item_id_2"],
+    "keywords": {
+      "日期": "2025-01-15",
+      "金额": "50000"
+    }
+  }
+}
+```
+
+#### 响应字段
+
+| 字段 | 类型 | 说明 |
+|-----|------|------|
+| hasItem | boolean | 所有权状态 |
+| itemTokens | string[] | 拥有的项目令牌（仅在拥有时） |
+| keywords | object | 请求的关键字值（仅在请求时） |
 
 </div>
 </details>

@@ -127,6 +127,7 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 | `POST /templates/{token}/share` | Partager un modele |
 | `POST /templates/revoke` | Revoquer le partage |
 | `POST /templates/{token}/send` | Envoyer un modele |
+| `POST /templates/{token}/check-ownership` | Vérifier la propriété des éléments clonés |
 
 ---
 
@@ -283,6 +284,117 @@ curl -X POST \
   }
 }
 ```
+
+</div>
+</details>
+
+<details>
+<summary><h3>POST /templates/{token}/send - Envoyer un modele</h3></summary>
+<div class="manual-content" markdown="1">
+
+Envoie un modele a un utilisateur specifie. L'utilisateur recevra un element clone du modele.
+
+#### Requete
+
+```bash
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "email": "destinataire@example.com",
+       "keywords": ["date:2025-01-15", "montant:50000"]
+     }' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/send"
+```
+
+#### Corps de la requete
+
+| Champ | Type | Requis | Description |
+|-------|------|--------|-------------|
+| email | string | Oui | Email du destinataire |
+| keywords | string[] | Non | Mots-clés à ajouter/remplacer |
+
+#### Regles de fusion des mots-cles
+
+Le parametre `keywords` vous permet de remplacer les mots-cles par defaut du modele ou d'en ajouter de nouveaux.
+
+| Situation | Comportement |
+|-----------|--------------|
+| Meme cle existe | **Remplacer** par la valeur API |
+| Nouvelle cle | **Ajouter** a la liste des mots-cles |
+
+**Exemple:**
+- Mots-cles du modele: `["date:@date@", "prix:0"]`
+- Mots-cles API: `["date:2025-01-15", "nom:Jean"]`
+- **Resultat**: `["date:2025-01-15", "prix:0", "nom:Jean"]`
+
+#### Reponse
+
+```json
+{
+  "success": true,
+  "data": {
+    "itemToken": "id_element_chiffre",
+    "recipientEmail": "destinataire@example.com",
+    "sentAt": "2025-01-01T00:00:00Z"
+  }
+}
+```
+
+</div>
+</details>
+
+<details>
+<summary><h3>POST /templates/{token}/check-ownership - Vérifier la propriété des éléments clonés</h3></summary>
+<div class="manual-content" markdown="1">
+
+Verifiez si un utilisateur specifique possede des elements clones a partir de ce modele.
+
+**Securite**: Vous ne pouvez interroger que les modeles que vous possedez. Vous ne pouvez pas interroger les modeles d'autres utilisateurs.
+
+#### Requete
+
+```bash
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "email": "utilisateur@example.com",
+       "keywordKeys": ["date", "montant"]
+     }' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/check-ownership"
+```
+
+#### Corps de la requete
+
+| Champ | Type | Requis | Description |
+|-------|------|--------|-------------|
+| email | string | Oui | E-mail de l'utilisateur a verifier |
+| keywordKeys | string[] | Non | Liste des cles de mots-cles a recuperer |
+
+#### Reponse
+
+```json
+{
+  "success": true,
+  "data": {
+    "hasItem": true,
+    "itemTokens": ["id_element_1", "id_element_2"],
+    "keywords": {
+      "date": "2025-01-15",
+      "montant": "50000"
+    }
+  }
+}
+```
+
+#### Champs de reponse
+
+| Champ | Type | Description |
+|-------|------|-------------|
+| hasItem | boolean | Statut de propriete |
+| itemTokens | string[] | Tokens des elements possedes (uniquement si possedes) |
+| keywords | object | Valeurs des mots-cles demandes (uniquement si demandes) |
 
 </div>
 </details>

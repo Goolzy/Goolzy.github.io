@@ -194,6 +194,15 @@ Créez des articles avec une seule feuille de papier et transférez-les via code
 
 ---
 
+### 🔌 Intégration API Externe
+
+<div style="background: rgba(59, 130, 246, 0.15); backdrop-filter: blur(10px); border: 1px solid rgba(59, 130, 246, 0.3); border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0;">
+  <p style="margin: 0 0 1rem 0; color: rgba(255,255,255,0.9);">Pour la création de modèles et d'articles via API externe, veuillez nous contacter par email.</p>
+  <a href="mailto:captain@goolzy.com" style="display: inline-block; background: rgba(59,130,246,0.3); border: 1px solid rgba(59,130,246,0.5); color: white; padding: .6rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 500; transition: all 0.3s;">📧 captain@goolzy.com</a>
+</div>
+
+---
+
 > 🔒 **Protection de la vie privée** : Vos données sont cryptées et protégées. Voir notre [Politique de confidentialité](/inventory/privacy/) pour plus de détails.
 
 ---

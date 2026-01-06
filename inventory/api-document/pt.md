@@ -127,6 +127,7 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 | `POST /templates/{token}/share` | Compartilhar modelo |
 | `POST /templates/revoke` | Revogar compartilhamento |
 | `POST /templates/{token}/send` | Enviar modelo |
+| `POST /templates/{token}/check-ownership` | Verificar propriedade de itens clonados |
 
 ---
 
@@ -283,6 +284,117 @@ curl -X POST \
   }
 }
 ```
+
+</div>
+</details>
+
+<details>
+<summary><h3>POST /templates/{token}/send - Enviar modelo</h3></summary>
+<div class="manual-content" markdown="1">
+
+Envia um modelo para um usuario especifico, criando itens clonados no aplicativo dele.
+
+#### Requisicao
+
+```bash
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "recipientEmail": "usuario@example.com",
+       "keywords": ["data:2025-01-15", "valor:50000"]
+     }' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/send"
+```
+
+#### Corpo da requisicao
+
+| Campo | Tipo | Obrigatorio | Descricao |
+|-------|------|-------------|-----------|
+| recipientEmail | string | Sim | E-mail do destinatario |
+| keywords | string[] | Nao | Palavras-chave para adicionar/substituir |
+
+#### Regras de mesclagem de palavras-chave
+
+O parametro `keywords` permite substituir as palavras-chave padrao do modelo ou adicionar novas.
+
+| Situacao | Comportamento |
+|----------|---------------|
+| Mesma chave existe | **Substituir** pelo valor da API |
+| Nova chave | **Adicionar** a lista de palavras-chave |
+
+**Exemplo:**
+- Palavras-chave do modelo: `["data:@date@", "preco:0"]`
+- Palavras-chave da API: `["data:2025-01-15", "nome:Joao"]`
+- **Resultado**: `["data:2025-01-15", "preco:0", "nome:Joao"]`
+
+#### Resposta
+
+```json
+{
+  "success": true,
+  "data": {
+    "itemToken": "id_item_criptografado",
+    "recipientEmail": "usuario@example.com",
+    "sentAt": "2025-01-01T00:00:00Z"
+  }
+}
+```
+
+</div>
+</details>
+
+<details>
+<summary><h3>POST /templates/{token}/check-ownership - Verificar propriedade de itens clonados</h3></summary>
+<div class="manual-content" markdown="1">
+
+Verifique se um usuario especifico possui itens clonados deste modelo.
+
+**Seguranca**: Voce so pode consultar modelos que possui. Nao e possivel consultar modelos de outros usuarios.
+
+#### Requisicao
+
+```bash
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "email": "usuario@example.com",
+       "keywordKeys": ["data", "valor"]
+     }' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/check-ownership"
+```
+
+#### Corpo da requisicao
+
+| Campo | Tipo | Obrigatorio | Descricao |
+|-------|------|-------------|-----------|
+| email | string | Sim | E-mail do usuario a verificar |
+| keywordKeys | string[] | Nao | Lista de chaves de palavras-chave a recuperar |
+
+#### Resposta
+
+```json
+{
+  "success": true,
+  "data": {
+    "hasItem": true,
+    "itemTokens": ["id_item_1_criptografado", "id_item_2_criptografado"],
+    "keywords": {
+      "data": "2025-01-15",
+      "valor": "50000"
+    }
+  }
+}
+```
+
+#### Campos de resposta
+
+| Campo | Tipo | Descricao |
+|-------|------|-----------|
+| hasItem | boolean | Status de propriedade |
+| itemTokens | string[] | Tokens de itens possuidos (apenas se possuir) |
+| keywords | object | Valores de palavras-chave solicitados (apenas se solicitado) |
 
 </div>
 </details>

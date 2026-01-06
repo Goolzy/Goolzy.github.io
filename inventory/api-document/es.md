@@ -127,6 +127,7 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 | `POST /templates/{token}/share` | Compartir plantilla |
 | `POST /templates/revoke` | Revocar comparticion |
 | `POST /templates/{token}/send` | Enviar plantilla |
+| `POST /templates/{token}/check-ownership` | Verificar propiedad de elementos clonados |
 
 ---
 
@@ -283,6 +284,117 @@ curl -X POST \
   }
 }
 ```
+
+</div>
+</details>
+
+<details>
+<summary><h3>POST /templates/{token}/send - Enviar plantilla</h3></summary>
+<div class="manual-content" markdown="1">
+
+Envia una plantilla (sello) a otros usuarios, clonando la plantilla como nuevos articulos en sus cuentas.
+
+#### Solicitud
+
+```bash
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "recipients": ["user1@example.com", "user2@example.com"],
+       "keywords": ["fecha:2025-01-15", "monto:50000"]
+     }' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/send"
+```
+
+#### Cuerpo de solicitud
+
+| Campo | Tipo | Requerido | Descripcion |
+|-------|------|-----------|-------------|
+| recipients | string[] | Si | Lista de correos electronicos de destinatarios |
+| keywords | string[] | X | Palabras clave para agregar/sobrescribir |
+
+#### Reglas de fusión de palabras clave
+
+El parámetro `keywords` le permite sobrescribir las palabras clave predeterminadas de la plantilla o agregar nuevas.
+
+| Situación | Comportamiento |
+|-----------|----------------|
+| Existe la misma clave | **Sobrescribir** con valor de API |
+| Nueva clave | **Agregar** a la lista de palabras clave |
+
+**Ejemplo:**
+- Palabras clave de plantilla: `["fecha:@date@", "precio:0"]`
+- Palabras clave de API: `["fecha:2025-01-15", "nombre:Juan"]`
+- **Resultado**: `["fecha:2025-01-15", "precio:0", "nombre:Juan"]`
+
+#### Respuesta
+
+```json
+{
+  "success": true,
+  "data": {
+    "clonedCount": 2,
+    "recipients": ["user1@example.com", "user2@example.com"],
+    "sentAt": "2025-01-01T00:00:00Z"
+  }
+}
+```
+
+</div>
+</details>
+
+<details>
+<summary><h3>POST /templates/{token}/check-ownership - Verificar propiedad de elementos clonados</h3></summary>
+<div class="manual-content" markdown="1">
+
+Verifique si un usuario específico posee elementos clonados de esta plantilla.
+
+**Seguridad**: Solo puede consultar plantillas que posea. No puede consultar plantillas de otros usuarios.
+
+#### Solicitud
+
+```bash
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "email": "user@example.com",
+       "keywordKeys": ["fecha", "monto"]
+     }' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/check-ownership"
+```
+
+#### Cuerpo de solicitud
+
+| Campo | Tipo | Requerido | Descripcion |
+|-------|------|-----------|-------------|
+| email | string | Si | Correo electrónico del usuario a verificar |
+| keywordKeys | string[] | X | Lista de claves de palabras clave a recuperar |
+
+#### Respuesta
+
+```json
+{
+  "success": true,
+  "data": {
+    "hasItem": true,
+    "itemTokens": ["id_articulo_cifrado_1", "id_articulo_cifrado_2"],
+    "keywords": {
+      "fecha": "2025-01-15",
+      "monto": "50000"
+    }
+  }
+}
+```
+
+#### Campos de respuesta
+
+| Campo | Tipo | Descripcion |
+|-------|------|-------------|
+| hasItem | boolean | Estado de propiedad |
+| itemTokens | string[] | Tokens de elementos poseídos (solo si posee) |
+| keywords | object | Valores de palabras clave solicitados (solo si se solicita) |
 
 </div>
 </details>

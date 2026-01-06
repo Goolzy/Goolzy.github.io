@@ -127,6 +127,7 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 | `POST /templates/{token}/share` | Vorlage teilen |
 | `POST /templates/revoke` | Freigabe widerrufen |
 | `POST /templates/{token}/send` | Vorlage senden |
+| `POST /templates/{token}/check-ownership` | Besitz kopierter Elemente prüfen |
 
 ---
 
@@ -318,6 +319,117 @@ curl -X POST \
   }
 }
 ```
+
+</div>
+</details>
+
+<details>
+<summary><h3>POST /templates/{token}/send - Vorlage senden</h3></summary>
+<div class="manual-content" markdown="1">
+
+Sendet eine Vorlage an einen Empfänger und erstellt ein neues Element basierend auf der Vorlage.
+
+#### Anfrage
+
+```bash
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "email": "empfaenger@example.com",
+       "keywords": ["Datum:2025-01-15", "Betrag:50000"]
+     }' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/send"
+```
+
+#### Anfrage-Body
+
+| Feld | Typ | Erforderlich | Beschreibung |
+|------|-----|--------------|--------------|
+| email | string | Ja | E-Mail des Empfängers |
+| keywords | string[] | Nein | Schlüsselwörter zum Hinzufügen/Überschreiben |
+
+#### Schlüsselwort-Zusammenführungsregeln
+
+Der `keywords`-Parameter ermöglicht das Überschreiben von Standard-Schlüsselwörtern der Vorlage oder das Hinzufügen neuer.
+
+| Situation | Verhalten |
+|-----------|-----------|
+| Gleicher Schlüssel existiert | Mit API-Wert **überschreiben** |
+| Neuer Schlüssel | Zur Schlüsselwortliste **hinzufügen** |
+
+**Beispiel:**
+- Vorlagen-Schlüsselwörter: `["Datum:@date@", "Preis:0"]`
+- API-Schlüsselwörter: `["Datum:2025-01-15", "Name:Hans"]`
+- **Ergebnis**: `["Datum:2025-01-15", "Preis:0", "Name:Hans"]`
+
+#### Antwort
+
+```json
+{
+  "success": true,
+  "data": {
+    "itemToken": "verschlusselte_artikel_id",
+    "title": "Artikel-Titel",
+    "createdAt": "2025-01-01T00:00:00Z"
+  }
+}
+```
+
+</div>
+</details>
+
+<details>
+<summary><h3>POST /templates/{token}/check-ownership - Besitz kopierter Elemente prüfen</h3></summary>
+<div class="manual-content" markdown="1">
+
+Prüfen Sie, ob ein bestimmter Benutzer aus dieser Vorlage kopierte Elemente besitzt.
+
+**Sicherheit**: Sie können nur Vorlagen abfragen, die Sie besitzen. Vorlagen anderer Benutzer können nicht abgefragt werden.
+
+#### Anfrage
+
+```bash
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "email": "benutzer@example.com",
+       "keywordKeys": ["Datum", "Betrag"]
+     }' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/check-ownership"
+```
+
+#### Anfrage-Body
+
+| Feld | Typ | Erforderlich | Beschreibung |
+|------|-----|--------------|--------------|
+| email | string | Ja | E-Mail des zu prüfenden Benutzers |
+| keywordKeys | string[] | Nein | Liste der abzurufenden Schlüsselwort-Schlüssel |
+
+#### Antwort
+
+```json
+{
+  "success": true,
+  "data": {
+    "hasItem": true,
+    "itemTokens": ["token1", "token2"],
+    "keywords": {
+      "Datum": "2025-01-15",
+      "Betrag": "50000"
+    }
+  }
+}
+```
+
+#### Antwort-Felder
+
+| Feld | Typ | Beschreibung |
+|------|-----|--------------|
+| hasItem | boolean | Besitzstatus |
+| itemTokens | string[] | Besessene Element-Token (nur bei Besitz) |
+| keywords | object | Angeforderte Schlüsselwortwerte (nur bei Anfrage) |
 
 </div>
 </details>

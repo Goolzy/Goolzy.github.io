@@ -127,6 +127,7 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 | `POST /templates/{token}/share` | Share template |
 | `POST /templates/revoke` | Revoke share |
 | `POST /templates/{token}/send` | Send template |
+| `POST /templates/{token}/check-ownership` | Check cloned item ownership |
 
 ---
 
@@ -517,7 +518,8 @@ curl -X POST \
      -H "Content-Type: application/json" \
      -d '{
        "recipientEmail": "recipient@example.com",
-       "message": "A gift for you!"
+       "message": "A gift for you!",
+       "keywords": ["date:2025-01-15", "amount:50000"]
      }' \
      "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/send"
 ```
@@ -528,6 +530,21 @@ curl -X POST \
 |-------|------|----------|-------------|
 | recipientEmail | string | Yes | Recipient's email |
 | message | string | No | Message (max 200 characters) |
+| keywords | string[] | X | Keywords to add/override |
+
+#### Keyword Merge Rules
+
+The `keywords` parameter allows you to override template default keywords or add new ones.
+
+| Situation | Behavior |
+|-----------|----------|
+| Same key exists | **Override** with API value |
+| New key | **Add** to keyword list |
+
+**Example:**
+- Template keywords: `["date:@date@", "price:0"]`
+- API keywords: `["date:2025-01-15", "name:John"]`
+- **Result**: `["date:2025-01-15", "price:0", "name:John"]`
 
 #### Response
 
@@ -540,6 +557,85 @@ curl -X POST \
     "status": "sent"
   }
 }
+```
+
+</div>
+</details>
+
+<details>
+<summary><h3>POST /templates/{token}/check-ownership - Check Cloned Item Ownership</h3></summary>
+<div class="manual-content" markdown="1">
+
+Check if a specific user owns items cloned from this template.
+
+> **Security**: You can only query templates you own. You cannot query other users' templates.
+
+#### Request
+
+```bash
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "email": "user@example.com",
+       "keywordKeys": ["date", "amount"]
+     }' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/check-ownership"
+```
+
+#### Request Body
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| email | string | O | Target user's email |
+| keywordKeys | string[] | X | Keyword keys to retrieve |
+
+#### Response (Has Item)
+
+```json
+{
+  "success": true,
+  "data": {
+    "hasItem": true,
+    "itemTokens": ["encrypted_item_id_1", "encrypted_item_id_2"],
+    "keywords": {
+      "date": "2025-01-15",
+      "amount": "50000"
+    }
+  }
+}
+```
+
+#### Response (No Item)
+
+```json
+{
+  "success": true,
+  "data": {
+    "hasItem": false
+  }
+}
+```
+
+#### Response Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| hasItem | boolean | Ownership status |
+| itemTokens | string[] | Owned item tokens (only if owned) |
+| keywords | object | Requested keyword values (only if requested) |
+
+#### Use Case
+
+Check coupon/ticket ownership and usage status:
+
+```bash
+# Check if coupon was issued
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{"email": "customer@example.com", "keywordKeys": ["issueDate", "used"]}' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{coupon_template_token}/check-ownership"
 ```
 
 </div>

@@ -127,6 +127,7 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 | `POST /templates/{token}/share` | テンプレート共有 |
 | `POST /templates/revoke` | 共有解除 |
 | `POST /templates/{token}/send` | テンプレート送信 |
+| `POST /templates/{token}/check-ownership` | 複製アイテムの所有確認 |
 
 ---
 
@@ -517,7 +518,8 @@ curl -X POST \
      -H "Content-Type: application/json" \
      -d '{
        "recipientEmail": "recipient@example.com",
-       "message": "プレゼントです！"
+       "message": "プレゼントです！",
+       "keywords": ["日付:2025-01-15", "金額:50000"]
      }' \
      "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/send"
 ```
@@ -528,6 +530,21 @@ curl -X POST \
 |-----------|-----|------|------|
 | recipientEmail | string | ○ | 受信者のメールアドレス |
 | message | string | - | メッセージ（最大200文字） |
+| keywords | string[] | × | 追加/上書きするキーワード配列 |
+
+#### キーワードマージルール
+
+`keywords`パラメータを使用すると、テンプレートのデフォルトキーワードを上書きまたは新しいキーワードを追加できます。
+
+| 状況 | 動作 |
+|------|------|
+| 同じキーがある場合 | API値で**上書き** |
+| 新しいキーの場合 | キーワードリストに**追加** |
+
+**例:**
+- テンプレートキーワード: `["日付:@date@", "価格:0"]`
+- APIキーワード: `["日付:2025-01-15", "名前:田中"]`
+- **結果**: `["日付:2025-01-15", "価格:0", "名前:田中"]`
 
 #### レスポンス
 
@@ -541,6 +558,61 @@ curl -X POST \
   }
 }
 ```
+
+</div>
+</details>
+
+<details>
+<summary><h3>POST /templates/{token}/check-ownership - 複製アイテムの所有確認</h3></summary>
+<div class="manual-content" markdown="1">
+
+特定のユーザーがこのテンプレートから複製されたアイテムを所有しているか確認します。
+
+**セキュリティ**: 自分が所有するテンプレートのみクエリできます。他のユーザーのテンプレートはクエリできません。
+
+#### リクエスト
+
+```bash
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "email": "user@example.com",
+       "keywordKeys": ["日付", "金額"]
+     }' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/check-ownership"
+```
+
+#### リクエストボディ
+
+| フィールド | 型 | 必須 | 説明 |
+|-----------|-----|------|------|
+| email | string | ○ | 確認するユーザーのメール |
+| keywordKeys | string[] | × | 取得するキーワードキーの一覧 |
+
+#### レスポンス
+
+```json
+{
+  "success": true,
+  "data": {
+    "hasItem": true,
+    "itemTokens": ["token1", "token2"],
+    "keywords": {
+      "日付": "2025-01-15",
+      "金額": "50000"
+    }
+  }
+}
+```
+
+#### レスポンスフィールド
+
+| フィールド | 型 | 説明 |
+|-----------|-----|------|
+| hasItem | boolean | 所有状況 |
+| itemTokens | string[] | 所有アイテムトークン（所有時のみ） |
+| keywords | object | リクエストされたキーワード値（リクエスト時のみ） |
 
 </div>
 </details>

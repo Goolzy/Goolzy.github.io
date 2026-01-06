@@ -194,6 +194,15 @@ translations:
 
 ---
 
+### 🔌 外部API集成
+
+<div style="background: rgba(59, 130, 246, 0.15); backdrop-filter: blur(10px); border: 1px solid rgba(59, 130, 246, 0.3); border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0;">
+  <p style="margin: 0 0 1rem 0; color: rgba(255,255,255,0.9);">关于通过外部API创建模板和物品，请通过以下邮箱联系我们。</p>
+  <a href="mailto:captain@goolzy.com" style="display: inline-block; background: rgba(59,130,246,0.3); border: 1px solid rgba(59,130,246,0.5); color: white; padding: .6rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 500; transition: all 0.3s;">📧 captain@goolzy.com</a>
+</div>
+
+---
+
 > 🔒 **隐私保护**：您的数据经过加密并受到安全保护。详情请参阅我们的[隐私政策](/inventory/privacy/)。
 
 ---

@@ -194,6 +194,15 @@ Crea artículos con una sola hoja de papel y transfiérelos mediante código QR.
 
 ---
 
+### 🔌 Integración API Externa
+
+<div style="background: rgba(59, 130, 246, 0.15); backdrop-filter: blur(10px); border: 1px solid rgba(59, 130, 246, 0.3); border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0;">
+  <p style="margin: 0 0 1rem 0; color: rgba(255,255,255,0.9);">Para la creación de plantillas y artículos a través de API externa, contáctenos por correo electrónico.</p>
+  <a href="mailto:captain@goolzy.com" style="display: inline-block; background: rgba(59,130,246,0.3); border: 1px solid rgba(59,130,246,0.5); color: white; padding: .6rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 500; transition: all 0.3s;">📧 captain@goolzy.com</a>
+</div>
+
+---
+
 > 🔒 **Protección de privacidad**: Tus datos están encriptados y protegidos. Ver nuestra [Política de privacidad](/inventory/privacy/) para más detalles.
 
 ---

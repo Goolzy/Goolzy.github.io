@@ -127,6 +127,7 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 | `POST /templates/{token}/share` | 템플릿 공유 |
 | `POST /templates/revoke` | 공유 회수 |
 | `POST /templates/{token}/send` | 템플릿 전송 |
+| `POST /templates/{token}/check-ownership` | 복제 아이템 소유 여부 확인 |
 
 ---
 
@@ -517,7 +518,8 @@ curl -X POST \
      -H "Content-Type: application/json" \
      -d '{
        "recipientEmail": "recipient@example.com",
-       "message": "선물입니다!"
+       "message": "선물입니다!",
+       "keywords": ["날짜:2025-01-15", "금액:50000"]
      }' \
      "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/send"
 ```
@@ -528,6 +530,21 @@ curl -X POST \
 |------|------|------|------|
 | recipientEmail | string | O | 수신자 이메일 |
 | message | string | X | 전송 메시지 (최대 200자) |
+| keywords | string[] | X | 추가/오버라이드할 키워드 배열 |
+
+#### 키워드 병합 규칙
+
+`keywords` 파라미터를 사용하면 템플릿의 기본 키워드를 오버라이드하거나 새 키워드를 추가할 수 있습니다.
+
+| 상황 | 동작 |
+|------|------|
+| 같은 키가 있으면 | API 값으로 **오버라이드** |
+| 새로운 키면 | 키워드 목록에 **추가** |
+
+**예시:**
+- 템플릿 키워드: `["날짜:@date@", "가격:0"]`
+- API 키워드: `["날짜:2025-01-15", "이름:홍길동"]`
+- **결과**: `["날짜:2025-01-15", "가격:0", "이름:홍길동"]`
 
 #### 응답
 
@@ -537,9 +554,88 @@ curl -X POST \
   "data": {
     "itemToken": "암호화된_아이템_ID",
     "recipientEmail": "recipient@example.com",
-    "status": "sent"
+    "status": "pending"
   }
 }
+```
+
+</div>
+</details>
+
+<details>
+<summary><h3>POST /templates/{token}/check-ownership - 복제 아이템 소유 확인</h3></summary>
+<div class="manual-content" markdown="1">
+
+특정 사용자가 해당 템플릿으로 생성된 복제 아이템을 소유하는지 확인합니다.
+
+> **보안**: 본인이 소유한 템플릿에 대해서만 조회할 수 있습니다. 다른 사용자의 템플릿으로는 조회할 수 없습니다.
+
+#### 요청
+
+```bash
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "email": "user@example.com",
+       "keywordKeys": ["날짜", "금액"]
+     }' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/check-ownership"
+```
+
+#### 요청 본문
+
+| 필드 | 타입 | 필수 | 설명 |
+|------|------|------|------|
+| email | string | O | 조회할 사용자의 이메일 |
+| keywordKeys | string[] | X | 조회할 키워드 키 목록 |
+
+#### 응답 (소유하는 경우)
+
+```json
+{
+  "success": true,
+  "data": {
+    "hasItem": true,
+    "itemTokens": ["암호화된_아이템_ID_1", "암호화된_아이템_ID_2"],
+    "keywords": {
+      "날짜": "2025-01-15",
+      "금액": "50000"
+    }
+  }
+}
+```
+
+#### 응답 (소유하지 않는 경우)
+
+```json
+{
+  "success": true,
+  "data": {
+    "hasItem": false
+  }
+}
+```
+
+#### 응답 필드
+
+| 필드 | 타입 | 설명 |
+|------|------|------|
+| hasItem | boolean | 소유 여부 |
+| itemTokens | string[] | 소유한 아이템 토큰 목록 (소유 시에만) |
+| keywords | object | 요청한 키워드의 값들 (요청 시에만) |
+
+#### 사용 예시
+
+쿠폰/티켓 시스템에서 특정 사용자의 소유 여부 및 사용 상태 확인:
+
+```bash
+# 쿠폰 발급 여부 확인
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{"email": "customer@example.com", "keywordKeys": ["발급일", "사용여부"]}' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{쿠폰템플릿토큰}/check-ownership"
 ```
 
 </div>
