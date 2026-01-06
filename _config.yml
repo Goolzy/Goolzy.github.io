@@ -146,4 +146,16 @@ defaults:
       layout: post
       read_time: true
 
+  # inventory 섹션 전용 og:image
+  - scope:
+      path: "inventory"
+    values:
+      image:
+        path: /assets/images/og-inventory.png
+        alt: "Inventory - 나를 기억하는 나를 기록하는 나의 인벤토리"
+
+# 트위터 카드 설정
+twitter:
+  card: summary_large_image
+
 copyright: "Goolzy co."
