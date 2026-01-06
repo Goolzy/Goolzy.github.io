@@ -50,6 +50,12 @@ La barre de recherche Super enregistre maintenant l'historique de recherche et l
 - **Ajout rapide de filtre**: Appuyez sur une recherche récente pour l'ajouter instantanément comme filtre
 - **Amélioration de l'interface des boutons**: Les boutons Ajouter filtre et Modèles partagés sont maintenant disposés de manière compacte sur une seule ligne
 
+#### Améliorations de la gestion des partitions
+Nouveau design néomorphique pour le dialogue de nom de partition et fonction de réorganisation par glisser-déposer.
+- **Dialogue néomorphique**: Beau nouveau design avec support du mode sombre/clair
+- **Réorganisation par glisser**: Maintenez l'icône de poignée enfoncée pour glisser et réorganiser les partitions
+- **Nom à la création**: Définissez un nom de partition personnalisé lors de la création
+
 </div>
 </details>
 

@@ -50,6 +50,12 @@ A barra de pesquisa Super agora salva o histórico de pesquisa e a função de f
 - **Adicionar filtro rápido**: Toque em uma pesquisa recente para adicioná-la instantaneamente como filtro
 - **Melhoria da interface dos botões**: Os botões Adicionar filtro e Modelos compartilhados agora estão dispostos de forma compacta em uma única linha
 
+#### Melhorias na gestão de partições
+Novo design neomórfico para o diálogo de nome de partição e função de arrastar para reordenar.
+- **Diálogo neomórfico**: Belo novo design com suporte para modo escuro/claro
+- **Reordenar arrastando**: Mantenha pressionado o ícone de alça para arrastar e reordenar as partições
+- **Nome na criação**: Defina um nome de partição personalizado ao criar uma nova
+
 </div>
 </details>
 

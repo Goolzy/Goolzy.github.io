@@ -43,6 +43,19 @@ Bei App-Start wird die auf dem Gerät abgespielte Musik (Spotify, YouTube Music,
 - **App-Soundeffekte gemischt**: App-Soundeffekte werden zusammen mit der Hintergrundmusik abgespielt
 - **Stummschalter-Integration**: Im Stummschaltermodus werden auch App-Soundeffekte stummgeschaltet
 
+#### Verbesserungen bei Suchverlauf und Filtern
+Die Super-Suchleiste speichert jetzt den Suchverlauf und die Filterfunktion wurde verbessert.
+- **Suchverlauf speichern**: Suchbegriffe werden automatisch beim Hinzufügen von Filtern oder beim Suchen nach geteilten Vorlagen gespeichert
+- **Letzte Suchen anzeigen**: Zeigt 5 letzte Suchen beim Fokussieren der Suchleiste an
+- **Schnellfilter hinzufügen**: Tippen Sie auf eine letzte Suche, um sie sofort als Filter hinzuzufügen
+- **Button-UI-Verbesserung**: Die Schaltflächen Filter hinzufügen und Geteilte Vorlagen sind jetzt kompakt in einer Zeile angeordnet
+
+#### Verbesserungen der Partitionsverwaltung
+Neues neomorphes Design für den Partitionsnamen-Dialog und Drag-to-Reorder-Funktion.
+- **Neomorphes Dialog**: Schönes neues Design mit Unterstützung für Dunkel-/Hellmodus
+- **Drag-Neuordnung**: Halten Sie das Griffsymbol gedrückt, um Partitionen per Drag-and-Drop neu zu ordnen
+- **Name bei Erstellung**: Legen Sie beim Erstellen einer neuen Partition einen benutzerdefinierten Namen fest
+
 </div>
 </details>
 

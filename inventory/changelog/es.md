@@ -50,6 +50,12 @@ La barra de búsqueda Super ahora guarda el historial de búsqueda y se ha mejor
 - **Añadir filtro rápido**: Toca una búsqueda reciente para añadirla instantáneamente como filtro
 - **Mejora de la interfaz de botones**: Los botones Añadir filtro y Plantillas compartidas ahora están dispuestos de forma compacta en una sola línea
 
+#### Mejoras en la gestión de particiones
+Nuevo diseño neomórfico para el diálogo de nombre de partición y función de arrastrar para reordenar.
+- **Diálogo neomórfico**: Hermoso nuevo diseño con soporte para modo oscuro/claro
+- **Reordenar arrastrando**: Mantén pulsado el icono de arrastre para arrastrar y reordenar las particiones
+- **Nombre al crear**: Establece un nombre de partición personalizado al crear una nueva
+
 </div>
 </details>
 

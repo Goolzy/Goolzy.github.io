@@ -50,6 +50,12 @@ Super Search Bar now saves search history and filter functionality has been impr
 - **Quick Filter Add**: Tap a recent search to instantly add it as a filter
 - **Button UI Improvement**: Add Filter and Shared Templates buttons are now compactly arranged in a single row
 
+#### Partition Management Improvements
+New neomorphic design partition name dialog and drag-to-reorder functionality.
+- **Neomorphic Dialog**: Beautiful new design for partition name setting with dark/light mode support
+- **Drag Reordering**: Long-press the handle icon to drag and reorder partitions
+- **Name on Creation**: Set custom partition name when creating a new partition
+
 </div>
 </details>
 
