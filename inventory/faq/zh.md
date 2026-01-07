@@ -229,10 +229,10 @@ translations:
 </ul>
 <strong>文本样式：</strong>
 <ul>
-<li><code>&lt;[文本]&gt;</code> - 主色卡片</li>
-<li><code>[&lt;文本&gt;]</code> - 灰色卡片 + 主色文本</li>
+<li><code>{[文本]}</code> - 主色卡片</li>
+<li><code>[{文本}]</code> - 灰色卡片 + 主色文本</li>
 <li><code>[文本]</code> - 灰色卡片</li>
-<li><code>&lt;文本&gt;</code> - 主色文本</li>
+<li><code>{文本}</code> - 主色文本</li>
 <li><code>(文本)</code> - 副色文本</li>
 <li><code>"文本"</code> - 粗体</li>
 <li><code>'文本'</code> - 下划线</li>

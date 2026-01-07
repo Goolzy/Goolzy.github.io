@@ -229,10 +229,10 @@ La duplication consomme 1 Papier et crée un nouvel objet avec le même modèle.
 </ul>
 <strong>Stylisation du texte :</strong>
 <ul>
-<li><code>&lt;[texte]&gt;</code> - Carte couleur principale</li>
-<li><code>[&lt;texte&gt;]</code> - Carte grise + texte couleur principale</li>
+<li><code>{[texte]}</code> - Carte couleur principale</li>
+<li><code>[{texte}]</code> - Carte grise + texte couleur principale</li>
 <li><code>[texte]</code> - Carte grise</li>
-<li><code>&lt;texte&gt;</code> - Texte couleur principale</li>
+<li><code>{texte}</code> - Texte couleur principale</li>
 <li><code>(texte)</code> - Texte couleur secondaire</li>
 <li><code>"texte"</code> - Gras</li>
 <li><code>'texte'</code> - Souligné</li>

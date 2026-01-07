@@ -409,16 +409,16 @@ Mehrfache Verwendung desselben Schlüssels zeigt `vorheriger Wert → neuer Wert
 
 | Format | Effekt | Beispiel |
 |--------|--------|----------|
-| `<[Text]>` | Hauptfarbe-Karte (Hintergrund + Text) | `<[Wichtig]>` |
-| `[<Text>]` | Graue Karte + Hauptfarbe-Text | `[<Vorsicht>]` |
+| `{[Text]}` | Hauptfarbe-Karte (Hintergrund + Text) | `{[Wichtig]}` |
+| `[{Text}]` | Graue Karte + Hauptfarbe-Text | `[{Vorsicht}]` |
 | `[Text]` | Graue Karte | `[Hinweis]` |
-| `<Text>` | Hauptfarbe-Text | `<Hervorhebung>` |
+| `{Text}` | Hauptfarbe-Text | `{Hervorhebung}` |
 | `(Text)` | Nebenfarbe-Text | `(Zusatzinfo)` |
 | `"Text"` | **Fett** | `"Wichtiger Inhalt"` |
 | `'Text'` | <u>Unterstrichen</u> | `'Hervorgehobener Teil'` |
 | `!Text!` | ~~Durchgestrichen~~ | `!Gelöschter Inhalt!` |
 
-> 💡 Stile können bis zu 3 Ebenen verschachtelt werden. Beispiel: `<["Fett Hauptfarbe"]>`
+> 💡 Stile können bis zu 3 Ebenen verschachtelt werden. Beispiel: `{["Fett Hauptfarbe"]}`
 
 **Medienlinks (URL-Karten):**
 

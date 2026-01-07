@@ -273,10 +273,10 @@ translations:
 </ul>
 <strong>텍스트 스타일링:</strong>
 <ul>
-<li><code>&lt;[텍스트]&gt;</code> - 메인 색상 카드</li>
-<li><code>[&lt;텍스트&gt;]</code> - 회색 카드 + 메인 색상 텍스트</li>
+<li><code>{[텍스트]}</code> - 메인 색상 카드</li>
+<li><code>[{텍스트}]</code> - 회색 카드 + 메인 색상 텍스트</li>
 <li><code>[텍스트]</code> - 회색 카드</li>
-<li><code>&lt;텍스트&gt;</code> - 메인 색상 텍스트</li>
+<li><code>{텍스트}</code> - 메인 색상 텍스트</li>
 <li><code>(텍스트)</code> - 서브 색상 텍스트</li>
 <li><code>"텍스트"</code> - 굵게</li>
 <li><code>'텍스트'</code> - 밑줄</li>

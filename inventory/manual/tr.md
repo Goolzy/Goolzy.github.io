@@ -409,16 +409,16 @@ Aynı anahtarı birden fazla kez kullanmak `önceki değer → yeni değer` kar�
 
 | Biçim | Efekt | Örnek |
 |--------|--------|---------|
-| `<[metin]>` | Ana renk kartı (arka plan + metin) | `<[Önemli]>` |
-| `[<metin>]` | Gri kart + ana renk metni | `[<Dikkat>]` |
+| `{[metin]}` | Ana renk kartı (arka plan + metin) | `{[Önemli]}` |
+| `[{metin}]` | Gri kart + ana renk metni | `[{Dikkat}]` |
 | `[metin]` | Gri kart | `[Not]` |
-| `<metin>` | Ana renk metni | `<Vurgu>` |
+| `{metin}` | Ana renk metni | `{Vurgu}` |
 | `(metin)` | Alt renk metni | `(Ek bilgi)` |
 | `"metin"` | **Kalın** | `"Önemli içerik"` |
 | `'metin'` | <u>Altını çiz</u> | `'Vurgulanan kısım'` |
 | `!metin!` | ~~Üzeri çizili~~ | `!Silinen içerik!` |
 
-> 💡 Stiller 3 seviyeye kadar iç içe olabilir. Örnek: `<["Kalın ana renk"]>`
+> 💡 Stiller 3 seviyeye kadar iç içe olabilir. Örnek: `{["Kalın ana renk"]}`
 
 **Medya Bağlantıları (URL Kartları):**
 

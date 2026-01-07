@@ -229,10 +229,10 @@ Als Nachrichten geschrieben, werden sie wie Chat angezeigt. Als <code>Schlüssel
 </ul>
 <strong>Textgestaltung:</strong>
 <ul>
-<li><code>&lt;[Text]&gt;</code> - Hauptfarbe-Karte</li>
-<li><code>[&lt;Text&gt;]</code> - Graue Karte + Hauptfarbe-Text</li>
+<li><code>{[Text]}</code> - Hauptfarbe-Karte</li>
+<li><code>[{Text}]</code> - Graue Karte + Hauptfarbe-Text</li>
 <li><code>[Text]</code> - Graue Karte</li>
-<li><code>&lt;Text&gt;</code> - Hauptfarbe-Text</li>
+<li><code>{Text}</code> - Hauptfarbe-Text</li>
 <li><code>(Text)</code> - Nebenfarbe-Text</li>
 <li><code>"Text"</code> - Fett</li>
 <li><code>'Text'</code> - Unterstrichen</li>

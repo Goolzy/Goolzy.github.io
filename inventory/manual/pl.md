@@ -409,16 +409,16 @@ Użycie tego samego klucza wiele razy wyświetla jako porównanie `poprzednia wa
 
 | Format | Efekt | Przykład |
 |--------|--------|---------|
-| `<[tekst]>` | Karta koloru głównego (tło + tekst) | `<[Ważne]>` |
-| `[<tekst>]` | Szara karta + główny tekst koloru | `[<Ostrożnie>]` |
+| `{[tekst]}` | Karta koloru głównego (tło + tekst) | `{[Ważne]}` |
+| `[{tekst}]` | Szara karta + główny tekst koloru | `[{Ostrożnie}]` |
 | `[tekst]` | Szara karta | `[Uwaga]` |
-| `<tekst>` | Główny tekst koloru | `<Nacisk>` |
+| `{tekst}` | Główny tekst koloru | `{Nacisk}` |
 | `(tekst)` | Tekst koloru pomocniczego | `(Dodatkowe informacje)` |
 | `"tekst"` | **Pogrubienie** | `"Ważna zawartość"` |
 | `'tekst'` | <u>Podkreślenie</u> | `'Wyróżniona część'` |
 | `!tekst!` | ~~Przekreślenie~~ | `!Usunięta zawartość!` |
 
-> 💡 Style mogą być zagnieżdżone do 3 poziomów. Przykład: `<["Pogrubienie głównego koloru"]>`
+> 💡 Style mogą być zagnieżdżone do 3 poziomów. Przykład: `{["Pogrubienie głównego koloru"]}`
 
 **Linki mediów (karty adresów URL):**
 

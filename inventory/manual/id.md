@@ -409,16 +409,16 @@ Menggunakan kunci yang sama beberapa kali ditampilkan sebagai `nilai sebelumnya 
 
 | Format | Efek | Contoh |
 |--------|------|---------|
-| `<[text]>` | Kartu warna utama (latar belakang + teks) | `<[Penting]>` |
-| `[<text>]` | Kartu abu-abu + teks warna utama | `[<Hati-hati>]` |
+| `{[text]}` | Kartu warna utama (latar belakang + teks) | `{[Penting]}` |
+| `[{text}]` | Kartu abu-abu + teks warna utama | `[{Hati-hati}]` |
 | `[text]` | Kartu abu-abu | `[Catatan]` |
-| `<text>` | Teks warna utama | `<Penekanan>` |
+| `{text}` | Teks warna utama | `{Penekanan}` |
 | `(text)` | Teks warna sub | `(Informasi tambahan)` |
 | `"text"` | **Tebal** | `"Konten penting"` |
 | `'text'` | <u>Garis bawah</u> | `'Bagian yang disorot'` |
 | `!text!` | ~~Strikethrough~~ | `!Konten yang dihapus!` |
 
-> 💡 Gaya dapat disarangkan hingga 3 level. Contoh: `<["Tebal warna utama"]>`
+> 💡 Gaya dapat disarangkan hingga 3 level. Contoh: `{["Tebal warna utama"]}`
 
 **Link Media (Kartu URL):**
 

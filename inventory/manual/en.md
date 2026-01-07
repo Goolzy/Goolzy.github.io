@@ -409,16 +409,16 @@ Using the same key multiple times displays as `previous value → new value` com
 
 | Format | Effect | Example |
 |--------|--------|---------|
-| `<[text]>` | Main color card (background + text) | `<[Important]>` |
-| `[<text>]` | Gray card + main color text | `[<Caution>]` |
+| `{[text]}` | Main color card (background + text) | `{[Important]}` |
+| `[{text}]` | Gray card + main color text | `[{Caution}]` |
 | `[text]` | Gray card | `[Note]` |
-| `<text>` | Main color text | `<Emphasis>` |
+| `{text}` | Main color text | `{Emphasis}` |
 | `(text)` | Sub color text | `(Additional info)` |
 | `"text"` | **Bold** | `"Important content"` |
 | `'text'` | <u>Underline</u> | `'Highlighted part'` |
 | `!text!` | ~~Strikethrough~~ | `!Deleted content!` |
 
-> 💡 Styles can be nested up to 3 levels. Example: `<["Bold main color"]>`
+> 💡 Styles can be nested up to 3 levels. Example: `{["Bold main color"]}`
 
 **Media Links (URL Cards):**
 

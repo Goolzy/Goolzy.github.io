@@ -409,16 +409,16 @@ Sử dụng cùng một khóa nhiều lần để hiển thị dưới dạng `g
 
 | Định Dạng | Hiệu Ứng | Ví Dụ |
 |--------|--------|---------|
-| `<[text]>` | Thẻ Màu Chính (nền + văn bản) | `<[Important]>` |
-| `[<text>]` | Thẻ Xám + Văn Bản Màu Chính | `[<Caution>]` |
+| `{[text]}` | Thẻ Màu Chính (nền + văn bản) | `{[Important]}` |
+| `[{text}]` | Thẻ Xám + Văn Bản Màu Chính | `[{Caution}]` |
 | `[text]` | Thẻ Xám | `[Note]` |
-| `<text>` | Văn Bản Màu Chính | `<Emphasis>` |
+| `{text}` | Văn Bản Màu Chính | `{Emphasis}` |
 | `(text)` | Văn Bản Màu Phụ | `(Additional info)` |
 | `"text"` | **Đậm** | `"Important content"` |
 | `'text'` | <u>Gạch Dưới</u> | `'Highlighted part'` |
 | `!text!` | ~~Gạch Ngang~~ | `!Deleted content!` |
 
-> 💡 Các kiểu có thể được lồng sâu tối đa 3 cấp độ. Ví Dụ: `<["Bold main color"]>`
+> 💡 Các kiểu có thể được lồng sâu tối đa 3 cấp độ. Ví Dụ: `{["Bold main color"]}`
 
 **Liên Kết Phương Tiện (Thẻ URL):**
 

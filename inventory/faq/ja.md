@@ -229,10 +229,10 @@ translations:
 </ul>
 <strong>テキストスタイリング：</strong>
 <ul>
-<li><code>&lt;[テキスト]&gt;</code> - メインカラーカード</li>
-<li><code>[&lt;テキスト&gt;]</code> - グレーカード + メインカラーテキスト</li>
+<li><code>{[テキスト]}</code> - メインカラーカード</li>
+<li><code>[{テキスト}]</code> - グレーカード + メインカラーテキスト</li>
 <li><code>[テキスト]</code> - グレーカード</li>
-<li><code>&lt;テキスト&gt;</code> - メインカラーテキスト</li>
+<li><code>{テキスト}</code> - メインカラーテキスト</li>
 <li><code>(テキスト)</code> - サブカラーテキスト</li>
 <li><code>"テキスト"</code> - 太字</li>
 <li><code>'テキスト'</code> - 下線</li>

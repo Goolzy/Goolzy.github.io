@@ -409,16 +409,16 @@ Utiliser la même clé plusieurs fois affiche `ancienne valeur → nouvelle vale
 
 | Format | Effet | Exemple |
 |--------|-------|---------|
-| `<[texte]>` | Carte couleur principale (fond + texte) | `<[Important]>` |
-| `[<texte>]` | Carte grise + texte couleur principale | `[<Attention>]` |
+| `{[texte]}` | Carte couleur principale (fond + texte) | `{[Important]}` |
+| `[{texte}]` | Carte grise + texte couleur principale | `[{Attention}]` |
 | `[texte]` | Carte grise | `[Note]` |
-| `<texte>` | Texte couleur principale | `<Accent>` |
+| `{texte}` | Texte couleur principale | `{Accent}` |
 | `(texte)` | Texte couleur secondaire | `(Info supplémentaire)` |
 | `"texte"` | **Gras** | `"Contenu important"` |
 | `'texte'` | <u>Souligné</u> | `'Partie mise en évidence'` |
 | `!texte!` | ~~Barré~~ | `!Contenu supprimé!` |
 
-> 💡 Les styles peuvent être imbriqués jusqu'à 3 niveaux. Exemple : `<["Gras couleur principale"]>`
+> 💡 Les styles peuvent être imbriqués jusqu'à 3 niveaux. Exemple : `{["Gras couleur principale"]}`
 
 **Liens médias (Cartes URL) :**
 

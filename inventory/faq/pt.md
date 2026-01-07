@@ -229,10 +229,10 @@ Escritos como mensagens, são exibidos como chat. Escritos como <code>chave:valo
 </ul>
 <strong>Estilização de texto:</strong>
 <ul>
-<li><code>&lt;[texto]&gt;</code> - Cartão cor principal</li>
-<li><code>[&lt;texto&gt;]</code> - Cartão cinza + texto cor principal</li>
+<li><code>{[texto]}</code> - Cartão cor principal</li>
+<li><code>[{texto}]</code> - Cartão cinza + texto cor principal</li>
 <li><code>[texto]</code> - Cartão cinza</li>
-<li><code>&lt;texto&gt;</code> - Texto cor principal</li>
+<li><code>{texto}</code> - Texto cor principal</li>
 <li><code>(texto)</code> - Texto cor secundária</li>
 <li><code>"texto"</code> - Negrito</li>
 <li><code>'texto'</code> - Sublinhado</li>

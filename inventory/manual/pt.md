@@ -409,16 +409,16 @@ Usar a mesma chave múltiplas vezes exibe `valor anterior → novo valor`.
 
 | Formato | Efeito | Exemplo |
 |---------|--------|---------|
-| `<[texto]>` | Cartão cor principal (fundo + texto) | `<[Importante]>` |
-| `[<texto>]` | Cartão cinza + texto cor principal | `[<Cuidado>]` |
+| `{[texto]}` | Cartão cor principal (fundo + texto) | `{[Importante]}` |
+| `[{texto}]` | Cartão cinza + texto cor principal | `[{Cuidado}]` |
 | `[texto]` | Cartão cinza | `[Nota]` |
-| `<texto>` | Texto cor principal | `<Ênfase>` |
+| `{texto}` | Texto cor principal | `{Ênfase}` |
 | `(texto)` | Texto cor secundária | `(Info adicional)` |
 | `"texto"` | **Negrito** | `"Conteúdo importante"` |
 | `'texto'` | <u>Sublinhado</u> | `'Parte destacada'` |
 | `!texto!` | ~~Tachado~~ | `!Conteúdo excluído!` |
 
-> 💡 Estilos podem ser aninhados até 3 níveis. Exemplo: `<["Negrito cor principal"]>`
+> 💡 Estilos podem ser aninhados até 3 níveis. Exemplo: `{["Negrito cor principal"]}`
 
 **Links de mídia (Cartões URL):**
 

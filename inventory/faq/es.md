@@ -229,10 +229,10 @@ Escritos como mensajes, se muestran como chat. Escritos como <code>clave:valor</
 </ul>
 <strong>Estilizado de texto:</strong>
 <ul>
-<li><code>&lt;[texto]&gt;</code> - Tarjeta color principal</li>
-<li><code>[&lt;texto&gt;]</code> - Tarjeta gris + texto color principal</li>
+<li><code>{[texto]}</code> - Tarjeta color principal</li>
+<li><code>[{texto}]</code> - Tarjeta gris + texto color principal</li>
 <li><code>[texto]</code> - Tarjeta gris</li>
-<li><code>&lt;texto&gt;</code> - Texto color principal</li>
+<li><code>{texto}</code> - Texto color principal</li>
 <li><code>(texto)</code> - Texto color secundario</li>
 <li><code>"texto"</code> - Negrita</li>
 <li><code>'texto'</code> - Subrayado</li>

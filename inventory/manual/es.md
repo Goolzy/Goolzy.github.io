@@ -409,16 +409,16 @@ Usar la misma clave múltiples veces muestra `valor anterior → nuevo valor`.
 
 | Formato | Efecto | Ejemplo |
 |---------|--------|---------|
-| `<[texto]>` | Tarjeta color principal (fondo + texto) | `<[Importante]>` |
-| `[<texto>]` | Tarjeta gris + texto color principal | `[<Precaución>]` |
+| `{[texto]}` | Tarjeta color principal (fondo + texto) | `{[Importante]}` |
+| `[{texto}]` | Tarjeta gris + texto color principal | `[{Precaución}]` |
 | `[texto]` | Tarjeta gris | `[Nota]` |
-| `<texto>` | Texto color principal | `<Énfasis>` |
+| `{texto}` | Texto color principal | `{Énfasis}` |
 | `(texto)` | Texto color secundario | `(Info adicional)` |
 | `"texto"` | **Negrita** | `"Contenido importante"` |
 | `'texto'` | <u>Subrayado</u> | `'Parte destacada'` |
 | `!texto!` | ~~Tachado~~ | `!Contenido eliminado!` |
 
-> 💡 Los estilos se pueden anidar hasta 3 niveles. Ejemplo: `<["Negrita color principal"]>`
+> 💡 Los estilos se pueden anidar hasta 3 niveles. Ejemplo: `{["Negrita color principal"]}`
 
 **Enlaces multimedia (Tarjetas URL):**
 

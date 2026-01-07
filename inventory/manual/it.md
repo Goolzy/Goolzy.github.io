@@ -409,16 +409,16 @@ L'utilizzo della stessa chiave più volte si visualizza come confronto `valore p
 
 | Formato | Effetto | Esempio |
 |--------|--------|---------|
-| `<[text]>` | Scheda colore principale (sfondo + testo) | `<[Important]>` |
-| `[<text>]` | Scheda grigia + testo colore principale | `[<Caution>]` |
+| `{[text]}` | Scheda colore principale (sfondo + testo) | `{[Important]}` |
+| `[{text}]` | Scheda grigia + testo colore principale | `[{Caution}]` |
 | `[text]` | Scheda grigia | `[Note]` |
-| `<text>` | Testo colore principale | `<Emphasis>` |
+| `{text}` | Testo colore principale | `{Emphasis}` |
 | `(text)` | Testo colore secondario | `(Additional info)` |
 | `"text"` | **Grassetto** | `"Important content"` |
 | `'text'` | <u>Sottolineato</u> | `'Highlighted part'` |
 | `!text!` | ~~Barrato~~ | `!Deleted content!` |
 
-> 💡 Gli stili possono essere nidificati fino a 3 livelli. Esempio: `<["Bold main color"]>`
+> 💡 Gli stili possono essere nidificati fino a 3 livelli. Esempio: `{["Bold main color"]}`
 
 **Link multimediali (Schede URL):**
 

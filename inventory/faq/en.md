@@ -229,10 +229,10 @@ Written as messages, they display like chat. Written as <code>key:value</code>, 
 </ul>
 <strong>Text Styling:</strong>
 <ul>
-<li><code>&lt;[text]&gt;</code> - Main color card</li>
-<li><code>[&lt;text&gt;]</code> - Gray card + main color text</li>
+<li><code>{[text]}</code> - Main color card</li>
+<li><code>[{text}]</code> - Gray card + main color text</li>
 <li><code>[text]</code> - Gray card</li>
-<li><code>&lt;text&gt;</code> - Main color text</li>
+<li><code>{text}</code> - Main color text</li>
 <li><code>(text)</code> - Sub color text</li>
 <li><code>"text"</code> - Bold</li>
 <li><code>'text'</code> - Underline</li>
