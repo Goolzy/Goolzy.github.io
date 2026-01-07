@@ -687,10 +687,11 @@ Inventory에서 **종이**는 아이템을 만들 때 사용하는 핵심 재화
 <summary><h3 id="language">🌍 언어 변경</h3></summary>
 <div class="manual-content" markdown="1">
 
-7개 언어를 지원합니다:
+8개 언어를 지원합니다:
 - 🇰🇷 한국어
 - 🇺🇸 English
 - 🇯🇵 日本語
+- 🇨🇳 中文(简体)
 - 🇩🇪 Deutsch
 - 🇫🇷 Français
 - 🇪🇸 Español

@@ -122,7 +122,7 @@ translations:
 
 ---
 
-<p style="text-align: center; color: rgba(255,255,255,0.6); font-size: .9rem; margin: 1rem 0;">🌍 7개 언어 지원: 한국어, English, 日本語, Deutsch, Français, Español, Português</p>
+<p style="text-align: center; color: rgba(255,255,255,0.6); font-size: .9rem; margin: 1rem 0;">🌍 8개 언어 지원: 한국어, English, 日本語, 中文, Deutsch, Français, Español, Português</p>
 
 > 🔒 **개인정보 보호**: 귀하의 데이터는 암호화되어 안전하게 보호됩니다. 자세한 내용은 [개인정보 처리방침](/inventory/privacy/)을 참고하세요.
 

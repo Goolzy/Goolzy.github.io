@@ -685,10 +685,11 @@ Tap the partition header to select/deselect all items in that partition.
 <summary><h3 id="language">🌍 Changing Language</h3></summary>
 <div class="manual-content" markdown="1">
 
-7 languages are supported:
+8 languages are supported:
 - 🇰🇷 한국어
 - 🇺🇸 English
 - 🇯🇵 日本語
+- 🇨🇳 中文(简体)
 - 🇩🇪 Deutsch
 - 🇫🇷 Français
 - 🇪🇸 Español
