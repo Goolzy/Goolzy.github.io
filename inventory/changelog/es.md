@@ -67,6 +67,21 @@ Las tarjetas de enlaces adjuntos en los registros ahora muestran la descripción
 - **Mejora de UI de tarjeta**: La descripción se muestra debajo del título con un máximo de 2 líneas
 - **Plataformas compatibles**: YouTube, Spotify, páginas web generales y otros tipos de enlaces
 
+#### Cambio de marcadores de estilo de texto
+El marcador de texto de color principal se cambió de `<texto>` a `{texto}`.
+- **Resolución de conflictos de citas**: Prevención de conflictos con la función de citas que utiliza el carácter `>`
+- **Sistema de marcadores consistente**: Unificación con marcadores de paréntesis (`{}`, `[]`, `()`)
+
+#### Soporte para citas múltiples
+Puede mostrar múltiples citas simultáneamente en el registro.
+- **Renderizado de citas múltiples**: Dos o más citas `>` se muestran como widgets de cita individuales separados
+- **Orden preservado**: Las citas se muestran en el orden en que se ingresaron
+
+#### Validación mejorada del envío de correos electrónicos
+La función de envío valida la validez de las direcciones de correo electrónico con mayor precisión.
+- **Validación de registros MX**: Confirmación de la existencia del servidor de correo en el dominio del correo electrónico del destinatario
+- **Prevención de errores**: Bloqueo preventivo de intentos de envío a dominios inexistentes
+
 </div>
 </details>
 

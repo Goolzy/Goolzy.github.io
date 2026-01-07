@@ -67,6 +67,21 @@ Les cartes de liens attachées aux journaux affichent désormais la description 
 - **Amélioration de l'interface de la carte**: La description s'affiche sur un maximum de 2 lignes sous le titre
 - **Plateformes prises en charge**: Tous les types de liens incluant YouTube, Spotify, pages web générales, etc.
 
+#### Modification du marqueur de style de texte
+Le marqueur de texte de couleur principale a été modifié de `<texte>` à `{texte}`.
+- **Résolution des conflits de citations**: Prévention des conflits avec la fonctionnalité de citation utilisant le caractère `>`
+- **Système de marqueurs cohérent**: Unification avec les marqueurs de parenthèses (`{}`, `[]`, `()`)
+
+#### Support des citations multiples
+Plusieurs citations peuvent être affichées simultanément dans les journaux.
+- **Rendu de citations multiples**: Deux citations ou plus avec `>` sont affichées comme des widgets de citation individuels distincts
+- **Préservation de l'ordre**: Les citations sont affichées dans l'ordre d'entrée
+
+#### Renforcement de la validation de l'envoi d'e-mails
+La fonctionnalité d'envoi valide plus précisément la validité des adresses e-mail.
+- **Validation des enregistrements MX**: Vérification de l'existence du serveur de messagerie du domaine de l'e-mail du destinataire
+- **Prévention des erreurs**: Blocage préalable des tentatives d'envoi vers des domaines inexistants
+
 </div>
 </details>
 

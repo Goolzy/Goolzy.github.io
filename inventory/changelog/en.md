@@ -67,6 +67,21 @@ URLs attached to logs now display webpage descriptions (OpenGraph description) i
 - **Card UI Enhancement**: Description displays up to 2 lines below the title
 - **Platform Support**: All link types supported including YouTube, Spotify, and general web pages
 
+#### Text Style Marker Changed
+The main color text marker has been changed from `<text>` to `{text}`.
+- **Quote Conflict Resolution**: Prevents conflicts with quote functionality that uses the `>` character
+- **Consistent Marker System**: Unified with bracket-type markers (`{}`, `[]`, `()`)
+
+#### Multiple Quote Support
+Multiple quotes can be displayed simultaneously in logs.
+- **Multiple Quote Rendering**: Two or more `>` quotes are displayed as individual quote widgets
+- **Order Preservation**: Quotes are displayed in the order they were entered
+
+#### Enhanced Email Delivery Validation
+Email address validation in the send feature is now more accurate.
+- **MX Record Validation**: Verifies the existence of mail servers for recipient email domains
+- **Error Prevention**: Blocks send attempts to non-existent domains in advance
+
 </div>
 </details>
 

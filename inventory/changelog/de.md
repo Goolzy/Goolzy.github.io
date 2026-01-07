@@ -67,6 +67,21 @@ In Protokollen angefügte Link-Karten zeigen nun die Webseiten-Beschreibung (Ope
 - **Verbessertes Karten-UI**: Beschreibung wird unter dem Titel mit maximal 2 Zeilen angezeigt
 - **Unterstützte Plattformen**: YouTube, Spotify, allgemeine Webseiten und alle anderen Link-Typen
 
+#### Änderung der Textstil-Markierer
+Der Textstil-Markierer für die Hauptfarbe wurde von `<Text>` zu `{Text}` geändert.
+- **Konflikt mit Zitaten behoben**: Verhindert Konflikte mit der Zitierungsfunktion, die das `>`-Zeichen verwendet
+- **Einheitliches Markierungssystem**: Vereinheitlichung auf Klammertypen-Markierer (`{}`, `[]`, `()`)
+
+#### Unterstützung für mehrfache Zitate
+In Protokollen können mehrere Zitate gleichzeitig angezeigt werden.
+- **Mehrfaches Zitat-Rendering**: Zwei oder mehr `>`-Zitate werden jeweils als separate Zitat-Widgets angezeigt
+- **Reihenfolge beibehalten**: Zitate werden in der Reihenfolge angezeigt, in der sie eingegeben wurden
+
+#### Verbesserte E-Mail-Versand-Validierung
+Die Versandfunktion validiert E-Mail-Adressen genauer.
+- **MX-Record-Validierung**: Überprüfung der Existenz von Mailservern in der Domäne des Empfängers
+- **Fehlerprävention**: Blockierung von Versandversuchen an nicht existierende Domänen
+
 </div>
 </details>
 

@@ -67,6 +67,21 @@ Cartões de links anexados aos registros agora exibem a descrição da página w
 - **Melhorias na interface do cartão**: Descrição exibida abaixo do título com até 2 linhas
 - **Suporte multiplataforma**: Todos os tipos de links suportados, incluindo YouTube, Spotify, páginas web gerais e outros
 
+#### Alteração de Marcadores de Estilo de Texto
+O marcador de texto de cor principal foi alterado de `<texto>` para `{texto}`.
+- **Resolução de Conflito de Citações**: Prevenção de conflitos com a funcionalidade de citação que usa o caractere `>`
+- **Sistema de Marcadores Consistente**: Unificação com marcadores de parênteses (`{}`, `[]`, `()`)
+
+#### Suporte a Múltiplas Citações
+Você pode exibir várias citações simultaneamente nos logs.
+- **Renderização de Citações Múltiplas**: Duas ou mais citações `>` são exibidas como widgets de citação individuais separados
+- **Preservação da Ordem**: As citações são exibidas na ordem em que foram inseridas
+
+#### Validação Reforçada de Envio de Email
+A funcionalidade de envio valida a autenticidade dos endereços de email com maior precisão.
+- **Validação de Registros MX**: Confirmação da existência do servidor de correio no domínio do email do destinatário
+- **Prevenção de Erros**: Bloqueio preventivo de tentativas de envio para domínios inexistentes
+
 </div>
 </details>
 
