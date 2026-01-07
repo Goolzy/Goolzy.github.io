@@ -42,19 +42,6 @@ Inventory 앱의 업데이트 내역을 확인하세요.
 - **빈 공간 탭**: 입력창 외 영역 터치 시 키보드 자동 닫힘
 - **iOS 지원**: iPhone에서 키보드 닫기 버튼 없이도 편리하게 사용
 
-</div>
-</details>
-
-<details class="changelog-version">
-<summary>
-  <span class="version-title">v1.2.2 <small>2026-01-06</small></span>
-  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
-    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
-    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-  </button>
-</summary>
-<div class="version-content" markdown="1">
-
 #### 배경 음악 유지
 앱 실행 시 기기에서 재생 중이던 음악(스포티파이, 유튜브 뮤직, 애플뮤직 등)이 중단되지 않습니다.
 - **음악 연속 재생**: 앱을 켜도 다른 앱의 배경 음악이 계속 재생

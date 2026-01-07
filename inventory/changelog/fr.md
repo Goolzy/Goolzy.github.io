@@ -42,19 +42,6 @@ Appuyez en dehors du champ de saisie du journal dans la vue détaillée de l'art
 - **Appuyer pour fermer**: Touchez n'importe quelle zone en dehors du champ de saisie pour fermer le clavier
 - **Support iOS**: Utilisation pratique sur iPhone sans bouton de fermeture
 
-</div>
-</details>
-
-<details class="changelog-version">
-<summary>
-  <span class="version-title">v1.2.2 <small>2026-01-06</small></span>
-  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">
-    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
-    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-  </button>
-</summary>
-<div class="version-content" markdown="1">
-
 #### Maintien de la Musique de Fond
 Lorsque vous lancez l'application, la musique en lecture sur votre appareil (Spotify, YouTube Music, Apple Music, etc.) n'est pas interrompue.
 - **Lecture continue de la musique** : La musique de fond d'autres applications continue de jouer même lorsque vous ouvrez l'application
