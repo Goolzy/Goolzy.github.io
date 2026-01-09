@@ -43,19 +43,6 @@ Você pode ajustar o tamanho da fonte do aplicativo em 3 níveis na tela de Conf
 - **Aplicação instantânea**: As alterações são aplicadas imediatamente em todo o aplicativo
 - **Configurações persistentes**: Sua preferência é salva mesmo após reiniciar o aplicativo
 
-</div>
-</details>
-
-<details class="changelog-version">
-<summary>
-  <span class="version-title">v1.2.2 <small>2026-01-07</small></span>
-  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
-    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
-    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-  </button>
-</summary>
-<div class="version-content" markdown="1">
-
 #### Fechamento automático do teclado
 Ao tocar fora do campo de entrada de registro na visualização de detalhes do item, o teclado é fechado automaticamente.
 - **Toque para fechar**: Toque em qualquer área fora do campo de entrada para fechar o teclado

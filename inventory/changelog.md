@@ -43,19 +43,6 @@ Inventory 앱의 업데이트 내역을 확인하세요.
 - **즉시 적용**: 설정 변경 시 앱 전체에 바로 반영
 - **설정 유지**: 앱을 다시 시작해도 설정이 유지됨
 
-</div>
-</details>
-
-<details class="changelog-version">
-<summary>
-  <span class="version-title">v1.2.2 <small>2026-01-07</small></span>
-  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
-    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
-    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-  </button>
-</summary>
-<div class="version-content" markdown="1">
-
 #### 키보드 자동 닫힘
 아이템 상세보기에서 로그 입력창 외 다른 영역을 탭하면 키보드가 자동으로 닫힙니다.
 - **빈 공간 탭**: 입력창 외 영역 터치 시 키보드 자동 닫힘
