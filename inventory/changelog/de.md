@@ -29,6 +29,25 @@ Sehen Sie sich den Update-Verlauf der Inventory-App an.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.2.3 <small>2026-01-10</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopieren">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Schriftgröße anpassen
+Sie können die Schriftgröße der App in 3 Stufen in den Einstellungen anpassen.
+- **3 Stufen**: Wählen Sie zwischen Standard (1.0x), Mittel (1.3x) oder Groß (1.5x)
+- **Sofortige Anwendung**: Änderungen werden sofort in der gesamten App übernommen
+- **Einstellungen speichern**: Ihre Einstellung bleibt auch nach dem Neustart der App erhalten
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.2.2 <small>2026-01-07</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopieren">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

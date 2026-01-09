@@ -29,6 +29,25 @@ Inventory 앱의 업데이트 내역을 확인하세요.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.2.3 <small>2026-01-10</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### 글꼴 크기 조절
+설정 화면에서 앱 전체의 글꼴 크기를 3단계로 조절할 수 있습니다.
+- **3단계 선택**: 기본(1.0x), 중간(1.3x), 크게(1.5x) 중 선택
+- **즉시 적용**: 설정 변경 시 앱 전체에 바로 반영
+- **설정 유지**: 앱을 다시 시작해도 설정이 유지됨
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.2.2 <small>2026-01-07</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
