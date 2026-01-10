@@ -94,8 +94,16 @@ Vous pouvez faire glisser les éléments sélectionnés sans appui long.
 - **Animation de tremblement**: Les éléments sélectionnés tremblent légèrement pour indiquer qu'ils sont déplaçables
 - **Contrôles intuitifs**: UX familière similaire au mode d'édition de l'écran d'accueil iOS
 
+#### Pièces jointes Dropbox
+Connectez Dropbox pour joindre des fichiers à vos journaux.
+- **Plusieurs types de fichiers**: Joignez des images, vidéos, PDFs, musiques et fichiers texte
+- **Support des journaux partagés**: Visualisez et téléchargez les pièces jointes dans les journaux d'éléments partagés
+- **Visionneuses intégrées**: Visualisez les fichiers directement dans l'application (zoom sur les images, feuilletage des PDFs, lecture de vidéos, etc.)
+- **Stockage sécurisé**: Les jetons OAuth sont chiffrés et stockés dans le stockage sécurisé de l'appareil
+
 #### Corrections de bugs
 - **Compteur de badge d'action**: Correction d'un problème où le badge sur le bouton d'action ne reflétait pas correctement le nombre d'actions disponibles pour les éléments sélectionnés
+- **Correction d'erreur de pièce jointe**: Correction d'une erreur qui se produisait lors de l'ajout de fichiers audio/texte depuis Dropbox
 
 </div>
 </details>

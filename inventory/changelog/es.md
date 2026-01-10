@@ -94,8 +94,16 @@ Puede arrastrar elementos seleccionados sin mantener presionado.
 - **Animación de temblor**: Los elementos seleccionados tiemblan suavemente para indicar que son arrastrables
 - **Controles intuitivos**: UX familiar similar al modo de edición de la pantalla de inicio de iOS
 
+#### Archivos adjuntos de Dropbox
+Conecte Dropbox para adjuntar archivos a sus registros.
+- **Múltiples tipos de archivo**: Adjunte imágenes, videos, PDFs, música y archivos de texto
+- **Soporte para registros compartidos**: Ver y descargar archivos adjuntos en registros de elementos compartidos
+- **Visores integrados**: Ver archivos directamente en la aplicación (ampliar imágenes, pasar páginas de PDF, reproducir videos, etc.)
+- **Almacenamiento seguro**: Los tokens OAuth se cifran y almacenan en el almacenamiento seguro del dispositivo
+
 #### Corrección de errores
 - **Contador de insignia de acción**: Se corrigió un problema donde la insignia en el botón de acción no reflejaba con precisión el número de acciones disponibles para los elementos seleccionados
+- **Corrección de error de adjuntos**: Se corrigió un error que ocurría al adjuntar archivos de música/texto desde Dropbox
 
 </div>
 </details>

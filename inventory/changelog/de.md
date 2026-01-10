@@ -94,8 +94,16 @@ Sie können ausgewählte Elemente ohne langes Drücken direkt ziehen.
 - **Wackel-Animation**: Ausgewählte Elemente wackeln leicht, um den ziehbaren Zustand anzuzeigen
 - **Intuitive Bedienung**: Vertraute UX ähnlich dem iOS-Startbildschirm-Bearbeitungsmodus
 
+#### Dropbox-Dateianhänge
+Verbinden Sie Dropbox, um Dateien an Ihre Logs anzuhängen.
+- **Mehrere Dateitypen**: Bilder, Videos, PDFs, Musik und Textdateien anhängen
+- **Unterstützung für geteilte Logs**: Anhänge in geteilten Element-Logs anzeigen und herunterladen
+- **Integrierte Viewer**: Dateien direkt in der App anzeigen (Bilder zoomen, PDF-Seiten blättern, Videos abspielen usw.)
+- **Sichere Speicherung**: OAuth-Token werden verschlüsselt im sicheren Speicher des Geräts gespeichert
+
 #### Fehlerbehebungen
 - **Aktions-Badge-Anzahl**: Ein Problem wurde behoben, bei dem das Badge auf der Aktionsschaltfläche die Anzahl der verfügbaren Aktionen für ausgewählte Elemente nicht korrekt anzeigte
+- **Fehler bei Dateianhängen behoben**: Ein Fehler wurde behoben, der beim Anhängen von Musik-/Textdateien aus Dropbox auftrat
 
 </div>
 </details>

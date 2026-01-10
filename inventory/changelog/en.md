@@ -94,8 +94,16 @@ You can now drag selected items without long pressing.
 - **Wobble Animation**: Selected items gently wobble to indicate they are draggable
 - **Intuitive Controls**: Familiar UX similar to iOS home screen edit mode
 
+#### Dropbox File Attachments
+Connect Dropbox to attach files to your logs.
+- **Multiple File Types**: Attach images, videos, PDFs, music, and text files
+- **Shared Log Support**: View and download attachments in shared item logs
+- **Built-in Viewers**: View files directly in the app (zoom images, flip PDF pages, play videos, etc.)
+- **Secure Storage**: OAuth tokens are encrypted and stored in the device's secure storage
+
 #### Bug Fixes
 - **Action Badge Count**: Fixed an issue where the badge on the action button did not accurately reflect the number of available actions for selected items
+- **File Attachment Error Fix**: Fixed an error that occurred when attaching music/text files from Dropbox
 
 </div>
 </details>
