@@ -101,6 +101,12 @@ Connect Dropbox to attach files to your logs.
 - **Built-in Viewers**: View files directly in the app (zoom images, flip PDF pages, play videos, etc.)
 - **Secure Storage**: OAuth tokens are encrypted and stored in the device's secure storage
 
+#### Shared Log Creation (Paper Detail View)
+Create shared log items directly from blank paper detail view.
+- **Single/Shared Log Choice**: Choose between creating a single item or a shared log with multiple papers
+- **Slider to Select Count**: Select from 2 up to your total paper count using a slider
+- **Auto Paper Selection**: Current paper + oldest purchased papers are automatically selected
+
 #### Bug Fixes
 - **Action Badge Count**: Fixed an issue where the badge on the action button did not accurately reflect the number of available actions for selected items
 - **File Attachment Error Fix**: Fixed an error that occurred when attaching music/text files from Dropbox

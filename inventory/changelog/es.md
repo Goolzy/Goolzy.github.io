@@ -101,6 +101,12 @@ Conecte Dropbox para adjuntar archivos a sus registros.
 - **Visores integrados**: Ver archivos directamente en la aplicación (ampliar imágenes, pasar páginas de PDF, reproducir videos, etc.)
 - **Almacenamiento seguro**: Los tokens OAuth se cifran y almacenan en el almacenamiento seguro del dispositivo
 
+#### Creación de registro compartido (Vista detallada del papel)
+Crea elementos de registro compartido directamente desde la vista detallada del papel en blanco.
+- **Elección de registro único/compartido**: Elija entre crear un elemento único o un registro compartido con varios papeles
+- **Selección de cantidad con control deslizante**: Seleccione de 2 hasta el total de papeles con un control deslizante
+- **Selección automática de papeles**: El papel actual + los papeles comprados más antiguos se seleccionan automáticamente
+
 #### Corrección de errores
 - **Contador de insignia de acción**: Se corrigió un problema donde la insignia en el botón de acción no reflejaba con precisión el número de acciones disponibles para los elementos seleccionados
 - **Corrección de error de adjuntos**: Se corrigió un error que ocurría al adjuntar archivos de música/texto desde Dropbox

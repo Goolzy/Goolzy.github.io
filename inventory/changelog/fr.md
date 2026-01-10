@@ -101,6 +101,12 @@ Connectez Dropbox pour joindre des fichiers à vos journaux.
 - **Visionneuses intégrées**: Visualisez les fichiers directement dans l'application (zoom sur les images, feuilletage des PDFs, lecture de vidéos, etc.)
 - **Stockage sécurisé**: Les jetons OAuth sont chiffrés et stockés dans le stockage sécurisé de l'appareil
 
+#### Création de journal partagé (Vue détaillée du papier)
+Créez des éléments de journal partagé directement depuis la vue détaillée du papier vierge.
+- **Choix journal unique/partagé**: Choisissez entre un élément unique ou un journal partagé avec plusieurs papiers
+- **Sélection du nombre par curseur**: Sélectionnez de 2 jusqu'au nombre total de papiers avec un curseur
+- **Sélection automatique des papiers**: Le papier actuel + les papiers les plus anciens sont sélectionnés automatiquement
+
 #### Corrections de bugs
 - **Compteur de badge d'action**: Correction d'un problème où le badge sur le bouton d'action ne reflétait pas correctement le nombre d'actions disponibles pour les éléments sélectionnés
 - **Correction d'erreur de pièce jointe**: Correction d'une erreur qui se produisait lors de l'ajout de fichiers audio/texte depuis Dropbox

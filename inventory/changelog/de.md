@@ -101,6 +101,12 @@ Verbinden Sie Dropbox, um Dateien an Ihre Logs anzuhängen.
 - **Integrierte Viewer**: Dateien direkt in der App anzeigen (Bilder zoomen, PDF-Seiten blättern, Videos abspielen usw.)
 - **Sichere Speicherung**: OAuth-Token werden verschlüsselt im sicheren Speicher des Geräts gespeichert
 
+#### Erstellung von geteilten Protokollen (Papier-Detailansicht)
+Erstellen Sie geteilte Protokollelemente direkt aus der leeren Papier-Detailansicht.
+- **Einzel-/Geteiltes Protokoll wählen**: Wählen Sie zwischen einem einzelnen Element oder einem geteilten Protokoll mit mehreren Papieren
+- **Anzahl per Schieberegler wählen**: Wählen Sie von 2 bis zur Gesamtzahl Ihrer Papiere per Schieberegler
+- **Automatische Papierauswahl**: Aktuelles Papier + älteste gekaufte Papiere werden automatisch ausgewählt
+
 #### Fehlerbehebungen
 - **Aktions-Badge-Anzahl**: Ein Problem wurde behoben, bei dem das Badge auf der Aktionsschaltfläche die Anzahl der verfügbaren Aktionen für ausgewählte Elemente nicht korrekt anzeigte
 - **Fehler bei Dateianhängen behoben**: Ein Fehler wurde behoben, der beim Anhängen von Musik-/Textdateien aus Dropbox auftrat

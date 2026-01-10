@@ -101,6 +101,12 @@ Conecte o Dropbox para anexar arquivos aos seus registros.
 - **Visualizadores integrados**: Visualize arquivos diretamente no aplicativo (ampliar imagens, virar páginas de PDF, reproduzir vídeos, etc.)
 - **Armazenamento seguro**: Tokens OAuth são criptografados e armazenados no armazenamento seguro do dispositivo
 
+#### Criação de registro compartilhado (Vista detalhada do papel)
+Crie itens de registro compartilhado diretamente da vista detalhada do papel em branco.
+- **Escolha de registro único/compartilhado**: Escolha entre criar um item único ou um registro compartilhado com vários papéis
+- **Seleção de quantidade com controle deslizante**: Selecione de 2 até o total de papéis com um controle deslizante
+- **Seleção automática de papéis**: O papel atual + os papéis comprados mais antigos são selecionados automaticamente
+
 #### Correções de bugs
 - **Contagem do emblema de ação**: Corrigido um problema onde o emblema no botão de ação não refletia com precisão o número de ações disponíveis para os itens selecionados
 - **Correção de erro de anexo de arquivo**: Corrigido um erro que ocorria ao anexar arquivos de música/texto do Dropbox
