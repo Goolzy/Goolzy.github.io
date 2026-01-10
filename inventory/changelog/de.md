@@ -88,6 +88,12 @@ Die Versandfunktion validiert E-Mail-Adressen genauer.
 - **MX-Record-Validierung**: Überprüfung der Existenz von Mailservern in der Domäne des Empfängers
 - **Fehlerprävention**: Blockierung von Versandversuchen an nicht existierende Domänen
 
+#### Verbesserungen der Drag-Bedienung
+Sie können ausgewählte Elemente ohne langes Drücken direkt ziehen.
+- **Sofortiges Ziehen**: Nach der Auswahl sofort ziehen (kein langes Drücken erforderlich)
+- **Wackel-Animation**: Ausgewählte Elemente wackeln leicht, um den ziehbaren Zustand anzuzeigen
+- **Intuitive Bedienung**: Vertraute UX ähnlich dem iOS-Startbildschirm-Bearbeitungsmodus
+
 #### Fehlerbehebungen
 - **Aktions-Badge-Anzahl**: Ein Problem wurde behoben, bei dem das Badge auf der Aktionsschaltfläche die Anzahl der verfügbaren Aktionen für ausgewählte Elemente nicht korrekt anzeigte
 

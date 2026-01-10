@@ -88,6 +88,12 @@ La fonctionnalité d'envoi valide plus précisément la validité des adresses e
 - **Validation des enregistrements MX**: Vérification de l'existence du serveur de messagerie du domaine de l'e-mail du destinataire
 - **Prévention des erreurs**: Blocage préalable des tentatives d'envoi vers des domaines inexistants
 
+#### Améliorations du glisser-déposer
+Vous pouvez faire glisser les éléments sélectionnés sans appui long.
+- **Glissement instantané**: Glissez immédiatement après la sélection (pas d'appui long nécessaire)
+- **Animation de tremblement**: Les éléments sélectionnés tremblent légèrement pour indiquer qu'ils sont déplaçables
+- **Contrôles intuitifs**: UX familière similaire au mode d'édition de l'écran d'accueil iOS
+
 #### Corrections de bugs
 - **Compteur de badge d'action**: Correction d'un problème où le badge sur le bouton d'action ne reflétait pas correctement le nombre d'actions disponibles pour les éléments sélectionnés
 

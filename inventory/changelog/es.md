@@ -88,6 +88,12 @@ La función de envío valida la validez de las direcciones de correo electrónic
 - **Validación de registros MX**: Confirmación de la existencia del servidor de correo en el dominio del correo electrónico del destinatario
 - **Prevención de errores**: Bloqueo preventivo de intentos de envío a dominios inexistentes
 
+#### Mejoras en la interacción de arrastrar
+Puede arrastrar elementos seleccionados sin mantener presionado.
+- **Arrastre instantáneo**: Arrastre inmediatamente después de seleccionar (sin necesidad de mantener presionado)
+- **Animación de temblor**: Los elementos seleccionados tiemblan suavemente para indicar que son arrastrables
+- **Controles intuitivos**: UX familiar similar al modo de edición de la pantalla de inicio de iOS
+
 #### Corrección de errores
 - **Contador de insignia de acción**: Se corrigió un problema donde la insignia en el botón de acción no reflejaba con precisión el número de acciones disponibles para los elementos seleccionados
 
