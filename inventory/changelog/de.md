@@ -88,6 +88,9 @@ Die Versandfunktion validiert E-Mail-Adressen genauer.
 - **MX-Record-Validierung**: Überprüfung der Existenz von Mailservern in der Domäne des Empfängers
 - **Fehlerprävention**: Blockierung von Versandversuchen an nicht existierende Domänen
 
+#### Fehlerbehebungen
+- **Aktions-Badge-Anzahl**: Ein Problem wurde behoben, bei dem das Badge auf der Aktionsschaltfläche die Anzahl der verfügbaren Aktionen für ausgewählte Elemente nicht korrekt anzeigte
+
 </div>
 </details>
 

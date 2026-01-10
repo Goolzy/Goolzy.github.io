@@ -88,6 +88,9 @@ La función de envío valida la validez de las direcciones de correo electrónic
 - **Validación de registros MX**: Confirmación de la existencia del servidor de correo en el dominio del correo electrónico del destinatario
 - **Prevención de errores**: Bloqueo preventivo de intentos de envío a dominios inexistentes
 
+#### Corrección de errores
+- **Contador de insignia de acción**: Se corrigió un problema donde la insignia en el botón de acción no reflejaba con precisión el número de acciones disponibles para los elementos seleccionados
+
 </div>
 </details>
 

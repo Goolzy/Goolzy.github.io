@@ -88,6 +88,9 @@ La fonctionnalité d'envoi valide plus précisément la validité des adresses e
 - **Validation des enregistrements MX**: Vérification de l'existence du serveur de messagerie du domaine de l'e-mail du destinataire
 - **Prévention des erreurs**: Blocage préalable des tentatives d'envoi vers des domaines inexistants
 
+#### Corrections de bugs
+- **Compteur de badge d'action**: Correction d'un problème où le badge sur le bouton d'action ne reflétait pas correctement le nombre d'actions disponibles pour les éléments sélectionnés
+
 </div>
 </details>
 

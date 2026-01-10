@@ -88,6 +88,9 @@ Email address validation in the send feature is now more accurate.
 - **MX Record Validation**: Verifies the existence of mail servers for recipient email domains
 - **Error Prevention**: Blocks send attempts to non-existent domains in advance
 
+#### Bug Fixes
+- **Action Badge Count**: Fixed an issue where the badge on the action button did not accurately reflect the number of available actions for selected items
+
 </div>
 </details>
 

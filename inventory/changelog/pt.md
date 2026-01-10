@@ -88,6 +88,9 @@ A funcionalidade de envio valida a autenticidade dos endereços de email com mai
 - **Validação de Registros MX**: Confirmação da existência do servidor de correio no domínio do email do destinatário
 - **Prevenção de Erros**: Bloqueio preventivo de tentativas de envio para domínios inexistentes
 
+#### Correções de bugs
+- **Contagem do emblema de ação**: Corrigido um problema onde o emblema no botão de ação não refletia com precisão o número de ações disponíveis para os itens selecionados
+
 </div>
 </details>
 
