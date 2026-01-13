@@ -107,6 +107,12 @@ Erstellen Sie geteilte Protokollelemente direkt aus der leeren Papier-Detailansi
 - **Anzahl per Schieberegler wählen**: Wählen Sie von 2 bis zur Gesamtzahl Ihrer Papiere per Schieberegler
 - **Automatische Papierauswahl**: Aktuelles Papier + älteste gekaufte Papiere werden automatisch ausgewählt
 
+#### Tastaturzugänglichkeit
+Verbesserte Bedienung auf Desktop und mit extern angeschlossener Tastatur – vollständige Steuerung ohne Maus ist möglich.
+- **Dropbox-Dateiauswahl**: Verwenden Sie Pfeiltasten zum Navigieren in Dateien, Enter zum Auswählen, Entfernen zum Löschen und ESC zum Schließen
+- **Dokumentfreigabe-Menü**: Nutzen Sie Ctrl+1/2/3 zum Umschalten von Elementen, Pfeiltasten links/rechts zum Navigieren zwischen Schaltflächen und Enter zur Bestätigung
+- **Fokusvisualisierung**: Mit der Tastatur ausgewählte Elemente werden durch Rahmen und Glüheffekt deutlich hervorgehoben
+
 #### Fehlerbehebungen
 - **Aktions-Badge-Anzahl**: Ein Problem wurde behoben, bei dem das Badge auf der Aktionsschaltfläche die Anzahl der verfügbaren Aktionen für ausgewählte Elemente nicht korrekt anzeigte
 - **Fehler bei Dateianhängen behoben**: Ein Fehler wurde behoben, der beim Anhängen von Musik-/Textdateien aus Dropbox auftrat

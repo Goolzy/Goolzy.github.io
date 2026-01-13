@@ -107,6 +107,12 @@ Créez des éléments de journal partagé directement depuis la vue détaillée 
 - **Sélection du nombre par curseur**: Sélectionnez de 2 jusqu'au nombre total de papiers avec un curseur
 - **Sélection automatique des papiers**: Le papier actuel + les papiers les plus anciens sont sélectionnés automatiquement
 
+#### Accessibilité clavier
+Naviguez et contrôlez l'application au clavier sur les ordinateurs de bureau et avec les claviers externes connectés, sans souris.
+- **Sélection de fichiers Dropbox**: Déplacez-vous entre les fichiers avec les flèches, sélectionnez avec Entrée, supprimez avec Suppr, fermez avec Échap
+- **Menu de partage de documents**: Basculez les éléments inclus avec Ctrl+1/2/3, déplacez-vous entre les boutons avec les flèches gauche/droite, exécutez avec Entrée
+- **Visualisation du focus**: Les éléments sélectionnés au clavier sont mis en surbrillance avec une bordure et un effet de lueur
+
 #### Corrections de bugs
 - **Compteur de badge d'action**: Correction d'un problème où le badge sur le bouton d'action ne reflétait pas correctement le nombre d'actions disponibles pour les éléments sélectionnés
 - **Correction d'erreur de pièce jointe**: Correction d'une erreur qui se produisait lors de l'ajout de fichiers audio/texte depuis Dropbox

@@ -107,6 +107,12 @@ Crea elementos de registro compartido directamente desde la vista detallada del 
 - **Selección de cantidad con control deslizante**: Seleccione de 2 hasta el total de papeles con un control deslizante
 - **Selección automática de papeles**: El papel actual + los papeles comprados más antiguos se seleccionan automáticamente
 
+#### Accesibilidad del teclado
+Puede utilizar la aplicación completamente con el teclado sin ratón en escritorio y al conectar un teclado externo.
+- **Selección de archivo Dropbox**: Navegar por archivos con teclas de dirección, seleccionar con Enter, eliminar con Delete, cerrar con ESC
+- **Menú de documento compartido**: Alternar elementos incluidos con Ctrl+1/2/3, navegar botones con teclas de dirección izquierda/derecha, ejecutar con Enter
+- **Visualización de foco**: Los elementos seleccionados con teclado se resaltan con un borde y efecto de resplandor
+
 #### Corrección de errores
 - **Contador de insignia de acción**: Se corrigió un problema donde la insignia en el botón de acción no reflejaba con precisión el número de acciones disponibles para los elementos seleccionados
 - **Corrección de error de adjuntos**: Se corrigió un error que ocurría al adjuntar archivos de música/texto desde Dropbox

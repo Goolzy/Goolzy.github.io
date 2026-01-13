@@ -107,6 +107,12 @@ Crie itens de registro compartilhado diretamente da vista detalhada do papel em 
 - **Seleção de quantidade com controle deslizante**: Selecione de 2 até o total de papéis com um controle deslizante
 - **Seleção automática de papéis**: O papel atual + os papéis comprados mais antigos são selecionados automaticamente
 
+#### Acessibilidade do teclado
+Dados de desktop e teclado externo conectado, você pode operar o aplicativo com apenas o teclado, sem necessidade de mouse.
+- **Seleção de arquivo Dropbox**: Mova arquivos com teclas de direção, selecione com Enter, exclua com Delete, feche com ESC
+- **Menu de compartilhamento de documentos**: Alterne itens incluídos com Ctrl+1/2/3, mova botões com teclas de seta esquerda/direita, execute com Enter
+- **Visualização de foco**: Itens selecionados via teclado são destacados com borda e efeito de brilho
+
 #### Correções de bugs
 - **Contagem do emblema de ação**: Corrigido um problema onde o emblema no botão de ação não refletia com precisão o número de ações disponíveis para os itens selecionados
 - **Correção de erro de anexo de arquivo**: Corrigido um erro que ocorria ao anexar arquivos de música/texto do Dropbox

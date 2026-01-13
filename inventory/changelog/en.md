@@ -107,6 +107,12 @@ Create shared log items directly from blank paper detail view.
 - **Slider to Select Count**: Select from 2 up to your total paper count using a slider
 - **Auto Paper Selection**: Current paper + oldest purchased papers are automatically selected
 
+#### Keyboard Accessibility
+Control the app with only your keyboard on desktop and when an external keyboard is connected.
+- **Dropbox File Selection**: Navigate files with arrow keys, select with Enter, delete with Delete key, close with ESC
+- **Document Sharing Menu**: Toggle included items with Ctrl+1/2/3, move between buttons with left/right arrow keys, execute with Enter
+- **Focus Visualization**: Selected items via keyboard are highlighted with a border and glow effect
+
 #### Bug Fixes
 - **Action Badge Count**: Fixed an issue where the badge on the action button did not accurately reflect the number of available actions for selected items
 - **File Attachment Error Fix**: Fixed an error that occurred when attaching music/text files from Dropbox
