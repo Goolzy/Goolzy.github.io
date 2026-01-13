@@ -110,6 +110,7 @@ Create shared log items directly from blank paper detail view.
 #### Bug Fixes
 - **Action Badge Count**: Fixed an issue where the badge on the action button did not accurately reflect the number of available actions for selected items
 - **File Attachment Error Fix**: Fixed an error that occurred when attaching music/text files from Dropbox
+- **Audio Swipe Playback Improvement**: Caching and autoplay now work correctly when swiping between audio files in media viewer
 
 </div>
 </details>

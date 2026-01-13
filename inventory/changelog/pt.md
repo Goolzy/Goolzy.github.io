@@ -110,6 +110,7 @@ Crie itens de registro compartilhado diretamente da vista detalhada do papel em 
 #### Correções de bugs
 - **Contagem do emblema de ação**: Corrigido um problema onde o emblema no botão de ação não refletia com precisão o número de ações disponíveis para os itens selecionados
 - **Correção de erro de anexo de arquivo**: Corrigido um erro que ocorria ao anexar arquivos de música/texto do Dropbox
+- **Melhoria na reprodução de áudio por deslize**: O cache e a reprodução automática agora funcionam corretamente ao deslizar entre arquivos de áudio no visualizador de mídia
 
 </div>
 </details>

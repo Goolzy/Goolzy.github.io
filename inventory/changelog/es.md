@@ -110,6 +110,7 @@ Crea elementos de registro compartido directamente desde la vista detallada del 
 #### Corrección de errores
 - **Contador de insignia de acción**: Se corrigió un problema donde la insignia en el botón de acción no reflejaba con precisión el número de acciones disponibles para los elementos seleccionados
 - **Corrección de error de adjuntos**: Se corrigió un error que ocurría al adjuntar archivos de música/texto desde Dropbox
+- **Mejora de reproducción de audio al deslizar**: El almacenamiento en caché y la reproducción automática ahora funcionan correctamente al deslizar entre archivos de audio en el visor de medios
 
 </div>
 </details>

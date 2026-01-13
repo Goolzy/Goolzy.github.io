@@ -110,6 +110,7 @@ Créez des éléments de journal partagé directement depuis la vue détaillée 
 #### Corrections de bugs
 - **Compteur de badge d'action**: Correction d'un problème où le badge sur le bouton d'action ne reflétait pas correctement le nombre d'actions disponibles pour les éléments sélectionnés
 - **Correction d'erreur de pièce jointe**: Correction d'une erreur qui se produisait lors de l'ajout de fichiers audio/texte depuis Dropbox
+- **Amélioration de la lecture audio par balayage**: La mise en cache et la lecture automatique fonctionnent maintenant correctement lors du balayage entre les fichiers audio dans le visualiseur de médias
 
 </div>
 </details>

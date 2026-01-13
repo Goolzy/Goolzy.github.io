@@ -110,6 +110,7 @@ Erstellen Sie geteilte Protokollelemente direkt aus der leeren Papier-Detailansi
 #### Fehlerbehebungen
 - **Aktions-Badge-Anzahl**: Ein Problem wurde behoben, bei dem das Badge auf der Aktionsschaltfläche die Anzahl der verfügbaren Aktionen für ausgewählte Elemente nicht korrekt anzeigte
 - **Fehler bei Dateianhängen behoben**: Ein Fehler wurde behoben, der beim Anhängen von Musik-/Textdateien aus Dropbox auftrat
+- **Verbesserung der Audio-Swipe-Wiedergabe**: Caching und automatische Wiedergabe funktionieren jetzt korrekt beim Wischen zwischen Audiodateien im Medien-Viewer
 
 </div>
 </details>
