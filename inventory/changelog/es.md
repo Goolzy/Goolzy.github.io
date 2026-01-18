@@ -29,6 +29,39 @@ Consulta el historial de actualizaciones de la aplicación Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.2.3 <small>2026-01-18</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Mejoras del sistema de emoticonos
+La función de adjuntar emoticonos en los registros ha sido mejorada.
+- **Corrección de restauración de caché**: Los emoticonos se muestran correctamente después de volver a entrar
+- **Optimización del tamaño de burbuja**: Las burbujas con solo emoticonos tienen un tamaño apropiado
+- **Vista previa de selección**: Vista previa del emoticono seleccionado sobre el campo de entrada
+
+#### Mejoras del enfoque del campo de entrada
+Se corrigieron los problemas de enfoque del campo de entrada en iPad.
+- **Compatibilidad con iPad**: El enfoque del campo de entrada funciona correctamente cuando aparece el teclado
+- **Entrada estable**: Experiencia de entrada consistente en todos los dispositivos iOS
+
+#### Mejoras del filtrado de notificaciones
+Las notificaciones para la pantalla actualmente vista se filtran.
+- **Filtro de notificaciones push**: Las notificaciones push del elemento abierto no se muestran
+- **Filtro de notificaciones in-app**: Los toasts de notificación in-app del elemento actual no se muestran
+
+#### Correcciones de errores
+- Corrección del problema de emoticonId faltante en la restauración de caché
+- Corrección del error de creación de notificaciones in-app de Cloud Functions
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.2.2 <small>2026-01-10</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

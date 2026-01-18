@@ -29,6 +29,39 @@ Inventory 앱의 업데이트 내역을 확인하세요.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.2.3 <small>2026-01-18</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### 이모티콘 시스템 개선
+로그에 이모티콘을 첨부하는 기능이 개선되었습니다.
+- **캐시 복원 수정**: 이모티콘을 보낸 후 다시 들어와도 정상적으로 표시
+- **박스 크기 최적화**: 이모티콘만 있는 메시지의 말풍선 크기가 적절하게 조정
+- **선택 미리보기**: 이모티콘 선택 시 입력창 위에 선택한 이모티콘 미리보기 표시
+
+#### 채팅 입력창 포커스 개선
+iPad에서 입력창 포커스 문제가 수정되었습니다.
+- **iPad 호환성**: 키보드가 올라올 때 입력창에 포커스가 정상적으로 설정
+- **안정적인 입력**: 모든 iOS 기기에서 일관된 입력 경험 제공
+
+#### 알림 필터링 개선
+현재 보고 있는 화면에 대한 알림이 필터링됩니다.
+- **푸시 알림 필터**: 현재 열어둔 아이템에 대한 푸시 알림이 표시되지 않음
+- **인앱 알림 필터**: 현재 보고 있는 아이템의 인앱 알림 토스트가 표시되지 않음
+
+#### 버그 수정
+- 이모티콘 캐시 복원 시 emoticonId 누락 문제 수정
+- Cloud Functions 인앱 알림 생성 오류 수정
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.2.2 <small>2026-01-10</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

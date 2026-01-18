@@ -29,6 +29,39 @@ Confira o histórico de atualizações do aplicativo Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.2.3 <small>2026-01-18</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Melhorias no sistema de emoticons
+A função de anexar emoticons aos registros foi melhorada.
+- **Correção de restauração de cache**: Emoticons são exibidos corretamente após reentrar no app
+- **Otimização do tamanho da bolha**: Balões com apenas emoticons têm tamanho apropriado
+- **Prévia de seleção**: Prévia do emoticon selecionado exibida acima do campo de entrada
+
+#### Melhorias no foco do campo de entrada
+Problemas de foco do campo de entrada no iPad foram corrigidos.
+- **Compatibilidade com iPad**: O foco do campo de entrada funciona corretamente quando o teclado aparece
+- **Entrada estável**: Experiência de entrada consistente em todos os dispositivos iOS
+
+#### Melhorias na filtragem de notificações
+Notificações para a tela atualmente visualizada são filtradas.
+- **Filtro de notificações push**: Notificações push do item atualmente aberto não são exibidas
+- **Filtro de notificações in-app**: Toasts de notificação in-app do item atual não são exibidos
+
+#### Correções de bugs
+- Correção do problema de emoticonId ausente na restauração de cache
+- Correção do erro de criação de notificação in-app do Cloud Functions
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.2.2 <small>2026-01-10</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

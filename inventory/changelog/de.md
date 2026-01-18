@@ -29,6 +29,39 @@ Sehen Sie sich den Update-Verlauf der Inventory-App an.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.2.3 <small>2026-01-18</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopieren">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Emoticon-System-Verbesserungen
+Die Emoticon-Anhang-Funktion für Protokolle wurde verbessert.
+- **Cache-Wiederherstellung behoben**: Emoticons werden nach erneutem Öffnen korrekt angezeigt
+- **Optimierte Boxgröße**: Sprechblasen mit nur Emoticons sind jetzt angemessen dimensioniert
+- **Auswahlvorschau**: Vorschau des ausgewählten Emoticons über dem Eingabefeld
+
+#### Chat-Eingabefeld-Fokus-Verbesserungen
+Fokus-Probleme im Eingabefeld auf iPad wurden behoben.
+- **iPad-Kompatibilität**: Eingabefeld-Fokus funktioniert korrekt beim Erscheinen der Tastatur
+- **Stabile Eingabe**: Konsistente Eingabeerfahrung auf allen iOS-Geräten
+
+#### Benachrichtigungsfilter-Verbesserungen
+Benachrichtigungen für den aktuell angezeigten Bildschirm werden gefiltert.
+- **Push-Benachrichtigungsfilter**: Push-Benachrichtigungen für das aktuelle Element werden nicht angezeigt
+- **In-App-Benachrichtigungsfilter**: In-App-Benachrichtigungs-Toasts für das aktuelle Element werden nicht angezeigt
+
+#### Fehlerbehebungen
+- emoticonId-Fehlen bei Emoticon-Cache-Wiederherstellung behoben
+- Cloud Functions In-App-Benachrichtigungserstellungsfehler behoben
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.2.2 <small>2026-01-10</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopieren">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

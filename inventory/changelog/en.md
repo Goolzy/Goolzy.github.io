@@ -29,6 +29,39 @@ Check out the update history for the Inventory app.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.2.3 <small>2026-01-18</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Emoticon System Improvements
+The emoticon attachment feature for logs has been improved.
+- **Cache Restoration Fix**: Emoticons now display correctly after re-entering the app
+- **Box Size Optimization**: Emoticon-only message bubbles are now appropriately sized
+- **Selection Preview**: Selected emoticon preview shown above input field
+
+#### Chat Input Focus Improvements
+Fixed input field focus issues on iPad.
+- **iPad Compatibility**: Input field focus works correctly when keyboard appears
+- **Stable Input**: Consistent input experience across all iOS devices
+
+#### Notification Filtering Improvements
+Notifications for the currently viewed screen are now filtered.
+- **Push Notification Filter**: Push notifications for the currently open item are not displayed
+- **In-App Notification Filter**: In-app notification toasts for the current item are not shown
+
+#### Bug Fixes
+- Fixed emoticonId missing during emoticon cache restoration
+- Fixed Cloud Functions in-app notification creation error
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.2.2 <small>2026-01-10</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

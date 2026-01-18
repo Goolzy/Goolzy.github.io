@@ -29,6 +29,39 @@ Inventoryアプリのアップデート履歴をご確認ください。
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.2.3 <small>2026-01-18</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="コピー">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### 絵文字システムの改善
+ログに絵文字を添付する機能が改善されました。
+- **キャッシュ復元修正**: 絵文字送信後、再入場しても正常に表示
+- **ボックスサイズ最適化**: 絵文字のみのメッセージの吹き出しサイズが適切に調整
+- **選択プレビュー**: 絵文字選択時、入力欄の上に選択した絵文字のプレビューを表示
+
+#### チャット入力欄のフォーカス改善
+iPadでの入力欄フォーカス問題が修正されました。
+- **iPad互換性**: キーボード表示時、入力欄に正常にフォーカスが設定
+- **安定した入力**: すべてのiOSデバイスで一貫した入力体験を提供
+
+#### 通知フィルタリングの改善
+現在表示中の画面に対する通知がフィルタリングされます。
+- **プッシュ通知フィルター**: 現在開いているアイテムのプッシュ通知が表示されない
+- **アプリ内通知フィルター**: 現在表示中のアイテムのアプリ内通知トーストが表示されない
+
+#### バグ修正
+- 絵文字キャッシュ復元時のemoticonId欠落問題を修正
+- Cloud Functionsアプリ内通知作成エラーを修正
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.2.2 <small>2026-01-10</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="コピー">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

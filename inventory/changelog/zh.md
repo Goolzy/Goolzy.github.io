@@ -29,6 +29,39 @@ translations:
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.2.3 <small>2026-01-18</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### 表情符号系统改进
+日志表情符号附件功能已改进。
+- **缓存恢复修复**: 发送表情符号后重新进入，仍能正常显示
+- **气泡大小优化**: 仅含表情符号的消息气泡大小已适当调整
+- **选择预览**: 选择表情符号时，在输入框上方显示所选表情符号预览
+
+#### 聊天输入框焦点改进
+iPad上的输入框焦点问题已修复。
+- **iPad兼容性**: 键盘弹出时，输入框能正常获得焦点
+- **稳定输入**: 在所有iOS设备上提供一致的输入体验
+
+#### 通知过滤改进
+当前查看的屏幕的通知将被过滤。
+- **推送通知过滤**: 当前打开项目的推送通知不会显示
+- **应用内通知过滤**: 当前查看项目的应用内通知提示不会显示
+
+#### 错误修复
+- 修复表情符号缓存恢复时emoticonId丢失的问题
+- 修复Cloud Functions应用内通知创建错误
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.2.2 <small>2026-01-10</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
