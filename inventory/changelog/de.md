@@ -53,6 +53,12 @@ Benachrichtigungen für den aktuell angezeigten Bildschirm werden gefiltert.
 - **Push-Benachrichtigungsfilter**: Push-Benachrichtigungen für das aktuelle Element werden nicht angezeigt
 - **In-App-Benachrichtigungsfilter**: In-App-Benachrichtigungs-Toasts für das aktuelle Element werden nicht angezeigt
 
+#### Benachrichtigungs-Toast-Gesten
+Sie können jetzt mit In-App-Benachrichtigungs-Toasts über Gesten interagieren.
+- **Tippen zum Navigieren**: Tippen Sie auf die Benachrichtigung, um direkt zum zugehörigen Dokument zu gelangen
+- **Wischen zum Schließen**: Wischen Sie nach oben, um die Benachrichtigung schnell zu schließen
+- **Haptisches Feedback**: Haptisches Feedback wird bei Touch-Interaktionen bereitgestellt
+
 #### Fehlerbehebungen
 - emoticonId-Fehlen bei Emoticon-Cache-Wiederherstellung behoben
 - Cloud Functions In-App-Benachrichtigungserstellungsfehler behoben

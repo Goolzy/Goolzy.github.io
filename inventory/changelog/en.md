@@ -53,6 +53,12 @@ Notifications for the currently viewed screen are now filtered.
 - **Push Notification Filter**: Push notifications for the currently open item are not displayed
 - **In-App Notification Filter**: In-app notification toasts for the current item are not shown
 
+#### Notification Toast Gestures
+You can now interact with in-app notification toasts using gestures.
+- **Tap to Navigate**: Tap the notification to jump directly to the related document
+- **Swipe to Dismiss**: Swipe up to quickly dismiss the notification
+- **Haptic Feedback**: Haptic feedback is provided for touch interactions
+
 #### Bug Fixes
 - Fixed emoticonId missing during emoticon cache restoration
 - Fixed Cloud Functions in-app notification creation error

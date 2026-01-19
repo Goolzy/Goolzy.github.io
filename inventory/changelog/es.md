@@ -53,6 +53,12 @@ Las notificaciones para la pantalla actualmente vista se filtran.
 - **Filtro de notificaciones push**: Las notificaciones push del elemento abierto no se muestran
 - **Filtro de notificaciones in-app**: Los toasts de notificación in-app del elemento actual no se muestran
 
+#### Gestos del toast de notificación
+Ahora puede interactuar con los toasts de notificación in-app mediante gestos.
+- **Tocar para navegar**: Toque la notificación para ir directamente al documento relacionado
+- **Deslizar para cerrar**: Deslice hacia arriba para cerrar rápidamente la notificación
+- **Retroalimentación háptica**: Se proporciona retroalimentación háptica para las interacciones táctiles
+
 #### Correcciones de errores
 - Corrección del problema de emoticonId faltante en la restauración de caché
 - Corrección del error de creación de notificaciones in-app de Cloud Functions
