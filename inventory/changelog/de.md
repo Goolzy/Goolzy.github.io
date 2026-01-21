@@ -29,13 +29,19 @@ Sehen Sie sich den Update-Verlauf der Inventory-App an.
 
 <details class="changelog-version" open>
 <summary>
-  <span class="version-title">v1.2.3 <small>2026-01-18</small></span>
+  <span class="version-title">v1.2.3 <small>2026-01-21</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopieren">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
   </button>
 </summary>
 <div class="version-content" markdown="1">
+
+#### Verbesserungen beim Laden von Abzeichen-Bildern
+Das Problem, dass Abzeichen-Bilder beim Neustart der App flackerten, wurde behoben.
+- **Persistenter Cache**: Abzeichen-Bild-URLs werden lokal gespeichert und bleiben nach App-Neustarts erhalten
+- **Vorladen**: Alle zwischengespeicherten Abzeichen-Bilder werden während des Splash-Screens vorgeladen
+- **Hintergrundaktualisierung**: Abzeichen-Bilder werden automatisch im Hintergrund aktualisiert, wenn sie auf dem Server geändert wurden
 
 #### Emoticon-System-Verbesserungen
 Die Emoticon-Anhang-Funktion für Protokolle wurde verbessert.

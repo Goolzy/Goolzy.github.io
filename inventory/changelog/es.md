@@ -29,13 +29,19 @@ Consulta el historial de actualizaciones de la aplicación Inventory.
 
 <details class="changelog-version" open>
 <summary>
-  <span class="version-title">v1.2.3 <small>2026-01-18</small></span>
+  <span class="version-title">v1.2.3 <small>2026-01-21</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
   </button>
 </summary>
 <div class="version-content" markdown="1">
+
+#### Mejoras en la carga de imágenes de insignias
+Se corrigió el problema de parpadeo de las imágenes de insignias al reiniciar la aplicación.
+- **Caché persistente**: Las URLs de imágenes de insignias se almacenan localmente y persisten después de los reinicios
+- **Precarga**: Todas las imágenes de insignias en caché se precargan durante la pantalla de inicio
+- **Actualización en segundo plano**: Las imágenes de insignias se actualizan automáticamente en segundo plano cuando cambian en el servidor
 
 #### Mejoras del sistema de emoticonos
 La función de adjuntar emoticonos en los registros ha sido mejorada.

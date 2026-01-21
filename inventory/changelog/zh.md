@@ -29,13 +29,19 @@ translations:
 
 <details class="changelog-version" open>
 <summary>
-  <span class="version-title">v1.2.3 <small>2026-01-18</small></span>
+  <span class="version-title">v1.2.3 <small>2026-01-21</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
   </button>
 </summary>
 <div class="version-content" markdown="1">
+
+#### 徽章图片加载改进
+修复了应用重启时徽章图片闪烁的问题。
+- **持久缓存**: 徽章图片URL本地存储，应用重启后仍然保留
+- **预加载**: 在启动画面期间预加载所有缓存的徽章图片
+- **后台更新**: 当服务器上的徽章图片发生变化时，自动在后台更新
 
 #### 表情符号系统改进
 日志表情符号附件功能已改进。

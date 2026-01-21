@@ -29,13 +29,19 @@ Consultez l'historique des mises à jour de l'application Inventory.
 
 <details class="changelog-version" open>
 <summary>
-  <span class="version-title">v1.2.3 <small>2026-01-18</small></span>
+  <span class="version-title">v1.2.3 <small>2026-01-21</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
   </button>
 </summary>
 <div class="version-content" markdown="1">
+
+#### Améliorations du chargement des images de badge
+Correction du problème de scintillement des images de badge au redémarrage de l'application.
+- **Cache persistant**: Les URLs des images de badge sont stockées localement et persistent après les redémarrages
+- **Préchargement**: Toutes les images de badge en cache sont préchargées pendant l'écran de démarrage
+- **Actualisation en arrière-plan**: Les images de badge sont automatiquement mises à jour en arrière-plan lorsqu'elles changent sur le serveur
 
 #### Améliorations du système d'émoticônes
 La fonction de pièce jointe d'émoticônes pour les journaux a été améliorée.

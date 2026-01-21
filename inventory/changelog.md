@@ -29,13 +29,19 @@ Inventory 앱의 업데이트 내역을 확인하세요.
 
 <details class="changelog-version" open>
 <summary>
-  <span class="version-title">v1.2.3 <small>2026-01-18</small></span>
+  <span class="version-title">v1.2.3 <small>2026-01-21</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
   </button>
 </summary>
 <div class="version-content" markdown="1">
+
+#### 뱃지 이미지 로딩 개선
+앱 재시작 시 뱃지 이미지가 깜빡이던 문제가 해결되었습니다.
+- **영구 캐시**: 뱃지 이미지 URL이 로컬에 저장되어 앱을 다시 시작해도 유지
+- **선로딩**: 스플래시 화면에서 모든 캐시된 뱃지 이미지를 미리 로드
+- **백그라운드 갱신**: 서버에서 뱃지 이미지가 변경되면 백그라운드에서 자동 업데이트
 
 #### 이모티콘 시스템 개선
 로그에 이모티콘을 첨부하는 기능이 개선되었습니다.

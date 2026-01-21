@@ -29,13 +29,19 @@ Inventoryアプリのアップデート履歴をご確認ください。
 
 <details class="changelog-version" open>
 <summary>
-  <span class="version-title">v1.2.3 <small>2026-01-18</small></span>
+  <span class="version-title">v1.2.3 <small>2026-01-21</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="コピー">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
   </button>
 </summary>
 <div class="version-content" markdown="1">
+
+#### バッジ画像読み込みの改善
+アプリ再起動時にバッジ画像がちらつく問題が解決されました。
+- **永続キャッシュ**: バッジ画像URLがローカルに保存され、アプリ再起動後も維持
+- **プリロード**: スプラッシュ画面ですべてのキャッシュされたバッジ画像を事前読み込み
+- **バックグラウンド更新**: サーバーでバッジ画像が変更されると、バックグラウンドで自動更新
 
 #### 絵文字システムの改善
 ログに絵文字を添付する機能が改善されました。
