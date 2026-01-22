@@ -641,7 +641,7 @@ Anda dapat membeli berbagai item dari toko.
 ---
 
 <details>
-<summary><h3 id="partition">📂 Fitur Partisi</h3></summary>
+<summary><h3 id="pocket">📂 Fitur Partisi</h3></summary>
 <div class="manual-content" markdown="1">
 
 Anda dapat mengelompokkan item dengan partisi saat Anda memiliki banyak item.

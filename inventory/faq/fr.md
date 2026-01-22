@@ -443,17 +443,17 @@ Utile pour calculer les prix totaux ou rassembler les tags associés.
 
 ---
 
-### 📂 Partition
+### 📂 Pocket
 
 <details>
-<summary><strong>Q. Qu'est-ce qu'une Partition ?</strong></summary>
+<summary><strong>Q. Qu'est-ce qu'une Pocket ?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> La Partition est une fonctionnalité pour organiser les objets en groupes.
+<strong>A.</strong> La Pocket est une fonctionnalité pour organiser les objets en groupes.
 <ul>
-<li>Sélectionnez des objets et utilisez <strong>"Créer une partition"</strong> pour une nouvelle partition</li>
-<li>Les noms de partition peuvent avoir jusqu'à 16 caractères</li>
+<li>Sélectionnez des objets et utilisez <strong>"Créer une pocket"</strong> pour une nouvelle pocket</li>
+<li>Les noms de pocket peuvent avoir jusqu'à 16 caractères</li>
 </ul>
-⚠️ Les partitions sont <strong>stockées uniquement sur l'appareil</strong>. Elles ne sont pas visibles sur d'autres appareils.
+⚠️ Les pockets sont <strong>stockées uniquement sur l'appareil</strong>. Elles ne sont pas visibles sur d'autres appareils.
 </div>
 </details>
 
@@ -571,7 +571,7 @@ Gardez les informations sensibles en sécurité.
 <li><strong>Gestion des garanties/reçus</strong> : Photos avec dates d'expiration</li>
 <li><strong>Stockage de mots de passe</strong> : Conserver en sécurité avec la fonction de verrouillage</li>
 <li><strong>Gestion du calendrier</strong> : Alarmes D-Day pour les dates importantes</li>
-<li><strong>Organisation de collections</strong> : Catégoriser avec des partitions</li>
+<li><strong>Organisation de collections</strong> : Catégoriser avec des pockets</li>
 <li><strong>Collaboration d'équipe</strong> : Travailler ensemble avec des journaux partagés</li>
 </ul>
 Pour plus d'idées, consultez <a href="/inventory/usecases/fr/">100 Cas d'utilisation</a> !

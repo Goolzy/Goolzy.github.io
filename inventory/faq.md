@@ -487,17 +487,17 @@ QR 코드에는 이메일 주소가 담겨있어 직접 입력 없이 빠르게 
 
 ---
 
-### 📂 파티션
+### 📂 포켓
 
 <details>
-<summary><strong>Q. 파티션은 무엇인가요?</strong></summary>
+<summary><strong>Q. 포켓은 무엇인가요?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> 파티션은 아이템을 그룹으로 정리하는 기능입니다.
+<strong>A.</strong> 포켓은 아이템을 그룹으로 정리하는 기능입니다.
 <ul>
-<li>아이템 선택 후 <strong>"파티션 생성"</strong>으로 새 파티션 생성</li>
-<li>파티션 이름은 최대 16자</li>
+<li>아이템 선택 후 <strong>"포켓 생성"</strong>으로 새 포켓 생성</li>
+<li>포켓 이름은 최대 16자</li>
 </ul>
-⚠️ 파티션은 <strong>기기에만 저장</strong>됩니다. 다른 기기에서는 보이지 않습니다.
+⚠️ 포켓은 <strong>기기에만 저장</strong>됩니다. 다른 기기에서는 보이지 않습니다.
 </div>
 </details>
 
@@ -615,7 +615,7 @@ QR 코드에는 이메일 주소가 담겨있어 직접 입력 없이 빠르게 
 <li><strong>보증서/영수증 관리</strong>: 사진과 유효기간 설정</li>
 <li><strong>비밀번호 저장</strong>: 잠금 기능으로 안전하게 보관</li>
 <li><strong>일정 관리</strong>: D-Day 알람으로 중요 일정 관리</li>
-<li><strong>수집품 정리</strong>: 파티션으로 분류하여 관리</li>
+<li><strong>수집품 정리</strong>: 포켓으로 분류하여 관리</li>
 <li><strong>공동 작업</strong>: 공유로그로 팀원과 협업</li>
 </ul>
 더 많은 아이디어는 <a href="/inventory/usecases/">활용방법 100가지</a>를 확인해보세요!

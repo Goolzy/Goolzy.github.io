@@ -54,7 +54,7 @@ categories:
             <li>🧾 <strong>收据保管</strong>：将重要收据数字化保存</li>
           </ul>
 
-          <p><strong>整理技巧</strong>：相似的文档可用<strong>回形针</strong>装订，不同类别可用<strong>分区</strong>区分。</p>
+          <p><strong>整理技巧</strong>：相似的文档可用<strong>回形针</strong>装订，不同类别可用<strong>口袋</strong>区分。</p>
 
       # 1-2. 共享模板复制
       - type: "初级"
@@ -113,9 +113,9 @@ categories:
       # 1-4. 文档整理高级
       - type: "高级"
         title: "系统化文档管理"
-        subtitle: "用回形针和分区整理档案"
+        subtitle: "用回形针和口袋整理档案"
         content: |
-          <p><strong>概述</strong>：当文档增多时，可以利用回形针和分区进行系统化整理。</p>
+          <p><strong>概述</strong>：当文档增多时，可以利用回形针和口袋进行系统化整理。</p>
 
           <p><strong>用回形针装订文档</strong></p>
           <ol>
@@ -125,18 +125,18 @@ categories:
             <li>输入回形针名称后完成</li>
           </ol>
 
-          <p><strong>用分区划分区域</strong></p>
+          <p><strong>用口袋划口袋域</strong></p>
           <ol>
-            <li>在库存中点击<strong>添加分区</strong></li>
-            <li>输入分区名称（如：工作、个人、爱好）</li>
-            <li>将文档拖动到相应分区</li>
+            <li>在库存中点击<strong>添加口袋</strong></li>
+            <li>输入口袋名称（如：工作、个人、爱好）</li>
+            <li>将文档拖动到相应口袋</li>
           </ol>
 
           <p><strong>使用示例</strong></p>
           <ul>
-            <li>📁 <strong>按项目整理</strong>：将各项目用回形针装订，用分区分类</li>
-            <li>📅 <strong>按年份归档</strong>：用2024、2025分区按年管理</li>
-            <li>🏷️ <strong>按类别分类</strong>：照片、文档、笔记等按类型分区</li>
+            <li>📁 <strong>按项目整理</strong>：将各项目用回形针装订，用口袋分类</li>
+            <li>📅 <strong>按年份归档</strong>：用2024、2025口袋按年管理</li>
+            <li>🏷️ <strong>按类别分类</strong>：照片、文档、笔记等按类型口袋</li>
           </ul>
 
       # 1-5. 业务文档化专家

@@ -29,6 +29,31 @@ Sehen Sie sich den Update-Verlauf der Inventory-App an.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.3.0 <small>2026-01-22</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopieren">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Pocket Rebranding
+Der Name für Artikelklassifizierungseinheiten wurde von 'Partition' zu 'Pocket' geändert.
+- **Intuitiver Name**: Vermittelt besser das Konzept eines Raums zum Aufbewahren von Artikeln, wie eine Tasche
+- **Einheitliche UI**: Einheitliche Terminologie als 'Pocket' in der gesamten App
+- **Mehrsprachige Unterstützung**: Angemessen übersetzt für verschiedene Sprachen
+
+#### Automatische Datenmigration
+Bestehende 'Partition'-Daten werden automatisch in 'Pocket' konvertiert.
+- **Verlustfreie Migration**: Ihre bestehenden Partitionen und Artikel bleiben genau so erhalten
+- **Automatische Verarbeitung**: Migration erfolgt automatisch bei App-Update
+- **Nahtloser Übergang**: Keine Aktion erforderlich - einfach aktualisieren und weiter nutzen
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.2.3 <small>2026-01-21</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopieren">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
@@ -106,11 +131,11 @@ Die Super-Suchleiste speichert jetzt den Suchverlauf und die Filterfunktion wurd
 - **Schnellfilter hinzufügen**: Tippen Sie auf eine letzte Suche, um sie sofort als Filter hinzuzufügen
 - **Button-UI-Verbesserung**: Die Schaltflächen Filter hinzufügen und Geteilte Vorlagen sind jetzt kompakt in einer Zeile angeordnet
 
-#### Verbesserungen der Partitionsverwaltung
-Neues neomorphes Design für den Partitionsnamen-Dialog und Drag-to-Reorder-Funktion.
+#### Verbesserungen der Pocketsverwaltung
+Neues neomorphes Design für den Pocketsnamen-Dialog und Drag-to-Reorder-Funktion.
 - **Neomorphes Dialog**: Schönes neues Design mit Unterstützung für Dunkel-/Hellmodus
-- **Drag-Neuordnung**: Halten Sie das Griffsymbol gedrückt, um Partitionen per Drag-and-Drop neu zu ordnen
-- **Name bei Erstellung**: Legen Sie beim Erstellen einer neuen Partition einen benutzerdefinierten Namen fest
+- **Drag-Neuordnung**: Halten Sie das Griffsymbol gedrückt, um Pocketen per Drag-and-Drop neu zu ordnen
+- **Name bei Erstellung**: Legen Sie beim Erstellen einer neuen Pocket einen benutzerdefinierten Namen fest
 
 #### Link-Vorschau mit Beschreibung anzeigen
 In Protokollen angefügte Link-Karten zeigen nun die Webseiten-Beschreibung (OpenGraph-Beschreibung) an.
@@ -248,7 +273,7 @@ Beim Ziehen von Elementen scrollt der Bildschirm automatisch am Rand.
 - **Auto-Scroll-Bereich**: Automatisches Scrollen beim Ziehen in den oberen/unteren 10% des Bildschirms
 - **Beschleunigungsbasiert**: Scroll-Geschwindigkeit erhöht sich näher am Rand
 - **Haptisches Feedback**: Leichte Vibration beim Betreten des Scroll-Bereichs
-- **Partitionsübergreifende Bewegung**: Schnelles Durchsuchen vieler Elemente oder mehrerer Partitionen
+- **Pocketsübergreifende Bewegung**: Schnelles Durchsuchen vieler Elemente oder mehrerer Pocketen
 
 #### Scroll-Navigation
 Schnelle Navigation zum Anfang/Ende im Detailansichtsfenster.
@@ -415,7 +440,7 @@ Dokumente, Stempel und Protokollinhalte werden automatisch in Ihre Sprache über
 
 #### Tutorial-System
 Schritt-für-Schritt-Tutorials wurden hinzugefügt, um Sie durch die App-Nutzung zu führen.
-- **Inventar-Bildschirm**: Artikelauswahl, Partitionsbewegung, Nutzung des unteren Menüs (8 Schritte)
+- **Inventar-Bildschirm**: Artikelauswahl, Pocketsbewegung, Nutzung des unteren Menüs (8 Schritte)
 - **Senden/Empfangen-Bildschirm**: Empfängereingabe, QR-Scan, Übertragungs-/Empfangsmethoden
 - **Shop-Bildschirm**: Produktkategorie-Durchsuchen und Kaufmethoden
 - **Profil-Bildschirm**: Kontoinformationen und Einstellungen
@@ -541,11 +566,11 @@ Wenn Sie einen gravierten Stempel auswählen, **pulsieren** verfügbare Papiere 
 - Verbesserte UX für Vorlagen-Duplizierung
 - Intuitive Anleitung für nächsten Schritt
 
-#### Partitionsverbesserungen
-- **Einklappen/Ausklappen**: Partitionen mit Pfeiltasten umschalten (▼/▲)
-- **Alle auswählen**: Partitionsheader antippen, um alle Elemente auszuwählen/abzuwählen
+#### Pocketsverbesserungen
+- **Einklappen/Ausklappen**: Pocketen mit Pfeiltasten umschalten (▼/▲)
+- **Alle auswählen**: Pocketsheader antippen, um alle Elemente auszuwählen/abzuwählen
 - Auswahlstatusanzeigen (○/◐/●)
-- Drag & Drop zu eingeklappten Partitionen
+- Drag & Drop zu eingeklappten Pocketen
 
 #### Shop-Komfort
 Vereinfachter Checkout bei aufeinanderfolgenden Käufen desselben Artikels.
@@ -563,7 +588,7 @@ Vereinfachter Checkout bei aufeinanderfolgenden Käufen desselben Artikels.
 #### Fehlerbehebungen
 - Pulsierungseffekt bei eigenen Kommentaren behoben
 - Eingabefeld-Abschneidung bei Gestennavigation behoben
-- Grauer Bildschirm beim Einklappen von Partitionen behoben
+- Grauer Bildschirm beim Einklappen von Pocketen behoben
 - Push-Benachrichtigungsberechtigung verbessert
 
 </div>
@@ -660,7 +685,7 @@ Spezielle Informationen einfach über die `+`-Taste beim Log-Schreiben eingeben:
 - Empfangene Gegenstände annehmen oder zurücksenden
 - Mehrere Gegenstände gleichzeitig senden
 
-#### Partition
+#### Pocket
 - Gegenstandsgruppierungsfunktion
 - Gerätespezifischer lokaler Speicher
 

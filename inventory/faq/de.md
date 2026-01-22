@@ -443,17 +443,17 @@ Nützlich für die Berechnung von Gesamtpreisen oder das Sammeln verwandter Tags
 
 ---
 
-### 📂 Partition
+### 📂 Pocket
 
 <details>
-<summary><strong>Q. Was ist eine Partition?</strong></summary>
+<summary><strong>Q. Was ist eine Pocket?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Partition ist eine Funktion zum Organisieren von Gegenständen in Gruppen.
+<strong>A.</strong> Pocket ist eine Funktion zum Organisieren von Gegenständen in Gruppen.
 <ul>
-<li>Wählen Sie Gegenstände und verwenden Sie <strong>"Partition erstellen"</strong> für eine neue Partition</li>
-<li>Partitionsnamen können bis zu 16 Zeichen lang sein</li>
+<li>Wählen Sie Gegenstände und verwenden Sie <strong>"Pocket erstellen"</strong> für eine neue Pocket</li>
+<li>Pocketsnamen können bis zu 16 Zeichen lang sein</li>
 </ul>
-⚠️ Partitionen werden <strong>nur auf dem Gerät gespeichert</strong>. Sie sind auf anderen Geräten nicht sichtbar.
+⚠️ Pocketen werden <strong>nur auf dem Gerät gespeichert</strong>. Sie sind auf anderen Geräten nicht sichtbar.
 </div>
 </details>
 
@@ -571,7 +571,7 @@ Bewahren Sie sensible Informationen sicher auf.
 <li><strong>Garantie/Quittungsverwaltung</strong>: Fotos mit Ablaufdaten</li>
 <li><strong>Passwortspeicherung</strong>: Sicher aufbewahren mit Sperrfunktion</li>
 <li><strong>Terminverwaltung</strong>: D-Day-Alarme für wichtige Termine</li>
-<li><strong>Sammlungsorganisation</strong>: Mit Partitionen kategorisieren</li>
+<li><strong>Sammlungsorganisation</strong>: Mit Pocketen kategorisieren</li>
 <li><strong>Teamzusammenarbeit</strong>: Mit geteilten Protokollen zusammenarbeiten</li>
 </ul>
 Für mehr Ideen besuchen Sie <a href="/inventory/usecases/de/">100 Anwendungsfälle</a>!

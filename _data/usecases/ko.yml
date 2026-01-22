@@ -54,7 +54,7 @@ categories:
             <li>🧾 <strong>영수증 보관</strong>: 중요한 영수증을 디지털로 보관</li>
           </ul>
 
-          <p><strong>정리 팁</strong>: 비슷한 문서들은 <strong>클립</strong>으로 묶고, 카테고리는 <strong>파티션</strong>으로 구분하세요.</p>
+          <p><strong>정리 팁</strong>: 비슷한 문서들은 <strong>클립</strong>으로 묶고, 카테고리는 <strong>포켓</strong>으로 구분하세요.</p>
 
       # 1-2. 공유 템플릿 복제
       - type: "초급"
@@ -113,9 +113,9 @@ categories:
       # 1-4. 문서 정리 고급
       - type: "고급"
         title: "체계적인 문서 관리하기"
-        subtitle: "클립과 파티션으로 정리하는 아카이브"
+        subtitle: "클립과 포켓으로 정리하는 아카이브"
         content: |
-          <p><strong>개요</strong>: 문서가 많아지면 클립과 파티션을 활용해 체계적으로 정리할 수 있습니다.</p>
+          <p><strong>개요</strong>: 문서가 많아지면 클립과 포켓을 활용해 체계적으로 정리할 수 있습니다.</p>
 
           <p><strong>클립으로 문서 묶기</strong></p>
           <ol>
@@ -125,18 +125,18 @@ categories:
             <li>클립 이름 입력 후 완료</li>
           </ol>
 
-          <p><strong>파티션으로 영역 구분</strong></p>
+          <p><strong>포켓으로 영역 구분</strong></p>
           <ol>
-            <li>인벤토리에서 <strong>파티션 추가</strong> 터치</li>
-            <li>파티션 이름 입력 (예: 업무, 개인, 취미)</li>
-            <li>해당 파티션에 문서들을 드래그하여 이동</li>
+            <li>인벤토리에서 <strong>포켓 추가</strong> 터치</li>
+            <li>포켓 이름 입력 (예: 업무, 개인, 취미)</li>
+            <li>해당 포켓에 문서들을 드래그하여 이동</li>
           </ol>
 
           <p><strong>활용 예시</strong></p>
           <ul>
-            <li>📁 <strong>프로젝트별 정리</strong>: 각 프로젝트를 클립으로 묶고 파티션으로 분류</li>
-            <li>📅 <strong>연도별 아카이브</strong>: 2024, 2025 파티션으로 연도별 관리</li>
-            <li>🏷️ <strong>카테고리 분류</strong>: 사진, 문서, 메모 등 유형별 파티션</li>
+            <li>📁 <strong>프로젝트별 정리</strong>: 각 프로젝트를 클립으로 묶고 포켓으로 분류</li>
+            <li>📅 <strong>연도별 아카이브</strong>: 2024, 2025 포켓으로 연도별 관리</li>
+            <li>🏷️ <strong>카테고리 분류</strong>: 사진, 문서, 메모 등 유형별 포켓</li>
           </ul>
 
       # 1-5. 업무 문서화 전문가

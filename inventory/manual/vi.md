@@ -641,7 +641,7 @@ Bạn có thể mua nhiều mục khác nhau từ cửa hàng.
 ---
 
 <details>
-<summary><h3 id="partition">📂 Tính Năng Phân Vùng</h3></summary>
+<summary><h3 id="pocket">📂 Tính Năng Phân Vùng</h3></summary>
 <div class="manual-content" markdown="1">
 
 Bạn có thể nhóm các mục có phân vùng khi bạn có nhiều mục.

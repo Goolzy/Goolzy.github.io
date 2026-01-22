@@ -443,17 +443,17 @@ QRコードにはメールアドレスが含まれており、直接入力なし
 
 ---
 
-### 📂 パーティション
+### 📂 ポケット
 
 <details>
-<summary><strong>Q. パーティションとは何ですか？</strong></summary>
+<summary><strong>Q. ポケットとは何ですか？</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> パーティションはアイテムをグループに整理する機能です。
+<strong>A.</strong> ポケットはアイテムをグループに整理する機能です。
 <ul>
-<li>アイテムを選択後<strong>「パーティション作成」</strong>で新しいパーティションを作成</li>
-<li>パーティション名は最大16文字</li>
+<li>アイテムを選択後<strong>「ポケット作成」</strong>で新しいポケットを作成</li>
+<li>ポケット名は最大16文字</li>
 </ul>
-⚠️ パーティションは<strong>デバイスにのみ保存</strong>されます。他のデバイスでは表示されません。
+⚠️ ポケットは<strong>デバイスにのみ保存</strong>されます。他のデバイスでは表示されません。
 </div>
 </details>
 
@@ -571,7 +571,7 @@ QRコードにはメールアドレスが含まれており、直接入力なし
 <li><strong>保証書/領収書管理</strong>：写真と有効期限を設定</li>
 <li><strong>パスワード保存</strong>：ロック機能で安全に保管</li>
 <li><strong>スケジュール管理</strong>：D-Dayアラームで重要な予定を管理</li>
-<li><strong>コレクション整理</strong>：パーティションで分類して管理</li>
+<li><strong>コレクション整理</strong>：ポケットで分類して管理</li>
 <li><strong>チームコラボ</strong>：共有ログでチームメンバーと協力</li>
 </ul>
 もっとアイデアを見るには<a href="/inventory/usecases/ja/">活用方法100選</a>をチェック！

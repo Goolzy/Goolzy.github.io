@@ -29,6 +29,31 @@ translations:
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.3.0 <small>2026-01-22</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="คัดลอก">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### รีแบรนด์ Pocket
+ชื่อหน่วยจัดหมวดหมู่รายการถูกเปลี่ยนจาก 'Partition' เป็น 'Pocket'
+- **ชื่อที่เข้าใจง่าย**: สื่อความหมายได้ดีขึ้นว่าเป็นพื้นที่เก็บของ เหมือนกระเป๋า
+- **UI ที่สอดคล้อง**: ใช้คำว่า 'Pocket' เป็นคำศัพท์เดียวทั่วทั้งแอป
+- **รองรับหลายภาษา**: แปลอย่างเหมาะสมสำหรับแต่ละภาษา
+
+#### การย้ายข้อมูลอัตโนมัติ
+ข้อมูล 'Partition' ที่มีอยู่จะถูกแปลงเป็น 'Pocket' โดยอัตโนมัติ
+- **การย้ายโดยไม่สูญเสียข้อมูล**: พาร์ติชันและรายการที่มีอยู่จะถูกเก็บรักษาไว้อย่างครบถ้วน
+- **ประมวลผลอัตโนมัติ**: การย้ายเกิดขึ้นโดยอัตโนมัติเมื่อคุณอัปเดตแอป
+- **การเปลี่ยนผ่านที่ราบรื่น**: ไม่ต้องดำเนินการใดๆ - เพียงอัปเดตและใช้งานต่อได้เลย
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.2.1 <small>2026-01-05</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="คัดลอก">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

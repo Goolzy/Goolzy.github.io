@@ -641,7 +641,7 @@ Você pode comprar vários itens na loja.
 ---
 
 <details>
-<summary><h3 id="partition">📂 Função de Partição</h3></summary>
+<summary><h3 id="pocket">📂 Função de Partição</h3></summary>
 <div class="manual-content" markdown="1">
 
 Você pode agrupar itens com partições quando tiver muitos.

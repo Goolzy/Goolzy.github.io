@@ -443,17 +443,17 @@ translations:
 
 ---
 
-### 📂 分区
+### 📂 口袋
 
 <details>
-<summary><strong>Q. 什么是分区？</strong></summary>
+<summary><strong>Q. 什么是口袋？</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> 分区是将物品整理成组的功能。
+<strong>A.</strong> 口袋是将物品整理成组的功能。
 <ul>
-<li>选中物品后使用<strong>"创建分区"</strong>来创建新分区</li>
-<li>分区名称最多16个字符</li>
+<li>选中物品后使用<strong>"创建口袋"</strong>来创建新口袋</li>
+<li>口袋名称最多16个字符</li>
 </ul>
-⚠️ 分区<strong>仅保存在设备本地</strong>。在其他设备上不可见。
+⚠️ 口袋<strong>仅保存在设备本地</strong>。在其他设备上不可见。
 </div>
 </details>
 
@@ -571,7 +571,7 @@ translations:
 <li><strong>保修/收据管理</strong>：带有效期的照片</li>
 <li><strong>密码存储</strong>：使用锁定功能保护安全</li>
 <li><strong>日程管理</strong>：重要日期的倒计时提醒</li>
-<li><strong>收藏整理</strong>：使用分区分类管理</li>
+<li><strong>收藏整理</strong>：使用口袋分类管理</li>
 <li><strong>团队协作</strong>：使用共享日志一起工作</li>
 </ul>
 更多创意请查看<a href="/inventory/usecases/zh/">100个使用案例</a>！

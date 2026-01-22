@@ -641,34 +641,34 @@ Vous pouvez acheter divers objets dans la boutique.
 ---
 
 <details>
-<summary><h3 id="partition">📂 Fonction Partition</h3></summary>
+<summary><h3 id="pocket">📂 Fonction Pocket</h3></summary>
 <div class="manual-content" markdown="1">
 
-Vous pouvez grouper les objets avec des partitions quand vous en avez beaucoup.
+Vous pouvez grouper les objets avec des pockets quand vous en avez beaucoup.
 
-#### Créer une Partition
+#### Créer une Pocket
 
 1. Sélectionnez des objets
-2. Sélectionnez **"Créer une partition"** dans le menu du bas
-3. Entrez le nom de la partition (max 16 caractères)
+2. Sélectionnez **"Créer une pocket"** dans le menu du bas
+3. Entrez le nom de la pocket (max 16 caractères)
 
-#### Caractéristiques des Partitions
+#### Caractéristiques des Pockets
 
-- Les partitions sont **enregistrées uniquement sur l'appareil**
-- La structure des partitions n'est pas visible sur les autres appareils
+- Les pockets sont **enregistrées uniquement sur l'appareil**
+- La structure des pockets n'est pas visible sur les autres appareils
 - Les objets eux-mêmes sont stockés dans le cloud et visibles sur tous les appareils
 
 #### Réduire/Développer
 
-Utilisez le bouton fléché (▼/▲) à droite de l'en-tête de partition pour réduire ou développer.
+Utilisez le bouton fléché (▼/▲) à droite de l'en-tête de pocket pour réduire ou développer.
 
 - L'état réduit est conservé après le redémarrage de l'application
-- Toutes les partitions sont automatiquement développées pendant la recherche
-- Vous pouvez glisser des éléments vers des partitions réduites
+- Toutes les pockets sont automatiquement développées pendant la recherche
+- Vous pouvez glisser des éléments vers des pockets réduites
 
-#### Tout sélectionner dans la Partition
+#### Tout sélectionner dans la Pocket
 
-Appuyez sur l'en-tête de partition pour sélectionner/désélectionner tous les éléments de cette partition.
+Appuyez sur l'en-tête de pocket pour sélectionner/désélectionner tous les éléments de cette pocket.
 
 | Indicateur | Signification |
 |------------|---------------|

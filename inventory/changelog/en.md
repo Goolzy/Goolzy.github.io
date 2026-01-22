@@ -29,6 +29,31 @@ Check out the update history for the Inventory app.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.3.0 <small>2026-01-22</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Pocket Rebranding
+The name for item classification units has been changed from 'Partition' to 'Pocket'.
+- **Intuitive Name**: Better conveys the concept of a space to store items, like a pocket holding belongings
+- **Consistent UI**: Unified terminology as 'Pocket' throughout the entire app
+- **Multilingual Support**: Translated appropriately for each language including Korean (포켓), English (Pocket), Japanese (ポケット), Chinese (口袋)
+
+#### Automatic Data Migration
+Existing 'Partition' data is automatically converted to 'Pocket'.
+- **Lossless Migration**: Your existing partitions and items are preserved exactly as they were
+- **Automatic Processing**: Migration happens automatically when you update the app
+- **Seamless Transition**: No action required from users - just update and continue using
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.2.3 <small>2026-01-21</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
@@ -106,11 +131,11 @@ Super Search Bar now saves search history and filter functionality has been impr
 - **Quick Filter Add**: Tap a recent search to instantly add it as a filter
 - **Button UI Improvement**: Add Filter and Shared Templates buttons are now compactly arranged in a single row
 
-#### Partition Management Improvements
-New neomorphic design partition name dialog and drag-to-reorder functionality.
-- **Neomorphic Dialog**: Beautiful new design for partition name setting with dark/light mode support
-- **Drag Reordering**: Long-press the handle icon to drag and reorder partitions
-- **Name on Creation**: Set custom partition name when creating a new partition
+#### Pocket Management Improvements
+New neomorphic design pocket name dialog and drag-to-reorder functionality.
+- **Neomorphic Dialog**: Beautiful new design for pocket name setting with dark/light mode support
+- **Drag Reordering**: Long-press the handle icon to drag and reorder pockets
+- **Name on Creation**: Set custom pocket name when creating a new pocket
 
 #### Link Preview Descriptions
 URLs attached to logs now display webpage descriptions (OpenGraph description) in link cards.
@@ -247,7 +272,7 @@ When dragging items, the screen automatically scrolls at the edges.
 - **Auto-Scroll Zone**: Drag to the top/bottom 10% of the screen to auto-scroll
 - **Acceleration-Based**: Scroll speed increases as you get closer to the edge
 - **Haptic Feedback**: Light vibration notification when entering the scroll zone
-- **Cross-Partition Navigation**: Quickly browse many items or multiple partitions
+- **Cross-Pocket Navigation**: Quickly browse many items or multiple pockets
 
 #### Scroll Navigation
 Quickly jump to the top or bottom in the detail view screen.
@@ -413,7 +438,7 @@ Documents, stamps, and log contents are automatically translated to your languag
 
 #### Tutorial System
 Step-by-step tutorials have been added to guide you through app usage.
-- **Inventory Screen**: Item selection, partition movement, bottom menu usage (8 steps)
+- **Inventory Screen**: Item selection, pocket movement, bottom menu usage (8 steps)
 - **Send/Receive Screen**: Recipient input, QR scan, transfer/receive methods
 - **Store Screen**: Product category browsing and purchase methods
 - **Profile Screen**: Account information and settings
@@ -539,11 +564,11 @@ When you select an engraved stamp, available papers **pulse** to guide you.
 - Improved UX for template duplication
 - Intuitive next-step guidance
 
-#### Partition Improvements
-- **Collapse/Expand**: Toggle partitions with arrow buttons (▼/▲)
-- **Select All**: Tap partition header to select/deselect all items
+#### Pocket Improvements
+- **Collapse/Expand**: Toggle pockets with arrow buttons (▼/▲)
+- **Select All**: Tap pocket header to select/deselect all items
 - Selection status indicators (○/◐/●)
-- Drag and drop to collapsed partitions
+- Drag and drop to collapsed pockets
 
 #### Shop Convenience
 Streamlined checkout for consecutive purchases of the same item.
@@ -561,7 +586,7 @@ Streamlined checkout for consecutive purchases of the same item.
 #### Bug Fixes
 - Fixed pulsing effect on own comments
 - Fixed input field clipping with gesture navigation
-- Fixed gray screen when collapsing partitions
+- Fixed gray screen when collapsing pockets
 - Improved push notification permission handling
 
 </div>
@@ -658,7 +683,7 @@ Easily input special information via `+` button when writing logs:
 - Accept or return received items
 - Send multiple items at once
 
-#### Partition
+#### Pocket
 - Item grouping feature
 - Device-specific local storage
 

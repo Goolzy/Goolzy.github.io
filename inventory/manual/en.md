@@ -641,34 +641,34 @@ You can purchase various items from the shop.
 ---
 
 <details>
-<summary><h3 id="partition">📂 Partition Feature</h3></summary>
+<summary><h3 id="pocket">📂 Pocket Feature</h3></summary>
 <div class="manual-content" markdown="1">
 
-You can group items with partitions when you have many items.
+You can group items with pockets when you have many items.
 
-#### Creating a Partition
+#### Creating a Pocket
 
 1. Select items
-2. Select **"Create Partition"** from the bottom menu
-3. Enter partition name (max 16 characters)
+2. Select **"Create Pocket"** from the bottom menu
+3. Enter pocket name (max 16 characters)
 
-#### Partition Characteristics
+#### Pocket Characteristics
 
-- Partitions are **saved only on the device**
-- The partition structure is not visible on other devices
+- Pockets are **saved only on the device**
+- The pocket structure is not visible on other devices
 - The items themselves are stored in the cloud and visible on all devices
 
-#### Collapse/Expand Partitions
+#### Collapse/Expand Pockets
 
-Use the arrow button (▼/▲) on the right side of the partition header to collapse or expand partitions.
+Use the arrow button (▼/▲) on the right side of the pocket header to collapse or expand pockets.
 
 - Collapsed state is maintained after app restart
-- All partitions automatically expand during search
-- You can drag items to collapsed partitions
+- All pockets automatically expand during search
+- You can drag items to collapsed pockets
 
-#### Select All in Partition
+#### Select All in Pocket
 
-Tap the partition header to select/deselect all items in that partition.
+Tap the pocket header to select/deselect all items in that pocket.
 
 | Indicator | Meaning |
 |-----------|---------|

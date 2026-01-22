@@ -641,34 +641,34 @@ Sie können verschiedene Gegenstände im Shop kaufen.
 ---
 
 <details>
-<summary><h3 id="partition">📂 Partitions-Funktion</h3></summary>
+<summary><h3 id="pocket">📂 Pockets-Funktion</h3></summary>
 <div class="manual-content" markdown="1">
 
-Sie können Gegenstände mit Partitionen gruppieren, wenn Sie viele haben.
+Sie können Gegenstände mit Pocketen gruppieren, wenn Sie viele haben.
 
-#### Eine Partition erstellen
+#### Eine Pocket erstellen
 
 1. Wählen Sie Gegenstände aus
-2. Wählen Sie **"Partition erstellen"** aus dem unteren Menü
-3. Geben Sie den Partitionsnamen ein (max. 16 Zeichen)
+2. Wählen Sie **"Pocket erstellen"** aus dem unteren Menü
+3. Geben Sie den Pocketsnamen ein (max. 16 Zeichen)
 
-#### Partitions-Eigenschaften
+#### Pockets-Eigenschaften
 
-- Partitionen werden **nur auf dem Gerät gespeichert**
-- Die Partitionsstruktur ist auf anderen Geräten nicht sichtbar
+- Pocketen werden **nur auf dem Gerät gespeichert**
+- Die Pocketsstruktur ist auf anderen Geräten nicht sichtbar
 - Die Gegenstände selbst werden in der Cloud gespeichert und sind auf allen Geräten sichtbar
 
 #### Einklappen/Ausklappen
 
-Verwenden Sie die Pfeiltaste (▼/▲) auf der rechten Seite des Partitionsheaders zum Ein- und Ausklappen.
+Verwenden Sie die Pfeiltaste (▼/▲) auf der rechten Seite des Pocketsheaders zum Ein- und Ausklappen.
 
 - Der eingeklappte Zustand bleibt nach dem App-Neustart erhalten
-- Alle Partitionen werden während der Suche automatisch ausgeklappt
-- Sie können Elemente in eingeklappte Partitionen ziehen
+- Alle Pocketen werden während der Suche automatisch ausgeklappt
+- Sie können Elemente in eingeklappte Pocketen ziehen
 
-#### Alle in Partition auswählen
+#### Alle in Pocket auswählen
 
-Tippen Sie auf den Partitionsheader, um alle Elemente in dieser Partition auszuwählen/abzuwählen.
+Tippen Sie auf den Pocketsheader, um alle Elemente in dieser Pocket auszuwählen/abzuwählen.
 
 | Indikator | Bedeutung |
 |-----------|-----------|

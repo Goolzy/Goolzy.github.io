@@ -641,7 +641,7 @@ Mağazadan çeşitli öğeler satın alabilirsiniz.
 ---
 
 <details>
-<summary><h3 id="partition">📂 Bölüm Özelliği</h3></summary>
+<summary><h3 id="pocket">📂 Bölüm Özelliği</h3></summary>
 <div class="manual-content" markdown="1">
 
 Birden fazla öğeleriniz olduğunda, öğeleri bölümlerle gruplandırabilirsiniz.

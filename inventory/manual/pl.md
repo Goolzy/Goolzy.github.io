@@ -641,7 +641,7 @@ Możesz kupować różne elementy ze sklepu.
 ---
 
 <details>
-<summary><h3 id="partition">📂 Funkcja partycji</h3></summary>
+<summary><h3 id="pocket">📂 Funkcja partycji</h3></summary>
 <div class="manual-content" markdown="1">
 
 Możesz grupować elementy za pomocą partycji, gdy masz wiele elementów.

@@ -29,6 +29,31 @@ Hãy xem lịch sử cập nhật ứng dụng Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.3.0 <small>2026-01-22</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Sao chép">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Đổi thương hiệu Pocket
+Tên đơn vị phân loại vật phẩm đã được đổi từ 'Partition' sang 'Pocket'.
+- **Tên trực quan**: Truyền đạt tốt hơn khái niệm không gian để lưu trữ vật phẩm, như túi
+- **UI nhất quán**: Thuật ngữ thống nhất là 'Pocket' trong toàn bộ ứng dụng
+- **Hỗ trợ đa ngôn ngữ**: Được dịch phù hợp cho từng ngôn ngữ
+
+#### Di chuyển dữ liệu tự động
+Dữ liệu 'Partition' hiện có được tự động chuyển đổi thành 'Pocket'.
+- **Di chuyển không mất dữ liệu**: Các phân vùng và vật phẩm hiện có của bạn được giữ nguyên
+- **Xử lý tự động**: Di chuyển diễn ra tự động khi bạn cập nhật ứng dụng
+- **Chuyển đổi liền mạch**: Không cần thao tác gì - chỉ cần cập nhật và tiếp tục sử dụng
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.2.1 <small>2026-01-05</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Sao chép">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

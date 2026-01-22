@@ -443,17 +443,17 @@ Useful for calculating total prices of multiple items or gathering related tags.
 
 ---
 
-### 📂 Partition
+### 📂 Pocket
 
 <details>
-<summary><strong>Q. What is a Partition?</strong></summary>
+<summary><strong>Q. What is a Pocket?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Partition is a feature to organize items into groups.
+<strong>A.</strong> Pocket is a feature to organize items into groups.
 <ul>
-<li>Select items and use <strong>"Create Partition"</strong> to create a new partition</li>
-<li>Partition names can be up to 16 characters</li>
+<li>Select items and use <strong>"Create Pocket"</strong> to create a new pocket</li>
+<li>Pocket names can be up to 16 characters</li>
 </ul>
-⚠️ Partitions are <strong>stored only on the device</strong>. They are not visible on other devices.
+⚠️ Pockets are <strong>stored only on the device</strong>. They are not visible on other devices.
 </div>
 </details>
 
@@ -571,7 +571,7 @@ Keep sensitive information safe and secure.
 <li><strong>Warranty/receipt management</strong>: Photos with expiration dates</li>
 <li><strong>Password storage</strong>: Keep secure with lock feature</li>
 <li><strong>Schedule management</strong>: D-Day alarms for important dates</li>
-<li><strong>Collection organization</strong>: Categorize with partitions</li>
+<li><strong>Collection organization</strong>: Categorize with pockets</li>
 <li><strong>Team collaboration</strong>: Work together with shared logs</li>
 </ul>
 For more ideas, check out <a href="/inventory/usecases/en/">100 Use Cases</a>!

@@ -641,7 +641,7 @@ Puoi acquistare vari elementi dal negozio.
 ---
 
 <details>
-<summary><h3 id="partition">📂 Funzione di partizione</h3></summary>
+<summary><h3 id="pocket">📂 Funzione di partizione</h3></summary>
 <div class="manual-content" markdown="1">
 
 Puoi raggruppare elementi con partizioni quando hai molti elementi.

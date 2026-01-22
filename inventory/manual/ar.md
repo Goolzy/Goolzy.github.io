@@ -641,7 +641,7 @@ translations:
 ---
 
 <details>
-<summary><h3 id="partition">📂 ميزة القسم</h3></summary>
+<summary><h3 id="pocket">📂 ميزة القسم</h3></summary>
 <div class="manual-content" markdown="1">
 
 يمكنك تجميع العناصر بأقسام عندما يكون لديك عدد كبير من العناصر.

@@ -641,7 +641,7 @@ Puedes comprar varios objetos en la tienda.
 ---
 
 <details>
-<summary><h3 id="partition">📂 Función de Partición</h3></summary>
+<summary><h3 id="pocket">📂 Función de Partición</h3></summary>
 <div class="manual-content" markdown="1">
 
 Puedes agrupar objetos con particiones cuando tienes muchos.

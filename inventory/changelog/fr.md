@@ -29,6 +29,31 @@ Consultez l'historique des mises à jour de l'application Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.3.0 <small>2026-01-22</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Rebranding Pocket
+Le nom des unités de classification des articles a été changé de 'Partition' à 'Pocket'.
+- **Nom intuitif**: Transmet mieux le concept d'un espace pour stocker des articles, comme une poche
+- **UI cohérente**: Terminologie unifiée 'Pocket' dans toute l'application
+- **Support multilingue**: Traduit de manière appropriée pour chaque langue
+
+#### Migration automatique des données
+Les données 'Partition' existantes sont automatiquement converties en 'Pocket'.
+- **Migration sans perte**: Vos partitions et articles existants sont préservés exactement
+- **Traitement automatique**: La migration s'effectue automatiquement lors de la mise à jour
+- **Transition transparente**: Aucune action requise - mettez à jour et continuez à utiliser
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.2.3 <small>2026-01-21</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
@@ -106,11 +131,11 @@ La barre de recherche Super enregistre maintenant l'historique de recherche et l
 - **Ajout rapide de filtre**: Appuyez sur une recherche récente pour l'ajouter instantanément comme filtre
 - **Amélioration de l'interface des boutons**: Les boutons Ajouter filtre et Modèles partagés sont maintenant disposés de manière compacte sur une seule ligne
 
-#### Améliorations de la gestion des partitions
-Nouveau design néomorphique pour le dialogue de nom de partition et fonction de réorganisation par glisser-déposer.
+#### Améliorations de la gestion des pockets
+Nouveau design néomorphique pour le dialogue de nom de pocket et fonction de réorganisation par glisser-déposer.
 - **Dialogue néomorphique**: Beau nouveau design avec support du mode sombre/clair
-- **Réorganisation par glisser**: Maintenez l'icône de poignée enfoncée pour glisser et réorganiser les partitions
-- **Nom à la création**: Définissez un nom de partition personnalisé lors de la création
+- **Réorganisation par glisser**: Maintenez l'icône de poignée enfoncée pour glisser et réorganiser les pockets
+- **Nom à la création**: Définissez un nom de pocket personnalisé lors de la création
 
 #### Affichage de la description d'aperçu des liens
 Les cartes de liens attachées aux journaux affichent désormais la description de la page web (description OpenGraph).
@@ -241,7 +266,7 @@ Lorsque vous faites glisser un élément, l'écran défile automatiquement aux b
 - **Zone de défilement automatique** : Le défilement automatique s'active lorsque vous faites glisser vers les 10% supérieurs/inférieurs de l'écran
 - **Basé sur l'accélération** : La vitesse de défilement augmente à mesure que vous vous approchez du bord
 - **Retour haptique** : Une légère vibration vous avertit lorsque vous entrez dans la zone de défilement
-- **Navigation facilitée entre partitions** : Parcourez rapidement de nombreux éléments ou plusieurs partitions
+- **Navigation facilitée entre pockets** : Parcourez rapidement de nombreux éléments ou plusieurs pockets
 
 #### Navigation par défilement
 Naviguez rapidement vers le haut ou le bas dans l'écran de détail.
@@ -408,7 +433,7 @@ Les documents, tampons et journaux sont automatiquement traduits dans votre lang
 
 #### Système de tutoriels
 Des tutoriels étape par étape ont été ajoutés pour vous guider dans l'utilisation de l'application.
-- **Écran d'inventaire** : Sélection d'éléments, déplacement de partition, utilisation du menu inférieur (8 étapes)
+- **Écran d'inventaire** : Sélection d'éléments, déplacement de pocket, utilisation du menu inférieur (8 étapes)
 - **Écran Envoyer/Recevoir** : Saisie du destinataire, scan QR, méthodes de transfert/réception
 - **Écran Boutique** : Navigation des catégories de produits et méthodes d'achat
 - **Écran Profil** : Informations du compte et paramètres
@@ -534,11 +559,11 @@ Lorsque vous sélectionnez un tampon gravé, les papiers disponibles **pulsent**
 - UX améliorée pour la duplication de modèle
 - Guidage intuitif vers l'étape suivante
 
-#### Améliorations des Partitions
-- **Réduire/Développer**: Basculer les partitions avec les boutons fléchés (▼/▲)
-- **Tout sélectionner**: Appuyer sur l'en-tête de partition pour sélectionner/désélectionner tous les éléments
+#### Améliorations des Pockets
+- **Réduire/Développer**: Basculer les pockets avec les boutons fléchés (▼/▲)
+- **Tout sélectionner**: Appuyer sur l'en-tête de pocket pour sélectionner/désélectionner tous les éléments
 - Indicateurs d'état de sélection (○/◐/●)
-- Glisser-déposer vers les partitions réduites
+- Glisser-déposer vers les pockets réduites
 
 #### Commodité de la Boutique
 Processus de paiement simplifié pour les achats consécutifs du même article.
@@ -556,7 +581,7 @@ Processus de paiement simplifié pour les achats consécutifs du même article.
 #### Corrections de bugs
 - Effet de pulsation sur ses propres commentaires corrigé
 - Coupure du champ de saisie sur la navigation gestuelle corrigée
-- Écran gris lors de la réduction des partitions corrigé
+- Écran gris lors de la réduction des pockets corrigé
 - Gestion des permissions de notification push améliorée
 
 </div>
@@ -653,7 +678,7 @@ Saisissez facilement des informations spéciales via le bouton `+` lors de l'éc
 - Accepter ou retourner les objets reçus
 - Envoyer plusieurs objets à la fois
 
-#### Partition
+#### Pocket
 - Fonction de regroupement d'objets
 - Stockage local spécifique à l'appareil
 
