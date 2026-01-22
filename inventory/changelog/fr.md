@@ -56,6 +56,18 @@ Les données 'Partition' existantes sont automatiquement converties en 'Pocket'.
 - **Traitement automatique**: La migration s'effectue automatiquement lors de la mise à jour
 - **Transition transparente**: Aucune action requise - mettez à jour et continuez à utiliser
 
+#### FAB Speed Dial d'actions
+Les actions disponibles s'affichent sous forme de bouton flottant lorsque des articles sont sélectionnés.
+- **Bouton d'action flottant**: Un FAB éclair apparaît en bas à droite lorsque des articles sont sélectionnés
+- **Speed Dial**: Appuyez sur le FAB pour le déployer vers le haut et afficher les boutons d'action disponibles
+- **Badge du nombre d'actions**: Le nombre d'actions disponibles s'affiche en badge sur le FAB
+- **Animations fluides**: Animation d'échelle pour l'apparition/disparition du FAB, effet pop lors du changement du nombre d'actions
+
+#### Raccourci boîte aux lettres
+Vous pouvez maintenant accéder directement à la boîte aux lettres (écran de réception) depuis la barre de navigation inférieure.
+- **Accès rapide**: Vérifiez les articles reçus directement depuis l'écran d'accueil
+- **Icône intuitive**: L'icône de courrier représente la fonction boîte aux lettres
+
 </div>
 </details>
 

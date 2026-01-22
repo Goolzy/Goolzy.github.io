@@ -56,6 +56,18 @@ Os dados de 'Partition' existentes são automaticamente convertidos para 'Pocket
 - **Processamento automático**: A migração ocorre automaticamente ao atualizar o app
 - **Transição perfeita**: Nenhuma ação necessária - apenas atualize e continue usando
 
+#### FAB de discagem rápida de ações
+As ações disponíveis são exibidas como um botão flutuante quando itens são selecionados.
+- **Botão de ação flutuante**: Um FAB com raio aparece no canto inferior direito quando itens são selecionados
+- **Discagem rápida**: Toque no FAB para expandir para cima e mostrar os botões de ação disponíveis
+- **Badge de contagem de ações**: O número de ações disponíveis é exibido como badge no FAB
+- **Animações suaves**: Animação de escala para aparecer/desaparecer do FAB, efeito pop quando a contagem de ações muda
+
+#### Atalho para caixa de correio
+Agora você pode acessar diretamente a caixa de correio (tela de recebimento) pela barra de navegação inferior.
+- **Acesso rápido**: Verifique itens recebidos diretamente da tela inicial
+- **Ícone intuitivo**: O ícone de carta representa a função de caixa de correio
+
 </div>
 </details>
 

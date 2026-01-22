@@ -56,6 +56,18 @@ Bestehende 'Partition'-Daten werden automatisch in 'Pocket' konvertiert.
 - **Automatische Verarbeitung**: Migration erfolgt automatisch bei App-Update
 - **Nahtloser Übergang**: Keine Aktion erforderlich - einfach aktualisieren und weiter nutzen
 
+#### Action Speed Dial FAB
+Verfügbare Aktionen werden als schwebende Schaltfläche angezeigt, wenn Artikel ausgewählt sind.
+- **Floating Action Button**: Ein Blitz-FAB erscheint unten rechts, wenn Artikel ausgewählt sind
+- **Speed Dial**: Tippen Sie auf den FAB, um nach oben zu erweitern und verfügbare Aktionsschaltflächen anzuzeigen
+- **Aktionszähler-Badge**: Die Anzahl der verfügbaren Aktionen wird als Badge auf dem FAB angezeigt
+- **Flüssige Animationen**: Skalierungsanimation für FAB-Erscheinen/Verschwinden, Pop-Effekt bei Änderung der Aktionsanzahl
+
+#### Postfach-Verknüpfung
+Sie können jetzt direkt über die untere Navigationsleiste auf das Postfach (Empfangsbildschirm) zugreifen.
+- **Schneller Zugriff**: Empfangene Artikel direkt vom Startbildschirm aus überprüfen
+- **Intuitives Symbol**: Brief-Symbol repräsentiert die Postfachfunktion
+
 </div>
 </details>
 

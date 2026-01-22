@@ -56,6 +56,30 @@ Existing 'Partition' data is automatically converted to 'Pocket'.
 - **Automatic Processing**: Migration happens automatically when you update the app
 - **Seamless Transition**: No action required from users - just update and continue using
 
+#### Action Speed Dial FAB
+Available actions are displayed as a floating button when items are selected.
+- **Floating Action Button**: A lightning bolt FAB appears at the bottom right when items are selected
+- **Speed Dial**: Tap the FAB to expand upward and show available action buttons
+- **Action Count Badge**: The number of available actions is displayed as a badge on the FAB
+- **Smooth Animations**: Scale animation for FAB appear/disappear, pop effect when action count changes
+
+#### Item Selection UI Improvements
+Visual feedback for selected items has been improved.
+- **Outer Outline**: Selection border is displayed outside the image, preserving original size
+- **Main Color Border**: Selection outline unified with theme main color
+- **Overlapping Borders**: When adjacent items are selected, borders overlap to clearly show selection area
+- **Wobble Effect Removed**: Wobble effect on selected items removed for cleaner UI
+
+#### New Log Notification Improvements
+The notification method for items with new logs has been changed.
+- **Wobble Effect**: New logs indicated by subtle wobble instead of pulsing border
+- **Intuitive Recognition**: Easier to notice notifications as they are distinct from selection outline
+
+#### Mailbox Shortcut
+You can now directly access the mailbox (receive screen) from the bottom navigation bar.
+- **Quick Access**: Check received items directly from the home screen
+- **Intuitive Icon**: Mail icon represents the mailbox function
+
 </div>
 </details>
 

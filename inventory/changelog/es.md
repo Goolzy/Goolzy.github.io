@@ -56,6 +56,30 @@ Los datos de 'Partition' existentes se convierten automáticamente a 'Pocket'.
 - **Procesamiento automático**: La migración ocurre automáticamente al actualizar la app
 - **Transición perfecta**: No se requiere ninguna acción - solo actualice y continúe usando
 
+#### FAB de marcación rápida de acciones
+Las acciones disponibles se muestran como un botón flotante cuando se seleccionan artículos.
+- **Botón de acción flotante**: Un FAB con rayo aparece en la esquina inferior derecha cuando se seleccionan artículos
+- **Marcación rápida**: Toque el FAB para expandir hacia arriba y mostrar los botones de acción disponibles
+- **Insignia de conteo de acciones**: El número de acciones disponibles se muestra como insignia en el FAB
+- **Animaciones suaves**: Animación de escala para aparecer/desaparecer del FAB, efecto pop cuando cambia el conteo de acciones
+
+#### Mejoras en la interfaz de selección de artículos
+Se ha mejorado la retroalimentación visual para los artículos seleccionados.
+- **Contorno exterior**: El borde de selección se muestra fuera de la imagen, preservando el tamaño original
+- **Borde de color principal**: El contorno de selección unificado con el color principal del tema
+- **Bordes superpuestos**: Cuando se seleccionan artículos adyacentes, los bordes se superponen para mostrar claramente el área de selección
+- **Efecto de temblor eliminado**: Se eliminó el efecto de temblor en los artículos seleccionados para una interfaz más limpia
+
+#### Mejoras en las notificaciones de nuevos registros
+Se ha cambiado el método de notificación para artículos con nuevos registros.
+- **Efecto de temblor**: Los nuevos registros se indican con un temblor sutil en lugar de un borde parpadeante
+- **Reconocimiento intuitivo**: Las notificaciones son más fáciles de notar ya que son distintas del contorno de selección
+
+#### Acceso directo al buzón
+Ahora puede acceder directamente al buzón (pantalla de recepción) desde la barra de navegación inferior.
+- **Acceso rápido**: Verifique los artículos recibidos directamente desde la pantalla de inicio
+- **Icono intuitivo**: El icono de correo representa la función de buzón
+
 </div>
 </details>
 
