@@ -37,6 +37,13 @@ Inventory uygulamasının güncelleme geçmişini kontrol edin.
 </summary>
 <div class="version-content" markdown="1">
 
+#### Genişletilebilir Profil Başlığı
+Ana ekranın üst kısmındaki profil alanı çekmece tarzı bir panel olarak yeniden tasarlandı.
+- **Genişletmek için Sürükleyin**: Profil panelini genişletmek için tutamak çubuğunu aşağı sürükleyin veya kullanıcı adına dokunun
+- **Birleşik Panel**: Başlık ve profil içeriği (profil kartı, QR kodu, API bilgisi) tek bir panelde entegre
+- **Akıcı Animasyon**: Genişletme/daraltma sırasında doğal animasyon efektleri
+- **Sabit Ana İçerik**: Profil genişletildiğinde envanter ızgarası yerinde kalır
+
 #### Pocket Yeniden Markalaştırma
 Öğe sınıflandırma birimlerinin adı 'Partition'dan 'Pocket'a değiştirildi.
 - **Sezgisel İsim**: Cep gibi eşyaları saklamak için bir alan kavramını daha iyi aktarır

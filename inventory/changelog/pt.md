@@ -37,6 +37,13 @@ Confira o histórico de atualizações do aplicativo Inventory.
 </summary>
 <div class="version-content" markdown="1">
 
+#### Cabeçalho de perfil expansível
+A área de perfil no topo da tela inicial foi redesenhada como um painel de gaveta.
+- **Arrastar para expandir**: Arraste a barra de alça para baixo ou toque no nome de usuário para expandir o painel de perfil
+- **Painel unificado**: Cabeçalho e conteúdo do perfil (cartão de perfil, código QR, info de API) são integrados em um único painel
+- **Animação suave**: Efeitos de animação naturais ao expandir/recolher
+- **Conteúdo principal fixo**: A grade de inventário permanece no lugar quando o perfil é expandido
+
 #### Rebranding de Pocket
 O nome das unidades de classificação de itens foi alterado de 'Partition' para 'Pocket'.
 - **Nome intuitivo**: Transmite melhor o conceito de um espaço para armazenar itens, como um bolso

@@ -37,6 +37,13 @@ Sehen Sie sich den Update-Verlauf der Inventory-App an.
 </summary>
 <div class="version-content" markdown="1">
 
+#### Erweiterbarer Profil-Header
+Der Profilbereich oben auf dem Startbildschirm wurde zu einem Drawer-Panel umgestaltet.
+- **Zum Erweitern ziehen**: Ziehen Sie die Griffleiste nach unten oder tippen Sie auf den Benutzernamen, um das Profilpanel zu erweitern
+- **Einheitliches Panel**: Header und Profilinhalt (Profilkarte, QR-Code, API-Info) in einem Panel integriert
+- **Flüssige Animation**: Natürliche Animationseffekte beim Erweitern/Zusammenklappen
+- **Fixierter Hauptinhalt**: Das Inventar-Raster bleibt an Ort und Stelle, wenn das Profil erweitert wird
+
 #### Pocket Rebranding
 Der Name für Artikelklassifizierungseinheiten wurde von 'Partition' zu 'Pocket' geändert.
 - **Intuitiver Name**: Vermittelt besser das Konzept eines Raums zum Aufbewahren von Artikeln, wie eine Tasche

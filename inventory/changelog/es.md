@@ -37,6 +37,13 @@ Consulta el historial de actualizaciones de la aplicación Inventory.
 </summary>
 <div class="version-content" markdown="1">
 
+#### Encabezado de perfil expandible
+El área de perfil en la parte superior de la pantalla de inicio ha sido rediseñada como un panel de cajón.
+- **Arrastrar para expandir**: Arrastre la barra de control hacia abajo o toque el nombre de usuario para expandir el panel de perfil
+- **Panel unificado**: El encabezado y el contenido del perfil (tarjeta de perfil, código QR, info de API) están integrados en un solo panel
+- **Animación suave**: Efectos de animación naturales al expandir/contraer
+- **Contenido principal fijo**: La cuadrícula de inventario permanece en su lugar cuando se expande el perfil
+
 #### Rebranding de Pocket
 El nombre de las unidades de clasificación de artículos ha cambiado de 'Partition' a 'Pocket'.
 - **Nombre intuitivo**: Transmite mejor el concepto de un espacio para almacenar artículos, como un bolsillo

@@ -37,6 +37,13 @@ Sprawdź historię aktualizacji aplikacji Inventory.
 </summary>
 <div class="version-content" markdown="1">
 
+#### Rozwijany nagłówek profilu
+Obszar profilu na górze ekranu głównego został przeprojektowany jako panel typu szuflada.
+- **Przeciągnij, aby rozwinąć**: Przeciągnij pasek uchwytu w dół lub dotknij nazwy użytkownika, aby rozwinąć panel profilu
+- **Zunifikowany panel**: Nagłówek i zawartość profilu (karta profilu, kod QR, info API) zintegrowane w jednym panelu
+- **Płynna animacja**: Naturalne efekty animacji podczas rozwijania/zwijania
+- **Stała zawartość główna**: Siatka inwentarza pozostaje na miejscu, gdy profil jest rozwinięty
+
 #### Rebranding Pocket
 Nazwa jednostek klasyfikacji przedmiotów została zmieniona z 'Partition' na 'Pocket'.
 - **Intuicyjna nazwa**: Lepiej oddaje koncepcję przestrzeni do przechowywania przedmiotów, jak kieszeń

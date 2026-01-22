@@ -37,6 +37,13 @@ Consulta la cronologia degli aggiornamenti dell'app Inventory.
 </summary>
 <div class="version-content" markdown="1">
 
+#### Intestazione profilo espandibile
+L'area del profilo nella parte superiore della schermata principale è stata ridisegnata come pannello a cassetto.
+- **Trascina per espandere**: Trascina la barra di controllo verso il basso o tocca il nome utente per espandere il pannello del profilo
+- **Pannello unificato**: Intestazione e contenuto del profilo (scheda profilo, codice QR, info API) sono integrati in un unico pannello
+- **Animazione fluida**: Effetti di animazione naturali durante l'espansione/contrazione
+- **Contenuto principale fisso**: La griglia dell'inventario rimane al suo posto quando il profilo è espanso
+
 #### Rebranding Pocket
 Il nome delle unità di classificazione degli articoli è stato cambiato da 'Partition' a 'Pocket'.
 - **Nome intuitivo**: Trasmette meglio il concetto di uno spazio per conservare gli articoli, come una tasca

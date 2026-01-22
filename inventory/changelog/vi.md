@@ -37,6 +37,13 @@ Hãy xem lịch sử cập nhật ứng dụng Inventory.
 </summary>
 <div class="version-content" markdown="1">
 
+#### Tiêu đề hồ sơ có thể mở rộng
+Vùng hồ sơ ở đầu màn hình chính đã được thiết kế lại dưới dạng bảng điều khiển kiểu ngăn kéo.
+- **Kéo để mở rộng**: Kéo thanh cầm xuống hoặc chạm vào tên người dùng để mở rộng bảng điều khiển hồ sơ
+- **Bảng điều khiển hợp nhất**: Tiêu đề và nội dung hồ sơ (thẻ hồ sơ, mã QR, thông tin API) được tích hợp trong một bảng điều khiển
+- **Hoạt ảnh mượt mà**: Hiệu ứng hoạt ảnh tự nhiên khi mở rộng/thu gọn
+- **Nội dung chính cố định**: Lưới kho hàng giữ nguyên vị trí khi hồ sơ được mở rộng
+
 #### Đổi thương hiệu Pocket
 Tên đơn vị phân loại vật phẩm đã được đổi từ 'Partition' sang 'Pocket'.
 - **Tên trực quan**: Truyền đạt tốt hơn khái niệm không gian để lưu trữ vật phẩm, như túi

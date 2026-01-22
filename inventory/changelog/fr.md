@@ -37,6 +37,13 @@ Consultez l'historique des mises à jour de l'application Inventory.
 </summary>
 <div class="version-content" markdown="1">
 
+#### En-tête de profil extensible
+La zone de profil en haut de l'écran d'accueil a été repensée en panneau de type tiroir.
+- **Glisser pour agrandir**: Faites glisser la barre de poignée vers le bas ou appuyez sur le nom d'utilisateur pour agrandir le panneau de profil
+- **Panneau unifié**: L'en-tête et le contenu du profil (carte de profil, code QR, info API) sont intégrés dans un seul panneau
+- **Animation fluide**: Effets d'animation naturels lors de l'expansion/réduction
+- **Contenu principal fixe**: La grille d'inventaire reste en place lorsque le profil est étendu
+
 #### Rebranding Pocket
 Le nom des unités de classification des articles a été changé de 'Partition' à 'Pocket'.
 - **Nom intuitif**: Transmet mieux le concept d'un espace pour stocker des articles, comme une poche

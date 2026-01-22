@@ -37,6 +37,13 @@ Lihat riwayat pembaruan aplikasi Inventory.
 </summary>
 <div class="version-content" markdown="1">
 
+#### Header Profil yang Dapat Diperluas
+Area profil di bagian atas layar beranda telah didesain ulang sebagai panel laci.
+- **Tarik untuk Memperluas**: Tarik bilah pegangan ke bawah atau ketuk nama pengguna untuk memperluas panel profil
+- **Panel Terpadu**: Header dan konten profil (kartu profil, kode QR, info API) terintegrasi dalam satu panel
+- **Animasi Halus**: Efek animasi alami saat memperluas/memperkecil
+- **Konten Utama Tetap**: Grid inventaris tetap di tempatnya saat profil diperluas
+
 #### Rebranding Pocket
 Nama unit klasifikasi item telah diubah dari 'Partition' menjadi 'Pocket'.
 - **Nama Intuitif**: Lebih baik menyampaikan konsep ruang untuk menyimpan item, seperti saku

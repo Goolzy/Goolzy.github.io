@@ -37,6 +37,13 @@ Check out the update history for the Inventory app.
 </summary>
 <div class="version-content" markdown="1">
 
+#### Expandable Profile Header
+The profile area at the top of the home screen has been redesigned as a drawer-style panel.
+- **Drag to Expand**: Drag the handle bar down or tap username to expand the profile panel
+- **Unified Panel**: Header and profile content (profile card, QR code, API info) are integrated into a single panel
+- **Smooth Animation**: Natural animation effects when expanding/collapsing
+- **Fixed Main Content**: Inventory grid stays in place when profile is expanded
+
 #### Pocket Rebranding
 The name for item classification units has been changed from 'Partition' to 'Pocket'.
 - **Intuitive Name**: Better conveys the concept of a space to store items, like a pocket holding belongings
