@@ -68,6 +68,12 @@ Vous pouvez maintenant accéder directement à la boîte aux lettres (écran de 
 - **Accès rapide**: Vérifiez les articles reçus directement depuis l'écran d'accueil
 - **Icône intuitive**: L'icône de courrier représente la fonction boîte aux lettres
 
+#### Corrections de bugs
+- **Correction de l'affichage du panneau de notifications**: Correction d'un problème où les notifications ne s'affichaient pas correctement dans le panneau de notifications de l'en-tête de profil.
+  - Les icônes et couleurs de notifications s'affichent maintenant correctement selon le type de notification
+  - Les titres et contenus des notifications s'affichent maintenant correctement en plusieurs langues
+  - Les coins arrondis des éléments de notification sont maintenant unifiés avec le style du bouton de menu
+
 </div>
 </details>
 

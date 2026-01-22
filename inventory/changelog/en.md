@@ -80,6 +80,12 @@ You can now directly access the mailbox (receive screen) from the bottom navigat
 - **Quick Access**: Check received items directly from the home screen
 - **Intuitive Icon**: Mail icon represents the mailbox function
 
+#### Bug Fixes
+- **Notification Panel Display Fix**: Fixed an issue where notifications were not displaying correctly in the profile header notification panel.
+  - Notification icons and colors now display correctly based on notification type
+  - Notification titles and content now display correctly in multiple languages
+  - Notification item rounded corners are now unified with menu button styling
+
 </div>
 </details>
 

@@ -68,6 +68,12 @@ Agora você pode acessar diretamente a caixa de correio (tela de recebimento) pe
 - **Acesso rápido**: Verifique itens recebidos diretamente da tela inicial
 - **Ícone intuitivo**: O ícone de carta representa a função de caixa de correio
 
+#### Correções de bugs
+- **Correção de exibição do painel de notificações**: Corrigido um problema onde as notificações não eram exibidas corretamente no painel de notificações do cabeçalho do perfil.
+  - Os ícones e cores das notificações agora são exibidos corretamente com base no tipo de notificação
+  - Os títulos e conteúdos das notificações agora são exibidos corretamente em vários idiomas
+  - Os cantos arredondados dos itens de notificação agora estão unificados com o estilo do botão de menu
+
 </div>
 </details>
 

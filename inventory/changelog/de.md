@@ -68,6 +68,12 @@ Sie können jetzt direkt über die untere Navigationsleiste auf das Postfach (Em
 - **Schneller Zugriff**: Empfangene Artikel direkt vom Startbildschirm aus überprüfen
 - **Intuitives Symbol**: Brief-Symbol repräsentiert die Postfachfunktion
 
+#### Fehlerbehebungen
+- **Benachrichtigungspanel-Anzeige behoben**: Ein Problem wurde behoben, bei dem Benachrichtigungen im Benachrichtigungspanel des Profilheaders nicht korrekt angezeigt wurden.
+  - Benachrichtigungssymbole und -farben werden jetzt basierend auf dem Benachrichtigungstyp korrekt angezeigt
+  - Benachrichtigungstitel und -inhalte werden jetzt in mehreren Sprachen korrekt angezeigt
+  - Abgerundete Ecken der Benachrichtigungselemente sind jetzt mit dem Menüschaltflächenstil vereinheitlicht
+
 </div>
 </details>
 

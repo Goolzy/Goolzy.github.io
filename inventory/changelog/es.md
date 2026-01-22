@@ -80,6 +80,12 @@ Ahora puede acceder directamente al buzón (pantalla de recepción) desde la bar
 - **Acceso rápido**: Verifique los artículos recibidos directamente desde la pantalla de inicio
 - **Icono intuitivo**: El icono de correo representa la función de buzón
 
+#### Corrección de errores
+- **Corrección de visualización del panel de notificaciones**: Se corrigió un problema donde las notificaciones no se mostraban correctamente en el panel de notificaciones del encabezado de perfil.
+  - Los iconos y colores de las notificaciones ahora se muestran correctamente según el tipo de notificación
+  - Los títulos y contenidos de las notificaciones ahora se muestran correctamente en varios idiomas
+  - Las esquinas redondeadas de los elementos de notificación ahora están unificadas con el estilo del botón de menú
+
 </div>
 </details>
 
