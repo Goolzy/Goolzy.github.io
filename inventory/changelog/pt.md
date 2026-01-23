@@ -74,6 +74,25 @@ Agora você pode acessar diretamente a caixa de correio (tela de recebimento) pe
 - **Acesso rápido**: Verifique itens recebidos diretamente da tela inicial
 - **Ícone intuitivo**: O ícone de carta representa a função de caixa de correio
 
+#### Bolso padrão
+O primeiro bolso agora funciona como bolso padrão sem cabeçalho.
+- **Cabeçalho oculto**: O bolso padrão é exibido sem cabeçalho de bolso para uma interface mais limpa
+- **Sempre no topo**: O bolso padrão está sempre posicionado no topo do inventário
+- **Não pode ser recolhido**: O bolso padrão permanece sempre expandido
+- **Recebimento automático de itens**: Itens recém-comprados ou recebidos são automaticamente movidos para o bolso padrão
+
+#### Simplificação da interface da loja
+A área do cabeçalho da tela da loja foi simplificada.
+- **Título duplicado removido**: O título 'Loja' redundante com o título da barra de navegação no modo Shell foi removido
+- **Descrição removida**: O texto de descrição desnecessário foi removido para focar na lista de produtos
+- **Aviso no topo**: A mensagem de aviso do Firebase agora é exibida no topo acima da barra de abas
+
+#### Animação de abertura do inventário principal
+A tela de inventário principal agora tem a mesma animação de abertura que as outras abas.
+- **Deslizamento do cabeçalho**: O cabeçalho do perfil desliza suavemente para baixo quando o aplicativo é iniciado
+- **Animação de troca de aba**: A mesma animação se aplica ao retornar ao início de outras abas
+- **UX consistente**: Experiência do usuário unificada com o mesmo efeito de abertura em todas as abas
+
 #### Correções de bugs
 - **Correção de exibição do painel de notificações**: Corrigido um problema onde as notificações não eram exibidas corretamente no painel de notificações do cabeçalho do perfil.
   - Os ícones e cores das notificações agora são exibidos corretamente com base no tipo de notificação

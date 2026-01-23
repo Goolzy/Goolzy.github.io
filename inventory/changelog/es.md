@@ -86,6 +86,25 @@ Ahora puede acceder directamente al buzón (pantalla de recepción) desde la bar
 - **Acceso rápido**: Verifique los artículos recibidos directamente desde la pantalla de inicio
 - **Icono intuitivo**: El icono de correo representa la función de buzón
 
+#### Bolsillo predeterminado
+El primer bolsillo ahora funciona como bolsillo predeterminado sin encabezado.
+- **Encabezado oculto**: El bolsillo predeterminado se muestra sin encabezado de bolsillo para una interfaz más limpia
+- **Siempre arriba**: El bolsillo predeterminado siempre se posiciona en la parte superior del inventario
+- **No se puede contraer**: El bolsillo predeterminado permanece siempre expandido
+- **Recepción automática de artículos**: Los artículos recién comprados o recibidos se mueven automáticamente al bolsillo predeterminado
+
+#### Simplificación de la interfaz de la tienda
+El área del encabezado de la pantalla de la tienda ha sido optimizada.
+- **Título duplicado eliminado**: Se eliminó el título 'Tienda' que era redundante con el título de la barra de navegación en modo Shell
+- **Descripción eliminada**: Se eliminó el texto de descripción innecesario para centrarse en la lista de productos
+- **Aviso en la parte superior**: El mensaje de aviso de Firebase ahora se muestra en la parte superior sobre la barra de pestañas
+
+#### Animación de apertura del inventario principal
+La pantalla de inventario principal ahora tiene la misma animación de apertura que otras pestañas.
+- **Deslizamiento del encabezado**: El encabezado del perfil se desliza suavemente hacia abajo cuando se inicia la aplicación
+- **Animación de cambio de pestaña**: La misma animación se aplica al volver al inicio desde otras pestañas
+- **UX consistente**: Experiencia de usuario unificada con el mismo efecto de apertura en todas las pestañas
+
 #### Corrección de errores
 - **Corrección de visualización del panel de notificaciones**: Se corrigió un problema donde las notificaciones no se mostraban correctamente en el panel de notificaciones del encabezado de perfil.
   - Los iconos y colores de las notificaciones ahora se muestran correctamente según el tipo de notificación

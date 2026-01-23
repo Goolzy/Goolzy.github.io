@@ -74,6 +74,25 @@ Vous pouvez maintenant accéder directement à la boîte aux lettres (écran de 
 - **Accès rapide**: Vérifiez les articles reçus directement depuis l'écran d'accueil
 - **Icône intuitive**: L'icône de courrier représente la fonction boîte aux lettres
 
+#### Poche par défaut
+La première poche fonctionne désormais comme poche par défaut sans en-tête.
+- **En-tête masqué**: La poche par défaut s'affiche sans en-tête de poche pour une interface plus épurée
+- **Toujours en haut**: La poche par défaut est toujours positionnée en haut de l'inventaire
+- **Ne peut pas être réduite**: La poche par défaut reste toujours déployée
+- **Réception automatique des articles**: Les articles nouvellement achetés ou reçus sont automatiquement placés dans la poche par défaut
+
+#### Simplification de l'interface de la boutique
+La zone d'en-tête de l'écran boutique a été simplifiée.
+- **Titre en double supprimé**: Le titre 'Boutique' redondant avec le titre de la barre de navigation en mode Shell a été supprimé
+- **Description supprimée**: Le texte de description inutile a été supprimé pour se concentrer sur la liste des produits
+- **Avis en haut**: Le message d'avis Firebase s'affiche maintenant tout en haut au-dessus de la barre d'onglets
+
+#### Animation d'ouverture de l'inventaire principal
+L'écran d'inventaire principal a maintenant la même animation d'ouverture que les autres onglets.
+- **Glissement de l'en-tête**: L'en-tête de profil glisse doucement vers le bas au démarrage de l'application
+- **Animation de changement d'onglet**: La même animation s'applique lors du retour à l'accueil depuis d'autres onglets
+- **UX cohérente**: Expérience utilisateur unifiée avec le même effet d'ouverture sur tous les onglets
+
 #### Corrections de bugs
 - **Correction de l'affichage du panneau de notifications**: Correction d'un problème où les notifications ne s'affichaient pas correctement dans le panneau de notifications de l'en-tête de profil.
   - Les icônes et couleurs de notifications s'affichent maintenant correctement selon le type de notification

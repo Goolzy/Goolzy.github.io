@@ -62,6 +62,13 @@ Existing 'Partition' data is automatically converted to 'Pocket'.
 - **Automatic Processing**: Migration happens automatically when you update the app
 - **Seamless Transition**: No action required from users - just update and continue using
 
+#### Default Pocket
+The first pocket now functions as a default pocket without a header.
+- **Hidden Header**: The default pocket displays without a pocket header for a cleaner UI
+- **Always on Top**: The default pocket is always positioned at the top of the inventory
+- **Cannot Collapse**: The default pocket remains expanded at all times
+- **Auto Item Receipt**: Newly purchased or received items automatically go to the default pocket
+
 #### Action Speed Dial FAB
 Available actions are displayed as a floating button when items are selected.
 - **Floating Action Button**: A lightning bolt FAB appears at the bottom right when items are selected
@@ -85,6 +92,18 @@ The notification method for items with new logs has been changed.
 You can now directly access the mailbox (receive screen) from the bottom navigation bar.
 - **Quick Access**: Check received items directly from the home screen
 - **Intuitive Icon**: Mail icon represents the mailbox function
+
+#### Shop Screen UI Simplification
+The header area of the shop screen has been streamlined.
+- **Duplicate Title Removed**: Removed the 'Shop' title that was redundant with the navbar title in Shell mode
+- **Description Removed**: Deleted unnecessary description text to focus on the product list
+- **Notice at Top**: Firebase notice message now displays at the very top above the tab bar
+
+#### Inventory Home Opening Animation
+The inventory home screen now has the same opening animation as other tabs.
+- **Header Slide In**: Profile header slides down smoothly when the app starts
+- **Tab Switch Animation**: Same animation applies when returning to home from other tabs
+- **Consistent UX**: Unified user experience with the same opening effect across all tabs
 
 #### Bug Fixes
 - **Notification Panel Display Fix**: Fixed an issue where notifications were not displaying correctly in the profile header notification panel.

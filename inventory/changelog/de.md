@@ -74,6 +74,25 @@ Sie können jetzt direkt über die untere Navigationsleiste auf das Postfach (Em
 - **Schneller Zugriff**: Empfangene Artikel direkt vom Startbildschirm aus überprüfen
 - **Intuitives Symbol**: Brief-Symbol repräsentiert die Postfachfunktion
 
+#### Standard-Tasche
+Die erste Tasche funktioniert jetzt als Standard-Tasche ohne Kopfzeile.
+- **Versteckte Kopfzeile**: Die Standard-Tasche wird ohne Taschen-Kopfzeile für eine sauberere Benutzeroberfläche angezeigt
+- **Immer oben**: Die Standard-Tasche befindet sich immer am Anfang des Inventars
+- **Kann nicht eingeklappt werden**: Die Standard-Tasche bleibt jederzeit ausgeklappt
+- **Automatischer Artikelempfang**: Neu gekaufte oder erhaltene Artikel werden automatisch in die Standard-Tasche verschoben
+
+#### Shop-Bildschirm UI-Vereinfachung
+Der Header-Bereich des Shop-Bildschirms wurde optimiert.
+- **Doppelter Titel entfernt**: Der 'Shop'-Titel, der im Shell-Modus mit dem Navbar-Titel redundant war, wurde entfernt
+- **Beschreibung entfernt**: Unnötiger Beschreibungstext wurde entfernt, um sich auf die Produktliste zu konzentrieren
+- **Hinweis oben**: Firebase-Hinweisnachricht wird jetzt ganz oben über der Tab-Leiste angezeigt
+
+#### Inventar-Home-Eröffnungsanimation
+Der Inventar-Home-Bildschirm hat jetzt die gleiche Eröffnungsanimation wie andere Tabs.
+- **Header Slide-In**: Profil-Header gleitet sanft nach unten, wenn die App startet
+- **Tab-Wechsel-Animation**: Gleiche Animation beim Zurückkehren von anderen Tabs zum Home
+- **Konsistente UX**: Einheitliche Benutzererfahrung mit dem gleichen Eröffnungseffekt über alle Tabs
+
 #### Fehlerbehebungen
 - **Benachrichtigungspanel-Anzeige behoben**: Ein Problem wurde behoben, bei dem Benachrichtigungen im Benachrichtigungspanel des Profilheaders nicht korrekt angezeigt wurden.
   - Benachrichtigungssymbole und -farben werden jetzt basierend auf dem Benachrichtigungstyp korrekt angezeigt
