@@ -29,13 +29,19 @@ Consulta el historial de actualizaciones de la aplicación Inventory.
 
 <details class="changelog-version" open>
 <summary>
-  <span class="version-title">v1.3.0 <small>2026-01-22</small></span>
+  <span class="version-title">v1.3.0 <small>2026-01-23</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
   </button>
 </summary>
 <div class="version-content" markdown="1">
+
+#### Mejora del diseno de articulos de la tienda
+El diseno de los articulos de la tienda se ha mejorado para una mejor visibilidad en pantallas moviles.
+- **Estructura de 3 filas**: La informacion del articulo y el precio estan separados, mostrandose sin truncamiento incluso en pantallas estrechas
+- **Precio alineado a la derecha**: La informacion del precio se coloca ordenadamente en una fila separada con alineacion a la derecha
+- **Espacio suficiente para etiquetas de descuento**: El nombre y la descripcion del articulo se muestran completamente incluso con insignias de descuento
 
 #### Encabezado de perfil expandible
 El área de perfil en la parte superior de la pantalla de inicio ha sido rediseñada como un panel de cajón.

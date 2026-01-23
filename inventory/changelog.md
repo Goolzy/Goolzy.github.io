@@ -29,13 +29,19 @@ Inventory 앱의 업데이트 내역을 확인하세요.
 
 <details class="changelog-version" open>
 <summary>
-  <span class="version-title">v1.3.0 <small>2026-01-22</small></span>
+  <span class="version-title">v1.3.0 <small>2026-01-23</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
   </button>
 </summary>
 <div class="version-content" markdown="1">
+
+#### 상점 아이템 레이아웃 개선
+모바일 화면에서 상점 아이템이 더 잘 보이도록 레이아웃이 개선되었습니다.
+- **3행 구조**: 아이템 정보와 가격이 분리되어 좁은 화면에서도 정보가 잘림 없이 표시
+- **가격 우측 정렬**: 가격 정보가 별도의 행에 우측 정렬로 깔끔하게 배치
+- **할인 태그 충분한 공간**: 할인율 뱃지가 붙어도 아이템 이름과 설명이 온전히 표시
 
 #### 확장형 프로필 헤더
 홈 화면 상단의 프로필 영역이 드로어 스타일로 개선되었습니다.

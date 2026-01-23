@@ -29,13 +29,19 @@ translations:
 
 <details class="changelog-version" open>
 <summary>
-  <span class="version-title">v1.3.0 <small>2026-01-22</small></span>
+  <span class="version-title">v1.3.0 <small>2026-01-23</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
   </button>
 </summary>
 <div class="version-content" markdown="1">
+
+#### 商店物品布局改进
+商店物品布局已改进，在移动屏幕上更易查看。
+- **3行结构**: 物品信息和价格分离，即使在窄屏幕上也能完整显示而不被截断
+- **价格右对齐**: 价格信息整齐地放置在单独一行并右对齐
+- **折扣标签充足空间**: 即使有折扣徽章，物品名称和描述也能完整显示
 
 #### 可展开的个人资料头部
 主页顶部的个人资料区域已改进为抽屉式面板。

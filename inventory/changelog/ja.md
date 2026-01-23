@@ -29,13 +29,19 @@ Inventoryアプリのアップデート履歴をご確認ください。
 
 <details class="changelog-version" open>
 <summary>
-  <span class="version-title">v1.3.0 <small>2026-01-22</small></span>
+  <span class="version-title">v1.3.0 <small>2026-01-23</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="コピー">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
   </button>
 </summary>
 <div class="version-content" markdown="1">
+
+#### ショップアイテムレイアウト改善
+モバイル画面でショップアイテムがより見やすくなるようレイアウトが改善されました。
+- **3行構造**: アイテム情報と価格が分離され、狭い画面でも情報が切れずに表示
+- **価格右寄せ**: 価格情報が別の行に右寄せで整然と配置
+- **割引タグの十分なスペース**: 割引バッジが付いてもアイテム名と説明が完全に表示
 
 #### 拡張可能なプロフィールヘッダー
 ホーム画面上部のプロフィール領域がドロワースタイルのパネルに改善されました。
