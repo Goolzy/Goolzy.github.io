@@ -105,6 +105,9 @@ Der Einstellungsbildschirm wurde in 5 einklappbare Gruppen reorganisiert.
   - Benachrichtigungssymbole und -farben werden jetzt basierend auf dem Benachrichtigungstyp korrekt angezeigt
   - Benachrichtigungstitel und -inhalte werden jetzt in mehreren Sprachen korrekt angezeigt
   - Abgerundete Ecken der Benachrichtigungselemente sind jetzt mit dem Menüschaltflächenstil vereinheitlicht
+- **Shop-Doppelheader behoben**: Ein Problem wurde behoben, bei dem unter bestimmten Umständen zwei Header auf dem Shop-Bildschirm angezeigt wurden.
+  - Shell-Modus-Statuskonflikt beim Auswählen des Shop-Tabs nach Rückkehr zum Startbildschirm behoben
+  - Stabile Shell-Modus-Verwaltung durch Referenzzählung sichergestellt
 
 </div>
 </details>

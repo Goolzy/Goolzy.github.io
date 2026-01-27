@@ -105,6 +105,9 @@ A tela de configurações foi reorganizada em 5 grupos recolhíveis.
   - Os ícones e cores das notificações agora são exibidos corretamente com base no tipo de notificação
   - Os títulos e conteúdos das notificações agora são exibidos corretamente em vários idiomas
   - Os cantos arredondados dos itens de notificação agora estão unificados com o estilo do botão de menu
+- **Correção de cabeçalho duplo da loja**: Corrigido um problema onde dois cabeçalhos eram exibidos na tela da loja em certas condições.
+  - Resolvida a inconsistência do estado do modo Shell ao selecionar a aba da loja após retornar à tela inicial
+  - Gerenciamento estável do modo Shell garantido através de contagem de referências
 
 </div>
 </details>

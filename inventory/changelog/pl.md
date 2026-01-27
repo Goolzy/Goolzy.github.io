@@ -56,6 +56,11 @@ Istniejące dane 'Partition' są automatycznie konwertowane na 'Pocket'.
 - **Automatyczne przetwarzanie**: Migracja następuje automatycznie podczas aktualizacji aplikacji
 - **Płynne przejście**: Nie wymaga żadnych działań - wystarczy zaktualizować i kontynuować użytkowanie
 
+#### Poprawki błędów
+- **Naprawa podwójnego nagłówka sklepu**: Naprawiono problem, w którym na ekranie sklepu wyświetlały się dwa nagłówki w określonych warunkach.
+  - Rozwiązano niezgodność stanu trybu Shell przy wyborze karty sklepu po powrocie na ekran główny
+  - Zapewniono stabilne zarządzanie trybem Shell poprzez zliczanie referencji
+
 </div>
 </details>
 

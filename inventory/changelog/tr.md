@@ -56,6 +56,11 @@ Mevcut 'Partition' verileri otomatik olarak 'Pocket'a dönüştürülür.
 - **Otomatik İşleme**: Uygulamayı güncellediğinizde geçiş otomatik olarak gerçekleşir
 - **Kesintisiz Geçiş**: Herhangi bir işlem gerekmez - sadece güncelleyin ve kullanmaya devam edin
 
+#### Hata Düzeltmeleri
+- **Mağaza Çift Başlık Düzeltmesi**: Belirli koşullarda mağaza ekranında iki başlık görüntülenmesi sorunu düzeltildi.
+  - Ana ekrana dönüş sonrası mağaza sekmesi seçildiğinde Shell modu durum uyumsuzluğu çözüldü
+  - Referans sayımı yoluyla kararlı Shell modu yönetimi sağlandı
+
 </div>
 </details>
 

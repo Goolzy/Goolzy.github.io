@@ -56,6 +56,11 @@ I dati 'Partition' esistenti vengono automaticamente convertiti in 'Pocket'.
 - **Elaborazione automatica**: La migrazione avviene automaticamente quando aggiorni l'app
 - **Transizione senza interruzioni**: Nessuna azione richiesta - basta aggiornare e continuare a usare
 
+#### Correzione di bug
+- **Correzione doppio header del negozio**: Risolto un problema in cui venivano visualizzati due header nella schermata del negozio in determinate condizioni.
+  - Risolta l'incoerenza dello stato della modalità Shell quando si seleziona la scheda del negozio dopo il ritorno alla schermata iniziale
+  - Gestione stabile della modalità Shell garantita tramite conteggio dei riferimenti
+
 </div>
 </details>
 

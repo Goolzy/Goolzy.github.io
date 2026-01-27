@@ -105,6 +105,9 @@ L'écran des paramètres a été réorganisé en 5 groupes pliables.
   - Les icônes et couleurs de notifications s'affichent maintenant correctement selon le type de notification
   - Les titres et contenus des notifications s'affichent maintenant correctement en plusieurs langues
   - Les coins arrondis des éléments de notification sont maintenant unifiés avec le style du bouton de menu
+- **Correction du double en-tête de la boutique**: Correction d'un problème où deux en-têtes s'affichaient sur l'écran de la boutique dans certaines conditions.
+  - Résolution de l'incohérence de l'état du mode Shell lors de la sélection de l'onglet boutique après un retour à l'écran d'accueil
+  - Gestion stable du mode Shell assurée par comptage de références
 
 </div>
 </details>

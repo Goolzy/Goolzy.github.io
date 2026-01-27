@@ -56,6 +56,11 @@ Data 'Partition' yang ada secara otomatis dikonversi ke 'Pocket'.
 - **Pemrosesan Otomatis**: Migrasi terjadi secara otomatis saat Anda memperbarui aplikasi
 - **Transisi Mulus**: Tidak diperlukan tindakan - cukup perbarui dan lanjutkan menggunakan
 
+#### Perbaikan Bug
+- **Perbaikan Header Ganda Toko**: Memperbaiki masalah di mana dua header ditampilkan di layar toko dalam kondisi tertentu.
+  - Menyelesaikan ketidaksesuaian status mode Shell saat memilih tab toko setelah kembali ke layar beranda
+  - Memastikan manajemen mode Shell yang stabil melalui penghitungan referensi
+
 </div>
 </details>
 

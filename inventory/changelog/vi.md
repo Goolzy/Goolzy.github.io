@@ -56,6 +56,11 @@ Dữ liệu 'Partition' hiện có được tự động chuyển đổi thành 
 - **Xử lý tự động**: Di chuyển diễn ra tự động khi bạn cập nhật ứng dụng
 - **Chuyển đổi liền mạch**: Không cần thao tác gì - chỉ cần cập nhật và tiếp tục sử dụng
 
+#### Sửa Lỗi
+- **Sửa lỗi tiêu đề kép của cửa hàng**: Đã sửa lỗi hiển thị hai tiêu đề trên màn hình cửa hàng trong một số điều kiện nhất định.
+  - Giải quyết sự không nhất quán trạng thái chế độ Shell khi chọn tab cửa hàng sau khi quay lại màn hình chính
+  - Đảm bảo quản lý chế độ Shell ổn định thông qua đếm tham chiếu
+
 </div>
 </details>
 

@@ -117,6 +117,9 @@ La pantalla de configuración ha sido reorganizada en 5 grupos plegables.
   - Los iconos y colores de las notificaciones ahora se muestran correctamente según el tipo de notificación
   - Los títulos y contenidos de las notificaciones ahora se muestran correctamente en varios idiomas
   - Las esquinas redondeadas de los elementos de notificación ahora están unificadas con el estilo del botón de menú
+- **Corrección de encabezado doble de la tienda**: Se corrigió un problema donde se mostraban dos encabezados en la pantalla de la tienda bajo ciertas condiciones.
+  - Se resolvió la inconsistencia del estado del modo Shell al seleccionar la pestaña de la tienda después de volver a la pantalla de inicio
+  - Gestión estable del modo Shell garantizada mediante conteo de referencias
 
 </div>
 </details>
