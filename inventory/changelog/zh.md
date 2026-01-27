@@ -29,7 +29,7 @@ translations:
 
 <details class="changelog-version" open>
 <summary>
-  <span class="version-title">v1.3.0 <small>2026-01-23</small></span>
+  <span class="version-title">v1.3.0 <small>2026-01-27</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
@@ -120,6 +120,18 @@ translations:
 - **商店双标题修复**: 修复了在某些情况下商店界面显示两个标题的问题。
   - 解决了返回主页后选择商店标签时Shell模式状态不一致的问题
   - 通过引用计数方式确保Shell模式状态的稳定管理
+
+#### 共享模板搜索改进
+共享模板界面的搜索功能已改进。
+- **即时浏览**: 进入界面时立即显示最近共享的模板（无需搜索）
+- **菜单名称更新**: "共享模板"更改为"搜索共享模板"，提供更清晰的导航
+- **更快加载**: 将3个API调用合并为1个，显著提高界面加载速度
+
+#### 共享模板详情界面设计改进
+共享模板的详情界面已采用拟态设计重新设计。
+- **拟态设计**: 与应用整体拟态风格统一
+- **关键词双列显示**: 关键词以"标签:值"格式整理为双列布局，提高可读性
+- **标签设计改进**: 标签芯片改为拟态风格，增强视觉一致性
 
 </div>
 </details>

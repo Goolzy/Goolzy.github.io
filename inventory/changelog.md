@@ -29,7 +29,7 @@ Inventory 앱의 업데이트 내역을 확인하세요.
 
 <details class="changelog-version" open>
 <summary>
-  <span class="version-title">v1.3.0 <small>2026-01-23</small></span>
+  <span class="version-title">v1.3.0 <small>2026-01-27</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
@@ -128,6 +128,18 @@ Inventory 앱의 업데이트 내역을 확인하세요.
 - **상점 헤더 중복 수정**: 특정 상황에서 상점 화면에 헤더가 2개 표시되는 문제가 수정되었습니다.
   - 홈 화면으로 복귀 후 상점 탭 선택 시 셸 모드 상태 불일치 해결
   - 참조 카운팅 방식으로 셸 모드 상태의 안정적 관리 보장
+
+#### 공유 템플릿 검색 개선
+공유 템플릿 화면의 검색 기능이 개선되었습니다.
+- **즉시 탐색**: 화면 진입 시 최근 공유된 템플릿을 바로 확인 가능 (검색 불필요)
+- **메뉴명 변경**: '공유 템플릿' → '공유 템플릿 검색'으로 명확한 기능 안내
+- **빠른 로딩**: 3개 API 호출을 1개로 통합하여 화면 로딩 속도 대폭 개선
+
+#### 공유 템플릿 상세 화면 디자인 개선
+공유 템플릿의 상세 정보 화면이 뉴모픽 디자인으로 개선되었습니다.
+- **뉴모픽 디자인**: 앱 전체와 일관된 뉴모픽 스타일로 통일
+- **키워드 2열 표시**: 키워드가 '라벨:값' 형태로 2열 레이아웃으로 정리되어 가독성 향상
+- **태그 디자인 개선**: 태그 칩이 뉴모픽 스타일로 변경되어 시각적 통일감
 
 </div>
 </details>

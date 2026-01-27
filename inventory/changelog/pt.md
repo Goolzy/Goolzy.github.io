@@ -29,7 +29,7 @@ Confira o histórico de atualizações do aplicativo Inventory.
 
 <details class="changelog-version" open>
 <summary>
-  <span class="version-title">v1.3.0 <small>2026-01-23</small></span>
+  <span class="version-title">v1.3.0 <small>2026-01-27</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
@@ -108,6 +108,18 @@ A tela de configurações foi reorganizada em 5 grupos recolhíveis.
 - **Correção de cabeçalho duplo da loja**: Corrigido um problema onde dois cabeçalhos eram exibidos na tela da loja em certas condições.
   - Resolvida a inconsistência do estado do modo Shell ao selecionar a aba da loja após retornar à tela inicial
   - Gerenciamento estável do modo Shell garantido através de contagem de referências
+
+#### Melhorias na pesquisa de modelos compartilhados
+A funcionalidade de pesquisa da tela de modelos compartilhados foi aprimorada.
+- **Navegação instantânea**: Modelos compartilhados recentemente são exibidos imediatamente ao entrar na tela (sem necessidade de pesquisa)
+- **Nome do menu atualizado**: 'Modelos compartilhados' alterado para 'Pesquisar modelos compartilhados' para navegação mais clara
+- **Carregamento mais rápido**: 3 chamadas de API combinadas em 1, melhorando significativamente a velocidade de carregamento
+
+#### Melhoria no design da tela de detalhes de modelos compartilhados
+A tela de detalhes de modelos compartilhados foi redesenhada com um design neumórfico.
+- **Design neumórfico**: Unificado com o estilo neumórfico de todo o aplicativo
+- **Exibição de palavras-chave em 2 colunas**: As palavras-chave são organizadas em um layout de 2 colunas 'rótulo:valor' para melhor legibilidade
+- **Melhoria no design das tags**: Os chips de tags redesenhados em estilo neumórfico para consistência visual
 
 </div>
 </details>

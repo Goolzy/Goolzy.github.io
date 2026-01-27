@@ -29,7 +29,7 @@ Check out the update history for the Inventory app.
 
 <details class="changelog-version" open>
 <summary>
-  <span class="version-title">v1.3.0 <small>2026-01-23</small></span>
+  <span class="version-title">v1.3.0 <small>2026-01-27</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
@@ -120,6 +120,18 @@ The settings screen has been reorganized into 5 collapsible groups.
 - **Shop Double Header Fix**: Fixed an issue where two headers were displayed on the shop screen under certain conditions.
   - Resolved shell mode state mismatch when selecting the shop tab after returning to the home screen
   - Ensured stable shell mode management through reference counting
+
+#### Shared Template Search Improvements
+The search functionality of the shared template screen has been improved.
+- **Instant Browse**: Recently shared templates are displayed immediately upon entering the screen (no search required)
+- **Menu Name Update**: 'Shared Templates' changed to 'Search Shared Templates' for clearer navigation
+- **Faster Loading**: Combined 3 API calls into 1, significantly improving screen loading speed
+
+#### Shared Template Detail Screen Design Update
+The shared template detail screen has been redesigned with a neumorphic design.
+- **Neumorphic Design**: Unified with the app-wide neumorphic style
+- **2-Column Keyword Display**: Keywords are organized in a 'label:value' 2-column layout for better readability
+- **Tag Design Update**: Tag chips redesigned in neumorphic style for visual consistency
 
 </div>
 </details>

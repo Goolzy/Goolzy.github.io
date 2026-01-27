@@ -29,7 +29,7 @@ Consulta el historial de actualizaciones de la aplicación Inventory.
 
 <details class="changelog-version" open>
 <summary>
-  <span class="version-title">v1.3.0 <small>2026-01-23</small></span>
+  <span class="version-title">v1.3.0 <small>2026-01-27</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
@@ -120,6 +120,18 @@ La pantalla de configuración ha sido reorganizada en 5 grupos plegables.
 - **Corrección de encabezado doble de la tienda**: Se corrigió un problema donde se mostraban dos encabezados en la pantalla de la tienda bajo ciertas condiciones.
   - Se resolvió la inconsistencia del estado del modo Shell al seleccionar la pestaña de la tienda después de volver a la pantalla de inicio
   - Gestión estable del modo Shell garantizada mediante conteo de referencias
+
+#### Mejoras en la búsqueda de plantillas compartidas
+Se ha mejorado la funcionalidad de búsqueda de la pantalla de plantillas compartidas.
+- **Exploración instantánea**: Las plantillas compartidas recientemente se muestran inmediatamente al entrar a la pantalla (sin necesidad de buscar)
+- **Nombre del menú actualizado**: 'Plantillas compartidas' cambiado a 'Buscar plantillas compartidas' para una navegación más clara
+- **Carga más rápida**: Se combinaron 3 llamadas API en 1, mejorando significativamente la velocidad de carga
+
+#### Mejora del diseño de la pantalla de detalle de plantillas compartidas
+La pantalla de detalle de plantillas compartidas ha sido rediseñada con un diseño neumórfico.
+- **Diseño neumórfico**: Unificado con el estilo neumórfico de toda la aplicación
+- **Visualización de palabras clave en 2 columnas**: Las palabras clave se organizan en un diseño de 2 columnas 'etiqueta:valor' para mejor legibilidad
+- **Mejora del diseño de etiquetas**: Los chips de etiquetas rediseñados en estilo neumórfico para consistencia visual
 
 </div>
 </details>

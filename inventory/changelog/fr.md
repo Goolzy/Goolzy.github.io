@@ -29,7 +29,7 @@ Consultez l'historique des mises à jour de l'application Inventory.
 
 <details class="changelog-version" open>
 <summary>
-  <span class="version-title">v1.3.0 <small>2026-01-23</small></span>
+  <span class="version-title">v1.3.0 <small>2026-01-27</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
@@ -108,6 +108,18 @@ L'écran des paramètres a été réorganisé en 5 groupes pliables.
 - **Correction du double en-tête de la boutique**: Correction d'un problème où deux en-têtes s'affichaient sur l'écran de la boutique dans certaines conditions.
   - Résolution de l'incohérence de l'état du mode Shell lors de la sélection de l'onglet boutique après un retour à l'écran d'accueil
   - Gestion stable du mode Shell assurée par comptage de références
+
+#### Améliorations de la recherche de modèles partagés
+La fonctionnalité de recherche de l'écran des modèles partagés a été améliorée.
+- **Navigation instantanée**: Les modèles récemment partagés s'affichent immédiatement à l'ouverture de l'écran (aucune recherche nécessaire)
+- **Nom du menu mis à jour**: 'Modèles partagés' changé en 'Rechercher des modèles partagés' pour une navigation plus claire
+- **Chargement plus rapide**: 3 appels API combinés en 1, améliorant considérablement la vitesse de chargement
+
+#### Amélioration du design de l'écran de détail des modèles partagés
+L'écran de détail des modèles partagés a été repensé avec un design neumorphique.
+- **Design neumorphique**: Unifié avec le style neumorphique de toute l'application
+- **Affichage des mots-clés en 2 colonnes**: Les mots-clés sont organisés dans un format 'libellé:valeur' en 2 colonnes pour une meilleure lisibilité
+- **Amélioration du design des tags**: Les puces de tags redessinées en style neumorphique pour une cohérence visuelle
 
 </div>
 </details>
