@@ -93,6 +93,13 @@ A tela de inventário principal agora tem a mesma animação de abertura que as 
 - **Animação de troca de aba**: A mesma animação se aplica ao retornar ao início de outras abas
 - **UX consistente**: Experiência do usuário unificada com o mesmo efeito de abertura em todas as abas
 
+#### Redesign da tela de configurações
+A tela de configurações foi reorganizada em 5 grupos recolhíveis.
+- **5 grupos**: Itens de configuração categorizados em Cor, Fonte, Som, Notificações Push e Sistema
+- **Expandir/Recolher**: Interface de acordeão para tocar em cada grupo para expandir ou recolher
+- **Simplificação das notificações push**: 7 categorias consolidadas em 3 (Transações, Registro, Vencimento)
+- **Acessibilidade por teclado**: Suporte de teclas de seta para expandir/recolher grupos e navegação de itens
+
 #### Correções de bugs
 - **Correção de exibição do painel de notificações**: Corrigido um problema onde as notificações não eram exibidas corretamente no painel de notificações do cabeçalho do perfil.
   - Os ícones e cores das notificações agora são exibidos corretamente com base no tipo de notificação

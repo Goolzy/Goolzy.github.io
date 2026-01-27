@@ -105,6 +105,13 @@ La pantalla de inventario principal ahora tiene la misma animación de apertura 
 - **Animación de cambio de pestaña**: La misma animación se aplica al volver al inicio desde otras pestañas
 - **UX consistente**: Experiencia de usuario unificada con el mismo efecto de apertura en todas las pestañas
 
+#### Rediseño de la pantalla de configuración
+La pantalla de configuración ha sido reorganizada en 5 grupos plegables.
+- **5 grupos**: Elementos de configuración categorizados en Color, Fuente, Sonido, Notificaciones Push y Sistema
+- **Expandir/Contraer**: Interfaz de acordeón para tocar cada grupo y expandir o contraer
+- **Simplificación de notificaciones push**: 7 categorías consolidadas en 3 (Transacciones, Registro, Vencimiento)
+- **Accesibilidad por teclado**: Soporte de teclas de flecha para expandir/contraer grupos y navegación de elementos
+
 #### Corrección de errores
 - **Corrección de visualización del panel de notificaciones**: Se corrigió un problema donde las notificaciones no se mostraban correctamente en el panel de notificaciones del encabezado de perfil.
   - Los iconos y colores de las notificaciones ahora se muestran correctamente según el tipo de notificación

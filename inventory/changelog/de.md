@@ -93,6 +93,13 @@ Der Inventar-Home-Bildschirm hat jetzt die gleiche Eröffnungsanimation wie ande
 - **Tab-Wechsel-Animation**: Gleiche Animation beim Zurückkehren von anderen Tabs zum Home
 - **Konsistente UX**: Einheitliche Benutzererfahrung mit dem gleichen Eröffnungseffekt über alle Tabs
 
+#### Einstellungsbildschirm-Neugestaltung
+Der Einstellungsbildschirm wurde in 5 einklappbare Gruppen reorganisiert.
+- **5 Gruppen**: Einstellungen kategorisiert in Farbe, Schrift, Sound, Push-Benachrichtigungen und System
+- **Erweitern/Zusammenklappen**: Akkordeon-UI zum Tippen auf jede Gruppe zum Erweitern oder Zusammenklappen
+- **Push-Benachrichtigungen vereinfacht**: 7 Kategorien in 3 zusammengefasst (Handel, Protokoll, Ablauf)
+- **Tastaturzugänglichkeit**: Pfeiltasten-Unterstützung für Gruppen-Erweitern/Zusammenklappen und Element-Navigation
+
 #### Fehlerbehebungen
 - **Benachrichtigungspanel-Anzeige behoben**: Ein Problem wurde behoben, bei dem Benachrichtigungen im Benachrichtigungspanel des Profilheaders nicht korrekt angezeigt wurden.
   - Benachrichtigungssymbole und -farben werden jetzt basierend auf dem Benachrichtigungstyp korrekt angezeigt

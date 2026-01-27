@@ -105,11 +105,21 @@ The inventory home screen now has the same opening animation as other tabs.
 - **Tab Switch Animation**: Same animation applies when returning to home from other tabs
 - **Consistent UX**: Unified user experience with the same opening effect across all tabs
 
+#### Settings Screen Redesign
+The settings screen has been reorganized into 5 collapsible groups.
+- **5 Groups**: Settings items categorized into Color, Font, Sound, Push Notifications, and System
+- **Expand/Collapse**: Accordion UI to tap each group to expand or collapse
+- **Push Notification Simplification**: 7 categories consolidated into 3 (Trade, Log, Expiry)
+- **Keyboard Accessibility**: Arrow keys support for group expand/collapse and item navigation
+
 #### Bug Fixes
 - **Notification Panel Display Fix**: Fixed an issue where notifications were not displaying correctly in the profile header notification panel.
   - Notification icons and colors now display correctly based on notification type
   - Notification titles and content now display correctly in multiple languages
   - Notification item rounded corners are now unified with menu button styling
+- **Shop Double Header Fix**: Fixed an issue where two headers were displayed on the shop screen under certain conditions.
+  - Resolved shell mode state mismatch when selecting the shop tab after returning to the home screen
+  - Ensured stable shell mode management through reference counting
 
 </div>
 </details>

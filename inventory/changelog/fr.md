@@ -93,6 +93,13 @@ L'écran d'inventaire principal a maintenant la même animation d'ouverture que 
 - **Animation de changement d'onglet**: La même animation s'applique lors du retour à l'accueil depuis d'autres onglets
 - **UX cohérente**: Expérience utilisateur unifiée avec le même effet d'ouverture sur tous les onglets
 
+#### Refonte de l'écran des paramètres
+L'écran des paramètres a été réorganisé en 5 groupes pliables.
+- **5 groupes**: Éléments de paramètres classés en Couleur, Police, Son, Notifications Push et Système
+- **Déplier/Replier**: Interface accordéon pour toucher chaque groupe afin de le déplier ou le replier
+- **Simplification des notifications push**: 7 catégories consolidées en 3 (Transactions, Journal, Expiration)
+- **Accessibilité clavier**: Support des touches fléchées pour le déploiement/repli des groupes et la navigation des éléments
+
 #### Corrections de bugs
 - **Correction de l'affichage du panneau de notifications**: Correction d'un problème où les notifications ne s'affichaient pas correctement dans le panneau de notifications de l'en-tête de profil.
   - Les icônes et couleurs de notifications s'affichent maintenant correctement selon le type de notification
