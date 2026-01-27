@@ -126,6 +126,7 @@ Se ha mejorado la funcionalidad de búsqueda de la pantalla de plantillas compar
 - **Exploración instantánea**: Las plantillas compartidas recientemente se muestran inmediatamente al entrar a la pantalla (sin necesidad de buscar)
 - **Nombre del menú actualizado**: 'Plantillas compartidas' cambiado a 'Buscar plantillas compartidas' para una navegación más clara
 - **Carga más rápida**: Se combinaron 3 llamadas API en 1, mejorando significativamente la velocidad de carga
+- **Colores temáticos de etiquetas**: Las etiquetas populares/recientes ahora se muestran en los colores del tema de la aplicación
 
 #### Mejora del diseño de la pantalla de detalle de plantillas compartidas
 La pantalla de detalle de plantillas compartidas ha sido rediseñada con un diseño neumórfico.

@@ -114,6 +114,7 @@ A funcionalidade de pesquisa da tela de modelos compartilhados foi aprimorada.
 - **Navegação instantânea**: Modelos compartilhados recentemente são exibidos imediatamente ao entrar na tela (sem necessidade de pesquisa)
 - **Nome do menu atualizado**: 'Modelos compartilhados' alterado para 'Pesquisar modelos compartilhados' para navegação mais clara
 - **Carregamento mais rápido**: 3 chamadas de API combinadas em 1, melhorando significativamente a velocidade de carregamento
+- **Cores temáticas das tags**: Tags populares/recentes agora são exibidas nas cores do tema do aplicativo
 
 #### Melhoria no design da tela de detalhes de modelos compartilhados
 A tela de detalhes de modelos compartilhados foi redesenhada com um design neumórfico.

@@ -126,6 +126,7 @@ The search functionality of the shared template screen has been improved.
 - **Instant Browse**: Recently shared templates are displayed immediately upon entering the screen (no search required)
 - **Menu Name Update**: 'Shared Templates' changed to 'Search Shared Templates' for clearer navigation
 - **Faster Loading**: Combined 3 API calls into 1, significantly improving screen loading speed
+- **Tag Theme Colors**: Popular/latest tags now display in app theme colors instead of fixed colors
 
 #### Shared Template Detail Screen Design Update
 The shared template detail screen has been redesigned with a neumorphic design.

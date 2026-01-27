@@ -114,6 +114,7 @@ Die Suchfunktion des Bildschirms für geteilte Vorlagen wurde verbessert.
 - **Sofortiges Durchsuchen**: Kürzlich geteilte Vorlagen werden sofort beim Öffnen des Bildschirms angezeigt (keine Suche erforderlich)
 - **Menüname aktualisiert**: 'Geteilte Vorlagen' zu 'Geteilte Vorlagen suchen' geändert für klarere Navigation
 - **Schnelleres Laden**: 3 API-Aufrufe zu 1 zusammengefasst, was die Ladegeschwindigkeit erheblich verbessert
+- **Tag-Themenfarben**: Beliebte/neueste Tags werden jetzt in App-Themenfarben statt festen Farben angezeigt
 
 #### Designverbesserung des Detailbildschirms für geteilte Vorlagen
 Der Detailbildschirm für geteilte Vorlagen wurde mit einem neumorphen Design neu gestaltet.
