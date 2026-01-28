@@ -120,6 +120,9 @@ The settings screen has been reorganized into 5 collapsible groups.
 - **Shop Double Header Fix**: Fixed an issue where two headers were displayed on the shop screen under certain conditions.
   - Resolved shell mode state mismatch when selecting the shop tab after returning to the home screen
   - Ensured stable shell mode management through reference counting
+- **Pocket Collapse/Expand Animation Fix**: Fixed an issue where content would instantly disappear when collapsing pockets. Now smoothly animates with natural motion.
+  - Collapse: Content smoothly folds up from bottom to top
+  - Expand: Content smoothly reveals from top to bottom
 
 #### Shared Template Search Improvements
 The search functionality of the shared template screen has been improved.
@@ -139,6 +142,13 @@ Tapping a clip item in the log now opens the Clip Detail Screen, same as from th
 - **Clip Detail Entry**: Tapping a clip item in the log now navigates to the Clip Detail Screen where you can swipe through all clip pages
 - **Correct Page Position**: Opens at the exact page corresponding to the tapped item's position within the clip
 - **Unified Path**: Grid, log, and keyboard navigation all use the same detail screen flow
+
+#### Grid Item Card Design Improvements
+Inventory grid item cards have been updated to a cleaner flat design.
+- **Shadow Removal**: Removed BoxShadow that appeared as inset shadow in dense grid layout
+- **Bottom Gradient Removal**: Removed dark gradient overlay at the bottom of cards
+- **Flat Design**: Unified with clean and modern flat style
+- **Text Label Preserved**: Item type labels maintained with white text + shadow for readability
 
 </div>
 </details>

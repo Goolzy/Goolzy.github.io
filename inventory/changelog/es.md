@@ -120,6 +120,9 @@ La pantalla de configuración ha sido reorganizada en 5 grupos plegables.
 - **Corrección de encabezado doble de la tienda**: Se corrigió un problema donde se mostraban dos encabezados en la pantalla de la tienda bajo ciertas condiciones.
   - Se resolvió la inconsistencia del estado del modo Shell al seleccionar la pestaña de la tienda después de volver a la pantalla de inicio
   - Gestión estable del modo Shell garantizada mediante conteo de referencias
+- **Mejora de animación de plegar/desplegar bolsillo**: Se corrigió el problema donde el contenido desaparecía instantáneamente al plegar los bolsillos. Ahora la animación es fluida.
+  - Plegar: El contenido se pliega suavemente de abajo hacia arriba
+  - Desplegar: El contenido se despliega suavemente de arriba hacia abajo
 
 #### Mejoras en la búsqueda de plantillas compartidas
 Se ha mejorado la funcionalidad de búsqueda de la pantalla de plantillas compartidas.
@@ -139,6 +142,13 @@ Tocar un elemento de clip en el registro ahora abre la pantalla de detalle del c
 - **Acceso al detalle del clip**: Tocar un elemento de clip en el registro ahora navega a la pantalla de detalle del clip donde puede deslizar por todas las páginas del clip
 - **Posición de página correcta**: Se abre en la página exacta correspondiente a la posición del elemento tocado dentro del clip
 - **Ruta unificada**: La cuadrícula, el registro y la navegación por teclado utilizan el mismo flujo de pantalla de detalle
+
+#### Mejoras en el diseño de tarjetas de elementos de cuadrícula
+Las tarjetas de elementos de la cuadrícula de inventario se han actualizado a un diseño plano más limpio.
+- **Eliminación de sombra**: Se eliminó BoxShadow que aparecía como sombra interior en la cuadrícula densa
+- **Eliminación del degradado inferior**: Se eliminó la superposición de degradado oscuro en la parte inferior de las tarjetas
+- **Diseño plano**: Unificado con estilo plano limpio y moderno
+- **Etiqueta de texto conservada**: Las etiquetas de tipo de elemento se mantienen con texto blanco + sombra para legibilidad
 
 </div>
 </details>

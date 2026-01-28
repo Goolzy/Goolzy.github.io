@@ -108,6 +108,9 @@ Der Einstellungsbildschirm wurde in 5 einklappbare Gruppen reorganisiert.
 - **Shop-Doppelheader behoben**: Ein Problem wurde behoben, bei dem unter bestimmten Umständen zwei Header auf dem Shop-Bildschirm angezeigt wurden.
   - Shell-Modus-Statuskonflikt beim Auswählen des Shop-Tabs nach Rückkehr zum Startbildschirm behoben
   - Stabile Shell-Modus-Verwaltung durch Referenzzählung sichergestellt
+- **Pocket Einklappen/Ausklappen Animation verbessert**: Das Problem, dass Inhalte beim Einklappen von Pockets sofort verschwanden, wurde behoben. Jetzt wird der Inhalt sanft animiert.
+  - Einklappen: Inhalt faltet sich sanft von unten nach oben
+  - Ausklappen: Inhalt entfaltet sich sanft von oben nach unten
 
 #### Verbesserungen der geteilten Vorlagensuche
 Die Suchfunktion des Bildschirms für geteilte Vorlagen wurde verbessert.
@@ -127,6 +130,13 @@ Das Antippen eines Clip-Elements im Log öffnet jetzt den Clip-Detailbildschirm,
 - **Clip-Detail-Einstieg**: Das Antippen eines Clip-Elements im Log navigiert jetzt zum Clip-Detailbildschirm, wo Sie durch alle Clip-Seiten wischen können
 - **Korrekte Seitenposition**: Öffnet auf der genauen Seite, die der Position des angetippten Elements innerhalb des Clips entspricht
 - **Vereinheitlichter Pfad**: Raster-, Log- und Tastaturnavigation verwenden alle den gleichen Detailbildschirm-Ablauf
+
+#### Verbesserungen am Raster-Elementkarten-Design
+Die Elementkarten im Inventarraster wurden auf ein saubereres flaches Design aktualisiert.
+- **Schattenentfernung**: BoxShadow entfernt, der im dichten Raster wie ein Innenschatten aussah
+- **Unterer Farbverlauf entfernt**: Dunkles Farbverlaufs-Overlay am unteren Kartenrand entfernt
+- **Flaches Design**: Vereinheitlicht mit sauberem und modernem flachem Stil
+- **Textbeschriftung beibehalten**: Elementtyp-Beschriftungen mit weißem Text + Schatten für Lesbarkeit erhalten
 
 </div>
 </details>

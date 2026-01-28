@@ -108,6 +108,9 @@ L'écran des paramètres a été réorganisé en 5 groupes pliables.
 - **Correction du double en-tête de la boutique**: Correction d'un problème où deux en-têtes s'affichaient sur l'écran de la boutique dans certaines conditions.
   - Résolution de l'incohérence de l'état du mode Shell lors de la sélection de l'onglet boutique après un retour à l'écran d'accueil
   - Gestion stable du mode Shell assurée par comptage de références
+- **Amélioration de l'animation de pliage/dépliage des poches**: Correction du problème où le contenu disparaissait instantanément lors du pliage des poches. L'animation est maintenant fluide.
+  - Pliage: Le contenu se plie doucement de bas en haut
+  - Dépliage: Le contenu se déplie doucement de haut en bas
 
 #### Améliorations de la recherche de modèles partagés
 La fonctionnalité de recherche de l'écran des modèles partagés a été améliorée.
@@ -127,6 +130,13 @@ Appuyer sur un élément de clip dans le journal ouvre désormais l'écran de d�
 - **Accès au détail du clip** : Appuyer sur un élément de clip dans le journal navigue désormais vers l'écran de détail du clip où vous pouvez parcourir toutes les pages du clip
 - **Position de page correcte** : S'ouvre à la page exacte correspondant à la position de l'élément appuyé dans le clip
 - **Chemin unifié** : La grille, le journal et la navigation clavier utilisent tous le même flux d'écran de détail
+
+#### Améliorations du design des cartes d'éléments de grille
+Les cartes d'éléments de la grille d'inventaire ont été mises à jour avec un design plat plus épuré.
+- **Suppression de l'ombre** : Suppression du BoxShadow qui apparaissait comme une ombre interne dans la grille dense
+- **Suppression du dégradé inférieur** : Suppression du dégradé sombre en bas des cartes
+- **Design plat** : Unifié avec un style plat propre et moderne
+- **Étiquette de texte conservée** : Les étiquettes de type d'élément maintenues avec texte blanc + ombre pour la lisibilité
 
 </div>
 </details>

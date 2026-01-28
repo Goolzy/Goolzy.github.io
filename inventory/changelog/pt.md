@@ -108,6 +108,9 @@ A tela de configurações foi reorganizada em 5 grupos recolhíveis.
 - **Correção de cabeçalho duplo da loja**: Corrigido um problema onde dois cabeçalhos eram exibidos na tela da loja em certas condições.
   - Resolvida a inconsistência do estado do modo Shell ao selecionar a aba da loja após retornar à tela inicial
   - Gerenciamento estável do modo Shell garantido através de contagem de referências
+- **Melhoria na animação de dobrar/desdobrar bolso**: Corrigido o problema onde o conteúdo desaparecia instantaneamente ao dobrar os bolsos. Agora a animação é suave.
+  - Dobrar: O conteúdo se dobra suavemente de baixo para cima
+  - Desdobrar: O conteúdo se desdobra suavemente de cima para baixo
 
 #### Melhorias na pesquisa de modelos compartilhados
 A funcionalidade de pesquisa da tela de modelos compartilhados foi aprimorada.
@@ -127,6 +130,13 @@ Tocar em um item de clip no registro agora abre a tela de detalhe do clip, assim
 - **Acesso ao detalhe do clip**: Tocar em um item de clip no registro agora navega para a tela de detalhe do clip, onde você pode deslizar por todas as páginas do clip
 - **Posição de página correta**: Abre na página exata correspondente à posição do item tocado dentro do clip
 - **Caminho unificado**: Grade, registro e navegação por teclado utilizam o mesmo fluxo de tela de detalhe
+
+#### Melhorias no design dos cartões de itens da grade
+Os cartões de itens da grade de inventário foram atualizados para um design plano mais limpo.
+- **Remoção de sombra**: Removido BoxShadow que aparecia como sombra interna na grade densa
+- **Remoção do gradiente inferior**: Removida sobreposição de gradiente escuro na parte inferior dos cartões
+- **Design plano**: Unificado com estilo plano limpo e moderno
+- **Rótulo de texto preservado**: Rótulos de tipo de item mantidos com texto branco + sombra para legibilidade
 
 </div>
 </details>
