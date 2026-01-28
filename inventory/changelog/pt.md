@@ -69,6 +69,12 @@ As ações disponíveis são exibidas como um botão flutuante quando itens são
 - **Badge de contagem de ações**: O número de ações disponíveis é exibido como badge no FAB
 - **Animações suaves**: Animação de escala para aparecer/desaparecer do FAB, efeito pop quando a contagem de ações muda
 
+#### Melhorias nas notificações de registros não lidos
+Agora você pode ver mais claramente o status de não lido na lista de registros.
+- **Badge de contagem de não lidos**: O número de comentários não lidos é exibido como badge (até 99+)
+- **Distinção de cor lido/não lido**: Registros não lidos têm fundo claro, registros lidos têm fundo escuro para separação visual
+- **Atualizações em tempo real**: A contagem aumenta em tempo real quando novos comentários são postados, reinicia automaticamente após a leitura
+
 #### Atalho para caixa de correio
 Agora você pode acessar diretamente a caixa de correio (tela de recebimento) pela barra de navegação inferior.
 - **Acesso rápido**: Verifique itens recebidos diretamente da tela inicial

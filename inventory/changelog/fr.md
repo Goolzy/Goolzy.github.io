@@ -69,6 +69,12 @@ Les actions disponibles s'affichent sous forme de bouton flottant lorsque des ar
 - **Badge du nombre d'actions**: Le nombre d'actions disponibles s'affiche en badge sur le FAB
 - **Animations fluides**: Animation d'échelle pour l'apparition/disparition du FAB, effet pop lors du changement du nombre d'actions
 
+#### Améliorations des notifications de journaux non lus
+Vous pouvez maintenant voir plus clairement l'état non lu dans la liste des journaux.
+- **Badge de compteur non lu**: Le nombre de commentaires non lus s'affiche sous forme de badge (jusqu'à 99+)
+- **Distinction de couleur lu/non lu**: Les journaux non lus ont un fond clair, les journaux lus ont un fond sombre pour une séparation visuelle
+- **Mises à jour en temps réel**: Le compteur augmente en temps réel lorsque de nouveaux commentaires sont publiés, se réinitialise automatiquement après lecture
+
 #### Raccourci boîte aux lettres
 Vous pouvez maintenant accéder directement à la boîte aux lettres (écran de réception) depuis la barre de navigation inférieure.
 - **Accès rapide**: Vérifiez les articles reçus directement depuis l'écran d'accueil

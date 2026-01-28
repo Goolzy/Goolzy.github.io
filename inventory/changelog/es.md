@@ -76,10 +76,11 @@ Se ha mejorado la retroalimentación visual para los artículos seleccionados.
 - **Bordes superpuestos**: Cuando se seleccionan artículos adyacentes, los bordes se superponen para mostrar claramente el área de selección
 - **Efecto de temblor eliminado**: Se eliminó el efecto de temblor en los artículos seleccionados para una interfaz más limpia
 
-#### Mejoras en las notificaciones de nuevos registros
-Se ha cambiado el método de notificación para artículos con nuevos registros.
-- **Efecto de temblor**: Los nuevos registros se indican con un temblor sutil en lugar de un borde parpadeante
-- **Reconocimiento intuitivo**: Las notificaciones son más fáciles de notar ya que son distintas del contorno de selección
+#### Mejoras en las notificaciones de registros no leídos
+Ahora puede ver más claramente el estado de no leído en la lista de registros.
+- **Insignia de recuento de no leídos**: El número de comentarios no leídos se muestra como una insignia (hasta 99+)
+- **Distinción de color leído/no leído**: Los registros no leídos tienen fondo claro, los registros leídos tienen fondo oscuro para separación visual
+- **Actualizaciones en tiempo real**: El recuento aumenta en tiempo real cuando se publican nuevos comentarios, se reinicia automáticamente después de leer
 
 #### Acceso directo al buzón
 Ahora puede acceder directamente al buzón (pantalla de recepción) desde la barra de navegación inferior.

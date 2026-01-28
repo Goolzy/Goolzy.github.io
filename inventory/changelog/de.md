@@ -69,6 +69,12 @@ Verfügbare Aktionen werden als schwebende Schaltfläche angezeigt, wenn Artikel
 - **Aktionszähler-Badge**: Die Anzahl der verfügbaren Aktionen wird als Badge auf dem FAB angezeigt
 - **Flüssige Animationen**: Skalierungsanimation für FAB-Erscheinen/Verschwinden, Pop-Effekt bei Änderung der Aktionsanzahl
 
+#### Verbesserungen der Protokoll-Ungelesen-Benachrichtigungen
+Sie können jetzt den Ungelesen-Status in der Protokollliste deutlicher sehen.
+- **Ungelesen-Zähler-Badge**: Die Anzahl der ungelesenen Kommentare wird als Badge angezeigt (bis zu 99+)
+- **Gelesen/Ungelesen-Farbunterscheidung**: Ungelesene Protokolle haben einen hellen Hintergrund, gelesene Protokolle einen dunklen Hintergrund zur visuellen Trennung
+- **Echtzeit-Updates**: Der Zähler erhöht sich in Echtzeit, wenn neue Kommentare gepostet werden, und wird nach dem Lesen automatisch zurückgesetzt
+
 #### Postfach-Verknüpfung
 Sie können jetzt direkt über die untere Navigationsleiste auf das Postfach (Empfangsbildschirm) zugreifen.
 - **Schneller Zugriff**: Empfangene Artikel direkt vom Startbildschirm aus überprüfen

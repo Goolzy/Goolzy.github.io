@@ -83,10 +83,11 @@ Visual feedback for selected items has been improved.
 - **Overlapping Borders**: When adjacent items are selected, borders overlap to clearly show selection area
 - **Wobble Effect Removed**: Wobble effect on selected items removed for cleaner UI
 
-#### New Log Notification Improvements
-The notification method for items with new logs has been changed.
-- **Wobble Effect**: New logs indicated by subtle wobble instead of pulsing border
-- **Intuitive Recognition**: Easier to notice notifications as they are distinct from selection outline
+#### Log Screen Unread Notification Improvements
+You can now more clearly see unread status in the log list.
+- **Unread Count Badge**: Number of unread comments displayed as a badge (up to 99+)
+- **Read/Unread Color Distinction**: Unread logs have bright background, read logs have dark background for visual separation
+- **Real-time Updates**: Count increases in real-time when new comments are posted, auto-resets after reading
 
 #### Mailbox Shortcut
 You can now directly access the mailbox (receive screen) from the bottom navigation bar.
