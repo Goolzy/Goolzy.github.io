@@ -134,6 +134,12 @@ La pantalla de detalle de plantillas compartidas ha sido rediseñada con un dise
 - **Visualización de palabras clave en 2 columnas**: Las palabras clave se organizan en un diseño de 2 columnas 'etiqueta:valor' para mejor legibilidad
 - **Mejora del diseño de etiquetas**: Los chips de etiquetas rediseñados en estilo neumórfico para consistencia visual
 
+#### Navegación de registro unificada
+Tocar un elemento de clip en el registro ahora abre la pantalla de detalle del clip, igual que desde la cuadrícula.
+- **Acceso al detalle del clip**: Tocar un elemento de clip en el registro ahora navega a la pantalla de detalle del clip donde puede deslizar por todas las páginas del clip
+- **Posición de página correcta**: Se abre en la página exacta correspondiente a la posición del elemento tocado dentro del clip
+- **Ruta unificada**: La cuadrícula, el registro y la navegación por teclado utilizan el mismo flujo de pantalla de detalle
+
 </div>
 </details>
 

@@ -134,6 +134,12 @@ The shared template detail screen has been redesigned with a neumorphic design.
 - **2-Column Keyword Display**: Keywords are organized in a 'label:value' 2-column layout for better readability
 - **Tag Design Update**: Tag chips redesigned in neumorphic style for visual consistency
 
+#### Unified Log Navigation
+Tapping a clip item in the log now opens the Clip Detail Screen, same as from the grid.
+- **Clip Detail Entry**: Tapping a clip item in the log now navigates to the Clip Detail Screen where you can swipe through all clip pages
+- **Correct Page Position**: Opens at the exact page corresponding to the tapped item's position within the clip
+- **Unified Path**: Grid, log, and keyboard navigation all use the same detail screen flow
+
 </div>
 </details>
 

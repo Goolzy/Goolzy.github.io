@@ -122,6 +122,12 @@ Der Detailbildschirm für geteilte Vorlagen wurde mit einem neumorphen Design ne
 - **2-Spalten-Keyword-Anzeige**: Keywords werden in einem 'Label:Wert'-2-Spalten-Layout für bessere Lesbarkeit organisiert
 - **Tag-Design-Aktualisierung**: Tag-Chips im neumorphen Stil für visuelle Konsistenz neu gestaltet
 
+#### Vereinheitlichte Log-Navigation
+Das Antippen eines Clip-Elements im Log öffnet jetzt den Clip-Detailbildschirm, wie im Raster.
+- **Clip-Detail-Einstieg**: Das Antippen eines Clip-Elements im Log navigiert jetzt zum Clip-Detailbildschirm, wo Sie durch alle Clip-Seiten wischen können
+- **Korrekte Seitenposition**: Öffnet auf der genauen Seite, die der Position des angetippten Elements innerhalb des Clips entspricht
+- **Vereinheitlichter Pfad**: Raster-, Log- und Tastaturnavigation verwenden alle den gleichen Detailbildschirm-Ablauf
+
 </div>
 </details>
 

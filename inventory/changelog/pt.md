@@ -122,6 +122,12 @@ A tela de detalhes de modelos compartilhados foi redesenhada com um design neum�
 - **Exibição de palavras-chave em 2 colunas**: As palavras-chave são organizadas em um layout de 2 colunas 'rótulo:valor' para melhor legibilidade
 - **Melhoria no design das tags**: Os chips de tags redesenhados em estilo neumórfico para consistência visual
 
+#### Navegação de registro unificada
+Tocar em um item de clip no registro agora abre a tela de detalhe do clip, assim como na grade.
+- **Acesso ao detalhe do clip**: Tocar em um item de clip no registro agora navega para a tela de detalhe do clip, onde você pode deslizar por todas as páginas do clip
+- **Posição de página correta**: Abre na página exata correspondente à posição do item tocado dentro do clip
+- **Caminho unificado**: Grade, registro e navegação por teclado utilizam o mesmo fluxo de tela de detalhe
+
 </div>
 </details>
 

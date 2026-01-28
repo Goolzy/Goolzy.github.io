@@ -122,6 +122,12 @@ L'écran de détail des modèles partagés a été repensé avec un design neumo
 - **Affichage des mots-clés en 2 colonnes**: Les mots-clés sont organisés dans un format 'libellé:valeur' en 2 colonnes pour une meilleure lisibilité
 - **Amélioration du design des tags**: Les puces de tags redessinées en style neumorphique pour une cohérence visuelle
 
+#### Navigation de journal unifiée
+Appuyer sur un élément de clip dans le journal ouvre désormais l'écran de détail du clip, comme depuis la grille.
+- **Accès au détail du clip** : Appuyer sur un élément de clip dans le journal navigue désormais vers l'écran de détail du clip où vous pouvez parcourir toutes les pages du clip
+- **Position de page correcte** : S'ouvre à la page exacte correspondant à la position de l'élément appuyé dans le clip
+- **Chemin unifié** : La grille, le journal et la navigation clavier utilisent tous le même flux d'écran de détail
+
 </div>
 </details>
 
