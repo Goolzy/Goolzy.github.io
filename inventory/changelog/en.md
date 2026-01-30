@@ -151,6 +151,18 @@ Inventory grid item cards have been updated to a cleaner flat design.
 - **Flat Design**: Unified with clean and modern flat style
 - **Text Label Preserved**: Item type labels maintained with white text + shadow for readability
 
+#### Wizard Chat Room Creation Improvements
+The chat room wizard has been improved to be more intuitive.
+- **Group Conversation Member Display**: Default title now shows 'n-person group chat' to immediately check the number of participants
+- **Completion Image Preview**: Actual completed item images are displayed on the wizard menu instead of icons
+- **Fast Image Loading**: Uses local images for instant display without downloading each time
+
+#### 1:1 Chat Room Dynamic Title
+In 1:1 chat rooms, senders and receivers can each see the other person's name as the title.
+- **Other Person's Name Display**: Senders see "Conversation with receiver_name", receivers see "Conversation with sender_name"
+- **Custom Title Priority**: Manually entered titles are displayed identically to both parties
+- **Group Chat Same Title**: Group chats display the same title to all participants
+
 </div>
 </details>
 

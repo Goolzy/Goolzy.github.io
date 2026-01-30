@@ -144,6 +144,18 @@ Os cartões de itens da grade de inventário foram atualizados para um design pl
 - **Design plano**: Unificado com estilo plano limpo e moderno
 - **Rótulo de texto preservado**: Rótulos de tipo de item mantidos com texto branco + sombra para legibilidade
 
+#### Melhoria do assistente de criação de sala de chat
+O assistente de sala de chat agora é mais intuitivo e foi melhorado.
+- **Exibição de participantes do grupo**: O título padrão é exibido como 'Conversa com n pessoas', permitindo verificar imediatamente o número de participantes
+- **Pré-visualização da imagem do item completo**: Em vez de ícones, a imagem real do item final é exibida no menu do assistente
+- **Carregamento rápido de imagens**: Usando imagens locais, as imagens são exibidas instantaneamente sem necessidade de download cada vez
+
+#### Título dinâmico de sala de chat 1:1
+Em salas de chat 1:1, o remetente e o destinatário podem ver o título mostrando o nome um do outro.
+- **Exibição do nome da outra pessoa**: O remetente vê "Conversa com [Nome do Destinatário]", e o destinatário vê "Conversa com [Nome do Remetente]"
+- **Prioridade do título personalizado**: Títulos inseridos manualmente são exibidos igualmente para ambos os lados
+- **Título idêntico do chat em grupo**: Chats em grupo exibem o mesmo título para todos os participantes
+
 </div>
 </details>
 

@@ -144,6 +144,18 @@ Les cartes d'éléments de la grille d'inventaire ont été mises à jour avec u
 - **Design plat** : Unifié avec un style plat propre et moderne
 - **Étiquette de texte conservée** : Les étiquettes de type d'élément maintenues avec texte blanc + ombre pour la lisibilité
 
+#### Amélioration de la création de salle de chat avec assistant
+L'assistant de création de salle de chat a été considérablement amélioré pour plus d'intuitivité.
+- **Affichage du nombre de participants au groupe** : Le titre par défaut s'affiche sous la forme "Conversation de groupe avec n personnes" pour vérifier immédiatement le nombre de participants
+- **Aperçu de l'image complétée** : Au lieu d'une icône, l'image réelle de l'élément finalisé s'affiche dans le menu de l'assistant
+- **Chargement d'image rapide** : L'utilisation d'images locales permet un affichage instantané sans téléchargement à chaque fois
+
+#### Titre dynamique de la salle de chat 1:1
+Dans une salle de chat 1:1, l'expéditeur et le destinataire voient chacun le titre affichant le nom de l'autre.
+- **Affichage du nom de l'autre** : L'expéditeur voit "Conversation avec [Destinataire]", le destinataire voit "Conversation avec [Expéditeur]"
+- **Priorité au titre personnalisé** : Un titre personnalisé saisi manuellement s'affiche de la même manière pour les deux parties
+- **Titre identique pour les chats de groupe** : Les salles de chat de groupe affichent le même titre pour tous les participants
+
 </div>
 </details>
 

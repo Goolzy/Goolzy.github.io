@@ -144,6 +144,18 @@ Die Elementkarten im Inventarraster wurden auf ein saubereres flaches Design akt
 - **Flaches Design**: Vereinheitlicht mit sauberem und modernem flachem Stil
 - **Textbeschriftung beibehalten**: Elementtyp-Beschriftungen mit weißem Text + Schatten für Lesbarkeit erhalten
 
+#### Verbesserung des Chat-Raum-Assistenten
+Der Chat-Raum-Assistent wurde intuitiver verbessert.
+- **Gruppen-Gesprächs-Teilnehmerzahl anzeigen**: Der Standard-Titel wird als 'n-Personen-Gruppengespräch' angezeigt, sodass Sie die Anzahl der Teilnehmer sofort sehen können
+- **Vorschau des fertigen Elements anzeigen**: Im Assistent-Menü wird das tatsächliche fertige Element-Bild anstelle des Symbols angezeigt
+- **Schnelles Laden von Bildern**: Mit lokalen Bildern wird sofort angezeigt, ohne jedes Mal herunterzuladen
+
+#### Dynamischer Titel des 1:1-Chat-Raums
+In 1:1-Chat-Räumen können der Absender und der Empfänger jeweils den Namen der Gegenpartei als Titel sehen.
+- **Name der Gegenpartei anzeigen**: Der Absender sieht "Gespräch mit [Empfänger]", der Empfänger sieht "Gespräch mit [Absender]"
+- **Benutzerdefinierter Titel hat Vorrang**: Manuell eingegebene Titel werden auf beiden Seiten identisch angezeigt
+- **Gruppen-Chat mit gleichem Titel**: Gruppen-Chats zeigen allen Teilnehmern den gleichen Titel
+
 </div>
 </details>
 

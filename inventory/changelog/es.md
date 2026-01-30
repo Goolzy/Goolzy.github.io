@@ -151,6 +151,18 @@ Las tarjetas de elementos de la cuadrícula de inventario se han actualizado a u
 - **Diseño plano**: Unificado con estilo plano limpio y moderno
 - **Etiqueta de texto conservada**: Las etiquetas de tipo de elemento se mantienen con texto blanco + sombra para legibilidad
 
+#### Mejora del asistente de creación de salas de chat
+El asistente de salas de chat ha sido mejorado para ser más intuitivo.
+- **Visualización del número de participantes en grupo**: El título predeterminado se muestra como 'Conversación grupal de n personas', permitiendo ver de inmediato el número de participantes
+- **Vista previa de la imagen del artículo completado**: En el menú del asistente se muestra la imagen real del artículo completado en lugar de un icono
+- **Carga rápida de imágenes**: Uso de imágenes locales para mostración inmediata sin descargas cada vez
+
+#### Título dinámico de salas de chat 1:1
+En las salas de chat 1:1, el remitente y el destinatario pueden ver el título con el nombre de la otra persona.
+- **Visualización del nombre del otro participante**: El remitente ve "Conversación con el destinatario", el destinatario ve "Conversación con el remitente"
+- **Prioridad del título personalizado**: Los títulos personalizados se muestran igual para ambos lados
+- **Título igual en grupos**: En las salas de chat grupal, todos los participantes ven el mismo título
+
 </div>
 </details>
 
