@@ -37,12 +37,50 @@ Consulta el historial de actualizaciones de la aplicación Inventory.
 </summary>
 <div class="version-content" markdown="1">
 
-• Pocket: 'Partition' renombrado a 'Pocket', migración automática
-• Nueva UI: Encabezado de perfil expandible, Speed Dial FAB, Filtro de categoría
-• Configuración: 5 grupos plegables
-• UI/UX: Tienda simplificada, diseño neumórfico y plano, buzón, animación de inicio
-• Chat: Nombres dinámicos en 1:1, número de participantes en grupo
-• Correcciones: Notificaciones, encabezado de tienda, animación de pocket
+#### Rebranding de Bolsillo
+'Partición' ha sido renombrado al término más familiar 'Bolsillo'.
+- **Cambio de terminología**: Unificación de 'Partición' → 'Bolsillo' en toda la aplicación
+- **Migración automática**: Los datos existentes se convierten automáticamente sin pérdida de información
+- **Soporte multilingüe**: Nuevo término reflejado en 8 idiomas
+
+#### Encabezado de Perfil Expandible
+El área de perfil en la parte superior de la pantalla de inicio ha sido mejorada con un estilo de cajón.
+- **Arrastrar/Tocar para expandir**: Arrastra la barra de mangos o toca el nombre de usuario para expandir/contraer
+- **Tarjeta de perfil**: En estado expandido, visualiza información de perfil, código QR e información de API
+- **Ajuste basado en velocidad**: Al arrastrar rápidamente se abre/cierra automáticamente
+
+#### Rediseño de Pantalla de Configuración
+La pantalla de configuración ha sido reorganizada en 5 grupos plegables.
+- **5 grupos**: Color, fuente, sonido, notificaciones push y sistema
+- **Notificaciones push simplificadas**: Reducidas de 7 → 3 grupos (transacciones, registros, vencimiento)
+- **UI de acordeón**: Expande solo la configuración que necesitas para acceso rápido
+
+#### Mejoras en Función de Chat
+Creación y visualización de salas de chat mejoradas.
+- **Visualización de nombre dinámico**: En chats 1:1, el nombre del interlocutor se muestra dinámicamente
+- **Contador de participantes**: En chats grupales, puedes ver el número actual de participantes
+- **Interfaz mejorada de creación de chat**: Validación en tiempo real de correo electrónico del destinatario, actualización en tiempo real de cantidad de inventario
+
+#### Navegación Unificada de Registros
+Al tocar un elemento en la pantalla de registro, se abre la pantalla de detalles correcta.
+- **Elementos de clip**: Abre la pantalla de detalles del clip (en el índice correspondiente)
+- **Elementos normales**: Abre la pantalla de detalles del elemento
+- **Experiencia consistente**: Mismo comportamiento de navegación en cuadrícula y registros
+
+#### Mejora de Animación de Bolsillo
+La animación de contraer/expandir bolsillo ahora es más suave.
+- **Transición fluida**: El contenido se despliega de arriba a abajo y se contrae de abajo a arriba
+- **Eliminación de parpadeo**: Se ha resuelto el problema donde el contenido desaparecía al contraer
+
+#### Mejora de Campo de Entrada de Comentarios
+El teclado no oculta el campo de entrada al escribir comentarios.
+- **Fijación en parte inferior**: El campo de entrada permanece siempre fijado en la parte inferior de la pantalla
+- **Toque de fondo**: Al tocar un área vacía, el teclado se cierra automáticamente
+
+#### Corrección de Errores
+- Se corrigió el error de visualización de notificaciones
+- Se solucionó el problema de diseño del encabezado de tienda
+- Se corrigió el problema donde la pantalla se mostraba en gris al contraer bolsillos
 
 </div>
 </details>

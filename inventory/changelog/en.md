@@ -37,12 +37,50 @@ Check out the update history for the Inventory app.
 </summary>
 <div class="version-content" markdown="1">
 
-• Pocket: 'Partition' renamed to 'Pocket' with auto-migration
-• New UI: Expandable profile header, Speed Dial FAB, Category filter bar
-• Settings: Reorganized into 5 collapsible groups
-• UI/UX: Shop simplified, neumorphic & flat design, mailbox shortcut, home animation
-• Chat: Dynamic names in 1:1, participant count in groups
-• Fixes: Notification panel, shop header, pocket animations
+#### Pocket Rebranding
+The term 'Partition' has been replaced with the more familiar 'Pocket'.
+- **Terminology Update**: Throughout the app, 'Partition' is now unified as 'Pocket'
+- **Automatic Migration**: Existing data is automatically converted with no data loss
+- **Multilingual Support**: New terminology reflected across 8 languages
+
+#### Expandable Profile Header
+The profile section at the top of the home screen has been improved with a drawer-style interface.
+- **Drag/Tap to Expand**: Drag the handle bar or tap the username to expand/collapse
+- **Profile Card**: When expanded, view profile information, QR code, and API details
+- **Speed-based Snapping**: Fast dragging automatically opens or closes the profile
+
+#### Settings Screen Reorganization
+The settings screen has been restructured into 5 collapsible groups.
+- **5 Groups**: Color, Font, Sound, Push Notifications, and System
+- **Simplified Push Notifications**: Reduced from 7 to 3 groups (Transactions, Logs, Expiry)
+- **Accordion UI**: Expand only the settings you need for quick access
+
+#### Chat Improvements
+Chat room creation and display have been enhanced.
+- **Dynamic Name Display**: Recipient's name is dynamically displayed in 1:1 chats
+- **Participant Count**: View the current number of participants in group chats
+- **Enhanced Chat Creation**: Real-time email validation for recipients, live inventory count updates
+
+#### Log Navigation Integration
+Tapping an item in the log screen now navigates to the correct detail view.
+- **Clip Items**: Navigate to the clip detail screen (at the corresponding index)
+- **Regular Items**: Navigate to the item detail screen
+- **Consistent Experience**: Same navigation behavior in both grid and log views
+
+#### Pocket Animation Improvements
+Pocket collapse/expand animations are now smoother and more natural.
+- **Smooth Transitions**: Content unfolds from top to bottom when expanding, folds from bottom to top when collapsing
+- **Flicker Elimination**: Fixed the issue where content would disappear when collapsing
+
+#### Comment Input Field Improvements
+The keyboard no longer obscures the comment input field.
+- **Bottom Fixed**: Input field is always fixed at the bottom of the screen
+- **Background Tap**: Tap empty space to automatically close the keyboard
+
+#### Bug Fixes
+- Fixed notification panel display error
+- Resolved shop header layout issues
+- Fixed gray screen display when collapsing pockets
 
 </div>
 </details>

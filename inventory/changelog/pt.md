@@ -458,35 +458,50 @@ A velocidade de carregamento e o uso de dados dos registros compartilhados/indep
 </summary>
 <div class="version-content" markdown="1">
 
-#### Cartões de Links de Mídia
-URLs inseridas nos registros são automaticamente exibidas como **cartões enriquecidos**.
-- **YouTube**: Miniatura + título + nome do canal
-- **Spotify**: Capa do álbum + título + artista
-- **Google Drive**: Miniatura do arquivo + nome (arquivos públicos)
-- **Dropbox**: Ícone + nome do arquivo
-- **OneDrive**: Ícone + nome do serviço
-- **Páginas web**: Imagem de visualização + título da página
-- Toque para abrir em app/navegador externo
-- Pressione longamente para copiar a URL para a área de transferência
+#### Rebranding de Pocket
+'Partição' foi renomeada para o termo mais familiar 'Pocket'.
+- **Mudança de terminologia**: Unificação de 'partição' → 'pocket' em todo o aplicativo
+- **Migração automática**: Dados existentes são convertidos automaticamente sem perda de informações
+- **Suporte multilíngue**: Novo termo refletido em 8 idiomas
 
-#### Melhorias na busca de modelos compartilhados
-- **Verificação de papel**: O botão de clonar mostra a quantidade de papel restante (Papel:10)
-- **Papel necessário**: A clonagem é desativada quando não há papel disponível
-- **Design neumórfico**: A tela de busca agora usa estilo UI neumórfico
+#### Cabeçalho de Perfil Expansível
+A área de perfil no topo da tela inicial foi melhorada com estilo de gaveta.
+- **Expansão por arrasto/toque**: Arraste a barra de identificação ou toque no nome de usuário para expandir/recolher
+- **Cartão de perfil**: No estado expandido, visualize informações de perfil, código QR e dados de API
+- **Snap baseado em velocidade**: Arraste rápido para abrir/fechar automaticamente
 
-#### Melhorias no sistema de efeitos do editor de imagens
-A interface de seleção de efeitos especiais foi simplificada.
-- **Seleção única**: Escolha um dos 5 efeitos por vez
-- **Lista de efeitos**: Original / Remover fundo / Bokeh / Bloom / Monocromático
-- **Transições suaves**: Indicador de progresso durante o processamento
-- **Melhoria de desempenho**: Filtros Bloom/Monocromático processados em segundo plano
+#### Reformulação da Tela de Configurações
+A tela de configurações foi reorganizada em 5 grupos recolhíveis.
+- **5 grupos**: Cor, fonte, som, notificações push, sistema
+- **Simplificação de notificações push**: Reorganização de 7 → 3 grupos (Transação, Log, Expiração)
+- **UI de acordeão**: Expanda apenas as configurações necessárias para acesso rápido
 
-#### Desempenho e Estabilidade
-A estrutura interna do aplicativo foi otimizada.
-- **Otimização de consultas**: Processamento paralelo para carregamento mais rápido de clips/filtros
-- **Limpeza de código**: 12 módulos de código não utilizados removidos
-- **Limpeza de dependências**: 7 bibliotecas não utilizadas removidas
-- **Limpeza de recursos**: Fontes/imagens não utilizadas removidas (redução de aprox. 16MB)
+#### Melhorias na Função de Chat
+A criação e exibição de salas de chat foram aprimoradas.
+- **Exibição dinâmica de nomes**: Chat 1:1 exibe o nome do outro participante dinamicamente
+- **Contagem de participantes**: Veja o número atual de participantes em chats em grupo
+- **Melhoria na UI de criação de sala**: Validação em tempo real do email do destinatário, atualização em tempo real da quantidade de materiais
+
+#### Integração de Navegação de Log
+Ao tocar em itens na tela de log, você navega para a tela de detalhes correta.
+- **Itens de clip**: Navegue para a tela de detalhes do clip (na posição do índice correspondente)
+- **Itens gerais**: Navegue para a tela de detalhes do item
+- **Experiência consistente**: Comportamento de navegação idêntico entre grade e log
+
+#### Animações de Pocket Melhoradas
+As animações de recolhimento/expansão de pocket se tornaram mais suaves.
+- **Transição suave**: O conteúdo se expande de cima para baixo e se recolhe de baixo para cima
+- **Remoção de cintilação**: Problema resolvido onde o conteúdo desaparecia ao recolher
+
+#### Melhoria no Campo de Entrada de Comentários
+O teclado não obscurece o campo de entrada ao redigir comentários.
+- **Fixação inferior**: O campo de entrada permanece fixo na parte inferior da tela
+- **Toque em segundo plano**: Toque em espaço vazio para fechar o teclado automaticamente
+
+#### Correções de Bugs
+- Corrigido erro de exibição de notificações
+- Resolvido problema de layout do cabeçalho da loja
+- Corrigido problema onde a tela ficava cinza ao recolher pocket
 
 </div>
 </details>

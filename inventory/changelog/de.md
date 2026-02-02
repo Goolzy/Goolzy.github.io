@@ -37,12 +37,50 @@ Sehen Sie sich den Update-Verlauf der Inventory-App an.
 </summary>
 <div class="version-content" markdown="1">
 
-• Pocket: 'Partition' zu 'Pocket' umbenannt, automatische Migration
-• Neue UI: Erweiterbarer Profil-Header, Speed Dial FAB, Kategorie-Filter
-• Einstellungen: 5 einklappbare Gruppen
-• UI/UX: Shop vereinfacht, neumorphes & flaches Design, Postfach, Home-Animation
-• Chat: Dynamische Namen im 1:1, Teilnehmerzahl in Gruppen
-• Fehlerbehebungen: Benachrichtigungen, Shop-Header, Pocket-Animation
+#### Pocket-Rebranding
+Der vertrautere Name 'Pocket' ersetzt jetzt die Bezeichnung 'Partition' überall in der App.
+- **Terminologieänderung**: 'Partition' → 'Pocket' in der gesamten App vereinheitlicht
+- **Automatische Migration**: Vorhandene Daten werden automatisch konvertiert, ohne Datenverlust
+- **Mehrsprachige Unterstützung**: Neue Begrifflichkeit in 8 Sprachen verfügbar
+
+#### Erweiterter Profil-Header
+Der Profilbereich am oberen Rand des Startbildschirms wurde mit einem Drawer-Style verbessert.
+- **Drag/Tap zum Erweitern**: Ziehen Sie den Griff oder tippen Sie auf den Benutzernamen zum Erweitern/Reduzieren
+- **Profilkarte**: Im erweiterten Zustand Profilinformationen, QR-Code und API-Details anzeigen
+- **Geschwindigkeitsbasiertes Snapping**: Schnelles Ziehen öffnet/schließt automatisch
+
+#### Überarbeiteter Einstellungsbildschirm
+Der Einstellungsbildschirm wurde in 5 einklappbare Gruppen reorganisiert.
+- **5 Gruppen**: Farbe, Schriftart, Ton, Push-Benachrichtigungen, System
+- **Vereinfachte Push-Benachrichtigungen**: Von 7 auf 3 Gruppen (Transaktion, Log, Ablauf) reduziert
+- **Akkordeon-UI**: Nur gewünschte Einstellungen ausklappen für schnellen Zugriff
+
+#### Chat-Verbesserungen
+Die Erstellung und Anzeige von Chatrooms wurde verbessert.
+- **Dynamische Namensanzeige**: In 1:1-Chats wird der Name des Gesprächspartners dynamisch angezeigt
+- **Teilnehmerzahl-Anzeige**: In Gruppenchats können Sie die aktuelle Anzahl der Teilnehmer sehen
+- **Verbesserte UI für Chatraum-Erstellung**: Echtzeit-Validierung von Empfänger-E-Mails, Live-Aktualisierung der Material-Bestände
+
+#### Log-Navigationsintegration
+Beim Tippen auf ein Element in der Log-Ansicht wird die richtige Detailseite angezeigt.
+- **Clip-Elemente**: Navigation zur Clip-Detailseite (an der entsprechenden Index-Position)
+- **Normale Elemente**: Navigation zur Element-Detailseite
+- **Konsistente Erfahrung**: Identisches Navigationsverhalten in Grid und Log
+
+#### Verbesserte Pocket-Animation
+Die Animations-Effekte beim Zu- und Aufklappen von Pockets sind nun flüssiger.
+- **Sanfte Übergänge**: Inhalte werden von oben nach unten ausgeklappt und von unten nach oben eingeklappt
+- **Flimmern behoben**: Problem behoben, bei dem Inhalte beim Einklappen verschwunden sind
+
+#### Verbessertes Kommentar-Eingabefeld
+Beim Schreiben von Kommentaren verdeckt die Tastatur das Eingabefeld nicht.
+- **Fixiert am unteren Rand**: Eingabefeld bleibt immer am unteren Bildschirmrand
+- **Hintergrund antippen**: Tippen Sie auf einen leeren Bereich, um die Tastatur automatisch zu schließen
+
+#### Fehlerbehebungen
+- Fehler bei der Benachrichtigungsanzeige behoben
+- Layout-Problem im Shop-Header behoben
+- Problem behoben, bei dem der Bildschirm grau wurde, wenn Pockets eingeklappt wurden
 
 </div>
 </details>

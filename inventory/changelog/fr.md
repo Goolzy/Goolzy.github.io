@@ -37,12 +37,50 @@ Consultez l'historique des mises à jour de l'application Inventory.
 </summary>
 <div class="version-content" markdown="1">
 
-• Pocket : 'Partition' renommé en 'Pocket', migration auto
-• Nouvelle UI : En-tête profil extensible, Speed Dial FAB, Filtre catégorie
-• Paramètres : 5 groupes pliables
-• UI/UX : Boutique simplifiée, design neumorphique & plat, boîte aux lettres, animation accueil
-• Chat : Noms dynamiques en 1:1, nombre de participants en groupe
-• Corrections : Notifications, en-tête boutique, animation pocket
+#### Réfonte des Pockets
+Le terme « Partition » a été remplacé par le terme plus familier « Pocket ».
+- **Changement de terminologie** : Unification de « Partition » vers « Pocket » dans l'ensemble de l'application
+- **Migration automatique** : Les données existantes sont automatiquement converties sans perte de données
+- **Support multilingue** : La nouvelle terminologie s'applique à 8 langues
+
+#### En-tête de Profil Extensible
+La zone de profil en haut de l'écran d'accueil a été améliorée avec un style en tiroir.
+- **Extension par glissement/tapotage** : Glissez la barre de poignée ou tapotez le nom d'utilisateur pour développer/réduire
+- **Carte de profil** : Consultez les informations de profil, les codes QR et les informations API une fois déplié
+- **Accrochage basé sur la vitesse** : Un glissement rapide ouvre/ferme automatiquement
+
+#### Refonte de l'Écran Paramètres
+L'écran Paramètres a été réorganisé en 5 groupes accordéon.
+- **5 groupes** : Couleur, Police, Son, Notifications push, Système
+- **Notifications push simplifiées** : Réduction de 7 à 3 groupes (Transaction, Journal, Expiration)
+- **Interface accordéon** : Développez uniquement les paramètres nécessaires pour un accès rapide
+
+#### Amélioration des Fonctionnalités de Chat
+La création et l'affichage des salons de chat ont été améliorés.
+- **Affichage dynamique du nom** : Le nom du destinataire s'affiche dynamiquement en chat 1:1
+- **Affichage du nombre de participants** : Voir le nombre actuel de participants en chat de groupe
+- **Amélioration de l'interface de création** : Validation en temps réel de l'email du destinataire, mise à jour en temps réel de la quantité de matériel
+
+#### Intégration de la Navigation des Journaux
+Appuyer sur un élément dans l'écran Journaux accède à l'écran de détail approprié.
+- **Éléments Clip** : Accès à l'écran de détail du clip (à la position d'index correspondante)
+- **Éléments ordinaires** : Accès à l'écran de détail de l'élément
+- **Expérience cohérente** : Même comportement de navigation dans la grille et les journaux
+
+#### Amélioration de l'Animation des Pockets
+L'animation de développement/réduction des pockets est devenue plus fluide.
+- **Transition douce** : Le contenu se développe de haut en bas et se replie de bas en haut
+- **Suppression du scintillement** : Correction du problème où le contenu disparaissait lors de la réduction
+
+#### Amélioration du Champ de Saisie des Commentaires
+Le clavier ne masque plus le champ de saisie lors de la saisie de commentaires.
+- **Fixation au bas** : Le champ de saisie reste toujours fixé au bas de l'écran
+- **Fermeture par tapotage** : Appuyez sur un espace vide pour fermer automatiquement le clavier
+
+#### Corrections de bugs
+- Correction de l'erreur d'affichage des notifications
+- Résolution du problème de disposition de l'en-tête de la boutique
+- Correction du problème d'affichage gris lors de la réduction des pockets
 
 </div>
 </details>
