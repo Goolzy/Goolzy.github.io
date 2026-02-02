@@ -29,7 +29,7 @@ Hãy xem lịch sử cập nhật ứng dụng Inventory.
 
 <details class="changelog-version" open>
 <summary>
-  <span class="version-title">v1.3.0 <small>2026-01-22</small></span>
+  <span class="version-title">v1.3.0 <small>2026-01-27</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Sao chép">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
@@ -37,29 +37,12 @@ Hãy xem lịch sử cập nhật ứng dụng Inventory.
 </summary>
 <div class="version-content" markdown="1">
 
-#### Tiêu đề hồ sơ có thể mở rộng
-Vùng hồ sơ ở đầu màn hình chính đã được thiết kế lại dưới dạng bảng điều khiển kiểu ngăn kéo.
-- **Kéo để mở rộng**: Kéo thanh cầm xuống hoặc chạm vào tên người dùng để mở rộng bảng điều khiển hồ sơ
-- **Bảng điều khiển hợp nhất**: Tiêu đề và nội dung hồ sơ (thẻ hồ sơ, mã QR, thông tin API) được tích hợp trong một bảng điều khiển
-- **Hoạt ảnh mượt mà**: Hiệu ứng hoạt ảnh tự nhiên khi mở rộng/thu gọn
-- **Nội dung chính cố định**: Lưới kho hàng giữ nguyên vị trí khi hồ sơ được mở rộng
-
-#### Đổi thương hiệu Pocket
-Tên đơn vị phân loại vật phẩm đã được đổi từ 'Partition' sang 'Pocket'.
-- **Tên trực quan**: Truyền đạt tốt hơn khái niệm không gian để lưu trữ vật phẩm, như túi
-- **UI nhất quán**: Thuật ngữ thống nhất là 'Pocket' trong toàn bộ ứng dụng
-- **Hỗ trợ đa ngôn ngữ**: Được dịch phù hợp cho từng ngôn ngữ
-
-#### Di chuyển dữ liệu tự động
-Dữ liệu 'Partition' hiện có được tự động chuyển đổi thành 'Pocket'.
-- **Di chuyển không mất dữ liệu**: Các phân vùng và vật phẩm hiện có của bạn được giữ nguyên
-- **Xử lý tự động**: Di chuyển diễn ra tự động khi bạn cập nhật ứng dụng
-- **Chuyển đổi liền mạch**: Không cần thao tác gì - chỉ cần cập nhật và tiếp tục sử dụng
-
-#### Sửa Lỗi
-- **Sửa lỗi tiêu đề kép của cửa hàng**: Đã sửa lỗi hiển thị hai tiêu đề trên màn hình cửa hàng trong một số điều kiện nhất định.
-  - Giải quyết sự không nhất quán trạng thái chế độ Shell khi chọn tab cửa hàng sau khi quay lại màn hình chính
-  - Đảm bảo quản lý chế độ Shell ổn định thông qua đếm tham chiếu
+• Pocket: 'Partition' đổi thành 'Pocket', di chuyển tự động
+• UI Mới: Tiêu đề hồ sơ mở rộng, Speed Dial FAB, Bộ lọc danh mục
+• Cài đặt: 5 nhóm thu gọn
+• UI/UX: Cửa hàng đơn giản hóa, thiết kế neumorphic & phẳng, hộp thư, hoạt ảnh chính
+• Chat: Tên động trong 1:1, số người tham gia trong nhóm
+• Sửa lỗi: Thông báo, tiêu đề cửa hàng, hoạt ảnh pocket
 
 </div>
 </details>

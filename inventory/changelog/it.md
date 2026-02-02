@@ -37,29 +37,12 @@ Consulta la cronologia degli aggiornamenti dell'app Inventory.
 </summary>
 <div class="version-content" markdown="1">
 
-#### Intestazione profilo espandibile
-L'area del profilo nella parte superiore della schermata principale è stata ridisegnata come pannello a cassetto.
-- **Trascina per espandere**: Trascina la barra di controllo verso il basso o tocca il nome utente per espandere il pannello del profilo
-- **Pannello unificato**: Intestazione e contenuto del profilo (scheda profilo, codice QR, info API) sono integrati in un unico pannello
-- **Animazione fluida**: Effetti di animazione naturali durante l'espansione/contrazione
-- **Contenuto principale fisso**: La griglia dell'inventario rimane al suo posto quando il profilo è espanso
-
-#### Rebranding Pocket
-Il nome delle unità di classificazione degli articoli è stato cambiato da 'Partition' a 'Pocket'.
-- **Nome intuitivo**: Trasmette meglio il concetto di uno spazio per conservare gli articoli, come una tasca
-- **UI coerente**: Terminologia unificata come 'Pocket' in tutta l'app
-- **Supporto multilingue**: Tradotto appropriatamente per ogni lingua
-
-#### Migrazione automatica dei dati
-I dati 'Partition' esistenti vengono automaticamente convertiti in 'Pocket'.
-- **Migrazione senza perdite**: Le partizioni e gli articoli esistenti vengono preservati esattamente
-- **Elaborazione automatica**: La migrazione avviene automaticamente quando aggiorni l'app
-- **Transizione senza interruzioni**: Nessuna azione richiesta - basta aggiornare e continuare a usare
-
-#### Correzione di bug
-- **Correzione doppio header del negozio**: Risolto un problema in cui venivano visualizzati due header nella schermata del negozio in determinate condizioni.
-  - Risolta l'incoerenza dello stato della modalità Shell quando si seleziona la scheda del negozio dopo il ritorno alla schermata iniziale
-  - Gestione stabile della modalità Shell garantita tramite conteggio dei riferimenti
+• Pocket: 'Partition' rinominato in 'Pocket', migrazione automatica
+• Nuova UI: Profilo espandibile, Speed Dial FAB, Filtro categorie
+• Impostazioni: 5 gruppi comprimibili
+• UI/UX: Negozio semplificato, design neomorfico e piatto, posta, animazione home
+• Chat: Nomi dinamici in 1:1, numero partecipanti in gruppo
+• Correzioni: Notifiche, header negozio, animazione pocket
 
 </div>
 </details>

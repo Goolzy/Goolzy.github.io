@@ -29,7 +29,7 @@ Sprawdź historię aktualizacji aplikacji Inventory.
 
 <details class="changelog-version" open>
 <summary>
-  <span class="version-title">v1.3.0 <small>2026-01-22</small></span>
+  <span class="version-title">v1.3.0 <small>2026-01-27</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopiuj">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
@@ -37,29 +37,12 @@ Sprawdź historię aktualizacji aplikacji Inventory.
 </summary>
 <div class="version-content" markdown="1">
 
-#### Rozwijany nagłówek profilu
-Obszar profilu na górze ekranu głównego został przeprojektowany jako panel typu szuflada.
-- **Przeciągnij, aby rozwinąć**: Przeciągnij pasek uchwytu w dół lub dotknij nazwy użytkownika, aby rozwinąć panel profilu
-- **Zunifikowany panel**: Nagłówek i zawartość profilu (karta profilu, kod QR, info API) zintegrowane w jednym panelu
-- **Płynna animacja**: Naturalne efekty animacji podczas rozwijania/zwijania
-- **Stała zawartość główna**: Siatka inwentarza pozostaje na miejscu, gdy profil jest rozwinięty
-
-#### Rebranding Pocket
-Nazwa jednostek klasyfikacji przedmiotów została zmieniona z 'Partition' na 'Pocket'.
-- **Intuicyjna nazwa**: Lepiej oddaje koncepcję przestrzeni do przechowywania przedmiotów, jak kieszeń
-- **Spójny UI**: Ujednolicona terminologia jako 'Pocket' w całej aplikacji
-- **Wsparcie wielojęzyczne**: Odpowiednio przetłumaczone dla każdego języka
-
-#### Automatyczna migracja danych
-Istniejące dane 'Partition' są automatycznie konwertowane na 'Pocket'.
-- **Bezstratna migracja**: Twoje istniejące partycje i przedmioty są zachowane dokładnie tak samo
-- **Automatyczne przetwarzanie**: Migracja następuje automatycznie podczas aktualizacji aplikacji
-- **Płynne przejście**: Nie wymaga żadnych działań - wystarczy zaktualizować i kontynuować użytkowanie
-
-#### Poprawki błędów
-- **Naprawa podwójnego nagłówka sklepu**: Naprawiono problem, w którym na ekranie sklepu wyświetlały się dwa nagłówki w określonych warunkach.
-  - Rozwiązano niezgodność stanu trybu Shell przy wyborze karty sklepu po powrocie na ekran główny
-  - Zapewniono stabilne zarządzanie trybem Shell poprzez zliczanie referencji
+• Pocket: 'Partition' zmieniono na 'Pocket', automatyczna migracja
+• Nowy UI: Rozwijany nagłówek profilu, Speed Dial FAB, Filtr kategorii
+• Ustawienia: 5 zwijanych grup
+• UI/UX: Sklep uproszczony, design neumorficzny i płaski, skrzynka pocztowa, animacja główna
+• Czat: Dynamiczne nazwy w 1:1, liczba uczestników w grupie
+• Poprawki: Powiadomienia, nagłówek sklepu, animacja pocket
 
 </div>
 </details>

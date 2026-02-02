@@ -29,7 +29,7 @@ Lihat riwayat pembaruan aplikasi Inventory.
 
 <details class="changelog-version" open>
 <summary>
-  <span class="version-title">v1.3.0 <small>2026-01-22</small></span>
+  <span class="version-title">v1.3.0 <small>2026-01-27</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Salin">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
@@ -37,29 +37,12 @@ Lihat riwayat pembaruan aplikasi Inventory.
 </summary>
 <div class="version-content" markdown="1">
 
-#### Header Profil yang Dapat Diperluas
-Area profil di bagian atas layar beranda telah didesain ulang sebagai panel laci.
-- **Tarik untuk Memperluas**: Tarik bilah pegangan ke bawah atau ketuk nama pengguna untuk memperluas panel profil
-- **Panel Terpadu**: Header dan konten profil (kartu profil, kode QR, info API) terintegrasi dalam satu panel
-- **Animasi Halus**: Efek animasi alami saat memperluas/memperkecil
-- **Konten Utama Tetap**: Grid inventaris tetap di tempatnya saat profil diperluas
-
-#### Rebranding Pocket
-Nama unit klasifikasi item telah diubah dari 'Partition' menjadi 'Pocket'.
-- **Nama Intuitif**: Lebih baik menyampaikan konsep ruang untuk menyimpan item, seperti saku
-- **UI Konsisten**: Terminologi terpadu sebagai 'Pocket' di seluruh aplikasi
-- **Dukungan Multibahasa**: Diterjemahkan dengan tepat untuk setiap bahasa
-
-#### Migrasi Data Otomatis
-Data 'Partition' yang ada secara otomatis dikonversi ke 'Pocket'.
-- **Migrasi Tanpa Kehilangan**: Partisi dan item yang ada dipertahankan dengan tepat
-- **Pemrosesan Otomatis**: Migrasi terjadi secara otomatis saat Anda memperbarui aplikasi
-- **Transisi Mulus**: Tidak diperlukan tindakan - cukup perbarui dan lanjutkan menggunakan
-
-#### Perbaikan Bug
-- **Perbaikan Header Ganda Toko**: Memperbaiki masalah di mana dua header ditampilkan di layar toko dalam kondisi tertentu.
-  - Menyelesaikan ketidaksesuaian status mode Shell saat memilih tab toko setelah kembali ke layar beranda
-  - Memastikan manajemen mode Shell yang stabil melalui penghitungan referensi
+• Pocket: 'Partition' diubah menjadi 'Pocket', migrasi otomatis
+• UI Baru: Header profil dapat diperluas, Speed Dial FAB, Filter kategori
+• Pengaturan: 5 grup yang dapat diciutkan
+• UI/UX: Toko disederhanakan, desain neumorphic & flat, kotak surat, animasi beranda
+• Obrolan: Nama dinamis di 1:1, jumlah peserta di grup
+• Perbaikan: Notifikasi, header toko, animasi pocket
 
 </div>
 </details>

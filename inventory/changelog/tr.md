@@ -29,7 +29,7 @@ Inventory uygulamasının güncelleme geçmişini kontrol edin.
 
 <details class="changelog-version" open>
 <summary>
-  <span class="version-title">v1.3.0 <small>2026-01-22</small></span>
+  <span class="version-title">v1.3.0 <small>2026-01-27</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopyala">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
@@ -37,29 +37,12 @@ Inventory uygulamasının güncelleme geçmişini kontrol edin.
 </summary>
 <div class="version-content" markdown="1">
 
-#### Genişletilebilir Profil Başlığı
-Ana ekranın üst kısmındaki profil alanı çekmece tarzı bir panel olarak yeniden tasarlandı.
-- **Genişletmek için Sürükleyin**: Profil panelini genişletmek için tutamak çubuğunu aşağı sürükleyin veya kullanıcı adına dokunun
-- **Birleşik Panel**: Başlık ve profil içeriği (profil kartı, QR kodu, API bilgisi) tek bir panelde entegre
-- **Akıcı Animasyon**: Genişletme/daraltma sırasında doğal animasyon efektleri
-- **Sabit Ana İçerik**: Profil genişletildiğinde envanter ızgarası yerinde kalır
-
-#### Pocket Yeniden Markalaştırma
-Öğe sınıflandırma birimlerinin adı 'Partition'dan 'Pocket'a değiştirildi.
-- **Sezgisel İsim**: Cep gibi eşyaları saklamak için bir alan kavramını daha iyi aktarır
-- **Tutarlı UI**: Uygulama genelinde 'Pocket' olarak birleştirilmiş terminoloji
-- **Çok Dilli Destek**: Her dil için uygun şekilde çevrilmiş
-
-#### Otomatik Veri Geçişi
-Mevcut 'Partition' verileri otomatik olarak 'Pocket'a dönüştürülür.
-- **Kayıpsız Geçiş**: Mevcut bölümleriniz ve öğeleriniz tam olarak korunur
-- **Otomatik İşleme**: Uygulamayı güncellediğinizde geçiş otomatik olarak gerçekleşir
-- **Kesintisiz Geçiş**: Herhangi bir işlem gerekmez - sadece güncelleyin ve kullanmaya devam edin
-
-#### Hata Düzeltmeleri
-- **Mağaza Çift Başlık Düzeltmesi**: Belirli koşullarda mağaza ekranında iki başlık görüntülenmesi sorunu düzeltildi.
-  - Ana ekrana dönüş sonrası mağaza sekmesi seçildiğinde Shell modu durum uyumsuzluğu çözüldü
-  - Referans sayımı yoluyla kararlı Shell modu yönetimi sağlandı
+• Pocket: 'Partition' adı 'Pocket' olarak değiştirildi, otomatik taşıma
+• Yeni UI: Genişletilebilir profil başlığı, Speed Dial FAB, Kategori filtresi
+• Ayarlar: 5 daraltılabilir grup
+• UI/UX: Mağaza sadeleştirildi, neumorfik ve düz tasarım, posta kutusu, ana ekran animasyonu
+• Sohbet: 1:1'de dinamik isimler, grupta katılımcı sayısı
+• Düzeltmeler: Bildirimler, mağaza başlığı, pocket animasyonu
 
 </div>
 </details>
