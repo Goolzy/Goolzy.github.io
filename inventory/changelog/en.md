@@ -43,6 +43,18 @@ Badge icons for users wearing badges are now displayed correctly in the log scre
 - **Image Caching**: Badge image loading performance has been improved
 - **Error Handling**: Reliably displayed even if image loading fails
 
+#### Font Size Setting Application
+The font size (Default/Medium/Large) selected from the Settings screen now properly applies to the log list and comment screens.
+- **All Text Elements**: Font size is consistently applied to all text elements including titles, content, timestamps, and author names
+- **Real-time Reflection**: Changes are immediately reflected in the UI when settings are updated
+- **Cross-platform Support**: iOS, Android, macOS, and Windows all work identically
+
+#### Comment System Improvements
+Enhanced communication capabilities with reply and reaction features.
+- **Reply Feature**: Write replies to comments for threaded conversations
+- **Reaction Feature**: Quickly express reactions with various emojis
+- **Nested Display**: Replies are indented below the original comment for clear thread structure
+
 </div>
 </details>
 

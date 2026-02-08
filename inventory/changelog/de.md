@@ -43,6 +43,18 @@ Benutzer mit Abzeichen zeigen jetzt ihre Abzeichen-Symbole in der Protokollansic
 - **Bild-Caching**: Die Ladegeschwindigkeit von Abzeichen-Bildern wurde verbessert
 - **Fehlerbehandlung**: Die Anzeige bleibt stabil, auch wenn das Laden des Abzeigens-Bildes fehlschlägt
 
+#### Schriftgrößeneinstellung anwenden
+Die in der Einstellungsanzeige ausgewählte Schriftgröße (Standard/Groß/Sehr groß) wird nun korrekt in der Protokollliste und dem Kommentarbildschirm angezeigt.
+- **Alle Textelemente anwenden**: Titel, Inhalt, Uhrzeit, Autorname und alle anderen Texte werden einheitlich angewendet
+- **Echtzeitreflexion**: Änderungen in den Einstellungen werden sofort auf dem Bildschirm angezeigt
+- **Mobil-/Desktop-Unterstützung**: iOS, Android, macOS und Windows funktionieren alle gleich
+
+#### Verbesserungen des Kommentarsystems
+Antwortnummern und Reaktionsfunktionen wurden hinzugefügt, um reichhaltigere Kommunikation zu ermöglichen.
+- **Antwortfunktion**: Sie können Antworten auf Kommentare verfassen
+- **Reaktionsfunktion**: Schnelle Reaktion mit verschiedenen Emojis möglich
+- **Verschachtelte Anzeige**: Antworten werden unter dem ursprünglichen Kommentar eingerückt angezeigt
+
 </div>
 </details>
 

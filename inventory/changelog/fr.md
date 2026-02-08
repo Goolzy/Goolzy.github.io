@@ -43,6 +43,18 @@ Les icônes de badge des utilisateurs portant un badge s'affichent désormais co
 - **Mise en cache des images** : La performance de chargement des images de badge a été améliorée
 - **Gestion des erreurs** : Un affichage stable est maintenu même en cas d'échec du chargement d'image
 
+#### Ajustement de la Taille de Police
+Les paramètres de taille de police sélectionnés sur l'écran Paramètres (Normal/Grand/Très grand) s'affichent désormais correctement sur l'écran Journal et l'écran des commentaires.
+- **Application à tous les éléments de texte** : Les paramètres s'appliquent de façon cohérente à tous les éléments texte incluant les titres, contenus, horodatages et noms d'auteurs
+- **Réflexion en temps réel** : Les modifications des paramètres s'affichent instantanément à l'écran
+- **Support multi-plateforme** : Fonctionnement identique sur iOS, Android, macOS et Windows
+
+#### Améliorations du Système de Commentaires
+Des fonctionnalités de réponse et de réaction ont été ajoutées pour une communication plus riche.
+- **Fonction de réponse** : Vous pouvez maintenant répondre aux commentaires
+- **Fonction de réaction** : Réagissez rapidement avec diverses émojis
+- **Affichage imbriqué** : Les réponses sont affichées en retrait sous le commentaire d'origine
+
 </div>
 </details>
 

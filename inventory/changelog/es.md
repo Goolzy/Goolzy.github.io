@@ -43,6 +43,18 @@ Los iconos de insígnia de usuarios con insígnia se muestran correctamente en l
 - **Caché mejorado de imagen**: El rendimiento de carga de imágenes de insígnia ha mejorado
 - **Manejo de errores**: La aplicación se muestra de forma estable incluso cuando falla la carga de imagen
 
+#### Aplicación de Configuración de Tamaño de Fuente
+La configuración de tamaño de fuente seleccionada en la pantalla de configuración (normal/grande/muy grande) ahora se refleja correctamente en la pantalla de registro y comentarios.
+- **Aplicación de todos los elementos de texto**: El tamaño seleccionado se aplica consistentemente a títulos, contenido, horas, nombres de autores y otros elementos de texto
+- **Reflejo en tiempo real**: Los cambios de configuración se aplican inmediatamente en la pantalla
+- **Compatibilidad multiplataforma**: Funciona idénticamente en iOS, Android, macOS y Windows
+
+#### Mejoras en el Sistema de Comentarios
+Se han añadido funciones de respuesta y reacción para una comunicación más enriquecida.
+- **Función de respuesta**: Ahora puedes escribir respuestas a comentarios específicos
+- **Función de reacción**: Reacciona rápidamente con una variedad de emojis
+- **Visualización anidada**: Las respuestas aparecen con sangría debajo del comentario original
+
 </div>
 </details>
 

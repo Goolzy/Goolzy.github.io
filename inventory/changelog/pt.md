@@ -43,6 +43,18 @@ Os ícones de emblemas dos usuários que usam emblemas agora são exibidos corre
 - **Cache de imagens aprimorado**: O desempenho do carregamento de imagens de emblemas foi melhorado
 - **Tratamento robusto de erros**: A exibição é estável mesmo em caso de falha no carregamento da imagem
 
+#### Aplicação de Tamanho de Fonte
+A configuração de tamanho de fonte (Padrão/Grande/Muito Grande) selecionada na tela de Configurações agora é refletida corretamente na lista de logs e tela de comentários.
+- **Aplicação em todos os elementos de texto**: Títulos, conteúdo, horário, nome do autor e todos os textos são aplicados consistentemente
+- **Reflexão em tempo real**: As alterações são refletidas imediatamente na tela quando a configuração é alterada
+- **Suporte em múltiplas plataformas**: Funciona igualmente em iOS, Android, macOS e Windows
+
+#### Melhorias no Sistema de Comentários
+Foram adicionadas funções de resposta e reação, permitindo uma comunicação mais rica.
+- **Função de resposta**: Você pode responder a comentários específicos
+- **Função de reação**: Reaja rapidamente com diversos emojis
+- **Exibição aninhada**: As respostas são exibidas com recuo abaixo do comentário original
+
 </div>
 </details>
 
