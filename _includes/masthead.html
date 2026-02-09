@@ -19,7 +19,7 @@
     <div class="title-area">
       {% if page.url == '/' %}
         <h1 class="site-title">
-          <a href="{% if is_inventory %}{{ '/inventory/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">
+          <a href="{% if is_inventory %}http://goolzy.com{% else %}{{ '/' | relative_url }}{% endif %}">
             {% if site.logo or site.logo_wordmark %}
         <img src="{{ site_logo }}?v={{ site.github.build_revision | default: site.time | date: '%s' }}" alt="{{ site.title | escape }}" class="site-logo{% if site.logo_wordmark %} site-logo--wordmark{% endif %}"
           onerror="this.onerror=null; this.src='{{ default_logo }}?v={{ site.github.build_revision | default: site.time | date: '%s' }}';">
@@ -29,7 +29,7 @@
         </h1>
       {% else %}
         <p class="site-title">
-          <a href="{% if is_inventory %}{{ '/inventory/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">
+          <a href="{% if is_inventory %}http://goolzy.com{% else %}{{ '/' | relative_url }}{% endif %}">
             {% if site.logo or site.logo_wordmark %}
         <img src="{{ site_logo }}?v={{ site.github.build_revision | default: site.time | date: '%s' }}" alt="{{ site.title | escape }}" class="site-logo{% if site.logo_wordmark %} site-logo--wordmark{% endif %}"
           onerror="this.onerror=null; this.src='{{ default_logo }}?v={{ site.github.build_revision | default: site.time | date: '%s' }}';">
