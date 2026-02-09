@@ -60,6 +60,11 @@ O primeiro menu da barra de navegação inferior foi alterado para pesquisa por 
 - O menu de caixa de entrada existente foi movido para o menu de perfil para acesso
 - A dica de pesquisa foi atualizada para "Pesquisar por tags compartilhadas" para uma orientação mais intuitiva
 
+#### Melhoria da estabilidade das notificações push
+As notificações push agora são recebidas corretamente em dispositivos móveis.
+- **Atualização de token**: Os tokens de notificação são salvos imediatamente no servidor após o login
+- **Permissões de notificação**: As configurações de notificação do dispositivo são aplicadas corretamente
+
 </div>
 </details>
 

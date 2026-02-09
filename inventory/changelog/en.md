@@ -60,6 +60,11 @@ The first menu in the bottom navigation bar has been changed to shared tag searc
 - The existing mailbox menu has been moved to the profile menu for access
 - The search hint has been updated to "Search by shared tags" for more intuitive guidance
 
+#### Push Notification Stability Improvement
+Push notifications are now received correctly on mobile devices.
+- **Token Refresh**: Notification tokens are immediately saved to the server after login
+- **Notification Permissions**: Device notification settings are now correctly applied
+
 </div>
 </details>
 

@@ -60,6 +60,11 @@ Das erste Menü in der unteren Navigationsleiste wurde auf die Suche nach geteil
 - Das bisherige Postfach-Menü ist nun über das Profilmenü erreichbar
 - Der Suchhinweis wurde auf „Nach geteilten Tags suchen" aktualisiert, um die Funktion intuitiver zu gestalten
 
+#### Verbesserung der Push-Benachrichtigungsstabilität
+Push-Benachrichtigungen werden jetzt auf Mobilgeräten korrekt empfangen.
+- **Token-Aktualisierung**: Benachrichtigungstoken werden nach der Anmeldung sofort auf dem Server gespeichert
+- **Benachrichtigungsberechtigungen**: Gerätebenachrichtigungseinstellungen werden jetzt korrekt angewendet
+
 </div>
 </details>
 

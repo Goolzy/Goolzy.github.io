@@ -60,6 +60,11 @@ El primer menú de la barra de navegación inferior se ha cambiado a búsqueda p
 - El menú de buzón existente se ha movido al menú de perfil para su acceso
 - La sugerencia de búsqueda se ha actualizado a "Buscar por etiquetas compartidas" para una orientación más intuitiva
 
+#### Mejora de la estabilidad de las notificaciones push
+Las notificaciones push ahora se reciben correctamente en dispositivos móviles.
+- **Actualización de token**: Los tokens de notificación se guardan inmediatamente en el servidor después de iniciar sesión
+- **Permisos de notificación**: La configuración de notificaciones del dispositivo se aplica correctamente
+
 </div>
 </details>
 

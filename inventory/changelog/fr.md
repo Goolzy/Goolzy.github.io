@@ -60,6 +60,11 @@ Le premier menu de la barre de navigation inférieure a été remplacé par la r
 - L'ancien menu boîte de réception est désormais accessible depuis le menu profil
 - L'indication de recherche a été mise à jour en « Rechercher par tags partagés » pour un guidage plus intuitif
 
+#### Amélioration de la stabilité des notifications push
+Les notifications push sont désormais correctement reçues sur les appareils mobiles.
+- **Actualisation du jeton**: Les jetons de notification sont immédiatement enregistrés sur le serveur après la connexion
+- **Autorisations de notification**: Les paramètres de notification de l'appareil sont désormais correctement appliqués
+
 </div>
 </details>
 
