@@ -26,7 +26,6 @@ translations:
 ## 버전 로그
 
 Inventory 앱의 업데이트 내역을 확인하세요.
-<!-- updated: 2026-02-09 -->
 
 <details class="changelog-version" open>
 <summary>
