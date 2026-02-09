@@ -55,6 +55,11 @@ Des réactions et réponses ont été ajoutées aux commentaires pour une commun
 - **Réponses** : Les réponses aux commentaires sont affichées en résumé sous l'original et en ordre chronologique
 - **Synchronisation en temps réel** : Les réactions et réponses des autres utilisateurs sont mises à jour en temps réel
 
+#### Amélioration de la Structure du Menu
+Le premier menu de la barre de navigation inférieure a été remplacé par la recherche de tags partagés, vous permettant de trouver les éléments partagés plus rapidement.
+- L'ancien menu boîte de réception est désormais accessible depuis le menu profil
+- L'indication de recherche a été mise à jour en « Rechercher par tags partagés » pour un guidage plus intuitif
+
 </div>
 </details>
 

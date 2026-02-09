@@ -55,6 +55,11 @@ Reações e respostas foram adicionadas aos comentários para uma comunicação 
 - **Respostas**: As respostas aos comentários são exibidas como resumo abaixo do original e em ordem cronológica
 - **Sincronização em tempo real**: Reações e respostas de outros usuários são atualizadas em tempo real
 
+#### Melhoria na Estrutura do Menu
+O primeiro menu da barra de navegação inferior foi alterado para pesquisa por tags compartilhadas, permitindo encontrar itens compartilhados mais rapidamente.
+- O menu de caixa de entrada existente foi movido para o menu de perfil para acesso
+- A dica de pesquisa foi atualizada para "Pesquisar por tags compartilhadas" para uma orientação mais intuitiva
+
 </div>
 </details>
 

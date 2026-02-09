@@ -55,6 +55,11 @@ Reaktionen und Antworten wurden zu Kommentaren hinzugefügt für eine verbessert
 - **Antworten**: Antworten auf Kommentare werden als Zusammenfassung unter dem Original und in chronologischer Reihenfolge angezeigt
 - **Echtzeit-Synchronisierung**: Reaktionen und Antworten anderer Benutzer werden in Echtzeit aktualisiert
 
+#### Verbesserung der Menüstruktur
+Das erste Menü in der unteren Navigationsleiste wurde auf die Suche nach geteilten Tags umgestellt, damit Sie geteilte Elemente schneller finden können.
+- Das bisherige Postfach-Menü ist nun über das Profilmenü erreichbar
+- Der Suchhinweis wurde auf „Nach geteilten Tags suchen" aktualisiert, um die Funktion intuitiver zu gestalten
+
 </div>
 </details>
 

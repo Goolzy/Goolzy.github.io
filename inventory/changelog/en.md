@@ -55,6 +55,11 @@ Reactions and replies have been added to comments for enhanced communication.
 - **Replies**: Write replies to comments, shown as a summary below the original and in chronological order
 - **Real-time Sync**: Reactions and replies from other users are reflected in real-time
 
+#### Menu Structure Improvement
+The first menu in the bottom navigation bar has been changed to shared tag search, allowing you to find shared items more quickly.
+- The existing mailbox menu has been moved to the profile menu for access
+- The search hint has been updated to "Search by shared tags" for more intuitive guidance
+
 </div>
 </details>
 

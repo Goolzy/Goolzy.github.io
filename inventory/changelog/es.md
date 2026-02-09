@@ -55,6 +55,11 @@ Se han añadido reacciones y respuestas a los comentarios para una comunicación
 - **Respuestas**: Las respuestas a comentarios se muestran como resumen bajo el original y en orden cronológico
 - **Sincronización en tiempo real**: Las reacciones y respuestas de otros usuarios se actualizan en tiempo real
 
+#### Mejora de la Estructura del Menú
+El primer menú de la barra de navegación inferior se ha cambiado a búsqueda por etiquetas compartidas, permitiendo encontrar elementos compartidos más rápidamente.
+- El menú de buzón existente se ha movido al menú de perfil para su acceso
+- La sugerencia de búsqueda se ha actualizado a "Buscar por etiquetas compartidas" para una orientación más intuitiva
+
 </div>
 </details>
 
