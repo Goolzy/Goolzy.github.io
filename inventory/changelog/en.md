@@ -49,11 +49,11 @@ The font size (Default/Medium/Large) selected from the Settings screen now prope
 - **Real-time Reflection**: Changes are immediately reflected in the UI when settings are updated
 - **Cross-platform Support**: iOS, Android, macOS, and Windows all work identically
 
-#### Comment System Improvements
-Enhanced communication capabilities with reply and reaction features.
-- **Reply Feature**: Write replies to comments for threaded conversations
-- **Reaction Feature**: Quickly express reactions with various emojis
-- **Nested Display**: Replies are indented below the original comment for clear thread structure
+#### Comment Reactions and Replies
+Reactions and replies have been added to comments for enhanced communication.
+- **Reactions**: Long-press a comment to express reactions like agree, disagree, or like
+- **Replies**: Write replies to comments, shown as a summary below the original and in chronological order
+- **Real-time Sync**: Reactions and replies from other users are reflected in real-time
 
 </div>
 </details>

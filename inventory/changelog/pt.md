@@ -49,11 +49,11 @@ A configuração de tamanho de fonte (Padrão/Grande/Muito Grande) selecionada n
 - **Reflexão em tempo real**: As alterações são refletidas imediatamente na tela quando a configuração é alterada
 - **Suporte em múltiplas plataformas**: Funciona igualmente em iOS, Android, macOS e Windows
 
-#### Melhorias no Sistema de Comentários
-Foram adicionadas funções de resposta e reação, permitindo uma comunicação mais rica.
-- **Função de resposta**: Você pode responder a comentários específicos
-- **Função de reação**: Reaja rapidamente com diversos emojis
-- **Exibição aninhada**: As respostas são exibidas com recuo abaixo do comentário original
+#### Reações e Respostas em Comentários
+Reações e respostas foram adicionadas aos comentários para uma comunicação aprimorada.
+- **Reações**: Pressione e segure um comentário para expressar reações como concordância, discordância ou curtida
+- **Respostas**: As respostas aos comentários são exibidas como resumo abaixo do original e em ordem cronológica
+- **Sincronização em tempo real**: Reações e respostas de outros usuários são atualizadas em tempo real
 
 </div>
 </details>

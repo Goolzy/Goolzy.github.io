@@ -49,11 +49,11 @@ La configuración de tamaño de fuente seleccionada en la pantalla de configurac
 - **Reflejo en tiempo real**: Los cambios de configuración se aplican inmediatamente en la pantalla
 - **Compatibilidad multiplataforma**: Funciona idénticamente en iOS, Android, macOS y Windows
 
-#### Mejoras en el Sistema de Comentarios
-Se han añadido funciones de respuesta y reacción para una comunicación más enriquecida.
-- **Función de respuesta**: Ahora puedes escribir respuestas a comentarios específicos
-- **Función de reacción**: Reacciona rápidamente con una variedad de emojis
-- **Visualización anidada**: Las respuestas aparecen con sangría debajo del comentario original
+#### Reacciones y Respuestas en Comentarios
+Se han añadido reacciones y respuestas a los comentarios para una comunicación mejorada.
+- **Reacciones**: Mantén pulsado un comentario para expresar reacciones como acuerdo, desacuerdo o me gusta
+- **Respuestas**: Las respuestas a comentarios se muestran como resumen bajo el original y en orden cronológico
+- **Sincronización en tiempo real**: Las reacciones y respuestas de otros usuarios se actualizan en tiempo real
 
 </div>
 </details>

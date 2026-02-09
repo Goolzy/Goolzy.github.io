@@ -49,11 +49,11 @@ Les paramètres de taille de police sélectionnés sur l'écran Paramètres (Nor
 - **Réflexion en temps réel** : Les modifications des paramètres s'affichent instantanément à l'écran
 - **Support multi-plateforme** : Fonctionnement identique sur iOS, Android, macOS et Windows
 
-#### Améliorations du Système de Commentaires
-Des fonctionnalités de réponse et de réaction ont été ajoutées pour une communication plus riche.
-- **Fonction de réponse** : Vous pouvez maintenant répondre aux commentaires
-- **Fonction de réaction** : Réagissez rapidement avec diverses émojis
-- **Affichage imbriqué** : Les réponses sont affichées en retrait sous le commentaire d'origine
+#### Réactions et Réponses aux Commentaires
+Des réactions et réponses ont été ajoutées aux commentaires pour une communication améliorée.
+- **Réactions** : Appuyez longuement sur un commentaire pour exprimer des réactions comme accord, désaccord ou j'aime
+- **Réponses** : Les réponses aux commentaires sont affichées en résumé sous l'original et en ordre chronologique
+- **Synchronisation en temps réel** : Les réactions et réponses des autres utilisateurs sont mises à jour en temps réel
 
 </div>
 </details>

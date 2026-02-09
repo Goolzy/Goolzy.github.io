@@ -29,6 +29,37 @@ Inventory 앱의 업데이트 내역을 확인하세요.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.3.1 <small>2026-02-09</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### 로그 화면 개선
+배지를 착용한 사용자의 배지 아이콘이 로그 화면에서 올바르게 표시됩니다.
+- **배지 아이콘 표시**: 배지를 착용한 사용자의 댓글에 배지 이미지가 표시됩니다
+- **이미지 캐싱**: 배지 이미지 로딩 성능이 개선되었습니다
+- **에러 처리**: 이미지 로딩 실패 시에도 안정적으로 표시됩니다
+
+#### 글꼴 크기 설정 적용
+설정 화면에서 선택한 글꼴 크기(기본/중간/크게)가 로그 목록과 댓글 화면에 올바르게 적용됩니다.
+- **모든 텍스트 요소**: 제목, 내용, 시간, 작성자명 등 모든 텍스트에 일관되게 적용
+- **실시간 반영**: 설정 변경 시 UI에 즉시 반영
+- **크로스 플랫폼**: iOS, Android, macOS, Windows 모두 동일하게 동작
+
+#### 댓글 리액션 및 답글
+댓글에 리액션과 답글 기능이 추가되어 소통이 더욱 편리해졌습니다.
+- **리액션**: 댓글을 길게 눌러 동의, 반대, 좋아요 등 다양한 반응을 표시할 수 있습니다
+- **답글**: 댓글에 대한 답글을 작성하면 원본 댓글 하단에 요약 표시되며, 시간순으로도 확인 가능합니다
+- **실시간 동기화**: 다른 사용자의 리액션과 답글이 실시간으로 반영됩니다
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.3.0 <small>2026-01-27</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

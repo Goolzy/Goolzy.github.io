@@ -49,11 +49,11 @@ Die in der Einstellungsanzeige ausgewählte Schriftgröße (Standard/Groß/Sehr 
 - **Echtzeitreflexion**: Änderungen in den Einstellungen werden sofort auf dem Bildschirm angezeigt
 - **Mobil-/Desktop-Unterstützung**: iOS, Android, macOS und Windows funktionieren alle gleich
 
-#### Verbesserungen des Kommentarsystems
-Antwortnummern und Reaktionsfunktionen wurden hinzugefügt, um reichhaltigere Kommunikation zu ermöglichen.
-- **Antwortfunktion**: Sie können Antworten auf Kommentare verfassen
-- **Reaktionsfunktion**: Schnelle Reaktion mit verschiedenen Emojis möglich
-- **Verschachtelte Anzeige**: Antworten werden unter dem ursprünglichen Kommentar eingerückt angezeigt
+#### Kommentar-Reaktionen und Antworten
+Reaktionen und Antworten wurden zu Kommentaren hinzugefügt für eine verbesserte Kommunikation.
+- **Reaktionen**: Drücken Sie lange auf einen Kommentar, um Reaktionen wie Zustimmung, Ablehnung oder Gefällt mir auszudrücken
+- **Antworten**: Antworten auf Kommentare werden als Zusammenfassung unter dem Original und in chronologischer Reihenfolge angezeigt
+- **Echtzeit-Synchronisierung**: Reaktionen und Antworten anderer Benutzer werden in Echtzeit aktualisiert
 
 </div>
 </details>
