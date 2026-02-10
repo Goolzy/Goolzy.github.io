@@ -29,7 +29,7 @@ Consulta el historial de actualizaciones de la aplicación Inventory.
 
 <details class="changelog-version" open>
 <summary>
-  <span class="version-title">v1.3.1 <small>2026-02-08</small></span>
+  <span class="version-title">v1.3.1 <small>2026-02-10</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
@@ -59,6 +59,12 @@ Se han añadido reacciones y respuestas a los comentarios para una comunicación
 El primer menú de la barra de navegación inferior se ha cambiado a búsqueda por etiquetas compartidas, permitiendo encontrar elementos compartidos más rápidamente.
 - El menú de buzón existente se ha movido al menú de perfil para su acceso
 - La sugerencia de búsqueda se ha actualizado a "Buscar por etiquetas compartidas" para una orientación más intuitiva
+
+#### Respuesta rápida desde notificaciones push
+Responda directamente desde las notificaciones push sin abrir la aplicación.
+- **Respuesta en línea**: Mantenga presionada una notificación para escribir una respuesta que se publica al instante como comentario en el artículo
+- **Soporte sin conexión**: Las respuestas se almacenan automáticamente en cola cuando la red es inestable y se reenvían al iniciar la aplicación
+- **Soporte multilingüe**: Las sugerencias de entrada de respuesta se muestran según la configuración de idioma del usuario
 
 #### Mejora de la estabilidad de las notificaciones push
 Las notificaciones push ahora se reciben correctamente en dispositivos móviles.

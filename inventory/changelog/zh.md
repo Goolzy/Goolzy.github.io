@@ -29,7 +29,7 @@ translations:
 
 <details class="changelog-version" open>
 <summary>
-  <span class="version-title">v1.3.1 <small>2026-02-08</small></span>
+  <span class="version-title">v1.3.1 <small>2026-02-10</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
@@ -59,6 +59,12 @@ translations:
 底部导航栏的第一个菜单已更改为共享标签搜索，让您可以更快地找到共享项目。
 - 原有的邮箱菜单已移至个人资料菜单中访问
 - 搜索提示已更新为"通过共享标签搜索"，提供更直观的引导
+
+#### 推送通知快速回复
+无需打开应用即可直接从推送通知中回复。
+- **内联回复**: 长按通知输入文字，即可作为评论立即发布到相关项目
+- **离线支持**: 网络不稳定时，回复会自动排队保存，应用启动时重新发送
+- **多语言支持**: 回复输入提示根据用户设置的语言显示
 
 #### 推送通知稳定性改进
 移动设备上的推送通知现在可以正确接收。

@@ -29,7 +29,7 @@ Confira o histórico de atualizações do aplicativo Inventory.
 
 <details class="changelog-version" open>
 <summary>
-  <span class="version-title">v1.3.1 <small>2026-02-08</small></span>
+  <span class="version-title">v1.3.1 <small>2026-02-10</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
@@ -59,6 +59,12 @@ Reações e respostas foram adicionadas aos comentários para uma comunicação 
 O primeiro menu da barra de navegação inferior foi alterado para pesquisa por tags compartilhadas, permitindo encontrar itens compartilhados mais rapidamente.
 - O menu de caixa de entrada existente foi movido para o menu de perfil para acesso
 - A dica de pesquisa foi atualizada para "Pesquisar por tags compartilhadas" para uma orientação mais intuitiva
+
+#### Resposta rápida a partir de notificações push
+Responda diretamente das notificações push sem abrir o aplicativo.
+- **Resposta em linha**: Mantenha pressionada uma notificação para digitar uma resposta que será publicada instantaneamente como comentário no item
+- **Suporte offline**: As respostas são automaticamente enfileiradas quando a rede está instável e reenviadas ao iniciar o aplicativo
+- **Suporte multilíngue**: As dicas de entrada de resposta são exibidas de acordo com as configurações de idioma do usuário
 
 #### Melhoria da estabilidade das notificações push
 As notificações push agora são recebidas corretamente em dispositivos móveis.

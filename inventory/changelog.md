@@ -29,7 +29,7 @@ Inventory 앱의 업데이트 내역을 확인하세요.
 
 <details class="changelog-version" open>
 <summary>
-  <span class="version-title">v1.3.1 <small>2026-02-09</small></span>
+  <span class="version-title">v1.3.1 <small>2026-02-10</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
@@ -59,6 +59,12 @@ Inventory 앱의 업데이트 내역을 확인하세요.
 하단 네비게이션 바의 첫 번째 메뉴가 공유 태그 검색으로 변경되어, 더 빠르게 공유된 아이템을 찾을 수 있습니다.
 - 기존 우편함 메뉴는 프로필 메뉴로 이동하여 접근 가능합니다
 - 검색창 힌트가 "공유 태그를 검색하세요"로 변경되어 기능을 더 직관적으로 안내합니다
+
+#### 푸시 알림 빠른 답변
+푸시 알림에서 앱을 열지 않고 바로 답변을 작성할 수 있습니다.
+- **인라인 답장**: 알림을 길게 눌러 텍스트를 입력하면 해당 아이템에 댓글로 즉시 등록됩니다
+- **오프라인 대응**: 네트워크 불안정 시 답변을 자동으로 대기열에 저장하고, 앱 실행 시 재전송합니다
+- **다국어 지원**: 사용자가 설정한 언어에 맞춰 답변 입력 힌트가 표시됩니다
 
 #### 푸시 알림 안정성 개선
 모바일 기기에서 푸시 알림이 올바르게 수신되도록 개선되었습니다.
