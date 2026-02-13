@@ -29,6 +29,25 @@ Inventory 앱의 업데이트 내역을 확인하세요.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.3.2 <small>2026-02-13</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### 상점 가격 인하
+스탬프와 네임태그 뱃지의 기본 가격이 인하되었습니다.
+- **스탬프**: $9.99 → $0.99
+- **네임태그 뱃지**: $99.99 → $9.99
+- 진행 중인 할인 프로모션이 있다면 새 기본가 기준으로 자동 적용됩니다
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.3.1 <small>2026-02-10</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
