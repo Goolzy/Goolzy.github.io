@@ -54,6 +54,12 @@ Le clavier de saisie se ferme desormais automatiquement lorsque vous faites defi
 - Le clavier se masque automatiquement lorsque vous faites glisser pour faire defiler les journaux
 - La fonction existante de fermeture du clavier en appuyant sur d'autres zones est conservee
 
+#### Corrections de bugs
+- Correction d'un probleme ou l'ecran d'inventaire tremblait lors de l'ouverture d'une fenetre d'article
+- Correction d'un probleme ou la recherche de domaine du destinataire echouait dans l'ecran d'envoi
+- Correction d'un probleme ou les adresses e-mail des destinataires recents n'etaient pas affichees correctement
+- Correction d'un probleme ou les noms des tampons, badges et documents n'etaient pas affiches sur l'ecran d'accueil
+
 </div>
 </details>
 

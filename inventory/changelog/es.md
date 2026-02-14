@@ -54,6 +54,12 @@ El teclado de entrada ahora se cierra automaticamente al desplazarse por la pant
 - Al arrastrar para desplazarse por los registros, el teclado se oculta automaticamente
 - Se mantiene la funcion existente de cerrar el teclado al tocar otras areas
 
+#### Correcciones de errores
+- Se corrigio un problema por el cual la pantalla de inventario temblaba al abrir una ventana de articulo
+- Se corrigio un problema por el cual la busqueda de dominio del destinatario fallaba en la pantalla de envio
+- Se corrigio un problema por el cual los correos electronicos de los destinatarios recientes no se mostraban correctamente
+- Se corrigio un problema por el cual los nombres de sellos, insignias y documentos no se mostraban en la pantalla de inicio
+
 </div>
 </details>
 

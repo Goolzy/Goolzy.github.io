@@ -54,6 +54,12 @@ O teclado de entrada agora fecha automaticamente ao rolar pela tela de registro.
 - Ao arrastar para rolar pelos registros, o teclado e ocultado automaticamente
 - A funcao existente de fechar o teclado ao tocar em outras areas e mantida
 
+#### Correcoes de bugs
+- Corrigido um problema onde a tela de inventario tremia ao abrir uma janela de item
+- Corrigido um problema onde a pesquisa de dominio do destinatario falhava na tela de envio
+- Corrigido um problema onde os e-mails dos destinatarios recentes nao eram exibidos corretamente
+- Corrigido um problema onde os nomes de selos, emblemas e itens de documento nao eram exibidos na tela inicial
+
 </div>
 </details>
 

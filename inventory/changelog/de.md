@@ -54,6 +54,12 @@ Die Eingabetastatur wird nun automatisch geschlossen, wenn Sie durch den Log-Bil
 - Beim Ziehen zum Scrollen durch die Logs wird die Tastatur automatisch ausgeblendet
 - Die bestehende Funktion zum Ausblenden der Tastatur durch Tippen auf andere Bereiche bleibt erhalten
 
+#### Fehlerbehebungen
+- Ein Problem wurde behoben, bei dem der Inventarbildschirm beim Öffnen eines Artikelfensters wackelte
+- Ein Problem wurde behoben, bei dem die Empfängerdomänensuche im Sendebildschirm fehlschlug
+- Ein Problem wurde behoben, bei dem E-Mail-Adressen der letzten Empfänger nicht korrekt angezeigt wurden
+- Ein Problem wurde behoben, bei dem Stempel-, Abzeichen- und Dokumentartikelnamen auf dem Startbildschirm nicht angezeigt wurden
+
 </div>
 </details>
 
