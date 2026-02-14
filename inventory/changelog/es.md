@@ -43,6 +43,17 @@ Se han reducido los precios predeterminados de los Sellos y las Insignias de Ide
 - **Insignia de Identificacion**: $99.99 → $9.99
 - Las promociones de descuento activas se aplicaran automaticamente segun el nuevo precio base
 
+#### Mejora de la Interfaz de Burbujas de Comentarios
+El diseño de las burbujas de comentarios se mantiene limpio incluso cuando se establece un tamaño de fuente grande.
+- El nombre del autor y la hora se reducen automáticamente para no exceder el área de la burbuja
+- El tamaño de la fuente de la cita (texto original de la respuesta) se ajusta más pequeño que el cuerpo del texto para una clara diferenciación
+- El formato de fecha se ha simplificado para usar el espacio de manera más eficiente
+
+#### Cierre automatico del teclado al desplazar el registro
+El teclado de entrada ahora se cierra automaticamente al desplazarse por la pantalla de registro.
+- Al arrastrar para desplazarse por los registros, el teclado se oculta automaticamente
+- Se mantiene la funcion existente de cerrar el teclado al tocar otras areas
+
 </div>
 </details>
 

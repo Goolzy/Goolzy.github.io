@@ -43,6 +43,17 @@ Les prix par defaut des Tampons et des Badges d'Identification ont ete reduits.
 - **Badge d'Identification**: 99,99 $ → 9,99 $
 - Les promotions en cours seront automatiquement appliquees sur la base du nouveau prix de reference
 
+#### Amélioration de l'Interface de Bulle de Commentaire
+La mise en page de la bulle de commentaire reste propre même avec une taille de police grande.
+- Le nom de l'auteur et l'horodatage se réduisent automatiquement pour ne pas dépasser la zone de la bulle
+- La taille de police de la citation (texte de réponse original) est ajustée plus petite que le corps du texte pour une distinction claire
+- Le format de date a été modifié pour être plus concis, utilisant efficacement l'espace
+
+#### Fermeture automatique du clavier lors du defilement du journal
+Le clavier de saisie se ferme desormais automatiquement lorsque vous faites defiler l'ecran du journal.
+- Le clavier se masque automatiquement lorsque vous faites glisser pour faire defiler les journaux
+- La fonction existante de fermeture du clavier en appuyant sur d'autres zones est conservee
+
 </div>
 </details>
 

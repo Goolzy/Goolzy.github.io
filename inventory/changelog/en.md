@@ -43,6 +43,17 @@ The default prices for Stamps and Name Tag Badges have been reduced.
 - **Name Tag Badge**: $99.99 → $9.99
 - Any active discount promotions will be automatically applied based on the new base price
 
+#### Comment Bubble UI Improvements
+The comment bubble layout remains clean and organized even when large font sizes are set.
+- Author name and timestamp automatically shrink to stay within the bubble area
+- Quote text (reply original) is displayed in a smaller font size than the main content for clear distinction
+- Date format has been simplified to use space more efficiently
+
+#### Auto-dismiss Keyboard on Log Scroll
+The input keyboard now automatically closes when scrolling through the log screen.
+- Dragging to scroll through logs automatically dismisses the keyboard
+- The existing feature of dismissing the keyboard by tapping other areas is maintained
+
 </div>
 </details>
 

@@ -43,6 +43,17 @@ Os precos padrao dos Carimbos e dos Crachas de Identificacao foram reduzidos.
 - **Cracha de Identificacao**: $99.99 → $9.99
 - Promocoes de desconto ativas serao aplicadas automaticamente com base no novo preco base
 
+#### Melhoria na UI do Balao de Comentarios
+O layout do balao de comentarios permanece limpo mesmo quando o tamanho da fonte e definido como grande.
+- O nome do autor e a hora sao automaticamente reduzidos para nao ultrapassar a area do balao
+- O tamanho da fonte da citacao (texto original da resposta) e ajustado para ser menor que o corpo do texto, deixando a distincao clara
+- O formato de data foi alterado para ser mais conciso, utilizando o espaco de forma eficiente
+
+#### Fechamento automatico do teclado ao rolar o registro
+O teclado de entrada agora fecha automaticamente ao rolar pela tela de registro.
+- Ao arrastar para rolar pelos registros, o teclado e ocultado automaticamente
+- A funcao existente de fechar o teclado ao tocar em outras areas e mantida
+
 </div>
 </details>
 

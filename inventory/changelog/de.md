@@ -43,6 +43,17 @@ Die Standardpreise fuer Stempel und Namensschild-Badges wurden gesenkt.
 - **Namensschild-Badge**: $99.99 → $9.99
 - Laufende Rabattaktionen werden automatisch auf Basis des neuen Grundpreises angewendet
 
+#### Verbesserung der Kommentar-Sprechblase UI
+Das Layout der Kommentar-Sprechblase bleibt auch bei großer Schriftgröße ordentlich.
+- Autorname und Zeitstempel werden automatisch verkleinert, um nicht über die Sprechblase hinauszugehen
+- Die Schriftgröße von Zitaten (Antwort-Originaltext) wird kleiner als der Haupttext eingestellt für bessere Unterscheidung
+- Das Datumsformat wurde vereinfacht, um Platz effizienter zu nutzen
+
+#### Automatisches Ausblenden der Tastatur beim Scrollen im Log
+Die Eingabetastatur wird nun automatisch geschlossen, wenn Sie durch den Log-Bildschirm scrollen.
+- Beim Ziehen zum Scrollen durch die Logs wird die Tastatur automatisch ausgeblendet
+- Die bestehende Funktion zum Ausblenden der Tastatur durch Tippen auf andere Bereiche bleibt erhalten
+
 </div>
 </details>
 
