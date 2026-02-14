@@ -54,6 +54,12 @@ The input keyboard now automatically closes when scrolling through the log scree
 - Dragging to scroll through logs automatically dismisses the keyboard
 - The existing feature of dismissing the keyboard by tapping other areas is maintained
 
+#### Bug Fixes
+- Fixed an issue where the inventory screen would shake when opening an item window
+- Fixed an issue where recipient domain search would fail in the send screen
+- Fixed an issue where recent recipient emails were not displayed correctly
+- Fixed an issue where stamp, badge, and document item names were not displayed on the home screen
+
 </div>
 </details>
 
