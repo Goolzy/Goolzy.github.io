@@ -29,6 +29,59 @@ Consulta el historial de actualizaciones de la aplicación Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.3.3 <small>2026-02-21</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Grabar en sello (Creación inversa de plantillas)
+Convierte documentos existentes en plantillas de sello.
+- **Documento → Sello**: Convierte el contenido de un documento ya escrito en una plantilla de sello
+- **Speed Dial / Bottom Sheet**: Selecciona "Grabar en sello" desde el menú de acciones rápidas en la pantalla de inicio
+- **Filtro de condiciones**: Los documentos agrupados en un clip se excluyen automáticamente de los objetivos
+
+#### Biblioteca de componentes GUI neumórficos
+Se han agregado más de 95 componentes con diseño neumórfico.
+- **Widgets variados**: Soporte para una amplia gama de elementos de interfaz, incluyendo botones, tarjetas, campos de entrada y diálogos
+- **Modo oscuro/claro**: Todos los componentes son compatibles con ambos modos
+
+#### Rediseno completo de la pantalla de inicio de sesion
+Las pantallas de inicio de sesion, registro y recuperacion de contrasena se han rediseñado completamente con diseño neumorfico.
+- **Diseno neumorfico**: Tema vintage unificado aplicado en toda la aplicacion
+- **Recuperacion de contrasena**: Restablezca su contrasena comodamente con un dialogo dedicado
+- **Mejoras de UX**: Mensajes de error detallados, alternancia de visibilidad de contrasena, autocompletado e indicadores de carga añadidos
+
+#### Indicador de carga de Cloud Function
+Se muestran indicadores de carga durante las solicitudes al servidor y se previenen solicitudes duplicadas.
+- **Indicador de carga**: Retroalimentación visual mientras las operaciones del servidor están en progreso
+- **Prevención de duplicados**: Bloqueo automático de solicitudes idénticas repetidas
+
+#### Sincronización instantánea tras compra en tienda
+La base de datos local se actualiza inmediatamente al completar una compra en la tienda.
+- Los nuevos artículos aparecen en tu inventario justo después de la compra
+
+#### Mejoras de interfaz
+- Se ha mejorado la visibilidad del campo de entrada del chat
+- Las etiquetas de texto de los botones de acción de Speed Dial ahora se pueden tocar
+- El texto largo de descripción de artículos ahora se muestra correctamente sin cortarse
+- Se ha mejorado el diseño de la pantalla de recepción
+
+#### Correcciones de errores
+- Se corrigió un problema donde la transparencia de la imagen se perdía al arrastrar artículos
+- Se corrigió un problema donde los artículos no se creaban durante la recompra rápida
+
+#### Rendimiento y estabilidad
+- El motor del servidor Cloud Functions se ha actualizado a v2 para tiempos de respuesta más rápidos
+- Se han reforzado las reglas de seguridad
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.3.2 <small>2026-02-13</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

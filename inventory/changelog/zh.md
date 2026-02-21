@@ -29,6 +29,59 @@ translations:
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.3.3 <small>2026-02-21</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### 刻印到印章（反向模板化）
+将现有文档转换为印章模板。
+- **文档 → 印章**：将已编写的文档内容转换为印章模板
+- **Speed Dial / Bottom Sheet**：从主屏幕的快捷操作菜单中选择"刻印到印章"
+- **条件过滤**：被剪辑归组的文档会自动排除在目标之外
+
+#### 拟态化GUI组件库
+新增95种以上拟态化设计组件。
+- **丰富的组件**：支持按钮、卡片、输入框、对话框等多种UI元素
+- **暗色/亮色模式**：所有组件均支持两种模式
+
+#### 登录界面全面改版
+登录、注册和找回密码界面已全面采用拟态设计重新打造。
+- **拟态设计**: 在整个应用中应用统一的复古主题
+- **找回密码**: 通过专用对话框轻松重置密码
+- **用户体验改进**: 新增详细错误提示、密码可见性切换、自动填充和加载指示器
+
+#### Cloud Function 加载指示器
+服务器请求时显示加载指示器，并防止重复请求。
+- **加载指示器**：服务器操作进行中提供视觉反馈
+- **防止重复**：自动阻止重复发送相同请求
+
+#### 商店购买后即时同步
+商店购买完成后，本地数据库立即更新。
+- 购买后新物品立即显示在您的库存中
+
+#### 界面改进
+- 聊天输入框的可见性已提升，更容易辨识输入区域
+- Speed Dial操作按钮的文字标签现可点击以执行功能
+- 物品描述文字过长时不再被截断，可正确显示
+- 接收画面的布局已改进
+
+#### 错误修复
+- 修复了拖动物品时图像透明度丢失的问题
+- 修复了快速重新购买时物品未被创建的问题
+
+#### 性能与稳定性
+- Cloud Functions服务器引擎已升级至v2，响应速度更快
+- 安全规则已加强
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.3.2 <small>2026-02-13</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

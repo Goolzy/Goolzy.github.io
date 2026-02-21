@@ -29,6 +29,59 @@ Check out the update history for the Inventory app.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.3.3 <small>2026-02-21</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Engrave to Stamp (Reverse Templating)
+Turn existing documents into stamp templates.
+- **Document to Stamp**: Convert the content of an already written document into a stamp template
+- **Speed Dial / Bottom Sheet**: Select 'Engrave to Stamp' from the quick action menu on the home screen
+- **Condition Filter**: Documents bundled in a clip are automatically excluded from targets
+
+#### Neumorphic GUI Component Library
+Over 95 neumorphic design components have been added.
+- **Diverse Widgets**: Supports a wide range of UI elements including buttons, cards, input fields, and dialogs
+- **Dark/Light Mode**: All components support both modes
+
+#### Login Screen Redesign
+Login, sign-up, and password recovery screens have been completely redesigned with neumorphic design.
+- **Neumorphic Design**: Unified vintage theme applied across the entire app
+- **Password Recovery**: Conveniently reset your password with a dedicated dialog
+- **UX Improvements**: Detailed error messages, password visibility toggle, autocomplete, and loading indicators added
+
+#### Cloud Function Loading Indicator
+Loading indicators are now displayed during server requests, and duplicate requests are prevented.
+- **Loading Indicator**: Visual feedback provided while server operations are in progress
+- **Duplicate Prevention**: Automatically blocks the same request from being sent repeatedly
+
+#### Instant Sync After Shop Purchase
+The local database is updated immediately when a shop purchase is completed.
+- New items appear in your inventory right after purchase
+
+#### UI Improvements
+- Chat input field visibility has been improved for easier identification of the input area
+- Speed Dial action button text labels are now tappable to execute functions
+- Long item description text is now displayed correctly without being cut off
+- Receive screen layout has been improved
+
+#### Bug Fixes
+- Fixed an issue where image transparency was lost when dragging items
+- Fixed an issue where items were not created during quick repurchase
+
+#### Performance & Stability
+- Cloud Functions server engine has been upgraded to v2 for faster response times
+- Security rules have been strengthened
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.3.2 <small>2026-02-13</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

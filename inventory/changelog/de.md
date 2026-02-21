@@ -29,6 +29,59 @@ Sehen Sie sich den Update-Verlauf der Inventory-App an.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.3.3 <small>2026-02-21</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopieren">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Auf Stempel gravieren (Umgekehrte Vorlagenerstellung)
+Verwandeln Sie bestehende Dokumente in Stempelvorlagen.
+- **Dokument → Stempel**: Konvertieren Sie den Inhalt eines bereits geschriebenen Dokuments in eine Stempelvorlage
+- **Speed Dial / Bottom Sheet**: Wählen Sie „Auf Stempel gravieren" aus dem Schnellaktionsmenü auf dem Startbildschirm
+- **Bedingungsfilter**: In Clips gebündelte Dokumente werden automatisch von den Zielen ausgeschlossen
+
+#### Neumorphes GUI-Komponentenbibliothek
+Über 95 neumorphe Designkomponenten wurden hinzugefügt.
+- **Vielfältige Widgets**: Unterstützung für eine breite Palette von UI-Elementen einschließlich Schaltflächen, Karten, Eingabefelder und Dialoge
+- **Dunkel-/Hellmodus**: Alle Komponenten unterstützen beide Modi
+
+#### Login-Bildschirm komplett neu gestaltet
+Login-, Registrierungs- und Passwort-Wiederherstellungsbildschirme wurden vollstandig im neumorphen Design neu gestaltet.
+- **Neumorphes Design**: Einheitliches Vintage-Theme in der gesamten App angewendet
+- **Passwort-Wiederherstellung**: Passwort bequem uber einen eigenen Dialog zurucksetzen
+- **UX-Verbesserungen**: Detaillierte Fehlermeldungen, Passwort-Sichtbarkeitsumschalter, Autovervollstandigung und Ladeanzeigen hinzugefugt
+
+#### Cloud Function Ladeanzeige
+Bei Serveranfragen werden Ladeanzeigen angezeigt und doppelte Anfragen verhindert.
+- **Ladeanzeige**: Visuelles Feedback während laufender Serveroperationen
+- **Duplikatverhinderung**: Automatische Blockierung wiederholter identischer Anfragen
+
+#### Sofortige Synchronisierung nach Shop-Kauf
+Die lokale Datenbank wird sofort aktualisiert, wenn ein Shop-Kauf abgeschlossen ist.
+- Neue Artikel erscheinen sofort nach dem Kauf in Ihrem Inventar
+
+#### UI-Verbesserungen
+- Die Sichtbarkeit des Chat-Eingabefeldes wurde verbessert
+- Speed Dial Aktionsschaltflächen-Textlabels können jetzt angetippt werden
+- Lange Artikelbeschreibungstexte werden korrekt ohne Abschneiden angezeigt
+- Das Layout des Empfangsbildschirms wurde verbessert
+
+#### Fehlerbehebungen
+- Problem behoben, bei dem die Bildtransparenz beim Ziehen von Artikeln verloren ging
+- Problem behoben, bei dem Artikel beim schnellen Nachkauf nicht erstellt wurden
+
+#### Leistung und Stabilität
+- Die Cloud Functions Server-Engine wurde auf v2 aktualisiert für schnellere Antwortzeiten
+- Sicherheitsregeln wurden verstärkt
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.3.2 <small>2026-02-13</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopieren">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

@@ -29,6 +29,59 @@ Inventory 앱의 업데이트 내역을 확인하세요.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.3.3 <small>2026-02-21</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### 스탬프에 각인하기 (역방향 템플릿화)
+기존 문서를 스탬프에 각인하여 새로운 템플릿으로 만들 수 있습니다.
+- **문서 → 스탬프 변환**: 이미 작성한 문서의 내용을 스탬프 템플릿으로 변환
+- **Speed Dial / Bottom Sheet**: 홈 화면의 빠른 실행 메뉴에서 '스탬프에 각인하기' 선택 가능
+- **조건 필터**: 클립으로 묶인 문서는 자동으로 대상에서 제외됩니다
+
+#### 뉴모픽 GUI 컴포넌트 라이브러리
+95개 이상의 뉴모픽 디자인 컴포넌트가 추가되었습니다.
+- **다양한 위젯**: 버튼, 카드, 입력창, 다이얼로그 등 폭넓은 UI 요소 지원
+- **다크/라이트 모드**: 모든 컴포넌트가 두 가지 모드를 지원합니다
+
+#### 로그인 화면 전면 개편
+로그인, 회원가입, 비밀번호 찾기 화면이 뉴모픽 디자인으로 전면 개편되었습니다.
+- **뉴모픽 디자인**: 앱 전체와 통일된 빈티지 테마 적용
+- **비밀번호 찾기**: 전용 다이얼로그로 간편하게 비밀번호를 재설정할 수 있습니다
+- **UX 개선**: 에러 메시지 세분화, 비밀번호 표시 토글, 자동완성, 로딩 표시 추가
+
+#### Cloud Function 로딩 표시 개선
+서버 요청 시 로딩 인디케이터가 표시되고, 중복 요청이 방지됩니다.
+- **로딩 인디케이터**: 서버 작업 진행 중 시각적 피드백 제공
+- **중복 방지**: 동일한 요청이 반복 전송되지 않도록 자동 차단
+
+#### 상점 구매 후 즉시 동기화
+상점에서 아이템 구매 완료 시 로컬 데이터베이스가 즉시 업데이트됩니다.
+- 구매 직후 인벤토리에 새 아이템이 바로 표시됩니다
+
+#### UI 개선
+- 채팅 입력창의 가시성이 향상되어 입력 영역을 더 쉽게 확인할 수 있습니다
+- Speed Dial 액션 버튼의 텍스트 레이블을 탭하여 기능을 실행할 수 있습니다
+- 아이템 설명 텍스트가 길어도 잘리지 않고 올바르게 표시됩니다
+- 수신창 레이아웃이 개선되었습니다
+
+#### 버그 수정
+- 아이템을 드래그할 때 이미지의 투명도가 손실되던 문제를 수정했습니다
+- 빠르게 재구매할 때 아이템이 생성되지 않던 문제를 수정했습니다
+
+#### 성능 및 안정성
+- Cloud Functions 서버 엔진이 v2로 업그레이드되어 응답 속도가 향상되었습니다
+- 보안 규칙이 강화되었습니다
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.3.2 <small>2026-02-13</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

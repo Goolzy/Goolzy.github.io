@@ -29,6 +29,59 @@ Consultez l'historique des mises à jour de l'application Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.3.3 <small>2026-02-21</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Graver sur le tampon (Modélisation inversée)
+Transformez des documents existants en modèles de tampon.
+- **Document → Tampon** : Convertissez le contenu d'un document existant en modèle de tampon
+- **Speed Dial / Bottom Sheet** : Sélectionnez « Graver sur le tampon » depuis le menu d'actions rapides sur l'écran d'accueil
+- **Filtre de conditions** : Les documents regroupés dans un clip sont automatiquement exclus des cibles
+
+#### Bibliothèque de composants GUI néomorphiques
+Plus de 95 composants au design néomorphique ont été ajoutés.
+- **Widgets variés** : Prise en charge d'une large gamme d'éléments UI, notamment des boutons, cartes, champs de saisie et dialogues
+- **Mode sombre/clair** : Tous les composants prennent en charge les deux modes
+
+#### Refonte complete de l'ecran de connexion
+Les ecrans de connexion, d'inscription et de recuperation de mot de passe ont ete entierement repensés avec un design neumorphique.
+- **Design neumorphique**: Theme vintage unifie applique dans toute l'application
+- **Recuperation de mot de passe**: Réinitialisez facilement votre mot de passe via un dialogue dedie
+- **Ameliorations UX**: Messages d'erreur detailles, bascule de visibilite du mot de passe, saisie automatique et indicateurs de chargement ajoutes
+
+#### Indicateur de chargement Cloud Function
+Des indicateurs de chargement s'affichent lors des requêtes serveur et les requêtes en double sont bloquées.
+- **Indicateur de chargement** : Retour visuel pendant les opérations serveur en cours
+- **Prévention des doublons** : Blocage automatique des requêtes identiques répétées
+
+#### Synchronisation instantanée après achat en boutique
+La base de données locale est mise à jour immédiatement lorsqu'un achat est effectué.
+- Les nouveaux articles apparaissent dans votre inventaire juste après l'achat
+
+#### Améliorations de l'interface
+- La visibilité du champ de saisie du chat a été améliorée
+- Les libellés textuels des boutons d'action Speed Dial sont désormais cliquables
+- Les descriptions longues d'articles s'affichent correctement sans être tronquées
+- La mise en page de l'écran de réception a été améliorée
+
+#### Corrections de bugs
+- Correction d'un problème où la transparence des images était perdue lors du glissement d'articles
+- Correction d'un problème où les articles n'étaient pas créés lors d'un rachat rapide
+
+#### Performance et stabilité
+- Le moteur serveur Cloud Functions a été mis à niveau vers la v2 pour des temps de réponse plus rapides
+- Les règles de sécurité ont été renforcées
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.3.2 <small>2026-02-13</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

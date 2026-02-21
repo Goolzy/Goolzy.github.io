@@ -29,6 +29,59 @@ Confira o histórico de atualizações do aplicativo Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.3.3 <small>2026-02-21</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Gravar no carimbo (Criação reversa de modelo)
+Transforme documentos existentes em modelos de carimbo.
+- **Documento → Carimbo**: Converta o conteúdo de um documento já escrito em modelo de carimbo
+- **Speed Dial / Bottom Sheet**: Selecione "Gravar no carimbo" no menu de ações rápidas na tela inicial
+- **Filtro de condições**: Documentos agrupados em um clip são automaticamente excluídos dos alvos
+
+#### Biblioteca de componentes GUI neumórficos
+Mais de 95 componentes com design neumórfico foram adicionados.
+- **Widgets diversos**: Suporte para uma ampla variedade de elementos de interface, incluindo botões, cartões, campos de entrada e diálogos
+- **Modo escuro/claro**: Todos os componentes suportam ambos os modos
+
+#### Reformulacao completa da tela de login
+As telas de login, cadastro e recuperacao de senha foram completamente reformuladas com design neumorfico.
+- **Design neumorfico**: Tema vintage unificado aplicado em todo o aplicativo
+- **Recuperacao de senha**: Redefina sua senha facilmente com um dialogo dedicado
+- **Melhorias de UX**: Mensagens de erro detalhadas, alternancia de visibilidade de senha, preenchimento automatico e indicadores de carregamento adicionados
+
+#### Indicador de carregamento Cloud Function
+Indicadores de carregamento são exibidos durante solicitações ao servidor e solicitações duplicadas são bloqueadas.
+- **Indicador de carregamento**: Feedback visual fornecido enquanto operações do servidor estão em andamento
+- **Prevenção de duplicatas**: Bloqueio automático de solicitações idênticas repetidas
+
+#### Sincronização instantânea após compra na loja
+O banco de dados local é atualizado imediatamente quando uma compra na loja é concluída.
+- Novos itens aparecem no seu inventário logo após a compra
+
+#### Melhorias na interface
+- A visibilidade do campo de entrada do chat foi aprimorada
+- Os rótulos de texto dos botões de ação do Speed Dial agora podem ser tocados
+- Textos longos de descrição de itens agora são exibidos corretamente sem cortes
+- O layout da tela de recebimento foi melhorado
+
+#### Correções de bugs
+- Corrigido um problema onde a transparência da imagem era perdida ao arrastar itens
+- Corrigido um problema onde itens não eram criados durante recompra rápida
+
+#### Desempenho e estabilidade
+- O motor do servidor Cloud Functions foi atualizado para v2 para tempos de resposta mais rápidos
+- As regras de segurança foram reforçadas
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.3.2 <small>2026-02-13</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
