@@ -254,6 +254,8 @@ curl -H "Authorization: Bearer inv_xxx" \
         "content": "Template Content",
         "imageUrl": "https://...",
         "commentMode": "independent",
+        "allowComments": true,
+        "allowEdit": false,
         "isSharing": false,
         "createdAt": "2025-01-01T00:00:00Z"
       }
@@ -363,6 +365,8 @@ curl -X POST \
        "title": "Template Title",
        "content": "Template Content",
        "commentMode": "independent",
+       "allowComments": true,
+       "allowEdit": true,
        "keywords": ["product:laptop", "price:$1500000KRW$"]
      }' \
      "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates"
@@ -376,6 +380,8 @@ curl -X POST \
 | title | string | Yes | Title (max 32 characters) |
 | content | string | Yes | Content (max 1024 characters) |
 | commentMode | string | No | Comment mode: "independent" or "shared" |
+| allowComments | boolean | No | Allow adding logs (default: true) |
+| allowEdit | boolean | No | Allow editing (default: true) |
 | keywords | string[] | No | Keyword array (max 128) |
 | publishDate | string | No | Publish start date (ISO 8601) |
 | validUntil | string | No | Valid until date (ISO 8601) |

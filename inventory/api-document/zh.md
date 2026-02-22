@@ -254,6 +254,8 @@ curl -H "Authorization: Bearer inv_xxx" \
         "content": "模板内容",
         "imageUrl": "https://...",
         "commentMode": "independent",
+        "allowComments": true,
+        "allowEdit": false,
         "isSharing": false,
         "createdAt": "2025-01-01T00:00:00Z"
       }
@@ -363,6 +365,8 @@ curl -X POST \
        "title": "模板标题",
        "content": "模板内容",
        "commentMode": "independent",
+       "allowComments": true,
+       "allowEdit": true,
        "keywords": ["product:laptop", "price:$1500000KRW$"]
      }' \
      "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates"
@@ -376,6 +380,8 @@ curl -X POST \
 | title | string | 是 | 标题（最多32个字符） |
 | content | string | 是 | 内容（最多1024个字符） |
 | commentMode | string | 否 | 评论模式："independent"或"shared" |
+| allowComments | boolean | X | 是否允许添加日志 (默认: true) |
+| allowEdit | boolean | X | 是否允许编辑 (默认: true) |
 | keywords | string[] | 否 | 关键词数组（最多128个） |
 | publishDate | string | 否 | 发布开始日期（ISO 8601） |
 | validUntil | string | 否 | 有效期截止日期（ISO 8601） |

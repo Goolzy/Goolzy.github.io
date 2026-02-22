@@ -254,6 +254,8 @@ curl -H "Authorization: Bearer inv_xxx" \
         "content": "テンプレート内容",
         "imageUrl": "https://...",
         "commentMode": "independent",
+        "allowComments": true,
+        "allowEdit": false,
         "isSharing": false,
         "createdAt": "2025-01-01T00:00:00Z"
       }
@@ -363,6 +365,8 @@ curl -X POST \
        "title": "テンプレートタイトル",
        "content": "テンプレート内容",
        "commentMode": "independent",
+       "allowComments": true,
+       "allowEdit": true,
        "keywords": ["品名:ノートPC", "価格:$1500000JPY$"]
      }' \
      "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates"
@@ -376,6 +380,8 @@ curl -X POST \
 | title | string | ○ | タイトル（最大32文字） |
 | content | string | ○ | 内容（最大1024文字） |
 | commentMode | string | - | コメントモード: "independent" または "shared" |
+| allowComments | boolean | X | ログ追加可能かどうか (デフォルト: true) |
+| allowEdit | boolean | X | 編集可能かどうか (デフォルト: true) |
 | keywords | string[] | - | キーワード配列（最大128個） |
 | publishDate | string | - | 公開開始日（ISO 8601） |
 | validUntil | string | - | 有効期限（ISO 8601） |

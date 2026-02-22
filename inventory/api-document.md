@@ -254,6 +254,8 @@ curl -H "Authorization: Bearer inv_xxx" \
         "content": "템플릿 내용",
         "imageUrl": "https://...",
         "commentMode": "independent",
+        "allowComments": true,
+        "allowEdit": false,
         "isSharing": false,
         "createdAt": "2025-01-01T00:00:00Z"
       }
@@ -363,6 +365,8 @@ curl -X POST \
        "title": "템플릿 제목",
        "content": "템플릿 내용",
        "commentMode": "independent",
+       "allowComments": true,
+       "allowEdit": true,
        "keywords": ["품명:노트북", "가격:$1500000KRW$"]
      }' \
      "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates"
@@ -376,6 +380,8 @@ curl -X POST \
 | title | string | O | 제목 (최대 32자) |
 | content | string | O | 내용 (최대 1024자) |
 | commentMode | string | X | 댓글 모드: "independent" 또는 "shared" |
+| allowComments | boolean | X | 로그 추가 가능 여부 (기본값: true) |
+| allowEdit | boolean | X | 편집 가능 여부 (기본값: true) |
 | keywords | string[] | X | 키워드 배열 (최대 128개) |
 | publishDate | string | X | 게시 시작일 (ISO 8601) |
 | validUntil | string | X | 유효 기간 (ISO 8601) |
