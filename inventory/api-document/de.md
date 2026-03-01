@@ -237,10 +237,11 @@ curl -X POST \
        "imageUrl": "https://example.com/image.png",
        "title": "Vorlagen-Titel",
        "content": "Vorlagen-Inhalt",
-       "commentMode": "independent",
-       "allowComments": true,
-       "allowEdit": true,
-       "keywords": ["produkt:laptop", "preis:$1500EUR$"]
+        "commentMode": "independent",
+        "logPermission": "owner",
+        "keywordPermission": "owner",
+        "allowEdit": true,
+        "keywords": ["produkt:laptop", "preis:$1500EUR$"]
      }' \
      "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates"
 ```
@@ -253,7 +254,9 @@ curl -X POST \
 | title | string | Ja | Titel (max 32 Zeichen) |
 | content | string | Ja | Inhalt (max 1024 Zeichen) |
 | commentMode | string | Nein | Kommentarmodus: "independent" oder "shared" |
-| allowComments | boolean | X | Protokolle hinzufügen erlauben (Standard: true) |
+| ~~allowComments~~ | ~~boolean~~ | ~~X~~ | ~~Protokolle hinzufügen erlauben~~ (deprecated: ersetzt durch `logPermission`) |
+| logPermission | string | Nein | Protokollberechtigung: "owner" \| "author" \| "none" (Standard: "owner") |
+| keywordPermission | string | Nein | Stichwortberechtigung: "owner" \| "author" \| "none" (Standard: "owner") |
 | allowEdit | boolean | X | Bearbeitung erlauben (Standard: true) |
 | keywords | string[] | Nein | Schlusselwort-Array (max 128) |
 

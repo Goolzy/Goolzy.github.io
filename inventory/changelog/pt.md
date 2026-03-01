@@ -29,6 +29,94 @@ Confira o histórico de atualizações do aplicativo Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.4.0 <small>2026-03-01</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Design Glassmorfismo + Droplet
+Todo o aplicativo foi completamente redesenhado com estilos glassmorfismo e droplet.
+- Aplicado em todas as telas incluindo login, configurações, loja, pesquisa, modelos compartilhados e scanner QR
+- Visibilidade melhorada no modo claro — fundo do canvas separado e contraste de bordas reforçado
+- Redesenho de componentes-chave incluindo notificações no app, barra de ações de seleção e filtros de categoria
+
+#### Sistema de pastas
+'Bolso' foi renomeado para 'Pasta'.
+- Nomes apropriados são automaticamente aplicados conforme o idioma
+- Edição inline do nome da pasta melhorada
+
+#### Edição de itens
+Agora você pode editar o conteúdo dos itens após a criação.
+- Proprietários podem editar e salvar o conteúdo diretamente
+
+#### Fluxo conversacional do chatbot
+Um sistema de orientação interativo baseado em JSON foi adicionado.
+- Crie documentos ou modelos seguindo conversas passo a passo
+- Interações ricas incluindo opções, validação de entrada e visualizações prévias
+
+#### Duplicação de itens
+Duplique os itens selecionados para criar cópias idênticas rapidamente.
+- Disponível no modo de seleção da tela inicial e nas telas de envio/transferência
+- Contagem de clones (×n) exibida na sobreposição de informações do item, o contador diminui automaticamente ao excluir
+
+#### Verificação de propriedade de carimbos e conversão em item
+Verifique a propriedade dos carimbos e transfira-os como itens.
+- Confirme a autenticidade do carimbo com mensagens de verificação de propriedade
+- Criação rápida de carimbos com alternância de modo inline
+
+#### Reformulação do modo de seleção
+A seleção de itens e operações em lote agora são mais intuitivas.
+- Seleção simplificada com alternância por toque único
+- Execute enviar, excluir e bloquear/desbloquear diretamente da interface inline
+
+#### Reformulação da tela de registros
+Os registros agora são agrupados e exibidos por pasta.
+- Listas de registros organizadas por pasta com novas animações
+- O antigo sistema de registros independentes foi integrado aos registros compartilhados
+
+#### Melhorias na pesquisa e filtros
+- Campo de pesquisa de tags compartilhados movido para o cabeçalho para melhor acessibilidade
+- Filtro de categoria alterado para modo de caixas de seleção múltipla
+
+#### Melhorias no sistema de palavras-chave
+- Buscas mais rápidas com cache de palavras-chave
+- Exclusão de palavras-chave restrita apenas ao autor original
+
+#### Melhorias nas notificações
+- Tocar na notificação de recebimento de item agora abre o painel de informações do item
+- Tempo de descarte automático do toast no app alterado para 5 segundos
+- Corrigidas notificações ausentes de aceitação/rejeição de troca e aceitação de transferência
+
+#### Melhorias nos comentários
+- Botão de copiar adicionado ao menu de ações de comentários
+- Suporte multilíngue melhorado para textos de resposta
+
+#### Sistema de toast de troca
+As notificações de troca agora são exibidas em um formato visual empilhado.
+- Efeito elástico ao puxar para baixo e suporte à interação de arrasto
+
+#### Melhorias de desempenho
+- Biblioteca do scanner QR atualizada (redução de aproximadamente 55 MB no iOS)
+- Otimização de memória do Cloud Functions
+
+#### Funcionalidades removidas
+- A função de clip (agrupamento) foi removida
+- O menu do assistente foi removido da barra de navegação inferior
+
+#### Correções de bugs
+- Corrigido o congelamento ao inicializar a câmera do scanner QR
+- Corrigidos problemas de rolagem e foco durante a edição inline do nome da pasta
+- Corrigido o disparo incorreto de animações durante a rolagem de registros
+- Corrigido o problema de registros do sistema gerando notificações desnecessárias
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.3.3 <small>2026-02-21</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

@@ -29,6 +29,94 @@ Consultez l'historique des mises à jour de l'application Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.4.0 <small>2026-03-01</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Design Glassmorphisme + Droplet
+L'ensemble de l'application a été entièrement repensé avec des styles glassmorphisme et droplet.
+- Appliqué à tous les écrans y compris connexion, paramètres, boutique, recherche, modèles partagés et scanner QR
+- Visibilité améliorée en mode clair — arrière-plan du canevas séparé et contraste des bordures renforcé
+- Refonte des composants clés incluant les notifications in-app, la barre d'actions de sélection et les filtres de catégorie
+
+#### Système de dossiers
+'Poche' a été renommé en 'Dossier'.
+- Des noms appropriés sont automatiquement appliqués selon la langue
+- Édition en ligne du nom de dossier améliorée
+
+#### Édition d'objets
+Vous pouvez désormais modifier le contenu des objets après leur création.
+- Les propriétaires peuvent directement modifier et sauvegarder le contenu
+
+#### Flux conversationnel du chatbot
+Un système de guidage interactif basé sur JSON a été ajouté.
+- Créez des documents ou des modèles en suivant des conversations étape par étape
+- Interactions riches incluant des choix, une validation des entrées et des aperçus
+
+#### Duplication d'objets
+Dupliquez les objets sélectionnés pour créer rapidement des copies identiques.
+- Disponible depuis le mode de sélection de l'écran d'accueil et les écrans d'envoi/transfert
+- Compteur de clones (×n) affiché sur la superposition d'informations de l'objet, le compteur diminue automatiquement lors de la suppression
+
+#### Vérification de propriété des tampons et conversion en objet
+Vérifiez la propriété des tampons et transférez-les en tant qu'objets.
+- Confirmez l'authenticité du tampon avec des messages de vérification de propriété
+- Création rapide de tampons avec basculement en mode en ligne
+
+#### Refonte du mode de sélection
+La sélection d'objets et les opérations par lots sont désormais plus intuitives.
+- Sélection simplifiée avec basculement par simple touche
+- Exécutez l'envoi, la suppression et le verrouillage/déverrouillage directement depuis l'interface en ligne
+
+#### Refonte de l'écran des journaux
+Les journaux sont désormais regroupés et affichés par dossier.
+- Listes de journaux organisées par dossier avec de nouvelles animations
+- L'ancien système de journaux autonomes a été intégré aux journaux partagés
+
+#### Améliorations de la recherche et des filtres
+- Champ de recherche des tags partagés déplacé dans l'en-tête pour une meilleure accessibilité
+- Filtre de catégorie modifié en mode cases à cocher à sélection multiple
+
+#### Améliorations du système de mots-clés
+- Recherches plus rapides grâce à la mise en cache des mots-clés
+- Suppression des mots-clés restreinte à l'auteur original uniquement
+
+#### Améliorations des notifications
+- Appuyer sur la notification de réception d'objet ouvre désormais le panneau d'informations de l'objet
+- Délai de suppression automatique des toasts in-app modifié à 5 secondes
+- Correction des notifications manquantes d'acceptation/refus d'échange et d'acceptation de transfert
+
+#### Améliorations des commentaires
+- Bouton de copie ajouté au menu d'actions des commentaires
+- Support multilingue amélioré pour les textes de réponse
+
+#### Système de toast d'échange
+Les notifications d'échange sont désormais affichées dans un format visuel empilé.
+- Effet élastique en tirant vers le bas et support d'interaction par glissement
+
+#### Améliorations des performances
+- Bibliothèque du scanner QR mise à jour (réduction d'environ 55 Mo sur iOS)
+- Optimisation de la mémoire des Cloud Functions
+
+#### Fonctionnalités supprimées
+- La fonction de clip (regroupement) a été supprimée
+- Le menu de l'assistant a été supprimé de la barre de navigation inférieure
+
+#### Corrections de bugs
+- Correction du gel lors de l'initialisation de la caméra du scanner QR
+- Correction des problèmes de défilement et de focus lors de l'édition en ligne du nom de dossier
+- Correction du déclenchement erroné des animations lors du défilement des journaux
+- Correction du problème de journaux système générant des notifications inutiles
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.3.3 <small>2026-02-21</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

@@ -29,6 +29,94 @@ Consulta el historial de actualizaciones de la aplicación Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.4.0 <small>2026-03-01</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Diseño Glassmorphism + Droplet
+Toda la aplicación ha sido rediseñada con estilos glassmorphism y droplet.
+- Aplicado en todas las pantallas incluyendo inicio de sesión, ajustes, tienda, búsqueda, plantillas compartidas y escáner QR
+- Visibilidad mejorada en modo claro — fondo de lienzo separado y contraste de bordes reforzado
+- Rediseño de componentes clave como notificaciones en la app, barra de acciones de selección y filtros de categoría
+
+#### Sistema de carpetas
+'Bolsillo' ha sido renombrado a 'Carpeta'.
+- Se aplican automáticamente nombres apropiados según el idioma
+- Edición en línea del nombre de carpeta mejorada
+
+#### Edición de objetos
+Ahora puedes editar el contenido de los objetos después de crearlos.
+- Los propietarios pueden editar y guardar el contenido directamente
+
+#### Flujo conversacional del chatbot
+Se ha añadido un sistema de guía interactivo basado en JSON.
+- Crea documentos o plantillas siguiendo conversaciones paso a paso
+- Interacciones enriquecidas incluyendo opciones, validación de entrada y vistas previas
+
+#### Duplicación de objetos
+Duplica los objetos seleccionados para crear copias idénticas rápidamente.
+- Disponible desde el modo de selección de la pantalla principal y las pantallas de envío/transferencia
+- Recuento de clones (×n) mostrado en la superposición de información del objeto, el contador disminuye automáticamente al eliminar
+
+#### Verificación de propiedad de sellos e itemización
+Verifica la propiedad de sellos y transfiere sellos como objetos.
+- Confirma la autenticidad del sello con mensajes de verificación de propiedad
+- Creación rápida de sellos con cambio de modo en línea
+
+#### Renovación del modo de selección
+La selección de objetos y las operaciones por lotes son ahora más intuitivas.
+- Selección simplificada con alternancia de toque único
+- Ejecuta enviar, eliminar y bloquear/desbloquear directamente desde la interfaz en línea
+
+#### Renovación de la pantalla de registros
+Los registros ahora se agrupan y muestran por carpeta.
+- Listas de registros organizadas por carpeta con nuevas animaciones
+- El antiguo sistema de registros independientes se ha integrado en registros compartidos
+
+#### Mejoras en búsqueda y filtros
+- Campo de búsqueda de etiquetas compartidas movido al encabezado para mejor accesibilidad
+- Filtro de categoría cambiado a modo de casillas de verificación de selección múltiple
+
+#### Mejoras del sistema de palabras clave
+- Búsquedas más rápidas con caché de palabras clave
+- Eliminación de palabras clave restringida solo al autor original
+
+#### Mejoras en notificaciones
+- Tocar la notificación de recepción de objeto ahora abre el panel de información del objeto
+- Tiempo de descarte automático del toast en la app cambiado a 5 segundos
+- Corregidas notificaciones faltantes de aceptación/rechazo de intercambio y aceptación de transferencia
+
+#### Mejoras en comentarios
+- Botón de copiar añadido al menú de acciones de comentarios
+- Soporte multilingüe mejorado para textos de respuesta
+
+#### Sistema de toast de intercambio
+Las notificaciones de intercambio ahora se muestran en un formato visual apilado.
+- Efecto de banda elástica al tirar hacia abajo y soporte de interacción de arrastre
+
+#### Mejoras de rendimiento
+- Biblioteca del escáner QR actualizada (reducción de aproximadamente 55 MB en iOS)
+- Optimización de memoria de Cloud Functions
+
+#### Funciones eliminadas
+- Se ha eliminado la función de clip (agrupación)
+- Se ha eliminado el menú del asistente de la barra de navegación inferior
+
+#### Corrección de errores
+- Corregido el congelamiento al inicializar la cámara del escáner QR
+- Corregidos problemas de desplazamiento y enfoque durante la edición en línea del nombre de carpeta
+- Corregida la activación errónea de animaciones durante el desplazamiento de registros
+- Corregido el problema de registros del sistema que generaban notificaciones innecesarias
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.3.3 <small>2026-02-21</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

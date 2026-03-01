@@ -255,6 +255,8 @@ curl -H "Authorization: Bearer inv_xxx" \
         "imageUrl": "https://...",
         "commentMode": "independent",
         "allowComments": true,
+        "logPermission": "owner",
+        "keywordPermission": "owner",
         "allowEdit": false,
         "isSharing": false,
         "createdAt": "2025-01-01T00:00:00Z"
@@ -364,10 +366,11 @@ curl -X POST \
        "imageUrl": "https://example.com/image.png",
        "title": "模板标题",
        "content": "模板内容",
-       "commentMode": "independent",
-       "allowComments": true,
-       "allowEdit": true,
-       "keywords": ["product:laptop", "price:$1500000KRW$"]
+        "commentMode": "independent",
+        "logPermission": "owner",
+        "keywordPermission": "owner",
+        "allowEdit": true,
+        "keywords": ["product:laptop", "price:$1500000KRW$"]
      }' \
      "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates"
 ```
@@ -380,7 +383,9 @@ curl -X POST \
 | title | string | 是 | 标题（最多32个字符） |
 | content | string | 是 | 内容（最多1024个字符） |
 | commentMode | string | 否 | 评论模式："independent"或"shared" |
-| allowComments | boolean | X | 是否允许添加日志 (默认: true) |
+| ~~allowComments~~ | ~~boolean~~ | ~~X~~ | ~~是否允许添加日志~~ (deprecated: 已由`logPermission`替代) |
+| logPermission | string | 否 | 日志权限: "owner" \| "author" \| "none" (默认: "owner") |
+| keywordPermission | string | 否 | 关键词权限: "owner" \| "author" \| "none" (默认: "owner") |
 | allowEdit | boolean | X | 是否允许编辑 (默认: true) |
 | keywords | string[] | 否 | 关键词数组（最多128个） |
 | publishDate | string | 否 | 发布开始日期（ISO 8601） |

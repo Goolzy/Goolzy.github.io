@@ -29,6 +29,94 @@ Check out the update history for the Inventory app.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.4.0 <small>2026-03-01</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Glassmorphism + Droplet Design
+The entire app has been redesigned with glassmorphism and droplet styles.
+- Applied across all screens including login, settings, shop, search, shared templates, and QR scanner
+- Improved light mode visibility — separated canvas background and enhanced border contrast
+- Redesigned key components including in-app notifications, selection action bar, and category filters
+
+#### Folder System
+'Pocket' has been renamed to 'Folder'.
+- Locale-appropriate names are automatically applied per language
+- Improved inline folder name editing
+
+#### Item Editing
+You can now edit item content after creation.
+- Item owners can directly edit and save content
+
+#### Chatbot Conversational Flow
+A JSON-based interactive guidance system has been added.
+- Create documents or templates by following step-by-step conversations
+- Rich interactions including choices, input validation, and previews
+
+#### Item Duplication
+Duplicate selected items to quickly create identical copies.
+- Available from home screen selection mode and send/transfer screens
+- Clone count (xn) displayed on item info overlay, count decreases automatically on deletion
+
+#### Stamp Ownership Verification and Itemization
+Verify stamp ownership and transfer stamps as items.
+- Confirm stamp authenticity with ownership verification messages
+- Quick stamp creation with inline mode switching
+
+#### Selection Mode Overhaul
+Item selection and batch operations are now more intuitive.
+- Simplified selection with single-touch toggle
+- Execute send, delete, and lock/unlock directly from inline UI
+
+#### Log Screen Overhaul
+Logs are now grouped and displayed by folder.
+- Organized log lists by folder with new animations
+- Legacy standalone log system merged into shared logs
+
+#### Search and Filter Improvements
+- Shared tag search field moved to header for better accessibility
+- Category filter changed to multi-select checkbox mode
+
+#### Keyword System Improvements
+- Faster lookups with keyword caching
+- Keyword deletion restricted to original author only
+
+#### Notification Improvements
+- Tapping item receipt notification now opens the item info panel
+- In-app toast auto-dismiss time changed to 5 seconds
+- Fixed missing trade accept/reject and transfer acceptance notifications
+
+#### Comment Enhancements
+- Added copy button to comment action menu
+- Improved reply text multilingual support
+
+#### Trade Toast System
+Trade notifications are now displayed in a stacked visual format.
+- Pull-down rubber band effect and drag interaction support
+
+#### Performance Improvements
+- QR scanner library upgraded (approximately 55MB reduction on iOS)
+- Cloud Functions memory optimization
+
+#### Removed Features
+- Clip (bundling) feature has been removed
+- Wizard menu removed from bottom navigation bar
+
+#### Bug Fixes
+- Fixed freeze when initializing QR scanner camera
+- Fixed scroll and focus issues during inline folder name editing
+- Fixed animation misfiring during log scrolling
+- Fixed system logs triggering unnecessary notifications
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.3.3 <small>2026-02-21</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

@@ -255,6 +255,8 @@ curl -H "Authorization: Bearer inv_xxx" \
         "imageUrl": "https://...",
         "commentMode": "independent",
         "allowComments": true,
+        "logPermission": "owner",
+        "keywordPermission": "owner",
         "allowEdit": false,
         "isSharing": false,
         "createdAt": "2025-01-01T00:00:00Z"
@@ -364,10 +366,11 @@ curl -X POST \
        "imageUrl": "https://example.com/image.png",
        "title": "テンプレートタイトル",
        "content": "テンプレート内容",
-       "commentMode": "independent",
-       "allowComments": true,
-       "allowEdit": true,
-       "keywords": ["品名:ノートPC", "価格:$1500000JPY$"]
+        "commentMode": "independent",
+        "logPermission": "owner",
+        "keywordPermission": "owner",
+        "allowEdit": true,
+        "keywords": ["品名:ノートPC", "価格:$1500000JPY$"]
      }' \
      "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates"
 ```
@@ -380,7 +383,9 @@ curl -X POST \
 | title | string | ○ | タイトル（最大32文字） |
 | content | string | ○ | 内容（最大1024文字） |
 | commentMode | string | - | コメントモード: "independent" または "shared" |
-| allowComments | boolean | X | ログ追加可能かどうか (デフォルト: true) |
+| ~~allowComments~~ | ~~boolean~~ | ~~X~~ | ~~ログ追加可能かどうか~~ (deprecated: `logPermission`に置き換え) |
+| logPermission | string | - | ログ権限: "owner" \| "author" \| "none" (デフォルト: "owner") |
+| keywordPermission | string | - | キーワード権限: "owner" \| "author" \| "none" (デフォルト: "owner") |
 | allowEdit | boolean | X | 編集可能かどうか (デフォルト: true) |
 | keywords | string[] | - | キーワード配列（最大128個） |
 | publishDate | string | - | 公開開始日（ISO 8601） |

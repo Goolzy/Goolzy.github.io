@@ -29,6 +29,94 @@ Sehen Sie sich den Update-Verlauf der Inventory-App an.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.4.0 <small>2026-03-01</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopieren">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Glassmorphismus + Droplet-Design
+Die gesamte App wurde mit Glassmorphismus und Droplet-Stilen komplett neu gestaltet.
+- Angewendet auf alle Bildschirme einschließlich Login, Einstellungen, Shop, Suche, geteilte Vorlagen und QR-Scanner
+- Verbesserte Sichtbarkeit im hellen Modus — getrennte Canvas-Hintergründe und verstärkter Rahmenkontrast
+- Neugestaltung wichtiger Komponenten wie In-App-Benachrichtigungen, Auswahl-Aktionsleiste und Kategoriefilter
+
+#### Ordnersystem
+'Tasche' wurde in 'Ordner' umbenannt.
+- Sprachgerechte Bezeichnungen werden automatisch angewendet
+- Verbesserte Inline-Bearbeitung von Ordnernamen
+
+#### Gegenstandsbearbeitung
+Gegenstandsinhalte können jetzt auch nach der Erstellung bearbeitet werden.
+- Gegenstandsbesitzer können Inhalte direkt bearbeiten und speichern
+
+#### Chatbot-Dialogfluss
+Ein JSON-basiertes interaktives Leitsystem wurde hinzugefügt.
+- Erstellen Sie Dokumente oder Vorlagen durch schrittweise Konversationen
+- Umfangreiche Interaktionen einschließlich Auswahlmöglichkeiten, Eingabevalidierung und Vorschauen
+
+#### Gegenstandsduplizierung
+Duplizieren Sie ausgewählte Gegenstände, um schnell identische Kopien zu erstellen.
+- Verfügbar im Auswahlmodus des Startbildschirms und auf Sende-/Übertragungsbildschirmen
+- Duplikatanzahl (×n) wird im Gegenstandsinfo-Overlay angezeigt, Zähler verringert sich automatisch beim Löschen
+
+#### Stempel-Eigentumsverifizierung und Gegenstandisierung
+Überprüfen Sie das Stempel-Eigentum und übertragen Sie Stempel als Gegenstände.
+- Bestätigen Sie die Stempel-Authentizität mit Eigentumsverifizierungsnachrichten
+- Schnelle Stempel-Erstellung mit Inline-Modus-Umschaltung
+
+#### Auswahlmodus-Überarbeitung
+Gegenstandsauswahl und Stapeloperationen sind jetzt intuitiver.
+- Vereinfachte Auswahl mit Einzelberührungs-Umschaltung
+- Senden, Löschen und Sperren/Entsperren direkt über die Inline-Benutzeroberfläche
+
+#### Protokollbildschirm-Überarbeitung
+Protokolle werden jetzt nach Ordnern gruppiert angezeigt.
+- Nach Ordnern sortierte Protokolllisten mit neuen Animationen
+- Altes eigenständiges Protokollsystem in geteilte Protokolle integriert
+
+#### Such- und Filterverbesserungen
+- Geteiltes Tag-Suchfeld in die Kopfzeile verschoben für bessere Erreichbarkeit
+- Kategoriefilter auf Mehrfachauswahl-Kontrollkästchen umgestellt
+
+#### Schlüsselwort-Systemverbesserungen
+- Schnellere Abfragen durch Schlüsselwort-Caching
+- Schlüsselwort-Löschung auf den Originalautor beschränkt
+
+#### Benachrichtigungsverbesserungen
+- Beim Tippen auf Gegenstandsempfangsbenachrichtigungen öffnet sich das Gegenstandsinfo-Panel
+- Automatische Ausblendzeit der In-App-Toast-Nachrichten auf 5 Sekunden geändert
+- Fehlende Handels-Annahme/Ablehnungs- und Übertragungsannahme-Benachrichtigungen behoben
+
+#### Kommentar-Verbesserungen
+- Kopier-Schaltfläche zum Kommentar-Aktionsmenü hinzugefügt
+- Verbesserte mehrsprachige Unterstützung für Antworttexte
+
+#### Handels-Toast-System
+Handelsbenachrichtigungen werden jetzt in einem gestapelten visuellen Format angezeigt.
+- Pull-Down-Gummiband-Effekt und Drag-Interaktion-Unterstützung
+
+#### Leistungsverbesserungen
+- QR-Scanner-Bibliothek aktualisiert (etwa 55 MB Reduktion auf iOS)
+- Cloud Functions Speicheroptimierung
+
+#### Entfernte Funktionen
+- Clip-Funktion (Bündelung) wurde entfernt
+- Assistentenmenü aus der unteren Navigationsleiste entfernt
+
+#### Fehlerbehebungen
+- Einfrieren bei der Initialisierung der QR-Scanner-Kamera behoben
+- Scroll- und Fokusprobleme bei der Inline-Bearbeitung von Ordnernamen behoben
+- Fehlerhafte Animationsauslösung beim Protokoll-Scrollen behoben
+- Problem behoben, bei dem Systemprotokolle unnötige Benachrichtigungen auslösten
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.3.3 <small>2026-02-21</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopieren">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

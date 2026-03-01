@@ -202,10 +202,11 @@ curl -X POST \
        "imageUrl": "https://example.com/image.png",
        "title": "Titulo de plantilla",
        "content": "Contenido de plantilla",
-       "commentMode": "independent",
-       "allowComments": true,
-       "allowEdit": true,
-       "keywords": ["producto:laptop", "precio:$1500EUR$"]
+        "commentMode": "independent",
+        "logPermission": "owner",
+        "keywordPermission": "owner",
+        "allowEdit": true,
+        "keywords": ["producto:laptop", "precio:$1500EUR$"]
      }' \
      "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates"
 ```
@@ -218,7 +219,9 @@ curl -X POST \
 | title | string | Si | Titulo (max 32 caracteres) |
 | content | string | Si | Contenido (max 1024 caracteres) |
 | commentMode | string | No | Modo comentario: "independent" o "shared" |
-| allowComments | boolean | X | Permitir agregar registros (predeterminado: true) |
+| ~~allowComments~~ | ~~boolean~~ | ~~X~~ | ~~Permitir agregar registros~~ (deprecated: reemplazado por `logPermission`) |
+| logPermission | string | No | Permiso de registro: "owner" \| "author" \| "none" (predeterminado: "owner") |
+| keywordPermission | string | No | Permiso de palabra clave: "owner" \| "author" \| "none" (predeterminado: "owner") |
 | allowEdit | boolean | X | Permitir edición (predeterminado: true) |
 | keywords | string[] | No | Array de palabras clave (max 128) |
 
