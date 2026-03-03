@@ -236,7 +236,7 @@ translations:
 <li><code>(テキスト)</code> - サブカラーテキスト</li>
 <li><code>"テキスト"</code> - 太字</li>
 <li><code>'テキスト'</code> - 下線</li>
-<li><code>!テキスト!</code> - 取り消し線</li>
+<li><code>&lt;テキスト&gt;</code> - 取り消し線</li>
 </ul>
 スタイルは最大3段階までネスト可能です。同じキーを複数回使用すると<code>以前の値 → 新しい値</code>形式で比較表示されます。
 </div>

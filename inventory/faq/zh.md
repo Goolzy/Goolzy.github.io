@@ -236,7 +236,7 @@ translations:
 <li><code>(文本)</code> - 副色文本</li>
 <li><code>"文本"</code> - 粗体</li>
 <li><code>'文本'</code> - 下划线</li>
-<li><code>!文本!</code> - 删除线</li>
+<li><code>&lt;文本&gt;</code> - 删除线</li>
 </ul>
 样式最多可嵌套3层。多次使用相同的键名将显示为<code>之前的值 → 新值</code>对比形式。
 </div>

@@ -416,7 +416,7 @@ Usar la misma clave múltiples veces muestra `valor anterior → nuevo valor`.
 | `(texto)` | Texto color secundario | `(Info adicional)` |
 | `"texto"` | **Negrita** | `"Contenido importante"` |
 | `'texto'` | <u>Subrayado</u> | `'Parte destacada'` |
-| `!texto!` | ~~Tachado~~ | `!Contenido eliminado!` |
+| `<texto>` | ~~Tachado~~ | `<Contenido eliminado>` |
 
 > 💡 Los estilos se pueden anidar hasta 3 niveles. Ejemplo: `{["Negrita color principal"]}`
 

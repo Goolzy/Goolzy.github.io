@@ -416,7 +416,7 @@ Użycie tego samego klucza wiele razy wyświetla jako porównanie `poprzednia wa
 | `(tekst)` | Tekst koloru pomocniczego | `(Dodatkowe informacje)` |
 | `"tekst"` | **Pogrubienie** | `"Ważna zawartość"` |
 | `'tekst'` | <u>Podkreślenie</u> | `'Wyróżniona część'` |
-| `!tekst!` | ~~Przekreślenie~~ | `!Usunięta zawartość!` |
+| `<tekst>` | ~~Przekreślenie~~ | `<Usunięta zawartość>` |
 
 > 💡 Style mogą być zagnieżdżone do 3 poziomów. Przykład: `{["Pogrubienie głównego koloru"]}`
 

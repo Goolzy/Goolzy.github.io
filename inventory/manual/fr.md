@@ -416,7 +416,7 @@ Utiliser la même clé plusieurs fois affiche `ancienne valeur → nouvelle vale
 | `(texte)` | Texte couleur secondaire | `(Info supplémentaire)` |
 | `"texte"` | **Gras** | `"Contenu important"` |
 | `'texte'` | <u>Souligné</u> | `'Partie mise en évidence'` |
-| `!texte!` | ~~Barré~~ | `!Contenu supprimé!` |
+| `<texte>` | ~~Barré~~ | `<Contenu supprimé>` |
 
 > 💡 Les styles peuvent être imbriqués jusqu'à 3 niveaux. Exemple : `{["Gras couleur principale"]}`
 

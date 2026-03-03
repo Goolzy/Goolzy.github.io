@@ -416,7 +416,7 @@ translations:
 | `(text)` | نص لون فرعي | `(Additional info)` |
 | `"text"` | **غامق** | `"Important content"` |
 | `'text'` | <u>تسطير</u> | `'Highlighted part'` |
-| `!text!` | ~~يمر من الوسط~~ | `!Deleted content!` |
+| `<text>` | ~~يمر من الوسط~~ | `<Deleted content>` |
 
 > 💡 يمكن دمج الأنماط حتى 3 مستويات. مثال: `{["Bold main color"]}`
 

@@ -236,7 +236,7 @@ La duplication consomme 1 Papier et crée un nouvel objet avec le même modèle.
 <li><code>(texte)</code> - Texte couleur secondaire</li>
 <li><code>"texte"</code> - Gras</li>
 <li><code>'texte'</code> - Souligné</li>
-<li><code>!texte!</code> - Barré</li>
+<li><code>&lt;texte&gt;</code> - Barré</li>
 </ul>
 Les styles peuvent être imbriqués jusqu'à 3 niveaux. Utiliser la même clé plusieurs fois affiche <code>ancienne valeur → nouvelle valeur</code>.
 </div>

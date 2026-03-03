@@ -416,7 +416,7 @@ Sử dụng cùng một khóa nhiều lần để hiển thị dưới dạng `g
 | `(text)` | Văn Bản Màu Phụ | `(Additional info)` |
 | `"text"` | **Đậm** | `"Important content"` |
 | `'text'` | <u>Gạch Dưới</u> | `'Highlighted part'` |
-| `!text!` | ~~Gạch Ngang~~ | `!Deleted content!` |
+| `<text>` | ~~Gạch Ngang~~ | `<Deleted content>` |
 
 > 💡 Các kiểu có thể được lồng sâu tối đa 3 cấp độ. Ví Dụ: `{["Bold main color"]}`
 

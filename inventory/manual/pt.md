@@ -416,7 +416,7 @@ Usar a mesma chave múltiplas vezes exibe `valor anterior → novo valor`.
 | `(texto)` | Texto cor secundária | `(Info adicional)` |
 | `"texto"` | **Negrito** | `"Conteúdo importante"` |
 | `'texto'` | <u>Sublinhado</u> | `'Parte destacada'` |
-| `!texto!` | ~~Tachado~~ | `!Conteúdo excluído!` |
+| `<texto>` | ~~Tachado~~ | `<Conteúdo excluído>` |
 
 > 💡 Estilos podem ser aninhados até 3 níveis. Exemplo: `{["Negrito cor principal"]}`
 

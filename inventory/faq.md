@@ -280,7 +280,7 @@ translations:
 <li><code>(텍스트)</code> - 서브 색상 텍스트</li>
 <li><code>"텍스트"</code> - 굵게</li>
 <li><code>'텍스트'</code> - 밑줄</li>
-<li><code>!텍스트!</code> - 취소선</li>
+<li><code>&lt;텍스트&gt;</code> - 취소선</li>
 </ul>
 스타일은 최대 3단계까지 중첩 가능합니다. 같은 키를 여러 번 사용하면 <code>이전값 → 새값</code> 형태로 비교 표시됩니다.
 </div>

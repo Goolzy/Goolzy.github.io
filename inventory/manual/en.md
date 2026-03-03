@@ -416,7 +416,7 @@ Using the same key multiple times displays as `previous value → new value` com
 | `(text)` | Sub color text | `(Additional info)` |
 | `"text"` | **Bold** | `"Important content"` |
 | `'text'` | <u>Underline</u> | `'Highlighted part'` |
-| `!text!` | ~~Strikethrough~~ | `!Deleted content!` |
+| `<text>` | ~~Strikethrough~~ | `<Deleted content>` |
 
 > 💡 Styles can be nested up to 3 levels. Example: `{["Bold main color"]}`
 

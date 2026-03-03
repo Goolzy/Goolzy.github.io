@@ -416,7 +416,7 @@ Menggunakan kunci yang sama beberapa kali ditampilkan sebagai `nilai sebelumnya 
 | `(text)` | Teks warna sub | `(Informasi tambahan)` |
 | `"text"` | **Tebal** | `"Konten penting"` |
 | `'text'` | <u>Garis bawah</u> | `'Bagian yang disorot'` |
-| `!text!` | ~~Strikethrough~~ | `!Konten yang dihapus!` |
+| `<text>` | ~~Strikethrough~~ | `<Konten yang dihapus>` |
 
 > 💡 Gaya dapat disarangkan hingga 3 level. Contoh: `{["Tebal warna utama"]}`
 

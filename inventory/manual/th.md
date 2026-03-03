@@ -416,7 +416,7 @@ Clip อนุญาตให้คุณจัดการเอกสารท
 | `(text)` | ข้อความสีรอง | `(Additional info)` |
 | `"text"` | **ตัวหนา** | `"Important content"` |
 | `'text'` | <u>ขีดเส้นใต้</u> | `'Highlighted part'` |
-| `!text!` | ~~ขีดฆ่า~~ | `!Deleted content!` |
+| `<text>` | ~~ขีดฆ่า~~ | `<Deleted content>` |
 
 > 💡 สไตล์สามารถซ้อนกันได้สูงสุด 3 ระดับ ตัวอย่าง: `{["Bold main color"]}`
 

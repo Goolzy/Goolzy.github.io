@@ -416,7 +416,7 @@ Mehrfache Verwendung desselben Schlüssels zeigt `vorheriger Wert → neuer Wert
 | `(Text)` | Nebenfarbe-Text | `(Zusatzinfo)` |
 | `"Text"` | **Fett** | `"Wichtiger Inhalt"` |
 | `'Text'` | <u>Unterstrichen</u> | `'Hervorgehobener Teil'` |
-| `!Text!` | ~~Durchgestrichen~~ | `!Gelöschter Inhalt!` |
+| `<Text>` | ~~Durchgestrichen~~ | `<Gelöschter Inhalt>` |
 
 > 💡 Stile können bis zu 3 Ebenen verschachtelt werden. Beispiel: `{["Fett Hauptfarbe"]}`
 
