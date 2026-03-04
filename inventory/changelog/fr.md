@@ -37,113 +37,119 @@ Consultez l'historique des mises à jour de l'application Inventory.
 </summary>
 <div class="version-content" markdown="1">
 
-#### Design Glassmorphisme + Droplet
-L'ensemble de l'application a été entièrement repensé avec des styles glassmorphisme et droplet.
+#### Système de design hybride à 3 couches
+L'ensemble de l'application dispose désormais d'un système de design à 3 couches : neumorphique + glassmorphisme + droplet.
 - Appliqué à tous les écrans y compris connexion, paramètres, boutique, recherche, modèles partagés et scanner QR
 - Visibilité améliorée en mode clair — arrière-plan du canevas séparé et contraste des bordures renforcé
 - Refonte des composants clés incluant les notifications in-app, la barre d'actions de sélection et les filtres de catégorie
 
-#### Système de dossiers
-'Poche' a été renommé en 'Dossier'.
-- Des noms appropriés sont automatiquement appliqués selon la langue
-- Édition en ligne du nom de dossier améliorée
-
-#### Édition d'objets
-Vous pouvez désormais modifier le contenu des objets après leur création.
-- Les propriétaires peuvent directement modifier et sauvegarder le contenu
+#### Effets sonores et retour haptique
+Des effets sonores et un retour haptique ont été ajoutés à 19 interactions.
+- Réponses auditives et tactiles pour les actions clés comme les boutons, les glissements et les transitions
 
 #### Flux conversationnel du chatbot
 Un système de guidage interactif basé sur JSON a été ajouté.
 - Créez des documents ou des modèles en suivant des conversations étape par étape
 - Interactions riches incluant des choix, une validation des entrées et des aperçus
 
-#### Duplication d'objets
-Dupliquez les objets sélectionnés pour créer rapidement des copies identiques.
-- Disponible depuis le mode de sélection de l'écran d'accueil et les écrans d'envoi/transfert
-- Compteur de clones (×n) affiché sur la superposition d'informations de l'objet, le compteur diminue automatiquement lors de la suppression
-
 #### Vérification de propriété des tampons et conversion en objet
 Vérifiez la propriété des tampons et transférez-les en tant qu'objets.
 - Confirmez l'authenticité du tampon avec des messages de vérification de propriété
 - Création rapide de tampons avec basculement en mode en ligne
 
+#### Système de mots-clés
+Infrastructure de cache de mots-clés construite avec ajout de Cloud Functions de suppression/construction.
+- Recherches plus rapides grâce à la mise en cache des mots-clés
+- Suppression des mots-clés restreinte à l'auteur original uniquement
+- Les suppressions et modifications de mots-clés sont automatiquement synchronisées dans les tampons, modèles partagés et éléments dupliqués
+
+#### Édition d'objets
+Vous pouvez désormais modifier le contenu des objets après leur création.
+- Les propriétaires peuvent directement modifier et sauvegarder le contenu
+
+#### Duplication d'objets
+Dupliquez les objets sélectionnés pour créer rapidement des copies identiques.
+- Disponible depuis le mode de sélection de l'écran d'accueil et les écrans d'envoi/transfert
+- Compteur de clones (×n) affiché sur la superposition d'informations de l'objet, le compteur diminue automatiquement lors de la suppression
+
+#### Overlay de détails des modèles partagés
+Consultez les informations détaillées, les statistiques, l'édition des mots-clés et les paramètres de partage des modèles partagés en un coup d'oeil.
+- Taille adaptative pour différentes tailles d'écran
+
+#### Refonte du menu d'échange
+Le menu d'échange est passé du menu hamburger à l'icône d'engrenage.
+- Les notifications d'échange sont affichées dans un système de toast empilé
+- Effet élastique en tirant vers le bas et support d'interaction par glissement
+
+#### Chargement prioritaire du cache des annonces de boutique
+Les annonces de boutique sont désormais chargées en priorité depuis le cache pour un affichage plus rapide.
+
+#### Bascule d'ajout de journal à la création d'objet
+Lors de la création d'un objet, configurez si les journaux peuvent être ajoutés avec la bascule « Autoriser l'ajout de journal ».
+
+#### Cache de position de défilement
+La position de défilement précédente est automatiquement restaurée lors du retour à un écran.
+
+#### Système de dossiers
+'Poche' a été renommé en 'Dossier'.
+- Des noms appropriés sont automatiquement appliqués selon la langue (nommage basé sur les paramètres régionaux)
+- Édition en ligne du nom de dossier améliorée
+
+#### Changement de l'ordre des onglets inférieurs
+L'ordre des onglets de navigation inférieure a été réorganisé et HomeTab a été refactorisé.
+
+#### Améliorations de la recherche et des filtres
+- Filtre de catégorie modifié en mode cases à cocher à sélection multiple
+- Vue en grille avec calcul dynamique des colonnes et texte de l'élément toujours affiché
+
 #### Refonte du mode de sélection
 La sélection d'objets et les opérations par lots sont désormais plus intuitives.
 - Sélection simplifiée avec basculement par simple touche
-- Exécutez l'envoi, la suppression et le verrouillage/déverrouillage directement depuis l'interface en ligne
-
-#### Refonte de l'écran des journaux
-Les journaux sont désormais regroupés et affichés par dossier.
-- Listes de journaux organisées par dossier avec de nouvelles animations
-- L'ancien système de journaux autonomes a été intégré aux journaux partagés
-
-#### Améliorations de la recherche et des filtres
-- Champ de recherche des tags partagés déplacé dans l'en-tête pour une meilleure accessibilité
-- Filtre de catégorie modifié en mode cases à cocher à sélection multiple
-
-#### Améliorations du système de mots-clés
-- Recherches plus rapides grâce à la mise en cache des mots-clés
-- Suppression des mots-clés restreinte à l'auteur original uniquement
+- Contour de sélection supprimé pour une interface plus épurée
+- Interface en ligne de verrouillage/déverrouillage entièrement remaniée
 
 #### Améliorations des notifications
 - Appuyer sur la notification de réception d'objet ouvre désormais le panneau d'informations de l'objet
 - Délai de suppression automatique des toasts in-app modifié à 5 secondes
 - Correction des notifications manquantes d'acceptation/refus d'échange et d'acceptation de transfert
 
+#### Refonte de l'écran des journaux
+Les journaux sont désormais regroupés et affichés par dossier.
+- Listes de journaux organisées par dossier avec de nouvelles animations
+- Écran d'orientation pour les nouveaux utilisateurs sans journaux
+
 #### Améliorations des commentaires
 - Bouton de copie ajouté au menu d'actions des commentaires
 - Support multilingue amélioré pour les textes de réponse
 
-#### Système de toast d'échange
-Les notifications d'échange sont désormais affichées dans un format visuel empilé.
-- Effet élastique en tirant vers le bas et support d'interaction par glissement
+#### Changement du marqueur barré dans le texte enrichi
+Le marqueur de texte barré a été changé des points d'exclamation (!!) aux chevrons (<>).
+
+#### Amélioration du flux de création de tampons du chatbot
+Le flux conversationnel de création de tampons a été entièrement réécrit.
+- Flux de conversation plus naturel et expérience utilisateur améliorée
 
 #### Améliorations des performances
+- Remplacement complet de CachedNetworkImage et optimisation du rebuild avec context.select
 - Bibliothèque du scanner QR mise à jour (réduction d'environ 55 Mo sur iOS)
 - Optimisation de la mémoire des Cloud Functions
 
 #### Fonctionnalités supprimées
-- La fonction de clip (regroupement) a été supprimée
-- Le menu de l'assistant a été supprimé de la barre de navigation inférieure
+- Fonction de clip (regroupement) d'objets entièrement supprimée
+- Système de journaux autonomes supprimé — intégré aux journaux partagés
+- Widget de notifications hérité supprimé
+- Menu de l'assistant supprimé de la barre de navigation inférieure
 
 #### Corrections de bugs
+- Correction du crash Firestore IllegalState lors de la sélection d'objets sur bureau
 - Correction du gel lors de l'initialisation de la caméra du scanner QR
-- Correction des problèmes de défilement et de focus lors de l'édition en ligne du nom de dossier
+- Correction du bouton d'achat désactivé n'affichant pas l'état visuel désactivé dans la boutique
+- Correction du style droplet non appliqué à la barre de recherche lors de la sélection de tags populaires/récents
+- Correction de la notification in-app manquante lors de l'acceptation du transfert d'objet
+- Correction des notifications d'acceptation/refus d'échange non envoyées
+- Correction des bugs de défilement et de clavier lors de l'édition en ligne du nom de dossier
 - Correction du déclenchement erroné des animations lors du défilement des journaux
-- Correction du problème de journaux système générant des notifications inutiles
-
-#### Overlay de details des modeles partages
-Consultez les informations detaillees, les statistiques, l'edition des mots-cles et les parametres de partage des modeles partages en un coup d'oeil.
-- Taille adaptative pour differentes tailles d'ecran
-
-#### Amelioration du flux de creation de tampons du chatbot
-Le flux conversationnel de creation de tampons a ete entierement reecrit.
-- Flux de conversation plus naturel et experience utilisateur amelioree
-
-#### Synchronisation des mots-cles renforcee
-Les suppressions et modifications de mots-cles sont automatiquement refletes dans les tampons, modeles partages et elements dupliques.
-
-#### Ameliorations de la vue en grille
-Le nombre de colonnes est automatiquement calcule en fonction de la taille de l'ecran et le texte de l'element est toujours affiche.
-
-#### Ameliorations de l'en-tete de recherche avancee
-L'interface de l'en-tete de recherche avancee d'elements a ete amelioree.
-
-#### Changement de l'ordre des onglets de navigation inferieure
-L'ordre des onglets de navigation inferieure a ete reorganise.
-
-#### Guide initial de l'onglet journal
-Un ecran d'orientation est affiche pour les nouveaux utilisateurs sans journaux.
-
-#### Changement du marqueur barre dans le texte enrichi
-Le marqueur de texte barre a ete change des points d'exclamation (!!) aux chevrons (<>).
-
-#### Corrections de bugs supplementaires
-- Correction du bouton d'achat desactive n'affichant pas l'etat visuel desactive dans la boutique
-- Correction du style droplet non applique a la barre de recherche lors de la selection de tags populaires/recents
-- Correction de la couleur d'etiquette du dialogue de parametres de partage ne suivant pas le theme
-- Correction de l'echec d'authentification Windows Store
-- Correction de l'effet de tremblement applique a tous les elements au lieu des documents termines uniquement
+- Correction de l'échec d'authentification Windows Store (TLS + spinner infini)
 
 </div>
 </details>

@@ -37,111 +37,119 @@ Confira o histórico de atualizações do aplicativo Inventory.
 </summary>
 <div class="version-content" markdown="1">
 
-#### Design Glassmorfismo + Droplet
-Todo o aplicativo foi completamente redesenhado com estilos glassmorfismo e droplet.
+#### Sistema de design híbrido de 3 camadas
+Todo o aplicativo agora conta com um sistema de design de 3 camadas: neumórfico + glassmorfismo + droplet.
 - Aplicado em todas as telas incluindo login, configurações, loja, pesquisa, modelos compartilhados e scanner QR
 - Visibilidade melhorada no modo claro — fundo do canvas separado e contraste de bordas reforçado
 - Redesenho de componentes-chave incluindo notificações no app, barra de ações de seleção e filtros de categoria
 
-#### Sistema de pastas
-'Bolso' foi renomeado para 'Pasta'.
-- Nomes apropriados são automaticamente aplicados conforme o idioma
-- Edição inline do nome da pasta melhorada
-
-#### Edição de itens
-Agora você pode editar o conteúdo dos itens após a criação.
-- Proprietários podem editar e salvar o conteúdo diretamente
+#### Efeitos sonoros e feedback háptico
+Efeitos sonoros e feedback háptico foram adicionados a 19 interações.
+- Respostas auditivas e táteis para ações-chave como botões, deslizamentos e transições
 
 #### Fluxo conversacional do chatbot
 Um sistema de orientação interativo baseado em JSON foi adicionado.
 - Crie documentos ou modelos seguindo conversas passo a passo
 - Interações ricas incluindo opções, validação de entrada e visualizações prévias
 
-#### Duplicação de itens
-Duplique os itens selecionados para criar cópias idênticas rapidamente.
-- Disponível no modo de seleção da tela inicial e nas telas de envio/transferência
-- Contagem de clones (×n) exibida na sobreposição de informações do item, o contador diminui automaticamente ao excluir
-
 #### Verificação de propriedade de carimbos e conversão em item
 Verifique a propriedade dos carimbos e transfira-os como itens.
 - Confirme a autenticidade do carimbo com mensagens de verificação de propriedade
 - Criação rápida de carimbos com alternância de modo inline
 
+#### Sistema de palavras-chave
+Infraestrutura de cache de palavras-chave construída com Cloud Functions de exclusão/construção adicionadas.
+- Buscas mais rápidas com cache de palavras-chave
+- Exclusão de palavras-chave restrita apenas ao autor original
+- Exclusões e alterações de palavras-chave sincronizadas automaticamente em carimbos, modelos compartilhados e itens duplicados
+
+#### Edição de itens
+Agora você pode editar o conteúdo dos itens após a criação.
+- Proprietários podem editar e salvar o conteúdo diretamente
+
+#### Duplicação de itens
+Duplique os itens selecionados para criar cópias idênticas rapidamente.
+- Disponível no modo de seleção da tela inicial e nas telas de envio/transferência
+- Contagem de clones (×n) exibida na sobreposição de informações do item, o contador diminui automaticamente ao excluir
+
+#### Overlay de detalhes de modelos compartilhados
+Visualize informações detalhadas, estatísticas, edição de palavras-chave e configurações de compartilhamento de modelos compartilhados de uma só vez.
+- Tamanho responsivo para diferentes tamanhos de tela
+
+#### Reformulação do menu de troca
+O menu de troca mudou do menu hamburger para o ícone de engrenagem.
+- Notificações de troca exibidas em um sistema de toast empilhado
+- Efeito elástico ao puxar para baixo e suporte à interação de arrasto
+
+#### Carregamento prioritário do cache de anúncios da loja
+Os anúncios da loja agora são carregados com prioridade do cache para exibição mais rápida.
+
+#### Interruptor de adição de registro na criação de itens
+Ao criar um item, configure se registros podem ser adicionados com o interruptor "Permitir adição de registro".
+
+#### Cache de posição de rolagem
+A posição de rolagem anterior é automaticamente restaurada ao retornar a uma tela.
+
+#### Sistema de pastas
+'Bolso' foi renomeado para 'Pasta'.
+- Nomes apropriados são automaticamente aplicados conforme o idioma (nomeação baseada em locale)
+- Edição inline do nome da pasta melhorada
+
+#### Alteração na ordem das abas inferiores
+A ordem das abas de navegação inferior foi reorganizada e HomeTab foi refatorado.
+
+#### Melhorias na pesquisa e filtros
+- Filtro de categoria alterado para modo de caixas de seleção múltipla
+- Visualização em grade com cálculo dinâmico de colunas e texto do item sempre visível
+
 #### Reformulação do modo de seleção
 A seleção de itens e operações em lote agora são mais intuitivas.
 - Seleção simplificada com alternância por toque único
-- Execute enviar, excluir e bloquear/desbloquear diretamente da interface inline
-
-#### Reformulação da tela de registros
-Os registros agora são agrupados e exibidos por pasta.
-- Listas de registros organizadas por pasta com novas animações
-- O antigo sistema de registros independentes foi integrado aos registros compartilhados
-
-#### Melhorias na pesquisa e filtros
-- Campo de pesquisa de tags compartilhados movido para o cabeçalho para melhor acessibilidade
-- Filtro de categoria alterado para modo de caixas de seleção múltipla
-
-#### Melhorias no sistema de palavras-chave
-- Buscas mais rápidas com cache de palavras-chave
-- Exclusão de palavras-chave restrita apenas ao autor original
+- Contorno de seleção removido para interface mais limpa
+- Interface inline de bloqueio/desbloqueio completamente reformulada
 
 #### Melhorias nas notificações
 - Tocar na notificação de recebimento de item agora abre o painel de informações do item
 - Tempo de descarte automático do toast no app alterado para 5 segundos
 - Corrigidas notificações ausentes de aceitação/rejeição de troca e aceitação de transferência
 
+#### Reformulação da tela de registros
+Os registros agora são agrupados e exibidos por pasta.
+- Listas de registros organizadas por pasta com novas animações
+- Tela de orientação para novos usuários sem registros
+
 #### Melhorias nos comentários
 - Botão de copiar adicionado ao menu de ações de comentários
 - Suporte multilíngue melhorado para textos de resposta
 
-#### Sistema de toast de troca
-As notificações de troca agora são exibidas em um formato visual empilhado.
-- Efeito elástico ao puxar para baixo e suporte à interação de arrasto
+#### Alteração do marcador de tachado em texto rico
+O marcador de tachado foi alterado de pontos de exclamação (!!) para colchetes angulares (<>).
+
+#### Melhoria do fluxo de criação de carimbos do chatbot
+O fluxo conversacional de criação de carimbos foi completamente reescrito.
+- Fluxo de conversa mais natural e experiência do usuário aprimorada
 
 #### Melhorias de desempenho
+- Substituição completa do CachedNetworkImage e otimização de rebuild com context.select
 - Biblioteca do scanner QR atualizada (redução de aproximadamente 55 MB no iOS)
 - Otimização de memória do Cloud Functions
 
 #### Funcionalidades removidas
-- A função de clip (agrupamento) foi removida
-- O menu do assistente foi removido da barra de navegação inferior
-
-#### Overlay de detalhes de modelos compartilhados
-Visualize informacoes detalhadas, estatisticas, edicao de palavras-chave e configuracoes de compartilhamento de modelos compartilhados de uma so vez.
-- Tamanho responsivo para diferentes tamanhos de tela
-
-#### Melhoria do fluxo de criacao de carimbos do chatbot
-O fluxo conversacional de criacao de carimbos foi completamente reescrito.
-- Fluxo de conversa mais natural e experiencia do usuario aprimorada
-
-#### Sincronizacao de palavras-chave aprimorada
-Exclusoes e alteracoes de palavras-chave sao automaticamente refletidas em carimbos, modelos compartilhados e itens duplicados.
-
-#### Melhorias na visualizacao em grade
-O numero de colunas e calculado automaticamente com base no tamanho da tela e o texto do item e sempre exibido.
-
-#### Melhorias no cabecalho de pesquisa avancada
-A interface do cabecalho de pesquisa avancada de itens foi aprimorada.
-
-#### Alteracao na ordem das abas de navegacao inferior
-A ordem das abas de navegacao inferior foi reorganizada.
-
-#### Orientacao inicial da aba de registros
-Uma tela de orientacao e exibida para novos usuarios sem registros.
-
-#### Alteracao do marcador de tachado em texto rico
-O marcador de tachado foi alterado de pontos de exclamacao (!!) para colchetes angulares (<>).
+- Função de clip (agrupamento) de itens completamente removida
+- Sistema de registros independentes removido — integrado aos registros compartilhados
+- Widget de notificações legado removido
+- Menu do assistente removido da barra de navegação inferior
 
 #### Correções de bugs
+- Corrigido o crash Firestore IllegalState ao selecionar itens no desktop
 - Corrigido o congelamento ao inicializar a câmera do scanner QR
-- Corrigidos problemas de rolagem e foco durante a edição inline do nome da pasta
+- Corrigido botão de compra desabilitado que não mostrava o estado visual desabilitado na loja
+- Corrigido estilo droplet não aplicado à barra de pesquisa ao selecionar tags populares/recentes
+- Corrigida notificação no app ausente ao aceitar transferência de item
+- Corrigidas notificações de aceitação/rejeição de troca que não eram enviadas
+- Corrigidos bugs de rolagem e teclado durante a edição inline do nome da pasta
 - Corrigido o disparo incorreto de animações durante a rolagem de registros
-- Corrigido o problema de registros do sistema gerando notificações desnecessárias
-- Corrigido botao de compra desabilitado que nao mostrava o estado visual desabilitado na loja
-- Corrigido estilo droplet nao aplicado a barra de pesquisa ao selecionar tags populares/recentes
-- Corrigida cor do rotulo do dialogo de configuracoes de compartilhamento que nao seguia o tema
-- Corrigida falha de autenticacao da Windows Store
-- Corrigido efeito de tremor aplicado a todos os itens em vez de apenas documentos concluidos
+- Corrigida falha de autenticação da Windows Store (TLS + spinner infinito)
 
 </div>
 </details>

@@ -37,113 +37,119 @@ Sehen Sie sich den Update-Verlauf der Inventory-App an.
 </summary>
 <div class="version-content" markdown="1">
 
-#### Glassmorphismus + Droplet-Design
-Die gesamte App wurde mit Glassmorphismus und Droplet-Stilen komplett neu gestaltet.
+#### 3-Layer-Hybrid-Designsystem
+Die gesamte App verfügt jetzt über ein neumorphes + Glassmorphismus + Droplet 3-Layer-Designsystem.
 - Angewendet auf alle Bildschirme einschließlich Login, Einstellungen, Shop, Suche, geteilte Vorlagen und QR-Scanner
 - Verbesserte Sichtbarkeit im hellen Modus — getrennte Canvas-Hintergründe und verstärkter Rahmenkontrast
 - Neugestaltung wichtiger Komponenten wie In-App-Benachrichtigungen, Auswahl-Aktionsleiste und Kategoriefilter
 
-#### Ordnersystem
-'Tasche' wurde in 'Ordner' umbenannt.
-- Sprachgerechte Bezeichnungen werden automatisch angewendet
-- Verbesserte Inline-Bearbeitung von Ordnernamen
-
-#### Gegenstandsbearbeitung
-Gegenstandsinhalte können jetzt auch nach der Erstellung bearbeitet werden.
-- Gegenstandsbesitzer können Inhalte direkt bearbeiten und speichern
+#### Soundeffekte und haptisches Feedback
+Soundeffekte und haptisches Feedback wurden für 19 Interaktionen hinzugefügt.
+- Akustisches und taktiles Feedback für wichtige Aktionen wie Buttons, Wischen und Übergänge
 
 #### Chatbot-Dialogfluss
 Ein JSON-basiertes interaktives Leitsystem wurde hinzugefügt.
 - Erstellen Sie Dokumente oder Vorlagen durch schrittweise Konversationen
 - Umfangreiche Interaktionen einschließlich Auswahlmöglichkeiten, Eingabevalidierung und Vorschauen
 
-#### Gegenstandsduplizierung
-Duplizieren Sie ausgewählte Gegenstände, um schnell identische Kopien zu erstellen.
-- Verfügbar im Auswahlmodus des Startbildschirms und auf Sende-/Übertragungsbildschirmen
-- Duplikatanzahl (×n) wird im Gegenstandsinfo-Overlay angezeigt, Zähler verringert sich automatisch beim Löschen
-
 #### Stempel-Eigentumsverifizierung und Gegenstandisierung
 Überprüfen Sie das Stempel-Eigentum und übertragen Sie Stempel als Gegenstände.
 - Bestätigen Sie die Stempel-Authentizität mit Eigentumsverifizierungsnachrichten
 - Schnelle Stempel-Erstellung mit Inline-Modus-Umschaltung
 
+#### Schlüsselwort-System
+Schlüsselwort-Cache-Infrastruktur aufgebaut und Lösch-/Build-Cloud-Functions hinzugefügt.
+- Schnellere Abfragen durch Schlüsselwort-Caching
+- Schlüsselwort-Löschung auf den Originalautor beschränkt
+- Schlüsselwort-Löschungen und -Änderungen werden automatisch über Stempel, geteilte Vorlagen und duplizierte Gegenstände synchronisiert
+
+#### Gegenstandsbearbeitung
+Gegenstandsinhalte können jetzt auch nach der Erstellung bearbeitet werden.
+- Gegenstandsbesitzer können Inhalte direkt bearbeiten und speichern
+
+#### Gegenstandsduplizierung
+Duplizieren Sie ausgewählte Gegenstände, um schnell identische Kopien zu erstellen.
+- Verfügbar im Auswahlmodus des Startbildschirms und auf Sende-/Übertragungsbildschirmen
+- Duplikatanzahl (×n) wird im Gegenstandsinfo-Overlay angezeigt, Zähler verringert sich automatisch beim Löschen
+
+#### Detail-Overlay für geteilte Vorlagen
+Detailinformationen, Statistiken, Schlüsselwort-Bearbeitung und Freigabeeinstellungen für geteilte Vorlagen auf einen Blick.
+- Responsive Größenanpassung für verschiedene Bildschirmgrößen
+
+#### Handelsmenü-Überarbeitung
+Das Handelsmenü wurde vom Hamburger-Menü zum Zahnrad-Symbol geändert.
+- Handelsbenachrichtigungen werden in einem gestapelten Toast-System visuell angezeigt
+- Pull-Down-Gummiband-Effekt und Drag-Interaktion-Unterstützung
+
+#### Shop-Ankündigungen Cache-Priorität
+Shop-Ankündigungen werden jetzt cache-prioritär geladen und schneller angezeigt.
+
+#### Protokoll-Hinzufügen-Schalter bei Gegenstandserstellung
+Beim Erstellen von Gegenständen kann mit dem Schalter „Protokoll hinzufügen erlauben" die Protokollberechtigung festgelegt werden.
+
+#### Scroll-Position-Cache
+Die vorherige Scroll-Position wird automatisch wiederhergestellt, wenn Sie zu einem Bildschirm zurückkehren.
+
+#### Ordnersystem
+'Tasche' wurde in 'Ordner' umbenannt.
+- Sprachgerechte Bezeichnungen werden automatisch angewendet (Locale-basierte Benennung)
+- Verbesserte Inline-Bearbeitung von Ordnernamen
+
+#### Untere Tab-Reihenfolge geändert
+Die Tab-Reihenfolge der unteren Navigation wurde neu organisiert und HomeTab wurde refaktoriert.
+
+#### Such- und Filterverbesserungen
+- Kategoriefilter auf Mehrfachauswahl-Kontrollkästchen umgestellt
+- Rasteransicht mit dynamischer Spaltenberechnung und dauerhaft sichtbarem Artikeltext
+
 #### Auswahlmodus-Überarbeitung
 Gegenstandsauswahl und Stapeloperationen sind jetzt intuitiver.
 - Vereinfachte Auswahl mit Einzelberührungs-Umschaltung
-- Senden, Löschen und Sperren/Entsperren direkt über die Inline-Benutzeroberfläche
-
-#### Protokollbildschirm-Überarbeitung
-Protokolle werden jetzt nach Ordnern gruppiert angezeigt.
-- Nach Ordnern sortierte Protokolllisten mit neuen Animationen
-- Altes eigenständiges Protokollsystem in geteilte Protokolle integriert
-
-#### Such- und Filterverbesserungen
-- Geteiltes Tag-Suchfeld in die Kopfzeile verschoben für bessere Erreichbarkeit
-- Kategoriefilter auf Mehrfachauswahl-Kontrollkästchen umgestellt
-
-#### Schlüsselwort-Systemverbesserungen
-- Schnellere Abfragen durch Schlüsselwort-Caching
-- Schlüsselwort-Löschung auf den Originalautor beschränkt
+- Auswahlumrandung entfernt für sauberere UI
+- Inline-Sperren/Entsperren-UI komplett überarbeitet
 
 #### Benachrichtigungsverbesserungen
 - Beim Tippen auf Gegenstandsempfangsbenachrichtigungen öffnet sich das Gegenstandsinfo-Panel
 - Automatische Ausblendzeit der In-App-Toast-Nachrichten auf 5 Sekunden geändert
 - Fehlende Handels-Annahme/Ablehnungs- und Übertragungsannahme-Benachrichtigungen behoben
 
+#### Protokollbildschirm-Überarbeitung
+Protokolle werden jetzt nach Ordnern gruppiert angezeigt.
+- Nach Ordnern sortierte Protokolllisten mit neuen Animationen
+- Anleitungsbildschirm für neue Benutzer ohne Protokolle
+
 #### Kommentar-Verbesserungen
 - Kopier-Schaltfläche zum Kommentar-Aktionsmenü hinzugefügt
 - Verbesserte mehrsprachige Unterstützung für Antworttexte
 
-#### Handels-Toast-System
-Handelsbenachrichtigungen werden jetzt in einem gestapelten visuellen Format angezeigt.
-- Pull-Down-Gummiband-Effekt und Drag-Interaktion-Unterstützung
+#### Rich-Text-Durchstreichungsmarker-Änderung
+Der Durchstreichungsmarker wurde von Ausrufezeichen (!!) zu spitzen Klammern (<>) geändert.
+
+#### Chatbot-Stempel-Erstellungsablauf verbessert
+Der Stempel-Erstellungs-Gesprächsablauf wurde komplett neu geschrieben.
+- Natürlicherer Gesprächsablauf und verbesserte Benutzererfahrung
 
 #### Leistungsverbesserungen
+- Vollständiger Austausch von CachedNetworkImage und Rebuild-Optimierung mit context.select
 - QR-Scanner-Bibliothek aktualisiert (etwa 55 MB Reduktion auf iOS)
 - Cloud Functions Speicheroptimierung
 
 #### Entfernte Funktionen
-- Clip-Funktion (Bündelung) wurde entfernt
+- Gegenstand-Clip-Funktion (Bündelung) vollständig entfernt
+- Eigenständiges Protokollsystem entfernt — in geteilte Protokolle integriert
+- Veraltetes Benachrichtigungs-Widget entfernt
 - Assistentenmenü aus der unteren Navigationsleiste entfernt
 
 #### Fehlerbehebungen
+- Firestore IllegalState-Absturz bei Gegenstandsauswahl auf dem Desktop behoben
 - Einfrieren bei der Initialisierung der QR-Scanner-Kamera behoben
-- Scroll- und Fokusprobleme bei der Inline-Bearbeitung von Ordnernamen behoben
-- Fehlerhafte Animationsauslösung beim Protokoll-Scrollen behoben
-- Problem behoben, bei dem Systemprotokolle unnötige Benachrichtigungen auslösten
-
-#### Detail-Overlay fuer geteilte Vorlagen
-Detailinformationen, Statistiken, Keyword-Bearbeitung und Freigabeeinstellungen fuer geteilte Vorlagen auf einen Blick.
-- Responsive Groessenanpassung fuer verschiedene Bildschirmgroessen
-
-#### Chatbot-Stempel-Erstellungsablauf verbessert
-Der Stempel-Erstellungs-Gespraechsablauf wurde komplett neu geschrieben.
-- Natuerlicherer Gespraechsablauf und verbesserte Benutzererfahrung
-
-#### Verstaerkte Keyword-Synchronisation
-Keyword-Loeschungen und -Aenderungen werden automatisch in Stempeln, geteilten Vorlagen und duplizierten Artikeln reflektiert.
-
-#### Rasteransicht verbessert
-Die Spaltenanzahl wird automatisch basierend auf der Bildschirmgroesse berechnet und der Artikeltext wird immer angezeigt.
-
-#### Erweiterte Such-Header-Verbesserungen
-Die Header-UI der erweiterten Artikelsuche wurde verbessert.
-
-#### Aenderung der unteren Navigations-Tab-Reihenfolge
-Die Tab-Reihenfolge der unteren Navigation wurde neu organisiert.
-
-#### Protokoll-Tab Erstanleitung
-Fuer neue Benutzer ohne Protokolle wird ein Anleitungsbildschirm angezeigt.
-
-#### Rich-Text-Durchstreichungsmarker-Aenderung
-Der Durchstreichungsmarker wurde von Ausrufezeichen (!!) zu spitzen Klammern (<>) geaendert.
-
-#### Zusaetzliche Fehlerbehebungen
 - Deaktivierter Kaufbutton im Shop zeigte keinen visuellen deaktivierten Zustand
 - Droplet-Stil wurde bei Auswahl von beliebten/neuesten Tags nicht auf die Suchleiste angewendet
-- Labelfarbe im Freigabeeinstellungen-Dialog folgte nicht dem Theme
-- Windows Store Authentifizierungsfehler behoben
-- Schuetteleffekt wurde auf alle Artikel statt nur auf fertige Dokumente angewendet
+- Fehlende In-App-Benachrichtigung bei Annahme der Gegenstandsübertragung behoben
+- Handels-Annahme/Ablehnungs-Benachrichtigungen wurden nicht gesendet
+- Scroll- und Tastaturprobleme bei der Inline-Bearbeitung von Ordnernamen behoben
+- Fehlerhafte Animationsauslösung beim Protokoll-Scrollen behoben
+- Windows Store Authentifizierungsfehler behoben (TLS + endloser Spinner)
 
 </div>
 </details>

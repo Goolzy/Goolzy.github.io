@@ -37,113 +37,119 @@ Check out the update history for the Inventory app.
 </summary>
 <div class="version-content" markdown="1">
 
-#### Glassmorphism + Droplet Design
-The entire app has been redesigned with glassmorphism and droplet styles.
+#### 3-Layer Hybrid Design System
+The entire app now features a neumorphic + glassmorphism + droplet 3-layer design system.
 - Applied across all screens including login, settings, shop, search, shared templates, and QR scanner
 - Improved light mode visibility — separated canvas background and enhanced border contrast
 - Redesigned key components including in-app notifications, selection action bar, and category filters
 
-#### Folder System
-'Pocket' has been renamed to 'Folder'.
-- Locale-appropriate names are automatically applied per language
-- Improved inline folder name editing
-
-#### Item Editing
-You can now edit item content after creation.
-- Item owners can directly edit and save content
+#### Sound Effects and Haptic Feedback
+Sound effects and haptic feedback have been added to 19 interactions.
+- Auditory and tactile responses for key actions including buttons, swipes, and transitions
 
 #### Chatbot Conversational Flow
 A JSON-based interactive guidance system has been added.
 - Create documents or templates by following step-by-step conversations
 - Rich interactions including choices, input validation, and previews
 
-#### Item Duplication
-Duplicate selected items to quickly create identical copies.
-- Available from home screen selection mode and send/transfer screens
-- Clone count (xn) displayed on item info overlay, count decreases automatically on deletion
-
 #### Stamp Ownership Verification and Itemization
 Verify stamp ownership and transfer stamps as items.
 - Confirm stamp authenticity with ownership verification messages
 - Quick stamp creation with inline mode switching
 
+#### Keyword System
+Keyword cache infrastructure built with delete/build Cloud Functions added.
+- Faster lookups with keyword caching
+- Keyword deletion restricted to original author only
+- Keyword deletions and changes automatically synced across stamps, shared templates, and duplicated items
+
+#### Item Editing
+You can now edit item content after creation.
+- Item owners can directly edit and save content
+
+#### Item Duplication
+Duplicate selected items to quickly create identical copies.
+- Available from home screen selection mode and send/transfer screens
+- Clone count (xn) displayed on item info overlay, count decreases automatically on deletion
+
+#### Shared Template Detail Overlay
+View detailed information, statistics, keyword editing, and sharing settings for shared templates at a glance.
+- Responsive sizing for various screen sizes
+
+#### Trade Menu Overhaul
+The trade menu has been changed from a hamburger menu to a gear icon.
+- Trade notifications displayed in a stacked toast system
+- Pull-down rubber band effect and drag interaction support
+
+#### Store Announcement Cache-First Loading
+Store announcements now load cache-first for faster display.
+
+#### Allow Log Addition Toggle on Item Creation
+Set whether logs can be added when creating an item with the "Allow log addition" toggle.
+
+#### Scroll Position Cache
+Previous scroll position is automatically restored when returning to a screen.
+
+#### Folder System
+'Pocket' has been renamed to 'Folder'.
+- Locale-appropriate names are automatically applied per language
+- Improved inline folder name editing
+
+#### Bottom Tab Order Change
+The bottom navigation tab order has been reorganized and HomeTab has been refactored.
+
+#### Search and Filter Improvements
+- Category filter changed to multi-select checkbox mode
+- Grid view dynamic column calculation with item text always displayed
+
 #### Selection Mode Overhaul
 Item selection and batch operations are now more intuitive.
 - Simplified selection with single-touch toggle
-- Execute send, delete, and lock/unlock directly from inline UI
-
-#### Log Screen Overhaul
-Logs are now grouped and displayed by folder.
-- Organized log lists by folder with new animations
-- Legacy standalone log system merged into shared logs
-
-#### Search and Filter Improvements
-- Shared tag search field moved to header for better accessibility
-- Category filter changed to multi-select checkbox mode
-
-#### Keyword System Improvements
-- Faster lookups with keyword caching
-- Keyword deletion restricted to original author only
+- Selection outline removed for cleaner UI
+- Inline lock/unlock UI completely overhauled
 
 #### Notification Improvements
 - Tapping item receipt notification now opens the item info panel
 - In-app toast auto-dismiss time changed to 5 seconds
 - Fixed missing trade accept/reject and transfer acceptance notifications
 
+#### Log Screen Overhaul
+Logs are now grouped and displayed by folder.
+- Organized log lists by folder with new animations
+- Guidance screen displayed for new users with no logs
+
 #### Comment Enhancements
 - Added copy button to comment action menu
 - Improved reply text multilingual support
 
-#### Trade Toast System
-Trade notifications are now displayed in a stacked visual format.
-- Pull-down rubber band effect and drag interaction support
-
-#### Performance Improvements
-- QR scanner library upgraded (approximately 55MB reduction on iOS)
-- Cloud Functions memory optimization
-
-#### Removed Features
-- Clip (bundling) feature has been removed
-- Wizard menu removed from bottom navigation bar
-
-#### Bug Fixes
-- Fixed freeze when initializing QR scanner camera
-- Fixed scroll and focus issues during inline folder name editing
-- Fixed animation misfiring during log scrolling
-- Fixed system logs triggering unnecessary notifications
-
-#### Shared Template Detail Overlay
-View detailed information, statistics, keyword editing, and sharing settings for shared templates at a glance.
-- Responsive sizing for various screen sizes
+#### Rich Text Strikethrough Marker Change
+The strikethrough marker has been changed from exclamation marks (!!) to angle brackets (<>).
 
 #### Chatbot Stamp Creation Flow Improvements
 The stamp creation conversational flow has been completely rewritten.
 - More natural conversation flow and improved user experience
 
-#### Enhanced Keyword Synchronization
-Keyword deletions and changes are now automatically reflected across stamps, shared templates, and duplicated items.
+#### Performance Improvements
+- Full replacement of CachedNetworkImage and rebuild optimization with context.select
+- QR scanner library upgraded (approximately 55MB reduction on iOS)
+- Cloud Functions memory optimization
 
-#### Grid View Improvements
-Column count is automatically calculated based on screen size, and item text is always displayed.
+#### Removed Features
+- Item clip (bundling) feature completely removed
+- Standalone log system removed — merged into shared logs
+- Legacy notification widget removed
+- Wizard menu removed from bottom navigation bar
 
-#### Advanced Search Header Improvements
-The item advanced search screen header UI has been improved.
-
-#### Bottom Navigation Tab Order Change
-The bottom navigation tab order has been reorganized.
-
-#### Log Tab Initial Guidance
-A guidance screen is now displayed for new users with no logs.
-
-#### Rich Text Strikethrough Marker Change
-The strikethrough marker has been changed from exclamation marks (!!) to angle brackets (<>).
-
-#### Additional Bug Fixes
+#### Bug Fixes
+- Fixed Firestore IllegalState crash when selecting items on desktop
+- Fixed freeze when initializing QR scanner camera
 - Fixed disabled purchase button not showing visual disabled state in shop
 - Fixed droplet style not applied to search bar when selecting popular/recent tags
-- Fixed share settings dialog label color not following theme
-- Fixed Windows Store authentication failure
-- Fixed shake effect being applied to all items instead of completed documents only
+- Fixed missing in-app notification when accepting item transfer
+- Fixed trade accept/reject notifications not being sent
+- Fixed scroll and keyboard bugs during inline folder name editing
+- Fixed animation misfiring during log scrolling
+- Fixed Windows Store authentication failure (TLS + infinite spinner)
 
 </div>
 </details>

@@ -37,113 +37,119 @@ Consulta el historial de actualizaciones de la aplicación Inventory.
 </summary>
 <div class="version-content" markdown="1">
 
-#### Diseño Glassmorphism + Droplet
-Toda la aplicación ha sido rediseñada con estilos glassmorphism y droplet.
+#### Sistema de diseño híbrido de 3 capas
+Toda la aplicación ahora cuenta con un sistema de diseño de 3 capas: neumórfico + glassmorphism + droplet.
 - Aplicado en todas las pantallas incluyendo inicio de sesión, ajustes, tienda, búsqueda, plantillas compartidas y escáner QR
 - Visibilidad mejorada en modo claro — fondo de lienzo separado y contraste de bordes reforzado
 - Rediseño de componentes clave como notificaciones en la app, barra de acciones de selección y filtros de categoría
 
-#### Sistema de carpetas
-'Bolsillo' ha sido renombrado a 'Carpeta'.
-- Se aplican automáticamente nombres apropiados según el idioma
-- Edición en línea del nombre de carpeta mejorada
-
-#### Edición de objetos
-Ahora puedes editar el contenido de los objetos después de crearlos.
-- Los propietarios pueden editar y guardar el contenido directamente
+#### Efectos de sonido y retroalimentación háptica
+Se han añadido efectos de sonido y retroalimentación háptica a 19 interacciones.
+- Respuestas auditivas y táctiles para acciones clave como botones, deslizamientos y transiciones
 
 #### Flujo conversacional del chatbot
 Se ha añadido un sistema de guía interactivo basado en JSON.
 - Crea documentos o plantillas siguiendo conversaciones paso a paso
 - Interacciones enriquecidas incluyendo opciones, validación de entrada y vistas previas
 
-#### Duplicación de objetos
-Duplica los objetos seleccionados para crear copias idénticas rápidamente.
-- Disponible desde el modo de selección de la pantalla principal y las pantallas de envío/transferencia
-- Recuento de clones (×n) mostrado en la superposición de información del objeto, el contador disminuye automáticamente al eliminar
-
 #### Verificación de propiedad de sellos e itemización
 Verifica la propiedad de sellos y transfiere sellos como objetos.
 - Confirma la autenticidad del sello con mensajes de verificación de propiedad
 - Creación rápida de sellos con cambio de modo en línea
 
+#### Sistema de palabras clave
+Se ha construido la infraestructura de caché de palabras clave y se han añadido Cloud Functions de eliminación/construcción.
+- Búsquedas más rápidas con caché de palabras clave
+- Eliminación de palabras clave restringida solo al autor original
+- Las eliminaciones y cambios de palabras clave se sincronizan automáticamente en sellos, plantillas compartidas y elementos duplicados
+
+#### Edición de objetos
+Ahora puedes editar el contenido de los objetos después de crearlos.
+- Los propietarios pueden editar y guardar el contenido directamente
+
+#### Duplicación de objetos
+Duplica los objetos seleccionados para crear copias idénticas rápidamente.
+- Disponible desde el modo de selección de la pantalla principal y las pantallas de envío/transferencia
+- Recuento de clones (×n) mostrado en la superposición de información del objeto, el contador disminuye automáticamente al eliminar
+
+#### Overlay de detalles de plantillas compartidas
+Consulta información detallada, estadísticas, edición de palabras clave y configuración de uso compartido de plantillas compartidas de un vistazo.
+- Tamaño adaptable para diferentes tamaños de pantalla
+
+#### Renovación del menú de intercambio
+El menú de intercambio ha cambiado del menú hamburguesa al icono de engranaje.
+- Las notificaciones de intercambio se muestran en un sistema de toast apilado
+- Efecto de banda elástica al tirar hacia abajo y soporte de interacción de arrastre
+
+#### Carga prioritaria de caché de anuncios de tienda
+Los anuncios de la tienda ahora se cargan con prioridad de caché para una visualización más rápida.
+
+#### Interruptor de adición de registro en creación de objetos
+Al crear un objeto, puedes configurar si se permite añadir registros con el interruptor "Permitir adición de registro".
+
+#### Caché de posición de desplazamiento
+La posición de desplazamiento anterior se restaura automáticamente al volver a una pantalla.
+
+#### Sistema de carpetas
+'Bolsillo' ha sido renombrado a 'Carpeta'.
+- Se aplican automáticamente nombres apropiados según el idioma (nombrado basado en locale)
+- Edición en línea del nombre de carpeta mejorada
+
+#### Cambio en el orden de pestañas inferiores
+El orden de las pestañas de navegación inferior ha sido reorganizado y HomeTab ha sido refactorizado.
+
+#### Mejoras en búsqueda y filtros
+- Filtro de categoría cambiado a modo de casillas de verificación de selección múltiple
+- Vista de cuadrícula con cálculo dinámico de columnas y texto del elemento siempre visible
+
 #### Renovación del modo de selección
 La selección de objetos y las operaciones por lotes son ahora más intuitivas.
 - Selección simplificada con alternancia de toque único
-- Ejecuta enviar, eliminar y bloquear/desbloquear directamente desde la interfaz en línea
-
-#### Renovación de la pantalla de registros
-Los registros ahora se agrupan y muestran por carpeta.
-- Listas de registros organizadas por carpeta con nuevas animaciones
-- El antiguo sistema de registros independientes se ha integrado en registros compartidos
-
-#### Mejoras en búsqueda y filtros
-- Campo de búsqueda de etiquetas compartidas movido al encabezado para mejor accesibilidad
-- Filtro de categoría cambiado a modo de casillas de verificación de selección múltiple
-
-#### Mejoras del sistema de palabras clave
-- Búsquedas más rápidas con caché de palabras clave
-- Eliminación de palabras clave restringida solo al autor original
+- Contorno de selección eliminado para una interfaz más limpia
+- Interfaz en línea de bloqueo/desbloqueo completamente renovada
 
 #### Mejoras en notificaciones
 - Tocar la notificación de recepción de objeto ahora abre el panel de información del objeto
 - Tiempo de descarte automático del toast en la app cambiado a 5 segundos
 - Corregidas notificaciones faltantes de aceptación/rechazo de intercambio y aceptación de transferencia
 
+#### Renovación de la pantalla de registros
+Los registros ahora se agrupan y muestran por carpeta.
+- Listas de registros organizadas por carpeta con nuevas animaciones
+- Pantalla de guía para nuevos usuarios sin registros
+
 #### Mejoras en comentarios
 - Botón de copiar añadido al menú de acciones de comentarios
 - Soporte multilingüe mejorado para textos de respuesta
 
-#### Sistema de toast de intercambio
-Las notificaciones de intercambio ahora se muestran en un formato visual apilado.
-- Efecto de banda elástica al tirar hacia abajo y soporte de interacción de arrastre
+#### Cambio del marcador de tachado en texto enriquecido
+El marcador de tachado ha cambiado de signos de exclamación (!!) a paréntesis angulares (<>).
+
+#### Mejora del flujo de creación de sellos del chatbot
+El flujo conversacional de creación de sellos ha sido completamente reescrito.
+- Flujo de conversación más natural y experiencia de usuario mejorada
 
 #### Mejoras de rendimiento
+- Reemplazo completo de CachedNetworkImage y optimización de rebuild con context.select
 - Biblioteca del escáner QR actualizada (reducción de aproximadamente 55 MB en iOS)
 - Optimización de memoria de Cloud Functions
 
 #### Funciones eliminadas
-- Se ha eliminado la función de clip (agrupación)
-- Se ha eliminado el menú del asistente de la barra de navegación inferior
+- Función de clip (agrupación) de objetos completamente eliminada
+- Sistema de registros independientes eliminado — integrado en registros compartidos
+- Widget de notificaciones heredado eliminado
+- Menú del asistente eliminado de la barra de navegación inferior
 
 #### Corrección de errores
+- Corregido el fallo Firestore IllegalState al seleccionar objetos en escritorio
 - Corregido el congelamiento al inicializar la cámara del escáner QR
-- Corregidos problemas de desplazamiento y enfoque durante la edición en línea del nombre de carpeta
+- Corregido el botón de compra deshabilitado que no mostraba el estado visual deshabilitado en la tienda
+- Corregido el estilo droplet no aplicado a la barra de búsqueda al seleccionar etiquetas populares/recientes
+- Corregida la notificación en la app faltante al aceptar transferencia de objeto
+- Corregidas las notificaciones de aceptación/rechazo de intercambio que no se enviaban
+- Corregidos errores de desplazamiento y teclado durante la edición en línea del nombre de carpeta
 - Corregida la activación errónea de animaciones durante el desplazamiento de registros
-- Corregido el problema de registros del sistema que generaban notificaciones innecesarias
-
-#### Overlay de detalles de plantillas compartidas
-Consulta informacion detallada, estadisticas, edicion de palabras clave y configuracion de uso compartido de plantillas compartidas de un vistazo.
-- Tamano adaptable para diferentes tamanos de pantalla
-
-#### Mejora del flujo de creacion de sellos del chatbot
-El flujo conversacional de creacion de sellos ha sido completamente reescrito.
-- Flujo de conversacion mas natural y experiencia de usuario mejorada
-
-#### Sincronizacion de palabras clave mejorada
-Las eliminaciones y cambios de palabras clave se reflejan automaticamente en sellos, plantillas compartidas y elementos duplicados.
-
-#### Mejoras en la vista de cuadricula
-El numero de columnas se calcula automaticamente segun el tamano de la pantalla y el texto del elemento siempre se muestra.
-
-#### Mejoras en el encabezado de busqueda avanzada
-La interfaz del encabezado de busqueda avanzada de elementos ha sido mejorada.
-
-#### Cambio en el orden de pestanas de navegacion inferior
-El orden de las pestanas de navegacion inferior ha sido reorganizado.
-
-#### Guia inicial de la pestana de registros
-Se muestra una pantalla de guia para nuevos usuarios sin registros.
-
-#### Cambio del marcador de tachado en texto enriquecido
-El marcador de tachado ha cambiado de signos de exclamacion (!!) a parentesis angulares (<>).
-
-#### Correcciones de errores adicionales
-- Corregido el boton de compra deshabilitado que no mostraba el estado visual deshabilitado en la tienda
-- Corregido el estilo droplet no aplicado a la barra de busqueda al seleccionar etiquetas populares/recientes
-- Corregido el color de etiqueta del dialogo de configuracion de uso compartido que no seguia el tema
-- Corregido el fallo de autenticacion de Windows Store
-- Corregido el efecto de agitacion aplicado a todos los elementos en lugar de solo a documentos completados
+- Corregido el fallo de autenticación de Windows Store (TLS + spinner infinito)
 
 </div>
 </details>
