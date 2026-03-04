@@ -112,6 +112,39 @@ Trade notifications are now displayed in a stacked visual format.
 - Fixed animation misfiring during log scrolling
 - Fixed system logs triggering unnecessary notifications
 
+#### Shared Template Detail Overlay
+View detailed information, statistics, keyword editing, and sharing settings for shared templates at a glance.
+- Responsive sizing for various screen sizes
+
+#### Chatbot Stamp Creation Flow Improvements
+The stamp creation conversational flow has been completely rewritten.
+- More natural conversation flow and improved user experience
+
+#### Enhanced Keyword Synchronization
+Keyword deletions and changes are now automatically reflected across stamps, shared templates, and duplicated items.
+
+#### Grid View Improvements
+Column count is automatically calculated based on screen size, and item text is always displayed.
+
+#### Advanced Search Header Improvements
+The item advanced search screen header UI has been improved.
+
+#### Bottom Navigation Tab Order Change
+The bottom navigation tab order has been reorganized.
+
+#### Log Tab Initial Guidance
+A guidance screen is now displayed for new users with no logs.
+
+#### Rich Text Strikethrough Marker Change
+The strikethrough marker has been changed from exclamation marks (!!) to angle brackets (<>).
+
+#### Additional Bug Fixes
+- Fixed disabled purchase button not showing visual disabled state in shop
+- Fixed droplet style not applied to search bar when selecting popular/recent tags
+- Fixed share settings dialog label color not following theme
+- Fixed Windows Store authentication failure
+- Fixed shake effect being applied to all items instead of completed documents only
+
 </div>
 </details>
 

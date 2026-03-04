@@ -112,6 +112,39 @@ Les notifications d'échange sont désormais affichées dans un format visuel em
 - Correction du déclenchement erroné des animations lors du défilement des journaux
 - Correction du problème de journaux système générant des notifications inutiles
 
+#### Overlay de details des modeles partages
+Consultez les informations detaillees, les statistiques, l'edition des mots-cles et les parametres de partage des modeles partages en un coup d'oeil.
+- Taille adaptative pour differentes tailles d'ecran
+
+#### Amelioration du flux de creation de tampons du chatbot
+Le flux conversationnel de creation de tampons a ete entierement reecrit.
+- Flux de conversation plus naturel et experience utilisateur amelioree
+
+#### Synchronisation des mots-cles renforcee
+Les suppressions et modifications de mots-cles sont automatiquement refletes dans les tampons, modeles partages et elements dupliques.
+
+#### Ameliorations de la vue en grille
+Le nombre de colonnes est automatiquement calcule en fonction de la taille de l'ecran et le texte de l'element est toujours affiche.
+
+#### Ameliorations de l'en-tete de recherche avancee
+L'interface de l'en-tete de recherche avancee d'elements a ete amelioree.
+
+#### Changement de l'ordre des onglets de navigation inferieure
+L'ordre des onglets de navigation inferieure a ete reorganise.
+
+#### Guide initial de l'onglet journal
+Un ecran d'orientation est affiche pour les nouveaux utilisateurs sans journaux.
+
+#### Changement du marqueur barre dans le texte enrichi
+Le marqueur de texte barre a ete change des points d'exclamation (!!) aux chevrons (<>).
+
+#### Corrections de bugs supplementaires
+- Correction du bouton d'achat desactive n'affichant pas l'etat visuel desactive dans la boutique
+- Correction du style droplet non applique a la barre de recherche lors de la selection de tags populaires/recents
+- Correction de la couleur d'etiquette du dialogue de parametres de partage ne suivant pas le theme
+- Correction de l'echec d'authentification Windows Store
+- Correction de l'effet de tremblement applique a tous les elements au lieu des documents termines uniquement
+
 </div>
 </details>
 

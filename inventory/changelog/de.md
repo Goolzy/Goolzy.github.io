@@ -112,6 +112,39 @@ Handelsbenachrichtigungen werden jetzt in einem gestapelten visuellen Format ang
 - Fehlerhafte Animationsauslösung beim Protokoll-Scrollen behoben
 - Problem behoben, bei dem Systemprotokolle unnötige Benachrichtigungen auslösten
 
+#### Detail-Overlay fuer geteilte Vorlagen
+Detailinformationen, Statistiken, Keyword-Bearbeitung und Freigabeeinstellungen fuer geteilte Vorlagen auf einen Blick.
+- Responsive Groessenanpassung fuer verschiedene Bildschirmgroessen
+
+#### Chatbot-Stempel-Erstellungsablauf verbessert
+Der Stempel-Erstellungs-Gespraechsablauf wurde komplett neu geschrieben.
+- Natuerlicherer Gespraechsablauf und verbesserte Benutzererfahrung
+
+#### Verstaerkte Keyword-Synchronisation
+Keyword-Loeschungen und -Aenderungen werden automatisch in Stempeln, geteilten Vorlagen und duplizierten Artikeln reflektiert.
+
+#### Rasteransicht verbessert
+Die Spaltenanzahl wird automatisch basierend auf der Bildschirmgroesse berechnet und der Artikeltext wird immer angezeigt.
+
+#### Erweiterte Such-Header-Verbesserungen
+Die Header-UI der erweiterten Artikelsuche wurde verbessert.
+
+#### Aenderung der unteren Navigations-Tab-Reihenfolge
+Die Tab-Reihenfolge der unteren Navigation wurde neu organisiert.
+
+#### Protokoll-Tab Erstanleitung
+Fuer neue Benutzer ohne Protokolle wird ein Anleitungsbildschirm angezeigt.
+
+#### Rich-Text-Durchstreichungsmarker-Aenderung
+Der Durchstreichungsmarker wurde von Ausrufezeichen (!!) zu spitzen Klammern (<>) geaendert.
+
+#### Zusaetzliche Fehlerbehebungen
+- Deaktivierter Kaufbutton im Shop zeigte keinen visuellen deaktivierten Zustand
+- Droplet-Stil wurde bei Auswahl von beliebten/neuesten Tags nicht auf die Suchleiste angewendet
+- Labelfarbe im Freigabeeinstellungen-Dialog folgte nicht dem Theme
+- Windows Store Authentifizierungsfehler behoben
+- Schuetteleffekt wurde auf alle Artikel statt nur auf fertige Dokumente angewendet
+
 </div>
 </details>
 

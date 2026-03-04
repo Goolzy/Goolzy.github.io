@@ -112,6 +112,39 @@ Las notificaciones de intercambio ahora se muestran en un formato visual apilado
 - Corregida la activación errónea de animaciones durante el desplazamiento de registros
 - Corregido el problema de registros del sistema que generaban notificaciones innecesarias
 
+#### Overlay de detalles de plantillas compartidas
+Consulta informacion detallada, estadisticas, edicion de palabras clave y configuracion de uso compartido de plantillas compartidas de un vistazo.
+- Tamano adaptable para diferentes tamanos de pantalla
+
+#### Mejora del flujo de creacion de sellos del chatbot
+El flujo conversacional de creacion de sellos ha sido completamente reescrito.
+- Flujo de conversacion mas natural y experiencia de usuario mejorada
+
+#### Sincronizacion de palabras clave mejorada
+Las eliminaciones y cambios de palabras clave se reflejan automaticamente en sellos, plantillas compartidas y elementos duplicados.
+
+#### Mejoras en la vista de cuadricula
+El numero de columnas se calcula automaticamente segun el tamano de la pantalla y el texto del elemento siempre se muestra.
+
+#### Mejoras en el encabezado de busqueda avanzada
+La interfaz del encabezado de busqueda avanzada de elementos ha sido mejorada.
+
+#### Cambio en el orden de pestanas de navegacion inferior
+El orden de las pestanas de navegacion inferior ha sido reorganizado.
+
+#### Guia inicial de la pestana de registros
+Se muestra una pantalla de guia para nuevos usuarios sin registros.
+
+#### Cambio del marcador de tachado en texto enriquecido
+El marcador de tachado ha cambiado de signos de exclamacion (!!) a parentesis angulares (<>).
+
+#### Correcciones de errores adicionales
+- Corregido el boton de compra deshabilitado que no mostraba el estado visual deshabilitado en la tienda
+- Corregido el estilo droplet no aplicado a la barra de busqueda al seleccionar etiquetas populares/recientes
+- Corregido el color de etiqueta del dialogo de configuracion de uso compartido que no seguia el tema
+- Corregido el fallo de autenticacion de Windows Store
+- Corregido el efecto de agitacion aplicado a todos los elementos en lugar de solo a documentos completados
+
 </div>
 </details>
 

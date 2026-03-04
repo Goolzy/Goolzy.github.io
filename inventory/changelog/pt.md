@@ -106,11 +106,42 @@ As notificações de troca agora são exibidas em um formato visual empilhado.
 - A função de clip (agrupamento) foi removida
 - O menu do assistente foi removido da barra de navegação inferior
 
+#### Overlay de detalhes de modelos compartilhados
+Visualize informacoes detalhadas, estatisticas, edicao de palavras-chave e configuracoes de compartilhamento de modelos compartilhados de uma so vez.
+- Tamanho responsivo para diferentes tamanhos de tela
+
+#### Melhoria do fluxo de criacao de carimbos do chatbot
+O fluxo conversacional de criacao de carimbos foi completamente reescrito.
+- Fluxo de conversa mais natural e experiencia do usuario aprimorada
+
+#### Sincronizacao de palavras-chave aprimorada
+Exclusoes e alteracoes de palavras-chave sao automaticamente refletidas em carimbos, modelos compartilhados e itens duplicados.
+
+#### Melhorias na visualizacao em grade
+O numero de colunas e calculado automaticamente com base no tamanho da tela e o texto do item e sempre exibido.
+
+#### Melhorias no cabecalho de pesquisa avancada
+A interface do cabecalho de pesquisa avancada de itens foi aprimorada.
+
+#### Alteracao na ordem das abas de navegacao inferior
+A ordem das abas de navegacao inferior foi reorganizada.
+
+#### Orientacao inicial da aba de registros
+Uma tela de orientacao e exibida para novos usuarios sem registros.
+
+#### Alteracao do marcador de tachado em texto rico
+O marcador de tachado foi alterado de pontos de exclamacao (!!) para colchetes angulares (<>).
+
 #### Correções de bugs
 - Corrigido o congelamento ao inicializar a câmera do scanner QR
 - Corrigidos problemas de rolagem e foco durante a edição inline do nome da pasta
 - Corrigido o disparo incorreto de animações durante a rolagem de registros
 - Corrigido o problema de registros do sistema gerando notificações desnecessárias
+- Corrigido botao de compra desabilitado que nao mostrava o estado visual desabilitado na loja
+- Corrigido estilo droplet nao aplicado a barra de pesquisa ao selecionar tags populares/recentes
+- Corrigida cor do rotulo do dialogo de configuracoes de compartilhamento que nao seguia o tema
+- Corrigida falha de autenticacao da Windows Store
+- Corrigido efeito de tremor aplicado a todos os itens em vez de apenas documentos concluidos
 
 </div>
 </details>
