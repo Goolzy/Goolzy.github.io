@@ -401,8 +401,6 @@ You can use various formats when writing logs.
 |--------|-------------|---------|
 | Plain text | Displayed as chat bubble | `Inspection complete today!` |
 | `key:value` | Displayed as info card (key 1-8 chars) | `status:good` |
-| `---` | Displayed as divider | `---` |
-
 Using the same key multiple times displays as `previous value → new value` comparison.
 
 **Text Styling:**

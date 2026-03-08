@@ -401,8 +401,6 @@ Anda dapat menggunakan berbagai format saat menulis log.
 |--------|-----------|---------|
 | Teks polos | Ditampilkan sebagai gelembung chat | `Inspeksi selesai hari ini!` |
 | `key:value` | Ditampilkan sebagai kartu info (kunci 1-8 karakter) | `status:baik` |
-| `---` | Ditampilkan sebagai pemisah | `---` |
-
 Menggunakan kunci yang sama beberapa kali ditampilkan sebagai `nilai sebelumnya → nilai baru` perbandingan.
 
 **Penataan Teks:**

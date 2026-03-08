@@ -401,8 +401,6 @@ Você pode usar vários formatos ao escrever registros.
 |---------|-----------|---------|
 | Texto simples | Exibido como bolha de chat | `Inspeção concluída hoje!` |
 | `chave:valor` | Exibido como cartão info (chave 1-8 car.) | `status:bom` |
-| `---` | Exibido como separador | `---` |
-
 Usar a mesma chave múltiplas vezes exibe `valor anterior → novo valor`.
 
 **Estilização de texto:**

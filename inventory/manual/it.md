@@ -401,8 +401,6 @@ Puoi utilizzare vari formati quando scrivi log.
 |--------|-------------|---------|
 | Testo normale | Visualizzato come bolla di chat | `Ispezione completata oggi!` |
 | `key:value` | Visualizzato come scheda info (key 1-8 caratteri) | `status:good` |
-| `---` | Visualizzato come divisore | `---` |
-
 L'utilizzo della stessa chiave più volte si visualizza come confronto `valore precedente → nuovo valore`.
 
 **Stili di testo:**

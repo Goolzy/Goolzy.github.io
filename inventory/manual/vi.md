@@ -401,8 +401,6 @@ Bạn có thể sử dụng các định dạng khác nhau khi viết nhật ký
 |--------|-------------|---------|
 | Văn Bản Thuần | Hiển Thị Dưới Dạng Bong Bóng Trò Chuyện | `Kiểm Tra Hoàn Thành Hôm Nay!` |
 | `key:value` | Hiển Thị Dưới Dạng Thẻ Thông Tin (key 1-8 ký tự) | `status:good` |
-| `---` | Hiển Thị Dưới Dạng Dấu Phân Cách | `---` |
-
 Sử dụng cùng một khóa nhiều lần để hiển thị dưới dạng `giá trị cũ → giá trị mới` so sánh.
 
 **Định Dạng Văn Bản:**

@@ -401,8 +401,6 @@ Günlük yazarken çeşitli biçimleri kullanabilirsiniz.
 |--------|-------------|---------|
 | Düz metin | Sohbet balonu olarak görüntülenir | `Bugün denetim tamamlandı!` |
 | `anahtar:değer` | Bilgi kartı olarak görüntülenir (anahtar 1-8 karakter) | `durum:iyi` |
-| `---` | Ayırıcı olarak görüntülenir | `---` |
-
 Aynı anahtarı birden fazla kez kullanmak `önceki değer → yeni değer` karşılaştırması olarak görüntülenir.
 
 **Metin Stillendirmesi:**
