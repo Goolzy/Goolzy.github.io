@@ -29,6 +29,35 @@ translations:
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.4.1 <small>2026-03-10</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### 通知静音
+现在可以单独管理每个项目的通知。
+- 可分别开启或关闭特定项目的推送通知和应用内通知
+
+#### 自动日期分隔线
+对话记录中自动显示日期分隔线。
+- 按日期轻松浏览长对话记录
+
+#### 错误修复
+- 修复了更改分类筛选器时的画面卡顿问题
+- 过期/私密项目的模糊和遮罩现在在所有页面中一致应用
+- 详情页面对话记录的滚动位置现在可以准确保存和恢复
+
+#### 性能改进
+- 减少不必要的Firestore读写操作，提升响应速度
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.4.0 <small>2026-03-01</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

@@ -29,6 +29,35 @@ Inventory 앱의 업데이트 내역을 확인하세요.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.4.1 <small>2026-03-10</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### 알림 음소거
+아이템별로 알림을 개별 관리할 수 있습니다.
+- 특정 아이템의 푸시 알림과 인앱 알림을 각각 끄거나 켤 수 있음
+
+#### 날짜 자동 구분선
+대화 로그에 날짜별 구분선이 자동으로 표시됩니다.
+- 긴 대화 내역을 날짜 기준으로 쉽게 탐색
+
+#### 버그 수정
+- 카테고리 필터 변경 시 화면 끊김 현상 해결
+- 만료/비공개 아이템의 블러 및 마스킹이 모든 화면에서 일관되게 적용
+- 상세 화면 대화 로그의 스크롤 위치가 정확하게 저장·복원
+
+#### 성능 개선
+- Firestore 불필요한 읽기/쓰기 절감으로 응답 속도 향상
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.4.0 <small>2026-03-01</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

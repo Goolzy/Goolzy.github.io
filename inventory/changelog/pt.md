@@ -29,6 +29,35 @@ Confira o histórico de atualizações do aplicativo Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.4.1 <small>2026-03-10</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Silenciar notificacoes
+Agora voce pode gerenciar as notificacoes de cada item individualmente.
+- Ative ou desative notificacoes push e notificacoes no aplicativo para itens especificos
+
+#### Divisores de data automaticos
+Divisores de data sao exibidos automaticamente nos registros de conversa.
+- Navegue facilmente por longos historicos de conversa por data
+
+#### Correcoes de bugs
+- Corrigido o travamento da tela ao alterar filtros de categoria
+- Desfoque e mascaramento de itens expirados/privados agora aplicados de forma consistente em todas as telas
+- A posicao de rolagem nos registros de conversa da tela de detalhes agora e salva e restaurada com precisao
+
+#### Melhorias de desempenho
+- Reducao de leituras/gravacoes desnecessarias no Firestore para tempos de resposta mais rapidos
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.4.0 <small>2026-03-01</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

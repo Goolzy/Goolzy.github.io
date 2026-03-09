@@ -29,6 +29,35 @@ Inventoryアプリのアップデート履歴をご確認ください。
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.4.1 <small>2026-03-10</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="コピー">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### 通知ミュート
+アイテムごとに通知を個別に管理できるようになりました。
+- 特定アイテムのプッシュ通知とアプリ内通知をそれぞれオン・オフ切り替え可能
+
+#### 日付自動区切り線
+会話ログに日付ごとの区切り線が自動的に表示されます。
+- 長い会話履歴を日付基準で簡単に探索
+
+#### バグ修正
+- カテゴリフィルター変更時の画面カクつき問題を解決
+- 期限切れ/非公開アイテムのぼかしとマスキングが全画面で一貫して適用
+- 詳細画面の会話ログのスクロール位置が正確に保存・復元
+
+#### パフォーマンス改善
+- Firestoreの不要な読み書きを削減し応答速度を向上
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.4.0 <small>2026-03-01</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="コピー">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
