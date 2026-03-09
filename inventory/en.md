@@ -45,6 +45,12 @@ Create items with a single sheet of paper, and transfer them to others via QR co
     <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">macOS</p>
   </a>
 
+  <a href="https://apps.microsoft.com/detail/9PMP8S7VT9N2" target="_blank" style="display: block; padding: 1.5rem; background: rgba(59, 130, 246, 0.2); backdrop-filter: blur(10px); border: 1px solid rgba(59, 130, 246, 0.3); border-radius: 16px; text-decoration: none; text-align: center;">
+    <div style="font-size: 2.5rem; margin-bottom: .5rem;">🪟</div>
+    <h4 style="margin: 0 0 .25rem 0; color: #3b82f6;">Microsoft Store</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Windows</p>
+  </a>
+
 </div>
 
 ---
