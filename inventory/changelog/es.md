@@ -29,6 +29,215 @@ Consulta el historial de actualizaciones de la aplicación Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.4.1 <small>2026-03-10</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Silenciar notificaciones
+Ahora puedes gestionar las notificaciones de cada elemento de forma individual.
+- Activa o desactiva las notificaciones push y las notificaciones en la app para elementos especificos
+
+#### Separadores de fecha automaticos
+Los separadores de fecha se muestran automaticamente en los registros de conversacion.
+- Navega facilmente por conversaciones largas por fecha
+
+#### Correccion de errores
+- Solucionado el parpadeo de pantalla al cambiar filtros de categoria
+- El desenfoque y enmascaramiento de elementos caducados/privados se aplica de forma consistente en todas las pantallas
+- La posicion de desplazamiento en los registros de conversacion de la pantalla de detalle se guarda y restaura correctamente
+
+#### Mejoras de rendimiento
+- Reduccion de lecturas/escrituras innecesarias en Firestore para tiempos de respuesta mas rapidos
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
+  <span class="version-title">v1.4.0 <small>2026-03-01</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Sistema de diseño híbrido de 3 capas
+Toda la aplicación ahora cuenta con un sistema de diseño de 3 capas: neumórfico + glassmorphism + droplet.
+- Aplicado en todas las pantallas incluyendo inicio de sesión, ajustes, tienda, búsqueda, plantillas compartidas y escáner QR
+- Visibilidad mejorada en modo claro — fondo de lienzo separado y contraste de bordes reforzado
+- Rediseño de componentes clave como notificaciones en la app, barra de acciones de selección y filtros de categoría
+
+#### Efectos de sonido y retroalimentación háptica
+Se han añadido efectos de sonido y retroalimentación háptica a 19 interacciones.
+- Respuestas auditivas y táctiles para acciones clave como botones, deslizamientos y transiciones
+
+#### Flujo conversacional del chatbot
+Se ha añadido un sistema de guía interactivo basado en JSON.
+- Crea documentos o plantillas siguiendo conversaciones paso a paso
+- Interacciones enriquecidas incluyendo opciones, validación de entrada y vistas previas
+
+#### Verificación de propiedad de sellos e itemización
+Verifica la propiedad de sellos y transfiere sellos como objetos.
+- Confirma la autenticidad del sello con mensajes de verificación de propiedad
+- Creación rápida de sellos con cambio de modo en línea
+
+#### Sistema de palabras clave
+Se ha construido la infraestructura de caché de palabras clave y se han añadido Cloud Functions de eliminación/construcción.
+- Búsquedas más rápidas con caché de palabras clave
+- Eliminación de palabras clave restringida solo al autor original
+- Las eliminaciones y cambios de palabras clave se sincronizan automáticamente en sellos, plantillas compartidas y elementos duplicados
+
+#### Edición de objetos
+Ahora puedes editar el contenido de los objetos después de crearlos.
+- Los propietarios pueden editar y guardar el contenido directamente
+
+#### Duplicación de objetos
+Duplica los objetos seleccionados para crear copias idénticas rápidamente.
+- Disponible desde el modo de selección de la pantalla principal y las pantallas de envío/transferencia
+- Recuento de clones (×n) mostrado en la superposición de información del objeto, el contador disminuye automáticamente al eliminar
+
+#### Overlay de detalles de plantillas compartidas
+Consulta información detallada, estadísticas, edición de palabras clave y configuración de uso compartido de plantillas compartidas de un vistazo.
+- Tamaño adaptable para diferentes tamaños de pantalla
+
+#### Renovación del menú de intercambio
+El menú de intercambio ha cambiado del menú hamburguesa al icono de engranaje.
+- Las notificaciones de intercambio se muestran en un sistema de toast apilado
+- Efecto de banda elástica al tirar hacia abajo y soporte de interacción de arrastre
+
+#### Carga prioritaria de caché de anuncios de tienda
+Los anuncios de la tienda ahora se cargan con prioridad de caché para una visualización más rápida.
+
+#### Interruptor de adición de registro en creación de objetos
+Al crear un objeto, puedes configurar si se permite añadir registros con el interruptor "Permitir adición de registro".
+
+#### Caché de posición de desplazamiento
+La posición de desplazamiento anterior se restaura automáticamente al volver a una pantalla.
+
+#### Sistema de carpetas
+'Bolsillo' ha sido renombrado a 'Carpeta'.
+- Se aplican automáticamente nombres apropiados según el idioma (nombrado basado en locale)
+- Edición en línea del nombre de carpeta mejorada
+
+#### Cambio en el orden de pestañas inferiores
+El orden de las pestañas de navegación inferior ha sido reorganizado y HomeTab ha sido refactorizado.
+
+#### Mejoras en búsqueda y filtros
+- Filtro de categoría cambiado a modo de casillas de verificación de selección múltiple
+- Vista de cuadrícula con cálculo dinámico de columnas y texto del elemento siempre visible
+
+#### Renovación del modo de selección
+La selección de objetos y las operaciones por lotes son ahora más intuitivas.
+- Selección simplificada con alternancia de toque único
+- Contorno de selección eliminado para una interfaz más limpia
+- Interfaz en línea de bloqueo/desbloqueo completamente renovada
+
+#### Mejoras en notificaciones
+- Tocar la notificación de recepción de objeto ahora abre el panel de información del objeto
+- Tiempo de descarte automático del toast en la app cambiado a 5 segundos
+- Corregidas notificaciones faltantes de aceptación/rechazo de intercambio y aceptación de transferencia
+
+#### Renovación de la pantalla de registros
+Los registros ahora se agrupan y muestran por carpeta.
+- Listas de registros organizadas por carpeta con nuevas animaciones
+- Pantalla de guía para nuevos usuarios sin registros
+
+#### Mejoras en comentarios
+- Botón de copiar añadido al menú de acciones de comentarios
+- Soporte multilingüe mejorado para textos de respuesta
+
+#### Cambio del marcador de tachado en texto enriquecido
+El marcador de tachado ha cambiado de signos de exclamación (!!) a paréntesis angulares (<>).
+
+#### Mejora del flujo de creación de sellos del chatbot
+El flujo conversacional de creación de sellos ha sido completamente reescrito.
+- Flujo de conversación más natural y experiencia de usuario mejorada
+
+#### Mejoras de rendimiento
+- Reemplazo completo de CachedNetworkImage y optimización de rebuild con context.select
+- Biblioteca del escáner QR actualizada (reducción de aproximadamente 55 MB en iOS)
+- Optimización de memoria de Cloud Functions
+
+#### Funciones eliminadas
+- Función de clip (agrupación) de objetos completamente eliminada
+- Sistema de registros independientes eliminado — integrado en registros compartidos
+- Widget de notificaciones heredado eliminado
+- Menú del asistente eliminado de la barra de navegación inferior
+
+#### Corrección de errores
+- Corregido el fallo Firestore IllegalState al seleccionar objetos en escritorio
+- Corregido el congelamiento al inicializar la cámara del escáner QR
+- Corregido el botón de compra deshabilitado que no mostraba el estado visual deshabilitado en la tienda
+- Corregido el estilo droplet no aplicado a la barra de búsqueda al seleccionar etiquetas populares/recientes
+- Corregida la notificación en la app faltante al aceptar transferencia de objeto
+- Corregidas las notificaciones de aceptación/rechazo de intercambio que no se enviaban
+- Corregidos errores de desplazamiento y teclado durante la edición en línea del nombre de carpeta
+- Corregida la activación errónea de animaciones durante el desplazamiento de registros
+- Corregido el fallo de autenticación de Windows Store (TLS + spinner infinito)
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
+  <span class="version-title">v1.3.3 <small>2026-02-21</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Grabar en sello (Creación inversa de plantillas)
+Convierte documentos existentes en plantillas de sello.
+- **Documento → Sello**: Convierte el contenido de un documento ya escrito en una plantilla de sello
+- **Speed Dial / Bottom Sheet**: Selecciona "Grabar en sello" desde el menú de acciones rápidas en la pantalla de inicio
+- **Filtro de condiciones**: Los documentos agrupados en un clip se excluyen automáticamente de los objetivos
+
+#### Biblioteca de componentes GUI neumórficos
+Se han agregado más de 95 componentes con diseño neumórfico.
+- **Widgets variados**: Soporte para una amplia gama de elementos de interfaz, incluyendo botones, tarjetas, campos de entrada y diálogos
+- **Modo oscuro/claro**: Todos los componentes son compatibles con ambos modos
+
+#### Rediseno completo de la pantalla de inicio de sesion
+Las pantallas de inicio de sesion, registro y recuperacion de contrasena se han rediseñado completamente con diseño neumorfico.
+- **Diseno neumorfico**: Tema vintage unificado aplicado en toda la aplicacion
+- **Recuperacion de contrasena**: Restablezca su contrasena comodamente con un dialogo dedicado
+- **Mejoras de UX**: Mensajes de error detallados, alternancia de visibilidad de contrasena, autocompletado e indicadores de carga añadidos
+
+#### Indicador de carga de Cloud Function
+Se muestran indicadores de carga durante las solicitudes al servidor y se previenen solicitudes duplicadas.
+- **Indicador de carga**: Retroalimentación visual mientras las operaciones del servidor están en progreso
+- **Prevención de duplicados**: Bloqueo automático de solicitudes idénticas repetidas
+
+#### Sincronización instantánea tras compra en tienda
+La base de datos local se actualiza inmediatamente al completar una compra en la tienda.
+- Los nuevos artículos aparecen en tu inventario justo después de la compra
+
+#### Mejoras de interfaz
+- Se ha mejorado la visibilidad del campo de entrada del chat
+- Las etiquetas de texto de los botones de acción de Speed Dial ahora se pueden tocar
+- El texto largo de descripción de artículos ahora se muestra correctamente sin cortarse
+- Se ha mejorado el diseño de la pantalla de recepción
+
+#### Correcciones de errores
+- Se corrigió un problema donde la transparencia de la imagen se perdía al arrastrar artículos
+- Se corrigió un problema donde los artículos no se creaban durante la recompra rápida
+
+#### Rendimiento y estabilidad
+- El motor del servidor Cloud Functions se ha actualizado a v2 para tiempos de respuesta más rápidos
+- Se han reforzado las reglas de seguridad
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.3.2 <small>2026-02-13</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

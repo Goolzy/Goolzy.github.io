@@ -401,8 +401,6 @@ Możesz używać różnych formatów podczas pisania dzienników.
 |--------|-------------|---------|
 | Zwykły tekst | Wyświetlany jako bąbelek czatu | `Inspekcja ukończona dzisiaj!` |
 | `klucz:wartość` | Wyświetlany jako karta informacyjna (klucz 1-8 znaków) | `status:dobrze` |
-| `---` | Wyświetlany jako separator | `---` |
-
 Użycie tego samego klucza wiele razy wyświetla jako porównanie `poprzednia wartość → nowa wartość`.
 
 **Stylowanie tekstu:**
@@ -416,7 +414,7 @@ Użycie tego samego klucza wiele razy wyświetla jako porównanie `poprzednia wa
 | `(tekst)` | Tekst koloru pomocniczego | `(Dodatkowe informacje)` |
 | `"tekst"` | **Pogrubienie** | `"Ważna zawartość"` |
 | `'tekst'` | <u>Podkreślenie</u> | `'Wyróżniona część'` |
-| `!tekst!` | ~~Przekreślenie~~ | `!Usunięta zawartość!` |
+| `<tekst>` | ~~Przekreślenie~~ | `<Usunięta zawartość>` |
 
 > 💡 Style mogą być zagnieżdżone do 3 poziomów. Przykład: `{["Pogrubienie głównego koloru"]}`
 

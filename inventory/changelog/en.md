@@ -29,6 +29,215 @@ Check out the update history for the Inventory app.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.4.1 <small>2026-03-10</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Notification Mute
+You can now manage notifications for each item individually.
+- Toggle push notifications and in-app notifications on or off for specific items
+
+#### Automatic Date Dividers
+Date dividers are now automatically displayed in conversation logs.
+- Easily navigate long conversation histories by date
+
+#### Bug Fixes
+- Fixed screen stuttering when changing category filters
+- Blur and masking for expired/private items now applied consistently across all screens
+- Scroll position in detail screen conversation logs is now accurately saved and restored
+
+#### Performance Improvements
+- Reduced unnecessary Firestore reads/writes for faster response times
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
+  <span class="version-title">v1.4.0 <small>2026-03-01</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### 3-Layer Hybrid Design System
+The entire app now features a neumorphic + glassmorphism + droplet 3-layer design system.
+- Applied across all screens including login, settings, shop, search, shared templates, and QR scanner
+- Improved light mode visibility — separated canvas background and enhanced border contrast
+- Redesigned key components including in-app notifications, selection action bar, and category filters
+
+#### Sound Effects and Haptic Feedback
+Sound effects and haptic feedback have been added to 19 interactions.
+- Auditory and tactile responses for key actions including buttons, swipes, and transitions
+
+#### Chatbot Conversational Flow
+A JSON-based interactive guidance system has been added.
+- Create documents or templates by following step-by-step conversations
+- Rich interactions including choices, input validation, and previews
+
+#### Stamp Ownership Verification and Itemization
+Verify stamp ownership and transfer stamps as items.
+- Confirm stamp authenticity with ownership verification messages
+- Quick stamp creation with inline mode switching
+
+#### Keyword System
+Keyword cache infrastructure built with delete/build Cloud Functions added.
+- Faster lookups with keyword caching
+- Keyword deletion restricted to original author only
+- Keyword deletions and changes automatically synced across stamps, shared templates, and duplicated items
+
+#### Item Editing
+You can now edit item content after creation.
+- Item owners can directly edit and save content
+
+#### Item Duplication
+Duplicate selected items to quickly create identical copies.
+- Available from home screen selection mode and send/transfer screens
+- Clone count (xn) displayed on item info overlay, count decreases automatically on deletion
+
+#### Shared Template Detail Overlay
+View detailed information, statistics, keyword editing, and sharing settings for shared templates at a glance.
+- Responsive sizing for various screen sizes
+
+#### Trade Menu Overhaul
+The trade menu has been changed from a hamburger menu to a gear icon.
+- Trade notifications displayed in a stacked toast system
+- Pull-down rubber band effect and drag interaction support
+
+#### Store Announcement Cache-First Loading
+Store announcements now load cache-first for faster display.
+
+#### Allow Log Addition Toggle on Item Creation
+Set whether logs can be added when creating an item with the "Allow log addition" toggle.
+
+#### Scroll Position Cache
+Previous scroll position is automatically restored when returning to a screen.
+
+#### Folder System
+'Pocket' has been renamed to 'Folder'.
+- Locale-appropriate names are automatically applied per language
+- Improved inline folder name editing
+
+#### Bottom Tab Order Change
+The bottom navigation tab order has been reorganized and HomeTab has been refactored.
+
+#### Search and Filter Improvements
+- Category filter changed to multi-select checkbox mode
+- Grid view dynamic column calculation with item text always displayed
+
+#### Selection Mode Overhaul
+Item selection and batch operations are now more intuitive.
+- Simplified selection with single-touch toggle
+- Selection outline removed for cleaner UI
+- Inline lock/unlock UI completely overhauled
+
+#### Notification Improvements
+- Tapping item receipt notification now opens the item info panel
+- In-app toast auto-dismiss time changed to 5 seconds
+- Fixed missing trade accept/reject and transfer acceptance notifications
+
+#### Log Screen Overhaul
+Logs are now grouped and displayed by folder.
+- Organized log lists by folder with new animations
+- Guidance screen displayed for new users with no logs
+
+#### Comment Enhancements
+- Added copy button to comment action menu
+- Improved reply text multilingual support
+
+#### Rich Text Strikethrough Marker Change
+The strikethrough marker has been changed from exclamation marks (!!) to angle brackets (<>).
+
+#### Chatbot Stamp Creation Flow Improvements
+The stamp creation conversational flow has been completely rewritten.
+- More natural conversation flow and improved user experience
+
+#### Performance Improvements
+- Full replacement of CachedNetworkImage and rebuild optimization with context.select
+- QR scanner library upgraded (approximately 55MB reduction on iOS)
+- Cloud Functions memory optimization
+
+#### Removed Features
+- Item clip (bundling) feature completely removed
+- Standalone log system removed — merged into shared logs
+- Legacy notification widget removed
+- Wizard menu removed from bottom navigation bar
+
+#### Bug Fixes
+- Fixed Firestore IllegalState crash when selecting items on desktop
+- Fixed freeze when initializing QR scanner camera
+- Fixed disabled purchase button not showing visual disabled state in shop
+- Fixed droplet style not applied to search bar when selecting popular/recent tags
+- Fixed missing in-app notification when accepting item transfer
+- Fixed trade accept/reject notifications not being sent
+- Fixed scroll and keyboard bugs during inline folder name editing
+- Fixed animation misfiring during log scrolling
+- Fixed Windows Store authentication failure (TLS + infinite spinner)
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
+  <span class="version-title">v1.3.3 <small>2026-02-21</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Engrave to Stamp (Reverse Templating)
+Turn existing documents into stamp templates.
+- **Document to Stamp**: Convert the content of an already written document into a stamp template
+- **Speed Dial / Bottom Sheet**: Select 'Engrave to Stamp' from the quick action menu on the home screen
+- **Condition Filter**: Documents bundled in a clip are automatically excluded from targets
+
+#### Neumorphic GUI Component Library
+Over 95 neumorphic design components have been added.
+- **Diverse Widgets**: Supports a wide range of UI elements including buttons, cards, input fields, and dialogs
+- **Dark/Light Mode**: All components support both modes
+
+#### Login Screen Redesign
+Login, sign-up, and password recovery screens have been completely redesigned with neumorphic design.
+- **Neumorphic Design**: Unified vintage theme applied across the entire app
+- **Password Recovery**: Conveniently reset your password with a dedicated dialog
+- **UX Improvements**: Detailed error messages, password visibility toggle, autocomplete, and loading indicators added
+
+#### Cloud Function Loading Indicator
+Loading indicators are now displayed during server requests, and duplicate requests are prevented.
+- **Loading Indicator**: Visual feedback provided while server operations are in progress
+- **Duplicate Prevention**: Automatically blocks the same request from being sent repeatedly
+
+#### Instant Sync After Shop Purchase
+The local database is updated immediately when a shop purchase is completed.
+- New items appear in your inventory right after purchase
+
+#### UI Improvements
+- Chat input field visibility has been improved for easier identification of the input area
+- Speed Dial action button text labels are now tappable to execute functions
+- Long item description text is now displayed correctly without being cut off
+- Receive screen layout has been improved
+
+#### Bug Fixes
+- Fixed an issue where image transparency was lost when dragging items
+- Fixed an issue where items were not created during quick repurchase
+
+#### Performance & Stability
+- Cloud Functions server engine has been upgraded to v2 for faster response times
+- Security rules have been strengthened
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.3.2 <small>2026-02-13</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

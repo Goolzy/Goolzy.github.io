@@ -29,6 +29,215 @@ Consultez l'historique des mises à jour de l'application Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.4.1 <small>2026-03-10</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Mise en sourdine des notifications
+Vous pouvez desormais gerer les notifications pour chaque element individuellement.
+- Activez ou desactivez les notifications push et les notifications dans l'application pour des elements specifiques
+
+#### Separateurs de date automatiques
+Des separateurs de date sont automatiquement affiches dans les journaux de conversation.
+- Parcourez facilement les longs historiques de conversation par date
+
+#### Corrections de bugs
+- Correction du saccadement de l'ecran lors du changement de filtres de categorie
+- Le flou et le masquage des elements expires/prives sont desormais appliques de maniere coherente sur tous les ecrans
+- La position de defilement dans les journaux de conversation de l'ecran de detail est desormais correctement sauvegardee et restauree
+
+#### Ameliorations des performances
+- Reduction des lectures/ecritures Firestore inutiles pour des temps de reponse plus rapides
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
+  <span class="version-title">v1.4.0 <small>2026-03-01</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Système de design hybride à 3 couches
+L'ensemble de l'application dispose désormais d'un système de design à 3 couches : neumorphique + glassmorphisme + droplet.
+- Appliqué à tous les écrans y compris connexion, paramètres, boutique, recherche, modèles partagés et scanner QR
+- Visibilité améliorée en mode clair — arrière-plan du canevas séparé et contraste des bordures renforcé
+- Refonte des composants clés incluant les notifications in-app, la barre d'actions de sélection et les filtres de catégorie
+
+#### Effets sonores et retour haptique
+Des effets sonores et un retour haptique ont été ajoutés à 19 interactions.
+- Réponses auditives et tactiles pour les actions clés comme les boutons, les glissements et les transitions
+
+#### Flux conversationnel du chatbot
+Un système de guidage interactif basé sur JSON a été ajouté.
+- Créez des documents ou des modèles en suivant des conversations étape par étape
+- Interactions riches incluant des choix, une validation des entrées et des aperçus
+
+#### Vérification de propriété des tampons et conversion en objet
+Vérifiez la propriété des tampons et transférez-les en tant qu'objets.
+- Confirmez l'authenticité du tampon avec des messages de vérification de propriété
+- Création rapide de tampons avec basculement en mode en ligne
+
+#### Système de mots-clés
+Infrastructure de cache de mots-clés construite avec ajout de Cloud Functions de suppression/construction.
+- Recherches plus rapides grâce à la mise en cache des mots-clés
+- Suppression des mots-clés restreinte à l'auteur original uniquement
+- Les suppressions et modifications de mots-clés sont automatiquement synchronisées dans les tampons, modèles partagés et éléments dupliqués
+
+#### Édition d'objets
+Vous pouvez désormais modifier le contenu des objets après leur création.
+- Les propriétaires peuvent directement modifier et sauvegarder le contenu
+
+#### Duplication d'objets
+Dupliquez les objets sélectionnés pour créer rapidement des copies identiques.
+- Disponible depuis le mode de sélection de l'écran d'accueil et les écrans d'envoi/transfert
+- Compteur de clones (×n) affiché sur la superposition d'informations de l'objet, le compteur diminue automatiquement lors de la suppression
+
+#### Overlay de détails des modèles partagés
+Consultez les informations détaillées, les statistiques, l'édition des mots-clés et les paramètres de partage des modèles partagés en un coup d'oeil.
+- Taille adaptative pour différentes tailles d'écran
+
+#### Refonte du menu d'échange
+Le menu d'échange est passé du menu hamburger à l'icône d'engrenage.
+- Les notifications d'échange sont affichées dans un système de toast empilé
+- Effet élastique en tirant vers le bas et support d'interaction par glissement
+
+#### Chargement prioritaire du cache des annonces de boutique
+Les annonces de boutique sont désormais chargées en priorité depuis le cache pour un affichage plus rapide.
+
+#### Bascule d'ajout de journal à la création d'objet
+Lors de la création d'un objet, configurez si les journaux peuvent être ajoutés avec la bascule « Autoriser l'ajout de journal ».
+
+#### Cache de position de défilement
+La position de défilement précédente est automatiquement restaurée lors du retour à un écran.
+
+#### Système de dossiers
+'Poche' a été renommé en 'Dossier'.
+- Des noms appropriés sont automatiquement appliqués selon la langue (nommage basé sur les paramètres régionaux)
+- Édition en ligne du nom de dossier améliorée
+
+#### Changement de l'ordre des onglets inférieurs
+L'ordre des onglets de navigation inférieure a été réorganisé et HomeTab a été refactorisé.
+
+#### Améliorations de la recherche et des filtres
+- Filtre de catégorie modifié en mode cases à cocher à sélection multiple
+- Vue en grille avec calcul dynamique des colonnes et texte de l'élément toujours affiché
+
+#### Refonte du mode de sélection
+La sélection d'objets et les opérations par lots sont désormais plus intuitives.
+- Sélection simplifiée avec basculement par simple touche
+- Contour de sélection supprimé pour une interface plus épurée
+- Interface en ligne de verrouillage/déverrouillage entièrement remaniée
+
+#### Améliorations des notifications
+- Appuyer sur la notification de réception d'objet ouvre désormais le panneau d'informations de l'objet
+- Délai de suppression automatique des toasts in-app modifié à 5 secondes
+- Correction des notifications manquantes d'acceptation/refus d'échange et d'acceptation de transfert
+
+#### Refonte de l'écran des journaux
+Les journaux sont désormais regroupés et affichés par dossier.
+- Listes de journaux organisées par dossier avec de nouvelles animations
+- Écran d'orientation pour les nouveaux utilisateurs sans journaux
+
+#### Améliorations des commentaires
+- Bouton de copie ajouté au menu d'actions des commentaires
+- Support multilingue amélioré pour les textes de réponse
+
+#### Changement du marqueur barré dans le texte enrichi
+Le marqueur de texte barré a été changé des points d'exclamation (!!) aux chevrons (<>).
+
+#### Amélioration du flux de création de tampons du chatbot
+Le flux conversationnel de création de tampons a été entièrement réécrit.
+- Flux de conversation plus naturel et expérience utilisateur améliorée
+
+#### Améliorations des performances
+- Remplacement complet de CachedNetworkImage et optimisation du rebuild avec context.select
+- Bibliothèque du scanner QR mise à jour (réduction d'environ 55 Mo sur iOS)
+- Optimisation de la mémoire des Cloud Functions
+
+#### Fonctionnalités supprimées
+- Fonction de clip (regroupement) d'objets entièrement supprimée
+- Système de journaux autonomes supprimé — intégré aux journaux partagés
+- Widget de notifications hérité supprimé
+- Menu de l'assistant supprimé de la barre de navigation inférieure
+
+#### Corrections de bugs
+- Correction du crash Firestore IllegalState lors de la sélection d'objets sur bureau
+- Correction du gel lors de l'initialisation de la caméra du scanner QR
+- Correction du bouton d'achat désactivé n'affichant pas l'état visuel désactivé dans la boutique
+- Correction du style droplet non appliqué à la barre de recherche lors de la sélection de tags populaires/récents
+- Correction de la notification in-app manquante lors de l'acceptation du transfert d'objet
+- Correction des notifications d'acceptation/refus d'échange non envoyées
+- Correction des bugs de défilement et de clavier lors de l'édition en ligne du nom de dossier
+- Correction du déclenchement erroné des animations lors du défilement des journaux
+- Correction de l'échec d'authentification Windows Store (TLS + spinner infini)
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
+  <span class="version-title">v1.3.3 <small>2026-02-21</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Graver sur le tampon (Modélisation inversée)
+Transformez des documents existants en modèles de tampon.
+- **Document → Tampon** : Convertissez le contenu d'un document existant en modèle de tampon
+- **Speed Dial / Bottom Sheet** : Sélectionnez « Graver sur le tampon » depuis le menu d'actions rapides sur l'écran d'accueil
+- **Filtre de conditions** : Les documents regroupés dans un clip sont automatiquement exclus des cibles
+
+#### Bibliothèque de composants GUI néomorphiques
+Plus de 95 composants au design néomorphique ont été ajoutés.
+- **Widgets variés** : Prise en charge d'une large gamme d'éléments UI, notamment des boutons, cartes, champs de saisie et dialogues
+- **Mode sombre/clair** : Tous les composants prennent en charge les deux modes
+
+#### Refonte complete de l'ecran de connexion
+Les ecrans de connexion, d'inscription et de recuperation de mot de passe ont ete entierement repensés avec un design neumorphique.
+- **Design neumorphique**: Theme vintage unifie applique dans toute l'application
+- **Recuperation de mot de passe**: Réinitialisez facilement votre mot de passe via un dialogue dedie
+- **Ameliorations UX**: Messages d'erreur detailles, bascule de visibilite du mot de passe, saisie automatique et indicateurs de chargement ajoutes
+
+#### Indicateur de chargement Cloud Function
+Des indicateurs de chargement s'affichent lors des requêtes serveur et les requêtes en double sont bloquées.
+- **Indicateur de chargement** : Retour visuel pendant les opérations serveur en cours
+- **Prévention des doublons** : Blocage automatique des requêtes identiques répétées
+
+#### Synchronisation instantanée après achat en boutique
+La base de données locale est mise à jour immédiatement lorsqu'un achat est effectué.
+- Les nouveaux articles apparaissent dans votre inventaire juste après l'achat
+
+#### Améliorations de l'interface
+- La visibilité du champ de saisie du chat a été améliorée
+- Les libellés textuels des boutons d'action Speed Dial sont désormais cliquables
+- Les descriptions longues d'articles s'affichent correctement sans être tronquées
+- La mise en page de l'écran de réception a été améliorée
+
+#### Corrections de bugs
+- Correction d'un problème où la transparence des images était perdue lors du glissement d'articles
+- Correction d'un problème où les articles n'étaient pas créés lors d'un rachat rapide
+
+#### Performance et stabilité
+- Le moteur serveur Cloud Functions a été mis à niveau vers la v2 pour des temps de réponse plus rapides
+- Les règles de sécurité ont été renforcées
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.3.2 <small>2026-02-13</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

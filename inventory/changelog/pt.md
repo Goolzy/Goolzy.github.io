@@ -29,6 +29,215 @@ Confira o histórico de atualizações do aplicativo Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.4.1 <small>2026-03-10</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Silenciar notificacoes
+Agora voce pode gerenciar as notificacoes de cada item individualmente.
+- Ative ou desative notificacoes push e notificacoes no aplicativo para itens especificos
+
+#### Divisores de data automaticos
+Divisores de data sao exibidos automaticamente nos registros de conversa.
+- Navegue facilmente por longos historicos de conversa por data
+
+#### Correcoes de bugs
+- Corrigido o travamento da tela ao alterar filtros de categoria
+- Desfoque e mascaramento de itens expirados/privados agora aplicados de forma consistente em todas as telas
+- A posicao de rolagem nos registros de conversa da tela de detalhes agora e salva e restaurada com precisao
+
+#### Melhorias de desempenho
+- Reducao de leituras/gravacoes desnecessarias no Firestore para tempos de resposta mais rapidos
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
+  <span class="version-title">v1.4.0 <small>2026-03-01</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Sistema de design híbrido de 3 camadas
+Todo o aplicativo agora conta com um sistema de design de 3 camadas: neumórfico + glassmorfismo + droplet.
+- Aplicado em todas as telas incluindo login, configurações, loja, pesquisa, modelos compartilhados e scanner QR
+- Visibilidade melhorada no modo claro — fundo do canvas separado e contraste de bordas reforçado
+- Redesenho de componentes-chave incluindo notificações no app, barra de ações de seleção e filtros de categoria
+
+#### Efeitos sonoros e feedback háptico
+Efeitos sonoros e feedback háptico foram adicionados a 19 interações.
+- Respostas auditivas e táteis para ações-chave como botões, deslizamentos e transições
+
+#### Fluxo conversacional do chatbot
+Um sistema de orientação interativo baseado em JSON foi adicionado.
+- Crie documentos ou modelos seguindo conversas passo a passo
+- Interações ricas incluindo opções, validação de entrada e visualizações prévias
+
+#### Verificação de propriedade de carimbos e conversão em item
+Verifique a propriedade dos carimbos e transfira-os como itens.
+- Confirme a autenticidade do carimbo com mensagens de verificação de propriedade
+- Criação rápida de carimbos com alternância de modo inline
+
+#### Sistema de palavras-chave
+Infraestrutura de cache de palavras-chave construída com Cloud Functions de exclusão/construção adicionadas.
+- Buscas mais rápidas com cache de palavras-chave
+- Exclusão de palavras-chave restrita apenas ao autor original
+- Exclusões e alterações de palavras-chave sincronizadas automaticamente em carimbos, modelos compartilhados e itens duplicados
+
+#### Edição de itens
+Agora você pode editar o conteúdo dos itens após a criação.
+- Proprietários podem editar e salvar o conteúdo diretamente
+
+#### Duplicação de itens
+Duplique os itens selecionados para criar cópias idênticas rapidamente.
+- Disponível no modo de seleção da tela inicial e nas telas de envio/transferência
+- Contagem de clones (×n) exibida na sobreposição de informações do item, o contador diminui automaticamente ao excluir
+
+#### Overlay de detalhes de modelos compartilhados
+Visualize informações detalhadas, estatísticas, edição de palavras-chave e configurações de compartilhamento de modelos compartilhados de uma só vez.
+- Tamanho responsivo para diferentes tamanhos de tela
+
+#### Reformulação do menu de troca
+O menu de troca mudou do menu hamburger para o ícone de engrenagem.
+- Notificações de troca exibidas em um sistema de toast empilhado
+- Efeito elástico ao puxar para baixo e suporte à interação de arrasto
+
+#### Carregamento prioritário do cache de anúncios da loja
+Os anúncios da loja agora são carregados com prioridade do cache para exibição mais rápida.
+
+#### Interruptor de adição de registro na criação de itens
+Ao criar um item, configure se registros podem ser adicionados com o interruptor "Permitir adição de registro".
+
+#### Cache de posição de rolagem
+A posição de rolagem anterior é automaticamente restaurada ao retornar a uma tela.
+
+#### Sistema de pastas
+'Bolso' foi renomeado para 'Pasta'.
+- Nomes apropriados são automaticamente aplicados conforme o idioma (nomeação baseada em locale)
+- Edição inline do nome da pasta melhorada
+
+#### Alteração na ordem das abas inferiores
+A ordem das abas de navegação inferior foi reorganizada e HomeTab foi refatorado.
+
+#### Melhorias na pesquisa e filtros
+- Filtro de categoria alterado para modo de caixas de seleção múltipla
+- Visualização em grade com cálculo dinâmico de colunas e texto do item sempre visível
+
+#### Reformulação do modo de seleção
+A seleção de itens e operações em lote agora são mais intuitivas.
+- Seleção simplificada com alternância por toque único
+- Contorno de seleção removido para interface mais limpa
+- Interface inline de bloqueio/desbloqueio completamente reformulada
+
+#### Melhorias nas notificações
+- Tocar na notificação de recebimento de item agora abre o painel de informações do item
+- Tempo de descarte automático do toast no app alterado para 5 segundos
+- Corrigidas notificações ausentes de aceitação/rejeição de troca e aceitação de transferência
+
+#### Reformulação da tela de registros
+Os registros agora são agrupados e exibidos por pasta.
+- Listas de registros organizadas por pasta com novas animações
+- Tela de orientação para novos usuários sem registros
+
+#### Melhorias nos comentários
+- Botão de copiar adicionado ao menu de ações de comentários
+- Suporte multilíngue melhorado para textos de resposta
+
+#### Alteração do marcador de tachado em texto rico
+O marcador de tachado foi alterado de pontos de exclamação (!!) para colchetes angulares (<>).
+
+#### Melhoria do fluxo de criação de carimbos do chatbot
+O fluxo conversacional de criação de carimbos foi completamente reescrito.
+- Fluxo de conversa mais natural e experiência do usuário aprimorada
+
+#### Melhorias de desempenho
+- Substituição completa do CachedNetworkImage e otimização de rebuild com context.select
+- Biblioteca do scanner QR atualizada (redução de aproximadamente 55 MB no iOS)
+- Otimização de memória do Cloud Functions
+
+#### Funcionalidades removidas
+- Função de clip (agrupamento) de itens completamente removida
+- Sistema de registros independentes removido — integrado aos registros compartilhados
+- Widget de notificações legado removido
+- Menu do assistente removido da barra de navegação inferior
+
+#### Correções de bugs
+- Corrigido o crash Firestore IllegalState ao selecionar itens no desktop
+- Corrigido o congelamento ao inicializar a câmera do scanner QR
+- Corrigido botão de compra desabilitado que não mostrava o estado visual desabilitado na loja
+- Corrigido estilo droplet não aplicado à barra de pesquisa ao selecionar tags populares/recentes
+- Corrigida notificação no app ausente ao aceitar transferência de item
+- Corrigidas notificações de aceitação/rejeição de troca que não eram enviadas
+- Corrigidos bugs de rolagem e teclado durante a edição inline do nome da pasta
+- Corrigido o disparo incorreto de animações durante a rolagem de registros
+- Corrigida falha de autenticação da Windows Store (TLS + spinner infinito)
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
+  <span class="version-title">v1.3.3 <small>2026-02-21</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Gravar no carimbo (Criação reversa de modelo)
+Transforme documentos existentes em modelos de carimbo.
+- **Documento → Carimbo**: Converta o conteúdo de um documento já escrito em modelo de carimbo
+- **Speed Dial / Bottom Sheet**: Selecione "Gravar no carimbo" no menu de ações rápidas na tela inicial
+- **Filtro de condições**: Documentos agrupados em um clip são automaticamente excluídos dos alvos
+
+#### Biblioteca de componentes GUI neumórficos
+Mais de 95 componentes com design neumórfico foram adicionados.
+- **Widgets diversos**: Suporte para uma ampla variedade de elementos de interface, incluindo botões, cartões, campos de entrada e diálogos
+- **Modo escuro/claro**: Todos os componentes suportam ambos os modos
+
+#### Reformulacao completa da tela de login
+As telas de login, cadastro e recuperacao de senha foram completamente reformuladas com design neumorfico.
+- **Design neumorfico**: Tema vintage unificado aplicado em todo o aplicativo
+- **Recuperacao de senha**: Redefina sua senha facilmente com um dialogo dedicado
+- **Melhorias de UX**: Mensagens de erro detalhadas, alternancia de visibilidade de senha, preenchimento automatico e indicadores de carregamento adicionados
+
+#### Indicador de carregamento Cloud Function
+Indicadores de carregamento são exibidos durante solicitações ao servidor e solicitações duplicadas são bloqueadas.
+- **Indicador de carregamento**: Feedback visual fornecido enquanto operações do servidor estão em andamento
+- **Prevenção de duplicatas**: Bloqueio automático de solicitações idênticas repetidas
+
+#### Sincronização instantânea após compra na loja
+O banco de dados local é atualizado imediatamente quando uma compra na loja é concluída.
+- Novos itens aparecem no seu inventário logo após a compra
+
+#### Melhorias na interface
+- A visibilidade do campo de entrada do chat foi aprimorada
+- Os rótulos de texto dos botões de ação do Speed Dial agora podem ser tocados
+- Textos longos de descrição de itens agora são exibidos corretamente sem cortes
+- O layout da tela de recebimento foi melhorado
+
+#### Correções de bugs
+- Corrigido um problema onde a transparência da imagem era perdida ao arrastar itens
+- Corrigido um problema onde itens não eram criados durante recompra rápida
+
+#### Desempenho e estabilidade
+- O motor do servidor Cloud Functions foi atualizado para v2 para tempos de resposta mais rápidos
+- As regras de segurança foram reforçadas
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.3.2 <small>2026-02-13</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

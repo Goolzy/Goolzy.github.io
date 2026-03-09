@@ -236,7 +236,7 @@ Escritos como mensagens, são exibidos como chat. Escritos como <code>chave:valo
 <li><code>(texto)</code> - Texto cor secundária</li>
 <li><code>"texto"</code> - Negrito</li>
 <li><code>'texto'</code> - Sublinhado</li>
-<li><code>!texto!</code> - Tachado</li>
+<li><code>&lt;texto&gt;</code> - Tachado</li>
 </ul>
 Estilos podem ser aninhados até 3 níveis. Usar a mesma chave múltiplas vezes exibe <code>valor anterior → novo valor</code>.
 </div>

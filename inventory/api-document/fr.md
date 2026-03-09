@@ -202,8 +202,11 @@ curl -X POST \
        "imageUrl": "https://example.com/image.png",
        "title": "Titre du modele",
        "content": "Contenu du modele",
-       "commentMode": "independent",
-       "keywords": ["produit:ordinateur", "prix:$1500EUR$"]
+        "commentMode": "independent",
+        "logPermission": "owner",
+        "keywordPermission": "owner",
+        "allowEdit": true,
+        "keywords": ["produit:ordinateur", "prix:$1500EUR$"]
      }' \
      "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates"
 ```
@@ -216,6 +219,10 @@ curl -X POST \
 | title | string | Oui | Titre (max 32 caracteres) |
 | content | string | Oui | Contenu (max 1024 caracteres) |
 | commentMode | string | Non | Mode commentaire: "independent" ou "shared" |
+| ~~allowComments~~ | ~~boolean~~ | ~~Non~~ | ~~Autoriser l'ajout de journaux~~ (deprecated: remplacé par `logPermission`) |
+| logPermission | string | Non | Autorisation de journal: "owner" \| "author" \| "none" (par défaut : "owner") |
+| keywordPermission | string | Non | Autorisation de mot-clé: "owner" \| "author" \| "none" (par défaut : "owner") |
+| allowEdit | boolean | Non | Autoriser la modification (par défaut : true) |
 | keywords | string[] | Non | Tableau de mots-cles (max 128) |
 
 #### Format des mots-cles

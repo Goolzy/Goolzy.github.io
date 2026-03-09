@@ -29,6 +29,215 @@ Sehen Sie sich den Update-Verlauf der Inventory-App an.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.4.1 <small>2026-03-10</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopieren">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Benachrichtigungen stummschalten
+Benachrichtigungen koennen jetzt fuer jedes Element einzeln verwaltet werden.
+- Push-Benachrichtigungen und In-App-Benachrichtigungen fuer bestimmte Elemente ein- oder ausschalten
+
+#### Automatische Datumstrenner
+In Gespraechsprotokollen werden automatisch Datumstrenner angezeigt.
+- Lange Gespraechsverlaeufe einfach nach Datum durchsuchen
+
+#### Fehlerbehebungen
+- Bildschirmruckeln beim Aendern von Kategoriefiltern behoben
+- Unschaerfe und Maskierung fuer abgelaufene/private Elemente werden jetzt konsistent auf allen Bildschirmen angewendet
+- Scrollposition in Gespraechsprotokollen der Detailansicht wird jetzt korrekt gespeichert und wiederhergestellt
+
+#### Leistungsverbesserungen
+- Unnoetige Firestore-Lese-/Schreibvorgaenge reduziert fuer schnellere Reaktionszeiten
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
+  <span class="version-title">v1.4.0 <small>2026-03-01</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopieren">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### 3-Layer-Hybrid-Designsystem
+Die gesamte App verfügt jetzt über ein neumorphes + Glassmorphismus + Droplet 3-Layer-Designsystem.
+- Angewendet auf alle Bildschirme einschließlich Login, Einstellungen, Shop, Suche, geteilte Vorlagen und QR-Scanner
+- Verbesserte Sichtbarkeit im hellen Modus — getrennte Canvas-Hintergründe und verstärkter Rahmenkontrast
+- Neugestaltung wichtiger Komponenten wie In-App-Benachrichtigungen, Auswahl-Aktionsleiste und Kategoriefilter
+
+#### Soundeffekte und haptisches Feedback
+Soundeffekte und haptisches Feedback wurden für 19 Interaktionen hinzugefügt.
+- Akustisches und taktiles Feedback für wichtige Aktionen wie Buttons, Wischen und Übergänge
+
+#### Chatbot-Dialogfluss
+Ein JSON-basiertes interaktives Leitsystem wurde hinzugefügt.
+- Erstellen Sie Dokumente oder Vorlagen durch schrittweise Konversationen
+- Umfangreiche Interaktionen einschließlich Auswahlmöglichkeiten, Eingabevalidierung und Vorschauen
+
+#### Stempel-Eigentumsverifizierung und Gegenstandisierung
+Überprüfen Sie das Stempel-Eigentum und übertragen Sie Stempel als Gegenstände.
+- Bestätigen Sie die Stempel-Authentizität mit Eigentumsverifizierungsnachrichten
+- Schnelle Stempel-Erstellung mit Inline-Modus-Umschaltung
+
+#### Schlüsselwort-System
+Schlüsselwort-Cache-Infrastruktur aufgebaut und Lösch-/Build-Cloud-Functions hinzugefügt.
+- Schnellere Abfragen durch Schlüsselwort-Caching
+- Schlüsselwort-Löschung auf den Originalautor beschränkt
+- Schlüsselwort-Löschungen und -Änderungen werden automatisch über Stempel, geteilte Vorlagen und duplizierte Gegenstände synchronisiert
+
+#### Gegenstandsbearbeitung
+Gegenstandsinhalte können jetzt auch nach der Erstellung bearbeitet werden.
+- Gegenstandsbesitzer können Inhalte direkt bearbeiten und speichern
+
+#### Gegenstandsduplizierung
+Duplizieren Sie ausgewählte Gegenstände, um schnell identische Kopien zu erstellen.
+- Verfügbar im Auswahlmodus des Startbildschirms und auf Sende-/Übertragungsbildschirmen
+- Duplikatanzahl (×n) wird im Gegenstandsinfo-Overlay angezeigt, Zähler verringert sich automatisch beim Löschen
+
+#### Detail-Overlay für geteilte Vorlagen
+Detailinformationen, Statistiken, Schlüsselwort-Bearbeitung und Freigabeeinstellungen für geteilte Vorlagen auf einen Blick.
+- Responsive Größenanpassung für verschiedene Bildschirmgrößen
+
+#### Handelsmenü-Überarbeitung
+Das Handelsmenü wurde vom Hamburger-Menü zum Zahnrad-Symbol geändert.
+- Handelsbenachrichtigungen werden in einem gestapelten Toast-System visuell angezeigt
+- Pull-Down-Gummiband-Effekt und Drag-Interaktion-Unterstützung
+
+#### Shop-Ankündigungen Cache-Priorität
+Shop-Ankündigungen werden jetzt cache-prioritär geladen und schneller angezeigt.
+
+#### Protokoll-Hinzufügen-Schalter bei Gegenstandserstellung
+Beim Erstellen von Gegenständen kann mit dem Schalter „Protokoll hinzufügen erlauben" die Protokollberechtigung festgelegt werden.
+
+#### Scroll-Position-Cache
+Die vorherige Scroll-Position wird automatisch wiederhergestellt, wenn Sie zu einem Bildschirm zurückkehren.
+
+#### Ordnersystem
+'Tasche' wurde in 'Ordner' umbenannt.
+- Sprachgerechte Bezeichnungen werden automatisch angewendet (Locale-basierte Benennung)
+- Verbesserte Inline-Bearbeitung von Ordnernamen
+
+#### Untere Tab-Reihenfolge geändert
+Die Tab-Reihenfolge der unteren Navigation wurde neu organisiert und HomeTab wurde refaktoriert.
+
+#### Such- und Filterverbesserungen
+- Kategoriefilter auf Mehrfachauswahl-Kontrollkästchen umgestellt
+- Rasteransicht mit dynamischer Spaltenberechnung und dauerhaft sichtbarem Artikeltext
+
+#### Auswahlmodus-Überarbeitung
+Gegenstandsauswahl und Stapeloperationen sind jetzt intuitiver.
+- Vereinfachte Auswahl mit Einzelberührungs-Umschaltung
+- Auswahlumrandung entfernt für sauberere UI
+- Inline-Sperren/Entsperren-UI komplett überarbeitet
+
+#### Benachrichtigungsverbesserungen
+- Beim Tippen auf Gegenstandsempfangsbenachrichtigungen öffnet sich das Gegenstandsinfo-Panel
+- Automatische Ausblendzeit der In-App-Toast-Nachrichten auf 5 Sekunden geändert
+- Fehlende Handels-Annahme/Ablehnungs- und Übertragungsannahme-Benachrichtigungen behoben
+
+#### Protokollbildschirm-Überarbeitung
+Protokolle werden jetzt nach Ordnern gruppiert angezeigt.
+- Nach Ordnern sortierte Protokolllisten mit neuen Animationen
+- Anleitungsbildschirm für neue Benutzer ohne Protokolle
+
+#### Kommentar-Verbesserungen
+- Kopier-Schaltfläche zum Kommentar-Aktionsmenü hinzugefügt
+- Verbesserte mehrsprachige Unterstützung für Antworttexte
+
+#### Rich-Text-Durchstreichungsmarker-Änderung
+Der Durchstreichungsmarker wurde von Ausrufezeichen (!!) zu spitzen Klammern (<>) geändert.
+
+#### Chatbot-Stempel-Erstellungsablauf verbessert
+Der Stempel-Erstellungs-Gesprächsablauf wurde komplett neu geschrieben.
+- Natürlicherer Gesprächsablauf und verbesserte Benutzererfahrung
+
+#### Leistungsverbesserungen
+- Vollständiger Austausch von CachedNetworkImage und Rebuild-Optimierung mit context.select
+- QR-Scanner-Bibliothek aktualisiert (etwa 55 MB Reduktion auf iOS)
+- Cloud Functions Speicheroptimierung
+
+#### Entfernte Funktionen
+- Gegenstand-Clip-Funktion (Bündelung) vollständig entfernt
+- Eigenständiges Protokollsystem entfernt — in geteilte Protokolle integriert
+- Veraltetes Benachrichtigungs-Widget entfernt
+- Assistentenmenü aus der unteren Navigationsleiste entfernt
+
+#### Fehlerbehebungen
+- Firestore IllegalState-Absturz bei Gegenstandsauswahl auf dem Desktop behoben
+- Einfrieren bei der Initialisierung der QR-Scanner-Kamera behoben
+- Deaktivierter Kaufbutton im Shop zeigte keinen visuellen deaktivierten Zustand
+- Droplet-Stil wurde bei Auswahl von beliebten/neuesten Tags nicht auf die Suchleiste angewendet
+- Fehlende In-App-Benachrichtigung bei Annahme der Gegenstandsübertragung behoben
+- Handels-Annahme/Ablehnungs-Benachrichtigungen wurden nicht gesendet
+- Scroll- und Tastaturprobleme bei der Inline-Bearbeitung von Ordnernamen behoben
+- Fehlerhafte Animationsauslösung beim Protokoll-Scrollen behoben
+- Windows Store Authentifizierungsfehler behoben (TLS + endloser Spinner)
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
+  <span class="version-title">v1.3.3 <small>2026-02-21</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopieren">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Auf Stempel gravieren (Umgekehrte Vorlagenerstellung)
+Verwandeln Sie bestehende Dokumente in Stempelvorlagen.
+- **Dokument → Stempel**: Konvertieren Sie den Inhalt eines bereits geschriebenen Dokuments in eine Stempelvorlage
+- **Speed Dial / Bottom Sheet**: Wählen Sie „Auf Stempel gravieren" aus dem Schnellaktionsmenü auf dem Startbildschirm
+- **Bedingungsfilter**: In Clips gebündelte Dokumente werden automatisch von den Zielen ausgeschlossen
+
+#### Neumorphes GUI-Komponentenbibliothek
+Über 95 neumorphe Designkomponenten wurden hinzugefügt.
+- **Vielfältige Widgets**: Unterstützung für eine breite Palette von UI-Elementen einschließlich Schaltflächen, Karten, Eingabefelder und Dialoge
+- **Dunkel-/Hellmodus**: Alle Komponenten unterstützen beide Modi
+
+#### Login-Bildschirm komplett neu gestaltet
+Login-, Registrierungs- und Passwort-Wiederherstellungsbildschirme wurden vollstandig im neumorphen Design neu gestaltet.
+- **Neumorphes Design**: Einheitliches Vintage-Theme in der gesamten App angewendet
+- **Passwort-Wiederherstellung**: Passwort bequem uber einen eigenen Dialog zurucksetzen
+- **UX-Verbesserungen**: Detaillierte Fehlermeldungen, Passwort-Sichtbarkeitsumschalter, Autovervollstandigung und Ladeanzeigen hinzugefugt
+
+#### Cloud Function Ladeanzeige
+Bei Serveranfragen werden Ladeanzeigen angezeigt und doppelte Anfragen verhindert.
+- **Ladeanzeige**: Visuelles Feedback während laufender Serveroperationen
+- **Duplikatverhinderung**: Automatische Blockierung wiederholter identischer Anfragen
+
+#### Sofortige Synchronisierung nach Shop-Kauf
+Die lokale Datenbank wird sofort aktualisiert, wenn ein Shop-Kauf abgeschlossen ist.
+- Neue Artikel erscheinen sofort nach dem Kauf in Ihrem Inventar
+
+#### UI-Verbesserungen
+- Die Sichtbarkeit des Chat-Eingabefeldes wurde verbessert
+- Speed Dial Aktionsschaltflächen-Textlabels können jetzt angetippt werden
+- Lange Artikelbeschreibungstexte werden korrekt ohne Abschneiden angezeigt
+- Das Layout des Empfangsbildschirms wurde verbessert
+
+#### Fehlerbehebungen
+- Problem behoben, bei dem die Bildtransparenz beim Ziehen von Artikeln verloren ging
+- Problem behoben, bei dem Artikel beim schnellen Nachkauf nicht erstellt wurden
+
+#### Leistung und Stabilität
+- Die Cloud Functions Server-Engine wurde auf v2 aktualisiert für schnellere Antwortzeiten
+- Sicherheitsregeln wurden verstärkt
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.3.2 <small>2026-02-13</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopieren">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

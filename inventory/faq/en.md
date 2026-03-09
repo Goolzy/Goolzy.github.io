@@ -236,7 +236,7 @@ Written as messages, they display like chat. Written as <code>key:value</code>, 
 <li><code>(text)</code> - Sub color text</li>
 <li><code>"text"</code> - Bold</li>
 <li><code>'text'</code> - Underline</li>
-<li><code>!text!</code> - Strikethrough</li>
+<li><code>&lt;text&gt;</code> - Strikethrough</li>
 </ul>
 Styles can be nested up to 3 levels. Using the same key multiple times displays as <code>previous value → new value</code> comparison.
 </div>

@@ -401,8 +401,6 @@ Bạn có thể sử dụng các định dạng khác nhau khi viết nhật ký
 |--------|-------------|---------|
 | Văn Bản Thuần | Hiển Thị Dưới Dạng Bong Bóng Trò Chuyện | `Kiểm Tra Hoàn Thành Hôm Nay!` |
 | `key:value` | Hiển Thị Dưới Dạng Thẻ Thông Tin (key 1-8 ký tự) | `status:good` |
-| `---` | Hiển Thị Dưới Dạng Dấu Phân Cách | `---` |
-
 Sử dụng cùng một khóa nhiều lần để hiển thị dưới dạng `giá trị cũ → giá trị mới` so sánh.
 
 **Định Dạng Văn Bản:**
@@ -416,7 +414,7 @@ Sử dụng cùng một khóa nhiều lần để hiển thị dưới dạng `g
 | `(text)` | Văn Bản Màu Phụ | `(Additional info)` |
 | `"text"` | **Đậm** | `"Important content"` |
 | `'text'` | <u>Gạch Dưới</u> | `'Highlighted part'` |
-| `!text!` | ~~Gạch Ngang~~ | `!Deleted content!` |
+| `<text>` | ~~Gạch Ngang~~ | `<Deleted content>` |
 
 > 💡 Các kiểu có thể được lồng sâu tối đa 3 cấp độ. Ví Dụ: `{["Bold main color"]}`
 

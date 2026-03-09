@@ -401,8 +401,6 @@ Puedes usar varios formatos al escribir registros.
 |---------|-------------|---------|
 | Texto plano | Mostrado como burbuja de chat | `¡Inspección completada hoy!` |
 | `clave:valor` | Mostrado como tarjeta info (clave 1-8 car.) | `estado:bueno` |
-| `---` | Mostrado como separador | `---` |
-
 Usar la misma clave múltiples veces muestra `valor anterior → nuevo valor`.
 
 **Estilizado de texto:**
@@ -416,7 +414,7 @@ Usar la misma clave múltiples veces muestra `valor anterior → nuevo valor`.
 | `(texto)` | Texto color secundario | `(Info adicional)` |
 | `"texto"` | **Negrita** | `"Contenido importante"` |
 | `'texto'` | <u>Subrayado</u> | `'Parte destacada'` |
-| `!texto!` | ~~Tachado~~ | `!Contenido eliminado!` |
+| `<texto>` | ~~Tachado~~ | `<Contenido eliminado>` |
 
 > 💡 Los estilos se pueden anidar hasta 3 niveles. Ejemplo: `{["Negrita color principal"]}`
 

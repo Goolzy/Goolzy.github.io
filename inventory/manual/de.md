@@ -401,8 +401,6 @@ Sie können verschiedene Formate beim Schreiben von Protokollen verwenden.
 |--------|--------------|----------|
 | Normaler Text | Als Chat-Blase angezeigt | `Heute Inspektion abgeschlossen!` |
 | `Schlüssel:Wert` | Als Info-Karte angezeigt (Schlüssel 1-8 Zeichen) | `Status:gut` |
-| `---` | Als Trennlinie angezeigt | `---` |
-
 Mehrfache Verwendung desselben Schlüssels zeigt `vorheriger Wert → neuer Wert` Vergleich.
 
 **Textgestaltung:**
@@ -416,7 +414,7 @@ Mehrfache Verwendung desselben Schlüssels zeigt `vorheriger Wert → neuer Wert
 | `(Text)` | Nebenfarbe-Text | `(Zusatzinfo)` |
 | `"Text"` | **Fett** | `"Wichtiger Inhalt"` |
 | `'Text'` | <u>Unterstrichen</u> | `'Hervorgehobener Teil'` |
-| `!Text!` | ~~Durchgestrichen~~ | `!Gelöschter Inhalt!` |
+| `<Text>` | ~~Durchgestrichen~~ | `<Gelöschter Inhalt>` |
 
 > 💡 Stile können bis zu 3 Ebenen verschachtelt werden. Beispiel: `{["Fett Hauptfarbe"]}`
 

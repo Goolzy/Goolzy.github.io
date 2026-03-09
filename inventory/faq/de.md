@@ -236,7 +236,7 @@ Als Nachrichten geschrieben, werden sie wie Chat angezeigt. Als <code>Schlüssel
 <li><code>(Text)</code> - Nebenfarbe-Text</li>
 <li><code>"Text"</code> - Fett</li>
 <li><code>'Text'</code> - Unterstrichen</li>
-<li><code>!Text!</code> - Durchgestrichen</li>
+<li><code>&lt;Text&gt;</code> - Durchgestrichen</li>
 </ul>
 Stile können bis zu 3 Ebenen verschachtelt werden. Mehrfache Verwendung desselben Schlüssels zeigt <code>vorheriger Wert → neuer Wert</code> Vergleich.
 </div>

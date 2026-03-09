@@ -401,8 +401,6 @@ Vous pouvez utiliser différents formats lors de l'écriture de journaux.
 |--------|-------------|---------|
 | Texte simple | Affiché comme bulle de chat | `Inspection terminée aujourd'hui !` |
 | `clé:valeur` | Affiché comme carte info (clé 1-8 car.) | `statut:bon` |
-| `---` | Affiché comme séparateur | `---` |
-
 Utiliser la même clé plusieurs fois affiche `ancienne valeur → nouvelle valeur`.
 
 **Stylisation du texte :**
@@ -416,7 +414,7 @@ Utiliser la même clé plusieurs fois affiche `ancienne valeur → nouvelle vale
 | `(texte)` | Texte couleur secondaire | `(Info supplémentaire)` |
 | `"texte"` | **Gras** | `"Contenu important"` |
 | `'texte'` | <u>Souligné</u> | `'Partie mise en évidence'` |
-| `!texte!` | ~~Barré~~ | `!Contenu supprimé!` |
+| `<texte>` | ~~Barré~~ | `<Contenu supprimé>` |
 
 > 💡 Les styles peuvent être imbriqués jusqu'à 3 niveaux. Exemple : `{["Gras couleur principale"]}`
 
