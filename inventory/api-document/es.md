@@ -127,6 +127,7 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 | `POST /templates/{token}/share` | Compartir plantilla |
 | `POST /templates/revoke` | Revocar comparticion |
 | `POST /templates/{token}/send` | Enviar plantilla |
+| `POST /templates/{token}/log` | Agregar registros, actualizar palabras clave/permisos/imagen |
 | `POST /templates/{token}/check-ownership` | Verificar propiedad de elementos clonados |
 
 ---
@@ -278,6 +279,16 @@ curl -X POST \
 |-------|------|-----------|-------------|
 | durationMinutes | number | Si | Duracion del compartido (minutos). 60-43200 o 0 (ilimitado) |
 | tags | string[] | Si | Etiquetas de busqueda (1-16, mayusculas auto) |
+| logPermission | string | No | Permiso de registro: "owner" \| "author" \| "none" (anula la configuracion del elemento) |
+| keywordPermission | string | No | Permiso de palabra clave: "owner" \| "author" \| "none" (anula la configuracion del elemento) |
+
+#### Valores de permisos
+
+| Valor | Descripcion |
+|-------|-------------|
+| owner | Cualquier persona que copie esta plantilla puede agregar/editar |
+| author | Solo el autor de la plantilla puede agregar/editar |
+| none | Deshabilitado |
 
 #### Respuesta
 
@@ -344,6 +355,80 @@ El parámetro `keywords` le permite sobrescribir las palabras clave predetermina
     "clonedCount": 2,
     "recipients": ["user1@example.com", "user2@example.com"],
     "sentAt": "2025-01-01T00:00:00Z"
+  }
+}
+```
+
+</div>
+</details>
+
+<details>
+<summary><h3>POST /templates/{token}/log - Agregar registros y actualizar plantilla</h3></summary>
+<div class="manual-content" markdown="1">
+
+Agrega registros, actualiza palabras clave, cambia permisos o actualiza la imagen de una plantilla compartida. Envia notificaciones push a los usuarios que clonaron esta plantilla.
+
+#### Solicitud
+
+```bash
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "logs": [
+         {"content": "Nueva actualizacion publicada con correcciones de errores"},
+         {"content": "Blog:https://example.com/update-notes"}
+       ],
+       "keywordUpdates": [
+         {"action": "upsert", "key": "version", "value": "2.1.0"},
+         {"action": "delete", "key": "beta"}
+       ],
+       "permissionUpdates": {
+         "logPermission": "owner",
+         "keywordPermission": "author"
+       },
+       "imageUrl": "https://example.com/new-image.png"
+     }' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/log"
+```
+
+#### Cuerpo de solicitud
+
+| Campo | Tipo | Requerido | Descripcion |
+|-------|------|-----------|-------------|
+| logs | array | No* | Entradas de registro a agregar (max 10) |
+| logs[].content | string | Si | Contenido del registro (1-256 caracteres) |
+| keywordUpdates | array | No* | Cambios de palabras clave (max 20) |
+| keywordUpdates[].action | string | Si | "upsert" o "delete" |
+| keywordUpdates[].key | string | Si | Clave de palabra clave (1-8 caracteres) |
+| keywordUpdates[].value | string | No | Valor (requerido para upsert) |
+| permissionUpdates | object | No* | Cambios de permisos |
+| permissionUpdates.logPermission | string | No | "owner" \| "author" \| "none" |
+| permissionUpdates.keywordPermission | string | No | "owner" \| "author" \| "none" |
+| imageUrl | string | No* | Nueva URL de imagen (reprocesada a 512x512 WebP) |
+
+> \* Se debe proporcionar al menos uno de `logs`, `keywordUpdates`, `permissionUpdates` o `imageUrl`.
+
+#### Formato del contenido de registros
+
+Los registros con formato `clave:valor` (clave de 1-8 caracteres) se muestran como tarjetas de info/URL en la aplicacion:
+
+| Formato | Visualizacion |
+|---------|---------------|
+| `texto plano` | Comentario de texto normal |
+| `clave:valor` | Tarjeta de informacion (visualizacion clave-valor) |
+| `clave:https://...` | Tarjeta URL (enlace clicable) |
+
+#### Respuesta
+
+```json
+{
+  "success": true,
+  "data": {
+    "logsAdded": 2,
+    "keywordsUpdated": 1,
+    "keywordsDeleted": 1,
+    "notificationsSent": 3
   }
 }
 ```

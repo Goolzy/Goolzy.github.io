@@ -127,6 +127,7 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 | `POST /templates/{token}/share` | Vorlage teilen |
 | `POST /templates/revoke` | Freigabe widerrufen |
 | `POST /templates/{token}/send` | Vorlage senden |
+| `POST /templates/{token}/log` | Protokolle hinzufugen, Stichworter/Berechtigungen/Bild aktualisieren |
 | `POST /templates/{token}/check-ownership` | Besitz kopierter Elemente prüfen |
 
 ---
@@ -313,6 +314,26 @@ curl -X POST \
 |------|-----|--------------|--------------|
 | durationMinutes | number | Ja | Freigabedauer (Minuten). 60-43200 oder 0 (unbegrenzt) |
 | tags | string[] | Ja | Such-Tags (1-16, automatische Grossschreibung) |
+| logPermission | string | Nein | Protokollberechtigung: "owner" \| "author" \| "none" (uberschreibt Elementeinstellung) |
+| keywordPermission | string | Nein | Stichwortberechtigung: "owner" \| "author" \| "none" (uberschreibt Elementeinstellung) |
+
+#### Berechtigungswerte
+
+| Wert | Beschreibung |
+|------|--------------|
+| owner | Jeder, der diese Vorlage kopiert, kann hinzufugen/bearbeiten |
+| author | Nur der Vorlagenautor kann hinzufugen/bearbeiten |
+| none | Deaktiviert |
+
+#### Freigabedauer
+
+| Wert | Bedeutung |
+|------|-----------|
+| 60 | 1 Stunde |
+| 1440 | 1 Tag (24 Stunden) |
+| 10080 | 1 Woche |
+| 43200 | 30 Tage (Maximum) |
+| 0 | Unbegrenzt |
 
 #### Antwort
 
@@ -379,6 +400,80 @@ Der `keywords`-Parameter ermöglicht das Überschreiben von Standard-Schlüsselw
     "itemToken": "verschlusselte_artikel_id",
     "title": "Artikel-Titel",
     "createdAt": "2025-01-01T00:00:00Z"
+  }
+}
+```
+
+</div>
+</details>
+
+<details>
+<summary><h3>POST /templates/{token}/log - Protokolle hinzufugen & Vorlage aktualisieren</h3></summary>
+<div class="manual-content" markdown="1">
+
+Fugt Protokolle hinzu, aktualisiert Stichworter, andert Berechtigungen oder aktualisiert das Bild einer geteilten Vorlage. Sendet Push-Benachrichtigungen an Benutzer, die diese Vorlage kopiert haben.
+
+#### Anfrage
+
+```bash
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "logs": [
+         {"content": "Neues Update mit Fehlerbehebungen veroffentlicht"},
+         {"content": "Blog:https://example.com/update-notes"}
+       ],
+       "keywordUpdates": [
+         {"action": "upsert", "key": "version", "value": "2.1.0"},
+         {"action": "delete", "key": "beta"}
+       ],
+       "permissionUpdates": {
+         "logPermission": "owner",
+         "keywordPermission": "author"
+       },
+       "imageUrl": "https://example.com/new-image.png"
+     }' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/log"
+```
+
+#### Anfrage-Body
+
+| Feld | Typ | Erforderlich | Beschreibung |
+|------|-----|--------------|--------------|
+| logs | array | Nein* | Hinzuzufugende Protokolleintrage (max 10) |
+| logs[].content | string | Ja | Protokollinhalt (1-256 Zeichen) |
+| keywordUpdates | array | Nein* | Stichwortanderungen (max 20) |
+| keywordUpdates[].action | string | Ja | "upsert" oder "delete" |
+| keywordUpdates[].key | string | Ja | Stichwort-Schlussel (1-8 Zeichen) |
+| keywordUpdates[].value | string | Nein | Wert (erforderlich fur upsert) |
+| permissionUpdates | object | Nein* | Berechtigungsanderungen |
+| permissionUpdates.logPermission | string | Nein | "owner" \| "author" \| "none" |
+| permissionUpdates.keywordPermission | string | Nein | "owner" \| "author" \| "none" |
+| imageUrl | string | Nein* | Neue Bild-URL (wird zu 512x512 WebP verarbeitet) |
+
+> \* Mindestens eines von `logs`, `keywordUpdates`, `permissionUpdates` oder `imageUrl` muss angegeben werden.
+
+#### Protokollinhalt-Format
+
+Protokolle im Format `Schlussel:Wert` (Schlussel 1-8 Zeichen) werden in der App als Info-/URL-Karten dargestellt:
+
+| Format | Darstellung |
+|--------|-------------|
+| `Klartext` | Normaler Textkommentar |
+| `Schlussel:Wert` | Infokarte (Schlussel-Wert-Anzeige) |
+| `Schlussel:https://...` | URL-Karte (anklickbarer Link) |
+
+#### Antwort
+
+```json
+{
+  "success": true,
+  "data": {
+    "logsAdded": 2,
+    "keywordsUpdated": 1,
+    "keywordsDeleted": 1,
+    "notificationsSent": 3
   }
 }
 ```

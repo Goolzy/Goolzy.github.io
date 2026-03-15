@@ -127,6 +127,7 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 | `POST /templates/{token}/share` | Compartilhar modelo |
 | `POST /templates/revoke` | Revogar compartilhamento |
 | `POST /templates/{token}/send` | Enviar modelo |
+| `POST /templates/{token}/log` | Adicionar registros, atualizar palavras-chave/permissoes/imagem |
 | `POST /templates/{token}/check-ownership` | Verificar propriedade de itens clonados |
 
 ---
@@ -278,6 +279,16 @@ curl -X POST \
 |-------|------|-------------|-----------|
 | durationMinutes | number | Sim | Duracao do compartilhamento (minutos). 60-43200 ou 0 (ilimitado) |
 | tags | string[] | Sim | Tags de busca (1-16, maiusculas auto) |
+| logPermission | string | Nao | Permissao de registro: "owner" \| "author" \| "none" (substitui configuracao do item) |
+| keywordPermission | string | Nao | Permissao de palavra-chave: "owner" \| "author" \| "none" (substitui configuracao do item) |
+
+#### Valores de permissao
+
+| Valor | Descricao |
+|-------|-----------|
+| owner | Qualquer pessoa que copiar este modelo pode adicionar/editar |
+| author | Apenas o autor do modelo pode adicionar/editar |
+| none | Desabilitado |
 
 #### Resposta
 
@@ -344,6 +355,80 @@ O parametro `keywords` permite substituir as palavras-chave padrao do modelo ou 
     "itemToken": "id_item_criptografado",
     "recipientEmail": "usuario@example.com",
     "sentAt": "2025-01-01T00:00:00Z"
+  }
+}
+```
+
+</div>
+</details>
+
+<details>
+<summary><h3>POST /templates/{token}/log - Adicionar registros e atualizar modelo</h3></summary>
+<div class="manual-content" markdown="1">
+
+Adiciona registros, atualiza palavras-chave, altera permissoes ou atualiza a imagem de um modelo compartilhado. Envia notificacoes push para usuarios que clonaram este modelo.
+
+#### Requisicao
+
+```bash
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "logs": [
+         {"content": "Nova atualizacao lancada com correcoes de bugs"},
+         {"content": "Blog:https://example.com/update-notes"}
+       ],
+       "keywordUpdates": [
+         {"action": "upsert", "key": "version", "value": "2.1.0"},
+         {"action": "delete", "key": "beta"}
+       ],
+       "permissionUpdates": {
+         "logPermission": "owner",
+         "keywordPermission": "author"
+       },
+       "imageUrl": "https://example.com/new-image.png"
+     }' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/log"
+```
+
+#### Corpo da requisicao
+
+| Campo | Tipo | Obrigatorio | Descricao |
+|-------|------|-------------|-----------|
+| logs | array | Nao* | Entradas de registro a adicionar (max 10) |
+| logs[].content | string | Sim | Conteudo do registro (1-256 caracteres) |
+| keywordUpdates | array | Nao* | Alteracoes de palavras-chave (max 20) |
+| keywordUpdates[].action | string | Sim | "upsert" ou "delete" |
+| keywordUpdates[].key | string | Sim | Chave da palavra-chave (1-8 caracteres) |
+| keywordUpdates[].value | string | Nao | Valor (obrigatorio para upsert) |
+| permissionUpdates | object | Nao* | Alteracoes de permissoes |
+| permissionUpdates.logPermission | string | Nao | "owner" \| "author" \| "none" |
+| permissionUpdates.keywordPermission | string | Nao | "owner" \| "author" \| "none" |
+| imageUrl | string | Nao* | Nova URL de imagem (reprocessada para 512x512 WebP) |
+
+> \* Pelo menos um entre `logs`, `keywordUpdates`, `permissionUpdates` ou `imageUrl` deve ser fornecido.
+
+#### Formato do conteudo de registros
+
+Registros no formato `chave:valor` (chave de 1-8 caracteres) sao exibidos como cartoes de info/URL no aplicativo:
+
+| Formato | Exibicao |
+|---------|----------|
+| `texto simples` | Comentario de texto normal |
+| `chave:valor` | Cartao de informacao (exibicao chave-valor) |
+| `chave:https://...` | Cartao URL (link clicavel) |
+
+#### Resposta
+
+```json
+{
+  "success": true,
+  "data": {
+    "logsAdded": 2,
+    "keywordsUpdated": 1,
+    "keywordsDeleted": 1,
+    "notificationsSent": 3
   }
 }
 ```

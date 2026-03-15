@@ -127,6 +127,7 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 | `POST /templates/{token}/share` | Partager un modele |
 | `POST /templates/revoke` | Revoquer le partage |
 | `POST /templates/{token}/send` | Envoyer un modele |
+| `POST /templates/{token}/log` | Ajouter des journaux, mettre a jour mots-cles/autorisations/image |
 | `POST /templates/{token}/check-ownership` | Vérifier la propriété des éléments clonés |
 
 ---
@@ -278,6 +279,16 @@ curl -X POST \
 |-------|------|--------|-------------|
 | durationMinutes | number | Oui | Duree de partage (minutes). 60-43200 ou 0 (illimite) |
 | tags | string[] | Oui | Tags de recherche (1-16, majuscules auto) |
+| logPermission | string | Non | Autorisation de journal: "owner" \| "author" \| "none" (remplace le parametre de l'element) |
+| keywordPermission | string | Non | Autorisation de mot-cle: "owner" \| "author" \| "none" (remplace le parametre de l'element) |
+
+#### Valeurs d'autorisation
+
+| Valeur | Description |
+|--------|-------------|
+| owner | Toute personne qui copie ce modele peut ajouter/modifier |
+| author | Seul l'auteur du modele peut ajouter/modifier |
+| none | Desactive |
 
 #### Reponse
 
@@ -344,6 +355,80 @@ Le parametre `keywords` vous permet de remplacer les mots-cles par defaut du mod
     "itemToken": "id_element_chiffre",
     "recipientEmail": "destinataire@example.com",
     "sentAt": "2025-01-01T00:00:00Z"
+  }
+}
+```
+
+</div>
+</details>
+
+<details>
+<summary><h3>POST /templates/{token}/log - Ajouter des journaux et mettre a jour le modele</h3></summary>
+<div class="manual-content" markdown="1">
+
+Ajoute des journaux, met a jour les mots-cles, modifie les autorisations ou met a jour l'image d'un modele partage. Envoie des notifications push aux utilisateurs qui ont copie ce modele.
+
+#### Requete
+
+```bash
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "logs": [
+         {"content": "Nouvelle mise a jour publiee avec corrections de bugs"},
+         {"content": "Blog:https://example.com/update-notes"}
+       ],
+       "keywordUpdates": [
+         {"action": "upsert", "key": "version", "value": "2.1.0"},
+         {"action": "delete", "key": "beta"}
+       ],
+       "permissionUpdates": {
+         "logPermission": "owner",
+         "keywordPermission": "author"
+       },
+       "imageUrl": "https://example.com/new-image.png"
+     }' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/log"
+```
+
+#### Corps de la requete
+
+| Champ | Type | Requis | Description |
+|-------|------|--------|-------------|
+| logs | array | Non* | Entrees de journal a ajouter (max 10) |
+| logs[].content | string | Oui | Contenu du journal (1-256 caracteres) |
+| keywordUpdates | array | Non* | Modifications de mots-cles (max 20) |
+| keywordUpdates[].action | string | Oui | "upsert" ou "delete" |
+| keywordUpdates[].key | string | Oui | Cle du mot-cle (1-8 caracteres) |
+| keywordUpdates[].value | string | Non | Valeur (requise pour upsert) |
+| permissionUpdates | object | Non* | Modifications d'autorisations |
+| permissionUpdates.logPermission | string | Non | "owner" \| "author" \| "none" |
+| permissionUpdates.keywordPermission | string | Non | "owner" \| "author" \| "none" |
+| imageUrl | string | Non* | Nouvelle URL d'image (retraitee en 512x512 WebP) |
+
+> \* Au moins un parmi `logs`, `keywordUpdates`, `permissionUpdates` ou `imageUrl` doit etre fourni.
+
+#### Format du contenu des journaux
+
+Les journaux au format `cle:valeur` (cle de 1-8 caracteres) sont affiches sous forme de cartes info/URL dans l'application :
+
+| Format | Affichage |
+|--------|-----------|
+| `texte simple` | Commentaire texte normal |
+| `cle:valeur` | Carte info (affichage cle-valeur) |
+| `cle:https://...` | Carte URL (lien cliquable) |
+
+#### Reponse
+
+```json
+{
+  "success": true,
+  "data": {
+    "logsAdded": 2,
+    "keywordsUpdated": 1,
+    "keywordsDeleted": 1,
+    "notificationsSent": 3
   }
 }
 ```

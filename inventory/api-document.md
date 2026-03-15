@@ -128,6 +128,7 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 | `POST /templates/revoke` | 공유 회수 |
 | `POST /templates/{token}/send` | 템플릿 전송 |
 | `POST /templates/{token}/check-ownership` | 복제 아이템 소유 여부 확인 |
+| `POST /templates/{token}/log` | 로그 추가, 키워드/권한/이미지 갱신 |
 
 ---
 
@@ -450,6 +451,16 @@ curl -X POST \
 |------|------|------|------|
 | durationMinutes | number | O | 공유 기간 (분). 60-43200 또는 0(무기한) |
 | tags | string[] | O | 검색 태그 (1-16개, 자동 대문자 변환) |
+| logPermission | string | X | 로그 권한: "owner" \| "author" \| "none" (아이템 설정 오버라이드) |
+| keywordPermission | string | X | 키워드 권한: "owner" \| "author" \| "none" (아이템 설정 오버라이드) |
+
+#### 권한 값
+
+| 값 | 설명 |
+|----|------|
+| owner | 템플릿을 복제한 누구나 추가/편집 가능 |
+| author | 템플릿 작성자만 추가/편집 가능 |
+| none | 비활성화 |
 
 #### 공유 기간
 
@@ -647,6 +658,102 @@ curl -X POST \
      -H "Content-Type: application/json" \
      -d '{"email": "customer@example.com", "keywordKeys": ["발급일", "사용여부"]}' \
      "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{쿠폰템플릿토큰}/check-ownership"
+```
+
+</div>
+</details>
+
+<details>
+<summary><h3>POST /templates/{token}/log - 로그 추가 및 템플릿 갱신</h3></summary>
+<div class="manual-content" markdown="1">
+
+공유 중인 템플릿에 로그(피드)를 추가하거나 키워드, 권한, 이미지를 갱신합니다. 이 템플릿을 복제한 사용자에게 푸시 알림이 발송됩니다.
+
+#### 요청
+
+```bash
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "logs": [
+         {"content": "붉은사막 최종 트레일러 공개 https://youtu.be/abc"},
+         {"content": "블로그:https://example.com/update-notes"}
+       ],
+       "keywordUpdates": [
+         {"action": "upsert", "key": "출시일", "value": "2026-03-28"},
+         {"action": "upsert", "key": "가격", "value": "69,800원"},
+         {"action": "delete", "key": "베타일정"}
+       ],
+       "permissionUpdates": {
+         "logPermission": "owner",
+         "keywordPermission": "author"
+       },
+       "imageUrl": "https://example.com/new-image.png"
+     }' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/log"
+```
+
+#### 요청 본문
+
+| 필드 | 타입 | 필수 | 설명 |
+|------|------|------|------|
+| logs | array | 조건부* | 추가할 로그 목록 (최대 10개) |
+| logs[].content | string | 예 | 로그 내용 (1~256자) |
+| keywordUpdates | array | 조건부* | 키워드 변경 목록 (최대 20개) |
+| keywordUpdates[].action | string | 예 | `"upsert"` 또는 `"delete"` |
+| keywordUpdates[].key | string | 예 | 키워드 키 (1~8자) |
+| keywordUpdates[].value | string | upsert 시 | 키워드 값 |
+| permissionUpdates | object | 조건부* | 권한 변경 |
+| permissionUpdates.logPermission | string | X | "owner" \| "author" \| "none" |
+| permissionUpdates.keywordPermission | string | X | "owner" \| "author" \| "none" |
+| imageUrl | string | 조건부* | 새 이미지 URL (512x512 WebP로 재처리) |
+
+> \* `logs`, `keywordUpdates`, `permissionUpdates`, `imageUrl` 중 최소 하나는 제공해야 합니다.
+
+#### 로그 콘텐츠 형식
+
+`키:값` 형식(키 1~8자)의 로그는 앱에서 정보/URL 카드로 렌더링됩니다:
+
+| 형식 | 렌더링 |
+|------|--------|
+| `일반 텍스트` | 일반 텍스트 댓글 |
+| `키:값` | 정보 카드 (키-값 표시) |
+| `키:https://...` | URL 카드 (클릭 가능 링크) |
+
+#### 응답
+
+```json
+{
+  "success": true,
+  "data": {
+    "logsAdded": 2,
+    "keywordsUpdated": 2,
+    "keywordsDeleted": 1,
+    "notificationsSent": 5
+  }
+}
+```
+
+#### 사용 예시
+
+데이터 추적 아이템의 키워드를 주기적으로 갱신하고 뉴스 피드를 추가:
+
+```bash
+# 유류비 데이터 갱신 + 뉴스 로그 추가
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "keywordUpdates": [
+         {"action": "upsert", "key": "휘발유", "value": "1,680원"},
+         {"action": "upsert", "key": "경유", "value": "1,520원"}
+       ],
+       "logs": [
+         {"content": "3월 둘째주 전국 평균 유류비 소폭 상승 https://news.example.com/fuel"}
+       ]
+     }' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/log"
 ```
 
 </div>

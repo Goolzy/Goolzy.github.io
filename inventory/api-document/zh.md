@@ -127,6 +127,7 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 | `POST /templates/{token}/share` | 共享模板 |
 | `POST /templates/revoke` | 撤销共享 |
 | `POST /templates/{token}/send` | 发送模板 |
+| `POST /templates/{token}/log` | 添加日志，更新关键词/权限/图片 |
 | `POST /templates/{token}/check-ownership` | 检查克隆项目所有权 |
 
 ---
@@ -450,6 +451,16 @@ curl -X POST \
 |-----|------|-----|------|
 | durationMinutes | number | 是 | 共享时长（分钟）。60-43200或0（无限制） |
 | tags | string[] | 是 | 搜索标签（1-16个，自动转大写） |
+| logPermission | string | 否 | 日志权限: "owner" \| "author" \| "none"（覆盖项目设置） |
+| keywordPermission | string | 否 | 关键词权限: "owner" \| "author" \| "none"（覆盖项目设置） |
+
+#### 权限值
+
+| 值 | 说明 |
+|---|------|
+| owner | 任何复制此模板的人都可以添加/编辑 |
+| author | 仅模板作者可以添加/编辑 |
+| none | 禁用 |
 
 #### 共享时长
 
@@ -566,6 +577,80 @@ curl -X POST \
     "itemToken": "encrypted_item_id",
     "recipientEmail": "recipient@example.com",
     "status": "sent"
+  }
+}
+```
+
+</div>
+</details>
+
+<details>
+<summary><h3>POST /templates/{token}/log - 添加日志和更新模板</h3></summary>
+<div class="manual-content" markdown="1">
+
+添加日志、更新关键词、更改权限或更新共享模板的图片。向克隆此模板的用户发送推送通知。
+
+#### 请求
+
+```bash
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "logs": [
+         {"content": "发布了包含错误修复的新更新"},
+         {"content": "Blog:https://example.com/update-notes"}
+       ],
+       "keywordUpdates": [
+         {"action": "upsert", "key": "version", "value": "2.1.0"},
+         {"action": "delete", "key": "beta"}
+       ],
+       "permissionUpdates": {
+         "logPermission": "owner",
+         "keywordPermission": "author"
+       },
+       "imageUrl": "https://example.com/new-image.png"
+     }' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/log"
+```
+
+#### 请求体
+
+| 字段 | 类型 | 必填 | 说明 |
+|-----|------|-----|------|
+| logs | array | 否* | 要添加的日志条目（最多10条） |
+| logs[].content | string | 是 | 日志内容（1-256个字符） |
+| keywordUpdates | array | 否* | 关键词变更（最多20条） |
+| keywordUpdates[].action | string | 是 | "upsert"或"delete" |
+| keywordUpdates[].key | string | 是 | 关键词键（1-8个字符） |
+| keywordUpdates[].value | string | 否 | 值（upsert时必填） |
+| permissionUpdates | object | 否* | 权限变更 |
+| permissionUpdates.logPermission | string | 否 | "owner" \| "author" \| "none" |
+| permissionUpdates.keywordPermission | string | 否 | "owner" \| "author" \| "none" |
+| imageUrl | string | 否* | 新图片URL（重新处理为512x512 WebP） |
+
+> \* `logs`、`keywordUpdates`、`permissionUpdates`或`imageUrl`中至少需要提供一个。
+
+#### 日志内容格式
+
+`键:值`格式（键1-8个字符）的日志在应用中显示为信息/URL卡片：
+
+| 格式 | 显示 |
+|------|------|
+| `纯文本` | 普通文本评论 |
+| `键:值` | 信息卡片（键值对显示） |
+| `键:https://...` | URL卡片（可点击链接） |
+
+#### 响应
+
+```json
+{
+  "success": true,
+  "data": {
+    "logsAdded": 2,
+    "keywordsUpdated": 1,
+    "keywordsDeleted": 1,
+    "notificationsSent": 3
   }
 }
 ```

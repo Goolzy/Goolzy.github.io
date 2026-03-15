@@ -127,6 +127,7 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 | `POST /templates/{token}/share` | Share template |
 | `POST /templates/revoke` | Revoke share |
 | `POST /templates/{token}/send` | Send template |
+| `POST /templates/{token}/log` | Add logs, update keywords/permissions/image |
 | `POST /templates/{token}/check-ownership` | Check cloned item ownership |
 
 ---
@@ -450,6 +451,16 @@ curl -X POST \
 |-------|------|----------|-------------|
 | durationMinutes | number | Yes | Share duration (minutes). 60-43200 or 0 (unlimited) |
 | tags | string[] | Yes | Search tags (1-16, auto-uppercased) |
+| logPermission | string | No | Log permission: "owner" \| "author" \| "none" (overrides item setting) |
+| keywordPermission | string | No | Keyword permission: "owner" \| "author" \| "none" (overrides item setting) |
+
+#### Permission Values
+
+| Value | Description |
+|-------|-------------|
+| owner | Anyone who copies this template can add/edit |
+| author | Only the template author can add/edit |
+| none | Disabled |
 
 #### Share Duration
 
@@ -566,6 +577,80 @@ The `keywords` parameter allows you to override template default keywords or add
     "itemToken": "encrypted_item_id",
     "recipientEmail": "recipient@example.com",
     "status": "sent"
+  }
+}
+```
+
+</div>
+</details>
+
+<details>
+<summary><h3>POST /templates/{token}/log - Add Logs & Update Template</h3></summary>
+<div class="manual-content" markdown="1">
+
+Adds logs, updates keywords, changes permissions, or updates the image of a shared template. Sends push notifications to users who cloned this template.
+
+#### Request
+
+```bash
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "logs": [
+         {"content": "New update released with bug fixes"},
+         {"content": "Blog:https://example.com/update-notes"}
+       ],
+       "keywordUpdates": [
+         {"action": "upsert", "key": "version", "value": "2.1.0"},
+         {"action": "delete", "key": "beta"}
+       ],
+       "permissionUpdates": {
+         "logPermission": "owner",
+         "keywordPermission": "author"
+       },
+       "imageUrl": "https://example.com/new-image.png"
+     }' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/log"
+```
+
+#### Request Body
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| logs | array | No* | Log entries to add (max 10) |
+| logs[].content | string | Yes | Log content (1-256 characters) |
+| keywordUpdates | array | No* | Keyword changes (max 20) |
+| keywordUpdates[].action | string | Yes | "upsert" or "delete" |
+| keywordUpdates[].key | string | Yes | Keyword key (1-8 characters) |
+| keywordUpdates[].value | string | No | Value (required for upsert) |
+| permissionUpdates | object | No* | Permission changes |
+| permissionUpdates.logPermission | string | No | "owner" \| "author" \| "none" |
+| permissionUpdates.keywordPermission | string | No | "owner" \| "author" \| "none" |
+| imageUrl | string | No* | New image URL (reprocessed to 512x512 WebP) |
+
+> \* At least one of `logs`, `keywordUpdates`, `permissionUpdates`, or `imageUrl` must be provided.
+
+#### Log Content Format
+
+Logs with `key:value` format (key 1-8 chars) are rendered as info/URL cards in the app:
+
+| Format | Rendering |
+|--------|-----------|
+| `plain text` | Normal text comment |
+| `key:value` | Info card (key-value display) |
+| `key:https://...` | URL card (clickable link) |
+
+#### Response
+
+```json
+{
+  "success": true,
+  "data": {
+    "logsAdded": 2,
+    "keywordsUpdated": 1,
+    "keywordsDeleted": 1,
+    "notificationsSent": 3
   }
 }
 ```

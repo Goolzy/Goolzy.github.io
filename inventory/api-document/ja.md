@@ -127,6 +127,7 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 | `POST /templates/{token}/share` | テンプレート共有 |
 | `POST /templates/revoke` | 共有解除 |
 | `POST /templates/{token}/send` | テンプレート送信 |
+| `POST /templates/{token}/log` | ログ追加、キーワード/権限/画像の更新 |
 | `POST /templates/{token}/check-ownership` | 複製アイテムの所有確認 |
 
 ---
@@ -450,6 +451,16 @@ curl -X POST \
 |-----------|-----|------|------|
 | durationMinutes | number | ○ | 共有期間（分）。60-43200 または 0（無期限） |
 | tags | string[] | ○ | 検索タグ（1-16個、自動大文字変換） |
+| logPermission | string | - | ログ権限: "owner" \| "author" \| "none"（アイテム設定を上書き） |
+| keywordPermission | string | - | キーワード権限: "owner" \| "author" \| "none"（アイテム設定を上書き） |
+
+#### 権限値
+
+| 値 | 説明 |
+|----|------|
+| owner | このテンプレートを複製した誰でも追加/編集可能 |
+| author | テンプレート作成者のみ追加/編集可能 |
+| none | 無効 |
 
 #### 共有期間
 
@@ -566,6 +577,80 @@ curl -X POST \
     "itemToken": "暗号化されたアイテムID",
     "recipientEmail": "recipient@example.com",
     "status": "sent"
+  }
+}
+```
+
+</div>
+</details>
+
+<details>
+<summary><h3>POST /templates/{token}/log - ログ追加とテンプレート更新</h3></summary>
+<div class="manual-content" markdown="1">
+
+ログの追加、キーワードの更新、権限の変更、または共有テンプレートの画像更新を行います。このテンプレートを複製したユーザーにプッシュ通知を送信します。
+
+#### リクエスト
+
+```bash
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "logs": [
+         {"content": "バグ修正を含む新しいアップデートをリリースしました"},
+         {"content": "Blog:https://example.com/update-notes"}
+       ],
+       "keywordUpdates": [
+         {"action": "upsert", "key": "version", "value": "2.1.0"},
+         {"action": "delete", "key": "beta"}
+       ],
+       "permissionUpdates": {
+         "logPermission": "owner",
+         "keywordPermission": "author"
+       },
+       "imageUrl": "https://example.com/new-image.png"
+     }' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/log"
+```
+
+#### リクエストボディ
+
+| フィールド | 型 | 必須 | 説明 |
+|-----------|-----|------|------|
+| logs | array | -* | 追加するログエントリ（最大10件） |
+| logs[].content | string | ○ | ログ内容（1-256文字） |
+| keywordUpdates | array | -* | キーワード変更（最大20件） |
+| keywordUpdates[].action | string | ○ | "upsert" または "delete" |
+| keywordUpdates[].key | string | ○ | キーワードキー（1-8文字） |
+| keywordUpdates[].value | string | - | 値（upsert時は必須） |
+| permissionUpdates | object | -* | 権限変更 |
+| permissionUpdates.logPermission | string | - | "owner" \| "author" \| "none" |
+| permissionUpdates.keywordPermission | string | - | "owner" \| "author" \| "none" |
+| imageUrl | string | -* | 新しい画像URL（512x512 WebPに再処理） |
+
+> \* `logs`、`keywordUpdates`、`permissionUpdates`、`imageUrl`のうち少なくとも1つは必須です。
+
+#### ログ内容の形式
+
+`キー:値`形式（キー1-8文字）のログは、アプリ内で情報/URLカードとして表示されます：
+
+| 形式 | 表示 |
+|------|------|
+| `プレーンテキスト` | 通常のテキストコメント |
+| `キー:値` | 情報カード（キーバリュー表示） |
+| `キー:https://...` | URLカード（クリック可能なリンク） |
+
+#### レスポンス
+
+```json
+{
+  "success": true,
+  "data": {
+    "logsAdded": 2,
+    "keywordsUpdated": 1,
+    "keywordsDeleted": 1,
+    "notificationsSent": 3
   }
 }
 ```
