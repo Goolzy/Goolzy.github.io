@@ -29,6 +29,37 @@ Inventory 앱의 업데이트 내역을 확인하세요.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.4.2 <small>2026-03-16</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### 로그 폴더 필터
+로그 화면에서 폴더별로 내용을 필터링할 수 있습니다.
+- 드롭다운 메뉴에서 원하는 폴더를 선택하여 관련 로그만 표시
+
+#### 공유 템플릿 정렬 개편
+공유 템플릿의 정렬 탭 UI가 개편되었습니다.
+- 대량 아이템 추가 기능 지원
+
+#### 개선 사항
+- 알림 정확도 향상 — 시스템 자동 생성 알림이 줄어들어 사용자 관련 알림에 집중
+- 로그 목록에서 문서 항목이 항상 표시
+- 답글 입력 UI 개선
+- 뉴스 피드 중복 콘텐츠 필터링 강화
+- 검색 성능 향상을 위한 인프라 개선
+
+#### 버그 수정
+- 답글에서 줄바꿈이 포함된 원본 댓글의 인용문이 깨지는 문제 해결
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.4.1 <small>2026-03-10</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

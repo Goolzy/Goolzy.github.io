@@ -29,6 +29,36 @@ translations:
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.4.2 <small>2026-03-16</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### 日志文件夹筛选
+现在可以在日志画面按文件夹筛选对话。
+- 通过下拉菜单选择特定文件夹，轻松浏览日志
+
+#### 共享模板排序改版
+共享模板画面的排序标签已全新改版。
+- 直观的排序标签界面，更快找到所需模板
+
+#### 通知优化
+已清理不必要的推送通知。
+- 移除了与关键词和新闻推送相关的不必要通知
+- 改进了系统生成评论的发送者名称显示
+
+#### 错误修复
+- 修复了回复时原始评论包含换行符导致引用文显示错误的问题
+- 修复了日志列表中文档未能始终正确显示的问题
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.4.1 <small>2026-03-10</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

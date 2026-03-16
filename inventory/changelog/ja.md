@@ -29,6 +29,36 @@ Inventoryアプリのアップデート履歴をご確認ください。
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.4.2 <small>2026-03-16</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="コピー">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### ログフォルダフィルター
+ログ画面でフォルダ別に会話をフィルタリングできるようになりました。
+- ドロップダウンで特定のフォルダを選択してログを簡単に検索
+
+#### 共有テンプレートのソート刷新
+共有テンプレート画面のソートタブが新しくなりました。
+- 直感的なソートタブUIでテンプレートをより素早く探索
+
+#### 通知の最適化
+不要なプッシュ通知が整理されました。
+- キーワードおよびニュースフィード関連の不要な通知を削除
+- システム作成コメントの送信者名表示を改善
+
+#### バグ修正
+- 返信作成時に元のコメントに改行が含まれていると引用文が崩れる問題を修正
+- ログ一覧でdocumentが常に正しく表示されるよう修正
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.4.1 <small>2026-03-10</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="コピー">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

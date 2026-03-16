@@ -29,6 +29,36 @@ Check out the update history for the Inventory app.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.4.2 <small>2026-03-16</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Log Folder Filter
+You can now filter conversations by folder in the log screen.
+- Use the dropdown to select specific folders for easier log navigation
+
+#### Shared Template Sorting Redesign
+The sorting tabs on the shared templates screen have been redesigned.
+- Intuitive sorting tab UI for faster template discovery
+
+#### Notification Optimization
+Unnecessary push notifications have been cleaned up.
+- Removed unnecessary notifications related to keywords and news feeds
+- Improved sender name display for system-generated comments
+
+#### Bug Fixes
+- Fixed an issue where reply quotes would break when the original comment contained line breaks
+- Fixed document display to always show correctly in the log list
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.4.1 <small>2026-03-10</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

@@ -29,6 +29,36 @@ Consultez l'historique des mises à jour de l'application Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.4.2 <small>2026-03-16</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Filtre de dossier de journal
+Vous pouvez desormais filtrer les conversations par dossier dans l'ecran de journal.
+- Utilisez le menu deroulant pour selectionner des dossiers specifiques et naviguer plus facilement dans les journaux
+
+#### Refonte du tri des modeles partages
+Les onglets de tri sur l'ecran des modeles partages ont ete repenses.
+- Interface de tri intuitive pour trouver les modeles plus rapidement
+
+#### Optimisation des notifications
+Les notifications push inutiles ont ete nettoyees.
+- Suppression des notifications inutiles liees aux mots-cles et aux flux d'actualites
+- Amelioration de l'affichage du nom de l'expediteur pour les commentaires generes par le systeme
+
+#### Corrections de bugs
+- Correction d'un probleme ou les citations dans les reponses etaient cassees lorsque le commentaire original contenait des sauts de ligne
+- Correction de l'affichage des documents pour qu'ils s'affichent toujours correctement dans la liste des journaux
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.4.1 <small>2026-03-10</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
@@ -516,7 +546,7 @@ Naviguez et contrôlez l'application au clavier sur les ordinateurs de bureau et
 </div>
 </details>
 
-<details class="changelog-version" open>
+<details class="changelog-version">
 <summary>
   <span class="version-title">v1.2.1 <small>2026-01-05</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">

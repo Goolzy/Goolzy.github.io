@@ -29,6 +29,36 @@ Consulta el historial de actualizaciones de la aplicación Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.4.2 <small>2026-03-16</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Filtro de carpetas de registro
+Ahora puede filtrar conversaciones por carpeta en la pantalla de registro.
+- Use el menu desplegable para seleccionar carpetas especificas y navegar los registros mas facilmente
+
+#### Rediseno de la ordenacion de plantillas compartidas
+Las pestanas de ordenacion en la pantalla de plantillas compartidas han sido rediseadas.
+- Interfaz de pestanas de ordenacion intuitiva para encontrar plantillas mas rapidamente
+
+#### Optimizacion de notificaciones
+Se han limpiado las notificaciones push innecesarias.
+- Eliminadas notificaciones innecesarias relacionadas con palabras clave y fuentes de noticias
+- Mejora en la visualizacion del nombre del remitente en comentarios generados por el sistema
+
+#### Correccion de errores
+- Solucionado un problema donde las citas en respuestas se rompian cuando el comentario original contenia saltos de linea
+- Corregida la visualizacion de documentos para que siempre se muestren correctamente en la lista de registros
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.4.1 <small>2026-03-10</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

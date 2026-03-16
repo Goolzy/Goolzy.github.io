@@ -29,6 +29,36 @@ Confira o histórico de atualizações do aplicativo Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.4.2 <small>2026-03-16</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Filtro de pasta de registro
+Agora voce pode filtrar conversas por pasta na tela de registro.
+- Use o menu suspenso para selecionar pastas especificas e navegar pelos registros com mais facilidade
+
+#### Redesign da ordenacao de modelos compartilhados
+As abas de ordenacao na tela de modelos compartilhados foram redesenhadas.
+- Interface intuitiva de abas de ordenacao para encontrar modelos mais rapidamente
+
+#### Otimizacao de notificacoes
+Notificacoes push desnecessarias foram removidas.
+- Removidas notificacoes desnecessarias relacionadas a palavras-chave e feeds de noticias
+- Melhoria na exibicao do nome do remetente em comentarios gerados pelo sistema
+
+#### Correcoes de bugs
+- Corrigido um problema em que citacoes nas respostas quebravam quando o comentario original continha quebras de linha
+- Corrigida a exibicao de documentos para que sempre sejam mostrados corretamente na lista de registros
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.4.1 <small>2026-03-10</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
