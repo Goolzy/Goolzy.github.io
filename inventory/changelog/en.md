@@ -29,6 +29,36 @@ Check out the update history for the Inventory app.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.4.3 <small>2026-03-23</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Terminology Change: Log → Messages
+The 'Log' tab has been renamed to 'Messages'.
+- More intuitive terminology applied across the entire UI
+
+#### Draft Comment Preservation
+Comments you're writing are automatically saved and preserved even when you leave the screen.
+- Unsubmitted comment text is restored even after restarting the app
+- Items with drafts show a '...' indicator in the messages list
+
+#### Scroll Position Memory
+The item detail screen remembers your last scroll position.
+- Reopening the screen starts from where you left off
+
+#### Notification Toast Improvement
+Notification toasts are now dismissed sequentially instead of all at once.
+- Even when multiple notifications stack up, they close one by one so you don't miss any
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.4.2 <small>2026-03-16</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

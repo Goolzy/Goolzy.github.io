@@ -29,6 +29,36 @@ Consulta el historial de actualizaciones de la aplicación Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.4.3 <small>2026-03-23</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Cambio de terminologia: Registro → Mensajes
+La pestana 'Registro' ha sido renombrada a 'Mensajes'.
+- Terminologia mas intuitiva aplicada en toda la interfaz
+
+#### Conservacion de borradores de comentarios
+Los comentarios que estas escribiendo se guardan automaticamente y se conservan incluso al salir de la pantalla.
+- El texto de comentarios no enviados se restaura incluso despues de reiniciar la app
+- Los elementos con borradores muestran un indicador '...' en la lista de mensajes
+
+#### Memoria de posicion de desplazamiento
+La pantalla de detalle del articulo recuerda tu ultima posicion de desplazamiento.
+- Al reabrir la pantalla, comienza desde donde la dejaste
+
+#### Mejora en notificaciones toast
+Las notificaciones toast ahora se cierran secuencialmente en lugar de todas a la vez.
+- Incluso cuando se acumulan multiples notificaciones, se cierran una por una para que no te pierdas ninguna
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.4.2 <small>2026-03-16</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

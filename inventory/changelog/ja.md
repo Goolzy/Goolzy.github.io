@@ -29,6 +29,36 @@ Inventoryアプリのアップデート履歴をご確認ください。
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.4.3 <small>2026-03-23</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="コピー">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### 用語変更：ログ → メッセージ
+「ログ」タブの名称が「メッセージ」に変更されました。
+- より直感的な用語がUI全体に一括反映
+
+#### 下書きコメントの保持
+作成中のコメントが自動保存され、画面を離れても保持されます。
+- アプリを再起動しても未送信のコメントテキストが復元
+- メッセージ一覧で下書きがある項目に「...」を表示
+
+#### スクロール位置の記憶
+アイテム詳細画面で最後のスクロール位置を記憶します。
+- 画面を再度開くと、前回閲覧していた位置から開始
+
+#### 通知トーストの改善
+通知トーストが一斉に消えず、順次削除されるようになりました。
+- 複数の通知が溜まっても一つずつ順番に閉じるため、内容を見逃しません
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.4.2 <small>2026-03-16</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="コピー">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

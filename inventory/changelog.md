@@ -29,6 +29,36 @@ Inventory 앱의 업데이트 내역을 확인하세요.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.4.3 <small>2026-03-23</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### 용어 변경: 로그 → 메세지
+기존 '로그' 탭 이름이 '메세지'로 변경되었습니다.
+- 더 직관적인 용어로 전체 UI 일괄 반영
+
+#### 드래프트 댓글 보존
+작성 중인 댓글이 자동 저장되어 화면을 벗어나도 유지됩니다.
+- 앱 종료 후 재시작해도 미제출 댓글 텍스트가 복원
+- 메세지 목록에서 드래프트가 있는 항목에 '...' 표시
+
+#### 스크롤 위치 기억
+아이템 상세 화면에서 마지막 스크롤 위치를 기억합니다.
+- 화면을 다시 열면 이전에 보던 위치에서 시작
+
+#### 알림 토스트 개선
+알림 토스트가 한꺼번에 사라지지 않고 순차적으로 제거됩니다.
+- 여러 알림이 쌓여도 하나씩 차례로 닫혀 내용을 놓치지 않음
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.4.2 <small>2026-03-16</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

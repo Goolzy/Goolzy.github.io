@@ -29,6 +29,36 @@ translations:
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v1.4.3 <small>2026-03-23</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### 术语变更：日志 → 消息
+"日志"标签已更名为"消息"。
+- 更直观的术语已统一应用于整个界面
+
+#### 草稿评论保留
+正在编写的评论会自动保存，即使离开页面也会保留。
+- 即使重启应用，未提交的评论文本也会恢复
+- 有草稿的项目在消息列表中显示"..."指示器
+
+#### 滚动位置记忆
+物品详情页面会记住您上次的滚动位置。
+- 重新打开页面时，从上次浏览的位置开始
+
+#### 通知提示改进
+通知提示现在按顺序逐个消除，而不是同时消失。
+- 即使多个通知堆积，也会逐一关闭，不会遗漏任何内容
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.4.2 <small>2026-03-16</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
