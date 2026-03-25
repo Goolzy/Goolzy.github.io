@@ -703,7 +703,7 @@ curl -X POST \
 | keywordUpdates | array | 조건부* | 키워드 변경 목록 (최대 20개) |
 | keywordUpdates[].action | string | 예 | `"upsert"` 또는 `"delete"` |
 | keywordUpdates[].key | string | 예 | 키워드 키 (1~8자) |
-| keywordUpdates[].value | string | upsert 시 | 키워드 값 |
+| keywordUpdates[].value | string | upsert 시 | 키워드 값 (`key:value` 합산 최대 256자) |
 | permissionUpdates | object | 조건부* | 권한 변경 |
 | permissionUpdates.logPermission | string | X | "owner" \| "author" \| "none" |
 | permissionUpdates.keywordPermission | string | X | "owner" \| "author" \| "none" |

@@ -623,7 +623,7 @@ curl -X POST \
 | keywordUpdates | array | -* | キーワード変更（最大20件） |
 | keywordUpdates[].action | string | ○ | "upsert" または "delete" |
 | keywordUpdates[].key | string | ○ | キーワードキー（1-8文字） |
-| keywordUpdates[].value | string | - | 値（upsert時は必須） |
+| keywordUpdates[].value | string | - | 値（upsert時は必須、`key:value`合計最大256文字） |
 | permissionUpdates | object | -* | 権限変更 |
 | permissionUpdates.logPermission | string | - | "owner" \| "author" \| "none" |
 | permissionUpdates.keywordPermission | string | - | "owner" \| "author" \| "none" |

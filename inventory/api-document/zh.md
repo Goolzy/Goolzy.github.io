@@ -623,7 +623,7 @@ curl -X POST \
 | keywordUpdates | array | 否* | 关键词变更（最多20条） |
 | keywordUpdates[].action | string | 是 | "upsert"或"delete" |
 | keywordUpdates[].key | string | 是 | 关键词键（1-8个字符） |
-| keywordUpdates[].value | string | 否 | 值（upsert时必填） |
+| keywordUpdates[].value | string | 否 | 值（upsert时必填，`key:value`合计最大256字符） |
 | permissionUpdates | object | 否* | 权限变更 |
 | permissionUpdates.logPermission | string | 否 | "owner" \| "author" \| "none" |
 | permissionUpdates.keywordPermission | string | 否 | "owner" \| "author" \| "none" |

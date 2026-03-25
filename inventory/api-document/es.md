@@ -401,7 +401,7 @@ curl -X POST \
 | keywordUpdates | array | No* | Cambios de palabras clave (max 20) |
 | keywordUpdates[].action | string | Si | "upsert" o "delete" |
 | keywordUpdates[].key | string | Si | Clave de palabra clave (1-8 caracteres) |
-| keywordUpdates[].value | string | No | Valor (requerido para upsert) |
+| keywordUpdates[].value | string | No | Valor (requerido para upsert, `key:value` combinado máx. 256 caracteres) |
 | permissionUpdates | object | No* | Cambios de permisos |
 | permissionUpdates.logPermission | string | No | "owner" \| "author" \| "none" |
 | permissionUpdates.keywordPermission | string | No | "owner" \| "author" \| "none" |

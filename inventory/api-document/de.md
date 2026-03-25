@@ -446,7 +446,7 @@ curl -X POST \
 | keywordUpdates | array | Nein* | Stichwortanderungen (max 20) |
 | keywordUpdates[].action | string | Ja | "upsert" oder "delete" |
 | keywordUpdates[].key | string | Ja | Stichwort-Schlussel (1-8 Zeichen) |
-| keywordUpdates[].value | string | Nein | Wert (erforderlich fur upsert) |
+| keywordUpdates[].value | string | Nein | Wert (erforderlich fur upsert, `key:value` kombiniert max. 256 Zeichen) |
 | permissionUpdates | object | Nein* | Berechtigungsanderungen |
 | permissionUpdates.logPermission | string | Nein | "owner" \| "author" \| "none" |
 | permissionUpdates.keywordPermission | string | Nein | "owner" \| "author" \| "none" |
