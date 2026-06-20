@@ -41,9 +41,19 @@ Confira o histórico de atualizações do aplicativo Inventory.
 O sistema de moeda Papel foi removido. Agora você pode criar e duplicar conteúdo sem Papel.
 - Duplicação, criação, compartilhamento e configuração de domínio não requerem mais Papel
 
+#### Editor de conteúdo renovado
+Você pode direcionar sua página de conteúdo como desejar.
+- Organize e redimensione livremente elementos como imagens, texto e galeria
+- Mova elementos arrastando e altere a posição, tamanho e configuração com alças
+
 #### Informações de jogos aprimoradas
 Verifique informações sobre jogos e periféricos de interesse em um único local.
 - Cards com recomendações de produtos de jogos e links de compra fornecidos
+
+#### Mensagens diretas entre usuários
+Você pode conversar individualmente com outros usuários.
+- Encontre o outro usuário procurando ou escaneando código QR para iniciar uma conversa
+- Gerenciar conversas com segurança com funções de bloqueio e denúncia
 
 #### Fluxo simplificado
 Duplicação, compartilhamento e configuração de domínio podem ser concluídos em uma única ação.

@@ -41,9 +41,19 @@ Consultez l'historique des mises à jour de l'application Inventory.
 Le système de devise Papier a disparu. Vous pouvez maintenant créer et dupliquer du contenu sans Papier.
 - Duplication, création, partage et configuration de domaine ne nécessitent plus de Papier
 
+#### Éditeur de contenu amélioré
+Concevez des pages de contenu exactement comme vous le souhaitez.
+- Placez et redimensionnez librement les images, texte, galeries et autres éléments
+- Déplacez les éléments par glissement, modifiez le déplacement, la taille et les paramètres directement avec les poignées
+
 #### Informations de jeu améliorées
 Consultez les informations sur vos jeux et accessoires favoris au même endroit.
 - Recommandations de produits de jeu et cartes de liens d'achat fournis
+
+#### Messages directs entre utilisateurs
+Conversez directement en tête-à-tête avec d'autres utilisateurs.
+- Trouvez les utilisateurs par recherche ou code QR et lancez une conversation
+- Gérez les conversations en toute sécurité avec les fonctions de blocage et de signalement
 
 #### Flux simplifié
 Complétez la duplication, le partage et la configuration de domaine en une seule action.

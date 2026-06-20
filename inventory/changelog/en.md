@@ -41,9 +41,19 @@ Check out the update history for the Inventory app.
 The Paper currency system has been removed. You can now create and duplicate content without Paper.
 - Duplication, creation, sharing, and domain setup no longer require Paper
 
+#### Redesigned Content Editor
+Design content pages exactly the way you want.
+- Freely arrange and resize images, text, gallery, and other elements
+- Drag elements to move them, use handles to instantly change position, size, and settings
+
 #### Enhanced Game Information
 View game details and accessory information all in one place.
 - Game product recommendations and purchase links provided
+
+#### Direct Messages Between Users
+Chat one-on-one with other users.
+- Find users through search or QR code and start a conversation
+- Manage conversations safely with block and report features
 
 #### Streamlined Workflow
 Complete duplication, sharing, and domain setup in a single action.

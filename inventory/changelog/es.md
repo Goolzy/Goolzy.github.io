@@ -37,18 +37,28 @@ Consulta el historial de actualizaciones de la aplicación Inventory.
 </summary>
 <div class="version-content" markdown="1">
 
-#### Gratis sin Papel
+#### Sin Papel de forma gratuita
 El sistema de moneda Papel ha desaparecido. Ahora puede crear y duplicar contenido sin Papel.
-- Duplicacion, creacion, uso compartido y configuracion de dominio ya no requieren Papel
+- La duplicación, creación, uso compartido y configuración de dominio ya no requieren Papel
 
-#### Informacion de juegos mejorada
-Consulta la informacion de juegos y accesorios de tu interes en un solo lugar.
-- Tarjetas de recomendacion de productos de juegos y enlaces de compra proporcionados
+#### Editor de contenido mejorado
+Puede diseñar las páginas de contenido exactamente como desee.
+- Coloque libremente elementos como imágenes, texto y galerías, y ajuste sus tamaños
+- Arrastre elementos para moverlos y use los controles para cambiar la posición, tamaño y configuración al instante
+
+#### Información de juegos mejorada
+Consulta la información de juegos y accesorios de tu interés en un solo lugar.
+- Se proporcionan tarjetas con recomendaciones de productos de juegos y enlaces de compra
+
+#### Mensajes directos entre usuarios
+Converse directamente con otros usuarios en conversaciones uno a uno.
+- Busque a otros usuarios mediante búsqueda o código QR para iniciar una conversación
+- Gestione las conversaciones de forma segura con funciones de bloqueo y denuncia
 
 #### Flujo simplificado
-Complete la duplicacion, el uso compartido y la configuracion de dominio en una sola accion.
+Complete la duplicación, el uso compartido y la configuración de dominio en una sola acción.
 
-#### Guia de limpieza de datos
+#### Guía de limpieza de datos
 Las cantidades sin usar de Papel se han limpiado de acuerdo con los cambios del sistema.
 - El contenido ya creado y los dominios configurados se mantienen sin cambios
 

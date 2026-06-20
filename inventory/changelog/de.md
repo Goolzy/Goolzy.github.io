@@ -41,9 +41,19 @@ Sehen Sie sich den Update-Verlauf der Inventory-App an.
 Das Papier(Währungs)system ist entfernt. Sie können nun Inhalte erstellen und duplizieren ohne Papier.
 - Duplizierung, Erstellung, Freigabe und Domäneneinstellung benötigen kein Papier mehr
 
+#### Verbesserte Inhalts-Editor
+Sie können Inhaltsseiten nach Ihren Wünschen frei gestalten.
+- Bilder, Text, Galerie und andere Elemente frei platzieren und skalieren
+- Elemente per Drag verschieben, Griffe zur schnellen Änderung von Position, Größe und Einstellungen
+
 #### Verbesserte Spielinformationen
 Informationen zu Spielen und Zubehör, die Sie interessieren, können an einem Ort eingesehen werden.
 - Empfehlungskarten für Spielprodukte und Kauflinks bereitgestellt
+
+#### Direktnachrichten zwischen Benutzern
+Sie können sich direkt 1:1 mit anderen Benutzern unterhalten.
+- Finden Sie andere Benutzer per Suche oder QR-Code und starten Sie ein Gespräch
+- Blockierung und Meldungsfunktionen für sichere Gesprächsverwaltung
 
 #### Vereinfachter Ablauf
 Duplizierung, Freigabe und Domäneneinstellung können in einer Aktion abgeschlossen werden.
