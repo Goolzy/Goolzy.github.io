@@ -37,9 +37,9 @@ Confira o histórico de atualizações do aplicativo Inventory.
 </summary>
 <div class="version-content" markdown="1">
 
-#### Todos os recursos gratuitamente
-Papéis, carimbos e crachás podem ser usados livremente sem qualquer custo.
-- Criação de conteúdo, compartilhamento e configuração de domínio são completamente gratuitos
+#### Grátis sem Papel
+O sistema de moeda Papel foi removido. Agora você pode criar e duplicar conteúdo sem Papel.
+- Duplicação, criação, compartilhamento e configuração de domínio não requerem mais Papel
 
 #### Informações de jogos aprimoradas
 Verifique informações sobre jogos e periféricos de interesse em um único local.
@@ -49,7 +49,7 @@ Verifique informações sobre jogos e periféricos de interesse em um único loc
 Duplicação, compartilhamento e configuração de domínio podem ser concluídos em uma única ação.
 
 #### Orientação de limpeza de dados
-Quantidades não utilizadas de papéis, carimbos e crachás foram organizadas de acordo com as mudanças do sistema.
+Quantidades não utilizadas de Papel foram organizadas de acordo com as mudanças do sistema.
 - Conteúdo já criado e domínios configurados são mantidos conforme estão
 
 </div>

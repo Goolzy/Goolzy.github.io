@@ -37,9 +37,9 @@ Check out the update history for the Inventory app.
 </summary>
 <div class="version-content" markdown="1">
 
-#### All Features Free
-Papers, Stamps, and Badges are now freely available without any virtual currency.
-- Content creation, sharing, and domain setup are completely free
+#### Free Without Paper
+The Paper currency system has been removed. You can now create and duplicate content without Paper.
+- Duplication, creation, sharing, and domain setup no longer require Paper
 
 #### Enhanced Game Information
 View game details and accessory information all in one place.
@@ -49,7 +49,7 @@ View game details and accessory information all in one place.
 Complete duplication, sharing, and domain setup in a single action.
 
 #### Data Cleanup Notice
-Unused Paper, Stamp, and Badge balances have been cleaned up due to system changes.
+Unused Paper balances have been cleaned up due to system changes.
 - Already created content and configured domains are preserved
 
 </div>

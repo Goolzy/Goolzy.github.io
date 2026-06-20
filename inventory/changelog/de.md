@@ -37,9 +37,9 @@ Sehen Sie sich den Update-Verlauf der Inventory-App an.
 </summary>
 <div class="version-content" markdown="1">
 
-#### Alle Funktionen kostenlos
-Papiere, Stempel und Abzeichen können ohne virtuelle Währung frei verwendet werden.
-- Der gesamte Prozess von der Inhaltserstellung bis zur Freigabe und Domäneneinstellung ist kostenlos
+#### Kostenlos ohne Papier
+Das Papier(Währungs)system ist entfernt. Sie können nun Inhalte erstellen und duplizieren ohne Papier.
+- Duplizierung, Erstellung, Freigabe und Domäneneinstellung benötigen kein Papier mehr
 
 #### Verbesserte Spielinformationen
 Informationen zu Spielen und Zubehör, die Sie interessieren, können an einem Ort eingesehen werden.
@@ -49,7 +49,7 @@ Informationen zu Spielen und Zubehör, die Sie interessieren, können an einem O
 Duplizierung, Freigabe und Domäneneinstellung können in einer Aktion abgeschlossen werden.
 
 #### Datenverwaltung
-Ungenutztes Papier, Stempel und Abzeichen werden gemäß Systemänderungen bereinigt.
+Ungenutztes Papier wird gemäß Systemänderungen bereinigt.
 - Bereits erstellte Inhalte und konfigurierte Domänen bleiben unverändert
 
 </div>

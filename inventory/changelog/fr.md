@@ -37,19 +37,19 @@ Consultez l'historique des mises à jour de l'application Inventory.
 </summary>
 <div class="version-content" markdown="1">
 
-#### Toutes les fonctionnalités gratuites
-Documents, tampons et badges peuvent être utilisés librement sans devise.
-- La création de contenu, le partage et la configuration de domaine sont entièrement gratuits
+#### Gratuit sans Papier
+Le système de devise Papier a disparu. Vous pouvez maintenant créer et dupliquer du contenu sans Papier.
+- Duplication, création, partage et configuration de domaine ne nécessitent plus de Papier
 
 #### Informations de jeu améliorées
 Consultez les informations sur vos jeux et accessoires favoris au même endroit.
 - Recommandations de produits de jeu et cartes de liens d'achat fournis
 
 #### Flux simplifié
-Complétez le clonage, le partage et la configuration de domaine en une seule action.
+Complétez la duplication, le partage et la configuration de domaine en une seule action.
 
 #### Guide de nettoyage des données
-Les soldes inutilisés de documents, tampons et badges ont été nettoyés selon les changements système.
+Les soldes inutilisés de Papier ont été nettoyés selon les changements système.
 - Les contenus créés et les domaines configurés sont préservés
 
 </div>

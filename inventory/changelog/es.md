@@ -37,19 +37,19 @@ Consulta el historial de actualizaciones de la aplicación Inventory.
 </summary>
 <div class="version-content" markdown="1">
 
-#### Todas las funciones disponibles sin costo
-Papel, sellos e insignias se pueden usar libremente sin ninguna restriccion de pago.
-- Creacion de contenido, compartir y configuracion de dominio estan disponibles sin costo en todo el proceso
+#### Gratis sin Papel
+El sistema de moneda Papel ha desaparecido. Ahora puede crear y duplicar contenido sin Papel.
+- Duplicacion, creacion, uso compartido y configuracion de dominio ya no requieren Papel
 
 #### Informacion de juegos mejorada
 Consulta la informacion de juegos y accesorios de tu interes en un solo lugar.
 - Tarjetas de recomendacion de productos de juegos y enlaces de compra proporcionados
 
 #### Flujo simplificado
-Completa la clonacion, el intercambio y la configuracion de dominio en una sola accion.
+Complete la duplicacion, el uso compartido y la configuracion de dominio en una sola accion.
 
 #### Guia de limpieza de datos
-Los documentos sin usar, sellos e insignias han sido limpiados conforme a los cambios del sistema.
+Las cantidades sin usar de Papel se han limpiado de acuerdo con los cambios del sistema.
 - El contenido ya creado y los dominios configurados se mantienen sin cambios
 
 </div>
