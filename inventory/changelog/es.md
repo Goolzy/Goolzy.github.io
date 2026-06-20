@@ -29,6 +29,34 @@ Consulta el historial de actualizaciones de la aplicación Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.0.0 <small>2026-06-21</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Todas las funciones disponibles sin costo
+Papel, sellos e insignias se pueden usar libremente sin ninguna restriccion de pago.
+- Creacion de contenido, compartir y configuracion de dominio estan disponibles sin costo en todo el proceso
+
+#### Informacion de juegos mejorada
+Consulta la informacion de juegos y accesorios de tu interes en un solo lugar.
+- Tarjetas de recomendacion de productos de juegos y enlaces de compra proporcionados
+
+#### Flujo simplificado
+Completa la clonacion, el intercambio y la configuracion de dominio en una sola accion.
+
+#### Guia de limpieza de datos
+Los documentos sin usar, sellos e insignias han sido limpiados conforme a los cambios del sistema.
+- El contenido ya creado y los dominios configurados se mantienen sin cambios
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.4.3 <small>2026-03-23</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

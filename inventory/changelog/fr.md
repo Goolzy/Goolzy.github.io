@@ -29,6 +29,34 @@ Consultez l'historique des mises à jour de l'application Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.0.0 <small>2026-06-21</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Toutes les fonctionnalités gratuites
+Documents, tampons et badges peuvent être utilisés librement sans devise.
+- La création de contenu, le partage et la configuration de domaine sont entièrement gratuits
+
+#### Informations de jeu améliorées
+Consultez les informations sur vos jeux et accessoires favoris au même endroit.
+- Recommandations de produits de jeu et cartes de liens d'achat fournis
+
+#### Flux simplifié
+Complétez le clonage, le partage et la configuration de domaine en une seule action.
+
+#### Guide de nettoyage des données
+Les soldes inutilisés de documents, tampons et badges ont été nettoyés selon les changements système.
+- Les contenus créés et les domaines configurés sont préservés
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.4.3 <small>2026-03-23</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

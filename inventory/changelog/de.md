@@ -29,6 +29,34 @@ Sehen Sie sich den Update-Verlauf der Inventory-App an.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.0.0 <small>2026-06-21</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopieren">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Alle Funktionen kostenlos
+Papiere, Stempel und Abzeichen können ohne virtuelle Währung frei verwendet werden.
+- Der gesamte Prozess von der Inhaltserstellung bis zur Freigabe und Domäneneinstellung ist kostenlos
+
+#### Verbesserte Spielinformationen
+Informationen zu Spielen und Zubehör, die Sie interessieren, können an einem Ort eingesehen werden.
+- Empfehlungskarten für Spielprodukte und Kauflinks bereitgestellt
+
+#### Vereinfachter Ablauf
+Duplizierung, Freigabe und Domäneneinstellung können in einer Aktion abgeschlossen werden.
+
+#### Datenverwaltung
+Ungenutztes Papier, Stempel und Abzeichen werden gemäß Systemänderungen bereinigt.
+- Bereits erstellte Inhalte und konfigurierte Domänen bleiben unverändert
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.4.3 <small>2026-03-23</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopieren">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

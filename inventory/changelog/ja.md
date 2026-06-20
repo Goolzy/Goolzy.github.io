@@ -29,6 +29,34 @@ Inventoryアプリのアップデート履歴をご確認ください。
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.0.0 <small>2026-06-21</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="コピー">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### すべての機能を無料で提供
+紙、スタンプ、バッジをお金をかけずに自由に使用できます。
+- コンテンツ作成、共有、ドメイン設定まで全過程が無料
+
+#### ゲーム情報の充実
+関心のあるゲームとアクセサリーの情報を一箇所で確認できます。
+- ゲーム商品のレコメンドと購入リンクカード提供
+
+#### より単純になったフロー
+複製、共有、ドメイン設定を1回の操作で完了できます。
+
+#### データ整理のお知らせ
+使用していない紙、スタンプ、バッジの残量はシステム変更に従って整理されました。
+- すでに作成したコンテンツと設定したドメインはそのまま保持
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.4.3 <small>2026-03-23</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="コピー">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

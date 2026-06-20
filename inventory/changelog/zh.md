@@ -29,6 +29,34 @@ translations:
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.0.0 <small>2026-06-21</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### 所有功能免费提供
+纸张、印章和徽章可以无需任何费用自由使用。
+- 内容创建、共享和域名设置的所有流程都是免费的
+
+#### 游戏信息强化
+在一个地方查看感兴趣的游戏和配件的信息。
+- 提供游戏产品推荐和购买链接卡片
+
+#### 更简化的流程
+只需一次操作即可完成复制、共享和域名设置。
+
+#### 数据整理指南
+未使用的纸张、印章和徽章余量已根据系统更改进行了整理。
+- 已创建的内容和设置的域名保持不变
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.4.3 <small>2026-03-23</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

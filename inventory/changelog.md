@@ -29,6 +29,34 @@ Inventory 앱의 업데이트 내역을 확인하세요.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.0.0 <small>2026-06-21</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### 모든 기능 무료 제공
+종이, 스탬프, 뱃지를 재화 없이 자유롭게 사용할 수 있습니다.
+- 콘텐츠 생성, 공유, 도메인 설정까지 모든 과정이 무료
+
+#### 게임 정보 강화
+관심 있는 게임과 주변기기의 정보를 한 곳에서 확인할 수 있습니다.
+- 게임 제품 추천과 구매 링크 카드 제공
+
+#### 더 단순해진 흐름
+복제, 공유, 도메인 설정을 한 번의 동작으로 완료할 수 있습니다.
+
+#### 데이터 정리 안내
+사용하지 않은 종이, 스탬프, 뱃지 잔량은 시스템 변경에 따라 정리되었습니다.
+- 이미 만든 콘텐츠와 설정한 도메인은 그대로 유지
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.4.3 <small>2026-03-23</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
