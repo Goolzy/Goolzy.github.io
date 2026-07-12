@@ -37,30 +37,79 @@ Consulta el historial de actualizaciones de la aplicación Inventory.
 </summary>
 <div class="version-content" markdown="1">
 
-#### Sin Papel de forma gratuita
-El sistema de moneda Papel ha desaparecido. Ahora puede crear y duplicar contenido sin Papel.
-- La duplicación, creación, uso compartido y configuración de dominio ya no requieren Papel
-
-#### Editor de contenido mejorado
-Puede diseñar las páginas de contenido exactamente como desee.
-- Coloque libremente elementos como imágenes, texto y galerías, y ajuste sus tamaños
-- Arrastre elementos para moverlos y use los controles para cambiar la posición, tamaño y configuración al instante
-
-#### Información de juegos mejorada
-Consulta la información de juegos y accesorios de tu interés en un solo lugar.
-- Se proporcionan tarjetas con recomendaciones de productos de juegos y enlaces de compra
-
 #### Mensajes directos entre usuarios
-Converse directamente con otros usuarios en conversaciones uno a uno.
-- Busque a otros usuarios mediante búsqueda o código QR para iniciar una conversación
-- Gestione las conversaciones de forma segura con funciones de bloqueo y denuncia
+Ahora puedes conversar directamente con otros usuarios en chats uno a uno. Toca el dominio, el correo o el perfil de quien escribió un comentario para solicitar una conversación; cuando la otra persona acepta, la conversación comienza. También puedes bloquear o denunciar a la otra persona.
+- La pestaña de Mensajes ahora se organiza con el mismo encabezado, buscador y panel de perfil que la pantalla principal de Inventario, y la lista de conversaciones solo aparece en la pestaña de Mensajes
+- Si ambas partes ya se habían solicitado una conversación o tuvieron una anterior, esta continúa de inmediato sin necesidad de aceptar de nuevo
+- La insignia de mensajes no leídos ahora se actualiza en tiempo real con la cantidad real y se acumula al llegar nuevos mensajes
+- Desde la ventana emergente del perfil puedes elegir enviar un mensaje, denunciar o bloquear desde un mismo lugar, y ya no se abren ventanas de chat duplicadas con la misma persona
+- Si una de las partes abandona la conversación, el historial de la otra persona se conserva, y si vuelve a intentarlo, regresa de inmediato a la conversación existente
 
-#### Flujo simplificado
-Complete la duplicación, el uso compartido y la configuración de dominio en una sola acción.
+#### Invita a quienes aún no usan la aplicación
+Si en Mensajes inicias una conversación con un correo que todavía no usa la aplicación, se envía automáticamente un correo de invitación con el enlace de instalación y un código QR, en el idioma configurado en tu aplicación.
+- Se ordenaron los avisos y notificaciones de solicitud de invitación para que no se superpongan, y al aceptar, el primer mensaje de la otra persona se muestra de inmediato
 
-#### Guía de limpieza de datos
-Las cantidades sin usar de Papel se han limpiado de acuerdo con los cambios del sistema.
-- El contenido ya creado y los dominios configurados se mantienen sin cambios
+#### Fotos y videos en el chat
+Ahora puedes adjuntar y enviar fotos y videos en Mensajes y en el chat de la comunidad. Al pulsar enviar, la subida comienza y el contenido aparece de inmediato en la burbuja de chat, sin esperas.
+- Puedes enviar hasta 16 fotos y videos en un mismo mensaje agrupados en una galería (colage); al tocar una miniatura se abre el visor de inmediato y puedes guardar todo el contenido
+- Los videos que superan el tamaño o la duración permitida se pueden recortar antes de enviarse
+- Se separaron los botones de imagen y video, se muestra en tiempo real la cantidad seleccionada y el tamaño total, y las burbujas de miniatura indican también la resolución
+
+#### Reproducción directa de videos en el chat
+Al tocar una tarjeta de enlace de video en el chat, el video se reproduce ahí mismo, sin salir a otra aplicación.
+
+#### Tarjetas de vista previa de enlaces
+Al incluir un enlace en el chat, los comentarios o al compartir, este se muestra como una tarjeta de vista previa con título, imagen e icono de la marca.
+- Se muestran como tarjeta los enlaces de diversos servicios populares, incluso en mensajes que mezclan texto y enlaces
+- El detalle de un Sello compartido también admite tarjetas de enlace y ampliación de imágenes (toca para ver en grande)
+
+#### Conservación de comentarios en borrador
+Si sales de la pantalla mientras escribes un comentario en el detalle de un artículo, el contenido se guarda y puedes continuar donde lo dejaste al volver a entrar.
+- Los artículos con un comentario en borrador se indican con un "…" junto al título en la lista de Mensajes
+
+#### Protección de la privacidad
+Se hicieron ajustes en varios lugares para que el correo electrónico no quede expuesto directamente.
+- Los usuarios con una insignia se muestran con el nombre de dominio en lugar del correo, y tu propio código QR también se genera a partir del dominio, corrigiéndose automáticamente en la lista de conversaciones, el perfil y la lista de bloqueados
+- Los usuarios sin insignia se representan mediante un código QR de color, de modo que solo quien lo escanea puede identificar el correo
+- En el chat de la comunidad se oculta la parte del correo posterior al arroba en los usuarios sin insignia de dominio
+
+#### Reorganización de la pantalla principal y la navegación
+Las pestañas inferiores se organizaron en Explorar, Mensajes, Inventario, Sellos y Tienda, y la pestaña de Inventario solo aparece si tienes artículos.
+- Al abrir la aplicación, se inicia en Inventario si tienes artículos, o en Explorar si no tienes ninguno
+- El icono de Inventario cambió a la forma de una mochila, y el indicador de cambio de pestaña ahora se desplaza con más suavidad
+- La transición de la ventana de información del artículo cambió de un giro de pantalla a un desvanecimiento y deslizamiento suaves
+
+#### Espacio exclusivo para sellos ya grabados
+Los sellos que ya terminaste de grabar se gestionan en una pestaña exclusiva, separados del Inventario (aparece solo si tienes alguno).
+- Admite lista ordenada por actividad reciente, búsqueda y deslizar para marcar como leído; el botón de tres líneas a la derecha de cada tarjeta abre un menú para editar, compartir, retirar y verificar la propiedad
+- La información de los sellos duplicados (copiados) se conserva en el dispositivo, de modo que las ediciones del autor original no se reflejan de forma automática; si el original se actualiza, el botón "Volver a descargar" aparece igual en todos los dispositivos
+- Se evita la duplicación repetida de un sello que ya fue copiado
+
+#### Manejo y organización de listas
+Las acciones para manejar listas ahora se sienten más naturales.
+- Al deslizar hacia un lado en las listas de Mensajes o Sellos, la pantalla completa ya no se desplaza; en su lugar, aparecen parcialmente los botones de acción ocultos
+- Al tocar una vez una etiqueta o un sello, se abre un menú inferior para elegir una acción, y puedes arrastrar los artículos para crear carpetas u organizarlos
+
+#### Rediseño de la pestaña Explorar
+La exploración de sellos compartidos pasó de una simple lista a una organización centrada en recomendaciones.
+- Se organizó el contenido en filas de recomendados, nuevos y personalizados, junto con etiquetas populares y pestañas de orden, para facilitar el descubrimiento
+- Se unificó el diseño de la barra de búsqueda con el de las pestañas de Inventario y Mensajes, y se mejoró la precisión de actualización de la insignia del encabezado superior
+
+#### Ajustes en el chat
+- Se corrigió un problema por el cual no aparecía el campo de entrada en la pestaña de comunidad del sello, lo que impedía que el propietario también pudiera escribir comentarios
+- La traducción automática ahora omite textos internos o expresiones cortas de risa, y solo traduce oraciones reales de cinco caracteres o más
+
+#### Organización de notificaciones
+Aunque se acumulen varios avisos emergentes, ya no se superponen y desaparecen según su tipo.
+- Ya no aparecen avisos de la pantalla que ya tienes abierta, y se eliminaron los anuncios duplicados
+- Se corrigió el orden para que las tarjetas más recientes desaparezcan primero, además de un error de parpadeo en los avisos
+- Se unificó el tamaño del botón de silenciar notificaciones con el de otras pantallas
+
+#### Ejecución más rápida
+La aplicación se inicia y responde con mayor rapidez.
+- Se redujo la demora en el primer inicio y se mejoró la velocidad de carga inicial y de respuesta de las pantallas
+- Al abrir el detalle de un artículo, se entra automáticamente a la última pestaña vista, o directamente a la pestaña correspondiente según el tipo de notificación
+- Al entrar al detalle, una pantalla de carga evita el parpadeo de la pantalla anterior y reduce los saltos en el desplazamiento
 
 </div>
 </details>

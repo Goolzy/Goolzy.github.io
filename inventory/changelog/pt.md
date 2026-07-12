@@ -37,30 +37,79 @@ Confira o histórico de atualizações do aplicativo Inventory.
 </summary>
 <div class="version-content" markdown="1">
 
-#### Grátis sem Papel
-O sistema de moeda Papel foi removido. Agora você pode criar e duplicar conteúdo sem Papel.
-- Duplicação, criação, compartilhamento e configuração de domínio não requerem mais Papel
-
-#### Editor de conteúdo renovado
-Você pode direcionar sua página de conteúdo como desejar.
-- Organize e redimensione livremente elementos como imagens, texto e galeria
-- Mova elementos arrastando e altere a posição, tamanho e configuração com alças
-
-#### Informações de jogos aprimoradas
-Verifique informações sobre jogos e periféricos de interesse em um único local.
-- Cards com recomendações de produtos de jogos e links de compra fornecidos
-
 #### Mensagens diretas entre usuários
-Você pode conversar individualmente com outros usuários.
-- Encontre o outro usuário procurando ou escaneando código QR para iniciar uma conversa
-- Gerenciar conversas com segurança com funções de bloqueio e denúncia
+Agora você pode conversar diretamente, um a um, com outros usuários. Toque no domínio, no e-mail ou no perfil de quem comentou para solicitar uma conversa; quando a outra pessoa aceitar, a conversa começa. Também é possível bloquear ou denunciar a outra pessoa.
+- A aba Mensagens agora tem o mesmo cabeçalho, busca e painel de perfil da tela inicial do Inventário, e a lista de conversas passa a aparecer somente na aba Mensagens
+- Se os dois já solicitaram conversa um com o outro, ou já houve uma conversa antes, ela retoma na hora, sem precisar aceitar de novo
+- O emblema de não lidas agora é atualizado em tempo real com a contagem real e vai acumulando conforme novas mensagens chegam
+- No pop-up de perfil dá para escolher enviar mensagem, denunciar ou bloquear em um só lugar, e a janela de conversa com a mesma pessoa não abre mais em duplicidade
+- Se uma das partes sair da conversa, o histórico da outra pessoa é preservado, e ao tentar de novo ela volta direto para a conversa existente
 
-#### Fluxo simplificado
-Duplicação, compartilhamento e configuração de domínio podem ser concluídos em uma única ação.
+#### Convide quem ainda não usa o aplicativo
+Ao iniciar uma conversa em Mensagens com um e-mail que ainda não usa o aplicativo, um e-mail de convite com link de instalação e código QR é enviado automaticamente, no idioma configurado no seu aplicativo.
+- As notificações e avisos de solicitação de convite foram organizados para não se sobrepor, e assim que aceito, a primeira mensagem da outra pessoa aparece na hora
 
-#### Orientação de limpeza de dados
-Quantidades não utilizadas de Papel foram organizadas de acordo com as mudanças do sistema.
-- Conteúdo já criado e domínios configurados são mantidos conforme estão
+#### Fotos e vídeos no chat
+Agora é possível anexar fotos e vídeos em Mensagens e nos chats da comunidade. Ao tocar em enviar, o envio começa e o conteúdo já aparece no balão de conversa, sem espera.
+- Em uma mesma mensagem, reúna até 16 fotos e vídeos em uma galeria (colagem); ao tocar em uma célula, o visualizador abre na hora, com suporte para salvar tudo de uma vez
+- Vídeos que ultrapassam o tamanho ou a duração permitida podem ser cortados no trecho desejado antes do envio
+- Os botões de foto e de vídeo foram separados, mostrando em tempo real a quantidade selecionada e o tamanho total, além de exibir a resolução junto com a miniatura no balão
+
+#### Reprodução instantânea de vídeo no chat
+Ao tocar em um card de link de vídeo no chat, o vídeo é reproduzido ali mesmo, sem sair para outro aplicativo.
+
+#### Cards de pré-visualização de links
+Links inseridos em conversas, comentários ou compartilhamentos agora aparecem como cards de pré-visualização com título, imagem e ícone da marca.
+- Links de vários serviços populares são reconhecidos, incluindo mensagens que misturam texto e link
+- As páginas de detalhes de Selos compartilhados também têm cards de link e zoom de imagem (toque para ver ampliada)
+
+#### Preservação de comentários em andamento
+Se você sair enquanto escreve um comentário nos detalhes de um item, o conteúdo é salvo e você pode continuar de onde parou ao voltar.
+- Itens com um comentário em andamento mostram um "…" ao lado do título na lista de mensagens
+
+#### Proteção de privacidade
+Vários pontos foram ajustados para que o e-mail não fique exposto diretamente.
+- Usuários com emblema agora aparecem pelo nome de domínio em vez do e-mail, e seu próprio código QR também passa a ser gerado com base no domínio, com correção automática nas listas de conversas, perfis e bloqueios
+- Usuários sem emblema, identificados apenas pelo e-mail, têm o e-mail representado por um QR colorido, identificável somente por quem o escaneia
+- Nos chats da comunidade, a parte do e-mail depois do @ agora fica oculta para usuários sem emblema de domínio
+
+#### Reorganização da tela inicial e da navegação
+As abas inferiores agora são Explorar, Mensagens, Inventário, Selo e Loja, e a aba Inventário só aparece quando você possui itens.
+- O aplicativo agora abre no Inventário se você tiver itens, ou em Explorar caso contrário
+- O ícone do Inventário mudou para o formato de uma bolsa, e o indicador de troca de aba agora se move suavemente
+- As transições do painel de informações do item agora usam um fade e slide suaves em vez da animação de virar a tela
+
+#### Espaço dedicado para Selos gravados
+Selos que terminaram a gravação agora são gerenciados em uma aba própria em vez de ficarem misturados no Inventário (exibida somente se você tiver algum).
+- Conta com lista por atividade mais recente, busca e marcação de lida ao deslizar, além de edição, compartilhamento, recolhimento e verificação de posse pelo pop-up do botão de três linhas em cada bloco
+- As informações de Selos duplicados (copiados) ficam preservadas no seu dispositivo, então as edições do autor original não são refletidas sem você saber, e um botão de "baixar novamente" aparece igual em todos os dispositivos sempre que o original for atualizado
+- A duplicação repetida de um Selo que você já copiou agora é bloqueada
+
+#### Manuseio e organização de listas
+As ações de gerenciar listas ficaram mais naturais.
+- Deslizar a lista de Mensagens ou de Selos para o lado não move mais a tela inteira, e passa a revelar parcialmente os botões de ação ocultos
+- Toque uma vez na etiqueta de nome ou no Selo para escolher uma ação em um menu na parte inferior, e arraste itens para criar ou organizar pastas
+
+#### Reformulação da aba Explorar
+A descoberta de Selos compartilhados deixou de ser uma simples lista e passou a ter um layout focado em recomendações.
+- Linhas de Destaques, Novidades e Para você, além de abas de tags populares e ordenação, tornam o conteúdo mais fácil de descobrir
+- A barra de busca agora segue o mesmo design das abas Inventário e Mensagens, e o emblema no cabeçalho superior passa a ser atualizado com mais precisão
+
+#### Ajustes no chat
+- Corrigido um problema em que o campo de comentário não aparecia para o proprietário na aba da comunidade do Selo
+- A tradução automática agora ignora rótulos internos e textos curtos como "kkk", traduzindo apenas frases reais com cinco caracteres ou mais
+
+#### Organização das notificações
+Os avisos de notificação agora não se sobrepõem mesmo quando vários se acumulam, e cada um desaparece de acordo com seu tipo.
+- Notificações não aparecem mais para uma tela que você já está vendo, eliminando avisos duplicados
+- Corrigida a ordem para que o card mais recente desapareça primeiro, além de um bug de piscar no aviso
+- O botão de silenciar notificações agora tem o mesmo tamanho das outras telas
+
+#### Inicialização mais rápida
+A abertura do aplicativo e a resposta das telas ficaram mais rápidas.
+- Reduzido o atraso na primeira abertura e melhorado o carregamento inicial e a velocidade de resposta das telas
+- Ao abrir os detalhes de um item, o aplicativo volta automaticamente para a última aba vista, ou vai direto para a aba correspondente ao tipo de notificação
+- Uma capa de carregamento ao entrar nos detalhes elimina o pisca da tela anterior e reduz saltos na rolagem
 
 </div>
 </details>

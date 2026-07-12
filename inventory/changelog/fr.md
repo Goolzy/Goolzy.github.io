@@ -37,30 +37,79 @@ Consultez l'historique des mises à jour de l'application Inventory.
 </summary>
 <div class="version-content" markdown="1">
 
-#### Gratuit sans Papier
-Le système de devise Papier a disparu. Vous pouvez maintenant créer et dupliquer du contenu sans Papier.
-- Duplication, création, partage et configuration de domaine ne nécessitent plus de Papier
-
-#### Éditeur de contenu amélioré
-Concevez des pages de contenu exactement comme vous le souhaitez.
-- Placez et redimensionnez librement les images, texte, galeries et autres éléments
-- Déplacez les éléments par glissement, modifiez le déplacement, la taille et les paramètres directement avec les poignées
-
-#### Informations de jeu améliorées
-Consultez les informations sur vos jeux et accessoires favoris au même endroit.
-- Recommandations de produits de jeu et cartes de liens d'achat fournis
-
 #### Messages directs entre utilisateurs
-Conversez directement en tête-à-tête avec d'autres utilisateurs.
-- Trouvez les utilisateurs par recherche ou code QR et lancez une conversation
-- Gérez les conversations en toute sécurité avec les fonctions de blocage et de signalement
+Vous pouvez désormais discuter directement en tête-à-tête avec d'autres utilisateurs. Appuyez sur un domaine, une adresse e-mail ou le profil d'un auteur de commentaire pour demander une conversation ; dès que l'autre personne l'accepte, la conversation commence. Il est aussi possible de bloquer ou de signaler la personne.
+- L'onglet Messages est organisé avec le même en-tête, la même recherche et le même panneau de profil que l'accueil de l'Inventaire, et la liste des conversations ne s'affiche que dans cet onglet
+- Si les deux personnes se sont déjà mutuellement invitées ou ont déjà échangé, la conversation reprend directement sans nouvelle acceptation
+- Le badge de messages non lus se met à jour en temps réel avec le nombre exact et s'accumule à l'arrivée de nouveaux messages
+- La fenêtre du profil réunit en un seul endroit l'envoi de message, le signalement et le blocage, et la fenêtre de discussion avec une même personne ne s'ouvre plus en double
+- Si l'une des deux personnes quitte la conversation, l'historique de l'autre reste conservé, et une nouvelle tentative permet d'y revenir immédiatement
 
-#### Flux simplifié
-Complétez la duplication, le partage et la configuration de domaine en une seule action.
+#### Invitez aussi les personnes qui n'utilisent pas encore l'application
+Si vous lancez une conversation depuis Messages vers une adresse e-mail qui n'utilise pas encore l'application, un e-mail d'invitation contenant un lien d'installation et un code QR est envoyé automatiquement, dans la langue configurée sur l'application.
+- Les notifications et messages temporaires liés aux demandes d'invitation sont réorganisés pour s'afficher sans se chevaucher, et dès l'acceptation, le premier message de l'autre personne s'affiche immédiatement
 
-#### Guide de nettoyage des données
-Les soldes inutilisés de Papier ont été nettoyés selon les changements système.
-- Les contenus créés et les domaines configurés sont préservés
+#### Photos et vidéos dans les discussions
+Il est possible de joindre des photos et des vidéos dans Messages et dans les discussions de communauté. Dès que l'envoi est lancé, le téléversement commence et le contenu s'affiche aussitôt dans la bulle, sans attente.
+- Jusqu'à 16 photos et vidéos peuvent être regroupées dans une même galerie (mosaïque) pour un seul message ; appuyer sur une case ouvre directement la visionneuse, avec possibilité de tout enregistrer
+- Les vidéos qui dépassent la taille ou la durée autorisée peuvent être recadrées avant l'envoi
+- Les boutons pour les images et pour les vidéos sont séparés, avec un affichage en temps réel du nombre d'éléments choisis et de la taille totale, ainsi que la vignette et la résolution dans la bulle
+
+#### Lecture directe des vidéos dans les discussions
+Appuyer sur une carte de lien vidéo dans une discussion lance désormais la vidéo directement sur place, sans quitter l'application.
+
+#### Cartes d'aperçu de lien
+Un lien inséré dans une discussion, un commentaire ou un partage s'affiche sous forme de carte d'aperçu avec titre, image et icône du service.
+- Prend en charge les liens de nombreux services populaires ainsi que les messages mêlant texte et lien
+- Dans le détail d'un tampon partagé, la carte de lien et l'agrandissement d'image (appuyer pour voir en grand) sont également pris en charge
+
+#### Conservation des commentaires en cours de rédaction
+Si vous quittez le détail d'un article en pleine rédaction d'un commentaire, le contenu est sauvegardé et la rédaction peut reprendre au retour.
+- Les éléments comportant un commentaire en cours de rédaction sont signalés par « … » à côté du titre dans la liste des messages
+
+#### Protection de la vie privée
+Plusieurs points ont été retravaillés pour que l'adresse e-mail ne soit plus exposée telle quelle.
+- Les utilisateurs porteurs d'un badge s'affichent désormais avec un nom de domaine plutôt qu'une adresse e-mail ; le code QR personnel est lui aussi généré à partir du domaine, avec correction automatique dans la liste des conversations, le profil et la liste de blocage
+- Pour les utilisateurs sans badge, l'adresse e-mail est représentée par un code QR en couleur, identifiable uniquement par la personne qui le scanne
+- Dans les discussions de communauté, la partie de l'adresse e-mail après le « @ » est masquée pour les utilisateurs sans badge de domaine
+
+#### Réorganisation de l'accueil et de la navigation
+Les onglets du bas sont désormais Découvrir, Messages, Inventaire, Tampon et Boutique ; l'onglet Inventaire ne s'affiche que si des objets sont possédés.
+- Au lancement, l'application démarre sur l'Inventaire si des objets sont possédés, sinon sur l'onglet Découvrir
+- L'icône de l'Inventaire a été remplacée par une forme de sac, et l'indicateur de changement d'onglet se déplace avec plus de fluidité
+- La transition de la fenêtre d'informations d'un objet se fait désormais par un fondu-enchaîné et un glissement fluides plutôt que par un retournement d'écran
+
+#### Espace dédié aux tampons finalisés
+Les tampons dont le marquage est terminé sont gérés dans un onglet dédié plutôt que mélangés à l'Inventaire (affiché uniquement si des tampons y figurent).
+- Prend en charge la liste triée par activité récente, la recherche et le balayage pour marquer comme lu ; le bouton à trois lignes situé à droite de chaque case ouvre un menu pour modifier, partager, retirer ou vérifier la possession
+- Les informations d'un tampon dupliqué sont conservées sur l'appareil, de sorte que les modifications de l'auteur original ne s'appliquent pas automatiquement ; lorsque l'original est mis à jour, un bouton « retélécharger » s'affiche à l'identique sur tous les appareils
+- La duplication d'un tampon déjà dupliqué est désormais empêchée
+
+#### Manipulation et organisation des listes
+Les actions sur les listes sont devenues plus naturelles.
+- Glisser une liste de Messages ou de Tampons sur le côté ne déplace plus l'écran entier, et révèle partiellement des boutons d'action cachés
+- Un simple appui sur une étiquette de nom ou un tampon ouvre un menu en bas de l'écran pour choisir une action, et il est possible de glisser un objet pour créer ou organiser des dossiers
+
+#### Refonte de l'onglet Découvrir
+La découverte des tampons partagés passe d'une simple liste à une organisation centrée sur les recommandations.
+- Des lignes Recommandé, Nouveau et Personnalisé, ainsi que des onglets de tags populaires et de tri, facilitent la découverte de contenu
+- La barre de recherche adopte le même style que les onglets Inventaire et Messages, et la précision de mise à jour du badge de l'en-tête supérieur est améliorée
+
+#### Améliorations des discussions
+- Correction d'un problème qui empêchait même le propriétaire d'écrire un commentaire dans l'onglet communauté d'un tampon, faute de champ de saisie affiché
+- La traduction automatique ignore désormais les mentions internes ou les textes courts comme des rires, et ne traduit que les phrases réelles d'au moins cinq caractères
+
+#### Réorganisation des notifications
+Les messages temporaires de notification ne se chevauchent plus, même en grand nombre, et disparaissent selon leur type.
+- Les notifications concernant un écran déjà ouvert ne s'affichent plus, et les annonces en double sont supprimées
+- L'ordre de disparition a été corrigé pour que les cartes les plus récentes disparaissent en premier, et un bug de scintillement a été corrigé
+- La taille du bouton de mise en sourdine des notifications est désormais harmonisée avec les autres écrans
+
+#### Lancement plus rapide
+Le lancement de l'application et la réactivité de l'écran sont plus rapides.
+- Réduction du délai au premier lancement, et amélioration de la vitesse du chargement initial et de la réactivité de l'écran
+- L'ouverture du détail d'un objet accède automatiquement au dernier onglet consulté, et une notification mène directement à l'onglet correspondant à son type
+- À l'entrée dans un détail, un écran de chargement supprime le scintillement de l'écran précédent et atténue les sautillements de défilement
 
 </div>
 </details>

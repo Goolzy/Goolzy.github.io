@@ -37,30 +37,79 @@ Check out the update history for the Inventory app.
 </summary>
 <div class="version-content" markdown="1">
 
-#### Free Without Paper
-The Paper currency system has been removed. You can now create and duplicate content without Paper.
-- Duplication, creation, sharing, and domain setup no longer require Paper
-
-#### Redesigned Content Editor
-Design content pages exactly the way you want.
-- Freely arrange and resize images, text, gallery, and other elements
-- Drag elements to move them, use handles to instantly change position, size, and settings
-
-#### Enhanced Game Information
-View game details and accessory information all in one place.
-- Game product recommendations and purchase links provided
-
 #### Direct Messages Between Users
-Chat one-on-one with other users.
-- Find users through search or QR code and start a conversation
-- Manage conversations safely with block and report features
+You can now chat one-on-one directly with other users. Tap a domain, email, or comment author's profile to request a conversation, and the chat begins once the other person accepts. You can also block or report the other person.
+- The Messages tab is now organized with the same header, search, and profile panel as the Inventory home, and the conversation list only appears in the Messages tab
+- If you've both already requested a conversation, or you've talked before, the chat resumes right away without needing to accept again
+- The unread badge now updates in real time with the actual count and accumulates as new messages arrive
+- Send a message, report, or block all from one place in the profile popup, and the chat window with the same person no longer opens twice
+- If one side leaves the conversation, the other person's history is preserved, and trying again instantly returns to the existing conversation
 
-#### Streamlined Workflow
-Complete duplication, sharing, and domain setup in a single action.
+#### Invite People Who Don't Use the App Yet
+Starting a conversation from Messages with an email that doesn't use the app yet automatically sends an invitation email, containing an install link and a QR code, in your app's configured language.
+- Invitation request notifications and toasts are now organized so they don't overlap, and once accepted, the other person's first message appears right away
 
-#### Data Cleanup Notice
-Unused Paper balances have been cleaned up due to system changes.
-- Already created content and configured domains are preserved
+#### Photos and Videos in Chat
+You can now attach photos and videos to Messages and community chats. Uploading begins as soon as you tap send, and the media appears in the chat bubble right away, with no waiting.
+- Send up to 16 photos and videos together in a single message as a gallery, tap a cell to open the viewer instantly, and save them all at once
+- Videos that exceed the size or length limit can be trimmed to the desired section before sending
+- The photo and video buttons are now separate, the selected count and total size are shown in real time, and thumbnail bubbles now also display resolution
+
+#### Instant Video Playback in Chat
+Tap a video link card in chat to play the video right there, without leaving to an outside app.
+
+#### Link Preview Cards
+Links added to chats, comments, or shares now appear as preview cards with a title, image, and brand icon.
+- Links from various popular services are supported, along with messages that mix text and links
+- Shared Stamp detail pages also support link cards and image zoom (tap to view larger)
+
+#### Draft Comment Preservation
+If you leave while writing a comment on an item's detail page, the content is saved so you can pick up where you left off when you return.
+- Items with an in-progress comment show a "…" mark next to the title in the message list
+
+#### Privacy Protection
+Various areas have been refined so emails aren't exposed as-is.
+- Users wearing a badge are now shown by their domain name instead of their email, and your own QR code is also generated based on your domain, with automatic correction across conversation lists, profiles, and block lists
+- Email-only users without a badge have their email represented as a color QR code, identifiable only to whoever scans it
+- In community chats, the part of the email after the @ is now hidden for users without a domain badge
+
+#### Home Screen and Navigation Cleanup
+The bottom tabs are now organized as Discover, Messages, Inventory, Stamp, and Shop, and the Inventory tab only appears when you own items.
+- The app now opens to Inventory if you own items, or to Discover if you don't
+- The Inventory icon has been changed to a bag shape, and the tab-switch indicator now moves smoothly
+- Item info panel transitions now use a smooth fade and slide instead of a screen-flip animation
+
+#### Dedicated Space for Engraved Stamps
+Stamps that have finished engraving are now managed in their own tab instead of being mixed in with Inventory (shown only if you own any).
+- Supports a most-recent-activity list, search, and swipe-to-mark-as-read, with edit, share, retrieve, and ownership verification available from the popup behind the three-line button on each tile
+- Copied (scrapped) Stamp information is preserved on your device, so the original creator's edits aren't reflected without your knowledge, and a "re-download" button appears consistently across all devices whenever the original is updated
+- Duplicate copying of a Stamp you've already copied is now prevented
+
+#### List Handling and Organization
+Actions for managing lists now feel more natural.
+- Swiping the Messages or Stamp list sideways no longer shifts the whole screen, and instead partially reveals hidden action buttons
+- Tap a name tag or Stamp once to choose an action from a bottom toast menu, and drag items to create or organize folders
+
+#### Discover Tab Redesign
+Discovering shared Stamps has moved from a simple list to a recommendation-focused layout.
+- Featured, New, and For You rows, plus popular tag and sort tabs, make content easier to discover
+- The search bar now matches the design used in the Inventory and Messages tabs, and the header badge at the top now updates more accurately
+
+#### Chat Refinements
+- Fixed an issue where the comment input field wasn't shown for owners in the Stamp community tab
+- Automatic translation now skips internal labels and short text like "lol," translating only actual sentences of five characters or more
+
+#### Notification Cleanup
+Notification toasts no longer overlap when several stack up, and each disappears in a way that matches its type.
+- Notifications no longer appear for a screen you already have open, removing duplicate alerts
+- Fixed the order so the most recent card disappears first, and fixed a toast flickering bug
+- The notification mute toggle button is now the same size as on other screens
+
+#### Faster Startup
+App launch and screen response are now faster.
+- Reduced first-launch delay and improved initial loading and screen response speed
+- Opening an item's detail page now automatically returns to the last tab you viewed, or jumps straight to the tab matching the notification type
+- A loading cover shown when entering detail pages removes the previous screen's flash and reduces scroll jumpiness
 
 </div>
 </details>

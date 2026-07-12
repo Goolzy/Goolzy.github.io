@@ -37,30 +37,79 @@ Sehen Sie sich den Update-Verlauf der Inventory-App an.
 </summary>
 <div class="version-content" markdown="1">
 
-#### Kostenlos ohne Papier
-Das Papier(Währungs)system ist entfernt. Sie können nun Inhalte erstellen und duplizieren ohne Papier.
-- Duplizierung, Erstellung, Freigabe und Domäneneinstellung benötigen kein Papier mehr
-
-#### Verbesserte Inhalts-Editor
-Sie können Inhaltsseiten nach Ihren Wünschen frei gestalten.
-- Bilder, Text, Galerie und andere Elemente frei platzieren und skalieren
-- Elemente per Drag verschieben, Griffe zur schnellen Änderung von Position, Größe und Einstellungen
-
-#### Verbesserte Spielinformationen
-Informationen zu Spielen und Zubehör, die Sie interessieren, können an einem Ort eingesehen werden.
-- Empfehlungskarten für Spielprodukte und Kauflinks bereitgestellt
-
 #### Direktnachrichten zwischen Benutzern
-Sie können sich direkt 1:1 mit anderen Benutzern unterhalten.
-- Finden Sie andere Benutzer per Suche oder QR-Code und starten Sie ein Gespräch
-- Blockierung und Meldungsfunktionen für sichere Gesprächsverwaltung
+Sie können sich direkt 1:1 mit anderen Benutzern unterhalten. Tippen Sie auf ein Domain-, E-Mail- oder Kommentarprofil, um eine Unterhaltung anzufragen — sobald die Gegenseite annimmt, beginnt das Gespräch. Sie können die Gegenseite auch blockieren oder melden.
+- Der Nachrichten-Tab ist nun wie die Inventar-Startseite mit Kopfzeile, Suche und Profilbereich aufgebaut, und die Gesprächsliste wird nur im Nachrichten-Tab angezeigt
+- Haben beide Seiten bereits ein Gespräch angefragt oder zuvor schon geschrieben, geht es ohne erneute Annahme sofort weiter
+- Das Abzeichen für ungelesene Nachrichten wird in Echtzeit mit der tatsächlichen Anzahl aktualisiert und summiert sich bei neu eintreffenden Nachrichten
+- Im Profil-Popup lassen sich Nachricht senden, Melden und Blockieren an einer Stelle auswählen, und derselbe Chat wird nicht doppelt geöffnet
+- Verlässt eine Seite das Gespräch, bleibt der Verlauf der Gegenseite erhalten; bei einem neuen Versuch kehrt man sofort zum bestehenden Gespräch zurück
 
-#### Vereinfachter Ablauf
-Duplizierung, Freigabe und Domäneneinstellung können in einer Aktion abgeschlossen werden.
+#### Auch Personen einladen, die die App noch nicht nutzen
+Beginnen Sie in den Nachrichten ein Gespräch mit einer E-Mail-Adresse, die die App noch nicht nutzt, wird automatisch eine Einladungs-Mail mit Installationslink und QR-Code in der in Ihrer App eingestellten Sprache verschickt.
+- Benachrichtigungen und Hinweise zu Einladungsanfragen wurden so überarbeitet, dass sie sich nicht überlappen; nach der Annahme wird die erste Nachricht der Gegenseite sofort angezeigt
 
-#### Datenverwaltung
-Ungenutztes Papier wird gemäß Systemänderungen bereinigt.
-- Bereits erstellte Inhalte und konfigurierte Domänen bleiben unverändert
+#### Fotos und Videos im Chat
+In Nachrichten und Community-Chats können Sie Fotos und Videos anhängen und versenden. Nach dem Senden beginnt der Upload, und der Inhalt erscheint ohne Wartezeit sofort in der Sprechblase.
+- Bis zu 16 Fotos und Videos lassen sich in einer Nachricht als Galerie (Collage) zusammenfassen; ein Antippen eines Feldes öffnet sofort den Betrachter, inklusive Unterstützung zum Speichern aller Inhalte
+- Videos, die Größe oder Länge überschreiten, können vor dem Versenden auf den gewünschten Abschnitt zugeschnitten werden
+- Die Schaltflächen für Bilder und Videos wurden getrennt, Anzahl und Gesamtgröße der ausgewählten Dateien werden in Echtzeit angezeigt, und Vorschaubilder in der Sprechblase zeigen zusätzlich die Auflösung
+
+#### Videos direkt im Chat abspielen
+Tippen Sie im Chat auf eine Video-Link-Karte, wird das Video direkt an Ort und Stelle abgespielt, ohne dass eine externe Anwendung geöffnet wird.
+
+#### Link-Vorschaukarten
+Fügen Sie in Chats, Kommentaren oder beim Teilen einen Link ein, wird dieser als Vorschaukarte mit Titel, Bild und Markensymbol angezeigt.
+- Auch Links von verschiedenen beliebten Diensten sowie Nachrichten mit gemischtem Text und Link werden als Karte angezeigt
+- Auch in der Detailansicht geteilter Stempel werden Link-Karten und eine vergrößerte Bildansicht (durch Antippen) unterstützt
+
+#### Angefangene Kommentare bleiben erhalten
+Verlassen Sie die Detailansicht eines Objekts, während Sie an einem Kommentar schreiben, bleibt der Text erhalten, sodass Sie beim erneuten Öffnen dort weiterschreiben können.
+- Objekte mit einem angefangenen Kommentar werden in der Nachrichtenliste neben dem Titel mit einem „…“-Zeichen gekennzeichnet
+
+#### Datenschutz
+Zahlreiche Stellen wurden überarbeitet, damit E-Mail-Adressen nicht mehr direkt sichtbar sind.
+- Benutzer mit einem Abzeichen werden statt mit ihrer E-Mail-Adresse mit ihrem Domain-Namen angezeigt; auch der eigene QR-Code basiert nun auf der Domain und wird in Gesprächsliste, Profil und Blockierliste automatisch angepasst
+- Bei Benutzern ohne Abzeichen wird die E-Mail-Adresse als farbiger QR-Code dargestellt, sodass nur die scannende Gegenseite sie erkennen kann
+- In Community-Chats wird bei Benutzern ohne Domain-Abzeichen der hintere Teil der E-Mail-Adresse (nach dem @) ausgeblendet
+
+#### Neu geordnete Startseite und Navigation
+Die untere Navigationsleiste ist nun in Entdecken, Nachrichten, Inventar, Stempel und Shop gegliedert; der Inventar-Tab wird nur angezeigt, wenn Sie Objekte besitzen.
+- Beim Start der App öffnet sich bei vorhandenen Objekten das Inventar, andernfalls der Entdecken-Tab
+- Das Inventar-Symbol wurde in Form einer Tasche geändert, und die Anzeige beim Tab-Wechsel bewegt sich nun weich
+- Der Wechsel der Objekt-Infofenster erfolgt nun statt durch ein Umdrehen des Bildschirms durch eine sanfte Überblendung mit Verschiebung
+
+#### Eigener Bereich für abgeschlossene Stempel
+Fertig geprägte Stempel werden nicht mehr mit dem Inventar vermischt, sondern in einem eigenen Tab verwaltet (sichtbar, sobald welche vorhanden sind).
+- Unterstützt eine nach letzter Aktivität sortierte Liste, Suche und Lesen per Wischgeste; über die Schaltfläche mit den drei Linien rechts an der Kachel öffnet sich ein Menü zum Bearbeiten, Teilen, Zurückziehen und Prüfen des Besitzes
+- Informationen zu duplizierten (kopierten) Stempeln bleiben auf dem Gerät gespeichert, sodass spätere Bearbeitungen der ursprünglichen Ersteller nicht automatisch übernommen werden; wird das Original aktualisiert, erscheint auf allen Geräten einheitlich eine Schaltfläche „Erneut herunterladen“
+- Ein bereits duplizierter Stempel kann nicht ein zweites Mal dupliziert werden
+
+#### Umgang mit Listen
+Die Bedienung von Listen wirkt nun natürlicher.
+- Wischen Sie in der Nachrichten- oder Stempelliste zur Seite, verschiebt sich nicht mehr die gesamte Ansicht, sondern es erscheinen teilweise verborgene Aktionsschaltflächen
+- Ein einzelnes Antippen von Namensschildern oder Stempeln öffnet ein Auswahlmenü am unteren Rand; Objekte lassen sich zudem per Ziehen in Ordner verschieben oder ordnen
+
+#### Überarbeiteter Entdecken-Tab
+Das Durchsuchen geteilter Stempel ist statt einer einfachen Liste nun um Empfehlungen herum aufgebaut.
+- Reihen für Empfehlungen, Neuheiten und persönliche Vorschläge sowie beliebte Schlagworte und Sortier-Tabs erleichtern das Entdecken von Inhalten
+- Die Suchleiste wurde im gleichen Design wie im Inventar- und Nachrichten-Tab vereinheitlicht, und die Genauigkeit der Abzeichen-Aktualisierung in der oberen Kopfzeile wurde verbessert
+
+#### Feinschliff beim Chat
+- Ein Fehler wurde behoben, bei dem im Stempel-Community-Tab das Eingabefeld für Besitzer nicht angezeigt wurde, sodass sie keine Kommentare schreiben konnten
+- Die automatische Übersetzung überspringt nun interne Systemtexte und kurze Ausdrücke wie Lacher (zum Beispiel „haha“) und übersetzt nur tatsächliche Sätze ab fünf Zeichen Länge
+
+#### Aufgeräumte Benachrichtigungen
+Auch wenn sich mehrere Benachrichtigungshinweise ansammeln, überlappen sie sich nicht mehr und verschwinden passend zu ihrer Art.
+- Für Bildschirme, die bereits geöffnet sind, erscheint keine Benachrichtigung mehr, und doppelte Hinweise wurden entfernt
+- Die Reihenfolge wurde korrigiert, sodass die neuesten Karten zuerst verschwinden, und ein Flackern der Hinweise wurde behoben
+- Die Größe der Stummschalt-Schaltfläche für Benachrichtigungen wurde an andere Bildschirme angeglichen
+
+#### Schnellerer Start
+Der App-Start und die Reaktion der Bildschirme wurden beschleunigt.
+- Die Verzögerung beim ersten Start wurde verringert, und das anfängliche Laden sowie die Reaktionsgeschwindigkeit der Bildschirme wurden verbessert
+- Beim Öffnen der Objektdetails wird automatisch der zuletzt angesehene Tab geöffnet, bei Benachrichtigungen direkt der passende Tab
+- Eine Ladeabdeckung beim Öffnen der Detailansicht verhindert ein kurzes Aufblitzen des vorherigen Bildschirms und mildert Ruckler beim Scrollen ab
 
 </div>
 </details>
