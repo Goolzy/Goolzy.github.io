@@ -24,8 +24,19 @@ author:
   name: Seungin Nam
   twitter:
   picture:
-company_name: Goolzy Co., Ltd.
+company_name: 굴지 (Goolzy)
 support_email: support@goolzy.com
+
+# 사업자 정보 (전자상거래법 §10 의무 게시 항목)
+business:
+  name: 굴지 (Goolzy)
+  representative: 남승인
+  registration_number: 545-12-02654
+  mail_order_registration: 제2025-용인수지-3282호
+  address: 경기도 용인시 수지구 수지로342번길 32, 503호, 504호-301호 (풍덕천동)
+  customer_phone: 010-8254-4155
+  customer_email: captain@goolzy.com
+  hosting_provider: Google LLC (Firebase)
 twitter_username:
 github_username:
 # Outbound mail gateway (forms). Default: formsubmit. Set provider: workers and workers_endpoint to switch.
