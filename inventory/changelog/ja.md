@@ -29,6 +29,42 @@ Inventoryアプリのアップデート履歴をご確認ください。
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.0.1 <small>2026-07-25</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="コピー">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### 音声でメッセージングを交わす
+ダイレクトメッセージで相手とリアルタイム音声で会話できます。2人が同じ会話ルームに入ると、音声が自動的に接続され、一度退出しても戻ると再び接続されます。
+
+#### 大きな画面での横向きモード
+大きな画面でリストと詳細を左右に並べて見る横向きモードをサポートしています。画面を回転させても、閲覧していた位置が保持されます。
+
+#### 改善事項
+アプリケーションの起動時間を大幅に短縮し、チャット入力、画面デザイン、ストア決済全体のユーザビリティを向上させました。
+
+- アプリの起動速度を大幅に短縮しました。
+- チャット入力中に画面がキーボードとスムーズに動くようになりました。
+- 画面全体のデザイン一貫性を整理しました。
+- ストアと決済の安定性を向上させました。
+
+#### バグ修正
+アプリの安定性を向上させ、決済、効果音、チャット、ログインに関する問題を修正しました。
+
+- アプリの安定性を向上させました。
+- 決済キャンセルの遅延を解決しました。
+- サイレントモードで効果音が再生される問題を修正しました。
+- チャットで前の会話と添付が消える問題を解決しました。
+- アプリを再度開いたときのログイン状態を保持するようにしました。
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.0.0 <small>2026-06-21</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="コピー">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

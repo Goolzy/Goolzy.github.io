@@ -29,6 +29,42 @@ Sehen Sie sich den Update-Verlauf der Inventory-App an.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.0.1 <small>2026-07-25</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopieren">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Sofortige Sprachkonversation
+In Direktnachrichten können Sie in Echtzeit per Sprache mit dem anderen sprechen. Wenn beide Seiten zusammen in den Chat kommen, wird die Stimme automatisch verbunden, und wenn Sie kurz weg sind und zurückkommen, wird die Verbindung fortgesetzt.
+
+#### Querformat für große Bildschirme
+Auf großen Bildschirmen werden Listen und Details nebeneinander im Querformat angezeigt. Die angesehene Position bleibt auch bei Bildschirmdrehung erhalten.
+
+#### Verbesserungen
+Wir haben die App-Startgeschwindigkeit deutlich reduziert und die Benutzerfreundlichkeit bei Chat-Eingabe, Bildschirmdesign und Store-Zahlungen verbessert.
+
+- Die App-Startgeschwindigkeit wurde deutlich verkürzt.
+- Der Bildschirm bewegt sich während der Chateingabe reibungslos mit der Tastatur.
+- Die Designkonsistenz über alle Bildschirme wurde verbessert.
+- Die Stabilität des Shops und der Zahlungen wurde erhöht.
+
+#### Fehlerbehebungen
+Wir haben die App-Stabilität verbessert und Probleme mit Zahlungen, Soundeffekten, Chat und Anmeldung behoben.
+
+- Die App-Stabilität wurde verbessert.
+- Das Problem der verzögerten Zahlungsstornierung wurde behoben.
+- Das Problem, dass Soundeffekte im Stummschaltermodus abgespielt wurden, wurde behoben.
+- Das Problem, dass frühere Konversationen und Anhänge im Chat verschwanden, wurde behoben.
+- Bei erneutem Öffnen der App wird die Anmeldung nun beibehalten.
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.0.0 <small>2026-06-21</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopieren">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

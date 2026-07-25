@@ -29,6 +29,40 @@ Check out the update history for the Inventory app.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.0.1 <small>2026-07-25</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Instant Voice Conversations
+Chat in real-time voice with others in Direct Messages. When both of you enter the conversation room together, voice automatically connects, and when you step away and return, the conversation picks up where it left off.
+
+#### Landscape Mode for Large Screens
+Large screens now support landscape mode, displaying lists and details side by side. When you rotate the screen, your view position is maintained.
+
+#### Improvements
+We significantly reduced app startup time and improved overall usability across chat input, screen design, and store payments.
+- Significantly reduced app startup time.
+- Improved smooth keyboard animation when typing in chat.
+- Unified design consistency across the entire app.
+- Increased store and payment stability.
+
+#### Bug Fixes
+We improved app stability and fixed issues with payments, sound effects, chat, and login.
+- Improved app stability.
+- Fixed delayed refund processing for cancelled payments.
+- Fixed sound effects playing in silent mode.
+- Fixed chat conversation history and attachments disappearing.
+- Fixed login session persistence when reopening the app.
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.0.0 <small>2026-06-21</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

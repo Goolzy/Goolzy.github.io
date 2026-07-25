@@ -29,6 +29,42 @@ translations:
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.0.1 <small>2026-07-25</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### 直接语音对话
+在直接消息中可以与对方进行实时语音通话。当两人同时进入聊天时，语音会自动连接，离开后再返回时会自动恢复。
+
+#### 大屏幕横屏模式
+在大屏幕上支持横屏模式，可同时显示列表和详情。旋转屏幕时会保持浏览位置。
+
+#### 改进功能
+我们显著缩短了应用启动时间，并改进了聊天输入、屏幕设计和商店支付的整体易用性。
+
+- 大幅缩短了应用启动速度。
+- 改进了聊天输入时屏幕与键盘的流畅协动。
+- 整理了整个界面的设计一致性。
+- 提升了商店和支付的稳定性。
+
+#### 错误修复
+我们改进了应用稳定性，并修复了支付、音效、聊天和登录的问题。
+
+- 改进了应用稳定性。
+- 解决了支付取消延迟的问题。
+- 修复了静音模式下效果音播放的问题。
+- 修复了聊天中之前的对话和附件消失的问题。
+- 改进了应用重新打开时登录状态的保持。
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.0.0 <small>2026-06-21</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

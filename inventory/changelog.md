@@ -29,6 +29,40 @@ Inventory 앱의 업데이트 내역을 확인하세요.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.0.1 <small>2026-07-25</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### 음성으로 바로 대화
+다이렉트 메시지에서 상대와 실시간 음성으로 대화할 수 있습니다. 두 사람이 대화방에 함께 들어오면 자동으로 음성이 연결되고, 잠시 나갔다 돌아오면 다시 이어집니다.
+
+#### 큰 화면 가로 모드
+큰 화면에서 목록과 상세를 좌우로 나란히 보는 가로 모드를 지원합니다. 화면을 돌려도 보던 위치가 유지됩니다.
+
+#### 개선 사항
+앱 시작 속도를 크게 단축하고, 채팅 입력과 화면 디자인, 상점 결제의 사용성을 전반적으로 개선했습니다.
+- 앱 시작 속도를 크게 단축했습니다.
+- 채팅 입력 중 화면이 키보드와 부드럽게 함께 움직이도록 개선했습니다.
+- 화면 전반의 디자인 일관성을 정리했습니다.
+- 상점과 결제의 안정성을 높였습니다.
+
+#### 버그 수정
+앱 안정성을 높이고 결제와 효과음, 채팅, 로그인 관련 문제를 해결했습니다.
+- 앱 안정성을 개선했습니다.
+- 결제 취소가 지연되던 문제를 해결했습니다.
+- 무음 모드에서 효과음이 재생되던 문제를 해결했습니다.
+- 채팅에서 이전 대화와 첨부가 사라지던 문제를 해결했습니다.
+- 앱을 다시 열었을 때 로그인이 유지되도록 했습니다.
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.0.0 <small>2026-06-21</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

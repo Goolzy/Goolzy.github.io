@@ -29,6 +29,42 @@ Consultez l'historique des mises à jour de l'application Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.0.1 <small>2026-07-25</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Conversation vocale directe
+Parlez en temps réel avec vos contacts dans les Messages directs. Lorsque vous entrez tous les deux dans une conversation, la connexion vocale s'établit automatiquement. Si vous quittez temporairement et revenez, la conversation reprend.
+
+#### Mode paysage pour les grands écrans
+Le mode paysage affiche la liste et les détails côte à côte sur les grands écrans. Lorsque vous faites pivoter votre appareil, votre position reste conservée.
+
+#### Améliorations
+Nous avons considérablement réduit le temps de démarrage de l'application et amélioré l'utilisabilité globale dans la saisie de chat, la conception d'écran et les paiements en boutique.
+
+- La vitesse de lancement de l'application a été considérablement réduite.
+- L'écran se déplace désormais en douceur avec le clavier lors de la saisie de chat.
+- La cohérence du design dans l'ensemble de l'interface a été harmonisée.
+- La stabilité de la boutique et des paiements a été améliorée.
+
+#### Corrections de bugs
+Nous avons amélioré la stabilité de l'application et corrigé les problèmes de paiements, d'effets sonores, de chat et de connexion.
+
+- La stabilité de l'application a été améliorée.
+- Correction du problème de délai lors de l'annulation des paiements.
+- Correction du problème où les effets sonores étaient lus en mode silencieux.
+- Correction du problème où les conversations précédentes et les pièces jointes disparaissaient dans le chat.
+- La session de connexion est désormais conservée lors de la réouverture de l'application.
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.0.0 <small>2026-06-21</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

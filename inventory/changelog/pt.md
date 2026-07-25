@@ -29,6 +29,42 @@ Confira o histórico de atualizações do aplicativo Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.0.1 <small>2026-07-25</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Conversa por voz em tempo real
+Em mensagens diretas, você pode conversar com outras pessoas em tempo real por voz. Quando duas pessoas entram na sala de conversa juntas, a conexão de voz é estabelecida automaticamente e, ao retornar após uma breve ausência, a chamada continua de onde parou.
+
+#### Modo paisagem para telas grandes
+Em telas maiores, o modo paisagem exibe a lista e os detalhes lado a lado. A posição de visualização é mantida mesmo quando você rotaciona a tela.
+
+#### Melhorias
+Reduzimos significativamente o tempo de inicialização do aplicativo e melhoramos a usabilidade geral na entrada de chat, design de telas e pagamentos na loja.
+
+- Reduzida significativamente a velocidade de inicialização do aplicativo.
+- Melhorado o movimento suave da tela junto com o teclado ao digitar no chat.
+- Aprimorada a consistência do design em toda a interface.
+- Aumentada a estabilidade da loja e do pagamento.
+
+#### Correções de bugs
+Melhoramos a estabilidade do aplicativo e corrigimos problemas com pagamentos, efeitos sonoros, chat e login.
+
+- Melhorada a estabilidade do aplicativo.
+- Corrigido o problema de atraso no reembolso de pagamentos.
+- Corrigido o problema de efeitos sonoros reproduzidos no modo silencioso.
+- Corrigido o problema de conversas anteriores e anexos desaparecendo no chat.
+- Mantida a sessão de login ao reabrir o aplicativo.
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.0.0 <small>2026-06-21</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
