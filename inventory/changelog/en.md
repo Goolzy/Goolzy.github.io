@@ -37,6 +37,9 @@ Check out the update history for the Inventory app.
 </summary>
 <div class="version-content" markdown="1">
 
+#### Multi-Device Login
+You can now log in to the same account at the same time across multiple devices such as phones, tablets, and desktops. When you log in from another device, an approval request appears on your existing device, and once you approve it, you can use them together. Notifications are delivered based on how each device is being used.
+
 #### Instant Voice Conversations
 Chat in real-time voice with others in Direct Messages. When both of you enter the conversation room together, voice automatically connects, and when you step away and return, the conversation picks up where it left off.
 

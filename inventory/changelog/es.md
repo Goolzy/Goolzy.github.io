@@ -37,6 +37,9 @@ Consulta el historial de actualizaciones de la aplicación Inventory.
 </summary>
 <div class="version-content" markdown="1">
 
+#### Inicio de sesión en múltiples dispositivos
+Ahora puedes iniciar sesión en la misma cuenta simultáneamente desde varios dispositivos como teléfonos, tabletas y ordenadores. Cuando inicias sesión desde otro dispositivo, aparece una solicitud de aprobación en tu dispositivo existente; una vez que la apruebes, puedes usarlos juntos. Las notificaciones se entregan en función de cómo se esté utilizando cada dispositivo.
+
 #### Conversación por voz en directo
 Puedes conversar por voz en tiempo real con la otra persona en Mensajes Directos. Cuando ambos entran en el chat, la conexión de voz se establece automáticamente; si uno se va y vuelve, la conversación se reanuda de inmediato.
 

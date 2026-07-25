@@ -37,6 +37,9 @@ Confira o histórico de atualizações do aplicativo Inventory.
 </summary>
 <div class="version-content" markdown="1">
 
+#### Acesso simultâneo em múltiplos dispositivos
+Você agora pode fazer login na mesma conta simultaneamente em vários dispositivos como telefones, tablets e computadores. Quando você faz login em outro dispositivo, uma solicitação de aprovação aparece no seu dispositivo existente, e após aprová-la, você pode usá-los em conjunto. As notificações são entregues com base em como cada dispositivo está sendo usado.
+
 #### Conversa por voz em tempo real
 Em mensagens diretas, você pode conversar com outras pessoas em tempo real por voz. Quando duas pessoas entram na sala de conversa juntas, a conexão de voz é estabelecida automaticamente e, ao retornar após uma breve ausência, a chamada continua de onde parou.
 

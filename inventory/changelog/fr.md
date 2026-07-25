@@ -37,6 +37,9 @@ Consultez l'historique des mises à jour de l'application Inventory.
 </summary>
 <div class="version-content" markdown="1">
 
+#### Connexion multi-appareils
+Vous pouvez maintenant vous connecter au même compte simultanément sur plusieurs appareils tels que téléphones, tablettes et ordinateurs. Lorsque vous vous connectez depuis un autre appareil, une demande d'approbation s'affiche sur votre appareil existant, et une fois que vous l'approuvez, vous pouvez les utiliser ensemble. Les notifications sont livrées en fonction de la façon dont chaque appareil est utilisé.
+
 #### Conversation vocale directe
 Parlez en temps réel avec vos contacts dans les Messages directs. Lorsque vous entrez tous les deux dans une conversation, la connexion vocale s'établit automatiquement. Si vous quittez temporairement et revenez, la conversation reprend.
 

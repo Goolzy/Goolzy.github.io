@@ -37,6 +37,9 @@ Sehen Sie sich den Update-Verlauf der Inventory-App an.
 </summary>
 <div class="version-content" markdown="1">
 
+#### Anmeldung auf mehreren Geräten
+Sie können sich jetzt auf mehreren Geräten wie Telefonen, Tablets und Desktops gleichzeitig mit dem gleichen Konto anmelden. Wenn Sie sich von einem anderen Gerät aus anmelden, erscheint auf Ihrem bestehenden Gerät eine Genehmigungsanfrage, und sobald Sie diese genehmigen, können Sie sie gemeinsam nutzen. Benachrichtigungen werden je nach Nutzung der einzelnen Geräte zugestellt.
+
 #### Sofortige Sprachkonversation
 In Direktnachrichten können Sie in Echtzeit per Sprache mit dem anderen sprechen. Wenn beide Seiten zusammen in den Chat kommen, wird die Stimme automatisch verbunden, und wenn Sie kurz weg sind und zurückkommen, wird die Verbindung fortgesetzt.
 
