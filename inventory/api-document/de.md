@@ -16,58 +16,58 @@ translations:
 
 # API-Dokumentation
 
-Greifen Sie programmatisch auf Ihre Inventory-App-Daten uber unsere externe API zu.
+Mit der externen API der Inventory-App können Sie programmatisch auf Ihre Daten zugreifen.
 
 ---
 
-## Ubersicht
+## Überblick
 
 ### Was ist die API?
 
-Die externe API bietet eine Schnittstelle fur den Zugriff auf Inventory-App-Daten von externen Programmen.
+Die externe API ist eine Schnittstelle, über die externe Programme auf die Daten der Inventory-App zugreifen können.
 
-### Anwendungsfalle
+### Anwendungsfälle
 
-- **Automatisierung**: Stapelverarbeitung von Dokumenten durch Skripte
-- **Drittanbieter-Integration**: Datensynchronisierung mit anderen Diensten
-- **Massenoperationen**: Massenhafte Vorlagenerstellung und -freigabe
+- **Automatisierung**: Massenverarbeitung von Dokumenten per Skript
+- **Drittanbieter-Integration**: Datenaustausch mit anderen Diensten
+- **Massenverarbeitung**: Vorlagen im Stapel erstellen und teilen
 
 ---
 
 ## Erste Schritte
 
-### API-Schlussel erhalten
+### API-Schlüssel erstellen
 
-Um die API zu nutzen, benotigen Sie zunachst einen API-Schlussel.
+Um die API zu nutzen, benötigen Sie zunächst einen API-Schlüssel.
 
-1. Offnen Sie den **Profil**-Bildschirm in der Inventory-App
-2. Suchen Sie den **API-Schlussel**-Bereich
-3. Tippen Sie auf die Schaltflache **Schlussel generieren**
-4. Ihr API-Schlussel wird auf dem Bildschirm angezeigt
+1. Öffnen Sie in der Inventory-App den **Profilbildschirm**
+2. Suchen Sie den Abschnitt **API-Schlüssel**
+3. Tippen Sie auf die Schaltfläche **Schlüssel erstellen**
+4. Der erstellte API-Schlüssel wird auf dem Bildschirm angezeigt
 
-> **Wichtig**: Der API-Schlussel wird bei der Generierung **nur einmal** angezeigt. Stellen Sie sicher, dass Sie ihn kopieren und an einem sicheren Ort aufbewahren. Bei Verlust muss er neu generiert werden.
+> **Wichtig**: Der API-Schlüssel wird bei der Erstellung nur **ein einziges Mal** angezeigt. Kopieren Sie ihn unbedingt und bewahren Sie ihn an einem sicheren Ort auf. Bei Verlust muss ein neuer Schlüssel ausgestellt werden.
 
-### API-Schlussel-Format
+### Format des API-Schlüssels
 
-API-Schlussel folgen diesem Format:
+Der API-Schlüssel hat das folgende Format:
 
 ```
 inv_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-- Beginnt mit dem Prafix `inv_`
-- Etwa 50 Zeichen lange Base64URL-kodierte Zeichenkette
+- Beginnt mit dem Präfix `inv_`
+- Etwa 50 Zeichen lange Base64URL-codierte Zeichenkette
 
-### API-Schlussel verwalten
+### Verwaltung des API-Schlüssels
 
-- **Neu generieren**: Widerruft den vorhandenen Schlussel und stellt einen neuen aus
-- **Loschen**: Entfernt den API-Schlussel vollstandig (API-Zugriff deaktiviert)
+- **Neu erstellen**: Der bestehende Schlüssel wird ungültig und ein neuer wird ausgestellt
+- **Löschen**: Der API-Schlüssel wird vollständig gelöscht (API nicht mehr nutzbar)
 
 ---
 
 ## Authentifizierung
 
-Alle API-Anfragen erfordern einen `Authorization`-Header.
+Alle API-Anfragen benötigen einen `Authorization`-Header.
 
 ### Bearer-Token
 
@@ -75,7 +75,7 @@ Alle API-Anfragen erfordern einen `Authorization`-Header.
 Authorization: Bearer inv_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-### Anfrage-Beispiel
+### Beispielanfrage
 
 ```bash
 curl -H "Authorization: Bearer inv_your_api_key" \
@@ -84,19 +84,19 @@ curl -H "Authorization: Bearer inv_your_api_key" \
 
 ---
 
-## Ratenbegrenzung
+## Rate Limiting
 
-Die API-Nutzung unterliegt Beschrankungen.
+Die API-Nutzung ist begrenzt.
 
-| Limittyp | Schwellenwert | Beschreibung |
-|----------|---------------|--------------|
-| Pro Minute | 60 Anfragen | Verhindert ubermassige Anfragen |
-| Monatlich | Je nach Konto | Durch Vertrag bestimmt |
+| Limit-Typ | Grenze | Beschreibung |
+|-----------|------|------|
+| Anfragen pro Minute | 60 | Schutz vor übermäßigen Anfragen |
+| Anfragen pro Monat | Je nach Konto unterschiedlich | Vertraglich festgelegt |
 
-### Bei Uberschreitung des Limits
+### Bei Überschreitung des Limits
 
-- HTTP-Statuscode `429 Too Many Requests` wird zuruckgegeben
-- Bitte warten und spater erneut versuchen
+- HTTP-Statuscode `429 Too Many Requests` wird zurückgegeben
+- Versuchen Sie es nach kurzer Wartezeit erneut
 
 ---
 
@@ -108,37 +108,37 @@ Die API-Nutzung unterliegt Beschrankungen.
 https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 ```
 
-### Lese-APIs (GET)
+### Lese-API (GET)
 
 | Endpunkt | Beschreibung |
-|----------|--------------|
-| `GET /items` | Ihre Artikel auflisten |
-| `GET /items/{token}` | Artikeldetails abrufen |
-| `GET /templates` | Ihre Vorlagen auflisten |
+|------------|------|
+| `GET /items` | Eigene Objektliste abrufen |
+| `GET /items/{token}` | Objektdetails abrufen |
+| `GET /templates` | Eigene Vorlagenliste abrufen |
 | `GET /templates/{token}` | Vorlagendetails abrufen |
-| `GET /templates/shared` | Geteilte Vorlagen auflisten |
-| `GET /user/stats` | Benutzerstatistiken abrufen |
+| `GET /templates/shared` | Liste der derzeit geteilten Vorlagen (Einstellung geplant — Freigabefunktion endet mit v3) |
+| `GET /user/stats` | Nutzerstatistiken abrufen |
 
-### Schreib-APIs (POST)
+### Schreib-API (POST)
 
 | Endpunkt | Beschreibung |
-|----------|--------------|
+|------------|------|
 | `POST /templates` | Neue Vorlage erstellen |
-| `POST /templates/{token}/share` | Vorlage teilen |
-| `POST /templates/revoke` | Freigabe widerrufen |
+| `POST /templates/{token}/share` | Vorlage teilen (Einstellung geplant — Freigabefunktion endet mit v3) |
+| `POST /templates/revoke` | Freigabe widerrufen (Einstellung geplant — Freigabefunktion endet mit v3) |
 | `POST /templates/{token}/send` | Vorlage senden |
-| `POST /templates/{token}/log` | Protokolle hinzufugen, Stichworter/Berechtigungen/Bild aktualisieren |
-| `POST /templates/{token}/check-ownership` | Besitz kopierter Elemente prüfen |
+| `POST /templates/{token}/check-ownership` | Besitz eines geklonten Objekts prüfen |
+| `POST /templates/{token}/log` | Log hinzufügen, Schlüsselwörter/Berechtigungen/Bild aktualisieren |
 
 ---
 
-## Detaillierte API-Referenz
+## Detaillierte API-Spezifikation
 
 <details>
-<summary><h3>GET /items - Artikel auflisten</h3></summary>
+<summary><h3>GET /items - Objektliste</h3></summary>
 <div class="manual-content" markdown="1">
 
-Ruft eine Liste der Artikel (Dokumente) ab, die Sie besitzen.
+Ruft die Liste der eigenen Objekte (Dokumente) ab.
 
 #### Anfrage
 
@@ -147,12 +147,12 @@ curl -H "Authorization: Bearer inv_xxx" \
      "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/items?page=1&pageSize=20"
 ```
 
-#### Abfrageparameter
+#### Query-Parameter
 
-| Parameter | Typ | Standard | Beschreibung |
-|-----------|-----|----------|--------------|
+| Parameter | Typ | Standardwert | Beschreibung |
+|----------|------|--------|------|
 | page | number | 1 | Seitennummer |
-| pageSize | number | 20 | Artikel pro Seite (max 100) |
+| pageSize | number | 20 | Einträge pro Seite (max. 100) |
 | status | string | "active" | Statusfilter (active, pending) |
 | type | string | - | Typfilter (paper, stamp) |
 
@@ -164,9 +164,9 @@ curl -H "Authorization: Bearer inv_xxx" \
   "data": {
     "items": [
       {
-        "token": "verschlusselte_artikel_id",
-        "title": "Artikel-Titel",
-        "content": "Artikel-Inhalt",
+        "token": "암호화된_아이템_ID",
+        "title": "아이템 제목",
+        "content": "아이템 내용",
         "type": "paper",
         "status": "active",
         "imageUrl": "https://...",
@@ -188,10 +188,10 @@ curl -H "Authorization: Bearer inv_xxx" \
 </details>
 
 <details>
-<summary><h3>GET /items/{token} - Artikeldetails</h3></summary>
+<summary><h3>GET /items/{token} - Objektdetails</h3></summary>
 <div class="manual-content" markdown="1">
 
-Ruft detaillierte Informationen uber einen bestimmten Artikel ab.
+Ruft die Detailinformationen eines bestimmten Objekts ab.
 
 #### Anfrage
 
@@ -206,15 +206,144 @@ curl -H "Authorization: Bearer inv_xxx" \
 {
   "success": true,
   "data": {
-    "token": "verschlusselte_artikel_id",
-    "title": "Artikel-Titel",
-    "content": "Artikel-Inhalt",
+    "token": "암호화된_아이템_ID",
+    "title": "아이템 제목",
+    "content": "아이템 내용",
     "type": "paper",
     "status": "active",
     "imageUrl": "https://...",
-    "keywords": ["schlussel:wert", "tag:beispiel"],
+    "keywords": ["키:값", "태그:예시"],
     "createdAt": "2025-01-01T00:00:00Z",
     "updatedAt": "2025-01-01T00:00:00Z"
+  }
+}
+```
+
+</div>
+</details>
+
+<details>
+<summary><h3>GET /templates - Vorlagenliste</h3></summary>
+<div class="manual-content" markdown="1">
+
+Ruft die Liste der eigenen Vorlagen (Stempel) ab.
+
+#### Anfrage
+
+```bash
+curl -H "Authorization: Bearer inv_xxx" \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates?page=1&pageSize=20"
+```
+
+#### Query-Parameter
+
+| Parameter | Typ | Standardwert | Beschreibung |
+|----------|------|--------|------|
+| page | number | 1 | Seitennummer |
+| pageSize | number | 20 | Einträge pro Seite (max. 100) |
+
+#### Antwort
+
+```json
+{
+  "success": true,
+  "data": {
+    "templates": [
+      {
+        "token": "암호화된_템플릿_ID",
+        "title": "템플릿 제목",
+        "content": "템플릿 내용",
+        "imageUrl": "https://...",
+        "commentMode": "independent",
+        "allowComments": true,
+        "logPermission": "owner",
+        "keywordPermission": "owner",
+        "allowEdit": false,
+        "isSharing": false,
+        "createdAt": "2025-01-01T00:00:00Z"
+      }
+    ],
+    "pagination": {
+      "page": 1,
+      "pageSize": 20,
+      "totalItems": 10,
+      "totalPages": 1
+    }
+  }
+}
+```
+
+</div>
+</details>
+
+<details>
+<summary><h3>GET /templates/shared - Geteilte Vorlagen</h3></summary>
+<div class="manual-content" markdown="1">
+
+Ruft die Liste der derzeit geteilten Vorlagen ab.
+
+#### Anfrage
+
+```bash
+curl -H "Authorization: Bearer inv_xxx" \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/shared"
+```
+
+#### Antwort
+
+```json
+{
+  "success": true,
+  "data": {
+    "sharedTemplates": [
+      {
+        "token": "암호화된_템플릿_ID",
+        "shareToken": "암호화된_공유_ID",
+        "title": "템플릿 제목",
+        "tags": ["TAG1", "TAG2"],
+        "expiresAt": "2025-01-02T00:00:00Z",
+        "copyCount": 5
+      }
+    ]
+  }
+}
+```
+
+</div>
+</details>
+
+<details>
+<summary><h3>GET /user/stats - Nutzerstatistiken</h3></summary>
+<div class="manual-content" markdown="1">
+
+Ruft die eigenen Nutzungsstatistiken ab.
+
+#### Anfrage
+
+```bash
+curl -H "Authorization: Bearer inv_xxx" \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/user/stats"
+```
+
+#### Antwort
+
+```json
+{
+  "success": true,
+  "data": {
+    "email": "user@example.com",
+    "createdAt": "2024-01-01T00:00:00Z",
+    "items": {
+      "total": 50,
+      "paper": 30,
+      "stamp": 20
+    },
+    "api": {
+      "enabled": true,
+      "monthlyLimit": 1000,
+      "monthlyUsed": 150,
+      "lastUsedAt": "2025-01-01T12:00:00Z"
+    }
   }
 }
 ```
@@ -236,42 +365,50 @@ curl -X POST \
      -H "Content-Type: application/json" \
      -d '{
        "imageUrl": "https://example.com/image.png",
-       "title": "Vorlagen-Titel",
-       "content": "Vorlagen-Inhalt",
+       "title": "템플릿 제목",
+       "content": "템플릿 내용",
         "commentMode": "independent",
         "logPermission": "owner",
         "keywordPermission": "owner",
         "allowEdit": true,
-        "keywords": ["produkt:laptop", "preis:$1500EUR$"]
+        "keywords": ["품명:노트북", "가격:$1500000KRW$"]
      }' \
      "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates"
 ```
 
-#### Anfrage-Body
+#### Anfragekörper
 
-| Feld | Typ | Erforderlich | Beschreibung |
-|------|-----|--------------|--------------|
+| Feld | Typ | Pflicht | Beschreibung |
+|------|------|------|------|
 | imageUrl | string | Ja | Bild-URL (HTTPS empfohlen) |
-| title | string | Ja | Titel (max 32 Zeichen) |
-| content | string | Ja | Inhalt (max 1024 Zeichen) |
+| title | string | Ja | Titel (max. 32 Zeichen) |
+| content | string | Ja | Inhalt (max. 1024 Zeichen) |
 | commentMode | string | Nein | Kommentarmodus: "independent" oder "shared" |
-| ~~allowComments~~ | ~~boolean~~ | ~~X~~ | ~~Protokolle hinzufügen erlauben~~ (deprecated: ersetzt durch `logPermission`) |
-| logPermission | string | Nein | Protokollberechtigung: "owner" \| "author" \| "none" (Standard: "owner") |
-| keywordPermission | string | Nein | Stichwortberechtigung: "owner" \| "author" \| "none" (Standard: "owner") |
-| allowEdit | boolean | X | Bearbeitung erlauben (Standard: true) |
-| keywords | string[] | Nein | Schlusselwort-Array (max 128) |
+| ~~allowComments~~ | ~~boolean~~ | ~~Nein~~ | ~~Ob Logs hinzugefügt werden dürfen~~ (deprecated: durch `logPermission` ersetzt) |
+| logPermission | string | Nein | Log-Berechtigung: "owner" \| "author" \| "none" (Standard: "owner") |
+| keywordPermission | string | Nein | Schlüsselwort-Berechtigung: "owner" \| "author" \| "none" (Standard: "owner") |
+| allowEdit | boolean | Nein | Ob Bearbeitung erlaubt ist (Standard: true) |
+| keywords | string[] | Nein | Schlüsselwort-Array (max. 128) |
+| publishDate | string | Nein | Veröffentlichungsdatum (ISO 8601) |
+| validUntil | string | Nein | Gültigkeitsdauer (ISO 8601) |
 
-#### Schlusselwort-Format
+#### Schlüsselwort-Format
 
-Schlusselworter mussen dem Format `schlussel:wert` folgen.
+Schlüsselwörter müssen dem Format `키:값` (Schlüssel:Wert) folgen.
 
 | Typ | Format | Beispiel |
-|-----|--------|----------|
-| Allgemein | `schlussel:wert` | `produkt:stift` |
-| Datum | `schlussel:@YYYY-MM-DD@` | `start:@2025-01-15@` |
-| Telefon | `schlussel:#telefon#` | `kontakt:#+49 170-1234567#` |
-| Ort | `schlussel:%adresse%` | `ort:%Berlin, Mitte%` |
-| Betrag | `schlussel:$betragWahrung$` | `preis:$50000EUR$` |
+|------|------|------|
+| Allgemein | `키:값` | `품명:펜` |
+| Datum | `키:@YYYY-MM-DD@` | `시작일:@2025-01-15@` |
+| Telefon | `키:#전화번호#` | `연락처:#+82 10-1234-5678#` |
+| Ort | `키:%주소%` | `장소:%서울시 강남구%` |
+| Betrag | `키:$금액통화$` | `가격:$50000KRW$` |
+
+#### Einschränkungen
+
+- Schlüssellänge: max. 8 Zeichen
+- Gesamtlänge der Schlüsselwörter: max. 256 Zeichen
+- Anzahl der Schlüsselwörter: max. 128
 
 #### Antwort
 
@@ -279,8 +416,8 @@ Schlusselworter mussen dem Format `schlussel:wert` folgen.
 {
   "success": true,
   "data": {
-    "token": "verschlusselte_vorlagen_id",
-    "title": "Vorlagen-Titel",
+    "token": "암호화된_템플릿_ID",
+    "title": "템플릿 제목",
     "createdAt": "2025-01-01T00:00:00Z"
   }
 }
@@ -293,7 +430,7 @@ Schlusselworter mussen dem Format `schlussel:wert` folgen.
 <summary><h3>POST /templates/{token}/share - Vorlage teilen</h3></summary>
 <div class="manual-content" markdown="1">
 
-Teilt eine Vorlage, damit andere Benutzer sie finden konnen.
+Teilt eine Vorlage, damit andere Nutzer sie finden können.
 
 #### Anfrage
 
@@ -308,27 +445,27 @@ curl -X POST \
      "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/share"
 ```
 
-#### Anfrage-Body
+#### Anfragekörper
 
-| Feld | Typ | Erforderlich | Beschreibung |
-|------|-----|--------------|--------------|
+| Feld | Typ | Pflicht | Beschreibung |
+|------|------|------|------|
 | durationMinutes | number | Ja | Freigabedauer (Minuten). 60-43200 oder 0 (unbegrenzt) |
-| tags | string[] | Ja | Such-Tags (1-16, automatische Grossschreibung) |
-| logPermission | string | Nein | Protokollberechtigung: "owner" \| "author" \| "none" (uberschreibt Elementeinstellung) |
-| keywordPermission | string | Nein | Stichwortberechtigung: "owner" \| "author" \| "none" (uberschreibt Elementeinstellung) |
+| tags | string[] | Ja | Suchtags (1-16 Stück, automatische Umwandlung in Großbuchstaben) |
+| logPermission | string | Nein | Log-Berechtigung: "owner" \| "author" \| "none" (überschreibt die Objekteinstellung) |
+| keywordPermission | string | Nein | Schlüsselwort-Berechtigung: "owner" \| "author" \| "none" (überschreibt die Objekteinstellung) |
 
 #### Berechtigungswerte
 
 | Wert | Beschreibung |
-|------|--------------|
-| owner | Jeder, der diese Vorlage kopiert, kann hinzufugen/bearbeiten |
-| author | Nur der Vorlagenautor kann hinzufugen/bearbeiten |
+|----|------|
+| owner | Jeder, der die Vorlage geklont hat, kann hinzufügen/bearbeiten |
+| author | Nur der Vorlagenautor kann hinzufügen/bearbeiten |
 | none | Deaktiviert |
 
 #### Freigabedauer
 
 | Wert | Bedeutung |
-|------|-----------|
+|----|------|
 | 60 | 1 Stunde |
 | 1440 | 1 Tag (24 Stunden) |
 | 10080 | 1 Woche |
@@ -341,9 +478,47 @@ curl -X POST \
 {
   "success": true,
   "data": {
-    "shareToken": "verschlusselter_freigabe_id",
+    "shareToken": "암호화된_공유_ID",
     "expiresAt": "2025-01-02T00:00:00Z",
     "tags": ["TAG1", "TAG2"]
+  }
+}
+```
+
+</div>
+</details>
+
+<details>
+<summary><h3>POST /templates/revoke - Freigabe widerrufen</h3></summary>
+<div class="manual-content" markdown="1">
+
+Beendet die Freigabe einer derzeit geteilten Vorlage.
+
+#### Anfrage
+
+```bash
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "shareToken": "암호화된_공유_ID"
+     }' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/revoke"
+```
+
+#### Anfragekörper
+
+| Feld | Typ | Pflicht | Beschreibung |
+|------|------|------|------|
+| shareToken | string | Ja | Beim Teilen ausgestelltes shareToken |
+
+#### Antwort
+
+```json
+{
+  "success": true,
+  "data": {
+    "message": "Share revoked successfully"
   }
 }
 ```
@@ -355,7 +530,7 @@ curl -X POST \
 <summary><h3>POST /templates/{token}/send - Vorlage senden</h3></summary>
 <div class="manual-content" markdown="1">
 
-Sendet eine Vorlage an einen Empfänger und erstellt ein neues Element basierend auf der Vorlage.
+Klont eine Vorlage und sendet sie an einen anderen Nutzer.
 
 #### Anfrage
 
@@ -364,32 +539,34 @@ curl -X POST \
      -H "Authorization: Bearer inv_xxx" \
      -H "Content-Type: application/json" \
      -d '{
-       "email": "empfaenger@example.com",
-       "keywords": ["Datum:2025-01-15", "Betrag:50000"]
+       "recipientEmail": "recipient@example.com",
+       "message": "선물입니다!",
+       "keywords": ["날짜:2025-01-15", "금액:50000"]
      }' \
      "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/send"
 ```
 
-#### Anfrage-Body
+#### Anfragekörper
 
-| Feld | Typ | Erforderlich | Beschreibung |
-|------|-----|--------------|--------------|
-| email | string | Ja | E-Mail des Empfängers |
-| keywords | string[] | Nein | Schlüsselwörter zum Hinzufügen/Überschreiben |
+| Feld | Typ | Pflicht | Beschreibung |
+|------|------|------|------|
+| recipientEmail | string | Ja | E-Mail des Empfängers |
+| message | string | Nein | Sendenachricht (max. 200 Zeichen) |
+| keywords | string[] | Nein | Array der hinzuzufügenden/zu überschreibenden Schlüsselwörter |
 
-#### Schlüsselwort-Zusammenführungsregeln
+#### Regeln für das Zusammenführen von Schlüsselwörtern
 
-Der `keywords`-Parameter ermöglicht das Überschreiben von Standard-Schlüsselwörtern der Vorlage oder das Hinzufügen neuer.
+Mit dem Parameter `keywords` können Sie die Standard-Schlüsselwörter der Vorlage überschreiben oder neue Schlüsselwörter hinzufügen.
 
 | Situation | Verhalten |
-|-----------|-----------|
-| Gleicher Schlüssel existiert | Mit API-Wert **überschreiben** |
-| Neuer Schlüssel | Zur Schlüsselwortliste **hinzufügen** |
+|------|------|
+| Gleicher Schlüssel vorhanden | Wird mit dem API-Wert **überschrieben** |
+| Neuer Schlüssel | Wird der Schlüsselwortliste **hinzugefügt** |
 
 **Beispiel:**
-- Vorlagen-Schlüsselwörter: `["Datum:@date@", "Preis:0"]`
-- API-Schlüsselwörter: `["Datum:2025-01-15", "Name:Hans"]`
-- **Ergebnis**: `["Datum:2025-01-15", "Preis:0", "Name:Hans"]`
+- Vorlagen-Schlüsselwörter: `["날짜:@date@", "가격:0"]`
+- API-Schlüsselwörter: `["날짜:2025-01-15", "이름:홍길동"]`
+- **Ergebnis**: `["날짜:2025-01-15", "가격:0", "이름:홍길동"]`
 
 #### Antwort
 
@@ -397,9 +574,9 @@ Der `keywords`-Parameter ermöglicht das Überschreiben von Standard-Schlüsselw
 {
   "success": true,
   "data": {
-    "itemToken": "verschlusselte_artikel_id",
-    "title": "Artikel-Titel",
-    "createdAt": "2025-01-01T00:00:00Z"
+    "itemToken": "암호화된_아이템_ID",
+    "recipientEmail": "recipient@example.com",
+    "status": "pending"
   }
 }
 ```
@@ -408,10 +585,89 @@ Der `keywords`-Parameter ermöglicht das Überschreiben von Standard-Schlüsselw
 </details>
 
 <details>
-<summary><h3>POST /templates/{token}/log - Protokolle hinzufugen & Vorlage aktualisieren</h3></summary>
+<summary><h3>POST /templates/{token}/check-ownership - Besitz eines geklonten Objekts prüfen</h3></summary>
 <div class="manual-content" markdown="1">
 
-Fugt Protokolle hinzu, aktualisiert Stichworter, andert Berechtigungen oder aktualisiert das Bild einer geteilten Vorlage. Sendet Push-Benachrichtigungen an Benutzer, die diese Vorlage kopiert haben.
+Prüft, ob ein bestimmter Nutzer ein aus dieser Vorlage erstelltes geklontes Objekt besitzt.
+
+> **Sicherheit**: Die Abfrage ist nur für Vorlagen möglich, die Ihnen selbst gehören. Vorlagen anderer Nutzer können nicht abgefragt werden.
+
+#### Anfrage
+
+```bash
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "email": "user@example.com",
+       "keywordKeys": ["날짜", "금액"]
+     }' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/check-ownership"
+```
+
+#### Anfragekörper
+
+| Feld | Typ | Pflicht | Beschreibung |
+|------|------|------|------|
+| email | string | Ja | E-Mail des abzufragenden Nutzers |
+| keywordKeys | string[] | Nein | Liste der abzufragenden Schlüsselwort-Schlüssel |
+
+#### Antwort (bei Besitz)
+
+```json
+{
+  "success": true,
+  "data": {
+    "hasItem": true,
+    "itemTokens": ["암호화된_아이템_ID_1", "암호화된_아이템_ID_2"],
+    "keywords": {
+      "날짜": "2025-01-15",
+      "금액": "50000"
+    }
+  }
+}
+```
+
+#### Antwort (kein Besitz)
+
+```json
+{
+  "success": true,
+  "data": {
+    "hasItem": false
+  }
+}
+```
+
+#### Antwortfelder
+
+| Feld | Typ | Beschreibung |
+|------|------|------|
+| hasItem | boolean | Besitzstatus |
+| itemTokens | string[] | Liste der besessenen Objekt-Token (nur bei Besitz) |
+| keywords | object | Werte der angefragten Schlüsselwörter (nur bei Anfrage) |
+
+#### Anwendungsbeispiel
+
+Prüfung von Besitz und Nutzungsstatus eines bestimmten Nutzers in einem Coupon-/Ticketsystem:
+
+```bash
+# 쿠폰 발급 여부 확인
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{"email": "customer@example.com", "keywordKeys": ["발급일", "사용여부"]}' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{쿠폰템플릿토큰}/check-ownership"
+```
+
+</div>
+</details>
+
+<details>
+<summary><h3>POST /templates/{token}/log - Log hinzufügen und Vorlage aktualisieren</h3></summary>
+<div class="manual-content" markdown="1">
+
+Fügt einer geteilten Vorlage Logs (Feed) hinzu oder aktualisiert Schlüsselwörter, Berechtigungen oder das Bild. Nutzer, die diese Vorlage geklont haben, erhalten eine Push-Benachrichtigung.
 
 #### Anfrage
 
@@ -421,12 +677,13 @@ curl -X POST \
      -H "Content-Type: application/json" \
      -d '{
        "logs": [
-         {"content": "Neues Update mit Fehlerbehebungen veroffentlicht"},
-         {"content": "Blog:https://example.com/update-notes"}
+         {"content": "붉은사막 최종 트레일러 공개 https://youtu.be/abc"},
+         {"content": "블로그:https://example.com/update-notes"}
        ],
        "keywordUpdates": [
-         {"action": "upsert", "key": "version", "value": "2.1.0"},
-         {"action": "delete", "key": "beta"}
+         {"action": "upsert", "key": "출시일", "value": "2026-03-28"},
+         {"action": "upsert", "key": "가격", "value": "69,800원"},
+         {"action": "delete", "key": "베타일정"}
        ],
        "permissionUpdates": {
          "logPermission": "owner",
@@ -437,32 +694,32 @@ curl -X POST \
      "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/log"
 ```
 
-#### Anfrage-Body
+#### Anfragekörper
 
-| Feld | Typ | Erforderlich | Beschreibung |
-|------|-----|--------------|--------------|
-| logs | array | Nein* | Hinzuzufugende Protokolleintrage (max 10) |
-| logs[].content | string | Ja | Protokollinhalt (1-256 Zeichen) |
-| keywordUpdates | array | Nein* | Stichwortanderungen (max 20) |
-| keywordUpdates[].action | string | Ja | "upsert" oder "delete" |
-| keywordUpdates[].key | string | Ja | Stichwort-Schlussel (1-8 Zeichen) |
-| keywordUpdates[].value | string | Nein | Wert (erforderlich fur upsert, `key:value` kombiniert max. 256 Zeichen) |
-| permissionUpdates | object | Nein* | Berechtigungsanderungen |
+| Feld | Typ | Pflicht | Beschreibung |
+|------|------|------|------|
+| logs | array | Bedingt* | Liste der hinzuzufügenden Logs (max. 10) |
+| logs[].content | string | Ja | Log-Inhalt (1~256 Zeichen) |
+| keywordUpdates | array | Bedingt* | Liste der Schlüsselwort-Änderungen (max. 20) |
+| keywordUpdates[].action | string | Ja | `"upsert"` oder `"delete"` |
+| keywordUpdates[].key | string | Ja | Schlüsselwort-Schlüssel (1~8 Zeichen) |
+| keywordUpdates[].value | string | Bei upsert | Schlüsselwort-Wert (`key:value` zusammen max. 256 Zeichen) |
+| permissionUpdates | object | Bedingt* | Berechtigungsänderung |
 | permissionUpdates.logPermission | string | Nein | "owner" \| "author" \| "none" |
 | permissionUpdates.keywordPermission | string | Nein | "owner" \| "author" \| "none" |
-| imageUrl | string | Nein* | Neue Bild-URL (wird zu 512x512 WebP verarbeitet) |
+| imageUrl | string | Bedingt* | Neue Bild-URL (wird als 512x512 WebP neu verarbeitet) |
 
-> \* Mindestens eines von `logs`, `keywordUpdates`, `permissionUpdates` oder `imageUrl` muss angegeben werden.
+> \* Mindestens eines von `logs`, `keywordUpdates`, `permissionUpdates`, `imageUrl` muss angegeben werden.
 
-#### Protokollinhalt-Format
+#### Log-Inhaltsformat
 
-Protokolle im Format `Schlussel:Wert` (Schlussel 1-8 Zeichen) werden in der App als Info-/URL-Karten dargestellt:
+Logs im Format `키:값` (Schlüssel 1~8 Zeichen) werden in der App als Info-/URL-Karten dargestellt:
 
 | Format | Darstellung |
-|--------|-------------|
-| `Klartext` | Normaler Textkommentar |
-| `Schlussel:Wert` | Infokarte (Schlussel-Wert-Anzeige) |
-| `Schlussel:https://...` | URL-Karte (anklickbarer Link) |
+|------|--------|
+| `일반 텍스트` | Normaler Textkommentar |
+| `키:값` | Info-Karte (Schlüssel-Wert-Anzeige) |
+| `키:https://...` | URL-Karte (klickbarer Link) |
 
 #### Antwort
 
@@ -471,67 +728,33 @@ Protokolle im Format `Schlussel:Wert` (Schlussel 1-8 Zeichen) werden in der App 
   "success": true,
   "data": {
     "logsAdded": 2,
-    "keywordsUpdated": 1,
+    "keywordsUpdated": 2,
     "keywordsDeleted": 1,
-    "notificationsSent": 3
+    "notificationsSent": 5
   }
 }
 ```
 
-</div>
-</details>
+#### Anwendungsbeispiel
 
-<details>
-<summary><h3>POST /templates/{token}/check-ownership - Besitz kopierter Elemente prüfen</h3></summary>
-<div class="manual-content" markdown="1">
-
-Prüfen Sie, ob ein bestimmter Benutzer aus dieser Vorlage kopierte Elemente besitzt.
-
-**Sicherheit**: Sie können nur Vorlagen abfragen, die Sie besitzen. Vorlagen anderer Benutzer können nicht abgefragt werden.
-
-#### Anfrage
+Schlüsselwörter eines Datenverfolgungs-Objekts regelmäßig aktualisieren und einen News-Feed hinzufügen:
 
 ```bash
+# 유류비 데이터 갱신 + 뉴스 로그 추가
 curl -X POST \
      -H "Authorization: Bearer inv_xxx" \
      -H "Content-Type: application/json" \
      -d '{
-       "email": "benutzer@example.com",
-       "keywordKeys": ["Datum", "Betrag"]
+       "keywordUpdates": [
+         {"action": "upsert", "key": "휘발유", "value": "1,680원"},
+         {"action": "upsert", "key": "경유", "value": "1,520원"}
+       ],
+       "logs": [
+         {"content": "3월 둘째주 전국 평균 유류비 소폭 상승 https://news.example.com/fuel"}
+       ]
      }' \
-     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/check-ownership"
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/log"
 ```
-
-#### Anfrage-Body
-
-| Feld | Typ | Erforderlich | Beschreibung |
-|------|-----|--------------|--------------|
-| email | string | Ja | E-Mail des zu prüfenden Benutzers |
-| keywordKeys | string[] | Nein | Liste der abzurufenden Schlüsselwort-Schlüssel |
-
-#### Antwort
-
-```json
-{
-  "success": true,
-  "data": {
-    "hasItem": true,
-    "itemTokens": ["token1", "token2"],
-    "keywords": {
-      "Datum": "2025-01-15",
-      "Betrag": "50000"
-    }
-  }
-}
-```
-
-#### Antwort-Felder
-
-| Feld | Typ | Beschreibung |
-|------|-----|--------------|
-| hasItem | boolean | Besitzstatus |
-| itemTokens | string[] | Besessene Element-Token (nur bei Besitz) |
-| keywords | object | Angeforderte Schlüsselwortwerte (nur bei Anfrage) |
 
 </div>
 </details>
@@ -540,43 +763,47 @@ curl -X POST \
 
 ## Fehlercodes
 
-Bei fehlgeschlagenen API-Anfragen werden Fehler in diesem Format zuruckgegeben:
+Bei fehlgeschlagenen API-Anfragen wird ein Fehler im folgenden Format zurückgegeben:
 
 ```json
 {
   "success": false,
   "error": {
     "code": "ERROR_CODE",
-    "message": "Fehlerbeschreibung"
+    "message": "에러 설명"
   }
 }
 ```
 
-### Fehlercode-Liste
+### Liste der Fehlercodes
 
 | Code | HTTP-Status | Beschreibung |
-|------|-------------|--------------|
-| INVALID_API_KEY | 401 | Ungultiger API-Schlussel |
-| API_KEY_EXPIRED | 401 | Abgelaufener API-Schlussel |
+|------|-----------|------|
+| INVALID_API_KEY | 401 | Ungültiger API-Schlüssel |
+| API_KEY_EXPIRED | 401 | Abgelaufener API-Schlüssel |
 | API_DISABLED | 403 | API deaktiviert |
-| RATE_LIMIT_EXCEEDED | 429 | Anfragelimit uberschritten |
-| VALIDATION_ERROR | 400 | Ungultige Eingabe |
-| INVALID_TOKEN | 400 | Ungultiges Token |
+| RATE_LIMIT_EXCEEDED | 429 | Anfragelimit überschritten |
+| SCOPE_DENIED | 403 | Unzureichende Berechtigung |
+| VALIDATION_ERROR | 400 | Eingabefehler |
+| INVALID_TOKEN | 400 | Ungültiger Token |
 | NOT_FOUND | 404 | Ressource nicht gefunden |
-| FORBIDDEN | 403 | Zugriff verweigert |
-| RECIPIENT_NOT_FOUND | 404 | Empfanger nicht gefunden |
+| FORBIDDEN | 403 | Zugriff verweigert (kein Besitz) |
+| RECIPIENT_NOT_FOUND | 404 | Empfänger nicht gefunden |
+| INVALID_IMAGE | 400 | Fehlerhafte Bild-URL |
+| ALREADY_SHARED | 400 | Vorlage wird bereits geteilt |
+| NOT_SHARED | 400 | Vorlage wird derzeit nicht geteilt |
 
 ---
 
 ## Sicherheitsempfehlungen
 
-1. **API-Schlussel schutzen**: API-Schlussel niemals in offentlichen Repositories oder Client-Code offenlegen
-2. **HTTPS verwenden**: Alle Anfragen werden uber HTTPS ubertragen
-3. **Schlusselrotation**: API-Schlussel regelmaszig neu generieren
-4. **Minimale Berechtigungen**: Nur notwendige Operationen durchfuhren
+1. **API-Schlüssel schützen**: Legen Sie den API-Schlüssel niemals in öffentlichen Repositories oder Client-Code offen
+2. **HTTPS verwenden**: Alle Anfragen werden über HTTPS übertragen
+3. **Schlüsselrotation**: Erstellen Sie den API-Schlüssel regelmäßig neu
+4. **Minimale Berechtigungen**: Führen Sie nur die notwendigen Vorgänge aus
 
 ---
 
 ## Kontakt
 
-Bei Problemen mit der API-Nutzung kontaktieren Sie uns bitte uber die [Vorschlage](/inventory/suggest/de/)-Seite.
+Bei Problemen mit der API-Nutzung kontaktieren Sie uns bitte über die Seite [Vorschlag einreichen](/inventory/suggest/).

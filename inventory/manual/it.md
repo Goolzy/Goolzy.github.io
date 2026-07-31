@@ -25,83 +25,60 @@ translations:
 
 ## 📖 Manuale utente
 
-Esplora in dettaglio tutte le funzioni dell'app Inventory.
+Scopri in dettaglio le funzionalità dell'app Inventory.
 
 ---
 
 <details open>
-<summary><h3 id="paper">📦 Sistema carta</h3></summary>
+<summary><h3 id="home">🏠 Per iniziare — Schermata Home e schede</h3></summary>
 <div class="manual-content" markdown="1">
 
-In Inventory, la **Carta** è la valuta principale utilizzata per creare elementi.
+Nella parte inferiore dell'app ci sono fino a 5 schede.
 
-#### Che cosa è la carta?
-- **1 Carta** viene consumata quando si crea un elemento
-- Non puoi creare nuovi elementi senza Carta
+| Scheda | Descrizione |
+|------|------|
+| **Esplora** | Sfoglia gli elementi base pubblicati e portali nel tuo inventario |
+| **Messaggi** | Elenco delle conversazioni 1:1 con altri utenti |
+| **Inventario** | Lo spazio in cui conservi gli elementi che possiedi |
+| **Timbri** | Raccogli e gestisci separatamente i timbri personali completati con "Crea timbro" |
+| **Negozio** | Acquista carta·timbri·badge |
+
+#### Schede visualizzate in base alle condizioni
+
+- La scheda **Inventario** appare quando possiedi degli elementi.
+- La scheda **Timbri** appare quando esistono timbri personali completati con "Crea timbro".
+- Esplora·Messaggi·Negozio sono sempre visibili.
+
+#### Schermata iniziale
+
+All'avvio dell'app, si parte da **Inventario** se possiedi elementi, altrimenti da **Esplora**.
+
+> 💡 Sul desktop puoi passare rapidamente da una scheda all'altra con il tasto Ctrl e i tasti numerici.
+
+</div>
+</details>
+
+---
+
+<details>
+<summary><h3 id="paper">📦 Carta (Paper)</h3></summary>
+<div class="manual-content" markdown="1">
+
+La **carta** è la valuta utilizzata per **copiare (scrap)** un elemento base e renderlo tuo.
 
 #### Come ottenere la carta
 
-| Metodo | Importo | Nota |
-|--------|---------|------|
-| Nuova iscrizione | 10 Carta + 3 Timbri | Solo la prima volta |
-| Collegamento Google | +10 fogli | Per utenti esistenti |
-| Collegamento Apple | +10 fogli | Per utenti esistenti |
-| Acquisto dal negozio | 10 fogli | Acquisto in-app |
+| Metodo | Quantità | Nota |
+|------|--------|------|
+| Collegamento account Google · Apple | 10 fogli | 1 volta per ogni account collegato |
+| Acquisto nel negozio | 10 fogli | Acquisto in-app |
+| Ricompensa riciclo | 1 foglio | Elimina 10 fogli inutilizzati per ricevere 1 foglio nuovo |
 
-> 💡 **Consiglio**: Gli utenti esistenti possono ottenere Carta aggiuntiva collegando nuovi account social!
+#### Uso della carta
 
-</div>
-</details>
-
----
-
-<details>
-<summary><h3 id="create-item">📄 Creazione di elementi</h3></summary>
-<div class="manual-content" markdown="1">
-
-Seleziona carta per creare documenti di log. A seconda del numero di fogli selezionati, puoi creare log privati o condivisi.
-
-| Tipo di log | Carte | Scopo |
-|-----------|-------|--------|
-| **Log privato** | 1 | Note personali, diario, messaggi unidirezionali |
-| **Log condiviso** | 2 o più | Conversazione bidirezionale, comunicazione |
-
-<h4 id="private-log">Creazione di elementi di log privato</h4>
-
-1. Seleziona **1 Carta** sulla schermata iniziale
-2. Seleziona **"Crea nuovo elemento (log privato)"** dal menu inferiore
-3. Inserisci le informazioni dell'elemento:
-   - Titolo (obbligatorio)
-   - Contenuto
-   - Immagine (facoltativa)
-   - Data di inizio (facoltativa)
-   - Data di scadenza (facoltativa)
-4. Premi **Salva** e 1 Carta verrà consumata per creare il documento
-
-> 💡 **Log privato**: Solo tu puoi vedere i log che scrivi. Dopo l'invio a qualcuno, solo il destinatario può aggiungere log.
-
-<h4 id="shared-log">Creazione di elementi di log condiviso</h4>
-
-1. Seleziona **2 o più Carte** sulla schermata iniziale
-2. Seleziona **"Crea nuovo elemento (log condiviso)"** dal menu inferiore
-3. Inserisci le informazioni dell'elemento:
-   - Titolo (obbligatorio)
-   - Contenuto
-   - Immagine (facoltativa)
-   - Data di inizio (facoltativa)
-   - Data di scadenza (facoltativa)
-4. Premi **Salva** e verranno creati documenti pari al numero di carte selezionate
-
-> 💡 **Log condiviso**: I documenti creati condividono la stessa chat room. Invia documenti a persone diverse per vedere i log l'uno dell'altro in tempo reale, come una chat.
-
-<h4 id="dates">Data di inizio e data di scadenza</h4>
-
-| Impostazione | Descrizione |
-|-----------|-------------|
-| **Data di inizio** | Il contenuto sarà offuscato fino a questa data |
-| **Data di scadenza** | Il contenuto sarà offuscato e l'aggiunta di log disabilitata dopo questa data |
-
-Se non è impostato, sarà visibile immediatamente e permanente.
+- **1 foglio** viene consumato quando copi un elemento base.
+- Se la carta non basta, puoi acquistarla nel negozio o riceverla collegando un account.
+- La carta non ancora usata per la copia può anche essere trasferita ad altri utenti.
 
 </div>
 </details>
@@ -109,43 +86,57 @@ Se non è impostato, sarà visibile immediatamente e permanente.
 ---
 
 <details>
-<summary><h3 id="lock">🔒 Blocco del documento</h3></summary>
+<summary><h3 id="stamp">🔖 Timbro</h3></summary>
 <div class="manual-content" markdown="1">
 
-Puoi proteggere gli elementi del documento impostando una password.
+Il **timbro** è un elemento che ti permette di creare una tua pagina informativa e trasferirla ad altri utenti.
 
-#### Che cosa è il blocco del documento?
+#### Crea timbro
 
-Un documento bloccato può essere visualizzato solo dopo l'immissione della password corretta.
+1. Nell'inventario, seleziona un timbro vuoto non ancora creato.
+2. Seleziona **"Crea timbro"** e inserisci il **nome** del timbro. (max 32 caratteri)
+3. Alla conferma del nome la creazione diventa definitiva e da quel momento **il nome non può più essere modificato.**
+4. Nell'editor che si apre subito dopo, disponi immagini·testi·elementi per comporre la pagina informativa e salva.
 
-| Stato | Descrizione |
-|--------|-------------|
-| **Sbloccato** | Chiunque può visualizzare il contenuto |
-| **Bloccato** | Contenuto visibile solo con password |
+> ⚠️ Nel momento in cui confermi il nome, la creazione è completata. Nell'editor puoi modificare solo la composizione della pagina e le immagini; il nome resta fisso.
 
-#### Come bloccare
+#### Gestione nella scheda Timbri
 
-1. Seleziona i **documenti** che desideri bloccare sulla schermata iniziale (selezione multipla possibile)
-2. Seleziona **"Blocca elementi"** dal menu inferiore
-3. Immetti una password numerica (fino a 16 cifre)
-4. Immetti la stessa password di nuovo per confermare
-5. Una volta bloccato, gli elementi visualizzeranno un'**icona di blocco** e un effetto **scala di grigi**
+I timbri personali completati si raccolgono nella **scheda Timbri**. Premi il pulsante **≡** a destra di ciascun timbro per aprire il menu.
 
-#### Come sbloccare
+| Menu | Descrizione |
+|------|------|
+| **Modifica** | Modifica della pagina informativa·immagini (possibile solo sull'originale creato da te) |
+| **Verifica proprietà** | Verifica se un determinato utente possiede un elemento creato con questo timbro |
+| **Trasferimento** | Trasferisci l'elemento a un altro utente |
 
-1. Tocca un documento bloccato per accedere alla schermata dei dettagli
-2. Apparirà una finestra di dialogo per l'immissione della password
-3. Immetti la password corretta per sbloccare
-4. Una volta sbloccato, il blocco viene rimosso permanentemente (blocca di nuovo impostando una nuova password)
+- Scorrendo l'elenco lateralmente puoi **confermare (segnare come letto)** o **abbandonare la gestione**.
 
-> ⚠️ **Avvertenza**: Se dimentichi la password, non può essere recuperata. I documenti bloccati possono essere solo **eliminati**.
+#### Copia (scrap)
 
-#### Funzioni di blocco
+Quando in Esplora trovi un elemento base che ti piace, portalo nel tuo inventario con il **pulsante scrap** nella schermata dei dettagli.
 
-- Le password di blocco sono **archiviate nel cloud**
-- Lo stato di blocco viene mantenuto anche durante il trasferimento di elementi ad altri
-- I documenti bloccati non appaiono nei risultati di ricerca
-- Gli elementi bloccati possono ancora essere eliminati
+- La copia consuma **1 foglio di carta**.
+- Ogni elemento base può essere copiato **una sola volta**.
+- Le informazioni della copia restano conservate così com'erano al momento della copia; anche se l'originale viene modificato in seguito, non cambiano automaticamente.
+
+#### Ricevi le ultime informazioni
+
+Quando l'originale viene aggiornato, sulla copia appare il pulsante **"Ricevi le ultime informazioni"**. Premilo per aggiornare ai contenuti più recenti; puoi anche lasciare attivo l'aggiornamento automatico.
+
+#### Trasferire
+
+Gli elementi creati con un timbro possono essere trasferiti ad altri utenti. Il destinatario si indica inserendo email·dominio o scansionando un QR.
+
+Quando invii il trasferimento, il destinatario riceve una **notifica toast** e, premendo **Ricevi**, la copia trasferita entra nel suo inventario.
+
+#### Abbandono della gestione
+
+Puoi scorrere nell'elenco un timbro che non vuoi più gestire e scegliere **Abbandona gestione**.
+
+- Le pagine e le conversazioni degli utenti che lo hanno già copiato restano invariate.
+- Scompare dal tuo elenco e **l'operazione non è reversibile.**
+- Raccogliendo **10 frammenti di timbro** abbandonati o eliminati ricevi **1 timbro nuovo**.
 
 </div>
 </details>
@@ -153,73 +144,21 @@ Un documento bloccato può essere visualizzato solo dopo l'immissione della pass
 ---
 
 <details>
-<summary><h3 id="clip">📎 Sistema di clip</h3></summary>
+<summary><h3 id="explore">🔍 Esplora</h3></summary>
 <div class="manual-content" markdown="1">
 
-**Clip** è una funzione che raggruppa più documenti insieme per una gestione più facile.
+Nella scheda **Esplora** scopri gli elementi base pubblicati.
 
-#### Che cosa è una clip?
+#### Sfogliare
 
-I clip ti permettono di gestire documenti correlati come un singolo pacchetto.
+- In alto sono visualizzate categorie tematiche come **Giochi · Tecnologia · Film · Cibo**.
+- Nelle righe **Di tendenza** · **Nuovi arrivi** puoi vedere i contenuti popolari e nuovi.
 
-| Stato | Descrizione |
-|-------|-------------|
-| **Documenti individuali** | Documenti gestiti separatamente |
-| **Documenti ritagliati** | Gestiti come pacchetto, spostati/trasferiti insieme |
+#### Ricerca
 
-#### Creazione di una clip
-
-1. Seleziona **2 o più documenti** sulla schermata iniziale
-2. Tocca **"Clip insieme"** nel menu inferiore
-3. I documenti selezionati vengono raggruppati in una singola clip
-4. I documenti ritagliati visualizzano un'**icona clip (📎)** nell'angolo in alto a destra
-
-> 💡 **Consiglio**: Il primo documento selezionato diventa la **copertina** della clip!
-
-#### Visualizzazione informazioni clip
-
-1. Accedi alla **schermata dei dettagli** di un documento ritagliato
-2. Tocca il pulsante **"Informazioni clip"**
-3. Visualizza l'elenco di tutti gli elementi nella clip
-
-#### Riordino degli elementi in una clip
-
-Puoi modificare l'ordine degli elementi nella schermata delle informazioni della clip:
-
-1. Premi a lungo l'**impugnatura di trascinamento (⋮⋮)** dell'elemento che desideri spostare
-2. Trascina nella posizione desiderata
-3. Rilascia per salvare l'ordine
-
-> ⚠️ **Nota**: La copertina (primo elemento) non può essere riordinata.
-
-#### Esclusione di elementi da una clip
-
-Puoi rimuovere elementi specifici da una clip nella schermata delle informazioni della clip:
-
-1. Tocca il pulsante **"Escludi"** accanto all'elemento
-2. Conferma per rimuovere l'elemento dalla clip
-3. L'elemento rimosso diventa di nuovo un documento individuale
-
-> ⚠️ **Nota**: La copertina non può essere esclusa. Se rimangono solo 2 elementi e ne escludi 1, la clip si dissolve automaticamente.
-
-#### Scollega
-
-1. Seleziona il documento ritagliato
-2. Tocca **"Scollega"** nel menu inferiore
-3. Tutti i documenti vengono separati in documenti individuali
-
-#### Trasferimento di clip
-
-- Quando invii un documento ritagliato, l'**intero pacchetto** viene trasferito insieme
-- I destinatari accettano/rifiutano i clip come **pacchetto**
-- I singoli elementi all'interno di una clip non possono essere inviati separatamente
-
-#### Funzioni di clip
-
-- I documenti ritagliati vengono **spostati/trasferiti insieme**
-- Impostando un blocco sulla copertina si protegge l'intera clip
-- L'icona clip (📎) rende facile identificare lo stato della clip
-- Almeno 2 documenti sono necessari per mantenere una clip
+1. Inserisci la parola chiave desiderata nella barra di ricerca in alto.
+2. Mentre digiti, i suggerimenti di ricerca e i risultati vengono mostrati in tempo reale.
+3. Premi una scheda dei risultati per aprire la schermata dei dettagli, da cui puoi fare scrap.
 
 </div>
 </details>
@@ -227,40 +166,30 @@ Puoi rimuovere elementi specifici da una clip nella schermata delle informazioni
 ---
 
 <details>
-<summary><h3 id="badge">🏷️ Sistema badge</h3></summary>
+<summary><h3 id="dm">💬 Messaggi diretti</h3></summary>
 <div class="manual-content" markdown="1">
 
-Un **Badge** è un'identità unica che puoi utilizzare all'interno dell'app.
+Puoi avere **conversazioni dirette 1:1** con altri utenti.
 
-#### Che cosa è un badge?
+#### Avviare una conversazione
 
-Quando incidi un nome di dominio su un badge, tutte le tue attività nell'app verranno visualizzate con il tuo **nome di dominio inciso** invece della tua email.
+La conversazione si avvia in tre modi.
 
-Esempi: `MyBrand`, `JohnDoe`, `Company2025`
+1. Premi **l'autore di un commento nei contenuti di Esplora** e scegli **Avvia messaggio** nel popup del profilo
+2. Inserisci l'email o il nome di dominio dell'altra persona nella **barra di ricerca della scheda Messaggi**
+3. Trova l'altra persona con la **scansione QR** (alla scansione viene inserita automaticamente nella barra di ricerca)
 
-#### Incisione di un badge
+- Quando avvii una conversazione, questa inizia quando **l'altra persona accetta**. Se vi siete richiesti a vicenda o avete già conversato in passato, prosegue subito senza accettazione.
+- Se l'email appartiene a qualcuno che non usa ancora l'app, puoi inviare una **email di invito** con il link di installazione dell'app e il QR.
 
-1. Acquista un badge dal negozio (stato non utilizzato)
-2. Tocca il badge su Home → Seleziona il menu **"Incidi"**
-3. Immetti il tuo nome di dominio desiderato (max 32 caratteri)
-   - Sono consentiti caratteri e numeri da tutte le lingue
-   - I caratteri speciali e le emoji non sono consentiti
-4. Fai clic su **"Controlla disponibilità dominio"** per verificare la disponibilità
-5. Allega facoltativamente un'immagine 128x128
-6. Fai clic su **"Incidi"** per completare
+#### Scheda Messaggi
 
-> ⚠️ **Avvertenza**: Una volta inciso, il nome di dominio e l'immagine **non possono essere modificati permanentemente**. Scegli con attenzione!
+- Le conversazioni sono mostrate in un elenco e i messaggi non letti sono indicati con un badge numerico.
+- Scorri l'elenco lateralmente per segnare come letto o eliminare la conversazione. (Viene eliminata solo dal tuo lato; la cronologia dell'altra persona resta.)
 
-#### Equipaggiamento/Scollega un badge
+#### Segnalazione · Blocco
 
-- **Equipaggiato**: Il tuo nome di dominio inciso sarà visualizzato per tutte le attività nell'app
-- **Scollegato**: La tua email predefinita verrà visualizzata di nuovo
-- Anche se possiedi più badge, solo uno può essere equipaggiato alla volta
-
-#### Visualizzazione scheda inventario
-
-I badge incisi (stato attivo) mostrano l'anteprima dell'immagine incisa nell'angolo in alto a destra della scheda di inventario.
-Questo ti consente di identificare rapidamente a quale dominio appartiene il badge.
+Dal popup del profilo puoi **segnalare** o **bloccare** l'altra persona. Lo sblocco si effettua dall'elenco dei bloccati nelle impostazioni.
 
 </div>
 </details>
@@ -268,67 +197,32 @@ Questo ti consente di identificare rapidamente a quale dominio appartiene il bad
 ---
 
 <details>
-<summary><h3 id="stamp">🔖 Sistema timbro</h3></summary>
+<summary><h3 id="chat-media">🖼️ Foto·video in chat</h3></summary>
 <div class="manual-content" markdown="1">
 
-Un **Timbro** è un elemento che ti consente di creare modelli e condividerli con altri.
+Puoi allegare e inviare foto e video nei messaggi e nella chat della community.
 
-#### Visualizzazione scheda inventario
+#### Inviare
 
-I timbri con modelli (stato attivo) vengono visualizzati in modo speciale nell'inventario:
-- **Sfondo**: Immagine del modello visualizzata con opacità del 33%
-- **Primo piano**: Immagine del timbro inciso
+1. Nella scheda **Media** del campo di input, premi il pulsante **Foto** o **Video**.
+2. Selezionandone più di uno vengono aggiunti allo stage; puoi cambiare l'ordine trascinando o eliminarli singolarmente.
+3. Premendo invia inizia il caricamento e compaiono subito nella conversazione senza attese.
 
-Questo ti consente di identificare rapidamente quale modello è.
+> 💡 Sul desktop è supportato solo l'allegato di foto.
 
-#### Creazione di un modello timbro
+#### Galleria (più elementi)
 
-1. Acquista un timbro dal negozio (stato non utilizzato)
-2. Tocca il timbro su Home → Seleziona il menu **"Crea nuovo modello"**
-3. Inserisci le informazioni del modello:
-   - **Immagine** (obbligatoria)
-   - **Titolo** (max 32 caratteri)
-   - **Contenuto** (max 1024 caratteri)
-   - **Data di inizio** (facoltativa) - Contenuto nascosto fino a questa data
-   - **Data di scadenza** (facoltativa) - Aggiunta di log disabilitata dopo questa data
-   - **Modalità log** - Log solo o Log condiviso
-4. Fai clic su **"Crea modello"** per completare
+- In un solo messaggio puoi raggruppare **fino a 16 elementi** e inviarli come collage.
+- Premendo una cella si apre il visualizzatore per vedere in grande; è possibile anche salvare tutto.
 
-#### Duplicazione di un timbro
+#### Montaggio video
 
-Quando selezioni un timbro attivato (modello) e carta insieme, appare il menu **"Duplica modello"**.
+- I video possono essere inviati fino a **max 25MB · 60 secondi**.
+- Se superano il limite, taglia la parte desiderata con **Montaggio video** e inviala. Puoi verificare la dimensione prevista con l'indicatore di capacità.
 
-- 1 Carta viene consumata
-- Viene creato un nuovo elemento con lo stesso modello
-- Se in modalità log condiviso, utilizza lo stesso spazio condiviso dell'originale
+#### Anteprima dei link
 
-#### Condivisione del tuo modello
-
-Puoi condividere il tuo modello di timbro in modo che altri utenti possano cercarlo e clonarlo.
-
-1. Tocca un timbro attivato (modello) → Seleziona il menu **"Impostazioni di condivisione"**
-2. Immetti le informazioni di condivisione:
-   - **Descrizione** - Una breve frase che descrive il modello
-   - **Tag** - Parole chiave per la ricerca (separate da virgole)
-   - **Durata di condivisione** - Per quanto tempo rimarrà attiva la condivisione
-3. Fai clic su **"Avvia condivisione"** per completare
-
-I modelli condivisi possono essere trovati e clonati da altri utenti tramite la ricerca per tag.
-
-> 💡 **Consiglio**: Per smettere di condividere, seleziona **"Smetti di condividere"** dallo stesso menu.
-
-#### Ricerca di modelli condivisi
-
-Puoi cercare e clonare modelli condivisi da altri utenti.
-
-1. Vai alla schermata Profilo e seleziona **"Cerca modelli condivisi"**
-2. Immetti i tag per la ricerca, o tocca tag popolari/ultimi
-3. Tocca un modello dai risultati della ricerca per visualizzare i dettagli
-4. Fai clic sul pulsante **"Clona"** per clonare il modello
-
-- La clonazione consuma 1 Carta
-- Il pulsante clona è disabilitato se non hai carta
-- Gli elementi clonati hanno le stesse informazioni del modello dell'originale
+I link inseriti in chat vengono mostrati come schede di anteprima con titolo·immagine. I link video possono essere **riprodotti subito sul posto** premendo la scheda.
 
 </div>
 </details>
@@ -336,40 +230,16 @@ Puoi cercare e clonare modelli condivisi da altri utenti.
 ---
 
 <details>
-<summary><h3 id="quick-input">⚡ Input rapido</h3></summary>
+<summary><h3 id="emoticon">😊 Emoticon</h3></summary>
 <div class="manual-content" markdown="1">
 
-Quando aggiungi log, tocca il pulsante `+` per aprire il menu **Input rapido** per una facile immissione di informazioni speciali.
+Puoi aggiungere **emoticon** alla conversazione per esprimere le emozioni.
 
-#### Tipi di input rapido
+1. Apri la scheda **Emoticon** nel campo di input.
+2. Scegli l'emoticon desiderata dalle categorie. (Vengono mostrate raccolte anche le emoticon usate di recente.)
+3. Inviala insieme al testo, oppure invia solo l'emoticon.
 
-| Tipo | Descrizione | Esempio |
-|------|-------------|---------|
-| **Parola chiave** | Formato Key:Value | `Status:Good` |
-| **Data** | Date con calcolo D-Day | D-5, D-Day, D+3 |
-| **Telefono** | Numero di telefono | Può chiamare direttamente |
-| **Posizione** | Indirizzo/coordinate | Apre in app mappe |
-| **Importo** | Formato valuta | Formattato automaticamente |
-
-#### Azioni di pressione lunga
-
-| Tipo di scheda | Azione di pressione lunga |
-|-------------|------------------|
-| **📅 Data** | Imposta/Rimuovi allarme |
-| **📞 Telefono** | Mobile: Chiama direttamente, Desktop: Copia |
-| **📍 Posizione** | Mobile: Apri in mappe, Desktop: Copia |
-| **💰 Importo** | Copia negli appunti |
-
-<h4 id="alarm">Impostazione allarme data</h4>
-
-Premi a lungo una scheda data per impostare un allarme:
-
-1. **Premi a lungo** la scheda data
-2. Seleziona **Imposta** nella finestra di dialogo di conferma
-3. Una volta impostato, il colore della scheda cambia e appare un'icona 🔔
-4. Premi a lungo di nuovo per rimuovere l'allarme
-
-> 💡 **Consiglio**: Le schede data visualizzano automaticamente i calcoli D-Day (ad es. D-5, D-Day, D+3)
+> 💡 Inviando solo l'emoticon, questa viene mostrata in grande senza fumetto e risalta di più.
 
 </div>
 </details>
@@ -377,86 +247,16 @@ Premi a lungo una scheda data per impostare un allarme:
 ---
 
 <details>
-<summary><h3 id="log">📝 Sistema di log</h3></summary>
+<summary><h3 id="privacy">🔒 Protezione della privacy</h3></summary>
 <div class="manual-content" markdown="1">
 
-I **Log** sono record che puoi aggiungere a elementi o modelli di timbro.
+L'indirizzo email è protetto dall'essere esposto così com'è.
 
-#### Modalità di log
+- **Gli utenti che indossano un badge** vengono mostrati con il **nome di dominio** invece dell'email, e anche il loro codice QR viene generato in base al dominio.
+- L'email degli **utenti senza badge** è rappresentata da un **QR colorato**, riconoscibile solo da chi lo scansiona direttamente.
+- Nella **chat della community**, vista da molte persone, la parte finale dell'email (dopo la @) degli utenti senza badge di dominio viene nascosta.
 
-| Modalità | Log solo | Log condiviso |
-|------|----------|------------|
-| **Posizione di archiviazione** | Spazio privato di ogni persona | Spazio condiviso in base al timbro originale |
-| **Log visibili** | Solo i tuoi log | Log di tutti i proprietari |
-| **Casi d'uso** | Diario personale, note | Collaborazione, comunità |
-| **Se originale eliminato** | Non interessato | Impossibile aggiungere log (sola lettura) |
-
-#### Formati di log
-
-Puoi utilizzare vari formati quando scrivi log.
-
-**Formati di base:**
-
-| Formato | Descrizione | Esempio |
-|--------|-------------|---------|
-| Testo normale | Visualizzato come bolla di chat | `Ispezione completata oggi!` |
-| `key:value` | Visualizzato come scheda info (key 1-8 caratteri) | `status:good` |
-L'utilizzo della stessa chiave più volte si visualizza come confronto `valore precedente → nuovo valore`.
-
-**Stili di testo:**
-
-| Formato | Effetto | Esempio |
-|--------|--------|---------|
-| `{[text]}` | Scheda colore principale (sfondo + testo) | `{[Important]}` |
-| `[{text}]` | Scheda grigia + testo colore principale | `[{Caution}]` |
-| `[text]` | Scheda grigia | `[Note]` |
-| `{text}` | Testo colore principale | `{Emphasis}` |
-| `(text)` | Testo colore secondario | `(Additional info)` |
-| `"text"` | **Grassetto** | `"Important content"` |
-| `'text'` | <u>Sottolineato</u> | `'Highlighted part'` |
-| `<text>` | ~~Barrato~~ | `<Deleted content>` |
-
-> 💡 Gli stili possono essere nidificati fino a 3 livelli. Esempio: `{["Bold main color"]}`
-
-**Link multimediali (Schede URL):**
-
-Quando inserisci un URL in un log, viene visualizzato automaticamente come **scheda ricca**.
-
-| Piattaforma | Contenuto visualizzato | Esempio |
-|----------|----------------|---------|
-| **YouTube** | Miniatura + Titolo + Canale | `https://youtube.com/watch?v=...` |
-| **Spotify** | Copertina album + Titolo + Artista | `https://open.spotify.com/track/...` |
-| **Google Drive** | Miniatura file + Nome file | `https://drive.google.com/file/d/...` |
-| **Dropbox** | Icona + Nome file | `https://dropbox.com/s/...` |
-| **OneDrive** | Icona + Nome servizio | `https://1drv.ms/...` |
-| **Pagine web** | Miniatura + Titolo pagina | `https://example.com` |
-
-- Usa il formato `key:URL` per visualizzare con una parola chiave (ad es. `docs:https://youtube.com/...`)
-- **Tocca** la scheda per aprire in app/browser esterno
-- **Premi a lungo** la scheda per copiare l'URL negli appunti
-
-> 💡 **Consiglio**: I file di Google Drive devono essere **condivisi pubblicamente** perché le miniature vengano visualizzate.
-
-**Log automatici:**
-
-Quando un elemento viene trasferito, un log di trasferimento viene registrato automaticamente:
-- Visualizzato come formato `Mittente → Destinatario`
-- Se un badge è equipaggiato, viene visualizzato il nome dominio
-
-#### Condizioni di terminazione del log condiviso
-
-- **Timbro originale eliminato**: Impossibile aggiungere log condivisi (sola lettura)
-- **Data di scadenza superata**: Impossibile aggiungere log condivisi (sola lettura)
-
-#### 🔔 Indicatore di non letto
-
-Quando vengono aggiunti nuovi commenti a un log condiviso, il bordo dell'elemento **pulsa** nella visualizzazione dell'inventario.
-
-- L'impulso inizia immediatamente quando un altro utente aggiunge un commento
-- L'impulso si ferma quando apri e visualizzi il documento
-- Lo stato di lettura viene salvato nel cloud e sincronizzato su tutti i dispositivi
-
-> 💡 **Consiglio**: Controlla gli elementi che pulsano per non perdere mai nuovi commenti!
+La visualizzazione del nome si aggiorna in tempo reale: indossando o rimuovendo il badge, viene applicata automaticamente ovunque, dall'elenco delle conversazioni al profilo.
 
 </div>
 </details>
@@ -464,23 +264,25 @@ Quando vengono aggiunti nuovi commenti a un log condiviso, il bordo dell'element
 ---
 
 <details>
-<summary><h3 id="ink">🎨 Sistema di inchiostro</h3></summary>
+<summary><h3 id="badge">🏷️ Badge</h3></summary>
 <div class="manual-content" markdown="1">
 
-**Inchiostro** è un elemento che cambia il colore del tema dell'app.
+Incidendo un nome di dominio sul **badge**, nell'app vieni mostrato con quel nome invece dell'email.
 
-#### Come usare
+#### Incidere
 
-1. Tocca un inchiostro per accedere alla schermata dei dettagli
-2. Fai clic sul pulsante **"Cambia tema"**
-3. Il colore dell'intera app cambia immediatamente
+1. Dopo aver acquistato un badge nel negozio, seleziona un badge non ancora inciso.
+2. Inserisci il **nome di dominio** desiderato. (max 32 caratteri, solo lettere e numeri; caratteri speciali·emoji non ammessi)
+3. Verifica la disponibilità con il **controllo duplicati**.
+4. Facoltativamente allega un'immagine 128×128 e incidi.
 
-#### Tipi di inchiostro
+> ⚠️ **Attenzione**: il **nome di dominio inciso è permanente** e non può essere modificato. Se incidi con un'immagine, in seguito potrai modificare immagine e parole chiave; se incidi senza immagine, non potrai più modificarlo.
 
-| Inchiostro | Colore |
-|-----|-------|
-| **Inchiostro nero** | Tema nero predefinito |
-| **Inchiostro d'oro** | Tema d'oro lussuoso |
+#### Indossare / Rimuovere / Modificare
+
+- **Indossandolo**, nelle attività in-app vieni mostrato con il nome di dominio. Se ne può indossare solo uno alla volta.
+- **Rimuovendolo**, torni a essere mostrato con l'email predefinita.
+- Con **Modifica** puoi cambiare immagine e parole chiave.
 
 </div>
 </details>
@@ -488,49 +290,16 @@ Quando vengono aggiunti nuovi commenti a un log condiviso, il bordo dell'element
 ---
 
 <details>
-<summary><h3 id="search">🔍 Funzione di ricerca</h3></summary>
+<summary><h3 id="folder">📂 Cartelle</h3></summary>
 <div class="manual-content" markdown="1">
 
-#### Ricerca di base
+Quando gli elementi aumentano, puoi organizzarli raggruppandoli in **cartelle**.
 
-Tocca la barra di ricerca in alto per attivare la modalità di ricerca.
+- Trascina un elemento nell'area **"Crea nuova cartella"** in basso per creare una cartella.
+- Il nome della cartella si cambia con una pressione prolungata sull'intestazione. (max 16 caratteri)
+- Con la freccia sull'intestazione puoi comprimere o espandere la cartella; premendo l'intestazione selezioni in una volta tutti gli elementi al suo interno.
 
-- I risultati vengono filtrati in **tempo reale** mentre digiti
-- Tocca il pulsante X per uscire dalla modalità di ricerca
-
-#### Ricerche recenti
-
-- Fino a 5 ricerche recenti vengono salvate
-- Tocca una ricerca recente per auto-completare la barra di ricerca
-- Elimina individualmente con il pulsante X
-
-#### Salva come filtro
-
-Quando salvi un termine di ricerca con il pulsante **"Imposta come filtro"**:
-
-- Appare come tag filtro sotto la barra di ricerca
-- Tocca il tag per filtrare istantaneamente per quel termine di ricerca
-- Elimina il filtro con il pulsante X
-
-<h4 id="keyword">Aggregazione di parole chiave</h4>
-
-Quando un filtro è impostato e selezioni elementi, i **valori di parole chiave degli elementi selezionati vengono aggregati automaticamente**.
-
-**Aggregazione di valori numerici:**
-- **Somma** e **media** vengono calcolate per valori numerici con la stessa parola chiave
-- Esempio: Selezione di `price:1000`, `price:2000`, `price:3000`
-- Risultato: `Sum: 6000  Average: 2000`
-
-**Aggregazione di valori di stringa:**
-- I valori di stringa con la stessa parola chiave vengono **uniti con spazi**
-- Esempio: Selezione di `tag:A`, `tag:B`, `tag:C`
-- Risultato: `A B C`
-
-**Copia di valori:**
-- **Premi a lungo** una scheda di risultato dell'aggregazione per copiare il valore negli appunti
-- Una notifica appare quando la copia è completa
-
-> 💡 **Esempio di utilizzo**: Calcola rapidamente il prezzo totale di più elementi, o copia tag correlati contemporaneamente.
+> 💡 Le cartelle sono salvate **solo sul dispositivo in uso**. Gli elementi sono visibili su tutti i dispositivi, ma l'organizzazione in cartelle può variare da dispositivo a dispositivo.
 
 </div>
 </details>
@@ -538,141 +307,20 @@ Quando un filtro è impostato e selezioni elementi, i **valori di parole chiave 
 ---
 
 <details>
-<summary><h3 id="bottom-menu">📱 Badge del menu inferiore</h3></summary>
+<summary><h3 id="shop">🛒 Negozio</h3></summary>
 <div class="manual-content" markdown="1">
 
-I badge rossi sulle icone del menu inferiore mostrano lo stato attuale.
+Nel negozio puoi acquistare gli elementi necessari.
 
-| Menu | Significato badge |
-|------|---------------|
-| **Invia** | Numero di elementi che possono essere inviati (elementi trasferibili tra quelli selezionati) |
-| **Ricevi** | Numero di scambi in sospeso (richiedono accettazione/restituzione) |
-| **Azione** | Numero di azioni disponibili con elementi selezionati |
+| Prodotto | Uso |
+|------|------|
+| **Carta** | Per copiare gli elementi base |
+| **Timbro** | Per creare la pagina informativa come timbro personale |
+| **Badge** | Per incidere il nome di dominio |
 
-> 💡 I numeri dei badge si animano con un effetto bolla quando cambiano.
-
-</div>
-</details>
-
----
-
-<details>
-<summary><h3 id="transfer">📤 Invio di elementi</h3></summary>
-<div class="manual-content" markdown="1">
-
-Puoi trasferire elementi quando vendi usato o regali.
-
-#### Come inviare
-
-1. Seleziona **Invia** dalla scheda inferiore
-2. **Controlla** gli elementi da trasferire (selezione multipla possibile)
-3. Immetti l'email del destinatario
-4. Fai clic sul pulsante **Invia**
-
-#### Immissione di email tramite codice QR
-
-Invece di digitare l'email del destinatario, puoi utilizzare un codice QR:
-
-1. Il destinatario visualizza il suo codice QR dalla schermata **Profilo**
-2. Il mittente preme il pulsante **Scansiona QR**
-3. Scansiona il codice QR con la fotocamera
-4. L'email viene inserita automaticamente
-
-> ⚠️ **Importante**: Gli elementi trasferiti **scompaiono immediatamente** dal tuo inventario. I trasferimenti non possono essere annullati.
-
-</div>
-</details>
-
----
-
-<details>
-<summary><h3 id="receive">📥 Ricezione di elementi</h3></summary>
-<div class="manual-content" markdown="1">
-
-Puoi ricevere elementi inviati da altri.
-
-#### Come ricevere
-
-1. Seleziona **Ricevi** dalla scheda inferiore
-2. Viene visualizzato l'elenco degli elementi ricevuti
-3. Per ogni elemento:
-   - **Accetta**: Aggiunto al tuo inventario
-   - **Restituisci**: Rimandato al mittente
-
-#### Notifiche
-
-- Ricevi notifiche push quando arrivano nuovi elementi (se le notifiche sono abilitate)
-- La scheda Ricevi mostra il numero di elementi non accettati
-
-</div>
-</details>
-
----
-
-<details>
-<summary><h3 id="shop">🛒 Utilizzo del negozio</h3></summary>
-<div class="manual-content" markdown="1">
-
-Puoi acquistare vari elementi dal negozio.
-
-#### Prodotti disponibili
-
-| Prodotto | Utilizzo |
-|---------|-----|
-| **Carta** | Per creare elementi (consumabile) |
-| **Timbro** | Per creare modelli |
-| **Badge** | Per incidere dominio unico |
-| **Inchiostro** | Per cambiare colore del tema |
-
-#### Come acquistare
-
-1. Seleziona **Negozio** dalla scheda inferiore
-2. Tocca il prodotto desiderato
-3. Procedi con il pagamento (App Store / Google Play)
-4. Consegnato automaticamente al completamento del pagamento
-
-> 💡 Il negozio è disponibile su tutte le piattaforme (iOS, Android, Windows, macOS).
-
-</div>
-</details>
-
----
-
-<details>
-<summary><h3 id="pocket">📂 Funzione di partizione</h3></summary>
-<div class="manual-content" markdown="1">
-
-Puoi raggruppare elementi con partizioni quando hai molti elementi.
-
-#### Creazione di una partizione
-
-1. Seleziona elementi
-2. Seleziona **"Crea partizione"** dal menu inferiore
-3. Immetti il nome della partizione (max 16 caratteri)
-
-#### Caratteristiche della partizione
-
-- Le partizioni vengono **salvate solo nel dispositivo**
-- La struttura della partizione non è visibile su altri dispositivi
-- Gli elementi stessi vengono archiviati nel cloud e visibili su tutti i dispositivi
-
-#### Comprimi/Espandi partizioni
-
-Usa il pulsante freccia (▼/▲) sul lato destro dell'intestazione della partizione per comprimere o espandere le partizioni.
-
-- Lo stato compresso viene mantenuto dopo il riavvio dell'app
-- Tutte le partizioni si espandono automaticamente durante la ricerca
-- Puoi trascinare elementi su partizioni compresse
-
-#### Seleziona tutto in partizione
-
-Tocca l'intestazione della partizione per selezionare/deselezionare tutti gli elementi in quella partizione.
-
-| Indicatore | Significato |
-|-----------|---------|
-| ○ (Cerchio vuoto) | Nessuno selezionato |
-| ◐ (Mezzo cerchio) | Alcuni selezionati |
-| ● (Cerchio pieno) | Tutti selezionati |
+1. Premi il prodotto desiderato nella scheda Negozio.
+2. Verifica le informazioni sul prodotto e le indicazioni sul rimborso e acconsenti.
+3. Completato il pagamento, viene erogato automaticamente.
 
 </div>
 </details>
@@ -683,24 +331,25 @@ Tocca l'intestazione della partizione per selezionare/deselezionare tutti gli el
 <summary><h3 id="language">🌍 Cambio della lingua</h3></summary>
 <div class="manual-content" markdown="1">
 
-Sono supportate 7 lingue:
+Sono supportate 8 lingue:
+
 - 🇰🇷 한국어
 - 🇺🇸 English
 - 🇯🇵 日本語
+- 🇨🇳 中文(简体)
 - 🇩🇪 Deutsch
 - 🇫🇷 Français
 - 🇪🇸 Español
 - 🇧🇷 Português
 
-**Come modificare:**
-Impostazioni → Lingua → Seleziona la lingua desiderata
+Seleziona in **Impostazioni → Lingua** e viene applicata immediatamente.
 
 </div>
 </details>
 
 ---
 
-> 📚 **Hai altre domande?** Controlla le [FAQ](/inventory/faq/it/) o contattaci tramite [Suggerimenti](/inventory/suggest/it/).
+> 📚 **Hai altre domande?** Consulta le [Domande frequenti](/inventory/faq/) o contattaci tramite [Invia un suggerimento](/inventory/suggest/).
 
 <style>
 details {

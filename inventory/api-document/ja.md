@@ -116,7 +116,7 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 | `GET /items/{token}` | アイテム詳細を取得 |
 | `GET /templates` | テンプレート一覧を取得 |
 | `GET /templates/{token}` | テンプレート詳細を取得 |
-| `GET /templates/shared` | 共有中のテンプレート一覧 |
+| `GET /templates/shared` | 共有中のテンプレート一覧（廃止予定 — v3で共有機能終了） |
 | `GET /user/stats` | ユーザー統計を取得 |
 
 ### 書き込みAPI (POST)
@@ -124,11 +124,11 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 | エンドポイント | 説明 |
 |--------------|------|
 | `POST /templates` | 新規テンプレート作成 |
-| `POST /templates/{token}/share` | テンプレート共有 |
-| `POST /templates/revoke` | 共有解除 |
+| `POST /templates/{token}/share` | テンプレート共有（廃止予定 — v3で共有機能終了） |
+| `POST /templates/revoke` | 共有解除（廃止予定 — v3で共有機能終了） |
 | `POST /templates/{token}/send` | テンプレート送信 |
-| `POST /templates/{token}/log` | ログ追加、キーワード/権限/画像の更新 |
 | `POST /templates/{token}/check-ownership` | 複製アイテムの所有確認 |
+| `POST /templates/{token}/log` | ログ追加、キーワード/権限/画像の更新 |
 
 ---
 
@@ -576,9 +576,88 @@ curl -X POST \
   "data": {
     "itemToken": "暗号化されたアイテムID",
     "recipientEmail": "recipient@example.com",
-    "status": "sent"
+    "status": "pending"
   }
 }
+```
+
+</div>
+</details>
+
+<details>
+<summary><h3>POST /templates/{token}/check-ownership - 複製アイテムの所有確認</h3></summary>
+<div class="manual-content" markdown="1">
+
+特定のユーザーがこのテンプレートから複製されたアイテムを所有しているか確認します。
+
+> **セキュリティ**: 自分が所有するテンプレートのみクエリできます。他のユーザーのテンプレートはクエリできません。
+
+#### リクエスト
+
+```bash
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "email": "user@example.com",
+       "keywordKeys": ["日付", "金額"]
+     }' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/check-ownership"
+```
+
+#### リクエストボディ
+
+| フィールド | 型 | 必須 | 説明 |
+|-----------|-----|------|------|
+| email | string | ○ | 確認するユーザーのメール |
+| keywordKeys | string[] | × | 取得するキーワードキーの一覧 |
+
+#### レスポンス（所有している場合）
+
+```json
+{
+  "success": true,
+  "data": {
+    "hasItem": true,
+    "itemTokens": ["暗号化されたアイテムID_1", "暗号化されたアイテムID_2"],
+    "keywords": {
+      "日付": "2025-01-15",
+      "金額": "50000"
+    }
+  }
+}
+```
+
+#### レスポンス（所有していない場合）
+
+```json
+{
+  "success": true,
+  "data": {
+    "hasItem": false
+  }
+}
+```
+
+#### レスポンスフィールド
+
+| フィールド | 型 | 説明 |
+|-----------|-----|------|
+| hasItem | boolean | 所有状況 |
+| itemTokens | string[] | 所有アイテムトークン（所有時のみ） |
+| keywords | object | リクエストされたキーワード値（リクエスト時のみ） |
+
+#### 使用例
+
+クーポン/チケットシステムで、特定ユーザーの所有状況と使用状態を確認します：
+
+```bash
+# クーポン発行状況の確認
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{"email": "customer@example.com", "keywordKeys": ["発行日", "使用状況"]}' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{クーポンテンプレートトークン}/check-ownership"
 ```
 
 </div>
@@ -588,7 +667,7 @@ curl -X POST \
 <summary><h3>POST /templates/{token}/log - ログ追加とテンプレート更新</h3></summary>
 <div class="manual-content" markdown="1">
 
-ログの追加、キーワードの更新、権限の変更、または共有テンプレートの画像更新を行います。このテンプレートを複製したユーザーにプッシュ通知を送信します。
+共有中のテンプレートにログ（フィード）を追加したり、キーワード・権限・画像を更新します。このテンプレートを複製したユーザーにプッシュ通知を送信します。
 
 #### リクエスト
 
@@ -598,12 +677,13 @@ curl -X POST \
      -H "Content-Type: application/json" \
      -d '{
        "logs": [
-         {"content": "バグ修正を含む新しいアップデートをリリースしました"},
-         {"content": "Blog:https://example.com/update-notes"}
+         {"content": "紅の砂漠 最終トレーラー公開 https://youtu.be/abc"},
+         {"content": "ブログ:https://example.com/update-notes"}
        ],
        "keywordUpdates": [
-         {"action": "upsert", "key": "version", "value": "2.1.0"},
-         {"action": "delete", "key": "beta"}
+         {"action": "upsert", "key": "発売日", "value": "2026-03-28"},
+         {"action": "upsert", "key": "価格", "value": "69,800円"},
+         {"action": "delete", "key": "ベータ日程"}
        ],
        "permissionUpdates": {
          "logPermission": "owner",
@@ -648,67 +728,33 @@ curl -X POST \
   "success": true,
   "data": {
     "logsAdded": 2,
-    "keywordsUpdated": 1,
+    "keywordsUpdated": 2,
     "keywordsDeleted": 1,
-    "notificationsSent": 3
+    "notificationsSent": 5
   }
 }
 ```
 
-</div>
-</details>
+#### 使用例
 
-<details>
-<summary><h3>POST /templates/{token}/check-ownership - 複製アイテムの所有確認</h3></summary>
-<div class="manual-content" markdown="1">
-
-特定のユーザーがこのテンプレートから複製されたアイテムを所有しているか確認します。
-
-**セキュリティ**: 自分が所有するテンプレートのみクエリできます。他のユーザーのテンプレートはクエリできません。
-
-#### リクエスト
+データ追跡アイテムのキーワードを定期的に更新し、ニュースフィードを追加します：
 
 ```bash
+# 燃料価格データの更新 + ニュースログの追加
 curl -X POST \
      -H "Authorization: Bearer inv_xxx" \
      -H "Content-Type: application/json" \
      -d '{
-       "email": "user@example.com",
-       "keywordKeys": ["日付", "金額"]
+       "keywordUpdates": [
+         {"action": "upsert", "key": "ガソリン", "value": "1,680円"},
+         {"action": "upsert", "key": "軽油", "value": "1,520円"}
+       ],
+       "logs": [
+         {"content": "3月第2週、全国平均燃料価格が小幅上昇 https://news.example.com/fuel"}
+       ]
      }' \
-     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/check-ownership"
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/log"
 ```
-
-#### リクエストボディ
-
-| フィールド | 型 | 必須 | 説明 |
-|-----------|-----|------|------|
-| email | string | ○ | 確認するユーザーのメール |
-| keywordKeys | string[] | × | 取得するキーワードキーの一覧 |
-
-#### レスポンス
-
-```json
-{
-  "success": true,
-  "data": {
-    "hasItem": true,
-    "itemTokens": ["token1", "token2"],
-    "keywords": {
-      "日付": "2025-01-15",
-      "金額": "50000"
-    }
-  }
-}
-```
-
-#### レスポンスフィールド
-
-| フィールド | 型 | 説明 |
-|-----------|-----|------|
-| hasItem | boolean | 所有状況 |
-| itemTokens | string[] | 所有アイテムトークン（所有時のみ） |
-| keywords | object | リクエストされたキーワード値（リクエスト時のみ） |
 
 </div>
 </details>

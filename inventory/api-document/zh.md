@@ -116,7 +116,7 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 | `GET /items/{token}` | 获取物品详情 |
 | `GET /templates` | 列出您的模板 |
 | `GET /templates/{token}` | 获取模板详情 |
-| `GET /templates/shared` | 列出共享的模板 |
+| `GET /templates/shared` | 列出共享的模板（即将废止 — v3终止共享功能） |
 | `GET /user/stats` | 获取用户统计信息 |
 
 ### 写入API（POST）
@@ -124,11 +124,11 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 | 端点 | 说明 |
 |-----|------|
 | `POST /templates` | 创建新模板 |
-| `POST /templates/{token}/share` | 共享模板 |
-| `POST /templates/revoke` | 撤销共享 |
+| `POST /templates/{token}/share` | 共享模板（即将废止 — v3终止共享功能） |
+| `POST /templates/revoke` | 撤销共享（即将废止 — v3终止共享功能） |
 | `POST /templates/{token}/send` | 发送模板 |
-| `POST /templates/{token}/log` | 添加日志，更新关键词/权限/图片 |
 | `POST /templates/{token}/check-ownership` | 检查克隆项目所有权 |
+| `POST /templates/{token}/log` | 添加日志，更新关键词/权限/图片 |
 
 ---
 
@@ -518,7 +518,7 @@ curl -X POST \
 {
   "success": true,
   "data": {
-    "message": "共享已成功撤销"
+    "message": "Share revoked successfully"
   }
 }
 ```
@@ -576,9 +576,88 @@ curl -X POST \
   "data": {
     "itemToken": "encrypted_item_id",
     "recipientEmail": "recipient@example.com",
-    "status": "sent"
+    "status": "pending"
   }
 }
+```
+
+</div>
+</details>
+
+<details>
+<summary><h3>POST /templates/{token}/check-ownership - 检查克隆项目所有权</h3></summary>
+<div class="manual-content" markdown="1">
+
+检查特定用户是否拥有从此模板克隆的项目。
+
+> **安全性**：您只能查询自己拥有的模板。无法查询其他用户的模板。
+
+#### 请求
+
+```bash
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "email": "user@example.com",
+       "keywordKeys": ["日期", "金额"]
+     }' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/check-ownership"
+```
+
+#### 请求体
+
+| 字段 | 类型 | 必填 | 说明 |
+|-----|------|-----|------|
+| email | string | 是 | 要检查的用户电子邮件 |
+| keywordKeys | string[] | 否 | 要获取的关键字键列表 |
+
+#### 响应（拥有时）
+
+```json
+{
+  "success": true,
+  "data": {
+    "hasItem": true,
+    "itemTokens": ["encrypted_item_id_1", "encrypted_item_id_2"],
+    "keywords": {
+      "日期": "2025-01-15",
+      "金额": "50000"
+    }
+  }
+}
+```
+
+#### 响应（未拥有时）
+
+```json
+{
+  "success": true,
+  "data": {
+    "hasItem": false
+  }
+}
+```
+
+#### 响应字段
+
+| 字段 | 类型 | 说明 |
+|-----|------|------|
+| hasItem | boolean | 所有权状态 |
+| itemTokens | string[] | 拥有的项目令牌（仅在拥有时） |
+| keywords | object | 请求的关键字值（仅在请求时） |
+
+#### 使用示例
+
+在优惠券/票务系统中检查特定用户的所有权及使用状态：
+
+```bash
+# 检查优惠券是否已发放
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{"email": "customer@example.com", "keywordKeys": ["发放日", "使用状态"]}' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{优惠券模板令牌}/check-ownership"
 ```
 
 </div>
@@ -588,7 +667,7 @@ curl -X POST \
 <summary><h3>POST /templates/{token}/log - 添加日志和更新模板</h3></summary>
 <div class="manual-content" markdown="1">
 
-添加日志、更新关键词、更改权限或更新共享模板的图片。向克隆此模板的用户发送推送通知。
+向共享中的模板添加日志（动态），或更新关键词、权限、图片。向克隆此模板的用户发送推送通知。
 
 #### 请求
 
@@ -598,12 +677,13 @@ curl -X POST \
      -H "Content-Type: application/json" \
      -d '{
        "logs": [
-         {"content": "发布了包含错误修复的新更新"},
-         {"content": "Blog:https://example.com/update-notes"}
+         {"content": "红色沙漠最终预告片公开 https://youtu.be/abc"},
+         {"content": "博客:https://example.com/update-notes"}
        ],
        "keywordUpdates": [
-         {"action": "upsert", "key": "version", "value": "2.1.0"},
-         {"action": "delete", "key": "beta"}
+         {"action": "upsert", "key": "发售日", "value": "2026-03-28"},
+         {"action": "upsert", "key": "价格", "value": "69,800韩元"},
+         {"action": "delete", "key": "测试日程"}
        ],
        "permissionUpdates": {
          "logPermission": "owner",
@@ -648,69 +728,33 @@ curl -X POST \
   "success": true,
   "data": {
     "logsAdded": 2,
-    "keywordsUpdated": 1,
+    "keywordsUpdated": 2,
     "keywordsDeleted": 1,
-    "notificationsSent": 3
+    "notificationsSent": 5
   }
 }
 ```
 
-</div>
-</details>
+#### 使用示例
 
-<details>
-<summary><h3>POST /templates/{token}/check-ownership - 检查克隆项目所有权</h3></summary>
-<div class="manual-content" markdown="1">
-
-检查特定用户是否拥有从此模板克隆的项目。
-
-#### 请求
+定期更新数据跟踪项目的关键词并添加新闻动态：
 
 ```bash
+# 更新油价数据 + 添加新闻日志
 curl -X POST \
      -H "Authorization: Bearer inv_xxx" \
      -H "Content-Type: application/json" \
      -d '{
-       "email": "user@example.com",
-       "keywordKeys": ["日期", "金额"]
+       "keywordUpdates": [
+         {"action": "upsert", "key": "汽油", "value": "1,680韩元"},
+         {"action": "upsert", "key": "柴油", "value": "1,520韩元"}
+       ],
+       "logs": [
+         {"content": "3月第二周全国平均油价小幅上涨 https://news.example.com/fuel"}
+       ]
      }' \
-     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/check-ownership"
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/log"
 ```
-
-#### 安全性
-
-**安全性**：您只能查询自己拥有的模板。无法查询其他用户的模板。
-
-#### 请求体
-
-| 字段 | 类型 | 必填 | 说明 |
-|-----|------|-----|------|
-| email | string | 是 | 要检查的用户电子邮件 |
-| keywordKeys | string[] | 否 | 要获取的关键字键列表 |
-
-#### 响应
-
-```json
-{
-  "success": true,
-  "data": {
-    "hasItem": true,
-    "itemTokens": ["encrypted_item_id_1", "encrypted_item_id_2"],
-    "keywords": {
-      "日期": "2025-01-15",
-      "金额": "50000"
-    }
-  }
-}
-```
-
-#### 响应字段
-
-| 字段 | 类型 | 说明 |
-|-----|------|------|
-| hasItem | boolean | 所有权状态 |
-| itemTokens | string[] | 拥有的项目令牌（仅在拥有时） |
-| keywords | object | 请求的关键字值（仅在请求时） |
 
 </div>
 </details>

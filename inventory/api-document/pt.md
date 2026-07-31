@@ -1,6 +1,6 @@
 ---
 layout: inventory
-title: Documentacao API
+title: Documentação API
 permalink: /inventory/api-document/pt/
 lang: pt
 translations:
@@ -14,60 +14,60 @@ translations:
   zh: /inventory/api-document/zh/
 ---
 
-# Documentacao API
+# Documentação API
 
-Acesse os dados do seu aplicativo Inventory de forma programatica atraves da nossa API externa.
+A API externa do aplicativo Inventory permite acessar seus dados de forma programática.
 
 ---
 
-## Visao geral
+## Visão geral
 
-### O que e a API?
+### O que é a API?
 
-A API externa fornece uma interface para acessar os dados do aplicativo Inventory a partir de programas externos.
+A API externa é uma interface que permite que programas externos acessem os dados do aplicativo Inventory.
 
 ### Casos de uso
 
-- **Automacao**: Processamento em lote de documentos atraves de scripts
-- **Integracao de terceiros**: Sincronizacao de dados com outros servicos
-- **Operacoes em massa**: Criacao e compartilhamento em massa de modelos
+- **Automação**: processamento de documentos em massa por meio de scripts
+- **Integração com terceiros**: intercâmbio de dados com outros serviços
+- **Processamento em massa**: criação e compartilhamento de modelos em lote
 
 ---
 
 ## Primeiros passos
 
-### Obtendo uma chave API
+### Obter uma chave de API
 
-Para usar a API, voce primeiro precisa de uma chave API.
+Para usar a API, primeiro você precisa de uma chave de API.
 
-1. Abra a tela de **Perfil** no aplicativo Inventory
-2. Encontre a secao **Chave API**
-3. Toque no botao **Gerar chave**
-4. Sua chave API sera exibida na tela
+1. No aplicativo Inventory, acesse a **tela de perfil**
+2. Localize a seção **Chave de API**
+3. Toque no botão **Gerar chave**
+4. A chave de API gerada será exibida na tela
 
-> **Importante**: A chave API e mostrada **apenas uma vez** quando gerada. Certifique-se de copia-la e guarda-la em um local seguro. Se perder, precisara regenera-la.
+> **Importante**: a chave de API é exibida **apenas uma vez** no momento da criação. Copie-a e guarde-a em um local seguro. Em caso de perda, será necessário emitir uma nova.
 
-### Formato da chave API
+### Formato da chave de API
 
-As chaves API seguem este formato:
+A chave de API tem o seguinte formato:
 
 ```
 inv_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-- Comeca com o prefixo `inv_`
-- String codificada em Base64URL de aproximadamente 50 caracteres
+- Começa com o prefixo `inv_`
+- Cadeia codificada em Base64URL com cerca de 50 caracteres
 
-### Gerenciamento de chaves API
+### Gerenciamento da chave de API
 
-- **Regenerar**: Revoga a chave existente e emite uma nova
-- **Excluir**: Remove completamente a chave API (acesso API desabilitado)
+- **Regenerar**: revoga a chave existente e emite uma nova
+- **Excluir**: exclui completamente a chave de API (API inutilizável)
 
 ---
 
-## Autenticacao
+## Autenticação
 
-Todas as requisicoes API requerem um cabecalho `Authorization`.
+Todas as solicitações à API exigem um cabeçalho `Authorization`.
 
 ### Token Bearer
 
@@ -75,7 +75,7 @@ Todas as requisicoes API requerem um cabecalho `Authorization`.
 Authorization: Bearer inv_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-### Exemplo de requisicao
+### Exemplo de solicitação
 
 ```bash
 curl -H "Authorization: Bearer inv_your_api_key" \
@@ -84,19 +84,19 @@ curl -H "Authorization: Bearer inv_your_api_key" \
 
 ---
 
-## Limitacao de taxa
+## Rate Limiting
 
-O uso da API esta sujeito a limites.
+O uso da API está sujeito a limites.
 
-| Tipo de limite | Limite | Descricao |
-|----------------|--------|-----------|
-| Por minuto | 60 requisicoes | Previne requisicoes excessivas |
-| Mensal | Varia por conta | Determinado por contrato |
+| Tipo de limite | Limite | Descrição |
+|-----------|------|------|
+| Solicitações por minuto | 60 | Prevenção de solicitações excessivas |
+| Solicitações mensais | Varia por conta | Determinado por contrato |
 
-### Quando o limite e excedido
+### Ao exceder o limite
 
-- O codigo de status HTTP `429 Too Many Requests` e retornado
-- Por favor aguarde e tente novamente mais tarde
+- O código de status HTTP `429 Too Many Requests` é retornado
+- Tente novamente após uma breve espera
 
 ---
 
@@ -108,51 +108,51 @@ O uso da API esta sujeito a limites.
 https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 ```
 
-### APIs de leitura (GET)
+### API de leitura (GET)
 
-| Endpoint | Descricao |
-|----------|-----------|
-| `GET /items` | Listar seus itens |
-| `GET /items/{token}` | Obter detalhes do item |
-| `GET /templates` | Listar seus modelos |
-| `GET /templates/{token}` | Obter detalhes do modelo |
-| `GET /templates/shared` | Listar modelos compartilhados |
-| `GET /user/stats` | Obter estatisticas do usuario |
+| Endpoint | Descrição |
+|------------|------|
+| `GET /items` | Consultar a lista dos seus itens |
+| `GET /items/{token}` | Consultar os detalhes de um item |
+| `GET /templates` | Consultar a lista dos seus modelos |
+| `GET /templates/{token}` | Consultar os detalhes de um modelo |
+| `GET /templates/shared` | Lista de modelos em compartilhamento (remoção prevista — a função de compartilhamento termina na v3) |
+| `GET /user/stats` | Consultar estatísticas do usuário |
 
-### APIs de escrita (POST)
+### API de escrita (POST)
 
-| Endpoint | Descricao |
-|----------|-----------|
-| `POST /templates` | Criar novo modelo |
-| `POST /templates/{token}/share` | Compartilhar modelo |
-| `POST /templates/revoke` | Revogar compartilhamento |
-| `POST /templates/{token}/send` | Enviar modelo |
-| `POST /templates/{token}/log` | Adicionar registros, atualizar palavras-chave/permissoes/imagem |
-| `POST /templates/{token}/check-ownership` | Verificar propriedade de itens clonados |
+| Endpoint | Descrição |
+|------------|------|
+| `POST /templates` | Criar um novo modelo |
+| `POST /templates/{token}/share` | Compartilhar um modelo (remoção prevista — a função de compartilhamento termina na v3) |
+| `POST /templates/revoke` | Revogar um compartilhamento (remoção prevista — a função de compartilhamento termina na v3) |
+| `POST /templates/{token}/send` | Enviar um modelo |
+| `POST /templates/{token}/check-ownership` | Verificar a posse de um item clonado |
+| `POST /templates/{token}/log` | Adicionar logs, atualizar palavras-chave/permissões/imagem |
 
 ---
 
-## Referencia detalhada da API
+## Especificação detalhada da API
 
 <details>
-<summary><h3>GET /items - Listar itens</h3></summary>
+<summary><h3>GET /items - Lista de itens</h3></summary>
 <div class="manual-content" markdown="1">
 
-Recupera uma lista de itens (documentos) que voce possui.
+Consulta a lista de itens (documentos) de sua propriedade.
 
-#### Requisicao
+#### Solicitação
 
 ```bash
 curl -H "Authorization: Bearer inv_xxx" \
      "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/items?page=1&pageSize=20"
 ```
 
-#### Parametros de consulta
+#### Parâmetros de consulta
 
-| Parametro | Tipo | Padrao | Descricao |
-|-----------|------|--------|-----------|
-| page | number | 1 | Numero da pagina |
-| pageSize | number | 20 | Itens por pagina (max 100) |
+| Parâmetro | Tipo | Valor padrão | Descrição |
+|----------|------|--------|------|
+| page | number | 1 | Número da página |
+| pageSize | number | 20 | Itens por página (máx. 100) |
 | status | string | "active" | Filtro de status (active, pending) |
 | type | string | - | Filtro de tipo (paper, stamp) |
 
@@ -164,9 +164,9 @@ curl -H "Authorization: Bearer inv_xxx" \
   "data": {
     "items": [
       {
-        "token": "id_item_criptografado",
-        "title": "Titulo do Item",
-        "content": "Conteudo do Item",
+        "token": "암호화된_아이템_ID",
+        "title": "아이템 제목",
+        "content": "아이템 내용",
         "type": "paper",
         "status": "active",
         "imageUrl": "https://...",
@@ -188,55 +188,17 @@ curl -H "Authorization: Bearer inv_xxx" \
 </details>
 
 <details>
-<summary><h3>POST /templates - Criar modelo</h3></summary>
+<summary><h3>GET /items/{token} - Detalhes de um item</h3></summary>
 <div class="manual-content" markdown="1">
 
-Cria um novo modelo (carimbo).
+Consulta as informações detalhadas de um item específico.
 
-#### Requisicao
+#### Solicitação
 
 ```bash
-curl -X POST \
-     -H "Authorization: Bearer inv_xxx" \
-     -H "Content-Type: application/json" \
-     -d '{
-       "imageUrl": "https://example.com/image.png",
-       "title": "Titulo do Modelo",
-       "content": "Conteudo do Modelo",
-        "commentMode": "independent",
-        "logPermission": "owner",
-        "keywordPermission": "owner",
-        "allowEdit": true,
-        "keywords": ["produto:laptop", "preco:$1500BRL$"]
-     }' \
-     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates"
+curl -H "Authorization: Bearer inv_xxx" \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/items/{token}"
 ```
-
-#### Corpo da requisicao
-
-| Campo | Tipo | Obrigatorio | Descricao |
-|-------|------|-------------|-----------|
-| imageUrl | string | Sim | URL da imagem (HTTPS recomendado) |
-| title | string | Sim | Titulo (max 32 caracteres) |
-| content | string | Sim | Conteudo (max 1024 caracteres) |
-| commentMode | string | Nao | Modo comentario: "independent" ou "shared" |
-| ~~allowComments~~ | ~~boolean~~ | ~~X~~ | ~~Permitir adicionar registros~~ (deprecated: substituído por `logPermission`) |
-| logPermission | string | Nao | Permissão de registro: "owner" \| "author" \| "none" (padrão: "owner") |
-| keywordPermission | string | Nao | Permissão de palavra-chave: "owner" \| "author" \| "none" (padrão: "owner") |
-| allowEdit | boolean | X | Permitir edição (padrão: true) |
-| keywords | string[] | Nao | Array de palavras-chave (max 128) |
-
-#### Formato de palavras-chave
-
-As palavras-chave devem seguir o formato `chave:valor`.
-
-| Tipo | Formato | Exemplo |
-|------|---------|---------|
-| Geral | `chave:valor` | `produto:caneta` |
-| Data | `chave:@AAAA-MM-DD@` | `inicio:@2025-01-15@` |
-| Telefone | `chave:#telefone#` | `contato:#+55 11 91234-5678#` |
-| Local | `chave:%endereco%` | `lugar:%Sao Paulo, Centro%` |
-| Valor | `chave:$valorMoeda$` | `preco:$50000BRL$` |
 
 #### Resposta
 
@@ -244,8 +206,218 @@ As palavras-chave devem seguir o formato `chave:valor`.
 {
   "success": true,
   "data": {
-    "token": "id_modelo_criptografado",
-    "title": "Titulo do Modelo",
+    "token": "암호화된_아이템_ID",
+    "title": "아이템 제목",
+    "content": "아이템 내용",
+    "type": "paper",
+    "status": "active",
+    "imageUrl": "https://...",
+    "keywords": ["키:값", "태그:예시"],
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  }
+}
+```
+
+</div>
+</details>
+
+<details>
+<summary><h3>GET /templates - Lista de modelos</h3></summary>
+<div class="manual-content" markdown="1">
+
+Consulta a lista de modelos (carimbos) de sua propriedade.
+
+#### Solicitação
+
+```bash
+curl -H "Authorization: Bearer inv_xxx" \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates?page=1&pageSize=20"
+```
+
+#### Parâmetros de consulta
+
+| Parâmetro | Tipo | Valor padrão | Descrição |
+|----------|------|--------|------|
+| page | number | 1 | Número da página |
+| pageSize | number | 20 | Itens por página (máx. 100) |
+
+#### Resposta
+
+```json
+{
+  "success": true,
+  "data": {
+    "templates": [
+      {
+        "token": "암호화된_템플릿_ID",
+        "title": "템플릿 제목",
+        "content": "템플릿 내용",
+        "imageUrl": "https://...",
+        "commentMode": "independent",
+        "allowComments": true,
+        "logPermission": "owner",
+        "keywordPermission": "owner",
+        "allowEdit": false,
+        "isSharing": false,
+        "createdAt": "2025-01-01T00:00:00Z"
+      }
+    ],
+    "pagination": {
+      "page": 1,
+      "pageSize": 20,
+      "totalItems": 10,
+      "totalPages": 1
+    }
+  }
+}
+```
+
+</div>
+</details>
+
+<details>
+<summary><h3>GET /templates/shared - Modelos em compartilhamento</h3></summary>
+<div class="manual-content" markdown="1">
+
+Consulta a lista de modelos atualmente compartilhados.
+
+#### Solicitação
+
+```bash
+curl -H "Authorization: Bearer inv_xxx" \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/shared"
+```
+
+#### Resposta
+
+```json
+{
+  "success": true,
+  "data": {
+    "sharedTemplates": [
+      {
+        "token": "암호화된_템플릿_ID",
+        "shareToken": "암호화된_공유_ID",
+        "title": "템플릿 제목",
+        "tags": ["TAG1", "TAG2"],
+        "expiresAt": "2025-01-02T00:00:00Z",
+        "copyCount": 5
+      }
+    ]
+  }
+}
+```
+
+</div>
+</details>
+
+<details>
+<summary><h3>GET /user/stats - Estatísticas do usuário</h3></summary>
+<div class="manual-content" markdown="1">
+
+Consulta suas estatísticas de uso.
+
+#### Solicitação
+
+```bash
+curl -H "Authorization: Bearer inv_xxx" \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/user/stats"
+```
+
+#### Resposta
+
+```json
+{
+  "success": true,
+  "data": {
+    "email": "user@example.com",
+    "createdAt": "2024-01-01T00:00:00Z",
+    "items": {
+      "total": 50,
+      "paper": 30,
+      "stamp": 20
+    },
+    "api": {
+      "enabled": true,
+      "monthlyLimit": 1000,
+      "monthlyUsed": 150,
+      "lastUsedAt": "2025-01-01T12:00:00Z"
+    }
+  }
+}
+```
+
+</div>
+</details>
+
+<details>
+<summary><h3>POST /templates - Criar um modelo</h3></summary>
+<div class="manual-content" markdown="1">
+
+Cria um novo modelo (carimbo).
+
+#### Solicitação
+
+```bash
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "imageUrl": "https://example.com/image.png",
+       "title": "템플릿 제목",
+       "content": "템플릿 내용",
+        "commentMode": "independent",
+        "logPermission": "owner",
+        "keywordPermission": "owner",
+        "allowEdit": true,
+        "keywords": ["품명:노트북", "가격:$1500000KRW$"]
+     }' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates"
+```
+
+#### Corpo da solicitação
+
+| Campo | Tipo | Obrigatório | Descrição |
+|------|------|------|------|
+| imageUrl | string | Sim | URL da imagem (HTTPS recomendado) |
+| title | string | Sim | Título (máx. 32 caracteres) |
+| content | string | Sim | Conteúdo (máx. 1024 caracteres) |
+| commentMode | string | Não | Modo de comentários: "independent" ou "shared" |
+| ~~allowComments~~ | ~~boolean~~ | ~~Não~~ | ~~Permitir adição de logs~~ (deprecated: substituído por `logPermission`) |
+| logPermission | string | Não | Permissão de logs: "owner" \| "author" \| "none" (padrão: "owner") |
+| keywordPermission | string | Não | Permissão de palavras-chave: "owner" \| "author" \| "none" (padrão: "owner") |
+| allowEdit | boolean | Não | Permitir edição (padrão: true) |
+| keywords | string[] | Não | Array de palavras-chave (máx. 128) |
+| publishDate | string | Não | Data de início da publicação (ISO 8601) |
+| validUntil | string | Não | Período de validade (ISO 8601) |
+
+#### Formato das palavras-chave
+
+As palavras-chave devem obrigatoriamente seguir o formato `키:값` (chave:valor).
+
+| Tipo | Formato | Exemplo |
+|------|------|------|
+| Geral | `키:값` | `품명:펜` |
+| Data | `키:@YYYY-MM-DD@` | `시작일:@2025-01-15@` |
+| Telefone | `키:#전화번호#` | `연락처:#+82 10-1234-5678#` |
+| Localização | `키:%주소%` | `장소:%서울시 강남구%` |
+| Valor | `키:$금액통화$` | `가격:$50000KRW$` |
+
+#### Restrições
+
+- Comprimento da chave: máx. 8 caracteres
+- Comprimento total das palavras-chave: máx. 256 caracteres
+- Número de palavras-chave: máx. 128
+
+#### Resposta
+
+```json
+{
+  "success": true,
+  "data": {
+    "token": "암호화된_템플릿_ID",
+    "title": "템플릿 제목",
     "createdAt": "2025-01-01T00:00:00Z"
   }
 }
@@ -255,12 +427,12 @@ As palavras-chave devem seguir o formato `chave:valor`.
 </details>
 
 <details>
-<summary><h3>POST /templates/{token}/share - Compartilhar modelo</h3></summary>
+<summary><h3>POST /templates/{token}/share - Compartilhar um modelo</h3></summary>
 <div class="manual-content" markdown="1">
 
-Compartilha um modelo para que outros usuarios possam descobri-lo.
+Compartilha um modelo para que outros usuários possam pesquisá-lo.
 
-#### Requisicao
+#### Solicitação
 
 ```bash
 curl -X POST \
@@ -273,22 +445,32 @@ curl -X POST \
      "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/share"
 ```
 
-#### Corpo da requisicao
+#### Corpo da solicitação
 
-| Campo | Tipo | Obrigatorio | Descricao |
-|-------|------|-------------|-----------|
-| durationMinutes | number | Sim | Duracao do compartilhamento (minutos). 60-43200 ou 0 (ilimitado) |
-| tags | string[] | Sim | Tags de busca (1-16, maiusculas auto) |
-| logPermission | string | Nao | Permissao de registro: "owner" \| "author" \| "none" (substitui configuracao do item) |
-| keywordPermission | string | Nao | Permissao de palavra-chave: "owner" \| "author" \| "none" (substitui configuracao do item) |
+| Campo | Tipo | Obrigatório | Descrição |
+|------|------|------|------|
+| durationMinutes | number | Sim | Duração do compartilhamento (minutos). 60-43200 ou 0 (indefinido) |
+| tags | string[] | Sim | Tags de pesquisa (1-16, conversão automática para maiúsculas) |
+| logPermission | string | Não | Permissão de logs: "owner" \| "author" \| "none" (substitui a configuração do item) |
+| keywordPermission | string | Não | Permissão de palavras-chave: "owner" \| "author" \| "none" (substitui a configuração do item) |
 
-#### Valores de permissao
+#### Valores de permissão
 
-| Valor | Descricao |
-|-------|-----------|
-| owner | Qualquer pessoa que copiar este modelo pode adicionar/editar |
-| author | Apenas o autor do modelo pode adicionar/editar |
-| none | Desabilitado |
+| Valor | Descrição |
+|----|------|
+| owner | Qualquer pessoa que tenha clonado o modelo pode adicionar/editar |
+| author | Somente o autor do modelo pode adicionar/editar |
+| none | Desativado |
+
+#### Duração do compartilhamento
+
+| Valor | Significado |
+|----|------|
+| 60 | 1 hora |
+| 1440 | 1 dia (24 horas) |
+| 10080 | 1 semana |
+| 43200 | 30 dias (máximo) |
+| 0 | Indefinido |
 
 #### Resposta
 
@@ -296,7 +478,7 @@ curl -X POST \
 {
   "success": true,
   "data": {
-    "shareToken": "id_compartilhamento_criptografado",
+    "shareToken": "암호화된_공유_ID",
     "expiresAt": "2025-01-02T00:00:00Z",
     "tags": ["TAG1", "TAG2"]
   }
@@ -307,44 +489,28 @@ curl -X POST \
 </details>
 
 <details>
-<summary><h3>POST /templates/{token}/send - Enviar modelo</h3></summary>
+<summary><h3>POST /templates/revoke - Revogar um compartilhamento</h3></summary>
 <div class="manual-content" markdown="1">
 
-Envia um modelo para um usuario especifico, criando itens clonados no aplicativo dele.
+Cancela o compartilhamento de um modelo atualmente compartilhado.
 
-#### Requisicao
+#### Solicitação
 
 ```bash
 curl -X POST \
      -H "Authorization: Bearer inv_xxx" \
      -H "Content-Type: application/json" \
      -d '{
-       "recipientEmail": "usuario@example.com",
-       "keywords": ["data:2025-01-15", "valor:50000"]
+       "shareToken": "암호화된_공유_ID"
      }' \
-     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/send"
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/revoke"
 ```
 
-#### Corpo da requisicao
+#### Corpo da solicitação
 
-| Campo | Tipo | Obrigatorio | Descricao |
-|-------|------|-------------|-----------|
-| recipientEmail | string | Sim | E-mail do destinatario |
-| keywords | string[] | Nao | Palavras-chave para adicionar/substituir |
-
-#### Regras de mesclagem de palavras-chave
-
-O parametro `keywords` permite substituir as palavras-chave padrao do modelo ou adicionar novas.
-
-| Situacao | Comportamento |
-|----------|---------------|
-| Mesma chave existe | **Substituir** pelo valor da API |
-| Nova chave | **Adicionar** a lista de palavras-chave |
-
-**Exemplo:**
-- Palavras-chave do modelo: `["data:@date@", "preco:0"]`
-- Palavras-chave da API: `["data:2025-01-15", "nome:Joao"]`
-- **Resultado**: `["data:2025-01-15", "preco:0", "nome:Joao"]`
+| Campo | Tipo | Obrigatório | Descrição |
+|------|------|------|------|
+| shareToken | string | Sim | shareToken recebido no momento do compartilhamento |
 
 #### Resposta
 
@@ -352,9 +518,7 @@ O parametro `keywords` permite substituir as palavras-chave padrao do modelo ou 
 {
   "success": true,
   "data": {
-    "itemToken": "id_item_criptografado",
-    "recipientEmail": "usuario@example.com",
-    "sentAt": "2025-01-01T00:00:00Z"
+    "message": "Share revoked successfully"
   }
 }
 ```
@@ -363,12 +527,149 @@ O parametro `keywords` permite substituir as palavras-chave padrao do modelo ou 
 </details>
 
 <details>
-<summary><h3>POST /templates/{token}/log - Adicionar registros e atualizar modelo</h3></summary>
+<summary><h3>POST /templates/{token}/send - Enviar um modelo</h3></summary>
 <div class="manual-content" markdown="1">
 
-Adiciona registros, atualiza palavras-chave, altera permissoes ou atualiza a imagem de um modelo compartilhado. Envia notificacoes push para usuarios que clonaram este modelo.
+Clona um modelo e o envia para outro usuário.
 
-#### Requisicao
+#### Solicitação
+
+```bash
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "recipientEmail": "recipient@example.com",
+       "message": "선물입니다!",
+       "keywords": ["날짜:2025-01-15", "금액:50000"]
+     }' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/send"
+```
+
+#### Corpo da solicitação
+
+| Campo | Tipo | Obrigatório | Descrição |
+|------|------|------|------|
+| recipientEmail | string | Sim | E-mail do destinatário |
+| message | string | Não | Mensagem de envio (máx. 200 caracteres) |
+| keywords | string[] | Não | Array de palavras-chave a adicionar/sobrescrever |
+
+#### Regras de mesclagem de palavras-chave
+
+O parâmetro `keywords` permite sobrescrever as palavras-chave padrão do modelo ou adicionar novas.
+
+| Situação | Comportamento |
+|------|------|
+| Se a chave já existir | É **sobrescrita** com o valor da API |
+| Se for uma chave nova | É **adicionada** à lista de palavras-chave |
+
+**Exemplo:**
+- Palavras-chave do modelo: `["날짜:@date@", "가격:0"]`
+- Palavras-chave da API: `["날짜:2025-01-15", "이름:홍길동"]`
+- **Resultado**: `["날짜:2025-01-15", "가격:0", "이름:홍길동"]`
+
+#### Resposta
+
+```json
+{
+  "success": true,
+  "data": {
+    "itemToken": "암호화된_아이템_ID",
+    "recipientEmail": "recipient@example.com",
+    "status": "pending"
+  }
+}
+```
+
+</div>
+</details>
+
+<details>
+<summary><h3>POST /templates/{token}/check-ownership - Verificar a posse de um item clonado</h3></summary>
+<div class="manual-content" markdown="1">
+
+Verifica se um determinado usuário possui um item clonado criado a partir deste modelo.
+
+> **Segurança**: a consulta só é possível para modelos de sua propriedade. Não é possível consultar modelos de outros usuários.
+
+#### Solicitação
+
+```bash
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "email": "user@example.com",
+       "keywordKeys": ["날짜", "금액"]
+     }' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/check-ownership"
+```
+
+#### Corpo da solicitação
+
+| Campo | Tipo | Obrigatório | Descrição |
+|------|------|------|------|
+| email | string | Sim | E-mail do usuário a consultar |
+| keywordKeys | string[] | Não | Lista de chaves de palavras-chave a consultar |
+
+#### Resposta (se possuir)
+
+```json
+{
+  "success": true,
+  "data": {
+    "hasItem": true,
+    "itemTokens": ["암호화된_아이템_ID_1", "암호화된_아이템_ID_2"],
+    "keywords": {
+      "날짜": "2025-01-15",
+      "금액": "50000"
+    }
+  }
+}
+```
+
+#### Resposta (se não possuir)
+
+```json
+{
+  "success": true,
+  "data": {
+    "hasItem": false
+  }
+}
+```
+
+#### Campos da resposta
+
+| Campo | Tipo | Descrição |
+|------|------|------|
+| hasItem | boolean | Posse ou não |
+| itemTokens | string[] | Lista de tokens dos itens possuídos (somente se possuir) |
+| keywords | object | Valores das palavras-chave solicitadas (somente se solicitadas) |
+
+#### Exemplo de uso
+
+Verificação da posse e do status de uso de um determinado usuário em um sistema de cupons/ingressos:
+
+```bash
+# 쿠폰 발급 여부 확인
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{"email": "customer@example.com", "keywordKeys": ["발급일", "사용여부"]}' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{쿠폰템플릿토큰}/check-ownership"
+```
+
+</div>
+</details>
+
+<details>
+<summary><h3>POST /templates/{token}/log - Adicionar logs e atualizar o modelo</h3></summary>
+<div class="manual-content" markdown="1">
+
+Adiciona logs (feed) a um modelo compartilhado ou atualiza palavras-chave, permissões ou imagem. Uma notificação push é enviada aos usuários que clonaram este modelo.
+
+#### Solicitação
 
 ```bash
 curl -X POST \
@@ -376,12 +677,13 @@ curl -X POST \
      -H "Content-Type: application/json" \
      -d '{
        "logs": [
-         {"content": "Nova atualizacao lancada com correcoes de bugs"},
-         {"content": "Blog:https://example.com/update-notes"}
+         {"content": "붉은사막 최종 트레일러 공개 https://youtu.be/abc"},
+         {"content": "블로그:https://example.com/update-notes"}
        ],
        "keywordUpdates": [
-         {"action": "upsert", "key": "version", "value": "2.1.0"},
-         {"action": "delete", "key": "beta"}
+         {"action": "upsert", "key": "출시일", "value": "2026-03-28"},
+         {"action": "upsert", "key": "가격", "value": "69,800원"},
+         {"action": "delete", "key": "베타일정"}
        ],
        "permissionUpdates": {
          "logPermission": "owner",
@@ -392,32 +694,32 @@ curl -X POST \
      "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/log"
 ```
 
-#### Corpo da requisicao
+#### Corpo da solicitação
 
-| Campo | Tipo | Obrigatorio | Descricao |
-|-------|------|-------------|-----------|
-| logs | array | Nao* | Entradas de registro a adicionar (max 10) |
-| logs[].content | string | Sim | Conteudo do registro (1-256 caracteres) |
-| keywordUpdates | array | Nao* | Alteracoes de palavras-chave (max 20) |
-| keywordUpdates[].action | string | Sim | "upsert" ou "delete" |
-| keywordUpdates[].key | string | Sim | Chave da palavra-chave (1-8 caracteres) |
-| keywordUpdates[].value | string | Nao | Valor (obrigatorio para upsert, `key:value` combinado máx. 256 caracteres) |
-| permissionUpdates | object | Nao* | Alteracoes de permissoes |
-| permissionUpdates.logPermission | string | Nao | "owner" \| "author" \| "none" |
-| permissionUpdates.keywordPermission | string | Nao | "owner" \| "author" \| "none" |
-| imageUrl | string | Nao* | Nova URL de imagem (reprocessada para 512x512 WebP) |
+| Campo | Tipo | Obrigatório | Descrição |
+|------|------|------|------|
+| logs | array | Condicional* | Lista de logs a adicionar (máx. 10) |
+| logs[].content | string | Sim | Conteúdo do log (1~256 caracteres) |
+| keywordUpdates | array | Condicional* | Lista de alterações de palavras-chave (máx. 20) |
+| keywordUpdates[].action | string | Sim | `"upsert"` ou `"delete"` |
+| keywordUpdates[].key | string | Sim | Chave da palavra-chave (1~8 caracteres) |
+| keywordUpdates[].value | string | Se upsert | Valor da palavra-chave (`key:value` combinado máx. 256 caracteres) |
+| permissionUpdates | object | Condicional* | Alteração de permissões |
+| permissionUpdates.logPermission | string | Não | "owner" \| "author" \| "none" |
+| permissionUpdates.keywordPermission | string | Não | "owner" \| "author" \| "none" |
+| imageUrl | string | Condicional* | Nova URL de imagem (reprocessada como WebP 512x512) |
 
-> \* Pelo menos um entre `logs`, `keywordUpdates`, `permissionUpdates` ou `imageUrl` deve ser fornecido.
+> \* Pelo menos um entre `logs`, `keywordUpdates`, `permissionUpdates`, `imageUrl` deve ser fornecido.
 
-#### Formato do conteudo de registros
+#### Formato do conteúdo dos logs
 
-Registros no formato `chave:valor` (chave de 1-8 caracteres) sao exibidos como cartoes de info/URL no aplicativo:
+Logs no formato `키:값` (chave de 1~8 caracteres) são renderizados no aplicativo como cartões de informação/URL:
 
-| Formato | Exibicao |
-|---------|----------|
-| `texto simples` | Comentario de texto normal |
-| `chave:valor` | Cartao de informacao (exibicao chave-valor) |
-| `chave:https://...` | Cartao URL (link clicavel) |
+| Formato | Renderização |
+|------|--------|
+| `일반 텍스트` | Comentário de texto normal |
+| `키:값` | Cartão de informação (exibição chave-valor) |
+| `키:https://...` | Cartão de URL (link clicável) |
 
 #### Resposta
 
@@ -426,112 +728,82 @@ Registros no formato `chave:valor` (chave de 1-8 caracteres) sao exibidos como c
   "success": true,
   "data": {
     "logsAdded": 2,
-    "keywordsUpdated": 1,
+    "keywordsUpdated": 2,
     "keywordsDeleted": 1,
-    "notificationsSent": 3
+    "notificationsSent": 5
   }
 }
 ```
 
-</div>
-</details>
+#### Exemplo de uso
 
-<details>
-<summary><h3>POST /templates/{token}/check-ownership - Verificar propriedade de itens clonados</h3></summary>
-<div class="manual-content" markdown="1">
-
-Verifique se um usuario especifico possui itens clonados deste modelo.
-
-**Seguranca**: Voce so pode consultar modelos que possui. Nao e possivel consultar modelos de outros usuarios.
-
-#### Requisicao
+Atualizar periodicamente as palavras-chave de um item de rastreamento de dados e adicionar um feed de notícias:
 
 ```bash
+# 유류비 데이터 갱신 + 뉴스 로그 추가
 curl -X POST \
      -H "Authorization: Bearer inv_xxx" \
      -H "Content-Type: application/json" \
      -d '{
-       "email": "usuario@example.com",
-       "keywordKeys": ["data", "valor"]
+       "keywordUpdates": [
+         {"action": "upsert", "key": "휘발유", "value": "1,680원"},
+         {"action": "upsert", "key": "경유", "value": "1,520원"}
+       ],
+       "logs": [
+         {"content": "3월 둘째주 전국 평균 유류비 소폭 상승 https://news.example.com/fuel"}
+       ]
      }' \
-     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/check-ownership"
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/log"
 ```
-
-#### Corpo da requisicao
-
-| Campo | Tipo | Obrigatorio | Descricao |
-|-------|------|-------------|-----------|
-| email | string | Sim | E-mail do usuario a verificar |
-| keywordKeys | string[] | Nao | Lista de chaves de palavras-chave a recuperar |
-
-#### Resposta
-
-```json
-{
-  "success": true,
-  "data": {
-    "hasItem": true,
-    "itemTokens": ["id_item_1_criptografado", "id_item_2_criptografado"],
-    "keywords": {
-      "data": "2025-01-15",
-      "valor": "50000"
-    }
-  }
-}
-```
-
-#### Campos de resposta
-
-| Campo | Tipo | Descricao |
-|-------|------|-----------|
-| hasItem | boolean | Status de propriedade |
-| itemTokens | string[] | Tokens de itens possuidos (apenas se possuir) |
-| keywords | object | Valores de palavras-chave solicitados (apenas se solicitado) |
 
 </div>
 </details>
 
 ---
 
-## Codigos de erro
+## Códigos de erro
 
-Quando uma requisicao API falha, os erros sao retornados neste formato:
+Se uma solicitação à API falhar, um erro é retornado no seguinte formato:
 
 ```json
 {
   "success": false,
   "error": {
     "code": "ERROR_CODE",
-    "message": "Descricao do erro"
+    "message": "에러 설명"
   }
 }
 ```
 
-### Lista de codigos de erro
+### Lista de códigos de erro
 
-| Codigo | Status HTTP | Descricao |
-|--------|-------------|-----------|
-| INVALID_API_KEY | 401 | Chave API invalida |
-| API_KEY_EXPIRED | 401 | Chave API expirada |
-| API_DISABLED | 403 | API desabilitada |
-| RATE_LIMIT_EXCEEDED | 429 | Limite de requisicoes excedido |
-| VALIDATION_ERROR | 400 | Entrada invalida |
-| INVALID_TOKEN | 400 | Token invalido |
-| NOT_FOUND | 404 | Recurso nao encontrado |
-| FORBIDDEN | 403 | Acesso negado |
-| RECIPIENT_NOT_FOUND | 404 | Destinatario nao encontrado |
+| Código | Status HTTP | Descrição |
+|------|-----------|------|
+| INVALID_API_KEY | 401 | Chave de API inválida |
+| API_KEY_EXPIRED | 401 | Chave de API expirada |
+| API_DISABLED | 403 | API desativada |
+| RATE_LIMIT_EXCEEDED | 429 | Limite de solicitações excedido |
+| SCOPE_DENIED | 403 | Permissões insuficientes |
+| VALIDATION_ERROR | 400 | Erro nos dados de entrada |
+| INVALID_TOKEN | 400 | Token inválido |
+| NOT_FOUND | 404 | Recurso não encontrado |
+| FORBIDDEN | 403 | Acesso negado (sem propriedade) |
+| RECIPIENT_NOT_FOUND | 404 | Destinatário não encontrado |
+| INVALID_IMAGE | 400 | Erro na URL da imagem |
+| ALREADY_SHARED | 400 | Modelo já em compartilhamento |
+| NOT_SHARED | 400 | Modelo não compartilhado atualmente |
 
 ---
 
-## Recomendacoes de seguranca
+## Recomendações de segurança
 
-1. **Proteger chaves API**: Nunca exponha chaves API em repositorios publicos ou codigo cliente
-2. **Usar HTTPS**: Todas as requisicoes sao transmitidas via HTTPS
-3. **Rotacao de chaves**: Regenere chaves API periodicamente
-4. **Privilegio minimo**: Realize apenas operacoes necessarias
+1. **Proteja sua chave de API**: não exponha a chave de API em repositórios públicos nem em código de cliente
+2. **Use HTTPS**: todas as solicitações são transmitidas via HTTPS
+3. **Rotação de chaves**: regenere periodicamente sua chave de API
+4. **Privilégio mínimo**: execute apenas as operações necessárias
 
 ---
 
 ## Contato
 
-Se voce tiver problemas usando a API, entre em contato atraves da pagina [Sugestoes](/inventory/suggest/pt/).
+Se tiver problemas com o uso da API, entre em contato conosco pela página [Enviar sugestão](/inventory/suggest/).

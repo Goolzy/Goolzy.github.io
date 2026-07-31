@@ -2,7 +2,7 @@
 layout: inventory
 title: Inventory
 permalink: /inventory/fr/
-description: Inventory - Créez et partagez vos articles numériques
+description: Inventory - Créez et envoyez vos articles numériques
 lang: fr
 translations:
   ko: /inventory/
@@ -19,11 +19,11 @@ translations:
 
 **Créez des articles numériques et envoyez-les à d'autres !**
 
-Créez des articles avec une seule feuille de papier et transférez-les via code QR. Gravez un nom de domaine unique avec un badge et créez des modèles avec des tampons à partager.
+Créez des articles à partir de papier et envoyez-les à votre destinataire via un QR code.
 
 ---
 
-### 📱 Télécharger
+### 📱 Téléchargement
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
 
@@ -62,31 +62,31 @@ Créez des articles avec une seule feuille de papier et transférez-les via code
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #a855f7;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">📄</div>
     <h4 style="margin: 0 0 .5rem 0; color: #a855f7;">Création d'articles</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Créez des articles avec 1 feuille. Ajoutez titre, contenu, images et définissez dates de début/expiration.</p>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Créez un article avec 1 feuille de papier. Ajoutez un titre, du contenu et des images, et définissez la date de début/durée de validité.</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #14b8a6;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">🏷️</div>
     <h4 style="margin: 0 0 .5rem 0; color: #2dd4bf;">Système de badges</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Gravez un nom de domaine unique comme identité in-app. Votre domaine apparaît sur toutes les activités.</p>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Gravez un nom de domaine unique comme identité dans l'application. Le nom de domaine gravé apparaît dans toutes vos activités.</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #d946ef;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">🔖</div>
-    <h4 style="margin: 0 0 .5rem 0; color: #d946ef;">Tampons & Journaux</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Créez des modèles avec des tampons. Laissez des entrées en mode privé ou partagé (communauté).</p>
+    <h4 style="margin: 0 0 .5rem 0; color: #d946ef;">Tampons & journaux</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Créez vos propres pages d'informations avec des tampons. Consignez vos enregistrements en journal individuel (personnel) ou en journal partagé (communauté).</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #a855f7;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">📤</div>
-    <h4 style="margin: 0 0 .5rem 0; color: #a855f7;">Transfert par code QR</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Scanner le QR du destinataire → Sélectionner l'article → Transfert terminé ! Propriété transférée instantanément.</p>
+    <h4 style="margin: 0 0 .5rem 0; color: #a855f7;">Envoi par QR code</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Scannez le QR du destinataire → choisissez un article → envoyé ! La propriété est transférée instantanément.</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #14b8a6;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">🎨</div>
     <h4 style="margin: 0 0 .5rem 0; color: #2dd4bf;">Thèmes d'encre</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Changez les couleurs du thème avec de l'encre. Thèmes noir et or disponibles.</p>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Changez les couleurs du thème de l'application avec de l'encre. Thèmes noir et or pris en charge.</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #d946ef;">
@@ -99,7 +99,7 @@ Créez des articles avec une seule feuille de papier et transférez-les via code
 
 ---
 
-### 📚 Documents & Assistance
+### 📚 Documents & Aide
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
 
@@ -115,7 +115,7 @@ Créez des articles avec une seule feuille de papier et transférez-les via code
 
   <a href="/inventory/changelog/fr/" style="display: block; padding: 1.25rem; background: rgba(217, 70, 239, 0.2); backdrop-filter: blur(10px); border: 1px solid rgba(217, 70, 239, 0.3); border-radius: 12px; text-decoration: none; text-align: center;">
     <div style="font-size: 1.5rem; margin-bottom: .5rem;">📋</div>
-    <h4 style="margin: 0; color: #d946ef;">Journal des modifications</h4>
+    <h4 style="margin: 0; color: #d946ef;">Notes de version</h4>
   </a>
 
 </div>
@@ -128,7 +128,7 @@ Créez des articles avec une seule feuille de papier et transférez-les via code
 
 ---
 
-<p style="text-align: center; color: rgba(255,255,255,0.6); font-size: .9rem; margin: 1rem 0;">🌍 8 langues prises en charge : 한국어, English, 日本語, Deutsch, Français, Español, Português, 中文</p>
+<p style="text-align: center; color: rgba(255,255,255,0.6); font-size: .9rem; margin: 1rem 0;">🌍 8 langues prises en charge : Français, English, 한국어, 日本語, Deutsch, Español, Português, 中文</p>
 
 > 🔒 **Protection de la vie privée** : Vos données sont cryptées et protégées. Voir notre [Politique de confidentialité](/inventory/privacy/fr/) pour plus de détails.
 

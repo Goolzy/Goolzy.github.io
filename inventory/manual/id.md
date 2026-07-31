@@ -25,30 +25,35 @@ translations:
 
 ## 📖 Panduan Pengguna
 
-Jelajahi semua fitur aplikasi Inventory secara detail.
+Pelajari fitur aplikasi Inventory secara mendetail.
 
 ---
 
 <details open>
-<summary><h3 id="paper">📦 Sistem Kertas</h3></summary>
+<summary><h3 id="home">🏠 Memulai — Layar Beranda dan Tab</h3></summary>
 <div class="manual-content" markdown="1">
 
-Dalam Inventory, **Kertas** adalah mata uang inti yang digunakan untuk membuat item.
+Di bagian bawah aplikasi terdapat hingga 5 tab.
 
-#### Apa itu Kertas?
-- **1 Kertas** dikonsumsi saat membuat item
-- Anda tidak dapat membuat item baru tanpa Kertas
+| Tab | Deskripsi |
+|------|------|
+| **Jelajahi** | Telusuri item dasar yang dipublikasikan dan bawa ke inventaris Anda |
+| **Pesan** | Daftar percakapan 1:1 dengan pengguna lain |
+| **Inventaris** | Ruang untuk menyimpan item yang Anda miliki |
+| **Stempel** | Kumpulkan dan kelola secara terpisah stempel pribadi yang telah selesai lewat "Buat Stempel" |
+| **Toko** | Beli kertas·stempel·lencana |
 
-#### Cara Mendapatkan Kertas
+#### Tab yang muncul secara kondisional
 
-| Metode | Jumlah | Catatan |
-|--------|--------|---------|
-| Pendaftaran Baru | 10 Kertas + 3 Stempel | Hanya pertama kali |
-| Tautan Google | +10 lembar | Untuk pengguna yang ada |
-| Tautan Apple | +10 lembar | Untuk pengguna yang ada |
-| Pembelian Toko | 10 lembar | Pembelian dalam aplikasi |
+- Tab **Inventaris** muncul saat Anda memiliki item.
+- Tab **Stempel** muncul saat ada stempel pribadi yang telah selesai lewat "Buat Stempel".
+- Jelajahi·Pesan·Toko selalu ditampilkan.
 
-> 💡 **Tips**: Pengguna yang ada dapat mendapatkan Kertas tambahan dengan menautkan akun media sosial baru!
+#### Layar awal
+
+Saat aplikasi dibuka, dimulai dari **Inventaris** jika Anda memiliki item, atau dari **Jelajahi** jika tidak.
+
+> 💡 Di desktop Anda dapat berpindah tab dengan cepat menggunakan tombol Ctrl dan tombol angka.
 
 </div>
 </details>
@@ -56,52 +61,24 @@ Dalam Inventory, **Kertas** adalah mata uang inti yang digunakan untuk membuat i
 ---
 
 <details>
-<summary><h3 id="create-item">📄 Membuat Item</h3></summary>
+<summary><h3 id="paper">📦 Kertas (Paper)</h3></summary>
 <div class="manual-content" markdown="1">
 
-Pilih kertas untuk membuat dokumen log. Tergantung pada jumlah kertas yang dipilih, Anda dapat membuat log pribadi atau log bersama.
+**Kertas** adalah mata uang yang digunakan saat **menyalin (scrap)** item dasar untuk menjadikannya milik Anda.
 
-| Jenis Log | Kertas | Tujuan |
-|-----------|--------|--------|
-| **Log Pribadi** | 1 | Catatan pribadi, buku harian, pesan satu arah |
-| **Log Bersama** | 2 atau lebih | Percakapan dua arah, komunikasi |
+#### Cara mendapatkan kertas
 
-<h4 id="private-log">Membuat Item Log Pribadi</h4>
+| Cara | Jumlah | Catatan |
+|------|--------|------|
+| Tautkan akun Google · Apple | 10 lembar | 1 kali per akun yang ditautkan |
+| Pembelian di toko | 10 lembar | Pembelian dalam aplikasi |
+| Hadiah daur ulang | 1 lembar | Hapus 10 kertas yang tidak terpakai untuk mendapat 1 kertas baru |
 
-1. Pilih **1 Kertas** di layar beranda
-2. Pilih **"Buat Item Baru (Log Pribadi)"** dari menu bawah
-3. Masukkan informasi item:
-   - Judul (diperlukan)
-   - Konten
-   - Gambar (opsional)
-   - Tanggal Mulai (opsional)
-   - Tanggal Kadaluarsa (opsional)
-4. Tekan **Simpan** dan 1 Kertas akan dikonsumsi untuk membuat dokumen
+#### Menggunakan kertas
 
-> 💡 **Log Pribadi**: Hanya Anda yang dapat melihat log yang Anda tulis. Setelah mengirim ke orang lain, hanya penerima yang dapat menambah log.
-
-<h4 id="shared-log">Membuat Item Log Bersama</h4>
-
-1. Pilih **2 atau lebih Kertas** di layar beranda
-2. Pilih **"Buat Item Baru (Log Bersama)"** dari menu bawah
-3. Masukkan informasi item:
-   - Judul (diperlukan)
-   - Konten
-   - Gambar (opsional)
-   - Tanggal Mulai (opsional)
-   - Tanggal Kadaluarsa (opsional)
-4. Tekan **Simpan** dan dokumen sama dengan jumlah kertas yang dipilih akan dibuat
-
-> 💡 **Log Bersama**: Dokumen yang dibuat berbagi ruang komentar yang sama. Kirim dokumen ke orang berbeda untuk melihat log satu sama lain secara real-time, seperti chat.
-
-<h4 id="dates">Tanggal Mulai dan Tanggal Kadaluarsa</h4>
-
-| Pengaturan | Deskripsi |
-|-----------|-----------|
-| **Tanggal Mulai** | Konten akan buram hingga tanggal ini |
-| **Tanggal Kadaluarsa** | Konten akan buram dan penambahan log dinonaktifkan setelah tanggal ini |
-
-Jika tidak diatur, itu akan langsung terlihat dan permanen.
+- **1 lembar** dikonsumsi saat menyalin item dasar.
+- Jika kertas kurang, beli di toko atau dapatkan dengan menautkan akun.
+- Kertas yang belum digunakan untuk menyalin juga dapat ditransfer ke pengguna lain.
 
 </div>
 </details>
@@ -109,43 +86,57 @@ Jika tidak diatur, itu akan langsung terlihat dan permanen.
 ---
 
 <details>
-<summary><h3 id="lock">🔒 Kunci Dokumen</h3></summary>
+<summary><h3 id="stamp">🔖 Stempel</h3></summary>
 <div class="manual-content" markdown="1">
 
-Anda dapat melindungi item dokumen dengan mengatur kata sandi.
+**Stempel** adalah item yang memungkinkan Anda membuat halaman informasi sendiri dan mentransfernya ke pengguna lain.
 
-#### Apa itu Kunci Dokumen?
+#### Buat Stempel
 
-Dokumen yang terkunci hanya dapat dilihat setelah memasukkan kata sandi yang benar.
+1. Di inventaris, pilih stempel kosong yang belum dibuat.
+2. Pilih **"Buat Stempel"** dan masukkan **nama** stempel. (maks. 32 karakter)
+3. Begitu nama dikonfirmasi, pembuatan menjadi final dan setelah itu **nama tidak dapat diubah.**
+4. Di editor yang terbuka selanjutnya, susun gambar·teks·elemen untuk membentuk halaman informasi lalu simpan.
 
-| Status | Deskripsi |
-|--------|-----------|
-| **Tidak Terkunci** | Siapa pun dapat melihat konten |
-| **Terkunci** | Konten hanya dapat dilihat dengan kata sandi |
+> ⚠️ Saat nama dikonfirmasi, pembuatan selesai. Di editor Anda hanya dapat mengubah susunan halaman dan gambar; nama tetap.
 
-#### Cara Mengunci
+#### Pengelolaan di tab Stempel
 
-1. Pilih **dokumen** yang ingin Anda kunci di layar beranda (pemilihan ganda dimungkinkan)
-2. Pilih **"Kunci Item"** dari menu bawah
-3. Masukkan kata sandi numerik (hingga 16 digit)
-4. Masukkan kata sandi yang sama lagi untuk mengonfirmasi
-5. Setelah terkunci, item akan menampilkan **ikon kunci** dan efek **grayscale**
+Stempel pribadi yang telah selesai terkumpul di **tab Stempel**. Tekan tombol **≡** di kanan setiap stempel untuk membuka menu.
 
-#### Cara Membuka Kunci
+| Menu | Deskripsi |
+|------|------|
+| **Edit** | Ubah halaman informasi·gambar (hanya untuk yang asli buatan saya) |
+| **Cek kepemilikan** | Periksa apakah pengguna tertentu memiliki item yang dibuat dengan stempel ini |
+| **Transfer** | Transfer item ke pengguna lain |
 
-1. Ketuk dokumen terkunci untuk memasuki layar detail
-2. Dialog input kata sandi akan muncul
-3. Masukkan kata sandi yang benar untuk membuka kunci
-4. Setelah dibuka, kunci secara permanen dihapus (kunci lagi dengan mengatur kata sandi baru)
+- Geser daftar ke samping untuk **Konfirmasi (tandai dibaca)** atau **Lepas pengelolaan**.
 
-> ⚠️ **Peringatan**: Jika Anda lupa kata sandi Anda, itu tidak dapat dipulihkan. Dokumen terkunci hanya dapat **dihapus**.
+#### Menyalin (scrap)
 
-#### Fitur Kunci
+Saat menemukan item dasar yang disukai di Jelajahi, bawa ke inventaris Anda lewat **tombol scrap** di layar detail.
 
-- Kata sandi kunci **disimpan di cloud**
-- Status kunci dipertahankan bahkan saat mentransfer item ke orang lain
-- Dokumen terkunci tidak muncul dalam hasil pencarian
-- Item terkunci masih dapat dihapus
+- Menyalin mengonsumsi **1 lembar kertas**.
+- Satu item dasar hanya dapat disalin **satu kali**.
+- Informasi salinan tersimpan persis seperti saat penyalinan; tidak berubah otomatis meski aslinya diubah kemudian.
+
+#### Dapatkan info terbaru
+
+Saat yang asli diperbarui, tombol **"Dapatkan info terbaru"** muncul di salinan. Tekan untuk memperbarui ke konten terbaru, dan Anda juga dapat membiarkan pembaruan otomatis aktif.
+
+#### Mentransfer
+
+Item yang dibuat dengan stempel dapat ditransfer ke pengguna lain. Penerima ditentukan dengan memasukkan email·domain atau memindai QR.
+
+Saat transfer dikirim, penerima menerima **notifikasi toast**, dan saat menekan **Terima**, salinan transfer masuk ke inventarisnya.
+
+#### Lepas pengelolaan
+
+Stempel yang tidak ingin dikelola lagi dapat digeser di daftar lalu pilih **Lepas pengelolaan**.
+
+- Halaman dan percakapan pengguna yang sudah menyalinnya tetap dipertahankan.
+- Hilang dari daftar Anda dan **tidak dapat dikembalikan.**
+- Kumpulkan **10 kepingan stempel** yang dilepas atau dihapus untuk mendapatkan kembali **1 stempel baru**.
 
 </div>
 </details>
@@ -153,73 +144,21 @@ Dokumen yang terkunci hanya dapat dilihat setelah memasukkan kata sandi yang ben
 ---
 
 <details>
-<summary><h3 id="clip">📎 Sistem Klip</h3></summary>
+<summary><h3 id="explore">🔍 Jelajahi</h3></summary>
 <div class="manual-content" markdown="1">
 
-**Klip** adalah fitur yang menggabungkan beberapa dokumen bersama untuk manajemen yang lebih mudah.
+Temukan item dasar yang dipublikasikan di tab **Jelajahi**.
 
-#### Apa itu Klip?
+#### Menelusuri
 
-Klip memungkinkan Anda mengelola dokumen terkait sebagai satu bundel.
+- Di bagian atas ditampilkan kategori per topik seperti **Game · Teknologi · Film · Makanan**.
+- Di baris **Sedang Tren** · **Baru Muncul** Anda dapat melihat konten yang populer dan baru.
 
-| Keadaan | Deskripsi |
-|---------|-----------|
-| **Dokumen Individual** | Dokumen dikelola secara terpisah |
-| **Dokumen yang Dikliping** | Dikelola sebagai bundel, dipindahkan/ditransfer bersama |
+#### Pencarian
 
-#### Membuat Klip
-
-1. Pilih **2 atau lebih dokumen** di layar beranda
-2. Ketuk **"Klip Bersama"** di menu bawah
-3. Dokumen yang dipilih digabungkan menjadi satu klip
-4. Dokumen yang dikliping menampilkan **ikon klip (📎)** di sudut atas kanan
-
-> 💡 **Tips**: Dokumen pertama yang dipilih menjadi **sampul** klip!
-
-#### Melihat Info Klip
-
-1. Masuk ke **layar detail** dari dokumen yang dikliping
-2. Ketuk tombol **"Info Klip"**
-3. Lihat daftar semua item dalam klip
-
-#### Mengurutkan Ulang Item dalam Klip
-
-Anda dapat mengubah urutan item di layar info klip:
-
-1. Tekan lama **pegangan drag (⋮⋮)** item yang ingin dipindahkan
-2. Seret ke posisi yang diinginkan
-3. Lepaskan untuk menyimpan urutan
-
-> ⚠️ **Catatan**: Sampul (item pertama) tidak dapat diurutkan ulang.
-
-#### Mengecualikan Item dari Klip
-
-Anda dapat menghapus item tertentu dari klip di layar info klip:
-
-1. Ketuk tombol **"Kecualikan"** di sebelah item
-2. Konfirmasi untuk menghapus item dari klip
-3. Item yang dihapus menjadi dokumen individual lagi
-
-> ⚠️ **Catatan**: Sampul tidak dapat dikecualikan. Jika hanya 2 item yang tersisa dan Anda mengecualikan 1, klip secara otomatis bubar.
-
-#### Membuka Klip
-
-1. Pilih dokumen yang dikliping
-2. Ketuk **"Buka Klip"** di menu bawah
-3. Semua dokumen dipisahkan menjadi dokumen individual
-
-#### Mentransfer Klip
-
-- Saat Anda mengirim dokumen yang dikliping, **seluruh bundel** ditransfer bersama
-- Penerima menerima/menolak klip sebagai **bundel**
-- Item individual dalam klip tidak dapat dikirim secara terpisah
-
-#### Fitur Klip
-
-- Dokumen yang dikliping **dipindahkan/ditransfer bersama**
-- Pengaturan kunci pada sampul melindungi seluruh klip
-- Ikon klip (📎) memudahkan untuk mengidentifikasi status klip
-- Setidaknya 2 dokumen diperlukan untuk mempertahankan klip
+1. Masukkan kata kunci yang diinginkan di bilah pencarian atas.
+2. Saat mengetik, saran pencarian dan hasil ditampilkan secara real-time.
+3. Tekan kartu hasil untuk membuka layar detail, dan dari sana Anda dapat melakukan scrap.
 
 </div>
 </details>
@@ -227,40 +166,30 @@ Anda dapat menghapus item tertentu dari klip di layar info klip:
 ---
 
 <details>
-<summary><h3 id="badge">🏷️ Sistem Lencana</h3></summary>
+<summary><h3 id="dm">💬 Pesan Langsung</h3></summary>
 <div class="manual-content" markdown="1">
 
-**Lencana** adalah identitas unik yang dapat Anda gunakan dalam aplikasi.
+Anda dapat **bercakap langsung 1:1** dengan pengguna lain.
 
-#### Apa itu Lencana?
+#### Memulai percakapan
 
-Saat Anda mengukir nama domain pada lencana, semua aktivitas Anda dalam aplikasi akan ditampilkan dengan **nama domain yang diukir** alih-alih email Anda.
+Percakapan dimulai dengan tiga cara.
 
-Contoh: `MyBrand`, `JohnDoe`, `Company2025`
+1. Tekan **penulis komentar di konten Jelajahi** lalu pilih **Mulai pesan** di popup profil
+2. Masukkan email atau nama domain lawan bicara di **bilah pencarian tab Pesan**
+3. Temukan lawan bicara lewat **pemindaian QR** (hasil pindaian otomatis terisi di bilah pencarian)
 
-#### Mengukir Lencana
+- Saat mengajak bercakap, percakapan dimulai ketika **lawan menerimanya**. Jika saling meminta atau pernah bercakap sebelumnya, langsung berlanjut tanpa persetujuan.
+- Jika email milik orang yang belum menggunakan aplikasi, Anda dapat mengirim **email undangan** berisi tautan pemasangan aplikasi dan QR.
 
-1. Beli lencana dari toko (status tidak digunakan)
-2. Ketuk lencana di Beranda → Pilih menu **"Ukir"**
-3. Masukkan nama domain yang diinginkan (maks 32 karakter)
-   - Karakter dan angka dari semua bahasa diizinkan
-   - Karakter khusus dan emoji tidak diizinkan
-4. Klik **"Periksa Ketersediaan Domain"** untuk memverifikasi ketersediaan
-5. Secara opsional lampirkan gambar 128x128
-6. Klik **"Ukir"** untuk menyelesaikan
+#### Tab Pesan
 
-> ⚠️ **Peringatan**: Setelah diukir, nama domain dan gambar **tidak dapat diubah secara permanen**. Pilih dengan hati-hati!
+- Percakapan ditampilkan sebagai daftar, dan pesan yang belum dibaca ditandai dengan lencana jumlah.
+- Geser daftar ke samping untuk menandai dibaca atau menghapus percakapan. (Hanya terhapus di sisi Anda; catatan lawan tetap ada.)
 
-#### Melenggkapi/Melepas Lencana
+#### Lapor · Blokir
 
-- **Dilengkapi**: Nama domain yang diukir Anda akan ditampilkan untuk semua aktivitas dalam aplikasi
-- **Dilepas**: Email default Anda akan ditampilkan lagi
-- Bahkan jika Anda memiliki beberapa lencana, hanya satu yang dapat dilengkapi sekaligus
-
-#### Tampilan Kartu Inventory
-
-Lencana yang diukir (status aktif) menampilkan pratinjau gambar yang diukir di sudut atas kanan kartu inventory.
-Ini memungkinkan Anda dengan cepat mengidentifikasi domain mana yang dimiliki lencana.
+Anda dapat **melaporkan** atau **memblokir** lawan bicara dari popup profil. Buka blokir dilakukan di daftar blokir pada pengaturan.
 
 </div>
 </details>
@@ -268,67 +197,32 @@ Ini memungkinkan Anda dengan cepat mengidentifikasi domain mana yang dimiliki le
 ---
 
 <details>
-<summary><h3 id="stamp">🔖 Sistem Stempel</h3></summary>
+<summary><h3 id="chat-media">🖼️ Foto·Video Obrolan</h3></summary>
 <div class="manual-content" markdown="1">
 
-**Stempel** adalah item yang memungkinkan Anda membuat template dan membagikannya dengan orang lain.
+Anda dapat melampirkan dan mengirim foto serta video di pesan dan obrolan komunitas.
 
-#### Tampilan Kartu Inventory
+#### Mengirim
 
-Stempel dengan template (status aktif) ditampilkan secara khusus di inventory:
-- **Latar Belakang**: Gambar template ditampilkan dengan opacity 33%
-- **Latar Depan**: Gambar stempel yang diukir
+1. Di tab **Media** pada kolom input, tekan tombol **Foto** atau **Video**.
+2. Saat memilih beberapa, semuanya masuk ke stage; ubah urutan dengan menyeret atau hapus satu per satu.
+3. Tekan kirim untuk memulai unggahan; langsung tampil di percakapan tanpa menunggu.
 
-Ini memungkinkan Anda dengan cepat mengidentifikasi template mana yang ada.
+> 💡 Di desktop hanya lampiran foto yang didukung.
 
-#### Membuat Template Stempel
+#### Galeri (banyak item)
 
-1. Beli stempel dari toko (status tidak digunakan)
-2. Ketuk stempel di Beranda → Pilih menu **"Buat Template Baru"**
-3. Masukkan informasi template:
-   - **Gambar** (diperlukan)
-   - **Judul** (maks 32 karakter)
-   - **Konten** (maks 1024 karakter)
-   - **Tanggal Mulai** (opsional) - Konten tersembunyi hingga tanggal ini
-   - **Tanggal Kadaluarsa** (opsional) - Penambahan log dinonaktifkan setelah tanggal ini
-   - **Mode Log** - Log solo atau Log bersama
-4. Klik **"Buat Template"** untuk menyelesaikan
+- Hingga **16 item** dapat digabung sebagai kolase dalam satu pesan.
+- Tekan sel untuk membuka penampil dan melihat lebih besar; menyimpan semuanya juga bisa.
 
-#### Menduplikasi Stempel
+#### Edit video
 
-Saat Anda memilih stempel yang diaktifkan (template) dan kertas bersama, menu **"Duplikasi Template"** muncul.
+- Video dapat dikirim hingga **maks. 25MB · 60 detik**.
+- Jika melebihi, potong bagian yang diinginkan lewat **Edit video** lalu kirim. Perkiraan ukuran dapat dicek lewat pengukur kapasitas.
 
-- 1 Kertas dikonsumsi
-- Item baru dengan template yang sama dibuat
-- Jika dalam mode log bersama, itu menggunakan ruang bersama yang sama dengan yang asli
+#### Pratinjau tautan
 
-#### Berbagi Template Anda
-
-Anda dapat membagikan template stempel Anda sehingga pengguna lain dapat mencari dan mengkloningnya.
-
-1. Ketuk stempel yang diaktifkan (template) → Pilih menu **"Pengaturan Berbagi"**
-2. Masukkan informasi berbagi:
-   - **Deskripsi** - Frasa pendek yang menggambarkan template
-   - **Tag** - Kata kunci untuk pencarian (dipisahkan koma)
-   - **Durasi Berbagi** - Berapa lama berbagi akan tetap aktif
-3. Klik **"Mulai Berbagi"** untuk menyelesaikan
-
-Template bersama dapat ditemukan dan diklon oleh pengguna lain melalui pencarian tag.
-
-> 💡 **Tips**: Untuk berhenti berbagi, pilih **"Hentikan Berbagi"** dari menu yang sama.
-
-#### Mencari Template Bersama
-
-Anda dapat mencari dan mengklon template yang dibagikan oleh pengguna lain.
-
-1. Buka layar Profil dan pilih **"Cari Template Bersama"**
-2. Masukkan tag untuk pencarian, atau ketuk tag populer/terbaru
-3. Ketuk template dari hasil pencarian untuk melihat detail
-4. Klik tombol **"Klon"** untuk mengklon template
-
-- Mengklon mengonsumsi 1 Kertas
-- Tombol klon dinonaktifkan jika Anda tidak memiliki kertas
-- Item yang diklon memiliki informasi template yang sama dengan yang asli
+Tautan yang dimasukkan ke obrolan ditampilkan sebagai kartu pratinjau berisi judul·gambar. Tautan video dapat **langsung diputar di tempat** dengan menekan kartunya.
 
 </div>
 </details>
@@ -336,40 +230,16 @@ Anda dapat mencari dan mengklon template yang dibagikan oleh pengguna lain.
 ---
 
 <details>
-<summary><h3 id="quick-input">⚡ Input Cepat</h3></summary>
+<summary><h3 id="emoticon">😊 Emotikon</h3></summary>
 <div class="manual-content" markdown="1">
 
-Saat menambah log, ketuk tombol `+` untuk membuka menu **Input Cepat** untuk entri informasi khusus yang mudah.
+Tambahkan **emotikon** ke percakapan untuk mengekspresikan perasaan.
 
-#### Jenis Input Cepat
+1. Buka tab **Emotikon** di kolom input.
+2. Pilih emotikon yang diinginkan dari kategori. (Emotikon yang baru digunakan juga ditampilkan terkumpul.)
+3. Kirim bersama teks, atau kirim emotikon saja.
 
-| Jenis | Deskripsi | Contoh |
-|------|-----------|---------|
-| **Kata Kunci** | Format Key:Value | `Status:Baik` |
-| **Tanggal** | Tanggal dengan perhitungan D-Day | D-5, D-Hari, D+3 |
-| **Telepon** | Nomor telepon | Dapat menelepon langsung |
-| **Lokasi** | Alamat/koordinat | Membuka di aplikasi peta |
-| **Jumlah** | Format mata uang | Format otomatis |
-
-#### Tindakan Tekan Lama
-
-| Jenis Kartu | Tindakan Tekan Lama |
-|-----------|------------------|
-| **📅 Tanggal** | Atur/Hapus alarm |
-| **📞 Telepon** | Mobile: Panggil langsung, Desktop: Salin |
-| **📍 Lokasi** | Mobile: Buka di peta, Desktop: Salin |
-| **💰 Jumlah** | Salin ke clipboard |
-
-<h4 id="alarm">Pengaturan Alarm Tanggal</h4>
-
-Tekan lama kartu tanggal untuk mengatur alarm:
-
-1. **Tekan lama** kartu tanggal
-2. Pilih **Atur** di dialog konfirmasi
-3. Setelah diatur, warna kartu berubah dan ikon 🔔 muncul
-4. Tekan lama lagi untuk menghapus alarm
-
-> 💡 **Tips**: Kartu tanggal secara otomatis menampilkan perhitungan D-Day (misalnya, D-5, D-Hari, D+3)
+> 💡 Mengirim emotikon saja akan menampilkannya besar tanpa gelembung ucapan sehingga lebih mencolok.
 
 </div>
 </details>
@@ -377,86 +247,16 @@ Tekan lama kartu tanggal untuk mengatur alarm:
 ---
 
 <details>
-<summary><h3 id="log">📝 Sistem Log</h3></summary>
+<summary><h3 id="privacy">🔒 Perlindungan Privasi</h3></summary>
 <div class="manual-content" markdown="1">
 
-**Log** adalah catatan yang dapat Anda tambahkan ke item atau template stempel.
+Alamat email dilindungi agar tidak terekspos apa adanya.
 
-#### Mode Log
+- **Pengguna yang memakai lencana** ditampilkan dengan **nama domain** alih-alih email, dan kode QR mereka juga dibuat berbasis domain.
+- Email **pengguna tanpa lencana** dinyatakan sebagai **QR berwarna**, sehingga hanya dikenali oleh orang yang memindainya langsung.
+- Di **obrolan komunitas** yang dilihat banyak orang, bagian belakang email (setelah @) pengguna tanpa lencana domain disembunyikan.
 
-| Mode | Log Solo | Log Bersama |
-|------|----------|------------|
-| **Lokasi Penyimpanan** | Ruang pribadi setiap orang | Ruang bersama berdasarkan stempel asli |
-| **Log Terlihat** | Hanya log Anda sendiri | Semua log pemilik |
-| **Kasus Penggunaan** | Buku harian pribadi, catatan | Kolaborasi, komunitas |
-| **Jika Asli Dihapus** | Tidak terpengaruh | Tidak dapat menambah log (baca saja) |
-
-#### Format Log
-
-Anda dapat menggunakan berbagai format saat menulis log.
-
-**Format Dasar:**
-
-| Format | Deskripsi | Contoh |
-|--------|-----------|---------|
-| Teks polos | Ditampilkan sebagai gelembung chat | `Inspeksi selesai hari ini!` |
-| `key:value` | Ditampilkan sebagai kartu info (kunci 1-8 karakter) | `status:baik` |
-Menggunakan kunci yang sama beberapa kali ditampilkan sebagai `nilai sebelumnya → nilai baru` perbandingan.
-
-**Penataan Teks:**
-
-| Format | Efek | Contoh |
-|--------|------|---------|
-| `{[text]}` | Kartu warna utama (latar belakang + teks) | `{[Penting]}` |
-| `[{text}]` | Kartu abu-abu + teks warna utama | `[{Hati-hati}]` |
-| `[text]` | Kartu abu-abu | `[Catatan]` |
-| `{text}` | Teks warna utama | `{Penekanan}` |
-| `(text)` | Teks warna sub | `(Informasi tambahan)` |
-| `"text"` | **Tebal** | `"Konten penting"` |
-| `'text'` | <u>Garis bawah</u> | `'Bagian yang disorot'` |
-| `<text>` | ~~Strikethrough~~ | `<Konten yang dihapus>` |
-
-> 💡 Gaya dapat disarangkan hingga 3 level. Contoh: `{["Tebal warna utama"]}`
-
-**Link Media (Kartu URL):**
-
-Saat Anda memasukkan URL dalam log, itu secara otomatis ditampilkan sebagai **kartu kaya**.
-
-| Platform | Konten Tampilan | Contoh |
-|----------|----------------|---------|
-| **YouTube** | Thumbnail + Judul + Saluran | `https://youtube.com/watch?v=...` |
-| **Spotify** | Seni Album + Judul + Artis | `https://open.spotify.com/track/...` |
-| **Google Drive** | Thumbnail File + Nama File | `https://drive.google.com/file/d/...` |
-| **Dropbox** | Ikon + Nama File | `https://dropbox.com/s/...` |
-| **OneDrive** | Ikon + Nama Layanan | `https://1drv.ms/...` |
-| **Halaman Web** | Thumbnail + Judul Halaman | `https://example.com` |
-
-- Gunakan format `key:URL` untuk menampilkan dengan kata kunci (misalnya, `docs:https://youtube.com/...`)
-- **Ketuk** kartu untuk membuka di aplikasi eksternal/browser
-- **Tekan lama** kartu untuk menyalin URL ke clipboard
-
-> 💡 **Tips**: File Google Drive harus **dibagikan secara publik** agar thumbnail ditampilkan.
-
-**Log Otomatis:**
-
-Saat item ditransfer, log transfer secara otomatis dicatat:
-- Ditampilkan sebagai format `Pengirim → Penerima`
-- Jika lencana dilengkapi, nama domain ditampilkan
-
-#### Kondisi Penghentian Log Bersama
-
-- **Stempel asli dihapus**: Tidak dapat menambah log bersama (baca saja)
-- **Tanggal kadaluarsa berlalu**: Tidak dapat menambah log bersama (baca saja)
-
-#### 🔔 Indikator Unread
-
-Saat komentar baru ditambahkan ke log bersama, batas item **berdenyut** di tampilan inventory.
-
-- Denyutan dimulai segera saat pengguna lain menambah komentar
-- Denyutan berhenti saat Anda membuka dan melihat dokumen
-- Status baca disimpan ke cloud dan disinkronkan di semua perangkat
-
-> 💡 **Tips**: Periksa item yang berdenyut untuk tidak pernah melewatkan komentar baru!
+Tampilan nama diterapkan secara real-time; saat memakai atau melepas lencana, otomatis berlaku di daftar percakapan·profil dan tempat lainnya.
 
 </div>
 </details>
@@ -464,23 +264,25 @@ Saat komentar baru ditambahkan ke log bersama, batas item **berdenyut** di tampi
 ---
 
 <details>
-<summary><h3 id="ink">🎨 Sistem Tinta</h3></summary>
+<summary><h3 id="badge">🏷️ Lencana</h3></summary>
 <div class="manual-content" markdown="1">
 
-**Tinta** adalah item yang mengubah warna tema aplikasi.
+Saat mengukir nama domain pada **lencana**, Anda ditampilkan dengan nama itu alih-alih email di dalam aplikasi.
 
-#### Cara Menggunakan
+#### Mengukir
 
-1. Ketuk tinta untuk memasuki layar detail
-2. Klik tombol **"Ubah Tema"**
-3. Warna aplikasi seluruh berubah segera
+1. Setelah membeli lencana di toko, pilih lencana yang belum diukir.
+2. Masukkan **nama domain** yang diinginkan. (maks. 32 karakter, hanya huruf dan angka; karakter khusus·emoji tidak bisa)
+3. Periksa ketersediaan lewat **Cek duplikat**.
+4. Lampirkan gambar 128×128 secara opsional lalu ukir.
 
-#### Jenis Tinta
+> ⚠️ **Perhatian**: **Nama domain yang diukir bersifat permanen** dan tidak dapat diubah. Jika mengukir dengan gambar, gambar dan kata kunci dapat diubah kemudian; jika mengukir tanpa gambar, tidak dapat diubah kemudian.
 
-| Tinta | Warna |
-|------|-------|
-| **Tinta Hitam** | Tema hitam standar |
-| **Tinta Emas** | Tema emas mewah |
+#### Pakai / Lepas / Edit
+
+- Saat **dipakai**, aktivitas dalam aplikasi ditampilkan dengan nama domain. Hanya satu yang dapat dipakai sekaligus.
+- Saat **dilepas**, kembali ditampilkan dengan email default.
+- Lewat **Edit** Anda dapat mengubah gambar dan kata kunci.
 
 </div>
 </details>
@@ -488,49 +290,16 @@ Saat komentar baru ditambahkan ke log bersama, batas item **berdenyut** di tampi
 ---
 
 <details>
-<summary><h3 id="search">🔍 Fungsi Pencarian</h3></summary>
+<summary><h3 id="folder">📂 Folder</h3></summary>
 <div class="manual-content" markdown="1">
 
-#### Pencarian Dasar
+Saat item bertambah banyak, Anda dapat merapikannya dengan mengelompokkan ke dalam **folder**.
 
-Ketuk bilah pencarian di bagian atas untuk mengaktifkan mode pencarian.
+- Seret item ke area **"Buat folder baru"** di bawah untuk membuat folder.
+- Nama folder dapat diubah dengan menekan lama header-nya. (maks. 16 karakter)
+- Lipat atau buka dengan panah pada header folder, dan menekan header memilih semua item dalam folder sekaligus.
 
-- Hasil disaring **secara real-time** saat Anda mengetik
-- Ketuk tombol X untuk keluar dari mode pencarian
-
-#### Pencarian Terakhir
-
-- Hingga 5 pencarian terakhir disimpan
-- Ketuk pencarian terakhir untuk auto-fill bilah pencarian
-- Hapus secara individual dengan tombol X
-
-#### Simpan sebagai Filter
-
-Saat Anda menyimpan istilah pencarian dengan tombol **"Atur sebagai Filter"**:
-
-- Itu muncul sebagai tag filter di bawah bilah pencarian
-- Ketuk tag untuk langsung filter berdasarkan istilah pencarian itu
-- Hapus filter dengan tombol X
-
-<h4 id="keyword">Agregasi Kata Kunci</h4>
-
-Saat filter diatur dan Anda memilih item, **nilai kata kunci item yang dipilih secara otomatis digabungkan**.
-
-**Agregasi Nilai Numerik:**
-- **Jumlah** dan **rata-rata** dihitung untuk nilai numerik dengan kata kunci yang sama
-- Contoh: Memilih `price:1000`, `price:2000`, `price:3000`
-- Hasil: `Jumlah: 6000  Rata-rata: 2000`
-
-**Agregasi Nilai String:**
-- Nilai string dengan kata kunci yang sama **digabungkan dengan spasi**
-- Contoh: Memilih `tag:A`, `tag:B`, `tag:C`
-- Hasil: `A B C`
-
-**Menyalin Nilai:**
-- **Tekan lama** kartu hasil agregasi untuk menyalin nilai ke clipboard
-- Notifikasi muncul saat salin selesai
-
-> 💡 **Contoh Penggunaan**: Dengan cepat hitung harga total beberapa item, atau salin tag terkait sekaligus.
+> 💡 Folder disimpan **hanya di perangkat yang digunakan**. Item itu sendiri terlihat di semua perangkat, tetapi susunan folder dapat berbeda di tiap perangkat.
 
 </div>
 </details>
@@ -538,141 +307,20 @@ Saat filter diatur dan Anda memilih item, **nilai kata kunci item yang dipilih s
 ---
 
 <details>
-<summary><h3 id="bottom-menu">📱 Lencana Menu Bawah</h3></summary>
+<summary><h3 id="shop">🛒 Toko</h3></summary>
 <div class="manual-content" markdown="1">
 
-Lencana merah pada ikon menu bawah menampilkan status saat ini.
+Anda dapat membeli item yang dibutuhkan di toko.
 
-| Menu | Arti Lencana |
-|------|---------------|
-| **Kirim** | Jumlah item yang dapat dikirim (item yang dapat ditransfer di antara yang dipilih) |
-| **Terima** | Jumlah perdagangan yang menunggu (memerlukan penerimaan/pengembalian) |
-| **Tindakan** | Jumlah tindakan yang tersedia dengan item yang dipilih |
+| Produk | Kegunaan |
+|------|------|
+| **Kertas** | Untuk menyalin item dasar |
+| **Stempel** | Untuk membuat halaman informasi menjadi stempel pribadi |
+| **Lencana** | Untuk mengukir nama domain |
 
-> 💡 Angka lencana beranimasi dengan efek gelembung saat berubah.
-
-</div>
-</details>
-
----
-
-<details>
-<summary><h3 id="transfer">📤 Mengirim Item</h3></summary>
-<div class="manual-content" markdown="1">
-
-Anda dapat mentransfer item saat menjual perlengkapan bekas atau memberi hadiah.
-
-#### Cara Mengirim
-
-1. Pilih **Kirim** dari tab bawah
-2. **Centang** item untuk ditransfer (pemilihan ganda dimungkinkan)
-3. Masukkan email penerima
-4. Klik tombol **Kirim**
-
-#### Memasukkan Email melalui Kode QR
-
-Alih-alih mengetik email penerima, Anda dapat menggunakan kode QR:
-
-1. Penerima menampilkan kode QR mereka dari layar **Profil**
-2. Pengirim menekan tombol **Pindai QR**
-3. Pindai kode QR dengan kamera
-4. Email secara otomatis dimasukkan
-
-> ⚠️ **Penting**: Item yang ditransfer **segera hilang** dari inventory Anda. Transfer tidak dapat dibatalkan.
-
-</div>
-</details>
-
----
-
-<details>
-<summary><h3 id="receive">📥 Menerima Item</h3></summary>
-<div class="manual-content" markdown="1">
-
-Anda dapat menerima item yang dikirim oleh orang lain.
-
-#### Cara Menerima
-
-1. Pilih **Terima** dari tab bawah
-2. Daftar item yang diterima ditampilkan
-3. Untuk setiap item:
-   - **Terima**: Ditambahkan ke inventory Anda
-   - **Kembalikan**: Dikirim kembali ke pengirim
-
-#### Notifikasi
-
-- Anda menerima notifikasi push saat item baru tiba (jika notifikasi diaktifkan)
-- Tab Terima menunjukkan jumlah item yang belum diterima
-
-</div>
-</details>
-
----
-
-<details>
-<summary><h3 id="shop">🛒 Menggunakan Toko</h3></summary>
-<div class="manual-content" markdown="1">
-
-Anda dapat membeli berbagai item dari toko.
-
-#### Produk yang Tersedia
-
-| Produk | Penggunaan |
-|--------|-----|
-| **Kertas** | Untuk membuat item (dapat digunakan) |
-| **Stempel** | Untuk membuat template |
-| **Lencana** | Untuk mengukir domain unik |
-| **Tinta** | Untuk mengubah warna tema |
-
-#### Cara Membeli
-
-1. Pilih **Toko** dari tab bawah
-2. Ketuk produk yang diinginkan
-3. Lanjutkan dengan pembayaran (App Store / Google Play)
-4. Otomatis dikirim setelah pembayaran selesai
-
-> 💡 Toko tersedia di semua platform (iOS, Android, Windows, macOS).
-
-</div>
-</details>
-
----
-
-<details>
-<summary><h3 id="pocket">📂 Fitur Partisi</h3></summary>
-<div class="manual-content" markdown="1">
-
-Anda dapat mengelompokkan item dengan partisi saat Anda memiliki banyak item.
-
-#### Membuat Partisi
-
-1. Pilih item
-2. Pilih **"Buat Partisi"** dari menu bawah
-3. Masukkan nama partisi (maks 16 karakter)
-
-#### Karakteristik Partisi
-
-- Partisi **hanya disimpan di perangkat**
-- Struktur partisi tidak terlihat di perangkat lain
-- Item itu sendiri disimpan di cloud dan terlihat di semua perangkat
-
-#### Ciutkan/Perluas Partisi
-
-Gunakan tombol panah (▼/▲) di sisi kanan header partisi untuk mengatur atau memperluas partisi.
-
-- Status teratur dipertahankan setelah restart aplikasi
-- Semua partisi otomatis diperluas selama pencarian
-- Anda dapat menyeret item ke partisi yang teratur
-
-#### Pilih Semua dalam Partisi
-
-Ketuk header partisi untuk memilih/membatalkan pilihan semua item dalam partisi itu.
-
-| Indikator | Arti |
-|-----------|---------|
-| ○ (Lingkaran kosong) | Tidak ada yang dipilih |
-| ◐ (Setengah lingkaran) | Beberapa dipilih |
-| ● (Lingkaran penuh) | Semua dipilih |
+1. Tekan produk yang diinginkan di tab Toko.
+2. Periksa informasi produk dan panduan pengembalian dana, lalu setujui.
+3. Setelah pembayaran selesai, diberikan secara otomatis.
 
 </div>
 </details>
@@ -683,24 +331,25 @@ Ketuk header partisi untuk memilih/membatalkan pilihan semua item dalam partisi 
 <summary><h3 id="language">🌍 Mengubah Bahasa</h3></summary>
 <div class="manual-content" markdown="1">
 
-7 bahasa didukung:
+Mendukung 8 bahasa:
+
 - 🇰🇷 한국어
 - 🇺🇸 English
 - 🇯🇵 日本語
+- 🇨🇳 中文(简体)
 - 🇩🇪 Deutsch
 - 🇫🇷 Français
 - 🇪🇸 Español
 - 🇧🇷 Português
 
-**Cara Mengubah:**
-Pengaturan → Bahasa → Pilih bahasa yang diinginkan
+Pilih di **Pengaturan → Bahasa** dan langsung diterapkan.
 
 </div>
 </details>
 
 ---
 
-> 📚 **Memiliki lebih banyak pertanyaan?** Periksa <a href="/inventory/faq/id/">FAQ</a> atau hubungi kami melalui <a href="/inventory/suggest/id/">Saran</a>.
+> 📚 **Masih ada pertanyaan?** Lihat [Pertanyaan yang Sering Diajukan](/inventory/faq/) atau hubungi kami lewat [Kirim saran](/inventory/suggest/).
 
 <style>
 details {

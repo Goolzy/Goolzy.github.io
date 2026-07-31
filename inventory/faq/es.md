@@ -16,330 +16,372 @@ translations:
 
 ## ❓ Preguntas frecuentes
 
-Hemos recopilado las preguntas y respuestas más frecuentes.
+Hemos reunido las preguntas más frecuentes y sus respuestas.
 
 ---
 
-### 📦 Papel
+### 📦 Sobre el Papel (Paper)
 
 <details open>
 <summary><strong>Q. ¿Qué es el Papel?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> El Papel es una moneda in-app usada para crear objetos.
+<strong>A.</strong> El Papel es una moneda interna de la app que se usa para crear elementos.
 <ul>
-<li>Crear 1 objeto = 1 Papel consumido</li>
-<li>10 hojas gratis al registrarse</li>
-<li>Compra adicional disponible en tienda</li>
+<li>Crear 1 elemento = se consume 1 hoja de Papel</li>
+<li>10 hojas gratis al registrarte</li>
+<li>Puedes comprar más en la tienda</li>
 </ul>
 </div>
 </details>
 
 <details>
-<summary><strong>Q. ¿Puedo obtener Papel gratis?</strong></summary>
+<summary><strong>Q. ¿Puedo conseguir Papel gratis?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> ¡Sí! Puedes obtenerlo gratis mediante estos métodos:
+<strong>A.</strong> ¡Sí! Puedes conseguirlo gratis de las siguientes maneras:
 <ul>
-<li><strong>Nuevo registro</strong>: 10 hojas (solo la primera vez)</li>
-<li><strong>Vincular cuenta Google</strong>: +10 hojas</li>
-<li><strong>Vincular cuenta Apple</strong>: +10 hojas</li>
+<li><strong>Registro nuevo</strong>: 10 hojas (solo la primera vez)</li>
+<li><strong>Vincular cuenta de Google</strong>: +10 hojas</li>
+<li><strong>Vincular cuenta de Apple</strong>: +10 hojas</li>
 </ul>
-Vincular todas las cuentas sociales te da hasta 30 hojas gratis.
+Si vinculas todas tus cuentas sociales, puedes recibir hasta 30 hojas gratis.
 </div>
 </details>
 
 <details>
-<summary><strong>Q. ¿Qué pasa si me quedo sin Papel?</strong></summary>
+<summary><strong>Q. ¿Qué hago si me quedo sin Papel?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Si te quedas sin Papel, no puedes crear nuevos objetos. Compra Papel en la tienda o vincula cuentas sociales no vinculadas para Papel adicional.
+<strong>A.</strong> Sin Papel no puedes crear nuevos elementos. Compra Papel en la tienda o, si aún tienes alguna cuenta social sin vincular, vincúlala para obtener más.
 <br><br>
-Los objetos ya creados permanecerán almacenados incluso sin Papel.
+Los elementos ya creados se conservan aunque no tengas Papel.
 </div>
 </details>
 
 ---
 
-### 📄 Creación de objetos
+### 📄 Creación de elementos
 
 <details>
-<summary><strong>Q. ¿Cómo creo un objeto?</strong></summary>
+<summary><strong>Q. ¿Cómo creo un elemento?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Sigue estos pasos:
+<strong>A.</strong> Hay dos maneras de crear un elemento:
 <ol>
-<li>Toca tu <strong>Papel</strong> en la pantalla principal</li>
-<li>Selecciona <strong>"Crear nuevo objeto"</strong> del menú inferior</li>
-<li>Ingresa la información del objeto (título, contenido, imagen, etc.)</li>
-<li>Guarda y se consumirá 1 Papel para crear el objeto</li>
+<li><strong>Copiar un elemento base</strong>: Encuentra en Explorar un elemento base que te guste y pulsa el botón <strong>Recortar</strong> de la pantalla de detalle — se consume 1 hoja de Papel y se crea una copia en tu inventario</li>
+<li><strong>Crear sello</strong>: Selecciona un sello vacío y usa <strong>"Crear sello"</strong> para hacer un sello personal con su propia página de información</li>
 </ol>
+La antigua función "Crear nuevo elemento" (redactar desde cero) fue descontinuada. Los elementos que ya creaste se conservan y siguen siendo utilizables.
 </div>
 </details>
 
 <details>
-<summary><strong>Q. ¿Puedo establecer una fecha de expiración para objetos?</strong></summary>
+<summary><strong>Q. ¿Puedo establecer una fecha de expiración para un elemento?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Sí, puedes establecer las siguientes fechas al crear:
+<strong>A.</strong> Sí, durante la edición de "Crear sello" puedes establecer las siguientes fechas:
 <ul>
-<li><strong>Fecha de inicio</strong>: El contenido estará difuminado hasta esta fecha</li>
-<li><strong>Fecha de expiración</strong>: El contenido estará difuminado y se desactivará agregar registros después de esta fecha</li>
+<li><strong>Fecha de inicio</strong>: El contenido aparece difuminado hasta llegar a esta fecha</li>
+<li><strong>Fecha de expiración</strong>: Pasada esta fecha, el contenido se difumina y no se pueden agregar registros</li>
 </ul>
-Si no se establece, será visible inmediatamente y permanente.
+Si no las configuras, el contenido se publica de inmediato y se mantiene de forma permanente.
 </div>
 </details>
 
 <details>
-<summary><strong>Q. ¿Puedo eliminar objetos?</strong></summary>
+<summary><strong>Q. ¿Puedo eliminar un elemento?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Sí, puedes eliminar objetos desde el menú inferior después de seleccionarlos.
+<strong>A.</strong> Sí, selecciona el elemento y elimínalo desde el menú inferior.
 <br><br>
-⚠️ <strong>Advertencia</strong>:
+⚠️ <strong>Atención</strong>:
 <ul>
-<li>Los objetos eliminados no se pueden recuperar</li>
-<li>El Papel no se puede eliminar</li>
-<li>Los consumibles sin usar (tinta, sellos, insignias) no se pueden eliminar</li>
-<li>Las insignias equipadas deben desequiparse antes de eliminarlas</li>
+<li>Los elementos eliminados no se pueden recuperar</li>
+<li>El Papel (Paper) no se puede eliminar</li>
+<li>Los consumibles sin usar (tinta, sello, insignia) tampoco se pueden eliminar</li>
+<li>Una insignia equipada debe desequiparse primero para poder eliminarla</li>
 </ul>
 </div>
 </details>
 
 ---
 
-### 🏷️ Sistema de Insignias
+### 🏷️ Sistema de insignias
 
 <details>
-<summary><strong>Q. ¿Qué es una Insignia?</strong></summary>
+<summary><strong>Q. ¿Qué es una insignia?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Una insignia es una <strong>identidad única</strong> para usar dentro de la app.
+<strong>A.</strong> La insignia es tu <strong>identidad única</strong> dentro de la app.
 <br><br>
-Cuando grabas un nombre de dominio en una insignia, todas tus actividades mostrarán tu <strong>nombre de dominio grabado</strong> en lugar de tu email.
+Al grabar un nombre de dominio en la insignia, todas tus actividades en la app mostrarán el <strong>nombre de dominio grabado</strong> en lugar de tu correo electrónico.
 <br><br>
-Ejemplos: <code>MiMarca</code>, <code>JuanPérez</code>
+Ejemplo: <code>MyBrand</code>, <code>JuanPerez</code>
 </div>
 </details>
 
 <details>
-<summary><strong>Q. ¿Cómo grabo una Insignia?</strong></summary>
+<summary><strong>Q. ¿Cómo grabo una insignia?</strong></summary>
 <div class="answer-content">
 <strong>A.</strong> Sigue estos pasos:
 <ol>
-<li>Selecciona insignia sin usar → menú <strong>"Grabar"</strong></li>
-<li>Ingresa el nombre de dominio deseado (máx. 32 car., solo letras/números)</li>
-<li>Haz clic en <strong>"Verificar disponibilidad del dominio"</strong> para verificar</li>
-<li>Opcionalmente adjunta una imagen 128x128</li>
-<li>Haz clic en <strong>"Grabar"</strong> para completar</li>
+<li>Selecciona una insignia sin usar → menú <strong>"Grabar"</strong></li>
+<li>Ingresa el nombre de dominio deseado (máx. 32 caracteres, solo letras/números)</li>
+<li>Verifica su disponibilidad con el botón <strong>"Comprobar disponibilidad del dominio"</strong></li>
+<li>Opcionalmente, adjunta una imagen de 128x128</li>
+<li>Finaliza con el botón <strong>"Grabar"</strong></li>
 </ol>
-⚠️ <strong>Importante</strong>: Una vez grabado, el nombre de dominio y la imagen <strong>no se pueden cambiar permanentemente</strong>.
+⚠️ <strong>Importante</strong>: Una vez grabados, el nombre de dominio y la imagen <strong>no se pueden cambiar nunca</strong>.
 </div>
 </details>
 
 <details>
-<summary><strong>Q. ¿Cómo equipo/desequipo una Insignia?</strong></summary>
+<summary><strong>Q. ¿Cómo equipo o desequipo una insignia?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Toca una insignia grabada para ver los botones <strong>"Equipar"</strong> o <strong>"Desequipar"</strong> en la pantalla de detalle.
+<strong>A.</strong> Toca una insignia grabada: en la pantalla de detalle aparecerán los botones <strong>"Equipar"</strong> y <strong>"Desequipar"</strong>.
 <ul>
-<li><strong>Equipada</strong>: Tu nombre de dominio grabado se mostrará en todas las actividades</li>
-<li><strong>Desequipada</strong>: Tu email predeterminado se mostrará de nuevo</li>
+<li><strong>Equipar</strong>: Todas tus actividades en la app se muestran con el nombre de dominio grabado</li>
+<li><strong>Desequipar</strong>: Se vuelve a mostrar tu correo electrónico predeterminado</li>
 </ul>
-Aunque poseas múltiples insignias, solo una puede estar equipada a la vez.
+Aunque poseas varias insignias, solo puedes equipar una a la vez.
 </div>
 </details>
 
 <details>
-<summary><strong>Q. ¿Puede alguien más usar el mismo nombre de dominio?</strong></summary>
+<summary><strong>Q. ¿Puede otra persona usar el mismo nombre de dominio?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> No. Los nombres de dominio deben ser <strong>únicos</strong> entre todos los usuarios.
+<strong>A.</strong> No. El nombre de dominio debe ser <strong>único</strong> entre todos los usuarios.
 <br><br>
-Sin embargo, si se elimina una insignia, ese nombre de dominio queda disponible para otros.
+Sin embargo, si eliminas la insignia, el nombre de dominio queda liberado y otra persona podrá usarlo.
 </div>
 </details>
 
 ---
 
-### 🔖 Sistema de Sellos
+### 🔖 Sistema de sellos
 
 <details>
-<summary><strong>Q. ¿Qué es un Sello?</strong></summary>
+<summary><strong>Q. ¿Qué es un sello?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Un sello es un objeto que te permite crear <strong>plantillas</strong> y compartirlas con otros.
+<strong>A.</strong> El sello es un elemento con el que puedes crear un <strong>sello personal</strong> y transmitirlo a otras personas.
 <br><br>
-Las plantillas pueden tener imágenes, títulos, contenido, fechas de expiración, y soportan <strong>funcionalidad de registro</strong> para mantener anotaciones.
+En un sello personal puedes configurar imagen, título, contenido, fecha de expiración, etc., y dejar anotaciones mediante la <strong>función de registro</strong>.
 </div>
 </details>
 
 <details>
-<summary><strong>Q. ¿Cómo creo una plantilla de Sello?</strong></summary>
+<summary><strong>Q. ¿Cómo creo un sello personal?</strong></summary>
 <div class="answer-content">
 <strong>A.</strong> Sigue estos pasos:
 <ol>
-<li>Selecciona sello sin usar → menú <strong>"Crear nueva plantilla"</strong></li>
-<li>Selecciona imagen de plantilla (obligatorio)</li>
-<li>Ingresa título y contenido</li>
-<li>Establece fecha de inicio/expiración (opcional)</li>
-<li>Selecciona <strong>Modo de registro</strong>: Registro solo o Registro compartido</li>
-<li>Haz clic en <strong>"Crear plantilla"</strong> para completar</li>
+<li>Selecciona un sello vacío sin usar → menú <strong>"Crear sello"</strong></li>
+<li>Ingresa el <strong>nombre</strong> del sello (máx. 32 caracteres) — no podrá cambiarse después de confirmarlo</li>
+<li>En el editor que se abre a continuación, coloca imágenes, textos y elementos para componer la página de información</li>
+<li>Configura opciones como fecha de inicio/fecha de expiración y <strong>modo de registro</strong> (registro solo/registro compartido)</li>
+<li>Guarda y listo</li>
 </ol>
 </div>
 </details>
 
 <details>
-<summary><strong>Q. ¿Cuál es la diferencia entre Registro solo y Registro compartido?</strong></summary>
+<summary><strong>Q. ¿Cuál es la diferencia entre registro solo y registro compartido?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> El método de grabación difiere completamente según el modo:
+<strong>A.</strong> Según el modo de registro, la forma de anotar cambia por completo:
 <br><br>
 <table>
-<tr><th>Categoría</th><th>Registro Solo</th><th>Registro Compartido</th></tr>
-<tr><td>Almacenamiento</td><td>Espacio privado de cada persona</td><td>Espacio compartido basado en sello original</td></tr>
+<tr><th>Categoría</th><th>Registro solo</th><th>Registro compartido</th></tr>
+<tr><td>Almacenamiento</td><td>En el espacio privado de cada uno</td><td>En el espacio compartido del sello original</td></tr>
 <tr><td>Registros visibles</td><td>Solo tus propios registros</td><td>Registros de todos los propietarios</td></tr>
-<tr><td>Casos de uso</td><td>Diario personal, notas</td><td>Colaboración, compartir opiniones, comunidad</td></tr>
-<tr><td>Si se elimina sello</td><td>No afectado</td><td>No se pueden agregar registros compartidos (solo lectura)</td></tr>
+<tr><td>Ejemplos de uso</td><td>Diario personal, notas</td><td>Trabajo en equipo, intercambio de opiniones, comunidad</td></tr>
+<tr><td>Si se elimina el sello</td><td>Sin efecto</td><td>No se pueden agregar registros compartidos (solo lectura)</td></tr>
 </table>
 </div>
 </details>
 
 <details>
-<summary><strong>Q. ¿Puedo duplicar un Sello?</strong></summary>
+<summary><strong>Q. ¿Puedo duplicar un sello?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> ¡Sí! Cuando seleccionas un sello activado (plantilla) y papel juntos, aparece el menú <strong>"Duplicar plantilla"</strong>.
+<strong>A.</strong> ¡Sí! Al seleccionar juntos un sello activado (sello personal) y Papel, aparece el menú <strong>"Duplicar"</strong>.
 <br><br>
-Duplicar consume 1 Papel y crea un nuevo objeto con la misma plantilla. En modo de registro compartido, usa el mismo espacio compartido que el original.
+Al duplicar se consume 1 hoja de Papel y se crea un nuevo elemento con el mismo contenido. En modo de registro compartido, usa el mismo espacio compartido que el original.
 </div>
 </details>
 
 ---
 
-### 📝 Función de Registros
+### ⚡ Entrada rápida (Quick Input)
 
 <details>
-<summary><strong>Q. ¿Qué son los Registros?</strong></summary>
+<summary><strong>Q. ¿Qué es Quick Input?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Los registros son una función para mantener anotaciones en objetos o plantillas de sello.
+<strong>A.</strong> Quick Input es una función que facilita ingresar información especial al escribir registros.
 <br><br>
-Escritos como mensajes, se muestran como chat. Escritos como <code>clave:valor</code>, se muestran como tarjetas info.
+Pulsa el botón <strong>+</strong> junto al campo de entrada del registro para elegir entre los siguientes tipos:
+<ul>
+<li><strong>Palabra clave</strong>: Formato general clave:valor</li>
+<li><strong>Alarma de fecha</strong>: Tarjeta de fecha (cálculo automático del D-Day)</li>
+<li><strong>Número de teléfono</strong>: Formato automático según el país</li>
+<li><strong>Ubicación</strong>: Dirección/lugar</li>
+<li><strong>Importe</strong>: Moneda e importe</li>
+</ul>
 </div>
 </details>
 
 <details>
-<summary><strong>Q. ¿Hay formatos de registro especiales?</strong></summary>
+<summary><strong>Q. ¿Qué ocurre al mantener pulsada una tarjeta especial?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Sí, se soportan varios formatos:
+<strong>A.</strong> La acción depende del tipo de tarjeta:
+<ul>
+<li><strong>📅 Fecha</strong>: Activar/desactivar la alarma</li>
+<li><strong>📞 Número de teléfono</strong>: Llamada directa en el móvil, copia en el escritorio</li>
+<li><strong>📍 Ubicación</strong>: Abrir la app de mapas en el móvil, copia en el escritorio</li>
+<li><strong>💰 Importe</strong>: Copiar al portapapeles</li>
+</ul>
+</div>
+</details>
+
+<details>
+<summary><strong>Q. ¿Cómo configuro una alarma en una fecha?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> <strong>Mantén pulsada</strong> la tarjeta de fecha y aparecerá un diálogo de confirmación de la alarma.
+<br><br>
+Con la alarma activada, el color de la tarjeta cambia y se muestra el icono 🔔. Otra pulsación larga desactiva la alarma.
+<br><br>
+💡 En las tarjetas de fecha, el D-Day se calcula automáticamente (ej.: D-5, D-Day, D+3)
+</div>
+</details>
+
+---
+
+### 📝 Función de registro
+
+<details>
+<summary><strong>Q. ¿Qué es un registro?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> El registro es la función para dejar anotaciones en elementos o sellos personales.
+<br><br>
+Si lo escribes como mensaje, se muestra como un chat; si lo escribes en formato <code>clave:valor</code>, se muestra como tarjeta de información.
+</div>
+</details>
+
+<details>
+<summary><strong>Q. ¿Existen formatos especiales para los registros?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Sí, se admiten varios formatos:
 <br><br>
 <strong>Formatos básicos:</strong>
 <ul>
-<li><code>clave:valor</code> - Mostrado como tarjeta info (clave 1-8 car.)</li>
-<li><code>---</code> - Mostrado como separador</li>
-<li>Texto plano - Mostrado como burbuja de chat</li>
+<li><code>clave:valor</code> - Se muestra como tarjeta de información (clave de 1 a 8 caracteres)</li>
+<li><code>---</code> - Se muestra como separador</li>
+<li>Texto normal - Se muestra como burbuja de chat</li>
 </ul>
-<strong>Estilizado de texto:</strong>
+<strong>Estilos de texto:</strong>
 <ul>
-<li><code>{[texto]}</code> - Tarjeta color principal</li>
-<li><code>[{texto}]</code> - Tarjeta gris + texto color principal</li>
+<li><code>{[texto]}</code> - Tarjeta de color principal</li>
+<li><code>[{texto}]</code> - Tarjeta gris + texto de color principal</li>
 <li><code>[texto]</code> - Tarjeta gris</li>
-<li><code>{texto}</code> - Texto color principal</li>
-<li><code>(texto)</code> - Texto color secundario</li>
+<li><code>{texto}</code> - Texto de color principal</li>
+<li><code>(texto)</code> - Texto de color secundario</li>
 <li><code>"texto"</code> - Negrita</li>
 <li><code>'texto'</code> - Subrayado</li>
 <li><code>&lt;texto&gt;</code> - Tachado</li>
 </ul>
-Los estilos se pueden anidar hasta 3 niveles. Usar la misma clave múltiples veces muestra <code>valor anterior → nuevo valor</code>.
+Los estilos se pueden anidar hasta en 3 niveles. Si usas la misma clave varias veces, se muestra una comparación en formato <code>valor anterior → valor nuevo</code>.
 </div>
 </details>
 
 <details>
-<summary><strong>Q. Dice que el registro compartido ha sido terminado</strong></summary>
+<summary><strong>Q. Aparece un aviso de que el registro compartido se ha interrumpido</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> El agregar registros compartidos se termina en estos casos:
+<strong>A.</strong> Agregar al registro compartido se interrumpe en los siguientes casos:
 <ul>
-<li><strong>Sello original eliminado</strong>: "Registro compartido terminado porque el sello original fue eliminado"</li>
-<li><strong>Fecha de expiración pasada</strong>: "No se pueden agregar registros a registros compartidos expirados"</li>
+<li><strong>Eliminación del sello original</strong>: "El sello original fue eliminado y el registro compartido se ha interrumpido"</li>
+<li><strong>Fecha de expiración vencida</strong>: "No se pueden agregar registros a un registro compartido vencido"</li>
 </ul>
-Los registros existentes aún se pueden leer, pero no se pueden agregar nuevos.
+Los registros existentes siguen siendo legibles, pero no se pueden agregar nuevos.
 </div>
 </details>
 
 ---
 
-### 🎨 Sistema de Tinta
+### 🎨 Sistema de tinta
 
 <details>
-<summary><strong>Q. ¿Qué es la Tinta?</strong></summary>
+<summary><strong>Q. ¿Qué es la tinta?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> La Tinta es un objeto que cambia el <strong>color del tema</strong> de la aplicación.
+<strong>A.</strong> La tinta es un elemento que cambia el <strong>color del tema</strong> de la app.
 <ul>
-<li><strong>Tinta Negra</strong>: Tema negro predeterminado</li>
-<li><strong>Tinta Dorada</strong>: Tema dorado lujoso</li>
+<li><strong>Tinta negra</strong>: Tema negro clásico</li>
+<li><strong>Tinta dorada</strong>: Tema dorado elegante</li>
 </ul>
-Toca la tinta y selecciona <strong>"Cambiar tema"</strong> para cambiar inmediatamente todo el color de la app.
+Toca la tinta y elige <strong>"Cambiar tema"</strong>: los colores de toda la app cambian al instante.
 </div>
 </details>
 
 ---
 
-### 📎 Sistema de Clip
+### 📎 Sistema de clips
 
 <details>
-<summary><strong>Q. ¿Qué es un Clip?</strong></summary>
+<summary><strong>Q. ¿Qué es un clip?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Un clip es una función que agrupa múltiples documentos juntos para una gestión más fácil.
+<strong>A.</strong> El clip es una función para agrupar varios documentos en un solo conjunto.
 <ul>
-<li>Gestionar documentos relacionados como un solo conjunto</li>
-<li>Los documentos clipeados muestran un icono 📎 en la esquina superior derecha</li>
-<li>Al transferir, se mueven juntos como un conjunto</li>
+<li>Administra documentos relacionados como un solo paquete</li>
+<li>Los documentos con clip muestran un icono 📎 en la esquina superior derecha</li>
+<li>Al enviarlos, se mueven juntos como un paquete</li>
 </ul>
 </div>
 </details>
 
 <details>
-<summary><strong>Q. ¿Cómo creo un Clip?</strong></summary>
+<summary><strong>Q. ¿Cómo creo un clip?</strong></summary>
 <div class="answer-content">
 <strong>A.</strong> Sigue estos pasos:
 <ol>
-<li>Selecciona <strong>2 o más</strong> documentos en la pantalla principal</li>
-<li>Selecciona <strong>"Clipear juntos"</strong> del menú inferior</li>
-<li>Los documentos seleccionados se agrupan en un solo clip</li>
+<li>En la pantalla de inicio, selecciona <strong>2 o más</strong> documentos</li>
+<li>Elige <strong>"Agrupar en clip"</strong> en el menú inferior</li>
+<li>Los documentos seleccionados quedan agrupados en un clip</li>
 </ol>
 💡 <strong>Consejo</strong>: ¡El primer documento seleccionado se convierte en la <strong>portada</strong> del clip!
 </div>
 </details>
 
 <details>
-<summary><strong>Q. ¿Cómo reordeno elementos en un Clip?</strong></summary>
+<summary><strong>Q. ¿Cómo cambio el orden de los elementos dentro de un clip?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Toca el botón <strong>"Info del Clip"</strong> en la pantalla de detalle del clip para ver la lista de elementos dentro.
+<strong>A.</strong> En la pantalla de detalle de un elemento con clip, toca el botón <strong>"Información del clip"</strong> y aparecerá la lista de elementos del clip.
 <br><br>
-<strong>Arrastra</strong> los elementos para reordenarlos como desees.
+<strong>Arrastra</strong> los elementos para colocarlos en el orden que quieras.
 <br><br>
-⚠️ <strong>Nota</strong>: La portada (primer elemento) no puede ser reordenada.
+⚠️ <strong>Atención</strong>: La portada (primer elemento) no se puede reordenar.
 </div>
 </details>
 
 <details>
-<summary><strong>Q. ¿Cómo excluyo un elemento de un Clip?</strong></summary>
+<summary><strong>Q. ¿Cómo saco un elemento de un clip?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> En la pantalla de Info del Clip, selecciona el elemento a excluir y toca <strong>"Excluir del Clip"</strong>.
+<strong>A.</strong> En la pantalla de información del clip, selecciona el elemento que quieres sacar y toca <strong>"Quitar del clip"</strong>.
 <br><br>
-El elemento excluido se convierte en un documento separado.
+El elemento quitado se separa como documento individual.
 <br><br>
-⚠️ <strong>Nota</strong>:
+⚠️ <strong>Atención</strong>:
 <ul>
-<li>La portada no puede ser excluida</li>
-<li>Si solo quedan 2 elementos en un clip y 1 es excluido, el clip se disuelve automáticamente</li>
+<li>La portada no se puede quitar</li>
+<li>Si el clip solo tiene 2 elementos y quitas 1, el clip se disuelve automáticamente</li>
 </ul>
 </div>
 </details>
 
 <details>
-<summary><strong>Q. ¿Cómo deshago completamente un clip?</strong></summary>
+<summary><strong>Q. ¿Cómo deshago un clip por completo?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Selecciona el elemento clip y toca <strong>"Deshacer clip"</strong> del menú inferior para separar todos los elementos en documentos individuales.
+<strong>A.</strong> Selecciona el elemento con clip y toca <strong>"Deshacer clip"</strong> en el menú inferior: todos los elementos se separan como documentos individuales.
 </div>
 </details>
 
 <details>
-<summary><strong>Q. ¿Qué pasa cuando transfiero un Clip?</strong></summary>
+<summary><strong>Q. ¿Qué pasa si envío un clip?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Los clips se transfieren como un <strong>conjunto</strong>.
+<strong>A.</strong> El clip se envía <strong>como paquete</strong>.
 <ul>
-<li>Todos los elementos del clip se transfieren juntos</li>
-<li>El estado del clip se mantiene en el inventario del destinatario</li>
-<li>En la pantalla de recepción, un clip cuenta como <strong>1 elemento</strong></li>
+<li>Todos los elementos del clip se envían juntos</li>
+<li>El estado de clip se mantiene en el inventario del destinatario</li>
+<li>En la pantalla de recepción, el clip cuenta como <strong>1</strong> elemento</li>
 </ul>
 </div>
 </details>
@@ -349,57 +391,57 @@ El elemento excluido se convierte en un documento separado.
 ### 📤 Enviar/Recibir
 
 <details>
-<summary><strong>Q. ¿Enviar un objeto lo elimina de mi inventario?</strong></summary>
+<summary><strong>Q. Si envío un elemento, ¿desaparece de mi inventario?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Sí, desaparece inmediatamente. Las transferencias no se pueden deshacer, así que procede con cuidado.
+<strong>A.</strong> Sí, desaparece de inmediato. El envío no se puede cancelar, así que procede con cuidado.
 <br><br>
-Sin embargo, si el destinatario selecciona <strong>"Devolver"</strong>, el objeto volverá a ti.
+Sin embargo, si la otra persona elige <strong>"Devolver"</strong>, el elemento vuelve a ti.
 </div>
 </details>
 
 <details>
-<summary><strong>Q. ¿Dónde puedo encontrar el código QR?</strong></summary>
+<summary><strong>Q. ¿Dónde encuentro el código QR?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Puedes encontrar tu código QR en la pantalla de <strong>Perfil</strong>.
+<strong>A.</strong> Puedes ver tu código QR en la pantalla de <strong>Perfil</strong>.
 <ul>
-<li>Remitente: Usa el botón <strong>"Escanear QR"</strong> para escanear el QR del destinatario</li>
-<li>Destinatario: Muestra el código QR desde el Perfil</li>
+<li>Remitente: Escanea el QR de la otra persona con el botón <strong>"Escanear QR"</strong></li>
+<li>Destinatario: Muestra el código QR de tu perfil</li>
 </ul>
-El código QR contiene tu dirección de email para transferencias rápidas sin entrada manual.
+El código QR contiene la dirección de correo, lo que permite enviar rápidamente sin escribirla.
 </div>
 </details>
 
 <details>
-<summary><strong>Q. ¿Puedo enviar múltiples objetos a la vez?</strong></summary>
+<summary><strong>Q. ¿Puedo enviar varios elementos a la vez?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Sí, puedes. Marca múltiples objetos en la pantalla de envío y transfiérelos todos de una vez.
+<strong>A.</strong> Sí, es posible. Marca varios elementos en la pantalla de envío y envíalos de una sola vez.
 </div>
 </details>
 
 ---
 
-### 🔍 Función de Búsqueda
+### 🔍 Función de búsqueda
 
 <details>
 <summary><strong>Q. ¿Cómo uso la barra de búsqueda?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Toca la barra de búsqueda arriba para activar el modo de búsqueda:
+<strong>A.</strong> Toca la barra de búsqueda superior para activar el modo de búsqueda:
 <ul>
-<li>Los resultados se filtran en <strong>tiempo real</strong> mientras escribes</li>
-<li>Las <strong>búsquedas recientes</strong> se muestran abajo (hasta 5)</li>
-<li>Usa el botón <strong>"Establecer como filtro"</strong> para guardar búsquedas para reutilización rápida</li>
+<li>Los resultados se filtran <strong>en tiempo real</strong> mientras escribes</li>
+<li>Las <strong>búsquedas recientes</strong> se muestran debajo (máx. 5)</li>
+<li>Con el botón <strong>"Establecer como filtro"</strong> guardas el término para reutilizarlo rápidamente</li>
 </ul>
 </div>
 </details>
 
 <details>
-<summary><strong>Q. ¿Cómo gestiono los filtros?</strong></summary>
+<summary><strong>Q. ¿Cómo administro los filtros?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Cuando guardas un término de búsqueda como filtro:
+<strong>A.</strong> Al guardar un término de búsqueda como filtro:
 <ul>
-<li>Aparece como etiqueta de filtro debajo de la barra de búsqueda</li>
-<li>Toca la etiqueta para filtrar instantáneamente</li>
-<li>Elimina filtros con el botón X</li>
+<li>Se muestra como etiqueta de filtro debajo de la barra de búsqueda</li>
+<li>Toca la etiqueta para filtrar al instante con ese término</li>
+<li>Puedes eliminar el filtro con el botón X</li>
 </ul>
 </div>
 </details>
@@ -407,13 +449,13 @@ El código QR contiene tu dirección de email para transferencias rápidas sin e
 <details>
 <summary><strong>Q. ¿Qué es la agregación de palabras clave?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Cuando hay un filtro establecido y seleccionas objetos, los valores de palabras clave de los objetos seleccionados se agregan automáticamente:
+<strong>A.</strong> Con un filtro activo, al seleccionar elementos se agregan automáticamente los valores de sus palabras clave:
 <ul>
-<li><strong>Valores numéricos</strong>: Se calculan suma y promedio (ej. <code>Suma: 6000  Promedio: 2000</code>)</li>
-<li><strong>Valores de texto</strong>: Unidos con espacios (ej. <code>A B C</code>)</li>
-<li><strong>Copiar valores</strong>: <strong>Mantén presionada</strong> una tarjeta de agregación para copiar al portapapeles</li>
+<li><strong>Valores numéricos</strong>: Se calculan la suma y el promedio (ej.: <code>Suma: 6000  Promedio: 2000</code>)</li>
+<li><strong>Valores de texto</strong>: Se concatenan con espacios (ej.: <code>A B C</code>)</li>
+<li><strong>Copiar valor</strong>: <strong>Mantén pulsada</strong> la tarjeta de resultado para copiarla al portapapeles</li>
 </ul>
-Útil para calcular precios totales o reunir etiquetas relacionadas.
+Es útil para calcular el precio total de varios elementos o reunir etiquetas relacionadas.
 </div>
 </details>
 
@@ -424,10 +466,10 @@ El código QR contiene tu dirección de email para transferencias rápidas sin e
 <details>
 <summary><strong>Q. ¿Qué puedo comprar en la tienda?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Puedes comprar estos objetos:
+<strong>A.</strong> Puedes comprar los siguientes elementos:
 <ul>
-<li><strong>Papel</strong>: Para crear objetos</li>
-<li><strong>Sello</strong>: Para crear plantillas</li>
+<li><strong>Papel</strong>: Para crear elementos</li>
+<li><strong>Sello</strong>: Para crear sellos personales</li>
 <li><strong>Tinta</strong>: Para cambiar el color del tema</li>
 <li><strong>Insignia</strong>: Para grabar un dominio único</li>
 </ul>
@@ -435,25 +477,25 @@ El código QR contiene tu dirección de email para transferencias rápidas sin e
 </details>
 
 <details>
-<summary><strong>Q. ¿Puedo usar la tienda en PC?</strong></summary>
+<summary><strong>Q. ¿Puedo usar la tienda en el PC?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Sí, la tienda está disponible en todas las plataformas (iOS, Android, Windows, macOS).
+<strong>A.</strong> Sí, la tienda está disponible por igual en todas las plataformas (iOS, Android, Windows, macOS).
 </div>
 </details>
 
 ---
 
-### 📂 Partición
+### 📂 Pocket
 
 <details>
-<summary><strong>Q. ¿Qué es una Partición?</strong></summary>
+<summary><strong>Q. ¿Qué es una Pocket?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> La Partición es una función para organizar objetos en grupos.
+<strong>A.</strong> La Pocket es una función para organizar elementos en grupos.
 <ul>
-<li>Selecciona objetos y usa <strong>"Crear partición"</strong> para una nueva partición</li>
-<li>Los nombres de partición pueden tener hasta 16 caracteres</li>
+<li>Selecciona elementos y crea una nueva Pocket con <strong>"Crear Pocket"</strong></li>
+<li>El nombre de la Pocket admite máx. 16 caracteres</li>
 </ul>
-⚠️ Las particiones se <strong>guardan solo en el dispositivo</strong>. No son visibles en otros dispositivos.
+⚠️ Las Pockets se <strong>guardan solo en el dispositivo</strong>. No son visibles en otros dispositivos.
 </div>
 </details>
 
@@ -462,13 +504,13 @@ El código QR contiene tu dirección de email para transferencias rápidas sin e
 ### 📱 Cuenta/Sincronización
 
 <details>
-<summary><strong>Q. ¿Puedo ver los mismos elementos en diferentes dispositivos?</strong></summary>
+<summary><strong>Q. ¿Puedo ver los mismos elementos en otros dispositivos?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> ¡Sí! Si inicias sesión con la misma cuenta, todos los elementos se sincronizarán automáticamente en todos tus dispositivos.
+<strong>A.</strong> ¡Sí! Al iniciar sesión con la misma cuenta, tus elementos se sincronizan automáticamente en todos los dispositivos.
 <ul>
-<li><strong>Sincronización en tiempo real</strong>: Los cambios se reflejan inmediatamente en otros dispositivos</li>
-<li><strong>Respaldo en la nube</strong>: Todos los datos se almacenan de forma segura en la nube</li>
-<li><strong>Sin límite de dispositivos</strong>: Uso simultáneo en múltiples dispositivos</li>
+<li><strong>Sincronización en tiempo real</strong>: Los cambios se reflejan de inmediato en los demás dispositivos</li>
+<li><strong>Copia de seguridad en la nube</strong>: Todos los datos se guardan de forma segura en la nube</li>
+<li><strong>Sin límite de dispositivos</strong>: Puedes usarla en varios dispositivos a la vez</li>
 </ul>
 </div>
 </details>
@@ -478,28 +520,28 @@ El código QR contiene tu dirección de email para transferencias rápidas sin e
 ### 🖼️ Imágenes
 
 <details>
-<summary><strong>Q. ¿Hay restricciones de tamaño o formato de imagen?</strong></summary>
+<summary><strong>Q. ¿Hay límites de tamaño o formato para las imágenes?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Se aplican las siguientes restricciones:
+<strong>A.</strong> Se aplican los siguientes límites:
 <ul>
-<li><strong>Formatos soportados</strong>: JPG, PNG, GIF, WebP</li>
-<li><strong>Tamaño máximo</strong>: 10MB por imagen</li>
-<li><strong>Dimensiones recomendadas</strong>: 1024x1024 o menor (redimensionamiento automático)</li>
+<li><strong>Formatos admitidos</strong>: JPG, PNG, GIF, WebP</li>
+<li><strong>Tamaño máximo</strong>: 10 MB por imagen</li>
+<li><strong>Dimensiones recomendadas</strong>: 1024x1024 o menos (se redimensiona automáticamente)</li>
 </ul>
-Las imágenes de alta resolución se optimizan automáticamente al guardar.
+Las imágenes de alta resolución se optimizan automáticamente al guardarse.
 </div>
 </details>
 
 <details>
 <summary><strong>Q. ¿Qué es la eliminación de fondo con IA?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Esta función usa IA para eliminar automáticamente fondos de imágenes en el editor de imágenes.
+<strong>A.</strong> Es una función del editor de imágenes en la que la IA elimina el fondo automáticamente.
 <ul>
-<li>Selecciona una imagen de elemento y toca <strong>"Editar"</strong></li>
-<li>Elige <strong>"Eliminar fondo"</strong></li>
-<li>La IA reconoce automáticamente el sujeto principal y hace el fondo transparente</li>
+<li>Al seleccionar la imagen de un elemento, toca el botón <strong>"Editar"</strong></li>
+<li>Elige la opción <strong>"Eliminar fondo"</strong></li>
+<li>La IA reconoce automáticamente el sujeto principal y hace transparente el fondo</li>
 </ul>
-Ideal para fotos de productos o retratos para obtener resultados limpios.
+Obtendrás resultados limpios en fotos de productos o retratos.
 </div>
 </details>
 
@@ -510,22 +552,22 @@ Ideal para fotos de productos o retratos para obtener resultados limpios.
 <details>
 <summary><strong>Q. ¿Cómo desactivo o configuro las notificaciones?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Puedes gestionar las notificaciones en la configuración del sistema de tu dispositivo:
+<strong>A.</strong> Puedes gestionarlas en los ajustes del sistema de tu dispositivo:
 <ul>
 <li><strong>iOS</strong>: Ajustes → Notificaciones → Inventory</li>
-<li><strong>Android</strong>: Ajustes → Apps → Inventory → Notificaciones</li>
-<li><strong>macOS</strong>: Configuración del Sistema → Notificaciones → Inventory</li>
+<li><strong>Android</strong>: Ajustes → Aplicaciones → Inventory → Notificaciones</li>
+<li><strong>macOS</strong>: Ajustes del Sistema → Notificaciones → Inventory</li>
 </ul>
-Las alarmas de fecha individuales se pueden desactivar manteniendo presionada la tarjeta de fecha.
+Las alarmas de fecha individuales se desactivan manteniendo pulsada la tarjeta de fecha correspondiente.
 </div>
 </details>
 
 <details>
-<summary><strong>Q. ¿Cuándo suena la alarma D-Day?</strong></summary>
+<summary><strong>Q. ¿Cuándo suena la alarma del D-Day?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Las notificaciones push se envían a las <strong>9:00 AM</strong> en la fecha establecida.
+<strong>A.</strong> La notificación push se envía a las <strong>9 de la mañana</strong> de la fecha configurada.
 <br><br>
-💡 <strong>Consejo</strong>: Para eventos importantes, crea múltiples tarjetas de fecha (D-7, D-3, D-1) para recibir recordatorios anticipados.
+💡 <strong>Consejo</strong>: Para las fechas importantes, crea varias tarjetas de fecha como D-7, D-3 y D-1 para recibir avisos con antelación.
 </div>
 </details>
 
@@ -534,47 +576,47 @@ Las alarmas de fecha individuales se pueden desactivar manteniendo presionada la
 ### 🔒 Seguridad/Privacidad
 
 <details>
-<summary><strong>Q. ¿Dónde se almacenan mis datos?</strong></summary>
+<summary><strong>Q. ¿Dónde se guardan mis datos?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Todos los datos se almacenan de forma segura en <strong>Firebase Cloud</strong>.
+<strong>A.</strong> Todos los datos se guardan de forma segura en la <strong>nube de Firebase</strong>.
 <ul>
-<li><strong>Transmisión encriptada</strong>: Todas las comunicaciones están encriptadas con TLS</li>
+<li><strong>Transmisión cifrada</strong>: Todas las comunicaciones están cifradas con TLS</li>
 <li><strong>Almacenamiento seguro</strong>: Gestionado en la infraestructura de Google Cloud</li>
-<li><strong>Protección de privacidad</strong>: Otros usuarios no pueden acceder a tus elementos</li>
+<li><strong>Protección de la privacidad</strong>: Otros usuarios no pueden acceder a tus elementos</li>
 </ul>
-Para más detalles, consulta nuestra <a href="/inventory/privacy/">Política de Privacidad</a>.
+Para más detalles, consulta la <a href="/inventory/privacy/">política de privacidad</a>.
 </div>
 </details>
 
 <details>
-<summary><strong>Q. ¿Hay una función de bloqueo de documentos?</strong></summary>
+<summary><strong>Q. ¿Existe una función de bloqueo de documentos?</strong></summary>
 <div class="answer-content">
 <strong>A.</strong> ¡Sí! Puedes establecer un <strong>bloqueo</strong> en los elementos.
 <ul>
-<li>Pantalla de detalle del elemento → Menú inferior → <strong>"Bloquear"</strong></li>
-<li>Los elementos bloqueados tienen su contenido difuminado</li>
-<li>Se requiere autenticación del dispositivo (Face ID, huella dactilar, PIN) para ver</li>
+<li>Pantalla de detalle del elemento → menú inferior → <strong>"Bloquear"</strong></li>
+<li>El contenido de los elementos bloqueados aparece difuminado</li>
+<li>Para verlo se requiere autenticación del dispositivo (Face ID, huella, PIN)</li>
 </ul>
-Mantén la información sensible segura.
+Así puedes guardar información sensible de forma segura.
 </div>
 </details>
 
 ---
 
-### 💡 Consejos de Uso
+### 💡 Consejos de uso
 
 <details>
-<summary><strong>Q. ¿Cómo puedo usar Inventory?</strong></summary>
+<summary><strong>Q. ¿Para qué puedo usar Inventory?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Puedes usarlo para varios propósitos:
+<strong>A.</strong> Para muchos usos distintos:
 <ul>
-<li><strong>Gestión de garantías/recibos</strong>: Fotos con fechas de vencimiento</li>
-<li><strong>Almacenamiento de contraseñas</strong>: Mantener seguro con función de bloqueo</li>
-<li><strong>Gestión de agenda</strong>: Alarmas D-Day para fechas importantes</li>
-<li><strong>Organización de colecciones</strong>: Categorizar con particiones</li>
-<li><strong>Colaboración en equipo</strong>: Trabajar juntos con registros compartidos</li>
+<li><strong>Gestión de garantías/recibos</strong>: Con foto y fecha de expiración</li>
+<li><strong>Guardar contraseñas</strong>: Almacenamiento seguro con la función de bloqueo</li>
+<li><strong>Gestión de agenda</strong>: Controla fechas importantes con la alarma del D-Day</li>
+<li><strong>Organizar colecciones</strong>: Clasifícalas y gestiónalas con Pockets</li>
+<li><strong>Trabajo en equipo</strong>: Colabora con tu equipo mediante el registro compartido</li>
 </ul>
-¡Para más ideas, consulta <a href="/inventory/usecases/es/">100 Casos de Uso</a>!
+¡Encuentra más ideas en <a href="/inventory/usecases/">100 formas de usarlo</a>!
 </div>
 </details>
 
@@ -583,31 +625,31 @@ Mantén la información sensible segura.
 ### 🆘 Otros
 
 <details>
-<summary><strong>Q. Encontré un bug</strong></summary>
+<summary><strong>Q. Encontré un error</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Por favor repórtalo en la página de <a href="/inventory/bug-report/es/">Reporte de bugs</a>.
+<strong>A.</strong> Repórtalo en la página <a href="/inventory/bug-report/">Reporte de errores</a>.
 </div>
 </details>
 
 <details>
-<summary><strong>Q. Quiero sugerir una nueva función</strong></summary>
+<summary><strong>Q. Quiero proponer una nueva función</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Por favor comparte tus ideas en la página de <a href="/inventory/suggest/es/">Sugerencias</a>.
+<strong>A.</strong> Comparte tu idea en la página <a href="/inventory/suggest/">Sugerencias</a>.
 </div>
 </details>
 
 <details>
 <summary><strong>Q. Quiero eliminar mi cuenta</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Ve a Perfil → Configuración → Eliminar cuenta.
+<strong>A.</strong> Puedes hacerlo en Perfil → Ajustes → Eliminar cuenta.
 <br><br>
-⚠️ <strong>Advertencia</strong>: Las cuentas eliminadas y todos los objetos no se pueden recuperar.
+⚠️ <strong>Atención</strong>: La cuenta eliminada y todos sus elementos no se pueden recuperar.
 </div>
 </details>
 
 ---
 
-> 💬 **¿No encontraste tu respuesta?** Contáctanos a través de [Sugerencias](/inventory/suggest/es/) o consulta el [Manual](/inventory/manual/es/).
+> 💬 **¿No encontraste la respuesta?** Contáctanos a través de [Sugerencias](/inventory/suggest/) o consulta el [manual](/inventory/manual/).
 
 <style>
 details {

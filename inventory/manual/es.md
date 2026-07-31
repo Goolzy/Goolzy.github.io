@@ -25,83 +25,60 @@ translations:
 
 ## 📖 Manual de Usuario
 
-Explora todas las funciones de la aplicación Inventory en detalle.
+Conoce en detalle las funciones de la app Inventory.
 
 ---
 
 <details open>
-<summary><h3 id="paper">📦 Sistema de Papel</h3></summary>
+<summary><h3 id="home">🏠 Primeros pasos — Pantalla de inicio y pestañas</h3></summary>
 <div class="manual-content" markdown="1">
 
-En Inventory, el **Papel** es la moneda principal utilizada para crear objetos.
+La parte inferior de la app tiene hasta 5 pestañas.
 
-#### ¿Qué es el Papel?
-- **1 Papel** se consume al crear un objeto
-- No puedes crear nuevos objetos sin Papel
+| Pestaña | Descripción |
+|------|------|
+| **Explorar** | Explora los elementos base públicos y tráelos a tu inventario |
+| **Mensajes** | Lista de conversaciones 1:1 con otros usuarios |
+| **Inventario** | El espacio donde se guardan los elementos que posees |
+| **Sellos** | Gestiona por separado los sellos personales creados con «Crear sello» |
+| **Tienda** | Compra papel, sellos e insignias |
 
-#### Cómo obtener Papel
+#### Pestañas que aparecen condicionalmente
+
+- La pestaña **Inventario** aparece cuando posees algún elemento.
+- La pestaña **Sellos** aparece cuando tienes sellos personales creados con «Crear sello».
+- Explorar, Mensajes y Tienda siempre están visibles.
+
+#### Pantalla inicial
+
+Al abrir la app, comienzas en **Inventario** si posees elementos; si no, en **Explorar**.
+
+> 💡 En escritorio puedes cambiar de pestaña rápidamente con la tecla Ctrl y una tecla numérica.
+
+</div>
+</details>
+
+---
+
+<details>
+<summary><h3 id="paper">📦 Papel</h3></summary>
+<div class="manual-content" markdown="1">
+
+El **papel** es la moneda que se usa cuando haces tuyo un elemento base mediante una **copia en papel (scrap)**.
+
+#### Cómo conseguir papel
 
 | Método | Cantidad | Nota |
-|--------|----------|------|
-| Nuevo registro | 10 Papel + 3 Sellos | Solo la primera vez |
-| Vincular Google | +10 hojas | Para usuarios existentes |
-| Vincular Apple | +10 hojas | Para usuarios existentes |
-| Compra en tienda | 10 hojas | Compra in-app |
+|------|--------|------|
+| Vincular cuenta de Google · Apple | 10 hojas | Una vez por cuenta vinculada |
+| Compra en la tienda | 10 hojas | Compra dentro de la app |
+| Recompensa de reciclaje | 1 hoja | Elimina 10 hojas de papel sin usar y recibe 1 hoja nueva |
 
-> 💡 **Consejo**: ¡Los usuarios existentes pueden obtener Papel extra vinculando nuevas cuentas sociales!
+#### Uso del papel
 
-</div>
-</details>
-
----
-
-<details>
-<summary><h3 id="create-item">📄 Crear Artículos</h3></summary>
-<div class="manual-content" markdown="1">
-
-Selecciona papel para crear documentos de registro. Dependiendo del número de papeles seleccionados, puedes crear registros privados o compartidos.
-
-| Tipo de Registro | Papeles | Propósito |
-|------------------|---------|-----------|
-| **Registro Privado** | 1 | Notas personales, diario, mensajes unidireccionales |
-| **Registro Compartido** | 2 o más | Conversación bidireccional, comunicación |
-
-<h4 id="private-log">Crear Artículo de Registro Privado</h4>
-
-1. Selecciona **1 Papel** en la pantalla de inicio
-2. Selecciona **"Crear Nuevo Artículo (Registro Privado)"** del menú inferior
-3. Ingresa la información del artículo:
-   - Título (obligatorio)
-   - Contenido
-   - Imagen (opcional)
-   - Fecha de Inicio (opcional)
-   - Fecha de Expiración (opcional)
-4. Presiona **Guardar** y se consumirá 1 Papel para crear el documento
-
-> 💡 **Registro Privado**: Solo tú puedes ver los registros que escribes. Después de enviarlo, solo el destinatario puede agregar registros.
-
-<h4 id="shared-log">Crear Artículo de Registro Compartido</h4>
-
-1. Selecciona **2 o más Papeles** en la pantalla de inicio
-2. Selecciona **"Crear Nuevo Artículo (Registro Compartido)"** del menú inferior
-3. Ingresa la información del artículo:
-   - Título (obligatorio)
-   - Contenido
-   - Imagen (opcional)
-   - Fecha de Inicio (opcional)
-   - Fecha de Expiración (opcional)
-4. Presiona **Guardar** y se crearán documentos igual al número de papeles seleccionados
-
-> 💡 **Registro Compartido**: Los documentos creados comparten la misma sala de comentarios. Envía documentos a diferentes personas para ver los registros del otro en tiempo real, como un chat.
-
-<h4 id="dates">Fecha de Inicio y Fecha de Expiración</h4>
-
-| Configuración | Descripción |
-|---------------|-------------|
-| **Fecha de Inicio** | El contenido estará borroso hasta esta fecha |
-| **Fecha de Expiración** | El contenido estará borroso y no se podrán agregar registros después de esta fecha |
-
-Si no se configura, será visible inmediatamente y permanente.
+- Al copiar un elemento base se consume **1 hoja**.
+- Si te falta papel, puedes comprarlo en la tienda o vincular una cuenta para recibirlo.
+- El papel aún no usado en copias también puede transferirse a otros usuarios.
 
 </div>
 </details>
@@ -109,43 +86,57 @@ Si no se configura, será visible inmediatamente y permanente.
 ---
 
 <details>
-<summary><h3 id="lock">🔒 Bloqueo de Documento</h3></summary>
+<summary><h3 id="stamp">🔖 Sellos</h3></summary>
 <div class="manual-content" markdown="1">
 
-Puedes proteger los documentos estableciendo una contraseña.
+Un **sello** es un elemento que te permite crear tu propia página de información y transferirla a otros usuarios.
 
-#### ¿Qué es el Bloqueo de Documento?
+#### Crear sello
 
-Un documento bloqueado solo puede verse después de introducir la contraseña correcta.
+1. En el inventario, selecciona un sello en blanco que aún no se haya creado.
+2. Selecciona **«Crear sello»** e introduce el **nombre** del sello. (Máx. 32 caracteres)
+3. Al confirmar el nombre, la creación queda finalizada y, después, **el nombre ya no se puede cambiar.**
+4. En el editor que se abre a continuación, coloca imágenes, textos y elementos para componer la página de información y guárdala.
 
-| Estado | Descripción |
-|--------|-------------|
-| **Desbloqueado** | Cualquiera puede ver el contenido |
-| **Bloqueado** | Contenido visible solo con contraseña |
+> ⚠️ En cuanto confirmas el nombre, la creación queda completada. En el editor solo puedes cambiar la composición de la página y las imágenes; el nombre queda fijo.
 
-#### Cómo Bloquear
+#### Gestión en la pestaña Sellos
 
-1. Selecciona los **documentos** que quieres bloquear en la pantalla de inicio (selección múltiple posible)
-2. Selecciona **"Bloquear Objetos"** desde el menú inferior
-3. Introduce una contraseña numérica (hasta 16 dígitos)
-4. Introduce la misma contraseña de nuevo para confirmar
-5. Una vez bloqueados, los objetos mostrarán un **icono de candado** y un efecto de **escala de grises**
+Los sellos personales creados se reúnen en la pestaña **Sellos**. Pulsa el **botón ≡** a la derecha de cada sello para abrir su menú.
 
-#### Cómo Desbloquear
+| Menú | Descripción |
+|------|------|
+| **Editar** | Editar la página de información y las imágenes (solo los originales que creaste) |
+| **Verificación de propiedad** | Comprobar si un usuario concreto posee un elemento creado con este sello |
+| **Transferir** | Transferir un elemento a otro usuario |
 
-1. Toca un documento bloqueado para entrar a la pantalla de detalles
-2. Aparecerá un diálogo para introducir la contraseña
-3. Introduce la contraseña correcta para desbloquear
-4. Una vez desbloqueado, el bloqueo se elimina permanentemente (para bloquear de nuevo, establece una nueva contraseña)
+- Desliza una entrada de la lista hacia un lado para **confirmarla (marcar como leída)** o **abandonar su gestión**.
 
-> ⚠️ **Advertencia**: Si olvidas tu contraseña, no se puede recuperar. Los documentos bloqueados solo pueden ser **eliminados**.
+#### Copia (scrap)
 
-#### Características del Bloqueo
+Cuando encuentres en Explorar un elemento base que te guste, usa el **botón Scrap** de su pantalla de detalle para traerlo a tu inventario.
 
-- Las contraseñas de bloqueo se **almacenan en la nube**
-- El estado de bloqueo se mantiene incluso al transferir objetos a otras personas
-- Los documentos bloqueados no aparecen en los resultados de búsqueda
-- Los objetos bloqueados aún pueden ser eliminados
+- La copia consume **1 hoja de papel**.
+- Cada elemento base solo puede copiarse **una vez**.
+- La copia conserva la información tal como estaba en el momento de copiarla; no cambia automáticamente aunque el original se modifique después.
+
+#### Recibir la información más reciente
+
+Cuando el original se actualiza, en tu copia aparece el botón **«Recibir la información más reciente»**. Púlsalo para actualizar al contenido más reciente; también puedes dejar activada la actualización automática.
+
+#### Transferir
+
+Los elementos creados con tus sellos pueden transferirse a otros usuarios. Indica el destinatario introduciendo su correo o nombre de dominio, o escaneando su QR.
+
+Al enviar una transferencia, el destinatario recibe una **notificación toast** y, al pulsar **Recibir**, la copia transferida entra en su inventario.
+
+#### Abandonar la gestión
+
+Desliza en la lista los sellos que ya no quieras gestionar para **abandonar su gestión**.
+
+- Las páginas y conversaciones de los usuarios que ya lo copiaron se mantienen intactas.
+- Desaparece de tu lista y **no se puede deshacer.**
+- Cuando se reúnen **10 fragmentos de sello** de sellos abandonados o eliminados, recibes **1 sello nuevo** a cambio.
 
 </div>
 </details>
@@ -153,73 +144,21 @@ Un documento bloqueado solo puede verse después de introducir la contraseña co
 ---
 
 <details>
-<summary><h3 id="clip">📎 Sistema Clip</h3></summary>
+<summary><h3 id="explore">🔍 Explorar</h3></summary>
 <div class="manual-content" markdown="1">
 
-**Clip** es una función que agrupa múltiples documentos para una gestión más fácil.
+Descubre elementos base públicos en la pestaña **Explorar**.
 
-#### ¿Qué es un Clip?
+#### Navegar
 
-Los clips te permiten gestionar documentos relacionados como un solo grupo.
+- Arriba se muestran categorías temáticas como **Juegos · Tecnología · Películas · Comida**.
+- En las filas **Tendencias** · **Novedades** puedes ver contenido popular y reciente.
 
-| Estado | Descripción |
-|--------|-------------|
-| **Documentos Individuales** | Documentos gestionados por separado |
-| **Documentos Clipeados** | Gestionados como grupo, movidos/transferidos juntos |
+#### Búsqueda
 
-#### Crear un Clip
-
-1. Selecciona **2 o más documentos** en la pantalla principal
-2. Toca **"Clipear juntos"** en el menú inferior
-3. Los documentos seleccionados se agrupan en un solo clip
-4. Los documentos clipeados muestran un **icono de clip (📎)** en la esquina superior derecha
-
-> 💡 **Consejo**: ¡El primer documento seleccionado se convierte en la **portada** del clip!
-
-#### Ver Info del Clip
-
-1. Entra en la **pantalla de detalle** de un documento clipeado
-2. Toca el botón **"Info del Clip"**
-3. Ve la lista de todos los elementos en el clip
-
-#### Reordenar Elementos en un Clip
-
-Puedes cambiar el orden de los elementos en la pantalla de info del clip:
-
-1. Mantén presionado el **controlador de arrastre (⋮⋮)** del elemento que quieres mover
-2. Arrastra a la posición deseada
-3. Suelta para guardar el orden
-
-> ⚠️ **Nota**: La portada (primer elemento) no se puede reordenar.
-
-#### Excluir Elementos de un Clip
-
-Puedes eliminar elementos específicos en la pantalla de info del clip:
-
-1. Toca el botón **"Excluir"** junto al elemento
-2. Confirma para eliminar el elemento del clip
-3. El elemento eliminado vuelve a ser un documento individual
-
-> ⚠️ **Nota**: La portada no se puede excluir. Si solo quedan 2 elementos y excluyes 1, el clip se disuelve automáticamente.
-
-#### Deshacer Clip
-
-1. Selecciona el documento clipeado
-2. Toca **"Deshacer clip"** en el menú inferior
-3. Todos los documentos se separan en documentos individuales
-
-#### Transferir Clips
-
-- Cuando envías un documento clipeado, el **grupo completo** se transfiere junto
-- Los destinatarios aceptan/rechazan clips como un **grupo**
-- Los elementos individuales dentro de un clip no se pueden enviar por separado
-
-#### Características del Clip
-
-- Los documentos clipeados se **mueven/transfieren juntos**
-- Establecer un bloqueo en la portada protege todo el clip
-- El icono de clip (📎) facilita identificar el estado del clip
-- Se necesitan al menos 2 documentos para mantener un clip
+1. Escribe una palabra clave en la barra de búsqueda superior.
+2. Mientras escribes, se muestran sugerencias y resultados en tiempo real.
+3. Pulsa una tarjeta de resultado para abrir la pantalla de detalle, donde puedes hacer scrap.
 
 </div>
 </details>
@@ -227,40 +166,30 @@ Puedes eliminar elementos específicos en la pantalla de info del clip:
 ---
 
 <details>
-<summary><h3 id="badge">🏷️ Sistema de Insignias</h3></summary>
+<summary><h3 id="dm">💬 Mensajes directos</h3></summary>
 <div class="manual-content" markdown="1">
 
-Una **Insignia** es una identidad única que puedes usar dentro de la aplicación.
+Puedes mantener **conversaciones directas 1:1** con otros usuarios.
 
-#### ¿Qué es una Insignia?
+#### Iniciar una conversación
 
-Cuando grabas un nombre de dominio en una insignia, todas tus actividades en la app se mostrarán con tu **nombre de dominio grabado** en lugar de tu email.
+Hay tres formas de iniciar una conversación.
 
-Ejemplos: `MiMarca`, `JuanPérez`, `Empresa2025`
+1. Pulsa el **autor de un comentario en contenido de Explorar** y elige **Iniciar mensaje** en la ventana de perfil
+2. Introduce el correo o nombre de dominio de la otra persona en la **barra de búsqueda de la pestaña Mensajes**
+3. Encuéntrala con un **escaneo QR** (el escaneo rellena la barra de búsqueda automáticamente)
 
-#### Grabar una Insignia
+- Al iniciar tú la conversación, comienza cuando **la otra persona acepta**. Si ambos se han solicitado o ya han conversado antes, continúa directamente sin aceptación.
+- Si el correo pertenece a alguien que aún no usa la app, puedes enviarle un **correo de invitación** con el enlace de instalación y un código QR.
 
-1. Compra una insignia en la tienda (estado sin usar)
-2. Toca la insignia → Selecciona el menú **"Grabar"**
-3. Ingresa el nombre de dominio deseado (máx. 32 caracteres)
-   - Se permiten caracteres y números de todos los idiomas
-   - No se permiten caracteres especiales ni emojis
-4. Haz clic en **"Verificar disponibilidad del dominio"** para verificar
-5. Opcionalmente adjunta una imagen de 128x128
-6. Haz clic en **"Grabar"** para completar
+#### Pestaña Mensajes
 
-> ⚠️ **Advertencia**: Una vez grabado, el nombre de dominio y la imagen **no se pueden cambiar permanentemente**. ¡Elige con cuidado!
+- Tus conversaciones se muestran en una lista, y los mensajes no leídos se indican con un contador.
+- Desliza una entrada hacia un lado para marcarla como leída o eliminar la conversación. (Solo se elimina en tu lado; el historial de la otra persona se conserva.)
 
-#### Equipar/Desequipar una Insignia
+#### Denunciar · Bloquear
 
-- **Equipada**: Tu nombre de dominio grabado se mostrará en todas las actividades
-- **Desequipada**: Tu email predeterminado se mostrará de nuevo
-- Aunque poseas múltiples insignias, solo una puede estar equipada a la vez
-
-#### Visualización en tarjeta de inventario
-
-Las insignias grabadas (estado activo) muestran una vista previa de la imagen grabada en la esquina superior derecha de la tarjeta de inventario.
-Esto permite identificar rápidamente a qué dominio pertenece la insignia.
+Desde la ventana de perfil puedes **denunciar** o **bloquear** a alguien. El desbloqueo se hace en la lista de bloqueados de Ajustes.
 
 </div>
 </details>
@@ -268,67 +197,32 @@ Esto permite identificar rápidamente a qué dominio pertenece la insignia.
 ---
 
 <details>
-<summary><h3 id="stamp">🔖 Sistema de Sellos</h3></summary>
+<summary><h3 id="chat-media">🖼️ Fotos y vídeos en el chat</h3></summary>
 <div class="manual-content" markdown="1">
 
-Un **Sello** es un objeto que te permite crear plantillas y compartirlas con otros.
+Puedes adjuntar fotos y vídeos a los mensajes y a los chats de la comunidad.
 
-#### Visualización en tarjeta de inventario
+#### Enviar
 
-Los sellos con plantillas (estado activo) se muestran de manera especial en el inventario:
-- **Fondo**: Imagen de plantilla mostrada al 33% de opacidad
-- **Frente**: Imagen del sello grabado
+1. En la pestaña **Multimedia** del cuadro de entrada, pulsa el botón **Foto** o **Vídeo**.
+2. Si seleccionas varios, se colocan en el escenario, donde puedes reordenarlos arrastrando o eliminarlos individualmente.
+3. Pulsa enviar para iniciar la subida; el mensaje aparece de inmediato en la conversación, sin esperas.
 
-Esto permite identificar rápidamente de qué plantilla se trata.
+> 💡 En escritorio solo se admiten adjuntos de foto.
 
-#### Crear una plantilla de Sello
+#### Galería (varios elementos)
 
-1. Compra un sello en la tienda (estado sin usar)
-2. Toca el sello → Selecciona el menú **"Crear nueva plantilla"**
-3. Ingresa la información de la plantilla:
-   - **Imagen** (obligatorio)
-   - **Título** (máx. 32 caracteres)
-   - **Contenido** (máx. 1024 caracteres)
-   - **Fecha de inicio** (opcional) - Contenido oculto hasta esta fecha
-   - **Fecha de expiración** (opcional) - Agregar registros desactivado después
-   - **Modo de registro** - Registro solo o Registro compartido
-4. Haz clic en **"Crear plantilla"** para completar
+- Puedes agrupar **hasta 16** en un collage en un solo mensaje.
+- Pulsa una celda para abrir el visor y verlo en grande; también puedes guardarlos todos.
 
-#### Duplicar un Sello
+#### Edición de vídeo
 
-Cuando seleccionas un sello activado (plantilla) y papel juntos, aparece el menú **"Duplicar plantilla"**.
+- Los vídeos pueden enviarse hasta **25 MB · 60 segundos**.
+- Si se excede el límite, usa la **edición de vídeo** para recortar la parte deseada. Un indicador muestra el tamaño estimado.
 
-- Se consume 1 Papel
-- Se crea un nuevo objeto con la misma plantilla
-- En modo de registro compartido, usa el mismo espacio compartido que el original
+#### Vista previa de enlaces
 
-#### Compartir Tu Plantilla
-
-Puedes compartir tu plantilla de sello para que otros usuarios puedan buscarla y clonarla.
-
-1. Toca un sello activado (plantilla) → Selecciona **"Configuración de compartir"**
-2. Ingresa la información de compartir:
-   - **Descripción** - Una frase corta describiendo la plantilla
-   - **Etiquetas** - Palabras clave para búsqueda (separadas por comas)
-   - **Duración de compartir** - Cuánto tiempo permanecerá activo el compartir
-3. Haz clic en **"Iniciar compartir"** para completar
-
-Las plantillas compartidas pueden ser encontradas y clonadas por otros usuarios mediante búsqueda por etiquetas.
-
-> 💡 **Consejo**: Para dejar de compartir, selecciona **"Dejar de compartir"** desde el mismo menú.
-
-#### Buscar Plantillas Compartidas
-
-Puedes buscar y clonar plantillas compartidas por otros usuarios.
-
-1. Ve a la pantalla de Perfil y selecciona **"Buscar plantillas compartidas"**
-2. Ingresa etiquetas para buscar, o toca etiquetas populares/recientes
-3. Toca una plantilla de los resultados de búsqueda para ver detalles
-4. Haz clic en el botón **"Clonar"** para clonar la plantilla
-
-- Clonar consume 1 Papel
-- El botón de clonar está desactivado si no tienes papel
-- Los objetos clonados tienen la misma información de plantilla que el original
+Los enlaces del chat se muestran como tarjetas de vista previa con título e imagen. En los enlaces de vídeo, pulsa la tarjeta para **reproducirlo ahí mismo**.
 
 </div>
 </details>
@@ -336,40 +230,16 @@ Puedes buscar y clonar plantillas compartidas por otros usuarios.
 ---
 
 <details>
-<summary><h3 id="quick-input">⚡ Entrada Rápida</h3></summary>
+<summary><h3 id="emoticon">😊 Emoticonos</h3></summary>
 <div class="manual-content" markdown="1">
 
-Al agregar registros, toca el botón `+` para abrir el menú **Entrada Rápida** para ingresar fácilmente información especial.
+Añade **emoticonos** a las conversaciones para expresar emociones.
 
-#### Tipos de Entrada Rápida
+1. Abre la pestaña **Emoticonos** del cuadro de entrada.
+2. Elige el emoticono que quieras de una categoría. (También se reúnen los usados recientemente.)
+3. Envíalo junto con texto o envía solo el emoticono.
 
-| Tipo | Descripción | Ejemplo |
-|------|-------------|---------|
-| **Palabra clave** | Formato Clave:Valor | `Estado:Bueno` |
-| **Fecha** | Fecha con cálculo D-Día | D-5, D-Day, D+3 |
-| **Teléfono** | Número telefónico | Llamar directamente |
-| **Ubicación** | Dirección/coordenadas | Abre app de mapas |
-| **Monto** | Formato de moneda | Formato automático |
-
-#### Acciones de Pulsación Larga
-
-| Tipo de Tarjeta | Acción de Pulsación Larga |
-|-----------------|--------------------------|
-| **📅 Fecha** | Configurar/Quitar alarma |
-| **📞 Teléfono** | Móvil: Llamar, Escritorio: Copiar |
-| **📍 Ubicación** | Móvil: Abrir mapa, Escritorio: Copiar |
-| **💰 Monto** | Copiar al portapapeles |
-
-<h4 id="alarm">Configuración de Alarma de Fecha</h4>
-
-Mantén presionada una tarjeta de fecha para configurar una alarma:
-
-1. **Mantén presionada** la tarjeta de fecha
-2. Selecciona **Configurar** en el diálogo de confirmación
-3. Una vez configurada, el color de la tarjeta cambia y aparece un ícono 🔔
-4. Mantén presionada de nuevo para quitar la alarma
-
-> 💡 **Consejo**: Las tarjetas de fecha muestran automáticamente el cálculo de D-Día (ej: D-5, D-Day, D+3)
+> 💡 Un emoticono enviado solo se muestra en grande, sin bocadillo, y llama más la atención.
 
 </div>
 </details>
@@ -377,86 +247,16 @@ Mantén presionada una tarjeta de fecha para configurar una alarma:
 ---
 
 <details>
-<summary><h3 id="log">📝 Sistema de Registros</h3></summary>
+<summary><h3 id="privacy">🔒 Protección de la privacidad</h3></summary>
 <div class="manual-content" markdown="1">
 
-Los **Registros** son anotaciones que puedes agregar a objetos o plantillas de sellos.
+Tu dirección de correo está protegida para no quedar expuesta tal cual.
 
-#### Modos de Registro
+- Los **usuarios que llevan una insignia** se muestran con su **nombre de dominio** en lugar del correo, y su código QR también se genera a partir del dominio.
+- El correo de un **usuario sin insignia** se representa con un **QR de colores**, reconocible solo por quien lo escanee directamente.
+- En los **chats de la comunidad**, vistos por muchas personas, se oculta la parte final del correo (después de la @) de los usuarios sin insignia de dominio.
 
-| Modo | Registro Solo | Registro Compartido |
-|------|---------------|---------------------|
-| **Ubicación** | Espacio privado de cada persona | Espacio compartido basado en sello original |
-| **Registros visibles** | Solo tus propios registros | Registros de todos los propietarios |
-| **Casos de uso** | Diario personal, notas | Colaboración, comunidad |
-| **Si se elimina el original** | No afectado | No se pueden agregar registros (solo lectura) |
-
-#### Formatos de Registro
-
-Puedes usar varios formatos al escribir registros.
-
-**Formatos básicos:**
-
-| Formato | Descripción | Ejemplo |
-|---------|-------------|---------|
-| Texto plano | Mostrado como burbuja de chat | `¡Inspección completada hoy!` |
-| `clave:valor` | Mostrado como tarjeta info (clave 1-8 car.) | `estado:bueno` |
-Usar la misma clave múltiples veces muestra `valor anterior → nuevo valor`.
-
-**Estilizado de texto:**
-
-| Formato | Efecto | Ejemplo |
-|---------|--------|---------|
-| `{[texto]}` | Tarjeta color principal (fondo + texto) | `{[Importante]}` |
-| `[{texto}]` | Tarjeta gris + texto color principal | `[{Precaución}]` |
-| `[texto]` | Tarjeta gris | `[Nota]` |
-| `{texto}` | Texto color principal | `{Énfasis}` |
-| `(texto)` | Texto color secundario | `(Info adicional)` |
-| `"texto"` | **Negrita** | `"Contenido importante"` |
-| `'texto'` | <u>Subrayado</u> | `'Parte destacada'` |
-| `<texto>` | ~~Tachado~~ | `<Contenido eliminado>` |
-
-> 💡 Los estilos se pueden anidar hasta 3 niveles. Ejemplo: `{["Negrita color principal"]}`
-
-**Enlaces multimedia (Tarjetas URL):**
-
-Cuando ingresas una URL en un registro, se muestra automáticamente como **tarjeta enriquecida**.
-
-| Plataforma | Contenido mostrado | Ejemplo |
-|------------|--------------------|---------|
-| **YouTube** | Miniatura + Título + Canal | `https://youtube.com/watch?v=...` |
-| **Spotify** | Portada + Título + Artista | `https://open.spotify.com/track/...` |
-| **Google Drive** | Miniatura archivo + Nombre | `https://drive.google.com/file/d/...` |
-| **Dropbox** | Ícono + Nombre de archivo | `https://dropbox.com/s/...` |
-| **OneDrive** | Ícono + Nombre del servicio | `https://1drv.ms/...` |
-| **Páginas web** | Miniatura + Título de página | `https://example.com` |
-
-- Usa formato `clave:URL` para mostrar con palabra clave (ej: `docs:https://youtube.com/...`)
-- **Toca** la tarjeta para abrir en app/navegador externo
-- **Mantén presionado** para copiar la URL al portapapeles
-
-> 💡 **Consejo**: Los archivos de Google Drive deben estar **compartidos públicamente** para mostrar miniaturas.
-
-**Registros automáticos:**
-
-Cuando se transfiere un objeto, se registra automáticamente un registro de transferencia:
-- Mostrado en formato `Remitente → Destinatario`
-- Si hay una insignia equipada, se muestra el nombre de dominio
-
-#### Condiciones de fin de registro compartido
-
-- **Sello original eliminado**: No se pueden agregar registros compartidos (solo lectura)
-- **Fecha de expiración pasada**: No se pueden agregar registros compartidos (solo lectura)
-
-#### 🔔 Indicador de no leído
-
-Cuando se agregan nuevos comentarios a un registro compartido, el borde del elemento **pulsa** en la vista de inventario.
-
-- La pulsación comienza inmediatamente cuando otro usuario agrega un comentario
-- La pulsación se detiene cuando abres y ves el documento
-- El estado de lectura se guarda en la nube y se sincroniza en todos los dispositivos
-
-> 💡 **Consejo**: ¡Revisa los elementos que pulsan para no perderte nuevos comentarios!
+La visualización del nombre se refleja en tiempo real: al ponerte o quitarte una insignia, se aplica automáticamente en listas de conversaciones, perfiles y demás.
 
 </div>
 </details>
@@ -464,23 +264,25 @@ Cuando se agregan nuevos comentarios a un registro compartido, el borde del elem
 ---
 
 <details>
-<summary><h3 id="ink">🎨 Sistema de Tinta</h3></summary>
+<summary><h3 id="badge">🏷️ Insignias</h3></summary>
 <div class="manual-content" markdown="1">
 
-La **Tinta** es un objeto que cambia el color del tema de la aplicación.
+Graba un nombre de dominio en una **insignia** y en la app se te mostrará con ese nombre en lugar de tu correo.
 
-#### Cómo usar
+#### Grabar
 
-1. Toca una tinta para entrar a la pantalla de detalle
-2. Haz clic en el botón **"Cambiar tema"**
-3. El color de toda la aplicación cambia inmediatamente
+1. Compra una insignia en la tienda y selecciona una que aún no esté grabada.
+2. Introduce el **nombre de dominio** que quieras. (Máx. 32 caracteres, solo letras y números, sin caracteres especiales ni emojis)
+3. Comprueba su disponibilidad con la **verificación de duplicados**.
+4. Opcionalmente adjunta una imagen de 128×128 y graba.
 
-#### Tipos de Tinta
+> ⚠️ **Atención**: el **nombre de dominio grabado es permanente** y no se puede cambiar. Si grabas con imagen, después podrás editar la imagen y las palabras clave; si grabas sin imagen, no podrás editarla más adelante.
 
-| Tinta | Color |
-|-------|-------|
-| **Tinta Negra** | Tema negro predeterminado |
-| **Tinta Dorada** | Tema dorado lujoso |
+#### Equipar / Quitar / Editar
+
+- Al **equiparla**, tu actividad en la app se muestra con el nombre de dominio. Solo puede haber una equipada a la vez.
+- Al **quitarla**, vuelves a mostrarte con tu correo predeterminado.
+- Con **Editar** puedes cambiar la imagen y las palabras clave.
 
 </div>
 </details>
@@ -488,49 +290,16 @@ La **Tinta** es un objeto que cambia el color del tema de la aplicación.
 ---
 
 <details>
-<summary><h3 id="search">🔍 Función de Búsqueda</h3></summary>
+<summary><h3 id="folder">📂 Carpetas</h3></summary>
 <div class="manual-content" markdown="1">
 
-#### Búsqueda básica
+Cuando acumules elementos, puedes organizarlos en **carpetas**.
 
-Toca la barra de búsqueda arriba para activar el modo de búsqueda.
+- Arrastra un elemento a la zona **«Crear nueva carpeta»** de abajo para crear una carpeta.
+- Cambia el nombre de la carpeta manteniendo pulsada su cabecera. (Máx. 16 caracteres)
+- Con la flecha de la cabecera puedes plegarla o desplegarla, y al pulsar la cabecera seleccionas de una vez todos los elementos de la carpeta.
 
-- Los resultados se filtran en **tiempo real** mientras escribes
-- Toca el botón X para salir del modo de búsqueda
-
-#### Búsquedas recientes
-
-- Se guardan hasta 5 búsquedas recientes
-- Toca una búsqueda reciente para autocompletar
-- Elimina individualmente con el botón X
-
-#### Guardar como filtro
-
-Cuando guardas un término de búsqueda con el botón **"Establecer como filtro"**:
-
-- Aparece como etiqueta de filtro debajo de la barra de búsqueda
-- Toca la etiqueta para filtrar instantáneamente
-- Elimina el filtro con el botón X
-
-<h4 id="keyword">Agregación de palabras clave</h4>
-
-Cuando hay un filtro establecido y seleccionas objetos, los **valores de palabras clave de los objetos seleccionados se agregan automáticamente**.
-
-**Agregación de valores numéricos:**
-- **Suma** y **promedio** se calculan para valores numéricos de la misma palabra clave
-- Ejemplo: Seleccionar `precio:1000`, `precio:2000`, `precio:3000`
-- Resultado: `Suma: 6000  Promedio: 2000`
-
-**Agregación de cadenas:**
-- Los valores de cadena de la misma palabra clave se **unen con espacios**
-- Ejemplo: Seleccionar `etiqueta:A`, `etiqueta:B`, `etiqueta:C`
-- Resultado: `A B C`
-
-**Copiar valores:**
-- **Mantén presionada** una tarjeta de agregación para copiar el valor
-- Aparece una notificación cuando se completa la copia
-
-> 💡 **Ejemplo de uso**: Calcula rápidamente el precio total de varios objetos, o copia etiquetas relacionadas de una vez.
+> 💡 Las carpetas se guardan **solo en el dispositivo en uso**. Los elementos en sí se ven en todos los dispositivos, pero la organización en carpetas puede variar según el dispositivo.
 
 </div>
 </details>
@@ -538,100 +307,20 @@ Cuando hay un filtro establecido y seleccionas objetos, los **valores de palabra
 ---
 
 <details>
-<summary><h3 id="bottom-menu">📱 Insignia del menú inferior</h3></summary>
+<summary><h3 id="shop">🛒 Tienda</h3></summary>
 <div class="manual-content" markdown="1">
 
-Las insignias rojas en los iconos del menú inferior muestran el estado actual.
-
-| Menú | Significado de la insignia |
-|------|---------------------------|
-| **Enviar** | Número de objetos que se pueden enviar (transferibles entre los seleccionados) |
-| **Recibir** | Número de transacciones pendientes (requieren aceptar/devolver) |
-| **Acción** | Número de acciones disponibles con los objetos seleccionados |
-
-> 💡 Los números de las insignias se animan con un efecto de burbuja cuando cambian.
-
-</div>
-</details>
-
----
-
-<details>
-<summary><h3 id="transfer">📤 Enviar Objetos</h3></summary>
-<div class="manual-content" markdown="1">
-
-Puedes transferir objetos al vender de segunda mano o regalar.
-
-#### Cómo enviar
-
-1. Selecciona **Enviar** de la pestaña inferior
-2. **Marca** los objetos a transferir (selección múltiple posible)
-3. Ingresa el email del destinatario
-4. Haz clic en el botón **Enviar**
-
-#### Ingresar email por código QR
-
-En lugar de escribir el email del destinatario, puedes usar un código QR:
-
-1. El destinatario muestra su código QR desde su pantalla de **Perfil**
-2. El remitente presiona el botón **Escanear QR**
-3. Escanea el código QR con la cámara
-4. El email se ingresa automáticamente
-
-> ⚠️ **Importante**: Los objetos transferidos **desaparecen inmediatamente** de tu inventario. Las transferencias no se pueden deshacer.
-
-</div>
-</details>
-
----
-
-<details>
-<summary><h3 id="receive">📥 Recibir Objetos</h3></summary>
-<div class="manual-content" markdown="1">
-
-Puedes recibir objetos enviados por otros.
-
-#### Cómo recibir
-
-1. Selecciona **Recibir** de la pestaña inferior
-2. Se muestra la lista de objetos recibidos
-3. Para cada objeto:
-   - **Aceptar**: Se agrega a tu inventario
-   - **Devolver**: Se envía de vuelta al remitente
-
-#### Notificaciones
-
-- Recibes notificaciones push cuando llegan nuevos objetos (si están habilitadas)
-- La pestaña Recibir muestra el número de objetos no aceptados
-
-</div>
-</details>
-
----
-
-<details>
-<summary><h3 id="shop">🛒 Usar la Tienda</h3></summary>
-<div class="manual-content" markdown="1">
-
-Puedes comprar varios objetos en la tienda.
-
-#### Productos disponibles
+En la tienda puedes comprar los artículos que necesites.
 
 | Producto | Uso |
-|----------|-----|
-| **Papel** | Para crear objetos (consumible) |
-| **Sello** | Para crear plantillas |
-| **Insignia** | Para grabar un dominio único |
-| **Tinta** | Para cambiar el color del tema |
+|------|------|
+| **Papel** | Para copiar elementos base |
+| **Sello** | Para convertir una página de información en un sello personal |
+| **Insignia** | Para grabar un nombre de dominio |
 
-#### Cómo comprar
-
-1. Selecciona **Tienda** de la pestaña inferior
-2. Toca el producto deseado
-3. Procede con el pago (App Store / Google Play)
-4. Entregado automáticamente después del pago
-
-> 💡 La tienda está disponible en todas las plataformas (iOS, Android, Windows, macOS).
+1. Pulsa el producto que quieras en la pestaña Tienda.
+2. Revisa la información del producto y la política de reembolso, y acepta.
+3. Al completar el pago, se entrega automáticamente.
 
 </div>
 </details>
@@ -639,68 +328,28 @@ Puedes comprar varios objetos en la tienda.
 ---
 
 <details>
-<summary><h3 id="pocket">📂 Función de Partición</h3></summary>
+<summary><h3 id="language">🌍 Cambiar el idioma</h3></summary>
 <div class="manual-content" markdown="1">
 
-Puedes agrupar objetos con particiones cuando tienes muchos.
+Se admiten 8 idiomas:
 
-#### Crear una Partición
-
-1. Selecciona objetos
-2. Selecciona **"Crear partición"** del menú inferior
-3. Ingresa el nombre de la partición (máx. 16 caracteres)
-
-#### Características de la Partición
-
-- Las particiones se **guardan solo en el dispositivo**
-- La estructura de partición no es visible en otros dispositivos
-- Los objetos mismos se almacenan en la nube y son visibles en todos los dispositivos
-
-#### Contraer/Expandir
-
-Usa el botón de flecha (▼/▲) en el lado derecho del encabezado de partición para contraer o expandir.
-
-- El estado contraído se mantiene después de reiniciar la aplicación
-- Todas las particiones se expanden automáticamente durante la búsqueda
-- Puedes arrastrar elementos a particiones contraídas
-
-#### Seleccionar todo en Partición
-
-Toca el encabezado de partición para seleccionar/deseleccionar todos los elementos en esa partición.
-
-| Indicador | Significado |
-|-----------|-------------|
-| ○ (Círculo vacío) | Ninguno seleccionado |
-| ◐ (Semicírculo) | Algunos seleccionados |
-| ● (Círculo lleno) | Todos seleccionados |
-
-</div>
-</details>
-
----
-
-<details>
-<summary><h3 id="language">🌍 Cambiar idioma</h3></summary>
-<div class="manual-content" markdown="1">
-
-Se admiten 7 idiomas:
 - 🇰🇷 한국어
 - 🇺🇸 English
 - 🇯🇵 日本語
+- 🇨🇳 中文(简体)
 - 🇩🇪 Deutsch
 - 🇫🇷 Français
 - 🇪🇸 Español
 - 🇧🇷 Português
 
-**Cómo cambiar:**
-Configuración → Idioma → Selecciona el idioma deseado
+Selecciónalo en **Ajustes → Idioma** y se aplicará de inmediato.
 
 </div>
 </details>
 
 ---
 
-> 📚 **¿Tienes más preguntas?** Consulta las [Preguntas frecuentes](/inventory/faq/es/) o contáctanos a través de [Sugerencias](/inventory/suggest/es/).
+> 📚 **¿Tienes más preguntas?** Consulta las [Preguntas frecuentes](/inventory/faq/) o contáctanos a través de [Sugerencias](/inventory/suggest/).
 
 <style>
 details {

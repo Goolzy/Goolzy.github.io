@@ -19,7 +19,7 @@ translations:
 
 **Create digital items and send them to others!**
 
-Create items with a single sheet of paper, and transfer them to others via QR code. Engrave a unique domain name with a badge, and create templates with stamps to share.
+Create items from paper and send them to others via QR code.
 
 ---
 
@@ -62,37 +62,37 @@ Create items with a single sheet of paper, and transfer them to others via QR co
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #a855f7;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">📄</div>
     <h4 style="margin: 0 0 .5rem 0; color: #a855f7;">Item Creation</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Create items with 1 sheet of paper. Add title, content, images, and set start date/expiration.</p>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Create an item with a single sheet of paper. Add a title, content, and images, and set a start date/validity period.</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #14b8a6;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">🏷️</div>
     <h4 style="margin: 0 0 .5rem 0; color: #2dd4bf;">Badge System</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Engrave a unique domain name as your in-app identity. Your domain appears on all activities.</p>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Engrave a unique domain name to use as your in-app identity. Your engraved domain name appears on all your activities.</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #d946ef;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">🔖</div>
     <h4 style="margin: 0 0 .5rem 0; color: #d946ef;">Stamps & Logs</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Create templates with stamps. Leave records in private log or shared log (community) mode.</p>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Create your own info pages with stamps. Leave records in solo log (personal) or shared log (community) mode.</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #a855f7;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">📤</div>
     <h4 style="margin: 0 0 .5rem 0; color: #a855f7;">QR Code Transfer</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Scan recipient's QR → Select item → Transfer complete! Ownership is instantly transferred.</p>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Scan the recipient's QR → select an item → done! Ownership transfers instantly.</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #14b8a6;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">🎨</div>
     <h4 style="margin: 0 0 .5rem 0; color: #2dd4bf;">Ink Themes</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Change app theme colors with ink. Black and gold themes are supported.</p>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Change the app's theme colors with ink. Black and gold themes are supported.</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #d946ef;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">🔍</div>
     <h4 style="margin: 0 0 .5rem 0; color: #d946ef;">Real-time Search</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Instant filtering when you type. Save as filter for quick reuse.</p>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Results filter instantly as you type. Save as a filter for quick reuse.</p>
   </div>
 
 </div>
@@ -135,7 +135,6 @@ Create items with a single sheet of paper, and transfer them to others via QR co
 ---
 
 <style>
-/* Dark glassmorphic style override */
 .neumorphic-content h2 {
   background: linear-gradient(135deg, #a855f7, #2dd4bf) !important;
   background-clip: text !important;
@@ -148,19 +147,15 @@ Create items with a single sheet of paper, and transfer them to others via QR co
 
 .neumorphic-content h3 {
   color: #a855f7 !important;
-  margin-top: 2.5rem !important;
+  margin-top: 2rem !important;
   margin-bottom: 1rem !important;
-}
-
-.neumorphic-content h4 {
-  font-size: 1.05rem !important;
 }
 
 .neumorphic-content hr {
   border: none !important;
   height: 1px !important;
   background: linear-gradient(90deg, transparent, rgba(168, 85, 247, 0.3), transparent) !important;
-  margin: 2.5rem 0 !important;
+  margin: 2rem 0 !important;
 }
 
 .neumorphic-content blockquote {

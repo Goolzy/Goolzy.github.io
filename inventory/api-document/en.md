@@ -116,7 +116,7 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 | `GET /items/{token}` | Get item details |
 | `GET /templates` | List your templates |
 | `GET /templates/{token}` | Get template details |
-| `GET /templates/shared` | List shared templates |
+| `GET /templates/shared` | List shared templates (to be retired — sharing feature discontinued in v3) |
 | `GET /user/stats` | Get user statistics |
 
 ### Write APIs (POST)
@@ -124,11 +124,11 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 | Endpoint | Description |
 |----------|-------------|
 | `POST /templates` | Create new template |
-| `POST /templates/{token}/share` | Share template |
-| `POST /templates/revoke` | Revoke share |
+| `POST /templates/{token}/share` | Share template (to be retired — sharing feature discontinued in v3) |
+| `POST /templates/revoke` | Revoke share (to be retired — sharing feature discontinued in v3) |
 | `POST /templates/{token}/send` | Send template |
-| `POST /templates/{token}/log` | Add logs, update keywords/permissions/image |
 | `POST /templates/{token}/check-ownership` | Check cloned item ownership |
+| `POST /templates/{token}/log` | Add logs, update keywords/permissions/image |
 
 ---
 
@@ -552,7 +552,7 @@ curl -X POST \
 |-------|------|----------|-------------|
 | recipientEmail | string | Yes | Recipient's email |
 | message | string | No | Message (max 200 characters) |
-| keywords | string[] | X | Keywords to add/override |
+| keywords | string[] | No | Keywords to add/override |
 
 #### Keyword Merge Rules
 
@@ -576,81 +576,7 @@ The `keywords` parameter allows you to override template default keywords or add
   "data": {
     "itemToken": "encrypted_item_id",
     "recipientEmail": "recipient@example.com",
-    "status": "sent"
-  }
-}
-```
-
-</div>
-</details>
-
-<details>
-<summary><h3>POST /templates/{token}/log - Add Logs & Update Template</h3></summary>
-<div class="manual-content" markdown="1">
-
-Adds logs, updates keywords, changes permissions, or updates the image of a shared template. Sends push notifications to users who cloned this template.
-
-#### Request
-
-```bash
-curl -X POST \
-     -H "Authorization: Bearer inv_xxx" \
-     -H "Content-Type: application/json" \
-     -d '{
-       "logs": [
-         {"content": "New update released with bug fixes"},
-         {"content": "Blog:https://example.com/update-notes"}
-       ],
-       "keywordUpdates": [
-         {"action": "upsert", "key": "version", "value": "2.1.0"},
-         {"action": "delete", "key": "beta"}
-       ],
-       "permissionUpdates": {
-         "logPermission": "owner",
-         "keywordPermission": "author"
-       },
-       "imageUrl": "https://example.com/new-image.png"
-     }' \
-     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/log"
-```
-
-#### Request Body
-
-| Field | Type | Required | Description |
-|-------|------|----------|-------------|
-| logs | array | No* | Log entries to add (max 10) |
-| logs[].content | string | Yes | Log content (1-256 characters) |
-| keywordUpdates | array | No* | Keyword changes (max 20) |
-| keywordUpdates[].action | string | Yes | "upsert" or "delete" |
-| keywordUpdates[].key | string | Yes | Keyword key (1-8 characters) |
-| keywordUpdates[].value | string | No | Value (required for upsert, `key:value` combined max 256 chars) |
-| permissionUpdates | object | No* | Permission changes |
-| permissionUpdates.logPermission | string | No | "owner" \| "author" \| "none" |
-| permissionUpdates.keywordPermission | string | No | "owner" \| "author" \| "none" |
-| imageUrl | string | No* | New image URL (reprocessed to 512x512 WebP) |
-
-> \* At least one of `logs`, `keywordUpdates`, `permissionUpdates`, or `imageUrl` must be provided.
-
-#### Log Content Format
-
-Logs with `key:value` format (key 1-8 chars) are rendered as info/URL cards in the app:
-
-| Format | Rendering |
-|--------|-----------|
-| `plain text` | Normal text comment |
-| `key:value` | Info card (key-value display) |
-| `key:https://...` | URL card (clickable link) |
-
-#### Response
-
-```json
-{
-  "success": true,
-  "data": {
-    "logsAdded": 2,
-    "keywordsUpdated": 1,
-    "keywordsDeleted": 1,
-    "notificationsSent": 3
+    "status": "pending"
   }
 }
 ```
@@ -683,8 +609,8 @@ curl -X POST \
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| email | string | O | Target user's email |
-| keywordKeys | string[] | X | Keyword keys to retrieve |
+| email | string | Yes | Target user's email |
+| keywordKeys | string[] | No | Keyword keys to retrieve |
 
 #### Response (Has Item)
 
@@ -732,6 +658,102 @@ curl -X POST \
      -H "Content-Type: application/json" \
      -d '{"email": "customer@example.com", "keywordKeys": ["issueDate", "used"]}' \
      "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{coupon_template_token}/check-ownership"
+```
+
+</div>
+</details>
+
+<details>
+<summary><h3>POST /templates/{token}/log - Add Logs & Update Template</h3></summary>
+<div class="manual-content" markdown="1">
+
+Adds logs (feed entries), updates keywords, changes permissions, or updates the image of a shared template. Sends push notifications to users who cloned this template.
+
+#### Request
+
+```bash
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "logs": [
+         {"content": "Crimson Desert final trailer released https://youtu.be/abc"},
+         {"content": "Blog:https://example.com/update-notes"}
+       ],
+       "keywordUpdates": [
+         {"action": "upsert", "key": "release", "value": "2026-03-28"},
+         {"action": "upsert", "key": "price", "value": "69,800 KRW"},
+         {"action": "delete", "key": "beta"}
+       ],
+       "permissionUpdates": {
+         "logPermission": "owner",
+         "keywordPermission": "author"
+       },
+       "imageUrl": "https://example.com/new-image.png"
+     }' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/log"
+```
+
+#### Request Body
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| logs | array | No* | Log entries to add (max 10) |
+| logs[].content | string | Yes | Log content (1-256 characters) |
+| keywordUpdates | array | No* | Keyword changes (max 20) |
+| keywordUpdates[].action | string | Yes | "upsert" or "delete" |
+| keywordUpdates[].key | string | Yes | Keyword key (1-8 characters) |
+| keywordUpdates[].value | string | No | Value (required for upsert, `key:value` combined max 256 chars) |
+| permissionUpdates | object | No* | Permission changes |
+| permissionUpdates.logPermission | string | No | "owner" \| "author" \| "none" |
+| permissionUpdates.keywordPermission | string | No | "owner" \| "author" \| "none" |
+| imageUrl | string | No* | New image URL (reprocessed to 512x512 WebP) |
+
+> \* At least one of `logs`, `keywordUpdates`, `permissionUpdates`, or `imageUrl` must be provided.
+
+#### Log Content Format
+
+Logs with `key:value` format (key 1-8 chars) are rendered as info/URL cards in the app:
+
+| Format | Rendering |
+|--------|-----------|
+| `plain text` | Normal text comment |
+| `key:value` | Info card (key-value display) |
+| `key:https://...` | URL card (clickable link) |
+
+#### Response
+
+```json
+{
+  "success": true,
+  "data": {
+    "logsAdded": 2,
+    "keywordsUpdated": 2,
+    "keywordsDeleted": 1,
+    "notificationsSent": 5
+  }
+}
+```
+
+#### Use Case
+
+Periodically update the keywords of a data-tracking item and add news feed logs:
+
+```bash
+# Update fuel price data + add news log
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "keywordUpdates": [
+         {"action": "upsert", "key": "gasoline", "value": "1,680 KRW"},
+         {"action": "upsert", "key": "diesel", "value": "1,520 KRW"}
+       ],
+       "logs": [
+         {"content": "Nationwide average fuel prices rose slightly in the second week of March https://news.example.com/fuel"}
+       ]
+     }' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/log"
 ```
 
 </div>

@@ -1,12 +1,12 @@
-# Dados de uso do Inventário (Português) - Revisão completa
+# Dados de uso do Inventory (Português) - Revisão completa
 page:
-  title: "Guia de Uso do Inventário"
-  intro: "Descubra o que você pode fazer com o Inventário. Do básico às funções avançadas, guiamos você passo a passo."
+  title: "Guia de Uso do Inventory"
+  intro: "Descubra o que você pode fazer com o Inventory. Do básico às funções avançadas, guiamos você passo a passo."
   expand: "Seguir os passos ↓"
-  collapse: "Fechar ↑"
-  share_title: "Compartilhe sua forma de usar"
+  collapse: "Recolher ↑"
+  share_title: "Conte também como você usa o app"
   share_text: "Como você está usando? Esperamos suas novas ideias."
-  share_btn: "Compartilhar forma de uso"
+  share_btn: "Compartilhar minha forma de uso"
   share_link: "/inventory/suggest/"
   manual_base: "/inventory/manual/"
   levels:
@@ -18,457 +18,643 @@ page:
 categories:
   # ===== 1. Uso do Papel (Paper) =====
   - id: paper-usage
-    title: "📄 Uso do Papel"
+    title: "Uso do Papel"
     icon: "📄"
-    description: "Tudo que você pode fazer com o Papel (Paper)"
+    description: "Tudo o que você pode fazer com o Papel (Paper)"
     items:
       # 1-1. Registro individual
       - type: "Iniciante"
-        title: "Criar meu próprio registro"
-        subtitle: "Arquivo pessoal começando com 1 Papel"
+        title: "Criar meus próprios registros"
+        subtitle: "Um arquivo pessoal que começa com 1 folha de papel"
         content: |
-          <p><strong>Visão geral</strong>: Você pode documentar um papel em branco para registrar imagens e textos, e adicionar conteúdo continuamente ao registro.</p>
+          <p><strong>Visão geral</strong>: No Explorar, faça uma cópia em papel do item base que você gostar usando 1 folha de papel para torná-lo seu, e continue adicionando registros ao log.</p>
 
           <p><strong>Passo a passo</strong></p>
           <ol>
-            <li>No inventário, pressione e segure o <strong>papel em branco</strong> para acessar <strong>Ver detalhes</strong><br/>
-                <em>Ou</em> selecione o papel em branco e toque no botão <strong>Ação</strong></li>
-            <li>Selecione o menu <strong>Criar novo item</strong></li>
-            <li>Insira as informações do item:
-              <ul>
-                <li>Imagem (opcional)</li>
-                <li>Título (obrigatório)</li>
-                <li>Conteúdo (opcional)</li>
-                <li>Prazo (opcional)</li>
-              </ul>
-            </li>
-            <li>Complete <strong>Criar</strong> → Converte para papel documentado</li>
-            <li>O papel documentado aparece no inventário com imagem e título</li>
+            <li>Encontrar um item base do seu interesse na aba <strong>Explorar</strong></li>
+            <li>Copiar com o botão <strong>Scrap</strong> da tela de detalhes — consome 1 folha de papel</li>
+            <li>Uma cópia é criada no seu inventário (as informações do momento da cópia em papel são preservadas como estão)</li>
+            <li>Continuar adicionando seus próprios registros ao log com imagens e texto</li>
           </ol>
+
+          <p>Se quiser compor a página livremente desde o início, use <strong>Criar carimbo</strong> (ver capítulo 2).</p>
 
           <p><strong>Exemplos de uso</strong></p>
           <ul>
-            <li>📔 <strong>Diário/Bloco de notas</strong>: Salve registros diários com imagens e texto, continue adicionando ao registro</li>
-            <li>📸 <strong>Álbum de fotos</strong>: Registre momentos especiais em imagens</li>
-            <li>📋 <strong>Gestão de garantias</strong>: Salve fotos de garantias de produtos, configure prazo para alertas de vencimento</li>
-            <li>🧾 <strong>Armazenamento de recibos</strong>: Guarde recibos importantes digitalmente</li>
+            <li>📔 <strong>Diário/Bloco de notas</strong>: Salvar os registros de cada dia com imagens e texto, adicionando continuamente ao log</li>
+            <li>📸 <strong>Álbum de fotos</strong>: Registrar momentos especiais em imagens</li>
+            <li>📋 <strong>Gestão de garantias</strong>: Salvar fotos das garantias de produtos, com aviso de vencimento pelo prazo</li>
+            <li>🧾 <strong>Guarda de recibos</strong>: Guardar digitalmente os recibos importantes</li>
           </ul>
 
           <p><strong>Dica de organização</strong>: Agrupe documentos semelhantes com <strong>Clip</strong> e separe categorias com <strong>Partição</strong>.</p>
 
-      # 1-2. Duplicação de modelo compartilhado
+      # 1-2. Cópia de item base
       - type: "Iniciante"
-        title: "Obter modelo compartilhado"
-        subtitle: "Transforme o modelo de outros usuários no seu"
+        title: "Trazer itens base"
+        subtitle: "Tornar seus os itens base do Explorar"
         content: |
-          <p><strong>Visão geral</strong>: Você pode duplicar carimbos compartilhados por outros usuários e usá-los como seus próprios documentos.</p>
+          <p><strong>Visão geral</strong>: Você pode copiar os itens base publicados no Explorar e usá-los como seus próprios documentos.</p>
 
           <p><strong>Passo a passo</strong></p>
           <ol>
-            <li>Clique no link do carimbo compartilhado ou escaneie o QR</li>
-            <li>Na tela de detalhes do carimbo, toque em <strong>Duplicar</strong></li>
-            <li>Selecione um <strong>papel em branco</strong> do seu inventário</li>
-            <li>Duplicação completa → O conteúdo do carimbo é copiado para o papel</li>
-            <li>Você pode modificar os valores das palavras-chave conforme necessário</li>
+            <li>Buscar a tag desejada na <strong>barra SuperSearch</strong> no topo</li>
+            <li>Selecionar a aba <strong>Itens base</strong> nos resultados da busca</li>
+            <li>Selecionar o item base desejado para entrar na tela de detalhes</li>
+            <li>Tocar em <strong>Criar cópia em papel</strong></li>
+            <li>Selecionar um <strong>papel em branco</strong> do seu inventário</li>
+            <li>Cópia em papel concluída → O conteúdo do item base é copiado para o papel</li>
           </ol>
 
           <p><strong>Exemplos de uso</strong></p>
           <ul>
-            <li>✅ <strong>Lista de verificação</strong>: Duplique e use modelos compartilhados para preparação de viagem, compras, etc.</li>
-            <li>🎁 <strong>Participação em eventos</strong>: Duplique modelos de eventos compartilhados por marcas/lojas</li>
-            <li>📝 <strong>Uso de formulários</strong>: Duplique formulários úteis criados por outros usuários</li>
+            <li>✅ <strong>Checklist</strong>: Copiar itens base para preparativos de viagem, compras, etc.</li>
+            <li>🎁 <strong>Participação em eventos</strong>: Copiar os itens de eventos distribuídos por marcas/lojas</li>
+            <li>📝 <strong>Uso de formulários</strong>: Copiar os formulários úteis encontrados no Explorar</li>
           </ul>
 
-      # 1-3. Registro compartilhado - Sala de chat
+      # 1-3. Log compartilhado - Espaço de grupo
       - type: "Intermediário"
-        title: "Registrar junto com amigos"
-        subtitle: "Espaço de grupo com registro compartilhado"
+        title: "Registrar junto com os amigos"
+        subtitle: "Um espaço de grupo criado com o log compartilhado"
         content: |
-          <p><strong>Visão geral</strong>: Quando você cria um documento compartilhado com várias folhas de papel, todos os participantes podem registrar no mesmo log.</p>
+          <p><strong>Visão geral</strong>: Crie um carimbo no modo log compartilhado e distribua — todos os participantes poderão registrar no mesmo log.</p>
 
           <p><strong>Passo a passo</strong></p>
           <ol>
-            <li>Selecione <strong>papéis em branco</strong> de acordo com o número de participantes (2 a 10 folhas)</li>
-            <li>Toque no botão <strong>Ação</strong></li>
-            <li>Selecione <strong>Criar documento compartilhado</strong></li>
-            <li>Insira o título e a descrição e crie</li>
-            <li><strong>Envie</strong> o documento compartilhado criado para os participantes</li>
+            <li>Selecionar um <strong>carimbo em branco</strong> e entrar em <strong>Criar carimbo</strong></li>
+            <li>Compor a página de informações e escolher <strong>Log compartilhado</strong> no <strong>modo de log</strong></li>
+            <li>Enviar uma cópia do carimbo pronto aos participantes por <strong>transferência</strong> (com aceitação)</li>
+            <li>Quando os participantes aceitam, todos registram juntos no <strong>mesmo espaço de log compartilhado</strong></li>
           </ol>
 
-          <p><strong>Uso de papel por número de pessoas</strong></p>
-          <ul>
-            <li>👫 2 pessoas: 2 folhas de Papel (diário de casal, chat 1:1)</li>
-            <li>👨‍👩‍👧 3 pessoas: 3 folhas de Papel (projeto em pequeno grupo)</li>
-            <li>👨‍👩‍👧‍👦 4 a 10 pessoas: 4 a 10 folhas de Papel (reunião familiar, clube)</li>
-          </ul>
+          <p><strong>Consumo de papel</strong>: Cada cópia ou transferência consome 1 folha de papel — prepare o suficiente conforme o número de participantes.</p>
 
           <p><strong>Exemplos de uso</strong></p>
           <ul>
-            <li>💑 <strong>Diário de casal</strong>: Registre memórias juntos, só vocês dois</li>
-            <li>👨‍👩‍👧‍👦 <strong>Álbum familiar</strong>: Compartilhe eventos familiares e vida cotidiana</li>
-            <li>📚 <strong>Grupo de estudo</strong>: Registre juntos conteúdos de estudo e perguntas</li>
+            <li>💑 <strong>Diário de casal</strong>: Registrar juntos as memórias dos dois</li>
+            <li>👨‍👩‍👧‍👦 <strong>Álbum de família</strong>: Compartilhar eventos familiares e o dia a dia</li>
+            <li>📚 <strong>Grupo de estudos</strong>: Registrar juntos o conteúdo dos estudos e as dúvidas</li>
+          </ul>
+
+      # 1-4. Organização avançada de documentos
+      - type: "Avançado"
+        title: "Gerenciar documentos de forma sistemática"
+        subtitle: "Um arquivo organizado com Clip e Partição"
+        content: |
+          <p><strong>Visão geral</strong>: Quando os documentos se acumulam, você pode organizá-los sistematicamente com Clip e Partição.</p>
+
+          <p><strong>Agrupar documentos com Clip</strong></p>
+          <ol>
+            <li>Selecionar vários <strong>papéis</strong> que deseja agrupar</li>
+            <li>Tocar no botão <strong>Ação</strong></li>
+            <li>Escolher <strong>Agrupar com Clip</strong></li>
+            <li>Digitar o nome do Clip e concluir</li>
+          </ol>
+
+          <p><strong>Separar áreas com Partição</strong></p>
+          <ol>
+            <li>Tocar em <strong>Adicionar Partição</strong> no inventário</li>
+            <li>Digitar o nome da Partição (ex.: Trabalho, Pessoal, Hobby)</li>
+            <li>Arrastar os documentos para a Partição correspondente</li>
+          </ol>
+
+          <p><strong>Exemplos de uso</strong></p>
+          <ul>
+            <li>📁 <strong>Organização por projeto</strong>: Agrupar cada projeto com Clip e classificar com Partições</li>
+            <li>📅 <strong>Arquivo por ano</strong>: Gerenciar por ano com Partições 2024, 2025</li>
+            <li>🏷️ <strong>Classificação por categoria</strong>: Partições por tipo — fotos, documentos, notas, etc.</li>
+          </ul>
+
+      # 1-5. Documentação profissional especialista
+      - type: "Especialista"
+        title: "Construir um sistema de trabalho"
+        subtitle: "Da gestão de projetos à passagem de funções"
+        content: |
+          <p><strong>Visão geral</strong>: Com a função de log do papel, você pode gerenciar sistematicamente o histórico do seu trabalho.</p>
+
+          <p><strong>Gestão de projetos</strong></p>
+          <ol>
+            <li>Criar <strong>1 folha de papel</strong> por projeto</li>
+            <li>Registrar no log o andamento diário, os problemas e as decisões</li>
+            <li>Anexar materiais com links do Dropbox, Google Drive, OneDrive</li>
+            <li>Reforçar a segurança dos documentos sensíveis com o <strong>bloqueio</strong></li>
+          </ol>
+
+          <p><strong>Documentos de passagem de funções</strong></p>
+          <ol>
+            <li>Criar um papel por área de responsabilidade</li>
+            <li>Organizar processos de trabalho, cuidados e contatos</li>
+            <li>Converter em documento compartilhado e entregar ao sucessor</li>
+          </ol>
+
+          <p><strong>Gestão de atas</strong></p>
+          <ol>
+            <li>Criar um papel para cada reunião periódica</li>
+            <li>Registrar no log participantes, pauta e decisões</li>
+            <li>Agrupar com Clip as atas do mesmo comitê</li>
+          </ol>
+
+          <p><strong>Dicas de uso</strong></p>
+          <ul>
+            <li>📊 Converter em retrospectiva ao encerrar o projeto</li>
+            <li>🔍 Buscar rapidamente registros antigos com o SuperSearch</li>
+            <li>📤 Exportar em PDF quando necessário</li>
           </ul>
 
   # ===== 2. Uso do Carimbo (Stamp) =====
   - id: stamp-usage
-    title: "🔖 Uso do Carimbo"
+    title: "Uso do Carimbo"
     icon: "🔖"
-    description: "Criar modelos e duplicar com Carimbo (Stamp)"
+    description: "Criar carimbos pessoais e copiar com o Carimbo (Stamp)"
     items:
-      # 2-1. Carimbo de registro individual
-      - type: "Avançado"
-        title: "Criar meu próprio modelo"
-        subtitle: "Produção em massa de documentos no mesmo formato com carimbo"
+      # 2-0. Fundamentos do carimbo (Iniciante)
+      - type: "Iniciante"
+        title: "Entender o carimbo"
+        subtitle: "Conceito e uso básico do carimbo pessoal"
         content: |
-          <p><strong>Visão geral</strong>: Quando você grava um carimbo, ele se torna um modelo. Você pode duplicar este modelo no papel para criar rapidamente vários documentos no mesmo formato.</p>
+          <p><strong>Visão geral</strong>: O carimbo é um carimbo pessoal que permite criar rapidamente documentos com formato repetido. Uma vez criado, você pode copiar o mesmo formato em várias folhas de papel.</p>
 
-          <p><strong>Gravar o carimbo</strong></p>
+          <p><strong>O que é um carimbo?</strong></p>
+          <ul>
+            <li>🔖 <strong>Carimbo pessoal</strong>: Um formato predefinido (imagem, título, conteúdo, palavras-chave)</li>
+            <li>📋 <strong>Cópia</strong>: Carimbar um papel em branco cria um documento com formato idêntico</li>
+            <li>🔄 <strong>Uso repetido</strong>: Um carimbo criado uma vez pode ser copiado sem limite</li>
+          </ul>
+
+          <p><strong>Exemplos de uso do carimbo</strong></p>
+          <ul>
+            <li>📔 Formato de diário de todos os dias</li>
+            <li>✅ Checklists recorrentes</li>
+            <li>📊 Formato de relatórios periódicos</li>
+            <li>🏋️ Ficha de treino/dieta</li>
+          </ul>
+
+          <p><strong>Carimbo vs Papel</strong></p>
+          <ul>
+            <li>📄 <strong>Papel</strong>: Documento individual, com conteúdo próprio</li>
+            <li>🔖 <strong>Carimbo</strong>: Formato (molde), carimbo pessoal de uso repetido</li>
+          </ul>
+
+      # 2-1. Carimbo de log individual
+      - type: "Intermediário"
+        title: "Criar meu próprio carimbo pessoal"
+        subtitle: "Produzir em série documentos com o mesmo formato usando o carimbo"
+        content: |
+          <p><strong>Visão geral</strong>: Com «Criar carimbo» você obtém um carimbo pessoal. Copiando esse carimbo pessoal no papel, você cria rapidamente vários documentos com o mesmo formato.</p>
+
+          <p><strong>Criar carimbo</strong></p>
           <ol>
-            <li>No inventário, pressione e segure o <strong>carimbo em branco</strong> para acessar <strong>Ver detalhes</strong><br/>
-                <em>Ou</em> selecione o carimbo em branco e toque no botão <strong>Ação</strong></li>
-            <li>Selecione o menu <strong>Criar novo modelo</strong></li>
-            <li>Insira as informações do modelo:
+            <li>No inventário, manter pressionado um <strong>carimbo em branco</strong> para entrar em <strong>Ver detalhes</strong><br/>
+                <em>ou</em> selecionar o carimbo em branco e tocar no botão <strong>Ação</strong></li>
+            <li>Escolher o menu <strong>Criar carimbo</strong></li>
+            <li>Inserir as informações do carimbo pessoal:
               <ul>
-                <li>Imagem (opcional)</li>
+                <li>Imagem (obrigatória)</li>
                 <li>Título (obrigatório)</li>
-                <li>Conteúdo (opcional)</li>
+                <li>Conteúdo (obrigatório)</li>
                 <li>Prazo (opcional)</li>
-                <li>Palavras-chave padrão (máximo 10)</li>
+                <li>Palavras-chave básicas (máximo 128)</li>
               </ul>
             </li>
-            <li>Complete <strong>Criar</strong> → Converte para carimbo gravado</li>
+            <li>Concluir com <strong>Criar</strong> → Converte-se em carimbo pessoal</li>
           </ol>
 
-          <p><strong>Duplicar no papel</strong></p>
+          <p><strong>Copiar no papel</strong></p>
           <ol>
-            <li>Selecione o <strong>carimbo</strong> gravado</li>
-            <li>Selecione adicionalmente a quantidade necessária de <strong>papéis em branco</strong> para duplicar</li>
-            <li>Toque no botão <strong>Ação</strong></li>
-            <li>Selecione o menu <strong>Duplicar</strong></li>
-            <li>O conteúdo gravado no carimbo é duplicado nos papéis selecionados</li>
+            <li>Selecionar o <strong>carimbo pessoal</strong> pronto</li>
+            <li>Selecionar também quantos <strong>papéis em branco</strong> forem necessários</li>
+            <li>Tocar no botão <strong>Ação</strong></li>
+            <li>Escolher o menu <strong>Copiar</strong></li>
+            <li>O conteúdo do carimbo pessoal é copiado para os papéis selecionados</li>
           </ol>
 
           <p><strong>Exemplos de uso</strong></p>
           <ul>
-            <li>🏋️ <strong>Registro de exercícios</strong>: Registre o conteúdo dos exercícios diariamente no mesmo formato</li>
-            <li>📖 <strong>Registro de leitura</strong>: Escreva resenhas de livros em formato uniforme para cada livro</li>
-            <li>🍷 <strong>Gestão de coleções</strong>: Catálogo de colecionáveis como vinhos, Lego, figuras</li>
+            <li>📋 <strong>Panfletos/Avisos</strong>: Distribuir o mesmo conteúdo em várias cópias</li>
+            <li>🏷️ <strong>Informações de produtos</strong>: Copiar e entregar especificações e preços</li>
+            <li>📜 <strong>Comunicados</strong>: Publicar o mesmo aviso em vários lugares</li>
           </ul>
 
-          <p><strong>Dica de organização</strong>: Agrupe documentos gerados por carimbos com <strong>Clip</strong> para gerenciar como séries.</p>
+          <p><strong>Dica de organização</strong>: Agrupe com <strong>Clip</strong> os documentos criados com o carimbo e gerencie-os como série.</p>
 
-      # 2-2. Carimbo de registro compartilhado
+      # 2-2. Carimbo de log compartilhado
       - type: "Avançado"
-        title: "Criar comunidade aberta"
-        subtitle: "Adicione participantes continuamente com carimbo de registro compartilhado"
+        title: "Criar uma comunidade aberta"
+        subtitle: "Adicionar participantes continuamente com o carimbo de log compartilhado"
         content: |
-          <p><strong>Visão geral</strong>: Ao criar um carimbo no modo de registro compartilhado, ele se torna um espaço público onde qualquer pessoa pode duplicar e participar.</p>
+          <p><strong>Visão geral</strong>: Ao criar um carimbo no modo log compartilhado, ele se torna um espaço aberto em que todos os usuários que o recebem por transferência participam do mesmo log.</p>
 
           <p><strong>Passo a passo</strong></p>
           <ol>
-            <li>Selecione <strong>carimbo em branco</strong> e acesse <strong>Criar novo modelo</strong></li>
-            <li>Insira as informações do modelo: imagem, título, conteúdo, prazo, palavras-chave</li>
-            <li>Selecione <strong>Modo de registro: Compartilhado</strong> ⭐</li>
-            <li>Complete <strong>Criar</strong></li>
+            <li>Selecionar um <strong>carimbo em branco</strong> e entrar em <strong>Criar carimbo</strong></li>
+            <li>Inserir as informações do carimbo pessoal: imagem, título, conteúdo, prazo, palavras-chave</li>
+            <li>Escolher <strong>Modo de log: Compartilhado</strong> ⭐</li>
+            <li>Concluir com <strong>Criar</strong></li>
           </ol>
 
           <p><strong>Como adicionar participantes</strong></p>
           <ol>
-            <li>Selecione o carimbo criado e envie o link/QR via <strong>Compartilhar</strong></li>
-            <li>A outra pessoa executa <strong>Duplicar</strong> através do link</li>
-            <li>O usuário que duplicou participa automaticamente do registro compartilhado</li>
-            <li>Pode adicionar continuamente sem limite de pessoas</li>
+            <li>Gerar o <strong>código QR de transferência</strong> do carimbo e publicá-lo ou mostrá-lo aos participantes</li>
+            <li>Quem deseja participar recebe a <strong>transferência</strong> escaneando o QR (com aceitação)</li>
+            <li>O usuário que recebe a transferência entra automaticamente no log compartilhado</li>
+            <li>Adição contínua possível, sem limite de participantes</li>
           </ol>
 
           <p><strong>Exemplos de uso</strong></p>
           <ul>
-            <li>💬 <strong>Sala de chat aberta</strong>: Espaço de discussão pública onde qualquer pessoa pode participar</li>
+            <li>💬 <strong>Sala de chat aberta</strong>: Espaço de discussão público aberto a todos</li>
             <li>🎤 <strong>Fã-clube</strong>: Encontro de fãs de artistas/marcas</li>
-            <li>📢 <strong>Fórum da comunidade</strong>: Operação de comunidade baseada em interesses</li>
+            <li>📢 <strong>Mural da comunidade</strong>: Administrar uma comunidade baseada em interesses</li>
           </ul>
 
-      # 2-3. Compartilhamento de carimbo - Pequenos comerciantes
+      # 2-3. Transferência de carimbos - Pequenos negócios
       - type: "Especialista"
-        title: "Usar na operação de loja"
-        subtitle: "Marketing de carimbo para pequenos comerciantes"
+        title: "Usar na gestão do seu negócio"
+        subtitle: "Marketing com carimbos para pequenos comerciantes"
         content: |
-          <p><strong>Visão geral</strong>: Você pode compartilhar carimbos para se comunicar com clientes e distribuir informações da loja.</p>
+          <p><strong>Visão geral</strong>: Transfira carimbos para se comunicar com os clientes e distribuir as informações do seu negócio.</p>
 
-          <p>🍽️ <strong>Cardápio da loja</strong></p>
+          <p>🍽️ <strong>Cardápio do estabelecimento</strong></p>
           <ol>
-            <li>Crie um modelo de carimbo com fotos do cardápio</li>
-            <li>Configure nome do prato, preço, descrição nas palavras-chave</li>
-            <li>Compartilhe o carimbo para gerar código QR → Coloque nas mesas</li>
-            <li>Cliente escaneia o QR → Duplica para ver informações do cardápio</li>
+            <li>Criar um carimbo pessoal com fotos do cardápio</li>
+            <li>Definir nas palavras-chave os nomes dos pratos, preços e descrições</li>
+            <li>Gerar um código QR de transferência do carimbo → colocar nas mesas</li>
+            <li>O cliente escaneia o QR → recebe a transferência e confere as informações do cardápio</li>
           </ol>
 
           <p>🎫 <strong>Distribuição de cupons/eventos</strong></p>
           <ol>
-            <li>Crie modelo de carimbo com imagem do evento</li>
-            <li>Configure conteúdo do desconto, validade nas palavras-chave</li>
-            <li>Compartilhe link/QR do carimbo com clientes</li>
-            <li>Cliente duplica → Guarda e apresenta como cupom</li>
+            <li>Criar um carimbo pessoal com a imagem do evento</li>
+            <li>Definir nas palavras-chave o desconto e o período de validade</li>
+            <li>Transferir o carimbo ao cliente por QR</li>
+            <li>O cliente aceita → guarda e apresenta como cupom</li>
           </ol>
 
-          <p>📋 <strong>Coleta de feedback de clientes</strong></p>
+          <p>📋 <strong>Coleta de feedback dos clientes</strong></p>
           <ol>
-            <li>Crie modelo de feedback no modo de registro compartilhado</li>
-            <li>Configure campos de avaliação/opinião nas palavras-chave</li>
-            <li>Cliente duplica → Escreve avaliação no registro compartilhado</li>
-            <li>Todas as avaliações são reunidas e podem ser verificadas em um só lugar</li>
+            <li>Criar um carimbo de feedback no modo log compartilhado</li>
+            <li>Definir com palavras-chave os campos de avaliação/opinião</li>
+            <li>O cliente copia → escreve a avaliação no log compartilhado</li>
+            <li>Todas as avaliações ficam reunidas e visíveis em um só lugar</li>
           </ol>
 
           <p><strong>Outros usos</strong></p>
           <ul>
-            <li>🆕 Anúncio de lançamento de novo cardápio</li>
-            <li>📅 Modelo de informações de reserva</li>
-            <li>📍 Informações de localização da loja/horário de funcionamento</li>
+            <li>🆕 Aviso de lançamento de novos pratos</li>
+            <li>📅 Formulário de informações de reserva</li>
+            <li>📍 Informações de localização/horário de funcionamento</li>
           </ul>
 
-      # 2-4. Arquivo pessoal
-      - type: "Intermediário"
-        title: "Criar arquivo pessoal"
-        subtitle: "Organize seus conteúdos favoritos em sua própria coleção"
-        content: |
-          <p><strong>Visão geral</strong>: Organize sistematicamente seus conteúdos favoritos como YouTube, Spotify, livros, filmes.</p>
-
-          <p>🎬 <strong>Playlist do YouTube</strong></p>
-          <ol>
-            <li>Crie um documento "Minha Coleção do YouTube" com papel em branco</li>
-            <li>Adicione links de vídeos + notas rápidas ao registro</li>
-            <li>Quando os vídeos se acumularem, agrupe por gênero com <strong>Clip</strong></li>
-          </ol>
-
-          <p>🎵 <strong>Coleção de músicas do Spotify</strong></p>
-          <ol>
-            <li>Crie um documento "Playlist 2024" com papel em branco</li>
-            <li>Adicione links do Spotify + registre a emoção/situação do momento</li>
-            <li>Organize com <strong>Clip</strong> por temporada, ambiente</li>
-          </ol>
-
-          <p>📚 <strong>Arquivo de livros lidos</strong></p>
-          <ol>
-            <li>Crie um carimbo com modelo de capa de livro (palavras-chave: autor, avaliação, etc.)</li>
-            <li>Duplique o carimbo no papel para cada livro</li>
-            <li>Registre trechos marcantes, resenhas no registro</li>
-            <li>Agrupe séries com <strong>Clip</strong></li>
-          </ol>
-
-          <p>🎞️ <strong>Registro de filmes/séries assistidos</strong></p>
-          <ol>
-            <li>Crie um carimbo com modelo de pôster de filme</li>
-            <li>Duplique no papel para cada filme</li>
-            <li>Adicione comentário breve + classificação (★★★★☆) no registro</li>
-          </ol>
-
-      # 2-5. Criadores/Influenciadores
+      # 2-4. Criadores/Influenciadores
       - type: "Especialista"
         title: "Atuar como criador"
-        subtitle: "Comunicar com fãs e distribuir conteúdo"
+        subtitle: "Comunicar-se com os fãs e distribuir conteúdo"
         content: |
-          <p><strong>Visão geral</strong>: Criadores e influenciadores podem se comunicar com fãs e realizar eventos.</p>
+          <p><strong>Visão geral</strong>: Criadores e influenciadores podem se comunicar com os fãs e realizar eventos.</p>
 
-          <p>🎉 <strong>Evento de fãs</strong></p>
+          <p>🎉 <strong>Eventos para fãs</strong></p>
           <ol>
-            <li>Crie carimbo de evento no modo de registro compartilhado</li>
-            <li>Compartilhe o link do carimbo com os fãs</li>
-            <li>Fãs duplicam para participar</li>
-            <li>Realize quiz, sorteios no registro compartilhado</li>
+            <li>Criar um carimbo de evento no modo log compartilhado</li>
+            <li>Transferir o carimbo aos fãs</li>
+            <li>Os fãs copiam e participam</li>
+            <li>Realizar quiz e sorteios no log compartilhado</li>
           </ol>
 
           <p>🛍️ <strong>Catálogo de produtos</strong></p>
           <ol>
-            <li>Crie carimbo com fotos de produtos</li>
-            <li>Configure nome do produto, preço, link de compra nas palavras-chave</li>
-            <li>Fãs duplicam para usar como lista de desejos</li>
+            <li>Criar um carimbo com fotos dos produtos</li>
+            <li>Definir nas palavras-chave o nome do produto, o preço e o link de compra</li>
+            <li>Os fãs copiam e usam como lista de desejos</li>
           </ol>
 
           <p>❓ <strong>Espaço de perguntas e respostas</strong></p>
           <ol>
-            <li>Crie carimbo de Q&A no modo de registro compartilhado</li>
-            <li>Fãs duplicam e escrevem perguntas no registro</li>
-            <li>Criador responde no registro compartilhado</li>
+            <li>Criar um carimbo de Q&A no modo log compartilhado</li>
+            <li>Os fãs copiam e escrevem perguntas no log</li>
+            <li>O criador responde no log compartilhado</li>
           </ol>
 
           <p><strong>Outros usos</strong></p>
           <ul>
-            <li>📅 Informações de encontro com fãs/local/como participar</li>
-            <li>🎬 Histórias dos bastidores, processo de produção</li>
-            <li>📁 Arquivo de conteúdos antigos</li>
+            <li>📅 Informações de encontros de fãs: data/local/como participar</li>
+            <li>🎬 Compartilhar bastidores e processo de produção</li>
+            <li>📁 Arquivo de conteúdos anteriores</li>
           </ul>
 
       # 2-6. Hobbies/Interesses
       - type: "Intermediário"
         title: "Compartilhar hobbies"
-        subtitle: "Compartilhamento de conteúdo baseado em interesses"
+        subtitle: "Trocar conteúdo com base nos interesses"
         content: |
-          <p><strong>Visão geral</strong>: Você pode criar carimbos com seus hobbies e interesses e compartilhá-los com outros usuários.</p>
+          <p><strong>Visão geral</strong>: Transforme seus hobbies e interesses em carimbos para compartilhar com outros usuários.</p>
 
           <p>🍳 <strong>Compartilhar receitas</strong></p>
           <ol>
-            <li>Crie carimbo com foto do prato pronto</li>
-            <li>Configure ingredientes, tempo de preparo nas palavras-chave</li>
-            <li>Configure modo de registro compartilhado → Usuários que duplicarem compartilham avaliações</li>
+            <li>Criar um carimbo com a foto do prato pronto</li>
+            <li>Definir nas palavras-chave os ingredientes e o tempo de preparo</li>
+            <li>Ativar o modo log compartilhado → os usuários que copiarem compartilham suas impressões</li>
           </ol>
 
-          <p>🏃 <strong>Compartilhar rotina de exercícios</strong></p>
+          <p>🏃 <strong>Compartilhar rotinas de treino</strong></p>
           <ol>
-            <li>Crie carimbo de desafio de 30 dias, rotina de treino em casa</li>
-            <li>Configure modo de registro compartilhado</li>
-            <li>Participantes duplicam e registram conclusão diária</li>
+            <li>Criar um carimbo de desafio de 30 dias ou rotina de treino em casa</li>
+            <li>Ativar o modo log compartilhado</li>
+            <li>Os participantes copiam e registram diariamente o que concluíram</li>
           </ol>
 
           <p>✈️ <strong>Guia de viagem</strong></p>
           <ol>
-            <li>Crie carimbo com foto do destino + roteiro recomendado</li>
-            <li>Organize informações de restaurantes, hospedagem nas palavras-chave</li>
-            <li>Compartilhe → Pessoas que foram adicionam avaliações</li>
+            <li>Criar um carimbo com fotos do destino + roteiros recomendados</li>
+            <li>Organizar nas palavras-chave restaurantes e hospedagens</li>
+            <li>Transferir → quem já foi adiciona suas impressões</li>
           </ol>
 
           <p><strong>Outros usos</strong></p>
           <ul>
-            <li>🎮 Dicas de jogos, builds</li>
-            <li>🔨 Guia de projetos DIY</li>
-            <li>🌱 Cuidados com plantas, cronograma de rega</li>
-            <li>🐕 Dicas de cuidados com animais de estimação</li>
+            <li>🎮 Compartilhar guias e builds de jogos</li>
+            <li>🔨 Guias de projetos DIY</li>
+            <li>🌱 Cuidados com plantas e cronograma de rega</li>
+            <li>🐕 Dicas de cuidados com pets</li>
           </ul>
 
       # 2-7. Comunidade local/familiar
       - type: "Intermediário"
-        title: "Operar atividades em grupo"
-        subtitle: "Espaço de comunicação para grupos locais, familiares e de amigos"
+        title: "Organizar atividades de grupo"
+        subtitle: "Espaço de comunicação para o bairro, a família e os amigos"
         content: |
-          <p><strong>Visão geral</strong>: Você pode criar espaços compartilhados com carimbos para comunidades locais, reuniões familiares e grupos de amigos.</p>
+          <p><strong>Visão geral</strong>: Com carimbos, você pode criar espaços compartilhados para comunidades locais, encontros de família e grupos de amigos.</p>
 
           <p>🏘️ <strong>Comunidade local</strong></p>
           <ul>
-            <li>🍜 Mapa de restaurantes do bairro: Moradores recomendam restaurantes no registro compartilhado</li>
-            <li>🎪 Informações de eventos locais: Festivais, feiras, eventos culturais</li>
-            <li>🏃 Recrutamento de clubes: Apresentação de clubes de caminhada, corrida, leitura</li>
-            <li>🏠 Comunicação de moradores/condomínio: Compartilhamento de avisos do prédio</li>
+            <li>🍜 Mapa gastronômico do bairro: os moradores recomendam restaurantes no log compartilhado</li>
+            <li>🎪 Informações de eventos locais: festivais, feiras, eventos culturais</li>
+            <li>🏃 Recrutamento de clubes: apresentar grupos de trilha, corrida, leitura, etc.</li>
+            <li>🏠 Reunião de moradores: divulgar os avisos do condomínio</li>
           </ul>
 
-          <p>👨‍👩‍👧‍👦 <strong>Grupos familiares/de amigos</strong></p>
+          <p>👨‍👩‍👧‍👦 <strong>Família/Grupo de amigos</strong></p>
           <ul>
-            <li>🍳 Livro de receitas da família: Receitas tradicionais da família</li>
-            <li>🎂 Calendário de aniversários de amigos: Gestão de aniversários e ideias de presentes</li>
-            <li>✅ Lista de desejos do grupo: Objetivos a realizar juntos</li>
-            <li>✈️ Planejamento de viagem familiar: Compartilhamento de itinerário, itens necessários, orçamento</li>
-            <li>💒 Informações de ocasiões especiais: Compartilhamento de casamentos, festas de aniversário</li>
+            <li>🍳 Livro de receitas da família: receitas passadas de geração em geração</li>
+            <li>🎂 Calendário de aniversários dos amigos: gestão de aniversários e ideias de presentes</li>
+            <li>✅ Bucket list do grupo: metas para realizar juntos</li>
+            <li>✈️ Plano de viagem em família: compartilhar roteiro, bagagem e orçamento</li>
+            <li>💒 Avisos de celebrações: compartilhar informações de casamentos e festas de 1 ano</li>
           </ul>
 
       # 2-8. Trabalho/Eventos
       - type: "Avançado"
-        title: "Usar no trabalho e eventos"
+        title: "Usar no trabalho e em eventos"
         subtitle: "Colaboração em equipe e registro de dias especiais"
         content: |
-          <p><strong>Visão geral</strong>: Você pode criar espaços compartilhados com carimbos para colaboração no trabalho e eventos especiais.</p>
+          <p><strong>Visão geral</strong>: Com carimbos, você pode criar espaços compartilhados para a colaboração no trabalho e eventos especiais.</p>
 
           <p>💼 <strong>Trabalho/Colaboração</strong></p>
           <ul>
-            <li>📊 Projeto de equipe: Compartilhe o progresso com registro compartilhado</li>
-            <li>📝 Modelo de ata de reunião: Modelo padronizado de ata com carimbo</li>
-            <li>📋 Passagem de tarefas: Organização e transferência de responsabilidades</li>
-            <li>👋 Integração de novos funcionários: Compartilhamento de guia de adaptação à empresa</li>
+            <li>📊 Projetos de equipe: compartilhar o andamento pelo log compartilhado</li>
+            <li>📝 Formato de atas: padronizar as atas de reunião com um carimbo</li>
+            <li>📋 Passagem de funções: organizar e entregar as responsabilidades</li>
+            <li>👋 Onboarding de novatos: compartilhar o guia de adaptação à empresa</li>
           </ul>
 
           <p>🎉 <strong>Eventos/Dias especiais</strong></p>
           <ul>
-            <li>💒 Convite de casamento: Carimbo compartilhado com convite + confirmação de presença + mensagens de felicitações</li>
-            <li>🎈 Convite de festa: Convites para aniversário, festa de casa nova, confraternização</li>
-            <li>👶 Festa de bebê/batizado: Fotos do bebê + coleção de mensagens de felicitações</li>
-            <li>🕯️ Memorial/Datas comemorativas: Espaço para compartilhar memórias juntos</li>
-            <li>📨 Cápsula do tempo: Mensagem para o eu do futuro</li>
+            <li>💒 Convite de casamento: carimbo de log compartilhado com convite + confirmação de presença + mensagens de felicitação</li>
+            <li>🎈 Convites de festas: aniversários, inaugurações de casa, festas de fim de ano</li>
+            <li>👶 Festa de 1 ano/100 dias: fotos do bebê + coleção de mensagens de felicitação</li>
+            <li>🕯️ Homenagens/Datas comemorativas: um espaço para compartilhar memórias</li>
+            <li>📨 Cápsula do tempo: mensagens para o seu eu do futuro</li>
           </ul>
 
   # ===== 3. Uso do Distintivo (Badge) =====
   - id: badge-usage
-    title: "🏷️ Uso do Distintivo"
+    title: "Uso do Distintivo"
     icon: "🏷️"
-    description: "Criar marca e construir confiança com Distintivo (Badge)"
+    description: "Criar marca e construir confiança com o Distintivo (Badge)"
     items:
-      # 3-1. Promoção de imagem de marca
-      - type: "Especialista"
-        title: "Construir identidade de marca"
-        subtitle: "Crie sua própria marca com nome de domínio exclusivo"
+      # 3-0. Fundamentos do distintivo (Iniciante)
+      - type: "Iniciante"
+        title: "Entender o distintivo"
+        subtitle: "Fundamentos do nome de domínio e do branding"
         content: |
-          <p><strong>Visão geral</strong>: Ao gravar um distintivo, você obtém um nome de domínio exclusivo. Quando você equipa o distintivo, este nome de domínio aparece em todas as suas atividades.</p>
+          <p><strong>Visão geral</strong>: O distintivo é um item que permite ter seu próprio nome de domínio (apelido) único no Inventory.</p>
 
-          <p><strong>Gravar o distintivo</strong></p>
+          <p><strong>O que é um distintivo?</strong></p>
+          <ul>
+            <li>🏷️ <strong>Nome de domínio</strong>: Um nome único (ex.: myshop, creator_kim)</li>
+            <li>👤 <strong>Branding</strong>: Atuar com o nome de domínio em vez do e-mail</li>
+            <li>🔐 <strong>Privacidade</strong>: Você pode ocultar seu endereço de e-mail real</li>
+          </ul>
+
+          <p><strong>Estados do distintivo</strong></p>
+          <ul>
+            <li>⚪ <strong>Distintivo em branco</strong>: Ainda não gravado</li>
+            <li>🏷️ <strong>Distintivo gravado</strong>: Com o nome de domínio inscrito</li>
+            <li>✅ <strong>Distintivo equipado</strong>: Atualmente ativado e em uso</li>
+          </ul>
+
+          <p><strong>Quem usa o distintivo?</strong></p>
+          <ul>
+            <li>🏢 Empresas/Marcas: Atuar com uma conta oficial</li>
+            <li>🎨 Criadores: Distribuir conteúdo com um apelido único</li>
+            <li>🔒 Pessoas físicas: Proteger a privacidade mantendo o e-mail oculto</li>
+          </ul>
+
+      # 3-1. Gravação do distintivo (Intermediário)
+      - type: "Intermediário"
+        title: "Gravar o primeiro distintivo"
+        subtitle: "Criar meu próprio nome de domínio"
+        content: |
+          <p><strong>Visão geral</strong>: Grave um distintivo em branco para definir seu próprio nome de domínio único.</p>
+
+          <p><strong>Passo a passo</strong></p>
           <ol>
-            <li>No inventário, pressione e segure o <strong>distintivo em branco</strong> para acessar <strong>Ver detalhes</strong><br/>
-                <em>Ou</em> selecione o distintivo em branco e toque no botão <strong>Ação</strong></li>
-            <li>Selecione o menu <strong>Gravar</strong></li>
-            <li>Insira as informações do distintivo:
+            <li>No inventário, manter pressionado um <strong>distintivo em branco</strong> para entrar em <strong>Ver detalhes</strong><br/>
+                <em>ou</em> selecionar o distintivo em branco e tocar no botão <strong>Ação</strong></li>
+            <li>Escolher o menu <strong>Gravar</strong></li>
+            <li>Inserir as informações do distintivo:
               <ul>
-                <li>Imagem do distintivo (obrigatório)</li>
-                <li>Digite o nome de domínio (ex: minhaloja, criador_kim)</li>
+                <li>Imagem do distintivo (obrigatória) - logo, foto de perfil, etc.</li>
+                <li>Nome de domínio (apenas letras, números e underline)</li>
               </ul>
             </li>
-            <li>Após <strong>verificar disponibilidade</strong>, complete <strong>Gravar</strong></li>
+            <li>Confirmar a disponibilidade com o botão <strong>Verificar duplicidade</strong></li>
+            <li>Concluir a <strong>gravação</strong></li>
           </ol>
 
-          <p>⚠️ <strong>Atenção</strong>: O nome de domínio não pode ser alterado após ser gravado!</p>
+          <p>⚠️ <strong>Cuidados</strong></p>
+          <ul>
+            <li>O nome de domínio <strong>não pode ser alterado depois de gravado</strong></li>
+            <li>Escolha com cuidado!</li>
+            <li>Nomes de domínio já em uso não podem ser escolhidos</li>
+          </ul>
 
-          <p><strong>Equipar/Desequipar distintivo</strong></p>
+          <p><strong>Dicas para escolher o nome de domínio</strong></p>
+          <ul>
+            <li>Um nome curto e fácil de lembrar</li>
+            <li>Um nome relacionado à sua marca/atividade</li>
+            <li>Usar underline (_) em vez de caracteres especiais</li>
+          </ul>
+
+      # 3-2. Equipar o distintivo (Avançado)
+      - type: "Avançado"
+        title: "Equipar e aproveitar o distintivo"
+        subtitle: "Começar a atuar com o nome de domínio"
+        content: |
+          <p><strong>Visão geral</strong>: Ao equipar um distintivo gravado, o nome de domínio é exibido em todas as suas atividades.</p>
+
+          <p><strong>Equipar o distintivo</strong></p>
           <ol>
-            <li>Selecione o <strong>distintivo</strong> gravado e toque no botão <strong>Ação</strong></li>
-            <li>Selecione <strong>Equipar</strong> → Distintivo ativado</li>
-            <li>Para remover, selecione <strong>Desequipar</strong> novamente na Ação</li>
+            <li>Selecionar o <strong>distintivo</strong> gravado</li>
+            <li>Tocar no botão <strong>Ação</strong></li>
+            <li>Escolher <strong>Equipar</strong></li>
+          </ol>
+
+          <p><strong>Remover o distintivo</strong></p>
+          <ol>
+            <li>Selecionar o <strong>distintivo</strong> atualmente equipado</li>
+            <li>Tocar no botão <strong>Ação</strong></li>
+            <li>Escolher <strong>Remover</strong></li>
           </ol>
 
           <p><strong>Efeitos ao equipar</strong></p>
           <ul>
-            <li>🔍 Pesquisável pelo nome de domínio (em vez de e-mail)</li>
-            <li>📝 Todos os carimbos e papéis que você criar mostram o autor como "nome de domínio"</li>
-            <li>📋 Ao escrever no registro, também aparece como nome de domínio</li>
-          </ul>
-
-          <p><strong>Exemplos de uso</strong></p>
-          <ul>
-            <li>🏢 <strong>Empresa/Marca</strong>: Opere uma conta oficial com logo e nome da marca</li>
-            <li>🎨 <strong>Criador</strong>: Distribua conteúdo com apelido exclusivo</li>
-            <li>👔 <strong>Perfil profissional</strong>: Use nome de domínio que represente sua área de especialização</li>
-          </ul>
-
-      # 3-2. E-mail privado
-      - type: "Especialista"
-        title: "Proteger privacidade"
-        subtitle: "Atuar com nome de domínio em vez de e-mail"
-        content: |
-          <p><strong>Visão geral</strong>: Ao equipar o distintivo, seu "nome de domínio" aparece em vez do e-mail real, protegendo suas informações pessoais.</p>
-
-          <p><strong>Vantagens</strong></p>
-          <ul>
-            <li>🔒 <strong>Proteção de privacidade</strong>: Seu endereço de e-mail real não é exposto</li>
-            <li>📧 <strong>Prevenção de spam</strong>: E-mail protegido mesmo em atividades públicas</li>
-            <li>🎭 <strong>Atividade anônima</strong>: Possível atuar com o nome que desejar</li>
-          </ul>
-
-          <p><strong>Âmbito de aplicação</strong></p>
-          <ul>
-            <li>Ao criar carimbo/papel, "nome de domínio" aparece como informação do criador</li>
-            <li>No registro compartilhado, "nome de domínio" aparece em vez de e-mail</li>
-            <li>Quando outros usuários pesquisam, pesquisam pelo nome de domínio, não pelo e-mail</li>
-          </ul>
-
-      # 3-3. Garantia de documento gravado
-      - type: "Especialista"
-        title: "Garantir origem do documento"
-        subtitle: "Distintivo gravado em todos os documentos"
-        content: |
-          <p><strong>Visão geral</strong>: Ao equipar o distintivo, todos os documentos que você criar incluem as informações do distintivo. Isso permite garantir a origem do documento.</p>
-
-          <p><strong>Exemplos de uso</strong></p>
-          <ul>
-            <li>✅ <strong>Autenticação de documentos oficiais</strong>: Todos os documentos mostram o nome de domínio para garantir a origem</li>
-            <li>📜 <strong>Emissão oficial de marca</strong>: Prova de que é um documento oficial da marca/empresa</li>
-            <li>🔐 <strong>Prevenção de falsificação</strong>: Verificação do criador original através do domínio do distintivo</li>
+            <li>📝 Todos os documentos criados exibem o «nome de domínio» como autor</li>
+            <li>💬 No log compartilhado, o nome de domínio é exibido em vez do e-mail</li>
+            <li>🔍 Outros usuários podem encontrá-lo pelo nome de domínio</li>
           </ul>
 
           <p><strong>Dicas de uso</strong></p>
           <ul>
-            <li>Ao emitir cupons da loja, autentique como cupom oficial com distintivo</li>
-            <li>Marque direitos autorais com distintivo em conteúdo de criadores</li>
-            <li>Mostre conta oficial em comunicados corporativos</li>
+            <li>Equipar sempre o distintivo ao publicar documentos oficiais</li>
+            <li>Removê-lo nas atividades pessoais para diferenciar</li>
+            <li>É possível usar vários distintivos conforme a finalidade (apenas 1 equipado por vez)</li>
+          </ul>
+
+      # 3-3. Promoção da imagem da marca
+      - type: "Especialista"
+        title: "Construir uma identidade de marca"
+        subtitle: "Criar sua própria marca com um nome de domínio único"
+        content: |
+          <p><strong>Visão geral</strong>: Ao gravar um distintivo você obtém um nome de domínio único. Ao equipá-lo, esse nome de domínio é exibido em todas as suas atividades.</p>
+
+          <p><strong>Gravar o distintivo</strong></p>
+          <ol>
+            <li>No inventário, manter pressionado um <strong>distintivo em branco</strong> para entrar em <strong>Ver detalhes</strong><br/>
+                <em>ou</em> selecionar o distintivo em branco e tocar no botão <strong>Ação</strong></li>
+            <li>Escolher o menu <strong>Gravar</strong></li>
+            <li>Inserir as informações do distintivo:
+              <ul>
+                <li>Imagem do distintivo (obrigatória)</li>
+                <li>Nome de domínio (ex.: myshop, creator_kim)</li>
+              </ul>
+            </li>
+            <li>Após <strong>verificar duplicidade</strong>, concluir a <strong>gravação</strong></li>
+          </ol>
+
+          <p>⚠️ <strong>Atenção</strong>: O nome de domínio não pode ser alterado depois de gravado!</p>
+
+          <p><strong>Equipar/Remover o distintivo</strong></p>
+          <ol>
+            <li>Selecionar o <strong>distintivo</strong> gravado e tocar no botão <strong>Ação</strong></li>
+            <li>Escolher <strong>Equipar</strong> → distintivo ativado</li>
+            <li>Para remover, escolher novamente <strong>Remover</strong> em Ação</li>
+          </ol>
+
+          <p><strong>Efeitos ao equipar</strong></p>
+          <ul>
+            <li>🔍 Pode ser encontrado pelo nome de domínio (em vez do e-mail)</li>
+            <li>📝 Todos os carimbos e papéis criados exibem o «nome de domínio» como autor</li>
+            <li>📋 Ao escrever no log, o nome de domínio também é exibido</li>
+          </ul>
+
+          <p><strong>Exemplos de uso</strong></p>
+          <ul>
+            <li>🏢 <strong>Empresas/Marcas</strong>: Administrar uma conta oficial com logo e nome da marca</li>
+            <li>🎨 <strong>Criadores</strong>: Distribuir conteúdo com um apelido único</li>
+            <li>👔 <strong>Perfil profissional</strong>: Usar um nome de domínio que represente sua especialidade</li>
+          </ul>
+
+      # 3-2. E-mail oculto
+      - type: "Especialista"
+        title: "Proteger a privacidade"
+        subtitle: "Atuar com o nome de domínio em vez do e-mail"
+        content: |
+          <p><strong>Visão geral</strong>: Com o distintivo equipado, o «nome de domínio» é exibido em vez do seu e-mail real, protegendo suas informações pessoais.</p>
+
+          <p><strong>Vantagens</strong></p>
+          <ul>
+            <li>🔒 <strong>Proteção da privacidade</strong>: O endereço de e-mail real não fica exposto</li>
+            <li>📧 <strong>Prevenção de spam</strong>: E-mail protegido mesmo em atividades públicas</li>
+            <li>🎭 <strong>Atividade anônima</strong>: Você pode atuar com o nome que quiser</li>
+          </ul>
+
+          <p><strong>Abrangência</strong></p>
+          <ul>
+            <li>Ao criar carimbos/papéis, o «nome de domínio» aparece como informação do criador</li>
+            <li>No log compartilhado, o «nome de domínio» é exibido em vez do e-mail</li>
+            <li>Outros usuários buscam pelo nome de domínio, não pelo e-mail</li>
+          </ul>
+
+      # 3-3. Gravação como garantia do documento
+      - type: "Especialista"
+        title: "Garantir a origem dos documentos"
+        subtitle: "A gravação do distintivo em todos os documentos"
+        content: |
+          <p><strong>Visão geral</strong>: Com o distintivo equipado, todos os documentos criados incluem as informações do distintivo. Assim é possível garantir a origem dos documentos.</p>
+
+          <p><strong>Exemplos de uso</strong></p>
+          <ul>
+            <li>✅ <strong>Certificação de documentos oficiais</strong>: O nome de domínio consta em todos os documentos, garantindo a origem</li>
+            <li>📜 <strong>Publicação oficial da marca</strong>: Comprovar que é um documento oficial da marca/empresa</li>
+            <li>🔐 <strong>Prevenção de falsificação</strong>: O criador original pode ser verificado pelo domínio do distintivo</li>
+          </ul>
+
+          <p><strong>Dicas de uso</strong></p>
+          <ul>
+            <li>Certificar com o distintivo que os cupons do estabelecimento são oficiais</li>
+            <li>Marcar os conteúdos de criador com o distintivo como indicação de autoria</li>
+            <li>Identificar os comunicados da empresa com a conta oficial</li>
+          </ul>
+
+  # ===== 4. Uso da Tinta (Ink) =====
+  - id: ink-usage
+    title: "Uso da Tinta"
+    icon: "🎨"
+    description: "Personalizar o tema do app com a Tinta (Ink)"
+    items:
+      # 4-1. Fundamentos da tinta (Iniciante)
+      - type: "Iniciante"
+        title: "Mudar o tema com a tinta"
+        subtitle: "Personalizar as cores do meu app"
+        content: |
+          <p><strong>Visão geral</strong>: A tinta é um item que permite mudar a cor principal e a cor secundária do app. Escolha a tinta desejada e mude o tema.</p>
+
+          <p><strong>Passo a passo</strong></p>
+          <ol>
+            <li>Selecionar a <strong>tinta</strong> desejada no inventário</li>
+            <li>Tocar no botão <strong>Ação</strong></li>
+            <li>Escolher <strong>Mudar tema</strong></li>
+            <li>A cor principal e a secundária do app mudam para as cores dessa tinta</li>
+          </ol>
+
+          <p><strong>Características da tinta</strong></p>
+          <ul>
+            <li>🎨 Cada tinta tem sua combinação única de cor principal e secundária</li>
+            <li>🔄 O tema pode ser mudado a qualquer momento com outra tinta</li>
+            <li>✨ As cores são aplicadas a toda a interface do app</li>
+          </ul>
+
+          <p><strong>Bom saber</strong></p>
+          <ul>
+            <li>📱 As cores do tema são <strong>salvas localmente no dispositivo</strong></li>
+            <li>👤 As cores são mantidas mesmo ao entrar com outra conta</li>
+            <li>🔄 Ao excluir o app, as cores padrão são restauradas</li>
+          </ul>
+
+          <p><strong>Dicas de uso</strong></p>
+          <ul>
+            <li>🌙 Tintas de cores escuras reduzem o cansaço visual</li>
+            <li>🌈 Mudar as cores do tema conforme o humor</li>
+            <li>💼 Diferenciar temas para trabalho e uso pessoal</li>
           </ul>

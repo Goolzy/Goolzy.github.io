@@ -25,83 +25,60 @@ translations:
 
 ## 📖 Podręcznik użytkownika
 
-Pełne odkrycie wszystkich funkcji aplikacji Inventory.
+Poznaj szczegółowo funkcje aplikacji Inventory.
 
 ---
 
 <details open>
-<summary><h3 id="paper">📦 System papieru</h3></summary>
+<summary><h3 id="home">🏠 Pierwsze kroki — ekran główny i zakładki</h3></summary>
 <div class="manual-content" markdown="1">
 
-W aplikacji Inventory **papier** jest podstawową walutą używaną do tworzenia elementów.
+Na dole aplikacji znajduje się maksymalnie 5 zakładek.
 
-#### Co to jest papier?
-- **1 papier** jest zużywany podczas tworzenia elementu
-- Nie możesz tworzyć nowych elementów bez papieru
+| Zakładka | Opis |
+|------|------|
+| **Eksploruj** | Przeglądaj publiczne elementy bazowe i dodawaj je do swojego ekwipunku |
+| **Wiadomości** | Lista rozmów 1:1 z innymi użytkownikami |
+| **Ekwipunek** | Miejsce przechowywania posiadanych przedmiotów |
+| **Pieczęcie** | Osobne miejsce do zarządzania pieczęciami osobistymi ukończonymi funkcją „Utwórz pieczęć” |
+| **Sklep** | Kup papier, pieczęcie i odznaki |
+
+#### Zakładki pojawiające się warunkowo
+
+- Zakładka **Ekwipunek** pojawia się, gdy posiadasz przedmioty.
+- Zakładka **Pieczęcie** pojawia się, gdy masz pieczęcie osobiste ukończone funkcją „Utwórz pieczęć”.
+- Eksploruj, Wiadomości i Sklep są zawsze widoczne.
+
+#### Ekran startowy
+
+Po uruchomieniu aplikacji zaczynasz w **Ekwipunku**, jeśli posiadasz przedmioty, a w przeciwnym razie w **Eksploruj**.
+
+> 💡 Na komputerze możesz szybko przełączać zakładki klawiszem Ctrl i klawiszami numerycznymi.
+
+</div>
+</details>
+
+---
+
+<details>
+<summary><h3 id="paper">📦 Papier (Paper)</h3></summary>
+<div class="manual-content" markdown="1">
+
+**Papier** to zasób używany do tworzenia własnej **kopii papierowej (Scrap)** elementu bazowego.
 
 #### Jak zdobyć papier
 
-| Metoda | Ilość | Uwaga |
-|--------|--------|------|
-| Nowa rejestracja | 10 papieru + 3 pieczęcie | Tylko pierwszy raz |
-| Połączenie Google | +10 arkuszy | Dla istniejących użytkowników |
-| Połączenie Apple | +10 arkuszy | Dla istniejących użytkowników |
-| Zakup w sklepie | 10 arkuszy | Zakup w aplikacji |
+| Metoda | Ilość | Uwagi |
+|------|--------|------|
+| Połączenie konta Google · Apple | 10 arkuszy | Raz na każde połączone konto |
+| Zakup w sklepie | 10 arkuszy | Płatność w aplikacji |
+| Nagroda za recykling | 1 arkusz | Usuń 10 nieużytych arkuszy papieru, aby otrzymać 1 nowy |
 
-> 💡 **Wskazówka**: Istniejący użytkownicy mogą uzyskać dodatkowy papier, łącząc nowe konta społeczne!
+#### Używanie papieru
 
-</div>
-</details>
-
----
-
-<details>
-<summary><h3 id="create-item">📄 Tworzenie elementów</h3></summary>
-<div class="manual-content" markdown="1">
-
-Wybierz papier, aby utworzyć dokumenty dziennika dziennego. W zależności od liczby wybranych papierów możesz tworzyć dzienniki prywatne lub wspólne.
-
-| Typ dziennika | Papiery | Cel |
-|----------|--------|---------|
-| **Dziennik prywatny** | 1 | Notatki osobiste, dziennik, wiadomości jednokierunkowe |
-| **Dziennik wspólny** | 2 lub więcej | Konwersacja dwukierunkowa, komunikacja |
-
-<h4 id="private-log">Tworzenie elementów dziennika prywatnego</h4>
-
-1. Wybierz **1 papier** na ekranie głównym
-2. Wybierz **"Utwórz nowy element (dziennik prywatny)"** z menu dolnego
-3. Wprowadź informacje o elemencie:
-   - Tytuł (wymagany)
-   - Zawartość
-   - Obraz (opcjonalnie)
-   - Data początkowa (opcjonalnie)
-   - Data wygaśnięcia (opcjonalnie)
-4. Naciśnij **Zapisz** i 1 papier zostanie zużyty do utworzenia dokumentu
-
-> 💡 **Dziennik prywatny**: Tylko ty możesz zobaczyć dzienniki, które napiszesz. Po wysłaniu komuś, tylko odbiorca może dodawać dzienniki.
-
-<h4 id="shared-log">Tworzenie elementów dziennika wspólnego</h4>
-
-1. Wybierz **2 lub więcej papierów** na ekranie głównym
-2. Wybierz **"Utwórz nowy element (dziennik wspólny)"** z menu dolnego
-3. Wprowadź informacje o elemencie:
-   - Tytuł (wymagany)
-   - Zawartość
-   - Obraz (opcjonalnie)
-   - Data początkowa (opcjonalnie)
-   - Data wygaśnięcia (opcjonalnie)
-4. Naciśnij **Zapisz** i dokumenty równe liczbie wybranych papierów zostaną utworzone
-
-> 💡 **Dziennik wspólny**: Utworzone dokumenty dzielą ten sam pokój komentarzy. Wysyłaj dokumenty różnym osobom, aby zobaczyć dzienniki siebie nawzajem w czasie rzeczywistym, jak czat.
-
-<h4 id="dates">Data początkowa i data wygaśnięcia</h4>
-
-| Ustawienie | Opis |
-|---------|-------------|
-| **Data początkowa** | Zawartość będzie rozmyta do tej daty |
-| **Data wygaśnięcia** | Zawartość będzie rozmyta i dodawanie dziennika wyłączone po tej dacie |
-
-Jeśli nie jest ustawiona, będzie natychmiast widoczna i trwała.
+- Utworzenie kopii papierowej elementu bazowego zużywa **1 arkusz**.
+- Gdy zabraknie papieru, możesz go kupić w sklepie lub otrzymać, łącząc konto.
+- Papier, którego nie użyto jeszcze do kopii, można też przekazać innemu użytkownikowi.
 
 </div>
 </details>
@@ -109,43 +86,57 @@ Jeśli nie jest ustawiona, będzie natychmiast widoczna i trwała.
 ---
 
 <details>
-<summary><h3 id="lock">🔒 Blokada dokumentu</h3></summary>
+<summary><h3 id="stamp">🔖 Pieczęć</h3></summary>
 <div class="manual-content" markdown="1">
 
-Możesz chronić elementy dokumentu, ustawiając hasło.
+**Pieczęć** to przedmiot, dzięki któremu tworzysz własną stronę informacyjną i przekazujesz ją innym użytkownikom.
 
-#### Co to jest blokada dokumentu?
+#### Utwórz pieczęć
 
-Zablokowany dokument można przeglądać tylko po wprowadzeniu prawidłowego hasła.
+1. W ekwipunku wybierz pustą pieczęć, która nie została jeszcze użyta.
+2. Wybierz **„Utwórz pieczęć”** i wpisz **nazwę** pieczęci. (maks. 32 znaki)
+3. Po zatwierdzeniu nazwy utworzenie zostaje potwierdzone i **nazwy nie można już zmienić.**
+4. W otwartym następnie edytorze rozmieść obrazy, teksty i elementy, aby zbudować stronę informacyjną, i zapisz.
 
-| Status | Opis |
-|--------|-------------|
-| **Odblokowane** | Każdy może zobaczyć zawartość |
-| **Zablokowane** | Zawartość widoczna tylko z hasłem |
+> ⚠️ W chwili zatwierdzenia nazwy utworzenie pieczęci zostaje zakończone. W edytorze możesz zmieniać tylko układ strony i obrazy — nazwa pozostaje stała.
 
-#### Jak zablokować
+#### Zarządzanie w zakładce Pieczęcie
 
-1. Wybierz **dokumenty**, które chcesz zablokować na ekranie głównym (możliwy wybór wielokrotny)
-2. Wybierz **"Zablokuj elementy"** z menu dolnego
-3. Wprowadź numeryczne hasło (do 16 cyfr)
-4. Wprowadź to samo hasło ponownie, aby potwierdzić
-5. Po zablokowaniu elementy wyświetlą **ikonę blokady** i efekt **skali szarości**
+Ukończone pieczęcie osobiste gromadzą się w zakładce **Pieczęcie**. Naciśnij przycisk **≡** po prawej stronie każdej pieczęci, aby otworzyć menu.
 
-#### Jak odblokować
+| Menu | Opis |
+|------|------|
+| **Edytuj** | Modyfikacja strony informacyjnej i obrazów (tylko oryginały utworzone przez Ciebie) |
+| **Sprawdź posiadanie** | Sprawdź, czy dany użytkownik ma przedmiot utworzony z tej pieczęci |
+| **Transfer** | Przekaż przedmiot innemu użytkownikowi |
 
-1. Naciśnij zablokowany dokument, aby wejść na ekran szczegółów
-2. Pojawi się okno dialogowe wprowadzania hasła
-3. Wprowadź prawidłowe hasło, aby odblokować
-4. Po odblokowaniu blokada jest trwale usunięta (zalock ponownie, ustawiając nowe hasło)
+- Przesuń pozycję listy w bok, aby **potwierdzić (oznaczyć jako przeczytane)** lub **zrezygnować z zarządzania**.
 
-> ⚠️ **Ostrzeżenie**: Jeśli zapomnisz hasła, nie będzie go można odzyskać. Zablokowane dokumenty mogą być tylko **usunięte**.
+#### Kopia papierowa (Scrap)
 
-#### Funkcje blokady
+Gdy w Eksploruj znajdziesz element bazowy, który Ci się podoba, przyciskiem **Scrap** na ekranie szczegółów dodasz go do swojego ekwipunku.
 
-- Hasła blokady są **przechowywane w chmurze**
-- Stan blokady jest utrzymywany nawet podczas transferu elementów do innych osób
-- Zablokowane dokumenty nie pojawiają się w wynikach wyszukiwania
-- Zablokowane elementy mogą być nadal usuwane
+- Utworzenie kopii zużywa **1 arkusz papieru**.
+- Z każdego elementu bazowego kopię można utworzyć **tylko raz**.
+- Informacje kopii są zachowane w stanie z chwili jej utworzenia — późniejsze zmiany oryginału nie są przenoszone automatycznie.
+
+#### Otrzymywanie najnowszych informacji
+
+Gdy oryginał zostanie zaktualizowany, na kopii pojawia się przycisk **„Otrzymaj najnowsze informacje”**. Naciśnij go, aby zaktualizować treść do najnowszej wersji; możesz też włączyć automatyczną aktualizację.
+
+#### Transfer
+
+Przedmioty utworzone z pieczęci możesz przekazywać innym użytkownikom. Odbiorcę wskazujesz, wpisując e-mail lub domenę albo skanując kod QR.
+
+Po wysłaniu transferu odbiorca otrzymuje **powiadomienie toast**, a po naciśnięciu **Odbierz** przekazany egzemplarz trafia do jego ekwipunku.
+
+#### Rezygnacja z zarządzania
+
+Z zarządzania pieczęcią, której już nie potrzebujesz, możesz zrezygnować, przesuwając ją na liście.
+
+- Strony i rozmowy użytkowników, którzy już wykonali kopię, pozostają bez zmian.
+- Pieczęć znika z Twojej listy i **nie można tego cofnąć.**
+- Gdy z rezygnacji lub usunięcia uzbiera się **10 fragmentów pieczęci, otrzymasz 1 nową pieczęć**.
 
 </div>
 </details>
@@ -153,73 +144,21 @@ Zablokowany dokument można przeglądać tylko po wprowadzeniu prawidłowego has
 ---
 
 <details>
-<summary><h3 id="clip">📎 System klipu</h3></summary>
+<summary><h3 id="explore">🔍 Eksploruj</h3></summary>
 <div class="manual-content" markdown="1">
 
-**Klip** to funkcja, która wiąże wiele dokumentów razem, aby ułatwić zarządzanie.
+W zakładce **Eksploruj** odkrywasz publiczne elementy bazowe.
 
-#### Co to jest klip?
+#### Przeglądanie
 
-Klipy pozwalają zarządzać powiązanymi dokumentami jako jeden pakiet.
+- U góry wyświetlają się kategorie tematyczne: **Gry · Technologie · Filmy · Jedzenie** i inne.
+- W wierszach **Na topie** · **Nowości** znajdziesz popularne i nowe treści.
 
-| Stan | Opis |
-|-------|-------------|
-| **Pojedyncze dokumenty** | Dokumenty zarządzane osobno |
-| **Dokumenty w klipu** | Zarządzane jako pakiet, przenoszone/transferowane razem |
+#### Wyszukiwanie
 
-#### Tworzenie klipu
-
-1. Wybierz **2 lub więcej dokumentów** na ekranie głównym
-2. Naciśnij **"Klip razem"** w menu dolnym
-3. Wybrane dokumenty są wiązane w jeden klip
-4. Dokumenty w klipu wyświetlają **ikonę klipu (📎)** w górnym prawym rogu
-
-> 💡 **Wskazówka**: Pierwszy wybrany dokument staje się **okładką** klipu!
-
-#### Przeglądanie informacji o klipu
-
-1. Wejdź na **ekran szczegółów** dokumentu w klipu
-2. Naciśnij przycisk **"Informacje o klipu"**
-3. Przeglądaj listę wszystkich elementów w klipu
-
-#### Zmiana kolejności elementów w klipu
-
-Możesz zmienić kolejność elementów na ekranie informacji o klipu:
-
-1. Długo naciśnij **uchwyt przeciągania (⋮⋮)** elementu, który chcesz przenieść
-2. Przeciągnij na żądaną pozycję
-3. Zwolnij, aby zapisać kolejność
-
-> ⚠️ **Uwaga**: Okładka (pierwszy element) nie może być zmieniana.
-
-#### Wykluczanie elementów z klipu
-
-Możesz usunąć określone elementy z klipu na ekranie informacji o klipu:
-
-1. Naciśnij przycisk **"Wyklucz"** obok elementu
-2. Potwierdź usunięcie elementu z klipu
-3. Usunięty element staje się osobnym dokumentem
-
-> ⚠️ **Uwaga**: Okładka nie może być wykluczona. Jeśli zostaną tylko 2 elementy i wykluczysz 1, klip automatycznie się rozpakuje.
-
-#### Rozpakowanie
-
-1. Wybierz dokument w klipu
-2. Naciśnij **"Rozpakuj"** w menu dolnym
-3. Wszystkie dokumenty są oddzielone na osobne dokumenty
-
-#### Transfer klipu
-
-- Gdy wysyłasz dokument w klipu, **cały pakiet** jest transferowany razem
-- Odbiorcy akceptują/odrzucają klipy jako **pakiet**
-- Poszczególne elementy w klipu nie mogą być wysyłane osobno
-
-#### Funkcje klipu
-
-- Dokumenty w klipu są **przenoszone/transferowane razem**
-- Ustawienie blokady na okładce chroni cały klip
-- Ikona klipu (📎) ułatwia identyfikację stanu klipu
-- Do utrzymania klipu wymagane są co najmniej 2 dokumenty
+1. Wpisz słowo kluczowe w polu wyszukiwania u góry.
+2. Podpowiedzi i wyniki pojawiają się w czasie rzeczywistym podczas wpisywania.
+3. Naciśnij kartę wyniku, aby otworzyć ekran szczegółów — stamtąd wykonasz Scrap.
 
 </div>
 </details>
@@ -227,40 +166,30 @@ Możesz usunąć określone elementy z klipu na ekranie informacji o klipu:
 ---
 
 <details>
-<summary><h3 id="badge">🏷️ System odznak</h3></summary>
+<summary><h3 id="dm">💬 Wiadomości bezpośrednie</h3></summary>
 <div class="manual-content" markdown="1">
 
-**Odznaka** to unikalna tożsamość, którą możesz użyć w aplikacji.
+Możesz prowadzić **bezpośrednie rozmowy 1:1** z innymi użytkownikami.
 
-#### Co to jest odznaka?
+#### Rozpoczynanie rozmowy
 
-Po grawerowaniu nazwy domeny na odznace, wszystkie Twoje działania w aplikacji będą wyświetlane z Twoją **grawerowaną nazwą domeny** zamiast e-maila.
+Rozmowę można rozpocząć na trzy sposoby.
 
-Przykłady: `MyBrand`, `JohnDoe`, `Company2025`
+1. Naciśnij **autora komentarza w treściach Eksploruj** i wybierz **Rozpocznij wiadomość** w wyskakującym profilu
+2. Wpisz e-mail lub nazwę domeny rozmówcy w **polu wyszukiwania zakładki Wiadomości**
+3. Znajdź rozmówcę przez **skan QR** (po zeskanowaniu dane trafiają automatycznie do pola wyszukiwania)
 
-#### Grawerowanie odznaki
+- Rozmowa rozpoczyna się, gdy **druga strona ją zaakceptuje**. Jeśli obie strony wysłały prośbę albo rozmawialiście już wcześniej, rozmowa toczy się od razu, bez akceptacji.
+- Jeśli adres e-mail rozmówcy nie jest jeszcze używany w aplikacji, możesz wysłać **e-mail z zaproszeniem** zawierający link do instalacji aplikacji i kod QR.
 
-1. Kup odznakę ze sklepu (stan nieużywany)
-2. Naciśnij odznakę na ekranie głównym → Wybierz menu **"Graweruj"**
-3. Wprowadź żądaną nazwę domeny (maks. 32 znaki)
-   - Znaki i liczby ze wszystkich języków są dozwolone
-   - Znaki specjalne i emotikoniki nie są dozwolone
-4. Kliknij **"Sprawdź dostępność domeny"**, aby zweryfikować dostępność
-5. Opcjonalnie załącz obraz 128x128
-6. Kliknij **"Graweruj"**, aby zakończyć
+#### Zakładka Wiadomości
 
-> ⚠️ **Ostrzeżenie**: Po grawerowaniu nazwa domeny i obraz **nie mogą być zmieniane na stałe**. Wybieraj ostrożnie!
+- Rozmowy wyświetlają się na liście, a nieprzeczytane wiadomości oznaczane są licznikiem.
+- Przesuń pozycję listy w bok, aby oznaczyć jako przeczytane lub usunąć rozmowę. (Usunięcie działa tylko po Twojej stronie — historia rozmówcy pozostaje.)
 
-#### Wyposażanie/wyposażanie odznaki
+#### Zgłaszanie · Blokowanie
 
-- **Wyposażona**: Twoja grawerowana nazwa domeny będzie wyświetlana dla wszystkich działań w aplikacji
-- **Niewyposażona**: Twój domyślny e-mail będzie ponownie wyświetlany
-- Nawet jeśli posiadasz wiele odznak, tylko jedna może być wyposażona na raz
-
-#### Wyświetlanie karty inwentarza
-
-Grawerowane odznaki (stan aktywny) pokazują podgląd grawerowanego obrazu w górnym prawym rogu karty inwentarza.
-To pozwala szybko zidentyfikować, do której domeny należy odznaka.
+W wyskakującym profilu możesz **zgłosić** lub **zablokować** rozmówcę. Odblokowanie wykonasz na liście zablokowanych w ustawieniach.
 
 </div>
 </details>
@@ -268,67 +197,32 @@ To pozwala szybko zidentyfikować, do której domeny należy odznaka.
 ---
 
 <details>
-<summary><h3 id="stamp">🔖 System pieczęci</h3></summary>
+<summary><h3 id="chat-media">🖼️ Zdjęcia i filmy na czacie</h3></summary>
 <div class="manual-content" markdown="1">
 
-**Pieczęć** to element, który umożliwia tworzenie szablonów i dzielenie się nimi z innymi.
+Do wiadomości i czatów społeczności możesz dołączać zdjęcia i filmy.
 
-#### Wyświetlanie karty inwentarza
+#### Wysyłanie
 
-Pieczęcie z szablonami (stan aktywny) są wyświetlane specjalnie w inwentarzu:
-- **Tło**: Obraz szablonu wyświetlany z przezroczystością 33%
-- **Pierwszy plan**: Grawerowany obraz pieczęci
+1. W zakładce **Media** pola wprowadzania naciśnij przycisk **Zdjęcie** lub **Film**.
+2. Wybrane elementy trafiają na scenę; możesz zmieniać ich kolejność przeciąganiem lub usuwać pojedynczo.
+3. Po naciśnięciu Wyślij rozpoczyna się przesyłanie, a media od razu pojawiają się w rozmowie — bez czekania.
 
-To pozwala szybko zidentyfikować, który szablon to jest.
+> 💡 Na komputerze obsługiwane jest tylko dołączanie zdjęć.
 
-#### Tworzenie szablonu pieczęci
+#### Galeria (wiele elementów)
 
-1. Kup pieczęć ze sklepu (stan nieużywany)
-2. Naciśnij pieczęć na ekranie głównym → Wybierz menu **"Utwórz nowy szablon"**
-3. Wprowadź informacje o szablonie:
-   - **Obraz** (wymagany)
-   - **Tytuł** (maks. 32 znaki)
-   - **Zawartość** (maks. 1024 znaki)
-   - **Data początkowa** (opcjonalnie) - Zawartość ukryta do tej daty
-   - **Data wygaśnięcia** (opcjonalnie) - Dodawanie dziennika wyłączone po tej dacie
-   - **Tryb dziennika** - Dziennik solo lub wspólny
-4. Kliknij **"Utwórz szablon"**, aby zakończyć
+- W jednej wiadomości możesz wysłać **do 16 elementów** połączonych w kolaż.
+- Naciśnij kafelek, aby otworzyć przeglądarkę i obejrzeć w powiększeniu; możesz też zapisać wszystko naraz.
 
-#### Duplikowanie pieczęci
+#### Edycja filmu
 
-Gdy wybierzesz aktywną pieczęć (szablon) i papier razem, pojawi się menu **"Duplikuj szablon"**.
+- Film może mieć **maksymalnie 25 MB i 60 sekund**.
+- Jeśli limit zostanie przekroczony, wytnij potrzebny fragment w **edytorze filmu**. Wskaźnik pojemności pokazuje przewidywany rozmiar.
 
-- 1 papier jest zużywany
-- Nowy element z tym samym szablorem jest tworzony
-- Jeśli jest w trybie dziennika wspólnego, używa tej samej wspólnej przestrzeni co oryginał
+#### Podgląd linków
 
-#### Udostępnianie szablonu
-
-Możesz udostępnić szablon pieczęci, aby inni użytkownicy mogли go wyszukiwać i klonować.
-
-1. Naciśnij aktywną pieczęć (szablon) → Wybierz menu **"Ustawienia udostępniania"**
-2. Wprowadź informacje o udostępnianiu:
-   - **Opis** - Krótka fraza opisująca szablon
-   - **Tagi** - Słowa kluczowe do wyszukiwania (oddzielone przecinkami)
-   - **Czas trwania udostępniania** - Jak długo będzie aktywne udostępnianie
-3. Kliknij **"Rozpocznij udostępnianie"**, aby zakończyć
-
-Udostępniane szablony mogą być wyszukiwane i klonowane przez innych użytkowników za pośrednictwem wyszukiwania tagów.
-
-> 💡 **Wskazówka**: Aby zatrzymać udostępnianie, wybierz **"Zatrzymaj udostępnianie"** z tego samego menu.
-
-#### Wyszukiwanie udostępnionych szablonów
-
-Możesz wyszukiwać i klonować szablony udostępniane przez innych użytkowników.
-
-1. Przejdź do ekranu profilu i wybierz **"Wyszukaj udostępniane szablony"**
-2. Wpisz tagi do wyszukiwania lub naciśnij popularne/najnowsze tagi
-3. Naciśnij szablon z wyników wyszukiwania, aby wyświetlić szczegóły
-4. Kliknij przycisk **"Klonuj"**, aby sklonować szablon
-
-- Klonowanie zużywa 1 papier
-- Przycisk klonowania jest wyłączony, jeśli nie masz papieru
-- Sklonowane elementy mają te same informacje o szablonie, co oryginał
+Linki wklejone na czacie wyświetlają się jako karty podglądu z tytułem i obrazem. Kartę z linkiem do filmu można nacisnąć, aby **odtworzyć go od razu na miejscu**.
 
 </div>
 </details>
@@ -336,40 +230,16 @@ Możesz wyszukiwać i klonować szablony udostępniane przez innych użytkownik�
 ---
 
 <details>
-<summary><h3 id="quick-input">⚡ Szybkie wejście</h3></summary>
+<summary><h3 id="emoticon">😊 Emotikony</h3></summary>
 <div class="manual-content" markdown="1">
 
-Podczas dodawania dzienników, naciśnij przycisk `+`, aby otworzyć menu **Szybkie wejście** do łatwego wprowadzania specjalnych informacji.
+Dodawaj do rozmów **emotikony**, aby wyrażać emocje.
 
-#### Typy szybkiego wejścia
+1. Otwórz zakładkę **Emotikony** w polu wprowadzania.
+2. Wybierz emotikon z kategorii. (Ostatnio używane emotikony też są zebrane w jednym miejscu.)
+3. Możesz wysłać emotikon razem z tekstem albo sam emotikon.
 
-| Typ | Opis | Przykład |
-|------|-------------|---------|
-| **Słowo kluczowe** | Format klucz:wartość | `Status:Dobrze` |
-| **Data** | Daty z obliczeniem D-Day | D-5, D-Day, D+3 |
-| **Telefon** | Numer telefonu | Może dzwonić bezpośrednio |
-| **Lokalizacja** | Adres/współrzędne | Otwiera się w aplikacji map |
-| **Kwota** | Format waluty | Auto-formatowanie |
-
-#### Akcje długiego naciśnięcia
-
-| Typ karty | Akcja długiego naciśnięcia |
-|-----------|------------------|
-| **📅 Data** | Ustaw/Usuń alarm |
-| **📞 Telefon** | Mobilne: dzwoń bezpośrednio, Komputer: kopiuj |
-| **📍 Lokalizacja** | Mobilne: otwórz na mapie, Komputer: kopiuj |
-| **💰 Kwota** | Kopiuj do schowka |
-
-<h4 id="alarm">Ustawienie alarmu daty</h4>
-
-Długo naciśnij kartę daty, aby ustawić alarm:
-
-1. **Długo naciśnij** kartę daty
-2. Wybierz **Ustaw** w oknie dialogowym potwierdzenia
-3. Po ustawieniu kolor karty się zmienia i pojawia się ikona 🔔
-4. Długo naciśnij ponownie, aby usunąć alarm
-
-> 💡 **Wskazówka**: Karty daty automatycznie wyświetlają obliczenia D-Day (np. D-5, D-Day, D+3)
+> 💡 Emotikon wysłany samodzielnie wyświetla się w dużym rozmiarze, bez dymka, i bardziej przyciąga wzrok.
 
 </div>
 </details>
@@ -377,86 +247,16 @@ Długo naciśnij kartę daty, aby ustawić alarm:
 ---
 
 <details>
-<summary><h3 id="log">📝 System dziennika</h3></summary>
+<summary><h3 id="privacy">🔒 Ochrona prywatności</h3></summary>
 <div class="manual-content" markdown="1">
 
-**Dzienniki** to rekordy, które możesz dodawać do elementów lub szablonów pieczęci.
+Chronimy adresy e-mail przed bezpośrednim ujawnieniem.
 
-#### Tryby dziennika
+- **Użytkownicy z założoną odznaką** są wyświetlani pod **nazwą domeny** zamiast e-maila, a ich kod QR również powstaje na bazie domeny.
+- E-mail **użytkownika bez odznaki** jest przedstawiany jako **kolorowy kod QR**, który rozpozna tylko osoba skanująca go bezpośrednio.
+- W **czatach społeczności**, widocznych dla wielu osób, końcówka e-maila (po @) użytkowników bez odznaki domenowej jest ukrywana.
 
-| Tryb | Dziennik solo | Dziennik wspólny |
-|------|----------|------------|
-| **Lokalizacja przechowywania** | Każdej osoby prywatna przestrzeń | Wspólna przestrzeń oparta na oryginalnej pieczęci |
-| **Widoczne dzienniki** | Tylko Twoje własne dzienniki | Dzienniki wszystkich właścicieli |
-| **Przypadki użytku** | Osobisty dziennik, notatki | Współpraca, społeczność |
-| **Jeśli oryginalny usunięty** | Nie dotyczy | Nie można dodawać dzienników (tylko do odczytu) |
-
-#### Formaty dziennika
-
-Możesz używać różnych formatów podczas pisania dzienników.
-
-**Formaty podstawowe:**
-
-| Format | Opis | Przykład |
-|--------|-------------|---------|
-| Zwykły tekst | Wyświetlany jako bąbelek czatu | `Inspekcja ukończona dzisiaj!` |
-| `klucz:wartość` | Wyświetlany jako karta informacyjna (klucz 1-8 znaków) | `status:dobrze` |
-Użycie tego samego klucza wiele razy wyświetla jako porównanie `poprzednia wartość → nowa wartość`.
-
-**Stylowanie tekstu:**
-
-| Format | Efekt | Przykład |
-|--------|--------|---------|
-| `{[tekst]}` | Karta koloru głównego (tło + tekst) | `{[Ważne]}` |
-| `[{tekst}]` | Szara karta + główny tekst koloru | `[{Ostrożnie}]` |
-| `[tekst]` | Szara karta | `[Uwaga]` |
-| `{tekst}` | Główny tekst koloru | `{Nacisk}` |
-| `(tekst)` | Tekst koloru pomocniczego | `(Dodatkowe informacje)` |
-| `"tekst"` | **Pogrubienie** | `"Ważna zawartość"` |
-| `'tekst'` | <u>Podkreślenie</u> | `'Wyróżniona część'` |
-| `<tekst>` | ~~Przekreślenie~~ | `<Usunięta zawartość>` |
-
-> 💡 Style mogą być zagnieżdżone do 3 poziomów. Przykład: `{["Pogrubienie głównego koloru"]}`
-
-**Linki mediów (karty adresów URL):**
-
-Gdy wprowadzisz adres URL w dzienniku, automatycznie wyświetla się jako **bogate karty**.
-
-| Platforma | Wyświetlana zawartość | Przykład |
-|----------|----------------|---------|
-| **YouTube** | Miniatura + tytuł + kanał | `https://youtube.com/watch?v=...` |
-| **Spotify** | Okładka albumu + tytuł + artysta | `https://open.spotify.com/track/...` |
-| **Google Drive** | Miniatura pliku + nazwa pliku | `https://drive.google.com/file/d/...` |
-| **Dropbox** | Ikona + nazwa pliku | `https://dropbox.com/s/...` |
-| **OneDrive** | Ikona + nazwa usługi | `https://1drv.ms/...` |
-| **Strony internetowe** | Miniatura + tytuł strony | `https://example.com` |
-
-- Użyj formatu `klucz:URL`, aby wyświetlić ze słowem kluczowym (np. `docs:https://youtube.com/...`)
-- **Naciśnij** kartę, aby otworzyć w aplikacji/przeglądarce zewnętrznej
-- **Długo naciśnij** kartę, aby skopiować adres URL do schowka
-
-> 💡 **Wskazówka**: Pliki Google Drive muszą być **publicznie udostępniane**, aby wyświetlać miniatury.
-
-**Dzienniki automatyczne:**
-
-Gdy element jest transferowany, dziennik transferu jest automatycznie rejestrowany:
-- Wyświetlany jako format `Nadawca → Odbiorca`
-- Jeśli odznaka jest wyposażona, nazwa domeny jest wyświetlana
-
-#### Warunki zakończenia dziennika wspólnego
-
-- **Oryginalna pieczęć usunięta**: Nie można dodawać dzienników wspólnych (tylko do odczytu)
-- **Przeszła data wygaśnięcia**: Nie można dodawać dzienników wspólnych (tylko do odczytu)
-
-#### 🔔 Wskaźnik nieprzeczytanego
-
-Gdy nowe komentarze są dodawane do dziennika wspólnego, krawędź elementu **pulsuje** w widoku inwentarza.
-
-- Pulsowanie rozpoczyna się natychmiast, gdy inny użytkownik doda komentarz
-- Pulsowanie zatrzymuje się, gdy otworzysz i przejrzysz dokument
-- Stan przeczytania jest zapisywany w chmurze i synchronizowany na wszystkich urządzeniach
-
-> 💡 **Wskazówka**: Sprawdzaj pulsujące elementy, aby nigdy nie pominąć nowych komentarzy!
+Wyświetlanie nazw działa w czasie rzeczywistym — założenie lub zdjęcie odznaki od razu obowiązuje na listach rozmów, w profilach i innych miejscach.
 
 </div>
 </details>
@@ -464,23 +264,25 @@ Gdy nowe komentarze są dodawane do dziennika wspólnego, krawędź elementu **p
 ---
 
 <details>
-<summary><h3 id="ink">🎨 System atramentu</h3></summary>
+<summary><h3 id="badge">🏷️ Odznaka</h3></summary>
 <div class="manual-content" markdown="1">
 
-**Atrament** to element, który zmienia kolor motywu aplikacji.
+Gdy wygrawerujesz nazwę domeny na **odznace**, w aplikacji będziesz wyświetlany pod tą nazwą zamiast e-maila.
 
-#### Jak używać
+#### Grawerowanie
 
-1. Naciśnij atrament, aby wejść na ekran szczegółów
-2. Kliknij przycisk **"Zmień motyw"**
-3. Cały kolor aplikacji zmienia się natychmiast
+1. Kup odznakę w sklepie i wybierz odznakę, która nie została jeszcze wygrawerowana.
+2. Wpisz wybraną **nazwę domeny**. (maks. 32 znaki, tylko litery i cyfry, bez znaków specjalnych i emoji)
+3. Użyj **sprawdzenia dostępności**, aby potwierdzić, że nazwa jest wolna.
+4. Opcjonalnie dołącz obraz 128×128 i wykonaj grawerowanie.
 
-#### Typy atramentu
+> ⚠️ **Uwaga**: Wygrawerowana **nazwa domeny jest trwała** i nie można jej zmienić. Jeśli grawerujesz z obrazem, później możesz zmieniać obraz i słowa kluczowe; jeśli grawerujesz bez obrazu, późniejsza edycja nie jest możliwa.
 
-| Atrament | Kolor |
-|-----|-------|
-| **Czarny atrament** | Domyślny czarny motyw |
-| **Złoty atrament** | Luksusowy złoty motyw |
+#### Zakładanie / zdejmowanie / edycja
+
+- Po **założeniu** w aktywnościach w aplikacji widnieje nazwa domeny. Jednocześnie można nosić tylko jedną odznakę.
+- Po **zdjęciu** znów wyświetla się domyślny e-mail.
+- Przez **Edytuj** zmienisz obraz i słowa kluczowe.
 
 </div>
 </details>
@@ -488,49 +290,16 @@ Gdy nowe komentarze są dodawane do dziennika wspólnego, krawędź elementu **p
 ---
 
 <details>
-<summary><h3 id="search">🔍 Funkcja wyszukiwania</h3></summary>
+<summary><h3 id="folder">📂 Foldery</h3></summary>
 <div class="manual-content" markdown="1">
 
-#### Podstawowe wyszukiwanie
+Gdy przedmiotów przybywa, możesz porządkować je w **foldery**.
 
-Naciśnij pasek wyszukiwania u góry, aby aktywować tryb wyszukiwania.
+- Przeciągnij przedmiot do obszaru **„Utwórz nowy folder”** na dole, aby utworzyć folder.
+- Nazwę folderu zmienisz, przytrzymując nagłówek. (maks. 16 znaków)
+- Strzałką w nagłówku folderu zwiniesz go lub rozwiniesz, a naciśnięcie nagłówka zaznacza wszystkie przedmioty w folderze naraz.
 
-- Wyniki są filtrowane **w czasie rzeczywistym** w miarę wpisywania
-- Naciśnij przycisk X, aby wyjść z trybu wyszukiwania
-
-#### Ostatnie wyszukiwania
-
-- Zapisane są do 5 ostatnich wyszukiwań
-- Naciśnij ostatnie wyszukiwanie, aby auto-wypełnić pasek wyszukiwania
-- Usuń indywidualnie przyciskiem X
-
-#### Zapisz jako filtr
-
-Gdy zapiszesz termin wyszukiwania za pomocą przycisku **"Ustaw jako filtr"**:
-
-- Pojawia się jako tag filtra poniżej paska wyszukiwania
-- Naciśnij tag, aby natychmiast filtrować podle tego terminu wyszukiwania
-- Usuń filtr przyciskiem X
-
-<h4 id="keyword">Agregacja słów kluczowych</h4>
-
-Gdy filtr jest ustawiony i wybierzesz elementy, **wartości słów kluczowych wybranych elementów są automatycznie agregowane**.
-
-**Agregacja wartości numerycznych:**
-- **Suma** i **średnia** są obliczane dla wartości numerycznych z tym samym słowem kluczowym
-- Przykład: Wybranie `cena:1000`, `cena:2000`, `cena:3000`
-- Wynik: `Suma: 6000  Średnia: 2000`
-
-**Agregacja wartości ciągów:**
-- Wartości ciągów z tym samym słowem kluczowym są **łączone z spacjami**
-- Przykład: Wybranie `tag:A`, `tag:B`, `tag:C`
-- Wynik: `A B C`
-
-**Kopiowanie wartości:**
-- **Długo naciśnij** kartę wyniku agregacji, aby skopiować wartość do schowka
-- Powiadomienie pojawia się po ukończeniu kopii
-
-> 💡 **Przykład użytku**: Szybko oblicz całkowitą cenę wielu elementów lub skopiuj powiązane tagi na raz.
+> 💡 Foldery są zapisywane **tylko na bieżącym urządzeniu**. Same przedmioty widać na wszystkich urządzeniach, ale układ folderów może się różnić między urządzeniami.
 
 </div>
 </details>
@@ -538,141 +307,20 @@ Gdy filtr jest ustawiony i wybierzesz elementy, **wartości słów kluczowych wy
 ---
 
 <details>
-<summary><h3 id="bottom-menu">📱 Pasek dolny menu</h3></summary>
+<summary><h3 id="shop">🛒 Sklep</h3></summary>
 <div class="manual-content" markdown="1">
 
-Czerwone odznaki na ikonach menu dolnego pokazują aktualny stan.
+W sklepie kupisz potrzebne przedmioty.
 
-| Menu | Znaczenie odznaki |
-|------|---------------|
-| **Wyślij** | Liczba elementów, które można wysłać (elementy transferowalne wśród wybranych) |
-| **Odbierz** | Liczba oczekujących transakcji (wymagających zaakceptowania/zwrócenia) |
-| **Akcja** | Liczba akcji dostępnych z wybranymi elementami |
+| Produkt | Zastosowanie |
+|------|------|
+| **Papier** | Do kopii papierowych elementów bazowych |
+| **Pieczęć** | Do tworzenia strony informacyjnej jako pieczęci osobistej |
+| **Odznaka** | Do grawerowania nazwy domeny |
 
-> 💡 Liczby odznak animują się efektem bąbelka, gdy się zmieniają.
-
-</div>
-</details>
-
----
-
-<details>
-<summary><h3 id="transfer">📤 Wysyłanie elementów</h3></summary>
-<div class="manual-content" markdown="1">
-
-Możesz transferować elementy podczas sprzedaży używanych przedmiotów lub dania prezentów.
-
-#### Jak wysłać
-
-1. Wybierz **Wyślij** z karty dolnej
-2. **Zaznacz** elementy do transferu (możliwy wybór wielokrotny)
-3. Wprowadź adres e-mail odbiorcy
-4. Kliknij przycisk **Wyślij**
-
-#### Wprowadzanie e-maila za pośrednictwem kodu QR
-
-Zamiast wpisywania adresu e-mail odbiorcy, możesz użyć kodu QR:
-
-1. Odbiorca wyświetla swój kod QR z ekranu **profilu**
-2. Nadawca naciska przycisk **Skanuj kod QR**
-3. Skanuj kod QR aparatem
-4. Adres e-mail jest automatycznie wprowadzony
-
-> ⚠️ **Ważne**: Transferowane elementy **natychmiast znikają** z Twojego inwentarza. Transfery nie mogą być cofnięte.
-
-</div>
-</details>
-
----
-
-<details>
-<summary><h3 id="receive">📥 Odbieranie elementów</h3></summary>
-<div class="manual-content" markdown="1">
-
-Możesz odbierać elementy wysyłane przez inne osoby.
-
-#### Jak odbierać
-
-1. Wybierz **Odbierz** z karty dolnej
-2. Wyświetlana jest lista odebranych elementów
-3. Dla każdego elementu:
-   - **Zaakceptuj**: Dodano do Twojego inwentarza
-   - **Zwróć**: Wysłano z powrotem do nadawcy
-
-#### Powiadomienia
-
-- Otrzymujesz powiadomienia push, gdy przychodzą nowe elementy (jeśli powiadomienia są włączone)
-- Karta odbierania pokazuje liczbę niezaakceptowanych elementów
-
-</div>
-</details>
-
----
-
-<details>
-<summary><h3 id="shop">🛒 Korzystanie ze sklepu</h3></summary>
-<div class="manual-content" markdown="1">
-
-Możesz kupować różne elementy ze sklepu.
-
-#### Dostępne produkty
-
-| Produkt | Użycie |
-|---------|-----|
-| **Papier** | Do tworzenia elementów (zużywany) |
-| **Pieczęć** | Do tworzenia szablonów |
-| **Odznaka** | Do grawerowania unikalnej domeny |
-| **Atrament** | Do zmiany koloru motywu |
-
-#### Jak kupować
-
-1. Wybierz **Sklep** z karty dolnej
-2. Naciśnij żądany produkt
-3. Postępuj z płatnością (App Store / Google Play)
-4. Automatycznie dostarczane po ukończeniu płatności
-
-> 💡 Sklep jest dostępny na wszystkich platformach (iOS, Android, Windows, macOS).
-
-</div>
-</details>
-
----
-
-<details>
-<summary><h3 id="pocket">📂 Funkcja partycji</h3></summary>
-<div class="manual-content" markdown="1">
-
-Możesz grupować elementy za pomocą partycji, gdy masz wiele elementów.
-
-#### Tworzenie partycji
-
-1. Wybierz elementy
-2. Wybierz **"Utwórz partycję"** z menu dolnego
-3. Wprowadź nazwę partycji (maks. 16 znaków)
-
-#### Charakterystyka partycji
-
-- Partycje są **zapisywane tylko na urządzeniu**
-- Struktura partycji nie jest widoczna na innych urządzeniach
-- Samych elementy są przechowywane w chmurze i widoczne na wszystkich urządzeniach
-
-#### Zwijanie/Rozwijanie partycji
-
-Użyj przycisku strzałki (▼/▲) po prawej stronie nagłówka partycji, aby zwinąć lub rozwinąć partycje.
-
-- Stan zawinięcia jest utrzymywany po ponownym uruchomieniu aplikacji
-- Wszystkie partycje automatycznie się rozwijają podczas wyszukiwania
-- Możesz przeciągać elementy do zwiniętych partycji
-
-#### Zaznacz wszystko w partycji
-
-Naciśnij nagłówek partycji, aby zaznaczyć/odznaczyć wszystkie elementy w tej partycji.
-
-| Wskaźnik | Znaczenie |
-|-----------|---------|
-| ○ (Puste koło) | Żaden nie wybrany |
-| ◐ (Półkoło) | Niektóre wybrane |
-| ● (Wypełnione koło) | Wszystkie wybrane |
+1. Naciśnij wybrany produkt w zakładce Sklep.
+2. Zapoznaj się z informacjami o produkcie i zasadami zwrotów, a następnie wyraź zgodę.
+3. Po dokonaniu płatności produkt zostaje przyznany automatycznie.
 
 </div>
 </details>
@@ -683,24 +331,25 @@ Naciśnij nagłówek partycji, aby zaznaczyć/odznaczyć wszystkie elementy w te
 <summary><h3 id="language">🌍 Zmiana języka</h3></summary>
 <div class="manual-content" markdown="1">
 
-Obsługiwanych jest 7 języków:
+Obsługiwanych jest 8 języków:
+
 - 🇰🇷 한국어
 - 🇺🇸 English
 - 🇯🇵 日本語
+- 🇨🇳 中文(简体)
 - 🇩🇪 Deutsch
 - 🇫🇷 Français
 - 🇪🇸 Español
 - 🇧🇷 Português
 
-**Jak zmienić:**
-Ustawienia → Język → Wybierz żądany język
+Wybierz w **Ustawienia → Język** — zmiana obowiązuje natychmiast.
 
 </div>
 </details>
 
 ---
 
-> 📚 **Masz więcej pytań?** Sprawdź [FAQ](/inventory/faq/pl/) lub skontaktuj się z nami poprzez [Sugestie](/inventory/suggest/pl/).
+> 📚 **Masz więcej pytań?** Sprawdź [najczęściej zadawane pytania](/inventory/faq/) lub skontaktuj się z nami przez [sugestie](/inventory/suggest/).
 
 <style>
 details {

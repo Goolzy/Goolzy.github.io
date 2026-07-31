@@ -27,24 +27,17 @@ categories:
         title: "创建我的记录"
         subtitle: "从1张Paper开始的个人档案"
         content: |
-          <p><strong>概述</strong>：将空白纸张文档化，记录图片和文字，并可在日志中持续添加内容。</p>
+          <p><strong>概述</strong>：在探索中把喜欢的基础条目用1张纸张复制为自己的，并可在日志中持续添加记录。</p>
 
           <p><strong>跟着做</strong></p>
           <ol>
-            <li>在库存中长按<strong>空白纸张</strong>，进入<strong>查看详情</strong><br/>
-                <em>或者</em>选择空白纸张后点击<strong>操作</strong>按钮</li>
-            <li>选择<strong>创建新项目</strong>菜单</li>
-            <li>输入项目信息：
-              <ul>
-                <li>图片（可选）</li>
-                <li>标题（必填）</li>
-                <li>内容（必填）</li>
-                <li>期限（可选）</li>
-              </ul>
-            </li>
-            <li>点击<strong>创建</strong>完成 → 转换为已文档化的纸张</li>
-            <li>已文档化的纸张将在库存中显示图片和标题</li>
+            <li>在<strong>探索</strong>标签页中找到感兴趣的基础条目</li>
+            <li>在详情页面点击<strong>剪藏</strong>按钮进行复制 — 消耗1张纸张</li>
+            <li>在我的库存中生成副本（复制时点的信息原样保留）</li>
+            <li>在日志中用图片和文字持续添加属于自己的记录</li>
           </ol>
+
+          <p>如果想从零开始自由构成页面，请使用<strong>盖章生成</strong>（参见第2章）。</p>
 
           <p><strong>使用示例</strong></p>
           <ul>
@@ -56,28 +49,28 @@ categories:
 
           <p><strong>整理技巧</strong>：相似的文档可用<strong>回形针</strong>装订，不同类别可用<strong>口袋</strong>区分。</p>
 
-      # 1-2. 共享模板复制
+      # 1-2. 基础条目复制
       - type: "初级"
-        title: "获取共享模板"
-        subtitle: "将其他用户的模板变成自己的"
+        title: "获取基础条目"
+        subtitle: "将探索中的基础条目变成自己的"
         content: |
-          <p><strong>概述</strong>：您可以复制其他用户共享的印章，作为自己的文档使用。</p>
+          <p><strong>概述</strong>：您可以复制在探索中公开的基础条目，作为自己的文档使用。</p>
 
           <p><strong>跟着做</strong></p>
           <ol>
             <li>在顶部<strong>超级搜索栏</strong>中搜索想要的标签</li>
-            <li>在搜索结果中选择<strong>共享模板</strong>标签页</li>
-            <li>选择想要的共享模板进入详情页面</li>
+            <li>在搜索结果中选择<strong>基础条目</strong>标签页</li>
+            <li>选择想要的基础条目进入详情页面</li>
             <li>点击<strong>复制</strong></li>
             <li>选择我的库存中的<strong>空白纸张</strong></li>
-            <li>复制完成 → 印章内容已复制到纸张上</li>
+            <li>复制完成 → 基础条目的内容已复制到纸张上</li>
           </ol>
 
           <p><strong>使用示例</strong></p>
           <ul>
-            <li>✅ <strong>清单</strong>：复制并使用旅行准备、购物等共享模板</li>
-            <li>🎁 <strong>活动参与</strong>：复制品牌/商店共享的活动模板</li>
-            <li>📝 <strong>表格使用</strong>：复制其他用户制作的实用表格</li>
+            <li>✅ <strong>清单</strong>：复制并使用旅行准备、购物等基础条目</li>
+            <li>🎁 <strong>活动参与</strong>：复制品牌/商店发布的活动条目</li>
+            <li>📝 <strong>表格使用</strong>：复制在探索中找到的实用表格</li>
           </ul>
 
       # 1-3. 共享日志 - 聊天室
@@ -85,23 +78,17 @@ categories:
         title: "与朋友一起记录"
         subtitle: "用共享日志创建群组空间"
         content: |
-          <p><strong>概述</strong>：用多张纸张创建共享文档，所有参与者都可以在同一个日志中记录。</p>
+          <p><strong>概述</strong>：制作共享日志模式的印章并分发出去，所有参与者都可以在同一个日志中记录。</p>
 
           <p><strong>跟着做</strong></p>
           <ol>
-            <li>根据共享人数选择相应数量的<strong>空白纸张</strong>（2张以上）</li>
-            <li>点击<strong>操作</strong>按钮</li>
-            <li>选择<strong>创建新项目（共享日志）</strong></li>
-            <li>输入标题、说明后创建</li>
-            <li>将创建的共享文档<strong>发送</strong>给参与者</li>
+            <li>选择<strong>空白印章</strong>进入<strong>盖章生成</strong></li>
+            <li>构成信息页面，并在<strong>日志模式</strong>中选择<strong>共享日志</strong></li>
+            <li>将完成的印章副本<strong>转交</strong>（需接受）给参与者</li>
+            <li>参与者接受后，所有人都在<strong>同一个共享日志空间</strong>中一起记录</li>
           </ol>
 
-          <p><strong>人数与Paper使用量</strong></p>
-          <ul>
-            <li>👫 2人：2张Paper（情侣日记、一对一聊天）</li>
-            <li>👨‍👩‍👧 3人：3张Paper（小型团队项目）</li>
-            <li>👨‍👩‍👧‍👦 4人以上：4张以上Paper（家庭聚会、社团、大型群组）</li>
-          </ul>
+          <p><strong>纸张使用量</strong>：每次创建或转交副本都会消耗1张纸张 — 请按参与人数的增长准备相应数量。</p>
 
           <p><strong>使用示例</strong></p>
           <ul>
@@ -125,7 +112,7 @@ categories:
             <li>输入回形针名称后完成</li>
           </ol>
 
-          <p><strong>用口袋划口袋域</strong></p>
+          <p><strong>用口袋划分区域</strong></p>
           <ol>
             <li>在库存中点击<strong>添加口袋</strong></li>
             <li>输入口袋名称（如：工作、个人、爱好）</li>
@@ -179,18 +166,18 @@ categories:
   - id: stamp-usage
     title: "印章活用法"
     icon: "🔖"
-    description: "用印章(Stamp)创建模板并复制"
+    description: "用印章(Stamp)生成个人印章并复制"
     items:
       # 2-0. 印章基础 (初级)
       - type: "初级"
         title: "了解印章"
-        subtitle: "模板的概念和基本使用方法"
+        subtitle: "个人印章的概念和基本使用方法"
         content: |
-          <p><strong>概述</strong>：印章是可以快速创建重复格式文档的模板。创建一次后，可以在多张纸上复制相同的格式。</p>
+          <p><strong>概述</strong>：印章是可以快速创建重复格式文档的个人印章。生成一次后，可以在多张纸上复制相同的格式。</p>
 
           <p><strong>什么是印章？</strong></p>
           <ul>
-            <li>🔖 <strong>模板</strong>：预设格式（图片、标题、内容、关键词）</li>
+            <li>🔖 <strong>个人印章</strong>：预设格式（图片、标题、内容、关键词）</li>
             <li>📋 <strong>复制</strong>：在空白纸张上盖章即可生成相同格式的文档</li>
             <li>🔄 <strong>重复使用</strong>：一个印章可以无限复制</li>
           </ul>
@@ -199,29 +186,29 @@ categories:
           <ul>
             <li>📔 每天使用的日记格式</li>
             <li>✅ 重复使用的清单</li>
-            <li>📊 定期报告模板</li>
+            <li>📊 定期报告格式</li>
             <li>🏋️ 运动/饮食记录表</li>
           </ul>
 
           <p><strong>印章 vs 纸张</strong></p>
           <ul>
             <li>📄 <strong>纸张</strong>：单独文档，记录独特内容</li>
-            <li>🔖 <strong>印章</strong>：格式（模板），重复使用的模板</li>
+            <li>🔖 <strong>印章</strong>：格式（模具），重复使用的个人印章</li>
           </ul>
 
       # 2-1. 单独日志印章
       - type: "中级"
-        title: "创建我的模板"
+        title: "创建我的个人印章"
         subtitle: "用印章批量生产相同格式的文档"
         content: |
-          <p><strong>概述</strong>：印章刻印后就成为模板。将这个模板复制到纸张上，可以快速创建多个相同格式的文档。</p>
+          <p><strong>概述</strong>：盖章生成后就成为个人印章。将这个个人印章复制到纸张上，可以快速创建多个相同格式的文档。</p>
 
-          <p><strong>刻印印章</strong></p>
+          <p><strong>盖章生成</strong></p>
           <ol>
             <li>在库存中长按<strong>空白印章</strong>，进入<strong>查看详情</strong><br/>
                 <em>或者</em>选择空白印章后点击<strong>操作</strong>按钮</li>
-            <li>选择<strong>创建新模板</strong>菜单</li>
-            <li>输入模板信息：
+            <li>选择<strong>盖章生成</strong>菜单</li>
+            <li>输入个人印章信息：
               <ul>
                 <li>图片（必填）</li>
                 <li>标题（必填）</li>
@@ -230,22 +217,22 @@ categories:
                 <li>默认关键词（最多128个）</li>
               </ul>
             </li>
-            <li>点击<strong>创建</strong>完成 → 转换为已刻印的印章</li>
+            <li>点击<strong>创建</strong>完成 → 转换为个人印章</li>
           </ol>
 
           <p><strong>复制到纸张</strong></p>
           <ol>
-            <li>选择已刻印的<strong>印章</strong></li>
-            <li>再选择需要数量的<strong>空白纸张</strong></li>
+            <li>选择已生成的<strong>个人印章</strong></li>
+            <li>再按需要的数量选择<strong>空白纸张</strong></li>
             <li>点击<strong>操作</strong>按钮</li>
             <li>选择<strong>复制</strong>菜单</li>
-            <li>印章刻印的内容将复制到所选纸张上</li>
+            <li>个人印章的内容将复制到所选纸张上</li>
           </ol>
 
           <p><strong>使用示例</strong></p>
           <ul>
             <li>📋 <strong>传单/通知</strong>：批量分发相同内容</li>
-            <li>🏷️ <strong>产品信息</strong>：复制并分享产品规格、价格</li>
+            <li>🏷️ <strong>产品信息</strong>：复制产品规格、价格后进行传递</li>
             <li>📜 <strong>公告</strong>：在多处发布相同内容的公告</li>
           </ul>
 
@@ -256,22 +243,21 @@ categories:
         title: "创建开放社区"
         subtitle: "用共享日志印章持续添加参与者"
         content: |
-          <p><strong>概述</strong>：以共享日志模式创建印章，任何人都可以通过复制参与，形成公开空间。</p>
+          <p><strong>概述</strong>：以共享日志模式创建印章后，所有通过转交收到印章的用户都会参与同一日志，形成开放空间。</p>
 
           <p><strong>跟着做</strong></p>
           <ol>
-            <li>选择<strong>空白印章</strong>后进入<strong>创建新模板</strong></li>
-            <li>输入模板信息：图片、标题、内容、期限、关键词</li>
+            <li>选择<strong>空白印章</strong>后进入<strong>盖章生成</strong></li>
+            <li>输入个人印章信息：图片、标题、内容、期限、关键词</li>
             <li>选择<strong>日志模式：共享</strong> ⭐</li>
             <li>点击<strong>创建</strong>完成</li>
           </ol>
 
           <p><strong>添加参与者方法</strong></p>
           <ol>
-            <li>在顶部<strong>超级搜索栏</strong>中用该模板的关键词搜索</li>
-            <li>选择搜索到的共享模板并<strong>下载</strong></li>
-            <li>用下载的模板执行<strong>复制</strong></li>
-            <li>复制的用户自动参与共享日志</li>
+            <li>生成印章的<strong>转交用二维码</strong>并张贴或出示给参与者</li>
+            <li>希望参与者扫描二维码接收<strong>转交</strong>（需接受）</li>
+            <li>收到转交的用户自动参与共享日志</li>
             <li>可无人数限制地持续添加</li>
           </ol>
 
@@ -282,32 +268,32 @@ categories:
             <li>📢 <strong>社区公告板</strong>：运营基于兴趣的社区</li>
           </ul>
 
-      # 2-3. 印章共享 - 小商户
+      # 2-3. 印章转交 - 小商户
       - type: "专家"
         title: "店铺运营活用"
         subtitle: "面向小商户的印章营销"
         content: |
-          <p><strong>概述</strong>：通过共享印章与客户沟通，分发店铺信息。</p>
+          <p><strong>概述</strong>：通过转交印章与客户沟通，分发店铺信息。</p>
 
           <p>🍽️ <strong>店铺菜单</strong></p>
           <ol>
-            <li>用菜单照片创建印章模板</li>
+            <li>用菜单照片创建个人印章</li>
             <li>在关键词中设置菜名、价格、说明</li>
-            <li>共享印章生成二维码 → 放置在餐桌上</li>
-            <li>客户扫描二维码 → 复制后查看菜单信息</li>
+            <li>生成印章转交用二维码 → 放置在餐桌上</li>
+            <li>客户扫描二维码 → 接收转交后查看菜单信息</li>
           </ol>
 
           <p>🎫 <strong>优惠券/活动分发</strong></p>
           <ol>
-            <li>用活动图片创建印章模板</li>
+            <li>用活动图片创建个人印章</li>
             <li>在关键词中设置折扣内容、有效期</li>
-            <li>向客户分享印章链接/二维码</li>
-            <li>客户复制 → 作为优惠券保存和出示</li>
+            <li>通过二维码将印章转交给客户</li>
+            <li>客户接收 → 作为优惠券保存和出示</li>
           </ol>
 
           <p>📋 <strong>客户反馈收集</strong></p>
           <ol>
-            <li>以共享日志模式创建反馈模板</li>
+            <li>以共享日志模式创建反馈印章</li>
             <li>用关键词设置评分/意见输入栏</li>
             <li>客户复制 → 在共享日志中写评价</li>
             <li>所有评价汇集在一处方便查看</li>
@@ -316,7 +302,7 @@ categories:
           <p><strong>其他用途</strong></p>
           <ul>
             <li>🆕 新菜品上市通知</li>
-            <li>📅 预约指南模板</li>
+            <li>📅 预约指南格式</li>
             <li>📍 店铺位置/营业时间指南</li>
           </ul>
 
@@ -330,7 +316,7 @@ categories:
           <p>🎉 <strong>粉丝活动</strong></p>
           <ol>
             <li>以共享日志模式创建活动印章</li>
-            <li>向粉丝分享印章链接</li>
+            <li>将印章转交给粉丝</li>
             <li>粉丝复制后参与</li>
             <li>在共享日志中进行问答、抽奖</li>
           </ol>
@@ -381,7 +367,7 @@ categories:
           <ol>
             <li>用旅行地照片+推荐路线创建印章</li>
             <li>在关键词中整理美食、住宿信息</li>
-            <li>共享 → 去过的人添加评价</li>
+            <li>转交 → 去过的人添加评价</li>
           </ol>
 
           <p><strong>其他用途</strong></p>
@@ -397,7 +383,7 @@ categories:
         title: "运营群组活动"
         subtitle: "地区、家庭、朋友群组的沟通空间"
         content: |
-          <p><strong>概述</strong>：为社区、家庭聚会、朋友群组创建印章共享空间。</p>
+          <p><strong>概述</strong>：可以用印章为社区、家庭聚会、朋友群组创建共享空间。</p>
 
           <p>🏘️ <strong>社区</strong></p>
           <ul>
@@ -421,19 +407,19 @@ categories:
         title: "业务和活动活用"
         subtitle: "团队协作和特别日子记录"
         content: |
-          <p><strong>概述</strong>：为业务协作和特别活动创建印章共享空间。</p>
+          <p><strong>概述</strong>：可以用印章为业务协作和特别活动创建共享空间。</p>
 
           <p>💼 <strong>业务/协作</strong></p>
           <ul>
             <li>📊 团队项目：通过共享日志分享进度</li>
-            <li>📝 会议记录格式：用印章标准化会议记录模板</li>
+            <li>📝 会议记录格式：用印章标准化会议记录格式</li>
             <li>📋 工作交接：整理并交接负责业务</li>
             <li>👋 新人入职：分享公司适应指南</li>
           </ul>
 
           <p>🎉 <strong>活动/特别日子</strong></p>
           <ul>
-            <li>💒 结婚请帖：共享印章用于请帖+出席确认+祝福留言</li>
+            <li>💒 结婚请帖：用共享日志印章实现请帖+出席确认+祝福留言</li>
             <li>🎈 派对邀请：生日、乔迁、年终聚会邀请</li>
             <li>👶 周岁/百日宴：宝宝照片+祝福留言汇集</li>
             <li>🕯️ 追思/纪念日：共同分享回忆的空间</li>

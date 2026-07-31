@@ -63,20 +63,19 @@ translations:
 <details>
 <summary><strong>Q. 아이템은 어떻게 만드나요?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> 다음 단계를 따라주세요:
+<strong>A.</strong> 아이템은 두 가지 방법으로 만들 수 있습니다:
 <ol>
-<li>홈 화면에서 보유 중인 <strong>종이</strong>를 탭</li>
-<li>하단 메뉴에서 <strong>"새 아이템 생성"</strong> 선택</li>
-<li>아이템 정보 입력 (제목, 내용, 이미지 등)</li>
-<li>저장하면 종이 1장이 소모되고 아이템이 생성됩니다</li>
+<li><strong>베이스 아이템 복제</strong>: 탐색에서 마음에 드는 베이스 아이템을 찾아 상세 화면의 <strong>스크랩</strong> 버튼을 누르면, 종이 1장이 소모되고 내 인벤토리에 사본이 생성됩니다</li>
+<li><strong>스탬프로 뜨기</strong>: 빈 스탬프를 선택해 <strong>"스탬프로 뜨기"</strong>로 나만의 정보 페이지를 가진 개인 스탬프를 만듭니다</li>
 </ol>
+빈 상태에서 직접 작성하는 구 "새 아이템 생성" 기능은 종료되었습니다. 기존에 만든 아이템은 계속 보관·사용할 수 있습니다.
 </div>
 </details>
 
 <details>
 <summary><strong>Q. 아이템에 유효기간을 설정할 수 있나요?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> 네, 아이템 생성 시 다음 날짜를 설정할 수 있습니다:
+<strong>A.</strong> 네, 스탬프로 뜨기의 편집 과정에서 다음 날짜를 설정할 수 있습니다:
 <ul>
 <li><strong>개시일자</strong>: 이 날짜가 되기 전까지 내용이 블러 처리됨</li>
 <li><strong>유효기간</strong>: 이 날짜가 지나면 내용이 블러 처리되고, 로그 추가 불가</li>
@@ -158,23 +157,22 @@ translations:
 <details>
 <summary><strong>Q. 스탬프는 무엇인가요?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> 스탬프는 <strong>템플릿</strong>을 만들어 다른 사람에게 전달할 수 있는 아이템입니다.
+<strong>A.</strong> 스탬프는 <strong>개인 스탬프</strong>를 떠서 다른 사람에게 전달할 수 있는 아이템입니다.
 <br><br>
-템플릿에는 이미지, 제목, 내용, 유효기간 등을 설정할 수 있고, <strong>로그 기능</strong>을 통해 기록을 남길 수 있습니다.
+개인 스탬프에는 이미지, 제목, 내용, 유효기간 등을 설정할 수 있고, <strong>로그 기능</strong>을 통해 기록을 남길 수 있습니다.
 </div>
 </details>
 
 <details>
-<summary><strong>Q. 스탬프 템플릿은 어떻게 만드나요?</strong></summary>
+<summary><strong>Q. 개인 스탬프는 어떻게 만드나요?</strong></summary>
 <div class="answer-content">
 <strong>A.</strong> 다음 단계를 따라주세요:
 <ol>
-<li>미사용 스탬프 선택 → <strong>"새 템플릿 생성"</strong> 메뉴</li>
-<li>템플릿 이미지 선택 (필수)</li>
-<li>제목과 내용 입력</li>
-<li>개시일자/유효기간 설정 (선택)</li>
-<li><strong>로그 모드</strong> 선택: 단독로그 또는 공유로그</li>
-<li><strong>"템플릿 생성"</strong> 버튼으로 완료</li>
+<li>미사용 빈 스탬프 선택 → <strong>"스탬프로 뜨기"</strong> 메뉴</li>
+<li>스탬프의 <strong>이름</strong> 입력 (최대 32자) — 확정 후에는 변경할 수 없습니다</li>
+<li>이어서 열리는 편집기에서 이미지·글·요소를 배치해 정보 페이지 구성</li>
+<li>개시일자/유효기간·<strong>로그 모드</strong>(단독로그/공유로그) 등 옵션 설정</li>
+<li>저장하면 완료</li>
 </ol>
 </div>
 </details>
@@ -197,9 +195,9 @@ translations:
 <details>
 <summary><strong>Q. 스탬프를 복제할 수 있나요?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> 네! 활성화된 스탬프(템플릿)와 종이를 함께 선택하면 <strong>"템플릿 복제"</strong> 메뉴가 나타납니다.
+<strong>A.</strong> 네! 활성화된 스탬프(개인 스탬프)와 종이를 함께 선택하면 <strong>"복제하기"</strong> 메뉴가 나타납니다.
 <br><br>
-복제하면 종이 1장이 소모되고, 동일한 템플릿의 새 아이템이 생성됩니다. 공유로그 모드라면 원본과 같은 공유 공간을 사용합니다.
+복제하면 종이 1장이 소모되고, 같은 내용의 새 아이템이 생성됩니다. 공유로그 모드라면 원본과 같은 공유 공간을 사용합니다.
 </div>
 </details>
 
@@ -254,7 +252,7 @@ translations:
 <details>
 <summary><strong>Q. 로그는 무엇인가요?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> 로그는 아이템이나 스탬프 템플릿에 기록을 남기는 기능입니다.
+<strong>A.</strong> 로그는 아이템이나 개인 스탬프에 기록을 남기는 기능입니다.
 <br><br>
 메시지 형태로 작성하면 채팅처럼 표시되고, <code>키:값</code> 형태로 작성하면 정보 카드로 표시됩니다.
 </div>
@@ -471,7 +469,7 @@ QR 코드에는 이메일 주소가 담겨있어 직접 입력 없이 빠르게 
 <strong>A.</strong> 다음 아이템을 구매할 수 있습니다:
 <ul>
 <li><strong>종이</strong>: 아이템 생성용</li>
-<li><strong>스탬프</strong>: 템플릿 생성용</li>
+<li><strong>스탬프</strong>: 개인 스탬프 뜨기용</li>
 <li><strong>잉크</strong>: 테마 색상 변경용</li>
 <li><strong>뱃지</strong>: 고유 도메인 각인용</li>
 </ul>

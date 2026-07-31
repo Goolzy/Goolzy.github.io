@@ -1,12 +1,12 @@
-# Guide d'utilisation de l'inventaire (Français) - Refonte complète
+# Données d'utilisation d'Inventory (Français) - Refonte complète
 page:
-  title: "Guide d'utilisation de l'inventaire"
-  intro: "Découvrez ce que vous pouvez faire avec l'inventaire. Du niveau débutant aux fonctionnalités avancées, nous vous guidons étape par étape."
+  title: "Guide d'utilisation d'Inventory"
+  intro: "Découvrez tout ce que vous pouvez faire avec Inventory. Des fonctions simples aux fonctions avancées, nous vous guidons étape par étape."
   expand: "Suivre le guide ↓"
-  collapse: "Réduire ↑"
-  share_title: "Partagez aussi votre façon d'utiliser l'application"
+  collapse: "Replier ↑"
+  share_title: "Partagez aussi votre façon d'utiliser l'app"
   share_text: "Comment l'utilisez-vous ? Nous attendons vos nouvelles idées."
-  share_btn: "Partager votre utilisation"
+  share_btn: "Partager ma façon d'utiliser"
   share_link: "/inventory/suggest/"
   manual_base: "/inventory/manual/"
   levels:
@@ -18,457 +18,643 @@ page:
 categories:
   # ===== 1. Utilisation du Papier (Paper) =====
   - id: paper-usage
-    title: "📄 Utilisation du Papier"
+    title: "Utilisation du Papier"
     icon: "📄"
     description: "Tout ce que vous pouvez faire avec le Papier (Paper)"
     items:
       # 1-1. Enregistrement individuel
       - type: "Débutant"
-        title: "Créer vos propres enregistrements"
-        subtitle: "Commencez vos archives personnelles avec une seule feuille de Papier"
+        title: "Créer mes propres archives"
+        subtitle: "Une archive personnelle qui commence avec 1 feuille de papier"
         content: |
-          <p><strong>Aperçu</strong> : Vous pouvez documenter un papier vierge pour enregistrer des images et du texte, et ajouter continuellement du contenu au journal.</p>
+          <p><strong>Aperçu</strong> : Depuis Explorer, faites une copie papier d'un élément de base qui vous plaît pour le faire vôtre, avec 1 feuille de papier — puis ajoutez continuellement vos enregistrements dans le log.</p>
 
-          <p><strong>Suivre le guide</strong></p>
+          <p><strong>À suivre</strong></p>
           <ol>
-            <li>Appuyez longuement sur un <strong>papier vierge</strong> dans l'inventaire pour accéder à <strong>Voir les détails</strong><br/>
-                <em>Ou</em> sélectionnez un papier vierge puis touchez le bouton <strong>Action</strong></li>
-            <li>Sélectionnez le menu <strong>Créer un nouvel élément</strong></li>
-            <li>Entrez les informations de l'élément :
-              <ul>
-                <li>Image (optionnel)</li>
-                <li>Titre (obligatoire)</li>
-                <li>Contenu (optionnel)</li>
-                <li>Échéance (optionnel)</li>
-              </ul>
-            </li>
-            <li>Terminez avec <strong>Créer</strong> → Conversion en papier documenté</li>
-            <li>Le papier documenté s'affiche avec l'image et le titre dans l'inventaire</li>
+            <li>Trouver un élément de base qui vous intéresse dans l'onglet <strong>Explorer</strong></li>
+            <li>Copier via le bouton <strong>Scrap</strong> de l'écran de détail — consomme 1 feuille de papier</li>
+            <li>Une copie est créée dans votre inventaire (les informations au moment de la copie papier sont conservées telles quelles)</li>
+            <li>Ajouter continuellement vos propres enregistrements au log, en images et en texte</li>
           </ol>
+
+          <p>Si vous souhaitez composer librement la page dès le départ, utilisez <strong>Créer un tampon</strong> (voir chapitre 2).</p>
 
           <p><strong>Exemples d'utilisation</strong></p>
           <ul>
-            <li>📔 <strong>Journal/Bloc-notes</strong> : Enregistrez vos notes quotidiennes avec images et texte, ajoutez continuellement au journal</li>
-            <li>📸 <strong>Album photo</strong> : Capturez des moments spéciaux en images</li>
-            <li>📋 <strong>Gestion des garanties</strong> : Enregistrez les photos de garantie, configurez des alertes d'expiration avec les échéances</li>
-            <li>🧾 <strong>Conservation des reçus</strong> : Archivez numériquement vos reçus importants</li>
+            <li>📔 <strong>Journal/Bloc-notes</strong> : Enregistrer chaque jour en images et en texte, ajouter continuellement au log</li>
+            <li>📸 <strong>Album photo</strong> : Immortaliser les moments particuliers en images</li>
+            <li>📋 <strong>Gestion des garanties</strong> : Enregistrer les photos des garanties produits, rappel d'expiration grâce à l'échéance</li>
+            <li>🧾 <strong>Conservation des reçus</strong> : Conserver les reçus importants au format numérique</li>
           </ul>
 
-          <p><strong>Conseil d'organisation</strong> : Regroupez les documents similaires avec des <strong>Clips</strong> et organisez les catégories avec des <strong>Pockets</strong>.</p>
+          <p><strong>Conseil d'organisation</strong> : Regroupez les documents similaires avec des <strong>Clips</strong> et distinguez les catégories avec des <strong>Pockets</strong>.</p>
 
-      # 1-2. Duplication de modèle partagé
+      # 1-2. Copie d'un élément de base
       - type: "Débutant"
-        title: "Importer un modèle partagé"
-        subtitle: "Faites d'un modèle partagé le vôtre"
+        title: "Récupérer un élément de base"
+        subtitle: "Faire vôtre un élément de base d'Explorer"
         content: |
-          <p><strong>Aperçu</strong> : Vous pouvez dupliquer un tampon partagé par un autre utilisateur et l'utiliser comme votre propre document.</p>
+          <p><strong>Aperçu</strong> : Vous pouvez copier les éléments de base publiés dans Explorer et les utiliser comme vos propres documents.</p>
 
-          <p><strong>Suivre le guide</strong></p>
+          <p><strong>À suivre</strong></p>
           <ol>
-            <li>Cliquez sur le lien du tampon partagé ou scannez le QR</li>
-            <li>Touchez <strong>Dupliquer</strong> sur l'écran de détail du tampon</li>
-            <li>Sélectionnez un <strong>papier vierge</strong> dans votre inventaire</li>
-            <li>Duplication terminée → Le contenu du tampon est copié sur le papier</li>
-            <li>Modifiez les valeurs des mots-clés selon vos besoins</li>
+            <li>Rechercher le tag souhaité dans la <strong>barre SuperSearch</strong> en haut</li>
+            <li>Sélectionner l'onglet <strong>Éléments de base</strong> dans les résultats de recherche</li>
+            <li>Sélectionner l'élément de base souhaité pour ouvrir l'écran de détail</li>
+            <li>Toucher <strong>Créer une copie papier</strong></li>
+            <li>Sélectionner un <strong>papier vierge</strong> de votre inventaire</li>
+            <li>Copie papier terminée → Le contenu de l'élément de base est copié sur le papier</li>
           </ol>
 
           <p><strong>Exemples d'utilisation</strong></p>
           <ul>
-            <li>✅ <strong>Listes de contrôle</strong> : Dupliquez des modèles partagés pour la préparation de voyage, les courses, etc.</li>
-            <li>🎁 <strong>Participation aux événements</strong> : Dupliquez les modèles d'événements partagés par les marques/commerces</li>
-            <li>📝 <strong>Utilisation de formulaires</strong> : Dupliquez des formulaires utiles créés par d'autres utilisateurs</li>
+            <li>✅ <strong>Checklist</strong> : Copier des éléments de base pour la préparation de voyage, les courses, etc.</li>
+            <li>🎁 <strong>Participation à un événement</strong> : Copier les éléments d'événement diffusés par des marques/boutiques</li>
+            <li>📝 <strong>Utilisation de formulaires</strong> : Copier les formulaires utiles trouvés dans Explorer</li>
           </ul>
 
-      # 1-3. Journal partagé - Espace de discussion
+      # 1-3. Log partagé - Espace de groupe
       - type: "Intermédiaire"
-        title: "Enregistrer ensemble avec des amis"
-        subtitle: "Créer un espace de groupe avec le journal partagé"
+        title: "Enregistrer avec des amis"
+        subtitle: "Un espace de groupe créé avec le log partagé"
         content: |
-          <p><strong>Aperçu</strong> : Si vous créez un document partagé avec plusieurs feuilles de papier, tous les participants peuvent écrire dans le même journal.</p>
+          <p><strong>Aperçu</strong> : Créez un tampon en mode log partagé et distribuez-le — tous les participants pourront écrire dans le même log.</p>
 
-          <p><strong>Suivre le guide</strong></p>
+          <p><strong>À suivre</strong></p>
           <ol>
-            <li>Sélectionnez autant de <strong>papiers vierges</strong> que de participants (2 à 10 feuilles)</li>
-            <li>Touchez le bouton <strong>Action</strong></li>
-            <li>Sélectionnez <strong>Créer un document partagé</strong></li>
-            <li>Entrez le titre et la description puis créez</li>
-            <li><strong>Envoyez</strong> le document partagé créé aux participants</li>
+            <li>Sélectionner un <strong>tampon vierge</strong> et ouvrir <strong>Créer un tampon</strong></li>
+            <li>Composer la page d'informations et choisir <strong>Log partagé</strong> dans le <strong>mode log</strong></li>
+            <li>Envoyer une copie du tampon terminé aux participants par <strong>transfert</strong> (avec acceptation)</li>
+            <li>Une fois qu'ils acceptent, tous écrivent ensemble dans le <strong>même espace de log partagé</strong></li>
           </ol>
 
-          <p><strong>Utilisation de Papier par nombre de personnes</strong></p>
-          <ul>
-            <li>👫 2 personnes : 2 feuilles de Papier (journal de couple, discussion 1:1)</li>
-            <li>👨‍👩‍👧 3 personnes : 3 feuilles de Papier (petit projet de groupe)</li>
-            <li>👨‍👩‍👧‍👦 4-10 personnes : 4-10 feuilles de Papier (réunion familiale, club)</li>
-          </ul>
+          <p><strong>Consommation de papier</strong> : Chaque copie ou transfert consomme 1 feuille de papier — prévoyez-en autant que de participants.</p>
 
           <p><strong>Exemples d'utilisation</strong></p>
           <ul>
-            <li>💑 <strong>Journal de couple</strong> : Enregistrez ensemble vos souvenirs à deux</li>
-            <li>👨‍👩‍👧‍👦 <strong>Album familial</strong> : Partagez les événements familiaux et le quotidien</li>
-            <li>📚 <strong>Groupe d'étude</strong> : Enregistrez ensemble les contenus d'étude et les questions</li>
+            <li>💑 <strong>Journal de couple</strong> : Consigner ensemble vos souvenirs à deux</li>
+            <li>👨‍👩‍👧‍👦 <strong>Album de famille</strong> : Partager les événements familiaux et le quotidien</li>
+            <li>📚 <strong>Groupe d'étude</strong> : Consigner ensemble le contenu des révisions et les questions</li>
+          </ul>
+
+      # 1-4. Organisation avancée des documents
+      - type: "Avancé"
+        title: "Gérer les documents de façon systématique"
+        subtitle: "Des archives organisées avec Clips et Pockets"
+        content: |
+          <p><strong>Aperçu</strong> : Quand les documents s'accumulent, organisez-les de façon systématique avec les Clips et les Pockets.</p>
+
+          <p><strong>Regrouper les documents avec un Clip</strong></p>
+          <ol>
+            <li>Sélectionner plusieurs <strong>papiers</strong> à regrouper</li>
+            <li>Toucher le bouton <strong>Action</strong></li>
+            <li>Choisir <strong>Regrouper avec un Clip</strong></li>
+            <li>Saisir le nom du Clip et terminer</li>
+          </ol>
+
+          <p><strong>Délimiter des zones avec les Pockets</strong></p>
+          <ol>
+            <li>Toucher <strong>Ajouter un Pocket</strong> dans l'inventaire</li>
+            <li>Saisir le nom du Pocket (ex. : Travail, Personnel, Loisirs)</li>
+            <li>Glisser-déposer les documents dans le Pocket correspondant</li>
+          </ol>
+
+          <p><strong>Exemples d'utilisation</strong></p>
+          <ul>
+            <li>📁 <strong>Organisation par projet</strong> : Regrouper chaque projet avec un Clip et classer avec des Pockets</li>
+            <li>📅 <strong>Archives par année</strong> : Gérer par année avec des Pockets 2024, 2025</li>
+            <li>🏷️ <strong>Classement par catégorie</strong> : Pockets par type — photos, documents, notes, etc.</li>
+          </ul>
+
+      # 1-5. Documentation professionnelle experte
+      - type: "Expert"
+        title: "Construire un système de travail"
+        subtitle: "De la gestion de projet à la passation"
+        content: |
+          <p><strong>Aperçu</strong> : Grâce à la fonction log du papier, gérez systématiquement l'historique de votre travail.</p>
+
+          <p><strong>Gestion de projet</strong></p>
+          <ol>
+            <li>Créer <strong>1 feuille de papier</strong> par projet</li>
+            <li>Consigner dans le log l'avancement quotidien, les problèmes et les décisions</li>
+            <li>Joindre des documents via des liens Dropbox, Google Drive, OneDrive</li>
+            <li>Renforcer la sécurité des documents sensibles avec le <strong>verrouillage</strong></li>
+          </ol>
+
+          <p><strong>Documents de passation</strong></p>
+          <ol>
+            <li>Créer un papier par mission</li>
+            <li>Récapituler les processus, points d'attention et contacts</li>
+            <li>Convertir en document partagé et le transmettre au successeur</li>
+          </ol>
+
+          <p><strong>Gestion des comptes rendus</strong></p>
+          <ol>
+            <li>Créer un papier pour chaque réunion régulière</li>
+            <li>Consigner dans le log les participants, l'ordre du jour et les décisions</li>
+            <li>Regrouper avec un Clip les comptes rendus d'une même instance</li>
+          </ol>
+
+          <p><strong>Conseils d'utilisation</strong></p>
+          <ul>
+            <li>📊 Convertir en rétrospective à la fin du projet</li>
+            <li>🔍 Retrouver rapidement les anciens enregistrements avec SuperSearch</li>
+            <li>📤 Exporter en PDF si nécessaire</li>
           </ul>
 
   # ===== 2. Utilisation du Tampon (Stamp) =====
   - id: stamp-usage
-    title: "🔖 Utilisation du Tampon"
+    title: "Utilisation du Tampon"
     icon: "🔖"
-    description: "Créer des modèles et les dupliquer avec le Tampon (Stamp)"
+    description: "Créer des tampons personnels et copier avec le Tampon (Stamp)"
     items:
-      # 2-1. Tampon à journal individuel
-      - type: "Avancé"
-        title: "Créer vos propres modèles"
-        subtitle: "Production en masse de documents au même format avec le Tampon"
+      # 2-0. Bases du tampon (Débutant)
+      - type: "Débutant"
+        title: "Comprendre le tampon"
+        subtitle: "Concept et utilisation de base du tampon personnel"
         content: |
-          <p><strong>Aperçu</strong> : Lorsque vous gravez un tampon, il devient un modèle. Vous pouvez dupliquer ce modèle sur du papier pour créer rapidement plusieurs documents au même format.</p>
+          <p><strong>Aperçu</strong> : Le tampon est un tampon personnel qui permet de créer rapidement des documents au format récurrent. Une fois créé, vous pouvez copier le même format sur plusieurs feuilles de papier.</p>
 
-          <p><strong>Graver un tampon</strong></p>
+          <p><strong>Qu'est-ce qu'un tampon ?</strong></p>
+          <ul>
+            <li>🔖 <strong>Tampon personnel</strong> : Format prédéfini (image, titre, contenu, mots-clés)</li>
+            <li>📋 <strong>Copie</strong> : Apposer le tampon sur un papier vierge crée un document au format identique</li>
+            <li>🔄 <strong>Utilisation répétée</strong> : Un tampon créé une fois peut être copié sans limite</li>
+          </ul>
+
+          <p><strong>Exemples d'utilisation du tampon</strong></p>
+          <ul>
+            <li>📔 Format de journal quotidien</li>
+            <li>✅ Checklists récurrentes</li>
+            <li>📊 Format de rapport périodique</li>
+            <li>🏋️ Fiche de suivi sport/alimentation</li>
+          </ul>
+
+          <p><strong>Tampon vs Papier</strong></p>
+          <ul>
+            <li>📄 <strong>Papier</strong> : Document individuel, contenu unique</li>
+            <li>🔖 <strong>Tampon</strong> : Format (gabarit), tampon personnel à usage répété</li>
+          </ul>
+
+      # 2-1. Tampon à log individuel
+      - type: "Intermédiaire"
+        title: "Créer mon propre tampon personnel"
+        subtitle: "Produire en série des documents au même format avec le tampon"
+        content: |
+          <p><strong>Aperçu</strong> : « Créer un tampon » produit un tampon personnel. En copiant ce tampon personnel sur du papier, vous créez rapidement plusieurs documents au même format.</p>
+
+          <p><strong>Créer un tampon</strong></p>
           <ol>
-            <li>Appuyez longuement sur un <strong>tampon vierge</strong> dans l'inventaire pour accéder à <strong>Voir les détails</strong><br/>
-                <em>Ou</em> sélectionnez un tampon vierge puis touchez le bouton <strong>Action</strong></li>
-            <li>Sélectionnez le menu <strong>Créer un nouveau modèle</strong></li>
-            <li>Entrez les informations du modèle :
+            <li>Dans l'inventaire, appuyer longuement sur un <strong>tampon vierge</strong> pour ouvrir <strong>Voir les détails</strong><br/>
+                <em>ou</em> sélectionner le tampon vierge puis toucher le bouton <strong>Action</strong></li>
+            <li>Choisir le menu <strong>Créer un tampon</strong></li>
+            <li>Saisir les informations du tampon personnel :
               <ul>
-                <li>Image (optionnel)</li>
+                <li>Image (obligatoire)</li>
                 <li>Titre (obligatoire)</li>
-                <li>Contenu (optionnel)</li>
-                <li>Échéance (optionnel)</li>
-                <li>Mots-clés par défaut (jusqu'à 10)</li>
+                <li>Contenu (obligatoire)</li>
+                <li>Échéance (facultatif)</li>
+                <li>Mots-clés de base (128 maximum)</li>
               </ul>
             </li>
-            <li>Terminez avec <strong>Créer</strong> → Conversion en tampon gravé</li>
+            <li>Terminer avec <strong>Créer</strong> → Conversion en tampon personnel</li>
           </ol>
 
-          <p><strong>Dupliquer sur du papier</strong></p>
+          <p><strong>Copier sur du papier</strong></p>
           <ol>
-            <li>Sélectionnez le <strong>tampon</strong> gravé</li>
-            <li>Ajoutez autant de <strong>papiers vierges</strong> que nécessaire</li>
-            <li>Touchez le bouton <strong>Action</strong></li>
-            <li>Sélectionnez le menu <strong>Dupliquer</strong></li>
-            <li>Le contenu gravé du tampon est dupliqué sur les papiers sélectionnés</li>
+            <li>Sélectionner le <strong>tampon personnel</strong> terminé</li>
+            <li>Sélectionner en plus autant de <strong>papiers vierges</strong> que nécessaire</li>
+            <li>Toucher le bouton <strong>Action</strong></li>
+            <li>Choisir le menu <strong>Copier</strong></li>
+            <li>Le contenu du tampon personnel est copié sur les papiers sélectionnés</li>
           </ol>
 
           <p><strong>Exemples d'utilisation</strong></p>
           <ul>
-            <li>🏋️ <strong>Suivi d'entraînement</strong> : Enregistrez quotidiennement vos exercices au même format</li>
-            <li>📖 <strong>Suivi de lecture</strong> : Rédigez vos notes de lecture avec le même formulaire pour chaque livre</li>
-            <li>🍷 <strong>Gestion de collection</strong> : Catalogue de vos collections de vin, Lego, figurines, etc.</li>
+            <li>📋 <strong>Flyers/Notices</strong> : Diffuser le même contenu en plusieurs exemplaires</li>
+            <li>🏷️ <strong>Informations produit</strong> : Copier et transmettre les spécifications et prix</li>
+            <li>📜 <strong>Annonces</strong> : Publier la même annonce à plusieurs endroits</li>
           </ul>
 
-          <p><strong>Conseil d'organisation</strong> : Regroupez les documents créés avec des tampons en <strong>Clips</strong> pour les gérer en série.</p>
+          <p><strong>Conseil d'organisation</strong> : Regroupez avec des <strong>Clips</strong> les documents créés au tampon et gérez-les en série.</p>
 
-      # 2-2. Tampon à journal partagé
+      # 2-2. Tampon à log partagé
       - type: "Avancé"
         title: "Créer une communauté ouverte"
-        subtitle: "Ajouter continuellement des participants avec le tampon à journal partagé"
+        subtitle: "Ajouter continuellement des participants avec le tampon à log partagé"
         content: |
-          <p><strong>Aperçu</strong> : Si vous créez un tampon en mode journal partagé, il devient un espace public où n'importe qui peut dupliquer et participer.</p>
+          <p><strong>Aperçu</strong> : En créant un tampon en mode log partagé, vous obtenez un espace ouvert où tous les utilisateurs qui le reçoivent par transfert participent au même log.</p>
 
-          <p><strong>Suivre le guide</strong></p>
+          <p><strong>À suivre</strong></p>
           <ol>
-            <li>Sélectionnez un <strong>tampon vierge</strong> puis accédez à <strong>Créer un nouveau modèle</strong></li>
-            <li>Entrez les informations du modèle : image, titre, contenu, échéance, mots-clés</li>
-            <li>Sélectionnez <strong>Mode journal : Partagé</strong> ⭐</li>
-            <li>Terminez avec <strong>Créer</strong></li>
+            <li>Sélectionner un <strong>tampon vierge</strong> puis ouvrir <strong>Créer un tampon</strong></li>
+            <li>Saisir les informations du tampon personnel : image, titre, contenu, échéance, mots-clés</li>
+            <li>Choisir <strong>Mode log : Partagé</strong> ⭐</li>
+            <li>Terminer avec <strong>Créer</strong></li>
           </ol>
 
           <p><strong>Comment ajouter des participants</strong></p>
           <ol>
-            <li>Sélectionnez le tampon créé et transmettez le lien/QR via <strong>Partager</strong></li>
-            <li>L'autre personne exécute <strong>Dupliquer</strong> via le lien</li>
-            <li>L'utilisateur qui a dupliqué rejoint automatiquement le journal partagé</li>
-            <li>Possibilité d'ajouter continuellement sans limite de nombre</li>
+            <li>Générer le <strong>code QR de transfert</strong> du tampon, puis l'afficher ou le montrer aux participants</li>
+            <li>Les personnes souhaitant participer reçoivent le <strong>transfert</strong> en scannant le QR (avec acceptation)</li>
+            <li>L'utilisateur qui a reçu le transfert rejoint automatiquement le log partagé</li>
+            <li>Ajout continu possible, sans limite de participants</li>
           </ol>
 
           <p><strong>Exemples d'utilisation</strong></p>
           <ul>
             <li>💬 <strong>Salon de discussion ouvert</strong> : Espace de discussion public ouvert à tous</li>
-            <li>🎤 <strong>Fan club</strong> : Rassemblement de fans d'artistes/marques</li>
-            <li>📢 <strong>Forum communautaire</strong> : Gestion de communauté basée sur les centres d'intérêt</li>
+            <li>🎤 <strong>Fan club</strong> : Rassemblement de fans d'artistes/de marques</li>
+            <li>📢 <strong>Tableau communautaire</strong> : Animer une communauté par centres d'intérêt</li>
           </ul>
 
-      # 2-3. Partage de tampon - Petits commerçants
+      # 2-3. Transfert de tampon - Petits commerces
       - type: "Expert"
-        title: "Utiliser pour gérer votre commerce"
+        title: "Utiliser pour gérer sa boutique"
         subtitle: "Marketing par tampon pour les petits commerçants"
         content: |
-          <p><strong>Aperçu</strong> : Vous pouvez partager des tampons pour communiquer avec les clients et distribuer les informations de votre commerce.</p>
+          <p><strong>Aperçu</strong> : Transférez des tampons pour communiquer avec vos clients et diffuser les informations de votre boutique.</p>
 
-          <p>🍽️ <strong>Menu du restaurant</strong></p>
+          <p>🍽️ <strong>Menu de la boutique</strong></p>
           <ol>
-            <li>Créez un modèle de tampon avec une photo du menu</li>
-            <li>Configurez les mots-clés avec le nom du plat, le prix et la description</li>
-            <li>Partagez le tampon pour générer un code QR → Placez-le sur les tables</li>
-            <li>Les clients scannent le QR → Dupliquent pour voir les informations du menu</li>
+            <li>Créer un tampon personnel avec les photos du menu</li>
+            <li>Définir en mots-clés le nom des plats, les prix et les descriptions</li>
+            <li>Générer un code QR de transfert du tampon → le disposer sur les tables</li>
+            <li>Le client scanne le QR → reçoit le transfert et consulte les informations du menu</li>
           </ol>
 
-          <p>🎫 <strong>Distribution de coupons/événements</strong></p>
+          <p>🎫 <strong>Diffusion de coupons/événements</strong></p>
           <ol>
-            <li>Créez un modèle de tampon avec l'image de l'événement</li>
-            <li>Configurez les mots-clés avec les détails de la réduction et la période de validité</li>
-            <li>Partagez le lien/QR du tampon avec les clients</li>
-            <li>Les clients dupliquent → Conservent et présentent comme coupon</li>
+            <li>Créer un tampon personnel avec l'image de l'événement</li>
+            <li>Définir en mots-clés la remise et la durée de validité</li>
+            <li>Transférer le tampon au client par QR</li>
+            <li>Le client l'accepte → le conserve et le présente comme coupon</li>
           </ol>
 
-          <p>📋 <strong>Collecte des retours clients</strong></p>
+          <p>📋 <strong>Collecte des avis clients</strong></p>
           <ol>
-            <li>Créez un modèle de feedback en mode journal partagé</li>
-            <li>Configurez les mots-clés pour la notation/champs d'avis</li>
-            <li>Les clients dupliquent → Écrivent leurs avis dans le journal partagé</li>
-            <li>Tous les avis sont rassemblés en un seul endroit pour consultation</li>
+            <li>Créer un tampon d'avis en mode log partagé</li>
+            <li>Définir par mots-clés les champs note/commentaire</li>
+            <li>Le client copie → rédige son avis dans le log partagé</li>
+            <li>Tous les avis sont réunis et consultables au même endroit</li>
           </ol>
 
           <p><strong>Autres utilisations</strong></p>
           <ul>
-            <li>🆕 Annonces de nouveaux plats</li>
-            <li>📅 Modèle d'information de réservation</li>
-            <li>📍 Information sur l'emplacement/heures d'ouverture</li>
+            <li>🆕 Annonce des nouveautés du menu</li>
+            <li>📅 Formulaire d'information sur les réservations</li>
+            <li>📍 Informations sur l'adresse et les horaires d'ouverture</li>
           </ul>
 
-      # 2-4. Archives personnelles
-      - type: "Intermédiaire"
-        title: "Créer des archives personnelles"
-        subtitle: "Transformez vos contenus préférés en collection personnelle"
-        content: |
-          <p><strong>Aperçu</strong> : Organisez systématiquement vos contenus préférés comme YouTube, Spotify, livres, films, etc.</p>
-
-          <p>🎬 <strong>Playlist YouTube</strong></p>
-          <ol>
-            <li>Créez un document "Ma collection YouTube" avec un papier vierge</li>
-            <li>Ajoutez des liens vidéo + notes courtes au journal</li>
-            <li>Quand les vidéos s'accumulent, regroupez-les par genre avec des <strong>Clips</strong></li>
-          </ol>
-
-          <p>🎵 <strong>Collection musicale Spotify</strong></p>
-          <ol>
-            <li>Créez un document "Playlist 2024" avec un papier vierge</li>
-            <li>Ajoutez des liens Spotify + enregistrez l'émotion/situation du moment au journal</li>
-            <li>Organisez par saison ou ambiance avec des <strong>Clips</strong></li>
-          </ol>
-
-          <p>📚 <strong>Archives de livres lus</strong></p>
-          <ol>
-            <li>Créez un tampon avec un modèle de couverture de livre (mots-clés : auteur, note, etc.)</li>
-            <li>Dupliquez le tampon sur du papier pour chaque livre</li>
-            <li>Enregistrez les passages marquants et vos impressions dans le journal</li>
-            <li>Regroupez les séries avec des <strong>Clips</strong></li>
-          </ol>
-
-          <p>🎞️ <strong>Suivi des films/séries regardés</strong></p>
-          <ol>
-            <li>Créez un tampon avec un modèle d'affiche de film</li>
-            <li>Dupliquez sur du papier pour chaque film</li>
-            <li>Ajoutez une critique courte + notation (★★★★☆) au journal</li>
-          </ol>
-
-      # 2-5. Créateurs/Influenceurs
+      # 2-4. Créateurs/Influenceurs
       - type: "Expert"
-        title: "Activité de créateur"
-        subtitle: "Communiquez avec vos fans et distribuez du contenu"
+        title: "Être actif en tant que créateur"
+        subtitle: "Communiquer avec les fans et diffuser du contenu"
         content: |
           <p><strong>Aperçu</strong> : Les créateurs et influenceurs peuvent communiquer avec leurs fans et organiser des événements.</p>
 
-          <p>🎉 <strong>Événements fans</strong></p>
+          <p>🎉 <strong>Événements pour les fans</strong></p>
           <ol>
-            <li>Créez un tampon d'événement en mode journal partagé</li>
-            <li>Partagez le lien du tampon avec les fans</li>
-            <li>Les fans dupliquent pour participer</li>
-            <li>Organisez des quiz, tirages au sort dans le journal partagé</li>
+            <li>Créer un tampon d'événement en mode log partagé</li>
+            <li>Transférer le tampon aux fans</li>
+            <li>Les fans copient et participent</li>
+            <li>Organiser quiz et tirages au sort dans le log partagé</li>
           </ol>
 
           <p>🛍️ <strong>Catalogue de goodies</strong></p>
           <ol>
-            <li>Créez un tampon avec les photos de goodies</li>
-            <li>Configurez les mots-clés avec le nom du produit, le prix et le lien d'achat</li>
-            <li>Les fans dupliquent et utilisent comme liste de souhaits</li>
+            <li>Créer un tampon avec les photos des goodies</li>
+            <li>Définir en mots-clés le nom du produit, le prix et le lien d'achat</li>
+            <li>Les fans le copient et l'utilisent comme liste de souhaits</li>
           </ol>
 
-          <p>❓ <strong>Espace Q&A</strong></p>
+          <p>❓ <strong>Espace Q&R</strong></p>
           <ol>
-            <li>Créez un tampon Q&A en mode journal partagé</li>
-            <li>Les fans dupliquent et écrivent leurs questions dans le journal</li>
-            <li>Le créateur répond dans le journal partagé</li>
+            <li>Créer un tampon Q&R en mode log partagé</li>
+            <li>Les fans copient puis écrivent leurs questions dans le log</li>
+            <li>Le créateur répond dans le log partagé</li>
           </ol>
 
           <p><strong>Autres utilisations</strong></p>
           <ul>
-            <li>📅 Information sur les fan meetings : lieu, date et comment participer</li>
-            <li>🎬 Coulisses, partage du processus de création</li>
-            <li>📁 Archives des anciens contenus</li>
+            <li>📅 Informations sur les fan meetings : date/lieu/participation</li>
+            <li>🎬 Partager les coulisses et le processus de création</li>
+            <li>📁 Archives des contenus passés</li>
           </ul>
 
       # 2-6. Loisirs/Centres d'intérêt
       - type: "Intermédiaire"
-        title: "Partager vos loisirs"
-        subtitle: "Partage de contenu basé sur les centres d'intérêt"
+        title: "Partager ses loisirs"
+        subtitle: "Échanger du contenu autour de ses centres d'intérêt"
         content: |
-          <p><strong>Aperçu</strong> : Vous pouvez créer des tampons de vos loisirs et centres d'intérêt pour les partager avec d'autres utilisateurs.</p>
+          <p><strong>Aperçu</strong> : Transformez vos loisirs et centres d'intérêt en tampons à partager avec d'autres utilisateurs.</p>
 
           <p>🍳 <strong>Partage de recettes</strong></p>
           <ol>
-            <li>Créez un tampon avec la photo du plat terminé</li>
-            <li>Configurez les mots-clés avec les ingrédients et le temps de cuisson</li>
-            <li>Configurez en mode journal partagé → Les utilisateurs qui dupliquent partagent leurs retours</li>
+            <li>Créer un tampon avec la photo du plat terminé</li>
+            <li>Définir en mots-clés les ingrédients et le temps de cuisson</li>
+            <li>Activer le mode log partagé → les utilisateurs qui copient partagent leurs retours</li>
           </ol>
 
-          <p>🏃 <strong>Partage de routines d'exercice</strong></p>
+          <p>🏃 <strong>Partage de routines sportives</strong></p>
           <ol>
-            <li>Créez un tampon pour un défi 30 jours ou une routine d'entraînement maison</li>
-            <li>Configurez en mode journal partagé</li>
-            <li>Les participants dupliquent et enregistrent quotidiennement leur progression</li>
+            <li>Créer un tampon défi 30 jours ou routine de sport à la maison</li>
+            <li>Activer le mode log partagé</li>
+            <li>Les participants copient puis consignent chaque jour leurs séances</li>
           </ol>
 
           <p>✈️ <strong>Guide de voyage</strong></p>
           <ol>
-            <li>Créez un tampon avec photo de destination + itinéraire recommandé</li>
-            <li>Organisez les informations de restaurants et hébergements dans les mots-clés</li>
-            <li>Partagez → Les voyageurs ajoutent leurs retours d'expérience</li>
+            <li>Créer un tampon avec photos du lieu + itinéraires recommandés</li>
+            <li>Récapituler en mots-clés les bonnes adresses et hébergements</li>
+            <li>Transférer → ceux qui y sont allés ajoutent leurs retours</li>
           </ol>
 
           <p><strong>Autres utilisations</strong></p>
           <ul>
-            <li>🎮 Guides de jeux, partage de builds</li>
+            <li>🎮 Partager des guides et builds de jeux</li>
             <li>🔨 Guides de projets DIY</li>
-            <li>🌱 Conseils d'entretien des plantes, calendrier d'arrosage</li>
+            <li>🌱 Entretien des plantes, calendrier d'arrosage</li>
             <li>🐕 Conseils de soins pour animaux de compagnie</li>
           </ul>
 
       # 2-7. Communauté locale/familiale
       - type: "Intermédiaire"
-        title: "Gérer des activités de groupe"
-        subtitle: "Espace de communication pour le quartier, la famille, les amis"
+        title: "Animer des activités de groupe"
+        subtitle: "Espace d'échange pour le quartier, la famille et les amis"
         content: |
-          <p><strong>Aperçu</strong> : Vous pouvez créer des espaces partagés avec des tampons pour les communautés locales, réunions familiales et groupes d'amis.</p>
+          <p><strong>Aperçu</strong> : Créez avec des tampons des espaces communs pour les communautés locales, les réunions de famille et les groupes d'amis.</p>
 
           <p>🏘️ <strong>Communauté locale</strong></p>
           <ul>
-            <li>🍜 Carte des restaurants du quartier : Les habitants recommandent via le journal partagé</li>
-            <li>🎪 Annonces d'événements locaux : Informations sur les festivals, marchés, événements culturels</li>
-            <li>🏃 Recrutement de clubs : Présentation de clubs de randonnée, course, lecture, etc.</li>
-            <li>🏠 Communication de résidence/immeuble : Partage d'annonces de copropriété</li>
+            <li>🍜 Carte des bonnes adresses du quartier : les habitants recommandent leurs restaurants dans le log partagé</li>
+            <li>🎪 Annonces d'événements locaux : festivals, marchés, événements culturels</li>
+            <li>🏃 Recrutement d'associations : présenter randonnée, course à pied, lecture, etc.</li>
+            <li>🏠 Réunions de résidents : diffuser les annonces de la résidence</li>
           </ul>
 
-          <p>👨‍👩‍👧‍👦 <strong>Groupe famille/amis</strong></p>
+          <p>👨‍👩‍👧‍👦 <strong>Famille/Groupe d'amis</strong></p>
           <ul>
-            <li>🍳 Livre de recettes familiales : Recettes transmises de génération en génération</li>
-            <li>🎂 Calendrier d'anniversaires des amis : Gestion des anniversaires et idées cadeaux</li>
-            <li>✅ Liste de souhaits de groupe : Objectifs à réaliser ensemble</li>
-            <li>✈️ Planning de voyage familial : Partage des horaires, préparatifs et budget</li>
-            <li>💒 Annonces d'événements familiaux : Partage d'informations sur mariages, baptêmes</li>
+            <li>🍳 Livre de recettes familial : les recettes transmises de génération en génération</li>
+            <li>🎂 Calendrier des anniversaires : gestion des anniversaires et idées cadeaux</li>
+            <li>✅ Bucket list de groupe : les objectifs à réaliser ensemble</li>
+            <li>✈️ Voyage en famille : programme, affaires à emporter, budget en commun</li>
+            <li>💒 Annonces d'événements familiaux : mariages, premiers anniversaires</li>
           </ul>
 
       # 2-8. Travail/Événements
       - type: "Avancé"
         title: "Utiliser pour le travail et les événements"
-        subtitle: "Collaboration d'équipe et documentation des occasions spéciales"
+        subtitle: "Collaboration d'équipe et souvenirs des grands jours"
         content: |
-          <p><strong>Aperçu</strong> : Vous pouvez créer des espaces partagés avec des tampons pour la collaboration professionnelle et les événements spéciaux.</p>
+          <p><strong>Aperçu</strong> : Créez avec des tampons des espaces communs pour la collaboration professionnelle et les événements particuliers.</p>
 
           <p>💼 <strong>Travail/Collaboration</strong></p>
           <ul>
-            <li>📊 Projet d'équipe : Partage de l'avancement via le journal partagé</li>
-            <li>📝 Modèle de compte-rendu : Modèle de réunion standardisé avec tampon</li>
-            <li>📋 Passation de tâches : Organisation et transmission des responsabilités</li>
-            <li>👋 Intégration des nouveaux : Partage du guide d'adaptation à l'entreprise</li>
+            <li>📊 Projets d'équipe : suivre l'avancement via le log partagé</li>
+            <li>📝 Format de compte rendu : standardiser les comptes rendus avec un tampon</li>
+            <li>📋 Passation de fonctions : récapituler et transmettre ses missions</li>
+            <li>👋 Onboarding des nouveaux : partager le guide d'intégration</li>
           </ul>
 
-          <p>🎉 <strong>Événements/Occasions spéciales</strong></p>
+          <p>🎉 <strong>Événements/Jours particuliers</strong></p>
           <ul>
-            <li>💒 Faire-part de mariage : Tampon partagé avec invitation + confirmation de présence + messages de félicitations</li>
-            <li>🎈 Invitation de fête : Anniversaire, pendaison de crémaillère, soirée de fin d'année</li>
-            <li>👶 Premier anniversaire/Baptême : Photos de bébé + collection de messages de félicitations</li>
-            <li>🕯️ Commémoration/Anniversaire : Espace pour partager les souvenirs ensemble</li>
-            <li>📨 Capsule temporelle : Messages à son futur soi</li>
+            <li>💒 Faire-part de mariage : tampon à log partagé avec faire-part + présence + messages de félicitations</li>
+            <li>🎈 Invitations : anniversaires, pendaisons de crémaillère, fêtes de fin d'année</li>
+            <li>👶 Premier anniversaire/100 jours : photos de bébé + recueil de félicitations</li>
+            <li>🕯️ Hommages/Commémorations : un espace pour partager les souvenirs</li>
+            <li>📨 Capsule temporelle : messages à son futur soi</li>
           </ul>
 
-  # ===== 3. Utilisation du Badge (Badge) =====
+  # ===== 3. Utilisation du Badge =====
   - id: badge-usage
-    title: "🏷️ Utilisation du Badge"
+    title: "Utilisation du Badge"
     icon: "🏷️"
-    description: "Construire votre image de marque et établir la confiance avec le Badge"
+    description: "Construire son image et sa crédibilité avec le Badge"
     items:
-      # 3-1. Promotion de l'image de marque
-      - type: "Expert"
-        title: "Construire votre identité de marque"
-        subtitle: "Créez votre propre marque avec un nom de domaine unique"
+      # 3-0. Bases du badge (Débutant)
+      - type: "Débutant"
+        title: "Comprendre le badge"
+        subtitle: "Les bases du nom de domaine et du branding"
         content: |
-          <p><strong>Aperçu</strong> : Lorsque vous gravez un badge, vous obtenez un nom de domaine unique. Lorsque le badge est équipé, ce nom de domaine s'affiche sur toutes vos activités.</p>
+          <p><strong>Aperçu</strong> : Le badge est un élément qui vous permet d'avoir votre propre nom de domaine (pseudonyme) unique dans Inventory.</p>
 
-          <p><strong>Graver un badge</strong></p>
+          <p><strong>Qu'est-ce qu'un badge ?</strong></p>
+          <ul>
+            <li>🏷️ <strong>Nom de domaine</strong> : Un nom unique (ex. : myshop, creator_kim)</li>
+            <li>👤 <strong>Branding</strong> : Être actif sous son nom de domaine plutôt que son e-mail</li>
+            <li>🔐 <strong>Confidentialité</strong> : Possibilité de masquer sa véritable adresse e-mail</li>
+          </ul>
+
+          <p><strong>États du badge</strong></p>
+          <ul>
+            <li>⚪ <strong>Badge vierge</strong> : Pas encore gravé</li>
+            <li>🏷️ <strong>Badge gravé</strong> : Nom de domaine inscrit</li>
+            <li>✅ <strong>Badge équipé</strong> : Actuellement activé et en cours d'utilisation</li>
+          </ul>
+
+          <p><strong>Qui utilise le badge ?</strong></p>
+          <ul>
+            <li>🏢 Entreprises/Marques : Agir via un compte officiel</li>
+            <li>🎨 Créateurs : Diffuser du contenu sous un pseudonyme unique</li>
+            <li>🔒 Particuliers : Protéger sa vie privée en masquant son e-mail</li>
+          </ul>
+
+      # 3-1. Gravure du badge (Intermédiaire)
+      - type: "Intermédiaire"
+        title: "Graver son premier badge"
+        subtitle: "Créer son propre nom de domaine"
+        content: |
+          <p><strong>Aperçu</strong> : Gravez un badge vierge pour définir votre propre nom de domaine unique.</p>
+
+          <p><strong>À suivre</strong></p>
           <ol>
-            <li>Appuyez longuement sur un <strong>badge vierge</strong> dans l'inventaire pour accéder à <strong>Voir les détails</strong><br/>
-                <em>Ou</em> sélectionnez un badge vierge puis touchez le bouton <strong>Action</strong></li>
-            <li>Sélectionnez le menu <strong>Graver</strong></li>
-            <li>Entrez les informations du badge :
+            <li>Dans l'inventaire, appuyer longuement sur un <strong>badge vierge</strong> pour ouvrir <strong>Voir les détails</strong><br/>
+                <em>ou</em> sélectionner le badge vierge puis toucher le bouton <strong>Action</strong></li>
+            <li>Choisir le menu <strong>Graver</strong></li>
+            <li>Saisir les informations du badge :
               <ul>
-                <li>Image du badge (obligatoire)</li>
-                <li>Entrez le nom de domaine (ex : maboutique, createur_jean)</li>
+                <li>Image du badge (obligatoire) - logo, photo de profil, etc.</li>
+                <li>Nom de domaine (lettres, chiffres et tirets bas uniquement)</li>
               </ul>
             </li>
-            <li><strong>Vérifiez la disponibilité</strong> puis terminez avec <strong>Graver</strong></li>
+            <li>Vérifier la disponibilité avec le bouton <strong>Vérifier les doublons</strong></li>
+            <li>Terminer la <strong>gravure</strong></li>
           </ol>
 
-          <p>⚠️ <strong>Attention</strong> : Le nom de domaine ne peut plus être modifié une fois gravé !</p>
+          <p>⚠️ <strong>Points d'attention</strong></p>
+          <ul>
+            <li>Le nom de domaine est <strong>définitif une fois gravé</strong></li>
+            <li>Choisissez avec soin !</li>
+            <li>Les noms de domaine déjà utilisés ne sont pas disponibles</li>
+          </ul>
 
-          <p><strong>Équiper/Retirer un badge</strong></p>
+          <p><strong>Conseils pour choisir son nom de domaine</strong></p>
+          <ul>
+            <li>Un nom court et facile à retenir</li>
+            <li>Un nom lié à votre marque/activité</li>
+            <li>Utiliser le tiret bas (_) plutôt que des caractères spéciaux</li>
+          </ul>
+
+      # 3-2. Équiper le badge (Avancé)
+      - type: "Avancé"
+        title: "Équiper et utiliser son badge"
+        subtitle: "Commencer à agir sous son nom de domaine"
+        content: |
+          <p><strong>Aperçu</strong> : Une fois le badge gravé équipé, votre nom de domaine s'affiche dans toutes vos activités.</p>
+
+          <p><strong>Équiper le badge</strong></p>
           <ol>
-            <li>Sélectionnez le <strong>badge</strong> gravé puis touchez le bouton <strong>Action</strong></li>
-            <li>Sélectionnez <strong>Équiper</strong> → Le badge est activé</li>
-            <li>Pour le retirer, sélectionnez <strong>Retirer</strong> dans Action</li>
+            <li>Sélectionner le <strong>badge</strong> gravé</li>
+            <li>Toucher le bouton <strong>Action</strong></li>
+            <li>Choisir <strong>Équiper</strong></li>
           </ol>
 
-          <p><strong>Effets lorsqu'équipé</strong></p>
+          <p><strong>Retirer le badge</strong></p>
+          <ol>
+            <li>Sélectionner le <strong>badge</strong> actuellement équipé</li>
+            <li>Toucher le bouton <strong>Action</strong></li>
+            <li>Choisir <strong>Retirer</strong></li>
+          </ol>
+
+          <p><strong>Effets une fois équipé</strong></p>
           <ul>
-            <li>🔍 Recherchable par nom de domaine (au lieu de l'email)</li>
-            <li>📝 Tous les tampons et papiers créés affichent l'auteur comme "nom de domaine"</li>
-            <li>📋 Les entrées de journal affichent également le nom de domaine</li>
-          </ul>
-
-          <p><strong>Exemples d'utilisation</strong></p>
-          <ul>
-            <li>🏢 <strong>Entreprise/Marque</strong> : Gérez un compte officiel avec logo et nom de marque</li>
-            <li>🎨 <strong>Créateur</strong> : Distribuez du contenu avec un pseudonyme unique</li>
-            <li>👔 <strong>Profil professionnel</strong> : Utilisez un nom de domaine représentant votre domaine d'expertise</li>
-          </ul>
-
-      # 3-2. Email privé
-      - type: "Expert"
-        title: "Protéger votre vie privée"
-        subtitle: "Agissez sous un nom de domaine au lieu de votre email"
-        content: |
-          <p><strong>Aperçu</strong> : Lorsque vous équipez un badge, vous apparaissez sous votre "nom de domaine" au lieu de votre email réel, protégeant ainsi vos informations personnelles.</p>
-
-          <p><strong>Avantages</strong></p>
-          <ul>
-            <li>🔒 <strong>Protection de la vie privée</strong> : Votre adresse email réelle n'est pas exposée</li>
-            <li>📧 <strong>Prévention du spam</strong> : Protection de l'email même lors d'activités publiques</li>
-            <li>🎭 <strong>Activité anonyme</strong> : Possibilité d'agir sous le nom souhaité</li>
-          </ul>
-
-          <p><strong>Champ d'application</strong></p>
-          <ul>
-            <li>Lors de la création de tampons/papiers, le "nom de domaine" s'affiche comme information du créateur</li>
-            <li>Dans le journal partagé, le "nom de domaine" s'affiche au lieu de l'email</li>
-            <li>Quand d'autres utilisateurs recherchent, ils cherchent par nom de domaine et non par email</li>
-          </ul>
-
-      # 3-3. Garantie de gravure de document
-      - type: "Expert"
-        title: "Garantir l'origine des documents"
-        subtitle: "Badge gravé sur tous les documents"
-        content: |
-          <p><strong>Aperçu</strong> : Lorsque vous équipez un badge, tous les documents que vous créez incluent les informations du badge. Cela permet de garantir l'origine des documents.</p>
-
-          <p><strong>Exemples d'utilisation</strong></p>
-          <ul>
-            <li>✅ <strong>Authentification de documents officiels</strong> : Le nom de domaine est affiché sur tous les documents pour garantir l'origine</li>
-            <li>📜 <strong>Publication officielle de marque</strong> : Prouve que c'est un document officiel de la marque/entreprise</li>
-            <li>🔐 <strong>Protection contre la contrefaçon</strong> : Possibilité de vérifier le créateur original via le domaine du badge</li>
+            <li>📝 Tous les documents créés indiquent le « nom de domaine » comme auteur</li>
+            <li>💬 Dans le log partagé, le nom de domaine s'affiche à la place de l'e-mail</li>
+            <li>🔍 Les autres utilisateurs peuvent vous trouver par votre nom de domaine</li>
           </ul>
 
           <p><strong>Conseils d'utilisation</strong></p>
           <ul>
-            <li>Authentifiez les coupons de votre commerce comme officiels avec le badge</li>
-            <li>Indiquez les droits d'auteur sur le contenu des créateurs avec le badge</li>
-            <li>Affichez le compte officiel sur les annonces d'entreprise</li>
+            <li>Toujours équiper le badge pour publier des documents officiels</li>
+            <li>Le retirer pour les activités personnelles, afin de bien distinguer</li>
+            <li>Plusieurs badges possibles selon l'usage (un seul équipé à la fois)</li>
+          </ul>
+
+      # 3-3. Promotion de l'image de marque
+      - type: "Expert"
+        title: "Construire son identité de marque"
+        subtitle: "Créer sa propre marque avec un nom de domaine unique"
+        content: |
+          <p><strong>Aperçu</strong> : Graver un badge vous donne un nom de domaine unique. Une fois le badge équipé, ce nom de domaine s'affiche dans toutes vos activités.</p>
+
+          <p><strong>Graver le badge</strong></p>
+          <ol>
+            <li>Dans l'inventaire, appuyer longuement sur un <strong>badge vierge</strong> pour ouvrir <strong>Voir les détails</strong><br/>
+                <em>ou</em> sélectionner le badge vierge puis toucher le bouton <strong>Action</strong></li>
+            <li>Choisir le menu <strong>Graver</strong></li>
+            <li>Saisir les informations du badge :
+              <ul>
+                <li>Image du badge (obligatoire)</li>
+                <li>Nom de domaine (ex. : myshop, creator_kim)</li>
+              </ul>
+            </li>
+            <li>Après la <strong>vérification des doublons</strong>, terminer la <strong>gravure</strong></li>
+          </ol>
+
+          <p>⚠️ <strong>Attention</strong> : Le nom de domaine ne peut plus être modifié une fois gravé !</p>
+
+          <p><strong>Équiper/Retirer le badge</strong></p>
+          <ol>
+            <li>Sélectionner le <strong>badge</strong> gravé puis toucher le bouton <strong>Action</strong></li>
+            <li>Choisir <strong>Équiper</strong> → badge activé</li>
+            <li>Pour le retirer, choisir de nouveau <strong>Retirer</strong> dans Action</li>
+          </ol>
+
+          <p><strong>Effets une fois équipé</strong></p>
+          <ul>
+            <li>🔍 Trouvable par le nom de domaine (au lieu de l'e-mail)</li>
+            <li>📝 Tous les tampons et papiers créés indiquent le « nom de domaine » comme auteur</li>
+            <li>📋 Le nom de domaine s'affiche aussi lors de l'écriture dans le log</li>
+          </ul>
+
+          <p><strong>Exemples d'utilisation</strong></p>
+          <ul>
+            <li>🏢 <strong>Entreprises/Marques</strong> : Gérer un compte officiel avec logo et nom de marque</li>
+            <li>🎨 <strong>Créateurs</strong> : Diffuser du contenu sous un pseudonyme unique</li>
+            <li>👔 <strong>Profil professionnel</strong> : Un nom de domaine reflétant son domaine d'expertise</li>
+          </ul>
+
+      # 3-2. E-mail masqué
+      - type: "Expert"
+        title: "Protéger sa vie privée"
+        subtitle: "Agir sous son nom de domaine plutôt que son e-mail"
+        content: |
+          <p><strong>Aperçu</strong> : Une fois le badge équipé, le « nom de domaine » s'affiche à la place de votre e-mail réel, protégeant ainsi vos informations personnelles.</p>
+
+          <p><strong>Avantages</strong></p>
+          <ul>
+            <li>🔒 <strong>Protection de la vie privée</strong> : L'adresse e-mail réelle n'est pas exposée</li>
+            <li>📧 <strong>Anti-spam</strong> : E-mail protégé même en cas d'activité publique</li>
+            <li>🎭 <strong>Activité anonyme</strong> : Agir sous le nom de son choix</li>
+          </ul>
+
+          <p><strong>Champ d'application</strong></p>
+          <ul>
+            <li>Le « nom de domaine » s'affiche comme information de créateur pour les tampons/papiers</li>
+            <li>Dans le log partagé, le « nom de domaine » remplace l'e-mail</li>
+            <li>Les autres utilisateurs recherchent par nom de domaine et non par e-mail</li>
+          </ul>
+
+      # 3-3. Gravure garante des documents
+      - type: "Expert"
+        title: "Garantir l'origine des documents"
+        subtitle: "La gravure du badge sur tous les documents"
+        content: |
+          <p><strong>Aperçu</strong> : Une fois le badge équipé, tous les documents créés incluent les informations du badge. Cela permet de garantir l'origine des documents.</p>
+
+          <p><strong>Exemples d'utilisation</strong></p>
+          <ul>
+            <li>✅ <strong>Certification de documents officiels</strong> : Le nom de domaine figurant sur tous les documents garantit leur origine</li>
+            <li>📜 <strong>Publication officielle de marque</strong> : Prouver qu'il s'agit d'un document officiel de la marque/entreprise</li>
+            <li>🔐 <strong>Anti-contrefaçon</strong> : Le créateur original est vérifiable via le domaine du badge</li>
+          </ul>
+
+          <p><strong>Conseils d'utilisation</strong></p>
+          <ul>
+            <li>Certifier l'authenticité des coupons de boutique avec le badge</li>
+            <li>Apposer le badge sur les contenus de créateur comme mention de droit d'auteur</li>
+            <li>Identifier les annonces d'entreprise avec le compte officiel</li>
+          </ul>
+
+  # ===== 4. Utilisation de l'Encre (Ink) =====
+  - id: ink-usage
+    title: "Utilisation de l'Encre"
+    icon: "🎨"
+    description: "Personnaliser le thème de l'app avec l'Encre (Ink)"
+    items:
+      # 4-1. Bases de l'encre (Débutant)
+      - type: "Débutant"
+        title: "Changer de thème avec l'encre"
+        subtitle: "Personnaliser les couleurs de son app"
+        content: |
+          <p><strong>Aperçu</strong> : L'encre est un élément qui permet de changer la couleur principale et la couleur secondaire de l'app. Choisissez l'encre de votre choix et changez de thème.</p>
+
+          <p><strong>À suivre</strong></p>
+          <ol>
+            <li>Sélectionner l'<strong>encre</strong> souhaitée dans l'inventaire</li>
+            <li>Toucher le bouton <strong>Action</strong></li>
+            <li>Choisir <strong>Changer de thème</strong></li>
+            <li>La couleur principale et la couleur secondaire de l'app deviennent celles de l'encre choisie</li>
+          </ol>
+
+          <p><strong>Caractéristiques de l'encre</strong></p>
+          <ul>
+            <li>🎨 Chaque encre possède sa combinaison unique de couleurs principale et secondaire</li>
+            <li>🔄 Possibilité de changer de thème à tout moment avec une autre encre</li>
+            <li>✨ Les couleurs s'appliquent à toute l'interface de l'app</li>
+          </ul>
+
+          <p><strong>Bon à savoir</strong></p>
+          <ul>
+            <li>📱 Les couleurs du thème sont <strong>enregistrées localement sur l'appareil</strong></li>
+            <li>👤 Les couleurs sont conservées même en se connectant avec un autre compte</li>
+            <li>🔄 La suppression de l'app rétablit les couleurs par défaut</li>
+          </ul>
+
+          <p><strong>Conseils d'utilisation</strong></p>
+          <ul>
+            <li>🌙 Les encres sombres réduisent la fatigue oculaire</li>
+            <li>🌈 Changer les couleurs du thème selon l'humeur</li>
+            <li>💼 Distinguer un thème pour le travail et un thème personnel</li>
           </ul>

@@ -116,7 +116,7 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 | `GET /items/{token}` | 아이템 상세 조회 |
 | `GET /templates` | 본인 템플릿 목록 조회 |
 | `GET /templates/{token}` | 템플릿 상세 조회 |
-| `GET /templates/shared` | 공유 중인 템플릿 목록 |
+| `GET /templates/shared` | 공유 중인 템플릿 목록 (폐지 예정 — v3 공유 기능 종료) |
 | `GET /user/stats` | 사용자 통계 조회 |
 
 ### 쓰기 API (POST)
@@ -124,8 +124,8 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 | 엔드포인트 | 설명 |
 |------------|------|
 | `POST /templates` | 새 템플릿 생성 |
-| `POST /templates/{token}/share` | 템플릿 공유 |
-| `POST /templates/revoke` | 공유 회수 |
+| `POST /templates/{token}/share` | 템플릿 공유 (폐지 예정 — v3 공유 기능 종료) |
+| `POST /templates/revoke` | 공유 회수 (폐지 예정 — v3 공유 기능 종료) |
 | `POST /templates/{token}/send` | 템플릿 전송 |
 | `POST /templates/{token}/check-ownership` | 복제 아이템 소유 여부 확인 |
 | `POST /templates/{token}/log` | 로그 추가, 키워드/권한/이미지 갱신 |

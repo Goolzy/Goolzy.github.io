@@ -19,7 +19,7 @@ translations:
 
 **¡Crea artículos digitales y envíalos a otros!**
 
-Crea artículos con una sola hoja de papel y transfiérelos mediante código QR. Graba un nombre de dominio único con una insignia y crea plantillas con sellos para compartir.
+Crea artículos con papel y envíalos a otra persona mediante un código QR.
 
 ---
 
@@ -55,51 +55,51 @@ Crea artículos con una sola hoja de papel y transfiérelos mediante código QR.
 
 ---
 
-### ✨ Características principales
+### ✨ Funciones principales
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #a855f7;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">📄</div>
     <h4 style="margin: 0 0 .5rem 0; color: #a855f7;">Creación de artículos</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Crea artículos con 1 hoja. Agrega título, contenido, imágenes y establece fechas de inicio/expiración.</p>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Crea un artículo con 1 hoja de papel. Añade título, contenido e imágenes, y establece la fecha de inicio/período de validez.</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #14b8a6;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">🏷️</div>
     <h4 style="margin: 0 0 .5rem 0; color: #2dd4bf;">Sistema de insignias</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Graba un nombre de dominio único como tu identidad in-app. Tu dominio aparece en todas las actividades.</p>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Graba un nombre de dominio único como tu identidad en la app. El dominio grabado se muestra en todas tus actividades.</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #d946ef;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">🔖</div>
     <h4 style="margin: 0 0 .5rem 0; color: #d946ef;">Sellos y registros</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Crea plantillas con sellos. Deja registros en modo privado o compartido (comunidad).</p>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Crea tus propias páginas de información con sellos. Deja registros en modo registro individual (personal) o registro compartido (comunidad).</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #a855f7;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">📤</div>
-    <h4 style="margin: 0 0 .5rem 0; color: #a855f7;">Transferencia por código QR</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Escanear QR del destinatario → Seleccionar artículo → ¡Transferencia completa! Propiedad transferida al instante.</p>
+    <h4 style="margin: 0 0 .5rem 0; color: #a855f7;">Envío por código QR</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Escanea el QR del destinatario → elige un artículo → ¡listo! La propiedad se transfiere al instante.</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #14b8a6;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">🎨</div>
     <h4 style="margin: 0 0 .5rem 0; color: #2dd4bf;">Temas de tinta</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Cambia los colores del tema con tinta. Temas negro y dorado disponibles.</p>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Cambia los colores del tema de la app con tinta. Se admiten los temas negro y dorado.</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #d946ef;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">🔍</div>
     <h4 style="margin: 0 0 .5rem 0; color: #d946ef;">Búsqueda en tiempo real</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Filtrado instantáneo al escribir. Guarda como filtro para reutilización rápida.</p>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">Filtrado instantáneo al escribir. Guarda como filtro para reutilizarlo rápidamente.</p>
   </div>
 
 </div>
 
 ---
 
-### 📚 Documentos & Ayuda
+### 📚 Documentos y ayuda
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
 
@@ -115,7 +115,7 @@ Crea artículos con una sola hoja de papel y transfiérelos mediante código QR.
 
   <a href="/inventory/changelog/es/" style="display: block; padding: 1.25rem; background: rgba(217, 70, 239, 0.2); backdrop-filter: blur(10px); border: 1px solid rgba(217, 70, 239, 0.3); border-radius: 12px; text-decoration: none; text-align: center;">
     <div style="font-size: 1.5rem; margin-bottom: .5rem;">📋</div>
-    <h4 style="margin: 0; color: #d946ef;">Registro de cambios</h4>
+    <h4 style="margin: 0; color: #d946ef;">Registro de versiones</h4>
   </a>
 
 </div>
@@ -128,7 +128,7 @@ Crea artículos con una sola hoja de papel y transfiérelos mediante código QR.
 
 ---
 
-<p style="text-align: center; color: rgba(255,255,255,0.6); font-size: .9rem; margin: 1rem 0;">🌍 8 idiomas soportados: 한국어, English, 日本語, Deutsch, Français, Español, Português, 中文</p>
+<p style="text-align: center; color: rgba(255,255,255,0.6); font-size: .9rem; margin: 1rem 0;">🌍 8 idiomas disponibles: Español, English, 한국어, 日本語, Deutsch, Français, Português, 中文</p>
 
 > 🔒 **Protección de privacidad**: Tus datos están encriptados y protegidos. Ver nuestra [Política de privacidad](/inventory/privacy/) para más detalles.
 
@@ -147,19 +147,15 @@ Crea artículos con una sola hoja de papel y transfiérelos mediante código QR.
 
 .neumorphic-content h3 {
   color: #a855f7 !important;
-  margin-top: 2.5rem !important;
+  margin-top: 2rem !important;
   margin-bottom: 1rem !important;
-}
-
-.neumorphic-content h4 {
-  font-size: 1.05rem !important;
 }
 
 .neumorphic-content hr {
   border: none !important;
   height: 1px !important;
   background: linear-gradient(90deg, transparent, rgba(168, 85, 247, 0.3), transparent) !important;
-  margin: 2.5rem 0 !important;
+  margin: 2rem 0 !important;
 }
 
 .neumorphic-content blockquote {

@@ -1,12 +1,12 @@
-# Datos de usos del inventario (Español) - Revisión completa
+# Datos de usos de Inventory (Español) - Revisión completa
 page:
-  title: "Guía de uso del inventario"
-  intro: "Descubre qué puedes hacer con el inventario. Te guiamos paso a paso, desde lo básico hasta las funciones avanzadas."
+  title: "Guía de uso de Inventory"
+  intro: "Descubre qué puedes hacer con Inventory. Te guiamos paso a paso, desde lo básico hasta las funciones avanzadas."
   expand: "Seguir paso a paso ↓"
-  collapse: "Cerrar ↑"
-  share_title: "Comparte tu forma de uso"
-  share_text: "¿Cómo lo estás usando? Esperamos nuevas ideas."
-  share_btn: "Compartir forma de uso"
+  collapse: "Plegar ↑"
+  share_title: "Cuéntanos también tu forma de usarlo"
+  share_text: "¿Cómo lo estás usando? Esperamos tus nuevas ideas."
+  share_btn: "Compartir mi forma de uso"
   share_link: "/inventory/suggest/"
   manual_base: "/inventory/manual/"
   levels:
@@ -18,457 +18,643 @@ page:
 categories:
   # ===== 1. Usos del Papel (Paper) =====
   - id: paper-usage
-    title: "📄 Usos del Papel"
+    title: "Usos del Papel"
     icon: "📄"
     description: "Todo lo que puedes hacer con el Papel (Paper)"
     items:
       # 1-1. Registro individual
       - type: "Principiante"
         title: "Crear mis propios registros"
-        subtitle: "Archivo personal comenzando con 1 Papel"
+        subtitle: "Un archivo personal que empieza con 1 hoja de papel"
         content: |
-          <p><strong>Resumen</strong>: Puedes documentar un papel en blanco para registrar imágenes y texto, y agregar contenido continuamente al registro.</p>
+          <p><strong>Resumen</strong>: Desde Explorar, haz una copia en papel del elemento base que te guste usando 1 hoja de papel para hacerlo tuyo, y añade registros al log de forma continua.</p>
 
-          <p><strong>Seguir paso a paso</strong></p>
+          <p><strong>Paso a paso</strong></p>
           <ol>
-            <li>En el inventario, mantén presionado el <strong>papel en blanco</strong> para acceder a <strong>Ver detalles</strong><br/>
-                <em>O</em> selecciona el papel en blanco y toca el botón <strong>Acción</strong></li>
-            <li>Selecciona el menú <strong>Crear nuevo elemento</strong></li>
-            <li>Ingresa la información del elemento:
-              <ul>
-                <li>Imagen (opcional)</li>
-                <li>Título (obligatorio)</li>
-                <li>Contenido (opcional)</li>
-                <li>Fecha límite (opcional)</li>
-              </ul>
-            </li>
-            <li>Completa <strong>Crear</strong> → Se convierte en papel documentado</li>
-            <li>El papel documentado se muestra con imagen y título en el inventario</li>
+            <li>Encontrar un elemento base que te interese en la pestaña <strong>Explorar</strong></li>
+            <li>Copiarlo con el botón <strong>Scrap</strong> de la pantalla de detalles — consume 1 hoja de papel</li>
+            <li>Se crea una copia en tu inventario (la información del momento de la copia en papel se conserva tal cual)</li>
+            <li>Seguir añadiendo tus propios registros al log con imágenes y texto</li>
           </ol>
+
+          <p>Si quieres componer la página libremente desde el principio, usa <strong>Crear sello</strong> (ver capítulo 2).</p>
 
           <p><strong>Ejemplos de uso</strong></p>
           <ul>
-            <li>📔 <strong>Diario/Bloc de notas</strong>: Guarda registros diarios con imágenes y texto, agrega continuamente al registro</li>
-            <li>📸 <strong>Álbum de fotos</strong>: Registra momentos especiales con imágenes</li>
-            <li>📋 <strong>Gestión de garantías</strong>: Guarda fotos de garantías, configura fecha límite para alertas de vencimiento</li>
-            <li>🧾 <strong>Archivo de recibos</strong>: Almacena recibos importantes digitalmente</li>
+            <li>📔 <strong>Diario/Bloc de notas</strong>: Guardar los registros de cada día con imágenes y texto, añadiendo continuamente al log</li>
+            <li>📸 <strong>Álbum de fotos</strong>: Registrar los momentos especiales en imágenes</li>
+            <li>📋 <strong>Gestión de garantías</strong>: Guardar fotos de las garantías de productos, con aviso de vencimiento mediante la fecha límite</li>
+            <li>🧾 <strong>Conservación de recibos</strong>: Conservar digitalmente los recibos importantes</li>
           </ul>
 
-          <p><strong>Consejo de organización</strong>: Agrupa documentos similares con <strong>Clip</strong> y separa categorías con <strong>Partición</strong>.</p>
+          <p><strong>Consejo de organización</strong>: Agrupa los documentos similares con <strong>Clip</strong> y separa las categorías con <strong>Partición</strong>.</p>
 
-      # 1-2. Duplicar plantilla compartida
+      # 1-2. Copia de un elemento base
       - type: "Principiante"
-        title: "Obtener plantillas compartidas"
-        subtitle: "Haz tuyas las plantillas de otros usuarios"
+        title: "Traer elementos base"
+        subtitle: "Hacer tuyos los elementos base de Explorar"
         content: |
-          <p><strong>Resumen</strong>: Puedes duplicar sellos compartidos por otros usuarios y usarlos como tus propios documentos.</p>
+          <p><strong>Resumen</strong>: Puedes copiar los elementos base publicados en Explorar y usarlos como tus propios documentos.</p>
 
-          <p><strong>Seguir paso a paso</strong></p>
+          <p><strong>Paso a paso</strong></p>
           <ol>
-            <li>Haz clic en el enlace del sello compartido o escanea el código QR</li>
-            <li>En la pantalla de detalles del sello, toca <strong>Duplicar</strong></li>
-            <li>Selecciona <strong>papel en blanco</strong> de tu inventario</li>
-            <li>Duplicación completa → El contenido del sello se duplica en el papel</li>
-            <li>Puedes modificar los valores de las palabras clave según sea necesario</li>
+            <li>Buscar la etiqueta deseada en la <strong>barra SuperSearch</strong> superior</li>
+            <li>Seleccionar la pestaña <strong>Elementos base</strong> en los resultados de búsqueda</li>
+            <li>Seleccionar el elemento base deseado para entrar en la pantalla de detalles</li>
+            <li>Tocar <strong>Crear copia en papel</strong></li>
+            <li>Seleccionar un <strong>papel en blanco</strong> de tu inventario</li>
+            <li>Copia en papel completada → El contenido del elemento base se copia en el papel</li>
           </ol>
 
           <p><strong>Ejemplos de uso</strong></p>
           <ul>
-            <li>✅ <strong>Lista de verificación</strong>: Duplica plantillas compartidas para preparación de viajes, compras, etc.</li>
-            <li>🎁 <strong>Participación en eventos</strong>: Duplica plantillas de eventos compartidas por marcas/tiendas</li>
-            <li>📝 <strong>Uso de formularios</strong>: Duplica formularios útiles creados por otros usuarios</li>
+            <li>✅ <strong>Checklist</strong>: Copiar elementos base para preparar viajes, hacer la compra, etc.</li>
+            <li>🎁 <strong>Participación en eventos</strong>: Copiar los elementos de eventos distribuidos por marcas/tiendas</li>
+            <li>📝 <strong>Uso de formularios</strong>: Copiar los formularios útiles encontrados en Explorar</li>
           </ul>
 
-      # 1-3. Registro compartido - Sala de chat
+      # 1-3. Log compartido - Espacio de grupo
       - type: "Intermedio"
-        title: "Registrar junto con amigos"
-        subtitle: "Espacio grupal con registro compartido"
+        title: "Registrar junto a los amigos"
+        subtitle: "Un espacio de grupo creado con el log compartido"
         content: |
-          <p><strong>Resumen</strong>: Cuando creas un documento compartido con varios papeles, todos los participantes pueden registrar en el mismo registro.</p>
+          <p><strong>Resumen</strong>: Crea un sello en modo log compartido y repártelo: todos los participantes podrán escribir en el mismo log.</p>
 
-          <p><strong>Seguir paso a paso</strong></p>
+          <p><strong>Paso a paso</strong></p>
           <ol>
-            <li>Selecciona tantos <strong>papeles en blanco</strong> como participantes (2-10 hojas)</li>
-            <li>Toca el botón <strong>Acción</strong></li>
-            <li>Selecciona <strong>Crear documento compartido</strong></li>
-            <li>Ingresa título y descripción, luego crea</li>
-            <li><strong>Envía</strong> el documento compartido creado a los participantes</li>
+            <li>Seleccionar un <strong>sello en blanco</strong> y entrar en <strong>Crear sello</strong></li>
+            <li>Componer la página de información y elegir <strong>Log compartido</strong> en el <strong>modo de log</strong></li>
+            <li>Enviar una copia del sello terminado a los participantes mediante <strong>transferencia</strong> (con aceptación)</li>
+            <li>Cuando los participantes aceptan, todos escriben juntos en el <strong>mismo espacio de log compartido</strong></li>
           </ol>
 
-          <p><strong>Uso de Papel por número de personas</strong></p>
-          <ul>
-            <li>👫 2 personas: 2 Papeles (diario de pareja, chat 1:1)</li>
-            <li>👨‍👩‍👧 3 personas: 3 Papeles (proyecto de grupo pequeño)</li>
-            <li>👨‍👩‍👧‍👦 4-10 personas: 4-10 Papeles (reuniones familiares, clubes)</li>
-          </ul>
+          <p><strong>Consumo de papel</strong>: Cada copia o transferencia consume 1 hoja de papel — prepara tantas como participantes vayan a sumarse.</p>
 
           <p><strong>Ejemplos de uso</strong></p>
           <ul>
-            <li>💑 <strong>Diario de pareja</strong>: Registra recuerdos solo de ustedes dos</li>
-            <li>👨‍👩‍👧‍👦 <strong>Álbum familiar</strong>: Comparte eventos familiares y vida diaria</li>
-            <li>📚 <strong>Grupo de estudio</strong>: Registra contenido de estudio y preguntas juntos</li>
+            <li>💑 <strong>Diario de pareja</strong>: Registrar juntos los recuerdos de los dos</li>
+            <li>👨‍👩‍👧‍👦 <strong>Álbum familiar</strong>: Compartir los eventos familiares y el día a día</li>
+            <li>📚 <strong>Grupo de estudio</strong>: Registrar juntos el contenido de estudio y las preguntas</li>
+          </ul>
+
+      # 1-4. Organización avanzada de documentos
+      - type: "Avanzado"
+        title: "Gestionar documentos de forma sistemática"
+        subtitle: "Un archivo organizado con Clip y Partición"
+        content: |
+          <p><strong>Resumen</strong>: Cuando los documentos se acumulan, puedes organizarlos sistemáticamente con Clip y Partición.</p>
+
+          <p><strong>Agrupar documentos con Clip</strong></p>
+          <ol>
+            <li>Seleccionar varios <strong>papeles</strong> que quieras agrupar</li>
+            <li>Tocar el botón <strong>Acción</strong></li>
+            <li>Elegir <strong>Agrupar con Clip</strong></li>
+            <li>Introducir el nombre del Clip y finalizar</li>
+          </ol>
+
+          <p><strong>Separar áreas con Partición</strong></p>
+          <ol>
+            <li>Tocar <strong>Añadir Partición</strong> en el inventario</li>
+            <li>Introducir el nombre de la Partición (ej.: Trabajo, Personal, Aficiones)</li>
+            <li>Arrastrar los documentos a la Partición correspondiente</li>
+          </ol>
+
+          <p><strong>Ejemplos de uso</strong></p>
+          <ul>
+            <li>📁 <strong>Organización por proyectos</strong>: Agrupar cada proyecto con Clip y clasificar con Particiones</li>
+            <li>📅 <strong>Archivo por años</strong>: Gestionar por años con Particiones 2024, 2025</li>
+            <li>🏷️ <strong>Clasificación por categorías</strong>: Particiones por tipo — fotos, documentos, notas, etc.</li>
+          </ul>
+
+      # 1-5. Documentación profesional experta
+      - type: "Experto"
+        title: "Construir un sistema de trabajo"
+        subtitle: "De la gestión de proyectos al traspaso"
+        content: |
+          <p><strong>Resumen</strong>: Con la función de log del papel puedes gestionar sistemáticamente el historial de tu trabajo.</p>
+
+          <p><strong>Gestión de proyectos</strong></p>
+          <ol>
+            <li>Crear <strong>1 hoja de papel</strong> por proyecto</li>
+            <li>Registrar en el log el avance diario, los problemas y las decisiones</li>
+            <li>Adjuntar materiales con enlaces de Dropbox, Google Drive, OneDrive</li>
+            <li>Reforzar la seguridad de los documentos sensibles con el <strong>bloqueo</strong></li>
+          </ol>
+
+          <p><strong>Documentos de traspaso</strong></p>
+          <ol>
+            <li>Crear un papel por cada área de responsabilidad</li>
+            <li>Recopilar procesos de trabajo, precauciones y contactos</li>
+            <li>Convertirlo en documento compartido y entregarlo al sucesor</li>
+          </ol>
+
+          <p><strong>Gestión de actas</strong></p>
+          <ol>
+            <li>Crear un papel para cada reunión periódica</li>
+            <li>Registrar en el log asistentes, orden del día y decisiones</li>
+            <li>Agrupar con Clip las actas del mismo órgano de reunión</li>
+          </ol>
+
+          <p><strong>Consejos de uso</strong></p>
+          <ul>
+            <li>📊 Convertirlo en retrospectiva al cerrar el proyecto</li>
+            <li>🔍 Buscar rápidamente registros antiguos con SuperSearch</li>
+            <li>📤 Exportar a PDF cuando sea necesario</li>
           </ul>
 
   # ===== 2. Usos del Sello (Stamp) =====
   - id: stamp-usage
-    title: "🔖 Usos del Sello"
+    title: "Usos del Sello"
     icon: "🔖"
-    description: "Crea plantillas con Sellos (Stamp) y duplica"
+    description: "Crear sellos personales y copiar con el Sello (Stamp)"
     items:
-      # 2-1. Sello de registro individual
-      - type: "Avanzado"
-        title: "Crear mi propia plantilla"
-        subtitle: "Producción masiva de documentos con el mismo formato usando sellos"
+      # 2-0. Fundamentos del sello (Principiante)
+      - type: "Principiante"
+        title: "Entender el sello"
+        subtitle: "Concepto y uso básico del sello personal"
         content: |
-          <p><strong>Resumen</strong>: Cuando grabas un sello, se convierte en una plantilla. Puedes duplicar esta plantilla en papel para crear rápidamente múltiples documentos con el mismo formato.</p>
+          <p><strong>Resumen</strong>: El sello es un sello personal que permite crear rápidamente documentos con un formato repetido. Una vez creado, puedes copiar el mismo formato en varias hojas de papel.</p>
 
-          <p><strong>Grabar sello</strong></p>
+          <p><strong>¿Qué es un sello?</strong></p>
+          <ul>
+            <li>🔖 <strong>Sello personal</strong>: Un formato predefinido (imagen, título, contenido, palabras clave)</li>
+            <li>📋 <strong>Copia</strong>: Al estampar el sello en un papel en blanco se crea un documento con formato idéntico</li>
+            <li>🔄 <strong>Uso repetido</strong>: Un sello creado una vez puede copiarse sin límite</li>
+          </ul>
+
+          <p><strong>Ejemplos de uso del sello</strong></p>
+          <ul>
+            <li>📔 Formato de diario de cada día</li>
+            <li>✅ Checklists recurrentes</li>
+            <li>📊 Formato de informes periódicos</li>
+            <li>🏋️ Ficha de ejercicio/dieta</li>
+          </ul>
+
+          <p><strong>Sello vs Papel</strong></p>
+          <ul>
+            <li>📄 <strong>Papel</strong>: Documento individual, con contenido propio</li>
+            <li>🔖 <strong>Sello</strong>: Formato (molde), sello personal de uso repetido</li>
+          </ul>
+
+      # 2-1. Sello de log individual
+      - type: "Intermedio"
+        title: "Crear mi propio sello personal"
+        subtitle: "Producir en serie documentos con el mismo formato usando el sello"
+        content: |
+          <p><strong>Resumen</strong>: Con «Crear sello» obtienes un sello personal. Al copiar ese sello personal en papel, puedes crear rápidamente varios documentos con el mismo formato.</p>
+
+          <p><strong>Crear sello</strong></p>
           <ol>
-            <li>En el inventario, mantén presionado el <strong>sello en blanco</strong> para acceder a <strong>Ver detalles</strong><br/>
-                <em>O</em> selecciona el sello en blanco y toca el botón <strong>Acción</strong></li>
-            <li>Selecciona el menú <strong>Crear nueva plantilla</strong></li>
-            <li>Ingresa la información de la plantilla:
+            <li>En el inventario, mantener pulsado un <strong>sello en blanco</strong> para entrar en <strong>Ver detalles</strong><br/>
+                <em>o</em> seleccionar el sello en blanco y tocar el botón <strong>Acción</strong></li>
+            <li>Elegir el menú <strong>Crear sello</strong></li>
+            <li>Introducir la información del sello personal:
               <ul>
-                <li>Imagen (opcional)</li>
+                <li>Imagen (obligatoria)</li>
                 <li>Título (obligatorio)</li>
-                <li>Contenido (opcional)</li>
+                <li>Contenido (obligatorio)</li>
                 <li>Fecha límite (opcional)</li>
-                <li>Palabras clave predeterminadas (máximo 10)</li>
+                <li>Palabras clave básicas (máximo 128)</li>
               </ul>
             </li>
-            <li>Completa <strong>Crear</strong> → Se convierte en sello grabado</li>
+            <li>Finalizar con <strong>Crear</strong> → Se convierte en sello personal</li>
           </ol>
 
-          <p><strong>Duplicar en papel</strong></p>
+          <p><strong>Copiar en papel</strong></p>
           <ol>
-            <li>Selecciona el <strong>sello</strong> grabado</li>
-            <li>Selecciona adicionalmente tantos <strong>papeles en blanco</strong> como necesites para duplicar</li>
-            <li>Toca el botón <strong>Acción</strong></li>
-            <li>Selecciona el menú <strong>Duplicar</strong></li>
-            <li>El contenido grabado en el sello se duplica en los papeles seleccionados</li>
+            <li>Seleccionar el <strong>sello personal</strong> terminado</li>
+            <li>Seleccionar además tantos <strong>papeles en blanco</strong> como necesites</li>
+            <li>Tocar el botón <strong>Acción</strong></li>
+            <li>Elegir el menú <strong>Copiar</strong></li>
+            <li>El contenido del sello personal se copia en los papeles seleccionados</li>
           </ol>
 
           <p><strong>Ejemplos de uso</strong></p>
           <ul>
-            <li>🏋️ <strong>Registro de ejercicio</strong>: Registra contenido de ejercicio diario en el mismo formato</li>
-            <li>📖 <strong>Registro de lectura</strong>: Escribe reseñas de libros en el mismo formato para cada libro</li>
-            <li>🍷 <strong>Gestión de colección</strong>: Catálogo de colecciones como vino, Lego, figuras</li>
+            <li>📋 <strong>Folletos/Avisos</strong>: Distribuir el mismo contenido en varias copias</li>
+            <li>🏷️ <strong>Información de productos</strong>: Copiar y entregar especificaciones y precios</li>
+            <li>📜 <strong>Anuncios</strong>: Publicar el mismo aviso en varios lugares</li>
           </ul>
 
-          <p><strong>Consejo de organización</strong>: Agrupa los documentos generados por sellos con <strong>Clip</strong> para gestionar como serie.</p>
+          <p><strong>Consejo de organización</strong>: Agrupa con <strong>Clip</strong> los documentos creados con el sello y gestiónalos como serie.</p>
 
-      # 2-2. Sello de registro compartido
+      # 2-2. Sello de log compartido
       - type: "Avanzado"
-        title: "Crear comunidad abierta"
-        subtitle: "Agrega participantes continuamente con sello de registro compartido"
+        title: "Crear una comunidad abierta"
+        subtitle: "Añadir participantes continuamente con el sello de log compartido"
         content: |
-          <p><strong>Resumen</strong>: Cuando creas un sello en modo de registro compartido, se convierte en un espacio público donde cualquiera puede duplicar y participar.</p>
+          <p><strong>Resumen</strong>: Al crear un sello en modo log compartido, se convierte en un espacio abierto donde todos los usuarios que lo reciben por transferencia participan en el mismo log.</p>
 
-          <p><strong>Seguir paso a paso</strong></p>
+          <p><strong>Paso a paso</strong></p>
           <ol>
-            <li>Selecciona <strong>sello en blanco</strong> y accede a <strong>Crear nueva plantilla</strong></li>
-            <li>Ingresa información de plantilla: imagen, título, contenido, fecha límite, palabras clave</li>
-            <li>Selecciona <strong>Modo de registro: Compartido</strong> ⭐</li>
-            <li>Completa <strong>Crear</strong></li>
+            <li>Seleccionar un <strong>sello en blanco</strong> y entrar en <strong>Crear sello</strong></li>
+            <li>Introducir la información del sello personal: imagen, título, contenido, fecha límite, palabras clave</li>
+            <li>Elegir <strong>Modo de log: Compartido</strong> ⭐</li>
+            <li>Finalizar con <strong>Crear</strong></li>
           </ol>
 
-          <p><strong>Cómo agregar participantes</strong></p>
+          <p><strong>Cómo añadir participantes</strong></p>
           <ol>
-            <li>Selecciona el sello creado y comparte el enlace/QR con <strong>Compartir</strong></li>
-            <li>La otra persona ejecuta <strong>Duplicar</strong> a través del enlace</li>
-            <li>El usuario que duplicó se une automáticamente al registro compartido</li>
-            <li>Puedes agregar personas continuamente sin límite</li>
+            <li>Generar el <strong>código QR de transferencia</strong> del sello y publicarlo o mostrarlo a los participantes</li>
+            <li>Quien desee participar recibe la <strong>transferencia</strong> escaneando el QR (con aceptación)</li>
+            <li>El usuario que recibe la transferencia se une automáticamente al log compartido</li>
+            <li>Se puede seguir añadiendo gente sin límite de participantes</li>
           </ol>
 
           <p><strong>Ejemplos de uso</strong></p>
           <ul>
-            <li>💬 <strong>Sala de chat abierta</strong>: Espacio de discusión pública donde cualquiera puede participar</li>
-            <li>🎤 <strong>Club de fans</strong>: Reunión de fans de artistas/marcas</li>
-            <li>📢 <strong>Tablero de comunidad</strong>: Gestiona comunidad basada en intereses</li>
+            <li>💬 <strong>Sala de chat abierta</strong>: Espacio de debate público en el que cualquiera puede participar</li>
+            <li>🎤 <strong>Club de fans</strong>: Comunidad de fans de artistas/marcas</li>
+            <li>📢 <strong>Tablón comunitario</strong>: Gestionar una comunidad basada en intereses</li>
           </ul>
 
-      # 2-3. Compartir sello - Pequeños comerciantes
+      # 2-3. Transferencia de sellos - Pequeños comercios
       - type: "Experto"
-        title: "Usar para gestión de tienda"
+        title: "Usarlo en la gestión de tu negocio"
         subtitle: "Marketing con sellos para pequeños comerciantes"
         content: |
-          <p><strong>Resumen</strong>: Puedes compartir sellos para comunicarte con clientes y distribuir información de la tienda.</p>
+          <p><strong>Resumen</strong>: Transfiere sellos para comunicarte con tus clientes y difundir la información de tu negocio.</p>
 
-          <p>🍽️ <strong>Menú de la tienda</strong></p>
+          <p>🍽️ <strong>Carta del local</strong></p>
           <ol>
-            <li>Crea plantilla de sello con foto del menú</li>
-            <li>Configura nombre del plato, precio y descripción en las palabras clave</li>
-            <li>Comparte el sello para generar código QR → Coloca en las mesas</li>
-            <li>Cliente escanea QR → Duplica para ver información del menú</li>
+            <li>Crear un sello personal con fotos del menú</li>
+            <li>Configurar en palabras clave los nombres de los platos, precios y descripciones</li>
+            <li>Generar un código QR de transferencia del sello → colocarlo en las mesas</li>
+            <li>El cliente escanea el QR → recibe la transferencia y consulta la información del menú</li>
           </ol>
 
           <p>🎫 <strong>Distribución de cupones/eventos</strong></p>
           <ol>
-            <li>Crea plantilla de sello con imagen del evento</li>
-            <li>Configura contenido del descuento y fecha de validez en las palabras clave</li>
-            <li>Comparte enlace/QR del sello con clientes</li>
-            <li>Cliente duplica → Guarda y presenta como cupón</li>
+            <li>Crear un sello personal con la imagen del evento</li>
+            <li>Configurar en palabras clave el descuento y el periodo de validez</li>
+            <li>Transferir el sello al cliente mediante QR</li>
+            <li>El cliente lo acepta → lo guarda y lo presenta como cupón</li>
           </ol>
 
-          <p>📋 <strong>Recopilación de comentarios de clientes</strong></p>
+          <p>📋 <strong>Recogida de opiniones de clientes</strong></p>
           <ol>
-            <li>Crea plantilla de comentarios en modo de registro compartido</li>
-            <li>Configura campos de calificación/opinión con palabras clave</li>
-            <li>Cliente duplica → Escribe reseña en registro compartido</li>
-            <li>Todas las reseñas se recopilan en un solo lugar para verificar</li>
+            <li>Crear un sello de opiniones en modo log compartido</li>
+            <li>Configurar con palabras clave los campos de valoración/comentarios</li>
+            <li>El cliente copia → escribe su reseña en el log compartido</li>
+            <li>Todas las reseñas quedan reunidas y consultables en un solo lugar</li>
           </ol>
 
           <p><strong>Otros usos</strong></p>
           <ul>
-            <li>🆕 Anuncio de nuevo menú</li>
-            <li>📅 Plantilla de guía de reservas</li>
-            <li>📍 Información de ubicación/horario de la tienda</li>
+            <li>🆕 Aviso de lanzamiento de nuevos platos</li>
+            <li>📅 Formulario de información de reservas</li>
+            <li>📍 Información de ubicación/horario del local</li>
           </ul>
 
-      # 2-4. Archivo personal
-      - type: "Intermedio"
-        title: "Crear archivo personal"
-        subtitle: "Tu contenido favorito como tu propia colección"
-        content: |
-          <p><strong>Resumen</strong>: Organiza sistemáticamente tu contenido favorito como YouTube, Spotify, libros, películas.</p>
-
-          <p>🎬 <strong>Lista de reproducción de YouTube</strong></p>
-          <ol>
-            <li>Crea documento "Mi colección de YouTube" con papel en blanco</li>
-            <li>Agrega enlace de video + nota corta al registro</li>
-            <li>Cuando se acumulen videos, agrupa por género con <strong>Clip</strong></li>
-          </ol>
-
-          <p>🎵 <strong>Colección de música de Spotify</strong></p>
-          <ol>
-            <li>Crea documento "Lista de reproducción 2024" con papel en blanco</li>
-            <li>Agrega enlace de Spotify + emoción/situación del momento al registro</li>
-            <li>Organiza por temporada y ambiente con <strong>Clip</strong></li>
-          </ol>
-
-          <p>📚 <strong>Archivo de libros leídos</strong></p>
-          <ol>
-            <li>Crea sello con plantilla de portada de libro (palabras clave: autor, calificación, etc.)</li>
-            <li>Duplica el sello en papel por cada libro</li>
-            <li>Registra citas memorables y reseñas en el registro</li>
-            <li>Agrupa series con <strong>Clip</strong></li>
-          </ol>
-
-          <p>🎞️ <strong>Registro de películas/series vistas</strong></p>
-          <ol>
-            <li>Crea sello con plantilla de póster de película</li>
-            <li>Duplica en papel por cada película</li>
-            <li>Agrega comentario corto + calificación (★★★★☆) al registro</li>
-          </ol>
-
-      # 2-5. Creador/Influencer
+      # 2-4. Creadores/Influencers
       - type: "Experto"
-        title: "Actividad de creador"
-        subtitle: "Comunícate con fans y distribuye contenido"
+        title: "Actuar como creador"
+        subtitle: "Comunicarse con los fans y distribuir contenido"
         content: |
-          <p><strong>Resumen</strong>: Creadores e influencers pueden comunicarse con fans y realizar eventos.</p>
+          <p><strong>Resumen</strong>: Los creadores e influencers pueden comunicarse con sus fans y organizar eventos.</p>
 
-          <p>🎉 <strong>Evento para fans</strong></p>
+          <p>🎉 <strong>Eventos para fans</strong></p>
           <ol>
-            <li>Crea sello de evento en modo de registro compartido</li>
-            <li>Comparte enlace del sello con fans</li>
-            <li>Fans duplican para participar</li>
-            <li>Realiza cuestionarios y sorteos en el registro compartido</li>
+            <li>Crear un sello de evento en modo log compartido</li>
+            <li>Transferir el sello a los fans</li>
+            <li>Los fans lo copian y participan</li>
+            <li>Realizar concursos y sorteos en el log compartido</li>
           </ol>
 
           <p>🛍️ <strong>Catálogo de merchandising</strong></p>
           <ol>
-            <li>Crea sello con foto del merchandising</li>
-            <li>Configura nombre del producto, precio y enlace de compra en las palabras clave</li>
-            <li>Fans duplican y usan como lista de deseos</li>
+            <li>Crear un sello con fotos del merchandising</li>
+            <li>Configurar en palabras clave el nombre del producto, el precio y el enlace de compra</li>
+            <li>Los fans lo copian y lo usan como lista de deseos</li>
           </ol>
 
           <p>❓ <strong>Espacio de preguntas y respuestas</strong></p>
           <ol>
-            <li>Crea sello de Q&A en modo de registro compartido</li>
-            <li>Fans duplican y escriben preguntas en el registro</li>
-            <li>El creador responde en el registro compartido</li>
+            <li>Crear un sello de Q&A en modo log compartido</li>
+            <li>Los fans copian y escriben sus preguntas en el log</li>
+            <li>El creador responde en el log compartido</li>
           </ol>
 
           <p><strong>Otros usos</strong></p>
           <ul>
-            <li>📅 Información de fecha/lugar/método de participación en encuentros de fans</li>
-            <li>🎬 Compartir historias detrás de cámaras, proceso de producción</li>
-            <li>📁 Archivo de contenido anterior</li>
+            <li>📅 Información de encuentros con fans: fecha/lugar/cómo participar</li>
+            <li>🎬 Compartir el detrás de cámaras y el proceso de creación</li>
+            <li>📁 Archivo de contenidos anteriores</li>
           </ul>
 
-      # 2-6. Hobbies/Intereses
+      # 2-6. Aficiones/Intereses
       - type: "Intermedio"
-        title: "Compartir hobbies"
-        subtitle: "Comparte contenido basado en intereses"
+        title: "Compartir aficiones"
+        subtitle: "Intercambiar contenido según los intereses"
         content: |
-          <p><strong>Resumen</strong>: Puedes crear sellos con tus hobbies e intereses y compartirlos con otros usuarios.</p>
+          <p><strong>Resumen</strong>: Convierte tus aficiones e intereses en sellos para compartirlos con otros usuarios.</p>
 
           <p>🍳 <strong>Compartir recetas</strong></p>
           <ol>
-            <li>Crea sello con foto del plato terminado</li>
-            <li>Configura ingredientes y tiempo de cocción en las palabras clave</li>
-            <li>Configura modo de registro compartido → Usuarios que duplican comparten reseñas</li>
+            <li>Crear un sello con la foto del plato terminado</li>
+            <li>Configurar en palabras clave los ingredientes y el tiempo de cocción</li>
+            <li>Activar el modo log compartido → los usuarios que copien compartirán sus impresiones</li>
           </ol>
 
-          <p>🏃 <strong>Compartir rutina de ejercicio</strong></p>
+          <p>🏃 <strong>Compartir rutinas de ejercicio</strong></p>
           <ol>
-            <li>Crea sello de desafío de 30 días, rutina de ejercicio en casa</li>
-            <li>Configura modo de registro compartido</li>
-            <li>Participantes duplican y registran completado diario</li>
+            <li>Crear un sello de reto de 30 días o rutina de entrenamiento en casa</li>
+            <li>Activar el modo log compartido</li>
+            <li>Los participantes copian y registran cada día lo completado</li>
           </ol>
 
           <p>✈️ <strong>Guía de viaje</strong></p>
           <ol>
-            <li>Crea sello con foto del destino + itinerario recomendado</li>
-            <li>Organiza información de restaurantes y alojamiento en las palabras clave</li>
-            <li>Comparte → Personas que visitaron agregan reseñas</li>
+            <li>Crear un sello con fotos del destino + rutas recomendadas</li>
+            <li>Recopilar en palabras clave restaurantes y alojamientos</li>
+            <li>Transferir → quienes ya fueron añaden sus impresiones</li>
           </ol>
 
           <p><strong>Otros usos</strong></p>
           <ul>
-            <li>🎮 Guías de juegos, compartir builds</li>
-            <li>🔨 Guía de proyectos DIY</li>
-            <li>🌱 Cuidado de plantas, horario de riego</li>
+            <li>🎮 Compartir guías y builds de juegos</li>
+            <li>🔨 Guías de proyectos DIY</li>
+            <li>🌱 Cuidado de plantas y calendario de riego</li>
             <li>🐕 Consejos de cuidado de mascotas</li>
           </ul>
 
       # 2-7. Comunidad local/familiar
       - type: "Intermedio"
-        title: "Gestionar actividades grupales"
-        subtitle: "Espacio de comunicación para grupos locales, familiares, de amigos"
+        title: "Organizar actividades de grupo"
+        subtitle: "Espacio de comunicación para el barrio, la familia y los amigos"
         content: |
-          <p><strong>Resumen</strong>: Puedes crear espacios compartidos con sellos para comunidades locales, reuniones familiares y grupos de amigos.</p>
+          <p><strong>Resumen</strong>: Con los sellos puedes crear espacios comunes para comunidades locales, reuniones familiares y grupos de amigos.</p>
 
           <p>🏘️ <strong>Comunidad local</strong></p>
           <ul>
-            <li>🍜 Mapa de restaurantes del barrio: Residentes recomiendan restaurantes a través del registro compartido</li>
-            <li>🎪 Información de eventos locales: Festivales, mercados, eventos culturales</li>
-            <li>🏃 Reclutamiento de clubes: Presentación de clubes de senderismo, running, lectura</li>
-            <li>🏠 Comunicación de residentes/juntas de vecinos: Compartir anuncios del edificio</li>
+            <li>🍜 Mapa gastronómico del barrio: los vecinos recomiendan restaurantes en el log compartido</li>
+            <li>🎪 Información de eventos locales: festivales, mercados, actividades culturales</li>
+            <li>🏃 Reclutamiento de clubes: presentar grupos de senderismo, running, lectura, etc.</li>
+            <li>🏠 Junta de vecinos/comunicación entre residentes: difundir los avisos del edificio</li>
           </ul>
 
-          <p>👨‍👩‍👧‍👦 <strong>Grupo familiar/de amigos</strong></p>
+          <p>👨‍👩‍👧‍👦 <strong>Familia/Grupo de amigos</strong></p>
           <ul>
-            <li>🍳 Libro de recetas familiar: Recetas que pasan de generación en generación</li>
-            <li>🎂 Calendario de cumpleaños de amigos: Gestión de cumpleaños e ideas de regalos</li>
-            <li>✅ Lista de deseos grupal: Metas que quieren lograr juntos</li>
-            <li>✈️ Planificación de viaje familiar: Compartir itinerario, lista de preparación, presupuesto</li>
-            <li>💒 Información de eventos especiales: Compartir información de bodas, fiestas de bebé</li>
+            <li>🍳 Recetario familiar: las recetas de la casa transmitidas de generación en generación</li>
+            <li>🎂 Calendario de cumpleaños: gestión de cumpleaños e ideas de regalos</li>
+            <li>✅ Bucket list de grupo: metas que quieren lograr juntos</li>
+            <li>✈️ Plan de viaje familiar: compartir itinerario, equipaje y presupuesto</li>
+            <li>💒 Avisos de celebraciones: compartir información de bodas y primeros cumpleaños</li>
           </ul>
 
       # 2-8. Trabajo/Eventos
       - type: "Avanzado"
-        title: "Usar para trabajo y eventos"
+        title: "Usarlo en el trabajo y los eventos"
         subtitle: "Colaboración en equipo y registro de días especiales"
         content: |
-          <p><strong>Resumen</strong>: Puedes crear espacios compartidos con sellos para colaboración laboral y eventos especiales.</p>
+          <p><strong>Resumen</strong>: Con los sellos puedes crear espacios comunes para la colaboración laboral y los eventos especiales.</p>
 
           <p>💼 <strong>Trabajo/Colaboración</strong></p>
           <ul>
-            <li>📊 Proyecto de equipo: Comparte progreso a través del registro compartido</li>
-            <li>📝 Formato de actas de reunión: Plantilla estandarizada de actas con sello</li>
-            <li>📋 Traspaso de trabajo: Organiza y entrega tareas a cargo</li>
-            <li>👋 Onboarding de nuevos empleados: Comparte guía de adaptación a la empresa</li>
+            <li>📊 Proyectos de equipo: compartir el avance mediante el log compartido</li>
+            <li>📝 Formato de actas: estandarizar las actas de reunión con un sello</li>
+            <li>📋 Traspaso de funciones: recopilar y entregar las responsabilidades</li>
+            <li>👋 Onboarding de nuevos empleados: compartir la guía de adaptación</li>
           </ul>
 
           <p>🎉 <strong>Eventos/Días especiales</strong></p>
           <ul>
-            <li>💒 Invitación de boda: Sello compartido para invitación + confirmación de asistencia + mensajes de felicitación</li>
-            <li>🎈 Invitación de fiesta: Invitaciones para cumpleaños, inauguración de casa, fin de año</li>
-            <li>👶 Fiesta de bebé/primer año: Foto del bebé + colección de mensajes de felicitación</li>
-            <li>🕯️ Memorial/Aniversario: Espacio para compartir recuerdos juntos</li>
-            <li>📨 Cápsula del tiempo: Mensaje para tu yo del futuro</li>
+            <li>💒 Invitación de boda: sello de log compartido con invitación + confirmación de asistencia + mensajes de felicitación</li>
+            <li>🎈 Invitaciones a fiestas: cumpleaños, inauguraciones de casa, fiestas de fin de año</li>
+            <li>👶 Primer cumpleaños/100 días: fotos del bebé + colección de felicitaciones</li>
+            <li>🕯️ Homenajes/Aniversarios: un espacio para compartir recuerdos</li>
+            <li>📨 Cápsula del tiempo: mensajes para tu yo del futuro</li>
           </ul>
 
   # ===== 3. Usos de la Insignia (Badge) =====
   - id: badge-usage
-    title: "🏷️ Usos de la Insignia"
+    title: "Usos de la Insignia"
     icon: "🏷️"
-    description: "Marca y construye confianza con Insignia (Badge)"
+    description: "Crear marca y construir confianza con la Insignia (Badge)"
     items:
-      # 3-1. Promoción de imagen de marca
-      - type: "Experto"
-        title: "Construir identidad de marca"
-        subtitle: "Crea tu propia marca con un nombre de dominio único"
+      # 3-0. Fundamentos de la insignia (Principiante)
+      - type: "Principiante"
+        title: "Entender la insignia"
+        subtitle: "Fundamentos del nombre de dominio y el branding"
         content: |
-          <p><strong>Resumen</strong>: Cuando grabas una insignia, puedes tener un nombre de dominio único. Cuando equipas la insignia, este nombre de dominio se muestra en todas las actividades.</p>
+          <p><strong>Resumen</strong>: La insignia es un elemento que te permite tener tu propio nombre de dominio (apodo) único en Inventory.</p>
 
-          <p><strong>Grabar insignia</strong></p>
+          <p><strong>¿Qué es una insignia?</strong></p>
+          <ul>
+            <li>🏷️ <strong>Nombre de dominio</strong>: Un nombre único (ej.: myshop, creator_kim)</li>
+            <li>👤 <strong>Branding</strong>: Actuar con tu nombre de dominio en lugar del correo electrónico</li>
+            <li>🔐 <strong>Privacidad</strong>: Puedes ocultar tu dirección de correo real</li>
+          </ul>
+
+          <p><strong>Estados de la insignia</strong></p>
+          <ul>
+            <li>⚪ <strong>Insignia en blanco</strong>: Aún sin grabar</li>
+            <li>🏷️ <strong>Insignia grabada</strong>: Con el nombre de dominio inscrito</li>
+            <li>✅ <strong>Insignia equipada</strong>: Actualmente activada y en uso</li>
+          </ul>
+
+          <p><strong>¿Quién usa la insignia?</strong></p>
+          <ul>
+            <li>🏢 Empresas/Marcas: Actuar con una cuenta oficial</li>
+            <li>🎨 Creadores: Distribuir contenido con un apodo único</li>
+            <li>🔒 Particulares: Proteger la privacidad manteniendo el correo oculto</li>
+          </ul>
+
+      # 3-1. Grabado de la insignia (Intermedio)
+      - type: "Intermedio"
+        title: "Grabar la primera insignia"
+        subtitle: "Crear mi propio nombre de dominio"
+        content: |
+          <p><strong>Resumen</strong>: Graba una insignia en blanco para establecer tu propio nombre de dominio único.</p>
+
+          <p><strong>Paso a paso</strong></p>
           <ol>
-            <li>En el inventario, mantén presionada la <strong>insignia en blanco</strong> para acceder a <strong>Ver detalles</strong><br/>
-                <em>O</em> selecciona la insignia en blanco y toca el botón <strong>Acción</strong></li>
-            <li>Selecciona el menú <strong>Grabar</strong></li>
-            <li>Ingresa información de la insignia:
+            <li>En el inventario, mantener pulsada una <strong>insignia en blanco</strong> para entrar en <strong>Ver detalles</strong><br/>
+                <em>o</em> seleccionar la insignia en blanco y tocar el botón <strong>Acción</strong></li>
+            <li>Elegir el menú <strong>Grabar</strong></li>
+            <li>Introducir la información de la insignia:
               <ul>
-                <li>Imagen de insignia (obligatorio)</li>
-                <li>Ingresa nombre de dominio (ej: mitienda, creador_kim)</li>
+                <li>Imagen de la insignia (obligatoria) - logo, foto de perfil, etc.</li>
+                <li>Nombre de dominio (solo letras, números y guion bajo)</li>
               </ul>
             </li>
-            <li>Después de <strong>verificar duplicados</strong>, completa <strong>Grabar</strong></li>
+            <li>Confirmar la disponibilidad con el botón <strong>Comprobar duplicados</strong></li>
+            <li>Finalizar el <strong>grabado</strong></li>
           </ol>
 
-          <p>⚠️ <strong>Advertencia</strong>: ¡El nombre de dominio no se puede cambiar una vez grabado!</p>
+          <p>⚠️ <strong>Precauciones</strong></p>
+          <ul>
+            <li>El nombre de dominio <strong>no puede cambiarse una vez grabado</strong></li>
+            <li>¡Elígelo con cuidado!</li>
+            <li>No se pueden elegir nombres de dominio ya en uso</li>
+          </ul>
 
-          <p><strong>Equipar/Desequipar insignia</strong></p>
+          <p><strong>Consejos para elegir el nombre de dominio</strong></p>
+          <ul>
+            <li>Un nombre corto y fácil de recordar</li>
+            <li>Un nombre relacionado con tu marca/actividad</li>
+            <li>Usar guion bajo (_) en lugar de caracteres especiales</li>
+          </ul>
+
+      # 3-2. Equipar la insignia (Avanzado)
+      - type: "Avanzado"
+        title: "Equipar y aprovechar la insignia"
+        subtitle: "Empezar a actuar con el nombre de dominio"
+        content: |
+          <p><strong>Resumen</strong>: Al equipar una insignia grabada, el nombre de dominio se muestra en todas tus actividades.</p>
+
+          <p><strong>Equipar la insignia</strong></p>
           <ol>
-            <li>Selecciona la <strong>insignia</strong> grabada y toca el botón <strong>Acción</strong></li>
-            <li>Selecciona <strong>Equipar</strong> → Se activa la insignia</li>
-            <li>Para desactivar, selecciona <strong>Desequipar</strong> en Acción nuevamente</li>
+            <li>Seleccionar la <strong>insignia</strong> grabada</li>
+            <li>Tocar el botón <strong>Acción</strong></li>
+            <li>Elegir <strong>Equipar</strong></li>
           </ol>
 
-          <p><strong>Efectos al equipar</strong></p>
+          <p><strong>Retirar la insignia</strong></p>
+          <ol>
+            <li>Seleccionar la <strong>insignia</strong> actualmente equipada</li>
+            <li>Tocar el botón <strong>Acción</strong></li>
+            <li>Elegir <strong>Retirar</strong></li>
+          </ol>
+
+          <p><strong>Efectos al equiparla</strong></p>
           <ul>
-            <li>🔍 Búsqueda posible por nombre de dominio (en lugar de correo electrónico)</li>
-            <li>📝 Todos los sellos y papeles que escribas muestran "nombre de dominio" como autor</li>
-            <li>📋 Al escribir en el registro también se muestra el nombre de dominio</li>
-          </ul>
-
-          <p><strong>Ejemplos de uso</strong></p>
-          <ul>
-            <li>🏢 <strong>Empresa/Marca</strong>: Opera cuenta oficial con logo y nombre de marca</li>
-            <li>🎨 <strong>Creador</strong>: Distribuye contenido con apodo único</li>
-            <li>👔 <strong>Perfil profesional</strong>: Usa nombre de dominio que represente tu especialidad</li>
-          </ul>
-
-      # 3-2. Correo electrónico privado
-      - type: "Experto"
-        title: "Proteger privacidad"
-        subtitle: "Actividad con nombre de dominio en lugar de correo electrónico"
-        content: |
-          <p><strong>Resumen</strong>: Cuando equipas una insignia, se muestra "nombre de dominio" en lugar de tu correo electrónico real, protegiendo tu información personal.</p>
-
-          <p><strong>Ventajas</strong></p>
-          <ul>
-            <li>🔒 <strong>Protección de privacidad</strong>: Tu dirección de correo electrónico real no se expone</li>
-            <li>📧 <strong>Prevención de spam</strong>: Protege tu correo incluso en actividades públicas</li>
-            <li>🎭 <strong>Actividad anónima</strong>: Posible actividad con el nombre que desees</li>
-          </ul>
-
-          <p><strong>Alcance de aplicación</strong></p>
-          <ul>
-            <li>Cuando creas sellos/papeles, se muestra "nombre de dominio" como información del creador</li>
-            <li>En registros compartidos, se muestra "nombre de dominio" en lugar de correo electrónico</li>
-            <li>Cuando otros usuarios buscan, buscan por nombre de dominio, no por correo electrónico</li>
-          </ul>
-
-      # 3-3. Garantía de grabado de documentos
-      - type: "Experto"
-        title: "Garantizar origen de documentos"
-        subtitle: "Grabado de insignia en todos los documentos"
-        content: |
-          <p><strong>Resumen</strong>: Cuando equipas una insignia, todos los documentos que crees incluyen la información de la insignia. Esto permite garantizar el origen de los documentos.</p>
-
-          <p><strong>Ejemplos de uso</strong></p>
-          <ul>
-            <li>✅ <strong>Certificación de documentos oficiales</strong>: Todos los documentos muestran el nombre de dominio garantizando el origen</li>
-            <li>📜 <strong>Publicación oficial de marca</strong>: Demuestra que es un documento oficial de marca/empresa</li>
-            <li>🔐 <strong>Prevención de falsificación</strong>: Posible verificar creador original mediante dominio de insignia</li>
+            <li>📝 Todos los documentos que crees mostrarán el «nombre de dominio» como autor</li>
+            <li>💬 En el log compartido se muestra el nombre de dominio en lugar del correo</li>
+            <li>🔍 Otros usuarios pueden buscarte por el nombre de dominio</li>
           </ul>
 
           <p><strong>Consejos de uso</strong></p>
           <ul>
-            <li>Certifica que es un cupón oficial al emitir cupones de tienda con insignia</li>
-            <li>Muestra derechos de autor con insignia en contenido de creador</li>
-            <li>Muestra cuenta oficial en anuncios de empresa</li>
+            <li>Equipar siempre la insignia al publicar documentos oficiales</li>
+            <li>Retirarla en actividades personales para diferenciar</li>
+            <li>Se pueden tener varias insignias según el uso (solo 1 equipada a la vez)</li>
+          </ul>
+
+      # 3-3. Promoción de la imagen de marca
+      - type: "Experto"
+        title: "Construir una identidad de marca"
+        subtitle: "Crear tu propia marca con un nombre de dominio único"
+        content: |
+          <p><strong>Resumen</strong>: Al grabar una insignia obtienes un nombre de dominio único. Al equiparla, ese nombre de dominio se muestra en todas tus actividades.</p>
+
+          <p><strong>Grabar la insignia</strong></p>
+          <ol>
+            <li>En el inventario, mantener pulsada una <strong>insignia en blanco</strong> para entrar en <strong>Ver detalles</strong><br/>
+                <em>o</em> seleccionar la insignia en blanco y tocar el botón <strong>Acción</strong></li>
+            <li>Elegir el menú <strong>Grabar</strong></li>
+            <li>Introducir la información de la insignia:
+              <ul>
+                <li>Imagen de la insignia (obligatoria)</li>
+                <li>Nombre de dominio (ej.: myshop, creator_kim)</li>
+              </ul>
+            </li>
+            <li>Tras <strong>comprobar duplicados</strong>, finalizar el <strong>grabado</strong></li>
+          </ol>
+
+          <p>⚠️ <strong>Atención</strong>: ¡El nombre de dominio no puede cambiarse una vez grabado!</p>
+
+          <p><strong>Equipar/Retirar la insignia</strong></p>
+          <ol>
+            <li>Seleccionar la <strong>insignia</strong> grabada y tocar el botón <strong>Acción</strong></li>
+            <li>Elegir <strong>Equipar</strong> → insignia activada</li>
+            <li>Para retirarla, elegir de nuevo <strong>Retirar</strong> en Acción</li>
+          </ol>
+
+          <p><strong>Efectos al equiparla</strong></p>
+          <ul>
+            <li>🔍 Se te puede buscar por el nombre de dominio (en lugar del correo)</li>
+            <li>📝 Todos los sellos y papeles que crees mostrarán el «nombre de dominio» como autor</li>
+            <li>📋 También al escribir en el log aparece el nombre de dominio</li>
+          </ul>
+
+          <p><strong>Ejemplos de uso</strong></p>
+          <ul>
+            <li>🏢 <strong>Empresas/Marcas</strong>: Gestionar una cuenta oficial con logo y nombre de marca</li>
+            <li>🎨 <strong>Creadores</strong>: Distribuir contenido con un apodo único</li>
+            <li>👔 <strong>Perfil profesional</strong>: Usar un nombre de dominio que refleje tu especialidad</li>
+          </ul>
+
+      # 3-2. Correo oculto
+      - type: "Experto"
+        title: "Proteger la privacidad"
+        subtitle: "Actuar con el nombre de dominio en lugar del correo"
+        content: |
+          <p><strong>Resumen</strong>: Al equipar la insignia se muestra el «nombre de dominio» en lugar de tu correo real, protegiendo así tu información personal.</p>
+
+          <p><strong>Ventajas</strong></p>
+          <ul>
+            <li>🔒 <strong>Protección de la privacidad</strong>: La dirección de correo real no queda expuesta</li>
+            <li>📧 <strong>Prevención de spam</strong>: Correo protegido incluso en actividades públicas</li>
+            <li>🎭 <strong>Actividad anónima</strong>: Puedes actuar con el nombre que quieras</li>
+          </ul>
+
+          <p><strong>Ámbito de aplicación</strong></p>
+          <ul>
+            <li>Al crear sellos/papeles, el «nombre de dominio» aparece como información del creador</li>
+            <li>En el log compartido se muestra el «nombre de dominio» en lugar del correo</li>
+            <li>Otros usuarios buscan por el nombre de dominio, no por el correo</li>
+          </ul>
+
+      # 3-3. Grabado como garantía del documento
+      - type: "Experto"
+        title: "Garantizar el origen de los documentos"
+        subtitle: "El grabado de la insignia en todos los documentos"
+        content: |
+          <p><strong>Resumen</strong>: Con la insignia equipada, todos los documentos que crees incluyen la información de la insignia. Así puedes garantizar el origen de los documentos.</p>
+
+          <p><strong>Ejemplos de uso</strong></p>
+          <ul>
+            <li>✅ <strong>Certificación de documentos oficiales</strong>: El nombre de dominio aparece en todos los documentos, garantizando su origen</li>
+            <li>📜 <strong>Publicación oficial de la marca</strong>: Demostrar que es un documento oficial de la marca/empresa</li>
+            <li>🔐 <strong>Prevención de falsificaciones</strong>: El creador original es verificable mediante el dominio de la insignia</li>
+          </ul>
+
+          <p><strong>Consejos de uso</strong></p>
+          <ul>
+            <li>Certificar con la insignia que los cupones del local son oficiales</li>
+            <li>Marcar los contenidos de creador con la insignia como sello de autoría</li>
+            <li>Identificar los avisos de la empresa con la cuenta oficial</li>
+          </ul>
+
+  # ===== 4. Usos de la Tinta (Ink) =====
+  - id: ink-usage
+    title: "Usos de la Tinta"
+    icon: "🎨"
+    description: "Personalizar el tema de la app con la Tinta (Ink)"
+    items:
+      # 4-1. Fundamentos de la tinta (Principiante)
+      - type: "Principiante"
+        title: "Cambiar el tema con la tinta"
+        subtitle: "Personalizar los colores de mi app"
+        content: |
+          <p><strong>Resumen</strong>: La tinta es un elemento que permite cambiar el color principal y el color secundario de la app. Elige la tinta que prefieras y cambia el tema.</p>
+
+          <p><strong>Paso a paso</strong></p>
+          <ol>
+            <li>Seleccionar la <strong>tinta</strong> deseada en el inventario</li>
+            <li>Tocar el botón <strong>Acción</strong></li>
+            <li>Elegir <strong>Cambiar tema</strong></li>
+            <li>El color principal y el secundario de la app cambian a los colores de esa tinta</li>
+          </ol>
+
+          <p><strong>Características de la tinta</strong></p>
+          <ul>
+            <li>🎨 Cada tinta tiene su combinación única de color principal y secundario</li>
+            <li>🔄 Puedes cambiar el tema con otra tinta en cualquier momento</li>
+            <li>✨ Los colores se aplican a toda la interfaz de la app</li>
+          </ul>
+
+          <p><strong>Ten en cuenta</strong></p>
+          <ul>
+            <li>📱 Los colores del tema se <strong>guardan localmente en el dispositivo</strong></li>
+            <li>👤 Los colores se mantienen aunque inicies sesión con otra cuenta</li>
+            <li>🔄 Al eliminar la app se restablecen los colores predeterminados</li>
+          </ul>
+
+          <p><strong>Consejos de uso</strong></p>
+          <ul>
+            <li>🌙 Las tintas de colores oscuros reducen la fatiga visual</li>
+            <li>🌈 Cambiar los colores del tema según el estado de ánimo</li>
+            <li>💼 Diferenciar temas para el trabajo y para lo personal</li>
           </ul>

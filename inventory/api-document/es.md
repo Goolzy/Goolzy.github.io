@@ -1,6 +1,6 @@
 ---
 layout: inventory
-title: Documentacion API
+title: Documentación API
 permalink: /inventory/api-document/es/
 lang: es
 translations:
@@ -14,23 +14,23 @@ translations:
   zh: /inventory/api-document/zh/
 ---
 
-# Documentacion API
+# Documentación API
 
-Acceda a los datos de su aplicacion Inventory de forma programatica a traves de nuestra API externa.
+La API externa de la aplicación Inventory le permite acceder a sus datos de forma programática.
 
 ---
 
-## Vision general
+## Visión general
 
-### Que es la API?
+### ¿Qué es la API?
 
-La API externa proporciona una interfaz para acceder a los datos de la aplicacion Inventory desde programas externos.
+La API externa es una interfaz que permite a programas externos acceder a los datos de la aplicación Inventory.
 
 ### Casos de uso
 
-- **Automatizacion**: Procesamiento por lotes de documentos mediante scripts
-- **Integracion de terceros**: Sincronizacion de datos con otros servicios
-- **Operaciones masivas**: Creacion y comparticion masiva de plantillas
+- **Automatización**: procesamiento masivo de documentos mediante scripts
+- **Integración con terceros**: intercambio de datos con otros servicios
+- **Procesamiento masivo**: creación y compartición de plantillas por lotes
 
 ---
 
@@ -40,34 +40,34 @@ La API externa proporciona una interfaz para acceder a los datos de la aplicacio
 
 Para usar la API, primero necesita una clave API.
 
-1. Abra la pantalla de **Perfil** en la aplicacion Inventory
-2. Busque la seccion **Clave API**
-3. Toque el boton **Generar clave**
-4. Su clave API se mostrara en pantalla
+1. En la aplicación Inventory, vaya a la **pantalla de perfil**
+2. Busque la sección **Clave API**
+3. Toque el botón **Generar clave**
+4. La clave API generada se mostrará en pantalla
 
-> **Importante**: La clave API se muestra **solo una vez** cuando se genera. Asegurese de copiarla y guardarla en un lugar seguro. Si la pierde, necesitara regenerarla.
+> **Importante**: la clave API se muestra **una sola vez** al crearla. Asegúrese de copiarla y guardarla en un lugar seguro. Si la pierde, deberá emitir una nueva.
 
 ### Formato de la clave API
 
-Las claves API siguen este formato:
+La clave API tiene el siguiente formato:
 
 ```
 inv_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
 - Comienza con el prefijo `inv_`
-- Cadena codificada en Base64URL de aproximadamente 50 caracteres
+- Cadena codificada en Base64URL de unos 50 caracteres
 
-### Gestion de claves API
+### Gestión de la clave API
 
-- **Regenerar**: Revoca la clave existente y emite una nueva
-- **Eliminar**: Elimina completamente la clave API (acceso API deshabilitado)
+- **Regenerar**: revoca la clave existente y emite una nueva
+- **Eliminar**: elimina completamente la clave API (la API queda inutilizable)
 
 ---
 
-## Autenticacion
+## Autenticación
 
-Todas las solicitudes API requieren un encabezado `Authorization`.
+Todas las solicitudes a la API requieren un encabezado `Authorization`.
 
 ### Token Bearer
 
@@ -84,23 +84,23 @@ curl -H "Authorization: Bearer inv_your_api_key" \
 
 ---
 
-## Limitacion de velocidad
+## Rate Limiting
 
-El uso de la API esta sujeto a limites.
+El uso de la API está sujeto a límites.
 
-| Tipo de limite | Umbral | Descripcion |
-|----------------|--------|-------------|
-| Por minuto | 60 solicitudes | Previene solicitudes excesivas |
-| Mensual | Varia segun cuenta | Determinado por contrato |
+| Tipo de límite | Límite | Descripción |
+|-----------|------|------|
+| Solicitudes por minuto | 60 | Prevención de solicitudes excesivas |
+| Solicitudes mensuales | Varía según la cuenta | Determinado por contrato |
 
-### Cuando se excede el limite
+### Al superar el límite
 
-- Se devuelve el codigo de estado HTTP `429 Too Many Requests`
-- Por favor espere e intente de nuevo mas tarde
+- Se devuelve el código de estado HTTP `429 Too Many Requests`
+- Inténtelo de nuevo tras una breve espera
 
 ---
 
-## Endpoints API
+## Endpoints de la API
 
 ### URL base
 
@@ -108,37 +108,37 @@ El uso de la API esta sujeto a limites.
 https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 ```
 
-### APIs de lectura (GET)
+### API de lectura (GET)
 
-| Endpoint | Descripcion |
-|----------|-------------|
-| `GET /items` | Listar sus articulos |
-| `GET /items/{token}` | Obtener detalles del articulo |
-| `GET /templates` | Listar sus plantillas |
-| `GET /templates/{token}` | Obtener detalles de plantilla |
-| `GET /templates/shared` | Listar plantillas compartidas |
-| `GET /user/stats` | Obtener estadisticas de usuario |
+| Endpoint | Descripción |
+|------------|------|
+| `GET /items` | Consultar la lista de sus elementos |
+| `GET /items/{token}` | Consultar el detalle de un elemento |
+| `GET /templates` | Consultar la lista de sus plantillas |
+| `GET /templates/{token}` | Consultar el detalle de una plantilla |
+| `GET /templates/shared` | Lista de plantillas en compartición (retirada prevista — la función de compartir finaliza en v3) |
+| `GET /user/stats` | Consultar estadísticas de usuario |
 
-### APIs de escritura (POST)
+### API de escritura (POST)
 
-| Endpoint | Descripcion |
-|----------|-------------|
-| `POST /templates` | Crear nueva plantilla |
-| `POST /templates/{token}/share` | Compartir plantilla |
-| `POST /templates/revoke` | Revocar comparticion |
-| `POST /templates/{token}/send` | Enviar plantilla |
-| `POST /templates/{token}/log` | Agregar registros, actualizar palabras clave/permisos/imagen |
-| `POST /templates/{token}/check-ownership` | Verificar propiedad de elementos clonados |
+| Endpoint | Descripción |
+|------------|------|
+| `POST /templates` | Crear una nueva plantilla |
+| `POST /templates/{token}/share` | Compartir una plantilla (retirada prevista — la función de compartir finaliza en v3) |
+| `POST /templates/revoke` | Revocar una compartición (retirada prevista — la función de compartir finaliza en v3) |
+| `POST /templates/{token}/send` | Enviar una plantilla |
+| `POST /templates/{token}/check-ownership` | Verificar la posesión de un elemento clonado |
+| `POST /templates/{token}/log` | Añadir logs, actualizar palabras clave/permisos/imagen |
 
 ---
 
-## Referencia API detallada
+## Especificación detallada de la API
 
 <details>
-<summary><h3>GET /items - Listar articulos</h3></summary>
+<summary><h3>GET /items - Lista de elementos</h3></summary>
 <div class="manual-content" markdown="1">
 
-Recupera una lista de articulos (documentos) que posee.
+Consulta la lista de elementos (documentos) de su propiedad.
 
 #### Solicitud
 
@@ -147,12 +147,12 @@ curl -H "Authorization: Bearer inv_xxx" \
      "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/items?page=1&pageSize=20"
 ```
 
-#### Parametros de consulta
+#### Parámetros de consulta
 
-| Parametro | Tipo | Predeterminado | Descripcion |
-|-----------|------|----------------|-------------|
-| page | number | 1 | Numero de pagina |
-| pageSize | number | 20 | Articulos por pagina (max 100) |
+| Parámetro | Tipo | Valor por defecto | Descripción |
+|----------|------|--------|------|
+| page | number | 1 | Número de página |
+| pageSize | number | 20 | Elementos por página (máx. 100) |
 | status | string | "active" | Filtro de estado (active, pending) |
 | type | string | - | Filtro de tipo (paper, stamp) |
 
@@ -164,9 +164,9 @@ curl -H "Authorization: Bearer inv_xxx" \
   "data": {
     "items": [
       {
-        "token": "id_articulo_cifrado",
-        "title": "Titulo del articulo",
-        "content": "Contenido del articulo",
+        "token": "암호화된_아이템_ID",
+        "title": "아이템 제목",
+        "content": "아이템 내용",
         "type": "paper",
         "status": "active",
         "imageUrl": "https://...",
@@ -188,7 +188,171 @@ curl -H "Authorization: Bearer inv_xxx" \
 </details>
 
 <details>
-<summary><h3>POST /templates - Crear plantilla</h3></summary>
+<summary><h3>GET /items/{token} - Detalle de un elemento</h3></summary>
+<div class="manual-content" markdown="1">
+
+Consulta la información detallada de un elemento específico.
+
+#### Solicitud
+
+```bash
+curl -H "Authorization: Bearer inv_xxx" \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/items/{token}"
+```
+
+#### Respuesta
+
+```json
+{
+  "success": true,
+  "data": {
+    "token": "암호화된_아이템_ID",
+    "title": "아이템 제목",
+    "content": "아이템 내용",
+    "type": "paper",
+    "status": "active",
+    "imageUrl": "https://...",
+    "keywords": ["키:값", "태그:예시"],
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  }
+}
+```
+
+</div>
+</details>
+
+<details>
+<summary><h3>GET /templates - Lista de plantillas</h3></summary>
+<div class="manual-content" markdown="1">
+
+Consulta la lista de plantillas (sellos) de su propiedad.
+
+#### Solicitud
+
+```bash
+curl -H "Authorization: Bearer inv_xxx" \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates?page=1&pageSize=20"
+```
+
+#### Parámetros de consulta
+
+| Parámetro | Tipo | Valor por defecto | Descripción |
+|----------|------|--------|------|
+| page | number | 1 | Número de página |
+| pageSize | number | 20 | Elementos por página (máx. 100) |
+
+#### Respuesta
+
+```json
+{
+  "success": true,
+  "data": {
+    "templates": [
+      {
+        "token": "암호화된_템플릿_ID",
+        "title": "템플릿 제목",
+        "content": "템플릿 내용",
+        "imageUrl": "https://...",
+        "commentMode": "independent",
+        "allowComments": true,
+        "logPermission": "owner",
+        "keywordPermission": "owner",
+        "allowEdit": false,
+        "isSharing": false,
+        "createdAt": "2025-01-01T00:00:00Z"
+      }
+    ],
+    "pagination": {
+      "page": 1,
+      "pageSize": 20,
+      "totalItems": 10,
+      "totalPages": 1
+    }
+  }
+}
+```
+
+</div>
+</details>
+
+<details>
+<summary><h3>GET /templates/shared - Plantillas en compartición</h3></summary>
+<div class="manual-content" markdown="1">
+
+Consulta la lista de plantillas actualmente compartidas.
+
+#### Solicitud
+
+```bash
+curl -H "Authorization: Bearer inv_xxx" \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/shared"
+```
+
+#### Respuesta
+
+```json
+{
+  "success": true,
+  "data": {
+    "sharedTemplates": [
+      {
+        "token": "암호화된_템플릿_ID",
+        "shareToken": "암호화된_공유_ID",
+        "title": "템플릿 제목",
+        "tags": ["TAG1", "TAG2"],
+        "expiresAt": "2025-01-02T00:00:00Z",
+        "copyCount": 5
+      }
+    ]
+  }
+}
+```
+
+</div>
+</details>
+
+<details>
+<summary><h3>GET /user/stats - Estadísticas de usuario</h3></summary>
+<div class="manual-content" markdown="1">
+
+Consulta sus estadísticas de uso.
+
+#### Solicitud
+
+```bash
+curl -H "Authorization: Bearer inv_xxx" \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/user/stats"
+```
+
+#### Respuesta
+
+```json
+{
+  "success": true,
+  "data": {
+    "email": "user@example.com",
+    "createdAt": "2024-01-01T00:00:00Z",
+    "items": {
+      "total": 50,
+      "paper": 30,
+      "stamp": 20
+    },
+    "api": {
+      "enabled": true,
+      "monthlyLimit": 1000,
+      "monthlyUsed": 150,
+      "lastUsedAt": "2025-01-01T12:00:00Z"
+    }
+  }
+}
+```
+
+</div>
+</details>
+
+<details>
+<summary><h3>POST /templates - Crear una plantilla</h3></summary>
 <div class="manual-content" markdown="1">
 
 Crea una nueva plantilla (sello).
@@ -201,42 +365,50 @@ curl -X POST \
      -H "Content-Type: application/json" \
      -d '{
        "imageUrl": "https://example.com/image.png",
-       "title": "Titulo de plantilla",
-       "content": "Contenido de plantilla",
+       "title": "템플릿 제목",
+       "content": "템플릿 내용",
         "commentMode": "independent",
         "logPermission": "owner",
         "keywordPermission": "owner",
         "allowEdit": true,
-        "keywords": ["producto:laptop", "precio:$1500EUR$"]
+        "keywords": ["품명:노트북", "가격:$1500000KRW$"]
      }' \
      "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates"
 ```
 
-#### Cuerpo de solicitud
+#### Cuerpo de la solicitud
 
-| Campo | Tipo | Requerido | Descripcion |
-|-------|------|-----------|-------------|
-| imageUrl | string | Si | URL de imagen (HTTPS recomendado) |
-| title | string | Si | Titulo (max 32 caracteres) |
-| content | string | Si | Contenido (max 1024 caracteres) |
-| commentMode | string | No | Modo comentario: "independent" o "shared" |
-| ~~allowComments~~ | ~~boolean~~ | ~~X~~ | ~~Permitir agregar registros~~ (deprecated: reemplazado por `logPermission`) |
-| logPermission | string | No | Permiso de registro: "owner" \| "author" \| "none" (predeterminado: "owner") |
-| keywordPermission | string | No | Permiso de palabra clave: "owner" \| "author" \| "none" (predeterminado: "owner") |
-| allowEdit | boolean | X | Permitir edición (predeterminado: true) |
-| keywords | string[] | No | Array de palabras clave (max 128) |
+| Campo | Tipo | Requerido | Descripción |
+|------|------|------|------|
+| imageUrl | string | Sí | URL de la imagen (HTTPS recomendado) |
+| title | string | Sí | Título (máx. 32 caracteres) |
+| content | string | Sí | Contenido (máx. 1024 caracteres) |
+| commentMode | string | No | Modo de comentarios: "independent" o "shared" |
+| ~~allowComments~~ | ~~boolean~~ | ~~No~~ | ~~Permitir añadir logs~~ (deprecated: reemplazado por `logPermission`) |
+| logPermission | string | No | Permiso de logs: "owner" \| "author" \| "none" (por defecto: "owner") |
+| keywordPermission | string | No | Permiso de palabras clave: "owner" \| "author" \| "none" (por defecto: "owner") |
+| allowEdit | boolean | No | Permitir edición (por defecto: true) |
+| keywords | string[] | No | Array de palabras clave (máx. 128) |
+| publishDate | string | No | Fecha de inicio de publicación (ISO 8601) |
+| validUntil | string | No | Período de validez (ISO 8601) |
 
-#### Formato de palabras clave
+#### Formato de las palabras clave
 
-Las palabras clave deben seguir el formato `clave:valor`.
+Las palabras clave deben seguir obligatoriamente el formato `키:값` (clave:valor).
 
 | Tipo | Formato | Ejemplo |
-|------|---------|---------|
-| General | `clave:valor` | `producto:boligrafo` |
-| Fecha | `clave:@AAAA-MM-DD@` | `inicio:@2025-01-15@` |
-| Telefono | `clave:#telefono#` | `contacto:#+34 612 345 678#` |
-| Ubicacion | `clave:%direccion%` | `lugar:%Madrid, Centro%` |
-| Monto | `clave:$montoMoneda$` | `precio:$50000EUR$` |
+|------|------|------|
+| General | `키:값` | `품명:펜` |
+| Fecha | `키:@YYYY-MM-DD@` | `시작일:@2025-01-15@` |
+| Teléfono | `키:#전화번호#` | `연락처:#+82 10-1234-5678#` |
+| Ubicación | `키:%주소%` | `장소:%서울시 강남구%` |
+| Importe | `키:$금액통화$` | `가격:$50000KRW$` |
+
+#### Restricciones
+
+- Longitud de la clave: máx. 8 caracteres
+- Longitud total de las palabras clave: máx. 256 caracteres
+- Número de palabras clave: máx. 128
 
 #### Respuesta
 
@@ -244,8 +416,8 @@ Las palabras clave deben seguir el formato `clave:valor`.
 {
   "success": true,
   "data": {
-    "token": "id_plantilla_cifrado",
-    "title": "Titulo de plantilla",
+    "token": "암호화된_템플릿_ID",
+    "title": "템플릿 제목",
     "createdAt": "2025-01-01T00:00:00Z"
   }
 }
@@ -255,10 +427,10 @@ Las palabras clave deben seguir el formato `clave:valor`.
 </details>
 
 <details>
-<summary><h3>POST /templates/{token}/share - Compartir plantilla</h3></summary>
+<summary><h3>POST /templates/{token}/share - Compartir una plantilla</h3></summary>
 <div class="manual-content" markdown="1">
 
-Comparte una plantilla para que otros usuarios puedan descubrirla.
+Comparte una plantilla para que otros usuarios puedan buscarla.
 
 #### Solicitud
 
@@ -273,22 +445,32 @@ curl -X POST \
      "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/share"
 ```
 
-#### Cuerpo de solicitud
+#### Cuerpo de la solicitud
 
-| Campo | Tipo | Requerido | Descripcion |
-|-------|------|-----------|-------------|
-| durationMinutes | number | Si | Duracion del compartido (minutos). 60-43200 o 0 (ilimitado) |
-| tags | string[] | Si | Etiquetas de busqueda (1-16, mayusculas auto) |
-| logPermission | string | No | Permiso de registro: "owner" \| "author" \| "none" (anula la configuracion del elemento) |
-| keywordPermission | string | No | Permiso de palabra clave: "owner" \| "author" \| "none" (anula la configuracion del elemento) |
+| Campo | Tipo | Requerido | Descripción |
+|------|------|------|------|
+| durationMinutes | number | Sí | Duración de la compartición (minutos). 60-43200 o 0 (indefinido) |
+| tags | string[] | Sí | Etiquetas de búsqueda (1-16, conversión automática a mayúsculas) |
+| logPermission | string | No | Permiso de logs: "owner" \| "author" \| "none" (anula la configuración del elemento) |
+| keywordPermission | string | No | Permiso de palabras clave: "owner" \| "author" \| "none" (anula la configuración del elemento) |
 
-#### Valores de permisos
+#### Valores de permiso
 
-| Valor | Descripcion |
-|-------|-------------|
-| owner | Cualquier persona que copie esta plantilla puede agregar/editar |
-| author | Solo el autor de la plantilla puede agregar/editar |
-| none | Deshabilitado |
+| Valor | Descripción |
+|----|------|
+| owner | Cualquiera que haya clonado la plantilla puede añadir/editar |
+| author | Solo el autor de la plantilla puede añadir/editar |
+| none | Desactivado |
+
+#### Duración de la compartición
+
+| Valor | Significado |
+|----|------|
+| 60 | 1 hora |
+| 1440 | 1 día (24 horas) |
+| 10080 | 1 semana |
+| 43200 | 30 días (máximo) |
+| 0 | Indefinido |
 
 #### Respuesta
 
@@ -296,7 +478,7 @@ curl -X POST \
 {
   "success": true,
   "data": {
-    "shareToken": "id_compartido_cifrado",
+    "shareToken": "암호화된_공유_ID",
     "expiresAt": "2025-01-02T00:00:00Z",
     "tags": ["TAG1", "TAG2"]
   }
@@ -307,10 +489,10 @@ curl -X POST \
 </details>
 
 <details>
-<summary><h3>POST /templates/{token}/send - Enviar plantilla</h3></summary>
+<summary><h3>POST /templates/revoke - Revocar una compartición</h3></summary>
 <div class="manual-content" markdown="1">
 
-Envia una plantilla (sello) a otros usuarios, clonando la plantilla como nuevos articulos en sus cuentas.
+Cancela la compartición de una plantilla actualmente compartida.
 
 #### Solicitud
 
@@ -319,32 +501,16 @@ curl -X POST \
      -H "Authorization: Bearer inv_xxx" \
      -H "Content-Type: application/json" \
      -d '{
-       "recipients": ["user1@example.com", "user2@example.com"],
-       "keywords": ["fecha:2025-01-15", "monto:50000"]
+       "shareToken": "암호화된_공유_ID"
      }' \
-     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/send"
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/revoke"
 ```
 
-#### Cuerpo de solicitud
+#### Cuerpo de la solicitud
 
-| Campo | Tipo | Requerido | Descripcion |
-|-------|------|-----------|-------------|
-| recipients | string[] | Si | Lista de correos electronicos de destinatarios |
-| keywords | string[] | X | Palabras clave para agregar/sobrescribir |
-
-#### Reglas de fusión de palabras clave
-
-El parámetro `keywords` le permite sobrescribir las palabras clave predeterminadas de la plantilla o agregar nuevas.
-
-| Situación | Comportamiento |
-|-----------|----------------|
-| Existe la misma clave | **Sobrescribir** con valor de API |
-| Nueva clave | **Agregar** a la lista de palabras clave |
-
-**Ejemplo:**
-- Palabras clave de plantilla: `["fecha:@date@", "precio:0"]`
-- Palabras clave de API: `["fecha:2025-01-15", "nombre:Juan"]`
-- **Resultado**: `["fecha:2025-01-15", "precio:0", "nombre:Juan"]`
+| Campo | Tipo | Requerido | Descripción |
+|------|------|------|------|
+| shareToken | string | Sí | shareToken recibido al compartir |
 
 #### Respuesta
 
@@ -352,9 +518,7 @@ El parámetro `keywords` le permite sobrescribir las palabras clave predetermina
 {
   "success": true,
   "data": {
-    "clonedCount": 2,
-    "recipients": ["user1@example.com", "user2@example.com"],
-    "sentAt": "2025-01-01T00:00:00Z"
+    "message": "Share revoked successfully"
   }
 }
 ```
@@ -363,10 +527,147 @@ El parámetro `keywords` le permite sobrescribir las palabras clave predetermina
 </details>
 
 <details>
-<summary><h3>POST /templates/{token}/log - Agregar registros y actualizar plantilla</h3></summary>
+<summary><h3>POST /templates/{token}/send - Enviar una plantilla</h3></summary>
 <div class="manual-content" markdown="1">
 
-Agrega registros, actualiza palabras clave, cambia permisos o actualiza la imagen de una plantilla compartida. Envia notificaciones push a los usuarios que clonaron esta plantilla.
+Clona una plantilla y la envía a otro usuario.
+
+#### Solicitud
+
+```bash
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "recipientEmail": "recipient@example.com",
+       "message": "선물입니다!",
+       "keywords": ["날짜:2025-01-15", "금액:50000"]
+     }' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/send"
+```
+
+#### Cuerpo de la solicitud
+
+| Campo | Tipo | Requerido | Descripción |
+|------|------|------|------|
+| recipientEmail | string | Sí | Correo electrónico del destinatario |
+| message | string | No | Mensaje de envío (máx. 200 caracteres) |
+| keywords | string[] | No | Array de palabras clave a añadir/sobrescribir |
+
+#### Reglas de fusión de palabras clave
+
+El parámetro `keywords` permite sobrescribir las palabras clave predeterminadas de la plantilla o añadir nuevas.
+
+| Situación | Comportamiento |
+|------|------|
+| Si la clave ya existe | Se **sobrescribe** con el valor de la API |
+| Si es una clave nueva | Se **añade** a la lista de palabras clave |
+
+**Ejemplo:**
+- Palabras clave de la plantilla: `["날짜:@date@", "가격:0"]`
+- Palabras clave de la API: `["날짜:2025-01-15", "이름:홍길동"]`
+- **Resultado**: `["날짜:2025-01-15", "가격:0", "이름:홍길동"]`
+
+#### Respuesta
+
+```json
+{
+  "success": true,
+  "data": {
+    "itemToken": "암호화된_아이템_ID",
+    "recipientEmail": "recipient@example.com",
+    "status": "pending"
+  }
+}
+```
+
+</div>
+</details>
+
+<details>
+<summary><h3>POST /templates/{token}/check-ownership - Verificar la posesión de un elemento clonado</h3></summary>
+<div class="manual-content" markdown="1">
+
+Verifica si un usuario determinado posee un elemento clonado creado a partir de esta plantilla.
+
+> **Seguridad**: solo puede consultar plantillas de su propiedad. No puede consultar plantillas de otros usuarios.
+
+#### Solicitud
+
+```bash
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "email": "user@example.com",
+       "keywordKeys": ["날짜", "금액"]
+     }' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/check-ownership"
+```
+
+#### Cuerpo de la solicitud
+
+| Campo | Tipo | Requerido | Descripción |
+|------|------|------|------|
+| email | string | Sí | Correo electrónico del usuario a consultar |
+| keywordKeys | string[] | No | Lista de claves de palabras clave a consultar |
+
+#### Respuesta (si posee)
+
+```json
+{
+  "success": true,
+  "data": {
+    "hasItem": true,
+    "itemTokens": ["암호화된_아이템_ID_1", "암호화된_아이템_ID_2"],
+    "keywords": {
+      "날짜": "2025-01-15",
+      "금액": "50000"
+    }
+  }
+}
+```
+
+#### Respuesta (si no posee)
+
+```json
+{
+  "success": true,
+  "data": {
+    "hasItem": false
+  }
+}
+```
+
+#### Campos de la respuesta
+
+| Campo | Tipo | Descripción |
+|------|------|------|
+| hasItem | boolean | Posesión o no |
+| itemTokens | string[] | Lista de tokens de elementos poseídos (solo si posee) |
+| keywords | object | Valores de las palabras clave solicitadas (solo si se solicitan) |
+
+#### Ejemplo de uso
+
+Verificación de la posesión y el estado de uso de un usuario determinado en un sistema de cupones/entradas:
+
+```bash
+# 쿠폰 발급 여부 확인
+curl -X POST \
+     -H "Authorization: Bearer inv_xxx" \
+     -H "Content-Type: application/json" \
+     -d '{"email": "customer@example.com", "keywordKeys": ["발급일", "사용여부"]}' \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{쿠폰템플릿토큰}/check-ownership"
+```
+
+</div>
+</details>
+
+<details>
+<summary><h3>POST /templates/{token}/log - Añadir logs y actualizar la plantilla</h3></summary>
+<div class="manual-content" markdown="1">
+
+Añade logs (feed) a una plantilla compartida o actualiza las palabras clave, los permisos o la imagen. Se envía una notificación push a los usuarios que hayan clonado esta plantilla.
 
 #### Solicitud
 
@@ -376,12 +677,13 @@ curl -X POST \
      -H "Content-Type: application/json" \
      -d '{
        "logs": [
-         {"content": "Nueva actualizacion publicada con correcciones de errores"},
-         {"content": "Blog:https://example.com/update-notes"}
+         {"content": "붉은사막 최종 트레일러 공개 https://youtu.be/abc"},
+         {"content": "블로그:https://example.com/update-notes"}
        ],
        "keywordUpdates": [
-         {"action": "upsert", "key": "version", "value": "2.1.0"},
-         {"action": "delete", "key": "beta"}
+         {"action": "upsert", "key": "출시일", "value": "2026-03-28"},
+         {"action": "upsert", "key": "가격", "value": "69,800원"},
+         {"action": "delete", "key": "베타일정"}
        ],
        "permissionUpdates": {
          "logPermission": "owner",
@@ -392,32 +694,32 @@ curl -X POST \
      "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/log"
 ```
 
-#### Cuerpo de solicitud
+#### Cuerpo de la solicitud
 
-| Campo | Tipo | Requerido | Descripcion |
-|-------|------|-----------|-------------|
-| logs | array | No* | Entradas de registro a agregar (max 10) |
-| logs[].content | string | Si | Contenido del registro (1-256 caracteres) |
-| keywordUpdates | array | No* | Cambios de palabras clave (max 20) |
-| keywordUpdates[].action | string | Si | "upsert" o "delete" |
-| keywordUpdates[].key | string | Si | Clave de palabra clave (1-8 caracteres) |
-| keywordUpdates[].value | string | No | Valor (requerido para upsert, `key:value` combinado máx. 256 caracteres) |
-| permissionUpdates | object | No* | Cambios de permisos |
+| Campo | Tipo | Requerido | Descripción |
+|------|------|------|------|
+| logs | array | Condicional* | Lista de logs a añadir (máx. 10) |
+| logs[].content | string | Sí | Contenido del log (1~256 caracteres) |
+| keywordUpdates | array | Condicional* | Lista de cambios de palabras clave (máx. 20) |
+| keywordUpdates[].action | string | Sí | `"upsert"` o `"delete"` |
+| keywordUpdates[].key | string | Sí | Clave de la palabra clave (1~8 caracteres) |
+| keywordUpdates[].value | string | Si upsert | Valor de la palabra clave (`key:value` combinado máx. 256 caracteres) |
+| permissionUpdates | object | Condicional* | Cambio de permisos |
 | permissionUpdates.logPermission | string | No | "owner" \| "author" \| "none" |
 | permissionUpdates.keywordPermission | string | No | "owner" \| "author" \| "none" |
-| imageUrl | string | No* | Nueva URL de imagen (reprocesada a 512x512 WebP) |
+| imageUrl | string | Condicional* | Nueva URL de imagen (reprocesada como WebP 512x512) |
 
-> \* Se debe proporcionar al menos uno de `logs`, `keywordUpdates`, `permissionUpdates` o `imageUrl`.
+> \* Debe proporcionarse al menos uno de `logs`, `keywordUpdates`, `permissionUpdates`, `imageUrl`.
 
-#### Formato del contenido de registros
+#### Formato del contenido de los logs
 
-Los registros con formato `clave:valor` (clave de 1-8 caracteres) se muestran como tarjetas de info/URL en la aplicacion:
+Los logs con formato `키:값` (clave de 1~8 caracteres) se renderizan en la aplicación como tarjetas de información/URL:
 
-| Formato | Visualizacion |
-|---------|---------------|
-| `texto plano` | Comentario de texto normal |
-| `clave:valor` | Tarjeta de informacion (visualizacion clave-valor) |
-| `clave:https://...` | Tarjeta URL (enlace clicable) |
+| Formato | Renderizado |
+|------|--------|
+| `일반 텍스트` | Comentario de texto normal |
+| `키:값` | Tarjeta de información (visualización clave-valor) |
+| `키:https://...` | Tarjeta de URL (enlace clicable) |
 
 #### Respuesta
 
@@ -426,112 +728,82 @@ Los registros con formato `clave:valor` (clave de 1-8 caracteres) se muestran co
   "success": true,
   "data": {
     "logsAdded": 2,
-    "keywordsUpdated": 1,
+    "keywordsUpdated": 2,
     "keywordsDeleted": 1,
-    "notificationsSent": 3
+    "notificationsSent": 5
   }
 }
 ```
 
-</div>
-</details>
+#### Ejemplo de uso
 
-<details>
-<summary><h3>POST /templates/{token}/check-ownership - Verificar propiedad de elementos clonados</h3></summary>
-<div class="manual-content" markdown="1">
-
-Verifique si un usuario específico posee elementos clonados de esta plantilla.
-
-**Seguridad**: Solo puede consultar plantillas que posea. No puede consultar plantillas de otros usuarios.
-
-#### Solicitud
+Actualizar periódicamente las palabras clave de un elemento de seguimiento de datos y añadir un feed de noticias:
 
 ```bash
+# 유류비 데이터 갱신 + 뉴스 로그 추가
 curl -X POST \
      -H "Authorization: Bearer inv_xxx" \
      -H "Content-Type: application/json" \
      -d '{
-       "email": "user@example.com",
-       "keywordKeys": ["fecha", "monto"]
+       "keywordUpdates": [
+         {"action": "upsert", "key": "휘발유", "value": "1,680원"},
+         {"action": "upsert", "key": "경유", "value": "1,520원"}
+       ],
+       "logs": [
+         {"content": "3월 둘째주 전국 평균 유류비 소폭 상승 https://news.example.com/fuel"}
+       ]
      }' \
-     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/check-ownership"
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/templates/{token}/log"
 ```
-
-#### Cuerpo de solicitud
-
-| Campo | Tipo | Requerido | Descripcion |
-|-------|------|-----------|-------------|
-| email | string | Si | Correo electrónico del usuario a verificar |
-| keywordKeys | string[] | X | Lista de claves de palabras clave a recuperar |
-
-#### Respuesta
-
-```json
-{
-  "success": true,
-  "data": {
-    "hasItem": true,
-    "itemTokens": ["id_articulo_cifrado_1", "id_articulo_cifrado_2"],
-    "keywords": {
-      "fecha": "2025-01-15",
-      "monto": "50000"
-    }
-  }
-}
-```
-
-#### Campos de respuesta
-
-| Campo | Tipo | Descripcion |
-|-------|------|-------------|
-| hasItem | boolean | Estado de propiedad |
-| itemTokens | string[] | Tokens de elementos poseídos (solo si posee) |
-| keywords | object | Valores de palabras clave solicitados (solo si se solicita) |
 
 </div>
 </details>
 
 ---
 
-## Codigos de error
+## Códigos de error
 
-Cuando una solicitud API falla, los errores se devuelven en este formato:
+Si una solicitud a la API falla, se devuelve un error con el siguiente formato:
 
 ```json
 {
   "success": false,
   "error": {
     "code": "ERROR_CODE",
-    "message": "Descripcion del error"
+    "message": "에러 설명"
   }
 }
 ```
 
-### Lista de codigos de error
+### Lista de códigos de error
 
-| Codigo | Estado HTTP | Descripcion |
-|--------|-------------|-------------|
-| INVALID_API_KEY | 401 | Clave API invalida |
-| API_KEY_EXPIRED | 401 | Clave API expirada |
-| API_DISABLED | 403 | API deshabilitada |
-| RATE_LIMIT_EXCEEDED | 429 | Limite de solicitudes excedido |
-| VALIDATION_ERROR | 400 | Entrada invalida |
-| INVALID_TOKEN | 400 | Token invalido |
+| Código | Estado HTTP | Descripción |
+|------|-----------|------|
+| INVALID_API_KEY | 401 | Clave API inválida |
+| API_KEY_EXPIRED | 401 | Clave API caducada |
+| API_DISABLED | 403 | API desactivada |
+| RATE_LIMIT_EXCEEDED | 429 | Límite de solicitudes superado |
+| SCOPE_DENIED | 403 | Permisos insuficientes |
+| VALIDATION_ERROR | 400 | Error en los datos de entrada |
+| INVALID_TOKEN | 400 | Token inválido |
 | NOT_FOUND | 404 | Recurso no encontrado |
-| FORBIDDEN | 403 | Acceso denegado |
+| FORBIDDEN | 403 | Acceso denegado (sin propiedad) |
 | RECIPIENT_NOT_FOUND | 404 | Destinatario no encontrado |
+| INVALID_IMAGE | 400 | Error en la URL de la imagen |
+| ALREADY_SHARED | 400 | Plantilla ya en compartición |
+| NOT_SHARED | 400 | Plantilla no compartida actualmente |
 
 ---
 
 ## Recomendaciones de seguridad
 
-1. **Proteger claves API**: Nunca exponer claves API en repositorios publicos o codigo cliente
-2. **Usar HTTPS**: Todas las solicitudes se transmiten via HTTPS
-3. **Rotacion de claves**: Regenerar claves API periodicamente
-4. **Privilegio minimo**: Solo realizar operaciones necesarias
+1. **Proteja su clave API**: no exponga la clave API en repositorios públicos ni en código cliente
+2. **Use HTTPS**: todas las solicitudes se transmiten por HTTPS
+3. **Rotación de claves**: regenere periódicamente su clave API
+4. **Privilegio mínimo**: realice solo las operaciones necesarias
 
 ---
 
 ## Contacto
 
-Si tiene problemas usando la API, contactenos a traves de la pagina [Sugerencias](/inventory/suggest/es/).
+Si tiene problemas con el uso de la API, contáctenos a través de la página [Enviar sugerencia](/inventory/suggest/).

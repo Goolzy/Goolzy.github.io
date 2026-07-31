@@ -25,83 +25,60 @@ translations:
 
 ## 📖 Manuel d'utilisation
 
-Découvrez toutes les fonctionnalités de l'application Inventory en détail.
+Découvrez en détail les fonctionnalités de l'application Inventory.
 
 ---
 
 <details open>
-<summary><h3 id="paper">📦 Système de Papier</h3></summary>
+<summary><h3 id="home">🏠 Premiers pas — Écran d'accueil et onglets</h3></summary>
 <div class="manual-content" markdown="1">
 
-Dans Inventory, le **Papier** est la monnaie principale utilisée pour créer des objets.
+Le bas de l'application comporte jusqu'à 5 onglets.
 
-#### Qu'est-ce que le Papier ?
-- **1 Papier** est consommé lors de la création d'un objet
-- Vous ne pouvez pas créer de nouveaux objets sans Papier
+| Onglet | Description |
+|------|------|
+| **Explorer** | Parcourez les éléments de base publics et ajoutez-les à votre inventaire |
+| **Messages** | Liste de vos conversations 1:1 avec d'autres utilisateurs |
+| **Inventaire** | L'espace où sont conservés les éléments que vous possédez |
+| **Tampons** | Gérez à part les tampons personnels créés avec « Créer un tampon » |
+| **Boutique** | Achetez du papier, des tampons et des badges |
 
-#### Comment obtenir du Papier
+#### Onglets affichés sous conditions
 
-| Méthode | Quantité | Note |
-|---------|----------|------|
-| Nouvelle inscription | 10 Papiers + 3 Tampons | Première fois uniquement |
-| Liaison Google | +10 feuilles | Pour les utilisateurs existants |
-| Liaison Apple | +10 feuilles | Pour les utilisateurs existants |
+- L'onglet **Inventaire** apparaît lorsque vous possédez au moins un élément.
+- L'onglet **Tampons** apparaît lorsque vous avez des tampons personnels créés avec « Créer un tampon ».
+- Explorer, Messages et Boutique sont toujours visibles.
+
+#### Écran de démarrage
+
+À l'ouverture de l'application, vous démarrez dans l'**Inventaire** si vous possédez des éléments, sinon dans **Explorer**.
+
+> 💡 Sur ordinateur, vous pouvez changer rapidement d'onglet avec la touche Ctrl et une touche numérique.
+
+</div>
+</details>
+
+---
+
+<details>
+<summary><h3 id="paper">📦 Papier</h3></summary>
+<div class="manual-content" markdown="1">
+
+Le **papier** est la monnaie utilisée lorsque vous faites d'un élément de base votre **copie papier (scrap)**.
+
+#### Comment obtenir du papier
+
+| Méthode | Quantité | Remarque |
+|------|--------|------|
+| Lier un compte Google · Apple | 10 feuilles | Une fois par compte lié |
 | Achat en boutique | 10 feuilles | Achat intégré |
+| Récompense de recyclage | 1 feuille | Supprimez 10 feuilles inutilisées pour recevoir 1 feuille neuve |
 
-> 💡 **Astuce** : Les utilisateurs existants peuvent obtenir du Papier supplémentaire en liant de nouveaux comptes sociaux !
+#### Utiliser le papier
 
-</div>
-</details>
-
----
-
-<details>
-<summary><h3 id="create-item">📄 Créer des Articles</h3></summary>
-<div class="manual-content" markdown="1">
-
-Sélectionnez du papier pour créer des documents de journal. Selon le nombre de papiers sélectionnés, vous pouvez créer des journaux privés ou partagés.
-
-| Type de Journal | Papiers | Objectif |
-|-----------------|---------|----------|
-| **Journal Privé** | 1 | Notes personnelles, journal intime, messages unidirectionnels |
-| **Journal Partagé** | 2 ou plus | Conversation bidirectionnelle, communication |
-
-<h4 id="private-log">Créer un Article de Journal Privé</h4>
-
-1. Sélectionnez **1 Papier** sur l'écran d'accueil
-2. Sélectionnez **"Créer un Nouvel Article (Journal Privé)"** dans le menu du bas
-3. Entrez les informations de l'article :
-   - Titre (obligatoire)
-   - Contenu
-   - Image (optionnel)
-   - Date de Début (optionnel)
-   - Date d'Expiration (optionnel)
-4. Appuyez sur **Enregistrer** et 1 Papier sera consommé pour créer le document
-
-> 💡 **Journal Privé** : Seul vous pouvez voir les journaux que vous écrivez. Après l'envoi, seul le destinataire peut ajouter des journaux.
-
-<h4 id="shared-log">Créer un Article de Journal Partagé</h4>
-
-1. Sélectionnez **2 Papiers ou plus** sur l'écran d'accueil
-2. Sélectionnez **"Créer un Nouvel Article (Journal Partagé)"** dans le menu du bas
-3. Entrez les informations de l'article :
-   - Titre (obligatoire)
-   - Contenu
-   - Image (optionnel)
-   - Date de Début (optionnel)
-   - Date d'Expiration (optionnel)
-4. Appuyez sur **Enregistrer** et des documents égaux au nombre de papiers sélectionnés seront créés
-
-> 💡 **Journal Partagé** : Les documents créés partagent le même espace de commentaires. Envoyez des documents à différentes personnes pour voir les journaux de chacun en temps réel, comme une discussion.
-
-<h4 id="dates">Date de Début et Date d'Expiration</h4>
-
-| Paramètre | Description |
-|-----------|-------------|
-| **Date de Début** | Le contenu sera flouté jusqu'à cette date |
-| **Date d'Expiration** | Le contenu sera flouté et l'ajout de journaux sera désactivé après cette date |
-
-Si non défini, il sera immédiatement visible et permanent.
+- **1 feuille** est consommée lors de la copie d'un élément de base.
+- Si vous manquez de papier, achetez-en en boutique ou liez un compte pour en recevoir.
+- Le papier pas encore utilisé pour une copie peut aussi être transféré à d'autres utilisateurs.
 
 </div>
 </details>
@@ -109,43 +86,57 @@ Si non défini, il sera immédiatement visible et permanent.
 ---
 
 <details>
-<summary><h3 id="lock">🔒 Verrouillage de Document</h3></summary>
+<summary><h3 id="stamp">🔖 Tampons</h3></summary>
 <div class="manual-content" markdown="1">
 
-Vous pouvez protéger les documents en définissant un mot de passe.
+Un **tampon** est un élément qui vous permet de créer votre propre page d'informations et de la transférer à d'autres utilisateurs.
 
-#### Qu'est-ce que le Verrouillage de Document ?
+#### Créer un tampon
 
-Un document verrouillé ne peut être consulté qu'après avoir saisi le mot de passe correct.
+1. Dans votre inventaire, sélectionnez un tampon vierge pas encore créé.
+2. Sélectionnez **« Créer un tampon »** et saisissez le **nom** du tampon. (32 caractères max.)
+3. Une fois le nom confirmé, la création est définitive et, ensuite, **le nom ne peut plus être modifié.**
+4. Dans l'éditeur qui s'ouvre ensuite, disposez images, textes et éléments pour composer la page d'informations, puis enregistrez.
 
-| Statut | Description |
-|--------|-------------|
-| **Déverrouillé** | Tout le monde peut voir le contenu |
-| **Verrouillé** | Contenu visible uniquement avec mot de passe |
+> ⚠️ La création est finalisée dès que vous confirmez le nom. Dans l'éditeur, seuls la mise en page et les images peuvent être modifiées — le nom est fixe.
 
-#### Comment Verrouiller
+#### Gestion dans l'onglet Tampons
 
-1. Sélectionnez les **documents** que vous souhaitez verrouiller sur l'écran d'accueil (sélection multiple possible)
-2. Sélectionnez **« Verrouiller les objets »** dans le menu inférieur
-3. Entrez un mot de passe numérique (jusqu'à 16 chiffres)
-4. Entrez le même mot de passe à nouveau pour confirmer
-5. Une fois verrouillés, les objets afficheront une **icône de cadenas** et un effet de **niveaux de gris**
+Les tampons personnels créés sont regroupés dans l'onglet **Tampons**. Appuyez sur le **bouton ≡** à droite de chaque tampon pour ouvrir son menu.
 
-#### Comment Déverrouiller
+| Menu | Description |
+|------|------|
+| **Modifier** | Modifier la page d'informations et les images (uniquement pour les originaux que vous avez créés) |
+| **Vérification de propriété** | Vérifier si un utilisateur donné possède un élément créé avec ce tampon |
+| **Transférer** | Transférer un élément à un autre utilisateur |
 
-1. Appuyez sur un document verrouillé pour accéder à l'écran de détail
-2. Une boîte de dialogue de saisie de mot de passe apparaîtra
-3. Entrez le mot de passe correct pour déverrouiller
-4. Une fois déverrouillé, le verrouillage est définitivement supprimé (pour verrouiller à nouveau, définir un nouveau mot de passe)
+- Faites glisser une entrée de la liste sur le côté pour la **confirmer (marquer comme lue)** ou **abandonner sa gestion**.
 
-> ⚠️ **Avertissement** : Si vous oubliez votre mot de passe, il ne peut pas être récupéré. Les documents verrouillés peuvent uniquement être **supprimés**.
+#### Copie (scrap)
 
-#### Caractéristiques du Verrouillage
+Quand vous trouvez dans Explorer un élément de base qui vous plaît, utilisez le **bouton Scrap** de l'écran de détail pour l'ajouter à votre inventaire.
 
-- Les mots de passe sont **stockés dans le cloud**
-- L'état de verrouillage est maintenu même lors du transfert d'objets à d'autres personnes
-- Les documents verrouillés n'apparaissent pas dans les résultats de recherche
-- Les objets verrouillés peuvent toujours être supprimés
+- La copie consomme **1 feuille de papier**.
+- Chaque élément de base ne peut être copié **qu'une seule fois**.
+- La copie conserve les informations telles qu'elles étaient au moment de la copie — elle ne change pas automatiquement, même si l'original est modifié plus tard.
+
+#### Recevoir les dernières infos
+
+Quand l'original est mis à jour, un bouton **« Recevoir les dernières infos »** apparaît sur votre copie. Appuyez dessus pour mettre à jour vers le contenu le plus récent ; vous pouvez aussi laisser la mise à jour automatique activée.
+
+#### Transférer
+
+Les éléments créés avec vos tampons peuvent être transférés à d'autres utilisateurs. Désignez le destinataire en saisissant son e-mail ou son nom de domaine, ou par scan QR.
+
+Lors de l'envoi d'un transfert, le destinataire reçoit une **notification toast** ; en appuyant sur **Recevoir**, la copie transférée entre dans son inventaire.
+
+#### Abandonner la gestion
+
+Pour les tampons que vous ne souhaitez plus gérer, faites-les glisser dans la liste pour **abandonner la gestion**.
+
+- Les pages et conversations des utilisateurs qui ont déjà copié restent intactes.
+- Le tampon disparaît de votre liste et **cette action est irréversible.**
+- Lorsque **10 fragments de tampon** issus de tampons abandonnés ou supprimés sont réunis, vous recevez **1 nouveau tampon** en retour.
 
 </div>
 </details>
@@ -153,73 +144,21 @@ Un document verrouillé ne peut être consulté qu'après avoir saisi le mot de 
 ---
 
 <details>
-<summary><h3 id="clip">📎 Système Clip</h3></summary>
+<summary><h3 id="explore">🔍 Explorer</h3></summary>
 <div class="manual-content" markdown="1">
 
-**Clip** est une fonctionnalité qui regroupe plusieurs documents ensemble pour une gestion plus facile.
+Découvrez les éléments de base publics dans l'onglet **Explorer**.
 
-#### Qu'est-ce qu'un Clip ?
+#### Parcourir
 
-Les clips vous permettent de gérer des documents liés comme un seul groupe.
+- En haut s'affichent des catégories thématiques comme **Jeux · Tech · Films · Cuisine**.
+- Les rangées **Tendances du moment** · **Nouveautés** vous montrent les contenus populaires et récents.
 
-| État | Description |
-|------|-------------|
-| **Documents Individuels** | Documents gérés séparément |
-| **Documents Clipsés** | Gérés comme un groupe, déplacés/transférés ensemble |
+#### Recherche
 
-#### Créer un Clip
-
-1. Sélectionnez **2 documents ou plus** sur l'écran d'accueil
-2. Appuyez sur **"Clipser ensemble"** dans le menu du bas
-3. Les documents sélectionnés sont regroupés en un seul clip
-4. Les documents clipsés affichent une **icône clip (📎)** dans le coin supérieur droit
-
-> 💡 **Astuce** : Le premier document sélectionné devient la **couverture** du clip !
-
-#### Voir les Infos du Clip
-
-1. Entrez dans l'**écran de détail** d'un document clipsé
-2. Appuyez sur le bouton **"Infos Clip"**
-3. Consultez la liste de tous les éléments du clip
-
-#### Réorganiser les Éléments dans un Clip
-
-Vous pouvez modifier l'ordre des éléments dans l'écran d'infos du clip :
-
-1. Appuyez longuement sur la **poignée de glissement (⋮⋮)** de l'élément à déplacer
-2. Faites glisser vers la position souhaitée
-3. Relâchez pour sauvegarder l'ordre
-
-> ⚠️ **Note** : La couverture (premier élément) ne peut pas être réorganisée.
-
-#### Exclure des Éléments d'un Clip
-
-Vous pouvez retirer des éléments spécifiques dans l'écran d'infos du clip :
-
-1. Appuyez sur le bouton **"Exclure"** à côté de l'élément
-2. Confirmez pour retirer l'élément du clip
-3. L'élément retiré redevient un document individuel
-
-> ⚠️ **Note** : La couverture ne peut pas être exclue. S'il ne reste que 2 éléments et que vous en excluez 1, le clip se dissout automatiquement.
-
-#### Défaire un Clip
-
-1. Sélectionnez le document clipsé
-2. Appuyez sur **"Défaire le clip"** dans le menu du bas
-3. Tous les documents sont séparés en documents individuels
-
-#### Transférer des Clips
-
-- Quand vous envoyez un document clipsé, le **groupe entier** est transféré ensemble
-- Les destinataires acceptent/refusent les clips en tant que **groupe**
-- Les éléments individuels d'un clip ne peuvent pas être envoyés séparément
-
-#### Caractéristiques des Clips
-
-- Les documents clipsés sont **déplacés/transférés ensemble**
-- Définir un verrou sur la couverture protège tout le clip
-- L'icône clip (📎) permet d'identifier facilement l'état du clip
-- Au moins 2 documents sont nécessaires pour maintenir un clip
+1. Saisissez un mot-clé dans la barre de recherche en haut.
+2. Pendant la saisie, des suggestions et des résultats s'affichent en temps réel.
+3. Appuyez sur une carte de résultat pour ouvrir l'écran de détail, où vous pouvez faire un scrap.
 
 </div>
 </details>
@@ -227,40 +166,30 @@ Vous pouvez retirer des éléments spécifiques dans l'écran d'infos du clip :
 ---
 
 <details>
-<summary><h3 id="badge">🏷️ Système de Badge</h3></summary>
+<summary><h3 id="dm">💬 Messages directs</h3></summary>
 <div class="manual-content" markdown="1">
 
-Un **Badge** est une identité unique que vous pouvez utiliser dans l'application.
+Vous pouvez avoir des **conversations directes en 1:1** avec d'autres utilisateurs.
 
-#### Qu'est-ce qu'un Badge ?
+#### Démarrer une conversation
 
-Lorsque vous gravez un nom de domaine sur un badge, toutes vos activités dans l'application seront affichées avec votre **nom de domaine gravé** au lieu de votre email.
+Il existe trois façons de démarrer une conversation.
 
-Exemples : `MaMarque`, `JeanDupont`, `Entreprise2025`
+1. Appuyez sur l'**auteur d'un commentaire dans un contenu Explorer**, puis sur **Démarrer un message** dans la fenêtre de profil
+2. Saisissez l'e-mail ou le nom de domaine de l'autre personne dans la **barre de recherche de l'onglet Messages**
+3. Trouvez la personne par **scan QR** (le scan remplit automatiquement la barre de recherche)
 
-#### Graver un Badge
+- Lorsque vous engagez une conversation, elle démarre quand **l'autre personne accepte**. Si vous vous êtes sollicités mutuellement ou avez déjà conversé auparavant, elle reprend directement sans acceptation.
+- Si l'e-mail appartient à quelqu'un qui n'utilise pas encore l'application, vous pouvez lui envoyer un **e-mail d'invitation** contenant un lien d'installation et un QR code.
 
-1. Achetez un badge dans la boutique (état non utilisé)
-2. Appuyez sur le badge → Sélectionnez le menu **"Graver"**
-3. Entrez le nom de domaine souhaité (max 32 caractères)
-   - Les caractères et chiffres de toutes les langues sont autorisés
-   - Les caractères spéciaux et emojis ne sont pas autorisés
-4. Cliquez sur **"Vérifier la disponibilité du domaine"** pour vérifier
-5. Joignez éventuellement une image 128x128
-6. Cliquez sur **"Graver"** pour terminer
+#### Onglet Messages
 
-> ⚠️ **Attention** : Une fois gravé, le nom de domaine et l'image **ne peuvent plus être modifiés de façon permanente**. Choisissez avec soin !
+- Vos conversations s'affichent en liste, et les messages non lus sont signalés par un compteur.
+- Faites glisser une entrée sur le côté pour la marquer comme lue ou supprimer la conversation. (Elle n'est supprimée que de votre côté — l'historique de l'autre personne est conservé.)
 
-#### Équiper/Déséquiper un Badge
+#### Signaler · Bloquer
 
-- **Équipé** : Votre nom de domaine gravé sera affiché pour toutes les activités
-- **Déséquipé** : Votre email par défaut sera à nouveau affiché
-- Même si vous possédez plusieurs badges, un seul peut être équipé à la fois
-
-#### Affichage de la carte d'inventaire
-
-Les badges gravés (état actif) affichent un aperçu de l'image gravée en haut à droite de la carte d'inventaire.
-Cela vous permet d'identifier rapidement à quel domaine appartient le badge.
+Depuis la fenêtre de profil, vous pouvez **signaler** ou **bloquer** quelqu'un. Le déblocage se fait dans la liste des personnes bloquées, dans les Réglages.
 
 </div>
 </details>
@@ -268,67 +197,32 @@ Cela vous permet d'identifier rapidement à quel domaine appartient le badge.
 ---
 
 <details>
-<summary><h3 id="stamp">🔖 Système de Tampon</h3></summary>
+<summary><h3 id="chat-media">🖼️ Photos et vidéos dans le chat</h3></summary>
 <div class="manual-content" markdown="1">
 
-Un **Tampon** est un objet qui vous permet de créer des modèles et de les partager avec d'autres.
+Vous pouvez joindre des photos et des vidéos aux messages et aux chats communautaires.
 
-#### Affichage de la carte d'inventaire
+#### Envoyer
 
-Les tampons avec modèles (état actif) sont affichés de manière spéciale dans l'inventaire :
-- **Arrière-plan** : Image du modèle affichée à 33% d'opacité
-- **Premier plan** : Image du tampon gravé
+1. Dans l'onglet **Médias** de la zone de saisie, appuyez sur le bouton **Photo** ou **Vidéo**.
+2. En sélectionnant plusieurs fichiers, ils sont placés sur la scène ; vous pouvez les réordonner par glisser-déposer ou les supprimer individuellement.
+3. Appuyez sur Envoyer pour lancer le téléversement — le message apparaît immédiatement dans la conversation, sans attente.
 
-Cela vous permet d'identifier rapidement de quel modèle il s'agit.
+> 💡 Sur ordinateur, seules les pièces jointes photo sont prises en charge.
 
-#### Créer un modèle de Tampon
+#### Galerie (plusieurs éléments)
 
-1. Achetez un tampon dans la boutique (état non utilisé)
-2. Appuyez sur le tampon → Sélectionnez le menu **"Créer un nouveau modèle"**
-3. Entrez les informations du modèle :
-   - **Image** (obligatoire)
-   - **Titre** (max 32 caractères)
-   - **Contenu** (max 1024 caractères)
-   - **Date de début** (optionnel) - Contenu masqué jusqu'à cette date
-   - **Date d'expiration** (optionnel) - Ajout de journaux désactivé après
-   - **Mode journal** - Journal solo ou Journal partagé
-4. Cliquez sur **"Créer le modèle"** pour terminer
+- Vous pouvez regrouper **jusqu'à 16** éléments en collage dans un seul message.
+- Appuyez sur une cellule pour ouvrir la visionneuse en grand format ; vous pouvez aussi tout enregistrer.
 
-#### Dupliquer un Tampon
+#### Montage vidéo
 
-Lorsque vous sélectionnez un tampon activé (modèle) et du papier ensemble, le menu **"Dupliquer le modèle"** apparaît.
+- Les vidéos peuvent être envoyées jusqu'à **25 Mo · 60 secondes**.
+- Au-delà, utilisez le **montage vidéo** pour découper la partie souhaitée. Une jauge indique la taille estimée du fichier.
 
-- 1 Papier est consommé
-- Un nouvel objet avec le même modèle est créé
-- En mode journal partagé, il utilise le même espace partagé que l'original
+#### Aperçu de lien
 
-#### Partager Votre Modèle
-
-Vous pouvez partager votre modèle de tampon pour que d'autres utilisateurs puissent le rechercher et le cloner.
-
-1. Appuyez sur un tampon activé (modèle) → Sélectionnez **"Paramètres de partage"**
-2. Entrez les informations de partage:
-   - **Description** - Une courte phrase décrivant le modèle
-   - **Tags** - Mots-clés pour la recherche (séparés par des virgules)
-   - **Durée de partage** - Combien de temps le partage restera actif
-3. Cliquez sur **"Démarrer le partage"** pour terminer
-
-Les modèles partagés peuvent être trouvés et clonés par d'autres utilisateurs via la recherche par tags.
-
-> 💡 **Astuce**: Pour arrêter le partage, sélectionnez **"Arrêter le partage"** dans le même menu.
-
-#### Rechercher des Modèles Partagés
-
-Vous pouvez rechercher et cloner des modèles partagés par d'autres utilisateurs.
-
-1. Allez à l'écran Profil et sélectionnez **"Rechercher des modèles partagés"**
-2. Entrez des tags pour rechercher, ou appuyez sur les tags populaires/récents
-3. Appuyez sur un modèle dans les résultats de recherche pour voir les détails
-4. Cliquez sur le bouton **"Cloner"** pour cloner le modèle
-
-- Le clonage consomme 1 Papier
-- Le bouton de clonage est désactivé si vous n'avez pas de papier
-- Les objets clonés ont les mêmes informations de modèle que l'original
+Les liens insérés dans le chat s'affichent sous forme de carte d'aperçu avec titre et image. Pour les liens vidéo, appuyez sur la carte pour **lire la vidéo directement sur place**.
 
 </div>
 </details>
@@ -336,40 +230,16 @@ Vous pouvez rechercher et cloner des modèles partagés par d'autres utilisateur
 ---
 
 <details>
-<summary><h3 id="quick-input">⚡ Saisie Rapide</h3></summary>
+<summary><h3 id="emoticon">😊 Émoticônes</h3></summary>
 <div class="manual-content" markdown="1">
 
-Lors de l'ajout d'entrées de journal, appuyez sur le bouton `+` pour ouvrir le menu **Saisie Rapide** permettant une saisie facile d'informations spéciales.
+Ajoutez des **émoticônes** à vos conversations pour exprimer vos émotions.
 
-#### Types de Saisie Rapide
+1. Ouvrez l'onglet **Émoticônes** de la zone de saisie.
+2. Choisissez l'émoticône souhaitée dans une catégorie. (Les émoticônes récemment utilisées sont aussi regroupées.)
+3. Envoyez-la avec du texte, ou envoyez l'émoticône seule.
 
-| Type | Description | Exemple |
-|------|-------------|---------|
-| **Mot-clé** | Format Clé:Valeur | `État:Bon` |
-| **Date** | Date avec calcul J-J | J-5, Jour-J, J+3 |
-| **Téléphone** | Numéro de téléphone | Appel direct |
-| **Lieu** | Adresse/coordonnées | Ouvre l'app carte |
-| **Montant** | Format monétaire | Formatage auto |
-
-#### Actions Appui Long
-
-| Type de Carte | Action Appui Long |
-|--------------|------------------|
-| **📅 Date** | Définir/Supprimer alarme |
-| **📞 Téléphone** | Mobile: Appel direct, Bureau: Copier |
-| **📍 Lieu** | Mobile: Ouvrir la carte, Bureau: Copier |
-| **💰 Montant** | Copier dans le presse-papiers |
-
-<h4 id="alarm">Réglage d'Alarme de Date</h4>
-
-Appuyez longuement sur une carte de date pour définir une alarme :
-
-1. **Appui long** sur la carte de date
-2. Sélectionnez **Définir** dans la boîte de dialogue de confirmation
-3. Une fois définie, la couleur de la carte change et une icône 🔔 apparaît
-4. Appuyez à nouveau longuement pour supprimer l'alarme
-
-> 💡 **Astuce** : Les cartes de date affichent automatiquement le calcul J-J (ex : J-5, Jour-J, J+3)
+> 💡 Une émoticône envoyée seule s'affiche en grand, sans bulle, et se remarque davantage.
 
 </div>
 </details>
@@ -377,86 +247,16 @@ Appuyez longuement sur une carte de date pour définir une alarme :
 ---
 
 <details>
-<summary><h3 id="log">📝 Système de Journal</h3></summary>
+<summary><h3 id="privacy">🔒 Protection de la vie privée</h3></summary>
 <div class="manual-content" markdown="1">
 
-Les **Journaux** sont des enregistrements que vous pouvez ajouter aux objets ou modèles de tampon.
+Votre adresse e-mail est protégée contre toute exposition directe.
 
-#### Modes de Journal
+- Les **utilisateurs portant un badge** sont affichés par leur **nom de domaine** au lieu de leur e-mail, et leur QR code est également généré à partir du domaine.
+- L'e-mail d'un **utilisateur sans badge** est représenté par un **QR coloré**, reconnaissable uniquement par la personne qui le scanne directement.
+- Dans les **chats communautaires** vus par de nombreuses personnes, la partie finale de l'e-mail (après le @) est masquée pour les utilisateurs sans badge de domaine.
 
-| Mode | Journal Solo | Journal Partagé |
-|------|--------------|-----------------|
-| **Emplacement** | Espace privé de chaque personne | Espace partagé basé sur le tampon original |
-| **Journaux visibles** | Uniquement vos propres journaux | Journaux de tous les propriétaires |
-| **Cas d'usage** | Journal personnel, notes | Collaboration, communauté |
-| **Si original supprimé** | Non affecté | Impossible d'ajouter des journaux (lecture seule) |
-
-#### Formats de Journal
-
-Vous pouvez utiliser différents formats lors de l'écriture de journaux.
-
-**Formats de base :**
-
-| Format | Description | Exemple |
-|--------|-------------|---------|
-| Texte simple | Affiché comme bulle de chat | `Inspection terminée aujourd'hui !` |
-| `clé:valeur` | Affiché comme carte info (clé 1-8 car.) | `statut:bon` |
-Utiliser la même clé plusieurs fois affiche `ancienne valeur → nouvelle valeur`.
-
-**Stylisation du texte :**
-
-| Format | Effet | Exemple |
-|--------|-------|---------|
-| `{[texte]}` | Carte couleur principale (fond + texte) | `{[Important]}` |
-| `[{texte}]` | Carte grise + texte couleur principale | `[{Attention}]` |
-| `[texte]` | Carte grise | `[Note]` |
-| `{texte}` | Texte couleur principale | `{Accent}` |
-| `(texte)` | Texte couleur secondaire | `(Info supplémentaire)` |
-| `"texte"` | **Gras** | `"Contenu important"` |
-| `'texte'` | <u>Souligné</u> | `'Partie mise en évidence'` |
-| `<texte>` | ~~Barré~~ | `<Contenu supprimé>` |
-
-> 💡 Les styles peuvent être imbriqués jusqu'à 3 niveaux. Exemple : `{["Gras couleur principale"]}`
-
-**Liens médias (Cartes URL) :**
-
-Lorsque vous entrez une URL dans un journal, elle s'affiche automatiquement comme **carte enrichie**.
-
-| Plateforme | Affichage | Exemple |
-|------------|-----------|---------|
-| **YouTube** | Miniature + Titre + Chaîne | `https://youtube.com/watch?v=...` |
-| **Spotify** | Pochette + Titre + Artiste | `https://open.spotify.com/track/...` |
-| **Google Drive** | Miniature fichier + Nom | `https://drive.google.com/file/d/...` |
-| **Dropbox** | Icône + Nom de fichier | `https://dropbox.com/s/...` |
-| **OneDrive** | Icône + Nom du service | `https://1drv.ms/...` |
-| **Pages web** | Miniature + Titre de page | `https://example.com` |
-
-- Utilisez le format `clé:URL` pour afficher avec un mot-clé (ex: `docs:https://youtube.com/...`)
-- **Touchez** la carte pour l'ouvrir dans l'app/navigateur externe
-- **Appuyez longuement** pour copier l'URL dans le presse-papiers
-
-> 💡 **Astuce** : Les fichiers Google Drive doivent être **partagés publiquement** pour afficher les miniatures.
-
-**Journaux automatiques :**
-
-Lorsqu'un objet est transféré, un journal de transfert est automatiquement enregistré :
-- Affiché au format `Expéditeur → Destinataire`
-- Si un badge est équipé, le nom de domaine est affiché
-
-#### Conditions de fin de journal partagé
-
-- **Tampon original supprimé** : Impossible d'ajouter des journaux partagés (lecture seule)
-- **Date d'expiration dépassée** : Impossible d'ajouter des journaux partagés (lecture seule)
-
-#### 🔔 Indicateur non lu
-
-Lorsque de nouveaux commentaires sont ajoutés à un journal partagé, la bordure de l'élément **pulse** dans la vue inventaire.
-
-- La pulsation démarre immédiatement lorsqu'un autre utilisateur ajoute un commentaire
-- La pulsation s'arrête lorsque vous ouvrez et consultez le document
-- L'état de lecture est sauvegardé dans le cloud et synchronisé sur tous les appareils
-
-> 💡 **Astuce** : Vérifiez les éléments qui pulsent pour ne jamais manquer de nouveaux commentaires !
+L'affichage du nom est répercuté en temps réel : porter ou retirer un badge s'applique automatiquement partout — listes de conversations, profils, etc.
 
 </div>
 </details>
@@ -464,23 +264,25 @@ Lorsque de nouveaux commentaires sont ajoutés à un journal partagé, la bordur
 ---
 
 <details>
-<summary><h3 id="ink">🎨 Système d'Encre</h3></summary>
+<summary><h3 id="badge">🏷️ Badges</h3></summary>
 <div class="manual-content" markdown="1">
 
-L'**Encre** est un objet qui change la couleur du thème de l'application.
+Gravez un nom de domaine sur un **badge**, et vous serez affiché sous ce nom dans l'application au lieu de votre e-mail.
 
-#### Comment utiliser
+#### Graver
 
-1. Appuyez sur une encre pour accéder à l'écran de détail
-2. Cliquez sur le bouton **"Changer de thème"**
-3. La couleur de toute l'application change immédiatement
+1. Achetez un badge en boutique, puis sélectionnez un badge pas encore gravé.
+2. Saisissez le **nom de domaine** souhaité. (32 caractères max., lettres et chiffres uniquement, pas de caractères spéciaux ni d'emoji)
+3. Vérifiez sa disponibilité avec la **vérification de doublon**.
+4. Joignez éventuellement une image 128×128, puis gravez.
 
-#### Types d'Encre
+> ⚠️ **Attention** : le **nom de domaine gravé est permanent** et ne peut pas être modifié. Si vous gravez avec une image, vous pourrez ensuite modifier l'image et les mots-clés ; si vous gravez sans image, aucune modification ultérieure ne sera possible.
 
-| Encre | Couleur |
-|-------|---------|
-| **Encre Noire** | Thème noir par défaut |
-| **Encre Dorée** | Thème doré luxueux |
+#### Porter / Retirer / Modifier
+
+- **Porté**, il vous affiche sous votre nom de domaine dans vos activités dans l'application. Un seul badge peut être porté à la fois.
+- **Retiré**, vous êtes de nouveau affiché avec votre e-mail par défaut.
+- **Modifier** permet de changer l'image et les mots-clés.
 
 </div>
 </details>
@@ -488,49 +290,16 @@ L'**Encre** est un objet qui change la couleur du thème de l'application.
 ---
 
 <details>
-<summary><h3 id="search">🔍 Fonction de Recherche</h3></summary>
+<summary><h3 id="folder">📂 Dossiers</h3></summary>
 <div class="manual-content" markdown="1">
 
-#### Recherche de base
+Quand les éléments s'accumulent, vous pouvez les organiser en **dossiers**.
 
-Appuyez sur la barre de recherche en haut pour activer le mode recherche.
+- Faites glisser un élément vers la zone **« Créer un nouveau dossier »** en bas pour créer un dossier.
+- Renommez un dossier par un appui long sur son en-tête. (16 caractères max.)
+- La flèche de l'en-tête replie ou déplie le dossier ; appuyer sur l'en-tête sélectionne d'un coup tous les éléments du dossier.
 
-- Les résultats sont filtrés en **temps réel** pendant la saisie
-- Appuyez sur le bouton X pour quitter le mode recherche
-
-#### Recherches récentes
-
-- Jusqu'à 5 recherches récentes sont sauvegardées
-- Appuyez sur une recherche récente pour remplir automatiquement
-- Supprimez individuellement avec le bouton X
-
-#### Enregistrer comme filtre
-
-Lorsque vous enregistrez un terme de recherche avec le bouton **"Définir comme filtre"** :
-
-- Il apparaît comme étiquette de filtre sous la barre de recherche
-- Appuyez sur l'étiquette pour filtrer instantanément
-- Supprimez le filtre avec le bouton X
-
-<h4 id="keyword">Agrégation de mots-clés</h4>
-
-Lorsqu'un filtre est défini et que vous sélectionnez des objets, les **valeurs de mots-clés des objets sélectionnés sont automatiquement agrégées**.
-
-**Agrégation de valeurs numériques :**
-- **Somme** et **moyenne** sont calculées pour les valeurs numériques du même mot-clé
-- Exemple : Sélection de `prix:1000`, `prix:2000`, `prix:3000`
-- Résultat : `Somme: 6000  Moyenne: 2000`
-
-**Agrégation de chaînes :**
-- Les valeurs de chaînes du même mot-clé sont **jointes par des espaces**
-- Exemple : Sélection de `tag:A`, `tag:B`, `tag:C`
-- Résultat : `A B C`
-
-**Copier les valeurs :**
-- **Appuyez longuement** sur une carte d'agrégation pour copier la valeur
-- Une notification apparaît lorsque la copie est terminée
-
-> 💡 **Exemple d'utilisation** : Calculez rapidement le prix total de plusieurs objets, ou copiez les tags associés en une fois.
+> 💡 Les dossiers ne sont enregistrés **que sur l'appareil en cours d'utilisation**. Les éléments eux-mêmes sont visibles sur tous vos appareils, mais l'organisation en dossiers peut différer selon l'appareil.
 
 </div>
 </details>
@@ -538,141 +307,20 @@ Lorsqu'un filtre est défini et que vous sélectionnez des objets, les **valeurs
 ---
 
 <details>
-<summary><h3 id="bottom-menu">📱 Badge du menu inférieur</h3></summary>
+<summary><h3 id="shop">🛒 Boutique</h3></summary>
 <div class="manual-content" markdown="1">
 
-Des badges rouges sur les icônes du menu inférieur indiquent l'état actuel.
+Vous pouvez acheter les articles nécessaires dans la boutique.
 
-| Menu | Signification du badge |
-|------|------------------------|
-| **Envoyer** | Nombre d'objets pouvant être envoyés (transférables parmi les sélectionnés) |
-| **Recevoir** | Nombre de transactions en attente (nécessitant acceptation/retour) |
-| **Action** | Nombre d'actions disponibles avec les objets sélectionnés |
+| Produit | Usage |
+|------|------|
+| **Papier** | Pour copier des éléments de base |
+| **Tampon** | Pour faire d'une page d'informations un tampon personnel |
+| **Badge** | Pour graver un nom de domaine |
 
-> 💡 Les numéros des badges s'animent avec un effet de bulle lorsqu'ils changent.
-
-</div>
-</details>
-
----
-
-<details>
-<summary><h3 id="transfer">📤 Envoyer des objets</h3></summary>
-<div class="manual-content" markdown="1">
-
-Vous pouvez transférer des objets lors de ventes d'occasion ou de cadeaux.
-
-#### Comment envoyer
-
-1. Sélectionnez **Envoyer** dans l'onglet du bas
-2. **Cochez** les objets à transférer (sélection multiple possible)
-3. Entrez l'email du destinataire
-4. Cliquez sur le bouton **Envoyer**
-
-#### Entrer l'email par QR Code
-
-Au lieu de taper l'email du destinataire, vous pouvez utiliser un QR code :
-
-1. Le destinataire affiche son QR code depuis son écran **Profil**
-2. L'expéditeur appuie sur le bouton **Scanner QR**
-3. Scannez le QR code avec la caméra
-4. L'email est automatiquement rempli
-
-> ⚠️ **Important** : Les objets transférés **disparaissent immédiatement** de votre inventaire. Les transferts ne peuvent pas être annulés.
-
-</div>
-</details>
-
----
-
-<details>
-<summary><h3 id="receive">📥 Recevoir des objets</h3></summary>
-<div class="manual-content" markdown="1">
-
-Vous pouvez recevoir des objets envoyés par d'autres.
-
-#### Comment recevoir
-
-1. Sélectionnez **Recevoir** dans l'onglet du bas
-2. La liste des objets reçus s'affiche
-3. Pour chaque objet :
-   - **Accepter** : Ajouté à votre inventaire
-   - **Retourner** : Renvoyé à l'expéditeur
-
-#### Notifications
-
-- Vous recevez des notifications push lors de l'arrivée de nouveaux objets (si activées)
-- L'onglet Recevoir affiche le nombre d'objets non acceptés
-
-</div>
-</details>
-
----
-
-<details>
-<summary><h3 id="shop">🛒 Utiliser la Boutique</h3></summary>
-<div class="manual-content" markdown="1">
-
-Vous pouvez acheter divers objets dans la boutique.
-
-#### Produits disponibles
-
-| Produit | Utilisation |
-|---------|-------------|
-| **Papier** | Pour créer des objets (consommable) |
-| **Tampon** | Pour créer des modèles |
-| **Badge** | Pour graver un domaine unique |
-| **Encre** | Pour changer la couleur du thème |
-
-#### Comment acheter
-
-1. Sélectionnez **Boutique** dans l'onglet du bas
-2. Appuyez sur le produit souhaité
-3. Procédez au paiement (App Store / Google Play)
-4. Livré automatiquement après le paiement
-
-> 💡 La boutique est disponible sur toutes les plateformes (iOS, Android, Windows, macOS).
-
-</div>
-</details>
-
----
-
-<details>
-<summary><h3 id="pocket">📂 Fonction Pocket</h3></summary>
-<div class="manual-content" markdown="1">
-
-Vous pouvez grouper les objets avec des pockets quand vous en avez beaucoup.
-
-#### Créer une Pocket
-
-1. Sélectionnez des objets
-2. Sélectionnez **"Créer une pocket"** dans le menu du bas
-3. Entrez le nom de la pocket (max 16 caractères)
-
-#### Caractéristiques des Pockets
-
-- Les pockets sont **enregistrées uniquement sur l'appareil**
-- La structure des pockets n'est pas visible sur les autres appareils
-- Les objets eux-mêmes sont stockés dans le cloud et visibles sur tous les appareils
-
-#### Réduire/Développer
-
-Utilisez le bouton fléché (▼/▲) à droite de l'en-tête de pocket pour réduire ou développer.
-
-- L'état réduit est conservé après le redémarrage de l'application
-- Toutes les pockets sont automatiquement développées pendant la recherche
-- Vous pouvez glisser des éléments vers des pockets réduites
-
-#### Tout sélectionner dans la Pocket
-
-Appuyez sur l'en-tête de pocket pour sélectionner/désélectionner tous les éléments de cette pocket.
-
-| Indicateur | Signification |
-|------------|---------------|
-| ○ (Cercle vide) | Aucun sélectionné |
-| ◐ (Demi-cercle) | Certains sélectionnés |
-| ● (Cercle plein) | Tous sélectionnés |
+1. Appuyez sur le produit souhaité dans l'onglet Boutique.
+2. Consultez les informations produit et les conditions de remboursement, puis acceptez.
+3. Une fois le paiement effectué, l'article est attribué automatiquement.
 
 </div>
 </details>
@@ -683,24 +331,25 @@ Appuyez sur l'en-tête de pocket pour sélectionner/désélectionner tous les é
 <summary><h3 id="language">🌍 Changer de langue</h3></summary>
 <div class="manual-content" markdown="1">
 
-7 langues sont prises en charge :
+8 langues sont prises en charge :
+
 - 🇰🇷 한국어
 - 🇺🇸 English
 - 🇯🇵 日本語
+- 🇨🇳 中文(简体)
 - 🇩🇪 Deutsch
 - 🇫🇷 Français
 - 🇪🇸 Español
 - 🇧🇷 Português
 
-**Comment changer :**
-Paramètres → Langue → Sélectionnez la langue souhaitée
+Sélectionnez dans **Réglages → Langue** ; le changement s'applique immédiatement.
 
 </div>
 </details>
 
 ---
 
-> 📚 **D'autres questions ?** Consultez la [FAQ](/inventory/faq/fr/) ou contactez-nous via [Suggestions](/inventory/suggest/fr/).
+> 📚 **D'autres questions ?** Consultez la [FAQ](/inventory/faq/) ou contactez-nous via [Suggestions](/inventory/suggest/).
 
 <style>
 details {

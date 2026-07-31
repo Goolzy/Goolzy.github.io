@@ -25,83 +25,60 @@ translations:
 
 ## 📖 Benutzerhandbuch
 
-Entdecken Sie alle Funktionen der Inventory-App im Detail.
+Lernen Sie die Funktionen der Inventory-App im Detail kennen.
 
 ---
 
 <details open>
-<summary><h3 id="paper">📦 Papier-System</h3></summary>
+<summary><h3 id="home">🏠 Erste Schritte — Startbildschirm und Tabs</h3></summary>
 <div class="manual-content" markdown="1">
 
-In Inventory ist **Papier** die Kernwährung zum Erstellen von Gegenständen.
+Am unteren Rand der App befinden sich bis zu 5 Tabs.
 
-#### Was ist Papier?
-- **1 Papier** wird beim Erstellen eines Gegenstands verbraucht
-- Ohne Papier können keine neuen Gegenstände erstellt werden
+| Tab | Beschreibung |
+|------|------|
+| **Entdecken** | Öffentliche Basis-Objekte durchstöbern und in das eigene Inventar holen |
+| **Nachrichten** | Liste der 1:1-Gespräche mit anderen Nutzern |
+| **Inventar** | Der Ort, an dem Ihre Objekte aufbewahrt werden |
+| **Stempel** | Persönliche Stempel, die mit „Als Stempel übernehmen" fertiggestellt wurden, gesammelt verwalten |
+| **Shop** | Papier, Stempel und Abzeichen kaufen |
 
-#### Wie man Papier erhält
+#### Bedingt angezeigte Tabs
+
+- Der Tab **Inventar** erscheint, wenn Sie mindestens ein Objekt besitzen.
+- Der Tab **Stempel** erscheint, wenn es persönliche Stempel gibt, die mit „Als Stempel übernehmen" fertiggestellt wurden.
+- Entdecken, Nachrichten und Shop werden immer angezeigt.
+
+#### Startbildschirm
+
+Beim Öffnen der App starten Sie im **Inventar**, wenn Sie Objekte besitzen, andernfalls unter **Entdecken**.
+
+> 💡 Auf dem Desktop können Sie mit der Strg-Taste und einer Zifferntaste schnell zwischen den Tabs wechseln.
+
+</div>
+</details>
+
+---
+
+<details>
+<summary><h3 id="paper">📦 Papier</h3></summary>
+<div class="manual-content" markdown="1">
+
+**Papier** ist die Währung, die verwendet wird, wenn Sie ein Basis-Objekt als **Papierkopie (Scrap)** zu Ihrem eigenen machen.
+
+#### So erhalten Sie Papier
 
 | Methode | Menge | Hinweis |
-|---------|-------|---------|
-| Neuanmeldung | 10 Papier + 3 Stempel | Nur einmalig |
-| Google-Verknüpfung | +10 Blatt | Für bestehende Benutzer |
-| Apple-Verknüpfung | +10 Blatt | Für bestehende Benutzer |
-| Shop-Kauf | 10 Blatt | In-App-Kauf |
+|------|--------|------|
+| Google- · Apple-Konto verknüpfen | 10 Blatt | Einmal pro verknüpftem Konto |
+| Kauf im Shop | 10 Blatt | In-App-Kauf |
+| Recycling-Belohnung | 1 Blatt | Löschen Sie 10 unbenutzte Blätter Papier und erhalten Sie 1 neues Blatt |
 
-> 💡 **Tipp**: Bestehende Benutzer können zusätzliches Papier erhalten, indem sie neue Social-Accounts verknüpfen!
+#### Papier verwenden
 
-</div>
-</details>
-
----
-
-<details>
-<summary><h3 id="create-item">📄 Artikel erstellen</h3></summary>
-<div class="manual-content" markdown="1">
-
-Wählen Sie Papier aus, um Log-Dokumente zu erstellen. Je nach Anzahl der ausgewählten Papiere können Sie private Logs oder gemeinsame Logs erstellen.
-
-| Log-Typ | Papiere | Verwendung |
-|---------|---------|------------|
-| **Privates Log** | 1 | Persönliche Notizen, Tagebuch, Einweg-Nachrichten |
-| **Gemeinsames Log** | 2 oder mehr | Zweiwege-Gespräch, Kommunikation |
-
-<h4 id="private-log">Privates Log-Artikel erstellen</h4>
-
-1. Wählen Sie **1 Papier** auf dem Startbildschirm
-2. Wählen Sie **"Neuen Artikel erstellen (Privates Log)"** aus dem unteren Menü
-3. Geben Sie Artikelinformationen ein:
-   - Titel (erforderlich)
-   - Inhalt
-   - Bild (optional)
-   - Startdatum (optional)
-   - Ablaufdatum (optional)
-4. Drücken Sie **Speichern** und 1 Papier wird verbraucht, um das Dokument zu erstellen
-
-> 💡 **Privates Log**: Nur Sie können Ihre geschriebenen Logs sehen. Nach dem Senden kann nur der Empfänger Logs hinzufügen.
-
-<h4 id="shared-log">Gemeinsames Log-Artikel erstellen</h4>
-
-1. Wählen Sie **2 oder mehr Papiere** auf dem Startbildschirm
-2. Wählen Sie **"Neuen Artikel erstellen (Gemeinsames Log)"** aus dem unteren Menü
-3. Geben Sie Artikelinformationen ein:
-   - Titel (erforderlich)
-   - Inhalt
-   - Bild (optional)
-   - Startdatum (optional)
-   - Ablaufdatum (optional)
-4. Drücken Sie **Speichern** und es werden Dokumente entsprechend der Anzahl der ausgewählten Papiere erstellt
-
-> 💡 **Gemeinsames Log**: Erstellte Dokumente teilen denselben Kommentarbereich. Senden Sie Dokumente an verschiedene Personen, um gegenseitig Logs in Echtzeit zu sehen, wie ein Chat.
-
-<h4 id="dates">Startdatum und Ablaufdatum</h4>
-
-| Einstellung | Beschreibung |
-|-------------|--------------|
-| **Startdatum** | Inhalt wird bis zu diesem Datum unscharf angezeigt |
-| **Ablaufdatum** | Inhalt wird unscharf angezeigt und Log-Hinzufügungen werden nach diesem Datum deaktiviert |
-
-Wenn nicht festgelegt, ist es sofort sichtbar und dauerhaft.
+- Beim Kopieren eines Basis-Objekts wird **1 Blatt** verbraucht.
+- Wenn das Papier knapp wird, können Sie im Shop nachkaufen oder ein Konto verknüpfen, um welches zu erhalten.
+- Noch nicht für Kopien verwendetes Papier können Sie auch an andere Nutzer übertragen.
 
 </div>
 </details>
@@ -109,43 +86,57 @@ Wenn nicht festgelegt, ist es sofort sichtbar und dauerhaft.
 ---
 
 <details>
-<summary><h3 id="lock">🔒 Dokumentsperre</h3></summary>
+<summary><h3 id="stamp">🔖 Stempel</h3></summary>
 <div class="manual-content" markdown="1">
 
-Sie können Dokumentelemente durch Festlegen eines Passworts schützen.
+Ein **Stempel** ist ein Objekt, mit dem Sie eine eigene Infoseite erstellen und an andere Nutzer übertragen können.
 
-#### Was ist eine Dokumentsperre?
+#### Als Stempel übernehmen
 
-Ein gesperrtes Dokument kann nur nach Eingabe des korrekten Passworts angezeigt werden.
+1. Wählen Sie im Inventar einen leeren Stempel aus, der noch nicht übernommen wurde.
+2. Wählen Sie **„Als Stempel übernehmen"** und geben Sie einen **Namen** für den Stempel ein. (max. 32 Zeichen)
+3. Sobald Sie den Namen bestätigen, ist die Übernahme endgültig — danach **kann der Name nicht mehr geändert werden.**
+4. Im anschließend geöffneten Editor ordnen Sie Bilder, Texte und Elemente an, um die Infoseite zu gestalten, und speichern sie.
 
-| Status | Beschreibung |
-|--------|--------------|
-| **Entsperrt** | Jeder kann den Inhalt sehen |
-| **Gesperrt** | Inhalt nur mit Passwort einsehbar |
+> ⚠️ Mit der Bestätigung des Namens ist die Übernahme abgeschlossen. Im Editor können nur der Seitenaufbau und die Bilder geändert werden — der Name bleibt fest.
 
-#### So sperren Sie
+#### Verwaltung im Stempel-Tab
 
-1. Wählen Sie auf dem Startbildschirm die **Dokumente** aus, die Sie sperren möchten (Mehrfachauswahl möglich)
-2. Wählen Sie **„Elemente sperren"** aus dem unteren Menü
-3. Geben Sie ein numerisches Passwort ein (bis zu 16 Ziffern)
-4. Geben Sie das gleiche Passwort zur Bestätigung erneut ein
-5. Nach dem Sperren zeigen die Elemente ein **Schloss-Symbol** und einen **Graustufen**-Effekt
+Fertig übernommene persönliche Stempel werden im **Stempel-Tab** gesammelt. Tippen Sie auf die **≡-Schaltfläche** rechts neben einem Stempel, um das Menü zu öffnen.
 
-#### So entsperren Sie
+| Menü | Beschreibung |
+|------|------|
+| **Bearbeiten** | Infoseite und Bilder bearbeiten (nur bei selbst erstellten Originalen möglich) |
+| **Besitzprüfung** | Prüfen, ob ein bestimmter Nutzer ein mit diesem Stempel erstelltes Objekt besitzt |
+| **Übertragen** | Ein Objekt an einen anderen Nutzer übertragen |
 
-1. Tippen Sie auf ein gesperrtes Dokument, um zum Detailbildschirm zu gelangen
-2. Ein Passwort-Eingabedialog erscheint
-3. Geben Sie das korrekte Passwort zum Entsperren ein
-4. Einmal entsperrt, wird die Sperre dauerhaft entfernt (zum erneuten Sperren neues Passwort festlegen)
+- Wischen Sie einen Eintrag in der Liste zur Seite, um ihn zu **bestätigen (als gelesen markieren)** oder die **Verwaltung aufzugeben**.
 
-> ⚠️ **Warnung**: Wenn Sie Ihr Passwort vergessen, kann es nicht wiederhergestellt werden. Gesperrte Dokumente können nur **gelöscht** werden.
+#### Kopieren (Scrap)
 
-#### Sperr-Funktionen
+Wenn Sie unter Entdecken ein Basis-Objekt finden, das Ihnen gefällt, holen Sie es über den **Scrap-Button** auf der Detailseite in Ihr Inventar.
 
-- Sperrpasswörter werden **in der Cloud gespeichert**
-- Der Sperrstatus bleibt auch bei der Übertragung von Elementen an andere erhalten
-- Gesperrte Dokumente erscheinen nicht in Suchergebnissen
-- Gesperrte Elemente können weiterhin gelöscht werden
+- Beim Kopieren wird **1 Blatt Papier** verbraucht.
+- Jedes Basis-Objekt kann **nur einmal** kopiert werden.
+- Die Kopie bewahrt die Informationen genau so, wie sie zum Zeitpunkt des Kopierens waren — sie ändert sich nicht automatisch, auch wenn das Original später bearbeitet wird.
+
+#### Neueste Infos erhalten
+
+Wird das Original aktualisiert, erscheint auf Ihrer Kopie die Schaltfläche **„Neueste Infos erhalten"**. Tippen Sie darauf, um auf den neuesten Inhalt zu aktualisieren; Sie können auch die automatische Aktualisierung eingeschaltet lassen.
+
+#### Übertragen
+
+Mit Ihren Stempeln erstellte Objekte können an andere Nutzer übertragen werden. Den Empfänger bestimmen Sie durch Eingabe von E-Mail oder Domainnamen oder per QR-Scan.
+
+Beim Senden einer Übertragung erhält der Empfänger eine **Toast-Benachrichtigung**; tippt er auf **Empfangen**, gelangt die übertragene Kopie in sein Inventar.
+
+#### Verwaltung aufgeben
+
+Stempel, die Sie nicht mehr verwalten möchten, können Sie in der Liste zur Seite wischen und die **Verwaltung aufgeben**.
+
+- Die Seiten und Gespräche von Nutzern, die bereits kopiert haben, bleiben erhalten.
+- Der Stempel verschwindet aus Ihrer Liste und **dies kann nicht rückgängig gemacht werden.**
+- Wenn sich **10 Stempel-Fragmente** aus aufgegebenen oder gelöschten Stempeln ansammeln, erhalten Sie **1 neuen Stempel** zurück.
 
 </div>
 </details>
@@ -153,73 +144,21 @@ Ein gesperrtes Dokument kann nur nach Eingabe des korrekten Passworts angezeigt 
 ---
 
 <details>
-<summary><h3 id="clip">📎 Clip-System</h3></summary>
+<summary><h3 id="explore">🔍 Entdecken</h3></summary>
 <div class="manual-content" markdown="1">
 
-**Clip** ist eine Funktion, mit der Sie mehrere Dokumente zur einfacheren Verwaltung zusammenfassen können.
+Im Tab **Entdecken** finden Sie öffentliche Basis-Objekte.
 
-#### Was ist ein Clip?
+#### Stöbern
 
-Mit Clips können Sie verwandte Dokumente als ein Bündel verwalten.
+- Oben werden Themenkategorien wie **Spiele · Technik · Filme · Essen** angezeigt.
+- In den Reihen **Gerade angesagt** · **Neu erschienen** finden Sie beliebte und neue Inhalte.
 
-| Status | Beschreibung |
-|--------|--------------|
-| **Einzelne Dokumente** | Separat verwaltete Dokumente |
-| **Geclipte Dokumente** | Als Bündel verwaltet, gemeinsam verschoben/übertragen |
+#### Suche
 
-#### Einen Clip erstellen
-
-1. Wählen Sie auf dem Startbildschirm **2 oder mehr Dokumente** aus
-2. Tippen Sie im unteren Menü auf **"Zusammenclipsen"**
-3. Die ausgewählten Dokumente werden zu einem Clip zusammengefasst
-4. Geclipte Dokumente zeigen ein **Clip-Symbol (📎)** in der oberen rechten Ecke
-
-> 💡 **Tipp**: Das zuerst ausgewählte Dokument wird zum **Cover** des Clips!
-
-#### Clip-Info anzeigen
-
-1. Öffnen Sie den **Detailbildschirm** eines geclipten Dokuments
-2. Tippen Sie auf die Schaltfläche **"Clip-Info"**
-3. Sehen Sie die Liste aller Elemente im Clip
-
-#### Elemente im Clip neu anordnen
-
-Sie können die Reihenfolge der Elemente im Clip-Info-Bildschirm ändern:
-
-1. Halten Sie den **Ziehgriff (⋮⋮)** des Elements, das Sie verschieben möchten, gedrückt
-2. Ziehen Sie es an die gewünschte Position
-3. Lassen Sie los, um die Reihenfolge zu speichern
-
-> ⚠️ **Hinweis**: Das Cover (erstes Element) kann nicht neu angeordnet werden.
-
-#### Elemente aus einem Clip ausschließen
-
-Sie können bestimmte Elemente im Clip-Info-Bildschirm entfernen:
-
-1. Tippen Sie auf die Schaltfläche **"Ausschließen"** neben dem Element
-2. Bestätigen Sie, um das Element aus dem Clip zu entfernen
-3. Das entfernte Element wird wieder zu einem einzelnen Dokument
-
-> ⚠️ **Hinweis**: Das Cover kann nicht ausgeschlossen werden. Wenn nur noch 2 Elemente übrig sind und Sie 1 ausschließen, löst sich der Clip automatisch auf.
-
-#### Clip auflösen
-
-1. Wählen Sie das geclipte Dokument aus
-2. Tippen Sie im unteren Menü auf **"Clip auflösen"**
-3. Alle Dokumente werden in einzelne Dokumente getrennt
-
-#### Clips übertragen
-
-- Wenn Sie ein gecliptes Dokument senden, wird das **gesamte Bündel** zusammen übertragen
-- Empfänger akzeptieren/lehnen Clips als **Bündel** ab
-- Einzelne Elemente innerhalb eines Clips können nicht separat gesendet werden
-
-#### Clip-Funktionen
-
-- Geclipte Dokumente werden **zusammen verschoben/übertragen**
-- Das Setzen einer Sperre auf dem Cover schützt den gesamten Clip
-- Das Clip-Symbol (📎) erleichtert die Identifizierung des Clip-Status
-- Mindestens 2 Dokumente sind erforderlich, um einen Clip zu erhalten
+1. Geben Sie oben im Suchfeld ein Stichwort ein.
+2. Während der Eingabe werden Suchvorschläge und Ergebnisse in Echtzeit angezeigt.
+3. Tippen Sie auf eine Ergebniskarte, um die Detailseite zu öffnen — dort können Sie das Objekt scrapen.
 
 </div>
 </details>
@@ -227,40 +166,30 @@ Sie können bestimmte Elemente im Clip-Info-Bildschirm entfernen:
 ---
 
 <details>
-<summary><h3 id="badge">🏷️ Abzeichen-System</h3></summary>
+<summary><h3 id="dm">💬 Direktnachrichten</h3></summary>
 <div class="manual-content" markdown="1">
 
-Ein **Abzeichen** ist eine einzigartige Identität, die Sie in der App verwenden können.
+Sie können mit anderen Nutzern **direkt 1:1** kommunizieren.
 
-#### Was ist ein Abzeichen?
+#### Ein Gespräch beginnen
 
-Wenn Sie einen Domainnamen auf einem Abzeichen eingravieren, werden alle Ihre Aktivitäten in der App mit Ihrem **eingravierten Domainnamen** statt Ihrer E-Mail angezeigt.
+Ein Gespräch lässt sich auf drei Arten beginnen.
 
-Beispiele: `MeineMarke`, `MaxMustermann`, `Firma2025`
+1. Tippen Sie auf den **Verfasser eines Kommentars in Entdecken-Inhalten** und wählen Sie im Profil-Popup **Nachricht beginnen**
+2. Geben Sie im **Suchfeld des Nachrichten-Tabs** die E-Mail oder den Domainnamen der Person ein
+3. Finden Sie die Person per **QR-Scan** (der Scan füllt das Suchfeld automatisch aus)
 
-#### Ein Abzeichen gravieren
+- Wenn Sie ein Gespräch anfragen, beginnt es, sobald **die andere Person annimmt**. Haben sich beide gegenseitig angefragt oder gab es bereits ein früheres Gespräch, geht es ohne Annahme direkt weiter.
+- Gehört die E-Mail zu jemandem, der die App noch nicht nutzt, können Sie eine **Einladungs-E-Mail** mit Installationslink und QR-Code senden.
 
-1. Kaufen Sie ein Abzeichen im Shop (unbenutzt)
-2. Tippen Sie auf das Abzeichen → Wählen Sie **"Gravieren"** Menü
-3. Geben Sie Ihren gewünschten Domainnamen ein (max. 32 Zeichen)
-   - Zeichen und Zahlen aus allen Sprachen sind erlaubt
-   - Sonderzeichen und Emojis sind nicht erlaubt
-4. Klicken Sie auf **"Domain-Verfügbarkeit prüfen"** zur Überprüfung
-5. Optional ein 128x128 Bild anhängen
-6. Klicken Sie auf **"Gravieren"** zum Abschließen
+#### Nachrichten-Tab
 
-> ⚠️ **Warnung**: Nach dem Gravieren können Domainname und Bild **nicht mehr dauerhaft geändert werden**. Wählen Sie sorgfältig!
+- Ihre Gespräche werden als Liste angezeigt; ungelesene Nachrichten werden mit einer Zähler-Anzeige markiert.
+- Wischen Sie einen Eintrag zur Seite, um ihn als gelesen zu markieren oder das Gespräch zu löschen. (Es wird nur auf Ihrer Seite gelöscht — der Verlauf der anderen Person bleibt erhalten.)
 
-#### Abzeichen anlegen/ablegen
+#### Melden · Blockieren
 
-- **Angelegt**: Ihr eingravierter Domainname wird für alle Aktivitäten in der App angezeigt
-- **Abgelegt**: Ihre Standard-E-Mail wird wieder angezeigt
-- Auch wenn Sie mehrere Abzeichen besitzen, kann nur eines gleichzeitig angelegt werden
-
-#### Inventarkarten-Anzeige
-
-Gravierte Abzeichen (aktiver Zustand) zeigen in der Inventarkarte oben rechts eine Vorschau des gravierten Bildes.
-So können Sie schnell erkennen, zu welcher Domain das Abzeichen gehört.
+Im Profil-Popup können Sie eine Person **melden** oder **blockieren**. Die Blockierung heben Sie in der Blockierliste in den Einstellungen auf.
 
 </div>
 </details>
@@ -268,67 +197,32 @@ So können Sie schnell erkennen, zu welcher Domain das Abzeichen gehört.
 ---
 
 <details>
-<summary><h3 id="stamp">🔖 Stempel-System</h3></summary>
+<summary><h3 id="chat-media">🖼️ Fotos & Videos im Chat</h3></summary>
 <div class="manual-content" markdown="1">
 
-Ein **Stempel** ist ein Gegenstand, mit dem Sie Vorlagen erstellen und mit anderen teilen können.
+Sie können Nachrichten und Community-Chats Fotos und Videos anhängen.
 
-#### Inventarkarten-Anzeige
+#### Senden
 
-Stempel mit Vorlagen (aktiver Zustand) werden im Inventar besonders angezeigt:
-- **Hintergrund**: Vorlagenbild mit 33% Deckkraft
-- **Vordergrund**: Graviertes Stempel-Bild
+1. Tippen Sie im **Medien**-Tab der Eingabeleiste auf die Schaltfläche **Foto** oder **Video**.
+2. Bei Mehrfachauswahl landen die Dateien auf der Bühne; per Drag & Drop ändern Sie die Reihenfolge oder löschen einzelne.
+3. Tippen Sie auf Senden, um den Upload zu starten — die Nachricht erscheint sofort im Gespräch, ohne Wartezeit.
 
-So können Sie schnell erkennen, um welche Vorlage es sich handelt.
+> 💡 Auf dem Desktop werden nur Foto-Anhänge unterstützt.
 
-#### Eine Stempelvorlage erstellen
+#### Galerie (mehrere Dateien)
 
-1. Kaufen Sie einen Stempel im Shop (unbenutzt)
-2. Tippen Sie auf den Stempel → Wählen Sie **"Neue Vorlage erstellen"** Menü
-3. Geben Sie Vorlageninformationen ein:
-   - **Bild** (erforderlich)
-   - **Titel** (max. 32 Zeichen)
-   - **Inhalt** (max. 1024 Zeichen)
-   - **Startdatum** (optional) - Inhalt bis zu diesem Datum verborgen
-   - **Ablaufdatum** (optional) - Protokolleinträge danach deaktiviert
-   - **Protokollmodus** - Einzelprotokoll oder Geteiltes Protokoll
-4. Klicken Sie auf **"Vorlage erstellen"** zum Abschließen
+- Sie können **bis zu 16** Dateien in einer Nachricht als Collage bündeln.
+- Tippen Sie auf eine Zelle, um den Viewer für eine Großansicht zu öffnen; auch das Speichern aller Dateien ist möglich.
 
-#### Einen Stempel duplizieren
+#### Videobearbeitung
 
-Wenn Sie einen aktivierten Stempel (Vorlage) und Papier zusammen auswählen, erscheint das **"Vorlage duplizieren"** Menü.
+- Videos können mit bis zu **25 MB · 60 Sekunden** gesendet werden.
+- Bei Überschreitung schneiden Sie mit der **Videobearbeitung** den gewünschten Abschnitt zu. Eine Größenanzeige zeigt die voraussichtliche Dateigröße.
 
-- 1 Papier wird verbraucht
-- Ein neuer Gegenstand mit derselben Vorlage wird erstellt
-- Im Modus Geteiltes Protokoll wird derselbe gemeinsame Raum wie das Original verwendet
+#### Linkvorschau
 
-#### Ihre Vorlage teilen
-
-Sie können Ihre Stempelvorlage teilen, damit andere Benutzer sie suchen und klonen können.
-
-1. Tippen Sie auf einen aktivierten Stempel (Vorlage) → Wählen Sie **"Freigabeeinstellungen"**
-2. Geben Sie Freigabeinformationen ein:
-   - **Beschreibung** - Eine kurze Beschreibung der Vorlage
-   - **Tags** - Schlüsselwörter für die Suche (kommagetrennt)
-   - **Freigabedauer** - Wie lange die Freigabe aktiv bleibt
-3. Klicken Sie auf **"Freigabe starten"** zum Abschließen
-
-Geteilte Vorlagen können von anderen Benutzern über Tag-Suche gefunden und geklont werden.
-
-> 💡 **Tipp**: Um die Freigabe zu beenden, wählen Sie **"Freigabe beenden"** aus demselben Menü.
-
-#### Geteilte Vorlagen suchen
-
-Sie können von anderen Benutzern geteilte Vorlagen suchen und klonen.
-
-1. Gehen Sie zum Profilbildschirm und wählen Sie **"Geteilte Vorlagen suchen"**
-2. Geben Sie Tags zur Suche ein oder tippen Sie auf beliebte/neueste Tags
-3. Tippen Sie auf eine Vorlage aus den Suchergebnissen, um Details anzuzeigen
-4. Klicken Sie auf **"Klonen"** um die Vorlage zu klonen
-
-- Klonen verbraucht 1 Papier
-- Die Klonen-Schaltfläche ist deaktiviert, wenn Sie kein Papier haben
-- Geklonte Gegenstände haben dieselben Vorlageninformationen wie das Original
+In den Chat eingefügte Links werden als Vorschaukarte mit Titel und Bild angezeigt. Bei Videolinks tippen Sie auf die Karte, um das Video **direkt an Ort und Stelle abzuspielen**.
 
 </div>
 </details>
@@ -336,40 +230,16 @@ Sie können von anderen Benutzern geteilte Vorlagen suchen und klonen.
 ---
 
 <details>
-<summary><h3 id="quick-input">⚡ Schnelleingabe</h3></summary>
+<summary><h3 id="emoticon">😊 Emoticons</h3></summary>
 <div class="manual-content" markdown="1">
 
-Beim Hinzufügen von Protokollen tippen Sie auf die `+`-Taste, um das **Schnelleingabe**-Menü für einfache Eingabe spezieller Informationen zu öffnen.
+Fügen Sie Gesprächen **Emoticons** hinzu, um Gefühle auszudrücken.
 
-#### Schnelleingabe-Typen
+1. Öffnen Sie den **Emoticon**-Tab in der Eingabeleiste.
+2. Wählen Sie in einer Kategorie das gewünschte Emoticon aus. (Zuletzt verwendete Emoticons werden ebenfalls gesammelt angezeigt.)
+3. Senden Sie es zusammen mit Text oder nur das Emoticon allein.
 
-| Typ | Beschreibung | Beispiel |
-|-----|--------------|----------|
-| **Schlüsselwort** | Schlüssel:Wert-Format | `Status:Gut` |
-| **Datum** | Datum mit D-Day-Berechnung | D-5, D-Day, D+3 |
-| **Telefon** | Telefonnummer | Direkt anrufen |
-| **Standort** | Adresse/Koordinaten | In Karten-App öffnen |
-| **Betrag** | Währungsformat | Automatisch formatiert |
-
-#### Langes Drücken Aktionen
-
-| Kartentyp | Aktion bei langem Drücken |
-|-----------|--------------------------|
-| **📅 Datum** | Alarm setzen/entfernen |
-| **📞 Telefon** | Mobil: Direkt anrufen, Desktop: Kopieren |
-| **📍 Standort** | Mobil: In Karte öffnen, Desktop: Kopieren |
-| **💰 Betrag** | In Zwischenablage kopieren |
-
-<h4 id="alarm">Datumsalarm einstellen</h4>
-
-Drücken Sie lange auf eine Datumskarte, um einen Alarm einzustellen:
-
-1. **Lang drücken** auf die Datumskarte
-2. Im Bestätigungsdialog **Einstellen** wählen
-3. Nach dem Einstellen ändert sich die Kartenfarbe und ein 🔔-Symbol erscheint
-4. Erneut lang drücken, um den Alarm zu entfernen
-
-> 💡 **Tipp**: Datumskarten zeigen automatisch D-Day-Berechnungen an (z.B. D-5, D-Day, D+3)
+> 💡 Ein allein gesendetes Emoticon wird groß und ohne Sprechblase angezeigt und fällt so mehr auf.
 
 </div>
 </details>
@@ -377,86 +247,16 @@ Drücken Sie lange auf eine Datumskarte, um einen Alarm einzustellen:
 ---
 
 <details>
-<summary><h3 id="log">📝 Protokoll-System</h3></summary>
+<summary><h3 id="privacy">🔒 Schutz der Privatsphäre</h3></summary>
 <div class="manual-content" markdown="1">
 
-**Protokolle** sind Aufzeichnungen, die Sie zu Gegenständen oder Stempelvorlagen hinzufügen können.
+Ihre E-Mail-Adresse wird davor geschützt, unverändert sichtbar zu sein.
 
-#### Protokollmodi
+- **Nutzer mit angelegtem Abzeichen** werden mit ihrem **Domainnamen** statt der E-Mail angezeigt; auch ihr QR-Code wird auf Domainbasis erzeugt.
+- Die E-Mail von **Nutzern ohne Abzeichen** wird als **Farb-QR** dargestellt und ist nur für Personen erkennbar, die ihn direkt scannen.
+- In **Community-Chats**, die von vielen Personen gesehen werden, wird bei Nutzern ohne Domain-Abzeichen der hintere Teil der E-Mail (nach dem @) verborgen.
 
-| Modus | Einzelprotokoll | Geteiltes Protokoll |
-|-------|-----------------|---------------------|
-| **Speicherort** | Privater Bereich jeder Person | Gemeinsamer Raum basierend auf Original-Stempel |
-| **Sichtbare Protokolle** | Nur eigene Protokolle | Protokolle aller Besitzer |
-| **Anwendungsfälle** | Persönliches Tagebuch, Notizen | Zusammenarbeit, Community |
-| **Bei Löschung des Originals** | Nicht betroffen | Keine Protokolle mehr hinzufügbar (nur lesen) |
-
-#### Protokollformate
-
-Sie können verschiedene Formate beim Schreiben von Protokollen verwenden.
-
-**Grundformate:**
-
-| Format | Beschreibung | Beispiel |
-|--------|--------------|----------|
-| Normaler Text | Als Chat-Blase angezeigt | `Heute Inspektion abgeschlossen!` |
-| `Schlüssel:Wert` | Als Info-Karte angezeigt (Schlüssel 1-8 Zeichen) | `Status:gut` |
-Mehrfache Verwendung desselben Schlüssels zeigt `vorheriger Wert → neuer Wert` Vergleich.
-
-**Textgestaltung:**
-
-| Format | Effekt | Beispiel |
-|--------|--------|----------|
-| `{[Text]}` | Hauptfarbe-Karte (Hintergrund + Text) | `{[Wichtig]}` |
-| `[{Text}]` | Graue Karte + Hauptfarbe-Text | `[{Vorsicht}]` |
-| `[Text]` | Graue Karte | `[Hinweis]` |
-| `{Text}` | Hauptfarbe-Text | `{Hervorhebung}` |
-| `(Text)` | Nebenfarbe-Text | `(Zusatzinfo)` |
-| `"Text"` | **Fett** | `"Wichtiger Inhalt"` |
-| `'Text'` | <u>Unterstrichen</u> | `'Hervorgehobener Teil'` |
-| `<Text>` | ~~Durchgestrichen~~ | `<Gelöschter Inhalt>` |
-
-> 💡 Stile können bis zu 3 Ebenen verschachtelt werden. Beispiel: `{["Fett Hauptfarbe"]}`
-
-**Medienlinks (URL-Karten):**
-
-Wenn Sie eine URL in ein Protokoll eingeben, wird sie automatisch als **Rich Card** angezeigt.
-
-| Plattform | Anzeige | Beispiel |
-|-----------|---------|----------|
-| **YouTube** | Vorschaubild + Titel + Kanal | `https://youtube.com/watch?v=...` |
-| **Spotify** | Albumcover + Titel + Künstler | `https://open.spotify.com/track/...` |
-| **Google Drive** | Dateivorschau + Dateiname | `https://drive.google.com/file/d/...` |
-| **Dropbox** | Symbol + Dateiname | `https://dropbox.com/s/...` |
-| **OneDrive** | Symbol + Dienstname | `https://1drv.ms/...` |
-| **Webseiten** | Vorschaubild + Seitentitel | `https://example.com` |
-
-- Verwenden Sie `Schlüssel:URL` Format zur Anzeige mit Stichwort (z.B. `Doku:https://youtube.com/...`)
-- **Tippen** Sie auf die Karte, um sie in externer App/Browser zu öffnen
-- **Lange drücken** kopiert die URL in die Zwischenablage
-
-> 💡 **Tipp**: Google Drive-Dateien müssen **öffentlich freigegeben** sein, damit Vorschaubilder angezeigt werden.
-
-**Automatische Protokolle:**
-
-Wenn ein Gegenstand übertragen wird, wird automatisch ein Übertragungsprotokoll aufgezeichnet:
-- Anzeige im Format `Absender → Empfänger`
-- Bei angelegtem Abzeichen wird der Domainname angezeigt
-
-#### Bedingungen für Beendigung geteilter Protokolle
-
-- **Original-Stempel gelöscht**: Keine geteilten Protokolle mehr hinzufügbar (nur lesen)
-- **Ablaufdatum überschritten**: Keine geteilten Protokolle mehr hinzufügbar (nur lesen)
-
-#### 🔔 Ungelesen-Anzeige
-
-Wenn neue Kommentare zu einem geteilten Protokoll hinzugefügt werden, **pulsiert** der Rahmen des Elements in der Inventaransicht.
-
-- Pulsieren beginnt sofort, wenn ein anderer Benutzer einen Kommentar hinzufügt
-- Pulsieren stoppt, wenn Sie das Dokument öffnen und anzeigen
-- Der Lesestatus wird in der Cloud gespeichert und über alle Geräte synchronisiert
-
-> 💡 **Tipp**: Überprüfen Sie pulsierende Elemente, um keine neuen Kommentare zu verpassen!
+Die Namensanzeige wird in Echtzeit übernommen — das Anlegen oder Ablegen eines Abzeichens wirkt sich automatisch überall aus, etwa in Gesprächslisten und Profilen.
 
 </div>
 </details>
@@ -464,23 +264,25 @@ Wenn neue Kommentare zu einem geteilten Protokoll hinzugefügt werden, **pulsier
 ---
 
 <details>
-<summary><h3 id="ink">🎨 Tinten-System</h3></summary>
+<summary><h3 id="badge">🏷️ Abzeichen</h3></summary>
 <div class="manual-content" markdown="1">
 
-**Tinte** ist ein Gegenstand, der die Themenfarbe der App ändert.
+Gravieren Sie einen Domainnamen in ein **Abzeichen**, und Sie werden in der App mit diesem Namen statt Ihrer E-Mail angezeigt.
 
-#### Verwendung
+#### Gravieren
 
-1. Tippen Sie auf eine Tinte, um den Detailbildschirm zu öffnen
-2. Klicken Sie auf **"Thema ändern"** Button
-3. Die gesamte App-Farbe ändert sich sofort
+1. Kaufen Sie im Shop ein Abzeichen und wählen Sie dann ein noch nicht graviertes Abzeichen aus.
+2. Geben Sie den gewünschten **Domainnamen** ein. (max. 32 Zeichen, nur Buchstaben und Zahlen, keine Sonderzeichen oder Emojis)
+3. Prüfen Sie mit der **Duplikatsprüfung**, ob der Name verfügbar ist.
+4. Fügen Sie optional ein 128×128-Bild hinzu und gravieren Sie.
 
-#### Tintenarten
+> ⚠️ **Achtung**: Ein gravierter **Domainname ist dauerhaft** und kann nicht geändert werden. Gravieren Sie mit Bild, können Bild und Schlüsselwörter später bearbeitet werden; gravieren Sie ohne Bild, ist eine spätere Bearbeitung nicht möglich.
 
-| Tinte | Farbe |
-|-------|-------|
-| **Schwarze Tinte** | Standard-Schwarz-Thema |
-| **Goldene Tinte** | Luxuriöses Gold-Thema |
+#### Anlegen / Ablegen / Bearbeiten
+
+- **Angelegt** werden Sie bei Ihren Aktivitäten in der App mit dem Domainnamen angezeigt. Es kann immer nur eines angelegt sein.
+- **Abgelegt** werden Sie wieder mit Ihrer Standard-E-Mail angezeigt.
+- Mit **Bearbeiten** ändern Sie Bild und Schlüsselwörter.
 
 </div>
 </details>
@@ -488,49 +290,16 @@ Wenn neue Kommentare zu einem geteilten Protokoll hinzugefügt werden, **pulsier
 ---
 
 <details>
-<summary><h3 id="search">🔍 Suchfunktion</h3></summary>
+<summary><h3 id="folder">📂 Ordner</h3></summary>
 <div class="manual-content" markdown="1">
 
-#### Grundlegende Suche
+Wenn sich Objekte ansammeln, können Sie sie in **Ordnern** organisieren.
 
-Tippen Sie auf die Suchleiste oben, um den Suchmodus zu aktivieren.
+- Ziehen Sie ein Objekt in den Bereich **„Neuen Ordner erstellen"** unten, um einen Ordner anzulegen.
+- Den Ordnernamen ändern Sie durch langes Drücken auf die Kopfzeile. (max. 16 Zeichen)
+- Mit dem Pfeil in der Ordner-Kopfzeile klappen Sie ihn ein oder aus; ein Tippen auf die Kopfzeile wählt alle Objekte im Ordner auf einmal aus.
 
-- Ergebnisse werden in **Echtzeit** gefiltert, während Sie tippen
-- Tippen Sie auf den X-Button, um den Suchmodus zu verlassen
-
-#### Letzte Suchen
-
-- Bis zu 5 letzte Suchen werden gespeichert
-- Tippen Sie auf eine letzte Suche, um sie automatisch einzufügen
-- Einzeln mit dem X-Button löschen
-
-#### Als Filter speichern
-
-Wenn Sie einen Suchbegriff mit **"Als Filter setzen"** speichern:
-
-- Er erscheint als Filter-Tag unter der Suchleiste
-- Tippen Sie auf das Tag, um sofort nach diesem Begriff zu filtern
-- Löschen Sie den Filter mit dem X-Button
-
-<h4 id="keyword">Schlüsselwort-Aggregation</h4>
-
-Wenn ein Filter gesetzt ist und Sie Gegenstände auswählen, werden die **Schlüsselwortwerte der ausgewählten Gegenstände automatisch aggregiert**.
-
-**Numerische Wert-Aggregation:**
-- **Summe** und **Durchschnitt** werden für numerische Werte mit demselben Schlüsselwort berechnet
-- Beispiel: Auswahl von `Preis:1000`, `Preis:2000`, `Preis:3000`
-- Ergebnis: `Summe: 6000  Durchschnitt: 2000`
-
-**Zeichenketten-Aggregation:**
-- Zeichenkettenwerte mit demselben Schlüsselwort werden **mit Leerzeichen verbunden**
-- Beispiel: Auswahl von `Tag:A`, `Tag:B`, `Tag:C`
-- Ergebnis: `A B C`
-
-**Werte kopieren:**
-- **Langes Drücken** auf eine Aggregationskarte kopiert den Wert in die Zwischenablage
-- Eine Benachrichtigung erscheint, wenn das Kopieren abgeschlossen ist
-
-> 💡 **Anwendungsbeispiel**: Berechnen Sie schnell den Gesamtpreis mehrerer Gegenstände oder kopieren Sie verwandte Tags auf einmal.
+> 💡 Ordner werden **nur auf dem gerade genutzten Gerät** gespeichert. Die Objekte selbst sind auf allen Geräten sichtbar, die Ordnerstruktur kann sich jedoch je nach Gerät unterscheiden.
 
 </div>
 </details>
@@ -538,141 +307,20 @@ Wenn ein Filter gesetzt ist und Sie Gegenstände auswählen, werden die **Schlü
 ---
 
 <details>
-<summary><h3 id="bottom-menu">📱 Unteres Menü-Badge</h3></summary>
+<summary><h3 id="shop">🛒 Shop</h3></summary>
 <div class="manual-content" markdown="1">
 
-Rote Badges auf den Symbolen des unteren Menüs zeigen den aktuellen Status an.
+Im Shop können Sie die benötigten Artikel kaufen.
 
-| Menü | Badge-Bedeutung |
-|------|-----------------|
-| **Senden** | Anzahl sendbarer Gegenstände (übertragbare unter den ausgewählten) |
-| **Empfangen** | Anzahl ausstehender Transaktionen (Akzeptieren/Zurücksenden erforderlich) |
-| **Aktion** | Anzahl verfügbarer Aktionen mit ausgewählten Gegenständen |
+| Produkt | Zweck |
+|------|------|
+| **Papier** | Zum Kopieren von Basis-Objekten |
+| **Stempel** | Zum Übernehmen einer Infoseite als persönlicher Stempel |
+| **Abzeichen** | Zum Gravieren eines Domainnamens |
 
-> 💡 Badge-Zahlen animieren mit einem Blaseneffekt, wenn sie sich ändern.
-
-</div>
-</details>
-
----
-
-<details>
-<summary><h3 id="transfer">📤 Gegenstände senden</h3></summary>
-<div class="manual-content" markdown="1">
-
-Sie können Gegenstände beim Gebrauchtverkauf oder Verschenken übertragen.
-
-#### Wie man sendet
-
-1. Wählen Sie **Senden** aus dem unteren Tab
-2. **Markieren** Sie die zu übertragenden Gegenstände (Mehrfachauswahl möglich)
-3. Geben Sie die E-Mail des Empfängers ein
-4. Klicken Sie auf **Senden** Button
-
-#### E-Mail per QR-Code eingeben
-
-Anstatt die E-Mail des Empfängers einzutippen, können Sie einen QR-Code verwenden:
-
-1. Der Empfänger zeigt seinen QR-Code aus dem **Profil**-Bildschirm an
-2. Der Absender drückt den **QR scannen** Button
-3. Scannen Sie den QR-Code mit der Kamera
-4. Die E-Mail wird automatisch eingegeben
-
-> ⚠️ **Wichtig**: Übertragene Gegenstände **verschwinden sofort** aus Ihrem Inventar. Übertragungen können nicht rückgängig gemacht werden.
-
-</div>
-</details>
-
----
-
-<details>
-<summary><h3 id="receive">📥 Gegenstände empfangen</h3></summary>
-<div class="manual-content" markdown="1">
-
-Sie können von anderen gesendete Gegenstände empfangen.
-
-#### Wie man empfängt
-
-1. Wählen Sie **Empfangen** aus dem unteren Tab
-2. Die Liste der empfangenen Gegenstände wird angezeigt
-3. Für jeden Gegenstand:
-   - **Akzeptieren**: Wird Ihrem Inventar hinzugefügt
-   - **Zurücksenden**: Wird an den Absender zurückgeschickt
-
-#### Benachrichtigungen
-
-- Sie erhalten Push-Benachrichtigungen bei neuen Gegenständen (wenn Benachrichtigungen aktiviert sind)
-- Der Empfangen-Tab zeigt die Anzahl nicht akzeptierter Gegenstände
-
-</div>
-</details>
-
----
-
-<details>
-<summary><h3 id="shop">🛒 Shop nutzen</h3></summary>
-<div class="manual-content" markdown="1">
-
-Sie können verschiedene Gegenstände im Shop kaufen.
-
-#### Verfügbare Produkte
-
-| Produkt | Verwendung |
-|---------|------------|
-| **Papier** | Zum Erstellen von Gegenständen (Verbrauchsgut) |
-| **Stempel** | Zum Erstellen von Vorlagen |
-| **Abzeichen** | Zum Gravieren eines einzigartigen Domainnamens |
-| **Tinte** | Zum Ändern der Themenfarbe |
-
-#### Wie man kauft
-
-1. Wählen Sie **Shop** aus dem unteren Tab
-2. Tippen Sie auf das gewünschte Produkt
-3. Fahren Sie mit der Zahlung fort (App Store / Google Play)
-4. Automatische Lieferung nach Abschluss der Zahlung
-
-> 💡 Der Shop ist auf allen Plattformen verfügbar (iOS, Android, Windows, macOS).
-
-</div>
-</details>
-
----
-
-<details>
-<summary><h3 id="pocket">📂 Pockets-Funktion</h3></summary>
-<div class="manual-content" markdown="1">
-
-Sie können Gegenstände mit Pocketen gruppieren, wenn Sie viele haben.
-
-#### Eine Pocket erstellen
-
-1. Wählen Sie Gegenstände aus
-2. Wählen Sie **"Pocket erstellen"** aus dem unteren Menü
-3. Geben Sie den Pocketsnamen ein (max. 16 Zeichen)
-
-#### Pockets-Eigenschaften
-
-- Pocketen werden **nur auf dem Gerät gespeichert**
-- Die Pocketsstruktur ist auf anderen Geräten nicht sichtbar
-- Die Gegenstände selbst werden in der Cloud gespeichert und sind auf allen Geräten sichtbar
-
-#### Einklappen/Ausklappen
-
-Verwenden Sie die Pfeiltaste (▼/▲) auf der rechten Seite des Pocketsheaders zum Ein- und Ausklappen.
-
-- Der eingeklappte Zustand bleibt nach dem App-Neustart erhalten
-- Alle Pocketen werden während der Suche automatisch ausgeklappt
-- Sie können Elemente in eingeklappte Pocketen ziehen
-
-#### Alle in Pocket auswählen
-
-Tippen Sie auf den Pocketsheader, um alle Elemente in dieser Pocket auszuwählen/abzuwählen.
-
-| Indikator | Bedeutung |
-|-----------|-----------|
-| ○ (Leerer Kreis) | Keine ausgewählt |
-| ◐ (Halbkreis) | Einige ausgewählt |
-| ● (Gefüllter Kreis) | Alle ausgewählt |
+1. Tippen Sie im Shop-Tab auf das gewünschte Produkt.
+2. Prüfen Sie die Produktinformationen und die Erstattungshinweise und stimmen Sie zu.
+3. Nach Abschluss der Zahlung erfolgt die Gutschrift automatisch.
 
 </div>
 </details>
@@ -683,24 +331,25 @@ Tippen Sie auf den Pocketsheader, um alle Elemente in dieser Pocket auszuwählen
 <summary><h3 id="language">🌍 Sprache ändern</h3></summary>
 <div class="manual-content" markdown="1">
 
-7 Sprachen werden unterstützt:
+8 Sprachen werden unterstützt:
+
 - 🇰🇷 한국어
 - 🇺🇸 English
 - 🇯🇵 日本語
+- 🇨🇳 中文(简体)
 - 🇩🇪 Deutsch
 - 🇫🇷 Français
 - 🇪🇸 Español
 - 🇧🇷 Português
 
-**Wie man ändert:**
-Einstellungen → Sprache → Gewünschte Sprache auswählen
+Wählen Sie unter **Einstellungen → Sprache** — die Änderung gilt sofort.
 
 </div>
 </details>
 
 ---
 
-> 📚 **Haben Sie weitere Fragen?** Schauen Sie in die [FAQ](/inventory/faq/de/) oder kontaktieren Sie uns über [Vorschläge](/inventory/suggest/de/).
+> 📚 **Noch Fragen?** Sehen Sie in den [Häufigen Fragen](/inventory/faq/) nach oder wenden Sie sich über [Vorschläge](/inventory/suggest/) an uns.
 
 <style>
 details {

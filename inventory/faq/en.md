@@ -14,22 +14,22 @@ translations:
   zh: /inventory/faq/zh/
 ---
 
-## ❓ Frequently Asked Questions
+## ❓ FAQ
 
-We've collected frequently asked questions and answers.
+A collection of frequently asked questions and answers.
 
 ---
 
-### 📦 Paper Related
+### 📦 About Paper
 
 <details open>
 <summary><strong>Q. What is Paper?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Paper is an in-app currency used to create items.
+<strong>A.</strong> Paper is the in-app currency used when creating items.
 <ul>
-<li>Creating 1 item = 1 Paper consumed</li>
-<li>10 sheets free upon new signup</li>
-<li>Additional purchase available in shop</li>
+<li>Creating 1 item = consumes 1 sheet of Paper</li>
+<li>10 free sheets when you sign up</li>
+<li>Additional sheets available in the Shop</li>
 </ul>
 </div>
 </details>
@@ -37,22 +37,22 @@ We've collected frequently asked questions and answers.
 <details>
 <summary><strong>Q. Can I get Paper for free?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Yes! You can get it free through these methods:
+<strong>A.</strong> Yes! You can get free Paper in the following ways:
 <ul>
-<li><strong>New signup</strong>: 10 sheets (first time only)</li>
-<li><strong>Google account linking</strong>: +10 sheets</li>
-<li><strong>Apple account linking</strong>: +10 sheets</li>
+<li><strong>New sign-up</strong>: 10 sheets (one time only)</li>
+<li><strong>Link Google account</strong>: +10 sheets</li>
+<li><strong>Link Apple account</strong>: +10 sheets</li>
 </ul>
-Linking all social accounts gives you up to 30 sheets for free.
+By linking all social accounts, you can get up to 30 sheets for free.
 </div>
 </details>
 
 <details>
 <summary><strong>Q. What if I run out of Paper?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> If you run out of Paper, you cannot create new items. Purchase Paper from the shop, or link any unlinked social accounts for additional Paper.
+<strong>A.</strong> If you run out of Paper, you cannot create new items. Purchase Paper in the Shop, or link any social accounts you haven't linked yet to earn more.
 <br><br>
-Items you've already created will remain stored even without Paper.
+Items you have already created remain stored even if you have no Paper.
 </div>
 </details>
 
@@ -63,39 +63,38 @@ Items you've already created will remain stored even without Paper.
 <details>
 <summary><strong>Q. How do I create an item?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Follow these steps:
+<strong>A.</strong> There are two ways to create an item:
 <ol>
-<li>Tap on your <strong>Paper</strong> on the home screen</li>
-<li>Select <strong>"Create New Item"</strong> from the bottom menu</li>
-<li>Enter item information (title, content, image, etc.)</li>
-<li>Save and 1 Paper will be consumed to create the item</li>
+<li><strong>Copy a base item</strong>: Find a base item you like in Explore and tap the <strong>Scrap</strong> button on its detail screen. This consumes 1 sheet of Paper and creates a copy in your inventory</li>
+<li><strong>Make a Stamp</strong>: Select a blank stamp and use <strong>"Make a Stamp"</strong> to create a personal stamp with your own info page</li>
 </ol>
+The old "create new item" feature for writing items from scratch has been discontinued. Items you created before remain stored and usable.
 </div>
 </details>
 
 <details>
-<summary><strong>Q. Can I set an expiry date for items?</strong></summary>
+<summary><strong>Q. Can I set an expiry date on an item?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Yes, you can set the following dates when creating items:
+<strong>A.</strong> Yes, you can set the following dates while editing during Make a Stamp:
 <ul>
-<li><strong>Start Date</strong>: Content will be blurred until this date</li>
-<li><strong>Expiry Date</strong>: Content will be blurred and log additions disabled after this date</li>
+<li><strong>Start Date</strong>: Content is blurred until this date arrives</li>
+<li><strong>Expiry Date</strong>: Content is blurred and log additions are disabled after this date</li>
 </ul>
-If not set, it will be immediately visible and permanent.
+If not set, the item is visible immediately and remains available permanently.
 </div>
 </details>
 
 <details>
 <summary><strong>Q. Can I delete items?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Yes, you can delete items from the bottom menu after selecting them.
+<strong>A.</strong> Yes, select an item and delete it from the bottom menu.
 <br><br>
-⚠️ <strong>Warning</strong>:
+⚠️ <strong>Note</strong>:
 <ul>
 <li>Deleted items cannot be recovered</li>
 <li>Paper cannot be deleted</li>
-<li>Unused consumables (ink, stamps, badges) cannot be deleted</li>
-<li>Equipped badges must be unequipped before deletion</li>
+<li>Unused consumables (ink, stamps, badges) cannot be deleted either</li>
+<li>Equipped badges must be unequipped before they can be deleted</li>
 </ul>
 </div>
 </details>
@@ -107,11 +106,11 @@ If not set, it will be immediately visible and permanent.
 <details>
 <summary><strong>Q. What is a Badge?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> A badge is a <strong>unique identity</strong> for use within the app.
+<strong>A.</strong> A badge is a <strong>unique identity</strong> used within the app.
 <br><br>
-When you engrave a domain name on a badge, all your activities in the app will display your <strong>engraved domain name</strong> instead of your email.
+Once you engrave a domain name on a badge, all your in-app activity displays the <strong>engraved domain name</strong> instead of your email.
 <br><br>
-Examples: <code>MyBrand</code>, <code>JohnDoe</code>
+Example: <code>MyBrand</code>, <code>JohnDoe</code>
 </div>
 </details>
 
@@ -120,23 +119,23 @@ Examples: <code>MyBrand</code>, <code>JohnDoe</code>
 <div class="answer-content">
 <strong>A.</strong> Follow these steps:
 <ol>
-<li>Select unused badge → <strong>"Engrave"</strong> menu</li>
-<li>Enter desired domain name (max 32 chars, letters/numbers only)</li>
-<li>Click <strong>"Check Domain Availability"</strong> button to verify</li>
+<li>Select an unused badge → <strong>"Engrave"</strong> menu</li>
+<li>Enter your desired domain name (max 32 characters, letters/numbers only)</li>
+<li>Check availability with the <strong>"Check Domain Availability"</strong> button</li>
 <li>Optionally attach a 128x128 image</li>
-<li>Click <strong>"Engrave"</strong> button to complete</li>
+<li>Complete with the <strong>"Engrave"</strong> button</li>
 </ol>
-⚠️ <strong>Important</strong>: Once engraved, the domain name and image <strong>cannot be changed permanently</strong>.
+⚠️ <strong>Important</strong>: Once engraved, the domain name and image are <strong>permanently unchangeable</strong>.
 </div>
 </details>
 
 <details>
 <summary><strong>Q. How do I equip/unequip a Badge?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Tap an engraved badge to see <strong>"Equip"</strong> or <strong>"Unequip"</strong> buttons on the detail screen.
+<strong>A.</strong> Tap an engraved badge to see the <strong>"Equip"</strong> or <strong>"Unequip"</strong> button on its detail screen.
 <ul>
-<li><strong>Equipped</strong>: Your engraved domain name will be displayed for all activities</li>
-<li><strong>Unequipped</strong>: Your default email will be displayed again</li>
+<li><strong>Equip</strong>: All your in-app activity displays the engraved domain name</li>
+<li><strong>Unequip</strong>: Your default email is displayed again</li>
 </ul>
 Even if you own multiple badges, only one can be equipped at a time.
 </div>
@@ -145,9 +144,9 @@ Even if you own multiple badges, only one can be equipped at a time.
 <details>
 <summary><strong>Q. Can someone else use the same domain name?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> No. Domain names must be <strong>unique</strong> among all users.
+<strong>A.</strong> No. Domain names must be <strong>unique</strong> across all users.
 <br><br>
-However, if a badge is deleted, that domain name becomes available for others to use.
+However, if you delete a badge, its domain name is released and becomes available for others to use.
 </div>
 </details>
 
@@ -158,48 +157,91 @@ However, if a badge is deleted, that domain name becomes available for others to
 <details>
 <summary><strong>Q. What is a Stamp?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> A stamp is an item that lets you create <strong>templates</strong> and share them with others.
+<strong>A.</strong> A stamp is an item that lets you make a <strong>personal stamp</strong> and transfer it to others.
 <br><br>
-Templates can have images, titles, content, expiry dates, and support <strong>log functionality</strong> for keeping records.
+A personal stamp can have an image, title, content, expiry date, and more, and you can keep records through the <strong>log feature</strong>.
 </div>
 </details>
 
 <details>
-<summary><strong>Q. How do I create a Stamp template?</strong></summary>
+<summary><strong>Q. How do I make a personal stamp?</strong></summary>
 <div class="answer-content">
 <strong>A.</strong> Follow these steps:
 <ol>
-<li>Select unused stamp → <strong>"Create New Template"</strong> menu</li>
-<li>Select template image (required)</li>
-<li>Enter title and content</li>
-<li>Set start date/expiry date (optional)</li>
-<li>Select <strong>Log Mode</strong>: Solo log or Shared log</li>
-<li>Click <strong>"Create Template"</strong> button to complete</li>
+<li>Select an unused blank stamp → <strong>"Make a Stamp"</strong> menu</li>
+<li>Enter the stamp's <strong>name</strong> (max 32 characters) — it cannot be changed after confirmation</li>
+<li>In the editor that opens next, arrange images, text, and elements to build the info page</li>
+<li>Set options such as start date/expiry date and <strong>Log Mode</strong> (Solo Log/Shared Log)</li>
+<li>Save to finish</li>
 </ol>
 </div>
 </details>
 
 <details>
-<summary><strong>Q. What's the difference between Solo log and Shared log?</strong></summary>
+<summary><strong>Q. What's the difference between Solo Log and Shared Log?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> The recording method differs completely based on log mode:
+<strong>A.</strong> The recording method differs completely depending on the log mode:
 <br><br>
 <table>
 <tr><th>Category</th><th>Solo Log</th><th>Shared Log</th></tr>
-<tr><td>Log Storage</td><td>Saved to each person's private space</td><td>Saved to shared space based on original stamp</td></tr>
-<tr><td>Visible Logs</td><td>Only your own logs</td><td>All owners' logs</td></tr>
-<tr><td>Use Cases</td><td>Personal diary, notes</td><td>Collaboration, sharing opinions, community</td></tr>
-<tr><td>If Stamp Deleted</td><td>Not affected</td><td>Cannot add shared logs (read-only)</td></tr>
+<tr><td>Log storage</td><td>Saved to each person's private space</td><td>Saved to a shared space based on the original stamp</td></tr>
+<tr><td>Visible logs</td><td>Only your own logs</td><td>All owners' logs</td></tr>
+<tr><td>Example uses</td><td>Personal diary, memos</td><td>Collaboration, sharing opinions, community</td></tr>
+<tr><td>If stamp deleted</td><td>Not affected</td><td>Cannot add shared logs (read-only)</td></tr>
 </table>
 </div>
 </details>
 
 <details>
-<summary><strong>Q. Can I duplicate a Stamp?</strong></summary>
+<summary><strong>Q. Can I duplicate a stamp?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Yes! When you select an activated stamp (template) and paper together, the <strong>"Duplicate Template"</strong> menu appears.
+<strong>A.</strong> Yes! Select an activated stamp (personal stamp) together with Paper and the <strong>"Duplicate"</strong> menu appears.
 <br><br>
-Duplicating consumes 1 Paper and creates a new item with the same template. If in shared log mode, it uses the same shared space as the original.
+Duplicating consumes 1 sheet of Paper and creates a new item with the same content. If it is in Shared Log mode, it uses the same shared space as the original.
+</div>
+</details>
+
+---
+
+### ⚡ Quick Input
+
+<details>
+<summary><strong>Q. What is Quick Input?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Quick Input is a feature that makes it easy to enter special information when writing logs.
+<br><br>
+Tap the <strong>+</strong> button next to the log input field to choose from the following types:
+<ul>
+<li><strong>Keyword</strong>: General key:value format</li>
+<li><strong>Date Alarm</strong>: Date card (automatic D-Day calculation)</li>
+<li><strong>Phone Number</strong>: Automatic formatting by country</li>
+<li><strong>Location</strong>: Address/place information</li>
+<li><strong>Amount</strong>: Currency and amount</li>
+</ul>
+</div>
+</details>
+
+<details>
+<summary><strong>Q. What happens when I long-press a special card?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> Different actions are performed depending on the card type:
+<ul>
+<li><strong>📅 Date</strong>: Set/cancel alarm</li>
+<li><strong>📞 Phone Number</strong>: Call directly on mobile, copy on desktop</li>
+<li><strong>📍 Location</strong>: Open map app on mobile, copy on desktop</li>
+<li><strong>💰 Amount</strong>: Copy to clipboard</li>
+</ul>
+</div>
+</details>
+
+<details>
+<summary><strong>Q. How do I set an alarm on a date?</strong></summary>
+<div class="answer-content">
+<strong>A.</strong> <strong>Long-press</strong> a date card and an alarm confirmation dialog appears.
+<br><br>
+When an alarm is set, the card color changes and a 🔔 icon is displayed. Long-press again to cancel the alarm.
+<br><br>
+💡 D-Day is automatically calculated on date cards (e.g., D-5, D-Day, D+3)
 </div>
 </details>
 
@@ -210,24 +252,24 @@ Duplicating consumes 1 Paper and creates a new item with the same template. If i
 <details>
 <summary><strong>Q. What are Logs?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Logs are a feature for keeping records on items or stamp templates.
+<strong>A.</strong> Logs are a feature for keeping records on items or personal stamps.
 <br><br>
-Written as messages, they display like chat. Written as <code>key:value</code>, they display as info cards.
+Write in message form and it displays like a chat; write in <code>key:value</code> form and it displays as an info card.
 </div>
 </details>
 
 <details>
-<summary><strong>Q. Are there special log formats?</strong></summary>
+<summary><strong>Q. Are there special formats for Logs?</strong></summary>
 <div class="answer-content">
 <strong>A.</strong> Yes, various formats are supported:
 <br><br>
-<strong>Basic Formats:</strong>
+<strong>Basic formats:</strong>
 <ul>
-<li><code>key:value</code> - Displayed as info card (key 1-8 chars)</li>
-<li><code>---</code> - Displayed as divider</li>
-<li>Plain text - Displayed as chat bubble</li>
+<li><code>key:value</code> - Displayed as an info card (key is 1-8 characters)</li>
+<li><code>---</code> - Displayed as a divider</li>
+<li>Plain text - Displayed as a chat bubble</li>
 </ul>
-<strong>Text Styling:</strong>
+<strong>Text styling:</strong>
 <ul>
 <li><code>{[text]}</code> - Main color card</li>
 <li><code>[{text}]</code> - Gray card + main color text</li>
@@ -238,17 +280,17 @@ Written as messages, they display like chat. Written as <code>key:value</code>, 
 <li><code>'text'</code> - Underline</li>
 <li><code>&lt;text&gt;</code> - Strikethrough</li>
 </ul>
-Styles can be nested up to 3 levels. Using the same key multiple times displays as <code>previous value → new value</code> comparison.
+Styles can be nested up to 3 levels. Using the same key multiple times displays a comparison in the form <code>old value → new value</code>.
 </div>
 </details>
 
 <details>
-<summary><strong>Q. It says shared log has been terminated</strong></summary>
+<summary><strong>Q. It says the Shared Log has been stopped</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Shared log additions are terminated in these cases:
+<strong>A.</strong> Adding shared logs is stopped in the following cases:
 <ul>
-<li><strong>Original stamp deleted</strong>: "Shared log terminated because original stamp was deleted"</li>
-<li><strong>Expiry date passed</strong>: "Cannot add logs to expired shared logs"</li>
+<li><strong>Original stamp deleted</strong>: "The shared log has been stopped because the original stamp was deleted"</li>
+<li><strong>Expiry date passed</strong>: "Cannot add logs to a shared log that has passed its expiry date"</li>
 </ul>
 Existing logs can still be read, but new logs cannot be added.
 </div>
@@ -266,7 +308,7 @@ Existing logs can still be read, but new logs cannot be added.
 <li><strong>Black Ink</strong>: Default black theme</li>
 <li><strong>Gold Ink</strong>: Luxurious gold theme</li>
 </ul>
-Tap ink and select <strong>"Change Theme"</strong> to immediately change the entire app's color.
+Tap an ink and select <strong>"Change Theme"</strong> to instantly change the entire app's colors.
 </div>
 </details>
 
@@ -281,7 +323,7 @@ Tap ink and select <strong>"Change Theme"</strong> to immediately change the ent
 <ul>
 <li>Manage related documents as a single bundle</li>
 <li>Clipped documents show a 📎 icon in the top-right corner</li>
-<li>When transferred, they move together as a bundle</li>
+<li>Transferred together as a bundle when sending</li>
 </ul>
 </div>
 </details>
@@ -333,13 +375,13 @@ The excluded item becomes a separate document.
 </details>
 
 <details>
-<summary><strong>Q. What happens when I transfer a Clip?</strong></summary>
+<summary><strong>Q. What happens when I send a Clip?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Clips are transferred as a <strong>bundle</strong>.
+<strong>A.</strong> Clips are sent as a <strong>bundle</strong>.
 <ul>
-<li>All items in the clip are transferred together</li>
-<li>The clip status is maintained in the recipient's inventory</li>
-<li>On the receive screen, a clip counts as <strong>1 item</strong></li>
+<li>All items in the clip are sent together</li>
+<li>The clip state is maintained in the recipient's inventory</li>
+<li>On the receive screen, a clip counts as <strong>1</strong> item</li>
 </ul>
 </div>
 </details>
@@ -349,30 +391,30 @@ The excluded item becomes a separate document.
 ### 📤 Send/Receive
 
 <details>
-<summary><strong>Q. Does sending an item remove it from my inventory?</strong></summary>
+<summary><strong>Q. Does an item disappear from my inventory when I send it?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Yes, it disappears immediately. Transfers cannot be undone, so proceed carefully.
+<strong>A.</strong> Yes, it disappears immediately. Sending cannot be cancelled, so proceed carefully.
 <br><br>
-However, if the recipient selects <strong>"Return"</strong>, the item will come back to you.
+However, if the recipient chooses <strong>"Return"</strong>, the item comes back to you.
 </div>
 </details>
 
 <details>
-<summary><strong>Q. Where can I find the QR code?</strong></summary>
+<summary><strong>Q. Where do I find the QR code?</strong></summary>
 <div class="answer-content">
 <strong>A.</strong> You can find your QR code on the <strong>Profile</strong> screen.
 <ul>
-<li>Sender: Use <strong>"Scan QR"</strong> button to scan recipient's QR</li>
-<li>Recipient: Show QR code from Profile</li>
+<li>Sender: Scan the other person's QR with the <strong>"QR Scan"</strong> button</li>
+<li>Recipient: Show your QR code from your profile</li>
 </ul>
-The QR code contains your email address for quick transfers without manual entry.
+The QR code contains an email address, allowing fast sending without manual entry.
 </div>
 </details>
 
 <details>
 <summary><strong>Q. Can I send multiple items at once?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Yes, you can. Check multiple items on the send screen and transfer them all at once.
+<strong>A.</strong> Yes, you can. Check multiple items on the send screen and send them all at once.
 </div>
 </details>
 
@@ -385,9 +427,9 @@ The QR code contains your email address for quick transfers without manual entry
 <div class="answer-content">
 <strong>A.</strong> Tap the search bar at the top to activate search mode:
 <ul>
-<li>Results are filtered in <strong>real-time</strong> as you type</li>
-<li><strong>Recent searches</strong> are shown below (up to 5)</li>
-<li>Use the <strong>"Set as Filter"</strong> button to save searches for quick reuse</li>
+<li>Results are filtered in <strong>real time</strong> as you type</li>
+<li><strong>Recent searches</strong> are displayed below (up to 5)</li>
+<li>Save a search term with the <strong>"Set as Filter"</strong> button for quick reuse</li>
 </ul>
 </div>
 </details>
@@ -398,22 +440,22 @@ The QR code contains your email address for quick transfers without manual entry
 <strong>A.</strong> When you save a search term as a filter:
 <ul>
 <li>It appears as a filter tag below the search bar</li>
-<li>Tap the tag to instantly filter by that term</li>
-<li>Delete filters with the X button</li>
+<li>Tap a tag to instantly filter by that search term</li>
+<li>Delete a filter with the X button</li>
 </ul>
 </div>
 </details>
 
 <details>
-<summary><strong>Q. What is keyword aggregation?</strong></summary>
+<summary><strong>Q. What is the keyword aggregation feature?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> When a filter is set and you select items, the keyword values of selected items are automatically aggregated:
+<strong>A.</strong> When you select items while a filter is active, the keyword values of the selected items are automatically aggregated:
 <ul>
-<li><strong>Numeric values</strong>: Sum and average are calculated (e.g., <code>Sum: 6000  Average: 2000</code>)</li>
+<li><strong>Numeric values</strong>: Sum and average are calculated (e.g., <code>Sum: 6000  Avg: 2000</code>)</li>
 <li><strong>String values</strong>: Joined with spaces (e.g., <code>A B C</code>)</li>
-<li><strong>Copy values</strong>: <strong>Long press</strong> an aggregation result card to copy to clipboard</li>
+<li><strong>Copy values</strong>: <strong>Long-press</strong> the aggregation result card to copy it to the clipboard</li>
 </ul>
-Useful for calculating total prices of multiple items or gathering related tags.
+Useful for calculating the total price of multiple items or gathering related tags.
 </div>
 </details>
 
@@ -422,22 +464,22 @@ Useful for calculating total prices of multiple items or gathering related tags.
 ### 🛒 Shop
 
 <details>
-<summary><strong>Q. What can I buy in the shop?</strong></summary>
+<summary><strong>Q. What can I buy in the Shop?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> You can purchase these items:
+<strong>A.</strong> You can purchase the following items:
 <ul>
 <li><strong>Paper</strong>: For creating items</li>
-<li><strong>Stamp</strong>: For creating templates</li>
-<li><strong>Ink</strong>: For changing theme color</li>
-<li><strong>Badge</strong>: For engraving unique domain</li>
+<li><strong>Stamps</strong>: For making personal stamps</li>
+<li><strong>Ink</strong>: For changing theme colors</li>
+<li><strong>Badges</strong>: For engraving unique domains</li>
 </ul>
 </div>
 </details>
 
 <details>
-<summary><strong>Q. Can I use the shop on PC?</strong></summary>
+<summary><strong>Q. Can I use the Shop on PC too?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Yes, the shop is available on all platforms (iOS, Android, Windows, macOS).
+<strong>A.</strong> Yes, the Shop is available on all platforms (iOS, Android, Windows, macOS).
 </div>
 </details>
 
@@ -448,12 +490,12 @@ Useful for calculating total prices of multiple items or gathering related tags.
 <details>
 <summary><strong>Q. What is a Pocket?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Pocket is a feature to organize items into groups.
+<strong>A.</strong> A pocket is a feature for organizing items into groups.
 <ul>
-<li>Select items and use <strong>"Create Pocket"</strong> to create a new pocket</li>
+<li>Select items and create a new pocket with <strong>"Create Pocket"</strong></li>
 <li>Pocket names can be up to 16 characters</li>
 </ul>
-⚠️ Pockets are <strong>stored only on the device</strong>. They are not visible on other devices.
+⚠️ Pockets are <strong>stored on the device only</strong>. They are not visible on other devices.
 </div>
 </details>
 
@@ -462,12 +504,12 @@ Useful for calculating total prices of multiple items or gathering related tags.
 ### 📱 Account/Sync
 
 <details>
-<summary><strong>Q. Can I see the same items on different devices?</strong></summary>
+<summary><strong>Q. Can I see the same items on other devices?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Yes! If you log in with the same account, all items will automatically sync across all your devices.
+<strong>A.</strong> Yes! Log in with the same account and your items are automatically synced across all devices.
 <ul>
-<li><strong>Real-time sync</strong>: Changes are immediately reflected on other devices</li>
-<li><strong>Cloud backup</strong>: All data is securely stored in the cloud</li>
+<li><strong>Real-time sync</strong>: Changes are reflected on other devices immediately</li>
+<li><strong>Cloud backup</strong>: All data is safely stored in the cloud</li>
 <li><strong>No device limit</strong>: Use on multiple devices simultaneously</li>
 </ul>
 </div>
@@ -478,28 +520,28 @@ Useful for calculating total prices of multiple items or gathering related tags.
 ### 🖼️ Images
 
 <details>
-<summary><strong>Q. Are there any image size or format restrictions?</strong></summary>
+<summary><strong>Q. Are there limits on image size or format?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> The following restrictions apply:
+<strong>A.</strong> The following limits apply:
 <ul>
 <li><strong>Supported formats</strong>: JPG, PNG, GIF, WebP</li>
 <li><strong>Maximum size</strong>: 10MB per image</li>
-<li><strong>Recommended dimensions</strong>: 1024x1024 or smaller (auto-resized)</li>
+<li><strong>Recommended dimensions</strong>: 1024x1024 or smaller (automatically resized)</li>
 </ul>
-High-resolution images are automatically optimized when saved.
+High-resolution images are automatically optimized before saving.
 </div>
 </details>
 
 <details>
 <summary><strong>Q. What is the AI background removal feature?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> This feature uses AI to automatically remove backgrounds from images in the image editor.
+<strong>A.</strong> A feature where AI automatically removes the background in the image editor.
 <ul>
-<li>Select an item image and tap <strong>"Edit"</strong></li>
-<li>Choose <strong>"Remove Background"</strong></li>
+<li>Tap the <strong>"Edit"</strong> button when selecting an item image</li>
+<li>Select the <strong>"Remove Background"</strong> option</li>
 <li>AI automatically recognizes the main subject and makes the background transparent</li>
 </ul>
-Great for product photos or portrait images to get clean results.
+Get clean results with product photos and portraits.
 </div>
 </details>
 
@@ -510,22 +552,22 @@ Great for product photos or portrait images to get clean results.
 <details>
 <summary><strong>Q. How do I turn off or configure notifications?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> You can manage notifications in your device's system settings:
+<strong>A.</strong> Manage them in your device's system settings:
 <ul>
 <li><strong>iOS</strong>: Settings → Notifications → Inventory</li>
 <li><strong>Android</strong>: Settings → Apps → Inventory → Notifications</li>
 <li><strong>macOS</strong>: System Settings → Notifications → Inventory</li>
 </ul>
-Individual date alarms can be disabled by long-pressing the date card.
+Individual date alarms can be cancelled by long-pressing the date card.
 </div>
 </details>
 
 <details>
 <summary><strong>Q. When does the D-Day alarm go off?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Push notifications are sent at <strong>9:00 AM</strong> on the set date.
+<strong>A.</strong> A push notification is sent at <strong>9:00 AM</strong> on the set date.
 <br><br>
-💡 <strong>Tip</strong>: For important events, create multiple date cards (D-7, D-3, D-1) to get advance reminders.
+💡 <strong>Tip</strong>: For important schedules, create multiple date cards like D-7, D-3, D-1 to get reminders in advance.
 </div>
 </details>
 
@@ -536,13 +578,13 @@ Individual date alarms can be disabled by long-pressing the date card.
 <details>
 <summary><strong>Q. Where is my data stored?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> All data is securely stored in <strong>Firebase Cloud</strong>.
+<strong>A.</strong> All data is safely stored in the <strong>Firebase cloud</strong>.
 <ul>
-<li><strong>Encrypted transmission</strong>: All communications are encrypted with TLS</li>
+<li><strong>Encrypted transmission</strong>: All communication is encrypted with TLS</li>
 <li><strong>Secure storage</strong>: Managed on Google Cloud infrastructure</li>
 <li><strong>Privacy protection</strong>: Other users cannot access your items</li>
 </ul>
-For more details, see our <a href="/inventory/privacy/">Privacy Policy</a>.
+See the <a href="/inventory/privacy/">Privacy Policy</a> for details.
 </div>
 </details>
 
@@ -551,11 +593,11 @@ For more details, see our <a href="/inventory/privacy/">Privacy Policy</a>.
 <div class="answer-content">
 <strong>A.</strong> Yes! You can set a <strong>lock</strong> on items.
 <ul>
-<li>Item detail screen → Bottom menu → <strong>"Lock"</strong></li>
+<li>Item detail screen → bottom menu → <strong>"Lock"</strong></li>
 <li>Locked items have their content blurred</li>
-<li>Device authentication (Face ID, fingerprint, PIN) is required to view</li>
+<li>Device authentication (Face ID, fingerprint, PIN) is required to view them</li>
 </ul>
-Keep sensitive information safe and secure.
+Keep sensitive information safe.
 </div>
 </details>
 
@@ -566,15 +608,15 @@ Keep sensitive information safe and secure.
 <details>
 <summary><strong>Q. How can I use Inventory?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> You can use it for various purposes:
+<strong>A.</strong> It can be used for many purposes:
 <ul>
-<li><strong>Warranty/receipt management</strong>: Photos with expiration dates</li>
-<li><strong>Password storage</strong>: Keep secure with lock feature</li>
-<li><strong>Schedule management</strong>: D-Day alarms for important dates</li>
-<li><strong>Collection organization</strong>: Categorize with pockets</li>
-<li><strong>Team collaboration</strong>: Work together with shared logs</li>
+<li><strong>Warranty/receipt management</strong>: With photos and expiry dates</li>
+<li><strong>Password storage</strong>: Kept safe with the lock feature</li>
+<li><strong>Schedule management</strong>: Manage important dates with D-Day alarms</li>
+<li><strong>Collection organization</strong>: Sort and manage with pockets</li>
+<li><strong>Collaboration</strong>: Work with teammates using Shared Logs</li>
 </ul>
-For more ideas, check out <a href="/inventory/usecases/en/">100 Use Cases</a>!
+Check out <a href="/inventory/usecases/">100 Use Cases</a> for more ideas!
 </div>
 </details>
 
@@ -585,14 +627,14 @@ For more ideas, check out <a href="/inventory/usecases/en/">100 Use Cases</a>!
 <details>
 <summary><strong>Q. I found a bug</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Please report it on the <a href="/inventory/bug-report/en/">Bug Report</a> page.
+<strong>A.</strong> Please report it on the <a href="/inventory/bug-report/">Bug Report</a> page.
 </div>
 </details>
 
 <details>
 <summary><strong>Q. I want to suggest a new feature</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Please share your ideas on the <a href="/inventory/suggest/en/">Suggestions</a> page.
+<strong>A.</strong> Please share your idea on the <a href="/inventory/suggest/">Suggestions</a> page.
 </div>
 </details>
 
@@ -601,13 +643,13 @@ For more ideas, check out <a href="/inventory/usecases/en/">100 Use Cases</a>!
 <div class="answer-content">
 <strong>A.</strong> Go to Profile → Settings → Delete Account.
 <br><br>
-⚠️ <strong>Warning</strong>: Deleted accounts and all items cannot be recovered.
+⚠️ <strong>Note</strong>: Deleted accounts and all items cannot be recovered.
 </div>
 </details>
 
 ---
 
-> 💬 **Didn't find your answer?** Contact us through [Suggestions](/inventory/suggest/en/) or check the [Manual](/inventory/manual/en/).
+> 💬 **Didn't find your answer?** Contact us via [Suggestions](/inventory/suggest/) or check the [Manual](/inventory/manual/).
 
 <style>
 details {

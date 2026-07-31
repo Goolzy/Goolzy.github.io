@@ -25,30 +25,35 @@ translations:
 
 ## 📖 Manual do Usuário
 
-Explore todas as funcionalidades do aplicativo Inventory em detalhes.
+Conheça em detalhes as funções do app Inventory.
 
 ---
 
 <details open>
-<summary><h3 id="paper">📦 Sistema de Papel</h3></summary>
+<summary><h3 id="home">🏠 Primeiros passos — Tela inicial e abas</h3></summary>
 <div class="manual-content" markdown="1">
 
-No Inventory, o **Papel** é a moeda principal usada para criar itens.
+A parte inferior do app tem até 5 abas.
 
-#### O que é Papel?
-- **1 Papel** é consumido ao criar um item
-- Você não pode criar novos itens sem Papel
+| Aba | Descrição |
+|------|------|
+| **Explorar** | Navegue pelos itens base públicos e traga-os para o seu inventário |
+| **Mensagens** | Lista de conversas 1:1 com outros usuários |
+| **Inventário** | O espaço onde ficam guardados os itens que você possui |
+| **Carimbos** | Gerencie separadamente os carimbos pessoais criados com "Criar carimbo" |
+| **Loja** | Compre papel, carimbos e emblemas |
 
-#### Como obter Papel
+#### Abas que aparecem condicionalmente
 
-| Método | Quantidade | Nota |
-|--------|------------|------|
-| Novo cadastro | 10 Papel + 3 Selos | Apenas primeira vez |
-| Vincular Google | +10 folhas | Para usuários existentes |
-| Vincular Apple | +10 folhas | Para usuários existentes |
-| Compra na loja | 10 folhas | Compra in-app |
+- A aba **Inventário** aparece quando você possui algum item.
+- A aba **Carimbos** aparece quando você tem carimbos pessoais criados com "Criar carimbo".
+- Explorar, Mensagens e Loja ficam sempre visíveis.
 
-> 💡 **Dica**: Usuários existentes podem ganhar Papel extra vinculando novas contas sociais!
+#### Tela de início
+
+Ao abrir o app, você começa no **Inventário** se possuir itens; caso contrário, em **Explorar**.
+
+> 💡 No desktop, você pode alternar rapidamente entre as abas com a tecla Ctrl e uma tecla numérica.
 
 </div>
 </details>
@@ -56,52 +61,24 @@ No Inventory, o **Papel** é a moeda principal usada para criar itens.
 ---
 
 <details>
-<summary><h3 id="create-item">📄 Criar Itens</h3></summary>
+<summary><h3 id="paper">📦 Papel</h3></summary>
 <div class="manual-content" markdown="1">
 
-Selecione papel para criar documentos de log. Dependendo do número de papéis selecionados, você pode criar logs privados ou compartilhados.
+O **papel** é a moeda usada quando você torna um item base seu por meio de uma **cópia em papel (scrap)**.
 
-| Tipo de Log | Papéis | Finalidade |
-|-------------|--------|------------|
-| **Log Privado** | 1 | Notas pessoais, diário, mensagens unidirecionais |
-| **Log Compartilhado** | 2 ou mais | Conversa bidirecional, comunicação |
+#### Como obter papel
 
-<h4 id="private-log">Criar Item de Log Privado</h4>
+| Método | Quantidade | Observação |
+|------|--------|------|
+| Vincular conta Google · Apple | 10 folhas | Uma vez por conta vinculada |
+| Compra na loja | 10 folhas | Compra no app |
+| Recompensa de reciclagem | 1 folha | Exclua 10 folhas de papel não usadas e receba 1 folha nova |
 
-1. Selecione **1 Papel** na tela inicial
-2. Selecione **"Criar Novo Item (Log Privado)"** no menu inferior
-3. Insira as informações do item:
-   - Título (obrigatório)
-   - Conteúdo
-   - Imagem (opcional)
-   - Data de Início (opcional)
-   - Data de Expiração (opcional)
-4. Pressione **Salvar** e 1 Papel será consumido para criar o documento
+#### Uso do papel
 
-> 💡 **Log Privado**: Apenas você pode ver os logs que escreve. Após enviar, apenas o destinatário pode adicionar logs.
-
-<h4 id="shared-log">Criar Item de Log Compartilhado</h4>
-
-1. Selecione **2 ou mais Papéis** na tela inicial
-2. Selecione **"Criar Novo Item (Log Compartilhado)"** no menu inferior
-3. Insira as informações do item:
-   - Título (obrigatório)
-   - Conteúdo
-   - Imagem (opcional)
-   - Data de Início (opcional)
-   - Data de Expiração (opcional)
-4. Pressione **Salvar** e serão criados documentos iguais ao número de papéis selecionados
-
-> 💡 **Log Compartilhado**: Documentos criados compartilham a mesma sala de comentários. Envie documentos para diferentes pessoas para ver os logs um do outro em tempo real, como um chat.
-
-<h4 id="dates">Data de Início e Data de Expiração</h4>
-
-| Configuração | Descrição |
-|--------------|-----------|
-| **Data de Início** | O conteúdo ficará desfocado até esta data |
-| **Data de Expiração** | O conteúdo ficará desfocado e adições de log serão desativadas após esta data |
-
-Se não configurado, será visível imediatamente e permanente.
+- Ao copiar um item base, **1 folha** é consumida.
+- Se faltar papel, você pode comprar na loja ou vincular uma conta para receber.
+- O papel ainda não usado em cópias também pode ser transferido a outros usuários.
 
 </div>
 </details>
@@ -109,43 +86,57 @@ Se não configurado, será visível imediatamente e permanente.
 ---
 
 <details>
-<summary><h3 id="lock">🔒 Bloqueio de Documento</h3></summary>
+<summary><h3 id="stamp">🔖 Carimbos</h3></summary>
 <div class="manual-content" markdown="1">
 
-Você pode proteger itens de documento definindo uma senha.
+Um **carimbo** é um item que permite criar sua própria página de informações e transferi-la a outros usuários.
 
-#### O que é o Bloqueio de Documento?
+#### Criar carimbo
 
-Um documento bloqueado só pode ser visualizado após inserir a senha correta.
+1. No inventário, selecione um carimbo em branco que ainda não foi criado.
+2. Selecione **"Criar carimbo"** e digite o **nome** do carimbo. (Máx. 32 caracteres)
+3. Ao confirmar o nome, a criação é definitiva e, depois disso, **o nome não pode mais ser alterado.**
+4. No editor que se abre em seguida, disponha imagens, textos e elementos para compor a página de informações e salve.
 
-| Status | Descrição |
-|--------|-----------|
-| **Desbloqueado** | Qualquer pessoa pode ver o conteúdo |
-| **Bloqueado** | Conteúdo visível apenas com senha |
+> ⚠️ No momento em que você confirma o nome, a criação é concluída. No editor só é possível alterar a composição da página e as imagens — o nome fica fixo.
 
-#### Como Bloquear
+#### Gerenciamento na aba Carimbos
 
-1. Selecione os **documentos** que deseja bloquear na tela inicial (seleção múltipla possível)
-2. Selecione **"Bloquear Itens"** no menu inferior
-3. Digite uma senha numérica (até 16 dígitos)
-4. Digite a mesma senha novamente para confirmar
-5. Uma vez bloqueados, os itens exibirão um **ícone de cadeado** e efeito de **escala de cinza**
+Os carimbos pessoais criados ficam reunidos na aba **Carimbos**. Toque no **botão ≡** à direita de cada carimbo para abrir o menu.
 
-#### Como Desbloquear
+| Menu | Descrição |
+|------|------|
+| **Editar** | Editar a página de informações e as imagens (somente os originais que você criou) |
+| **Verificação de propriedade** | Verificar se um usuário específico possui um item criado com este carimbo |
+| **Transferir** | Transferir um item a outro usuário |
 
-1. Toque em um documento bloqueado para entrar na tela de detalhes
-2. Uma caixa de diálogo para inserir a senha aparecerá
-3. Digite a senha correta para desbloquear
-4. Uma vez desbloqueado, o bloqueio é removido permanentemente (para bloquear novamente, defina uma nova senha)
+- Deslize um item da lista para o lado para **confirmar (marcar como lido)** ou **abandonar o gerenciamento**.
 
-> ⚠️ **Aviso**: Se você esquecer sua senha, ela não pode ser recuperada. Documentos bloqueados só podem ser **excluídos**.
+#### Cópia (scrap)
 
-#### Recursos do Bloqueio
+Quando encontrar em Explorar um item base de que goste, use o **botão Scrap** da tela de detalhes para trazê-lo ao seu inventário.
 
-- Senhas de bloqueio são **armazenadas na nuvem**
-- O status de bloqueio é mantido mesmo ao transferir itens para outras pessoas
-- Documentos bloqueados não aparecem nos resultados de pesquisa
-- Itens bloqueados ainda podem ser excluídos
+- A cópia consome **1 folha de papel**.
+- Cada item base pode ser copiado **apenas uma vez**.
+- A cópia preserva as informações exatamente como estavam no momento da cópia — ela não muda automaticamente, mesmo que o original seja editado depois.
+
+#### Receber informações mais recentes
+
+Quando o original é atualizado, o botão **"Receber informações mais recentes"** aparece na sua cópia. Toque para atualizar para o conteúdo mais recente; você também pode deixar a atualização automática ativada.
+
+#### Transferir
+
+Itens criados com seus carimbos podem ser transferidos a outros usuários. Indique o destinatário digitando o e-mail ou nome de domínio, ou escaneando o QR.
+
+Ao enviar uma transferência, o destinatário recebe uma **notificação toast** e, ao tocar em **Receber**, a cópia transferida entra no inventário dele.
+
+#### Abandonar o gerenciamento
+
+Deslize na lista os carimbos que você não quer mais gerenciar para **abandonar o gerenciamento**.
+
+- As páginas e conversas dos usuários que já copiaram permanecem intactas.
+- Ele some da sua lista e **não é possível desfazer.**
+- Quando **10 fragmentos de carimbo** de carimbos abandonados ou excluídos se acumulam, você recebe **1 carimbo novo** de volta.
 
 </div>
 </details>
@@ -153,73 +144,21 @@ Um documento bloqueado só pode ser visualizado após inserir a senha correta.
 ---
 
 <details>
-<summary><h3 id="clip">📎 Sistema Clip</h3></summary>
+<summary><h3 id="explore">🔍 Explorar</h3></summary>
 <div class="manual-content" markdown="1">
 
-**Clip** é uma funcionalidade que agrupa múltiplos documentos para facilitar o gerenciamento.
+Descubra itens base públicos na aba **Explorar**.
 
-#### O que é um Clip?
+#### Navegar
 
-Os clips permitem que você gerencie documentos relacionados como um único grupo.
+- No topo aparecem categorias temáticas como **Jogos · Tecnologia · Filmes · Comida**.
+- Nas fileiras **Em alta** · **Novidades** você confere conteúdos populares e recentes.
 
-| Estado | Descrição |
-|--------|-----------|
-| **Documentos Individuais** | Documentos gerenciados separadamente |
-| **Documentos Clipados** | Gerenciados como grupo, movidos/transferidos juntos |
+#### Busca
 
-#### Criar um Clip
-
-1. Selecione **2 ou mais documentos** na tela inicial
-2. Toque em **"Clipar juntos"** no menu inferior
-3. Os documentos selecionados são agrupados em um único clip
-4. Documentos clipados exibem um **ícone de clip (📎)** no canto superior direito
-
-> 💡 **Dica**: O primeiro documento selecionado se torna a **capa** do clip!
-
-#### Ver Info do Clip
-
-1. Entre na **tela de detalhes** de um documento clipado
-2. Toque no botão **"Info do Clip"**
-3. Veja a lista de todos os itens no clip
-
-#### Reordenar Itens em um Clip
-
-Você pode mudar a ordem dos itens na tela de info do clip:
-
-1. Pressione e segure a **alça de arrasto (⋮⋮)** do item que deseja mover
-2. Arraste para a posição desejada
-3. Solte para salvar a ordem
-
-> ⚠️ **Nota**: A capa (primeiro item) não pode ser reordenada.
-
-#### Excluir Itens de um Clip
-
-Você pode remover itens específicos na tela de info do clip:
-
-1. Toque no botão **"Excluir"** ao lado do item
-2. Confirme para remover o item do clip
-3. O item removido volta a ser um documento individual
-
-> ⚠️ **Nota**: A capa não pode ser excluída. Se restarem apenas 2 itens e você excluir 1, o clip se dissolve automaticamente.
-
-#### Desfazer Clip
-
-1. Selecione o documento clipado
-2. Toque em **"Desfazer clip"** no menu inferior
-3. Todos os documentos são separados em documentos individuais
-
-#### Transferir Clips
-
-- Quando você envia um documento clipado, o **grupo inteiro** é transferido junto
-- Os destinatários aceitam/rejeitam clips como um **grupo**
-- Itens individuais dentro de um clip não podem ser enviados separadamente
-
-#### Características do Clip
-
-- Documentos clipados são **movidos/transferidos juntos**
-- Definir um bloqueio na capa protege todo o clip
-- O ícone de clip (📎) facilita identificar o status do clip
-- São necessários pelo menos 2 documentos para manter um clip
+1. Digite uma palavra-chave na barra de busca no topo.
+2. Enquanto você digita, sugestões e resultados aparecem em tempo real.
+3. Toque em um cartão de resultado para abrir a tela de detalhes, onde é possível fazer scrap.
 
 </div>
 </details>
@@ -227,40 +166,30 @@ Você pode remover itens específicos na tela de info do clip:
 ---
 
 <details>
-<summary><h3 id="badge">🏷️ Sistema de Emblema</h3></summary>
+<summary><h3 id="dm">💬 Mensagens diretas</h3></summary>
 <div class="manual-content" markdown="1">
 
-Um **Emblema** é uma identidade única que você pode usar dentro do aplicativo.
+Você pode ter **conversas diretas 1:1** com outros usuários.
 
-#### O que é um Emblema?
+#### Iniciar uma conversa
 
-Quando você grava um nome de domínio em um emblema, todas as suas atividades no app serão exibidas com seu **nome de domínio gravado** em vez do seu email.
+Há três maneiras de iniciar uma conversa.
 
-Exemplos: `MinhaMarca`, `JoãoSilva`, `Empresa2025`
+1. Toque no **autor de um comentário em conteúdo de Explorar** e escolha **Iniciar mensagem** no pop-up de perfil
+2. Digite o e-mail ou nome de domínio da pessoa na **barra de busca da aba Mensagens**
+3. Encontre a pessoa por **leitura de QR** (a leitura preenche a barra de busca automaticamente)
 
-#### Gravar um Emblema
+- Ao puxar conversa, ela começa quando **a outra pessoa aceita**. Se ambos se solicitaram ou já conversaram antes, ela continua direto, sem aceitação.
+- Se o e-mail for de alguém que ainda não usa o app, você pode enviar um **e-mail de convite** com o link de instalação e um QR.
 
-1. Compre um emblema na loja (estado não usado)
-2. Toque no emblema → Selecione o menu **"Gravar"**
-3. Digite o nome de domínio desejado (máx. 32 caracteres)
-   - Caracteres e números de todos os idiomas são permitidos
-   - Caracteres especiais e emojis não são permitidos
-4. Clique em **"Verificar disponibilidade do domínio"** para verificar
-5. Opcionalmente anexe uma imagem 128x128
-6. Clique em **"Gravar"** para completar
+#### Aba Mensagens
 
-> ⚠️ **Aviso**: Uma vez gravado, o nome de domínio e a imagem **não podem ser alterados permanentemente**. Escolha com cuidado!
+- Suas conversas aparecem em lista, e as mensagens não lidas são indicadas por um contador.
+- Deslize um item para o lado para marcá-lo como lido ou excluir a conversa. (A exclusão vale só para o seu lado — o histórico da outra pessoa é mantido.)
 
-#### Equipar/Desequipar um Emblema
+#### Denunciar · Bloquear
 
-- **Equipado**: Seu nome de domínio gravado será exibido em todas as atividades
-- **Desequipado**: Seu email padrão será exibido novamente
-- Mesmo possuindo múltiplos emblemas, apenas um pode ser equipado por vez
-
-#### Exibição no cartão de inventário
-
-Emblemas gravados (estado ativo) exibem uma prévia da imagem gravada no canto superior direito do cartão de inventário.
-Isso permite identificar rapidamente a qual domínio o emblema pertence.
+No pop-up de perfil você pode **denunciar** ou **bloquear** alguém. O desbloqueio é feito na lista de bloqueados em Configurações.
 
 </div>
 </details>
@@ -268,67 +197,32 @@ Isso permite identificar rapidamente a qual domínio o emblema pertence.
 ---
 
 <details>
-<summary><h3 id="stamp">🔖 Sistema de Carimbo</h3></summary>
+<summary><h3 id="chat-media">🖼️ Fotos e vídeos no chat</h3></summary>
 <div class="manual-content" markdown="1">
 
-Um **Carimbo** é um item que permite criar modelos e compartilhá-los com outros.
+Você pode anexar fotos e vídeos às mensagens e aos chats da comunidade.
 
-#### Exibição no cartão de inventário
+#### Enviar
 
-Carimbos com modelos (estado ativo) são exibidos de forma especial no inventário:
-- **Fundo**: Imagem do modelo exibida com 33% de opacidade
-- **Frente**: Imagem do carimbo gravado
+1. Na aba **Mídia** do campo de entrada, toque no botão **Foto** ou **Vídeo**.
+2. Ao selecionar vários, eles vão para o palco, onde é possível reordenar arrastando ou excluir individualmente.
+3. Toque em enviar para iniciar o upload — a mensagem aparece imediatamente na conversa, sem espera.
 
-Isso permite identificar rapidamente de qual modelo se trata.
+> 💡 No desktop, apenas anexos de foto são aceitos.
 
-#### Criar um modelo de Carimbo
+#### Galeria (vários itens)
 
-1. Compre um carimbo na loja (estado não usado)
-2. Toque no carimbo → Selecione o menu **"Criar novo modelo"**
-3. Insira as informações do modelo:
-   - **Imagem** (obrigatório)
-   - **Título** (máx. 32 caracteres)
-   - **Conteúdo** (máx. 1024 caracteres)
-   - **Data de início** (opcional) - Conteúdo oculto até esta data
-   - **Data de expiração** (opcional) - Adição de registros desativada após
-   - **Modo de registro** - Registro solo ou Registro compartilhado
-4. Clique em **"Criar modelo"** para completar
+- É possível agrupar **até 16** em uma colagem numa só mensagem.
+- Toque em uma célula para abrir o visualizador e ver em tamanho grande; também dá para salvar todos.
 
-#### Duplicar um Carimbo
+#### Edição de vídeo
 
-Quando você seleciona um carimbo ativado (modelo) e papel juntos, o menu **"Duplicar modelo"** aparece.
+- Vídeos podem ser enviados com até **25 MB · 60 segundos**.
+- Se exceder o limite, use a **edição de vídeo** para cortar o trecho desejado. Um medidor mostra o tamanho estimado.
 
-- 1 Papel é consumido
-- Um novo item com o mesmo modelo é criado
-- No modo de registro compartilhado, usa o mesmo espaço compartilhado do original
+#### Prévia de link
 
-#### Compartilhar Seu Modelo
-
-Você pode compartilhar seu modelo de carimbo para que outros usuários possam pesquisá-lo e cloná-lo.
-
-1. Toque em um carimbo ativado (modelo) → Selecione **"Configurações de compartilhamento"**
-2. Insira as informações de compartilhamento:
-   - **Descrição** - Uma frase curta descrevendo o modelo
-   - **Tags** - Palavras-chave para pesquisa (separadas por vírgulas)
-   - **Duração do compartilhamento** - Por quanto tempo o compartilhamento permanecerá ativo
-3. Clique em **"Iniciar compartilhamento"** para concluir
-
-Modelos compartilhados podem ser encontrados e clonados por outros usuários via pesquisa por tags.
-
-> 💡 **Dica**: Para parar de compartilhar, selecione **"Parar compartilhamento"** no mesmo menu.
-
-#### Pesquisar Modelos Compartilhados
-
-Você pode pesquisar e clonar modelos compartilhados por outros usuários.
-
-1. Vá para a tela de Perfil e selecione **"Pesquisar modelos compartilhados"**
-2. Digite tags para pesquisar ou toque em tags populares/recentes
-3. Toque em um modelo nos resultados da pesquisa para ver os detalhes
-4. Clique no botão **"Clonar"** para clonar o modelo
-
-- Clonar consome 1 Papel
-- O botão de clonar fica desativado se você não tiver papel
-- Itens clonados têm as mesmas informações de modelo do original
+Links colocados no chat aparecem como cartões de prévia com título e imagem. Em links de vídeo, toque no cartão para **reproduzir ali mesmo**.
 
 </div>
 </details>
@@ -336,40 +230,16 @@ Você pode pesquisar e clonar modelos compartilhados por outros usuários.
 ---
 
 <details>
-<summary><h3 id="quick-input">⚡ Entrada Rápida</h3></summary>
+<summary><h3 id="emoticon">😊 Emoticons</h3></summary>
 <div class="manual-content" markdown="1">
 
-Ao adicionar registros, toque no botão `+` para abrir o menu de **Entrada Rápida** para inserir informações especiais facilmente.
+Adicione **emoticons** às conversas para expressar emoções.
 
-#### Tipos de Entrada Rápida
+1. Abra a aba **Emoticons** do campo de entrada.
+2. Escolha o emoticon desejado em uma categoria. (Os usados recentemente também ficam reunidos.)
+3. Envie junto com texto ou envie apenas o emoticon.
 
-| Tipo | Descrição | Exemplo |
-|------|-----------|---------|
-| **Palavra-chave** | Formato Chave:Valor | `Status:Bom` |
-| **Data** | Datas com cálculo D-Day | D-5, D-Day, D+3 |
-| **Telefone** | Número de telefone | Pode ligar diretamente |
-| **Localização** | Endereço/coordenadas | Abre no app de mapas |
-| **Valor** | Formato de moeda | Formatação automática |
-
-#### Ações de Pressão Longa
-
-| Tipo de Cartão | Ação de Pressão Longa |
-|----------------|----------------------|
-| **📅 Data** | Definir/Remover alarme |
-| **📞 Telefone** | Mobile: Ligar, Desktop: Copiar |
-| **📍 Localização** | Mobile: Abrir no mapa, Desktop: Copiar |
-| **💰 Valor** | Copiar para área de transferência |
-
-<h4 id="alarm">Configuração de Alarme de Data</h4>
-
-Pressione longamente um cartão de data para definir um alarme:
-
-1. **Pressione longamente** o cartão de data
-2. Selecione **Definir** na caixa de diálogo de confirmação
-3. Uma vez definido, a cor do cartão muda e um ícone 🔔 aparece
-4. Pressione longamente novamente para remover o alarme
-
-> 💡 **Dica**: Os cartões de data exibem automaticamente cálculos D-Day (ex: D-5, D-Day, D+3)
+> 💡 Um emoticon enviado sozinho aparece em tamanho grande, sem balão, e chama mais atenção.
 
 </div>
 </details>
@@ -377,86 +247,16 @@ Pressione longamente um cartão de data para definir um alarme:
 ---
 
 <details>
-<summary><h3 id="log">📝 Sistema de Registro</h3></summary>
+<summary><h3 id="privacy">🔒 Proteção de privacidade</h3></summary>
 <div class="manual-content" markdown="1">
 
-Os **Registros** são anotações que você pode adicionar a itens ou modelos de carimbo.
+Seu endereço de e-mail é protegido para não ficar exposto como está.
 
-#### Modos de Registro
+- **Usuários com emblema equipado** são exibidos pelo **nome de domínio** em vez do e-mail, e o QR deles também é gerado com base no domínio.
+- O e-mail de um **usuário sem emblema** é representado por um **QR colorido**, reconhecível apenas por quem o escanear diretamente.
+- Nos **chats da comunidade**, vistos por muitas pessoas, a parte final do e-mail (depois do @) fica oculta para usuários sem emblema de domínio.
 
-| Modo | Registro Solo | Registro Compartilhado |
-|------|---------------|------------------------|
-| **Local de armazenamento** | Espaço privado de cada pessoa | Espaço compartilhado baseado no carimbo original |
-| **Registros visíveis** | Apenas seus próprios registros | Registros de todos os proprietários |
-| **Casos de uso** | Diário pessoal, notas | Colaboração, comunidade |
-| **Se original excluído** | Não afetado | Não é possível adicionar registros (somente leitura) |
-
-#### Formatos de Registro
-
-Você pode usar vários formatos ao escrever registros.
-
-**Formatos básicos:**
-
-| Formato | Descrição | Exemplo |
-|---------|-----------|---------|
-| Texto simples | Exibido como bolha de chat | `Inspeção concluída hoje!` |
-| `chave:valor` | Exibido como cartão info (chave 1-8 car.) | `status:bom` |
-Usar a mesma chave múltiplas vezes exibe `valor anterior → novo valor`.
-
-**Estilização de texto:**
-
-| Formato | Efeito | Exemplo |
-|---------|--------|---------|
-| `{[texto]}` | Cartão cor principal (fundo + texto) | `{[Importante]}` |
-| `[{texto}]` | Cartão cinza + texto cor principal | `[{Cuidado}]` |
-| `[texto]` | Cartão cinza | `[Nota]` |
-| `{texto}` | Texto cor principal | `{Ênfase}` |
-| `(texto)` | Texto cor secundária | `(Info adicional)` |
-| `"texto"` | **Negrito** | `"Conteúdo importante"` |
-| `'texto'` | <u>Sublinhado</u> | `'Parte destacada'` |
-| `<texto>` | ~~Tachado~~ | `<Conteúdo excluído>` |
-
-> 💡 Estilos podem ser aninhados até 3 níveis. Exemplo: `{["Negrito cor principal"]}`
-
-**Links de mídia (Cartões URL):**
-
-Quando você insere uma URL em um registro, ela é automaticamente exibida como **cartão enriquecido**.
-
-| Plataforma | Conteúdo exibido | Exemplo |
-|------------|------------------|---------|
-| **YouTube** | Miniatura + Título + Canal | `https://youtube.com/watch?v=...` |
-| **Spotify** | Capa do álbum + Título + Artista | `https://open.spotify.com/track/...` |
-| **Google Drive** | Miniatura do arquivo + Nome | `https://drive.google.com/file/d/...` |
-| **Dropbox** | Ícone + Nome do arquivo | `https://dropbox.com/s/...` |
-| **OneDrive** | Ícone + Nome do serviço | `https://1drv.ms/...` |
-| **Páginas web** | Miniatura + Título da página | `https://example.com` |
-
-- Use formato `chave:URL` para exibir com palavra-chave (ex: `docs:https://youtube.com/...`)
-- **Toque** no cartão para abrir em app/navegador externo
-- **Pressione longamente** para copiar a URL para a área de transferência
-
-> 💡 **Dica**: Arquivos do Google Drive devem estar **compartilhados publicamente** para exibir miniaturas.
-
-**Registros automáticos:**
-
-Quando um item é transferido, um registro de transferência é automaticamente gravado:
-- Exibido no formato `Remetente → Destinatário`
-- Se um emblema estiver equipado, o nome de domínio é exibido
-
-#### Condições de término do registro compartilhado
-
-- **Carimbo original excluído**: Não é possível adicionar registros compartilhados (somente leitura)
-- **Data de expiração passada**: Não é possível adicionar registros compartilhados (somente leitura)
-
-#### 🔔 Indicador de não lido
-
-Quando novos comentários são adicionados a um registro compartilhado, a borda do item **pulsa** na visualização do inventário.
-
-- A pulsação começa imediatamente quando outro usuário adiciona um comentário
-- A pulsação para quando você abre e visualiza o documento
-- O status de leitura é salvo na nuvem e sincronizado em todos os dispositivos
-
-> 💡 **Dica**: Verifique os itens que pulsam para não perder novos comentários!
+A exibição do nome é refletida em tempo real: equipar ou remover um emblema é aplicado automaticamente em listas de conversas, perfis e outros lugares.
 
 </div>
 </details>
@@ -464,23 +264,25 @@ Quando novos comentários são adicionados a um registro compartilhado, a borda 
 ---
 
 <details>
-<summary><h3 id="ink">🎨 Sistema de Tinta</h3></summary>
+<summary><h3 id="badge">🏷️ Emblemas</h3></summary>
 <div class="manual-content" markdown="1">
 
-A **Tinta** é um item que muda a cor do tema do aplicativo.
+Grave um nome de domínio em um **emblema** e, no app, você será exibido por esse nome em vez do e-mail.
 
-#### Como usar
+#### Gravar
 
-1. Toque em uma tinta para entrar na tela de detalhes
-2. Clique no botão **"Mudar tema"**
-3. A cor de todo o aplicativo muda imediatamente
+1. Compre um emblema na loja e selecione um que ainda não foi gravado.
+2. Digite o **nome de domínio** desejado. (Máx. 32 caracteres, apenas letras e números, sem caracteres especiais ou emojis)
+3. Confira a disponibilidade com a **verificação de duplicidade**.
+4. Opcionalmente anexe uma imagem 128×128 e grave.
 
-#### Tipos de Tinta
+> ⚠️ **Atenção**: o **nome de domínio gravado é permanente** e não pode ser alterado. Se gravar com imagem, depois é possível editar a imagem e as palavras-chave; se gravar sem imagem, não será possível editar depois.
 
-| Tinta | Cor |
-|-------|-----|
-| **Tinta Preta** | Tema preto padrão |
-| **Tinta Dourada** | Tema dourado luxuoso |
+#### Equipar / Remover / Editar
+
+- Ao **equipar**, sua atividade no app é exibida com o nome de domínio. Apenas um pode ser equipado por vez.
+- Ao **remover**, você volta a ser exibido com o e-mail padrão.
+- Com **Editar** é possível trocar a imagem e as palavras-chave.
 
 </div>
 </details>
@@ -488,49 +290,16 @@ A **Tinta** é um item que muda a cor do tema do aplicativo.
 ---
 
 <details>
-<summary><h3 id="search">🔍 Função de Busca</h3></summary>
+<summary><h3 id="folder">📂 Pastas</h3></summary>
 <div class="manual-content" markdown="1">
 
-#### Busca básica
+Quando os itens se acumulam, você pode organizá-los em **pastas**.
 
-Toque na barra de busca no topo para ativar o modo de busca.
+- Arraste um item para a área **"Criar nova pasta"** na parte inferior para criar uma pasta.
+- Renomeie a pasta com um toque longo no cabeçalho. (Máx. 16 caracteres)
+- A seta do cabeçalho recolhe ou expande a pasta, e tocar no cabeçalho seleciona todos os itens da pasta de uma vez.
 
-- Os resultados são filtrados em **tempo real** enquanto você digita
-- Toque no botão X para sair do modo de busca
-
-#### Buscas recentes
-
-- Até 5 buscas recentes são salvas
-- Toque em uma busca recente para preencher automaticamente
-- Exclua individualmente com o botão X
-
-#### Salvar como filtro
-
-Quando você salva um termo de busca com o botão **"Definir como filtro"**:
-
-- Ele aparece como etiqueta de filtro abaixo da barra de busca
-- Toque na etiqueta para filtrar instantaneamente
-- Exclua o filtro com o botão X
-
-<h4 id="keyword">Agregação de palavras-chave</h4>
-
-Quando um filtro está definido e você seleciona itens, os **valores de palavras-chave dos itens selecionados são automaticamente agregados**.
-
-**Agregação de valores numéricos:**
-- **Soma** e **média** são calculadas para valores numéricos da mesma palavra-chave
-- Exemplo: Selecionar `preço:1000`, `preço:2000`, `preço:3000`
-- Resultado: `Soma: 6000  Média: 2000`
-
-**Agregação de strings:**
-- Valores de string da mesma palavra-chave são **unidos com espaços**
-- Exemplo: Selecionar `tag:A`, `tag:B`, `tag:C`
-- Resultado: `A B C`
-
-**Copiar valores:**
-- **Pressione longamente** um cartão de agregação para copiar o valor
-- Uma notificação aparece quando a cópia é concluída
-
-> 💡 **Exemplo de uso**: Calcule rapidamente o preço total de vários itens, ou copie tags relacionadas de uma vez.
+> 💡 As pastas são salvas **apenas no dispositivo em uso**. Os itens em si aparecem em todos os dispositivos, mas a organização em pastas pode variar por dispositivo.
 
 </div>
 </details>
@@ -538,18 +307,20 @@ Quando um filtro está definido e você seleciona itens, os **valores de palavra
 ---
 
 <details>
-<summary><h3 id="bottom-menu">📱 Emblema do menu inferior</h3></summary>
+<summary><h3 id="shop">🛒 Loja</h3></summary>
 <div class="manual-content" markdown="1">
 
-Emblemas vermelhos nos ícones do menu inferior mostram o status atual.
+Na loja você pode comprar os itens necessários.
 
-| Menu | Significado do emblema |
-|------|------------------------|
-| **Enviar** | Número de itens que podem ser enviados (transferíveis entre os selecionados) |
-| **Receber** | Número de transações pendentes (requerem aceitar/devolver) |
-| **Ação** | Número de ações disponíveis com os itens selecionados |
+| Produto | Finalidade |
+|------|------|
+| **Papel** | Para copiar itens base |
+| **Carimbo** | Para transformar uma página de informações em carimbo pessoal |
+| **Emblema** | Para gravar um nome de domínio |
 
-> 💡 Os números dos emblemas animam com um efeito de bolha quando mudam.
+1. Toque no produto desejado na aba Loja.
+2. Confira as informações do produto e a política de reembolso e concorde.
+3. Concluído o pagamento, a entrega é automática.
 
 </div>
 </details>
@@ -557,150 +328,28 @@ Emblemas vermelhos nos ícones do menu inferior mostram o status atual.
 ---
 
 <details>
-<summary><h3 id="transfer">📤 Enviar Itens</h3></summary>
+<summary><h3 id="language">🌍 Alterar o idioma</h3></summary>
 <div class="manual-content" markdown="1">
 
-Você pode transferir itens ao vender usados ou dar presentes.
+8 idiomas são suportados:
 
-#### Como enviar
-
-1. Selecione **Enviar** na aba inferior
-2. **Marque** os itens para transferir (seleção múltipla possível)
-3. Digite o email do destinatário
-4. Clique no botão **Enviar**
-
-#### Inserir email por código QR
-
-Em vez de digitar o email do destinatário, você pode usar um código QR:
-
-1. O destinatário exibe seu código QR na tela de **Perfil**
-2. O remetente pressiona o botão **Escanear QR**
-3. Escaneie o código QR com a câmera
-4. O email é inserido automaticamente
-
-> ⚠️ **Importante**: Itens transferidos **desaparecem imediatamente** do seu inventário. Transferências não podem ser desfeitas.
-
-</div>
-</details>
-
----
-
-<details>
-<summary><h3 id="receive">📥 Receber Itens</h3></summary>
-<div class="manual-content" markdown="1">
-
-Você pode receber itens enviados por outros.
-
-#### Como receber
-
-1. Selecione **Receber** na aba inferior
-2. A lista de itens recebidos é exibida
-3. Para cada item:
-   - **Aceitar**: Adicionado ao seu inventário
-   - **Devolver**: Enviado de volta ao remetente
-
-#### Notificações
-
-- Você recebe notificações push quando novos itens chegam (se habilitadas)
-- A aba Receber mostra o número de itens não aceitos
-
-</div>
-</details>
-
----
-
-<details>
-<summary><h3 id="shop">🛒 Usar a Loja</h3></summary>
-<div class="manual-content" markdown="1">
-
-Você pode comprar vários itens na loja.
-
-#### Produtos disponíveis
-
-| Produto | Uso |
-|---------|-----|
-| **Papel** | Para criar itens (consumível) |
-| **Carimbo** | Para criar modelos |
-| **Emblema** | Para gravar um domínio único |
-| **Tinta** | Para mudar a cor do tema |
-
-#### Como comprar
-
-1. Selecione **Loja** na aba inferior
-2. Toque no produto desejado
-3. Prossiga com o pagamento (App Store / Google Play)
-4. Entregue automaticamente após o pagamento
-
-> 💡 A loja está disponível em todas as plataformas (iOS, Android, Windows, macOS).
-
-</div>
-</details>
-
----
-
-<details>
-<summary><h3 id="pocket">📂 Função de Partição</h3></summary>
-<div class="manual-content" markdown="1">
-
-Você pode agrupar itens com partições quando tiver muitos.
-
-#### Criar uma Partição
-
-1. Selecione itens
-2. Selecione **"Criar partição"** no menu inferior
-3. Digite o nome da partição (máx. 16 caracteres)
-
-#### Características da Partição
-
-- Partições são **salvas apenas no dispositivo**
-- A estrutura de partição não é visível em outros dispositivos
-- Os itens em si são armazenados na nuvem e visíveis em todos os dispositivos
-
-#### Recolher/Expandir
-
-Use o botão de seta (▼/▲) no lado direito do cabeçalho da partição para recolher ou expandir.
-
-- O estado recolhido é mantido após reiniciar o aplicativo
-- Todas as partições são automaticamente expandidas durante a busca
-- Você pode arrastar itens para partições recolhidas
-
-#### Selecionar tudo na Partição
-
-Toque no cabeçalho da partição para selecionar/desmarcar todos os itens nessa partição.
-
-| Indicador | Significado |
-|-----------|-------------|
-| ○ (Círculo vazio) | Nenhum selecionado |
-| ◐ (Semicírculo) | Alguns selecionados |
-| ● (Círculo cheio) | Todos selecionados |
-
-</div>
-</details>
-
----
-
-<details>
-<summary><h3 id="language">🌍 Mudar idioma</h3></summary>
-<div class="manual-content" markdown="1">
-
-7 idiomas são suportados:
 - 🇰🇷 한국어
 - 🇺🇸 English
 - 🇯🇵 日本語
+- 🇨🇳 中文(简体)
 - 🇩🇪 Deutsch
 - 🇫🇷 Français
 - 🇪🇸 Español
 - 🇧🇷 Português
 
-**Como mudar:**
-Configurações → Idioma → Selecione o idioma desejado
+Selecione em **Configurações → Idioma** e a mudança é aplicada imediatamente.
 
 </div>
 </details>
 
 ---
 
-> 📚 **Tem mais perguntas?** Consulte as [Perguntas Frequentes](/inventory/faq/pt/) ou entre em contato através de [Sugestões](/inventory/suggest/pt/).
+> 📚 **Ainda tem dúvidas?** Confira as [Perguntas frequentes](/inventory/faq/) ou fale conosco por meio de [Sugestões](/inventory/suggest/).
 
 <style>
 details {

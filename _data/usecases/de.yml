@@ -1,11 +1,11 @@
-# Inventar-Nutzungsanleitung (Deutsch) - Vollständige Überarbeitung
+# Inventar-Nutzungsdaten (Deutsch) - Vollständige Überarbeitung
 page:
-  title: "Inventar-Nutzungsanleitung"
-  intro: "Entdecken Sie, was Sie mit dem Inventar alles machen können. Von einfachen bis zu fortgeschrittenen Funktionen - wir führen Sie Schritt für Schritt."
+  title: "Inventar-Nutzungsguide"
+  intro: "Entdecken Sie, was Sie mit dem Inventar alles machen können. Von einfachen bis zu fortgeschrittenen Funktionen führen wir Sie Schritt für Schritt."
   expand: "Anleitung anzeigen ↓"
   collapse: "Einklappen ↑"
-  share_title: "Teilen Sie auch Ihre Nutzungsweise mit uns"
-  share_text: "Wie nutzen Sie es? Wir freuen uns auf neue Ideen."
+  share_title: "Teilen Sie uns auch Ihre Nutzungsweise mit"
+  share_text: "Wie nutzen Sie die App? Wir freuen uns auf neue Ideen."
   share_btn: "Nutzungsweise teilen"
   share_link: "/inventory/suggest/"
   manual_base: "/inventory/manual/"
@@ -18,457 +18,643 @@ page:
 categories:
   # ===== 1. Papier-Nutzung (Paper) =====
   - id: paper-usage
-    title: "📄 Papier-Nutzung"
+    title: "Papier-Nutzung"
     icon: "📄"
     description: "Alles, was Sie mit Papier (Paper) machen können"
     items:
       # 1-1. Einzelne Aufzeichnung
       - type: "Anfänger"
         title: "Eigene Aufzeichnungen erstellen"
-        subtitle: "Persönliches Archiv mit einem Blatt Papier beginnen"
+        subtitle: "Persönliches Archiv, das mit 1 Blatt Papier beginnt"
         content: |
-          <p><strong>Übersicht</strong>: Dokumentieren Sie leeres Papier, um Bilder und Text aufzuzeichnen, und fügen Sie dem Log kontinuierlich Inhalte hinzu.</p>
+          <p><strong>Übersicht</strong>: Erstellen Sie von einem Basis-Objekt, das Ihnen im Entdecken gefällt, mit 1 Blatt Papier eine Papierkopie und machen Sie es zu Ihrem eigenen — im Log können Sie fortlaufend eigene Aufzeichnungen hinzufügen.</p>
 
           <p><strong>Anleitung</strong></p>
           <ol>
-            <li>Im Inventar <strong>leeres Papier</strong> lange drücken, um <strong>Details anzeigen</strong> aufzurufen<br/>
-                <em>oder</em> leeres Papier auswählen und <strong>Aktion</strong>-Button antippen</li>
-            <li>Menü <strong>Neues Element erstellen</strong> auswählen</li>
-            <li>Elementinformationen eingeben:
-              <ul>
-                <li>Bild (optional)</li>
-                <li>Titel (erforderlich)</li>
-                <li>Inhalt (optional)</li>
-                <li>Frist (optional)</li>
-              </ul>
-            </li>
-            <li><strong>Erstellen</strong> abschließen → Wird zu dokumentiertem Papier umgewandelt</li>
-            <li>Im Inventar wird das dokumentierte Papier mit Bild und Titel angezeigt</li>
+            <li>Im Tab <strong>Entdecken</strong> ein interessantes Basis-Objekt finden</li>
+            <li>Über den <strong>Scrap</strong>-Button im Detailbildschirm kopieren — verbraucht 1 Blatt Papier</li>
+            <li>Eine Kopie wird in Ihrem Inventar erstellt (die Informationen zum Zeitpunkt der Papierkopie bleiben unverändert erhalten)</li>
+            <li>Im Log fortlaufend eigene Aufzeichnungen mit Bildern und Text hinzufügen</li>
           </ol>
+
+          <p>Wenn Sie die Seite von Anfang an frei gestalten möchten, nutzen Sie <strong>Als Stempel übernehmen</strong> (siehe Kapitel 2).</p>
 
           <p><strong>Anwendungsbeispiele</strong></p>
           <ul>
             <li>📔 <strong>Tagebuch/Notizbuch</strong>: Tägliche Aufzeichnungen mit Bildern und Text speichern, fortlaufend zum Log hinzufügen</li>
             <li>📸 <strong>Fotoalbum</strong>: Besondere Momente als Bilder festhalten</li>
-            <li>📋 <strong>Garantieverwaltung</strong>: Produktgarantiefotos speichern, Ablauferinnerung durch Fristeinstellung</li>
+            <li>📋 <strong>Garantieverwaltung</strong>: Fotos von Produktgarantien speichern, Ablauferinnerung durch Fristeinstellung</li>
             <li>🧾 <strong>Quittungsaufbewahrung</strong>: Wichtige Quittungen digital aufbewahren</li>
           </ul>
 
-          <p><strong>Organisations-Tipp</strong>: Bündeln Sie ähnliche Dokumente mit <strong>Clips</strong> und unterscheiden Sie Kategorien mit <strong>Pocketen</strong>.</p>
+          <p><strong>Organisations-Tipp</strong>: Bündeln Sie ähnliche Dokumente mit <strong>Clips</strong> und unterscheiden Sie Kategorien mit <strong>Pockets</strong>.</p>
 
-      # 1-2. Geteilte Vorlage duplizieren
+      # 1-2. Basis-Objekt kopieren
       - type: "Anfänger"
-        title: "Geteilte Vorlage importieren"
-        subtitle: "Vorlagen anderer Nutzer zu Ihren eigenen machen"
+        title: "Basis-Objekte übernehmen"
+        subtitle: "Basis-Objekte aus dem Entdecken zu Ihren eigenen machen"
         content: |
-          <p><strong>Übersicht</strong>: Sie können von anderen Nutzern geteilte Stempel duplizieren und als eigene Dokumente verwenden.</p>
+          <p><strong>Übersicht</strong>: Sie können im Entdecken veröffentlichte Basis-Objekte kopieren und als eigene Dokumente nutzen.</p>
 
           <p><strong>Anleitung</strong></p>
           <ol>
-            <li>Geteilten Stempel-Link anklicken oder QR-Code scannen</li>
-            <li>Im Stempel-Detailbildschirm <strong>Duplizieren</strong> antippen</li>
+            <li>In der <strong>SuperSearch-Leiste</strong> oben nach dem gewünschten Tag suchen</li>
+            <li>In den Suchergebnissen den Tab <strong>Basis-Objekte</strong> auswählen</li>
+            <li>Gewünschtes Basis-Objekt auswählen und den Detailbildschirm öffnen</li>
+            <li><strong>Papierkopie erstellen</strong> antippen</li>
             <li><strong>Leeres Papier</strong> aus Ihrem Inventar auswählen</li>
-            <li>Duplizierung abgeschlossen → Stempelinhalt wird auf das Papier dupliziert</li>
-            <li>Bei Bedarf können Keyword-Werte angepasst werden</li>
+            <li>Papierkopie abgeschlossen → Der Inhalt des Basis-Objekts wird auf das Papier kopiert</li>
           </ol>
 
           <p><strong>Anwendungsbeispiele</strong></p>
           <ul>
-            <li>✅ <strong>Checkliste</strong>: Geteilte Vorlagen für Reisevorbereitung, Einkaufsliste usw. duplizieren und verwenden</li>
-            <li>🎁 <strong>Event-Teilnahme</strong>: Von Marken/Geschäften geteilte Event-Vorlagen duplizieren</li>
-            <li>📝 <strong>Formularnutzung</strong>: Nützliche Formulare anderer Nutzer duplizieren</li>
+            <li>✅ <strong>Checkliste</strong>: Basis-Objekte für Reisevorbereitung, Einkaufsliste usw. kopieren und verwenden</li>
+            <li>🎁 <strong>Event-Teilnahme</strong>: Von Marken/Geschäften verbreitete Event-Objekte kopieren</li>
+            <li>📝 <strong>Formularnutzung</strong>: Nützliche Formulare aus dem Entdecken kopieren</li>
           </ul>
 
-      # 1-3. Geteiltes Log - Chatroom
+      # 1-3. Gemeinsames Log - Gruppenraum
       - type: "Fortgeschritten"
         title: "Gemeinsam mit Freunden aufzeichnen"
-        subtitle: "Gruppenraum durch geteiltes Log erstellen"
+        subtitle: "Gruppenraum mit dem gemeinsamen Log"
         content: |
-          <p><strong>Übersicht</strong>: Wenn Sie ein geteiltes Dokument mit mehreren Blättern Papier erstellen, können alle Teilnehmer im selben Log aufzeichnen.</p>
+          <p><strong>Übersicht</strong>: Erstellen Sie einen Stempel im Gemeinsames-Log-Modus und geben Sie ihn weiter — alle Teilnehmenden können im selben Log aufzeichnen.</p>
 
           <p><strong>Anleitung</strong></p>
           <ol>
-            <li>So viele <strong>leere Papiere</strong> auswählen wie Teilnehmer (2-10 Blätter)</li>
-            <li><strong>Aktion</strong>-Button antippen</li>
-            <li><strong>Geteiltes Dokument erstellen</strong> auswählen</li>
-            <li>Titel, Beschreibung eingeben und erstellen</li>
-            <li>Erstelltes geteiltes Dokument an Teilnehmer <strong>senden</strong></li>
+            <li><strong>Leeren Stempel</strong> auswählen und <strong>Als Stempel übernehmen</strong> öffnen</li>
+            <li>Infoseite gestalten und im <strong>Log-Modus</strong> die Option <strong>Gemeinsames Log</strong> wählen</li>
+            <li>Eine Kopie des fertigen Stempels an Teilnehmende per <strong>Übertragung</strong> (annahmebasiert) weitergeben</li>
+            <li>Sobald die Teilnehmenden annehmen, zeichnen alle gemeinsam im <strong>selben gemeinsamen Log-Raum</strong> auf</li>
           </ol>
 
-          <p><strong>Papierverbrauch nach Teilnehmerzahl</strong></p>
-          <ul>
-            <li>👫 2 Personen: 2 Blätter Papier (Paar-Tagebuch, 1:1-Chat)</li>
-            <li>👨‍👩‍👧 3 Personen: 3 Blätter Papier (Kleines Gruppenprojekt)</li>
-            <li>👨‍👩‍👧‍👦 4-10 Personen: 4-10 Blätter Papier (Familientreffen, Verein)</li>
-          </ul>
+          <p><strong>Papierverbrauch</strong>: Bei jeder Kopie oder Übertragung wird 1 Blatt Papier verbraucht — halten Sie entsprechend der Teilnehmerzahl genug bereit.</p>
 
           <p><strong>Anwendungsbeispiele</strong></p>
           <ul>
-            <li>💑 <strong>Paar-Tagebuch</strong>: Erinnerungen zu zweit gemeinsam festhalten</li>
-            <li>👨‍👩‍👧‍👦 <strong>Familienalbum</strong>: Familienfeiern und Alltag gemeinsam teilen</li>
+            <li>💑 <strong>Paar-Tagebuch</strong>: Gemeinsame Erinnerungen zu zweit festhalten</li>
+            <li>👨‍👩‍👧‍👦 <strong>Familienalbum</strong>: Familienereignisse und Alltag gemeinsam festhalten</li>
             <li>📚 <strong>Lerngruppe</strong>: Lerninhalte und Fragen gemeinsam aufzeichnen</li>
+          </ul>
+
+      # 1-4. Dokumentenorganisation für Fortgeschrittene
+      - type: "Experte"
+        title: "Dokumente systematisch verwalten"
+        subtitle: "Archiv mit Clips und Pockets organisieren"
+        content: |
+          <p><strong>Übersicht</strong>: Wenn die Dokumente zahlreicher werden, können Sie sie mit Clips und Pockets systematisch organisieren.</p>
+
+          <p><strong>Dokumente mit Clips bündeln</strong></p>
+          <ol>
+            <li>Die zu bündelnden <strong>Papiere</strong> mehrfach auswählen</li>
+            <li><strong>Aktion</strong>-Button antippen</li>
+            <li><strong>Mit Clip bündeln</strong> auswählen</li>
+            <li>Clip-Namen eingeben und abschließen</li>
+          </ol>
+
+          <p><strong>Bereiche mit Pockets unterteilen</strong></p>
+          <ol>
+            <li>Im Inventar <strong>Pocket hinzufügen</strong> antippen</li>
+            <li>Pocket-Namen eingeben (z. B. Arbeit, Privat, Hobby)</li>
+            <li>Dokumente per Drag & Drop in das jeweilige Pocket verschieben</li>
+          </ol>
+
+          <p><strong>Anwendungsbeispiele</strong></p>
+          <ul>
+            <li>📁 <strong>Nach Projekten organisieren</strong>: Jedes Projekt mit Clips bündeln und mit Pockets klassifizieren</li>
+            <li>📅 <strong>Jahresarchiv</strong>: Mit Pockets für 2024, 2025 nach Jahren verwalten</li>
+            <li>🏷️ <strong>Kategorien-Klassifikation</strong>: Pockets nach Typen wie Fotos, Dokumente, Notizen</li>
+          </ul>
+
+      # 1-5. Berufliche Dokumentation für Profis
+      - type: "Profi"
+        title: "Arbeitssystem aufbauen"
+        subtitle: "Vom Projektmanagement bis zur Übergabe"
+        content: |
+          <p><strong>Übersicht</strong>: Mit der Log-Funktion des Papiers können Sie Ihre Arbeitshistorie systematisch verwalten.</p>
+
+          <p><strong>Projektmanagement</strong></p>
+          <ol>
+            <li>Pro Projekt <strong>1 Blatt Papier</strong> erstellen</li>
+            <li>Täglichen Fortschritt, Probleme und Entscheidungen im Log festhalten</li>
+            <li>Materialien über Dropbox-, Google-Drive- oder OneDrive-Links anhängen</li>
+            <li>Mit der <strong>Sperrfunktion</strong> die Sicherheit sensibler Arbeitsdokumente erhöhen</li>
+          </ol>
+
+          <p><strong>Übergabedokumente</strong></p>
+          <ol>
+            <li>Papier pro Aufgabenbereich erstellen</li>
+            <li>Arbeitsprozesse, Hinweise und Kontakte zusammenstellen</li>
+            <li>In ein gemeinsames Dokument umwandeln und an Nachfolgende weitergeben</li>
+          </ol>
+
+          <p><strong>Protokollverwaltung</strong></p>
+          <ol>
+            <li>Für jede reguläre Besprechung Papier erstellen</li>
+            <li>Teilnehmende, Tagesordnung und Entscheidungen im Log festhalten</li>
+            <li>Protokolle desselben Gremiums mit Clips bündeln</li>
+          </ol>
+
+          <p><strong>Nutzungstipps</strong></p>
+          <ul>
+            <li>📊 Bei Projektende in eine Retrospektive umwandeln</li>
+            <li>🔍 Mit SuperSearch frühere Aufzeichnungen schnell finden</li>
+            <li>📤 Bei Bedarf als PDF exportieren</li>
           </ul>
 
   # ===== 2. Stempel-Nutzung (Stamp) =====
   - id: stamp-usage
-    title: "🔖 Stempel-Nutzung"
+    title: "Stempel-Nutzung"
     icon: "🔖"
-    description: "Vorlagen mit Stempel (Stamp) erstellen und duplizieren"
+    description: "Mit dem Stempel (Stamp) persönliche Stempel erstellen und kopieren"
     items:
-      # 2-1. Einzelner Log-Stempel
-      - type: "Experte"
-        title: "Eigene Vorlage erstellen"
-        subtitle: "Mit Stempel Dokumente im gleichen Format massenweise produzieren"
+      # 2-0. Stempel-Grundlagen (Anfänger)
+      - type: "Anfänger"
+        title: "Den Stempel verstehen"
+        subtitle: "Konzept und Grundnutzung des persönlichen Stempels"
         content: |
-          <p><strong>Übersicht</strong>: Wenn Sie einen Stempel gravieren, wird er zur Vorlage. Diese Vorlage können Sie auf Papier duplizieren, um schnell mehrere Dokumente im gleichen Format zu erstellen.</p>
+          <p><strong>Übersicht</strong>: Der Stempel ist ein persönlicher Stempel, mit dem Sie Dokumente mit wiederkehrendem Format schnell erstellen können. Einmal übernommen, können Sie dasselbe Format auf mehrere Blätter Papier kopieren.</p>
 
-          <p><strong>Stempel gravieren</strong></p>
+          <p><strong>Was ist ein Stempel?</strong></p>
+          <ul>
+            <li>🔖 <strong>Persönlicher Stempel</strong>: Vordefiniertes Format (Bild, Titel, Inhalt, Keywords)</li>
+            <li>📋 <strong>Kopieren</strong>: Den Stempel auf leeres Papier drücken, um ein Dokument mit identischem Format zu erstellen</li>
+            <li>🔄 <strong>Wiederholte Nutzung</strong>: Ein einmal erstellter Stempel kann unbegrenzt kopiert werden</li>
+          </ul>
+
+          <p><strong>Anwendungsbeispiele für Stempel</strong></p>
+          <ul>
+            <li>📔 Tägliches Tagebuch-Format</li>
+            <li>✅ Wiederkehrende Checklisten</li>
+            <li>📊 Format für regelmäßige Berichte</li>
+            <li>🏋️ Trainings-/Ernährungsprotokoll</li>
+          </ul>
+
+          <p><strong>Stempel vs. Papier</strong></p>
+          <ul>
+            <li>📄 <strong>Papier</strong>: Einzelnes Dokument, Aufzeichnung individueller Inhalte</li>
+            <li>🔖 <strong>Stempel</strong>: Format (Rahmen), wiederholt verwendbarer persönlicher Stempel</li>
+          </ul>
+
+      # 2-1. Stempel mit Einzel-Log
+      - type: "Fortgeschritten"
+        title: "Eigenen persönlichen Stempel erstellen"
+        subtitle: "Mit dem Stempel Dokumente im gleichen Format in Serie produzieren"
+        content: |
+          <p><strong>Übersicht</strong>: Mit „Als Stempel übernehmen" entsteht ein persönlicher Stempel. Diesen persönlichen Stempel können Sie auf Papier kopieren und so schnell mehrere Dokumente im gleichen Format erstellen.</p>
+
+          <p><strong>Als Stempel übernehmen</strong></p>
           <ol>
-            <li>Im Inventar <strong>leeren Stempel</strong> lange drücken, um <strong>Details anzeigen</strong> aufzurufen<br/>
+            <li>Im Inventar <strong>leeren Stempel</strong> lange drücken, um <strong>Details anzeigen</strong> zu öffnen<br/>
                 <em>oder</em> leeren Stempel auswählen und <strong>Aktion</strong>-Button antippen</li>
-            <li>Menü <strong>Neue Vorlage erstellen</strong> auswählen</li>
-            <li>Vorlageninformationen eingeben:
+            <li>Menü <strong>Als Stempel übernehmen</strong> auswählen</li>
+            <li>Informationen des persönlichen Stempels eingeben:
               <ul>
-                <li>Bild (optional)</li>
+                <li>Bild (erforderlich)</li>
                 <li>Titel (erforderlich)</li>
-                <li>Inhalt (optional)</li>
+                <li>Inhalt (erforderlich)</li>
                 <li>Frist (optional)</li>
-                <li>Standard-Keywords (maximal 10)</li>
+                <li>Basis-Keywords (max. 128)</li>
               </ul>
             </li>
-            <li><strong>Erstellen</strong> abschließen → Wird zu graviertem Stempel umgewandelt</li>
+            <li><strong>Erstellen</strong> abschließen → Umwandlung in einen persönlichen Stempel</li>
           </ol>
 
-          <p><strong>Auf Papier duplizieren</strong></p>
+          <p><strong>Auf Papier kopieren</strong></p>
           <ol>
-            <li>Gravierten <strong>Stempel</strong> auswählen</li>
+            <li>Den fertigen <strong>persönlichen Stempel</strong> auswählen</li>
             <li>So viele <strong>leere Papiere</strong> wie benötigt zusätzlich auswählen</li>
             <li><strong>Aktion</strong>-Button antippen</li>
-            <li>Menü <strong>Duplizieren</strong> auswählen</li>
-            <li>Der gravierte Inhalt des Stempels wird auf die ausgewählten Papiere dupliziert</li>
+            <li>Menü <strong>Kopieren</strong> auswählen</li>
+            <li>Der Inhalt des persönlichen Stempels wird auf die ausgewählten Papiere kopiert</li>
           </ol>
 
           <p><strong>Anwendungsbeispiele</strong></p>
           <ul>
-            <li>🏋️ <strong>Trainingsprotokoll</strong>: Tägliche Trainingseinheiten im gleichen Format aufzeichnen</li>
-            <li>📖 <strong>Leseprotokoll</strong>: Buchbesprechungen im einheitlichen Format verfassen</li>
-            <li>🍷 <strong>Sammlungsverwaltung</strong>: Katalog für Wein, Lego, Figuren und andere Sammlerstücke</li>
+            <li>📋 <strong>Flyer/Infoblätter</strong>: Denselben Inhalt mehrfach verbreiten</li>
+            <li>🏷️ <strong>Produktinformationen</strong>: Produktspezifikationen und Preise kopieren und weitergeben</li>
+            <li>📜 <strong>Ankündigungen</strong>: Dieselbe Mitteilung an mehreren Orten veröffentlichen</li>
           </ul>
 
-          <p><strong>Organisations-Tipp</strong>: Bündeln Sie mit Stempel erstellte Dokumente mit <strong>Clips</strong> und verwalten Sie sie als Serie.</p>
+          <p><strong>Organisations-Tipp</strong>: Bündeln Sie mit dem Stempel erstellte Dokumente mit <strong>Clips</strong> und verwalten Sie sie als Serie.</p>
 
-      # 2-2. Geteilter Log-Stempel
+      # 2-2. Stempel mit gemeinsamem Log
       - type: "Experte"
-        title: "Offene Community erstellen"
-        subtitle: "Mit geteiltem Log-Stempel kontinuierlich Teilnehmer hinzufügen"
+        title: "Offene Community aufbauen"
+        subtitle: "Mit dem Gemeinsames-Log-Stempel fortlaufend Teilnehmende hinzufügen"
         content: |
-          <p><strong>Übersicht</strong>: Wenn Sie einen Stempel im geteilten Log-Modus erstellen, wird er zu einem öffentlichen Raum, dem jeder durch Duplizieren beitreten kann.</p>
+          <p><strong>Übersicht</strong>: Wenn Sie einen Stempel im Gemeinsames-Log-Modus erstellen, entsteht ein offener Raum, in dem alle Nutzer, die ihn per Übertragung erhalten, demselben Log beitreten.</p>
 
           <p><strong>Anleitung</strong></p>
           <ol>
-            <li><strong>Leeren Stempel</strong> auswählen und zu <strong>Neue Vorlage erstellen</strong> navigieren</li>
-            <li>Vorlageninformationen eingeben: Bild, Titel, Inhalt, Frist, Keywords</li>
-            <li><strong>Log-Modus: Geteilt</strong> auswählen ⭐</li>
+            <li><strong>Leeren Stempel</strong> auswählen und <strong>Als Stempel übernehmen</strong> öffnen</li>
+            <li>Informationen des persönlichen Stempels eingeben: Bild, Titel, Inhalt, Frist, Keywords</li>
+            <li><strong>Log-Modus: Gemeinsam</strong> auswählen ⭐</li>
             <li><strong>Erstellen</strong> abschließen</li>
           </ol>
 
-          <p><strong>Teilnehmer hinzufügen</strong></p>
+          <p><strong>Teilnehmende hinzufügen</strong></p>
           <ol>
-            <li>Erstellten Stempel auswählen und per <strong>Teilen</strong> Link/QR übermitteln</li>
-            <li>Die andere Person führt <strong>Duplizieren</strong> über den Link aus</li>
-            <li>Der duplizierende Nutzer tritt automatisch dem geteilten Log bei</li>
-            <li>Unbegrenzt weitere Teilnehmer hinzufügbar</li>
+            <li>Den <strong>Übertragungs-QR-Code</strong> des Stempels generieren und aushängen oder Teilnehmenden zeigen</li>
+            <li>Interessierte erhalten die <strong>Übertragung</strong> per QR-Scan (annahmebasiert)</li>
+            <li>Wer die Übertragung erhalten hat, tritt automatisch dem gemeinsamen Log bei</li>
+            <li>Ohne Personenlimit fortlaufend erweiterbar</li>
           </ol>
 
           <p><strong>Anwendungsbeispiele</strong></p>
           <ul>
-            <li>💬 <strong>Offener Chatroom</strong>: Öffentlicher Diskussionsraum, dem jeder beitreten kann</li>
-            <li>🎤 <strong>Fanclub</strong>: Fangemeinschaft für Künstler/Marken</li>
-            <li>📢 <strong>Community-Forum</strong>: Interessenbasierte Community betreiben</li>
+            <li>💬 <strong>Offener Chatraum</strong>: Öffentlicher Diskussionsraum für alle</li>
+            <li>🎤 <strong>Fanclub</strong>: Fantreffen für Künstler/Marken</li>
+            <li>📢 <strong>Community-Pinnwand</strong>: Interessenbasierte Community betreiben</li>
           </ul>
 
-      # 2-3. Stempel teilen - Kleinunternehmer
+      # 2-3. Stempel-Übertragung - Kleinunternehmen
       - type: "Profi"
-        title: "Für den Geschäftsbetrieb nutzen"
-        subtitle: "Stempel-Marketing für Kleinunternehmer"
+        title: "Für den Ladenbetrieb nutzen"
+        subtitle: "Stempel-Marketing für Kleinunternehmen"
         content: |
-          <p><strong>Übersicht</strong>: Sie können Stempel teilen, um mit Kunden zu kommunizieren und Geschäftsinformationen zu verbreiten.</p>
+          <p><strong>Übersicht</strong>: Übertragen Sie Stempel, um mit Kundschaft zu kommunizieren und Ladeninformationen zu verbreiten.</p>
 
           <p>🍽️ <strong>Speisekarte</strong></p>
           <ol>
-            <li>Stempel-Vorlage mit Menüfoto erstellen</li>
-            <li>Keywords für Menüname, Preis, Beschreibung einstellen</li>
-            <li>Stempel teilen und QR-Code generieren → Auf Tischen platzieren</li>
-            <li>Kunden scannen QR → Duplizieren und Menüinformationen einsehen</li>
+            <li>Persönlichen Stempel mit Menüfotos erstellen</li>
+            <li>Menüname, Preis und Beschreibung als Keywords festlegen</li>
+            <li>QR-Code für die Stempel-Übertragung generieren → auf den Tischen auslegen</li>
+            <li>Kundschaft scannt den QR-Code → erhält per Übertragung die Menüinformationen</li>
           </ol>
 
-          <p>🎫 <strong>Gutscheine/Events verteilen</strong></p>
+          <p>🎫 <strong>Coupons/Events verbreiten</strong></p>
           <ol>
-            <li>Stempel-Vorlage mit Event-Bild erstellen</li>
-            <li>Keywords für Rabattdetails, Gültigkeitsdauer einstellen</li>
-            <li>Stempel-Link/QR mit Kunden teilen</li>
-            <li>Kunden duplizieren → Als Gutschein aufbewahren und vorzeigen</li>
+            <li>Persönlichen Stempel mit Event-Bild erstellen</li>
+            <li>Rabattdetails und Gültigkeitsdauer als Keywords festlegen</li>
+            <li>Stempel per QR an die Kundschaft übertragen</li>
+            <li>Kundschaft nimmt an → als Coupon aufbewahren und vorzeigen</li>
           </ol>
 
           <p>📋 <strong>Kundenfeedback sammeln</strong></p>
           <ol>
-            <li>Feedback-Vorlage im geteilten Log-Modus erstellen</li>
-            <li>Keywords für Bewertungs-/Meinungsfelder einstellen</li>
-            <li>Kunden duplizieren → Bewertungen im geteilten Log schreiben</li>
-            <li>Alle Bewertungen werden an einem Ort gesammelt und sind einsehbar</li>
+            <li>Feedback-Stempel im Gemeinsames-Log-Modus erstellen</li>
+            <li>Eingabefelder für Bewertung/Meinung über Keywords festlegen</li>
+            <li>Kundschaft kopiert → schreibt Rezensionen ins gemeinsame Log</li>
+            <li>Alle Rezensionen sind gesammelt an einem Ort einsehbar</li>
           </ol>
 
-          <p><strong>Weitere Anwendungen</strong></p>
+          <p><strong>Weitere Nutzung</strong></p>
           <ul>
-            <li>🆕 Ankündigungen für neue Menüs</li>
-            <li>📅 Reservierungshinweis-Vorlage</li>
-            <li>📍 Standort/Öffnungszeiten-Information</li>
+            <li>🆕 Benachrichtigung über neue Menüs</li>
+            <li>📅 Format für Reservierungshinweise</li>
+            <li>📍 Hinweise zu Standort/Öffnungszeiten</li>
           </ul>
 
-      # 2-4. Persönliches Archiv
-      - type: "Fortgeschritten"
-        title: "Persönliches Archiv erstellen"
-        subtitle: "Lieblingsinhalte zur eigenen Sammlung machen"
-        content: |
-          <p><strong>Übersicht</strong>: Organisieren Sie systematisch Ihre Lieblingsinhalte wie YouTube, Spotify, Bücher und Filme.</p>
-
-          <p>🎬 <strong>YouTube-Playlist</strong></p>
-          <ol>
-            <li>Mit leerem Papier Dokument "Meine YouTube-Sammlung" erstellen</li>
-            <li>Videolinks + Kurznotizen zum Log hinzufügen</li>
-            <li>Bei vielen Videos nach Genre mit <strong>Clips</strong> bündeln</li>
-          </ol>
-
-          <p>🎵 <strong>Spotify-Musiksammlung</strong></p>
-          <ol>
-            <li>Mit leerem Papier Dokument "2024 Playlist" erstellen</li>
-            <li>Spotify-Links + Gefühle/Situationen von damals zum Log hinzufügen</li>
-            <li>Nach Saison, Stimmung mit <strong>Clips</strong> organisieren</li>
-          </ol>
-
-          <p>📚 <strong>Gelesene Bücher archivieren</strong></p>
-          <ol>
-            <li>Stempel mit Buchcover-Vorlage erstellen (Keywords: Autor, Bewertung usw.)</li>
-            <li>Für jedes Buch Stempel auf Papier duplizieren</li>
-            <li>Eindrucksvolle Passagen, Buchbesprechungen im Log festhalten</li>
-            <li>Serien mit <strong>Clips</strong> bündeln</li>
-          </ol>
-
-          <p>🎞️ <strong>Gesehene Filme/Serien dokumentieren</strong></p>
-          <ol>
-            <li>Stempel mit Filmplakat-Vorlage erstellen</li>
-            <li>Für jeden Film auf Papier duplizieren</li>
-            <li>Kurzkritik + Sternebewertung (★★★★☆) im Log</li>
-          </ol>
-
-      # 2-5. Creator/Influencer
+      # 2-4. Creator/Influencer
       - type: "Profi"
-        title: "Als Creator aktiv werden"
+        title: "Als Creator aktiv sein"
         subtitle: "Mit Fans kommunizieren und Inhalte verbreiten"
         content: |
           <p><strong>Übersicht</strong>: Creator und Influencer können mit Fans kommunizieren und Events durchführen.</p>
 
           <p>🎉 <strong>Fan-Events</strong></p>
           <ol>
-            <li>Event-Stempel im geteilten Log-Modus erstellen</li>
-            <li>Stempel-Link mit Fans teilen</li>
-            <li>Fans duplizieren und nehmen teil</li>
-            <li>Quiz und Verlosungen im geteilten Log durchführen</li>
+            <li>Event-Stempel im Gemeinsames-Log-Modus erstellen</li>
+            <li>Stempel an Fans übertragen</li>
+            <li>Fans kopieren und nehmen teil</li>
+            <li>Quiz und Verlosungen im gemeinsamen Log durchführen</li>
           </ol>
 
-          <p>🛍️ <strong>Merchandise-Katalog</strong></p>
+          <p>🛍️ <strong>Merch-Katalog</strong></p>
           <ol>
-            <li>Stempel mit Merchandise-Fotos erstellen</li>
-            <li>Keywords für Produktname, Preis, Kauflink einstellen</li>
-            <li>Fans duplizieren und nutzen es als Wunschliste</li>
+            <li>Stempel mit Merch-Fotos erstellen</li>
+            <li>Produktname, Preis und Kauflink als Keywords festlegen</li>
+            <li>Fans kopieren ihn und nutzen ihn als Wunschliste</li>
           </ol>
 
-          <p>❓ <strong>Q&A-Bereich</strong></p>
+          <p>❓ <strong>Q&A-Raum</strong></p>
           <ol>
-            <li>Q&A-Stempel im geteilten Log-Modus erstellen</li>
-            <li>Fans duplizieren und schreiben Fragen ins Log</li>
-            <li>Creator antwortet im geteilten Log</li>
+            <li>Q&A-Stempel im Gemeinsames-Log-Modus erstellen</li>
+            <li>Fans kopieren und stellen Fragen im Log</li>
+            <li>Creator antwortet im gemeinsamen Log</li>
           </ol>
 
-          <p><strong>Weitere Anwendungen</strong></p>
+          <p><strong>Weitere Nutzung</strong></p>
           <ul>
-            <li>📅 Fanmeeting-Datum/Ort/Teilnahmemöglichkeiten</li>
-            <li>🎬 Behind-the-Scenes, Produktionsprozess teilen</li>
-            <li>📁 Archiv vergangener Inhalte</li>
+            <li>📅 Infos zu Fantreffen: Termin/Ort/Teilnahme</li>
+            <li>🎬 Behind-the-Scenes und Produktionsprozesse zeigen</li>
+            <li>📁 Archiv früherer Inhalte</li>
           </ul>
 
-      # 2-6. Hobbys/Interessen
+      # 2-6. Hobby/Interessen
       - type: "Fortgeschritten"
         title: "Hobbys teilen"
-        subtitle: "Interessenbasierte Inhalte austauschen"
+        subtitle: "Interessenbasierte Inhalte weitergeben"
         content: |
-          <p><strong>Übersicht</strong>: Sie können Hobbys und Interessen als Stempel erstellen und mit anderen Nutzern teilen.</p>
+          <p><strong>Übersicht</strong>: Machen Sie aus Hobbys und Interessen Stempel und geben Sie sie an andere Nutzer weiter.</p>
 
-          <p>🍳 <strong>Rezepte teilen</strong></p>
+          <p>🍳 <strong>Rezepte weitergeben</strong></p>
           <ol>
             <li>Stempel mit Foto des fertigen Gerichts erstellen</li>
-            <li>Keywords für Zutaten, Kochzeit einstellen</li>
-            <li>Geteilten Log-Modus einstellen → Duplizierende Nutzer teilen ihre Erfahrungen</li>
+            <li>Zutaten und Kochzeit als Keywords festlegen</li>
+            <li>Gemeinsames-Log-Modus aktivieren → Nutzer, die kopieren, teilen ihre Erfahrungen</li>
           </ol>
 
-          <p>🏃 <strong>Trainingsroutine teilen</strong></p>
+          <p>🏃 <strong>Trainingsroutinen weitergeben</strong></p>
           <ol>
-            <li>Stempel für 30-Tage-Challenge, Home-Workout-Routine erstellen</li>
-            <li>Geteilten Log-Modus einstellen</li>
-            <li>Teilnehmer duplizieren und dokumentieren täglich ihren Fortschritt</li>
+            <li>Stempel für 30-Tage-Challenge oder Home-Workout-Routine erstellen</li>
+            <li>Gemeinsames-Log-Modus aktivieren</li>
+            <li>Teilnehmende kopieren und protokollieren täglich ihre Fortschritte</li>
           </ol>
 
           <p>✈️ <strong>Reiseführer</strong></p>
           <ol>
-            <li>Stempel mit Reisefoto + empfohlener Route erstellen</li>
-            <li>Keywords für Restauranttipps, Unterkunftsinformationen organisieren</li>
-            <li>Teilen → Besucher fügen ihre Erfahrungen hinzu</li>
+            <li>Stempel mit Reisefotos + empfohlenen Routen erstellen</li>
+            <li>Restaurant- und Unterkunftsinfos als Keywords zusammenstellen</li>
+            <li>Übertragen → Rückkehrer fügen ihre Erfahrungsberichte hinzu</li>
           </ol>
 
-          <p><strong>Weitere Anwendungen</strong></p>
+          <p><strong>Weitere Nutzung</strong></p>
           <ul>
-            <li>🎮 Spielanleitungen, Builds teilen</li>
-            <li>🔨 DIY-Projektanleitungen</li>
-            <li>🌱 Pflanzenpflege, Gießplan</li>
-            <li>🐕 Haustierpflege-Tipps</li>
+            <li>🎮 Spiele-Guides und Builds weitergeben</li>
+            <li>🔨 Anleitungen für DIY-Projekte</li>
+            <li>🌱 Pflanzenpflege und Gießpläne</li>
+            <li>🐕 Pflegetipps für Haustiere</li>
           </ul>
 
       # 2-7. Lokale/Familien-Community
       - type: "Fortgeschritten"
         title: "Gruppenaktivitäten organisieren"
-        subtitle: "Kommunikationsraum für lokale, Familien- und Freundesgruppen"
+        subtitle: "Kommunikationsraum für Nachbarschaft, Familie und Freundeskreis"
         content: |
-          <p><strong>Übersicht</strong>: Sie können mit Stempeln geteilte Räume für lokale Communities, Familientreffen und Freundesgruppen erstellen.</p>
+          <p><strong>Übersicht</strong>: Erstellen Sie mit Stempeln gemeinsame Räume für lokale Communities, Familientreffen und Freundesgruppen.</p>
 
           <p>🏘️ <strong>Lokale Community</strong></p>
           <ul>
-            <li>🍜 Lokale Restaurantkarte: Anwohner empfehlen Restaurants im geteilten Log</li>
-            <li>🎪 Lokale Veranstaltungen: Informationen zu Festen, Märkten, Kulturevents</li>
-            <li>🏃 Vereinsrekrutierung: Vorstellung von Wander-, Lauf-, Buchclubs</li>
-            <li>🏠 Hausbewohner-Kommunikation: Wohnungsankündigungen teilen</li>
+            <li>🍜 Restaurantkarte des Viertels: Anwohner empfehlen Lokale im gemeinsamen Log</li>
+            <li>🎪 Lokale Veranstaltungen: Infos zu Festen, Märkten und Kulturveranstaltungen</li>
+            <li>🏃 Vereinssuche: Wander-, Lauf- und Lesegruppen vorstellen</li>
+            <li>🏠 Hausversammlung/Bewohnerkommunikation: Aushänge der Wohnanlage verbreiten</li>
           </ul>
 
-          <p>👨‍👩‍👧‍👦 <strong>Familien-/Freundesgruppe</strong></p>
+          <p>👨‍👩‍👧‍👦 <strong>Familie/Freundeskreis</strong></p>
           <ul>
             <li>🍳 Familienrezeptbuch: Über Generationen weitergegebene Familienrezepte</li>
-            <li>🎂 Freundes-Geburtstagskalender: Geburtstagsverwaltung und Geschenkideen</li>
-            <li>✅ Gruppen-Bucket-List: Gemeinsame Ziele</li>
-            <li>✈️ Familienreiseplanung: Zeitplan, Packliste, Budget teilen</li>
-            <li>💒 Feierlichkeiten: Hochzeits- und Geburtstagsfeierinformationen teilen</li>
+            <li>🎂 Geburtstagskalender: Geburtstage verwalten und Geschenkideen sammeln</li>
+            <li>✅ Gruppen-Bucketlist: Gemeinsame Ziele</li>
+            <li>✈️ Familienreiseplanung: Termine, Packliste und Budget gemeinsam verwalten</li>
+            <li>💒 Familienanlässe: Infos zu Hochzeiten und ersten Geburtstagen weitergeben</li>
           </ul>
 
       # 2-8. Arbeit/Events
       - type: "Experte"
         title: "Für Arbeit und Events nutzen"
-        subtitle: "Teamzusammenarbeit und besondere Tage dokumentieren"
+        subtitle: "Teamzusammenarbeit und besondere Tage festhalten"
         content: |
-          <p><strong>Übersicht</strong>: Sie können mit Stempeln geteilte Räume für Arbeitszusammenarbeit und besondere Events erstellen.</p>
+          <p><strong>Übersicht</strong>: Erstellen Sie mit Stempeln gemeinsame Räume für Teamarbeit und besondere Events.</p>
 
           <p>💼 <strong>Arbeit/Zusammenarbeit</strong></p>
           <ul>
-            <li>📊 Teamprojekt: Fortschritt im geteilten Log teilen</li>
-            <li>📝 Protokollvorlage: Standardisierte Besprechungsprotokoll-Vorlage mit Stempel</li>
-            <li>📋 Aufgabenübergabe: Zuständigkeiten organisieren und übergeben</li>
-            <li>👋 Onboarding neuer Mitarbeiter: Einarbeitungsleitfaden teilen</li>
+            <li>📊 Teamprojekte: Fortschritt über das gemeinsame Log austauschen</li>
+            <li>📝 Protokollformat: Besprechungsprotokolle mit Stempeln standardisieren</li>
+            <li>📋 Aufgabenübergabe: Aufgabenbereiche zusammenstellen und weitergeben</li>
+            <li>👋 Onboarding: Einarbeitungsguide für neue Mitarbeitende</li>
           </ul>
 
-          <p>🎉 <strong>Events/Besondere Anlässe</strong></p>
+          <p>🎉 <strong>Events/Besondere Tage</strong></p>
           <ul>
-            <li>💒 Hochzeitseinladung: Geteilter Stempel für Einladung + Teilnahmebestätigung + Glückwünsche</li>
-            <li>🎈 Partyeinladung: Geburtstag, Einweihungsfeier, Jahresendfeier-Einladung</li>
-            <li>👶 Babyparty/100-Tage-Feier: Babyfotos + Glückwunschsammlung</li>
-            <li>🕯️ Gedenken/Jahrestage: Raum zum gemeinsamen Erinnern</li>
+            <li>💒 Hochzeitseinladung: Mit Gemeinsames-Log-Stempel Einladung + Zusage + Glückwünsche</li>
+            <li>🎈 Party-Einladungen: Zu Geburtstagen, Einweihungen und Jahresabschlussfeiern einladen</li>
+            <li>👶 Erster Geburtstag/100-Tage-Feier: Babyfotos + Glückwunschsammlung</li>
+            <li>🕯️ Gedenken/Jahrestage: Ein Raum für gemeinsame Erinnerungen</li>
             <li>📨 Zeitkapsel: Nachrichten an das zukünftige Ich</li>
           </ul>
 
   # ===== 3. Abzeichen-Nutzung (Badge) =====
   - id: badge-usage
-    title: "🏷️ Abzeichen-Nutzung"
+    title: "Abzeichen-Nutzung"
     icon: "🏷️"
-    description: "Mit Abzeichen (Badge) Branding und Vertrauen aufbauen"
+    description: "Mit dem Abzeichen (Badge) Branding und Vertrauen aufbauen"
     items:
-      # 3-1. Markenimage-Werbung
+      # 3-0. Abzeichen-Grundlagen (Anfänger)
+      - type: "Anfänger"
+        title: "Das Abzeichen verstehen"
+        subtitle: "Grundlagen von Domainnamen und Branding"
+        content: |
+          <p><strong>Übersicht</strong>: Das Abzeichen ist ein Objekt, mit dem Sie im Inventar einen eigenen, einzigartigen Domainnamen (Nickname) führen können.</p>
+
+          <p><strong>Was ist ein Abzeichen?</strong></p>
+          <ul>
+            <li>🏷️ <strong>Domainname</strong>: Einzigartiger Name (z. B. myshop, creator_kim)</li>
+            <li>👤 <strong>Branding</strong>: Statt der E-Mail-Adresse unter dem Domainnamen aktiv sein</li>
+            <li>🔐 <strong>Privatsphäre</strong>: Die echte E-Mail-Adresse kann verborgen bleiben</li>
+          </ul>
+
+          <p><strong>Zustände des Abzeichens</strong></p>
+          <ul>
+            <li>⚪ <strong>Leeres Abzeichen</strong>: Noch nicht graviert</li>
+            <li>🏷️ <strong>Graviertes Abzeichen</strong>: Mit eingraviertem Domainnamen</li>
+            <li>✅ <strong>Angelegtes Abzeichen</strong>: Aktuell aktiviert und in Verwendung</li>
+          </ul>
+
+          <p><strong>Wer nutzt Abzeichen?</strong></p>
+          <ul>
+            <li>🏢 Unternehmen/Marken: Als offizielles Konto aktiv sein</li>
+            <li>🎨 Creator: Inhalte unter einzigartigem Nickname verbreiten</li>
+            <li>🔒 Privatpersonen: Privatsphäre durch verborgene E-Mail schützen</li>
+          </ul>
+
+      # 3-1. Abzeichen gravieren (Fortgeschritten)
+      - type: "Fortgeschritten"
+        title: "Erstes Abzeichen gravieren"
+        subtitle: "Eigenen Domainnamen erstellen"
+        content: |
+          <p><strong>Übersicht</strong>: Gravieren Sie ein leeres Abzeichen, um Ihren eigenen, einzigartigen Domainnamen festzulegen.</p>
+
+          <p><strong>Anleitung</strong></p>
+          <ol>
+            <li>Im Inventar <strong>leeres Abzeichen</strong> lange drücken, um <strong>Details anzeigen</strong> zu öffnen<br/>
+                <em>oder</em> leeres Abzeichen auswählen und <strong>Aktion</strong>-Button antippen</li>
+            <li>Menü <strong>Gravieren</strong> auswählen</li>
+            <li>Abzeichen-Informationen eingeben:
+              <ul>
+                <li>Abzeichen-Bild (erforderlich) - Logo, Profilfoto usw.</li>
+                <li>Domainnamen eingeben (nur Buchstaben, Zahlen und Unterstriche)</li>
+              </ul>
+            </li>
+            <li>Mit dem Button <strong>Verfügbarkeit prüfen</strong> die Nutzbarkeit bestätigen</li>
+            <li><strong>Gravieren</strong> abschließen</li>
+          </ol>
+
+          <p>⚠️ <strong>Hinweise</strong></p>
+          <ul>
+            <li>Der Domainname kann <strong>nach der Gravur nicht mehr geändert werden</strong></li>
+            <li>Wählen Sie sorgfältig!</li>
+            <li>Bereits verwendete Domainnamen sind nicht wählbar</li>
+          </ul>
+
+          <p><strong>Tipps zur Wahl des Domainnamens</strong></p>
+          <ul>
+            <li>Kurzer, einprägsamer Name</li>
+            <li>Name mit Bezug zu Ihrer Marke/Aktivität</li>
+            <li>Unterstrich (_) statt Sonderzeichen verwenden</li>
+          </ul>
+
+      # 3-2. Abzeichen anlegen (Experte)
+      - type: "Experte"
+        title: "Abzeichen anlegen und nutzen"
+        subtitle: "Mit dem Domainnamen aktiv werden"
+        content: |
+          <p><strong>Übersicht</strong>: Wenn Sie ein graviertes Abzeichen anlegen, wird bei allen Aktivitäten Ihr Domainname angezeigt.</p>
+
+          <p><strong>Abzeichen anlegen</strong></p>
+          <ol>
+            <li>Graviertes <strong>Abzeichen</strong> auswählen</li>
+            <li><strong>Aktion</strong>-Button antippen</li>
+            <li><strong>Anlegen</strong> auswählen</li>
+          </ol>
+
+          <p><strong>Abzeichen ablegen</strong></p>
+          <ol>
+            <li>Aktuell angelegtes <strong>Abzeichen</strong> auswählen</li>
+            <li><strong>Aktion</strong>-Button antippen</li>
+            <li><strong>Ablegen</strong> auswählen</li>
+          </ol>
+
+          <p><strong>Effekte beim Anlegen</strong></p>
+          <ul>
+            <li>📝 Alle erstellten Dokumente tragen den „Domainnamen" als Verfasserangabe</li>
+            <li>💬 Im gemeinsamen Log wird statt der E-Mail der Domainname angezeigt</li>
+            <li>🔍 Andere Nutzer können Sie über den Domainnamen finden</li>
+          </ul>
+
+          <p><strong>Nutzungstipps</strong></p>
+          <ul>
+            <li>Beim Veröffentlichen offizieller Dokumente unbedingt das Abzeichen anlegen</li>
+            <li>Bei privaten Aktivitäten ablegen, um zu unterscheiden</li>
+            <li>Mehrere Abzeichen für verschiedene Zwecke möglich (nur 1 gleichzeitig angelegt)</li>
+          </ul>
+
+      # 3-3. Markenimage bewerben
       - type: "Profi"
         title: "Markenidentität aufbauen"
-        subtitle: "Mit einzigartigem Domainnamen die eigene Marke schaffen"
+        subtitle: "Mit einem einzigartigen Domainnamen die eigene Marke schaffen"
         content: |
-          <p><strong>Übersicht</strong>: Wenn Sie ein Abzeichen gravieren, erhalten Sie einen einzigartigen Domainnamen. Wenn Sie das Abzeichen ausrüsten, wird dieser Domainname bei allen Aktivitäten angezeigt.</p>
+          <p><strong>Übersicht</strong>: Durch das Gravieren eines Abzeichens erhalten Sie einen einzigartigen Domainnamen. Legen Sie das Abzeichen an, wird dieser Domainname bei allen Aktivitäten angezeigt.</p>
 
           <p><strong>Abzeichen gravieren</strong></p>
           <ol>
-            <li>Im Inventar <strong>leeres Abzeichen</strong> lange drücken, um <strong>Details anzeigen</strong> aufzurufen<br/>
+            <li>Im Inventar <strong>leeres Abzeichen</strong> lange drücken, um <strong>Details anzeigen</strong> zu öffnen<br/>
                 <em>oder</em> leeres Abzeichen auswählen und <strong>Aktion</strong>-Button antippen</li>
             <li>Menü <strong>Gravieren</strong> auswählen</li>
             <li>Abzeichen-Informationen eingeben:
               <ul>
                 <li>Abzeichen-Bild (erforderlich)</li>
-                <li>Domainnamen eingeben (z.B.: myshop, creator_kim)</li>
+                <li>Domainnamen eingeben (z. B. myshop, creator_kim)</li>
               </ul>
             </li>
-            <li><strong>Verfügbarkeit prüfen</strong> und dann <strong>Gravieren</strong> abschließen</li>
+            <li>Nach der <strong>Verfügbarkeitsprüfung</strong> das <strong>Gravieren</strong> abschließen</li>
           </ol>
 
-          <p>⚠️ <strong>Hinweis</strong>: Der Domainname kann nach dem Gravieren nicht mehr geändert werden!</p>
+          <p>⚠️ <strong>Achtung</strong>: Der Domainname kann nach der Gravur nicht mehr geändert werden!</p>
 
-          <p><strong>Abzeichen ausrüsten/ablegen</strong></p>
+          <p><strong>Abzeichen anlegen/ablegen</strong></p>
           <ol>
             <li>Graviertes <strong>Abzeichen</strong> auswählen und <strong>Aktion</strong>-Button antippen</li>
-            <li><strong>Ausrüsten</strong> auswählen → Abzeichen aktivieren</li>
-            <li>Zum Ablegen erneut in Aktion <strong>Ablegen</strong> auswählen</li>
+            <li><strong>Anlegen</strong> auswählen → Abzeichen aktiviert</li>
+            <li>Zum Ablegen erneut über Aktion <strong>Ablegen</strong> auswählen</li>
           </ol>
 
-          <p><strong>Effekte beim Ausrüsten</strong></p>
+          <p><strong>Effekte beim Anlegen</strong></p>
           <ul>
-            <li>🔍 Nach Domainnamen suchbar (statt E-Mail)</li>
-            <li>📝 Bei allen erstellten Stempeln und Papieren wird der Autor als "Domainname" angezeigt</li>
-            <li>📋 Auch beim Log-Schreiben wird der Domainname angezeigt</li>
+            <li>🔍 Über den Domainnamen auffindbar (statt E-Mail)</li>
+            <li>📝 Alle erstellten Stempel und Papiere tragen den „Domainnamen" als Verfasserangabe</li>
+            <li>📋 Auch beim Schreiben im Log wird der Domainname angezeigt</li>
           </ul>
 
           <p><strong>Anwendungsbeispiele</strong></p>
           <ul>
-            <li>🏢 <strong>Unternehmen/Marke</strong>: Offizielles Konto mit Logo und Markennamen betreiben</li>
+            <li>🏢 <strong>Unternehmen/Marken</strong>: Offizielles Konto mit Logo und Markennamen führen</li>
             <li>🎨 <strong>Creator</strong>: Inhalte unter einzigartigem Nickname verbreiten</li>
-            <li>👔 <strong>Expertenprofil</strong>: Domainnamen verwenden, der das Fachgebiet darstellt</li>
+            <li>👔 <strong>Profi-Profil</strong>: Domainname, der das Fachgebiet widerspiegelt</li>
           </ul>
 
-      # 3-2. E-Mail-Privatsphäre
+      # 3-2. E-Mail verbergen
       - type: "Profi"
         title: "Privatsphäre schützen"
-        subtitle: "Unter Domainnamen statt E-Mail aktiv sein"
+        subtitle: "Statt der E-Mail unter dem Domainnamen aktiv sein"
         content: |
-          <p><strong>Übersicht</strong>: Wenn Sie ein Abzeichen ausrüsten, wird statt Ihrer tatsächlichen E-Mail-Adresse der "Domainname" angezeigt, um Ihre persönlichen Daten zu schützen.</p>
+          <p><strong>Übersicht</strong>: Mit angelegtem Abzeichen wird statt Ihrer echten E-Mail der „Domainname" angezeigt — so schützen Sie Ihre persönlichen Daten.</p>
 
           <p><strong>Vorteile</strong></p>
           <ul>
-            <li>🔒 <strong>Privatsphärenschutz</strong>: Tatsächliche E-Mail-Adresse wird nicht offengelegt</li>
-            <li>📧 <strong>Spam-Schutz</strong>: E-Mail auch bei öffentlichen Aktivitäten geschützt</li>
-            <li>🎭 <strong>Anonyme Aktivität</strong>: Unter gewünschtem Namen aktiv sein</li>
+            <li>🔒 <strong>Schutz der Privatsphäre</strong>: Die echte E-Mail-Adresse wird nicht offengelegt</li>
+            <li>📧 <strong>Spam-Prävention</strong>: E-Mail auch bei öffentlichen Aktivitäten geschützt</li>
+            <li>🎭 <strong>Anonyme Aktivität</strong>: Unter einem Wunschnamen aktiv sein</li>
           </ul>
 
           <p><strong>Anwendungsbereich</strong></p>
           <ul>
-            <li>Bei Erstellung von Stempeln/Papier wird "Domainname" als Erstellerinformation angezeigt</li>
-            <li>Im geteilten Log wird statt E-Mail "Domainname" angezeigt</li>
-            <li>Andere Nutzer suchen nach Domainnamen statt E-Mail</li>
+            <li>Beim Erstellen von Stempeln/Papieren wird als Erstellerangabe der „Domainname" angezeigt</li>
+            <li>Im gemeinsamen Log wird statt der E-Mail der „Domainname" angezeigt</li>
+            <li>Andere Nutzer suchen nach dem Domainnamen statt nach der E-Mail</li>
           </ul>
 
-      # 3-3. Dokumentgravierung-Garantie
+      # 3-3. Dokumentgravur als Herkunftsnachweis
       - type: "Profi"
-        title: "Dokumentherkunft garantieren"
-        subtitle: "Abzeichen-Gravierung auf allen Dokumenten"
+        title: "Dokumentherkunft nachweisen"
+        subtitle: "Abzeichen-Gravur auf allen Dokumenten"
         content: |
-          <p><strong>Übersicht</strong>: Wenn Sie ein Abzeichen ausrüsten, enthalten alle von Ihnen erstellten Dokumente die Abzeichen-Informationen. Damit können Sie die Dokumentherkunft garantieren.</p>
+          <p><strong>Übersicht</strong>: Mit angelegtem Abzeichen enthalten alle erstellten Dokumente die Abzeichen-Informationen. So lässt sich die Herkunft der Dokumente nachweisen.</p>
 
           <p><strong>Anwendungsbeispiele</strong></p>
           <ul>
-            <li>✅ <strong>Offizielle Dokumentenauthentifizierung</strong>: Domainname wird auf allen Dokumenten angezeigt, um Herkunft zu garantieren</li>
-            <li>📜 <strong>Offizielle Markenveröffentlichung</strong>: Nachweis, dass es sich um ein offizielles Dokument der Marke/des Unternehmens handelt</li>
-            <li>🔐 <strong>Fälschungsschutz</strong>: Originaler Ersteller kann durch Abzeichen-Domain verifiziert werden</li>
+            <li>✅ <strong>Offizielle Dokumentenzertifizierung</strong>: Alle Dokumente tragen den Domainnamen als Herkunftsnachweis</li>
+            <li>📜 <strong>Offizielle Markenveröffentlichung</strong>: Nachweis, dass es sich um offizielle Dokumente der Marke/des Unternehmens handelt</li>
+            <li>🔐 <strong>Fälschungsschutz</strong>: Original-Ersteller über die Abzeichen-Domain verifizierbar</li>
           </ul>
 
           <p><strong>Nutzungstipps</strong></p>
           <ul>
-            <li>Bei Ausgabe von Geschäftsgutscheinen mit Abzeichen als offizieller Gutschein authentifizieren</li>
-            <li>Auf Creator-Inhalten mit Abzeichen Urheberrecht kennzeichnen</li>
-            <li>Bei Unternehmensankündigungen offizielles Konto anzeigen</li>
+            <li>Beim Ausstellen von Laden-Coupons mit dem Abzeichen deren Echtheit bestätigen</li>
+            <li>Creator-Inhalte mit dem Abzeichen als Urheberkennzeichnung versehen</li>
+            <li>Unternehmensmitteilungen mit dem offiziellen Konto kennzeichnen</li>
+          </ul>
+
+  # ===== 4. Tinten-Nutzung (Ink) =====
+  - id: ink-usage
+    title: "Tinten-Nutzung"
+    icon: "🎨"
+    description: "Mit Tinte (Ink) das App-Theme anpassen"
+    items:
+      # 4-1. Tinten-Grundlagen (Anfänger)
+      - type: "Anfänger"
+        title: "Theme mit Tinte ändern"
+        subtitle: "Eigene App-Farben anpassen"
+        content: |
+          <p><strong>Übersicht</strong>: Tinte ist ein Objekt, mit dem Sie die Haupt- und Nebenfarbe der App ändern können. Wählen Sie die gewünschte Tinte und ändern Sie das Theme.</p>
+
+          <p><strong>Anleitung</strong></p>
+          <ol>
+            <li>Im Inventar die gewünschte <strong>Tinte</strong> auswählen</li>
+            <li><strong>Aktion</strong>-Button antippen</li>
+            <li><strong>Theme ändern</strong> auswählen</li>
+            <li>Haupt- und Nebenfarbe der App wechseln zu den Farben der gewählten Tinte</li>
+          </ol>
+
+          <p><strong>Eigenschaften der Tinte</strong></p>
+          <ul>
+            <li>🎨 Jede Tinte hat eine einzigartige Kombination aus Haupt- und Nebenfarbe</li>
+            <li>🔄 Das Theme kann jederzeit mit einer anderen Tinte geändert werden</li>
+            <li>✨ Die Farben werden auf die gesamte App-Oberfläche angewendet</li>
+          </ul>
+
+          <p><strong>Gut zu wissen</strong></p>
+          <ul>
+            <li>📱 Die Theme-Farben werden <strong>lokal auf dem Gerät gespeichert</strong></li>
+            <li>👤 Die Farben bleiben auch bei Anmeldung mit einem anderen Konto erhalten</li>
+            <li>🔄 Beim Löschen der App werden die Standardfarben wiederhergestellt</li>
+          </ul>
+
+          <p><strong>Nutzungstipps</strong></p>
+          <ul>
+            <li>🌙 Dunkle Tinten reduzieren die Augenbelastung</li>
+            <li>🌈 Theme-Farben je nach Stimmung wechseln</li>
+            <li>💼 Themes für Arbeit und Privates unterscheiden</li>
           </ul>

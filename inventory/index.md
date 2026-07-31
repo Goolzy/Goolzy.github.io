@@ -74,7 +74,7 @@ translations:
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #d946ef;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">🔖</div>
     <h4 style="margin: 0 0 .5rem 0; color: #d946ef;">스탬프 & 로그</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">스탬프로 템플릿 생성. 단독로그(개인용) 또는 공유로그(커뮤니티) 모드로 기록을 남길 수 있습니다.</p>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">스탬프로 나만의 정보 페이지 생성. 단독로그(개인용) 또는 공유로그(커뮤니티) 모드로 기록을 남길 수 있습니다.</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #a855f7;">

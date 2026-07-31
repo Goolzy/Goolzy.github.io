@@ -17,9 +17,9 @@ translations:
 
 ## 🎯 Inventory
 
-**将物品数字化并转移给他人！**
+**以数字方式创建物品并转移给他人！**
 
-用纸张创建物品，通过二维码转移给他人。
+用纸张创建物品，并可通过二维码转移给对方。
 
 ---
 
@@ -55,51 +55,51 @@ translations:
 
 ---
 
-### ✨ 核心功能
+### ✨ 主要功能
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #a855f7;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">📄</div>
     <h4 style="margin: 0 0 .5rem 0; color: #a855f7;">物品创建</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">用1张纸创建物品。添加标题、内容、图片，并设置开始日期/到期日期。</p>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">用1张纸创建物品。可添加标题、内容、图片，并设置开始日期/有效期。</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #14b8a6;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">🏷️</div>
     <h4 style="margin: 0 0 .5rem 0; color: #2dd4bf;">徽章系统</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">刻印独特的域名作为您的应用内身份。您的域名将显示在所有活动中。</p>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">刻印专属域名作为应用内身份。刻印的域名会显示在所有活动中。</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #d946ef;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">🔖</div>
-    <h4 style="margin: 0 0 .5rem 0; color: #d946ef;">图章与日志</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">用图章创建模板。在私人日志或共享日志（社区）模式下留下记录。</p>
+    <h4 style="margin: 0 0 .5rem 0; color: #d946ef;">印章与日志</h4>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">使用印章创建专属于自己的信息页面。可以以单独日志（个人）或共享日志（社区）模式留下记录。</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #a855f7;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">📤</div>
     <h4 style="margin: 0 0 .5rem 0; color: #a855f7;">二维码转移</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">扫描接收者的二维码 → 选择物品 → 转移完成！所有权即时转移。</p>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">扫描对方二维码 → 选择物品 → 转移完成！所有权即时转移。</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #14b8a6;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">🎨</div>
     <h4 style="margin: 0 0 .5rem 0; color: #2dd4bf;">墨水主题</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">用墨水更改应用主题颜色。支持黑色和金色主题。</p>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">使用墨水更改应用主题颜色。支持黑色、金色主题。</p>
   </div>
 
   <div style="padding: 1.25rem; background: rgba(10, 6, 20, 0.4); backdrop-filter: blur(10px); border-radius: 12px; border-left: 4px solid #d946ef;">
     <div style="font-size: 2rem; margin-bottom: .5rem;">🔍</div>
     <h4 style="margin: 0 0 .5rem 0; color: #d946ef;">实时搜索</h4>
-    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">输入时即时过滤。保存为筛选器以便快速重用。</p>
+    <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: .9rem;">输入搜索词即时筛选。保存为筛选器可快速重复使用。</p>
   </div>
 
 </div>
 
 ---
 
-### 📚 文档 & 帮助
+### 📚 文档与帮助
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
 
@@ -110,12 +110,12 @@ translations:
 
   <a href="/inventory/faq/zh/" style="display: block; padding: 1.25rem; background: rgba(20, 184, 166, 0.2); backdrop-filter: blur(10px); border: 1px solid rgba(20, 184, 166, 0.3); border-radius: 12px; text-decoration: none; text-align: center;">
     <div style="font-size: 1.5rem; margin-bottom: .5rem;">❓</div>
-    <h4 style="margin: 0; color: #2dd4bf;">常见问题</h4>
+    <h4 style="margin: 0; color: #2dd4bf;">FAQ</h4>
   </a>
 
   <a href="/inventory/changelog/zh/" style="display: block; padding: 1.25rem; background: rgba(217, 70, 239, 0.2); backdrop-filter: blur(10px); border: 1px solid rgba(217, 70, 239, 0.3); border-radius: 12px; text-decoration: none; text-align: center;">
     <div style="font-size: 1.5rem; margin-bottom: .5rem;">📋</div>
-    <h4 style="margin: 0; color: #d946ef;">版本历史</h4>
+    <h4 style="margin: 0; color: #d946ef;">版本日志</h4>
   </a>
 
 </div>
@@ -128,7 +128,7 @@ translations:
 
 ---
 
-<p style="text-align: center; color: rgba(255,255,255,0.6); font-size: .9rem; margin: 1rem 0;">🌍 8种语言：한국어, English, 日本語, 简体中文, Deutsch, Français, Español, Português</p>
+<p style="text-align: center; color: rgba(255,255,255,0.6); font-size: .9rem; margin: 1rem 0;">🌍 支持8种语言：中文、한국어、English、日本語、Deutsch、Français、Español、Português</p>
 
 > 🔒 **隐私保护**：您的数据经过加密并受到安全保护。详情请参阅我们的[隐私政策](/inventory/privacy/)。
 
