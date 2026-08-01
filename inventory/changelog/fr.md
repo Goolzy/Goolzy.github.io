@@ -29,6 +29,57 @@ Consultez l'historique des mises à jour de l'application Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.0.2 <small>2026-08-01</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Les conversations en cours d'affichage ne génèrent pas de notifications
+Les nouveaux messages de la conversation actuellement ouverte n'envoient pas de notifications. Lorsque vous quittez l'écran, les notifications arrivent normalement.
+
+#### Notification d'approbation de connexion sur nouvel appareil
+Lorsqu'on se connecte au même compte depuis un autre appareil, une notification de demande d'approbation arrive sur l'appareil existant. En appuyant sur la notification, la fenêtre d'approbation s'ouvre immédiatement.
+
+#### Les messages envoyés s'affichent immédiatement
+Lorsque vous envoyez un message, la bulle s'affiche immédiatement sans attendre l'envoi. Les messages envoyés hors ligne sont conservés et envoyés automatiquement lorsque la connexion est rétablie.
+
+#### Notification de nouvelle version
+Lorsqu'une nouvelle version est disponible, l'application affiche une notification de mise à jour.
+
+#### Améliorations
+Le temps de lancement, la consommation de batterie, l'affichage des envois et le design de l'écran ont été affinés dans leur ensemble.
+- La vitesse de lancement de l'application a été considérablement améliorée.
+- La consommation de batterie au repos a été réduite.
+- Les téléchargements de photos et vidéos s'affichent immédiatement avec l'état d'avancement.
+- En mode paysage, un bouton a été ajouté pour fermer le panneau de conversation de droite, et les conversations ouvertes sont immédiatement marquées comme lues.
+- Le design de l'écran a été amélioré, notamment les boutons de fenêtre, les icônes de menu et les messages d'écran vide.
+- Les messages d'erreur réseau ont été améliorés pour expliquer ce qui a échoué et ce qui doit être fait.
+- La terminologie a été clarifiée : « apposer un tampon » remplace « graver ».
+- L'affichage de l'heure est adapté à chaque langue.
+- Les paramètres de sourdine des notifications par appareil sont désormais synchronisés entre les appareils.
+- La numérisation de codes QR est désormais prise en charge sur les grands écrans.
+
+#### Corrections de bugs
+La stabilité de l'application a été renforcée et des problèmes d'envoi de photos, de réponse depuis les notifications, de contrôle des fenêtres et de saisie de texte ont été corrigés.
+- La stabilité de l'application a été améliorée.
+- Correction du problème de téléchargement de photos.
+- Correction du problème où les réponses aux notifications n'étaient pas envoyées.
+- Correction du problème où l'écran revenait à l'orientation portrait après appui sur une notification.
+- Correction du problème de fermeture et de minimisation de la fenêtre.
+- Correction du problème où la saisie de texte ne fonctionnait pas.
+- Correction du problème où les informations de produit disparaissaient des détails de l'élément.
+- Correction du problème où les mêmes liens étaient postés deux fois dans la communauté.
+- Correction du problème où la notification de consentement aux conversations vocales s'affichait de manière répétée.
+- Correction du problème où la conversation restait marquée comme « en cours de lecture » après l'avoir quittée.
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.0.1 <small>2026-07-25</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

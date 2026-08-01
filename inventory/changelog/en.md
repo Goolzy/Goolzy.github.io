@@ -29,6 +29,57 @@ Check out the update history for the Inventory app.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.0.2 <small>2026-08-01</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Current Conversations Don't Notify
+Messages in a conversation you're currently viewing won't trigger notifications. Once you move away from the chat, new messages arrive as usual.
+
+#### New Device Login Approval
+When you log in from another device, an approval request notification appears on your existing device. Tap the notification to open the approval prompt directly.
+
+#### Sent Messages Display Instantly
+When you send a message, it appears in the chat bubble right away without waiting for transmission. If you send a message while disconnected, it stays in your chat and automatically sends when you reconnect.
+
+#### New Version Notifications
+When a new version is available, you'll see an update notification in the app.
+
+#### Improvements
+Overall refinements to app startup speed, battery use, upload feedback, and screen design.
+- Significantly improved app startup speed.
+- Reduced battery consumption in standby.
+- Photo and video uploads now display with real-time progress.
+- Added a close button for the right conversation panel in landscape mode, and open conversations are automatically marked as read.
+- Cleaned up screen design for window buttons, menu icons, and empty state guidance.
+- Updated network error messages to clearly explain what failed and how to fix it.
+- Renamed 'engraving' to 'stamping' for consistent terminology.
+- Time formatting now displays correctly in each language.
+- Notification mute settings now sync across all your devices.
+- QR code scanning is now supported on large screens.
+
+#### Bug Fixes
+Improved app stability and fixed issues with photo uploads, notification replies, window controls, and text input.
+- Improved app stability.
+- Fixed an issue where photo uploads would fail.
+- Fixed an issue where replies sent from notifications didn't deliver.
+- Fixed an issue where the screen rotated to portrait when tapping a notification.
+- Fixed window close and minimize buttons not working.
+- Fixed an issue where text input was not responding.
+- Fixed an issue where product information disappeared from item details.
+- Fixed duplicate links appearing in community posts.
+- Fixed voice conversation consent prompt appearing repeatedly.
+- Fixed conversations staying marked as being viewed after you left the chat.
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.0.1 <small>2026-07-25</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

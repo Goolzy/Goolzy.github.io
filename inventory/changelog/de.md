@@ -29,6 +29,57 @@ Sehen Sie sich den Update-Verlauf der Inventory-App an.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.0.2 <small>2026-08-01</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopieren">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Anzeige im aktuellen Gespräch löst keine Benachrichtigungen aus
+Neue Nachrichten in einem gerade angezeigten Gespräch werden nicht mit einer Benachrichtigung signalisiert. Sobald Sie das Gespräch verlassen, erhalten Sie Benachrichtigungen wie gewohnt.
+
+#### Genehmigungsbenachrichtigungen für neue Geräte beim Anmelden
+Wenn Sie sich von einem anderen Gerät aus mit dem gleichen Konto anmelden, erhalten Sie auf dem vorhandenen Gerät eine Benachrichtigung mit einer Genehmigungsanfrage. Tippen Sie auf die Benachrichtigung, und das Genehmigungsfenster öffnet sich sofort.
+
+#### Gesendete Nachrichten erscheinen sofort ohne Wartezeit
+Wenn Sie eine Nachricht senden, wird die Sprechblase sofort angezeigt, ohne auf die Übertragung zu warten. Nachrichten, die gesendet werden, wenn keine Verbindung besteht, bleiben bestehen und werden automatisch übertragen, wenn das Netzwerk wiederhergestellt ist.
+
+#### Benachrichtigungen für neue Versionen
+Wenn eine neue Version verfügbar ist, erhalten Sie eine Benachrichtigung zum Update in der App.
+
+#### Verbesserungen
+Startzeit, Akkuverbrauch, Upload-Anzeige und Bildschirmdesign wurden insgesamt überarbeitet.
+- Die Startzeit der App wurde erheblich verkürzt.
+- Der Stromverbrauch im Leerlauf wurde verringert.
+- Foto- und Videouploads werden sofort mit Fortschrittsanzeige angezeigt.
+- Im Querformat wurde eine Schaltfläche zum Schließen des rechten Chat-Panels hinzugefügt, und offene Chats werden sofort als gelesen gekennzeichnet.
+- Das Bildschirmdesign wurde überarbeitet, einschließlich Fensterschaltflächen, Menüsymbolen und Hinweisen für leere Bildschirme.
+- Netzwerkfehlermeldungen wurden überarbeitet, um zu zeigen, was fehlgeschlagen ist und wie man es beheben kann.
+- Der Begriff „Gravieren“ wurde in „Stempeln“ geändert.
+- Zeitangaben werden je nach Sprache angezeigt.
+- Die Einstellung zur Stummschaltung von Benachrichtigungen pro Gerät wird auf andere Geräte übernommen.
+- QR-Code-Scans werden auch auf großen Bildschirmen unterstützt.
+
+#### Fehlerbehebungen
+Die Stabilität der App wurde verbessert und Probleme mit Foto-Uploads, Antworten aus Benachrichtigungen, Fenstersteuerung und Texteingabe wurden behoben.
+- Die App-Stabilität wurde verbessert.
+- Das Problem, dass Foto-Uploads fehlschlugen, wurde behoben.
+- Das Problem, dass Antworten aus Benachrichtigungen nicht übermittelt wurden, wurde behoben.
+- Das Problem, dass der Bildschirm zum Hochformat wechselte, wenn auf eine Benachrichtigung getippt wurde, wurde behoben.
+- Das Problem, dass das Schließen und Minimieren von Fenstern nicht funktionierte, wurde behoben.
+- Das Problem, dass die Texteingabe nicht funktionierte, wurde behoben.
+- Das Problem, dass Produktinformationen aus Objektinformationen verschwanden, wurde behoben.
+- Das Problem, dass derselbe Link zweimal in der Gemeinschaft hochgeladen wurde, wurde behoben.
+- Das Problem, dass der Einwilligungshinweis für Sprachunterhaltungen wiederholt angezeigt wurde, wurde behoben.
+- Das Problem, dass Chats nach dem Verlassen noch als „Wird gelesen“ gekennzeichnet blieben, wurde behoben.
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.0.1 <small>2026-07-25</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopieren">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
@@ -47,9 +98,9 @@ In Direktnachrichten können Sie in Echtzeit per Sprache mit dem anderen spreche
 Auf großen Bildschirmen werden Listen und Details nebeneinander im Querformat angezeigt. Die angesehene Position bleibt auch bei Bildschirmdrehung erhalten.
 
 #### Verbesserungen
-Wir haben die App-Startgeschwindigkeit deutlich reduziert und die Benutzerfreundlichkeit bei Chat-Eingabe, Bildschirmdesign und Store-Zahlungen verbessert.
+Wir haben die App-Startzeit deutlich verkürzt und die Benutzerfreundlichkeit bei Chat-Eingabe, Bildschirmdesign und Store-Zahlungen verbessert.
 
-- Die App-Startgeschwindigkeit wurde deutlich verkürzt.
+- Die Startzeit der App wurde deutlich verkürzt.
 - Der Bildschirm bewegt sich während der Chateingabe reibungslos mit der Tastatur.
 - Die Designkonsistenz über alle Bildschirme wurde verbessert.
 - Die Stabilität des Shops und der Zahlungen wurde erhöht.

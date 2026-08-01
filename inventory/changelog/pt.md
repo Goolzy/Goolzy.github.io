@@ -29,6 +29,57 @@ Confira o histórico de atualizações do aplicativo Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.0.2 <small>2026-08-01</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Conversas visualizadas não enviam notificações
+As novas mensagens em conversas que você está visualizando no momento não enviarão notificações novamente. Quando você sair da conversa, as notificações chegarão normalmente.
+
+#### Notificação de aprovação de login em novo dispositivo
+Quando você faz login na mesma conta em outro dispositivo, uma notificação de solicitação de aprovação chega no seu dispositivo existente. Toque na notificação para abrir a janela de aprovação imediatamente.
+
+#### Mensagens enviadas aparecem sem esperar
+As mensagens aparecem no balão de conversa imediatamente após serem enviadas, sem esperar pela confirmação de envio. As mensagens enviadas sem conexão permanecem na conversa e são enviadas automaticamente quando a rede é restabelecida.
+
+#### Notificação de nova versão
+Quando uma nova versão for lançada, você receberá uma notificação de atualização dentro do aplicativo.
+
+#### Melhorias
+Refinamos de forma geral o tempo de inicialização, o consumo de bateria, a exibição dos envios e o design da tela.
+- O aplicativo agora inicia muito mais rápido.
+- Reduzido o consumo de bateria em modo de espera.
+- O carregamento de fotos e vídeos agora é exibido com progresso e aparece imediatamente no balão de conversa.
+- Adicionado botão para fechar o painel de conversa à direita em modo paisagem, e conversas abertas são marcadas como lidas imediatamente.
+- Organizado o design da tela, incluindo botões de janela, ícones de menu e guias de tela vazia.
+- Melhorada a orientação de erros de rede para mostrar o que falhou e como corrigi-lo.
+- O termo "gravação" foi substituído por "aplicar carimbo".
+- Os horários agora são exibidos de acordo com cada idioma.
+- As configurações de silenciar notificação por dispositivo agora se refletem em outros dispositivos também.
+- Adicionado suporte para leitura de códigos QR em telas grandes.
+
+#### Correções de bugs
+Aumentamos a estabilidade do aplicativo e corrigimos problemas com envio de fotos, respostas por notificação, controle de janelas e entrada de texto.
+- Melhorada a estabilidade do aplicativo.
+- Corrigido o problema onde o carregamento de fotos falhava.
+- Corrigido o problema onde a resposta em notificação não era entregue.
+- Corrigido o problema onde a tela retornava ao modo retrato ao tocar em notificação.
+- Corrigido o problema onde fechar/minimizar a janela não funcionava.
+- Corrigido o problema onde a entrada de texto não funcionava.
+- Corrigido o problema onde as informações do produto desapareciam nos detalhes do item.
+- Corrigido o problema onde o mesmo link era publicado duas vezes na comunidade.
+- Corrigido o problema onde a notificação de consentimento de conversa de voz era exibida repetidamente.
+- Corrigido o problema onde a conversa permanecia como "em leitura" mesmo após sair da sala de conversa.
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.0.1 <small>2026-07-25</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
@@ -49,7 +100,7 @@ Em telas maiores, o modo paisagem exibe a lista e os detalhes lado a lado. A pos
 #### Melhorias
 Reduzimos significativamente o tempo de inicialização do aplicativo e melhoramos a usabilidade geral na entrada de chat, design de telas e pagamentos na loja.
 
-- Reduzida significativamente a velocidade de inicialização do aplicativo.
+- O aplicativo agora inicia muito mais rápido.
 - Melhorado o movimento suave da tela junto com o teclado ao digitar no chat.
 - Aprimorada a consistência do design em toda a interface.
 - Aumentada a estabilidade da loja e do pagamento.

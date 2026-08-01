@@ -29,6 +29,57 @@ Consulta el historial de actualizaciones de la aplicación Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.0.2 <small>2026-08-01</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### La conversación que estás viendo no recibe notificaciones
+Los nuevos mensajes en una conversación que tienes abierta no generarán notificaciones. Al salir de la pantalla, recibirás notificaciones con normalidad.
+
+#### Notificación de aprobación de inicio de sesión en nuevo dispositivo
+Cuando inicias sesión en la misma cuenta desde otro dispositivo, recibirás una notificación de solicitud de aprobación en tu dispositivo actual. Al tocar la notificación, la ventana de aprobación se abre inmediatamente.
+
+#### Los mensajes enviados se muestran sin esperar
+Cuando envías un mensaje, la burbuja aparece inmediatamente sin esperar a que se envíe. Incluso si la conexión se interrumpe, el mensaje se guarda y se envía automáticamente cuando se restaura la red.
+
+#### Notificación de nueva versión
+Cuando está disponible una nueva versión, la aplicación te lo indicará desde dentro de la app.
+
+#### Mejoras
+Hemos pulido en general el tiempo de inicio, el consumo de batería, la vista de las cargas y el diseño de la pantalla.
+- Hemos reducido significativamente el tiempo de inicio de la aplicación.
+- Hemos reducido el consumo de batería en reposo.
+- Las fotos y videos se muestran inmediatamente con el indicador de progreso de carga.
+- En modo horizontal, hemos añadido un botón para cerrar el panel de conversación derecho, y la conversación abierta se marca como leída al instante.
+- Hemos reorganizado el diseño de la pantalla, incluyendo los botones de ventana, iconos de menú y guías de pantalla vacía.
+- Hemos actualizado los mensajes de error de red para que especifiquen qué falló y qué hacer al respecto.
+- Hemos cambiado la terminología de "grabar" a "sellar".
+- La hora se muestra según el idioma de cada región.
+- La configuración de silenciamiento de notificaciones por dispositivo ahora se refleja en todos los dispositivos.
+- Se añade soporte para escaneo de códigos QR en pantallas grandes.
+
+#### Correcciones de errores
+Mejoramos la estabilidad de la aplicación y corregimos problemas con la carga de fotos, las respuestas desde notificaciones, el control de ventanas y la entrada de texto.
+- Mejoramos la estabilidad de la aplicación.
+- Se corrigió el problema de fallos en la carga de fotos.
+- Se corrigió el problema donde las respuestas desde notificaciones no se entregaban.
+- Se corrigió el problema donde la pantalla volvía a modo vertical al tocar una notificación.
+- Se corrigió el problema donde cerrar y minimizar ventanas no funcionaba.
+- Se corrigió el problema donde la entrada de texto no funcionaba.
+- Se corrigió el problema donde la información del producto desaparecía en los detalles del artículo.
+- Se corrigió el problema donde el mismo enlace se publicaba dos veces en la comunidad.
+- Se corrigió el problema donde el aviso de consentimiento de conversación de voz se mostraba repetidamente.
+- Se corrigió el problema donde la sala de conversación permanecía marcada como "leyendo" después de salir.
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.0.1 <small>2026-07-25</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
