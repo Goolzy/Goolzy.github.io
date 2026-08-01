@@ -56,7 +56,14 @@ firebase:
     authDomain: "inventory-app-service.firebaseapp.com"
     projectId: "inventory-app-service"
     databaseURL: "https://inventory-app-service-default-rtdb.asia-southeast1.firebasedatabase.app"
-    appId: "1:370982765799:web:fea0f16f544e9ab217ce42"
+    # 2026-07-31: 구 ID `…web:fea0f16f544e9ab217ce42` 는 **프로젝트에 실존하지 않았다**
+    # (Management API 404 / Admin SDK "App not registered"). Windows 클라이언트와 동일 결함.
+    # appId 는 여기서 initializeApp 설정에만 쓰이고 Auth·Firestore 는 apiKey 로 동작하므로
+    # 기능 영향은 없었으나, App Check 은 실존 appId 를 요구해 `app_check.enabled: true` 로
+    # 바꿔도 실패하는 상태였다. 등록된 web 앱("Inventory", reCAPTCHA v3 설정 완료)으로 교체.
+    appId: "1:370982765799:web:cf39a33e4319c3a117ce42"
+    # ⚠️ measurementId 가 senderId(370982765799)로 잘못 들어가 있다. 정상값은 `G-…` 형식.
+    #    현재 홈페이지는 getAnalytics 를 호출하지 않아 무해하므로 이번 변경 범위에서 제외한다.
     measurementId: "370982765799"
   redirect_uri: "" # optional: e.g., https://goolzy.github.io/account/
   # Optional: Firebase App Check (reCAPTCHA v3/Enterprise site key). Strongly recommended for public clients.
