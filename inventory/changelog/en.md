@@ -29,6 +29,54 @@ Check out the update history for the Inventory app.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.0.3 <small>2026-08-08</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Redesigned Chat Attachments
+The attachment button is now a floating stack panel. Gather photos, videos, files, and audio in one place, reorder them by dragging, and send different types together in a single message.
+
+#### Voice Messages
+Record up to one minute of audio in chat and send it right away. Available on both mobile and desktop.
+
+#### Send Hand Drawings
+Draw on a canvas and send your sketch as an image.
+
+#### Animated GIFs
+Search for GIFs and send them straight into the conversation.
+
+#### Clipboard Paste
+Paste copied images, text, or links into the composer to attach them instantly.
+
+#### Open Links In-App
+Tap a link card to open it in the in-app browser. If the matching app is installed, it opens there directly.
+
+#### Unified Media Viewer
+Image, video, audio, PDF, and document viewers now share a single screen. Markdown documents are rendered for easy reading, and audio shows its artwork and file name.
+
+#### Return Where You Left Off
+When you come back to a conversation, it opens right where you were last reading.
+
+#### Notification Reliability
+Fixed notifications from different chats or senders overwriting each other, and notifications not arriving on some devices.
+
+#### Improvements
+- Email accounts now get an auto-generated avatar.
+- The gallery picker is now built in, preserving original file names.
+- Fixed audio re-downloading every time it was opened.
+- Reduced network usage.
+- Windows now self-recovers if the app fails to start.
+- Polished missing translations and per-language typography.
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.0.2 <small>2026-08-01</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

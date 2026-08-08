@@ -29,6 +29,54 @@ Consultez l'historique des mises à jour de l'application Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.0.3 <small>2026-08-08</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Pièces jointes repensées
+Le bouton de pièce jointe devient un panneau flottant. Rassemblez photos, vidéos, fichiers et audio au même endroit, réorganisez-les par glisser-déposer et envoyez plusieurs types dans un seul message.
+
+#### Messages vocaux
+Enregistrez jusqu'à une minute d'audio dans la discussion et envoyez-la aussitôt. Disponible sur mobile et ordinateur.
+
+#### Envoyer des dessins
+Dessinez sur un canevas et envoyez votre croquis en image.
+
+#### GIF animés
+Recherchez des GIF et envoyez-les directement dans la conversation.
+
+#### Coller depuis le presse-papiers
+Collez images, textes ou liens copiés dans le champ de saisie pour les joindre instantanément.
+
+#### Ouvrir les liens dans l'app
+Touchez une carte de lien pour l'ouvrir dans le navigateur intégré. Si l'application correspondante est installée, elle s'ouvre directement.
+
+#### Visionneuse multimédia unifiée
+Les visionneuses image, vidéo, audio, PDF et document partagent désormais un même écran. Les documents Markdown sont affichés mis en forme, et l'audio montre sa pochette et son nom de fichier.
+
+#### Reprendre où vous en étiez
+En revenant dans une conversation, elle s'ouvre à l'endroit où vous lisiez.
+
+#### Notifications fiabilisées
+Correction des notifications de discussions ou d'expéditeurs différents qui s'écrasaient entre elles, et de notifications n'arrivant pas sur certains appareils.
+
+#### Améliorations
+- Les comptes e-mail reçoivent désormais un avatar généré automatiquement.
+- Le sélecteur de galerie est désormais intégré et conserve les noms de fichiers d'origine.
+- Correction du retéléchargement de l'audio à chaque ouverture.
+- Consommation réseau réduite.
+- Windows se répare automatiquement si l'app ne démarre pas.
+- Traductions manquantes et typographie par langue peaufinées.
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.0.2 <small>2026-08-01</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

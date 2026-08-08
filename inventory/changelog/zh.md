@@ -29,6 +29,54 @@ translations:
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.0.3 <small>2026-08-08</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### 聊天附件全新改版
+附件按钮变为浮动堆叠面板。将照片、视频、文件、音频集中到一处，拖动即可调整顺序，不同类型可在同一条消息中一起发送。
+
+#### 语音消息
+在聊天中录制最长1分钟的语音并立即发送。移动端和桌面端均支持。
+
+#### 发送手绘
+在画布上手绘并作为图片发送。
+
+#### 动图(GIF)
+搜索GIF并直接发送到对话中。
+
+#### 剪贴板粘贴
+将复制的图片、文本或链接粘贴到输入框即可直接添加为附件。
+
+#### 应用内打开链接
+点按链接卡片即可在应用内浏览器中打开；如已安装对应应用，则直接跳转。
+
+#### 统一媒体查看器
+图片、视频、音频、PDF、文档查看器统一为同一界面。Markdown文档以渲染后的样式呈现，音频会显示封面和文件名。
+
+#### 回到上次浏览位置
+重新进入对话时，会回到上次阅读的位置。
+
+#### 通知更可靠
+修复了不同会话或不同发送者的通知相互覆盖，以及部分设备收不到通知的问题。
+
+#### 改进
+- 邮箱账号也会显示自动生成的头像。
+- 相册选择改为内置选择器，保留原始文件名。
+- 修复了音频每次打开都重新下载的问题。
+- 降低了网络用量。
+- Windows 上应用无法启动时会自动修复。
+- 补齐缺失翻译并优化各语言字形显示。
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.0.2 <small>2026-08-01</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

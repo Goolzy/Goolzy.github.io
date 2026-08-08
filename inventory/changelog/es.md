@@ -29,6 +29,54 @@ Consulta el historial de actualizaciones de la aplicación Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.0.3 <small>2026-08-08</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Adjuntos de chat renovados
+El botón de adjuntos ahora es un panel flotante. Reúne fotos, vídeos, archivos y audio en un solo lugar, reordénalos arrastrando y envía varios tipos en un mismo mensaje.
+
+#### Mensajes de voz
+Graba hasta un minuto de audio en el chat y envíalo al instante. Disponible en móvil y escritorio.
+
+#### Enviar dibujos a mano
+Dibuja en un lienzo y envía tu boceto como imagen.
+
+#### GIF animados
+Busca GIF y envíalos directamente a la conversación.
+
+#### Pegar desde el portapapeles
+Pega imágenes, textos o enlaces copiados en el campo de escritura para adjuntarlos al instante.
+
+#### Abrir enlaces en la app
+Toca una tarjeta de enlace para abrirla en el navegador integrado. Si la app correspondiente está instalada, se abre directamente allí.
+
+#### Visor multimedia unificado
+Los visores de imagen, vídeo, audio, PDF y documentos ahora comparten una sola pantalla. Los documentos Markdown se muestran renderizados y el audio muestra su carátula y nombre de archivo.
+
+#### Vuelve donde lo dejaste
+Al regresar a una conversación, se abre justo donde estabas leyendo.
+
+#### Notificaciones más fiables
+Corregido que notificaciones de distintos chats o remitentes se sobrescribieran entre sí, y que no llegaran a algunos dispositivos.
+
+#### Mejoras
+- Las cuentas de correo ahora tienen un avatar generado automáticamente.
+- El selector de galería ahora es propio y conserva los nombres de archivo originales.
+- Corregida la redescarga del audio cada vez que se abría.
+- Reducido el uso de red.
+- Windows se recupera solo si la app no arranca.
+- Pulidas traducciones faltantes y tipografía por idioma.
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.0.2 <small>2026-08-01</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

@@ -29,6 +29,54 @@ Inventoryアプリのアップデート履歴をご確認ください。
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.0.3 <small>2026-08-08</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="コピー">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### チャット添付が新しくなりました
+添付ボタンがフローティングのスタックパネルになりました。写真・動画・ファイル・音声をひとつにまとめ、ドラッグで並べ替え、種類の異なる添付を1つのメッセージで送れます。
+
+#### ボイスメッセージ
+チャットで最大1分の音声を録音してすぐに送信できます。モバイルとデスクトップの両方に対応しています。
+
+#### 手描きの送信
+キャンバスに手描きした絵を画像として送信できます。
+
+#### GIFの送信
+GIFを検索して会話にそのまま送れます。
+
+#### クリップボード貼り付け
+コピーした画像・テキスト・リンクを入力欄に貼り付けるだけで添付されます。
+
+#### リンクをアプリ内で開く
+リンクカードをタップするとアプリ内ブラウザで開きます。対応アプリがインストールされていればそのアプリで直接開きます。
+
+#### メディアビューアの統合
+画像・動画・音声・PDF・文書のビューアが1つの画面に統一されました。Markdown文書は読みやすく表示され、音声はジャケットとファイル名が表示されます。
+
+#### 前回の位置に復帰
+会話に戻ると、最後に読んでいた位置から再開します。
+
+#### 通知の安定化
+別の会話や別の相手の通知が互いに上書きされる問題と、一部の端末に通知が届かない問題を修正しました。
+
+#### 改善点
+- メールアカウントにも自動生成アバターが表示されます。
+- ギャラリー選択が内蔵ピッカーになり、元のファイル名が保持されます。
+- 音声を開くたびに再ダウンロードされる問題を修正しました。
+- ネットワーク使用量を削減しました。
+- Windowsでアプリが起動しない場合に自己復旧します。
+- 翻訳漏れと言語別の字形表示を改善しました。
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.0.2 <small>2026-08-01</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="コピー">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

@@ -29,6 +29,54 @@ Inventory 앱의 업데이트 내역을 확인하세요.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.0.3 <small>2026-08-08</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### 채팅 첨부가 새로워졌습니다
+첨부 버튼이 떠 있는 스택 패널로 바뀌었습니다. 사진·동영상·파일·음원을 한 곳에 모아 담고, 드래그로 순서를 바꾸고, 여러 종류를 한 메시지로 함께 보낼 수 있습니다.
+
+#### 음성 메시지
+채팅에서 최대 1분까지 음성을 녹음해 바로 보낼 수 있습니다. 모바일과 데스크탑 모두 지원합니다.
+
+#### 손그림 보내기
+캔버스에 손으로 그림을 그려 이미지로 전송할 수 있습니다.
+
+#### 움직이는 짤(GIF) 보내기
+짤을 검색해 대화에 바로 보낼 수 있습니다.
+
+#### 클립보드 붙여넣기
+복사한 이미지·텍스트·링크를 입력창에 붙여넣으면 바로 첨부됩니다.
+
+#### 링크를 앱 안에서 열기
+채팅의 링크 카드를 탭하면 앱 안 브라우저로 열립니다. 설치된 앱이 있으면 해당 앱으로 바로 연결합니다.
+
+#### 미디어 뷰어 통합
+이미지·동영상·음원·PDF·문서 뷰어가 하나의 화면으로 통일됐습니다. 마크다운 문서는 보기 좋게 렌더해 보여주고, 음원은 자켓과 파일명이 함께 표시됩니다.
+
+#### 대화 복귀 위치 기억
+대화방을 나갔다 다시 들어오면 마지막으로 보던 자리로 돌아갑니다.
+
+#### 알림 안정화
+여러 대화방·여러 사람의 알림이 서로 덮어쓰던 문제와 일부 기기에 알림이 도착하지 않던 문제를 수정했습니다.
+
+#### 개선 사항
+- 이메일 계정에도 자동 생성 아바타가 표시됩니다.
+- 갤러리 선택 화면을 자체 픽커로 바꿔 원본 파일명이 보존됩니다.
+- 음원을 열 때마다 다시 내려받던 문제를 수정했습니다.
+- 네트워크 사용량을 줄였습니다.
+- Windows에서 앱이 켜지지 않으면 스스로 복구합니다.
+- 번역 누락과 언어별 글꼴 표기를 다듬었습니다.
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.0.2 <small>2026-08-01</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

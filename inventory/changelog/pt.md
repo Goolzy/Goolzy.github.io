@@ -29,6 +29,54 @@ Confira o histórico de atualizações do aplicativo Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.0.3 <small>2026-08-08</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Anexos de chat renovados
+O botão de anexos agora é um painel flutuante. Reúna fotos, vídeos, arquivos e áudio em um só lugar, reordene arrastando e envie vários tipos em uma única mensagem.
+
+#### Mensagens de voz
+Grave até um minuto de áudio no chat e envie na hora. Disponível no celular e no desktop.
+
+#### Enviar desenhos à mão
+Desenhe em uma tela e envie seu rascunho como imagem.
+
+#### GIFs animados
+Pesquise GIFs e envie-os direto na conversa.
+
+#### Colar da área de transferência
+Cole imagens, textos ou links copiados no campo de escrita para anexá-los na hora.
+
+#### Abrir links no app
+Toque em um cartão de link para abri-lo no navegador integrado. Se o app correspondente estiver instalado, ele abre diretamente lá.
+
+#### Visualizador de mídia unificado
+Os visualizadores de imagem, vídeo, áudio, PDF e documentos agora compartilham uma única tela. Documentos Markdown são renderizados para leitura e o áudio mostra capa e nome do arquivo.
+
+#### Volte de onde parou
+Ao retornar a uma conversa, ela abre exatamente onde você estava lendo.
+
+#### Notificações mais confiáveis
+Corrigidas notificações de conversas ou remetentes diferentes que se sobrescreviam e notificações que não chegavam em alguns aparelhos.
+
+#### Melhorias
+- Contas de e-mail agora têm avatar gerado automaticamente.
+- O seletor de galeria agora é próprio e preserva os nomes originais dos arquivos.
+- Corrigido o novo download do áudio a cada abertura.
+- Uso de rede reduzido.
+- O Windows se recupera sozinho se o app não iniciar.
+- Traduções ausentes e tipografia por idioma aprimoradas.
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.0.2 <small>2026-08-01</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
