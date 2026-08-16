@@ -29,6 +29,45 @@ Sehen Sie sich den Update-Verlauf der Inventory-App an.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.0 <small>2026-08-16</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopieren">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Speicherplatz direkt verwalten
+In den Einstellungen können Sie die Cachegröße, die die App verwendet, überprüfen und jederzeit zurücksetzen.
+
+#### Fotogalerie-Ansicht verbessert
+Beim Anschauen mehrerer Bilder wird Ihre aktuelle Position durch Punkte angezeigt, und Sie können die Pfeile auf beiden Seiten zum Umblättern verwenden. Nach dem letzten Bild wird nahtlos zum ersten weitergeleitet, und die Autoplay-Einstellung für Videos merkt sich den letzten Zustand.
+
+#### Datennutzung und Geschwindigkeit verbessert
+Wir haben die wiederholte Übertragung derselben Informationen in Entdecken, Startseite und Elementdetails reduziert. Fotos und Anhänge werden nicht erneut heruntergeladen, sodass Bildschirme schneller laden und die Datennutzung sinkt.
+
+#### Einstellungsbildschirm-Design vereinheitlicht
+Hinweise und Bestätigungsfenster in den Einstellungen wurden an das Gesamtdesign der App angepasst.
+
+#### Datenschutz erweitert
+Beim Versenden von Fotos werden Metadaten wie Aufnahmeort entfernt, um zu verhindern, dass diese Informationen übertragen werden. Wir haben auch unsere Sicherheitsüberprüfung erweitert, um zu bestätigen, dass App-Anfragen von legitimen Geräten stammen.
+
+#### Fehlerbehebungen
+Wir haben folgende Probleme behoben.
+
+- Problem behoben, dass kopierte Fotos nicht in das Chat-Eingabefeld eingefügt werden konnten
+- Problem behoben, dass der Bildschirm beim Betreten eines Chats nach unten sprang
+- Problem behoben, dass verpasste Nachrichten nicht angezeigt wurden, wenn Sie einen Raum erneut betraten
+- Problem behoben, dass Video-Anhang-Vorschau den falschen Dateiinhalt anzeigte
+- Problem behoben, dass Anhänge nach jedem App-Neustart erneut heruntergeladen wurden
+- Problem behoben, dass lange Nachrichtenblasen vom Bildschirm überflossen
+- Problem behoben, dass der Erkunden-Bildschirmtitel bei langsamer Netzwerkverbindung falsch angezeigt wurde
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.0.3 <small>2026-08-08</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopieren">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

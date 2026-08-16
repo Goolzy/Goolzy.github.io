@@ -29,6 +29,45 @@ Confira o histórico de atualizações do aplicativo Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.0 <small>2026-08-16</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Gerenciar espaço de armazenamento
+Nas configurações, você pode verificar quanto espaço o cache está usando e limpá-lo quando quiser.
+
+#### Melhorias na galeria de fotos
+Ao visualizar várias fotos, a posição atual é indicada com pontos, e você pode avançar com as setas dos lados. Depois da última foto, volta à primeira, e as configurações de reprodução automática de vídeos são lembradas.
+
+#### Redução do uso de dados e melhor velocidade
+Otimizamos a forma como as informações são carregadas na exploração, início e detalhes de itens. Fotos e anexos são baixados uma única vez, não repetidamente, resultando em carregamento mais rápido e menor consumo de dados.
+
+#### Design uniforme na tela de configurações
+Os diálogos de orientação e confirmação nas configurações foram unificados com o design geral do aplicativo.
+
+#### Proteção de privacidade aprimorada
+Informações como localização de fotos são removidas quando você as envia. A verificação de segurança para confirmar que as solicitações do aplicativo vêm de um dispositivo legítimo também foi expandida.
+
+#### Correções de bugs
+Corrigimos os seguintes problemas.
+
+- Impossibilidade de colar fotos copiadas no campo de entrada do chat
+- Tela pulando para baixo ao entrar em uma sala de conversa
+- Mensagens não recebidas não aparecendo ao retornar a uma sala
+- Visualização de anexo de vídeo exibindo arquivo diferente
+- Anexos sendo baixados repetidamente a cada reinicialização do aplicativo
+- Balões de mensagem longa extrapolando os limites da tela
+- Título da tela de exploração exibido incorretamente quando a rede é lenta
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.0.3 <small>2026-08-08</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

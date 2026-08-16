@@ -29,6 +29,45 @@ Consulta el historial de actualizaciones de la aplicación Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.0 <small>2026-08-16</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Gestiona el almacenamiento directamente
+En la configuración, puedes ver cuánto espacio de caché usa la app e inicializarlo cuando quieras.
+
+#### Visualización mejorada de galería de fotos
+Al ver varias fotos, la posición actual se indica con puntos y puedes desplazarte con las flechas de los lados. Tras la última foto vuelve a la primera, y la configuración de reproducción automática de vídeos recuerda tu última selección.
+
+#### Mejora de uso de datos y velocidad
+Hemos eliminado la descarga repetida de la misma información en la exploración, inicio y detalle del artículo. Las fotos y archivos adjuntos que se descargan una vez no se vuelven a descargar, por lo que las pantallas se abren más rápido y se reduce el uso de datos.
+
+#### Unificación del diseño de la pantalla de configuración
+Hemos unificado los diálogos de guía y confirmación en la configuración con el diseño general de la app.
+
+#### Privacidad reforzada
+Eliminamos información como la ubicación de la foto cuando la envías. También hemos ampliado la validación de seguridad para confirmar que las solicitudes de la app proceden de un dispositivo legítimo.
+
+#### Correcciones de errores
+Hemos solucionado los siguientes problemas.
+
+- Imposibilidad de pegar fotos copiadas en el campo de entrada del chat.
+- La pantalla se desplazaba bruscamente hacia abajo al entrar en un chat.
+- Los mensajes no recibidos no se mostraban al volver a entrar en una sala.
+- La vista previa de adjuntos de vídeo mostraba archivos incorrectos.
+- Los adjuntos se descargaban de nuevo después de cada reinicio de la app.
+- Los globos de mensajes largos se desbordaban fuera de la pantalla.
+- El título de la pantalla de exploración se mostraba incorrectamente cuando la red era lenta.
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.0.3 <small>2026-08-08</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

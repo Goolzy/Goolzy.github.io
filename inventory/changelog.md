@@ -29,6 +29,45 @@ Inventory 앱의 업데이트 내역을 확인하세요.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.0 <small>2026-08-16</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### 저장 공간을 직접 관리할 수 있습니다
+설정에서 앱이 사용 중인 캐시 용량을 확인하고 원할 때 초기화할 수 있습니다.
+
+#### 사진 갤러리 보기 개선
+여러 장을 볼 때 현재 위치를 점으로 표시하고 양옆 화살표로 넘길 수 있습니다. 마지막 장 다음은 첫 장으로 이어지며, 동영상 자동 재생 설정은 마지막 상태를 기억합니다.
+
+#### 데이터 사용량과 속도 개선
+탐색·홈·아이템 상세에서 같은 정보를 반복해 내려받던 부분을 정리했습니다. 한 번 받은 사진과 첨부 파일은 다시 받지 않아 화면이 더 빨리 뜨고 데이터 사용량이 줄어듭니다.
+
+#### 설정 화면 디자인 정리
+설정의 안내·확인 창을 앱 전체 디자인에 맞춰 통일했습니다.
+
+#### 개인정보 보호 강화
+사진을 보낼 때 촬영 위치 같은 정보가 함께 전송되지 않도록 제거합니다. 앱 요청이 정상 기기에서 온 것인지 확인하는 보안 검증도 확대했습니다.
+
+#### 버그 수정
+아래 문제들을 바로잡았습니다.
+
+- 복사한 사진을 채팅 입력창에 붙여넣지 못하던 문제
+- 채팅방 진입 시 화면이 아래로 크게 튀던 문제
+- 방에 다시 들어갔을 때 받지 못한 메시지가 보이지 않던 문제
+- 동영상 첨부 미리보기가 다른 파일 것으로 표시되던 문제
+- 첨부 파일을 앱 재시작 후 매번 다시 내려받던 문제
+- 긴 메시지 말풍선이 화면 밖으로 넘치던 문제
+- 네트워크가 느릴 때 탐색 화면 제목이 잘못 표시되던 문제
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.0.3 <small>2026-08-08</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

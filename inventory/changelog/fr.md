@@ -29,6 +29,45 @@ Consultez l'historique des mises à jour de l'application Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.0 <small>2026-08-16</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Gestion directe de l'espace de stockage
+Dans Paramètres, vous pouvez vérifier l'espace cache utilisé par l'application et l'effacer quand vous le souhaitez.
+
+#### Amélioration de l'affichage de la galerie photo
+En visualisant plusieurs photos, la position actuelle s'affiche sous forme de point et vous pouvez naviguer avec les flèches de chaque côté. Après la dernière photo, elle revient à la première, et les paramètres de lecture automatique des vidéos conservent leur dernier état.
+
+#### Amélioration de la consommation de données et de la vitesse
+Nous avons supprimé les téléchargements répétés des mêmes informations dans Découvrir, Accueil et Détails de l'élément. Les photos et pièces jointes ne sont pas retéléchargées, ce qui accélère l'affichage et réduit la consommation de données.
+
+#### Raffinement du design de l'écran Paramètres
+Nous avons unifié les dialogues de guidage et de confirmation dans Paramètres selon le design global de l'application.
+
+#### Protection de la vie privée renforcée
+Nous supprimons les informations telles que les données de localisation des photos avant leur envoi. Nous avons également étendu la validation de sécurité pour confirmer que les demandes d'application proviennent d'appareils légitimes.
+
+#### Corrections de bugs
+Nous avons corrigé les problèmes ci-dessous.
+
+- Impossible de coller des photos copiées dans le champ de saisie du chat
+- Écran de chat qui saute vers le bas en entrant dans une conversation
+- Nouveaux messages ne s'affichant pas quand on entre à nouveau dans une conversation
+- L'aperçu de la pièce jointe vidéo affichait le mauvais fichier
+- Les pièces jointes étaient retéléchargées à chaque redémarrage de l'application
+- Les longues bulles de messages débordaient de l'écran
+- Titre de l'écran Découvrir s'affichant incorrectement sur les réseaux lents
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.0.3 <small>2026-08-08</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

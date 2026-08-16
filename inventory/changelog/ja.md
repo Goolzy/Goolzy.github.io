@@ -29,6 +29,45 @@ Inventoryアプリのアップデート履歴をご確認ください。
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.0 <small>2026-08-16</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="コピー">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### キャッシュストレージを直接管理できるようになりました
+設定でアプリが使用中のキャッシュ容量を確認でき、必要に応じてクリアできます。
+
+#### 写真ギャラリー表示の改善
+複数の画像を閲覧する際、ドットで現在位置を表示し、両側の矢印で切り替えられます。最後の画像の次は最初の画像に戻り、動画の自動再生設定は前回の状態を記憶します。
+
+#### データ使用量と速度の改善
+探索・ホーム・アイテム詳細で同じ情報を繰り返しダウンロードしていた部分を整理しました。一度受け取った写真と添付ファイルは再度ダウンロードされないため、画面の表示が高速化され、データ使用量が削減されます。
+
+#### 設定画面デザインの整理
+設定のガイダンスと確認ウィンドウをアプリ全体のデザインに合わせて統一しました。
+
+#### プライバシー保護の強化
+写真を送信する際、撮影位置などの情報が一緒に送信されないよう削除されます。アプリリクエストが正規デバイスから来たものかを確認するセキュリティ検証も拡大しました。
+
+#### バグ修正
+以下の問題を修正しました。
+
+- コピーした写真をチャット入力欄に貼り付けられない問題
+- チャットルーム進入時に画面が下に大きくジャンプする問題
+- ルームに再進入した際に受け取れなかったメッセージが表示されない問題
+- 動画添付のプレビューが別のファイルのものとして表示される問題
+- 添付ファイルがアプリ再起動後に毎回再度ダウンロードされる問題
+- 長いメッセージの吹き出しが画面外にはみ出す問題
+- ネットワークが遅い場合に探索画面のタイトルが間違って表示される問題
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.0.3 <small>2026-08-08</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="コピー">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

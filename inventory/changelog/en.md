@@ -29,6 +29,45 @@ Check out the update history for the Inventory app.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.0 <small>2026-08-16</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Manage Storage Directly
+In Settings, you can check how much cache the app is using and clear it whenever you want.
+
+#### Improved Photo Gallery View
+When viewing multiple photos, dots show your current position and arrow buttons let you browse left and right. After the last photo, it loops back to the first, and video autoplay settings remember your preference.
+
+#### Reduced Data Usage and Faster Performance
+We optimized data transfers across discover, home, and item details—no more downloading the same information repeatedly. Photos and attachments are cached, so screens load faster and you use less data.
+
+#### Settings Design Refined
+We unified Settings dialogs and confirmations to match the rest of the app's design.
+
+#### Enhanced Privacy
+When you share photos, metadata like location data is removed before sending. We also expanded our security checks to verify that requests come from legitimate devices.
+
+#### Bug Fixes
+We fixed the following issues.
+
+- Pasting copied photos into the chat input field
+- Chat screen jumping down when entering a room
+- Missed messages not appearing when re-entering a room
+- Video attachment preview showing the wrong file's thumbnail
+- Attachments re-downloading after each app restart
+- Long message bubbles overflowing off-screen
+- Discover screen title displaying incorrectly on slow networks
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.0.3 <small>2026-08-08</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

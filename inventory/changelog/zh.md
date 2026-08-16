@@ -29,6 +29,45 @@ translations:
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.0 <small>2026-08-16</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### 直接管理存储空间
+在设置中可以查看应用正在使用的缓存容量，并在需要时清除。
+
+#### 改进图片库浏览
+浏览多张图片时，当前位置会以点指示，两侧有箭头可以翻页。最后一张之后是第一张，视频自动播放设置会记住上次的选择。
+
+#### 降低数据用量和提升速度
+整理了浏览、首页、物品详情中重复下载同样信息的部分。已下载的图片和附件不会再次下载，让屏幕加载更快，数据用量也会减少。
+
+#### 整理设置界面设计
+统一了设置中提示和确认窗口与应用整体设计的风格。
+
+#### 强化隐私保护
+发送图片时会删除拍摄位置等信息，不再一起发送。同时扩大了验证应用请求是否来自正常设备的安全检查。
+
+#### 修复错误
+以下问题已修正。
+
+- 无法在聊天输入框中粘贴复制的图片
+- 进入聊天室时屏幕向下大幅跳动
+- 重新进入房间时收不到的消息无法显示
+- 视频附件预览显示为其他文件的缩略图
+- 每次应用重启后都要重新下载附件
+- 长信息气泡超出屏幕显示范围
+- 网络缓慢时探索屏幕标题显示错误
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.0.3 <small>2026-08-08</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
