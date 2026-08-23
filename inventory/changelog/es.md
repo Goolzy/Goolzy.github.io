@@ -27,7 +27,64 @@ translations:
 
 Consulta el historial de actualizaciones de la aplicación Inventory.
 
+
 <details class="changelog-version" open>
+<summary>
+  <span class="version-title">v2.1.1 <small>2026-08-23</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Pantalla de detalles del artículo rediseñada como un flujo continuo
+Información, calificaciones, recursos y conversaciones ahora se fluyen naturalmente de arriba hacia abajo en una sola pantalla. La imagen principal se extiende como fondo con un efecto visual mejorado, y en pantallas grandes, los miembros y artículos relacionados aparecen alineados a la derecha.
+
+#### Ver capturas y videos en artículos
+Reproduce imágenes y videos oficiales registrados en artículos directamente en la aplicación. Arrastra hacia abajo para cargar el siguiente recurso continuamente, y la ventana de reproducción emergente se ajusta al tamaño de la pantalla.
+
+#### La vista de conversaciones de artículos recuerda tu preferencia
+Si eliges ver en formato de lista o galería, la aplicación mantiene tu preferencia la próxima vez. Puedes añadir reacciones a los mensajes y las direcciones compartidas en la conversación se muestran como tarjetas de enlace organizadas.
+
+#### Confirma y cancela entregas enviadas
+Visualiza la lista de entregas que has enviado en una nueva pantalla y cancélalas antes de que el otro usuario las reciba.
+
+#### Las llamadas de voz se conectan después de la aceptación mutua
+Eliminamos la conexión automática e implementamos un flujo de solicitud y aceptación. Se añadieron efectos de sonido de conexión y desconexión, y solucionamos problemas donde la conexión esperaba indefinidamente o las llamadas terminadas bloqueaban las siguientes.
+
+#### Exploración y reorganización de la pantalla principal
+Ahora puedes explorar artículos abriendo categorías y palabras clave como carpetas. Los resultados de búsqueda y recuentos se mantienen incluso al cambiar de pestaña, y el encabezado superior agrupa el logo y la barra de búsqueda en una sola línea para maximizar el espacio.
+
+#### Información de artículos más precisa
+Ahora mostramos el año de lanzamiento junto con los nombres de artículos de juego, e indicamos especialmente cuando la fecha de lanzamiento no está definida. También ampliamos la inspección de imágenes principales y la recopilación de noticias, reseñas y guías.
+
+#### Estabilización de pagos y entregas
+Solucionamos el problema donde los fondos no se entregaban tras completar un pago, y el mensaje repetido "ya entregado" que aparecía cada vez que entraba a la tienda. También rediseñamos el procesamiento para evitar pagos duplicados.
+
+#### Mejoras en usabilidad y accesibilidad
+Ahora ves la posición actual al navegar botones con teclado, y corregimos problemas donde el texto se desalineaba al usar un teclado. Añadimos animación direccional al cambiar de pestaña inferior, y cuando activas reducción de movimiento en el dispositivo, los efectos visuales se minimizan. El icono de la aplicación también se adapta a los ajustes de pantalla oscura y configuración de tonos.
+
+#### Protección de cuenta mejorada
+Al cerrar sesión, la información de destinatarios recientes, historial de búsqueda y caché de conversaciones se limpian del dispositivo para que no persistan en otras cuentas. También restauramos la funcionalidad de bloqueo para cuentas con acceso restringido.
+
+#### Cambio en el método de compartir sellos
+Eliminamos el menú de compartición directa de sellos. La función de revocación de sellos ya compartidos continúa disponible.
+
+#### Correcciones de errores
+Hemos solucionado los siguientes problemas.
+
+- Pantalla de carga congelada al abrir artículos por primera vez
+- Lista de conversaciones que no se mostraba debido a errores
+- Cierre de sesión que se quedaba colgado
+- Imposibilidad de cargar fotos y archivos en conversaciones
+- Botón de guardado activable en artículos ya poseídos
+- Subrayado superpuesto en avisos emergentes
+
+</div>
+</details>
+
+<details class="changelog-version">
 <summary>
   <span class="version-title">v2.1.0 <small>2026-08-16</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">

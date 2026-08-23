@@ -29,6 +29,62 @@ Consultez l'historique des mises à jour de l'application Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.1 <small>2026-08-23</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Écran de détail de l'élément repensé
+Les informations, évaluations, ressources et conversations s'enchaînent naturellement de haut en bas sur un même écran. L'image représentative s'étend maintenant en arrière-plan, et sur les grands écrans, les membres et les éléments connexes s'affichent côte à côte à droite.
+
+#### Captures d'écran et vidéos intégrées
+Les images et vidéos officielles de l'élément peuvent être lues directement dans l'application. Tirez vers le bas pour charger les ressources suivantes, et la fenêtre de lecture s'adapte à la taille de l'écran.
+
+#### Conversations d'éléments — mode de visualisation conservé
+Choisissez entre le mode liste ou galerie et votre préférence est conservée la prochaine fois. Vous pouvez ajouter des réactions aux bulles de messages, et les adresses partagées s'affichent sous forme de cartes de lien.
+
+#### Suivi des transferts envoyés
+Consultez la liste des transferts que vous avez envoyés dans un nouvel écran et annulez-les avant qu'ils ne soient reçus.
+
+#### Appels vocaux — acceptation bilatérale avant connexion
+Les appels ne se connectent plus automatiquement ; ils nécessitent une demande et une acceptation. Des sons de connexion et de déconnexion ont été ajoutés, et les problèmes de connexions qui restaient en attente ou bloquaient les appels suivants ont été corrigés.
+
+#### Exploration et écran d'accueil remaniés
+Parcourez les éléments en ouvrant les catégories et les mots-clés comme des dossiers. Les résultats de recherche et le nombre d'éléments restent conservés même après avoir visité d'autres onglets, et l'en-tête supérieur combine le logo et la barre de recherche sur une seule ligne pour plus d'espace.
+
+#### Informations d'éléments améliorées
+Les noms d'éléments affichent désormais l'année de sortie, et les éléments sans date de sortie confirmée sont marqués différemment. La vérification des images représentatives et la collecte de nouvelles, critiques et guides ont été élargies.
+
+#### Paiements et allocations stabilisés
+Les problèmes de paiements sans allocation de devises et de messages « déjà alloué » répétés ont été corrigés. Le système d'allocation a été repensé pour éviter les allocations en double.
+
+#### Commodité et accessibilité
+Le focus du clavier sur les boutons est maintenant visible. Les problèmes d'alignement du texte lors de l'utilisation des claviers virtuels ont été corrigés. Les changements d'onglets en bas s'animent directement, et les effets d'écran se réduisent si vous activez la réduction du mouvement. L'icône de l'application change également selon le thème clair/sombre et les paramètres de couleur.
+
+#### Protection des comptes renforcée
+Les destinataires récents, l'historique de recherche et le cache des conversations sont effacés de l'appareil à la déconnexion pour éviter qu'ils ne subsistent sur un autre compte. Le blocage pour les comptes restreints a également été corrigé.
+
+#### Modification du partage des tampons
+Le menu de partage direct des tampons a été supprimé. Vous pouvez toujours révoquer les tampons précédemment partagés.
+
+#### Corrections de bugs
+Les problèmes ci-dessous ont été corrigés.
+
+- Chargement figé lors de l'entrée dans les détails d'un élément
+- Liste de conversations ne s'affichant pas en cas d'erreur
+- Déconnexion figée ou incomplète
+- Impossible d'envoyer des photos et fichiers dans les conversations
+- Le bouton d'ajout fonctionnait pour les éléments déjà possédés
+- Soulignement chevauchant dans les textes de dialogue
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.1.0 <small>2026-08-16</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

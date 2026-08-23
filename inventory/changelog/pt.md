@@ -29,6 +29,62 @@ Confira o histórico de atualizações do aplicativo Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.1 <small>2026-08-23</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Tela de detalhes do item reconstruída como um fluxo único
+Informações, classificações, recursos e conversa fluem naturalmente de cima para baixo em uma única tela. A imagem destacada agora se estende até o fundo, e em telas maiores, membros e itens relacionados aparecem lado a lado à direita.
+
+#### Visualizar capturas de tela e vídeos no item
+Reproduza imagens e vídeos oficiais registrados no item diretamente no aplicativo. Puxe para baixo para carregar o próximo recurso, e a janela de reprodução do pop-up se adapta ao tamanho da tela.
+
+#### A conversa do item lembra seu formato de exibição
+Escolha entre formato de lista ou galeria, e ele permanecerá na próxima visita. Você pode adicionar reações às mensagens, e os URLs deixados na conversa são organizados como cards de link.
+
+#### Verificar e cancelar transferências enviadas
+Verifique uma lista de transferências que você enviou em uma nova tela e cancele-as antes que o destinatário as receba.
+
+#### Conversa de voz se conecta após aceitação mútua
+Substituímos a conexão automática por um processo de solicitação e aceitação. Sons de conexão e desconexão foram adicionados, e corrigimos problemas em que as chamadas ficavam aguardando indefinidamente ou chamadas antigas permaneciam, bloqueando novas chamadas.
+
+#### Limpeza das telas Explorar e Inicial
+Abra categorias e palavras-chave como pastas para explorar itens. Os resultados da pesquisa e contagens são mantidos mesmo após visitar outras abas, e o cabeçalho superior consolida o logo e a barra de pesquisa em uma linha para melhor utilização do espaço.
+
+#### Informações de itens mais precisas
+Nomes de itens de jogos agora exibem o ano de lançamento, e datas não especificadas são marcadas separadamente. Também expandimos a revisão de imagens destacadas e o escopo de coleta de notícias, resenhas e guias.
+
+#### Estabilidade de pagamento e processamento
+Corrigimos o problema em que a moeda não era entregue após o pagamento e a notificação repetitiva de "já processado" ao entrar na loja. Também reformulamos o processamento para evitar que o mesmo pagamento seja creditado duas vezes.
+
+#### Melhorias na usabilidade e acessibilidade
+A posição atual agora é visível ao navegar com o teclado, e corrigimos o problema de caracteres desalinhados ao usar o método de entrada. As transições de abas inferiores agora incluem animação direcional, e os efeitos de tela são reduzidos quando a redução de movimento está ativada. O ícone do aplicativo também muda de acordo com as configurações de tela escura e ícone de tonalidade.
+
+#### Segurança de conta aprimorada
+Ao fazer logout, destinatários recentes, histórico de pesquisa e cache de conversa são limpos do dispositivo para não permanecerem em outras contas. Também restauramos o processamento de bloqueio para contas com acesso restrito.
+
+#### Mudança na forma de compartilhamento de selos
+Removemos o menu para compartilhamento direto de selos. A revogação de selos já compartilhados continua funcionando normalmente.
+
+#### Correções de bugs
+Corrigimos os seguintes problemas.
+
+- Carregamento travado ao entrar em um item pela primeira vez
+- Lista de conversas não exibida devido a erro
+- Logout travado e não concluído
+- Impossibilidade de enviar fotos e arquivos para conversa
+- Botão de salvar pressionável em itens que já possui
+- Sublinhados duplicados em texto de aviso do pop-up
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.1.0 <small>2026-08-16</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

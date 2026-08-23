@@ -29,6 +29,62 @@ Check out the update history for the Inventory app.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.1 <small>2026-08-23</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Item Detail Screen Redesigned as One Continuous Flow
+Information, ratings, resources, and conversation now flow naturally up and down on a single screen. The featured image now bleeds to the background, and on wider screens, members and related items are displayed side by side on the right.
+
+#### View Screenshots and Videos on Items
+Official images and videos registered for items now play directly in the app. Pull down to load the next media, and the popup player adapts to your screen size.
+
+#### Item Chat Remembers Your Viewing Preference
+Choose between list or gallery view, and your preference is remembered next time. Add reactions to chat bubbles, and links in conversations are organized as link cards.
+
+#### Check and Cancel Sent Transfers
+View a list of transfers you've sent on a new screen and cancel them before the recipient accepts.
+
+#### Voice Chat Connects After Mutual Acceptance
+We removed automatic connection and now require request and acceptance. Connection and disconnect sound effects have been added, and we fixed issues where connections waited indefinitely or stale calls blocked new conversations.
+
+#### Discover and Home Screen Cleanup
+Browse items by opening categories and keywords like folders. Your search results and counts are preserved when switching tabs, and the header consolidates the logo and search bar on one line for more screen space.
+
+#### Item Information Becomes More Accurate
+Game item names now include the release year, with special marking for items without a set release date. We expanded our curation of featured images and our coverage of news, reviews, and guides.
+
+#### Payment and Payout Stabilization
+We fixed issues where payments completed but currency didn't arrive, and where the shop showed 'Already paid' repeatedly. We also redesigned the processing logic to ensure the same payment never gets paid twice.
+
+#### Usability and Accessibility Improvements
+Keyboard navigation now shows which button is focused, and we fixed text misalignment while using input methods. Tab transitions now include directional animation, reduce motion preferences are respected, and the app icon adapts to dark mode and color settings.
+
+#### Enhanced Account Protection
+On logout, recent recipients, search history, and chat cache are cleared from the device so they don't persist for other accounts. We also restored blocking for restricted accounts.
+
+#### Stamp Sharing Method Changed
+The option to directly share stamps has been removed. You can still retrieve stamps you've already shared.
+
+#### Bug Fixes
+We fixed the following issues.
+
+- Loading hanging when first entering an item
+- Conversation list not displaying due to error
+- Logout hanging without completing
+- Unable to upload photos and files to chat
+- Scrap button being pressable on items you already own
+- Underlines overlapping in popup guidance text
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.1.0 <small>2026-08-16</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

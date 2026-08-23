@@ -27,7 +27,64 @@ translations:
 
 Sehen Sie sich den Update-Verlauf der Inventory-App an.
 
+
 <details class="changelog-version" open>
+<summary>
+  <span class="version-title">v2.1.1 <small>2026-08-23</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopieren">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Detailbildschirm für Elemente als durchgehender Fluss neu gestaltet
+Informationen, Bewertungen, Ressourcen und Unterhaltung fließen natürlich von oben nach unten auf einem Bildschirm. Die Hauptabbildung erstreckt sich jetzt bis zum Hintergrund, und auf größeren Bildschirmen werden Mitglieder und verwandte Elemente nebeneinander auf der rechten Seite angezeigt.
+
+#### Screenshots und Videos in Elementen anschauen
+Offizielle Bilder und Videos, die zu Elementen registriert sind, werden direkt in der App abgespielt. Durch Ziehen nach unten laden Sie die nächsten Ressourcen nacheinander, und das Popup-Fenster passt sich der Bildschirmgröße an.
+
+#### Elementunterhaltung merkt sich die Ansichtsweise
+Wenn Sie zwischen Liste und Galerie wählen, wird Ihre Wahl beibehalten. Sie können auf Sprechblasen reagieren, und in Unterhaltungen hinterlassene Links werden als Karten organisiert angezeigt.
+
+#### Gesendete Übertragungen prüfen und abbrechen
+Sie können eine Liste Ihrer gesendeten Übertragungen in einem neuen Bildschirm überprüfen und diese abbrechen, bevor der andere sie erhält.
+
+#### Sprachunterhaltung verbindet nach gegenseitiger Genehmigung
+Die automatische Verbindung wurde entfernt und durch eine Anfrage- und Genehmigungsmethode ersetzt. Verbindungs- und Trennungseffekte wurden hinzugefügt, und das Problem behoben, dass Verbindungen endlos warteten oder bereits beendete Anrufe nachfolgende Anrufe blockierten.
+
+#### Erkunden und Startseite aufgeräumt
+Sie können Kategorien und Schlüsselwörter wie Ordner öffnen und Elemente durchsuchen. Suchergebnisse und Anzahl bleiben erhalten, wenn Sie zu anderen Registerkarten wechseln, und der obere Header kombiniert Logo und Suchleiste in einer Zeile für mehr Platz.
+
+#### Elementinformationen werden genauer
+Spielelementnamen zeigen jetzt das Erscheinungsjahr an, und ungeplante Veröffentlichungen werden separat markiert. Die Überprüfung von Hauptbildern und die Erfassung von Nachrichten, Bewertungen und Anleitungen wurden erweitert.
+
+#### Zahlung und Auszahlung stabilisiert
+Das Problem behoben, dass Währung nach Zahlungsabschluss nicht ankam, und dass die Meldung „Bereits ausgezahlt" sich beim Betreten des Shops wiederholte. Der Verarbeitungsprozess wurde überarbeitet, um sicherzustellen, dass dieselbe Zahlung nicht zweimal ausgezahlt wird.
+
+#### Benutzerfreundlichkeit und Barrierefreiheit verbessert
+Beim Navigieren mit der Tastatur ist Ihre aktuelle Position sichtbar, und das Problem mit versetztem Text bei der Eingabemethode wurde behoben. Die Registerkarten am unteren Rand haben Richtungsanimationen, und wenn die Bewegungsreduzierung aktiviert ist, werden Effekte reduziert. Das App-Symbol passt sich auch an die Einstellungen für Dunkelmodus und Farbton an.
+
+#### Kontoschutz verstärkt
+Beim Abmelden werden zuletzt empfangene Personen, Suchverlauf und Unterhaltungscache vom Gerät gelöscht, damit sie nicht bei anderen Konten verbleiben. Die Sperrbehandlung für eingeschränkte Konten wurde auch behoben.
+
+#### Stempel-Freigabemethode geändert
+Das Menü zum direkten Freigeben von Stempeln wurde entfernt. Der Widerruf bereits freigegebener Stempel funktioniert weiterhin.
+
+#### Fehlerbehebungen
+Wir haben folgende Probleme behoben.
+
+- Problem behoben, dass das Laden beim erstmaligen Betreten eines Elements stecken blieb
+- Problem behoben, dass die Unterhaltungsliste bei Fehlern nicht angezeigt wurde
+- Problem behoben, dass die Abmeldung nicht vollständig war und stecken blieb
+- Problem behoben, dass Fotos und Dateien nicht in Unterhaltungen hochgeladen werden konnten
+- Problem behoben, dass die Speichern-Schaltfläche bei bereits besessenen Elementen gedrückt werden konnte
+- Problem behoben, dass sich Unterstriche in Popup-Hinweisen überlagerten
+
+</div>
+</details>
+
+<details class="changelog-version">
 <summary>
   <span class="version-title">v2.1.0 <small>2026-08-16</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopieren">
