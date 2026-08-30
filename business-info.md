@@ -4,6 +4,15 @@ title: 사업자 정보
 permalink: /business-info/
 description: 굴지(Goolzy) 사업자 정보 — 전자상거래법 제10조에 따른 의무 게시 항목입니다.
 lang: ko
+translations:
+  ko: /business-info/
+  en: /business-info/en/
+  ja: /business-info/ja/
+  de: /business-info/de/
+  fr: /business-info/fr/
+  es: /business-info/es/
+  pt: /business-info/pt/
+  zh: /business-info/zh/
 ---
 
 본 페이지는 「전자상거래 등에서의 소비자보호에 관한 법률」 제10조에 따라 의무 게시하는 사업자 정보입니다.
@@ -20,6 +29,14 @@ lang: ko
 | **고객센터** | <a href="tel:{{ site.business.customer_phone | replace: '-', '' }}">{{ site.business.customer_phone }}</a> |
 | **이메일** | <a href="mailto:{{ site.business.customer_email }}">{{ site.business.customer_email }}</a> |
 | **호스팅 사업자** | {{ site.business.hosting_provider }} |
+
+### 사업자정보 확인
+
+위 표시 사항의 진위는 공정거래위원회가 운영하는 통신판매 사업자정보 공개페이지에서 직접 확인하실 수 있습니다 (「전자상거래 등에서의 소비자보호에 관한 법률 시행규칙」 제7조제2항).
+
+- [공정거래위원회 사업자정보 공개페이지에서 확인하기](https://www.ftc.go.kr/bizCommPop.do?wrkr_no=5451202654)
+
+> 위 항목은 인벤토리 앱의 **설정 › 회사 정보**에서도 동일하게 표시됩니다. 이 페이지는 앱 내 표시를 대체하는 것이 아니라 함께 게시하는 것입니다.
 
 ---
 
@@ -53,4 +70,4 @@ lang: ko
 
 ---
 
-<p style="text-align: right; color: #999; font-size: 0.9em;">최종 갱신일: 2026-05-28</p>
+<p style="text-align: right; color: #999; font-size: 0.9em;">최종 갱신일: 2026-08-30</p>
