@@ -29,6 +29,72 @@ Check out the update history for the Inventory app.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.2 <small>2026-09-06</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Attach schedules and contacts to conversations
+Send reminder cards with appointment times and locations—recipients can add them directly to their device calendar. Share specific contacts from your address book, and recipients can save them or connect directly. Works the same way on larger screens too.
+
+#### Messages resume even if sending is interrupted
+Photos and files you're sending continue when you reopen the app. Upload progress fills smoothly without gaps, and unstable connections trigger automatic retries.
+
+#### Conversation scroll redesigned
+Grab the right rail to jump to any date instantly, and a button to return to unread messages is back. A date label follows as you scroll, showing your current position. Entering a conversation resumes at where you left off without jumping.
+
+#### Cleaner conversation interface
+Reactions on messages now show in gallery view and collapsed cards. Addresses in conversations appear as organized cards within messages, and removed pages appear dimmed. Write permissions for different conversation types are now verified by the server.
+
+#### Unified header and search
+Logo, search, and menu fit in one line, giving you more screen space. Search is now unified across the entire app with tab filters and trending searches. News digest opens full-screen.
+
+#### Item ratings now more detailed
+Instead of a single star rating, you can now leave detailed ratings by question and familiarity. Ratings progressively unlock as you participate, and the results screen separates your ratings from overall ratings.
+
+#### Item information organized at a glance
+Company, platform, genre, supported languages, and ratings now appear as organized badges. Supported languages are separated by type (voice, subtitles, etc.). Related items like series and sequels appear together. Labels display in the language of the viewer.
+
+#### Improved item image quality
+Company logos, platform, and rating images now come from official sources. Generated images are used only when official sources are unavailable. Collection scope for news and reviews, plus naming conventions, have also been refined.
+
+#### Manage transfers and refunds in notification center
+Transfer, refund, and unlock news now appears as cards in the notification center. When a refund is processed, related transfers are also canceled.
+
+#### Stabilized payments and currency grants
+Pending payments are automatically recovered when you reopen the app and currency is granted. Fixed an issue where store purchases could grant more currency than charged.
+
+#### Improved notifications
+App notifications now display on larger screens. Notifications dismissed on one device disappear on others too. Reminder card notifications now show title, location, and time at a glance.
+
+#### Reduce motion and interface refinement
+When reduce motion is enabled on your device, screen transitions, repeating animations, and shake effects all decrease. Date and time pickers, plus scrollbars, are now unified across the entire app.
+
+#### Faster launch and reduced data usage
+The previous screen renders first when you open the app for faster startup. Eliminated excessive redownloading of the same information. Images and attachments now use a new delivery network for faster loading.
+
+#### Enhanced security
+Verification that app requests come from legitimate devices has been expanded to most features. Cleaned up server functions that were previously unauthenticated and rechecked access permissions for saved files.
+
+#### Bug fixes
+Fixed the following issues.
+
+- Menu not disappearing when dragging items on the home screen
+- Badge changes not reflecting immediately
+- Loading indicator flashing when returning to the inventory tab
+- Attachment button not responding or preview disappearing in conversations
+- Item names cut off in list tiles
+- Overdue items not auto-cleaning up
+- Some screens showing untranslated help text
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.1.1 <small>2026-08-23</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

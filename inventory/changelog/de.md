@@ -30,6 +30,74 @@ Sehen Sie sich den Update-Verlauf der Inventory-App an.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.2 <small>2026-09-06</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopieren">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Chats können jetzt Kalender und Kontakte anhängen
+Wenn Sie eine Erinnerungskarte mit Termin und Ort senden, kann die Gegenseite diesen direkt in ihren Kalender eintragen. Sie können einen Kontakt auswählen und senden, und die Gegenseite kann ihn im Adressbuch speichern oder direkt anrufen. Auf größeren Bildschirmen funktioniert dies auf die gleiche Weise.
+
+#### Chats werden weitergeleitet, auch wenn die Verbindung unterbrochen wird
+Fotos und Dateien, die Sie gerade versenden, werden weitergeleitet, auch wenn Sie die App schließen und erneut öffnen. Während der Übertragung wird der Fortschritt nahtlos angezeigt, und bei instabiler Verbindung wird automatisch ein erneuter Versuch unternommen.
+
+#### Chat-Scroll neu gestaltet
+Fassen Sie die rechte Spur an, um direkt zu einem bestimmten Datum zu springen, und die Schaltfläche „Zu neuen Nachrichten" ist zurück. Während des Scrollens wird das Datum oben angezeigt, damit Sie wissen, wann Sie gerade schauen. Wenn Sie einen Chat betreten, öffnet sich der Bildschirm an der Stelle, wo Sie waren, ohne zu springen.
+
+#### Chat-Bildschirm aufgeräumt
+Reaktionen auf Sprechblasen werden jetzt in der Galerieansicht und in eingeklappten Karten angezeigt. Links in Chats werden als Karten in der Sprechblase organisiert, und gelöschte Seiten werden abgeblendet. Welche Benutzer einen Chat schreiben können, wird vom Server überprüft.
+
+#### Header und Suche oben zusammengefasst
+Logo, Suche und Menü werden in eine Zeile gepackt, um mehr Platz zu sparen. Die Suche ist App-weit vereinheitlicht und bietet Tab-Filter und beliebte Suchanfragen. News-Digest öffnet sich im Vollbildmodus.
+
+#### Bewertungen für Artikel differenzierter
+Anstatt nur Sterne zu vergeben, können Sie nun nach Kategorien bewerten und Vertrautheit angeben. Bewertungen werden schrittweise freigegeben, je mehr Sie teilnehmen, und auf der Ergebnisseite können Sie Ihre Bewertung separat von der Gesamtbewertung sehen.
+
+#### Artikel-Informationen auf einen Blick organisiert
+Firma, Plattform, Genre, unterstützte Sprachen und Altersfreigabe werden in Abzeichen angezeigt, und unterstützte Sprachen werden nach Typ (Ton, Untertitel usw.) unterschieden. Zugehörige Artikel wie Serien und Fortsetzungen werden ebenfalls angezeigt. Die Anzeige folgt der Sprache des Betrachters.
+
+#### Verbesserung der Bildqualität von Artikeln
+Firmenlogo und Plattform-/Altersfreigabe-Bilder werden aus echten offiziellen Quellen verwendet, und generierte Bilder werden nur verwendet, wenn keine Quelle verfügbar ist. Der Erfassungsbereich für News und Rezensionen sowie die Namenskonvention wurden ebenfalls überarbeitet.
+
+#### Transfers und Erstattungen im Benachrichtigungszentrum verwalten
+Benachrichtigungen zu Transfers, Erstattungen und Entsperrungen werden im Benachrichtigungszentrum als Karten zusammengefasst. Wenn eine Erstattung verarbeitet wird, wird der zugehörige Transfer ebenfalls storniert.
+
+#### Zahlungs- und Währungsstabilität
+Die App ruft automatisch unverarbeitete Zahlungen ab, wenn Sie sie erneut öffnen, und gibt die Währung aus. Wir haben auch das Problem behoben, dass Sie mehr Währung erhalten könnten, als Sie bezahlt haben.
+
+#### Benachrichtigungsverbesserungen
+Push-Benachrichtigungen werden jetzt auch auf größeren Bildschirmen angezeigt. Benachrichtigungen, die Sie auf einem Gerät gelesen haben, verschwinden auch auf anderen Geräten, und Benachrichtigungen zu Terminen zeigen Titel, Ort und Zeit auf einen Blick.
+
+#### Motion Reduce und Screen Cleanup
+Wenn Sie Motion Reduce aktivieren, werden alle Bildschirmübergänge, Wiederholungseffekte und Shake-Anzeigen verringert. Datumsauswahl, Zeitauswahl und Bildlaufleisten sind jetzt in der gesamten App einheitlich.
+
+#### Geschwindigkeit und Datennutzung verbessert
+Die App startet schneller, indem sie den vorherigen Bildschirm zuerst zeichnet. Wiederholte Downloads derselben Informationen wurden drastisch reduziert, und Bilder sowie Anhänge wurden auf ein neues Netzwerk verlagert, um schneller zu laden.
+
+#### Sicherheit verstärkt
+Wir haben die Überprüfung erweitert, um zu bestätigen, dass App-Anfragen von authentischen Geräten stammen. Unauthentifizierte Serverfunktionen wurden bereinigt, und der Zugriff auf gespeicherte Dateien wurde überprüft.
+
+#### Fehlerbehebungen
+Wir haben folgende Probleme behoben.
+
+- Problem behoben, bei dem das Menü beim Ziehen von Artikeln auf der Startseite nicht verschwand
+- Problem behoben, bei dem Abzeichen nicht sofort angewendet wurden, nachdem sie ausgerüstet waren
+- Problem behoben, bei dem die Ladeanzeige beim erneuten Betreten des Inventar-Tabs flackerte
+- Problem behoben, bei dem die Anhang-Schaltfläche in Chats nicht gedrückt werden konnte oder die Vorschau verschwand
+- Problem behoben, bei dem Artikelnamen in Listen abgeschnitten wurden
+- Problem behoben, bei dem überfällige Artikel nicht automatisch bereinigt wurden
+- Problem behoben, bei dem Hinweise auf einigen Bildschirmen nicht übersetzt wurden
+
+</div>
+</details>
+
+
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.1.1 <small>2026-08-23</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopieren">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

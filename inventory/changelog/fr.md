@@ -29,6 +29,72 @@ Consultez l'historique des mises à jour de l'application Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.2 <small>2026-09-06</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Joindre des événements de calendrier et des contacts aux conversations
+Envoyez une notification de rendez-vous contenant l'heure et le lieu, et le destinataire peut l'ajouter directement à son calendrier. Partagez les contacts de votre choix et le destinataire peut les enregistrer dans son carnet d'adresses ou les appeler immédiatement. Vous pouvez partager et recevoir de la même manière sur les grands écrans.
+
+#### L'envoi de messages reprend quand vous continuez
+Les photos et fichiers que vous envoyez continuent d'être envoyés même après avoir fermé et rouvert l'application. La barre de progression s'affiche constamment pendant l'envoi, et les envois sont automatiquement renvoyés si la connexion est instable.
+
+#### Le défilement des conversations a été amélioré
+Saisissez le rail droit pour naviguer directement vers la date souhaitée, et un bouton pour revenir aux nouveaux messages non lus est réapparu. L'indicateur de date vous suit pendant le défilement pour montrer la période actuelle. Quand vous entrez dans une conversation, l'écran s'ouvre à la position où vous lisiez sans sauter.
+
+#### Amélioration de l'interface des conversations
+Les réactions attachées aux bulles s'affichent maintenant aussi dans la galerie et sur les cartes réduites. Les adresses partagées dans une conversation s'affichent comme des cartes à l'intérieur des bulles, et les pages supprimées s'affichent de manière floue. Les permissions pour poster un message varient selon le type de conversation et sont vérifiées par le serveur.
+
+#### L'en-tête et la barre de recherche sont désormais combinés
+Le logo, la recherche et le menu tiennent maintenant sur une seule ligne pour plus d'espace à l'écran. La recherche est unifiée en un seul endroit dans toute l'application avec des filtres par onglet et des suggestions populaires. Le résumé des actualités s'ouvre maintenant en plein écran.
+
+#### Les évaluations d'éléments sont maintenant plus détaillées
+Au lieu d'une simple note, vous pouvez laisser plusieurs critères et un score de familiarité pour chaque élément. Les évaluations se déverrouillent progressivement au fur et à mesure que vous participez, et l'écran de résultats affiche votre évaluation et l'évaluation globale séparément.
+
+#### Les informations d'éléments s'affichent de manière organisée
+Les développeurs, plates-formes, genres, langues supportées et classifications d'âge s'affichent maintenant sous forme de badges organisés, avec les langues supportées triées par type comme voix et sous-titres. Les éléments connexes comme les séries et les suites s'affichent également ensemble. L'affichage change selon la langue de l'utilisateur.
+
+#### Amélioration de la qualité des images d'éléments
+Les logos d'entreprise et les images de plates-formes et de classification d'âge sont maintenant récupérés à partir de documents officiels réels, et les images générées ne sont utilisées que lorsqu'il n'y a pas de ressources. La portée de collecte des actualités et des critiques a également été affinée, ainsi que les règles de dénomination.
+
+#### Gérez les transferts et les remboursements dans le centre de notifications
+Les notifications de transfert, de remboursement et de déverrouillage s'affichent maintenant sous forme de cartes dans le centre de notifications. Lorsqu'un remboursement est effectué, le transfert associé est également annulé.
+
+#### Stabilisation des paiements et des allocations de ressources
+Quand vous redémarrez l'application, les paiements non traités sont automatiquement récupérés et les ressources allouées. Les problèmes où plus de ressources que payées pourraient être allouées en boutique ont également été corrigés.
+
+#### Amélioration des notifications
+Les notifications de l'application s'affichent désormais aussi sur les appareils à grand écran. Les notifications confirmées sur un appareil disparaissent également sur les autres appareils, et les notifications de rappel affichent maintenant le titre, le lieu et l'heure à première vue.
+
+#### Réduction des mouvements et mise à jour de l'interface
+Quand vous activez la réduction des mouvements sur votre appareil, les transitions d'écran, les effets de boucle et l'affichage de vibrations diminuent tous. Les sélecteurs de date et d'heure ainsi que les apparences des barres de défilement sont maintenant unifiés dans toute l'application.
+
+#### Amélioration de la vitesse et de la consommation de données
+L'application démarre plus rapidement en dessinant d'abord l'écran précédent au lancement. Les téléchargements répétés de la même information ont été considérablement réduits, et les images et pièces jointes sont maintenant servies via un nouveau réseau pour un accès plus rapide.
+
+#### Renforcement de la sécurité
+La validation pour confirmer que les demandes d'application proviennent d'appareils légitimes a été étendue à la plupart des fonctionnalités. Les fonctions serveur précédemment ouvertes sans authentification ont été fermées et les autorisations d'accès aux fichiers enregistrés ont été revérifiées.
+
+#### Corrections de bugs
+Les problèmes ci-dessous ont été corrigés.
+
+- Les menus ne disparaissaient pas quand vous faisiez glisser des éléments sur l'écran d'accueil
+- Les badges ne s'affichaient pas immédiatement après leur équipement
+- Les indicateurs de chargement scintillaient quand vous entriez à nouveau dans l'onglet Inventaire
+- Le bouton de pièce jointe ne répondait pas ou la miniature disparaissait en conversation
+- Les noms d'éléments s'affichaient tronqués dans les vignettes de liste
+- Les éléments expirés ne s'auto-nettoyaient pas
+- Certains textes d'instructions ne s'affichaient pas traduits
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.1.1 <small>2026-08-23</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

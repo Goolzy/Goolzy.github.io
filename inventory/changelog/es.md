@@ -30,6 +30,72 @@ Consulta el historial de actualizaciones de la aplicación Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.2 <small>2026-09-06</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Ahora puedes adjuntar recordatorios y contactos en las conversaciones
+Envía una tarjeta de recordatorio con la hora y el lugar de la cita, y quien la reciba podrá añadirla directamente al calendario de su dispositivo. Con los contactos eliges qué datos compartir, y quien los recibe puede guardarlos en su agenda o comunicarse al instante. En pantallas grandes funciona igual.
+
+#### Los envíos continúan aunque se corte la conexión
+Las fotos y los archivos que estabas enviando siguen su curso aunque cierres y vuelvas a abrir la aplicación. Durante el envío el progreso avanza sin saltos y, si la conexión falla, se reintenta automáticamente.
+
+#### Rediseñamos el desplazamiento de las conversaciones
+Puedes arrastrar la barra lateral derecha para ir directamente a una fecha, y vuelve el botón que lleva a los mensajes nuevos sin leer. Mientras te desplazas, un indicador de fecha te acompaña para mostrarte en qué momento estás. Al entrar en una sala, la pantalla ya no salta: se abre justo donde lo dejaste.
+
+#### Mejoras en la pantalla de conversación
+Las reacciones añadidas a los mensajes también se ven en la vista de galería y en las tarjetas plegadas. Las direcciones compartidas en la conversación se muestran como tarjetas dentro del mensaje, y las páginas que ya no existen aparecen atenuadas. Además, el servidor comprueba quién puede escribir según el tipo de sala.
+
+#### Unificamos la cabecera superior y la búsqueda
+El logotipo, la búsqueda y el menú comparten una sola línea para aprovechar mejor la pantalla. La búsqueda se unifica en un único punto para toda la aplicación, con filtros por pestaña y términos populares. El resumen de novedades se abre a pantalla completa.
+
+#### Las valoraciones de artículos son más detalladas
+En lugar de una sola puntuación, puedes responder preguntas por apartados e indicar tu familiaridad con el artículo. Las valoraciones se abren por etapas a medida que participas, y en la pantalla de resultados puedes ver por separado tu valoración y la del conjunto.
+
+#### La información del artículo se presenta de un vistazo
+Empresa, plataforma, género, idiomas disponibles y clasificación por edades se muestran como distintivos ordenados, y los idiomas se distinguen por tipo, como voz o subtítulos. También se muestran artículos relacionados, como series o secuelas. Los textos siguen el idioma de quien los consulta.
+
+#### Mejor calidad de las imágenes de los artículos
+Los logotipos de empresas y las imágenes de plataforma y clasificación se toman de fuentes oficiales reales, y solo se usa una imagen generada cuando no existe ese material. También se ha ampliado la recopilación de noticias y reseñas y se han pulido las reglas de nomenclatura.
+
+#### Gestiona envíos y reembolsos desde el centro de notificaciones
+Los avisos de envío, reembolso y desbloqueo se agrupan en tarjetas en el centro de notificaciones. Cuando se realiza un reembolso, el envío vinculado también se cancela.
+
+#### Pagos y entrega de monedas más estables
+Al reabrir la aplicación, los pagos pendientes se recuperan automáticamente y las monedas se entregan. También se ha corregido un caso en el que una compra en la tienda podía entregar más de lo pagado.
+
+#### Mejoras en las notificaciones
+Las notificaciones de la aplicación también aparecen en dispositivos de pantalla grande. Una notificación vista en un dispositivo desaparece a la vez en los demás, y las notificaciones de tarjetas de recordatorio muestran el título, el lugar y la hora de un vistazo.
+
+#### Reducción de movimiento y ajustes visuales
+Si activas la reducción de movimiento en tu dispositivo, se atenúan las transiciones, los efectos repetidos e incluso los avisos con vibración. También se han unificado los selectores de fecha y hora y el aspecto de las barras de desplazamiento en toda la aplicación.
+
+#### Mayor velocidad y menor consumo de datos
+La aplicación dibuja primero la pantalla anterior para iniciarse más rápido. Se ha reducido mucho la descarga repetida de la misma información, y las imágenes y los archivos adjuntos se han trasladado a una nueva red de distribución para abrirse antes.
+
+#### Seguridad reforzada
+La verificación que comprueba si una solicitud procede de un dispositivo legítimo se ha extendido a la mayoría de las funciones. Se han retirado funciones del servidor que quedaban abiertas sin autenticación y se han revisado de nuevo los permisos de acceso a los archivos almacenados.
+
+#### Correcciones de errores
+Se han solucionado los siguientes problemas.
+
+- El menú no desaparecía al arrastrar un artículo en la pantalla de inicio
+- Las insignias equipadas no se reflejaban de inmediato
+- El indicador de carga parpadeaba al volver a la pestaña de inventario
+- El botón de adjuntar no respondía o la vista previa desaparecía en las conversaciones
+- El nombre del artículo aparecía cortado en las fichas de la lista
+- Los artículos caducados no se eliminaban automáticamente
+- Algunos textos de aviso no estaban traducidos en ciertas pantallas
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.1.1 <small>2026-08-23</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

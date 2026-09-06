@@ -29,6 +29,72 @@ Confira o histórico de atualizações do aplicativo Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.2 <small>2026-09-06</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Você pode anexar compromissos e contatos na conversa
+Quando você envia um cartão de alerta com horário e local do compromisso, o destinatário pode registrá-lo direto no calendário do seu dispositivo. Contatos podem ser selecionados e compartilhados para que a outra pessoa salve no livro de endereços ou entre em contato imediatamente. O mesmo processo funciona em telas maiores.
+
+#### As transferências de conversa retomam mesmo após fechar o app
+Fotos e arquivos que você estava enviando continuam onde pararam. Enquanto o envio ocorre, a barra de progresso avança continuamente, e se a conexão falhar, o aplicativo tenta novamente automaticamente.
+
+#### Redesenhamos a rolagem de conversas
+Agora você pode usar a barra lateral para pular para qualquer data, e o botão de voltar para mensagens não lidas reapareceu. Conforme você rola, o indicador de data acompanha seus movimentos para mostrar quando você está. Quando você entra em uma conversa, ela abre no ponto exato onde você parou, sem pular.
+
+#### Interface de conversa mais limpa
+Reações anexadas às mensagens agora aparecem na visualização de galeria e em cards recolhidos. URLs deixados na conversa ficam organizados como cards de link, e páginas que desapareceram aparecem desbotadas. O servidor verifica quem tem permissão para escrever em cada tipo de conversa.
+
+#### Cabeçalho e busca unificados
+Logo, busca e menu agora cabem em uma única linha, deixando mais espaço na tela. A busca em todo o app converge em um só lugar, com filtros por aba e sugestões de pesquisas populares. O resumo de notícias abre em tela cheia.
+
+#### Avaliações de itens mais detalhadas
+Em vez de uma estrela, você pode deixar comentários e marcadores de familiaridade por categoria. Cada vez que você participa, mais perguntas são desbloqueadas, e você pode comparar sua avaliação com a de todos na tela de resultados.
+
+#### Informações de itens organizadas em badges
+Fabricante, plataforma, gênero, idiomas suportados e classificação etária aparecem como badges bem organizados, e os idiomas distinguem entre áudio e legendas. Itens relacionados como séries e continuações aparecem lado a lado. Os rótulos seguem o idioma de quem está vendo.
+
+#### Melhor qualidade de imagens de itens
+Usamos imagens oficiais reais de fabricantes, plataformas e classificações, e só geramos imagens quando elas não existem. Também refinamos o escopo de coleta de notícias e resenhas, além de atualizar as regras de nomenclatura.
+
+#### Transferências e reembolsos no centro de notificações
+Transferências, reembolsos e desbloqueios agora aparecem como cards no centro de notificações. Quando um reembolso é processado, a transferência associada também é cancelada.
+
+#### Pagamentos e distribuição de moedas mais estáveis
+Quando você reabre o app, pagamentos não processados são recuperados e as moedas são distribuídas. Também corrigimos o problema em que a loja poderia distribuir mais moedas do que o valor pago.
+
+#### Melhorias em notificações
+Notificações agora aparecem em telas maiores. As notificações que você vê em um dispositivo desaparecem também nos outros, e cartões de alerta mostram título, local e hora de forma mais clara.
+
+#### Menos movimento de tela
+Quando você ativa redução de movimento no seu dispositivo, todas as transições, animações em loop e efeitos de tremor aparecem reduzidos. Seletores de data e hora também seguem um padrão único em todo o app.
+
+#### App mais rápido e com menos uso de dados
+A tela anterior é desenhada primeiro quando você abre o app, deixando tudo mais rápido. Reduzimos bastante os downloads repetidos de informações já obtidas, e imagens e anexos agora vêm por uma rede de entrega mais veloz.
+
+#### Mais segurança
+Expandimos a verificação que confirma se as solicitações do app vêm de um dispositivo legítimo. Funções de servidor que estavam abertas foram encerradas, e revisamos novamente as permissões de acesso a arquivos salvos.
+
+#### Correções de bugs
+Os seguintes problemas foram corrigidos.
+
+- Menu desaparecendo lentamente ao arrastar itens na tela inicial
+- Badges não aparecendo logo após serem equipados
+- Indicador de carregamento piscando ao retornar à aba Inventário
+- Botão de anexo travando ou visualização desaparecendo na conversa
+- Nome do item aparecendo cortado na linha de lista
+- Itens com prazo vencido não sendo removidos automaticamente
+- Algumas telas mostrando textos sem tradução
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.1.1 <small>2026-08-23</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
