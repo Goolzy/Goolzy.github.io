@@ -456,7 +456,7 @@ function maskEmail(email) {
 
       // 메시지 리스너 시작
       loadMessages();
-      updateOnlineCount();
+      updateOnlineCount(user.uid);
     } else {
       currentUser = null;
       chatSection.classList.add('locked');
@@ -571,9 +571,14 @@ function maskEmail(email) {
   }
 
   // 접속자 수 업데이트
-  function updateOnlineCount() {
+  //
+  // 경로는 `inline-chat/connections/{uid}/{connectionId}` 다 — 평면 경로(`connections/{pushId}`)는
+  // 값이 리터럴 true 라 규칙이 소유자를 알 수 없고, 그래서 아무 인증 사용자나 타인 엔트리를
+  // 지울 수 있었다(그 모양은 database.rules.json 에서 계속 닫혀 있다).
+  // uid 를 한 단계 끼우면 `auth.uid === $uid` 로 본인 것만 쓰고 지우게 된다.
+  function updateOnlineCount(uid) {
     const connectionsRef = database.ref('inline-chat/connections');
-    const myConnectionRef = connectionsRef.push();
+    const myConnectionRef = connectionsRef.child(uid).push();
 
     // 연결 상태 모니터링
     database.ref('.info/connected').on('value', (snapshot) => {
@@ -583,7 +588,7 @@ function maskEmail(email) {
       }
     });
 
-    // 실시간 접속자 수 표시
+    // 실시간 접속자 수 표시 — 자식이 «사용자» 단위라 탭을 여러 개 열어도 1명으로 센다
     connectionsRef.on('value', (snapshot) => {
       const count = snapshot.numChildren();
       onlineCount.textContent = `${count}명 접속중`;
