@@ -29,6 +29,37 @@ Consultez l'historique des mises à jour de l'application Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.3 <small>2026-09-28</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Partagez vos articles directement entre vos appareils
+Synchronisez vos articles sur un réseau local entre appareils du même compte sans passer par les serveurs. Les vignettes que vous créez sont stockées et transmises en toute sécurité sous forme de fichiers.
+
+#### Les informations et images des articles s'enrichissent
+Les encyclopédies s'ajoutent aux rubriques des éditeurs et des plateformes, avec les logos et couvertures tirés de ressources officielles. Les catégories affichent désormais un tri « tendance », et l'affichage des dates de sortie ainsi que le classement des articles sans image de couverture ont été affinés.
+
+#### Le blocage fonctionne de manière plus fiable
+Lorsque vous bloquez quelqu'un, le blocage s'applique aussi aux conversations déjà ouvertes, et vous ne recevez plus de nouveaux messages ou notifications. Pour les conversations en tête-à-tête, le serveur vérifie que seules les personnes impliquées peuvent les lire.
+
+#### Nettoyage de l'interface des conversations et du bureau
+La couleur de l'auteur, les légendes, l'aperçu des pièces jointes et la rotation des images sont maintenant unifiés sur les appareils. Le problème d'affichage du texte de l'onglet d'informations a également été corrigé.
+
+#### Améliorations de la sécurité et de la vitesse
+Les informations des articles ne peuvent plus être modifiées arbitrairement dans l'application, et la suppression des ressources verrouillées ainsi que le transfert répété d'articles en tête-à-tête sont bloqués. Les mises à jour d'écran inutiles et les requêtes en double ont été réduites pour un fonctionnement plus fluide.
+
+#### Corrections de bugs
+Des problèmes mineurs ont été corrigés. L'année de sortie qui disparaissait sur les cartes, les anciennes vignettes qui restaient après le remplacement de l'image principale, l'absence d'avertissement lors de la suppression d'articles verrouillés et l'affichage incorrect des caractères dans les cartes de lien.
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.1.2 <small>2026-09-06</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

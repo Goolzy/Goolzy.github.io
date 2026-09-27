@@ -29,6 +29,37 @@ Check out the update history for the Inventory app.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.3 <small>2026-09-28</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Share your items directly between your devices
+Sync items over a nearby network between devices on the same account without going through servers. Stamps you create are safely stored and sent as files.
+
+#### Item information and images are now richer
+Company and platform hubs now feature encyclopedia sections with official logos and cover images. Categories include a "Trending now" view, and we've refined how release dates and years are shown, plus housekeeping for items without featured images.
+
+#### Blocking now works more reliably
+Block someone and it applies instantly to already-open conversations—new messages and notifications won't arrive. 1:1 conversations are verified server-side so only participants can see them.
+
+#### Conversation and desktop screen refinements
+Unified speaker color, captions, attachment previews, and image rotation—actions that used to vary by device now work the same everywhere. Fixed the info tab body not displaying.
+
+#### Security and performance improvements
+Blocked unauthorized app-side item edits, deletions of locked currency, and direct item re-transfers in 1:1 chats. Fewer unnecessary screen refreshes and duplicate queries make the app feel lighter.
+
+#### Bug fixes
+Fixed various small issues including release years disappearing from cards, old thumbnails persisting after featured image changes, missing guidance for locked item deletion, and link card text corruption.
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.1.2 <small>2026-09-06</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

@@ -29,6 +29,37 @@ Sprawdź historię aktualizacji aplikacji Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.3 <small>2026-09-28</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopiuj">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Synchronizuj swoje przedmioty między urządzeniami
+Synchronizuj swoje przedmioty między urządzeniami tego samego konta poprzez lokalną sieć, bez konieczności korzystania z serwerów. Pieczęcie, które sam tworzysz, są bezpiecznie przechowywane i wysyłane jako pliki.
+
+#### Informacje o przedmiotach i obrazy są bogatsze
+Artykuły encyklopedyczne pojawiają się w hubach firm i platform, a logo i okładki pobierane są z oficjalnych źródeł. Kategorie zawierają teraz sortowanie według trendów, ulepszona została również obsługa wyświetlania dat wydania i roczników.
+
+#### Blokowanie działa bardziej niezawodnie
+Gdy zablokujesz kogoś, blokada będzie obowiązywać nawet w już otwartych rozmowach — nie będziesz otrzymywać nowych wiadomości ani powiadomień. W rozmowach jeden-na-jeden serwer weryfikuje, że tylko uczestnicy mogą czytać.
+
+#### Ujednolicono wygląd czatów i ekranów
+Ujednolicono kolory użytkowników, podpisy, podglądy załączników i obroty obrazów — funkcje, które wcześniej różniły się między urządzeniami. Naprawiono też problem, w którym zawartość karty informacji nie była widoczna.
+
+#### Ulepszenia bezpieczeństwa i wydajności
+Zablokowano nieautoryzowane zmiany informacji o przedmiotach w aplikacji i zapobiegano usuwaniu zablokowanych zasobów. Zmniejszono niepotrzebne odświeżenia ekranu i zduplikowane zapytania, dzięki czemu aplikacja działa szybciej.
+
+#### Poprawki błędów
+Naprawiono różne drobne problemy: brakujące lata wydania na kartach, stare miniatury pozostające po zmianie głównego obrazu, brakujące ostrzeżenia przy usuwaniu zablokowanych przedmiotów i uszkodzone znaki w kartach linków.
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.3.0 <small>2026-01-27</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopiuj">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

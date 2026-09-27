@@ -29,6 +29,37 @@ Consulta la cronologia degli aggiornamenti dell'app Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.3 <small>2026-09-28</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copia">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Sincronizza i tuoi elementi tra i tuoi dispositivi sulla rete locale
+Sincronizza i tuoi elementi con gli altri tuoi dispositivi su una rete locale vicina, senza passare per i server. I francobolli che crei vengono salvati e trasmessi in modo sicuro come file.
+
+#### Le informazioni degli elementi e le immagini diventano più ricche
+I paragrafi enciclopedici sono inclusi negli hub aziendali e di piattaforma, con loghi e copertine ottenuti da fonti ufficiali. Le categorie acquisiscono un ordinamento "tendenza", e abbiamo affinato la visualizzazione della data di uscita, degli anni e la pulizia degli elementi senza immagine in primo piano.
+
+#### Il blocco funziona in modo più affidabile
+Quando blocchi qualcuno, il blocco si applica anche alle conversazioni già aperte e non arriveranno nuovi messaggi o notifiche. Le conversazioni uno-a-uno sono verificate dal server in modo che solo i partecipanti possano leggere.
+
+#### Pulizia dello schermo di chat e desktop
+Abbiamo unificato il colore del mittente, le didascalie, l'anteprima degli allegati, la rotazione dell'immagine e altri comportamenti che differivano tra i dispositivi. Abbiamo anche risolto il problema per cui il corpo della scheda informazioni non era visualizzato.
+
+#### Miglioramenti della sicurezza e della velocità
+Abbiamo impedito le modifiche non autorizzate alle informazioni dell'elemento nell'app, bloccato l'eliminazione della valuta bloccata e prevenuto il rinvio di elementi uno-a-uno. Abbiamo ridotto gli aggiornamenti non necessari dello schermo e le query duplicate per un funzionamento più fluido.
+
+#### Correzioni di bug
+Abbiamo corretto piccoli problemi. L'anno di uscita che scompare dalle schede, le vecchie miniature che rimangono dopo il cambio dell'immagine in primo piano, la mancanza di avviso di eliminazione dell'elemento bloccato, il danneggiamento dei caratteri nelle schede di collegamento e altri.
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.3.0 <small>2026-01-22</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copia">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

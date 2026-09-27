@@ -30,6 +30,38 @@ Sehen Sie sich den Update-Verlauf der Inventory-App an.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.3 <small>2026-09-28</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopieren">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Teilen Sie Ihre Artikel direkt zwischen Geräten
+Synchronisieren Sie Artikel im lokalen Netzwerk zwischen verschiedenen Geräten desselben Kontos ohne Server-Umweg. Von Ihnen erstellte Stempel werden sicher als Dateien gespeichert und übertragen.
+
+#### Artikel-Informationen und Bilder werden erweitert
+Enzyklopädische Abschnitte erscheinen auf den Firmen- und Plattform-Hubs, und Logos sowie Cover werden aus offiziellen Materialien entnommen. Eine neue Trending-Sortierung in Kategorien wurde hinzugefügt, und die Anzeige von Veröffentlichungsdatum und -jahr sowie die Verwaltung von Artikeln ohne Titelbild wurden überarbeitet.
+
+#### Blockierung funktioniert zuverlässiger
+Das Blockieren gilt jetzt auch für bereits offene Chats, und Sie erhalten keine neuen Nachrichten oder Benachrichtigungen. Eins-zu-eins-Chats werden vom Server überprüft, sodass nur beteiligte Personen sie lesen können.
+
+#### Chat- und Desktopbildschirme aufgeräumt
+Die Darstellung von Sprechblasen-Kennzeichnung, Bildunterschriften, Anhang-Vorschau und Bildrotation wurde vereinheitlicht, die auf verschiedenen Geräten unterschiedlich waren. Das Problem behoben, dass Inhalte des Info-Tabs nicht angezeigt wurden.
+
+#### Sicherheit und Geschwindigkeit verbessert
+Wir haben verhindert, dass Artikelinformationen in der App willkürlich geändert werden, und das Löschen gesperrter Währungen sowie die erneute Übertragung von Eins-zu-eins-Artikeln blockiert. Durch die Reduzierung unnötiger Bildschirmaktualisierungen und doppelter Anfragen läuft die App leichter.
+
+#### Fehlerbehebungen
+Wir haben verschiedene kleinere Probleme behoben: Veröffentlichungsjahr verschwindet aus Karten, alte Vorschaubilder bleiben nach dem Austausch des Titelbildes bestehen, fehlender Hinweis beim Löschen gesperrter Artikel, beschädigte Zeichen in Link-Karten und mehr.
+
+</div>
+</details>
+
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.1.2 <small>2026-09-06</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopieren">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

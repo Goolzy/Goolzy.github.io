@@ -29,6 +29,37 @@ Hãy xem lịch sử cập nhật ứng dụng Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.3 <small>2026-09-28</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Sao chép">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Đồng bộ hóa mục trực tiếp giữa các thiết bị của bạn
+Đồng bộ hóa các mục của bạn trực tiếp giữa các thiết bị của bạn qua mạng địa phương mà không cần máy chủ. Các dấu hiệu mà bạn tạo được lưu và gửi một cách an toàn dưới dạng tệp.
+
+#### Thông tin mục và hình ảnh phong phú hơn
+Thêm đoạn viết tìm kiếm nội dung vào trung tâm công ty và nền tảng, sử dụng biểu tượng và hình ảnh bìa từ các tài liệu chính thức. Danh mục hiện có một sắp xếp theo xu hướng hiện tại, và các mục không có ngày phát hành hoặc hình ảnh tiêu biểu đã được sắp xếp lại.
+
+#### Chặn hoạt động chính xác hơn
+Chặn hoạt động chính xác hơn, áp dụng ngay cả cho các cuộc trò chuyện đã mở để không có tin nhắn hoặc thông báo mới. Các tin nhắn một-một được xác minh trên máy chủ sao cho chỉ những người tham gia mới có thể đọc được.
+
+#### Sắp xếp giao diện trò chuyện và máy tính để bàn
+Thống nhất các hành động khác nhau giữa các thiết bị như màu người nói, chú thích, bản xem trước đính kèm và xoay hình ảnh, và sửa chữa vấn đề nội dung tab thông tin không hiển thị.
+
+#### Cải thiện bảo mật và tốc độ
+Ngăn chặn sửa đổi thông tin mục tùy tiện trong ứng dụng, chặn xóa tiền tệ bị khóa và tái gửi mục một-một. Giảm cập nhật màn hình không cần thiết và truy vấn trùng lặp để hoạt động nhẹ hơn.
+
+#### Sửa lỗi
+Sửa các vấn đề nhỏ bao gồm năm phát hành biến mất khỏi thẻ, hình nhỏ cũ còn lại sau khi thay thế hình ảnh tiêu biểu, hướng dẫn xóa mục bị khóa bị thiếu và các ký tự bị hỏng trong thẻ liên kết.
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.3.0 <small>2026-01-27</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Sao chép">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

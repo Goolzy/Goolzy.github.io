@@ -30,6 +30,38 @@ Inventoryアプリのアップデート履歴をご確認ください。
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.3 <small>2026-09-28</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="コピー">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### 自分のアイテムをデバイス間で直接やり取りできます
+同じアカウントの異なるデバイス間で、サーバーを経由せずに近所のネットワークでアイテムを同期します。自分で作成したスタンプもファイルとして安全に保存・送信されます。
+
+#### アイテム情報と画像がより充実します
+企業・プラットフォームのハブに百科事典的な段落が掲載され、ロゴ・カバーは公式資料から探して使用されます。カテゴリに「いま話題の順」が追加され、発売日・年表記と代表画像のないアイテムの整理も改善されました。
+
+#### ブロックがより確実に機能します
+ブロックすると既に開いている会話にも適用され、新しいメッセージと通知が届きません。1対1の会話は参加者だけが読めるようサーバーで確認されます。
+
+#### 会話とスクリーン表示を整理しました
+話者の色・キャプション・添付プレビュー・画像回転など、デバイスごとに異なっていた動作を統一し、情報タブの本文が表示されていなかった問題を修正しました。
+
+#### セキュリティと速度が向上しました
+アイテム情報がアプリから勝手に変更されないようにブロックし、ロックされた通貨の削除と1対1のアイテム再転送を防止しました。不要な画面更新と重複クエリを削減してより軽快に動作します。
+
+#### バグ修正
+細かい問題を修正しました。カードから発売年が消える問題、代表画像変更後に古いサムネイルが残る問題、ロック済みアイテム削除通知の欠落、リンクカード内の文字化けなど、様々な不具合が修正されました。
+
+</div>
+</details>
+
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.1.2 <small>2026-09-06</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="コピー">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

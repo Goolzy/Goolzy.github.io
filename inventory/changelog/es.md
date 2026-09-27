@@ -27,8 +27,38 @@ translations:
 
 Consulta el historial de actualizaciones de la aplicación Inventory.
 
-
 <details class="changelog-version" open>
+<summary>
+  <span class="version-title">v2.1.3 <small>2026-09-28</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Sincroniza tus artículos directamente entre tus dispositivos
+Sincroniza tus artículos entre tus dispositivos sin servidores en una red cercana. Los sellos que creas se guardan y envían de forma segura como archivos.
+
+#### Información e imágenes de artículos más completas
+Los centros de empresa y plataforma ahora incluyen párrafos enciclopédicos, y usamos logotipos e imágenes de portada de fuentes oficiales. Las categorías añaden un nuevo orden "lo más comentado ahora", y hemos mejorado la información de fecha de lanzamiento, año y artículos sin imagen destacada.
+
+#### El bloqueo funciona de forma más fiable
+Al bloquear a alguien, el bloqueo se aplica incluso a las conversaciones ya abiertas, bloqueando nuevos mensajes y notificaciones. Las conversaciones uno a uno se verifican en el servidor para que solo las lean los participantes.
+
+#### Mejoras en conversaciones y pantalla de escritorio
+Se ha unificado el comportamiento de color del hablante, subtítulos, vista previa de adjuntos e imagen rotada que antes diferían según el dispositivo, y se ha corregido que el contenido de la pestaña de información no fuera visible.
+
+#### Mejoras de seguridad y velocidad
+Se ha bloqueado la modificación arbitraria de información de artículos desde la aplicación, y también la eliminación de recursos bloqueados y el reenvío de artículos uno a uno. Se reducen actualizaciones innecesarias de pantalla y consultas duplicadas para un funcionamiento más fluido.
+
+#### Correcciones de errores
+Se han solucionado diversos pequeños problemas. El año de lanzamiento que desaparecía en tarjetas, miniaturas antiguas tras cambiar la imagen destacada, falta de avisos al eliminar artículos bloqueados, y caracteres rotos en tarjetas de enlaces.
+
+</div>
+</details>
+
+<details class="changelog-version">
 <summary>
   <span class="version-title">v2.1.2 <small>2026-09-06</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">

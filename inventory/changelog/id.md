@@ -29,6 +29,37 @@ Lihat riwayat pembaruan aplikasi Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.3 <small>2026-09-28</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Salin">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Bagikan item Anda langsung antar perangkat
+Sinkronkan item melalui jaringan lokal dengan perangkat lain dari akun yang sama tanpa melalui server. Stempel yang Anda buat disimpan dan dikirim dengan aman sebagai file.
+
+#### Informasi item dan gambar menjadi lebih kaya
+Halaman hub perusahaan dan platform menampilkan deskripsi ensiklopedia, logo, dan sampul dari sumber resmi. Kategori sekarang menampilkan urutan tren terkini, dan kami juga memperbaiki tampilan tanggal rilis dan tahun serta pengelolaan item tanpa gambar utama.
+
+#### Pemblokiran berfungsi lebih andal
+Saat Anda memblokir, tindakan ini berlaku pada percakapan yang sudah terbuka sehingga tidak ada pesan atau notifikasi baru. Percakapan satu-ke-satu diverifikasi oleh server sehingga hanya peserta yang dapat membacanya.
+
+#### Organisasi layar chat dan desktop
+Kami menyatukan perilaku yang berbeda antar perangkat seperti warna pembicara, keterangan, pratinjau lampiran, dan rotasi gambar. Kami juga memperbaiki masalah di mana teks tab informasi tidak terlihat.
+
+#### Peningkatan keamanan dan kecepatan
+Kami mencegah perubahan informasi item secara sembarangan di aplikasi dan memblokir penghapusan mata uang terkunci serta pengiriman ulang item satu-ke-satu. Kami mengurangi pembaruan layar yang tidak perlu dan kueri duplikat untuk operasi yang lebih ringan.
+
+#### Perbaikan bug
+Kami memperbaiki berbagai masalah kecil, termasuk tahun rilis yang hilang dari kartu, thumbnail lama yang tertinggal setelah penggantian gambar utama, pemberitahuan penghapusan item terkunci yang hilang, dan kerusakan teks kartu tautan.
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v1.3.0 <small>2026-01-27</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Salin">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

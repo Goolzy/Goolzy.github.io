@@ -29,6 +29,37 @@ translations:
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.3 <small>2026-09-28</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### 在同一账户的设备间直接同步项目
+在同一账户的不同设备间通过本地网络直接同步项目，无需通过服务器。自创建的印章也作为文件安全保存和传输。
+
+#### 项目信息和图片内容丰富
+公司和平台中心添加百科段落，标志和封面采用官方资料。分类中新增热门排序，完善了发行日期、年份显示和无代表图片的项目整理。
+
+#### 屏蔽功能更加可靠
+屏蔽时对已打开的对话也适用，不会收到新消息和通知。1:1 对话通过服务器验证只有参与者才能阅读。
+
+#### 对话和设备端界面整理
+统一了不同设备间的说话人颜色、标题、附件预览和图片旋转等操作，修复了信息标签内容不显示的问题。
+
+#### 安全性和速度提升
+防止应用随意修改项目信息，阻止删除已锁定的虚拟货币和1:1项目重新转移。减少不必要的屏幕刷新和重复查询，使应用运行更轻快。
+
+#### 错误修复
+修复了各种问题。发行年份在卡片中消失、替换代表图片后旧缩略图保留、已锁定项目删除提示缺失和链接卡片文字显示等问题。
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.1.2 <small>2026-09-06</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

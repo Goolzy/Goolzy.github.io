@@ -29,6 +29,37 @@ Inventory 앱의 업데이트 내역을 확인하세요.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.3 <small>2026-09-28</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### 내 아이템을 기기끼리 직접 주고받습니다
+같은 계정의 다른 기기와 서버를 거치지 않고 가까운 네트워크에서 아이템을 동기화합니다. 직접 만든 스탬프도 파일로 안전하게 보관·전송됩니다.
+
+#### 아이템 정보와 이미지가 풍부해집니다
+회사·플랫폼 허브에 백과 문단이 실리고 로고·커버를 공식 자료에서 찾아 씁니다. 카테고리에 「요즘 화제인 순」이 생기고, 출시일·연도 표기와 대표 이미지 없는 아이템 정리도 다듬었습니다.
+
+#### 차단이 더 확실하게 동작합니다
+차단하면 이미 열린 대화방에도 적용되어 새 메시지·알림이 오지 않습니다. 1:1 대화는 참여한 사람만 읽도록 서버에서 확인합니다.
+
+#### 대화·데스크톱 화면 정리
+화자 색·캡션·첨부 미리보기·이미지 회전 등 기기마다 다르던 동작을 통일하고, 정보 탭 본문이 보이지 않던 문제를 바로잡았습니다.
+
+#### 보안과 속도 개선
+아이템 정보를 앱에서 함부로 바꾸지 못하게 막고, 잠긴 재화 삭제와 1:1 아이템 재전달을 차단했습니다. 불필요한 화면 갱신과 중복 조회를 줄여 더 가볍게 동작합니다.
+
+#### 버그 수정
+자잘한 문제들을 바로잡았습니다. 출시 연도가 카드에서 사라지던 문제, 대표 이미지 교체 후 옛 썸네일이 남던 문제, 잠긴 아이템 삭제 안내 누락, 링크 카드 한글 깨짐 등입니다.
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.1.2 <small>2026-09-06</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="복사">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
