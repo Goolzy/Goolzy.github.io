@@ -413,7 +413,7 @@ const ChatIdentity = window.InlineChatIdentity;
     overlay.innerHTML = `
       <div class="login-overlay-icon">🔒</div>
       <div class="login-overlay-text">
-        채팅에 참여하려면<br>로그인이 필요합니다
+        채팅을 보고 참여하려면<br>로그인이 필요합니다
       </div>
       <button class="login-overlay-btn" onclick="window.location.href='/join/?return=/inline-chat/'">
         로그인하기
@@ -454,30 +454,51 @@ const ChatIdentity = window.InlineChatIdentity;
       chatInput.placeholder = '메시지를 입력하세요... (로그인 필요)';
       sendBtn.disabled = true;
 
-      // 읽기 전용으로 메시지는 표시
+      // 비로그인: 규칙(`inline-chat/messages/.read: auth != null`)이 비인증 읽기를 막으므로 메시지는
+      // 보이지 않는다(로그인 안내만 보인다). 이전 사용자의 구독·표시는 여기서 걷어 낸다 — 아래 구독
+      // 시도는 규칙이 거부한다(비인증 읽기를 열지 않는 것이 현행 정책이다).
       loadMessages();
     }
   });
 
-  // 메시지 로드 (실시간)
+  // 메시지 로드 (실시간) — 구독은 항상 한 벌만 유지한다.
+  // 로그인 상태가 바뀔 때마다 부른다. 이전 구독을 끊고 DB 에서 그린 말풍선을 걷어 낸 뒤 새 사용자
+  // 기준(«내 메시지» 정렬)으로 다시 그린다. 환영 문구처럼 data-msg-id 가 없는 요소는 남긴다.
+  let messagesQuery = null;
+
+  function onMessageAdded(snapshot) {
+    const msgId = snapshot.key;
+
+    // 중복 방지
+    if (loadedMessageIds.has(msgId)) return;
+    loadedMessageIds.add(msgId);
+
+    addMessageToUI(snapshot.val(), msgId);
+  }
+
   function loadMessages() {
-    messagesRef.orderByChild('timestamp').limitToLast(50).on('child_added', (snapshot) => {
-      const msgId = snapshot.key;
+    if (messagesQuery) {
+      messagesQuery.off('child_added', onMessageAdded);
+      messagesQuery = null;
+    }
+    chatMessages.querySelectorAll('[data-msg-id]').forEach((el) => el.remove());
+    loadedMessageIds = new Set();
 
-      // 중복 방지
-      if (loadedMessageIds.has(msgId)) return;
-      loadedMessageIds.add(msgId);
-
-      const msg = snapshot.val();
-      addMessageToUI(msg);
+    messagesQuery = messagesRef.orderByChild('timestamp').limitToLast(50);
+    messagesQuery.on('child_added', onMessageAdded, (error) => {
+      // 비로그인이면 규칙이 거부한다(정상). 그 밖의 거부는 콘솔에만 남긴다.
+      if (currentUser) console.warn('메시지 구독 거부:', error);
     });
   }
 
   // UI에 메시지 추가 — 새 스키마(uid·prefix·domain)와 과도기 옛 스키마(email) 둘 다 표시한다
-  function addMessageToUI(msg) {
+  function addMessageToUI(msg, msgId) {
     if (!msg) return;
     const text = msg.text;
     const messageDiv = document.createElement('div');
+    if (msgId) {
+      messageDiv.setAttribute('data-msg-id', msgId);
+    }
 
     // 시스템 메시지(관리자 채팅금지 안내 등) — 작성자 표시 없이 가운데 정렬
     if (ChatIdentity.isSystemMessage(msg)) {
