@@ -5,6 +5,14 @@ hide_sidebar: true
 {% assign current_lang = page.lang | default: 'ko' %}
 
 {% comment %} Navigation labels by language {% endcomment %}
+{% comment %}
+  260930: nav_suggest/nav_bug(건의하기·버그 리포트) 대입을 전 블록에서 제거했다
+  — 앱 내 기능(헤더 확장 패널)과 중복이라 상단 메뉴·첫 화면 버튼에서 뺀다는
+  사용자 확정(설정 하단 앱 정보 메뉴 통합). 페이지 자체(/inventory/suggest/·
+  /inventory/bug-report/)는 남아 있고, 주소를 아는 사람은 계속 접근 가능하다.
+  같은 커밋에서 zh 블록을 신설해 기존 결함(zh 페이지가 이 case 에 없어 else
+  분기로 떨어져 한국어 라벨로 렌더되던 것)도 함께 고쳤다.
+{% endcomment %}
 {% case current_lang %}
   {% when 'en' %}
     {% assign nav_home = 'Home' %}
@@ -12,56 +20,48 @@ hide_sidebar: true
     {% assign nav_manual = 'Manual' %}
     {% assign nav_usecases = 'Use Cases' %}
     {% assign nav_faq = 'FAQ' %}
-    {% assign nav_suggest = 'Suggest' %}
-    {% assign nav_bug = 'Bug Report' %}
   {% when 'ja' %}
     {% assign nav_home = 'ホーム' %}
     {% assign nav_changelog = '更新履歴' %}
     {% assign nav_manual = 'マニュアル' %}
     {% assign nav_usecases = '活用方法' %}
     {% assign nav_faq = 'よくある質問' %}
-    {% assign nav_suggest = 'ご意見' %}
-    {% assign nav_bug = 'バグ報告' %}
   {% when 'de' %}
     {% assign nav_home = 'Startseite' %}
     {% assign nav_changelog = 'Änderungen' %}
     {% assign nav_manual = 'Handbuch' %}
     {% assign nav_usecases = 'Anwendungen' %}
     {% assign nav_faq = 'FAQ' %}
-    {% assign nav_suggest = 'Vorschläge' %}
-    {% assign nav_bug = 'Fehlerbericht' %}
   {% when 'fr' %}
     {% assign nav_home = 'Accueil' %}
     {% assign nav_changelog = 'Historique' %}
     {% assign nav_manual = 'Manuel' %}
     {% assign nav_usecases = "Cas d'Usage" %}
     {% assign nav_faq = 'FAQ' %}
-    {% assign nav_suggest = 'Suggestions' %}
-    {% assign nav_bug = 'Signaler un bug' %}
   {% when 'es' %}
     {% assign nav_home = 'Inicio' %}
     {% assign nav_changelog = 'Cambios' %}
     {% assign nav_manual = 'Manual' %}
     {% assign nav_usecases = 'Casos de Uso' %}
     {% assign nav_faq = 'FAQ' %}
-    {% assign nav_suggest = 'Sugerencias' %}
-    {% assign nav_bug = 'Reportar error' %}
   {% when 'pt' %}
     {% assign nav_home = 'Início' %}
     {% assign nav_changelog = 'Histórico' %}
     {% assign nav_manual = 'Manual' %}
     {% assign nav_usecases = 'Casos de Uso' %}
     {% assign nav_faq = 'FAQ' %}
-    {% assign nav_suggest = 'Sugestões' %}
-    {% assign nav_bug = 'Reportar bug' %}
+  {% when 'zh' %}
+    {% assign nav_home = '首页' %}
+    {% assign nav_changelog = '更新日志' %}
+    {% assign nav_manual = '手册' %}
+    {% assign nav_usecases = '使用案例' %}
+    {% assign nav_faq = '常见问题' %}
   {% else %}
     {% assign nav_home = '홈' %}
     {% assign nav_changelog = '버전 로그' %}
     {% assign nav_manual = '매뉴얼' %}
     {% assign nav_usecases = '활용방법' %}
     {% assign nav_faq = '자주하는 질문' %}
-    {% assign nav_suggest = '건의하기' %}
-    {% assign nav_bug = '버그 리포트' %}
 {% endcase %}
 
 {% if current_lang == 'ko' %}
@@ -79,8 +79,6 @@ hide_sidebar: true
       <a href="/inventory/manual{{ lang_suffix }}/" class="nav-link">{{ nav_manual }}</a>
       <a href="/inventory/usecases{{ lang_suffix }}/" class="nav-link">{{ nav_usecases }}</a>
       <a href="/inventory/faq{{ lang_suffix }}/" class="nav-link">{{ nav_faq }}</a>
-      <a href="/inventory/suggest{{ lang_suffix }}/" class="nav-link">{{ nav_suggest }}</a>
-      <a href="/inventory/bug-report{{ lang_suffix }}/" class="nav-link">{{ nav_bug }}</a>
     </nav>
 
     <!-- Content -->
