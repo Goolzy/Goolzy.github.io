@@ -24,8 +24,9 @@
  *
  * ⚠️ 메인 리포 `functions/test/fixtures/inline-chat-identity.js` 는 이 파일의 **바이트 동일 사본**이다.
  *    RTDB 규칙 에뮬레이터 스위트(`functions/test/inline-chat-rules.test.ts`)가 그 사본을 그대로 실행해
- *    «허용» 페이로드를 만든다. 이 파일을 고치면 사본도 같이 바꿔야 한다(서브모듈 포인터가 이 파일을
- *    포함하는 커밋으로 올라가면 스위트가 두 파일의 바이트 일치를 직접 단언한다).
+ *    «허용» 페이로드를 만든다. 이 파일을 고치면 사본도 같이 바꿔야 한다. 서브모듈 포인터가 이 파일을
+ *    포함하는 커밋으로 올라간 뒤 rtdb 스위트를 **수동으로 실행할 때** 두 파일의 바이트 일치가 검사된다
+ *    (CI·pre-commit 은 rtdb 스위트를 돌리지 않는다 — 자동 검사는 없다).
  */
 (function (root, factory) {
   var api = factory();
