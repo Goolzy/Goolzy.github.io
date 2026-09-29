@@ -925,6 +925,8 @@ a.platform-icon {
 <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+<!-- 채팅 작성자 식별·표시·직렬화 정본 (이메일 원문을 저장하지 않는다) -->
+<script src="/assets/js/inline-chat-identity.js?v=1"></script>
 
 <script>
 // Firebase 초기화
@@ -940,25 +942,9 @@ firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 const database = firebase.database();
 
-// 이메일 마스킹 함수
-// 로컬 파트만 마스킹 (도메인은 그대로)
-// 1-2자: 첫 1자, 3-4자: 첫 2자, 5자+: 첫 3자
-function maskEmail(email) {
-  if (!email || !email.includes('@')) return email;
-
-  const [local, domain] = email.split('@');
-  let masked;
-
-  if (local.length <= 2) {
-    masked = local[0] + '*'.repeat(local.length - 1 || 1);
-  } else if (local.length <= 4) {
-    masked = local.slice(0, 2) + '*'.repeat(local.length - 2);
-  } else {
-    masked = local.slice(0, 3) + '*'.repeat(local.length - 3);
-  }
-
-  return masked + '@' + domain;
-}
+// 작성자 표시·직렬화는 /assets/js/inline-chat-identity.js 가 정본이다.
+// 메시지에는 이메일 원문 대신 uid 와 가린 이름 조각(prefix·domain)만 저장한다.
+const ChatIdentity = window.InlineChatIdentity;
 
 // 실시간 채팅
 (function() {
@@ -973,7 +959,7 @@ function maskEmail(email) {
 
 
   let currentUser = null;
-  let messagesRef = database.ref('inline-chat/messages');
+  let messagesRef = database.ref(ChatIdentity.MESSAGES_PATH);
   let lastMessageTime = 0; // 마지막 메시지 전송 시간
 
   // 로그인 오버레이 생성
@@ -1093,7 +1079,7 @@ function maskEmail(email) {
     messagesRef.limitToLast(50).on('child_added', (snapshot) => {
       const msg = snapshot.val();
       const msgId = snapshot.key;
-      addMessageToUI(msg.text, msg.email, msg.timestamp, msgId);
+      addMessageToUI(msg, msgId);
     });
 
     // 메시지 삭제 이벤트 리스닝 (클리어 명령 대응)
@@ -1106,18 +1092,19 @@ function maskEmail(email) {
     });
   }
 
-  // UI에 메시지 추가
-  function addMessageToUI(text, email, timestamp, msgId) {
+  // UI에 메시지 추가 — 새 스키마(uid·prefix·domain)와 과도기 옛 스키마(email) 둘 다 표시한다
+  function addMessageToUI(msg, msgId) {
+    if (!msg) return;
+    const text = msg.text;
     const messageDiv = document.createElement('div');
     if (msgId) {
       messageDiv.setAttribute('data-msg-id', msgId);
     }
-    const isCurrentUser = currentUser && email === currentUser.email;
-    const isGoolzyStaff = email && email.endsWith('@goolzy.com');
-    const isSystemMessage = email === 'system';
+    const isCurrentUser = ChatIdentity.isOwnMessage(msg, currentUser);
+    const isGoolzyStaff = ChatIdentity.isStaffMessage(msg);
 
     // 시스템 메시지 처리
-    if (isSystemMessage) {
+    if (ChatIdentity.isSystemMessage(msg)) {
       messageDiv.className = 'message system-msg';
       const contentDiv = document.createElement('div');
       contentDiv.className = 'msg-content';
@@ -1133,14 +1120,21 @@ function maskEmail(email) {
       messageDiv.classList.add('goolzy-staff');
     }
 
-    if (!isCurrentUser && email) {
+    // 프라이버시 보호: 가린 이름만 표시한다(옛 메시지도 원문 대신 같은 형식으로 가린다)
+    const label = ChatIdentity.senderLabel(msg);
+    if (!isCurrentUser && label) {
       const senderDiv = document.createElement('div');
       senderDiv.className = 'msg-sender';
       if (isGoolzyStaff) {
         senderDiv.classList.add('goolzy-staff');
       }
-      // 프라이버시 보호: 이메일 마스킹 적용
-      senderDiv.textContent = maskEmail(email);
+      senderDiv.textContent = label;
+      // 관리자: 작성자 이름을 눌러 채팅 금지(대상은 메시지의 uid — 이메일을 받지 않는다)
+      if (ChatIdentity.isStaffUser(currentUser)) {
+        senderDiv.style.cursor = 'pointer';
+        senderDiv.title = '눌러서 이 사용자 채팅 금지';
+        senderDiv.addEventListener('click', () => banMessageAuthor(msg));
+      }
       messageDiv.appendChild(senderDiv);
     }
 
@@ -1151,6 +1145,52 @@ function maskEmail(email) {
 
     chatMessages.appendChild(messageDiv);
     chatMessages.scrollTop = chatMessages.scrollHeight;
+  }
+
+  // 관리자 채팅금지 — 대상 = 메시지의 uid. 제재 목록은 uid 키이고 이메일을 저장하지 않는다.
+  async function banMessageAuthor(msg) {
+    if (!ChatIdentity.isStaffUser(currentUser)) return;
+    const label = ChatIdentity.senderLabel(msg);
+    if (!msg || typeof msg.uid !== 'string' || !msg.uid) {
+      alert('이전 형식의 메시지라 작성자를 식별할 수 없습니다.\n새로 올라오는 메시지의 작성자 이름을 눌러 주세요.');
+      return;
+    }
+    if (msg.uid === currentUser.uid) return;
+
+    const input = prompt(`${label} 사용자의 채팅 금지 시간(초)을 입력하세요.`, '60');
+    if (input === null) return;
+    const trimmed = input.trim();
+    const durationSeconds = parseInt(trimmed, 10);
+    if (!/^\d+$/.test(trimmed) || durationSeconds <= 0) {
+      alert('금지 시간은 1 이상의 정수(초)로 입력하세요.');
+      return;
+    }
+
+    const confirmBan = confirm(
+      `⚠️ 사용자 채팅 금지\n\n` +
+      `대상: ${label}\n` +
+      `금지 시간: ${durationSeconds}초\n\n` +
+      `계속하시겠습니까?`
+    );
+    if (!confirmBan) return;
+
+    try {
+      const TIMESTAMP = firebase.database.ServerValue.TIMESTAMP;
+      await database.ref(ChatIdentity.BANNED_PATH).child(msg.uid).set(
+        ChatIdentity.buildBanRecord(currentUser, durationSeconds, Date.now(), TIMESTAMP)
+      );
+
+      // 시스템 메시지 — 본문에 이메일을 넣지 않는다(대상은 가린 이름, 관리자는 적지 않음)
+      await messagesRef.push(ChatIdentity.buildSystemMessage(
+        currentUser,
+        ChatIdentity.banNoticeText(label, durationSeconds),
+        TIMESTAMP
+      ));
+      console.log('✅ 채팅 금지 완료');
+    } catch (error) {
+      console.error('❌ 채팅 금지 실패:', error);
+      alert('채팅 금지에 실패했습니다: ' + error.message);
+    }
   }
 
   // 메시지 전송
@@ -1226,93 +1266,36 @@ function maskEmail(email) {
         return;
       }
 
-      // 채팅금지 명령: "채팅금지 이메일 초"
-      const banMatch = text.match(/^채팅금지\s+(\S+)\s+(\d+)$/);
-      if (banMatch) {
-        const targetEmail = banMatch[1];
-        const durationSeconds = parseInt(banMatch[2], 10);
-
-        console.log('✅ 채팅금지 명령 인식됨!');
-        console.log('대상 이메일:', targetEmail);
-        console.log('금지 시간(초):', durationSeconds);
-
-        const confirmBan = confirm(
-          `⚠️ 사용자 채팅 금지\n\n` +
-          `대상: ${targetEmail}\n` +
-          `금지 시간: ${durationSeconds}초\n\n` +
-          `계속하시겠습니까?`
-        );
-
-        if (!confirmBan) {
-          chatInput.value = '';
-          return;
-        }
-
-        try {
-          const bannedUsersRef = firebase.database().ref('inline-chat/banned-users');
-          const banUntil = Date.now() + (durationSeconds * 1000);
-
-          // Firebase 키로 사용 가능하도록 이메일 변환 (@ -> _at_, . -> ,)
-          const sanitizedEmail = targetEmail.replace(/@/g, '_at_').replace(/\./g, ',');
-
-          await bannedUsersRef.child(sanitizedEmail).set({
-            email: targetEmail, // 원본 이메일 저장
-            bannedBy: currentUser.email,
-            bannedAt: firebase.database.ServerValue.TIMESTAMP,
-            banUntil: banUntil,
-            duration: durationSeconds
-          });
-
-          // 시스템 메시지 전송
-          await messagesRef.push({
-            email: 'system',
-            text: `${targetEmail} 사용자가 ${durationSeconds}초 동안 채팅 금지되었습니다. (관리자: ${currentUser.email})`,
-            timestamp: firebase.database.ServerValue.TIMESTAMP
-          });
-
-          chatInput.value = '';
-          console.log('✅ 채팅 금지 완료!');
-
-        } catch (error) {
-          console.error('❌ 채팅 금지 실패:', error);
-          alert('채팅 금지에 실패했습니다: ' + error.message);
-        }
+      // 채팅금지: 이메일을 입력받던 텍스트 명령("채팅금지 이메일 초")은 폐지했다 — 대상 이메일이
+      // 채팅 기록·시스템 메시지에 남았다. 이제 대상 메시지의 작성자 이름을 눌러 실행한다(uid 기준).
+      // 명령을 그대로 보내면 이메일이 일반 메시지로 올라가므로 여기서 가로챈다.
+      if (/^채팅금지(\s|$)/.test(text)) {
+        alert('채팅금지는 대상 메시지의 작성자 이름을 눌러 실행합니다.\n(개인정보 보호를 위해 이메일로 지정하는 명령은 폐지되었습니다)');
         return;
       }
     }
 
-    // 일반 메시지 전송 전에 채팅금지 여부 확인
+    // 일반 메시지 전송 전에 채팅금지 여부 확인 (본인 uid 항목 1건만 읽는다)
     try {
-      const bannedUsersRef = firebase.database().ref('inline-chat/banned-users');
-      // Firebase 키로 사용 가능하도록 이메일 변환 (@ -> _at_, . -> ,)
-      const sanitizedEmail = currentUser.email.replace(/@/g, '_at_').replace(/\./g, ',');
-      const banSnapshot = await bannedUsersRef.child(sanitizedEmail).once('value');
-      const banData = banSnapshot.val();
+      const ban = await ChatIdentity.checkOwnBan(database, currentUser);
+      if (ban.banned) {
+        alert(`채팅이 금지되었습니다.\n남은 시간: ${ban.remainingSeconds}초`);
+        console.log('채팅 금지 상태:', ban.remainingSeconds, '초 남음');
+        chatInput.value = '';
+        return;
+      }
 
-      if (banData && banData.banUntil) {
-        const now = Date.now();
-        if (now < banData.banUntil) {
-          const remainingSeconds = Math.ceil((banData.banUntil - now) / 1000);
-          alert(`채팅이 금지되었습니다.\n남은 시간: ${remainingSeconds}초`);
-          console.log('채팅 금지 상태:', remainingSeconds, '초 남음');
-          chatInput.value = '';
-          return;
-        } else {
-          // 금지 시간이 만료되었으면 삭제 시도 (실패해도 메시지 전송 허용)
-          try {
-            await bannedUsersRef.child(sanitizedEmail).remove();
-          } catch (error) {
-            console.warn('밴 레코드 삭제 실패 (무시하고 진행):', error);
-          }
-        }
+      // 이메일 원문 대신 uid + 가린 이름 조각만 싣는다
+      const message = ChatIdentity.buildUserMessage(
+        currentUser, text, firebase.database.ServerValue.TIMESTAMP
+      );
+      if (!message) {
+        alert('이메일이 없는 계정은 채팅에 참여할 수 없습니다.');
+        return;
       }
 
       // 금지되지 않았으면 메시지 전송
-      messagesRef.push({
-        email: currentUser.email,
-        text: text,
-        timestamp: firebase.database.ServerValue.TIMESTAMP
-      }).then(() => {
+      messagesRef.push(message).then(() => {
         chatInput.value = '';
         // 메시지 전송 성공 시 마지막 전송 시간 업데이트
         lastMessageTime = Date.now();
