@@ -591,13 +591,13 @@ Para más detalles, consulta la <a href="/inventory/privacy/">política de priva
 <details>
 <summary><strong>Q. ¿Existe una función de bloqueo de documentos?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> ¡Sí! Puedes establecer un <strong>bloqueo</strong> en los elementos.
+<strong>A.</strong> Solo se mantiene la función para <strong>desbloquear</strong> documentos que se bloquearon en versiones anteriores de la app. En la app actual ya no se pueden establecer bloqueos nuevos.
 <ul>
-<li>Pantalla de detalle del elemento → menú inferior → <strong>"Bloquear"</strong></li>
-<li>El contenido de los elementos bloqueados aparece difuminado</li>
-<li>Para verlo se requiere autenticación del dispositivo (Face ID, huella, PIN)</li>
+<li>Los documentos bloqueados aparecen difuminados en la pantalla de la app</li>
+<li>Introduce la <strong>contraseña numérica</strong> definida al bloquear para desbloquearlo (una vez desbloqueado, el bloqueo desaparece)</li>
+<li>Si olvidas la contraseña, no podrás quitar el bloqueo; solo podrás eliminar el documento</li>
 </ul>
-Así puedes guardar información sensible de forma segura.
+⚠️ El bloqueo <strong>solo oculta la pantalla de la app</strong> y no cifra el contenido del documento. No recomendamos usarlo para guardar información sensible como contraseñas.
 </div>
 </details>
 
@@ -611,7 +611,6 @@ Así puedes guardar información sensible de forma segura.
 <strong>A.</strong> Para muchos usos distintos:
 <ul>
 <li><strong>Gestión de garantías/recibos</strong>: Con foto y fecha de expiración</li>
-<li><strong>Guardar contraseñas</strong>: Almacenamiento seguro con la función de bloqueo</li>
 <li><strong>Gestión de agenda</strong>: Controla fechas importantes con la alarma del D-Day</li>
 <li><strong>Organizar colecciones</strong>: Clasifícalas y gestiónalas con Pockets</li>
 <li><strong>Trabajo en equipo</strong>: Colabora con tu equipo mediante el registro compartido</li>

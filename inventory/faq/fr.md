@@ -591,13 +591,13 @@ Pour en savoir plus, consultez la <a href="/inventory/privacy/">politique de con
 <details>
 <summary><strong>Q. Existe-t-il une fonction de verrouillage des documents ?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Oui ! Vous pouvez <strong>verrouiller</strong> un objet.
+<strong>A.</strong> Seule la possibilité de <strong>déverrouiller</strong> les documents verrouillés dans les versions précédentes de l'application est conservée. Il n'est plus possible de créer un nouveau verrouillage dans l'application actuelle.
 <ul>
-<li>Écran de détail de l'objet → menu inférieur → <strong>« Verrouiller »</strong></li>
-<li>Le contenu des objets verrouillés est flouté</li>
-<li>Pour le consulter, une authentification de l'appareil (Face ID, empreinte, code PIN) est requise</li>
+<li>Les documents verrouillés sont floutés à l'écran de l'application</li>
+<li>Saisissez le <strong>mot de passe numérique</strong> défini lors du verrouillage pour le déverrouiller (une fois déverrouillé, le verrouillage est supprimé)</li>
+<li>En cas d'oubli du mot de passe, le verrouillage ne peut pas être levé : seule la suppression du document est possible</li>
 </ul>
-Vous pouvez ainsi conserver vos informations sensibles en toute sécurité.
+⚠️ Le verrouillage <strong>masque uniquement l'écran de l'application</strong> et ne chiffre pas le contenu du document. Nous ne recommandons pas de l'utiliser pour conserver des informations sensibles comme des mots de passe.
 </div>
 </details>
 
@@ -611,7 +611,6 @@ Vous pouvez ainsi conserver vos informations sensibles en toute sécurité.
 <strong>A.</strong> À de nombreux usages :
 <ul>
 <li><strong>Gestion de garanties/reçus</strong> : Photo et date d'expiration</li>
-<li><strong>Stockage de mots de passe</strong> : Conservation sécurisée grâce au verrouillage</li>
 <li><strong>Gestion d'agenda</strong> : Suivi des échéances importantes avec l'alarme D-Day</li>
 <li><strong>Organisation de collections</strong> : Classement et gestion avec les Pockets</li>
 <li><strong>Travail collaboratif</strong> : Coopération en équipe via le journal partagé</li>

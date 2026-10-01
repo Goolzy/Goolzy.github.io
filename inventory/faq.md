@@ -591,13 +591,13 @@ QR 코드에는 이메일 주소가 담겨있어 직접 입력 없이 빠르게 
 <details>
 <summary><strong>Q. 문서 잠금 기능이 있나요?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> 네! 아이템에 <strong>잠금</strong>을 설정할 수 있습니다.
+<strong>A.</strong> 이전 버전 앱에서 문서에 걸어 둔 <strong>잠금</strong>을 푸는 기능만 남아 있습니다. 현재 앱에서는 잠금을 새로 걸 수 없습니다.
 <ul>
-<li>아이템 상세 화면 → 하단 메뉴 → <strong>"잠금"</strong></li>
-<li>잠금된 아이템은 내용이 블러 처리됩니다</li>
-<li>확인하려면 기기 인증(Face ID, 지문, PIN)이 필요합니다</li>
+<li>잠긴 문서는 앱 화면에서 흐리게 가려집니다</li>
+<li>잠금을 걸 때 정한 <strong>숫자 비밀번호</strong>를 입력하면 풀립니다(한 번 풀면 잠금이 사라집니다)</li>
+<li>비밀번호를 잊으면 잠금을 풀 수 없고, 문서 삭제만 가능합니다</li>
 </ul>
-민감한 정보를 안전하게 보관할 수 있습니다.
+⚠️ 잠금은 <strong>앱 화면만 가리는 기능</strong>이며 문서 내용을 암호화하지 않습니다. 비밀번호 같은 민감한 정보를 보관하는 용도로는 권하지 않습니다.
 </div>
 </details>
 
@@ -611,7 +611,6 @@ QR 코드에는 이메일 주소가 담겨있어 직접 입력 없이 빠르게 
 <strong>A.</strong> 다양한 용도로 활용할 수 있습니다:
 <ul>
 <li><strong>보증서/영수증 관리</strong>: 사진과 유효기간 설정</li>
-<li><strong>비밀번호 저장</strong>: 잠금 기능으로 안전하게 보관</li>
 <li><strong>일정 관리</strong>: D-Day 알람으로 중요 일정 관리</li>
 <li><strong>수집품 정리</strong>: 포켓으로 분류하여 관리</li>
 <li><strong>공동 작업</strong>: 공유로그로 팀원과 협업</li>

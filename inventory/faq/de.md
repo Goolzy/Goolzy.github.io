@@ -591,13 +591,13 @@ Weitere Informationen finden Sie in der <a href="/inventory/privacy/">Datenschut
 <details>
 <summary><strong>Q. Gibt es eine Dokumentensperre?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Ja! Sie können Objekte mit einer <strong>Sperre</strong> versehen.
+<strong>A.</strong> Erhalten geblieben ist nur das <strong>Entsperren</strong> von Dokumenten, die in früheren App-Versionen gesperrt wurden. In der aktuellen App lassen sich keine neuen Sperren einrichten.
 <ul>
-<li>Objekt-Detailbildschirm → unteres Menü → <strong>„Sperren"</strong></li>
-<li>Der Inhalt gesperrter Objekte wird unscharf dargestellt</li>
-<li>Zum Anzeigen ist eine Geräteauthentifizierung (Face ID, Fingerabdruck, PIN) erforderlich</li>
+<li>Gesperrte Dokumente werden in der App unscharf dargestellt</li>
+<li>Mit dem beim Sperren festgelegten <strong>Zahlenpasswort</strong> heben Sie die Sperre auf (danach ist die Sperre entfernt)</li>
+<li>Wenn Sie das Passwort vergessen, lässt sich die Sperre nicht aufheben – das Dokument kann nur gelöscht werden</li>
 </ul>
-So bewahren Sie sensible Informationen sicher auf.
+⚠️ Die Sperre <strong>verdeckt nur den App-Bildschirm</strong> und verschlüsselt den Inhalt des Dokuments nicht. Für die Aufbewahrung sensibler Informationen wie Passwörter empfehlen wir sie nicht.
 </div>
 </details>
 
@@ -611,7 +611,6 @@ So bewahren Sie sensible Informationen sicher auf.
 <strong>A.</strong> Für die verschiedensten Zwecke:
 <ul>
 <li><strong>Garantien/Belege verwalten</strong>: Mit Foto und Ablaufdatum</li>
-<li><strong>Passwörter aufbewahren</strong>: Sicher dank Sperrfunktion</li>
 <li><strong>Termine verwalten</strong>: Wichtige Termine mit D-Day-Alarm im Blick</li>
 <li><strong>Sammlungen ordnen</strong>: Mit Taschen kategorisieren und verwalten</li>
 <li><strong>Zusammenarbeit</strong>: Mit dem geteilten Log im Team kooperieren</li>
