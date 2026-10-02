@@ -121,8 +121,6 @@ translations:
 </div>
 
 <div style="display: flex; gap: .75rem; flex-wrap: wrap; justify-content: center; margin: 1rem 0;">
-  <a href="/inventory/suggest/zh/" style="display: inline-block; background: rgba(168,85,247,0.3); border: 1px solid rgba(168,85,247,0.5); color: white; padding: .6rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 500;">💬 建议</a>
-  <a href="/inventory/bug-report/zh/" style="display: inline-block; background: rgba(217,70,239,0.3); border: 1px solid rgba(217,70,239,0.5); color: white; padding: .6rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 500;">🐛 报告问题</a>
   <a href="mailto:captain@goolzy.com" style="display: inline-block; background: rgba(59,130,246,0.3); border: 1px solid rgba(59,130,246,0.5); color: white; padding: .6rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 500;">📧 API咨询</a>
 </div>
 
