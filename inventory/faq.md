@@ -582,7 +582,7 @@ QR 코드에는 이메일 주소가 담겨있어 직접 입력 없이 빠르게 
 <ul>
 <li><strong>암호화 전송</strong>: 모든 통신은 TLS로 암호화됩니다</li>
 <li><strong>안전한 저장</strong>: Google Cloud 인프라에서 관리됩니다</li>
-<li><strong>개인정보 보호</strong>: 다른 사용자는 귀하의 아이템에 접근할 수 없습니다</li>
+<li><strong>개인정보 보호</strong>: 공유하지 않은 아이템은 본인만 볼 수 있습니다. 다만 공유 문서·서명 목록처럼 직접 공유를 설정한 콘텐츠는 로그인한 사용자가 접근할 수 있습니다.</li>
 </ul>
 자세한 내용은 <a href="/inventory/privacy/">개인정보처리방침</a>을 참고하세요.
 </div>
@@ -626,14 +626,14 @@ QR 코드에는 이메일 주소가 담겨있어 직접 입력 없이 빠르게 
 <details>
 <summary><strong>Q. 버그를 발견했어요</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> <a href="/inventory/bug-report/">버그 리포트</a> 페이지에서 신고해주세요.
+<strong>A.</strong> 앱을 열고 홈 화면 상단의 <strong>버그 제보</strong> 메뉴를 이용해주세요.
 </div>
 </details>
 
 <details>
 <summary><strong>Q. 새로운 기능을 제안하고 싶어요</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> <a href="/inventory/suggest/">건의하기</a> 페이지에서 아이디어를 공유해주세요.
+<strong>A.</strong> 앱을 열고 홈 화면 상단의 <strong>기능 제안</strong> 메뉴를 이용해주세요.
 </div>
 </details>
 
@@ -648,7 +648,7 @@ QR 코드에는 이메일 주소가 담겨있어 직접 입력 없이 빠르게 
 
 ---
 
-> 💬 **답변을 찾지 못하셨나요?** [건의하기](/inventory/suggest/)를 통해 문의하거나 [매뉴얼](/inventory/manual/)을 확인해보세요.
+> 💬 **답변을 찾지 못하셨나요?** 앱 홈 화면 상단의 **기능 제안·버그 제보** 메뉴로 문의하거나 [매뉴얼](/inventory/manual/)을 확인해보세요.
 
 <style>
 details {

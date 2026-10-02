@@ -576,7 +576,7 @@ Inserisci facilmente informazioni speciali tramite il pulsante `+` quando scrivi
 </details>
 
 <div class="changelog-footer">
-<strong>Suggerisci nuove funzioni!</strong> Condividi le tue idee con <a href="/inventory/suggest/it/">Suggerimenti</a> e le esamineremo attivamente.
+<strong>Suggerisci nuove funzioni!</strong> Condividi le tue idee tramite il menu <strong>Invia un suggerimento</strong> nella parte superiore della schermata principale dell'app e le esamineremo attivamente.
 </div>
 
 <style>

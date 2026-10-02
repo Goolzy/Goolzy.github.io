@@ -1515,7 +1515,7 @@ Android 15以上のデバイスで下部システムナビゲーションバー�
 </details>
 
 <div class="changelog-footer">
-<strong>新機能を提案してください！</strong> <a href="/inventory/suggest/ja/">ご意見・ご要望</a>でアイデアを共有いただければ、積極的に検討いたします。
+<strong>新機能を提案してください！</strong> ホーム画面上部の<strong>機能を提案</strong>メニューでアイデアを共有いただければ、積極的に検討いたします。
 </div>
 
 <style>

@@ -582,7 +582,7 @@ Einzelne Datumsalarme heben Sie auf, indem Sie die jeweilige Datumskarte lange d
 <ul>
 <li><strong>Verschlüsselte Übertragung</strong>: Die gesamte Kommunikation ist per TLS verschlüsselt</li>
 <li><strong>Sichere Speicherung</strong>: Verwaltung auf der Google-Cloud-Infrastruktur</li>
-<li><strong>Datenschutz</strong>: Andere Nutzer haben keinen Zugriff auf Ihre Objekte</li>
+<li><strong>Datenschutz</strong>: Nicht geteilte Objekte können nur Sie sehen. Inhalte, die Sie ausdrücklich teilen – etwa geteilte Dokumente oder Unterschriftenlisten – können von anderen angemeldeten Nutzern eingesehen werden.</li>
 </ul>
 Weitere Informationen finden Sie in der <a href="/inventory/privacy/">Datenschutzerklärung</a>.
 </div>
@@ -626,14 +626,14 @@ Weitere Ideen finden Sie unter <a href="/inventory/usecases/">100 Anwendungsmög
 <details>
 <summary><strong>Q. Ich habe einen Fehler gefunden</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Bitte melden Sie ihn auf der Seite <a href="/inventory/bug-report/">Fehlerbericht</a>.
+<strong>A.</strong> Bitte öffnen Sie die App und nutzen Sie das Menü <strong>Fehler melden</strong> oben auf dem Startbildschirm.
 </div>
 </details>
 
 <details>
 <summary><strong>Q. Ich möchte eine neue Funktion vorschlagen</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Teilen Sie Ihre Idee auf der Seite <a href="/inventory/suggest/">Vorschläge</a> mit uns.
+<strong>A.</strong> Bitte öffnen Sie die App und nutzen Sie das Menü <strong>Funktion vorschlagen</strong> oben auf dem Startbildschirm.
 </div>
 </details>
 
@@ -648,7 +648,7 @@ Weitere Ideen finden Sie unter <a href="/inventory/usecases/">100 Anwendungsmög
 
 ---
 
-> 💬 **Keine Antwort gefunden?** Kontaktieren Sie uns über die Seite [Vorschläge](/inventory/suggest/) oder werfen Sie einen Blick ins [Handbuch](/inventory/manual/).
+> 💬 **Keine Antwort gefunden?** Kontaktieren Sie uns über das Menü **Funktion vorschlagen / Fehler melden** oben auf dem Startbildschirm, oder werfen Sie einen Blick ins [Handbuch](/inventory/manual/).
 
 <style>
 details {

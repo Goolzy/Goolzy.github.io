@@ -582,7 +582,7 @@ Alarmes de data individuais podem ser desativados mantendo pressionado o cartão
 <ul>
 <li><strong>Transmissão criptografada</strong>: Toda a comunicação é criptografada com TLS</li>
 <li><strong>Armazenamento seguro</strong>: Gerenciado na infraestrutura do Google Cloud</li>
-<li><strong>Proteção de privacidade</strong>: Outros usuários não podem acessar seus itens</li>
+<li><strong>Proteção de privacidade</strong>: Somente você pode ver os itens que não compartilhou. Conteúdos que você compartilha explicitamente, como documentos compartilhados ou listas de assinaturas, podem ser acessados por outros usuários autenticados.</li>
 </ul>
 Para mais detalhes, consulte a <a href="/inventory/privacy/">política de privacidade</a>.
 </div>
@@ -626,14 +626,14 @@ Veja mais ideias em <a href="/inventory/usecases/">100 formas de uso</a>!
 <details>
 <summary><strong>Q. Encontrei um bug</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Informe-o na página <a href="/inventory/bug-report/">Relatar bug</a>.
+<strong>A.</strong> Abra o app e use o menu <strong>Relatar um erro</strong> no topo da tela inicial.
 </div>
 </details>
 
 <details>
 <summary><strong>Q. Quero sugerir uma nova função</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Compartilhe sua ideia na página <a href="/inventory/suggest/">Sugestões</a>.
+<strong>A.</strong> Abra o app e use o menu <strong>Sugerir um recurso</strong> no topo da tela inicial.
 </div>
 </details>
 
@@ -648,7 +648,7 @@ Veja mais ideias em <a href="/inventory/usecases/">100 formas de uso</a>!
 
 ---
 
-> 💬 **Não encontrou a resposta?** Fale conosco pela página de [Sugestões](/inventory/suggest/) ou confira o [manual](/inventory/manual/).
+> 💬 **Não encontrou a resposta?** Fale conosco pelo menu **Sugerir um recurso / Relatar um erro** no topo da tela inicial, ou confira o [manual](/inventory/manual/).
 
 <style>
 details {

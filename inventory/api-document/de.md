@@ -806,4 +806,4 @@ Bei fehlgeschlagenen API-Anfragen wird ein Fehler im folgenden Format zurückgeg
 
 ## Kontakt
 
-Bei Problemen mit der API-Nutzung kontaktieren Sie uns bitte über die Seite [Vorschlag einreichen](/inventory/suggest/).
+Bei Problemen mit der API-Nutzung kontaktieren Sie uns bitte über das Menü **Fehler melden** oben auf dem Startbildschirm.

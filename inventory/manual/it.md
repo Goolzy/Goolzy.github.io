@@ -349,7 +349,7 @@ Seleziona in **Impostazioni → Lingua** e viene applicata immediatamente.
 
 ---
 
-> 📚 **Hai altre domande?** Consulta le [Domande frequenti](/inventory/faq/) o contattaci tramite [Invia un suggerimento](/inventory/suggest/).
+> 📚 **Hai altre domande?** Consulta le [Domande frequenti](/inventory/faq/) o contattaci tramite il menu **Invia un suggerimento** nella parte superiore della schermata principale dell'app.
 
 <style>
 details {

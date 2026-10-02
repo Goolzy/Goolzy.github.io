@@ -582,7 +582,7 @@ translations:
 <ul>
 <li><strong>加密传输</strong>：所有通信均通过TLS加密</li>
 <li><strong>安全存储</strong>：由Google Cloud基础设施管理</li>
-<li><strong>隐私保护</strong>：其他用户无法访问您的物品</li>
+<li><strong>隐私保护</strong>：未共享的物品只有本人可见。像共享文档、签名列表这类您主动设置共享的内容，登录用户可以访问。</li>
 </ul>
 详情请参阅<a href="/inventory/privacy/">隐私政策</a>。
 </div>
@@ -626,14 +626,14 @@ translations:
 <details>
 <summary><strong>Q. 我发现了一个漏洞</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> 请在<a href="/inventory/bug-report/">漏洞报告</a>页面进行报告。
+<strong>A.</strong> 请打开应用，使用首页顶部的 <strong>报告问题</strong> 菜单。
 </div>
 </details>
 
 <details>
 <summary><strong>Q. 我想提议新功能</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> 请在<a href="/inventory/suggest/">意见反馈</a>页面分享您的想法。
+<strong>A.</strong> 请打开应用，使用首页顶部的 <strong>功能建议</strong> 菜单。
 </div>
 </details>
 
@@ -648,7 +648,7 @@ translations:
 
 ---
 
-> 💬 **没有找到答案？** 请通过[意见反馈](/inventory/suggest/)咨询，或查看[使用手册](/inventory/manual/)。
+> 💬 **没有找到答案？** 请通过首页顶部的 **功能建议 / 报告问题** 菜单咨询，或查看[使用手册](/inventory/manual/)。
 
 <style>
 details {

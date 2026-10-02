@@ -582,7 +582,7 @@ Individual date alarms can be cancelled by long-pressing the date card.
 <ul>
 <li><strong>Encrypted transmission</strong>: All communication is encrypted with TLS</li>
 <li><strong>Secure storage</strong>: Managed on Google Cloud infrastructure</li>
-<li><strong>Privacy protection</strong>: Other users cannot access your items</li>
+<li><strong>Privacy protection</strong>: Only you can see items you haven't shared. Content you explicitly share, such as shared documents or signature lists, can be accessed by other signed-in users.</li>
 </ul>
 See the <a href="/inventory/privacy/">Privacy Policy</a> for details.
 </div>
@@ -626,14 +626,14 @@ Check out <a href="/inventory/usecases/">100 Use Cases</a> for more ideas!
 <details>
 <summary><strong>Q. I found a bug</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Please report it on the <a href="/inventory/bug-report/">Bug Report</a> page.
+<strong>A.</strong> Please open the app and use the <strong>Bug report</strong> menu at the top of the home screen.
 </div>
 </details>
 
 <details>
 <summary><strong>Q. I want to suggest a new feature</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Please share your idea on the <a href="/inventory/suggest/">Suggestions</a> page.
+<strong>A.</strong> Please open the app and use the <strong>Suggest a feature</strong> menu at the top of the home screen.
 </div>
 </details>
 
@@ -648,7 +648,7 @@ Check out <a href="/inventory/usecases/">100 Use Cases</a> for more ideas!
 
 ---
 
-> 💬 **Didn't find your answer?** Contact us via [Suggestions](/inventory/suggest/) or check the [Manual](/inventory/manual/).
+> 💬 **Didn't find your answer?** Contact us through the **Suggest a feature / Bug report** menu at the top of the home screen, or check the [Manual](/inventory/manual/).
 
 <style>
 details {

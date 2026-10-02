@@ -577,7 +577,7 @@ Günlük yazarken `+` düğmesi aracılığıyla özel bilgileri kolayca girin:
 </details>
 
 <div class="changelog-footer">
-<strong>Yeni özellikler önerilmek!</strong> Fikirlerinizi <a href="/inventory/suggest/tr/">Öneriler</a>'de paylaşın ve aktif olarak gözden geçireceğiz.
+<strong>Yeni özellikler önerilmek!</strong> Fikirlerinizi uygulamanın ana ekranının üst kısmındaki <strong>öneri gönder</strong> menüsünden paylaşın ve aktif olarak gözden geçireceğiz.
 </div>
 
 <style>

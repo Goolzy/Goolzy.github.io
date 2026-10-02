@@ -577,7 +577,7 @@ Dengan mudah input informasi khusus melalui tombol `+` saat menulis log:
 </details>
 
 <div class="changelog-footer">
-<strong>Sarankan fitur baru!</strong> Bagikan ide Anda di <a href="/inventory/suggest/id/">Saran</a> dan kami akan secara aktif meninjau mereka.
+<strong>Sarankan fitur baru!</strong> Bagikan ide Anda melalui menu <strong>Kirim saran</strong> di bagian atas layar utama aplikasi dan kami akan secara aktif meninjau mereka.
 </div>
 
 <style>

@@ -1512,7 +1512,7 @@ iPad上的输入框焦点问题已修复。
 </details>
 
 <div class="changelog-footer">
-<strong>提出新功能建议！</strong>在<a href="/inventory/suggest/zh/">建议</a>页面分享您的想法，我们将积极审核。
+<strong>提出新功能建议！</strong>通过首页顶部的 <strong>功能建议</strong> 菜单分享您的想法，我们将积极审核。
 </div>
 
 <style>

@@ -582,7 +582,7 @@ Pour désactiver une alarme de date individuelle, appuyez longuement sur la cart
 <ul>
 <li><strong>Transfert chiffré</strong> : Toutes les communications sont chiffrées en TLS</li>
 <li><strong>Stockage sécurisé</strong> : Géré sur l'infrastructure Google Cloud</li>
-<li><strong>Protection de la vie privée</strong> : Les autres utilisateurs ne peuvent pas accéder à vos objets</li>
+<li><strong>Protection de la vie privée</strong> : Vous seul pouvez voir les objets que vous n'avez pas partagés. Le contenu que vous partagez explicitement, comme les documents partagés ou les listes de signatures, est accessible aux autres utilisateurs connectés.</li>
 </ul>
 Pour en savoir plus, consultez la <a href="/inventory/privacy/">politique de confidentialité</a>.
 </div>
@@ -626,14 +626,14 @@ Découvrez plus d'idées dans <a href="/inventory/usecases/">100 façons d'utili
 <details>
 <summary><strong>Q. J'ai trouvé un bug</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Merci de le signaler sur la page <a href="/inventory/bug-report/">Signaler un bug</a>.
+<strong>A.</strong> Veuillez ouvrir l'application et utiliser le menu <strong>Signaler un bug</strong> en haut de l'écran d'accueil.
 </div>
 </details>
 
 <details>
 <summary><strong>Q. Je souhaite proposer une nouvelle fonctionnalité</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Partagez votre idée sur la page <a href="/inventory/suggest/">Suggestions</a>.
+<strong>A.</strong> Veuillez ouvrir l'application et utiliser le menu <strong>Proposer une fonction</strong> en haut de l'écran d'accueil.
 </div>
 </details>
 
@@ -648,7 +648,7 @@ Découvrez plus d'idées dans <a href="/inventory/usecases/">100 façons d'utili
 
 ---
 
-> 💬 **Vous n'avez pas trouvé de réponse ?** Contactez-nous via la page [Suggestions](/inventory/suggest/) ou consultez le [manuel](/inventory/manual/).
+> 💬 **Vous n'avez pas trouvé de réponse ?** Contactez-nous via le menu **Proposer une fonction / Signaler un bug** en haut de l'écran d'accueil, ou consultez le [manuel](/inventory/manual/).
 
 <style>
 details {

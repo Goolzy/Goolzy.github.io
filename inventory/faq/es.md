@@ -582,7 +582,7 @@ Las alarmas de fecha individuales se desactivan manteniendo pulsada la tarjeta d
 <ul>
 <li><strong>Transmisión cifrada</strong>: Todas las comunicaciones están cifradas con TLS</li>
 <li><strong>Almacenamiento seguro</strong>: Gestionado en la infraestructura de Google Cloud</li>
-<li><strong>Protección de la privacidad</strong>: Otros usuarios no pueden acceder a tus elementos</li>
+<li><strong>Protección de la privacidad</strong>: Solo tú puedes ver los elementos que no has compartido. El contenido que compartes explícitamente, como documentos compartidos o listas de firmas, puede ser accedido por otros usuarios con sesión iniciada.</li>
 </ul>
 Para más detalles, consulta la <a href="/inventory/privacy/">política de privacidad</a>.
 </div>
@@ -626,14 +626,14 @@ Para más detalles, consulta la <a href="/inventory/privacy/">política de priva
 <details>
 <summary><strong>Q. Encontré un error</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Repórtalo en la página <a href="/inventory/bug-report/">Reporte de errores</a>.
+<strong>A.</strong> Abre la app y utiliza el menú <strong>Informar de un error</strong> en la parte superior de la pantalla de inicio.
 </div>
 </details>
 
 <details>
 <summary><strong>Q. Quiero proponer una nueva función</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Comparte tu idea en la página <a href="/inventory/suggest/">Sugerencias</a>.
+<strong>A.</strong> Abre la app y utiliza el menú <strong>Sugerir una función</strong> en la parte superior de la pantalla de inicio.
 </div>
 </details>
 
@@ -648,7 +648,7 @@ Para más detalles, consulta la <a href="/inventory/privacy/">política de priva
 
 ---
 
-> 💬 **¿No encontraste la respuesta?** Contáctanos a través de [Sugerencias](/inventory/suggest/) o consulta el [manual](/inventory/manual/).
+> 💬 **¿No encontraste la respuesta?** Contáctanos a través del menú **Sugerir una función / Informar de un error** en la parte superior de la pantalla de inicio, o consulta el [manual](/inventory/manual/).
 
 <style>
 details {

@@ -576,7 +576,7 @@ Dễ dàng nhập thông tin đặc biệt qua nút `+` khi viết nhật ký:
 </details>
 
 <div class="changelog-footer">
-<strong>Gợi Ý Các Tính Năng Mới!</strong> Chia Sẻ Ý Tưởng Của Bạn Tại <a href="/inventory/suggest/vi/">Gợi Ý</a> Và Chúng Tôi Sẽ Xem Xét Chúng Một Cách Tích Cực.
+<strong>Gợi Ý Các Tính Năng Mới!</strong> Chia Sẻ Ý Tưởng Của Bạn Qua Menu <strong>Gửi Góp Ý</strong> Ở Đầu Màn Hình Chính Của Ứng Dụng Và Chúng Tôi Sẽ Xem Xét Chúng Một Cách Tích Cực.
 </div>
 
 <style>

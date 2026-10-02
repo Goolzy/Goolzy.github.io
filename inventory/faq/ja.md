@@ -582,7 +582,7 @@ QRコードにはメールアドレスが含まれており、直接入力なし
 <ul>
 <li><strong>暗号化通信</strong>：すべての通信はTLSで暗号化されます</li>
 <li><strong>安全な保存</strong>：Google Cloudインフラで管理されます</li>
-<li><strong>個人情報保護</strong>：他のユーザーはあなたのアイテムにアクセスできません</li>
+<li><strong>個人情報保護</strong>：共有していないアイテムは本人のみが見られます。共有文書や署名リストのように自分で共有を設定したコンテンツは、ログインした他のユーザーがアクセスできます。</li>
 </ul>
 詳しくは<a href="/inventory/privacy/">プライバシーポリシー</a>をご覧ください。
 </div>
@@ -626,14 +626,14 @@ QRコードにはメールアドレスが含まれており、直接入力なし
 <details>
 <summary><strong>Q. バグを見つけました</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> <a href="/inventory/bug-report/">バグレポート</a>ページから報告してください。
+<strong>A.</strong> アプリを開き、ホーム画面上部の<strong>不具合を報告</strong>メニューをご利用ください。
 </div>
 </details>
 
 <details>
 <summary><strong>Q. 新しい機能を提案したいです</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> <a href="/inventory/suggest/">ご意見・ご要望</a>ページからアイデアを共有してください。
+<strong>A.</strong> アプリを開き、ホーム画面上部の<strong>機能を提案</strong>メニューをご利用ください。
 </div>
 </details>
 
@@ -648,7 +648,7 @@ QRコードにはメールアドレスが含まれており、直接入力なし
 
 ---
 
-> 💬 **答えが見つかりませんでしたか？** [ご意見・ご要望](/inventory/suggest/)からお問い合わせいただくか、[マニュアル](/inventory/manual/)をご確認ください。
+> 💬 **答えが見つかりませんでしたか？** ホーム画面上部の**機能を提案・不具合を報告**メニューからお問い合わせいただくか、[マニュアル](/inventory/manual/)をご確認ください。
 
 <style>
 details {

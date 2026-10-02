@@ -1517,7 +1517,7 @@ Spezielle Informationen einfach über die `+`-Taste beim Log-Schreiben eingeben:
 </details>
 
 <div class="changelog-footer">
-<strong>Schlagen Sie neue Funktionen vor!</strong> Teilen Sie Ihre Ideen unter <a href="/inventory/suggest/de/">Vorschläge</a> und wir werden sie aktiv prüfen.
+<strong>Schlagen Sie neue Funktionen vor!</strong> Teilen Sie Ihre Ideen über das Menü <strong>Funktion vorschlagen</strong> oben auf dem Startbildschirm und wir werden sie aktiv prüfen.
 </div>
 
 <style>

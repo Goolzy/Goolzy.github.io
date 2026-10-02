@@ -349,7 +349,7 @@ Selecciónalo en **Ajustes → Idioma** y se aplicará de inmediato.
 
 ---
 
-> 📚 **¿Tienes más preguntas?** Consulta las [Preguntas frecuentes](/inventory/faq/) o contáctanos a través de [Sugerencias](/inventory/suggest/).
+> 📚 **¿Tienes más preguntas?** Consulta las [Preguntas frecuentes](/inventory/faq/) o contáctanos a través del menú **Sugerir una función / Informar de un error** en la parte superior de la pantalla de inicio.
 
 <style>
 details {
