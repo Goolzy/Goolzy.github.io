@@ -1,4 +1,6 @@
 # frozen_string_literal: true
+# 로케일 미설정 셸(LANG 비어 있음)에서도 파일을 UTF-8 로 읽는다 — 아니면 Ruby 가 US-ASCII 로 읽어 한글·비ASCII 바이트에서 죽는다 (2026-10-03)
+Encoding.default_external = Encoding::UTF_8
 # Lightweight link/image checker without building _site
 # - Scans Markdown/HTML files for href/src
 # - Verifies local asset files exist and that permalinks referenced exist as pages
@@ -40,7 +42,8 @@ if File.exist?(config_path)
   end
 end
 front_matter_re = /^---\s*\n(.*?)\n---\s*\n/m
-files.select { |f| f.end_with?('.md') }.each do |md|
+# .html 페이지(join.html·pt.html 등 루트 언어 랜딩)도 permalink 를 가진다 — .md 만 보던 때 /join/·/pt/ 가 거짓 404 였다 (2026-10-04)
+files.select { |f| f.end_with?('.md', '.html') }.each do |md|
   begin
     content = File.read(md)
   rescue
@@ -82,6 +85,8 @@ files.select { |f| f.end_with?('.md', '.html') }.each do |path|
     # Skip anchors, external, protocol-relative, mailto, tel, Liquid
     next if url.start_with?('#', 'http://', 'https://', '//', 'mailto:', 'tel:')
     next if url.include?('{{') || url.include?('{%')
+    # JS 문자열 결합(href="'+url+'")·javascript:/data: 스킴은 링크가 아니다
+    next if url.include?("'") || url.start_with?('javascript:', 'data:')
 
     if url.start_with?('/')
       if url.start_with?('/assets/')
@@ -93,7 +98,7 @@ files.select { |f| f.end_with?('.md', '.html') }.each do |path|
         normalized = url.end_with?('/') ? url : url + '/'
         unless valid_permalinks.include?(normalized)
           # Fallback: search any .md front matter for matching permalink
-          unless files.select { |f| f.end_with?('.md') }.any? do |md|
+          unless files.select { |f| f.end_with?('.md', '.html') }.any? do |md|
                    begin
                      text = File.read(md)
                      if (m = text.match(front_matter_re))

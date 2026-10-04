@@ -19,6 +19,22 @@ few enhancements thrown in for good measure:
 [1]: https://mmistakes.github.io/jekyll-theme-basically-basic/
 [2]: https://cloud.githubusercontent.com/assets/1376749/24117647/6dede894-0d81-11e7-9c2c-f19bea45e219.jpg (live preview)
 
+## 로컬 빌드·검증 (goolzy.com 사이트 리포 전용 — 2026-10-03)
+
+이 리포는 Basically Basic 테마의 포크 위에 goolzy.com 사이트를 얹은 것이다(아래 테마 원문 README 는 그대로 둠). GitHub Pages(`master` 브랜치, `github-pages` gem 고정 세트)가 push 시 자동 빌드·배포하므로 **푸시 전에 로컬에서 같은 조건으로 빌드가 통과하는지 확인**한다.
+
+```bash
+scripts/build.sh            # 의존성 없으면 vendor/bundle 에 설치 → jekyll build --safe (JEKYLL_ENV=production, PAGES_ENV=dotcom)
+scripts/build.sh --check    # 빌드 후 scripts/link_check.rb 로 _site 내부 링크 404 검사
+scripts/build.sh serve      # 로컬 미리보기 (jekyll serve --safe)
+```
+
+- **왜 `bundle exec jekyll build` 를 바로 치지 않는가**: 비대화형 셸(Claude Code Bash 도구 등)은 `LANG` 이 비어 Ruby 기본 외부 인코딩이 US-ASCII 가 된다. `github-pages` 가 고정한 구 `sass`(3.7.4) 는 `@import` 파셜을 그 인코딩으로 읽으므로 파셜에 비ASCII 바이트가 하나라도 있으면 `Invalid US-ASCII character "\xE2"` 로 죽는다(2026-10-03 실측 — vendored susy 주석의 `–`·`…`). 스크립트는 `RUBYOPT=-Eutf-8` 로 UTF-8 을 고정하고, 재발 방지로 `_sass` 의 해당 주석은 ASCII 로 치환해 두었다. 테마 파셜을 새로 가져오면 `grep -rlP '[^\x00-\x7F]' _sass` 가 비어 있는지 확인한다.
+- **`PAGES_ENV=dotcom` 이 필요한 이유**: production 모드에서 `github-pages` 의 jekyll-github-metadata 가 `url`/`baseurl` 을 리포 메타데이터로 다시 유도하는데, GitHub.com 모드(`dotcom`)가 아니면 baseurl 이 `/pages/Goolzy` 로 잘못 잡혀 **절대 링크 전부가 깨진 산출물**이 나온다(2026-10-03 실측 — 링크 검사 404 2,100건). 스크립트가 기본으로 넣어 준다. 빌드 중 «GitHub Metadata: No GitHub API authentication could be found» 경고는 정상(토큰 없음, 빌드 성패와 무관). 개발 모드가 필요하면 `JEKYLL_ENV=development scripts/build.sh`(비압축 CSS, url 유도 없음).
+- **GitHub Pages 와의 패리티**: `Gemfile` 의 `github-pages` gem 이 Jekyll·sass·플러그인 버전을 서버와 1:1 로 고정한다 — 로컬만 통과시키려고 `sass-embedded`·최신 `jekyll-sass-converter` 를 명시하지 말 것(로컬은 되고 배포가 깨지는 역전). `--safe`·`JEKYLL_ENV=production` 도 서버와 같은 값이다.
+- `bundle install` 이 시스템 gem 경로 권한으로 막히면 스크립트가 쓰는 `bundle config set --local path 'vendor/bundle'` 로 우회한다(`vendor/`·`.bundle` 은 `.gitignore`).
+- 개발 스크립트가 사이트에 발행되지 않도록 `_config.yml` `exclude` 에 `scripts` 가 들어 있다.
+
 ## Installation
 
 If you're running Jekyll v3.5+ and self-hosting you can quickly install the 

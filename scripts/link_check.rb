@@ -1,4 +1,6 @@
 # frozen_string_literal: true
+# 로케일 미설정 셸(LANG 비어 있음)에서도 파일을 UTF-8 로 읽는다 — 아니면 Ruby 가 US-ASCII 로 읽어 한글·비ASCII 바이트에서 죽는다 (2026-10-03)
+Encoding.default_external = Encoding::UTF_8
 # Simple offline 404 checker for built Jekyll site (_site)
 # - Checks internal links (href/src starting with / or relative) and image paths
 # - Skips external http(s) links
@@ -39,12 +41,19 @@ html_files.each do |file|
 
     # Skip external links
     next if uri.scheme == 'http' || uri.scheme == 'https' || url.start_with?('mailto:') || url.start_with?('tel:')
+    next if url.start_with?('javascript:', 'data:')
+    # 같은 페이지 앵커(#main 등)는 경로가 아니다 — 2026-10-04 이전엔 404 로 세어 394건의 거짓양성을 냈다
+    next if url.start_with?('#')
+
+    # 쿼리스트링(?v=해시 캐시버스터)·프래그먼트는 떼고 경로만 검사한다
+    url_path = url.split('#', 2).first.to_s.split('?', 2).first.to_s
+    next if url_path.empty?
 
     target_path = nil
-    if url.start_with?('/')
-      target_path = File.join(SITE, url)
+    if url_path.start_with?('/')
+      target_path = File.join(SITE, url_path)
     else
-      target_path = File.expand_path(url, base)
+      target_path = File.expand_path(url_path, base)
     end
 
     # If the target is a directory-like link, check index.html as well
