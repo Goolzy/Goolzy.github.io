@@ -582,7 +582,7 @@ Individual date alarms can be cancelled by long-pressing the date card.
 <ul>
 <li><strong>Encrypted transmission</strong>: All communication is encrypted with TLS</li>
 <li><strong>Secure storage</strong>: Managed on Google Cloud infrastructure</li>
-<li><strong>Privacy protection</strong>: Other users cannot access your items</li>
+<li><strong>Privacy protection</strong>: Only you can see items you haven't shared. Content you explicitly share, such as shared documents or signature lists, can be accessed by other signed-in users.</li>
 </ul>
 See the <a href="/inventory/privacy/">Privacy Policy</a> for details.
 </div>
@@ -591,13 +591,13 @@ See the <a href="/inventory/privacy/">Privacy Policy</a> for details.
 <details>
 <summary><strong>Q. Is there a document lock feature?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Yes! You can set a <strong>lock</strong> on items.
+<strong>A.</strong> Only the ability to <strong>unlock</strong> documents that were locked in earlier versions of the app remains. New locks can't be set in the current app.
 <ul>
-<li>Item detail screen → bottom menu → <strong>"Lock"</strong></li>
-<li>Locked items have their content blurred</li>
-<li>Device authentication (Face ID, fingerprint, PIN) is required to view them</li>
+<li>Locked documents are blurred on the app screen</li>
+<li>Enter the <strong>numeric password</strong> chosen when the lock was set to unlock it (once unlocked, the lock is removed)</li>
+<li>If you forget the password, the lock can't be removed — the document can only be deleted</li>
 </ul>
-Keep sensitive information safe.
+⚠️ The lock <strong>only hides the app screen</strong> and does not encrypt the document's contents. We don't recommend using it to store sensitive information such as passwords.
 </div>
 </details>
 
@@ -611,7 +611,6 @@ Keep sensitive information safe.
 <strong>A.</strong> It can be used for many purposes:
 <ul>
 <li><strong>Warranty/receipt management</strong>: With photos and expiry dates</li>
-<li><strong>Password storage</strong>: Kept safe with the lock feature</li>
 <li><strong>Schedule management</strong>: Manage important dates with D-Day alarms</li>
 <li><strong>Collection organization</strong>: Sort and manage with pockets</li>
 <li><strong>Collaboration</strong>: Work with teammates using Shared Logs</li>
@@ -627,14 +626,14 @@ Check out <a href="/inventory/usecases/">100 Use Cases</a> for more ideas!
 <details>
 <summary><strong>Q. I found a bug</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Please report it on the <a href="/inventory/bug-report/">Bug Report</a> page.
+<strong>A.</strong> Please open the app and use the <strong>Bug report</strong> menu at the top of the home screen.
 </div>
 </details>
 
 <details>
 <summary><strong>Q. I want to suggest a new feature</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Please share your idea on the <a href="/inventory/suggest/">Suggestions</a> page.
+<strong>A.</strong> Please open the app and use the <strong>Suggest a feature</strong> menu at the top of the home screen.
 </div>
 </details>
 
@@ -649,7 +648,7 @@ Check out <a href="/inventory/usecases/">100 Use Cases</a> for more ideas!
 
 ---
 
-> 💬 **Didn't find your answer?** Contact us via [Suggestions](/inventory/suggest/) or check the [Manual](/inventory/manual/).
+> 💬 **Didn't find your answer?** Contact us through the **Suggest a feature / Bug report** menu at the top of the home screen, or check the [Manual](/inventory/manual/).
 
 <style>
 details {

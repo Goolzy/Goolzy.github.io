@@ -349,7 +349,7 @@ Wybierz w **Ustawienia → Język** — zmiana obowiązuje natychmiast.
 
 ---
 
-> 📚 **Masz więcej pytań?** Sprawdź [najczęściej zadawane pytania](/inventory/faq/) lub skontaktuj się z nami przez [sugestie](/inventory/suggest/).
+> 📚 **Masz więcej pytań?** Sprawdź [najczęściej zadawane pytania](/inventory/faq/) lub skontaktuj się z nami przez menu **Sugestie** w górnej części ekranu głównego aplikacji.
 
 <style>
 details {

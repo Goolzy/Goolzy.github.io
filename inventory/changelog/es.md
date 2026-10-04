@@ -1505,7 +1505,7 @@ Ingresa fácilmente información especial a través del botón `+` al escribir r
 </details>
 
 <div class="changelog-footer">
-<strong>¡Sugiere nuevas funciones!</strong> Comparte tus ideas en <a href="/inventory/suggest/es/">Sugerencias</a> y las revisaremos activamente.
+<strong>¡Sugiere nuevas funciones!</strong> Comparte tus ideas a través del menú <strong>Sugerir una función</strong> en la parte superior de la pantalla de inicio y las revisaremos activamente.
 </div>
 
 <style>

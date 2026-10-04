@@ -582,7 +582,7 @@ translations:
 <ul>
 <li><strong>加密传输</strong>：所有通信均通过TLS加密</li>
 <li><strong>安全存储</strong>：由Google Cloud基础设施管理</li>
-<li><strong>隐私保护</strong>：其他用户无法访问您的物品</li>
+<li><strong>隐私保护</strong>：未共享的物品只有本人可见。像共享文档、签名列表这类您主动设置共享的内容，登录用户可以访问。</li>
 </ul>
 详情请参阅<a href="/inventory/privacy/">隐私政策</a>。
 </div>
@@ -591,13 +591,13 @@ translations:
 <details>
 <summary><strong>Q. 有文档锁定功能吗？</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> 有！可以为物品设置<strong>锁定</strong>。
+<strong>A.</strong> 目前只保留了解除旧版应用中为文档设置的<strong>锁定</strong>的功能。当前应用无法新设锁定。
 <ul>
-<li>物品详情页面 → 底部菜单 → <strong>"锁定"</strong></li>
-<li>锁定的物品内容会被模糊显示</li>
-<li>查看时需要设备认证（Face ID、指纹、PIN）</li>
+<li>锁定的文档在应用画面中会模糊显示</li>
+<li>输入设置锁定时设定的<strong>数字密码</strong>即可解锁（解锁一次后锁定即被移除）</li>
+<li>忘记密码将无法解除锁定，只能删除该文档</li>
 </ul>
-可以安全地保管敏感信息。
+⚠️ 锁定<strong>只是遮挡应用画面</strong>，不会加密文档内容。不建议用它来保存密码等敏感信息。
 </div>
 </details>
 
@@ -611,7 +611,6 @@ translations:
 <strong>A.</strong> 可用于多种用途：
 <ul>
 <li><strong>保修卡/收据管理</strong>：搭配照片和有效期设置</li>
-<li><strong>密码保存</strong>：通过锁定功能安全保管</li>
 <li><strong>日程管理</strong>：通过D-Day提醒管理重要日程</li>
 <li><strong>收藏品整理</strong>：通过口袋分类管理</li>
 <li><strong>协作</strong>：通过共享日志与团队成员协作</li>
@@ -627,14 +626,14 @@ translations:
 <details>
 <summary><strong>Q. 我发现了一个漏洞</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> 请在<a href="/inventory/bug-report/">漏洞报告</a>页面进行报告。
+<strong>A.</strong> 请打开应用，使用首页顶部的 <strong>报告问题</strong> 菜单。
 </div>
 </details>
 
 <details>
 <summary><strong>Q. 我想提议新功能</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> 请在<a href="/inventory/suggest/">意见反馈</a>页面分享您的想法。
+<strong>A.</strong> 请打开应用，使用首页顶部的 <strong>功能建议</strong> 菜单。
 </div>
 </details>
 
@@ -649,7 +648,7 @@ translations:
 
 ---
 
-> 💬 **没有找到答案？** 请通过[意见反馈](/inventory/suggest/)咨询，或查看[使用手册](/inventory/manual/)。
+> 💬 **没有找到答案？** 请通过首页顶部的 **功能建议 / 报告问题** 菜单咨询，或查看[使用手册](/inventory/manual/)。
 
 <style>
 details {

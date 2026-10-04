@@ -1505,7 +1505,7 @@ Saisissez facilement des informations spéciales via le bouton `+` lors de l'éc
 </details>
 
 <div class="changelog-footer">
-<strong>Suggérez de nouvelles fonctionnalités !</strong> Partagez vos idées sur <a href="/inventory/suggest/fr/">Suggestions</a> et nous les examinerons activement.
+<strong>Suggérez de nouvelles fonctionnalités !</strong> Partagez vos idées via le menu <strong>Proposer une fonction</strong> en haut de l'écran d'accueil et nous les examinerons activement.
 </div>
 
 <style>

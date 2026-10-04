@@ -580,7 +580,7 @@ translations:
 </details>
 
 <div class="changelog-footer">
-<strong>اقترح ميزات جديدة!</strong> شارك أفكارك على <a href="/inventory/suggest/ar/">الاقتراحات</a> وسوف نراجعها بنشاط.
+<strong>اقترح ميزات جديدة!</strong> شارك أفكارك من خلال قائمة <strong>تقديم اقتراح</strong> في أعلى الشاشة الرئيسية للتطبيق وسوف نراجعها بنشاط.
 </div>
 
 <style>

@@ -582,7 +582,7 @@ Alarmes de data individuais podem ser desativados mantendo pressionado o cartão
 <ul>
 <li><strong>Transmissão criptografada</strong>: Toda a comunicação é criptografada com TLS</li>
 <li><strong>Armazenamento seguro</strong>: Gerenciado na infraestrutura do Google Cloud</li>
-<li><strong>Proteção de privacidade</strong>: Outros usuários não podem acessar seus itens</li>
+<li><strong>Proteção de privacidade</strong>: Somente você pode ver os itens que não compartilhou. Conteúdos que você compartilha explicitamente, como documentos compartilhados ou listas de assinaturas, podem ser acessados por outros usuários autenticados.</li>
 </ul>
 Para mais detalhes, consulte a <a href="/inventory/privacy/">política de privacidade</a>.
 </div>
@@ -591,13 +591,13 @@ Para mais detalhes, consulte a <a href="/inventory/privacy/">política de privac
 <details>
 <summary><strong>Q. Existe uma função de bloqueio de documentos?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Sim! Você pode definir um <strong>bloqueio</strong> nos itens.
+<strong>A.</strong> Resta apenas a função de <strong>desbloquear</strong> documentos que foram bloqueados em versões anteriores do app. No app atual não é possível definir novos bloqueios.
 <ul>
-<li>Tela de detalhes do item → menu inferior → <strong>"Bloquear"</strong></li>
-<li>O conteúdo dos itens bloqueados fica desfocado</li>
-<li>Para visualizá-lo é necessária a autenticação do dispositivo (Face ID, digital, PIN)</li>
+<li>Os documentos bloqueados ficam desfocados na tela do app</li>
+<li>Digite a <strong>senha numérica</strong> definida ao bloquear para desbloqueá-lo (depois de desbloqueado, o bloqueio é removido)</li>
+<li>Se você esquecer a senha, não será possível remover o bloqueio; só será possível excluir o documento</li>
 </ul>
-Assim você guarda informações sensíveis com segurança.
+⚠️ O bloqueio <strong>apenas oculta a tela do app</strong> e não criptografa o conteúdo do documento. Não recomendamos usá-lo para guardar informações sensíveis, como senhas.
 </div>
 </details>
 
@@ -611,7 +611,6 @@ Assim você guarda informações sensíveis com segurança.
 <strong>A.</strong> Para os mais diversos usos:
 <ul>
 <li><strong>Gestão de garantias/recibos</strong>: Com foto e data de expiração</li>
-<li><strong>Guardar senhas</strong>: Armazenamento seguro com a função de bloqueio</li>
 <li><strong>Gestão de agenda</strong>: Acompanhe datas importantes com o alarme do D-Day</li>
 <li><strong>Organização de coleções</strong>: Classifique e gerencie com Pockets</li>
 <li><strong>Trabalho em equipe</strong>: Colabore com o time pelo registro compartilhado</li>
@@ -627,14 +626,14 @@ Veja mais ideias em <a href="/inventory/usecases/">100 formas de uso</a>!
 <details>
 <summary><strong>Q. Encontrei um bug</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Informe-o na página <a href="/inventory/bug-report/">Relatar bug</a>.
+<strong>A.</strong> Abra o app e use o menu <strong>Relatar um erro</strong> no topo da tela inicial.
 </div>
 </details>
 
 <details>
 <summary><strong>Q. Quero sugerir uma nova função</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Compartilhe sua ideia na página <a href="/inventory/suggest/">Sugestões</a>.
+<strong>A.</strong> Abra o app e use o menu <strong>Sugerir um recurso</strong> no topo da tela inicial.
 </div>
 </details>
 
@@ -649,7 +648,7 @@ Veja mais ideias em <a href="/inventory/usecases/">100 formas de uso</a>!
 
 ---
 
-> 💬 **Não encontrou a resposta?** Fale conosco pela página de [Sugestões](/inventory/suggest/) ou confira o [manual](/inventory/manual/).
+> 💬 **Não encontrou a resposta?** Fale conosco pelo menu **Sugerir um recurso / Relatar um erro** no topo da tela inicial, ou confira o [manual](/inventory/manual/).
 
 <style>
 details {

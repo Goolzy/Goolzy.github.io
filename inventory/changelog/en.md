@@ -1508,7 +1508,7 @@ Easily input special information via `+` button when writing logs:
 </details>
 
 <div class="changelog-footer">
-<strong>Suggest new features!</strong> Share your ideas at <a href="/inventory/suggest/en/">Suggestions</a> and we'll actively review them.
+<strong>Suggest new features!</strong> Share your ideas through the <strong>Suggest a feature</strong> menu at the top of the home screen and we'll actively review them.
 </div>
 
 <style>

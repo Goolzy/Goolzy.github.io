@@ -349,7 +349,7 @@ Mağazadan ihtiyacınız olan öğeleri satın alabilirsiniz.
 
 ---
 
-> 📚 **Başka sorunuz mu var?** [Sık sorulan sorular](/inventory/faq/) sayfasına bakın veya [öneri gönder](/inventory/suggest/) üzerinden bize ulaşın.
+> 📚 **Başka sorunuz mu var?** [Sık sorulan sorular](/inventory/faq/) sayfasına bakın veya uygulamanın ana ekranının üst kısmındaki **öneri gönder** menüsü üzerinden bize ulaşın.
 
 <style>
 details {

@@ -582,7 +582,7 @@ Pour désactiver une alarme de date individuelle, appuyez longuement sur la cart
 <ul>
 <li><strong>Transfert chiffré</strong> : Toutes les communications sont chiffrées en TLS</li>
 <li><strong>Stockage sécurisé</strong> : Géré sur l'infrastructure Google Cloud</li>
-<li><strong>Protection de la vie privée</strong> : Les autres utilisateurs ne peuvent pas accéder à vos objets</li>
+<li><strong>Protection de la vie privée</strong> : Vous seul pouvez voir les objets que vous n'avez pas partagés. Le contenu que vous partagez explicitement, comme les documents partagés ou les listes de signatures, est accessible aux autres utilisateurs connectés.</li>
 </ul>
 Pour en savoir plus, consultez la <a href="/inventory/privacy/">politique de confidentialité</a>.
 </div>
@@ -591,13 +591,13 @@ Pour en savoir plus, consultez la <a href="/inventory/privacy/">politique de con
 <details>
 <summary><strong>Q. Existe-t-il une fonction de verrouillage des documents ?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Oui ! Vous pouvez <strong>verrouiller</strong> un objet.
+<strong>A.</strong> Seule la possibilité de <strong>déverrouiller</strong> les documents verrouillés dans les versions précédentes de l'application est conservée. Il n'est plus possible de créer un nouveau verrouillage dans l'application actuelle.
 <ul>
-<li>Écran de détail de l'objet → menu inférieur → <strong>« Verrouiller »</strong></li>
-<li>Le contenu des objets verrouillés est flouté</li>
-<li>Pour le consulter, une authentification de l'appareil (Face ID, empreinte, code PIN) est requise</li>
+<li>Les documents verrouillés sont floutés à l'écran de l'application</li>
+<li>Saisissez le <strong>mot de passe numérique</strong> défini lors du verrouillage pour le déverrouiller (une fois déverrouillé, le verrouillage est supprimé)</li>
+<li>En cas d'oubli du mot de passe, le verrouillage ne peut pas être levé : seule la suppression du document est possible</li>
 </ul>
-Vous pouvez ainsi conserver vos informations sensibles en toute sécurité.
+⚠️ Le verrouillage <strong>masque uniquement l'écran de l'application</strong> et ne chiffre pas le contenu du document. Nous ne recommandons pas de l'utiliser pour conserver des informations sensibles comme des mots de passe.
 </div>
 </details>
 
@@ -611,7 +611,6 @@ Vous pouvez ainsi conserver vos informations sensibles en toute sécurité.
 <strong>A.</strong> À de nombreux usages :
 <ul>
 <li><strong>Gestion de garanties/reçus</strong> : Photo et date d'expiration</li>
-<li><strong>Stockage de mots de passe</strong> : Conservation sécurisée grâce au verrouillage</li>
 <li><strong>Gestion d'agenda</strong> : Suivi des échéances importantes avec l'alarme D-Day</li>
 <li><strong>Organisation de collections</strong> : Classement et gestion avec les Pockets</li>
 <li><strong>Travail collaboratif</strong> : Coopération en équipe via le journal partagé</li>
@@ -627,14 +626,14 @@ Découvrez plus d'idées dans <a href="/inventory/usecases/">100 façons d'utili
 <details>
 <summary><strong>Q. J'ai trouvé un bug</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Merci de le signaler sur la page <a href="/inventory/bug-report/">Signaler un bug</a>.
+<strong>A.</strong> Veuillez ouvrir l'application et utiliser le menu <strong>Signaler un bug</strong> en haut de l'écran d'accueil.
 </div>
 </details>
 
 <details>
 <summary><strong>Q. Je souhaite proposer une nouvelle fonctionnalité</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> Partagez votre idée sur la page <a href="/inventory/suggest/">Suggestions</a>.
+<strong>A.</strong> Veuillez ouvrir l'application et utiliser le menu <strong>Proposer une fonction</strong> en haut de l'écran d'accueil.
 </div>
 </details>
 
@@ -649,7 +648,7 @@ Découvrez plus d'idées dans <a href="/inventory/usecases/">100 façons d'utili
 
 ---
 
-> 💬 **Vous n'avez pas trouvé de réponse ?** Contactez-nous via la page [Suggestions](/inventory/suggest/) ou consultez le [manuel](/inventory/manual/).
+> 💬 **Vous n'avez pas trouvé de réponse ?** Contactez-nous via le menu **Proposer une fonction / Signaler un bug** en haut de l'écran d'accueil, ou consultez le [manuel](/inventory/manual/).
 
 <style>
 details {

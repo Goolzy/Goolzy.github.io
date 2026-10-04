@@ -349,7 +349,7 @@ translations:
 
 ---
 
-> 📚 **还有其他疑问吗？** 请查看[常见问题](/inventory/faq/)，或通过[意见反馈](/inventory/suggest/)与我们联系。
+> 📚 **还有其他疑问吗？** 请查看[常见问题](/inventory/faq/)，或通过首页顶部的 **功能建议 / 报告问题** 菜单与我们联系。
 
 <style>
 details {

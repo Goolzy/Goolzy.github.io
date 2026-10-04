@@ -806,4 +806,4 @@ En cas d'échec d'une requête API, une erreur est renvoyée au format suivant :
 
 ## Contact
 
-En cas de problème avec l'utilisation de l'API, contactez-nous via la page [Faire une suggestion](/inventory/suggest/).
+En cas de problème avec l'utilisation de l'API, contactez-nous via le menu **Signaler un bug** en haut de l'écran d'accueil.

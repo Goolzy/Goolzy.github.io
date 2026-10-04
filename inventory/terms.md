@@ -290,7 +290,7 @@ permalink: /inventory/terms/
 
 ---
 
-> 📧 **문의사항**: 본 약관에 대한 문의사항이 있으시면 [건의하기](/inventory/suggest/) 페이지 또는 이메일(captain@goolzy.com)을 통해 연락해 주시기 바랍니다.
+> 📧 **문의사항**: 본 약관에 대한 문의사항이 있으시면 앱 내 기능 제안·버그 제보 메뉴 또는 이메일(captain@goolzy.com)을 통해 연락해 주시기 바랍니다.
 
 ---
 

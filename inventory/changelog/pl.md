@@ -576,7 +576,7 @@ Usprawniony proces kasowania dla kolejnych zakupów tego samego elementu.
 </details>
 
 <div class="changelog-footer">
-<strong>Zaproponuj nowe funkcje!</strong> Podziel się pomysłami na <a href="/inventory/suggest/pl/">Sugestie</a> i aktywnie je przejrzymy.
+<strong>Zaproponuj nowe funkcje!</strong> Podziel się pomysłami przez menu <strong>Sugestie</strong> w górnej części ekranu głównego aplikacji, a aktywnie je przejrzymy.
 </div>
 
 <style>

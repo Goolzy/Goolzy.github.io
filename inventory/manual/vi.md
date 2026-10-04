@@ -349,7 +349,7 @@ Chọn trong **Cài đặt → Ngôn ngữ** để áp dụng ngay lập tức.
 
 ---
 
-> 📚 **Bạn còn thắc mắc?** Xem [câu hỏi thường gặp](/inventory/faq/) hoặc liên hệ qua [gửi góp ý](/inventory/suggest/).
+> 📚 **Bạn còn thắc mắc?** Xem [câu hỏi thường gặp](/inventory/faq/) hoặc liên hệ qua menu **gửi góp ý** ở đầu màn hình chính của ứng dụng.
 
 <style>
 details {

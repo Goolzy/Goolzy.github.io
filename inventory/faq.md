@@ -582,7 +582,7 @@ QR 코드에는 이메일 주소가 담겨있어 직접 입력 없이 빠르게 
 <ul>
 <li><strong>암호화 전송</strong>: 모든 통신은 TLS로 암호화됩니다</li>
 <li><strong>안전한 저장</strong>: Google Cloud 인프라에서 관리됩니다</li>
-<li><strong>개인정보 보호</strong>: 다른 사용자는 귀하의 아이템에 접근할 수 없습니다</li>
+<li><strong>개인정보 보호</strong>: 공유하지 않은 아이템은 본인만 볼 수 있습니다. 다만 공유 문서·서명 목록처럼 직접 공유를 설정한 콘텐츠는 로그인한 사용자가 접근할 수 있습니다.</li>
 </ul>
 자세한 내용은 <a href="/inventory/privacy/">개인정보처리방침</a>을 참고하세요.
 </div>
@@ -591,13 +591,13 @@ QR 코드에는 이메일 주소가 담겨있어 직접 입력 없이 빠르게 
 <details>
 <summary><strong>Q. 문서 잠금 기능이 있나요?</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> 네! 아이템에 <strong>잠금</strong>을 설정할 수 있습니다.
+<strong>A.</strong> 이전 버전 앱에서 문서에 걸어 둔 <strong>잠금</strong>을 푸는 기능만 남아 있습니다. 현재 앱에서는 잠금을 새로 걸 수 없습니다.
 <ul>
-<li>아이템 상세 화면 → 하단 메뉴 → <strong>"잠금"</strong></li>
-<li>잠금된 아이템은 내용이 블러 처리됩니다</li>
-<li>확인하려면 기기 인증(Face ID, 지문, PIN)이 필요합니다</li>
+<li>잠긴 문서는 앱 화면에서 흐리게 가려집니다</li>
+<li>잠금을 걸 때 정한 <strong>숫자 비밀번호</strong>를 입력하면 풀립니다(한 번 풀면 잠금이 사라집니다)</li>
+<li>비밀번호를 잊으면 잠금을 풀 수 없고, 문서 삭제만 가능합니다</li>
 </ul>
-민감한 정보를 안전하게 보관할 수 있습니다.
+⚠️ 잠금은 <strong>앱 화면만 가리는 기능</strong>이며 문서 내용을 암호화하지 않습니다. 비밀번호 같은 민감한 정보를 보관하는 용도로는 권하지 않습니다.
 </div>
 </details>
 
@@ -611,7 +611,6 @@ QR 코드에는 이메일 주소가 담겨있어 직접 입력 없이 빠르게 
 <strong>A.</strong> 다양한 용도로 활용할 수 있습니다:
 <ul>
 <li><strong>보증서/영수증 관리</strong>: 사진과 유효기간 설정</li>
-<li><strong>비밀번호 저장</strong>: 잠금 기능으로 안전하게 보관</li>
 <li><strong>일정 관리</strong>: D-Day 알람으로 중요 일정 관리</li>
 <li><strong>수집품 정리</strong>: 포켓으로 분류하여 관리</li>
 <li><strong>공동 작업</strong>: 공유로그로 팀원과 협업</li>
@@ -627,14 +626,14 @@ QR 코드에는 이메일 주소가 담겨있어 직접 입력 없이 빠르게 
 <details>
 <summary><strong>Q. 버그를 발견했어요</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> <a href="/inventory/bug-report/">버그 리포트</a> 페이지에서 신고해주세요.
+<strong>A.</strong> 앱을 열고 홈 화면 상단의 <strong>버그 제보</strong> 메뉴를 이용해주세요.
 </div>
 </details>
 
 <details>
 <summary><strong>Q. 새로운 기능을 제안하고 싶어요</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> <a href="/inventory/suggest/">건의하기</a> 페이지에서 아이디어를 공유해주세요.
+<strong>A.</strong> 앱을 열고 홈 화면 상단의 <strong>기능 제안</strong> 메뉴를 이용해주세요.
 </div>
 </details>
 
@@ -649,7 +648,7 @@ QR 코드에는 이메일 주소가 담겨있어 직접 입력 없이 빠르게 
 
 ---
 
-> 💬 **답변을 찾지 못하셨나요?** [건의하기](/inventory/suggest/)를 통해 문의하거나 [매뉴얼](/inventory/manual/)을 확인해보세요.
+> 💬 **답변을 찾지 못하셨나요?** 앱 홈 화면 상단의 **기능 제안·버그 제보** 메뉴로 문의하거나 [매뉴얼](/inventory/manual/)을 확인해보세요.
 
 <style>
 details {

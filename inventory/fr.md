@@ -121,8 +121,6 @@ Créez des articles à partir de papier et envoyez-les à votre destinataire via
 </div>
 
 <div style="display: flex; gap: .75rem; flex-wrap: wrap; justify-content: center; margin: 1rem 0;">
-  <a href="/inventory/suggest/fr/" style="display: inline-block; background: rgba(168,85,247,0.3); border: 1px solid rgba(168,85,247,0.5); color: white; padding: .6rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 500;">💬 Suggérer</a>
-  <a href="/inventory/bug-report/fr/" style="display: inline-block; background: rgba(217,70,239,0.3); border: 1px solid rgba(217,70,239,0.5); color: white; padding: .6rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 500;">🐛 Signaler un bug</a>
   <a href="mailto:captain@goolzy.com" style="display: inline-block; background: rgba(59,130,246,0.3); border: 1px solid rgba(59,130,246,0.5); color: white; padding: .6rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 500;">📧 Demande API</a>
 </div>
 

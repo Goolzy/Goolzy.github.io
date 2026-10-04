@@ -582,7 +582,7 @@ QRコードにはメールアドレスが含まれており、直接入力なし
 <ul>
 <li><strong>暗号化通信</strong>：すべての通信はTLSで暗号化されます</li>
 <li><strong>安全な保存</strong>：Google Cloudインフラで管理されます</li>
-<li><strong>個人情報保護</strong>：他のユーザーはあなたのアイテムにアクセスできません</li>
+<li><strong>個人情報保護</strong>：共有していないアイテムは本人のみが見られます。共有文書や署名リストのように自分で共有を設定したコンテンツは、ログインした他のユーザーがアクセスできます。</li>
 </ul>
 詳しくは<a href="/inventory/privacy/">プライバシーポリシー</a>をご覧ください。
 </div>
@@ -591,13 +591,13 @@ QRコードにはメールアドレスが含まれており、直接入力なし
 <details>
 <summary><strong>Q. 文書のロック機能はありますか？</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> はい！アイテムに<strong>ロック</strong>を設定できます。
+<strong>A.</strong> 以前のバージョンのアプリで文書にかけた<strong>ロック</strong>を解除する機能のみ残っています。現在のアプリでは新しくロックをかけることはできません。
 <ul>
-<li>アイテム詳細画面 → 下部メニュー → <strong>「ロック」</strong></li>
-<li>ロックされたアイテムは内容がぼかし表示されます</li>
-<li>確認するには端末認証（Face ID、指紋、PIN）が必要です</li>
+<li>ロックされた文書はアプリ画面でぼかし表示されます</li>
+<li>ロック設定時に決めた<strong>数字のパスワード</strong>を入力すると解除されます（一度解除するとロックはなくなります）</li>
+<li>パスワードを忘れるとロックは解除できず、文書の削除のみ可能です</li>
 </ul>
-機密情報を安全に保管できます。
+⚠️ ロックは<strong>アプリの画面を隠すだけの機能</strong>で、文書の内容は暗号化されません。パスワードなどの機密情報の保管にはおすすめしません。
 </div>
 </details>
 
@@ -611,7 +611,6 @@ QRコードにはメールアドレスが含まれており、直接入力なし
 <strong>A.</strong> さまざまな用途で活用できます：
 <ul>
 <li><strong>保証書/レシート管理</strong>：写真と有効期限の設定</li>
-<li><strong>パスワード保存</strong>：ロック機能で安全に保管</li>
 <li><strong>スケジュール管理</strong>：D-Dayアラームで重要な予定を管理</li>
 <li><strong>コレクション整理</strong>：ポケットで分類して管理</li>
 <li><strong>共同作業</strong>：共有ログでチームメンバーと協業</li>
@@ -627,14 +626,14 @@ QRコードにはメールアドレスが含まれており、直接入力なし
 <details>
 <summary><strong>Q. バグを見つけました</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> <a href="/inventory/bug-report/">バグレポート</a>ページから報告してください。
+<strong>A.</strong> アプリを開き、ホーム画面上部の<strong>不具合を報告</strong>メニューをご利用ください。
 </div>
 </details>
 
 <details>
 <summary><strong>Q. 新しい機能を提案したいです</strong></summary>
 <div class="answer-content">
-<strong>A.</strong> <a href="/inventory/suggest/">ご意見・ご要望</a>ページからアイデアを共有してください。
+<strong>A.</strong> アプリを開き、ホーム画面上部の<strong>機能を提案</strong>メニューをご利用ください。
 </div>
 </details>
 
@@ -649,7 +648,7 @@ QRコードにはメールアドレスが含まれており、直接入力なし
 
 ---
 
-> 💬 **答えが見つかりませんでしたか？** [ご意見・ご要望](/inventory/suggest/)からお問い合わせいただくか、[マニュアル](/inventory/manual/)をご確認ください。
+> 💬 **答えが見つかりませんでしたか？** ホーム画面上部の**機能を提案・不具合を報告**メニューからお問い合わせいただくか、[マニュアル](/inventory/manual/)をご確認ください。
 
 <style>
 details {

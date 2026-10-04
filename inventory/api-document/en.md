@@ -806,4 +806,4 @@ When an API request fails, errors are returned in this format:
 
 ## Contact
 
-If you have issues using the API, please contact us through the [Suggest](/inventory/suggest/en/) page.
+If you have issues using the API, please contact us through the **Bug report** menu at the top of the home screen.

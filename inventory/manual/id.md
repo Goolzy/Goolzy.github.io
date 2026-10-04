@@ -349,7 +349,7 @@ Pilih di **Pengaturan → Bahasa** dan langsung diterapkan.
 
 ---
 
-> 📚 **Masih ada pertanyaan?** Lihat [Pertanyaan yang Sering Diajukan](/inventory/faq/) atau hubungi kami lewat [Kirim saran](/inventory/suggest/).
+> 📚 **Masih ada pertanyaan?** Lihat [Pertanyaan yang Sering Diajukan](/inventory/faq/) atau hubungi kami lewat menu **Kirim saran** di bagian atas layar utama aplikasi.
 
 <style>
 details {

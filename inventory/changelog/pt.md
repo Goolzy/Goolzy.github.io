@@ -1482,7 +1482,7 @@ Insira facilmente informações especiais via botão `+` ao escrever registros:
 </details>
 
 <div class="changelog-footer">
-<strong>Sugira novas funcionalidades!</strong> Compartilhe suas ideias em <a href="/inventory/suggest/pt/">Sugestões</a> e iremos analisá-las ativamente.
+<strong>Sugira novas funcionalidades!</strong> Compartilhe suas ideias pelo menu <strong>Sugerir um recurso</strong> no topo da tela inicial e iremos analisá-las ativamente.
 </div>
 
 <style>

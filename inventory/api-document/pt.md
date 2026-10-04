@@ -806,4 +806,4 @@ Se uma solicitação à API falhar, um erro é retornado no seguinte formato:
 
 ## Contato
 
-Se tiver problemas com o uso da API, entre em contato conosco pela página [Enviar sugestão](/inventory/suggest/).
+Se tiver problemas com o uso da API, entre em contato conosco pelo menu **Relatar um erro** no topo da tela inicial.

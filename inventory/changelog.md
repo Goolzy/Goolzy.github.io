@@ -1504,7 +1504,7 @@ Android 15 이상 기기에서 하단 시스템 네비게이션 바가 콘텐츠
 </details>
 
 <div class="changelog-footer">
-<strong>새로운 기능을 제안해주세요!</strong> <a href="/inventory/suggest/">건의하기</a>에서 아이디어를 공유해주시면 적극 검토하겠습니다.
+<strong>새로운 기능을 제안해주세요!</strong> 앱 홈 화면 상단의 <strong>기능 제안</strong> 메뉴로 아이디어를 공유해주시면 적극 검토하겠습니다.
 </div>
 
 <style>

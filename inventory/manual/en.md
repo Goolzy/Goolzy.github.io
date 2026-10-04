@@ -349,7 +349,7 @@ Select one in **Settings → Language** and it is applied immediately.
 
 ---
 
-> 📚 **Have more questions?** Check the [FAQ](/inventory/faq/) or contact us through [Suggestions](/inventory/suggest/).
+> 📚 **Have more questions?** Check the [FAQ](/inventory/faq/) or contact us through the **Suggest a feature / Bug report** menu at the top of the home screen.
 
 <style>
 details {
