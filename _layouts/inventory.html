@@ -56,29 +56,30 @@ hide_sidebar: true
     {% assign nav_manual = '手册' %}
     {% assign nav_usecases = '使用案例' %}
     {% assign nav_faq = '常见问题' %}
-  {% else %}
+  {% when 'ko' %}
     {% assign nav_home = '홈' %}
     {% assign nav_changelog = '버전 로그' %}
     {% assign nav_manual = '매뉴얼' %}
     {% assign nav_usecases = '활용방법' %}
     {% assign nav_faq = '자주하는 질문' %}
+  {% else %}
+    {% comment %} 261004: 8언어 밖의 언어(changelog·manual 17언어 확장분 ar hi id it pl ru th tr vi)는 영어 라벨 — 예전엔 한국어로 떨어졌다 {% endcomment %}
+    {% assign nav_home = 'Home' %}
+    {% assign nav_changelog = 'Changelog' %}
+    {% assign nav_manual = 'Manual' %}
+    {% assign nav_usecases = 'Use Cases' %}
+    {% assign nav_faq = 'FAQ' %}
 {% endcase %}
-
-{% if current_lang == 'ko' %}
-  {% assign lang_suffix = '' %}
-{% else %}
-  {% assign lang_suffix = current_lang | prepend: '/' %}
-{% endif %}
 
 <div id="inventory-root">
   <div class="inventory-frame">
-    <!-- Navigation -->
+    <!-- Navigation — 링크는 inventory-nav-link.html 이 언어별 페이지 존재를 확인해 영어→한국어로 폴백한다 (261004) -->
     <nav class="neumorphic-nav">
-      <a href="/inventory{{ lang_suffix }}/" class="nav-link">{{ nav_home }}</a>
-      <a href="/inventory/changelog{{ lang_suffix }}/" class="nav-link">{{ nav_changelog }}</a>
-      <a href="/inventory/manual{{ lang_suffix }}/" class="nav-link">{{ nav_manual }}</a>
-      <a href="/inventory/usecases{{ lang_suffix }}/" class="nav-link">{{ nav_usecases }}</a>
-      <a href="/inventory/faq{{ lang_suffix }}/" class="nav-link">{{ nav_faq }}</a>
+      {% include inventory-nav-link.html section="" label=nav_home %}
+      {% include inventory-nav-link.html section="changelog" label=nav_changelog %}
+      {% include inventory-nav-link.html section="manual" label=nav_manual %}
+      {% include inventory-nav-link.html section="usecases" label=nav_usecases %}
+      {% include inventory-nav-link.html section="faq" label=nav_faq %}
     </nav>
 
     <!-- Content -->

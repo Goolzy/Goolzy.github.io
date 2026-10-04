@@ -1,0 +1,25 @@
+{% comment %}
+  inventory 섹션 상단 메뉴 링크 1개 — 언어별 페이지 존재 확인 + 폴백 (2026-10-04)
+  사용: {% include inventory-nav-link.html section="usecases" label=nav_usecases %}   (section="" = 랜딩 /inventory/)
+  규칙: /inventory/{section}/{lang}/ 가 site.pages 에 실제로 있으면 그것, 없으면 영어(/en/), 영어도 없으면 한국어(무접미).
+  배경: changelog·manual 만 17언어이고 랜딩·usecases·faq 는 8언어(사이트 표준)라, 9개 추가 언어(ar hi id it pl ru th tr vi)
+  페이지의 메뉴가 존재하지 않는 /inventory/usecases/vi/ 같은 주소를 가리켜 내부 404 를 냈다.
+{% endcomment %}
+{%- assign nl_base = "/inventory/" -%}
+{%- if include.section and include.section != "" -%}
+  {%- assign nl_base = nl_base | append: include.section | append: "/" -%}
+{%- endif -%}
+{%- assign nl_lang = page.lang | default: 'ko' -%}
+{%- assign nl_url = nl_base -%}
+{%- if nl_lang != 'ko' -%}
+  {%- assign nl_url = nl_base | append: nl_lang | append: "/" -%}
+  {%- assign nl_hit = site.pages | where: "url", nl_url | first -%}
+  {%- unless nl_hit -%}
+    {%- assign nl_url = nl_base | append: "en/" -%}
+    {%- assign nl_hit = site.pages | where: "url", nl_url | first -%}
+    {%- unless nl_hit -%}
+      {%- assign nl_url = nl_base -%}
+    {%- endunless -%}
+  {%- endunless -%}
+{%- endif -%}
+<a href="{{ nl_url }}" class="nav-link">{{ include.label }}</a>

@@ -91,8 +91,12 @@ firebase:
 # - apple_touch_icon: 180px iOS icon
 logo: "/assets/images/logo-icon.png" # circle icon (purple/green)
 logo_wordmark: "/assets/images/logo-wordmark.png" # horizontal wordmark
-logo_wordmark_inventory: "/assets/images/inventory-wordmark.png" # inventory section wordmark
-logo_masthead_inventory: "/assets/images/app-icon-transparent-256-256.png" # inventory masthead icon
+# 261004: logo_wordmark_inventory 키 제거 — 가리키던 inventory-wordmark.png 는 "<BINARY_IMAGE_PLACEHOLDER>" 텍스트 26바이트였다(이미지가 아님).
+# 261004: 원래 값 /assets/images/app-icon-transparent-256-256.png 은 리포 이력 어디에도 없는 파일이라
+#   inventory 섹션 101페이지가 404 를 한 번씩 내고 onerror 로 Goolzy 워드마크를 그리고 있었다.
+#   보이는 결과를 바꾸지 않고 404 만 없애기 위해 그 워드마크를 직접 가리킨다.
+#   인벤토리 전용 마스트헤드 로고는 디자인 결정 사항 — 볼트 ER(261004 인벤토리 섹션 마스트헤드 전용 로고) 참조.
+logo_masthead_inventory: "/assets/images/logo-wordmark.png" # inventory masthead (현재 표시와 동일)
 logo_icon: "/assets/images/favicon.png"
 apple_touch_icon: "/assets/images/apple-touch-icon.png"
 search: # true, false (default)
