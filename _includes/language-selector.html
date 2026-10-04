@@ -23,41 +23,48 @@
   </button>
 
   <ul class="lang-dropdown" role="menu">
+    {% comment %}
+      2026-10-04 — 언어별 URL 결정 규칙 (내부 404 100건+ 의 원인이던 추정 fallback 교정)
+      1) 현재 언어 → page.url
+      2) page.translations[lang] 이 있으면 그 값(명시 번역, 그대로 신뢰 — 오타는 link_check 가 잡게 둔다)
+      3) 없으면 /섹션/언어/ 관례로 추정하되, 추정 URL 은 그 페이지가 실제로 존재할 때만(site.pages 조회) 렌더한다.
+         예전 fallback 은 /contactzh/(슬래시 누락)·/privacy/en/·/team/ja/ 처럼 없는 주소를 만들어 냈다.
+         번역이 없는 언어는 목록에서 빠진다 — 없는 페이지로 보내지 않는다.
+    {% endcomment %}
+    {% assign strip_langs = "en,ja,de,fr,es,pt,zh,ar,hi,id,it,pl,ru,th,tr,vi" | split: "," %}
+    {% assign base_path = page.url %}
+    {% for l in strip_langs %}
+      {% assign seg = l | prepend: "/" | append: "/" %}
+      {% assign base_path = base_path | replace: seg, "/" %}
+    {% endfor %}
+
     {% for lang in langs %}
       {% assign is_current = false %}
       {% if lang == current_lang %}
         {% assign is_current = true %}
       {% endif %}
 
-      {% comment %} Determine the URL for this language {% endcomment %}
       {% assign lang_url = "" %}
-      {% if page.translations[lang] %}
+      {% assign lang_available = false %}
+      {% if is_current %}
+        {% assign lang_url = page.url %}
+        {% assign lang_available = true %}
+      {% elsif page.translations[lang] %}
         {% assign lang_url = page.translations[lang] %}
-      {% elsif lang == 'ko' %}
-        {% comment %} Korean is the default, use base path {% endcomment %}
-        {% assign base_path = page.url | remove: "/en/" | remove: "/ja/" | remove: "/de/" | remove: "/fr/" | remove: "/es/" | remove: "/pt/" | remove: "/zh/" %}
-        {% assign lang_url = base_path %}
+        {% assign lang_available = true %}
       {% else %}
-        {% comment %} Append language code to path {% endcomment %}
-        {% assign base_path = page.url | remove: "/en/" | remove: "/ja/" | remove: "/de/" | remove: "/fr/" | remove: "/es/" | remove: "/pt/" | remove: "/zh/" %}
-        {% if base_path == "/" %}
-          {% assign lang_url = "/" | append: lang | append: "/" %}
+        {% if lang == 'ko' %}
+          {% assign lang_url = base_path %}
         {% else %}
-          {% assign clean_path = base_path | remove_first: "/" %}
-          {% if clean_path contains "/" %}
-            {% assign path_parts = clean_path | split: "/" %}
-            {% assign lang_url = "/" | append: path_parts[0] | append: "/" | append: lang | append: "/" %}
-            {% for i in (1..10) %}
-              {% if path_parts[i] %}
-                {% assign lang_url = lang_url | append: path_parts[i] | append: "/" %}
-              {% endif %}
-            {% endfor %}
-          {% else %}
-            {% assign lang_url = "/" | append: clean_path | append: lang | append: "/" %}
-          {% endif %}
+          {% assign lang_url = base_path | append: lang | append: "/" %}
+        {% endif %}
+        {% assign lang_page = site.pages | where: "url", lang_url | first %}
+        {% if lang_page %}
+          {% assign lang_available = true %}
         {% endif %}
       {% endif %}
 
+      {% if lang_available %}
       <li role="menuitem">
         <a href="{{ lang_url | relative_url }}"
            class="lang-option{% if is_current %} active{% endif %}"
@@ -67,6 +74,7 @@
           <span class="lang-name">{{ lang_names[forloop.index0] }}</span>
         </a>
       </li>
+      {% endif %}
     {% endfor %}
   </ul>
 </div>

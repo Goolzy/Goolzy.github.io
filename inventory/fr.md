@@ -130,7 +130,7 @@ Créez des articles à partir de papier et envoyez-les à votre destinataire via
 
 <p style="text-align: center; color: rgba(255,255,255,0.6); font-size: .9rem; margin: 1rem 0;">🌍 8 langues prises en charge : Français, English, 한국어, 日本語, Deutsch, Español, Português, 中文</p>
 
-> 🔒 **Protection de la vie privée** : Vos données sont cryptées et protégées. Voir notre [Politique de confidentialité](/inventory/privacy/fr/) pour plus de détails.
+> 🔒 **Protection de la vie privée** : Vos données sont cryptées et protégées. Voir notre [Politique de confidentialité](/inventory/privacy/) pour plus de détails.
 
 ---
 
