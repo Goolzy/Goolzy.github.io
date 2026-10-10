@@ -925,6 +925,8 @@ a.platform-icon {
 <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+<!-- 채팅 작성자 식별·표시·직렬화 정본 (이메일 원문을 저장하지 않는다) -->
+<script src="/assets/js/inline-chat-identity.js?v=1"></script>
 
 <script>
 // Firebase 초기화
@@ -940,25 +942,9 @@ firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 const database = firebase.database();
 
-// 이메일 마스킹 함수
-// 로컬 파트만 마스킹 (도메인은 그대로)
-// 1-2자: 첫 1자, 3-4자: 첫 2자, 5자+: 첫 3자
-function maskEmail(email) {
-  if (!email || !email.includes('@')) return email;
-
-  const [local, domain] = email.split('@');
-  let masked;
-
-  if (local.length <= 2) {
-    masked = local[0] + '*'.repeat(local.length - 1 || 1);
-  } else if (local.length <= 4) {
-    masked = local.slice(0, 2) + '*'.repeat(local.length - 2);
-  } else {
-    masked = local.slice(0, 3) + '*'.repeat(local.length - 3);
-  }
-
-  return masked + '@' + domain;
-}
+// 작성자 표시·직렬화는 /assets/js/inline-chat-identity.js 가 정본이다.
+// 메시지에는 이메일 원문 대신 uid 와 가린 이름 조각(prefix·domain)만 저장한다.
+const ChatIdentity = window.InlineChatIdentity;
 
 // 실시간 채팅
 (function() {
@@ -973,7 +959,7 @@ function maskEmail(email) {
 
 
   let currentUser = null;
-  let messagesRef = database.ref('inline-chat/messages');
+  let messagesRef = database.ref(ChatIdentity.MESSAGES_PATH);
   let lastMessageTime = 0; // 마지막 메시지 전송 시간
 
   // 로그인 오버레이 생성
@@ -983,7 +969,7 @@ function maskEmail(email) {
     overlay.innerHTML = `
       <div class="login-overlay-icon">🔒</div>
       <div class="login-overlay-text">
-        채팅에 참여하려면<br>로그인이 필요합니다
+        채팅을 보고 참여하려면<br>로그인이 필요합니다
       </div>
       <button class="login-overlay-btn" onclick="window.location.href='/join/?return=/'">
         로그인하기
@@ -1003,10 +989,16 @@ function maskEmail(email) {
       const existingOverlay = chatSection.querySelector('.login-overlay');
       if (existingOverlay) existingOverlay.remove();
 
+      // 관리자 = 검증된 @goolzy.com 계정(규칙의 관리자 판정과 같은 조건). 이메일이 없는 계정도 안전하게 판정한다.
+      const isAdmin = ChatIdentity.isStaffUser(user);
+
       // 사용자 정보 표시
       if (userInfo && userEmail) {
-        const isAdmin = user.email.endsWith('@goolzy.com');
-        userEmail.textContent = user.email;
+        userEmail.textContent = user.email || '';
+
+        // 이전 사용자의 관리자 배지가 남지 않게 먼저 지운다
+        const staleBadge = userInfo.querySelector('.admin-badge');
+        if (staleBadge) staleBadge.remove();
 
         // 관리자 배지 추가
         if (isAdmin) {
@@ -1040,7 +1032,7 @@ function maskEmail(email) {
       sendBtn.disabled = false;
 
       // 관리자인 경우 placeholder 변경
-      if (user.email.endsWith('@goolzy.com')) {
+      if (isAdmin) {
         chatInput.placeholder = '메시지를 입력하세요... (관리자 명령 사용 가능)';
       } else {
         chatInput.placeholder = '메시지를 입력하세요...';
@@ -1069,7 +1061,9 @@ function maskEmail(email) {
       chatInput.disabled = true;
       sendBtn.disabled = true;
 
-      // 읽기 전용으로 메시지는 표시
+      // 비로그인: 규칙(`inline-chat/messages/.read: auth != null`)이 비인증 읽기를 막으므로 메시지는
+      // 보이지 않는다(로그인 안내만 보인다). 이전 사용자의 구독·표시는 여기서 걷어 낸다 — 아래 구독
+      // 시도는 규칙이 거부한다(비인증 읽기를 열지 않는 것이 현행 정책이다).
       loadMessages();
     }
   });
@@ -1088,36 +1082,56 @@ function maskEmail(email) {
     });
   }
 
-  // 메시지 로드 (실시간)
-  function loadMessages() {
-    messagesRef.limitToLast(50).on('child_added', (snapshot) => {
-      const msg = snapshot.val();
-      const msgId = snapshot.key;
-      addMessageToUI(msg.text, msg.email, msg.timestamp, msgId);
-    });
+  // 메시지 로드 (실시간) — 구독은 항상 한 벌만 유지한다.
+  // 로그인 상태가 바뀔 때마다 부르는데, 예전엔 구독을 해제하지 않고 덧붙여 같은 메시지가 겹쳐 보이고
+  // «내 메시지» 정렬이 이전 사용자 기준으로 남았다. 이전 구독을 끊고, DB 에서 그린 말풍선을 걷어 낸 뒤
+  // 새 사용자 기준으로 다시 그린다(환영 문구처럼 data-msg-id 가 없는 요소는 남긴다).
+  let messagesQuery = null;
 
-    // 메시지 삭제 이벤트 리스닝 (클리어 명령 대응)
-    messagesRef.on('child_removed', (snapshot) => {
-      const msgId = snapshot.key;
-      const msgElement = document.querySelector(`[data-msg-id="${msgId}"]`);
-      if (msgElement) {
-        msgElement.remove();
-      }
-    });
+  function onMessageAdded(snapshot) {
+    addMessageToUI(snapshot.val(), snapshot.key);
   }
 
-  // UI에 메시지 추가
-  function addMessageToUI(text, email, timestamp, msgId) {
+  // 메시지 삭제 이벤트 (클리어 명령 대응)
+  function onMessageRemoved(snapshot) {
+    const msgElement = chatMessages.querySelector(`[data-msg-id="${snapshot.key}"]`);
+    if (msgElement) {
+      msgElement.remove();
+    }
+  }
+
+  function stopMessages() {
+    if (messagesQuery) {
+      messagesQuery.off('child_added', onMessageAdded);
+      messagesQuery = null;
+    }
+    messagesRef.off('child_removed', onMessageRemoved);
+    chatMessages.querySelectorAll('[data-msg-id]').forEach((el) => el.remove());
+  }
+
+  function loadMessages() {
+    stopMessages();
+    messagesQuery = messagesRef.limitToLast(50);
+    messagesQuery.on('child_added', onMessageAdded, (error) => {
+      // 비로그인이면 규칙이 거부한다(정상). 그 밖의 거부는 콘솔에만 남긴다.
+      if (currentUser) console.warn('메시지 구독 거부:', error);
+    });
+    messagesRef.on('child_removed', onMessageRemoved, () => {});
+  }
+
+  // UI에 메시지 추가 — 새 스키마(uid·prefix·domain)와 과도기 옛 스키마(email) 둘 다 표시한다
+  function addMessageToUI(msg, msgId) {
+    if (!msg) return;
+    const text = msg.text;
     const messageDiv = document.createElement('div');
     if (msgId) {
       messageDiv.setAttribute('data-msg-id', msgId);
     }
-    const isCurrentUser = currentUser && email === currentUser.email;
-    const isGoolzyStaff = email && email.endsWith('@goolzy.com');
-    const isSystemMessage = email === 'system';
+    const isCurrentUser = ChatIdentity.isOwnMessage(msg, currentUser);
+    const isGoolzyStaff = ChatIdentity.isStaffMessage(msg);
 
     // 시스템 메시지 처리
-    if (isSystemMessage) {
+    if (ChatIdentity.isSystemMessage(msg)) {
       messageDiv.className = 'message system-msg';
       const contentDiv = document.createElement('div');
       contentDiv.className = 'msg-content';
@@ -1133,14 +1147,21 @@ function maskEmail(email) {
       messageDiv.classList.add('goolzy-staff');
     }
 
-    if (!isCurrentUser && email) {
+    // 프라이버시 보호: 가린 이름만 표시한다(옛 메시지도 원문 대신 같은 형식으로 가린다)
+    const label = ChatIdentity.senderLabel(msg);
+    if (!isCurrentUser && label) {
       const senderDiv = document.createElement('div');
       senderDiv.className = 'msg-sender';
       if (isGoolzyStaff) {
         senderDiv.classList.add('goolzy-staff');
       }
-      // 프라이버시 보호: 이메일 마스킹 적용
-      senderDiv.textContent = maskEmail(email);
+      senderDiv.textContent = label;
+      // 관리자: 작성자 이름을 눌러 채팅 금지(대상은 메시지의 uid — 이메일을 받지 않는다)
+      if (ChatIdentity.isStaffUser(currentUser)) {
+        senderDiv.style.cursor = 'pointer';
+        senderDiv.title = '눌러서 이 사용자 채팅 금지';
+        senderDiv.addEventListener('click', () => banMessageAuthor(msg));
+      }
       messageDiv.appendChild(senderDiv);
     }
 
@@ -1151,6 +1172,57 @@ function maskEmail(email) {
 
     chatMessages.appendChild(messageDiv);
     chatMessages.scrollTop = chatMessages.scrollHeight;
+  }
+
+  // 관리자 채팅금지 — 대상 = 메시지의 uid(제재 목록은 uid 키, 이메일을 저장하지 않는다).
+  // 과도기: uid 가 없는 옛 형식 메시지는 옛 키로 제재한다 — 이메일은 화면·명령에 꺼내지 않고 메시지에
+  // 이미 실린 값으로 키만 만든다. 옛 키 제재는 규칙이 집행하지 않아 페이지 확인으로만 적용된다
+  // (옛·새 페이지 모두 본인 옛 키를 확인한다). 정리 스크립트가 옛 메시지에 uid 를 붙이면 uid 로 제재된다.
+  async function banMessageAuthor(msg) {
+    if (!ChatIdentity.isStaffUser(currentUser)) return;
+    const label = ChatIdentity.senderLabel(msg);
+    const target = ChatIdentity.banTargetForMessage(msg);
+    if (!target) {
+      alert('작성자를 식별할 수 없는 메시지입니다.');
+      return;
+    }
+    if (target.key === currentUser.uid) return;
+
+    const input = prompt(`${label} 사용자의 채팅 금지 시간(초)을 입력하세요.` +
+      (target.legacy ? '\n(이전 형식 메시지 — 과도기 제재로 페이지에서만 적용됩니다)' : ''), '60');
+    if (input === null) return;
+    const trimmed = input.trim();
+    const durationSeconds = parseInt(trimmed, 10);
+    if (!/^\d+$/.test(trimmed) || durationSeconds <= 0) {
+      alert('금지 시간은 1 이상의 정수(초)로 입력하세요.');
+      return;
+    }
+
+    const confirmBan = confirm(
+      `⚠️ 사용자 채팅 금지\n\n` +
+      `대상: ${label}\n` +
+      `금지 시간: ${durationSeconds}초\n\n` +
+      `계속하시겠습니까?`
+    );
+    if (!confirmBan) return;
+
+    try {
+      const TIMESTAMP = firebase.database.ServerValue.TIMESTAMP;
+      await database.ref(ChatIdentity.BANNED_PATH).child(target.key).set(
+        ChatIdentity.buildBanRecord(currentUser, durationSeconds, Date.now(), TIMESTAMP)
+      );
+
+      // 시스템 메시지 — 본문에 이메일을 넣지 않는다(대상은 가린 이름, 관리자는 적지 않음)
+      await messagesRef.push(ChatIdentity.buildSystemMessage(
+        currentUser,
+        ChatIdentity.banNoticeText(label, durationSeconds),
+        TIMESTAMP
+      ));
+      console.log('✅ 채팅 금지 완료');
+    } catch (error) {
+      console.error('❌ 채팅 금지 실패:', error);
+      alert('채팅 금지에 실패했습니다: ' + error.message);
+    }
   }
 
   // 메시지 전송
@@ -1176,8 +1248,8 @@ function maskEmail(email) {
     }
 
 
-    // 관리자가 아닌 경우 10초 제한 확인
-    const isAdmin = currentUser.email.endsWith('@goolzy.com');
+    // 관리자가 아닌 경우 10초 제한 확인 (관리자 = 검증된 @goolzy.com — 이메일 없는 계정도 안전하게 판정)
+    const isAdmin = ChatIdentity.isStaffUser(currentUser);
     if (!isAdmin) {
       const now = Date.now();
       const timeSinceLastMessage = (now - lastMessageTime) / 1000; // 초 단위
@@ -1190,8 +1262,8 @@ function maskEmail(email) {
       }
     }
 
-    // 관리자 전용 명령어 처리 (@goolzy.com 도메인만)
-    if (currentUser.email.endsWith('@goolzy.com')) {
+    // 관리자 전용 명령어 처리 (검증된 @goolzy.com 만 — 규칙도 같은 조건으로만 허용한다)
+    if (isAdmin) {
       // 클리어 명령
       if (text === '클리어') {
 
@@ -1226,93 +1298,36 @@ function maskEmail(email) {
         return;
       }
 
-      // 채팅금지 명령: "채팅금지 이메일 초"
-      const banMatch = text.match(/^채팅금지\s+(\S+)\s+(\d+)$/);
-      if (banMatch) {
-        const targetEmail = banMatch[1];
-        const durationSeconds = parseInt(banMatch[2], 10);
-
-        console.log('✅ 채팅금지 명령 인식됨!');
-        console.log('대상 이메일:', targetEmail);
-        console.log('금지 시간(초):', durationSeconds);
-
-        const confirmBan = confirm(
-          `⚠️ 사용자 채팅 금지\n\n` +
-          `대상: ${targetEmail}\n` +
-          `금지 시간: ${durationSeconds}초\n\n` +
-          `계속하시겠습니까?`
-        );
-
-        if (!confirmBan) {
-          chatInput.value = '';
-          return;
-        }
-
-        try {
-          const bannedUsersRef = firebase.database().ref('inline-chat/banned-users');
-          const banUntil = Date.now() + (durationSeconds * 1000);
-
-          // Firebase 키로 사용 가능하도록 이메일 변환 (@ -> _at_, . -> ,)
-          const sanitizedEmail = targetEmail.replace(/@/g, '_at_').replace(/\./g, ',');
-
-          await bannedUsersRef.child(sanitizedEmail).set({
-            email: targetEmail, // 원본 이메일 저장
-            bannedBy: currentUser.email,
-            bannedAt: firebase.database.ServerValue.TIMESTAMP,
-            banUntil: banUntil,
-            duration: durationSeconds
-          });
-
-          // 시스템 메시지 전송
-          await messagesRef.push({
-            email: 'system',
-            text: `${targetEmail} 사용자가 ${durationSeconds}초 동안 채팅 금지되었습니다. (관리자: ${currentUser.email})`,
-            timestamp: firebase.database.ServerValue.TIMESTAMP
-          });
-
-          chatInput.value = '';
-          console.log('✅ 채팅 금지 완료!');
-
-        } catch (error) {
-          console.error('❌ 채팅 금지 실패:', error);
-          alert('채팅 금지에 실패했습니다: ' + error.message);
-        }
+      // 채팅금지: 이메일을 입력받던 텍스트 명령("채팅금지 이메일 초")은 폐지했다 — 대상 이메일이
+      // 채팅 기록·시스템 메시지에 남았다. 이제 대상 메시지의 작성자 이름을 눌러 실행한다(uid 기준).
+      // 명령을 그대로 보내면 이메일이 일반 메시지로 올라가므로 여기서 가로챈다.
+      if (/^채팅금지(\s|$)/.test(text)) {
+        alert('채팅금지는 대상 메시지의 작성자 이름을 눌러 실행합니다.\n(개인정보 보호를 위해 이메일로 지정하는 명령은 폐지되었습니다)');
         return;
       }
     }
 
-    // 일반 메시지 전송 전에 채팅금지 여부 확인
+    // 일반 메시지 전송 전에 채팅금지 여부 확인 (본인 uid 항목 1건만 읽는다)
     try {
-      const bannedUsersRef = firebase.database().ref('inline-chat/banned-users');
-      // Firebase 키로 사용 가능하도록 이메일 변환 (@ -> _at_, . -> ,)
-      const sanitizedEmail = currentUser.email.replace(/@/g, '_at_').replace(/\./g, ',');
-      const banSnapshot = await bannedUsersRef.child(sanitizedEmail).once('value');
-      const banData = banSnapshot.val();
+      const ban = await ChatIdentity.checkOwnBan(database, currentUser);
+      if (ban.banned) {
+        alert(`채팅이 금지되었습니다.\n남은 시간: ${ban.remainingSeconds}초`);
+        console.log('채팅 금지 상태:', ban.remainingSeconds, '초 남음');
+        chatInput.value = '';
+        return;
+      }
 
-      if (banData && banData.banUntil) {
-        const now = Date.now();
-        if (now < banData.banUntil) {
-          const remainingSeconds = Math.ceil((banData.banUntil - now) / 1000);
-          alert(`채팅이 금지되었습니다.\n남은 시간: ${remainingSeconds}초`);
-          console.log('채팅 금지 상태:', remainingSeconds, '초 남음');
-          chatInput.value = '';
-          return;
-        } else {
-          // 금지 시간이 만료되었으면 삭제 시도 (실패해도 메시지 전송 허용)
-          try {
-            await bannedUsersRef.child(sanitizedEmail).remove();
-          } catch (error) {
-            console.warn('밴 레코드 삭제 실패 (무시하고 진행):', error);
-          }
-        }
+      // 이메일 원문 대신 uid + 가린 이름 조각만 싣는다
+      const message = ChatIdentity.buildUserMessage(
+        currentUser, text, firebase.database.ServerValue.TIMESTAMP
+      );
+      if (!message) {
+        alert('이메일이 없는 계정은 채팅에 참여할 수 없습니다.');
+        return;
       }
 
       // 금지되지 않았으면 메시지 전송
-      messagesRef.push({
-        email: currentUser.email,
-        text: text,
-        timestamp: firebase.database.ServerValue.TIMESTAMP
-      }).then(() => {
+      messagesRef.push(message).then(() => {
         chatInput.value = '';
         // 메시지 전송 성공 시 마지막 전송 시간 업데이트
         lastMessageTime = Date.now();
