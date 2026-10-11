@@ -29,7 +29,7 @@ Consultez l'historique des mises à jour de l'application Inventory.
 
 <details class="changelog-version" open>
 <summary>
-  <span class="version-title">v2.1.3 <small>2026-09-28</small></span>
+  <span class="version-title">v2.1.3 <small>2026-10-12</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
@@ -37,23 +37,32 @@ Consultez l'historique des mises à jour de l'application Inventory.
 </summary>
 <div class="version-content" markdown="1">
 
-#### Partagez vos articles directement entre vos appareils
-Synchronisez vos articles sur un réseau local entre appareils du même compte sans passer par les serveurs. Les vignettes que vous créez sont stockées et transmises en toute sécurité sous forme de fichiers.
+#### Envoyez vos commentaires et suggestions directement depuis l'application
+Vous pouvez maintenant soumettre vos commentaires et suggestions depuis le champ de saisie en haut de l'accueil. Vos soumissions sont reçues immédiatement et vous serez informé des résultats de l'examen et des nouvelles d'acceptation via la conversation.
+
+#### Changez facilement votre badge dans les paramètres
+Depuis le haut des paramètres, développez la liste des badges que vous possédez et basculez rapidement entre eux. Nous avons également résolu le problème du scintillement de la zone vide lorsqu'il n'y a pas d'image de badge.
+
+#### La saisie de messages est devenue plus facile
+La longueur des messages est maintenant limitée à 512 caractères, et le champ de saisie affiche le nombre de caractères et un bouton pour tout effacer. Lors de la saisie au clavier, la première touche Entrée envoie immédiatement le message et Maj+Entrée crée une nouvelle ligne.
+
+#### Les notifications arrivent maintenant plus précisément
+Même si vous vous connectez depuis un autre appareil, les notifications arrivent uniquement sur l'appareil où vous vous êtes connecté en dernier. Lorsque vous revenez à l'application, les notifications en attente sont groupées en une seule et lorsque vous appuyez sur une notification, vous accédez exactement à la conversation correspondante.
 
 #### Les informations et images des articles s'enrichissent
-Les encyclopédies s'ajoutent aux rubriques des éditeurs et des plateformes, avec les logos et couvertures tirés de ressources officielles. Les catégories affichent désormais un tri « tendance », et l'affichage des dates de sortie ainsi que le classement des articles sans image de couverture ont été affinés.
+Les articles encyclopédiques sont ajoutés aux sections des entreprises et des plateformes, avec les logos et couvertures tirés des ressources officielles. Les articles sans image de couverture sont masqués dans la découverte, et les modifications apportées à l'image principale sont immédiatement reflétées.
 
-#### Le blocage fonctionne de manière plus fiable
-Lorsque vous bloquez quelqu'un, le blocage s'applique aussi aux conversations déjà ouvertes, et vous ne recevez plus de nouveaux messages ou notifications. Pour les conversations en tête-à-tête, le serveur vérifie que seules les personnes impliquées peuvent les lire.
+#### Le blocage fonctionne désormais de manière plus fiable
+Lorsque vous bloquez quelqu'un, le blocage s'applique également aux conversations déjà ouvertes, et aucun nouveau message ou notification n'arrive. Pour les conversations en tête-à-tête, le serveur vérifie que seules les personnes impliquées peuvent les lire.
 
-#### Nettoyage de l'interface des conversations et du bureau
-La couleur de l'auteur, les légendes, l'aperçu des pièces jointes et la rotation des images sont maintenant unifiés sur les appareils. Le problème d'affichage du texte de l'onglet d'informations a également été corrigé.
+#### Confidentialité et sécurité
+Nous avons supprimé la collecte d'informations WiFi et la recherche d'utilisateurs à proximité. Les signatures et les déverrouillages sont traités par le serveur et ne peuvent pas être modifiés arbitrairement dans l'application, et seules les informations nécessaires des autres utilisateurs sont transmises. Lorsque vous vous déconnectez, les informations des appareils et des sessions sont également supprimées.
 
-#### Améliorations de la sécurité et de la vitesse
-Les informations des articles ne peuvent plus être modifiées arbitrairement dans l'application, et la suppression des ressources verrouillées ainsi que le transfert répété d'articles en tête-à-tête sont bloqués. Les mises à jour d'écran inutiles et les requêtes en double ont été réduites pour un fonctionnement plus fluide.
+#### Nettoyage des écrans de conversation et de bureau
+Nous avons unifié les comportements qui différaient selon les appareils, comme la couleur du locuteur, les légendes, l'aperçu des pièces jointes et la rotation des images, et avons corrigé le problème du bouton de fenêtre caché en plein écran. Vous pouvez maintenant naviguer dans les éléments des paramètres au clavier.
 
 #### Corrections de bugs
-Des problèmes mineurs ont été corrigés. L'année de sortie qui disparaissait sur les cartes, les anciennes vignettes qui restaient après le remplacement de l'image principale, l'absence d'avertissement lors de la suppression d'articles verrouillés et l'affichage incorrect des caractères dans les cartes de lien.
+Nous avons corrigé le problème du message d'invitation à se connecter depuis un autre appareil qui s'affichait immédiatement après la déconnexion, le problème de l'année de sortie disparaissant des cartes, le problème du contenu de l'onglet d'informations qui semblait vide et les problèmes d'aperçu de lien et de renvoi de message.
 
 </div>
 </details>

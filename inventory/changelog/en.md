@@ -29,7 +29,7 @@ Check out the update history for the Inventory app.
 
 <details class="changelog-version" open>
 <summary>
-  <span class="version-title">v2.1.3 <small>2026-09-28</small></span>
+  <span class="version-title">v2.1.3 <small>2026-10-12</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
@@ -37,23 +37,32 @@ Check out the update history for the Inventory app.
 </summary>
 <div class="version-content" markdown="1">
 
-#### Share your items directly between your devices
-Sync items over a nearby network between devices on the same account without going through servers. Stamps you create are safely stored and sent as files.
+#### Send bugs and feedback directly from the app
+Send bug reports and suggestions directly from the input field at the top of your home screen. Your submissions are received immediately, and you'll hear back via message about review results and acceptance updates.
+
+#### Switch badges directly in Settings
+Expand your badge list at the top of Settings to switch them all at once. We also fixed the flickering empty space that appeared when badge images were missing.
+
+#### Conversation input is now easier
+Messages now support up to 512 characters, with a character counter and clear-all button in the input field. Press Enter to send immediately, or Shift+Enter for a new line.
+
+#### Notifications arrive more accurately
+When you log in from different devices, notifications arrive only on the device where you logged in most recently. Missed notifications are grouped into a single card when you return, and tapping one takes you directly to that conversation.
 
 #### Item information and images are now richer
-Company and platform hubs now feature encyclopedia sections with official logos and cover images. Categories include a "Trending now" view, and we've refined how release dates and years are shown, plus housekeeping for items without featured images.
+Company and platform hubs now feature encyclopedia sections with official logos and cover images from trusted sources. Items without covers are hidden from discovery, and featured image changes are applied instantly.
 
 #### Blocking now works more reliably
-Block someone and it applies instantly to already-open conversations—new messages and notifications won't arrive. 1:1 conversations are verified server-side so only participants can see them.
+When you block someone, it applies immediately to already-open conversations, preventing new messages and notifications from arriving. The server verifies that only participants can view 1-to-1 conversations.
 
-#### Conversation and desktop screen refinements
-Unified speaker color, captions, attachment previews, and image rotation—actions that used to vary by device now work the same everywhere. Fixed the info tab body not displaying.
+#### Privacy and security
+We removed WiFi data collection and nearby user searches. Signature and lock operations are handled by the server to prevent unauthorized app-side changes, and only necessary user information is shared. Deleting your account also removes device and session data.
 
-#### Security and performance improvements
-Blocked unauthorized app-side item edits, deletions of locked currency, and direct item re-transfers in 1:1 chats. Fewer unnecessary screen refreshes and duplicate queries make the app feel lighter.
+#### Chat and screen cleanup
+We unified speaker colors, captions, attachment previews, and image rotation—features that used to vary by device now work the same everywhere. Fixed the issue where window buttons were hidden in fullscreen mode, and Settings can now be navigated with keyboard.
 
 #### Bug fixes
-Fixed various small issues including release years disappearing from cards, old thumbnails persisting after featured image changes, missing guidance for locked item deletion, and link card text corruption.
+Fixed several issues: logout guidance appearing after account deletion, release years disappearing from cards, empty info tab content, and problems with link previews and message retry.
 
 </div>
 </details>

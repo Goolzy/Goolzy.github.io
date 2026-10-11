@@ -30,7 +30,7 @@ Sehen Sie sich den Update-Verlauf der Inventory-App an.
 
 <details class="changelog-version" open>
 <summary>
-  <span class="version-title">v2.1.3 <small>2026-09-28</small></span>
+  <span class="version-title">v2.1.3 <small>2026-10-12</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopieren">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
     <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
@@ -38,23 +38,32 @@ Sehen Sie sich den Update-Verlauf der Inventory-App an.
 </summary>
 <div class="version-content" markdown="1">
 
-#### Teilen Sie Ihre Artikel direkt zwischen Geräten
-Synchronisieren Sie Artikel im lokalen Netzwerk zwischen verschiedenen Geräten desselben Kontos ohne Server-Umweg. Von Ihnen erstellte Stempel werden sicher als Dateien gespeichert und übertragen.
+#### Fehler und Vorschläge direkt senden
+Sie können Fehlerberichte und Vorschläge direkt über das Eingabefeld oben auf der Startseite senden. Eingereichte Meldungen werden sofort bestätigt, und Sie erhalten Überprüfungsergebnisse sowie Annahmemitteilungen im Chat.
 
-#### Artikel-Informationen und Bilder werden erweitert
-Enzyklopädische Abschnitte erscheinen auf den Firmen- und Plattform-Hubs, und Logos sowie Cover werden aus offiziellen Materialien entnommen. Eine neue Trending-Sortierung in Kategorien wurde hinzugefügt, und die Anzeige von Veröffentlichungsdatum und -jahr sowie die Verwaltung von Artikeln ohne Titelbild wurden überarbeitet.
+#### Abzeichen in den Einstellungen schnell wechseln
+In den Einstellungen können Sie Ihre Abzeichen-Liste oben ausklappen und auf einmal wechseln. Das Problem, dass leere Plätze beim Laden von Abzeichenbildern flackerten, wurde behoben.
 
-#### Blockierung funktioniert zuverlässiger
-Das Blockieren gilt jetzt auch für bereits offene Chats, und Sie erhalten keine neuen Nachrichten oder Benachrichtigungen. Eins-zu-eins-Chats werden vom Server überprüft, sodass nur beteiligte Personen sie lesen können.
+#### Bequemere Nachrichteneingabe
+Nachrichten können jetzt bis zu 512 Zeichen lang sein. Das Eingabefeld zeigt die Zeichenanzahl und eine Schaltfläche zum Alles-löschen. Die erste Eingabetaste sendet sofort ab, während Umschalt+Eingabetaste einen Zeilenumbruch erzeugt.
 
-#### Chat- und Desktopbildschirme aufgeräumt
-Die Darstellung von Sprechblasen-Kennzeichnung, Bildunterschriften, Anhang-Vorschau und Bildrotation wurde vereinheitlicht, die auf verschiedenen Geräten unterschiedlich waren. Das Problem behoben, dass Inhalte des Info-Tabs nicht angezeigt wurden.
+#### Genaue Benachrichtigungen
+Selbst wenn Sie sich von einem anderen Gerät anmelden, erhalten Sie Benachrichtigungen nur auf dem zuletzt genutzten Gerät. Nach der Rückkehr zur App werden alle ausstehenden Benachrichtigungen zusammengefasst angezeigt, und das Antippen führt Sie direkt zum entsprechenden Chat.
 
-#### Sicherheit und Geschwindigkeit verbessert
-Wir haben verhindert, dass Artikelinformationen in der App willkürlich geändert werden, und das Löschen gesperrter Währungen sowie die erneute Übertragung von Eins-zu-eins-Artikeln blockiert. Durch die Reduzierung unnötiger Bildschirmaktualisierungen und doppelter Anfragen läuft die App leichter.
+#### Reichhaltige Artikel-Informationen und Bilder
+Unternehmens- und Plattform-Hubs erhalten enzyklopädische Abschnitte, und Logos sowie Cover werden aus offiziellen Quellen verwendet. Artikel ohne Cover werden ausgeblendet, und Änderungen am Hauptbild gelten sofort.
+
+#### Zuverlässigere Blockierung
+Das Blockieren gilt jetzt auch für bereits geöffnete Chats, und Sie erhalten keine neuen Nachrichten oder Benachrichtigungen. Eins-zu-eins-Chats werden vom Server überprüft, sodass nur beteiligte Personen sie lesen können.
+
+#### Datenschutz und Sicherheit
+WLAN-Datenerfassung und die Suche nach nahegelegenen Benutzern wurden entfernt. Signaturen und Entsperrungen werden vom Server verarbeitet und können nicht einfach von der App geändert werden. Fremde Daten werden nur bei Bedarf übermittelt, und beim Löschen des Kontos werden auch Geräte- und Sitzungsinformationen gelöscht.
+
+#### Einheitliche Chat- und Bildschirmdarstellung
+Sprechblasenfarben, Beschriftungen, Anhangsvorschau und Bildrotation wurden vereinheitlicht, die zuvor unterschiedlich waren. Das Problem mit verborgen Fensterschaltflächen im Vollbildmodus wurde behoben, und Sie können nun mit der Tastatur durch Einstellungselemente navigieren.
 
 #### Fehlerbehebungen
-Wir haben verschiedene kleinere Probleme behoben: Veröffentlichungsjahr verschwindet aus Karten, alte Vorschaubilder bleiben nach dem Austausch des Titelbildes bestehen, fehlender Hinweis beim Löschen gesperrter Artikel, beschädigte Zeichen in Link-Karten und mehr.
+Folgende Probleme wurden behoben: die Anmeldungsaufforderung nach Kontoausgabe, Veröffentlichungsjahr verschwindet aus Kartentiteln, leere Informationsreiter-Texte sowie Probleme mit Link-Vorschau und Wiederholungsversand.
 
 </div>
 </details>
