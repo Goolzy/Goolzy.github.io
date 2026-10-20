@@ -115,6 +115,7 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 | `GET /items` | 본인 아이템 목록 조회 |
 | `GET /items/{token}` | 아이템 상세 조회 |
 | `GET /templates` | 본인 템플릿 목록 조회 |
+| `GET /v2/templates` | 본인 템플릿 목록 조회 (커서 페이지네이션) |
 | `GET /templates/{token}` | 템플릿 상세 조회 |
 | `GET /templates/shared` | 공유 중인 템플릿 목록 (폐지 예정 — v3 공유 기능 종료) |
 | `GET /user/stats` | 사용자 통계 조회 |
@@ -272,6 +273,65 @@ curl -H "Authorization: Bearer inv_xxx" \
   }
 }
 ```
+
+</div>
+</details>
+
+<details>
+<summary><h3>GET /v2/templates - 템플릿 목록 (커서)</h3></summary>
+<div class="manual-content" markdown="1">
+
+본인 소유의 각인된 템플릿(스탬프) 목록을 커서 방식으로 조회합니다. 보유 수가 늘어도 읽기 비용이 일정하며, 최근 발급한 항목부터 반환합니다. `GET /templates`(v1)와 별개로 제공되며 v1은 그대로 유지됩니다.
+
+`/v2/templates` 와 `/api/v2/templates` 두 경로 모두 같은 응답을 돌려줍니다.
+
+#### 요청
+
+```bash
+curl -H "Authorization: Bearer inv_xxx" \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/v2/templates?pageSize=20&includeTotal=true"
+```
+
+#### 쿼리 파라미터
+
+| 파라미터 | 타입 | 기본값 | 설명 |
+|----------|------|--------|------|
+| cursor | string | - | 이전 응답의 `nextCursor` 값 (첫 페이지는 생략) |
+| pageSize | number | 20 | 페이지당 항목 수 (1~50) |
+| includeTotal | boolean | false | `true`면 `totalItems`를 응답에 포함 |
+
+#### 응답
+
+```json
+{
+  "success": true,
+  "data": {
+    "templates": [
+      {
+        "token": "encrypted_template_id",
+        "type": "stamp",
+        "title": "Template title",
+        "content": "Template content"
+      }
+    ],
+    "pagination": {
+      "pageSize": 20,
+      "hasNext": true,
+      "nextCursor": "opaque_cursor_value",
+      "totalItems": 37
+    }
+  }
+}
+```
+
+#### 참고 사항
+
+- 정렬은 문서 ID 내림차순(최근 발급 먼저)입니다. 항목을 편집해도 커서 순서가 흔들리지 않아 누락·중복이 없습니다.
+- 다음 페이지는 응답의 `data.pagination.nextCursor` 값을 `cursor`로 그대로 전달해 요청합니다. `hasNext`가 `false`이면 `nextCursor`는 `null`이며 마지막 페이지입니다.
+- `totalItems`는 `includeTotal=true`일 때만 포함되며 표지(각인 표시) 기준 개수입니다. 끝까지 순회해 실제로 받는 항목의 합보다 클 수 있습니다. 정확한 노출 수가 필요하면 순회하며 직접 세세요.
+- 표지는 있으나 본문이 빈 항목은 제외되므로 `templates` 항목 수가 `pageSize`보다 적을 수 있습니다. 마지막 페이지 판정은 항목 수가 아니라 `hasNext`로 하세요.
+- 입력은 엄격하게 검증됩니다. 정의되지 않은 쿼리 키(v1의 `page` 포함)나 형식 위반은 `400 VALIDATION_ERROR`, 잘못된 커서는 `400 INVALID_CURSOR`를 반환합니다.
+- 오류 응답은 다른 API와 같은 `{"success": false, "error": {"code": "...", "message": "..."}}` 형태입니다.
 
 </div>
 </details>

@@ -115,6 +115,7 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 | `GET /items` | List your items |
 | `GET /items/{token}` | Get item details |
 | `GET /templates` | List your templates |
+| `GET /v2/templates` | List your templates (cursor pagination) |
 | `GET /templates/{token}` | Get template details |
 | `GET /templates/shared` | List shared templates (to be retired — sharing feature discontinued in v3) |
 | `GET /user/stats` | Get user statistics |
@@ -272,6 +273,65 @@ curl -H "Authorization: Bearer inv_xxx" \
   }
 }
 ```
+
+</div>
+</details>
+
+<details>
+<summary><h3>GET /v2/templates - List Templates (Cursor)</h3></summary>
+<div class="manual-content" markdown="1">
+
+Lists your engraved templates (stamps) using cursor pagination. The read cost stays constant no matter how many you own, and the most recently issued items come first. It is offered alongside `GET /templates` (v1), which remains unchanged.
+
+Both `/v2/templates` and `/api/v2/templates` return the same response.
+
+#### Request
+
+```bash
+curl -H "Authorization: Bearer inv_xxx" \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/v2/templates?pageSize=20&includeTotal=true"
+```
+
+#### Query Parameters
+
+| Parameter | Type | Default | Description |
+|----------|------|--------|------|
+| cursor | string | - | The `nextCursor` value from the previous response (omit for the first page) |
+| pageSize | number | 20 | Items per page (1-50) |
+| includeTotal | boolean | false | If `true`, includes `totalItems` in the response |
+
+#### Response
+
+```json
+{
+  "success": true,
+  "data": {
+    "templates": [
+      {
+        "token": "encrypted_template_id",
+        "type": "stamp",
+        "title": "Template title",
+        "content": "Template content"
+      }
+    ],
+    "pagination": {
+      "pageSize": 20,
+      "hasNext": true,
+      "nextCursor": "opaque_cursor_value",
+      "totalItems": 37
+    }
+  }
+}
+```
+
+#### Notes
+
+- Results are sorted by document ID in descending order (most recently issued first). Editing an item does not shift the cursor order, so nothing is skipped or duplicated.
+- To fetch the next page, pass the response's `data.pagination.nextCursor` value as `cursor` unchanged. When `hasNext` is `false`, `nextCursor` is `null` and this is the last page.
+- `totalItems` is included only when `includeTotal=true` and counts items by their engraved marker. It can be larger than the number of items you actually receive after paging through everything. If you need the exact visible count, count while you page.
+- Items that have the marker but an empty body are omitted, so `templates` may contain fewer than `pageSize` items. Decide whether you have reached the end with `hasNext`, not with the item count.
+- Input is validated strictly. An undefined query key (including v1's `page`) or a malformed value returns `400 VALIDATION_ERROR`, and an invalid cursor returns `400 INVALID_CURSOR`.
+- Error responses use the same `{"success": false, "error": {"code": "...", "message": "..."}}` shape as the other APIs.
 
 </div>
 </details>

@@ -115,6 +115,7 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 | `GET /items` | 列出您的物品 |
 | `GET /items/{token}` | 获取物品详情 |
 | `GET /templates` | 列出您的模板 |
+| `GET /v2/templates` | 列出您的模板（游标分页） |
 | `GET /templates/{token}` | 获取模板详情 |
 | `GET /templates/shared` | 列出共享的模板（即将废止 — v3终止共享功能） |
 | `GET /user/stats` | 获取用户统计信息 |
@@ -272,6 +273,65 @@ curl -H "Authorization: Bearer inv_xxx" \
   }
 }
 ```
+
+</div>
+</details>
+
+<details>
+<summary><h3>GET /v2/templates - 列出模板（游标）</h3></summary>
+<div class="manual-content" markdown="1">
+
+以游标分页方式列出您拥有的已刻印模板（印章）。无论持有数量多少，读取成本保持恒定，并按最近发行的在前返回。该接口与 `GET /templates`（v1）并行提供，v1 保持不变。
+
+`/v2/templates` 和 `/api/v2/templates` 两个路径返回相同的响应。
+
+#### 请求
+
+```bash
+curl -H "Authorization: Bearer inv_xxx" \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/v2/templates?pageSize=20&includeTotal=true"
+```
+
+#### 查询参数
+
+| 参数 | 类型 | 默认值 | 说明 |
+|----------|------|--------|------|
+| cursor | string | - | 上一次响应中的 `nextCursor` 值（第一页省略） |
+| pageSize | number | 20 | 每页项目数（1~50） |
+| includeTotal | boolean | false | 为 `true` 时，响应中包含 `totalItems` |
+
+#### 响应
+
+```json
+{
+  "success": true,
+  "data": {
+    "templates": [
+      {
+        "token": "encrypted_template_id",
+        "type": "stamp",
+        "title": "Template title",
+        "content": "Template content"
+      }
+    ],
+    "pagination": {
+      "pageSize": 20,
+      "hasNext": true,
+      "nextCursor": "opaque_cursor_value",
+      "totalItems": 37
+    }
+  }
+}
+```
+
+#### 说明
+
+- 按文档 ID 降序排序（最近发行的在前）。编辑项目不会改变游标顺序，因此不会遗漏或重复。
+- 获取下一页时，将响应中的 `data.pagination.nextCursor` 值原样作为 `cursor` 传入。当 `hasNext` 为 `false` 时，`nextCursor` 为 `null`，表示已是最后一页。
+- `totalItems` 仅在 `includeTotal=true` 时返回，是按刻印标记统计的数量。它可能大于遍历全部分页后实际收到的项目总和。如需准确的可见数量，请在遍历时自行计数。
+- 有标记但正文为空的项目会被排除，因此 `templates` 中的项目数可能少于 `pageSize`。请通过 `hasNext` 而不是项目数来判断是否到达末尾。
+- 输入会被严格校验。未定义的查询键（包括 v1 的 `page`）或格式错误会返回 `400 VALIDATION_ERROR`，无效的游标会返回 `400 INVALID_CURSOR`。
+- 错误响应与其他 API 相同，格式为 `{"success": false, "error": {"code": "...", "message": "..."}}`。
 
 </div>
 </details>

@@ -115,6 +115,7 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 | `GET /items` | Eigene Objektliste abrufen |
 | `GET /items/{token}` | Objektdetails abrufen |
 | `GET /templates` | Eigene Vorlagenliste abrufen |
+| `GET /v2/templates` | Eigene Vorlagenliste abrufen (Cursor-Paginierung) |
 | `GET /templates/{token}` | Vorlagendetails abrufen |
 | `GET /templates/shared` | Liste der derzeit geteilten Vorlagen (Einstellung geplant — Freigabefunktion endet mit v3) |
 | `GET /user/stats` | Nutzerstatistiken abrufen |
@@ -272,6 +273,65 @@ curl -H "Authorization: Bearer inv_xxx" \
   }
 }
 ```
+
+</div>
+</details>
+
+<details>
+<summary><h3>GET /v2/templates - Vorlagenliste (Cursor)</h3></summary>
+<div class="manual-content" markdown="1">
+
+Ruft Ihre eingravierten Vorlagen (Stempel) per Cursor-Paginierung ab. Die Lesekosten bleiben unabhängig von der Anzahl konstant, und zuletzt ausgegebene Einträge kommen zuerst. Der Endpunkt wird neben `GET /templates` (v1) angeboten; v1 bleibt unverändert.
+
+Sowohl `/v2/templates` als auch `/api/v2/templates` liefern dieselbe Antwort.
+
+#### Anfrage
+
+```bash
+curl -H "Authorization: Bearer inv_xxx" \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/v2/templates?pageSize=20&includeTotal=true"
+```
+
+#### Abfrageparameter
+
+| Parameter | Typ | Standard | Beschreibung |
+|----------|------|--------|------|
+| cursor | string | - | Wert von `nextCursor` aus der vorherigen Antwort (bei der ersten Seite weglassen) |
+| pageSize | number | 20 | Einträge pro Seite (1-50) |
+| includeTotal | boolean | false | Bei `true` wird `totalItems` in die Antwort aufgenommen |
+
+#### Antwort
+
+```json
+{
+  "success": true,
+  "data": {
+    "templates": [
+      {
+        "token": "encrypted_template_id",
+        "type": "stamp",
+        "title": "Template title",
+        "content": "Template content"
+      }
+    ],
+    "pagination": {
+      "pageSize": 20,
+      "hasNext": true,
+      "nextCursor": "opaque_cursor_value",
+      "totalItems": 37
+    }
+  }
+}
+```
+
+#### Hinweise
+
+- Die Sortierung erfolgt nach Dokument-ID absteigend (zuletzt ausgegeben zuerst). Das Bearbeiten eines Eintrags ändert die Cursor-Reihenfolge nicht, daher gibt es keine Auslassungen oder Duplikate.
+- Für die nächste Seite übergeben Sie den `data.pagination.nextCursor`-Wert der Antwort unverändert als `cursor`. Ist `hasNext` `false`, ist `nextCursor` `null` und dies die letzte Seite.
+- `totalItems` ist nur bei `includeTotal=true` enthalten und zählt anhand der Gravurmarkierung. Der Wert kann größer sein als die Summe der Einträge, die Sie beim vollständigen Durchlaufen tatsächlich erhalten. Wenn Sie die genaue Anzahl sichtbarer Einträge benötigen, zählen Sie beim Durchlaufen selbst.
+- Einträge mit Markierung, aber leerem Inhalt werden ausgelassen, daher kann `templates` weniger Einträge als `pageSize` enthalten. Das Ende erkennen Sie an `hasNext`, nicht an der Anzahl der Einträge.
+- Eingaben werden streng geprüft. Ein nicht definierter Abfrageschlüssel (einschließlich `page` aus v1) oder ein Formatfehler ergibt `400 VALIDATION_ERROR`, ein ungültiger Cursor `400 INVALID_CURSOR`.
+- Fehlerantworten haben dasselbe Format wie bei den übrigen APIs: `{"success": false, "error": {"code": "...", "message": "..."}}`.
 
 </div>
 </details>

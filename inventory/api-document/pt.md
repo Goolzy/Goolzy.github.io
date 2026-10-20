@@ -115,6 +115,7 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 | `GET /items` | Consultar a lista dos seus itens |
 | `GET /items/{token}` | Consultar os detalhes de um item |
 | `GET /templates` | Consultar a lista dos seus modelos |
+| `GET /v2/templates` | Consultar a lista dos seus modelos (paginação por cursor) |
 | `GET /templates/{token}` | Consultar os detalhes de um modelo |
 | `GET /templates/shared` | Lista de modelos em compartilhamento (remoção prevista — a função de compartilhamento termina na v3) |
 | `GET /user/stats` | Consultar estatísticas do usuário |
@@ -272,6 +273,65 @@ curl -H "Authorization: Bearer inv_xxx" \
   }
 }
 ```
+
+</div>
+</details>
+
+<details>
+<summary><h3>GET /v2/templates - Lista de modelos (cursor)</h3></summary>
+<div class="manual-content" markdown="1">
+
+Consulta a lista dos seus modelos (carimbos) gravados por meio de paginação por cursor. O custo de leitura permanece constante independentemente de quantos você possua, e os itens emitidos mais recentemente vêm primeiro. É oferecido junto com `GET /templates` (v1), que permanece inalterado.
+
+Tanto `/v2/templates` quanto `/api/v2/templates` retornam a mesma resposta.
+
+#### Requisição
+
+```bash
+curl -H "Authorization: Bearer inv_xxx" \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/v2/templates?pageSize=20&includeTotal=true"
+```
+
+#### Parâmetros de consulta
+
+| Parâmetro | Tipo | Padrão | Descrição |
+|----------|------|--------|------|
+| cursor | string | - | Valor de `nextCursor` da resposta anterior (omita na primeira página) |
+| pageSize | number | 20 | Itens por página (1-50) |
+| includeTotal | boolean | false | Se `true`, inclui `totalItems` na resposta |
+
+#### Resposta
+
+```json
+{
+  "success": true,
+  "data": {
+    "templates": [
+      {
+        "token": "encrypted_template_id",
+        "type": "stamp",
+        "title": "Template title",
+        "content": "Template content"
+      }
+    ],
+    "pagination": {
+      "pageSize": 20,
+      "hasNext": true,
+      "nextCursor": "opaque_cursor_value",
+      "totalItems": 37
+    }
+  }
+}
+```
+
+#### Observações
+
+- A ordenação é por ID de documento decrescente (primeiro o emitido mais recentemente). Editar um item não altera a ordem do cursor, portanto nada é omitido nem duplicado.
+- Para obter a próxima página, passe o valor de `data.pagination.nextCursor` da resposta, sem alterações, como `cursor`. Quando `hasNext` é `false`, `nextCursor` é `null` e esta é a última página.
+- `totalItems` só é incluído com `includeTotal=true` e conta os itens pela marca de gravação. Pode ser maior que o total de itens realmente recebidos ao percorrer tudo. Se precisar da quantidade visível exata, conte enquanto percorre as páginas.
+- Itens com a marca, mas com o corpo vazio, são omitidos; por isso `templates` pode ter menos itens que `pageSize`. Determine o fim com `hasNext`, não com o número de itens.
+- A entrada é validada de forma rigorosa. Uma chave de consulta não definida (incluindo `page` da v1) ou um formato inválido retorna `400 VALIDATION_ERROR`, e um cursor inválido retorna `400 INVALID_CURSOR`.
+- As respostas de erro têm o mesmo formato das demais APIs: `{"success": false, "error": {"code": "...", "message": "..."}}`.
 
 </div>
 </details>

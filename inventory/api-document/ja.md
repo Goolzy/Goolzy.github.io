@@ -115,6 +115,7 @@ https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1
 | `GET /items` | アイテム一覧を取得 |
 | `GET /items/{token}` | アイテム詳細を取得 |
 | `GET /templates` | テンプレート一覧を取得 |
+| `GET /v2/templates` | テンプレート一覧を取得（カーソル方式） |
 | `GET /templates/{token}` | テンプレート詳細を取得 |
 | `GET /templates/shared` | 共有中のテンプレート一覧（廃止予定 — v3で共有機能終了） |
 | `GET /user/stats` | ユーザー統計を取得 |
@@ -272,6 +273,65 @@ curl -H "Authorization: Bearer inv_xxx" \
   }
 }
 ```
+
+</div>
+</details>
+
+<details>
+<summary><h3>GET /v2/templates - テンプレート一覧（カーソル）</h3></summary>
+<div class="manual-content" markdown="1">
+
+ご自身が所有する刻印済みテンプレート（スタンプ）の一覧を、カーソル方式で取得します。保有数が増えても読み取りコストは一定で、最近発行した項目から順に返します。`GET /templates`（v1）とは別に提供され、v1はそのまま維持されます。
+
+`/v2/templates` と `/api/v2/templates` のどちらのパスでも同じレスポンスが返ります。
+
+#### リクエスト
+
+```bash
+curl -H "Authorization: Bearer inv_xxx" \
+     "https://asia-northeast3-inventory-app-service.cloudfunctions.net/apiV1/v2/templates?pageSize=20&includeTotal=true"
+```
+
+#### クエリパラメータ
+
+| パラメータ | 型 | デフォルト | 説明 |
+|----------|------|--------|------|
+| cursor | string | - | 前回のレスポンスの `nextCursor` の値（最初のページは省略） |
+| pageSize | number | 20 | 1ページあたりの項目数（1〜50） |
+| includeTotal | boolean | false | `true` の場合、レスポンスに `totalItems` を含める |
+
+#### レスポンス
+
+```json
+{
+  "success": true,
+  "data": {
+    "templates": [
+      {
+        "token": "encrypted_template_id",
+        "type": "stamp",
+        "title": "Template title",
+        "content": "Template content"
+      }
+    ],
+    "pagination": {
+      "pageSize": 20,
+      "hasNext": true,
+      "nextCursor": "opaque_cursor_value",
+      "totalItems": 37
+    }
+  }
+}
+```
+
+#### 補足事項
+
+- 並び順はドキュメントIDの降順（最近発行した項目が先）です。項目を編集してもカーソルの順序は変わらないため、取りこぼしや重複はありません。
+- 次のページは、レスポンスの `data.pagination.nextCursor` の値をそのまま `cursor` に渡して取得します。`hasNext` が `false` の場合、`nextCursor` は `null` で、最後のページです。
+- `totalItems` は `includeTotal=true` の場合のみ含まれ、刻印マーカー基準の件数です。最後まで巡回して実際に受け取った項目の合計より大きくなることがあります。正確な表示件数が必要な場合は、巡回しながら数えてください。
+- マーカーはあるが本文が空の項目は除外されるため、`templates` の項目数が `pageSize` より少ないことがあります。終端の判定は項目数ではなく `hasNext` で行ってください。
+- 入力は厳密に検証されます。定義されていないクエリキー（v1の `page` を含む）や形式違反は `400 VALIDATION_ERROR`、不正なカーソルは `400 INVALID_CURSOR` を返します。
+- エラーレスポンスは他のAPIと同じ `{"success": false, "error": {"code": "...", "message": "..."}}` 形式です。
 
 </div>
 </details>
