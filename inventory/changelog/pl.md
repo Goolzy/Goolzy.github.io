@@ -29,6 +29,43 @@ Sprawdź historię aktualizacji aplikacji Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.4 <small>2026-10-25</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopiuj">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Możesz usunąć wysłane przez siebie wiadomości
+Po długim naciśnięciu wiadomości wybierz „Usuń”. Wiadomość zniknie z czatu, a zmiana od razu pojawi się także u rozmówcy. Jeśli usuniesz ostatnią wiadomość, podgląd na liście czatów pokaże poprzednią.
+
+#### Nazwa i profil rozmówcy wyświetlają się poprawnie
+Jeśli rozmówca wyposaży odznakę już po rozpoczęciu czatu, nowa nazwa i obraz profilu pojawią się na liście czatów oraz w podsumowaniu powiadomień, które widzisz po powrocie do aplikacji. Naprawiono też problem, w którym nazwa rozmówcy wciąż wyglądała jak adres e-mail.
+
+#### Działa szybciej i lżej
+Podczas wpisywania wyszukiwania i przeglądania list odświeżana jest tylko ta część ekranu, która się zmieniła. Dane, które wcześniej były pobierane wielokrotnie, są zapisywane na urządzeniu, dzięki czemu ekrany otwierają się szybciej.
+
+#### Przedmioty zapisane na urządzeniu są lepiej chronione
+Zapobiegliśmy usuwaniu informacji o przedmiotach zapisanych na urządzeniu z powodu chwilowych błędów zapisu. Naprawiono też problem, w którym po zalogowaniu na nowym urządzeniu lub ponownej instalacji aplikacji część informacji o przedmiotach wyglądała na pustą.
+
+#### Rozmowa głosowa łączy się ponownie automatycznie
+Naprawiono problem, w którym połączenie głosowe utykało w stanie „Żądanie w toku”, gdy rozmówca przełączy się na inne urządzenie. Teraz połączenie jest wznawiane automatycznie.
+
+#### Uporządkowany ekran czatu
+Ujednolicono sposób wyświetlania wiadomości, komunikatów o wygaśnięciu i opisów wiadomości z lokalizacją, które wcześniej różniły się w zależności od urządzenia, a także przycisk czyszczenia pola wpisywania. Naprawiono problem, w którym długa nazwa autora wychodziła poza dymek wiadomości. W ustawieniach można też przechodzić między pozycjami za pomocą klawiatury.
+
+#### Silniejsza ochrona prywatności i bezpieczeństwa
+Gdy urządzenia łączą się ze sobą w tej samej sieci lokalnej, zamiast nazwy urządzenia używana jest jednorazowa anonimowa nazwa. Tłumaczenie czatów 1:1 jest widoczne tylko dla uczestników rozmowy, a dane osobowe w rekordach serwera zostały ukryte. Informacje o zabezpieczeniu przedmiotów są weryfikowane podpisem serwera, a rejestracje powiadomień wylogowanych urządzeń są usuwane po stronie serwera.
+
+#### Poprawki błędów
+Naprawiono problem z nieudanym tłumaczeniem szablonów pieczęci, chwilowo błędną kolejność w rankingu wyszukiwania, sytuację, w której zmieniona ocena gwiazdkowa pozostawała widoczna mimo nieudanego zapisu, oraz nietrafne komunikaty przy niektórych błędach.
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.1.3 <small>2026-09-28</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopiuj">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

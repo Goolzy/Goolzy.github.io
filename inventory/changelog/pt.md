@@ -29,6 +29,43 @@ Confira o histórico de atualizações do aplicativo Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.4 <small>2026-10-25</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Você pode apagar as mensagens que enviou
+Pressione e segure uma mensagem e escolha "Excluir" para removê-la da conversa. Ela também some da tela da outra pessoa na hora. Se você apagar a última mensagem, a prévia na lista de conversas passa a mostrar a mensagem anterior.
+
+#### O nome e o perfil da outra pessoa aparecem corretamente
+Mesmo que a outra pessoa equipe um badge depois de iniciar a conversa, o novo nome e a imagem de perfil passam a aparecer na lista de conversas e no resumo de notificações ao voltar para o app. Corrigimos o problema em que o nome continuava sendo o derivado do e-mail.
+
+#### Mais rápido e mais leve
+Ao digitar uma busca ou navegar pelas listas, só as partes necessárias são redesenhadas. As informações que já foram carregadas ficam guardadas no dispositivo para não serem baixadas de novo, e as telas abrem mais rápido.
+
+#### Os itens salvos no dispositivo ficam mais seguros
+Evitamos que as informações dos itens salvos no dispositivo fossem apagadas por erros temporários de armazenamento. Também corrigimos o problema em que algumas informações de itens apareciam vazias depois de fazer login em um novo dispositivo ou reinstalar o aplicativo.
+
+#### A conversa por voz se reconecta automaticamente
+Quando a outra pessoa muda para outro dispositivo, a conexão de voz ficava presa em "Solicitando". Corrigimos o problema, e agora a conexão é restabelecida automaticamente.
+
+#### Tela de conversa mais organizada
+Unificamos a exibição de mensagens, os avisos de expiração e as descrições de mensagens de localização, que antes variavam de um dispositivo para outro, e padronizamos o botão de limpar o campo de entrada. Corrigimos o problema em que nomes de autores longos ultrapassavam o balão da mensagem, e agora também é possível navegar pelos itens da aba de configurações com o teclado.
+
+#### Privacidade e segurança reforçadas
+Ao conectar dispositivos na mesma rede, usamos um nome anônimo de uso único no lugar do nome do dispositivo. A tradução de conversas individuais agora fica visível somente para os participantes, e as informações pessoais nos registros do servidor foram ocultadas. As informações de proteção dos itens passam a ser verificadas por assinatura do servidor, e os registros de notificação dos dispositivos desconectados são removidos pelo servidor.
+
+#### Correções de bugs
+Corrigimos a falha na tradução dos modelos de Selo, a ordem temporariamente incorreta dos resultados de busca, a avaliação por estrelas que permanecia alterada mesmo quando o salvamento falhava e os erros que às vezes exibiam orientações incorretas.
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.1.3 <small>2026-10-12</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

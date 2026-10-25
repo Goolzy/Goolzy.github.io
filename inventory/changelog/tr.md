@@ -29,6 +29,43 @@ Inventory uygulamasının güncelleme geçmişini kontrol edin.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.4 <small>2026-10-25</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopyala">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Gönderdiğiniz mesajları silebilirsiniz
+Gönderdiğiniz bir mesaja uzun basıp "Sil" seçeneğini seçtiğinizde mesaj sohbet odasından kaldırılır ve karşı tarafın ekranına da hemen yansır. Son mesajı silerseniz sohbet listesindeki önizleme de önceki mesaja güncellenir.
+
+#### Karşı tarafın adı ve profili doğru görünür
+Karşı taraf sohbeti başlattıktan sonra rozetini takarsa, sohbet listesinde ve uygulamaya döndüğünüzde görünen bildirim özetinde yeni ad ve profil resmi gösterilir. Adın e-posta adresi gibi takılı kalması sorunu düzeltildi.
+
+#### Daha hızlı ve hafif çalışır
+Arama kutusuna yazı yazdığınızda veya listeye baktığınızda yalnızca gerekli kısımlar yeniden çizilir. Aynı bilgiler tekrar tekrar sunucudan istenmek yerine cihazda saklanır, böylece ekranlar daha hızlı açılır.
+
+#### Cihazda kayıtlı öğeler güvende tutulur
+Geçici bir depolama hatası nedeniyle cihazda kayıtlı öğe bilgilerinin silinmesi önlendi. Yeni bir cihazda oturum açtıktan veya uygulamayı yeniden yükledikten sonra bazı öğe bilgilerinin boş görünmesi sorunu da düzeltildi.
+
+#### Sesli sohbet otomatik olarak yeniden bağlanır
+Karşı taraf başka bir cihaza geçtiğinde sesli bağlantının "İstek gönderiliyor" durumunda takılı kalması sorunu düzeltildi. Artık bağlantı otomatik olarak yeniden kurulur.
+
+#### Sohbet ekranı düzenlendi
+Mesaj gösterimi, süre sonu bilgisi ve konum mesajı açıklamaları artık her cihazda aynı şekilde görünür, giriş alanındaki temizleme düğmesi de tek tipe getirildi. Yazar adı uzun olduğunda balonun dışına taşan sorun giderildi ve ayarlar sekmesinde de klavyeyle öğeler arasında gezinilebiliyor.
+
+#### Gizlilik ve güvenlik güçlendirildi
+Aynı ağdaki cihazlar birbirine bağlanırken cihaz adı yerine tek kullanımlık anonim bir ad kullanılır. Bire bir sohbet çevirileri yalnızca katılımcılar tarafından görülebilir ve sunucu kayıtlarındaki kişisel bilgiler gizlendi. Öğe koruma bilgileri sunucu imzasıyla doğrulanır, oturumu kapatılan cihazların bildirim kayıtları ise sunucuda temizlenir.
+
+#### Hata düzeltmeleri
+Damga şablonu çevirisinin başarısız olması, arama sıralamasının geçici olarak bozulması, yıldız puanı kaydedilemediğinde değişen değerin yine de görünmesi ve bazı hataların yanlış bir uyarıyla gösterilmesi sorunları düzeltildi.
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.1.3 <small>2026-09-28</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopyala">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

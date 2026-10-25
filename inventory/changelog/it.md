@@ -29,6 +29,43 @@ Consulta la cronologia degli aggiornamenti dell'app Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.4 <small>2026-10-25</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copia">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Puoi eliminare i messaggi che hai inviato
+Premi a lungo su un messaggio e scegli "Elimina": il messaggio scompare dalla conversazione e la modifica viene subito riportata anche sullo schermo dell'altra persona. Se elimini l'ultimo messaggio, anche l'anteprima nell'elenco delle conversazioni torna al messaggio precedente.
+
+#### Nome e profilo dell'interlocutore visualizzati correttamente
+Anche se l'interlocutore indossa un badge dopo aver avviato la conversazione, il nuovo nome e l'immagine del profilo compaiono nell'elenco delle conversazioni e nel riepilogo delle notifiche che vedi quando torni nell'app. Abbiamo corretto il problema per cui restava visualizzato il nome ricavato dall'email.
+
+#### Funzionamento più veloce e leggero
+Quando digiti una ricerca o consulti un elenco, vengono aggiornate solo le parti necessarie. Le informazioni già caricate vengono salvate sul dispositivo per non doverle richiedere ogni volta, così le schermate si aprono più rapidamente.
+
+#### Gli elementi salvati sul dispositivo sono al sicuro
+Abbiamo risolto il problema per cui le informazioni degli elementi salvate sul dispositivo venivano cancellate a causa di un errore temporaneo di archiviazione. Abbiamo inoltre corretto il problema per cui alcune informazioni sugli elementi risultavano vuote dopo l'accesso da un nuovo dispositivo o la reinstallazione dell'app.
+
+#### La conversazione vocale si riconnette automaticamente
+Quando l'interlocutore passa a un altro dispositivo, la connessione vocale non resta più bloccata su "Richiesta in corso": ora si ricollega automaticamente.
+
+#### Pulizia della schermata chat
+Abbiamo uniformato la visualizzazione dei messaggi, gli avvisi di scadenza e la descrizione dei messaggi di posizione, che prima differivano da un dispositivo all'altro, e abbiamo unificato il pulsante per cancellare il campo di inserimento. Abbiamo corretto il problema per cui un nome dell'autore troppo lungo usciva dalla bolla del messaggio, e nella scheda Impostazioni puoi ora spostarti tra le voci anche con la tastiera.
+
+#### Privacy e sicurezza rafforzate
+Quando i dispositivi si collegano tra loro sulla stessa rete, al posto del nome del dispositivo viene usato un nome anonimo monouso. Le traduzioni delle conversazioni uno-a-uno sono visibili solo ai partecipanti, e i dati personali nei registri del server sono stati oscurati. Le informazioni di protezione degli elementi vengono verificate tramite firma del server, e le registrazioni alle notifiche dei dispositivi disconnessi vengono rimosse dal server.
+
+#### Correzione di bug
+Abbiamo corretto diversi problemi: la traduzione dei modelli di timbro che non andava a buon fine, l'ordine dei risultati di ricerca che per un certo tempo risultava errato, il valore delle valutazioni a stelle che restava modificato anche quando il salvataggio falliva e alcuni errori che venivano mostrati con messaggi fuori luogo.
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.1.3 <small>2026-09-28</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copia">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

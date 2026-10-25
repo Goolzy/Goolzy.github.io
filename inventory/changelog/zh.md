@@ -29,6 +29,43 @@ translations:
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.4 <small>2026-10-25</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### 可以删除自己发送的消息
+长按消息并选择"删除"，消息会从对话中消失，对方的画面也会立即同步。删除最后一条消息时，对话列表中的预览也会变为前一条消息。
+
+#### 对方名称和头像显示准确
+即使对方在开始对话后才佩戴徽章，对话列表和返回应用时显示的通知摘要中，也会显示新的名称和头像图片。已修正原本会一直显示为邮箱名称的问题。
+
+#### 运行更快、更轻量
+输入搜索词或浏览列表时只重新绘制需要的部分，并将相同信息保存在设备中，避免重复加载，因此画面打开更快。
+
+#### 设备中保存的物品更加安全
+已防止因临时存储故障而清除设备中保存的物品信息。在新设备上登录或重新安装应用后，部分物品信息显示为空白的问题也已修正。
+
+#### 语音对话自动重新连接
+对方切换到其他设备时，语音连接曾停留在"请求中"。现已修复，语音会自动重新连接。
+
+#### 对话界面整理
+统一了各设备上不同的消息显示、过期提示和位置消息说明，并统一了输入框的清除按钮。修复了作者名称过长时超出气泡的问题，在设置标签页中也可以用键盘切换项目。
+
+#### 加强隐私与安全
+在同一网络中连接设备时，将使用一次性匿名名称代替设备名称。1:1 对话的翻译仅参与者可见，服务器记录中的个人信息也已隐藏。物品保护信息由服务器签名验证，已退出登录的设备的通知注册也会由服务器清理。
+
+#### 错误修复
+修复了印章模板翻译失败、搜索排序暂时错乱、星级评分保存失败却仍保留修改后的值，以及部分错误显示为无关提示的问题。
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.1.3 <small>2026-10-12</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="复制">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

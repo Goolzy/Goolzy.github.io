@@ -29,6 +29,43 @@ Lihat riwayat pembaruan aplikasi Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.4 <small>2026-10-25</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Salin">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Hapus pesan yang Anda kirim
+Tekan lama pesan lalu pilih "Hapus" untuk menghapusnya dari percakapan. Penghapusan juga langsung terlihat di layar lawan bicara. Jika pesan terakhir dihapus, pratinjau di daftar percakapan ikut berganti ke pesan sebelumnya.
+
+#### Nama dan profil lawan bicara tampil dengan benar
+Meski lawan bicara baru mengenakan lencana setelah memulai percakapan, nama dan gambar profil yang baru kini tampil di daftar percakapan serta di ringkasan notifikasi saat Anda kembali ke aplikasi. Masalah nama yang tampak terpaku pada nama dari alamat email sudah diperbaiki.
+
+#### Berjalan lebih cepat dan ringan
+Saat mengetik kata pencarian atau melihat daftar, hanya bagian yang diperlukan yang digambar ulang. Informasi yang sama juga disimpan di perangkat agar tidak terus dimuat ulang, sehingga layar terbuka lebih cepat.
+
+#### Item yang tersimpan di perangkat lebih aman
+Kami mencegah informasi item yang tersimpan di perangkat terhapus akibat gangguan penyimpanan sementara. Masalah informasi sebagian item yang tampak kosong setelah login di perangkat baru atau memasang ulang aplikasi juga sudah diperbaiki.
+
+#### Percakapan suara tersambung ulang secara otomatis
+Kami memperbaiki masalah saat lawan bicara pindah ke perangkat lain dan koneksi suara tertahan di status "Meminta". Sekarang koneksi tersambung ulang secara otomatis.
+
+#### Penataan ulang layar percakapan
+Tampilan pesan, pemberitahuan masa berlaku, dan penjelasan pesan lokasi yang sebelumnya berbeda di setiap perangkat kini disamakan, serta tombol hapus teks di kolom input dibuat seragam. Nama penulis yang panjang tidak lagi meluap keluar dari balon pesan, dan Anda juga dapat berpindah antar item di tab Pengaturan menggunakan keyboard.
+
+#### Privasi dan keamanan diperkuat
+Saat perangkat terhubung satu sama lain dalam jaringan yang sama, nama perangkat tidak lagi dipakai dan diganti dengan nama anonim sekali pakai. Terjemahan percakapan 1:1 kini hanya dapat dilihat oleh peserta, dan data pribadi dalam catatan server disamarkan. Informasi perlindungan item diverifikasi dengan tanda tangan server, dan pendaftaran notifikasi dari perangkat yang sudah keluar akun dibersihkan dari server.
+
+#### Perbaikan bug
+Kami memperbaiki masalah terjemahan template stempel yang gagal, peringkat pencarian yang sesaat tidak akurat, rating bintang yang tetap tampil dengan nilai baru meski penyimpanannya gagal, dan beberapa error yang menampilkan pesan tidak sesuai.
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.1.3 <small>2026-09-28</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Salin">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

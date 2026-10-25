@@ -29,6 +29,43 @@ Consultez l'historique des mises à jour de l'application Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.4 <small>2026-10-25</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Vous pouvez supprimer les messages que vous avez envoyés
+Appuyez longuement sur un message et choisissez « Supprimer » : il disparaît de la conversation et est aussitôt retiré de l'écran de votre interlocuteur. Si vous supprimez le dernier message, l'aperçu de la liste des conversations affiche le message qui le précède.
+
+#### Le nom et le profil de votre interlocuteur s'affichent correctement
+Même si votre interlocuteur équipe un badge après avoir commencé la conversation, son nouveau nom et sa photo de profil apparaissent désormais dans la liste des conversations et dans le résumé des notifications affiché à votre retour dans l'application. Nous avons corrigé le problème où le nom issu de l'adresse e-mail semblait figé.
+
+#### L'application est plus rapide et plus légère
+Lorsque vous saisissez une recherche ou parcourez une liste, seules les parties nécessaires sont redessinées. Les informations déjà chargées sont enregistrées sur l'appareil pour ne pas être téléchargées à nouveau, ce qui accélère l'ouverture des écrans.
+
+#### Vos éléments enregistrés sur l'appareil sont mieux protégés
+Nous avons empêché que les informations des éléments enregistrés sur l'appareil ne soient effacées à cause d'une erreur de stockage temporaire. Nous avons aussi corrigé le problème où certaines informations d'éléments apparaissaient vides après une connexion sur un nouvel appareil ou une réinstallation de l'application.
+
+#### Les conversations vocales se reconnectent automatiquement
+Nous avons corrigé le problème où la connexion vocale restait bloquée sur « Demande en cours » lorsque votre interlocuteur passait sur un autre appareil ; elle se rétablit désormais automatiquement.
+
+#### Nettoyage des écrans de conversation
+Nous avons uniformisé l'affichage des messages, les indications d'expiration et les descriptions des messages de localisation, qui différaient selon les appareils, et unifié le bouton d'effacement du champ de saisie. Nous avons corrigé le débordement du nom de l'auteur hors de la bulle lorsqu'il est long, et vous pouvez désormais parcourir les éléments de l'écran Paramètres au clavier.
+
+#### Confidentialité et sécurité renforcées
+Lorsque des appareils se connectent entre eux sur le même réseau, un nom anonyme à usage unique remplace désormais le nom de l'appareil. Les traductions des conversations en tête-à-tête ne sont visibles que par les participants, et les informations personnelles présentes dans les journaux du serveur ont été masquées. Les informations de protection des éléments sont vérifiées par une signature du serveur, et les enregistrements de notifications d'un appareil déconnecté sont nettoyés côté serveur.
+
+#### Corrections de bugs
+Nous avons corrigé l'échec de traduction des modèles de tampon, le classement des résultats de recherche qui se décalait temporairement, les évaluations qui restaient modifiées même lorsque leur enregistrement échouait, et certaines erreurs qui affichaient un message sans rapport avec le problème.
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.1.3 <small>2026-10-12</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copier">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

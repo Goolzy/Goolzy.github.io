@@ -29,6 +29,43 @@ Consulta el historial de actualizaciones de la aplicación Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.4 <small>2026-10-25</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Puedes eliminar los mensajes que enviaste
+Mantén pulsado un mensaje y elige "Eliminar" para que desaparezca de la conversación y también se actualice al instante en la pantalla de la otra persona. Si eliminas el último mensaje, la vista previa de la lista de conversaciones volverá a mostrar el mensaje anterior.
+
+#### El nombre y el perfil de la otra persona se muestran correctamente
+Aunque la otra persona equipe una insignia después de iniciar la conversación, el nuevo nombre y la imagen de perfil aparecen en la lista de conversaciones y en el resumen de notificaciones que se muestra al volver a la aplicación. Hemos corregido el problema por el que el nombre del correo electrónico seguía apareciendo en su lugar.
+
+#### La aplicación es más rápida y ligera
+Al escribir en la búsqueda o al ver las listas, solo se vuelve a dibujar la parte necesaria, y la información que se repite se guarda en el dispositivo para no volver a cargarla. Así, las pantallas se abren más rápido.
+
+#### Los artículos guardados en el dispositivo están protegidos
+Hemos evitado que la información de los artículos guardados en el dispositivo se borre por un error temporal de almacenamiento. También corregimos el problema por el que algunos artículos aparecían sin información después de iniciar sesión en un nuevo dispositivo o de reinstalar la aplicación.
+
+#### Las conversaciones de voz se vuelven a conectar automáticamente
+Hemos corregido el problema por el que la conexión de voz se quedaba en "Solicitando" cuando la otra persona cambiaba a otro dispositivo. Ahora se restablece automáticamente.
+
+#### Pantalla de conversación más ordenada
+Hemos unificado la forma de mostrar los mensajes, los avisos de caducidad y las descripciones de los mensajes de ubicación, que antes variaban según el dispositivo, y el botón para borrar el campo de entrada ahora es el mismo en todas partes. Corregimos el problema por el que el nombre del autor se salía del globo del mensaje cuando era largo, y ahora también puedes desplazarte entre los elementos de la pestaña de ajustes con el teclado.
+
+#### Más privacidad y seguridad
+Al conectar dispositivos entre sí dentro de la misma red, ahora se usa un nombre anónimo de un solo uso en lugar del nombre del dispositivo. Las traducciones de las conversaciones uno a uno solo pueden verlas los participantes, y hemos ocultado los datos personales de los registros del servidor. La información de protección de los artículos se verifica con una firma del servidor, y el registro de notificaciones de los dispositivos que han cerrado sesión se limpia en el servidor.
+
+#### Correcciones de errores
+Hemos corregido el fallo al traducir las plantillas de sello, el orden de los resultados de búsqueda que a veces se alteraba temporalmente, el problema por el que una valoración que no se guardaba seguía mostrando el valor nuevo, y los errores que mostraban un aviso que no correspondía.
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.1.3 <small>2026-10-12</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copiar">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

@@ -29,6 +29,43 @@ Check out the update history for the Inventory app.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.4 <small>2026-10-25</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### You can now delete messages you sent
+Press and hold a message and choose "Delete" to remove it from the conversation. The deletion also appears on the other person's screen right away. If you delete the latest message, the conversation list preview changes to the message before it.
+
+#### The other person's name and profile now display correctly
+Even if the other person equips a badge after starting a conversation, their new name and profile image now appear in the conversation list and in notification summaries when you return to the app. We fixed the issue where their name appeared stuck on their email-based name.
+
+#### Faster and lighter performance
+When you type a search or browse lists, only the parts that need updating are redrawn. The same information is stored on your device so it no longer has to be loaded repeatedly, and screens open faster.
+
+#### Items stored on your device are kept safe
+We fixed an issue where item information stored on your device could be erased by a temporary storage error. We also fixed an issue where some item information appeared empty after signing in on a new device or reinstalling the app.
+
+#### Voice conversations reconnect automatically
+We fixed an issue where a voice connection stayed stuck on "Requesting" when the other person moved to another device, so voice conversations now reconnect automatically.
+
+#### Conversation screen cleanup
+Message display, expiry notices, and location message descriptions, which used to vary by device, now work the same everywhere, and the input field's clear button has been unified. Long author names no longer overflow outside message bubbles, and you can now move between items in the Settings tab using the keyboard.
+
+#### Stronger privacy and security
+When devices connect to each other on the same network, a one-time anonymous name is used instead of the device name. Translations in 1-to-1 conversations are now visible only to participants, and personal information in server records has been masked. Item protection information is now verified with server signatures, and notification registrations for logged-out devices are cleaned up on the server.
+
+#### Bug fixes
+We fixed an issue where stamp template translation failed, an issue where search rankings temporarily shifted out of order, an issue where a star rating still showed the changed value even when saving failed, and an issue where some errors displayed the wrong guidance.
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.1.3 <small>2026-10-12</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Copy">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

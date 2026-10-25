@@ -30,6 +30,44 @@ Sehen Sie sich den Update-Verlauf der Inventory-App an.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.4 <small>2026-10-25</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopieren">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Gesendete Nachrichten können gelöscht werden
+Drücken Sie eine Nachricht lange und wählen Sie „Löschen“. Sie verschwindet dann aus dem Chat, und die Änderung ist sofort auch beim Gegenüber zu sehen. Wird die letzte Nachricht gelöscht, wechselt die Vorschau in der Chat-Liste auf die vorherige Nachricht.
+
+#### Name und Profil des Gegenübers werden korrekt angezeigt
+Wenn das Gegenüber nach dem Start eines Chats ein Abzeichen ausrüstet, zeigen die Chat-Liste und die Benachrichtigungsübersicht beim Zurückkehren in die App den neuen Namen und das neue Profilbild an. Das Problem, dass stattdessen die E-Mail-Adresse als Name angezeigt wurde, ist behoben.
+
+#### Läuft schneller und schlanker
+Wenn Sie einen Suchbegriff eingeben oder Listen ansehen, werden nur die nötigen Teile neu gezeichnet. Gleiche Informationen werden auf dem Gerät gespeichert, damit sie nicht immer wieder neu geladen werden, und Bildschirme öffnen sich dadurch schneller.
+
+#### Auf dem Gerät gespeicherte Artikel bleiben sicher erhalten
+Ein vorübergehender Speicherfehler führte früher dazu, dass gespeicherte Artikelinformationen auf dem Gerät gelöscht wurden. Dies wird nun verhindert. Außerdem wurde behoben, dass nach der Anmeldung auf einem neuen Gerät oder nach einer Neuinstallation der App einige Artikelinformationen leer angezeigt wurden.
+
+#### Sprachunterhaltung verbindet sich automatisch neu
+Wenn das Gegenüber auf ein anderes Gerät wechselt, blieb die Sprachunterhaltung bisher im Status „Wird angefordert“ hängen. Dieses Problem ist behoben, und die Verbindung wird nun automatisch wiederhergestellt.
+
+#### Übersichtlicherer Chat-Bildschirm
+Die Anzeige von Nachrichten, die Hinweise zum Ablauf und die Erläuterungen zu Standortnachrichten sind nun auf allen Geräten gleich. Die Schaltfläche zum Leeren des Eingabefelds wurde ebenfalls vereinheitlicht. Lange Namen von Verfassern liefen früher aus der Sprechblase heraus, das ist behoben. Auch in den Einstellungen können Sie nun mit der Tastatur zwischen den Einträgen wechseln.
+
+#### Datenschutz und Sicherheit gestärkt
+Beim Verbinden von Geräten im selben Netzwerk wird statt des Gerätenamens ein einmaliger, anonymer Name verwendet. Übersetzungen in 1:1-Chats sind nur für die Beteiligten sichtbar, und personenbezogene Daten in den Serverdaten wurden unkenntlich gemacht. Schutzinformationen für Artikel werden über eine Server-Signatur geprüft, und Benachrichtigungsregistrierungen abgemeldeter Geräte werden auf dem Server bereinigt.
+
+#### Fehlerbehebungen
+Folgende Probleme wurden behoben: Fehler bei der Übersetzung von Stempelvorlagen, vorübergehend falsche Suchrangfolgen, Sternebewertungen, die auch bei fehlgeschlagener Speicherung den neuen Wert behielten, sowie einige Fehler, die mit einem unpassenden Hinweis angezeigt wurden.
+
+</div>
+</details>
+
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.1.3 <small>2026-10-12</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Kopieren">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>

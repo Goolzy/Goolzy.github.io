@@ -29,6 +29,43 @@ Hãy xem lịch sử cập nhật ứng dụng Inventory.
 
 <details class="changelog-version" open>
 <summary>
+  <span class="version-title">v2.1.4 <small>2026-10-25</small></span>
+  <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Sao chép">
+    <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+    <svg class="check-icon" viewBox="0 0 24 24" width="10" height="10" style="display:none;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  </button>
+</summary>
+<div class="version-content" markdown="1">
+
+#### Bạn có thể xóa tin nhắn mình đã gửi
+Nhấn giữ một tin nhắn và chọn "Xóa" để tin nhắn biến mất khỏi phòng trò chuyện và được cập nhật ngay trên màn hình của đối phương. Khi xóa tin nhắn cuối cùng, phần xem trước trong danh sách trò chuyện cũng sẽ chuyển sang tin nhắn ngay trước đó.
+
+#### Tên và hồ sơ của đối phương hiển thị chính xác
+Ngay cả khi đối phương trang bị huy hiệu sau khi bắt đầu trò chuyện, tên và ảnh hồ sơ mới vẫn hiển thị trong danh sách trò chuyện và trong tóm tắt thông báo khi bạn quay lại ứng dụng. Đã khắc phục lỗi tên bị cố định thành tên email.
+
+#### Hoạt động nhanh hơn và nhẹ hơn
+Khi nhập từ khóa tìm kiếm hoặc xem danh sách, chỉ những phần cần thiết mới được vẽ lại. Thông tin đã lưu trên thiết bị giúp không phải tải lại cùng một dữ liệu nhiều lần, nhờ đó màn hình mở nhanh hơn.
+
+#### Bảo vệ an toàn các mục đã lưu trên thiết bị
+Đã ngăn tình trạng thông tin mục lưu trên thiết bị bị xóa do lỗi lưu trữ tạm thời. Cũng đã khắc phục lỗi một số thông tin mục bị trống sau khi đăng nhập trên thiết bị mới hoặc cài đặt lại ứng dụng.
+
+#### Cuộc trò chuyện thoại tự động kết nối lại
+Đã sửa lỗi kết nối thoại bị kẹt ở trạng thái "Đang yêu cầu" khi đối phương chuyển sang thiết bị khác. Giờ đây kết nối sẽ tự động được thiết lập lại.
+
+#### Dọn dẹp màn hình trò chuyện
+Đã thống nhất cách hiển thị tin nhắn, thông báo hết hạn và mô tả tin nhắn vị trí, vốn khác nhau tùy thiết bị, đồng thời đồng nhất nút xóa nội dung trong ô nhập. Đã sửa lỗi tên người gửi quá dài tràn ra ngoài khung tin nhắn, và giờ có thể dùng bàn phím để di chuyển giữa các mục trong tab Cài đặt.
+
+#### Tăng cường quyền riêng tư và bảo mật
+Khi các thiết bị kết nối với nhau trong cùng một mạng, ứng dụng dùng tên ẩn danh dùng một lần thay cho tên thiết bị. Bản dịch trong trò chuyện 1:1 chỉ người tham gia mới xem được, và thông tin cá nhân trong nhật ký máy chủ đã được che đi. Thông tin bảo vệ mục được xác minh bằng chữ ký của máy chủ, còn đăng ký thông báo của thiết bị đã đăng xuất sẽ được máy chủ dọn dẹp.
+
+#### Sửa lỗi
+Đã sửa lỗi bản dịch mẫu tem bị thất bại, thứ tự kết quả tìm kiếm tạm thời bị sai, điểm sao vẫn hiển thị giá trị mới dù lưu thất bại, và một số lỗi hiển thị nội dung hướng dẫn không đúng.
+
+</div>
+</details>
+
+<details class="changelog-version">
+<summary>
   <span class="version-title">v2.1.3 <small>2026-09-28</small></span>
   <button class="copy-btn" onclick="copyVersionContent(this, event)" title="Sao chép">
     <svg class="copy-icon" viewBox="0 0 24 24" width="10" height="10"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
